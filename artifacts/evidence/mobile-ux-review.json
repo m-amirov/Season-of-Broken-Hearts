@@ -1,0 +1,21 @@
+{
+  "status": "PASS_BOUNDED_MOBILE_RUNTIME",
+  "sourceHead": "6338a3f9ecc395ba1d8def9c8a1679a781f58b59",
+  "browser": "Chromium via playwright-cli",
+  "device": "desktop Chromium viewport emulating 390x844; physical phone not available",
+  "url": "http://192.168.0.2:4173/",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "localeCoverage": ["ru", "en"],
+  "inputCoverage": ["choice", "Back", "New Game", "reload/localStorage"],
+  "overflow": {
+    "document": false,
+    "dialogueText": false
+  },
+  "consoleErrors": [],
+  "requestFailures": [],
+  "screenshot": "output/playwright/lan-smoke-390x844.png",
+  "note": "This is bounded local browser evidence, not proof of physical mobile-device connectivity or Yandex-hosted runtime acceptance."
+}

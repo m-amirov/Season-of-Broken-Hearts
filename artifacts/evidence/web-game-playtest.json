@@ -1,0 +1,44 @@
+{
+  "status": "PASS_BOUNDED_LAN_SMOKE",
+  "sourceHead": "6338a3f9ecc395ba1d8def9c8a1679a781f58b59",
+  "server": {
+    "command": "PORT=4173 npm run dev:lan",
+    "host": "0.0.0.0",
+    "localUrl": "http://127.0.0.1:4173/",
+    "networkUrl": "http://192.168.0.2:4173/",
+    "sdk": "/sdk.js local stub",
+    "physicalDevice": "NOT_VERIFIED"
+  },
+  "browser": {
+    "tool": "playwright-cli",
+    "browser": "Chromium",
+    "url": "http://192.168.0.2:4173/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scenarios": [
+      "EP1 cold load over LAN IPv4",
+      "ESM modules, narrative JSON, SVG placeholders and local SDK stub",
+      "EN choice and RU choice",
+      "Back restores the pre-choice cursor",
+      "New Game resets EP1",
+      "reload restores browser localStorage save"
+    ],
+    "consoleErrors": [],
+    "requestFailures": [],
+    "observedCursors": {
+      "enChoice": "ep1_matteo_direct_response",
+      "enBack": "ep1_gate:7",
+      "enNewGame": "ep1_arrival:0",
+      "ruChoice": "ep1_matteo_formal_response"
+    }
+  },
+  "firewallProbe": {
+    "method": "Test-NetConnection -ComputerName 192.168.0.2 -Port 4173",
+    "tcpTestSucceeded": true,
+    "windowsFirewallProfilesEnabled": false,
+    "activeNetworkCategory": "Public",
+    "ruleChanged": false
+  }
+}
