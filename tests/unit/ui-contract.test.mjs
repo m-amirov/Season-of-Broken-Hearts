@@ -137,3 +137,49 @@ test('pointercancel outside the pressed button releases ownership', () => {
   assert.deepEqual(calls, ['choose:leo_hear']);
   controller.destroy();
 });
+
+test('stage tap owns one pointer gesture and advances exactly once', () => {
+  const stage = fakeButton();
+  const calls = [];
+  const controller = createInputController({ advanceSurface: stage }, {
+    onAdvance: () => calls.push('advance')
+  });
+
+  stage.dispatch('pointerdown', { pointerId: 31, pointerType: 'touch', isPrimary: true, clientX: 20, clientY: 20 });
+  stage.dispatch('pointerup', { pointerId: 31, pointerType: 'touch', isPrimary: true, clientX: 20, clientY: 20 });
+  assert.deepEqual(calls, []);
+  stage.click(1);
+  stage.click(2);
+
+  assert.deepEqual(calls, ['advance']);
+  controller.destroy();
+});
+
+test('stage does not advance from drags, long presses, menu modal or choice controls', () => {
+  const stage = fakeButton();
+  const choice = fakeButton('matteo_formal');
+  const gestureTarget = fakeEventTarget();
+  const calls = [];
+  const controller = createInputController({ advanceSurface: stage, gestureTarget }, {
+    onAdvance: () => calls.push('advance'),
+    onChoose: id => calls.push(`choose:${id}`)
+  });
+  controller.bindChoiceButtons([choice]);
+
+  stage.dispatch('pointerdown', { pointerId: 32, pointerType: 'touch', isPrimary: true, clientX: 10, clientY: 10 });
+  stage.dispatch('pointermove', { pointerId: 32, pointerType: 'touch', isPrimary: true, clientX: 40, clientY: 10 });
+  stage.dispatch('pointerup', { pointerId: 32, pointerType: 'touch', isPrimary: true, clientX: 40, clientY: 10 });
+  stage.click(1);
+
+  stage.dispatch('pointerdown', { pointerId: 33, pointerType: 'touch', isPrimary: true, clientX: 10, clientY: 10 });
+  stage.dispatch('pointerup', { pointerId: 33, pointerType: 'touch', isPrimary: true, clientX: 10, clientY: 10, duration: 900 });
+  stage.click(1);
+
+  controller.setMenuOpen(true);
+  stage.click(1);
+  controller.setMenuOpen(false);
+  choice.click(1);
+
+  assert.deepEqual(calls, ['choose:matteo_formal']);
+  controller.destroy();
+});

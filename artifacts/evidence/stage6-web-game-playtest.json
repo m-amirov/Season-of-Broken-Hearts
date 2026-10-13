@@ -1,0 +1,15 @@
+{
+  "stage": "Stage 6",
+  "status": "PASS_SCOPED",
+  "checks": [
+    "boot and SDK/local fallback",
+    "tap/click dialogue advance",
+    "Back and save/load",
+    "choice isolation",
+    "menu resume/settings/new-game confirmation",
+    "reload and visibility/pagehide save hooks",
+    "desktop and portrait mobile responsive layout"
+  ],
+  "consoleErrors": 0,
+  "evidence": "artifacts/evidence/stage6-browser-qa.json"
+}

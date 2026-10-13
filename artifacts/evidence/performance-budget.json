@@ -1,0 +1,12 @@
+{
+  "stage": "Stage 6",
+  "status": "PASS_SCOPED",
+  "checks": [
+    "scene preloads remain through existing asset manager",
+    "decode completion gates input unlock",
+    "crossfade uses animation lifecycle, not arbitrary timeout",
+    "only current scene image is retained by renderer"
+  ],
+  "scopeNote": "No release-package weight or hosted-platform telemetry claim is made in Stage 6.",
+  "evidence": "artifacts/evidence/stage6-browser-qa.json"
+}

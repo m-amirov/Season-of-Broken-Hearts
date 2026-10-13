@@ -1,0 +1,32 @@
+{
+  "stage": "Stage 6",
+  "sourceBaseHead": "fcee84ebf28f04b8f595d99777b638d9694c30d9",
+  "environment": {
+    "server": "http://127.0.0.1:64043/",
+    "browser": "Codex In-app Browser / Chrome",
+    "consoleErrors": 0,
+    "assetDecode": "PASS: rendered CG naturalWidth/naturalHeight observed in live browser"
+  },
+  "viewports": [
+    {"name": "desktop-1920x900", "status": "PASS", "screenshot": "artifacts/evidence/stage6/screenshots/desktop-1920x900.png", "sha256": "909E2374B43216A0F7C530727350129967876E574D50265B78B00F6EFBC2B655"},
+    {"name": "desktop-1366x768", "status": "PASS", "screenshot": "artifacts/evidence/stage6/screenshots/desktop-1366x768.png", "sha256": "B22C152313B1149F695A8A4A8BA29724B286339C22A714C43370BB9DE331F9A0"},
+    {"name": "mobile-360x640", "status": "PASS", "capture": "live browser screenshot emitted by CUA", "sha256": "3831b41a39b12f14b30f904b49c134372435441eb631f3a8ee016c69d5a743f9"},
+    {"name": "mobile-390x844", "status": "PASS", "capture": "live browser screenshot emitted by CUA", "sha256": "9109f1bff15b7efc686f27437bfa78e5bdee327e4292bab9771d4d3fa3ed6ac5"},
+    {"name": "mobile-430x932", "status": "PASS", "capture": "live browser screenshot emitted by CUA", "sha256": "ecdaec5ea79757f2c92a4069f458798621d36c886c59ba2724f164c5cc7cc58b"},
+    {"name": "mobile-landscape-844x390", "status": "PASS", "capture": "live browser screenshot emitted by CUA", "sha256": "a5e0e1e8660c77d5fb9781a3ccb9b67ac42a2dec0e689cc16bb6aff015ad11ba", "assertion": "portrait rotation overlay owns the screen"}
+  ],
+  "interactionChecks": {
+    "tapAdvance": "PASS",
+    "doubleTapDoesNotSkip": "PASS",
+    "dragAndLongPressDoNotAdvance": "PASS",
+    "choicesOwnGesture": "PASS",
+    "backRestoresCursor": "PASS",
+    "menuModalBlocksNarrative": "PASS",
+    "resumeDoesNotAdvance": "PASS",
+    "newGameRequiresConfirmation": "PASS",
+    "reloadRestoresSave": "PASS",
+    "settingsOnlyLocaleSurface": "PASS"
+  },
+  "visualAcceptance": "PASS_UI_LAYOUT_ONLY",
+  "scopeNote": "No new CG, narrative, save schema, or release package was created. Existing production-art acceptance remains a separate gate."
+}

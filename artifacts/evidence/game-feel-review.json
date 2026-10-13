@@ -1,0 +1,11 @@
+{
+  "stage": "Stage 6",
+  "status": "PASS",
+  "checks": [
+    "tap-to-advance is discoverable without a permanent Continue button",
+    "dialogue panel overlays CG with restrained crossfade",
+    "rapid input is locked during render/preload",
+    "Back/Menu remain stable during narrative interaction"
+  ],
+  "evidence": "artifacts/evidence/stage6-browser-qa.json"
+}

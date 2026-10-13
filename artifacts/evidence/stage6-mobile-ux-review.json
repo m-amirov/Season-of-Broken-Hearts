@@ -1,0 +1,10 @@
+{
+  "stage": "Stage 6",
+  "status": "PASS",
+  "orientation": {"portrait": "PASS", "coarseLandscape": "PASS_ROTATE_OVERLAY"},
+  "viewports": ["360x640", "390x844", "430x932"],
+  "safeAreas": "PASS",
+  "touchTargets": "PASS_MINIMUM_44PX",
+  "gestureOwnership": "PASS_TAP_DRAG_LONG_PRESS_DOUBLE_TAP_MENU_CHOICE",
+  "evidence": "artifacts/evidence/stage6-browser-qa.json"
+}

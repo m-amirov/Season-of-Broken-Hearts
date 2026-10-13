@@ -1,0 +1,13 @@
+{
+  "stage": "Stage 6",
+  "status": "PASS",
+  "checks": [
+    "named Back/Menu controls",
+    "dialogue and status live regions",
+    "choice group label",
+    "keyboard Space/Enter/ArrowRight advance",
+    "keyboard focus-visible styling",
+    "settings language controls exposed only in menu"
+  ],
+  "evidence": "live browser AX snapshots and artifacts/evidence/stage6-browser-qa.json"
+}

@@ -17,6 +17,9 @@ game:
   audience: 16+
   sessionMinutes: 20
   orientation: portrait-first
+  responsiveModes:
+    mobile: portrait-only
+    desktop: landscape
   description: >-
     Ника Воронцова приезжает на десять недель в семейный отель Villa Serena,
     чтобы провести летний сезон и начать жизнь заново. В первом эпизоде она
