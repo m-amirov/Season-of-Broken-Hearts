@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "checks": {
+    "titleFade": "PASS; title-fade-in present and reduced-motion override present",
+    "titleAutoDismiss": "PASS; measured close after approximately 2300ms",
+    "skipOwnership": "PASS; title click hides intro without advancing first dialogue",
+    "gestureOwnership": "PASS; menu, choices, drag, long-press and pointer-cancel tested",
+    "sceneCrossfade": "PASS; scene-fade class and decoded image observed",
+    "visualHierarchy": "PASS; independent Web High review accepted title, menu, dialogue, choices and orientation"
+  },
+  "verdict": "PASS_BOUNDED_GAME_FEEL_REVIEW"
+}

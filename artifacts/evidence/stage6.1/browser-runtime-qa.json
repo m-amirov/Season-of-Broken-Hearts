@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "tool": "Playwright CLI 1.64.0",
+  "browser": "Chromium/Chrome headed; Pixel 10 mobile emulation",
+  "desktopViewport": "1920x900",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "badResponses": [],
+  "assertions": [
+    {"id": "episode_intro_is_standalone", "status": "PASS", "evidence": "introActive=true; topbar and reader sheet computed visibility hidden"},
+    {"id": "intro_skip_does_not_advance", "status": "PASS", "evidence": "first dialogue remains the authored opening line after title click"},
+    {"id": "tutorial_hint_first_two_lines_only", "status": "PASS", "evidence": "hint visible on first line and hidden after third line"},
+    {"id": "menu_owns_gesture", "status": "PASS", "evidence": "menu open preserves dialogue and stage inert is set"},
+    {"id": "choice_owns_gesture", "status": "PASS", "evidence": "2 choices displayed; selection enters ep1_matteo_formal_response without extra stage advance"},
+    {"id": "mobile_no_horizontal_overflow", "status": "PASS", "evidence": [{"viewport": "360x640", "scrollWidth": 360, "innerWidth": 360}, {"viewport": "390x844", "scrollWidth": 390, "innerWidth": 390}, {"viewport": "430x932", "scrollWidth": 430, "innerWidth": 430}]},
+    {"id": "landscape_orientation_guard", "status": "PASS", "evidence": "orientation-lock visible at 844x390"}
+  ],
+  "interactionRegression": {
+    "tap": "PASS",
+    "doubleTap": "PASS; two explicit gestures advance two lines, with no duplicate event within a gesture",
+    "drag": "PASS; no advance",
+    "longPress": "PASS; no advance",
+    "pointerCancel": "PASS; no advance and ownership released",
+    "backSnapshot": "PASS; returns to prior dialogue without replaying intro",
+    "saveReload": "PASS; current intro/tutorial unit coverage plus browser reload smoke",
+    "newGame": "PASS; intro restarts",
+    "locale": "PASS; RU/EN switch preserves cursor and game screen has no locale buttons",
+    "imageLoad": "PASS; current CG complete with naturalWidth 1024"
+  },
+  "screenshots": {
+    "desktop": ["output/playwright/stage6-1-final-desktop-intro-1920x900.png", "output/playwright/stage6-1-final-desktop-first-1920x900.png", "output/playwright/stage6-1-final-desktop-no-hint-1920x900.png", "output/playwright/stage6-1-final-desktop-choice-1920x900.png", "output/playwright/stage6-1-final-desktop-menu-1920x900.png", "output/playwright/stage6-1-final-desktop-first-1366x768.png", "output/playwright/stage6-1-final-desktop-first-1600x900.png", "output/playwright/stage6-1-final-desktop-first-1920x1080.png"],
+    "mobile": ["output/playwright/stage6-1-final-mobile-intro-390x844.png", "output/playwright/stage6-1-final-mobile-first-390x844.png", "output/playwright/stage6-1-final-mobile-long-390x844.png", "output/playwright/stage6-1-final-mobile-choice-390x844.png", "output/playwright/stage6-1-final-mobile-landscape-844x390.png", "output/playwright/stage6-1-final-mobile-first-360x640.png", "output/playwright/stage6-1-final-mobile-first-430x932.png"],
+    "characterCG": ["output/playwright/stage6-1-final-cg-nika-1920x1080.png", "output/playwright/stage6-1-final-cg-matteo-1920x1080.png", "output/playwright/stage6-1-final-cg-elio-1920x1080.png", "output/playwright/stage6-1-final-cg-leo-1920x1080.png"]
+  },
+  "verdict": "PASS_STAGE6_1_BROWSER_RUNTIME_QA",
+  "limitations": ["Chromium/Chrome only; Firefox/WebKit were not run. Yandex hosted runtime was not used."]
+}

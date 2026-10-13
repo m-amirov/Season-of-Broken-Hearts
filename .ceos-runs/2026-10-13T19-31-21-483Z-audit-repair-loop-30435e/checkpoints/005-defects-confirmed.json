@@ -1,0 +1,49 @@
+{
+  "index": 5,
+  "stage": "DEFECTS_CONFIRMED",
+  "at": "2026-10-13T19:32:53.391Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "confirmedInScopeDefects": 0,
+    "outOfScopeNotes": [
+      "Starter Kit snapshot drift is a project gate, not a Stage 6.1 UI defect"
+    ],
+    "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "defectCount": 0
+  },
+  "source": {
+    "available": true,
+    "head": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "clean": false,
+    "worktreeSha256": "1b9ece980610fe2f5aef6ca48d76a71b9e0811270a1b0fb239c78079826ee677"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-analysis-current.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+      "type": "file",
+      "sha256": "dc40ff85052969ca45d925c0ccb7f4c0cb96703d6d84c06eb9f839b1210a2540",
+      "size": 2191
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/browser-runtime-qa.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\browser-runtime-qa.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/browser-runtime-qa.json",
+      "type": "file",
+      "sha256": "1a308be58ce9d3d3e5616b04c5fc66040d85ee73d81a702c4242a0adeeaf419d",
+      "size": 3483
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/mobile-ux-review.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\mobile-ux-review.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/mobile-ux-review.json",
+      "type": "file",
+      "sha256": "e5039f4458bccd643e83c786c2da7dc4e2a1468bc0caa60794246c24f47c831a",
+      "size": 810
+    }
+  ]
+}

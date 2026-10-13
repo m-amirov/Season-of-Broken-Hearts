@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "checks": {
+    "startup": "PASS; local dev server booted and first scene rendered",
+    "imageDecode": "PASS; current scene image complete with naturalWidth 1024 and naturalHeight 1536",
+    "runtimeErrors": "PASS; no console errors, page errors, failed requests or bad responses in final desktop flow",
+    "layoutOverflow": "PASS; document scroll dimensions equal viewport at required desktop/mobile snapshots",
+    "assetScope": "PASS; existing EP1 CGs only; no new art generated"
+  },
+  "verdict": "PASS_BOUNDED_PERFORMANCE_REVIEW",
+  "limitations": ["No production build, throttled-network profile or hosted Yandex telemetry was run; final release build remains out of scope."]
+}

@@ -1,0 +1,23 @@
+{
+  "target": "Stage 6.1 current EP1 UI integration, responsive runtime and visual acceptance",
+  "inScope": [
+    "desktop and mobile UI",
+    "EP1 title cards",
+    "tutorial hint lifecycle",
+    "input/choice/menu/back ownership",
+    "RU/EN UI localization",
+    "responsive safe-area and orientation behavior",
+    "runtime screenshots and console/network evidence"
+  ],
+  "outOfScope": [
+    "new CG generation",
+    "approved character changes",
+    "EP1 narrative/replies",
+    "EP2-EP10",
+    "release ZIP",
+    "Yandex publication/moderation",
+    "external hosted Yandex validation"
+  ],
+  "acceptanceContract": "PASS_STAGE6_1_RESPONSIVE_UI_ACCEPTANCE only when current-HEAD browser evidence, required unit/narrative/Starter Kit/CEOS checks, desktop/mobile visual review and fresh Web High review pass, with no unresolved in-scope defects",
+  "mutationBoundary": "May modify only scoped UI/runtime/test/evidence files in this clean worktree; preserve authored story, approved CG assets and unrelated local worktree; no secrets, publication, release packaging, force-push or merge"
+}

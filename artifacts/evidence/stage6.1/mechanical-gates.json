@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "checks": {
+    "npm test": {"status": "PASS", "tests": 41, "failures": 0},
+    "npm run narrative:fixtures": {"status": "PASS", "samples": 23},
+    "npm run narrative:validate": {"status": "PASS", "errors": 0, "warnings": 3},
+    "npm run yandex:sdk:validate": {"status": "PASS", "blockers": 0},
+    "npm run starter-kit:self-test": {
+      "status": "FAIL",
+      "reason": "target status is modified; authoritative numbered registry and Console registry changed after snapshot review"
+    },
+    "npm run starter-kit:status": {
+      "status": "FAIL",
+      "targetStatus": "modified",
+      "idempotencyStatus": "blocked",
+      "unresolvedConflicts": [],
+      "productRuntimeOwnershipViolations": []
+    },
+    "ceos verify --mode verification": {
+      "status": "FAIL",
+      "requiredGate": "starter_kit_self_test",
+      "failureType": "TEST_FAILURE"
+    }
+  },
+  "verdict": "BLOCKED_STARTER_KIT_SNAPSHOT_DRIFT",
+  "scopeNote": "UI/runtime evidence is separate and passes; this artifact records the required project-level gate blocker."
+}

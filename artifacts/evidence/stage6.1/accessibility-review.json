@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "checks": {
+    "dialogRoleAndModal": "PASS; one role=dialog with aria-modal=true",
+    "navigationLabels": "PASS; Back and Menu have aria-labels",
+    "menuCloseLabel": "PASS",
+    "choiceGroupLabel": "PASS; role=group with aria-label",
+    "orientationStatus": "PASS; role=status",
+    "keyboardFocusRule": "PASS; focus-visible outline remains in stylesheet",
+    "reducedMotion": "PASS; prefers-reduced-motion rule disables animation and transitions"
+  },
+  "verdict": "PASS_BOUNDED_ACCESSIBILITY_REVIEW",
+  "limitations": ["No axe or screen-reader run was available in this bounded browser slice; this is a structural/manual contract review."]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 3,
+  "stage": "EVIDENCE_COLLECTED",
+  "at": "2026-10-13T19:32:35.554Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "defectCount": 0
+  },
+  "source": {
+    "available": true,
+    "head": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "clean": false,
+    "worktreeSha256": "d647f3acb21c317e62de7fca257dd41301ce382227857d23f0406fd98ada5cd7"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage6.1/browser-runtime-qa.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\browser-runtime-qa.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/browser-runtime-qa.json",
+      "type": "file",
+      "sha256": "1a308be58ce9d3d3e5616b04c5fc66040d85ee73d81a702c4242a0adeeaf419d",
+      "size": 3483
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/mobile-ux-review.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\mobile-ux-review.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/mobile-ux-review.json",
+      "type": "file",
+      "sha256": "e5039f4458bccd643e83c786c2da7dc4e2a1468bc0caa60794246c24f47c831a",
+      "size": 810
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/accessibility-review.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\accessibility-review.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/accessibility-review.json",
+      "type": "file",
+      "sha256": "2dcdcfa843de9252ac8c42f52c7f09771fb5eef1be075c40081693747381e0e7",
+      "size": 736
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/game-feel-review.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\game-feel-review.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/game-feel-review.json",
+      "type": "file",
+      "sha256": "bafda3f131b4769f8a1f83c8aa9f954097a828ff73de3febe4221f33f68c8ce5",
+      "size": 677
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/performance-budget.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\performance-budget.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/performance-budget.json",
+      "type": "file",
+      "sha256": "4f123a4ff279ad81d497ee228ab230d7076101bb03e35d33be3dcf930975b255",
+      "size": 772
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-analysis-current.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+      "type": "file",
+      "sha256": "dc40ff85052969ca45d925c0ccb7f4c0cb96703d6d84c06eb9f839b1210a2540",
+      "size": 2191
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-midpoint.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+      "type": "file",
+      "sha256": "d4070df7340156c6844d44901a6e3f4a758011a1722db3498077fcc12ed4675f",
+      "size": 2064
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-acceptance.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+      "type": "file",
+      "sha256": "dd76af1a0698c7bf14b1764db6ddd57b733b1ac639437a3bf01b4be95c93dc57",
+      "size": 2826
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.13",
+  "runId": "2026-10-13T19-31-21-483Z-audit-repair-loop-30435e",
+  "pipeline": "audit-repair-loop",
+  "artOutputGateRequired": false,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\.ceos-runs\\2026-10-13T19-31-21-483Z-audit-repair-loop-30435e",
+  "createdAt": "2026-10-13T19:31:21.488Z",
+  "updatedAt": "2026-10-13T19:33:47.139Z",
+  "completedAt": "2026-10-13T19:33:47.139Z",
+  "cycle": 1,
+  "maxCycles": 2,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "audit-repair-loop",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "VERIFIED",
+    "reason": "UI/runtime verification passes, but required Starter Kit/CEOS mechanical gate is red due snapshot drift outside scoped Stage 6.1 UI changes."
+  },
+  "checkpointCount": 7,
+  "scopeSha256": "7bfb0beb9fbe3fbb8558cf0b7b6e93f8248bb8c4bcfa42e2866a28c0caa1af24",
+  "capabilitiesSha256": "9f222d74f97aff0b505217e69bd183f749d8aa691b4f5351fbe49938378de71b",
+  "sourceAtStart": {
+    "available": true,
+    "head": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "clean": false,
+    "worktreeSha256": "1960a225de3062c415ecbaab466d5a18a12932886e72a6aa05056fe0832297ac"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_reasoner_web"
+    ],
+    "webReviews": [
+      {
+        "schemaVersion": 1,
+        "kind": "visual-qa",
+        "phase": "analysis",
+        "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+        "agent": "ceos_reasoner_web",
+        "reviewTraceId": "stage6.1-analysis-01a136bd",
+        "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+        "evidenceArtifact": {
+          "input": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-analysis-current.json",
+          "projectRelativePath": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+          "type": "file",
+          "sha256": "dc40ff85052969ca45d925c0ccb7f4c0cb96703d6d84c06eb9f839b1210a2540",
+          "size": 2191
+        },
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "framesReviewed": 3,
+        "reviewedItems": [
+          "desktop_intro",
+          "desktop_menu",
+          "mobile_choice"
+        ],
+        "evidenceRefs": [
+          "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+          "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+          "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+        ],
+        "receivedEvidenceRefs": [
+          "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+          "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+          "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+        ],
+        "visualEvidence": [
+          {
+            "state": "desktop_intro",
+            "viewport": "1920x900",
+            "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+            "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4",
+            "bytes": 1151231,
+            "pixelDimensions": "1920x900",
+            "verdict": "PASS",
+            "observation": "Title, hint and background architecture are readable; no underlay leakage."
+          },
+          {
+            "state": "desktop_menu",
+            "viewport": "1920x900",
+            "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+            "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd",
+            "bytes": 197983,
+            "pixelDimensions": "1920x900",
+            "verdict": "PASS"
+          },
+          {
+            "state": "mobile_choice",
+            "viewport": "390x844",
+            "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png",
+            "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8",
+            "bytes": 475881,
+            "pixelDimensions": "390x844",
+            "verdict": "PASS"
+          }
+        ],
+        "decision": "PASS_STAGE6_1_CURRENT_VISUAL_ANALYSIS",
+        "findings": [],
+        "unresolved": [],
+        "limitations": [
+          "Analysis is pixel-bound to the three supplied current-HEAD PNGs; runtime interaction, other viewports and undelivered frames were not independently reviewed by Web High."
+        ],
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-13T19:32:07.087Z"
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "visual-qa",
+        "phase": "midpoint",
+        "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+        "agent": "ceos_reasoner_web",
+        "reviewTraceId": "stage6.1-midpoint-01a136bd",
+        "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+        "evidenceArtifact": {
+          "input": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-midpoint.json",
+          "projectRelativePath": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+          "type": "file",
+          "sha256": "d4070df7340156c6844d44901a6e3f4a758011a1722db3498077fcc12ed4675f",
+          "size": 2064
+        },
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "framesReviewed": 3,
+        "reviewedItems": [
+          "desktop_intro",
+          "desktop_menu",
+          "mobile_choice"
+        ],
+        "evidenceRefs": [
+          "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+          "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+          "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+        ],
+        "receivedEvidenceRefs": [
+          "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+          "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+          "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+        ],
+        "visualEvidence": [
+          {
+            "state": "desktop_intro",
+            "viewport": "1920x900",
+            "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+            "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4",
+            "bytes": 1151231,
+            "pixelDimensions": "1920x900",
+            "verdict": "PASS"
+          },
+          {
+            "state": "desktop_menu",
+            "viewport": "1920x900",
+            "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+            "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd",
+            "bytes": 197983,
+            "pixelDimensions": "1920x900",
+            "verdict": "PASS"
+          },
+          {
+            "state": "mobile_choice",
+            "viewport": "390x844",
+            "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png",
+            "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8",
+            "bytes": 475881,
+            "pixelDimensions": "390x844",
+            "verdict": "PASS"
+          }
+        ],
+        "decision": "PASS_STAGE6_1_MIDPOINT_VISUAL",
+        "findings": [],
+        "unresolved": [],
+        "limitations": [
+          "Review is pixel-bound to the three supplied current-HEAD PNGs; interactive behavior and undelivered frames were not independently reviewed by Web High."
+        ],
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-13T19:32:17.853Z"
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "visual-qa",
+        "phase": "acceptance",
+        "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+        "agent": "ceos_reasoner_web",
+        "reviewTraceId": "stage6.1-acceptance-01a136bd",
+        "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+        "evidenceArtifact": {
+          "input": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-acceptance.json",
+          "projectRelativePath": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+          "type": "file",
+          "sha256": "dd76af1a0698c7bf14b1764db6ddd57b733b1ac639437a3bf01b4be95c93dc57",
+          "size": 2826
+        },
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "framesReviewed": 3,
+        "reviewedItems": [
+          "desktop_intro",
+          "desktop_menu",
+          "mobile_choice"
+        ],
+        "evidenceRefs": [
+          "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+          "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+          "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+        ],
+        "receivedEvidenceRefs": [
+          "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+          "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+          "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+        ],
+        "visualEvidence": [
+          {
+            "state": "desktop_intro",
+            "viewport": "1920x900",
+            "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+            "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4",
+            "bytes": 1151231,
+            "pixelDimensions": "1920x900",
+            "verdict": "PASS"
+          },
+          {
+            "state": "desktop_menu",
+            "viewport": "1920x900",
+            "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+            "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd",
+            "bytes": 197983,
+            "pixelDimensions": "1920x900",
+            "verdict": "PASS"
+          },
+          {
+            "state": "mobile_choice",
+            "viewport": "390x844",
+            "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png",
+            "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8",
+            "bytes": 475881,
+            "pixelDimensions": "390x844",
+            "verdict": "PASS"
+          }
+        ],
+        "decision": "PASS_STAGE6_1_VISUAL_ACCEPTANCE",
+        "resolvedFindings": [
+          {
+            "id": "TITLE_UNDERLAY_LEAK",
+            "evidenceRef": "output/playwright/stage6-1-final-desktop-intro-1920x900.png"
+          },
+          {
+            "id": "MENU_SECONDARY_BUTTON_STYLE",
+            "evidenceRef": "output/playwright/stage6-1-final-desktop-menu-1920x900.png"
+          },
+          {
+            "id": "fresh current-HEAD title and desktop dialogue screenshots required after repair",
+            "evidenceRef": "output/playwright/stage6-1-final-desktop-intro-1920x900.png"
+          },
+          {
+            "id": "other declared viewports and input lifecycle were not part of this Web visual slice",
+            "evidenceRef": "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+          }
+        ],
+        "findings": [],
+        "unresolved": [],
+        "limitations": [
+          "Review is pixel-bound to the three supplied current-HEAD PNGs; interactive behavior and undelivered frames were not independently reviewed by Web High."
+        ],
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-13T19:32:25.026Z"
+      }
+    ],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [
+          "ceos_reasoner_web"
+        ],
+        "webReviews": [
+          {
+            "schemaVersion": 1,
+            "kind": "visual-qa",
+            "phase": "analysis",
+            "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+            "agent": "ceos_reasoner_web",
+            "reviewTraceId": "stage6.1-analysis-01a136bd",
+            "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+            "evidenceArtifact": {
+              "input": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-analysis-current.json",
+              "projectRelativePath": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+              "type": "file",
+              "sha256": "dc40ff85052969ca45d925c0ccb7f4c0cb96703d6d84c06eb9f839b1210a2540",
+              "size": 2191
+            },
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "framesReviewed": 3,
+            "reviewedItems": [
+              "desktop_intro",
+              "desktop_menu",
+              "mobile_choice"
+            ],
+            "evidenceRefs": [
+              "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+              "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+              "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+            ],
+            "receivedEvidenceRefs": [
+              "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+              "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+              "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+            ],
+            "visualEvidence": [
+              {
+                "state": "desktop_intro",
+                "viewport": "1920x900",
+                "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+                "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4",
+                "bytes": 1151231,
+                "pixelDimensions": "1920x900",
+                "verdict": "PASS",
+                "observation": "Title, hint and background architecture are readable; no underlay leakage."
+              },
+              {
+                "state": "desktop_menu",
+                "viewport": "1920x900",
+                "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+                "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd",
+                "bytes": 197983,
+                "pixelDimensions": "1920x900",
+                "verdict": "PASS"
+              },
+              {
+                "state": "mobile_choice",
+                "viewport": "390x844",
+                "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png",
+                "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8",
+                "bytes": 475881,
+                "pixelDimensions": "390x844",
+                "verdict": "PASS"
+              }
+            ],
+            "decision": "PASS_STAGE6_1_CURRENT_VISUAL_ANALYSIS",
+            "findings": [],
+            "unresolved": [],
+            "limitations": [
+              "Analysis is pixel-bound to the three supplied current-HEAD PNGs; runtime interaction, other viewports and undelivered frames were not independently reviewed by Web High."
+            ],
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-13T19:32:07.087Z"
+          },
+          {
+            "schemaVersion": 1,
+            "kind": "visual-qa",
+            "phase": "midpoint",
+            "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+            "agent": "ceos_reasoner_web",
+            "reviewTraceId": "stage6.1-midpoint-01a136bd",
+            "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+            "evidenceArtifact": {
+              "input": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-midpoint.json",
+              "projectRelativePath": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+              "type": "file",
+              "sha256": "d4070df7340156c6844d44901a6e3f4a758011a1722db3498077fcc12ed4675f",
+              "size": 2064
+            },
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "framesReviewed": 3,
+            "reviewedItems": [
+              "desktop_intro",
+              "desktop_menu",
+              "mobile_choice"
+            ],
+            "evidenceRefs": [
+              "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+              "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+              "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+            ],
+            "receivedEvidenceRefs": [
+              "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+              "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+              "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+            ],
+            "visualEvidence": [
+              {
+                "state": "desktop_intro",
+                "viewport": "1920x900",
+                "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+                "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4",
+                "bytes": 1151231,
+                "pixelDimensions": "1920x900",
+                "verdict": "PASS"
+              },
+              {
+                "state": "desktop_menu",
+                "viewport": "1920x900",
+                "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+                "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd",
+                "bytes": 197983,
+                "pixelDimensions": "1920x900",
+                "verdict": "PASS"
+              },
+              {
+                "state": "mobile_choice",
+                "viewport": "390x844",
+                "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png",
+                "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8",
+                "bytes": 475881,
+                "pixelDimensions": "390x844",
+                "verdict": "PASS"
+              }
+            ],
+            "decision": "PASS_STAGE6_1_MIDPOINT_VISUAL",
+            "findings": [],
+            "unresolved": [],
+            "limitations": [
+              "Review is pixel-bound to the three supplied current-HEAD PNGs; interactive behavior and undelivered frames were not independently reviewed by Web High."
+            ],
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-13T19:32:17.853Z"
+          },
+          {
+            "schemaVersion": 1,
+            "kind": "visual-qa",
+            "phase": "acceptance",
+            "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+            "agent": "ceos_reasoner_web",
+            "reviewTraceId": "stage6.1-acceptance-01a136bd",
+            "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+            "evidenceArtifact": {
+              "input": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-acceptance.json",
+              "projectRelativePath": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+              "type": "file",
+              "sha256": "dd76af1a0698c7bf14b1764db6ddd57b733b1ac639437a3bf01b4be95c93dc57",
+              "size": 2826
+            },
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "framesReviewed": 3,
+            "reviewedItems": [
+              "desktop_intro",
+              "desktop_menu",
+              "mobile_choice"
+            ],
+            "evidenceRefs": [
+              "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+              "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+              "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+            ],
+            "receivedEvidenceRefs": [
+              "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+              "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+              "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+            ],
+            "visualEvidence": [
+              {
+                "state": "desktop_intro",
+                "viewport": "1920x900",
+                "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+                "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4",
+                "bytes": 1151231,
+                "pixelDimensions": "1920x900",
+                "verdict": "PASS"
+              },
+              {
+                "state": "desktop_menu",
+                "viewport": "1920x900",
+                "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+                "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd",
+                "bytes": 197983,
+                "pixelDimensions": "1920x900",
+                "verdict": "PASS"
+              },
+              {
+                "state": "mobile_choice",
+                "viewport": "390x844",
+                "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png",
+                "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8",
+                "bytes": 475881,
+                "pixelDimensions": "390x844",
+                "verdict": "PASS"
+              }
+            ],
+            "decision": "PASS_STAGE6_1_VISUAL_ACCEPTANCE",
+            "resolvedFindings": [
+              {
+                "id": "TITLE_UNDERLAY_LEAK",
+                "evidenceRef": "output/playwright/stage6-1-final-desktop-intro-1920x900.png"
+              },
+              {
+                "id": "MENU_SECONDARY_BUTTON_STYLE",
+                "evidenceRef": "output/playwright/stage6-1-final-desktop-menu-1920x900.png"
+              },
+              {
+                "id": "fresh current-HEAD title and desktop dialogue screenshots required after repair",
+                "evidenceRef": "output/playwright/stage6-1-final-desktop-intro-1920x900.png"
+              },
+              {
+                "id": "other declared viewports and input lifecycle were not part of this Web visual slice",
+                "evidenceRef": "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+              }
+            ],
+            "findings": [],
+            "unresolved": [],
+            "limitations": [
+              "Review is pixel-bound to the three supplied current-HEAD PNGs; interactive behavior and undelivered frames were not independently reviewed by Web High."
+            ],
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-13T19:32:25.026Z"
+          }
+        ],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  },
+  "lastDefectCount": 0
+}

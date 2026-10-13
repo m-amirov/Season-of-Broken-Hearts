@@ -1,0 +1,55 @@
+{
+  "index": 4,
+  "stage": "AUDITED",
+  "at": "2026-10-13T19:32:44.180Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "webPreflight": "READY",
+    "webAgentsUsed": [
+      "ceos_reasoner_web"
+    ],
+    "nativeFallbackUsed": false,
+    "webPhases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "defectCount": 0
+  },
+  "source": {
+    "available": true,
+    "head": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "clean": false,
+    "worktreeSha256": "a990b13660270c6fda7504382ae886efd7a5540a2c6c87cd8a870dbda9f82ce0"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-analysis-current.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+      "type": "file",
+      "sha256": "dc40ff85052969ca45d925c0ccb7f4c0cb96703d6d84c06eb9f839b1210a2540",
+      "size": 2191
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-midpoint.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-midpoint.json",
+      "type": "file",
+      "sha256": "d4070df7340156c6844d44901a6e3f4a758011a1722db3498077fcc12ed4675f",
+      "size": 2064
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-acceptance.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+      "type": "file",
+      "sha256": "dd76af1a0698c7bf14b1764db6ddd57b733b1ac639437a3bf01b4be95c93dc57",
+      "size": 2826
+    }
+  ]
+}

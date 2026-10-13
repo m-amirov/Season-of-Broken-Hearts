@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "target": "Stage 6.1 current EP1 UI integration, responsive runtime and visual acceptance",
+  "inScope": ["title slide isolation", "menu action styling", "desktop/mobile responsive UI", "input and save lifecycle regression"],
+  "outOfScope": ["new CG generation", "story or dialogue edits", "EP2-EP10", "release packaging", "publication"],
+  "acceptanceContract": "Current-HEAD browser pixels and project-native checks pass with no unresolved in-scope UI defect.",
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": ["ceos_reasoner_web"],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "analysisReview": "artifacts/evidence/stage6.1/web-review-analysis.json"
+  },
+  "confirmedDefects": [
+    {
+      "id": "TITLE_UNDERLAY_LEAK",
+      "severity": "P2",
+      "evidence": "web-review-analysis.json desktop_intro frame",
+      "violatedExpectation": "Episode title slide must not show dialogue or gameplay controls.",
+      "requiredOutcome": "Hide reader topbar and dialogue while intro is active.",
+      "invariants": ["preserve scene art", "preserve title timer and skip behavior", "preserve narrative text and save state"],
+      "acceptance": "Settled title screenshot contains only title slide content and no visible HUD/dialogue."
+    }
+  ],
+  "nonGoals": ["CG replacement", "font CDN or dependency changes", "story changes"],
+  "verificationRequired": ["focused unit tests", "fresh Playwright screenshots", "mobile/desktop edge and scroll metrics", "fresh Web acceptance review"],
+  "stopConditions": ["missing current-HEAD pixels", "runtime/browser unavailable", "any story or asset-scope expansion"]
+}

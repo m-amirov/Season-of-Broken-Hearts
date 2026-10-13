@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "visual-qa",
+  "phase": "analysis",
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "agent": "ceos_reasoner_web",
+  "reviewTraceId": "stage6.1-analysis-01a136bd",
+  "taskId": "01a136bd-5e53-76d2-933f-ae9f81575553",
+  "evidenceArtifact": "artifacts/evidence/stage6.1/web-review-analysis-current.json",
+  "status": "PASS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "framesReviewed": 3,
+  "reviewedItems": ["desktop_intro", "desktop_menu", "mobile_choice"],
+  "evidenceRefs": [
+    "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+    "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+    "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+  ],
+  "receivedEvidenceRefs": [
+    "output/playwright/stage6-1-final-desktop-intro-1920x900.png",
+    "output/playwright/stage6-1-final-desktop-menu-1920x900.png",
+    "output/playwright/stage6-1-final-mobile-choice-390x844.png"
+  ],
+  "visualEvidence": [
+    {"state": "desktop_intro", "viewport": "1920x900", "path": "output/playwright/stage6-1-final-desktop-intro-1920x900.png", "sha256": "90480d57b4695d9723c106e7e9137260f6fc2e178197eda8b6dbf1a93838aaf4", "bytes": 1151231, "pixelDimensions": "1920x900", "verdict": "PASS", "observation": "Title, hint and background architecture are readable; no underlay leakage."},
+    {"state": "desktop_menu", "viewport": "1920x900", "path": "output/playwright/stage6-1-final-desktop-menu-1920x900.png", "sha256": "f1bdfeff6ed809e6f3bdb43fc7f62a6b6d419d3a6cc6d8a4116e8a9272a968fd", "bytes": 197983, "pixelDimensions": "1920x900", "verdict": "PASS"},
+    {"state": "mobile_choice", "viewport": "390x844", "path": "output/playwright/stage6-1-final-mobile-choice-390x844.png", "sha256": "7262d70317d2bb57a8a7557c71cfc23fc2230ffed9f7c7faf0f8b730a57b96b8", "bytes": 475881, "pixelDimensions": "390x844", "verdict": "PASS"}
+  ],
+  "decision": "PASS_STAGE6_1_CURRENT_VISUAL_ANALYSIS",
+  "findings": [],
+  "unresolved": [],
+  "limitations": ["Analysis is pixel-bound to the three supplied current-HEAD PNGs; runtime interaction, other viewports and undelivered frames were not independently reviewed by Web High."]
+}

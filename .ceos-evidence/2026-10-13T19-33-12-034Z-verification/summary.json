@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "ceosVersion": "0.5.13",
+  "mode": "verification",
+  "releaseBaselineRef": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main",
+  "manifestFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\.codex-os\\project.yml",
+  "startedAt": "2026-10-13T19:33:12.228Z",
+  "completedAt": "2026-10-13T19:33:13.222Z",
+  "host": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v22.21.0",
+    "hostname": "TOPSKIY-PC"
+  },
+  "verdict": "FAIL",
+  "counts": {
+    "PASS": 0,
+    "FAIL": 1,
+    "CONFIGURATION_ERROR": 0,
+    "BLOCKED": 0,
+    "SKIP": 0
+  },
+  "gates": [
+    {
+      "id": "starter_kit_self_test",
+      "status": "FAIL",
+      "required": true,
+      "risk": "R0",
+      "exitCode": 1,
+      "failureType": "TEST_FAILURE"
+    }
+  ]
+}

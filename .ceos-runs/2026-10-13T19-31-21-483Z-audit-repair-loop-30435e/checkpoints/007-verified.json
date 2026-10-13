@@ -1,0 +1,57 @@
+{
+  "index": 7,
+  "stage": "VERIFIED",
+  "at": "2026-10-13T19:33:47.138Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "UI/runtime verification passes, but required Starter Kit/CEOS mechanical gate is red due snapshot drift outside scoped Stage 6.1 UI changes.",
+  "metadata": {
+    "verificationStatus": "BLOCKED",
+    "blockingGate": "starter_kit_self_test",
+    "blockingReason": "Starter Kit target modified and Yandex snapshot alignment drift; ceos verify required gate failed",
+    "uiRuntimeEvidence": "PASS",
+    "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "defectCount": 1
+  },
+  "source": {
+    "available": true,
+    "head": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+    "clean": false,
+    "worktreeSha256": "8d1348e326ace5cc6e1af586743ecaa83d0219eab74364a7828c464bb25ef5a3"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage6.1/mechanical-gates.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\mechanical-gates.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/mechanical-gates.json",
+      "type": "file",
+      "sha256": "57214f7f2f1c4226dc78195efd8fdc00390e0b704703d4a198a3d809010697a7",
+      "size": 1135
+    },
+    {
+      "input": ".ceos-evidence/2026-10-13T19-33-12-034Z-verification/summary.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\.ceos-evidence\\2026-10-13T19-33-12-034Z-verification\\summary.json",
+      "projectRelativePath": ".ceos-evidence/2026-10-13T19-33-12-034Z-verification/summary.json",
+      "type": "file",
+      "sha256": "0f01c8e434b1791e5001deac4c50bf97876825bb1908baca0e564bbbdac6e7ee",
+      "size": 901
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/browser-runtime-qa.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\browser-runtime-qa.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/browser-runtime-qa.json",
+      "type": "file",
+      "sha256": "1a308be58ce9d3d3e5616b04c5fc66040d85ee73d81a702c4242a0adeeaf419d",
+      "size": 3483
+    },
+    {
+      "input": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage6-1-origin-main\\artifacts\\evidence\\stage6.1\\web-review-acceptance.json",
+      "projectRelativePath": "artifacts/evidence/stage6.1/web-review-acceptance.json",
+      "type": "file",
+      "sha256": "dd76af1a0698c7bf14b1764db6ddd57b733b1ac639437a3bf01b4be95c93dc57",
+      "size": 2826
+    }
+  ]
+}

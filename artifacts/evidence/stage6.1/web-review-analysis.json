@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "kind": "visual-qa",
+  "phase": "analysis",
+  "sourceHead": "d85412208af281ccce9bbed6c7906309c2bee4d2",
+  "agent": "ceos_reasoner_web",
+  "reviewTraceId": "stage6.1-analysis-01a13689",
+  "taskId": "01a13689-4428-73b0-aba7-27e481955b65",
+  "evidenceArtifact": "artifacts/evidence/stage6.1/web-review-analysis.json",
+  "status": "FINDINGS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "framesReviewed": 3,
+  "reviewedItems": ["desktop_intro", "desktop_menu", "mobile_choice"],
+  "evidenceRefs": [
+    "output/playwright/stage6-1-desktop-intro-settled-1920x900.png",
+    "output/playwright/stage6-1-desktop-menu-1920x900.png",
+    "output/playwright/stage6-1-mobile-choice-390x844.png"
+  ],
+  "receivedEvidenceRefs": [
+    "output/playwright/stage6-1-desktop-intro-settled-1920x900.png",
+    "output/playwright/stage6-1-desktop-menu-1920x900.png",
+    "output/playwright/stage6-1-mobile-choice-390x844.png"
+  ],
+  "visualEvidence": [
+    {
+      "state": "desktop_intro",
+      "viewport": "1920x900",
+      "path": "output/playwright/stage6-1-desktop-intro-settled-1920x900.png",
+      "sha256": "76044fd8d3fe10d27f5d6a9c027af2984226e6a6c246bb68d58c808d91a21b1e",
+      "bytes": 573669,
+      "pixelDimensions": "1920x900",
+      "verdict": "REWORK",
+      "observation": "Title is centered and readable, but dialogue, duplicate tutorial hint and navigation chrome remain visible underneath."
+    },
+    {
+      "state": "desktop_menu",
+      "viewport": "1920x900",
+      "path": "output/playwright/stage6-1-desktop-menu-1920x900.png",
+      "sha256": "c234e75ebc84529df5e36dd032a37fcd239f8d9a54b5509cbbe2c1fa9fbb1c39",
+      "bytes": 179165,
+      "pixelDimensions": "1920x900",
+      "verdict": "PASS_WITH_PREFERENCE",
+      "observation": "Centered menu is readable and contained; secondary buttons look utilitarian gray."
+    },
+    {
+      "state": "mobile_choice",
+      "viewport": "390x844",
+      "path": "output/playwright/stage6-1-mobile-choice-390x844.png",
+      "sha256": "357cc7e7be8bba7820aad631e6452bbd4999d78151512800058a25bd6d113c5d",
+      "bytes": 2927927,
+      "pixelDimensions": "1170x2532",
+      "verdict": "PASS",
+      "observation": "Faces, Russian text and both choice controls are readable without overlap or clipping."
+    }
+  ],
+  "actualPixelsReceived": true,
+  "decision": "MOBILE_AND_DESKTOP_UI_ADVISORY: PARTIAL. The supplied mobile choice and desktop menu are acceptable; the title slide requires repair because underlying reader UI remains visible.",
+  "findings": [
+    {"id": "TITLE_UNDERLAY_LEAK", "detail": "Dialogue, navigation chrome and duplicate tutorial hint remain visible beneath the title slide."},
+    {"id": "MENU_SECONDARY_BUTTON_STYLE", "detail": "Secondary menu buttons use a utilitarian gray browser-default appearance; this is a polish preference, not a blocking visual defect."}
+  ],
+  "unresolved": [
+    "fresh current-HEAD title and desktop dialogue screenshots required after repair",
+    "other declared viewports and input lifecycle were not part of this Web visual slice"
+  ],
+  "limitations": ["advisory screenshot review only; no narrative or production-art acceptance"],
+  "repairContract": [
+    "hide the reader topbar and dialogue layer while the title slide is active",
+    "preserve the current mobile choice composition",
+    "re-capture settled title and unobstructed desktop dialogue frames after repair"
+  ],
+  "verdict": "PARTIAL",
+  "acceptance": "REWORK_REQUIRED"
+}

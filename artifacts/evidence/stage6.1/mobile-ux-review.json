@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "ae72d1da38ef4e2d8a979d6d89c9703c57b524aa",
+  "viewports": ["360x640", "390x844", "430x932"],
+  "portrait": {"horizontalOverflow": "PASS", "choicesVisible": "PASS", "safeAreaAwareCSS": "PASS", "dialogueReadable": "PASS"},
+  "landscape": {"viewport": "844x390", "orientationOverlay": "PASS", "returnToPortrait": "PASS"},
+  "screenshots": ["output/playwright/stage6-1-final-mobile-intro-390x844.png", "output/playwright/stage6-1-final-mobile-long-390x844.png", "output/playwright/stage6-1-final-mobile-choice-390x844.png", "output/playwright/stage6-1-final-mobile-landscape-844x390.png"],
+  "verdict": "PASS_BOUNDED_MOBILE_UX",
+  "limitations": ["Physical notch/cutout hardware was not available; safe-area behavior is verified from CSS and emulated browser geometry."]
+}
