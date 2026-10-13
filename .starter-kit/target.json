@@ -1,19 +1,21 @@
 {
   "schemaVersion": 1,
-  "profileName": "new-project",
-  "projectType": "new",
+  "profileName": "mature-yandex-phaser",
+  "projectType": "mature",
   "platform": "yandex-games",
-  "engine": "browser",
-  "skillRoot": ".codex/skills",
+  "engine": "phaser",
+  "skillRoot": ".agents/skills",
   "codexConfigRoot": ".codex",
   "allowSecondSkillRoot": false,
-  "applySeeds": true,
+  "applySeeds": false,
   "ownershipOverrides": {
-    "index.html": "new-project-seed",
+    "index.html": "project-owned",
     "AGENTS.md": "semantic-merge",
-    "PROJECT_RULES.md": "new-project-seed",
-    "game-spec.yaml": "new-project-seed",
-    "src/**": "new-project-seed",
-    "public/**": "new-project-seed"
+    "package.json": "semantic-merge",
+    "package-lock.json": "project-owned",
+    "project.profile.yaml": "project-owned",
+    "game-spec.yaml": "project-owned",
+    "src/**": "project-owned",
+    "public/**": "project-owned"
   }
 }

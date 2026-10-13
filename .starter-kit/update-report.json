@@ -1,97 +1,97 @@
 {
   "schemaVersion": 2,
   "updaterSchemaVersion": 2,
-  "updaterVersion": "0.5.12",
+  "updaterVersion": "0.5.13",
   "mode": "update",
   "dryRun": false,
   "fromVersion": "0.5.12",
-  "toVersion": "0.5.12",
-  "sourceManifestHash": "a8b9e640a31602534893529ee96ebc2afb718978554703d7ed753f31f36c6904",
-  "targetProfile": "new-project",
-  "projectType": "new",
-  "skillRoot": ".codex/skills",
+  "toVersion": "0.5.13",
+  "sourceManifestHash": "2585ad7dae7c10576d1d1c7159dace4638e2dad115acfd3c872bd809a7ee1817",
+  "targetProfile": "mature-yandex-phaser",
+  "projectType": "mature",
+  "skillRoot": ".agents/skills",
   "created": [],
   "updated": [],
   "preserved": [
     {
       "logicalId": "skill:asset-provenance-and-rights:SKILL.md",
-      "target": ".codex/skills/asset-provenance-and-rights/SKILL.md"
+      "target": ".agents/skills/asset-provenance-and-rights/SKILL.md"
     },
     {
       "logicalId": "skill:game-accessibility:SKILL.md",
-      "target": ".codex/skills/game-accessibility/SKILL.md"
+      "target": ".agents/skills/game-accessibility/SKILL.md"
     },
     {
       "logicalId": "skill:game-audio-quality:ORIGIN.md",
-      "target": ".codex/skills/game-audio-quality/ORIGIN.md"
+      "target": ".agents/skills/game-audio-quality/ORIGIN.md"
     },
     {
       "logicalId": "skill:game-audio-quality:SKILL.md",
-      "target": ".codex/skills/game-audio-quality/SKILL.md"
+      "target": ".agents/skills/game-audio-quality/SKILL.md"
     },
     {
       "logicalId": "skill:game-feel-polish:SKILL.md",
-      "target": ".codex/skills/game-feel-polish/SKILL.md"
+      "target": ".agents/skills/game-feel-polish/SKILL.md"
     },
     {
       "logicalId": "skill:game-performance-budget:SKILL.md",
-      "target": ".codex/skills/game-performance-budget/SKILL.md"
+      "target": ".agents/skills/game-performance-budget/SKILL.md"
     },
     {
       "logicalId": "skill:implementation-cycle:SKILL.md",
-      "target": ".codex/skills/implementation-cycle/SKILL.md"
+      "target": ".agents/skills/implementation-cycle/SKILL.md"
     },
     {
       "logicalId": "skill:codex-engineering-system:SKILL.md",
-      "target": ".codex/skills/codex-engineering-system/SKILL.md"
+      "target": ".agents/skills/codex-engineering-system/SKILL.md"
     },
     {
       "logicalId": "skill:project-termination:SKILL.md",
-      "target": ".codex/skills/project-termination/SKILL.md"
+      "target": ".agents/skills/project-termination/SKILL.md"
     },
     {
       "logicalId": "skill:level-design-quality:SKILL.md",
-      "target": ".codex/skills/level-design-quality/SKILL.md"
+      "target": ".agents/skills/level-design-quality/SKILL.md"
     },
     {
       "logicalId": "skill:mobile-game-ux:ORIGIN.md",
-      "target": ".codex/skills/mobile-game-ux/ORIGIN.md"
+      "target": ".agents/skills/mobile-game-ux/ORIGIN.md"
     },
     {
       "logicalId": "skill:mobile-game-ux:SKILL.md",
-      "target": ".codex/skills/mobile-game-ux/SKILL.md"
+      "target": ".agents/skills/mobile-game-ux/SKILL.md"
     },
     {
       "logicalId": "skill:product-quality-review:ORIGIN.md",
-      "target": ".codex/skills/product-quality-review/ORIGIN.md"
+      "target": ".agents/skills/product-quality-review/ORIGIN.md"
     },
     {
       "logicalId": "skill:product-quality-review:SKILL.md",
-      "target": ".codex/skills/product-quality-review/SKILL.md"
+      "target": ".agents/skills/product-quality-review/SKILL.md"
     },
     {
       "logicalId": "skill:release-audit:SKILL.md",
-      "target": ".codex/skills/release-audit/SKILL.md"
+      "target": ".agents/skills/release-audit/SKILL.md"
     },
     {
       "logicalId": "skill:visual-quality-gate:ORIGIN.md",
-      "target": ".codex/skills/visual-quality-gate/ORIGIN.md"
+      "target": ".agents/skills/visual-quality-gate/ORIGIN.md"
     },
     {
       "logicalId": "skill:visual-quality-gate:SKILL.md",
-      "target": ".codex/skills/visual-quality-gate/SKILL.md"
+      "target": ".agents/skills/visual-quality-gate/SKILL.md"
     },
     {
       "logicalId": "skill:web-game-playtest:ORIGIN.md",
-      "target": ".codex/skills/web-game-playtest/ORIGIN.md"
+      "target": ".agents/skills/web-game-playtest/ORIGIN.md"
     },
     {
       "logicalId": "skill:web-game-playtest:SKILL.md",
-      "target": ".codex/skills/web-game-playtest/SKILL.md"
+      "target": ".agents/skills/web-game-playtest/SKILL.md"
     },
     {
       "logicalId": "skill:yandex-release-validation:SKILL.md",
-      "target": ".codex/skills/yandex-release-validation/SKILL.md"
+      "target": ".agents/skills/yandex-release-validation/SKILL.md"
     },
     {
       "logicalId": "contract:AGENTS.md",
@@ -460,7 +460,14 @@
   ],
   "merged": [],
   "resolved": [],
-  "projectOwned": [],
+  "projectOwned": [
+    "index.html",
+    "package-lock.json",
+    "project.profile.yaml",
+    "game-spec.yaml",
+    "src/**",
+    "public/**"
+  ],
   "skippedSeeds": [
     "seed:index-html",
     "seed:game-spec",
