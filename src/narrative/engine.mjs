@@ -2,7 +2,7 @@ import { getLocalizedText } from './localization.mjs';
 import { deserializeSave, serializeSave } from './save.mjs';
 import { applyEffects, canEnter, createInitialState, getDialogueLines, validateGraph } from './state.mjs';
 
-const ENGINE_SCHEMA_VERSION = 2;
+const ENGINE_SCHEMA_VERSION = 3;
 
 export class NarrativeEngine {
   #graph;
@@ -10,6 +10,7 @@ export class NarrativeEngine {
   #cursor;
   #state;
   #history;
+  #readerProgress;
   #locked = false;
 
   constructor(graph, options = {}) {
@@ -20,6 +21,7 @@ export class NarrativeEngine {
     this.#cursor = { sceneId: graph.start, dialogueIndex: 0 };
     this.#state = createInitialState(graph);
     this.#history = [];
+    this.#readerProgress = { seenEpisodes: [], tutorialAdvances: 0 };
   }
 
   graph() {
@@ -40,6 +42,32 @@ export class NarrativeEngine {
 
   sceneTitle() {
     return getLocalizedText(this.currentScene().title, this.#locale);
+  }
+
+  episodeIntro() {
+    const episode = this.currentScene().episode ?? 1;
+    const opening = this.#graph.scenes.find(scene => (scene.episode ?? 1) === episode);
+    return { episode, title: getLocalizedText(opening?.title ?? this.currentScene().title, this.#locale) };
+  }
+
+  needsEpisodeIntro() {
+    return !this.#readerProgress.seenEpisodes.includes(this.episodeIntro().episode);
+  }
+
+  markEpisodeIntroSeen() {
+    const episode = this.episodeIntro().episode;
+    if (!this.#readerProgress.seenEpisodes.includes(episode)) {
+      this.#readerProgress.seenEpisodes.push(episode);
+      this.#readerProgress.seenEpisodes.sort((a, b) => a - b);
+    }
+  }
+
+  showTutorialHint() {
+    return this.#readerProgress.tutorialAdvances < 2;
+  }
+
+  #recordForwardProgress() {
+    this.#readerProgress.tutorialAdvances = Math.min(2, this.#readerProgress.tutorialAdvances + 1);
   }
 
   #dialogueLines(scene = this.currentScene(), locale = this.#locale) {
@@ -96,12 +124,14 @@ export class NarrativeEngine {
       if (this.#cursor.dialogueIndex < lastLine) {
         this.#recordSnapshot();
         this.#cursor.dialogueIndex += 1;
+        this.#recordForwardProgress();
         return { ok: true, type: 'dialogue' };
       }
       if (scene.choices) return { ok: false, reason: 'choice-required' };
       if (scene.ending) return { ok: false, reason: 'episode-complete' };
       this.#recordSnapshot();
       this.#cursor = { sceneId: scene.next, dialogueIndex: 0 };
+      this.#recordForwardProgress();
       return { ok: true, type: 'scene' };
     });
   }
@@ -113,6 +143,7 @@ export class NarrativeEngine {
       this.#recordSnapshot();
       this.#state = applyEffects(this.#state, choice.effects, this.#graph.stateSchema);
       this.#cursor = { sceneId: choice.to, dialogueIndex: 0 };
+      this.#recordForwardProgress();
       return { ok: true, type: 'choice', choiceId };
     });
   }
@@ -141,6 +172,7 @@ export class NarrativeEngine {
       this.#cursor = { sceneId: this.#graph.start, dialogueIndex: 0 };
       this.#state = createInitialState(this.#graph);
       this.#history = [];
+      this.#readerProgress = { seenEpisodes: [], tutorialAdvances: 0 };
       return true;
     });
   }
@@ -151,7 +183,8 @@ export class NarrativeEngine {
       locale: this.#locale,
       cursor: structuredClone(this.#cursor),
       state: structuredClone(this.#state),
-      history: structuredClone(this.#history)
+      history: structuredClone(this.#history),
+      readerProgress: structuredClone(this.#readerProgress)
     };
   }
 
@@ -166,6 +199,7 @@ export class NarrativeEngine {
     this.#cursor = restored.cursor;
     this.#state = restored.state;
     this.#history = restored.history;
+    this.#readerProgress = restored.readerProgress;
     return true;
   }
 }
