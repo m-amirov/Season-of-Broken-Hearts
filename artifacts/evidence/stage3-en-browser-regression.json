@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "browser-regression-en",
+  "testedSourceHead": "5590420c00e5780db974d12aeb018cb5e4994c81",
+  "status": "PASS",
+  "command": "npx --yes @playwright/cli run-code --filename tools/qa/ep1-en-browser-regression.js",
+  "locale": "en",
+  "branchScenes": [
+    "ep1_matteo_direct_response",
+    "ep1_elio_boundary_response",
+    "ep1_hotel_staff_response",
+    "ep1_leo_distance_response"
+  ],
+  "finalScene": "ep1_hook",
+  "finalLineCount": 5,
+  "completionText": "Episode Complete",
+  "completionDisabled": true,
+  "cursorStayedInEnglish": true,
+  "englishLines": [
+    "A folder waited in Nika's office that had not been there that morning. Its cover said only: 'Villa Serena — ten weeks.'",
+    "I have not agreed to stay until the end.",
+    "Inside was a crossed-out anniversary plan and a list of questions about her — about work, Leo, and how much she was prepared to endure.",
+    "Nika, do not open the last page.",
+    "The corridor lights went out. Summer had begun with a job; by night, Villa Serena had a question Nika could no longer answer for everyone. This time, she would not pretend she had failed to hear it."
+  ]
+}
