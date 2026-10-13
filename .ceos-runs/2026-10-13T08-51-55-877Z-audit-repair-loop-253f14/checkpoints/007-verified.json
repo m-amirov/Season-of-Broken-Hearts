@@ -1,0 +1,61 @@
+{
+  "index": 7,
+  "stage": "VERIFIED",
+  "at": "2026-10-13T08:58:01.075Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Scoped EP1 technical verification passed. Web midpoint gap is explicitly recorded as a bounded receipt reuse/native fallback; no Web High artistic PASS or Concept Proof PASS is claimed.",
+  "metadata": {
+    "verification": "PASS_SCOPED_TECHNICAL",
+    "webPreflight": "READY",
+    "webReviews": 3,
+    "nativeFallback": true,
+    "webHighAcceptance": "NOT_CLAIMED",
+    "narrative": "PASS_DECLARED_NARRATIVE_GRAPH_WITH_PENDING_PROMISES",
+    "conceptProof": "AWAITING_BLIND_PLAYTEST",
+    "artisticAcceptance": "NOT_EVALUATED",
+    "productionArt": "BLOCKED_ART_PRODUCTION",
+    "defectCount": 0
+  },
+  "source": {
+    "available": true,
+    "head": "5590420c00e5780db974d12aeb018cb5e4994c81",
+    "clean": false,
+    "worktreeSha256": "27a0e81a349c4ccc702eab6d30b57133798130df24e02b6c23eb587501e671a7"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage3-final-runtime-qa.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-final-runtime-qa.json",
+      "projectRelativePath": "artifacts/evidence/stage3-final-runtime-qa.json",
+      "type": "file",
+      "sha256": "7bba24dce63ca9b9258c7b58b79bfe81db8e44c00dad157cad2a9452bd18535d",
+      "size": 2866
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-midpoint-fallback.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-midpoint-fallback.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-midpoint-fallback.json",
+      "type": "file",
+      "sha256": "115c110bb5ef1d276561623dfe5ddbe94803979ee3df4239bcbcb5130b40f0d6",
+      "size": 2472
+    },
+    {
+      "input": "artifacts/evidence/stage3-browser-regression.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-browser-regression.json",
+      "projectRelativePath": "artifacts/evidence/stage3-browser-regression.json",
+      "type": "file",
+      "sha256": "8b0db5ceec6c6ace1aa6e78829e71f41bd2f0ad6a5746c79823942e0198afd9a",
+      "size": 4203
+    },
+    {
+      "input": "artifacts/evidence/stage3-remediation-packet.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-remediation-packet.json",
+      "projectRelativePath": "artifacts/evidence/stage3-remediation-packet.json",
+      "type": "file",
+      "sha256": "93ada450025b276dda94226401c749e1211ecba1e172e6e49d365165fe70985f",
+      "size": 2729
+    }
+  ]
+}

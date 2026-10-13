@@ -1,0 +1,123 @@
+{
+  "index": 8,
+  "stage": "REAUDITED",
+  "at": "2026-10-13T09:00:46.222Z",
+  "cycle": 1,
+  "outcome": "PASS",
+  "skipped": false,
+  "note": "PASS is limited to the locked EP1 technical repair target. Evidence contract covers only technical assertions; Concept Proof, production art, and full-season narrative remain explicitly open.",
+  "metadata": {
+    "verdictScope": "EP1_TECHNICAL_REPAIR_ONLY",
+    "scopedTechnical": "PASS",
+    "remainingGates": [
+      "AWAITING_BLIND_PLAYTEST",
+      "BLOCKED_ART_PRODUCTION",
+      "PENDING_FULL_SEASON_PROMISES"
+    ],
+    "webHighAcceptance": "NOT_CLAIMED",
+    "nativeFallback": true,
+    "evidenceContract": {
+      "schemaVersion": 1,
+      "assertionsExecuted": 8,
+      "claims": [
+        {
+          "id": "P0-ending",
+          "assertionId": "final-dialogue-readable-and-persisted",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "P1-causality",
+          "assertionId": "choice-knowledge-provenance",
+          "status": "PASS",
+          "executions": 16
+        },
+        {
+          "id": "P1-back",
+          "assertionId": "back-restores-snapshot",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "P1-save",
+          "assertionId": "save-reload-new-game",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "P1-locale",
+          "assertionId": "ru-en-cursor-parity",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "P1-input",
+          "assertionId": "single-gesture-ownership",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "P1-mobile",
+          "assertionId": "portrait-viewport-overflow",
+          "status": "PASS",
+          "executions": 3
+        },
+        {
+          "id": "P1-graph",
+          "assertionId": "declared-graph-reaches-authored-ep1",
+          "status": "PASS",
+          "executions": 1
+        }
+      ],
+      "coverage": {
+        "complete": true,
+        "scope": "EP1 technical repair only",
+        "checked": 8,
+        "total": 8
+      },
+      "unresolved": [],
+      "sourceHead": "5590420c00e5780db974d12aeb018cb5e4994c81"
+    },
+    "defectCount": 0
+  },
+  "source": {
+    "available": true,
+    "head": "5590420c00e5780db974d12aeb018cb5e4994c81",
+    "clean": false,
+    "worktreeSha256": "16cbdc8708a6a23c557cac2b9f61285a58546a0c27340e4e36250f856e716a1c"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage3-final-runtime-qa.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-final-runtime-qa.json",
+      "projectRelativePath": "artifacts/evidence/stage3-final-runtime-qa.json",
+      "type": "file",
+      "sha256": "7bba24dce63ca9b9258c7b58b79bfe81db8e44c00dad157cad2a9452bd18535d",
+      "size": 2866
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-midpoint-fallback.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-midpoint-fallback.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-midpoint-fallback.json",
+      "type": "file",
+      "sha256": "115c110bb5ef1d276561623dfe5ddbe94803979ee3df4239bcbcb5130b40f0d6",
+      "size": 2472
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-acceptance-fallback.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-acceptance-fallback.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-acceptance-fallback.json",
+      "type": "file",
+      "sha256": "63b7c17b86e6d93f64b80e1681dbf5bb8ee79151f659413fe2b7d9cfb1cfae66",
+      "size": 2735
+    },
+    {
+      "input": "artifacts/evidence/stage3-orientation-regression.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-orientation-regression.json",
+      "projectRelativePath": "artifacts/evidence/stage3-orientation-regression.json",
+      "type": "file",
+      "sha256": "ff8e5533cc1482ce24953ac1ddf031ac89cca27bc8164d9c53850448bd18a068",
+      "size": 776
+    }
+  ]
+}

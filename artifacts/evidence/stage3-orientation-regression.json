@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "kind": "mobile-orientation-regression",
+  "testedSourceHead": "5590420c00e5780db974d12aeb018cb5e4994c81",
+  "status": "PASS",
+  "command": "npx --yes @playwright/cli run-code --filename tools/qa/ep1-orientation-regression.js",
+  "results": [
+    {"viewport": "360x640", "inner": "360x640", "document": "360x640", "body": "360x640", "horizontalOverflow": false},
+    {"viewport": "390x844", "inner": "390x844", "document": "390x844", "body": "390x844", "horizontalOverflow": false},
+    {"viewport": "430x932", "inner": "430x932", "document": "430x932", "body": "430x932", "horizontalOverflow": false}
+  ],
+  "evidence": "The runtime stayed exactly within each requested portrait viewport after resize/reload; no horizontal overflow was observed."
+}

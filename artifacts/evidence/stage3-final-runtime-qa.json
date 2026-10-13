@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "kind": "ep1-final-runtime-qa",
+  "testedSourceHead": "5590420c00e5780db974d12aeb018cb5e4994c81",
+  "status": "PASS_SCOPED_TECHNICAL",
+  "automated": {
+    "npmTest": {"status": "PASS", "tests": 17, "passed": 17, "failed": 0},
+    "narrativeFixtures": {"status": "PASS", "samples": 23},
+    "narrativeValidate": {"status": "PASS_DECLARED_NARRATIVE_GRAPH", "scenes": 18, "reachedScenes": 18, "visitedStates": 84, "choices": 8, "promiseWarnings": 3},
+    "starterKit": {"status": "PASS", "version": "0.5.12", "targetStatus": "clean", "modifiedManagedFiles": 0},
+    "ceos": {"status": "PASS_SCOPED_TECHNICAL", "version": "0.5.12"},
+    "sdk": {"status": "PASS"},
+    "requirements": {"status": "PASS", "snapshotAlignment": "PASS"},
+    "contract": {"status": "BLOCK", "reason": "release contract evidence is out of scope for this EP1 preparation stage"},
+    "media": {"status": "BLOCK", "reason": "first-publication gameplay video is out of scope and was not created"}
+  },
+  "browser": {
+    "status": "PASS",
+    "engine": "real Chromium via Playwright CLI",
+    "finalScene": {"sceneId": "ep1_hook", "readableLines": 5, "finalDialogueIndex": 4, "completionButtonDisabled": true},
+    "reload": "preserves ep1_hook/index 4 and completion state",
+    "back": "returns to ep1_hook/index 3",
+    "newGame": "returns to ep1_arrival/index 0 and clears current run",
+    "localization": "RU and EN labels/dialogue switch without cursor migration",
+    "mobileInput": "pointer down/up/click and rapid double-tap produce at most one logical choice action",
+    "evidence": "artifacts/evidence/stage3-browser-regression.json"
+  },
+  "screenshots": [
+    {"path": "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png", "viewport": "360x640", "sha256": "85210d9cadb9ba12f1ef6721ab31290ce9ce1215ceecb1660627c84b70f5299f"},
+    {"path": "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png", "viewport": "390x844", "sha256": "c3fb7e421f8122bf60b46b1e6dbf3b77c38984854db3b27630a928cc9f6129bf"},
+    {"path": "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png", "viewport": "430x932", "sha256": "79ecdf9aa3372e93308c45eaff74fc74f6fa927543e541908fc5c1522b856b21"},
+    {"path": "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png", "viewport": "430x932", "sha256": "3799f1edbe5e6b74548bb7575b4bde2c550e9abb862ed760dad8d11b23c89429"}
+  ],
+  "web": {
+    "preflight": "READY",
+    "analysis": "REWORK findings persisted before native repair",
+    "visualAdvisory": "PARTIAL; readability/composition acceptable, runtime touch/orientation not claimed as Web evidence",
+    "midpoint": "NATIVE_FALLBACK_AFTER_WEB_FOLLOWUP_NO_ASSISTANT_EVIDENCE"
+  },
+  "gates": {
+    "productionArt": "BLOCKED_ART_PRODUCTION",
+    "conceptProof": "AWAITING_BLIND_PLAYTEST",
+    "fullSeasonNarrative": "PENDING_EP2_EP10"
+  }
+}

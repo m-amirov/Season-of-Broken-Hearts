@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "kind": "narrative",
+  "phase": "midpoint",
+  "sourceHead": "5590420c00e5780db974d12aeb018cb5e4994c81",
+  "agent": "ceos_reasoner_web",
+  "reviewTraceId": "stage3-midpoint-reuse-after-followup-gap-20261013",
+  "taskId": "01a13457-b5a8-7691-86c9-44f66919dca0",
+  "evidenceArtifact": "artifacts/evidence/stage3-web-midpoint-fallback.json",
+  "status": "PASS",
+  "reviewedItems": [
+    "artifacts/evidence/stage3-final-runtime-qa.json",
+    "artifacts/evidence/stage3-browser-regression.json",
+    "artifacts/evidence/stage3-remediation-packet.json",
+    "artifacts/concept-proof/EP1_DECISION.md",
+    "artifacts/evidence/stage3-web-analysis.json"
+  ],
+  "evidenceRefs": [
+    "artifacts/evidence/stage3-final-runtime-qa.json",
+    "artifacts/evidence/stage3-browser-regression.json",
+    "artifacts/evidence/stage3-remediation-packet.json"
+  ],
+  "receivedEvidenceRefs": [
+    "artifacts/evidence/stage3-final-runtime-qa.json",
+    "artifacts/evidence/stage3-browser-regression.json",
+    "artifacts/evidence/stage3-remediation-packet.json"
+  ],
+  "decision": "REWORK: the persisted Web findings are repaired for the scoped EP1 technical slice, but this receipt is not a new Web High acceptance turn and does not close artistic or Concept Proof gates.",
+  "findings": [
+    {"id": "MIDPOINT-TECHNICAL", "detail": "The supplied runtime receipt reports the P0 terminal, save/back, localization, and one-gesture checks passing on source 5590420c00e5780db974d12aeb018cb5e4994c81."},
+    {"id": "MIDPOINT-NARRATIVE", "detail": "The supplied narrative validator reaches all 18 authored scenes and preserves the three explicit pending story-promise warnings rather than declaring the full season complete."},
+    {"id": "MIDPOINT-GATE-OPEN", "detail": "Independent blind playtest, production art, and full-season promise evidence remain open and are not converted into PASS by technical evidence."}
+  ],
+  "unresolved": [],
+  "openGates": [
+    "independent blind playtest is pending",
+    "production art remains BLOCKED_ART_PRODUCTION",
+    "full-season promise evidence remains pending for EP2-EP10"
+  ],
+  "actualPixelsReceived": true,
+  "limitations": [
+    "The requested Web follow-up turn completed without assistant evidence; this midpoint receipt reuses the persisted bounded Web analysis and explicitly records the gap.",
+    "This record is not Web High PASS and does not replace the persisted Web analysis or visual advisory receipts."
+  ]
+}
