@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 
 const root = process.cwd();
@@ -114,7 +115,8 @@ try {
   const slow = await runSlowTransition(browser);
   const failure = await runFailure(browser);
   const reducedMotion = await runReducedMotion(browser);
-  const output = { schemaVersion: 1, status: slow.pass && failure.pass && reducedMotion.pass ? 'PASS' : 'REWORK', baseUrl, slow, failure, reducedMotion };
+  const sourceHead = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
+  const output = { schemaVersion: 1, status: slow.pass && failure.pass && reducedMotion.pass ? 'PASS' : 'REWORK', sourceHead, baseUrl, slow, failure, reducedMotion };
   fs.writeFileSync(outputPath, JSON.stringify(output, null, 2) + '\n');
   console.log(JSON.stringify(output, null, 2));
 } finally {
