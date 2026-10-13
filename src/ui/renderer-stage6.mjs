@@ -201,7 +201,7 @@ export function createRenderer(root) {
   function updateMenu({ labels, engine, menuOpen, menuView, settings }) {
     menu.hidden = !menuOpen;
     menu.setAttribute('aria-label', labels.menu);
-    menuKicker.textContent = labels.episode;
+    menuKicker.textContent = `${labels.episodeBase} ${engine.episodeIntro().episode}`;
     menuTitle.textContent = labels.menu;
     menuCloseButton.textContent = `× ${labels.close}`;
     menuCloseButton.setAttribute('aria-label', labels.close);
@@ -237,7 +237,7 @@ export function createRenderer(root) {
       previousSceneId = scene.id;
 
       shell.setAttribute('aria-label', labels.appLabel);
-      stage.setAttribute('aria-label', labels.tapToContinue);
+      stage.setAttribute('aria-label', labels.appLabel);
       backLabel.textContent = labels.back;
       backButton.setAttribute('aria-label', labels.back);
       menuLabel.textContent = labels.menu;
@@ -270,9 +270,7 @@ export function createRenderer(root) {
             if (token !== renderToken) return;
             image.dataset.assetStatus = 'fallback-last-valid';
           });
-      } else {
-        pendingSceneReady = Promise.resolve();
-      }
+      } // Preserve the outstanding decode promise across menu/intro re-renders.
 
       choices.replaceChildren();
       const choiceButtons = engine.choices().map(choice => {
