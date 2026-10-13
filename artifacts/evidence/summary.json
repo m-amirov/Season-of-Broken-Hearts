@@ -5,18 +5,18 @@
   "releaseBaselineRef": null,
   "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
   "manifestFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.codex-os\\project.yml",
-  "startedAt": "2026-10-13T09:58:20.220Z",
-  "completedAt": "2026-10-13T09:58:20.953Z",
+  "startedAt": "2026-10-13T10:07:35.961Z",
+  "completedAt": "2026-10-13T10:07:36.679Z",
   "host": {
     "platform": "win32",
     "arch": "x64",
     "node": "v22.21.0",
     "hostname": "TOPSKIY-PC"
   },
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "counts": {
-    "PASS": 0,
-    "FAIL": 1,
+    "PASS": 1,
+    "FAIL": 0,
     "CONFIGURATION_ERROR": 0,
     "BLOCKED": 0,
     "SKIP": 0
@@ -24,11 +24,10 @@
   "gates": [
     {
       "id": "starter_kit_self_test",
-      "status": "FAIL",
+      "status": "PASS",
       "required": true,
       "risk": "R0",
-      "exitCode": 1,
-      "failureType": "TEST_FAILURE"
+      "exitCode": 0
     }
   ]
 }

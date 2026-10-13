@@ -1,7 +1,7 @@
 {
   "isRepo": true,
   "branch": "main",
-  "head": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "head": "12fd36b3bad4576baf9ad82298da1a7e44548fe6",
   "dirty": true,
-  "porcelain": "?? artifacts/evidence/stage4/"
+  "porcelain": " M .starter-kit/state.json"
 }
