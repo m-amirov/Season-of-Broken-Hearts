@@ -623,6 +623,8 @@
           {"speaker": null, "text": "В кабинете Нику ждала папка, которой утром не было. На обложке стояло только: «Villa Serena — десять недель»."},
           {"speaker": "nika", "text": "Я ещё не согласилась остаться до конца."},
           {"speaker": null, "text": "Внутри лежал перечёркнутый план юбилейной недели и список вопросов о ней самой — о работе, о Лео и о том, сколько она готова выдержать."},
+          {"speaker": null, "when": {"hotelEvidence": "numbers"}, "text": "Ника положила фотографию условий Aurea рядом с планом: теперь вопрос о десяти неделях был не только про работу, но и про цену права остаться собой."},
+          {"speaker": null, "when": {"hotelEvidence": "staff"}, "text": "Ника открыла тетрадь Джулии рядом с папкой: теперь вопрос о десяти неделях измерялся не только сроком, но и именами людей, которых нельзя оставить пустыми строками."},
           {"speaker": "matteo", "text": "Ника, не открывайте последнюю страницу."},
           {"speaker": null, "text": "Свет в коридоре погас. Лето началось с работы; к ночи у Villa Serena появился вопрос, на который Ника уже не могла ответить за всех. И в этот раз она не собиралась делать вид, что не услышала его."}
         ],
@@ -630,6 +632,8 @@
           {"speaker": null, "text": "A folder waited in Nika's office that had not been there that morning. Its cover said only: 'Villa Serena — ten weeks.'"},
           {"speaker": "nika", "text": "I have not agreed to stay until the end."},
           {"speaker": null, "text": "Inside was a crossed-out anniversary plan and a list of questions about her — about work, Leo, and how much she was prepared to endure."},
+          {"speaker": null, "when": {"hotelEvidence": "numbers"}, "text": "Nika placed the photograph of Aurea's terms beside the plan: the question of ten weeks was no longer only about work, but about the price of keeping the right to remain herself."},
+          {"speaker": null, "when": {"hotelEvidence": "staff"}, "text": "Nika opened Giulia's notebook beside the folder: the question of ten weeks now carried not only a deadline, but the names of people who could not be left as empty rows."},
           {"speaker": "matteo", "text": "Nika, do not open the last page."},
           {"speaker": null, "text": "The corridor lights went out. Summer had begun with a job; by night, Villa Serena had a question Nika could no longer answer for everyone. This time, she would not pretend she had failed to hear it."}
         ]

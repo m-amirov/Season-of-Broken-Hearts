@@ -17,9 +17,11 @@ ep1_arrival
 ```
 
 EP1 имеет 18 сцен и 8 выборов. Все 16 комбинаций выбора сходятся к одному
-клиффхэнгеру после непосредственной реакционной сцены; изменения видны в
-репликах и состоянии, но ни один выбор не закрывает Маттео, Лео, Элио или
-независимый путь.
+клиффхэнгеру после непосредственной реакционной сцены; ни один выбор не
+закрывает Маттео, Лео, Элио или независимый путь. После объединения веток
+`ep1_hook` добавляет одну state-conditioned строку: выбор условий Aurea
+отражается через `hotelEvidence=numbers`, а разговор с командой — через
+`hotelEvidence=staff`. Остальной клиффхэнгер остаётся общим.
 
 ## Full-season topology (planned)
 
@@ -38,7 +40,7 @@ EP1 имеет 18 сцен и 8 выборов. Все 16 комбинаций �
 | Route | `route` | остаётся `none` |
 | Trust | `trustMatteo`, `trustLeo`, `trustElio` | выборы знакомства |
 | Romance | `relationshipMatteo`, `relationshipLeo`, `relationshipElio` | только наблюдаемый отклик, без lock |
-| Hotel | `staffTrust`, `fundingEvidence`, `investorTerms`, `hotelEvidence` | предъявленный документ или разговор с командой |
+| Hotel | `staffTrust`, `fundingEvidence`, `investorTerms`, `hotelEvidence` | предъявленный документ или разговор с командой; `hotelEvidence` имеет отложенный payoff в `ep1_hook` |
 | Knowledge | `met*`, `leoConversation`, `leoTruthHeard`, `askedAboutHotel` | scene provenance; полное объяснение Лео не в EP1 |
 
 ## Planned route locks

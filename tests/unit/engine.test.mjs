@@ -94,13 +94,16 @@ test('terminal scene remains readable until its final line and completion surviv
 
   assert.equal(engine.isEnding(), true);
   assert.equal(engine.isEpisodeComplete(), false);
-  const terminalLines = graph.scenes.find(scene => scene.id === 'ep1_hook').dialogue.ru;
-  for (let index = 0; index < terminalLines.length - 1; index += 1) {
+  const terminalLines = [];
+  while (!engine.isEpisodeComplete()) {
+    const index = terminalLines.length;
     assert.equal(engine.snapshot().cursor.dialogueIndex, index);
     assert.equal(engine.isEpisodeComplete(), false);
+    terminalLines.push(engine.currentLine().text);
     assert.equal(engine.advance().type, 'dialogue');
   }
 
+  terminalLines.push(engine.currentLine().text);
   assert.equal(engine.snapshot().cursor.dialogueIndex, terminalLines.length - 1);
   assert.equal(engine.isEpisodeComplete(), true);
   assert.deepEqual(engine.advance(), { ok: false, reason: 'episode-complete' });
@@ -108,7 +111,7 @@ test('terminal scene remains readable until its final line and completion surviv
   const restored = new NarrativeEngine(graph);
   assert.equal(restored.load(engine.save()), true);
   assert.equal(restored.isEpisodeComplete(), true);
-  assert.equal(restored.currentLine().text, terminalLines.at(-1).text);
+  assert.equal(restored.currentLine().text, terminalLines.at(-1));
   assert.equal(restored.back(), true);
   assert.equal(restored.isEpisodeComplete(), false);
   assert.equal(restored.snapshot().cursor.dialogueIndex, terminalLines.length - 2);
@@ -147,6 +150,23 @@ test('all sixteen EP1 choice combinations keep route open and record observed co
     assert.equal(state.investorTerms, selected[2] === 'hotel_numbers' ? 'known-risk' : 'unknown');
     assert.equal(state.fundingEvidence, selected[2] === 'hotel_numbers' ? 1 : 0);
     assert.equal(state.staffTrust, selected[2] === 'hotel_staff' ? 2 : 0);
+    const finalTexts = [];
+    const finalEngine = new NarrativeEngine(graph, { locale: 'en' });
+    let finalChoiceIndex = 0;
+    while (!finalEngine.isEpisodeComplete()) {
+      const choices = finalEngine.choices();
+      if (choices.length) {
+        assert.equal(finalEngine.choose(selected[finalChoiceIndex++]).ok, true);
+      } else {
+        finalTexts.push(finalEngine.currentLine().text);
+        assert.equal(finalEngine.advance().ok, true);
+      }
+    }
+    finalTexts.push(finalEngine.currentLine().text);
+    const expectedDelayedLine = selected[2] === 'hotel_numbers'
+      ? "Nika placed the photograph of Aurea's terms beside the plan"
+      : "Nika opened Giulia's notebook beside the folder";
+    assert.ok(finalTexts.some(text => text.startsWith(expectedDelayedLine)));
     assert.deepEqual(reactionScenes, [
       `ep1_${selected[0]}_response`,
       `ep1_${selected[1]}_response`,
@@ -154,4 +174,39 @@ test('all sixteen EP1 choice combinations keep route open and record observed co
       `ep1_${selected[3]}_response`
     ]);
   }
+});
+
+test('delayed hotel consequence is deterministic and localized after the branch merge', () => {
+  const finish = (locale, hotelChoice) => {
+    const engine = new NarrativeEngine(graph, { locale });
+    const selected = ['matteo_direct', 'elio_boundary', hotelChoice, 'leo_distance'];
+    const lines = [];
+    let choiceIndex = 0;
+    while (!engine.isEpisodeComplete()) {
+      const choices = engine.choices();
+      if (choices.length) {
+        assert.equal(engine.choose(selected[choiceIndex++]).ok, true);
+      } else {
+        lines.push(engine.currentLine().text);
+        assert.equal(engine.advance().ok, true);
+      }
+    }
+    lines.push(engine.currentLine().text);
+    return { lines, state: engine.snapshot().state };
+  };
+
+  const ruNumbers = finish('ru', 'hotel_numbers');
+  const ruStaff = finish('ru', 'hotel_staff');
+  const enNumbers = finish('en', 'hotel_numbers');
+  const enStaff = finish('en', 'hotel_staff');
+
+  assert.ok(ruNumbers.lines.some(text => text.startsWith('Ника положила фотографию условий Aurea')));
+  assert.ok(ruStaff.lines.some(text => text.startsWith('Ника открыла тетрадь Джулии')));
+  assert.ok(enNumbers.lines.some(text => text.startsWith("Nika placed the photograph of Aurea's terms")));
+  assert.ok(enStaff.lines.some(text => text.startsWith("Nika opened Giulia's notebook")));
+  assert.equal(ruNumbers.lines.length, enNumbers.lines.length);
+  assert.equal(ruStaff.lines.length, enStaff.lines.length);
+  assert.equal(ruNumbers.state.hotelEvidence, 'numbers');
+  assert.equal(ruStaff.state.hotelEvidence, 'staff');
+  assert.deepEqual(finish('en', 'hotel_numbers'), enNumbers);
 });

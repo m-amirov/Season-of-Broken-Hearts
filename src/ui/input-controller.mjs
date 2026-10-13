@@ -3,6 +3,7 @@ export function createInputController(elements, handlers) {
   let activeGesture = null;
   let choiceCleanups = [];
   const cleanups = [];
+  const gestureTarget = elements.gestureTarget ?? globalThis.document;
 
   const reject = event => {
     event?.preventDefault?.();
@@ -19,6 +20,15 @@ export function createInputController(elements, handlers) {
     if (activeGesture?.pointerId === event.pointerId) activeGesture = null;
   };
 
+  if (gestureTarget?.addEventListener) {
+    gestureTarget.addEventListener('pointerup', cancelPointer);
+    gestureTarget.addEventListener('pointercancel', cancelPointer);
+    cleanups.push(() => {
+      gestureTarget.removeEventListener('pointerup', cancelPointer);
+      gestureTarget.removeEventListener('pointercancel', cancelPointer);
+    });
+  }
+
   const runClick = (button, callback, event) => {
     event?.preventDefault?.();
     if (locked || event?.detail > 1) return false;
@@ -32,14 +42,11 @@ export function createInputController(elements, handlers) {
   const bind = (button, callback, cleanupList = cleanups) => {
     if (!button) return;
     const pointerdown = event => claimPointer(button, event);
-    const pointercancel = cancelPointer;
     const click = event => runClick(button, callback, event);
     button.addEventListener('pointerdown', pointerdown, { passive: false });
-    button.addEventListener('pointercancel', pointercancel);
     button.addEventListener('click', click);
     cleanupList.push(() => {
       button.removeEventListener('pointerdown', pointerdown);
-      button.removeEventListener('pointercancel', pointercancel);
       button.removeEventListener('click', click);
     });
   };

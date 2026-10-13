@@ -1,4 +1,4 @@
-import { validateGraph } from './state.mjs';
+import { getDialogueLines, validateGraph } from './state.mjs';
 
 export const CURRENT_SAVE_VERSION = 2;
 
@@ -19,14 +19,15 @@ function migrateState(state, graph) {
   return migrated;
 }
 
-function validCursor(cursor, graph, locale) {
+function validCursor(cursor, graph, locale, state) {
   const scene = graph.scenes.find(candidate => candidate.id === cursor?.sceneId);
+  const lines = scene ? getDialogueLines(scene, locale, state) : [];
   return Boolean(
     scene &&
     graph.locales.includes(locale) &&
     Number.isSafeInteger(cursor.dialogueIndex) &&
     cursor.dialogueIndex >= 0 &&
-    cursor.dialogueIndex < scene.dialogue[locale].length
+    cursor.dialogueIndex < lines.length
   );
 }
 
@@ -74,8 +75,8 @@ export function serializeSave(snapshot) {
 export function deserializeSave(raw, graph) {
   try {
     const payload = migrateSave(typeof raw === 'string' ? JSON.parse(raw) : raw, graph);
-    if (validateGraph(graph).valid !== true || !validCursor(payload.cursor, graph, payload.locale) || !isValidState(payload.state, graph)) return null;
-    const history = (payload.history ?? []).filter(item => validCursor(item, graph, payload.locale) && isValidState(item.state, graph));
+    if (validateGraph(graph).valid !== true || !isValidState(payload.state, graph) || !validCursor(payload.cursor, graph, payload.locale, payload.state)) return null;
+    const history = (payload.history ?? []).filter(item => isValidState(item.state, graph) && validCursor(item, graph, payload.locale, item.state));
     return {
       schemaVersion: CURRENT_SAVE_VERSION,
       locale: payload.locale,

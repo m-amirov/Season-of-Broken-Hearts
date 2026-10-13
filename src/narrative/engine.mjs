@@ -1,6 +1,6 @@
 import { getLocalizedText } from './localization.mjs';
 import { deserializeSave, serializeSave } from './save.mjs';
-import { applyEffects, canEnter, createInitialState, validateGraph } from './state.mjs';
+import { applyEffects, canEnter, createInitialState, getDialogueLines, validateGraph } from './state.mjs';
 
 const ENGINE_SCHEMA_VERSION = 2;
 
@@ -35,16 +35,20 @@ export class NarrativeEngine {
   }
 
   currentLine() {
-    return this.currentScene().dialogue[this.#locale][this.#cursor.dialogueIndex];
+    return this.#dialogueLines()[this.#cursor.dialogueIndex];
   }
 
   sceneTitle() {
     return getLocalizedText(this.currentScene().title, this.#locale);
   }
 
+  #dialogueLines(scene = this.currentScene(), locale = this.#locale) {
+    return getDialogueLines(scene, locale, this.#state);
+  }
+
   choices() {
     const scene = this.currentScene();
-    const lines = scene.dialogue[this.#locale];
+    const lines = this.#dialogueLines(scene);
     if (this.#cursor.dialogueIndex !== lines.length - 1) return [];
     return (scene.choices ?? []).filter(choice => canEnter(choice, this.#state));
   }
@@ -55,7 +59,7 @@ export class NarrativeEngine {
 
   isEpisodeComplete() {
     if (!this.isEnding()) return false;
-    const lines = this.currentScene().dialogue[this.#locale];
+    const lines = this.#dialogueLines();
     return this.#cursor.dialogueIndex === lines.length - 1;
   }
 
@@ -88,7 +92,7 @@ export class NarrativeEngine {
   advance() {
     return this.#withLock(() => {
       const scene = this.currentScene();
-      const lastLine = scene.dialogue[this.#locale].length - 1;
+      const lastLine = this.#dialogueLines(scene).length - 1;
       if (this.#cursor.dialogueIndex < lastLine) {
         this.#recordSnapshot();
         this.#cursor.dialogueIndex += 1;
@@ -127,7 +131,7 @@ export class NarrativeEngine {
     if (!this.#graph.locales.includes(locale)) return false;
     this.#locale = locale;
     const scene = this.currentScene();
-    const maxIndex = scene.dialogue[locale].length - 1;
+    const maxIndex = this.#dialogueLines(scene, locale).length - 1;
     this.#cursor.dialogueIndex = Math.min(this.#cursor.dialogueIndex, maxIndex);
     return true;
   }

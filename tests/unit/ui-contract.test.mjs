@@ -22,6 +22,17 @@ function fakeButton(choiceId = undefined) {
   };
 }
 
+function fakeEventTarget() {
+  const listeners = new Map();
+  return {
+    addEventListener(type, handler) { listeners.set(type, handler); },
+    removeEventListener(type) { listeners.delete(type); },
+    dispatch(type, event = {}) {
+      listeners.get(type)?.({ preventDefault() {}, ...event });
+    }
+  };
+}
+
 test('every EP1 scene asset resolves to a named placeholder', () => {
   const graph = JSON.parse(fs.readFileSync(new URL('../../narrative/graph.json', import.meta.url), 'utf8'));
   for (const scene of graph.scenes) {
@@ -70,5 +81,40 @@ test('one pointer gesture owns its click and fast repeat cannot cross a rerender
   controller.unlock();
   next.click(1);
   assert.deepEqual(calls, ['choose:leo_distance', 'advance']);
+  controller.destroy();
+});
+
+test('pointerup outside the pressed button releases ownership for the next button', () => {
+  const gestureTarget = fakeEventTarget();
+  const firstChoice = fakeButton('matteo_formal');
+  const secondChoice = fakeButton('matteo_direct');
+  const calls = [];
+  const controller = createInputController({ gestureTarget }, {
+    onChoose: id => calls.push(`choose:${id}`)
+  });
+  controller.bindChoiceButtons([firstChoice, secondChoice]);
+
+  firstChoice.dispatch('pointerdown', { pointerId: 21, pointerType: 'touch' });
+  gestureTarget.dispatch('pointerup', { pointerId: 21, pointerType: 'touch' });
+  secondChoice.click(1);
+
+  assert.deepEqual(calls, ['choose:matteo_direct']);
+  controller.destroy();
+});
+
+test('pointercancel outside the pressed button releases ownership', () => {
+  const gestureTarget = fakeEventTarget();
+  const choice = fakeButton('leo_hear');
+  const calls = [];
+  const controller = createInputController({ gestureTarget }, {
+    onChoose: id => calls.push(`choose:${id}`)
+  });
+  controller.bindChoiceButtons([choice]);
+
+  choice.dispatch('pointerdown', { pointerId: 22, pointerType: 'touch' });
+  gestureTarget.dispatch('pointercancel', { pointerId: 22, pointerType: 'touch' });
+  choice.click(1);
+
+  assert.deepEqual(calls, ['choose:leo_hear']);
   controller.destroy();
 });

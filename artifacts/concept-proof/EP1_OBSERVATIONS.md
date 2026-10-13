@@ -20,6 +20,50 @@ cold read или автоматические тесты за human acceptance.
 |---|---|---|---|---|
 | pending | pending | pending | pending | pending |
 
+## Technical defect log
+
+Заполнять только по фактическому наблюдению. Не использовать этот раздел для
+оценки сюжета и не записывать туда непроверенные предположения.
+
+| ID | Session | Timestamp | Exact steps | Expected / actual | Source HEAD | Browser / viewport | Evidence | Status |
+|---|---|---|---|---|---|---|---|---|
+
+## Session form
+
+Копировать этот блок для каждой новой сессии, заменяя только фактические данные:
+
+```text
+Session: Reader N
+Reader consent: yes / no (if no, do not retain quotes or screenshots)
+Language:
+Viewport width×height:
+Browser/version:
+Source HEAD:
+Start (ISO-8601):
+End (ISO-8601):
+Clean save: verified / not verified
+Observer coaching: none / technical-only (describe)
+Reached EP1 hook: yes / no / stopped voluntarily
+Choice sequence (IDs, if visible from observation):
+Technical defect IDs:
+
+Verbatim observations:
+- [timestamp] ...
+
+Post-session answers:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+```
+
 ## Post-session answers
 
 | Question | Reader 1 | Reader 2 | Reader 3 | Reader 4 | Reader 5 |
@@ -41,3 +85,7 @@ cold read или автоматические тесты за human acceptance.
 - [ ] verbatim player statements retained;
 - [ ] technical defects separated from concept observations;
 - [ ] no fabricated or inferred human results.
+- [ ] exactly one session form per independent reader;
+- [ ] technical defects remain separate from concept observations;
+- [ ] no personal data retained without necessity and consent;
+- [ ] no `CONTINUE_PRODUCTION` recorded by automation.

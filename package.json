@@ -5,7 +5,7 @@
     "test": "node --test tests/unit/*.test.mjs",
     "dev": "node tools/dev-server.mjs",
     "narrative:fixtures": "node tools/narrative/export-fixtures.mjs",
-    "narrative:validate": "node tools/narrative/narrative-game-check.mjs --project . --profile config/narrative-game.local.json --require-enabled",
+    "narrative:validate": "node tools/narrative/narrative-game-check.mjs --project . --profile config/narrative-game.local.json --require-enabled && node tools/narrative/conditional-dialogue-validation.mjs",
     "starter-kit:self-test": "node tools/starter-kit/self-test.mjs",
     "starter-kit:status": "node tools/starter-kit/status.mjs",
     "yandex:requirements:audit": "node tools/yandex/requirements-audit.mjs",

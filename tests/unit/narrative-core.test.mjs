@@ -33,6 +33,15 @@ test('graph validation rejects duplicate choice IDs and non-string targets', () 
   assert.ok(report.errors.includes('choice:ep1_gate:invalid-id'));
 });
 
+test('graph validation rejects dialogue conditions outside the bounded state schema', () => {
+  const invalid = structuredClone(graph);
+  invalid.scenes.find(scene => scene.id === 'ep1_hook').dialogue.ru[0].when = { unknownFlag: true };
+
+  const report = validateGraph(invalid);
+  assert.equal(report.valid, false);
+  assert.ok(report.errors.includes('scene:ep1_hook:dialogue:ru:0:invalid-when:unknownFlag'));
+});
+
 test('effects create a new bounded state without mutating the previous state', () => {
   const initial = createInitialState(graph);
   const next = applyEffects(initial, { trustMatteo: 1, metMatteo: true, lastChoice: 'matteo_formal' }, graph.stateSchema);

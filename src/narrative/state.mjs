@@ -59,6 +59,20 @@ export function validateGraph(graph) {
         if (!line?.text || (line.speaker !== null && !characters.has(line.speaker))) {
           errors.push(`scene:${scene.id}:dialogue:${locale}:${index}`);
         }
+        if (line?.when !== undefined) {
+          if (!line.when || typeof line.when !== 'object' || Array.isArray(line.when)) {
+            errors.push(`scene:${scene.id}:dialogue:${locale}:${index}:invalid-when`);
+          } else {
+            for (const [key, value] of Object.entries(line.when)) {
+              if (!own(stateSchema, key) || !isPrimitive(value)) {
+                errors.push(`scene:${scene.id}:dialogue:${locale}:${index}:invalid-when:${key}`);
+              } else {
+                const valueError = validateStateValue(key, value, stateSchema[key], `scene:${scene.id}:dialogue:${locale}:${index}:when`);
+                if (valueError) errors.push(valueError);
+              }
+            }
+          }
+        }
       }
     }
     for (const choice of scene.choices ?? []) {
@@ -105,6 +119,10 @@ export function createInitialState(graph) {
 
 export function canEnter(choice, state) {
   return Object.entries(choice?.requires ?? {}).every(([key, value]) => state?.[key] === value);
+}
+
+export function getDialogueLines(scene, locale, state) {
+  return (scene?.dialogue?.[locale] ?? []).filter(line => canEnter({ requires: line.when }, state));
 }
 
 export function applyEffects(state, effects, stateSchema) {
