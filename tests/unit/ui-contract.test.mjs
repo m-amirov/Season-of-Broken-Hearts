@@ -191,7 +191,10 @@ test('cinematic reader has an independent episode slide and a borderless dialogu
   assert.match(style, /\.reader-sheet\s*\{[^}]*border:\s*0;/s);
   assert.match(style, /\.reader-sheet\s*\{[^}]*background:\s*transparent;/s);
   assert.match(style, /\.episode-intro\s*\{/);
+  assert.match(style, /\.novel-shell\[data-intro-active='true'\]\s+\.reader-topbar/s);
+  assert.match(style, /\.menu-action\s*\{[^}]*background:/s);
   assert.match(renderer, /chapter\.title/);
+  assert.match(renderer, /shell\.dataset\.introActive = String\(showIntro\)/);
   assert.match(renderer, /sceneTitle\.hidden = true/);
   assert.match(renderer, /advanceHint\.hidden = choiceButtons\.length > 0 \|\| complete \|\| !engine\.showTutorialHint\(\)/);
 });

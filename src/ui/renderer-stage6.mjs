@@ -288,6 +288,7 @@ export function createRenderer(root) {
       dialogue.dataset.hasChoices = String(choiceButtons.length > 0);
       updateMenu({ labels, engine, menuOpen, menuView, settings });
       episodeIntro.hidden = !showIntro;
+      shell.dataset.introActive = String(showIntro);
       stage.inert = Boolean(showIntro || menuOpen);
       if (showIntro) {
         const chapter = engine.episodeIntro();

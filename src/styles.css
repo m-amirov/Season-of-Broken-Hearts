@@ -143,6 +143,8 @@ button:disabled { cursor: not-allowed; opacity: .45; }
   font: 500 .67rem/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase;
 }
 @keyframes title-fade-in { from { opacity: 0; } to { opacity: 1; } }
+.novel-shell[data-intro-active='true'] .reader-topbar,
+.novel-shell[data-intro-active='true'] .reader-sheet { visibility: hidden; pointer-events: none; }
 
 .reader-menu { position: absolute; z-index: 20; inset: 0; display: grid; place-items: center; overflow-y: auto; padding: max(22px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(22px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); }
 .reader-menu-shade { position: absolute; inset: 0; background: rgba(7, 18, 25, .74); }
@@ -153,7 +155,8 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 .reader-menu-close { min-height: 44px; padding: 8px 11px; border: 1px solid rgba(246, 220, 185, .35); border-radius: 999px; color: #fff6e7; background: rgba(255, 255, 255, .06); cursor: pointer; font: 600 .75rem/1 ui-sans-serif, system-ui, sans-serif; }
 .reader-menu-progress { margin: 15px 0 0; color: rgba(255, 245, 228, .68); font: .78rem/1.4 ui-sans-serif, system-ui, sans-serif; }
 .reader-menu-actions, .reader-menu-panel { display: grid; gap: 10px; margin-top: 22px; }
-.menu-action { width: 100%; padding: 11px 16px; text-align: left; font: 650 .9rem/1.3 ui-sans-serif, system-ui, sans-serif; }
+.menu-action { width: 100%; min-height: 44px; padding: 11px 16px; border: 1px solid rgba(218, 192, 149, .28); border-radius: 3px; color: #f4ecdf; background: rgba(255, 255, 255, .075); text-align: left; font: 650 .9rem/1.3 ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background .18s ease, border-color .18s ease, color .18s ease; }
+.menu-action:hover, .menu-action:focus-visible { border-color: rgba(218, 192, 149, .68); background: rgba(218, 192, 149, .16); }
 .menu-primary { color: #1f2020; border-color: #f2c38c; background: #e2ad76; }
 .menu-danger { color: #fff3e3; border-color: rgba(245, 168, 133, .68); background: rgba(135, 64, 52, .72); }
 .menu-back { margin-top: 4px; background: rgba(255, 255, 255, .06); }
