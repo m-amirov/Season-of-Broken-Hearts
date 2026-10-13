@@ -22,6 +22,9 @@ button:focus-visible { outline: 3px solid #ffd98c; outline-offset: 3px; }
 .scene-art img[data-asset-id='ep1-matteo-gate-cg'] { object-position: 50% 5%; }
 .scene-art img[data-asset-id='ep1-elio-kitchen-cg'] { object-position: 50% 5%; }
 .scene-art img[data-asset-id='ep1-leo-harbor-cg'] { object-position: 50% 0%; }
+@media (max-width: 699px) {
+  .scene-art img[data-asset-id='ep1-leo-harbor-cg'] { object-position: 50% 15%; }
+}
 .scene-art img.scene-fade-in { animation: scene-fade .36s ease-out both; }
 @keyframes scene-fade { from { opacity: .35; transform: scale(1.04); } to { opacity: .98; transform: scale(1.01); } }
 
