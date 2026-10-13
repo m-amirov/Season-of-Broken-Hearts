@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "sceneId": "S06",
+  "authoredSceneId": "ep1_kitchen",
+  "cue": {"id": "ep1_kitchen", "at": [0, 0]},
+  "requiredCast": ["nika", "elio"],
+  "narrativeActions": [
+    {"character": "elio", "action": "Welcomes Nika beside a real working kitchen, with a coffee cup ready and a kettle nearby; he is open and humorous without turning the gesture into forced intimacy."},
+    {"character": "nika", "action": "Stands as a professional newcomer, alert to the kitchen's practical problems and free to choose coffee or tea without being physically crowded."}
+  ],
+  "sceneContinuity": "After the gate and hotel interior, this is the same morning inside Villa Serena's service kitchen. Both later Elio branches must remain compatible: humor or a clear boundary, with no image that forces touch or romantic closeness.",
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "elio", "path": "assets/characters/references/originals/elio.png", "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "forbiddenProps": ["long dark locks", "model-like face", "extra characters", "flambé spectacle", "impossible food handling", "forced touch", "readable labels", "logos", "UI", "dialogue", "watermark"],
+  "desktop": {
+    "composition": "Cohesive full-scene working kitchen with believable counters, stove, service equipment and walking space; Elio and Nika share the space at a respectful distance with a clear dialogue-safe lower area.",
+    "framing": "Natural eye-level perspective and realistic kitchen scale; both faces, Elio's work apron and the coffee/tea gesture remain readable in a 1920x900 crop.",
+    "requiredVisibleCast": ["nika", "elio"]
+  },
+  "portrait": {
+    "composition": "Deliberate waist-up or mid-thigh portrait crop keeps Nika and Elio's faces, distinct silhouettes and enough kitchen equipment visible above the real dialogue overlay at 360x640, 390x844 and 430x932.",
+    "framing": "Do not hide either face or turn the apron into a costume silhouette; leave natural UI-safe space and avoid an intimate pose that contradicts the boundary branch.",
+    "requiredVisibleCast": ["nika", "elio"]
+  },
+  "qualityAcceptance": [
+    "Elio matches the approved short textured highlighted hair, freckled warm face, eyes and working-chef wardrobe; the former long-dark-locks model-like design is absent.",
+    "Kitchen equipment, coffee/tea props and both characters' hands are physically plausible, with no impossible food action or forced touch.",
+    "The service kitchen reads as a used professional hotel workspace with coherent warm light, no generated text, logos, UI or extra cast."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

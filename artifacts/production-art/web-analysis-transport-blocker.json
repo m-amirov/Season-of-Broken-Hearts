@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_WEB_UNAVAILABLE",
+  "phase": "analysis",
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "runId": "2026-10-13T13-31-13-914Z-production-art-c8cbf5",
+  "agent": "ceos_art_director_web",
+  "attempts": [
+    {
+      "ordinal": 1,
+      "agentId": "01a13578-2b95-7c13-9d38-df724f327c06",
+      "error": "stream disconnected before completion: ChatGPT did not confirm that the prompt was sent. Check the ChatGPT tab before continuing.",
+      "actualPixelsReceived": false,
+      "classification": "WEB_UNAVAILABLE",
+      "retryAllowed": true
+    },
+    {
+      "ordinal": 2,
+      "agentId": "01a13579-f9a5-7403-a89c-a38022aa9fb0",
+      "error": "stream disconnected before completion: ChatGPT did not confirm that the prompt was sent. Check the ChatGPT tab before continuing.",
+      "actualPixelsReceived": false,
+      "classification": "ATTACHMENT_TRANSPORT",
+      "retryAllowed": false
+    }
+  ],
+  "evidence": {
+    "referenceManifest": "artifacts/production-art/character-reference-manifest.json",
+    "contactSheet": "artifacts/production-art/character-reference-contact-sheet.png",
+    "independentReview": "NOT_RECEIVED",
+    "visualAcceptance": "NOT_PERFORMED"
+  },
+  "stopReason": "Bounded transport retry exhausted before any reviewer confirmation; no Web pixel verdict is claimed and no generation is authorized under the enhanced run gate."
+}

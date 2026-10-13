@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "PLANNED_SOURCE_BOUND_BATCH",
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "style": "Cinematic semi-realistic digital painting, mature Mediterranean romantic drama, natural anatomy, subtle painterly texture, expressive human faces, believable lighting and environments.",
+  "referenceManifest": "artifacts/production-art/character-reference-manifest.json",
+  "scope": "EP1 only; exactly four unified full-scene CGs; no mass season art",
+  "assets": [
+    {
+      "assetId": "ep1-arrival-cg",
+      "sceneIds": ["ep1_arrival"],
+      "sceneNumbers": ["S01"],
+      "beatIds": ["ep1_arrival:0:0"],
+      "cast": ["nika"],
+      "location": "Villa Serena exterior gate and low stone wall on the Italian coast",
+      "time": "morning",
+      "action": "Nika has just left a taxi and stands with her travel suitcase, looking toward the old family hotel with restrained fatigue and cautious interest.",
+      "forbidden": ["other characters", "readable signs", "logos", "UI", "dialogue", "watermark", "romantic hearts or petals", "luxury resort architecture"],
+      "outputTarget": "assets/production/cg/ep1-arrival-cg.png",
+      "brief": "artifacts/production-art/art-briefs/S01-ep1-arrival-cg.json",
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "assetId": "ep1-matteo-gate-cg",
+      "sceneIds": ["ep1_gate", "ep1_matteo_formal_response", "ep1_matteo_direct_response"],
+      "sceneNumbers": ["S02", "S03", "S04"],
+      "beatIds": ["ep1_gate:0:0", "ep1_gate:0:3", "ep1_matteo_formal_response:0:0", "ep1_matteo_direct_response:0:0"],
+      "cast": ["nika", "matteo"],
+      "location": "Villa Serena gate and old stone entrance court",
+      "time": "morning",
+      "action": "Nika and Matteo meet at a respectful distance on visible paving; Matteo keeps the keys and work folder in his occupied hand while offering the other hand, with contained tension and no forced intimacy.",
+      "forbidden": ["extra characters", "wrong prop holder", "tuxedo", "romantic embrace", "readable documents", "logos", "UI", "dialogue", "watermark", "luxury fantasy hotel"],
+      "outputTarget": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "brief": "artifacts/production-art/art-briefs/S02-ep1-matteo-gate-cg.json",
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "assetId": "ep1-elio-kitchen-cg",
+      "sceneIds": ["ep1_kitchen", "ep1_elio_humor_response", "ep1_elio_boundary_response"],
+      "sceneNumbers": ["S06", "S07", "S08"],
+      "beatIds": ["ep1_kitchen:0:0", "ep1_kitchen:0:1", "ep1_kitchen:0:6", "ep1_elio_humor_response:0:0", "ep1_elio_boundary_response:0:0"],
+      "cast": ["nika", "elio"],
+      "location": "Real working kitchen of Villa Serena",
+      "time": "same morning",
+      "action": "Elio welcomes Nika beside active but orderly kitchen equipment, with a coffee cup and nearby kettle available; he is open and humorous while respecting physical distance and her boundaries.",
+      "forbidden": ["long dark locks", "model-like face", "extra characters", "flambé spectacle", "impossible food handling", "forced touch", "readable labels", "logos", "UI", "dialogue", "watermark"],
+      "outputTarget": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "brief": "artifacts/production-art/art-briefs/S06-ep1-elio-kitchen-cg.json",
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "assetId": "ep1-leo-harbor-cg",
+      "sceneIds": ["ep1_leo_entrance"],
+      "sceneNumbers": ["S14"],
+      "beatIds": ["ep1_leo_entrance:0:0", "ep1_leo_entrance:0:8"],
+      "cast": ["nika", "leo"],
+      "location": "Real stone quay at the far harbor with a clearly readable paved surface and waterline",
+      "time": "blue dusk after sunset",
+      "action": "Leo holds an unbranded blueprint tube under his arm as he and Nika recognize one another after eight years, standing apart with mutual surprise, regret and emotional distance.",
+      "forbidden": ["former Leo design with heavy stubble", "extra characters", "Aurea logo or readable client mark", "embrace", "floating feet", "water replacing the pavement", "daylight", "readable blueprint text", "UI", "dialogue", "watermark"],
+      "outputTarget": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "brief": "artifacts/production-art/art-briefs/S14-ep1-leo-harbor-cg.json",
+      "status": "PENDING_GENERATION"
+    }
+  ]
+}

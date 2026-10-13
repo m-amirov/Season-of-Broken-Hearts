@@ -1,0 +1,25 @@
+{
+  "target": "Season of Broken Hearts Stage 5: register owner-approved character references and produce exactly four EP1 pilot CGs",
+  "inScope": [
+    "character reference registration",
+    "identity manifest",
+    "source-bound four-CG briefs",
+    "ep1_arrival",
+    "ep1_gate and its two response scenes",
+    "ep1_kitchen and its two response scenes",
+    "ep1_leo_entrance",
+    "runtime mapping",
+    "targeted runtime visual evidence"
+  ],
+  "outOfScope": [
+    "EP2-EP10",
+    "mass season art",
+    "marketing media",
+    "unrelated placeholders",
+    "release ZIP",
+    "publication",
+    "Yandex submission"
+  ],
+  "acceptanceContract": "six approved reference PNGs are physically registered with decode,dimensions,SHA-256 and provenance;four CG files are physically persisted and output-gated;only canon-compatible EP1 mappings change;fresh current-HEAD runtime evidence and independent visual review exist;unresolved visual or transport evidence remains BLOCKED",
+  "mutationBoundary": "allow project-local reference copies,manifests,briefs,four scoped CG files,scene mappings and evidence;preserve narrative prose,choices,state schema,unrelated placeholders and existing user changes;no external writes"
+}

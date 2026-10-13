@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.12",
+  "runId": "2026-10-13T13-31-13-914Z-production-art-c8cbf5",
+  "pipeline": "production-art",
+  "artOutputGateRequired": true,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-13T13-31-13-914Z-production-art-c8cbf5",
+  "createdAt": "2026-10-13T13:31:13.919Z",
+  "updatedAt": "2026-10-13T13:40:10.710Z",
+  "completedAt": "2026-10-13T13:40:10.710Z",
+  "cycle": 1,
+  "maxCycles": 3,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "visual-content",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "visual-content",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "CANON_READY",
+    "reason": "BLOCKED_WEB_UNAVAILABLE: independent ceos_art_director_web analysis could not receive the six reference pixels after two bounded transport attempts; no native fallback or generation is claimed"
+  },
+  "checkpointCount": 4,
+  "scopeSha256": "824620f828901425fcc5dfa53cae844d89c2214514200e7b66460d4e823bf698",
+  "capabilitiesSha256": "9a432e3e7e808bdd146376eeed53cdaf58674ef68fef1a339ce75e866060d280",
+  "sourceAtStart": {
+    "available": true,
+    "head": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "clean": false,
+    "worktreeSha256": "34f0ccbc7cdc007a0b7ce6871976a7a58bcb4e47d682b6d374cdbd942a973f49"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  }
+}

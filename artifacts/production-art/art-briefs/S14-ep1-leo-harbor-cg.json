@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "sceneId": "S14",
+  "authoredSceneId": "ep1_leo_entrance",
+  "cue": {"id": "ep1_leo_entrance", "at": [0, 0]},
+  "requiredCast": ["nika", "leo"],
+  "narrativeActions": [
+    {"character": "leo", "action": "Holds an unbranded tube of blueprints under his arm at the far pier and turns when he hears footsteps; recognition and regret remain restrained."},
+    {"character": "nika", "action": "Recognizes Leo after eight years while maintaining emotional distance, standing on the same readable stone quay rather than embracing him."}
+  ],
+  "sceneContinuity": "After the afternoon harbor walk, the sun has gone behind the harbor roofs and the first meeting takes place at blue dusk. The image must not reveal Leo's Aurea client or substitute the later night conversation or hotel-office hook.",
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ],
+  "forbiddenProps": ["former Leo design with heavy stubble", "extra characters", "Aurea logo or readable client mark", "embrace", "floating feet", "water replacing the pavement", "daylight", "readable blueprint text", "UI", "dialogue", "watermark"],
+  "desktop": {
+    "composition": "Unified harbor reunion with both adults grounded on a real stone quay, visible waterline and harbor roofs, Leo's blueprint tube under his arm, a meaningful gap and natural lower negative space for dialogue.",
+    "framing": "Human-eye-level natural perspective; both faces, Leo's tube and contact shadows remain readable in a 1920x900 crop, with no seawall or waterline ambiguity.",
+    "requiredVisibleCast": ["nika", "leo"]
+  },
+  "portrait": {
+    "composition": "Intentional waist-up or mid-thigh portrait framing preserves both approved faces, the blueprint tube and a legible paved-quay/water boundary at 360x640, 390x844 and 430x932.",
+    "framing": "Leave real dialogue-safe negative space without shortening anatomy or hiding the ground plane; preserve Leo's latest chestnut-hair/light-stubble identity and Nika's approved bob.",
+    "requiredVisibleCast": ["nika", "leo"]
+  },
+  "qualityAcceptance": [
+    "Nika and Leo match the approved references, including Leo's latest chestnut hair, green-grey eyes and clean restrained face rather than the superseded heavy-stubble design.",
+    "The blueprint tube belongs to Leo, both characters stand on the same stone quay, and pavement, contact shadows and waterline remain physically readable.",
+    "Blue dusk and harbor architecture support the exact first-reunion beat without Aurea marks, readable blueprint text, UI, watermark or the separate night-office hook."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "sceneId": "S01",
+  "authoredSceneId": "ep1_arrival",
+  "cue": {"id": "ep1_arrival", "at": [0, 0]},
+  "requiredCast": ["nika"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Stands beside her travel suitcase immediately after leaving the taxi and looks toward Villa Serena with restrained fatigue and cautious interest."}
+  ],
+  "sceneContinuity": "This is the first image of Day 1: the southern air, sea salt, dust and lemon peel lead into the gate scene where Nika meets Matteo; morning light and the old coastal hotel must establish the same place for the next cue.",
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"}
+  ],
+  "forbiddenProps": ["other characters", "readable signs", "logos", "UI", "dialogue", "watermark", "romantic hearts or petals", "luxury resort architecture"],
+  "desktop": {
+    "composition": "Portrait-first full-scene exterior with Nika and her suitcase grounded on the gate approach, the low stone wall and white shutters of Villa Serena readable behind her, and natural negative space for the dialogue overlay.",
+    "framing": "Human-eye-level natural perspective; Nika's face, hands, suitcase and contact with the paving remain legible in a 1920x900 crop without an exaggerated wide-angle body distortion.",
+    "requiredVisibleCast": ["nika"]
+  },
+  "portrait": {
+    "composition": "Deliberate mid-thigh portrait composition with Nika, suitcase and a strong stone/gate anchor retained above the dialogue panel; her face remains clear at 360x640, 390x844 and 430x932 crops.",
+    "framing": "Preserve the approved jaw-length wavy bob, eyes, hands and suitcase while leaving quiet natural space below and beside the subject for real UI; no harsh torso fade or floating cut-out.",
+    "requiredVisibleCast": ["nika"]
+  },
+  "qualityAcceptance": [
+    "Nika's face, hair, freckles, eyes and EP1 linen wardrobe match the approved reference without identity drift.",
+    "Suitcase, feet/contact shadow and stone paving establish physical grounding and the morning arrival action.",
+    "Villa Serena reads as an old Mediterranean family hotel without readable generated text, logos, UI or extra cast."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

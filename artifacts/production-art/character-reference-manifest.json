@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "status": "REGISTERED_APPROVED_OWNER_REFERENCES",
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "provenance": {
+    "origin": "owner-approved ChatGPT-generated character reference",
+    "providedInUserRequest": "2026-10-13",
+    "originalsPreservedByteForByte": true,
+    "transformations": [],
+    "pixelVerification": "System.Drawing.Image::FromFile decoded each copied PNG; dimensions and SHA-256 recorded from project-owned bytes"
+  },
+  "references": [
+    {
+      "id": "nika",
+      "name": {"ru": "Ника Воронцова", "en": "Nika Vorontsova"},
+      "age": 28,
+      "status": "APPROVED",
+      "path": "assets/characters/references/originals/nika.png",
+      "sourceAttachmentPath": "C:/Users/user/Downloads/nika.png",
+      "format": "PNG",
+      "bytes": 2493846,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "identityLock": {
+        "proportions": "Adult, natural slim-to-average proportions; relaxed shoulders and practical posture.",
+        "face": "Soft oval face with defined cheekbones, gently tapered jaw, expressive brows, straight narrow nose and full natural lips.",
+        "eyes": "Grey-hazel to olive-hazel eyes.",
+        "hair": "Dark espresso-brown, jaw-length wavy bob with a loose side part and natural flyaways.",
+        "facialHair": "None.",
+        "skin": "Light warm-olive skin with visible fine texture and freckles across the nose and cheeks.",
+        "ageRange": "27-30",
+        "ep1BaseWardrobe": "Airy off-white linen shirt, high-waisted light beige wide-leg trousers, dark brown belt, brown leather shoulder bag, flat brown sandals, small gold hoops and a fine pendant necklace.",
+        "distinctiveFeatures": "Tousled jaw-length bob, hazel/olive eyes, freckles across the cheeks and guarded observant expression."
+      }
+    },
+    {
+      "id": "matteo",
+      "name": {"ru": "Маттео Риччи", "en": "Matteo Ricci"},
+      "age": 33,
+      "status": "APPROVED",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sourceAttachmentPath": "C:/Users/user/Downloads/matteo.png",
+      "format": "PNG",
+      "bytes": 2130673,
+      "width": 1448,
+      "height": 1086,
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+      "identityLock": {
+        "proportions": "Tall adult with lean athletic proportions, broad shoulders and grounded controlled stance.",
+        "face": "Strong rectangular face with high cheekbones, defined jaw, deep-set eyes, thick brows and a straight prominent nose.",
+        "eyes": "Deep brown eyes.",
+        "hair": "Short dark brown wavy hair, naturally tousled and brushed back from the forehead.",
+        "facialHair": "Short dark stubble along the jaw and upper lip; not a full beard.",
+        "skin": "Warm olive-tan skin with realistic texture.",
+        "ageRange": "31-35",
+        "ep1BaseWardrobe": "White linen shirt with open collar and rolled sleeves, light cream linen trousers, brown leather belt and loafers, simple watch, and a brown document folder or hotel keys when the cue requires them; no tuxedo.",
+        "distinctiveFeatures": "Controlled tired gaze, dark wavy hair, short rugged stubble and strong angular jaw."
+      }
+    },
+    {
+      "id": "elio",
+      "name": {"ru": "Элио Бенедетти", "en": "Elio Benedetti"},
+      "age": 30,
+      "status": "APPROVED",
+      "path": "assets/characters/references/originals/elio.png",
+      "sourceAttachmentPath": "C:/Users/user/Downloads/elio.png",
+      "format": "PNG",
+      "bytes": 2507794,
+      "width": 1448,
+      "height": 1086,
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f",
+      "identityLock": {
+        "proportions": "Adult working build with sturdy shoulders and natural hands/arms suited to kitchen work.",
+        "face": "Open oval-to-square face, broad cheek area, friendly jaw, straight nose and expressive smile.",
+        "eyes": "Warm brown to amber-brown eyes.",
+        "hair": "Short tousled brown hair with warm lighter highlights and textured curls at the crown.",
+        "facialHair": "Clean-shaven or only very light natural shadow; no long beard.",
+        "skin": "Warm sun-touched skin with clearly visible freckles over the nose and cheeks.",
+        "ageRange": "28-32",
+        "ep1BaseWardrobe": "White working chef shirt, dark worn canvas apron, dark work trousers, black kitchen shoes, and a practical service towel when the action requires it.",
+        "distinctiveFeatures": "Freckled warm face, short highlighted textured hair and humane open expression. Do not use the former long-dark-locks model-like design."
+      }
+    },
+    {
+      "id": "leo",
+      "name": {"ru": "Леонардо Витале", "en": "Leonardo Vitale"},
+      "age": 31,
+      "status": "APPROVED",
+      "approvalNote": "Последняя скорректированная версия",
+      "path": "assets/characters/references/originals/leo.png",
+      "sourceAttachmentPath": "C:/Users/user/Downloads/leo.png",
+      "format": "PNG",
+      "bytes": 2281332,
+      "width": 1122,
+      "height": 1402,
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",
+      "identityLock": {
+        "proportions": "Tall slim long-limbed adult proportions with a quiet, slightly inward posture.",
+        "face": "Long oval face with high cheekbones, narrow straight nose, soft jaw and thoughtful mouth.",
+        "eyes": "Muted green-grey eyes.",
+        "hair": "Medium-length tousled chestnut-brown hair falling naturally over the forehead and ears.",
+        "facialHair": "Clean-shaven to very light shadow; no heavy beard or strong stubble.",
+        "skin": "Light warm skin with natural fine texture and subtle freckles.",
+        "ageRange": "29-33",
+        "ep1BaseWardrobe": "Light stone linen jacket, muted olive button-up shirt, cream trousers, brown leather loafers and a worn brown shoulder satchel; an unbranded blueprint tube only in the authored harbor beat.",
+        "distinctiveFeatures": "Long tousled chestnut hair, green-grey eyes, narrow face and restrained expression. Do not use the former dark-ragged-hair/heavy-stubble version."
+      }
+    },
+    {
+      "id": "bianca",
+      "name": {"ru": "Бьянка", "en": "Bianca"},
+      "age": 32,
+      "status": "APPROVED",
+      "path": "assets/characters/references/originals/bianca.png",
+      "sourceAttachmentPath": "C:/Users/user/Downloads/bianca.png",
+      "format": "PNG",
+      "bytes": 2137778,
+      "width": 1448,
+      "height": 1086,
+      "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9",
+      "identityLock": {
+        "proportions": "Tall slender adult professional proportions with upright confident posture.",
+        "face": "Angular oval face with defined cheekbones and jaw, straight nose, full lips and a small beauty mark near the cheek/eye area.",
+        "eyes": "Cool blue-grey eyes.",
+        "hair": "Long straight copper-auburn hair with a clean side part, reaching below the shoulders.",
+        "facialHair": "None.",
+        "skin": "Light warm skin with subtle freckles and natural texture.",
+        "ageRange": "30-34",
+        "ep1BaseWardrobe": "Tailored slate-charcoal suit, ivory blouse, black pointed heels, structured black handbag, gold rectangular earrings and a simple watch.",
+        "distinctiveFeatures": "Copper-red hair, blue-grey eyes, tailored executive silhouette and small facial beauty mark."
+      }
+    },
+    {
+      "id": "giulia",
+      "name": {"ru": "Джулия", "en": "Giulia"},
+      "age": "about 49",
+      "status": "APPROVED",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sourceAttachmentPath": "C:/Users/user/Downloads/giulia.png",
+      "format": "PNG",
+      "bytes": 2409650,
+      "width": 1448,
+      "height": 1086,
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "identityLock": {
+        "proportions": "Mature adult working proportions with sturdy grounded posture.",
+        "face": "Soft oval-to-square face, pronounced cheekbones, expressive brows, strong nose with a gentle profile bump and defined jaw.",
+        "eyes": "Warm brown eyes.",
+        "hair": "Dark brown hair threaded with silver, gathered into a loose low bun with natural wisps.",
+        "facialHair": "None.",
+        "skin": "Warm medium skin with visible fine lines, freckles and natural texture.",
+        "ageRange": "47-52",
+        "ep1BaseWardrobe": "Faded sage-grey button-up shirt with rolled sleeves, beige utility apron, dark navy work trousers, black work shoes, simple watch and small gold hoops.",
+        "distinctiveFeatures": "Silver-streaked low bun, mature warm features, strong profile nose and practical laundry-worker uniform."
+      }
+    }
+  ]
+}

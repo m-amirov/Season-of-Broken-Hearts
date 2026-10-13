@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "status": "CREATED_FROM_ACTUAL_PIXELS",
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "sourceManifest": "artifacts/production-art/character-reference-manifest.json",
+  "path": "artifacts/production-art/character-reference-contact-sheet.png",
+  "format": "PNG",
+  "width": 1800,
+  "height": 1300,
+  "bytes": 2570840,
+  "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+  "composition": "Six actual reference sheets in a 3x2 overview with labels outside the original art; originals are unchanged.",
+  "reviewStatus": "LOCAL_PIXELS_CONFIRMED; INDEPENDENT_WEB_REVIEW_NOT_RECEIVED"
+}

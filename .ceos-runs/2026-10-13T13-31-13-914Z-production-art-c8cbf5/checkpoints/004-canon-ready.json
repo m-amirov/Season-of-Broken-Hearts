@@ -1,0 +1,66 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-13T13:40:10.709Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_WEB_UNAVAILABLE: independent ceos_art_director_web analysis could not receive the six reference pixels after two bounded transport attempts; no native fallback or generation is claimed",
+  "metadata": {
+    "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "webAnalysis": {
+      "status": "BLOCKED_WEB_UNAVAILABLE",
+      "actualPixelsReceived": false,
+      "attempts": 2
+    },
+    "characterReferences": {
+      "registered": 6,
+      "approved": 6,
+      "decoded": 6
+    },
+    "generation": {
+      "authorized": false,
+      "reason": "enhanced Web analysis gate unavailable"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "clean": false,
+    "worktreeSha256": "f211b62539fd694d5b9a5d150a09d2f84a6b929e89c36e814bbf888f3795f2f5"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/character-reference-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\character-reference-manifest.json",
+      "projectRelativePath": "artifacts/production-art/character-reference-manifest.json",
+      "type": "file",
+      "sha256": "1d72e94262044cf9e589e811ac8867040aad1e2ae5be39f279d720edd04260e0",
+      "size": 8962
+    },
+    {
+      "input": "artifacts/production-art/character-reference-contact-sheet.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\character-reference-contact-sheet.png",
+      "projectRelativePath": "artifacts/production-art/character-reference-contact-sheet.png",
+      "type": "file",
+      "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+      "size": 2570840
+    },
+    {
+      "input": "artifacts/production-art/character-reference-contact-sheet.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\character-reference-contact-sheet.json",
+      "projectRelativePath": "artifacts/production-art/character-reference-contact-sheet.json",
+      "type": "file",
+      "sha256": "d3925fbe7d90ed846f421caa2d33ddba64bbcf03329824e4308da5b0f3a50354",
+      "size": 649
+    },
+    {
+      "input": "artifacts/production-art/web-analysis-transport-blocker.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\web-analysis-transport-blocker.json",
+      "projectRelativePath": "artifacts/production-art/web-analysis-transport-blocker.json",
+      "type": "file",
+      "sha256": "df9e2bdd73cb8fbc258f723e55516c654470d309c37a3bd1ba95525f2ea1aecd",
+      "size": 1415
+    }
+  ]
+}

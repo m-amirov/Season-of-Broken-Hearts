@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "sceneId": "S02",
+  "authoredSceneId": "ep1_gate",
+  "cue": {"id": "ep1_gate", "at": [0, 0]},
+  "requiredCast": ["nika", "matteo"],
+  "narrativeActions": [
+    {"character": "matteo", "action": "Offers one hand while the other holds a ring of keys and a document folder against his chest; his posture is controlled and tired."},
+    {"character": "nika", "action": "Meets Matteo at the gate with professional alertness, standing at a respectful distance and reading the situation rather than leaning into him."}
+  ],
+  "sceneContinuity": "Nika has just arrived at Villa Serena on the same morning. The gate CG must support both Matteo response branches without pre-imposing a romantic outcome, then lead into the cool hotel interior and kitchen scenes.",
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"}
+  ],
+  "forbiddenProps": ["extra characters", "wrong prop holder", "tuxedo", "romantic embrace", "readable documents", "logos", "UI", "dialogue", "watermark", "luxury fantasy hotel"],
+  "desktop": {
+    "composition": "Unified full-scene gate encounter with both adults on visible paving, Villa Serena stone and gate architecture behind them, a clear respectful gap, and natural negative space for dialogue.",
+    "framing": "Human-eye-level natural lens; both faces and the occupied hands with keys/folder remain readable in a 1920x900 crop, with consistent scale and no dominant fashion pose.",
+    "requiredVisibleCast": ["nika", "matteo"]
+  },
+  "portrait": {
+    "composition": "Intentional staggered mid-thigh or waist-up portrait framing keeps both approved faces visible at 360x640, 390x844 and 430x932 while preserving the gate and paving anchor.",
+    "framing": "Keep the two silhouettes separate from the real dialogue overlay and controls; preserve Nika's shoulder bag and Matteo's occupied hand where crop allows without clipping faces or props.",
+    "requiredVisibleCast": ["nika", "matteo"]
+  },
+  "qualityAcceptance": [
+    "Nika and Matteo remain individually identifiable against their approved references, including hair, eyes, facial structure, age and wardrobe.",
+    "The keys and work folder belong to Matteo, both characters stand on the same believable paving plane, and no physical contact is implied beyond the offered handshake.",
+    "The morning gate location is coherent, text-free and free of extra characters, watermarks, UI or romanticized luxury-resort styling."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}
