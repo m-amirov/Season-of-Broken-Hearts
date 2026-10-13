@@ -183,3 +183,15 @@ test('stage does not advance from drags, long presses, menu modal or choice cont
   assert.deepEqual(calls, ['choose:matteo_formal']);
   controller.destroy();
 });
+
+
+test('cinematic reader has an independent episode slide and a borderless dialogue layer', () => {
+  const style = fs.readFileSync(new URL('../../src/styles.css', import.meta.url), 'utf8');
+  const renderer = fs.readFileSync(new URL('../../src/ui/renderer-stage6.mjs', import.meta.url), 'utf8');
+  assert.match(style, /\\.reader-sheet\\s*\\{[^}]*border:\\s*0;/s);
+  assert.match(style, /\\.reader-sheet\\s*\\{[^}]*background:\\s*transparent;/s);
+  assert.match(style, /\\.episode-intro\\s*\\{/);
+  assert.match(renderer, /chapter\.title/);
+  assert.match(renderer, /sceneTitle\.hidden = true/);
+  assert.match(renderer, /advanceHint\.hidden = choiceButtons\.length > 0 \\|\\| complete \\|\\| !engine\.showTutorialHint\\(\\)/);
+});
