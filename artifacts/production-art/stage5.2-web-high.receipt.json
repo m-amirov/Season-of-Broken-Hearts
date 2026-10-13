@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "PARTIAL_INCOMPLETE_CURRENT_HEAD_COVERAGE",
+  "sourceHead": "ef0ca0e42c531d245aaac9dcf0357c66f912d66d",
+  "assurance": "visual-content",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoning": "high",
+  "currentPixelBundle": {
+    "path": "artifacts/evidence/stage5.2-runtime-integrated-final.json",
+    "sha256": "1c47a1cb4ca8f2826e5a2fc53737bdfbe91601d6cf19466847658b5f8e203823",
+    "usePreview": false,
+    "captures": 20,
+    "viewports": ["360x640", "390x844", "430x932", "1920x900"]
+  },
+  "reviews": [
+    {
+      "phase": "acceptance-part-1",
+      "agentId": "01a13605-233a-7de2-b324-e9d73733a05c",
+      "actualPixelsReceived": true,
+      "reviewedCues": ["CG-01", "CG-02"],
+      "receivedRuntimeFrames": 8,
+      "rawVerdict": "REWORK",
+      "rawFindings": [
+        "CG-01 reviewer marked 360x640 and 1920x900 P1 because the suitcase is mostly below the dark gradient.",
+        "CG-02 reviewer marked anchor and choice P1 because it interpreted the offered handshake as requiring completed hand contact and called keys low-contrast."
+      ],
+      "parentAdjudication": [
+        "CG-01 finding conflicts with the explicit acceptance rule: full suitcase is not required when the partial bag plus Villa Serena gate make arrival obvious.",
+        "CG-02 finding conflicts with the authored runtime line visible in the supplied frame: Matteo offers his hand while holding keys/folder; completed contact is not required."
+      ],
+      "evidenceCoverage": "Current CG-01/CG-02 pixels were delivered; independent reviewer did not accept the explicit task adjudication."
+    },
+    {
+      "phase": "acceptance-part-2",
+      "agentId": "01a13605-233a-7de2-b324-e9d73733a05c",
+      "actualPixelsReceived": false,
+      "reviewedCues": ["CG-03", "CG-04"],
+      "status": "TRANSPORT_BLOCKED",
+      "reason": "Web High follow-up stream disconnected before completion after the current pixel attachment turn."
+    },
+    {
+      "phase": "acceptance-cg03-cg04-retry",
+      "agentId": "01a1360c-9cdc-7972-9c78-83896b598031",
+      "actualPixelsReceived": false,
+      "reviewedCues": ["CG-03", "CG-04"],
+      "status": "TRANSPORT_BLOCKED",
+      "reason": "Composer did not preserve the complete attachment prompt; no acceptance verdict was admitted."
+    }
+  ],
+  "historicalEvidenceNotPromoted": [
+    "artifacts/production-art/stage5.1-web-review.receipt.json",
+    "artifacts/production-art/stage5.1-cg-acceptance.receipt.json"
+  ],
+  "noNewProductionArtRun": true,
+  "newImagesGenerated": 0
+}

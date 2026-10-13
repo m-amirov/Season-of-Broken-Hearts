@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "status": "CURRENT_SOURCE_BOUND_RUNTIME_ACCEPTANCE",
+  "sourceHead": "ef0ca0e42c531d245aaac9dcf0357c66f912d66d",
+  "comparisonHead": "502f042ddbce756c213b5101102a9c7648b95e69",
+  "previousTerminalRun": "2026-10-13T14-18-40-004Z-production-art-060cd4",
+  "previousTerminalRunPreserved": true,
+  "newImagesGeneratedThisTurn": 0,
+  "candidateLimitRespected": true,
+  "approvedCharacterReferencesChanged": false,
+  "referenceManifest": {
+    "path": "artifacts/production-art/character-reference-manifest.json",
+    "sha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4"
+  },
+  "mechanicalReceipts": {
+    "ep1-arrival-cg-v1": "artifacts/production-art/ep1-arrival-cg-output-receipt.json",
+    "ep1-arrival-cg-v2": "artifacts/production-art/ep1-arrival-cg-v2-output-receipt.json",
+    "ep1-matteo-gate-cg": "artifacts/production-art/ep1-matteo-gate-cg-output-receipt.json",
+    "ep1-elio-kitchen-cg": "artifacts/production-art/ep1-elio-kitchen-cg-output-receipt.json",
+    "ep1-leo-harbor-cg": "artifacts/production-art/ep1-leo-harbor-cg-output-receipt.json"
+  },
+  "preservedExistingCg": [
+    {"path": "assets/production/cg/ep1-arrival-cg.png", "sha256": "ada685552224102c731180b3867a600c7afbf65aad239286d14b798d6573fc01", "bytes": 2789799, "dimensions": {"width": 1024, "height": 1536}},
+    {"path": "assets/production/cg/ep1-arrival-cg-v2.png", "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80", "bytes": 2756788, "dimensions": {"width": 1024, "height": 1536}},
+    {"path": "assets/production/cg/ep1-matteo-gate-cg.png", "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf", "bytes": 2935141, "dimensions": {"width": 1024, "height": 1536}},
+    {"path": "assets/production/cg/ep1-elio-kitchen-cg.png", "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918", "bytes": 2620196, "dimensions": {"width": 1024, "height": 1536}},
+    {"path": "assets/production/cg/ep1-leo-harbor-cg.png", "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa", "bytes": 2661333, "dimensions": {"width": 1024, "height": 1536}}
+  ],
+  "runtimeMappings": [
+    {"assetId": "ep1-arrival-cg", "sceneIds": ["ep1_arrival"], "selectedFile": "assets/production/cg/ep1-arrival-cg-v2.png", "objectPosition": "50% 18%", "sourceBoundBrief": "artifacts/production-art/art-briefs/S01-ep1-arrival-cg.json"},
+    {"assetId": "ep1-matteo-gate-cg", "sceneIds": ["ep1_gate", "ep1_matteo_formal_response", "ep1_matteo_direct_response"], "selectedFile": "assets/production/cg/ep1-matteo-gate-cg.png", "objectPosition": "50% 5%", "sourceBoundBrief": "artifacts/production-art/art-briefs/S02-ep1-matteo-gate-cg.json"},
+    {"assetId": "ep1-elio-kitchen-cg", "sceneIds": ["ep1_kitchen", "ep1_elio_humor_response", "ep1_elio_boundary_response"], "selectedFile": "assets/production/cg/ep1-elio-kitchen-cg.png", "objectPosition": "50% 5%", "sourceBoundBrief": "artifacts/production-art/art-briefs/S06-ep1-elio-kitchen-cg.json"},
+    {"assetId": "ep1-leo-harbor-cg", "sceneIds": ["ep1_leo_entrance"], "selectedFile": "assets/production/cg/ep1-leo-harbor-cg.png", "objectPosition": {"desktop": "50% 0%", "mobileMax699": "50% 15%"}, "sourceBoundBrief": "artifacts/production-art/art-briefs/S14-ep1-leo-harbor-cg.json"}
+  ],
+  "unfinishedPlaceholderSceneCount": 10,
+  "runtimeMatrix": {
+    "path": "artifacts/evidence/stage5.2-runtime-integrated-final.json",
+    "sha256": "1c47a1cb4ca8f2826e5a2fc53737bdfbe91601d6cf19466847658b5f8e203823",
+    "viewports": ["360x640", "390x844", "430x932", "1920x900"],
+    "captureCount": 20,
+    "usePreview": false,
+    "consoleErrors": 0,
+    "requestFailures": 0
+  },
+  "repairDecision": {
+    "confirmedDefect": "Global object-position 50% 50% hid upper faces and key scene cues in the actual .scene-art cover crop.",
+    "resolvedBy": ["asset-specific object-position", "preload and decode before scene swap", "last-valid-frame fallback on load/decode failure"],
+    "imageRepairRequired": false,
+    "productionArtRunCreated": false
+  }
+}

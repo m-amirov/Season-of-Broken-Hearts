@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "PARTIAL_RUNTIME_ACCEPTANCE_WEB_HIGH_BLOCKED",
+  "sourceHead": "ef0ca0e42c531d245aaac9dcf0357c66f912d66d",
+  "comparisonHead": "502f042ddbce756c213b5101102a9c7648b95e69",
+  "finalEvidenceIsDescendantOfSourceHead": true,
+  "runtimeMatrix": "artifacts/evidence/stage5.2-runtime-integrated-final.json",
+  "ceosWebReviewVerification": "WEB_REVIEW_NOT_VERIFIED",
+  "viewports": ["360x640", "390x844", "430x932", "1920x900"],
+  "localRuntime": {
+    "consoleErrors": 0,
+    "requestFailures": 0,
+    "usePreview": false,
+    "imageRepairRequired": false,
+    "newImagesGenerated": 0
+  },
+  "cgVerdicts": [
+    {
+      "cue": "CG-01 Arrival",
+      "asset": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "localRuntimeVerdict": "PASS_WITH_ACCEPTABLE_PARTIAL_SUITCASE",
+      "viewportVerdicts": {"360x640": "PASS", "390x844": "PASS", "430x932": "PASS", "1920x900": "PASS"},
+      "resolvedBy": "asset-specific object-position 50% 18%",
+      "imageRepair": "NONE",
+      "webHigh": "REWORK_REPORTED_BUT_CONFLICTS_WITH_TASK_RULE"
+    },
+    {
+      "cue": "CG-02 Matteo Gate",
+      "asset": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "localRuntimeVerdict": "PASS",
+      "viewportVerdicts": {"360x640": "PASS", "390x844": "PASS", "430x932": "PASS", "1920x900": "PASS"},
+      "states": ["anchor", "choice"],
+      "resolvedBy": "asset-specific object-position 50% 5%",
+      "imageRepair": "NONE",
+      "webHigh": "REWORK_REPORTED_BUT_REVIEWER_EXPECTED_COMPLETED_HANDSHAKE"
+    },
+    {
+      "cue": "CG-03 Elio Kitchen",
+      "asset": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "localRuntimeVerdict": "PASS_VISUAL_COMPOSITION",
+      "viewportVerdicts": {"360x640": "PASS", "390x844": "PASS", "430x932": "PASS", "1920x900": "PASS"},
+      "resolvedBy": "asset-specific object-position 50% 5%",
+      "imageRepair": "NONE_BY_USER_SCOPE",
+      "semanticBlocker": "Displayed authored line mentions white apron/knife/pot interaction while the existing accepted image shows dark apron/towel; story and image were intentionally not changed.",
+      "webHigh": "CURRENT_ACCEPTANCE_NOT_VERIFIED_TRANSPORT_BLOCKED"
+    },
+    {
+      "cue": "CG-04 Leo Harbor",
+      "asset": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "localRuntimeVerdict": "PASS",
+      "viewportVerdicts": {"360x640": "PASS", "390x844": "PASS", "430x932": "PASS", "1920x900": "PASS"},
+      "resolvedBy": "mobile object-position 50% 15%; desktop object-position 50% 0%",
+      "imageRepair": "NONE",
+      "webHigh": "CURRENT_ACCEPTANCE_NOT_VERIFIED_TRANSPORT_BLOCKED"
+    }
+  ],
+  "remainingScope": {
+    "placeholderSceneCount": 10,
+    "fullEp1ArtAcceptance": "NOT_CLAIMED",
+    "releaseReadiness": "NOT_CLAIMED",
+    "webHighGate": "BLOCKED_INCOMPLETE_CURRENT_HEAD_COVERAGE"
+  }
+}
