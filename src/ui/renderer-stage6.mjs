@@ -9,7 +9,7 @@ export const UI_TEXT = {
     contrastOff: 'Обычный', motion: 'Анимация', motionOn: 'Системная', motionOff: 'Выключена',
     backToMenu: 'К меню', confirmNewGameTitle: 'Начать новую игру?',
     confirmNewGameText: 'Текущее сохранение будет удалено. Это действие нельзя отменить.',
-    confirmNewGame: 'Начать заново', cancel: 'Отмена', episode: 'Эпизод 1',
+    confirmNewGame: 'Начать заново', cancel: 'Отмена', episode: 'Эпизод 1', episodeBase: 'Эпизод', skipIntro: 'Пропустить заставку',
     tapToContinue: 'Нажмите, чтобы продолжить', chooseResponse: 'Выберите ответ',
     complete: 'Эпизод завершён', saved: 'Сохранено', cliffhanger: 'Продолжение следует',
     corruptSave: 'Сохранение повреждено или устарело — начата новая игра.',
@@ -24,7 +24,7 @@ export const UI_TEXT = {
     contrastOff: 'Standard', motion: 'Animation', motionOn: 'System', motionOff: 'Off',
     backToMenu: 'Back to menu', confirmNewGameTitle: 'Start a new game?',
     confirmNewGameText: 'Your current save will be deleted. This cannot be undone.',
-    confirmNewGame: 'Start over', cancel: 'Cancel', episode: 'Episode 1',
+    confirmNewGame: 'Start over', cancel: 'Cancel', episode: 'Episode 1', episodeBase: 'Episode', skipIntro: 'Skip episode title',
     tapToContinue: 'Tap to continue', chooseResponse: 'Choose a response',
     complete: 'Episode complete', saved: 'Saved', cliffhanger: 'To be continued',
     corruptSave: 'The save is damaged or outdated — a new game has started.',
@@ -69,13 +69,12 @@ export function createRenderer(root) {
   backIcon.setAttribute('aria-hidden', 'true');
   const backLabel = element('span', 'reader-nav-label');
   backButton.append(backIcon, backLabel);
-  const episodeMarker = element('p', 'episode-marker');
   const menuButton = button('reader-nav-button reader-menu-button');
   const menuIcon = element('span', 'reader-menu-icon', '☰');
   menuIcon.setAttribute('aria-hidden', 'true');
   const menuLabel = element('span', 'reader-nav-label');
   menuButton.append(menuIcon, menuLabel);
-  topbar.append(backButton, episodeMarker, menuButton);
+  topbar.append(backButton, menuButton);
 
   const dialogue = element('article', 'reader-sheet');
   dialogue.setAttribute('aria-live', 'polite');
@@ -147,7 +146,17 @@ export function createRenderer(root) {
   const orientationText = element('p', 'orientation-text');
   orientationLock.append(orientationIcon, orientationTitle, orientationText);
 
-  shell.append(stage, menu, orientationLock);
+  // A standalone title slide, distinct from the dialogue and independent of scene navigation.
+  const episodeIntro = button('episode-intro');
+  episodeIntro.hidden = true;
+  const introNumber = element('span', 'episode-intro-number');
+  const introRule = element('span', 'episode-intro-rule');
+  introRule.setAttribute('aria-hidden', 'true');
+  const introTitle = element('span', 'episode-intro-title');
+  const introSkip = element('span', 'episode-intro-skip');
+  episodeIntro.append(introNumber, introRule, introTitle, introSkip);
+
+  shell.append(stage, menu, episodeIntro, orientationLock);
   root.append(shell);
 
   let previousSceneId = null;
@@ -196,7 +205,7 @@ export function createRenderer(root) {
     menuTitle.textContent = labels.menu;
     menuCloseButton.textContent = `× ${labels.close}`;
     menuCloseButton.setAttribute('aria-label', labels.close);
-    menuProgress.textContent = `${labels.episode} · ${engine.sceneTitle()}`;
+    menuProgress.textContent = `${labels.episodeBase} ${engine.episodeIntro().episode} · ${engine.sceneTitle()}`;
     menuContinueButton.textContent = labels.resume;
     menuNewGameButton.textContent = labels.newGame;
     menuSettingsButton.textContent = labels.settings;
@@ -217,9 +226,9 @@ export function createRenderer(root) {
       root, shell, stage, advanceSurface: stage, image, title: sceneTitle, sceneTitle, speaker, text, choices, status,
       backButton, menuButton, menu, menuCloseButton, menuContinueButton, menuSettingsButton, menuNewGameButton,
       settingsBackButton, newGameConfirmButton, newGameCancelButton, settingsTitle, confirmationTitle, localeButtons, settingButtons,
-      orientationLock, orientationTitle, orientationText
+      orientationLock, orientationTitle, orientationText, episodeIntro
     },
-    render({ engine, assetManager, notice = '', menuOpen = false, menuView = 'main', settings = {} }) {
+    render({ engine, assetManager, notice = '', menuOpen = false, menuView = 'main', settings = {}, showIntro = false }) {
       const locale = engine.locale();
       const labels = UI_TEXT[locale] ?? UI_TEXT.ru;
       const scene = engine.currentScene();
@@ -233,9 +242,9 @@ export function createRenderer(root) {
       backButton.setAttribute('aria-label', labels.back);
       menuLabel.textContent = labels.menu;
       menuButton.setAttribute('aria-label', labels.menu);
-      episodeMarker.textContent = labels.episode;
       choices.setAttribute('aria-label', labels.chooseResponse);
       sceneTitle.textContent = getLocalizedText(scene.title, locale);
+      sceneTitle.hidden = true; // Chapter names belong to the episode intro, not the reading HUD.
       speaker.textContent = line.speaker
         ? getLocalizedText(engine.graph().characterNames?.[line.speaker] ?? line.speaker.toUpperCase(), locale)
         : '';
@@ -274,14 +283,21 @@ export function createRenderer(root) {
       choices.append(...choiceButtons);
       choices.hidden = choiceButtons.length === 0;
       const complete = engine.isEpisodeComplete();
-      advanceHint.textContent = choiceButtons.length > 0
-        ? labels.chooseResponse
-        : complete ? labels.complete : labels.tapToContinue;
-      advanceHint.hidden = complete && choiceButtons.length === 0;
+      advanceHint.textContent = labels.tapToContinue;
+      advanceHint.hidden = choiceButtons.length > 0 || complete || !engine.showTutorialHint();
       status.textContent = notice || (complete ? labels.complete : engine.isEnding() ? labels.cliffhanger : labels.saved);
       backButton.disabled = !engine.canBack();
       dialogue.dataset.hasChoices = String(choiceButtons.length > 0);
       updateMenu({ labels, engine, menuOpen, menuView, settings });
+      episodeIntro.hidden = !showIntro;
+      stage.inert = Boolean(showIntro || menuOpen);
+      if (showIntro) {
+        const chapter = engine.episodeIntro();
+        introNumber.textContent = `${labels.episodeBase} ${chapter.episode}`;
+        introTitle.textContent = chapter.title;
+        introSkip.textContent = labels.tapToContinue;
+        episodeIntro.setAttribute('aria-label', `${chapter.title}. ${labels.skipIntro}`);
+      }
       orientationTitle.textContent = labels.rotateTitle;
       orientationText.textContent = labels.rotateText;
       return { choiceButtons, sceneChanged, ready: pendingSceneReady };
