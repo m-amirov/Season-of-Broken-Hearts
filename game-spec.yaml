@@ -1,0 +1,108 @@
+schemaVersion: 2
+yandex:
+  publication:
+    type: first-publication
+
+project:
+  slug: season-of-broken-hearts
+  title:
+    ru: Сезон разбитых сердец
+    en: Season of Broken Hearts
+  platform: yandex-games
+  engine: browser-esm
+  target: ep1-vertical-slice
+
+game:
+  genre: romance-visual-novel
+  audience: 16+
+  sessionMinutes: 20
+  orientation: portrait-first
+  description: >-
+    Ника Воронцова приезжает на десять недель в семейный отель Villa Serena,
+    чтобы провести летний сезон и начать жизнь заново. В первом эпизоде она
+    знакомится с Маттео и Элио, узнаёт о кризисе отеля и встречает Леонардо,
+    первую любовь, исчезнувшую восемь лет назад.
+  coreLoop: [read-scene, choose-response, observe-consequence, save-progress, revisit-choice]
+  winCondition: Reach the authored EP1 cliffhanger with a coherent saved state.
+  loseCondition: No random loss state; player may refuse romance and choose independence.
+
+content:
+  episodes: 10
+  implementedEpisodes: 1
+  routes: [matteo, leo, elio, independent]
+  romanceEndings: 7
+  hotelOutcomes: 3
+  deterministicGeneration: true
+
+visual:
+  artDirection: Mediterranean summer, limestone, sea light, intimate evening contrast
+  assetCreation: placeholder-only
+  productionArtStatus: BLOCKED_ART_PRODUCTION
+  imageModelPreferred: false
+  proceduralFallback: true
+  firstGenerationMayBeFinal: false
+  marketing:
+    icon: false
+    cover: false
+    desktopScreenshots: 0
+    mobileScreenshots: 0
+    horizontalGameplayVideo:
+      languageDependentText: false
+      targetDurationSeconds: [0, 0]
+      gameplayRatioTarget: 0.0
+
+audio:
+  enabled: true
+  autoplay: false
+  muteSetting: true
+  pauseForAds: true
+
+accessibility:
+  reducedMotion: true
+  colorOnlyCriticalStates: false
+  criticalInformationAudioOnly: false
+  minimumTouchTargetCssPx: 44
+
+localization:
+  languages: [ru, en]
+  autoDetectYandexLanguage: true
+  fallback: ru
+
+platform:
+  cloudSave: false
+  authentication: optional
+  leaderboards:
+    enabled: false
+    boards: []
+  ads:
+    fullscreen: true
+    rewarded: true
+    fullscreenPolicy: result-navigation-only
+  gameplayApi: true
+  pwa: false
+  serviceWorker: false
+  externalRuntimeAssets: false
+  webGpuOnly: false
+
+quality:
+  viewports:
+    - { width: 360, height: 640 }
+    - { width: 390, height: 844 }
+    - { width: 430, height: 932 }
+  budgets:
+    maxInitialDownloadMb: 12
+    maxZipUnpackedMb: 100
+    targetFps: 60
+    minimumFps: 30
+    maxFrameMs: 33
+    maxSceneListenerLeaks: 0
+    maxTimerLeaks: 0
+    maxRenderTextureLeaks: 0
+  zeroConsoleErrors: true
+  noOpenP0P1: true
+
+release:
+  publish: false
+  submitToModeration: false
+  zipRootMustContainIndex: true
+  includeSha256: true

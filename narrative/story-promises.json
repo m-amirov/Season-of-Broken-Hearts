@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "promises": [
+    {
+      "id": "ep1-villa-crisis",
+      "status": "authored",
+      "setup": {"sceneId": "ep1_hotel_crisis"},
+      "payoff": {"sceneId": "ep1_hook"}
+    },
+    {
+      "id": "ep1-leo-return",
+      "status": "authored",
+      "setup": {"sceneId": "ep1_leo_entrance"},
+      "payoff": {"sceneId": "ep1_hook"}
+    },
+    {
+      "id": "matteo-negotiation-documents",
+      "status": "planned"
+    },
+    {
+      "id": "elio-restaurant-departure",
+      "status": "planned"
+    },
+    {
+      "id": "season-hotel-outcome",
+      "status": "planned"
+    }
+  ]
+}

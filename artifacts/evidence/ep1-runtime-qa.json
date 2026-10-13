@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_VERTICAL_SLICE_RUNTIME",
+  "capturedAt": "2026-10-13",
+  "sourceHead": "9b0399537f80aa4359b8b1415c06fbc58def80d9",
+  "server": "http://127.0.0.1:4173",
+  "browser": {
+    "smoke": "PASS",
+    "path": "EP1 start -> dialogue -> choices -> Matteo/Elio/hotel/Leo consequences -> ep1_hook cliffhanger",
+    "endingScene": "ep1_hook",
+    "endingTitle": {
+      "ru": "Не возвращайся",
+      "en": "Do Not Come Back"
+    },
+    "backRestoresPreChoiceSnapshot": true,
+    "reloadRestoresEnding": true,
+    "localeSwitchPreservesProgress": true,
+    "choiceInputDoesNotFallThrough": true,
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "staticRequests": {
+      "failed": 0,
+      "checkedStatuses": [200]
+    }
+  },
+  "viewports": [
+    {
+      "width": 360,
+      "height": 640,
+      "overflow": false,
+      "screenshots": [
+        "output/playwright/ep1-360-start.png",
+        "output/playwright/ep1-360-en.png",
+        "output/playwright/ep1-360-after-matteo.png"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "screenshots": ["output/playwright/ep1-390-start.png"]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "screenshots": [
+        "output/playwright/ep1-430-start.png",
+        "output/playwright/ep1-430-ending.png"
+      ]
+    }
+  ],
+  "screenshotsSha256": {
+    "output/playwright/ep1-360-after-matteo.png": "58A3D76501D1510BCCBE99E179123DA1D915B2B62EDF3AC43006AD73770B9688",
+    "output/playwright/ep1-360-en.png": "90198664D67466B02D49E1A795A6FC12B1C0AB3AAE8306A11297367494654F5D",
+    "output/playwright/ep1-360-start.png": "85210D9CADB9BA12F1EF6721AB31290CE9CE1215CEECB1660627C84B70F5299F",
+    "output/playwright/ep1-390-start.png": "C3B608EB97810ED85A867265FAFACCADF23DF964F3FDD41C86E990BC8C1A5D29",
+    "output/playwright/ep1-430-ending.png": "736E9C05FB504FA194BD3AF1CE06D082FC12A3E4D4996707DC246F6C028390F2",
+    "output/playwright/ep1-430-start.png": "B86985AD7E7596845D3B6AF4332986F1AEAFADA9A152FFFEAF83E53168387304"
+  },
+  "disclaimers": [
+    "Visuals are temporary placeholders; production art acceptance remains BLOCKED_ART_PRODUCTION.",
+    "This is local browser evidence, not Yandex-hosted or Web High artistic acceptance."
+  ]
+}

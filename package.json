@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/unit/*.test.mjs",
+    "dev": "node tools/dev-server.mjs",
+    "narrative:fixtures": "node tools/narrative/export-fixtures.mjs",
+    "narrative:validate": "node tools/narrative/narrative-game-check.mjs --project . --profile config/narrative-game.local.json --require-enabled",
+    "starter-kit:self-test": "node tools/starter-kit/self-test.mjs",
+    "starter-kit:status": "node tools/starter-kit/status.mjs",
+    "yandex:requirements:audit": "node tools/yandex/requirements-audit.mjs",
+    "yandex:console:audit": "node tools/yandex/requirements-audit.mjs --console-only",
+    "yandex:docs:check": "node tools/yandex/docs-watch.mjs",
+    "yandex:docs:accept-snapshot": "node tools/yandex/docs-watch.mjs --accept-snapshot",
+    "yandex:media:validate": "node tools/yandex/media-validation.mjs",
+    "yandex:external:verify": "node tools/yandex/external-evidence.mjs verify",
+    "yandex:external:run": "node tools/yandex/external-evidence.mjs run",
+    "yandex:external:normalize": "node tools/yandex/external-evidence.mjs normalize",
+    "yandex:external:audit": "node tools/yandex/external-evidence.mjs audit",
+    "skills:validate": "node tools/starter-kit/self-test.mjs",
+    "yandex:release:evidence": "node tools/yandex/release-evidence-gate.mjs",
+    "yandex:sdk:validate": "node tools/yandex/sdk-validation.mjs",
+    "yandex:contract:validate": "node tools/yandex/project-contract-validation.mjs"
+  }
+}

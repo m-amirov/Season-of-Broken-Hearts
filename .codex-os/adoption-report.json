@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "operation": "adoption",
+  "profile": "yandex-games",
+  "detection": {
+    "profile": "yandex-games",
+    "confidence": "explicit",
+    "signals": [],
+    "notes": [
+      "Profile supplied explicitly."
+    ]
+  },
+  "manifestSha256": "c280774bbb3f12d2588ca26b4ae16755b9ad8fda198ebe3d12abe54433f51440",
+  "managedFiles": [
+    ".codex-os/project.yml",
+    ".codex-os/adoption-report.json"
+  ],
+  "projectOwnedPreserved": [
+    "package.json",
+    "src/",
+    "public/",
+    "assets/",
+    "scripts/",
+    "tests/",
+    "game-spec.yaml"
+  ],
+  "manifest": {
+    "version": 1,
+    "profile": "yandex-games",
+    "commands": {
+      "starter_kit_self_test": "npm run starter-kit:self-test"
+    },
+    "gates": {
+      "verification": [
+        "starter_kit_self_test"
+      ],
+      "release": [
+        "starter_kit_self_test"
+      ]
+    },
+    "production": {
+      "access": "read-only"
+    },
+    "release": {
+      "clean_worktree": true
+    }
+  }
+}

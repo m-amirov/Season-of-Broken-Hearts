@@ -1,0 +1,34 @@
+{
+  "runId": "2026-10-13T07-53-04-815Z",
+  "directory": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\upstream\\yandex-docs\\2026-10-13T07-53-04-815Z",
+  "status": "PASS",
+  "blockCode": null,
+  "reviewRequired": false,
+  "verdicts": [
+    "UNCHANGED"
+  ],
+  "parseErrors": [],
+  "diffs": {
+    "requirements": {
+      "clauseCount": {
+        "before": 157,
+        "after": 157
+      },
+      "added": [],
+      "changed": [],
+      "repealed": [],
+      "reactivated": []
+    },
+    "draft": {
+      "added": {},
+      "removed": {},
+      "changed": {}
+    },
+    "moderation": {},
+    "detailPages": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    }
+  }
+}

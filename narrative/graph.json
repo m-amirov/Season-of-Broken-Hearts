@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "start": "ep1_arrival",
+  "locales": ["ru", "en"],
+  "characters": ["nika", "matteo", "elio", "leo"],
+  "stateSchema": {
+    "route": {"type": "string", "values": ["none", "matteo", "leo", "elio", "independent"]},
+    "trustMatteo": {"type": "number", "values": [0, 1]},
+    "trustLeo": {"type": "number", "values": [0, 1]},
+    "trustElio": {"type": "number", "values": [0, 1, 2]},
+    "relationshipMatteo": {"type": "number", "values": [0, 1]},
+    "relationshipLeo": {"type": "number", "values": [0, 1]},
+    "relationshipElio": {"type": "number", "values": [0, 1]},
+    "staffTrust": {"type": "number", "values": [0, 1, 2]},
+    "fundingEvidence": {"type": "number", "values": [0, 1]},
+    "investorTerms": {"type": "string", "values": ["unknown", "known-risk"]},
+    "metMatteo": {"type": "boolean"},
+    "metElio": {"type": "boolean"},
+    "metLeo": {"type": "boolean"},
+    "leoTruthHeard": {"type": "boolean"},
+    "elioKitchen": {"type": "boolean"},
+    "askedAboutHotel": {"type": "boolean"},
+    "lastChoice": {"type": "string", "values": ["none", "matteo_formal", "matteo_direct", "elio_humor", "elio_boundary", "hotel_numbers", "hotel_staff", "leo_hear", "leo_distance"]}
+  },
+  "initialState": {
+    "route": "none",
+    "trustMatteo": 0,
+    "trustLeo": 0,
+    "trustElio": 0,
+    "relationshipMatteo": 0,
+    "relationshipLeo": 0,
+    "relationshipElio": 0,
+    "staffTrust": 0,
+    "fundingEvidence": 0,
+    "investorTerms": "unknown",
+    "metMatteo": false,
+    "metElio": false,
+    "metLeo": false,
+    "leoTruthHeard": false,
+    "elioKitchen": false,
+    "askedAboutHotel": false,
+    "lastChoice": "none"
+  },
+  "scenes": [
+    {
+      "id": "ep1_arrival",
+      "episode": 1,
+      "title": {"ru": "Никогда не возвращайся", "en": "Never Come Back"},
+      "assetId": "arrival",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед."},
+          {"speaker": "nika", "text": "Десять недель. Работа, море и никаких решений, принятых на эмоциях."},
+          {"speaker": null, "text": "На табличке у ворот блестело имя Villa Serena. Восемь лет назад Ника уже видела это побережье. В отеле — ещё нет."}
+        ],
+        "en": [
+          {"speaker": null, "text": "The southern air smelled of salt, dust, and lemon peel. Nika Vorontsova closed the taxi door and did not watch it leave."},
+          {"speaker": "nika", "text": "Ten weeks. A job, the sea, and no decisions made in the heat of the moment."},
+          {"speaker": null, "text": "The Villa Serena sign glinted above the gate. Nika had seen this coast eight years ago. She had never worked at the hotel."}
+        ]
+      },
+      "next": "ep1_gate"
+    },
+    {
+      "id": "ep1_gate",
+      "episode": 1,
+      "title": {"ru": "Ворота Villa Serena", "en": "The Villa Serena Gate"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "matteo", "text": "Ника Воронцова? Маттео Риччи. Вы приехали на сорок минут раньше."},
+          {"speaker": "nika", "text": "Это плохо?"},
+          {"speaker": "matteo", "text": "Для человека, который должен спасать расписание, — скорее обнадёживает."}
+        ],
+        "en": [
+          {"speaker": "matteo", "text": "Nika Vorontsova? Matteo Ricci. You are forty minutes early."},
+          {"speaker": "nika", "text": "Is that a problem?"},
+          {"speaker": "matteo", "text": "For someone hired to rescue a schedule, it is encouraging."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "matteo_formal",
+          "label": {"ru": "Отдать ему папку и перейти к делу", "en": "Hand him the folder and get to work"},
+          "to": "ep1_matteo_welcome",
+          "effects": {"trustMatteo": 1, "staffTrust": 1, "metMatteo": true, "lastChoice": "matteo_formal"}
+        },
+        {
+          "id": "matteo_direct",
+          "label": {"ru": "Сразу спросить, что именно нужно спасать", "en": "Ask what exactly needs rescuing"},
+          "to": "ep1_matteo_welcome",
+          "effects": {"trustMatteo": 0, "staffTrust": 0, "metMatteo": true, "lastChoice": "matteo_direct"}
+        }
+      ]
+    },
+    {
+      "id": "ep1_matteo_welcome",
+      "episode": 1,
+      "title": {"ru": "Чужая ответственность", "en": "Someone Else's Responsibility"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "matteo", "text": "Ваш кабинет на первом этаже. Команда уже знает, что вы не просили это лето о снисхождении."},
+          {"speaker": "nika", "text": "Я просила только нормальный контракт и возможность делать свою работу."},
+          {"speaker": "matteo", "text": "Тогда у нас есть общий язык. Это редкая роскошь в этом доме."}
+        ],
+        "en": [
+          {"speaker": "matteo", "text": "Your office is on the ground floor. The team knows you did not come here asking summer to go easy on you."},
+          {"speaker": "nika", "text": "I asked for a proper contract and a chance to do my job."},
+          {"speaker": "matteo", "text": "Then we have a language in common. That is a rare luxury in this house."}
+        ]
+      },
+      "next": "ep1_kitchen"
+    },
+    {
+      "id": "ep1_kitchen",
+      "episode": 1,
+      "title": {"ru": "Соль по вкусу", "en": "Salt to Taste"},
+      "assetId": "kitchen",
+      "dialogue": {
+        "ru": [
+          {"speaker": "elio", "text": "Вы Ника. Отлично. Я уже поставил воду для кофе — это мой способ приветствовать людей и проверять их характер."},
+          {"speaker": "nika", "text": "А если я пью чай?"},
+          {"speaker": "elio", "text": "Тогда придётся признать, что у вас есть тайны."}
+        ],
+        "en": [
+          {"speaker": "elio", "text": "You must be Nika. Excellent. I put water on for coffee — my way of welcoming people and testing their character."},
+          {"speaker": "nika", "text": "What if I drink tea?"},
+          {"speaker": "elio", "text": "Then I will have to admit you have secrets."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "elio_humor",
+          "label": {"ru": "Подыграть: попросить кофе и опасный вопрос", "en": "Play along: ask for coffee and a dangerous question"},
+          "to": "ep1_work_briefing",
+          "effects": {"trustElio": 1, "relationshipElio": 1, "metElio": true, "elioKitchen": true, "lastChoice": "elio_humor"}
+        },
+        {
+          "id": "elio_boundary",
+          "label": {"ru": "Улыбнуться, но вернуть разговор к работе", "en": "Smile, then steer back to work"},
+          "to": "ep1_work_briefing",
+          "effects": {"trustElio": 2, "relationshipElio": 0, "metElio": true, "elioKitchen": true, "lastChoice": "elio_boundary"}
+        }
+      ]
+    },
+    {
+      "id": "ep1_work_briefing",
+      "episode": 1,
+      "title": {"ru": "Лето по минутам", "en": "Summer, Measured in Minutes"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "К полудню Ника получила расписание, список поставщиков и карту террасы. Папка была слишком тонкой для семидесятилетней истории."},
+          {"speaker": "matteo", "text": "Через десять недель у Villa Serena юбилей. Нам нужны гости, партнёры и причина остаться независимыми."},
+          {"speaker": "nika", "text": "Значит, я приехала не просто расставлять цветы."},
+          {"speaker": "matteo", "text": "Цветы тоже важны. Но они не оплачивают кухню."}
+        ],
+        "en": [
+          {"speaker": null, "text": "By noon, Nika had a schedule, a supplier list, and a map of the terrace. The folder was too thin for a seventy-year history."},
+          {"speaker": "matteo", "text": "Villa Serena turns seventy in ten weeks. We need guests, partners, and a reason to stay independent."},
+          {"speaker": "nika", "text": "So I did not come here just to arrange flowers."},
+          {"speaker": "matteo", "text": "Flowers matter too. They do not pay for the kitchen."}
+        ]
+      },
+      "next": "ep1_hotel_crisis"
+    },
+    {
+      "id": "ep1_hotel_crisis",
+      "episode": 1,
+      "title": {"ru": "Цена тишины", "en": "The Price of Silence"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "В расписании нет половины постоянной команды. Это не оптимизация, Маттео. Это отсутствие людей."},
+          {"speaker": "matteo", "text": "Я знаю, сколько людей у меня работает. Я не знаю, сколько сможет остаться после осени."},
+          {"speaker": "nika", "text": "Тогда мне нужны цифры, а не успокаивающие формулировки."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "Half the permanent team is missing from this schedule. That is not optimization, Matteo. That is people disappearing."},
+          {"speaker": "matteo", "text": "I know how many people work for me. I do not know how many can stay after autumn."},
+          {"speaker": "nika", "text": "Then I need numbers, not reassuring language."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "hotel_numbers",
+          "label": {"ru": "Попросить показать условия переговоров", "en": "Ask to see the negotiation terms"},
+          "to": "ep1_harbor_walk",
+          "effects": {"fundingEvidence": 1, "investorTerms": "known-risk", "askedAboutHotel": true, "lastChoice": "hotel_numbers"}
+        },
+        {
+          "id": "hotel_staff",
+          "label": {"ru": "Сначала поговорить с командой", "en": "Speak to the team first"},
+          "to": "ep1_harbor_walk",
+          "effects": {"staffTrust": 2, "fundingEvidence": 0, "askedAboutHotel": true, "lastChoice": "hotel_staff"}
+        }
+      ]
+    },
+    {
+      "id": "ep1_harbor_walk",
+      "episode": 1,
+      "title": {"ru": "После полудня", "en": "After Noon"},
+      "assetId": "harbor",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "После обеда Ника вышла к воде с пустым стаканом кофе и слишком большим количеством вопросов."},
+          {"speaker": "elio", "text": "Первый день, а вы уже смотрите на море так, будто оно задолжало вам объяснение."},
+          {"speaker": "nika", "text": "Море хотя бы не делает вид, что у него всё под контролем."},
+          {"speaker": "elio", "text": "Вот теперь я точно поставлю вам чай. Он лучше подходит к такой честности."}
+        ],
+        "en": [
+          {"speaker": null, "text": "After lunch, Nika walked down to the water with an empty coffee cup and too many questions."},
+          {"speaker": "elio", "text": "First day, and you already look at the sea as if it owes you an explanation."},
+          {"speaker": "nika", "text": "The sea at least does not pretend it has everything under control."},
+          {"speaker": "elio", "text": "Then I am definitely making you tea. It suits that kind of honesty."}
+        ]
+      },
+      "next": "ep1_leo_entrance"
+    },
+    {
+      "id": "ep1_leo_entrance",
+      "episode": 1,
+      "title": {"ru": "Чертежи на ветру", "en": "Blueprints in the Wind"},
+      "assetId": "harbor",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "У дальнего пирса мужчина держал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить."},
+          {"speaker": "leo", "text": "Ника?"},
+          {"speaker": "nika", "text": "Леонардо Витале."},
+          {"speaker": "leo", "text": "Я не думал, что ты когда-нибудь вернёшься сюда."}
+        ],
+        "en": [
+          {"speaker": null, "text": "By the far pier, a man held a tube of blueprints under his arm. He turned at the sound of footsteps, and the past was older than Nika wanted to remember."},
+          {"speaker": "leo", "text": "Nika?"},
+          {"speaker": "nika", "text": "Leonardo Vitale."},
+          {"speaker": "leo", "text": "I did not think you would ever come back here."}
+        ]
+      },
+      "next": "ep1_leo_choice"
+    },
+    {
+      "id": "ep1_leo_choice",
+      "episode": 1,
+      "title": {"ru": "Восемь лет", "en": "Eight Years"},
+      "assetId": "night",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Я тоже не думала. Но ты здесь."},
+          {"speaker": "leo", "text": "Я работаю над проектом реконструкции. Не знал, что ты устроилась в Villa Serena."},
+          {"speaker": "nika", "text": "Ты не спрашивал."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "Neither did I. And yet here you are."},
+          {"speaker": "leo", "text": "I am working on a renovation project. I did not know you had taken a job at Villa Serena."},
+          {"speaker": "nika", "text": "You did not ask."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "leo_hear",
+          "label": {"ru": "Дать ему возможность объясниться", "en": "Give him a chance to explain"},
+          "to": "ep1_hook",
+          "effects": {"trustLeo": 1, "relationshipLeo": 1, "metLeo": true, "leoTruthHeard": true, "lastChoice": "leo_hear"}
+        },
+        {
+          "id": "leo_distance",
+          "label": {"ru": "Остановить разговор на этом", "en": "End the conversation there"},
+          "to": "ep1_hook",
+          "effects": {"trustLeo": 0, "relationshipLeo": 0, "metLeo": true, "leoTruthHeard": false, "lastChoice": "leo_distance"}
+        }
+      ]
+    },
+    {
+      "id": "ep1_hook",
+      "episode": 1,
+      "title": {"ru": "Не возвращайся", "en": "Do Not Come Back"},
+      "assetId": "night",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Лео опустил взгляд на чертежи. На полях стоял золотой знак Aurea Hospitality — компании, о которой Маттео отказался говорить."},
+          {"speaker": "leo", "text": "Ника, я должен был сказать тебе раньше: Villa Serena — не просто объект в нашем проекте."},
+          {"speaker": "nika", "text": "А что это?"},
+          {"speaker": "leo", "text": "Место, которое Aurea собирается купить. И место, из которого я однажды уже ушёл, не объяснившись."},
+          {"speaker": null, "text": "В окне отеля погас один из огней. Ника впервые подумала, что это лето потребует от неё не только хорошего расписания."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Leo lowered his eyes to the blueprints. A gold Aurea Hospitality mark sat in the margin — the company Matteo had refused to discuss."},
+          {"speaker": "leo", "text": "Nika, I should have told you sooner: Villa Serena is not just another site in our project."},
+          {"speaker": "nika", "text": "What is it, then?"},
+          {"speaker": "leo", "text": "A place Aurea intends to buy. And a place I already left once without explaining why."},
+          {"speaker": null, "text": "One of the hotel lights went dark. For the first time, Nika understood that this summer would demand more than a flawless schedule."}
+        ]
+      },
+      "ending": true,
+      "endingId": "ep1-aurea-hook",
+      "nextEpisode": "ep2"
+    }
+  ]
+}

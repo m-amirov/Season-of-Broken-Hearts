@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_ART_PRODUCTION",
+  "assets": {
+    "arrival": {"src": "/assets/placeholder-arrival.svg", "kind": "placeholder"},
+    "villa": {"src": "/assets/placeholder-villa.svg", "kind": "placeholder"},
+    "kitchen": {"src": "/assets/placeholder-kitchen.svg", "kind": "placeholder"},
+    "harbor": {"src": "/assets/placeholder-harbor.svg", "kind": "placeholder"},
+    "night": {"src": "/assets/placeholder-night.svg", "kind": "placeholder"}
+  }
+}
