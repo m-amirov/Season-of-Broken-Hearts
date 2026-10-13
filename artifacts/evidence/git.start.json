@@ -1,7 +1,7 @@
 {
   "isRepo": true,
   "branch": "main",
-  "head": "12fd36b3bad4576baf9ad82298da1a7e44548fe6",
-  "dirty": true,
-  "porcelain": " M .starter-kit/state.json"
+  "head": "02f33238b11b13f3e847b0bd295f7bd0c67fe1fd",
+  "dirty": false,
+  "porcelain": ""
 }

@@ -1,7 +1,7 @@
 {
   "isRepo": true,
   "branch": "main",
-  "head": "12fd36b3bad4576baf9ad82298da1a7e44548fe6",
+  "head": "02f33238b11b13f3e847b0bd295f7bd0c67fe1fd",
   "dirty": true,
-  "porcelain": " M .starter-kit/state.json\n M artifacts/evidence/gates/starter_kit_self_test.json\n M artifacts/evidence/git.start.json\n M artifacts/evidence/logs/starter_kit_self_test.stderr.log\n M artifacts/evidence/logs/starter_kit_self_test.stdout.log"
+  "porcelain": " M artifacts/evidence/gates/starter_kit_self_test.json\n M artifacts/evidence/git.start.json"
 }
