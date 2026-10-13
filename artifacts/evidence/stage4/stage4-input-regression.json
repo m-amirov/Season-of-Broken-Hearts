@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "testedSourceHead": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "browser": "Chromium via Playwright CLI",
+  "command": "npx --yes @playwright/cli -s=stage4-input run-code --filename=tools/qa/ep1-input-regression.js",
+  "locale": "en",
+  "consoleErrors": 0,
+  "cases": {
+    "pointerupOutside": "ep1_matteo_direct_response",
+    "pointercancelOutside": "ep1_matteo_formal_response",
+    "dragOffRelease": "ep1_matteo_direct_response",
+    "doubleTap": "ep1_matteo_formal_response",
+    "keyboardActivation": "ep1_matteo_direct_response",
+    "screenReaderClick": "ep1_matteo_formal_response",
+    "touchChoiceTransition": "ep1_matteo_formal_response"
+  },
+  "notes": [
+    "A real-browser RED reproduction was recorded before the fix: pointerup on document.body left the next choice blocked.",
+    "The repair clears gesture ownership from document-level pointerup/pointercancel; no debounce or timeout was added.",
+    "The existing lock and detail>1 guard remain covered by unit tests."
+  ]
+}

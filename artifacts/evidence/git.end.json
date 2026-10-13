@@ -1,0 +1,7 @@
+{
+  "isRepo": true,
+  "branch": "main",
+  "head": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "dirty": true,
+  "porcelain": "?? artifacts/evidence/gates/\n?? artifacts/evidence/git.start.json\n?? artifacts/evidence/logs/\n?? artifacts/evidence/manifest.snapshot.json\n?? artifacts/evidence/stage4/"
+}

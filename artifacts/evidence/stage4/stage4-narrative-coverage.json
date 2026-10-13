@@ -1,0 +1,37 @@
+{
+  "status": "PASS_WITH_DECLARED_PROMISE_WARNINGS",
+  "testedSourceHead": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "unit": {
+    "command": "npm test",
+    "tests": 21,
+    "passed": 21,
+    "failed": 0
+  },
+  "fixtures": {
+    "command": "npm run narrative:fixtures",
+    "status": "EXPORTED_FROM_RUNTIME_ENGINE",
+    "samples": 23
+  },
+  "validation": {
+    "command": "npm run narrative:validate",
+    "declaredGraph": "PASS_DECLARED_NARRATIVE_GRAPH",
+    "conditionalDialogue": "PASS_CONDITIONAL_DIALOGUE_SCHEMA",
+    "declaredScenes": 18,
+    "reachedScenes": 18,
+    "visitedStates": 84,
+    "reachedEndings": "1/1",
+    "warnings": [
+      "matteo-negotiation-documents",
+      "elio-restaurant-departure",
+      "season-hotel-outcome"
+    ]
+  },
+  "choiceCoverage": {
+    "ep1Combinations": 16,
+    "routeLocks": 0,
+    "delayedChoiceState": "hotelEvidence",
+    "locales": ["ru", "en"],
+    "deterministic": true,
+    "backReloadNewGame": "covered by unit and browser walkthrough"
+  }
+}

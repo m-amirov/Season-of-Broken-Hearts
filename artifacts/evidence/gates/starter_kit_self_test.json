@@ -1,0 +1,15 @@
+{
+  "id": "starter_kit_self_test",
+  "command": "npm run starter-kit:self-test",
+  "required": true,
+  "risk": "R0",
+  "status": "FAIL",
+  "failureType": "TEST_FAILURE",
+  "startedAt": "2026-10-13T09:58:20.220Z",
+  "completedAt": "2026-10-13T09:58:20.815Z",
+  "exitCode": 1,
+  "stdout": "\n> starter-kit:self-test\n> node tools/starter-kit/self-test.mjs\n\n",
+  "stderr": "target status is modified\n",
+  "signal": null,
+  "error": null
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "testedSourceHead": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "browser": "Chromium via Playwright CLI",
+  "command": "npx --yes @playwright/cli -s=stage4-walk run-code --filename=tools/qa/ep1-stage4-walkthrough.js",
+  "locales": ["ru", "en"],
+  "paths": {
+    "ru": ["matteo_formal", "elio_humor", "hotel_numbers", "leo_hear"],
+    "en": ["matteo_direct", "elio_boundary", "hotel_staff", "leo_distance"]
+  },
+  "delayedConsequences": {
+    "ru": "Ника положила фотографию условий Aurea",
+    "en": "Nika opened Giulia's notebook"
+  },
+  "stateChecks": {
+    "terminalScene": "ep1_hook",
+    "reload": "preserved terminal cursor",
+    "back": "restored previous terminal dialogue index",
+    "newGame": "reset to ep1_arrival dialogueIndex 0"
+  },
+  "viewports": {
+    "1920x900": "PASS",
+    "390x844": "PASS",
+    "360x640": "PASS"
+  },
+  "consoleErrors": 0,
+  "requestFailures": 0,
+  "screenshots": [
+    "artifacts/evidence/stage4/screenshots/ep1-ru-terminal-1920x900.png",
+    "artifacts/evidence/stage4/screenshots/ep1-en-terminal-390x844.png",
+    "artifacts/evidence/stage4/screenshots/ep1-ru-first-choice-360x640.png"
+  ],
+  "sha256": {
+    "ep1-ru-terminal-1920x900.png": "289900F33343FD76704652C408DB9DF73807F45CA38A93BA193622BD876EBABA",
+    "ep1-en-terminal-390x844.png": "CDE19918DB63456BF1F8E14D58A0E84625FD9CB74E41BE32FB0519BAAF324B56",
+    "ep1-ru-first-choice-360x640.png": "C26BD67EF8E8C13467CECC7573DAF9C2DF75DC4947436EE76F2526259FA7354F"
+  }
+}

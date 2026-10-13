@@ -1,0 +1,17 @@
+{
+  "status": "AWAITING_BLIND_PLAYTEST",
+  "testedSourceHead": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "humanSessionsCompleted": 0,
+  "requiredIndependentSessions": 3,
+  "automationCountsAsReader": false,
+  "protocol": "artifacts/concept-proof/EP1_BLIND_PLAYTEST_PROTOCOL.md",
+  "observationForm": "artifacts/concept-proof/EP1_OBSERVATIONS.md",
+  "decisionRecord": "artifacts/concept-proof/EP1_DECISION.md",
+  "cleanSaveCommand": "localStorage.removeItem('season-of-broken-hearts.save.v1')",
+  "sessionMatrix": [
+    {"session": 1, "locale": "ru", "viewport": "390x844"},
+    {"session": 2, "locale": "en", "viewport": "390x844"},
+    {"session": 3, "locale": "ru or en", "viewport": "1920x900"}
+  ],
+  "decisionRule": "Do not set CONTINUE_PRODUCTION automatically; require three completed independent forms and the documented comprehension/choice criteria."
+}

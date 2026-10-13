@@ -1,0 +1,13 @@
+{
+  "status": "FAIL_REQUIRED_GATE",
+  "testedSourceHead": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "command": "ceos verify --mode verification --project . --evidence artifacts/evidence --json",
+  "ceosVersion": "0.5.12",
+  "requiredGate": "starter_kit_self_test",
+  "gateStatus": "FAIL",
+  "failureType": "TEST_FAILURE",
+  "reason": "target status is modified",
+  "scope": "verification",
+  "productionArt": "not started",
+  "conceptProof": "AWAITING_BLIND_PLAYTEST"
+}
