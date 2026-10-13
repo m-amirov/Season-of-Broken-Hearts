@@ -1,0 +1,56 @@
+{
+  "index": 3,
+  "stage": "EVIDENCE_COLLECTED",
+  "at": "2026-10-13T08:52:00.925Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Fresh current evidence snapshot for the repaired EP1 state; no production-art generation is in scope.",
+  "metadata": {
+    "webPreflight": "READY",
+    "browser": "PASS",
+    "productionArt": "BLOCKED_ART_PRODUCTION",
+    "conceptProof": "AWAITING_BLIND_PLAYTEST",
+    "defectCount": 0
+  },
+  "source": {
+    "available": true,
+    "head": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "clean": false,
+    "worktreeSha256": "4bef5943232952b7a82f2724fc29953cd65feb594edc6781067172edf147c66b"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage3-browser-regression.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-browser-regression.json",
+      "projectRelativePath": "artifacts/evidence/stage3-browser-regression.json",
+      "type": "file",
+      "sha256": "8b0db5ceec6c6ace1aa6e78829e71f41bd2f0ad6a5746c79823942e0198afd9a",
+      "size": 4203
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-analysis.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-analysis.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-analysis.json",
+      "type": "file",
+      "sha256": "9776891f07f67adaaaecdbf5131d8c2a2a54515496d8440baed4c6803a6d3369",
+      "size": 3796
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-visual-analysis.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-visual-analysis.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-visual-analysis.json",
+      "type": "file",
+      "sha256": "643be20c86e2f4110e9e2d5be4842924c28d2b004824168f85462ea4b17b4e9a",
+      "size": 3399
+    },
+    {
+      "input": "artifacts/evidence/stage3-remediation-packet.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-remediation-packet.json",
+      "projectRelativePath": "artifacts/evidence/stage3-remediation-packet.json",
+      "type": "file",
+      "sha256": "93ada450025b276dda94226401c749e1211ecba1e172e6e49d365165fe70985f",
+      "size": 2729
+    }
+  ]
+}

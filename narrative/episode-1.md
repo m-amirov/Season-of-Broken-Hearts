@@ -10,8 +10,10 @@ context for the first vertical slice.
 - Required encounters: Matteo, Elio, hotel financial pressure, Leonardo.
 - State changes: trust and relationship domains remain separate; hotel evidence
   is independent from romance; `route` remains `none`.
-- End beat: Leo reveals Aurea intends to buy Villa Serena and admits he already
-  left Nika once without explaining why.
+- End beat: Nika finds a sealed Villa Serena folder containing questions about
+  her and hears Matteo warn her not to open the last page. Leo's client and the
+  full explanation of his departure remain unrevealed; the Aurea mark on his
+  drawings is reserved for EP3.
 
 This is a complete EP1 slice, not evidence that the remaining nine episodes or
 their endings exist.

@@ -3,25 +3,36 @@
   "profile": "narrative-game",
   "start": "ep1_arrival",
   "locales": ["ru", "en"],
-  "characters": ["nika", "matteo", "elio", "leo"],
+  "characters": ["nika", "matteo", "elio", "leo", "giulia"],
+  "characterNames": {
+    "nika": {"ru": "Ника", "en": "Nika"},
+    "matteo": {"ru": "Маттео", "en": "Matteo"},
+    "elio": {"ru": "Элио", "en": "Elio"},
+    "leo": {"ru": "Лео", "en": "Leo"},
+    "giulia": {"ru": "Джулия", "en": "Giulia"}
+  },
   "stateSchema": {
     "route": {"type": "string", "values": ["none", "matteo", "leo", "elio", "independent"]},
-    "trustMatteo": {"type": "number", "values": [0, 1]},
-    "trustLeo": {"type": "number", "values": [0, 1]},
-    "trustElio": {"type": "number", "values": [0, 1, 2]},
-    "relationshipMatteo": {"type": "number", "values": [0, 1]},
-    "relationshipLeo": {"type": "number", "values": [0, 1]},
-    "relationshipElio": {"type": "number", "values": [0, 1]},
-    "staffTrust": {"type": "number", "values": [0, 1, 2]},
-    "fundingEvidence": {"type": "number", "values": [0, 1]},
-    "investorTerms": {"type": "string", "values": ["unknown", "known-risk"]},
-    "metMatteo": {"type": "boolean"},
-    "metElio": {"type": "boolean"},
-    "metLeo": {"type": "boolean"},
-    "leoTruthHeard": {"type": "boolean"},
-    "elioKitchen": {"type": "boolean"},
-    "askedAboutHotel": {"type": "boolean"},
-    "lastChoice": {"type": "string", "values": ["none", "matteo_formal", "matteo_direct", "elio_humor", "elio_boundary", "hotel_numbers", "hotel_staff", "leo_hear", "leo_distance"]}
+    "trustMatteo": {"type": "number", "values": [0, 1] },
+    "trustLeo": {"type": "number", "values": [0, 1] },
+    "trustElio": {"type": "number", "values": [0, 1, 2] },
+    "relationshipMatteo": {"type": "number", "values": [0, 1] },
+    "relationshipLeo": {"type": "number", "values": [0, 1] },
+    "relationshipElio": {"type": "number", "values": [0, 1] },
+    "staffTrust": {"type": "number", "values": [0, 1, 2] },
+    "fundingEvidence": {"type": "number", "values": [0, 1] },
+    "investorTerms": {"type": "string", "values": ["unknown", "known-risk"] },
+    "hotelEvidence": {"type": "string", "values": ["none", "numbers", "staff"] },
+    "matteoApproach": {"type": "string", "values": ["none", "formal", "direct"] },
+    "elioApproach": {"type": "string", "values": ["none", "playful", "boundary"] },
+    "leoConversation": {"type": "string", "values": ["none", "heard", "distance"] },
+    "metMatteo": {"type": "boolean" },
+    "metElio": {"type": "boolean" },
+    "metLeo": {"type": "boolean" },
+    "leoTruthHeard": {"type": "boolean" },
+    "elioKitchen": {"type": "boolean" },
+    "askedAboutHotel": {"type": "boolean" },
+    "lastChoice": {"type": "string", "values": ["none", "matteo_formal", "matteo_direct", "elio_humor", "elio_boundary", "hotel_numbers", "hotel_staff", "leo_hear", "leo_distance"] }
   },
   "initialState": {
     "route": "none",
@@ -34,6 +45,10 @@
     "staffTrust": 0,
     "fundingEvidence": 0,
     "investorTerms": "unknown",
+    "hotelEvidence": "none",
+    "matteoApproach": "none",
+    "elioApproach": "none",
+    "leoConversation": "none",
     "metMatteo": false,
     "metElio": false,
     "metLeo": false,
@@ -52,12 +67,22 @@
         "ru": [
           {"speaker": null, "text": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед."},
           {"speaker": "nika", "text": "Десять недель. Работа, море и никаких решений, принятых на эмоциях."},
-          {"speaker": null, "text": "На табличке у ворот блестело имя Villa Serena. Восемь лет назад Ника уже видела это побережье. В отеле — ещё нет."}
+          {"speaker": null, "text": "Месяц назад она нашла в телефоне жениха чужое имя. Через три дня вернула кольцо, ещё через неделю — пропуск в офис, где все уже знали, почему она ушла."},
+          {"speaker": "nika", "text": "Я приехала не лечить разбитое сердце. Я приехала проверить, что от меня осталось, когда никто не требует улыбаться."},
+          {"speaker": null, "text": "За низкой каменной стеной блеснули белые ставни и террасы Villa Serena. Восемь лет назад Ника видела это побережье, но в отеле не работала ни дня."},
+          {"speaker": null, "text": "Она проверила телефон: три непрочитанных сообщения от бывшего жениха и одно от Маттео с адресом ворот. Ника удалила первое и открыла последнее."},
+          {"speaker": "nika", "text": "Если я опять начну объяснять чужое молчание, напомни мне про контракт."},
+          {"speaker": "nika", "text": "Новая жизнь, — сказала она воротам. — Хотя бы с нормальным расписанием."}
         ],
         "en": [
           {"speaker": null, "text": "The southern air smelled of salt, dust, and lemon peel. Nika Vorontsova closed the taxi door and did not watch it leave."},
           {"speaker": "nika", "text": "Ten weeks. A job, the sea, and no decisions made in the heat of the moment."},
-          {"speaker": null, "text": "The Villa Serena sign glinted above the gate. Nika had seen this coast eight years ago. She had never worked at the hotel."}
+          {"speaker": null, "text": "A month ago she found another name in her fiancé's phone. Three days later she returned the ring; a week after that, she returned the pass to an office where everyone already knew why she had gone."},
+          {"speaker": "nika", "text": "I did not come here to heal a broken heart. I came to find out what is left of me when nobody needs me to smile."},
+          {"speaker": null, "text": "White shutters and terraces flashed behind the low stone wall of Villa Serena. Nika had seen this coast eight years ago, but she had never worked at the hotel."},
+          {"speaker": null, "text": "She checked her phone: three unread messages from her ex-fiancé and one from Matteo with the gate address. Nika deleted the first and opened the last."},
+          {"speaker": "nika", "text": "If I start explaining someone else's silence again, remind me about the contract."},
+          {"speaker": "nika", "text": "A new life, she told the gates. At least with a proper schedule."}
         ]
       },
       "next": "ep1_gate"
@@ -71,28 +96,84 @@
         "ru": [
           {"speaker": "matteo", "text": "Ника Воронцова? Маттео Риччи. Вы приехали на сорок минут раньше."},
           {"speaker": "nika", "text": "Это плохо?"},
-          {"speaker": "matteo", "text": "Для человека, который должен спасать расписание, — скорее обнадёживает."}
+          {"speaker": "matteo", "text": "Для человека, который должен спасать расписание, — обнадёживает. Для моего расписания — тревожно."},
+          {"speaker": null, "text": "Он протянул руку, но другой держал связку ключей и папку, прижатую к груди. Ника пожала свободную ладонь и заметила чернила на его пальцах."},
+          {"speaker": "nika", "text": "Я могу подождать, пока вы закончите. Или сразу узнать, что именно здесь горит."},
+          {"speaker": "matteo", "text": "Ничего не горит. Пока. Но в прачечной нет смены, у поставщика нет подтверждения, а юбилей через десять недель."},
+          {"speaker": "nika", "text": "Звучит как три вещи, которые обычно горят одновременно."},
+          {"speaker": "matteo", "text": "Вы всегда так быстро переходите к диагнозу?"}
         ],
         "en": [
           {"speaker": "matteo", "text": "Nika Vorontsova? Matteo Ricci. You are forty minutes early."},
           {"speaker": "nika", "text": "Is that a problem?"},
-          {"speaker": "matteo", "text": "For someone hired to rescue a schedule, it is encouraging."}
+          {"speaker": "matteo", "text": "For someone hired to rescue a schedule, it is encouraging. For my schedule, it is alarming."},
+          {"speaker": null, "text": "He offered a hand, but the other was occupied by a ring of keys and a folder pressed to his chest. Nika shook the free hand and noticed ink on his fingers."},
+          {"speaker": "nika", "text": "I can wait until you finish. Or I can find out what is on fire."},
+          {"speaker": "matteo", "text": "Nothing is on fire. Yet. The laundry has no shift, a supplier has no confirmation, and the anniversary is in ten weeks."},
+          {"speaker": "nika", "text": "That sounds like three things that usually catch fire together."},
+          {"speaker": "matteo", "text": "Do you always move to the diagnosis this quickly?"}
         ]
       },
       "choices": [
         {
           "id": "matteo_formal",
           "label": {"ru": "Отдать ему папку и перейти к делу", "en": "Hand him the folder and get to work"},
-          "to": "ep1_matteo_welcome",
-          "effects": {"trustMatteo": 1, "staffTrust": 1, "metMatteo": true, "lastChoice": "matteo_formal"}
+          "to": "ep1_matteo_formal_response",
+          "effects": {"trustMatteo": 1, "staffTrust": 0, "matteoApproach": "formal", "metMatteo": true, "lastChoice": "matteo_formal"}
         },
         {
           "id": "matteo_direct",
           "label": {"ru": "Сразу спросить, что именно нужно спасать", "en": "Ask what exactly needs rescuing"},
-          "to": "ep1_matteo_welcome",
-          "effects": {"trustMatteo": 0, "staffTrust": 0, "metMatteo": true, "lastChoice": "matteo_direct"}
+          "to": "ep1_matteo_direct_response",
+          "effects": {"trustMatteo": 0, "staffTrust": 0, "matteoApproach": "direct", "metMatteo": true, "lastChoice": "matteo_direct"}
         }
       ]
+    },
+    {
+      "id": "ep1_matteo_formal_response",
+      "episode": 1,
+      "title": {"ru": "Папка на месте", "en": "The Folder in Place"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Ника вынула из сумки распечатанный план недели и положила его поверх его папки."},
+          {"speaker": "matteo", "text": "Вы подготовились."},
+          {"speaker": "nika", "text": "Я не люблю приезжать туда, где меня уже считают последней надеждой."},
+          {"speaker": "matteo", "text": "Последней — нет. Первой, кто открыл календарь, — да."},
+          {"speaker": null, "text": "Он впервые улыбнулся, коротко и без попытки сделать из этого обещание. Затем отступил от ворот, освобождая ей дорогу."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Nika took the printed week plan from her bag and laid it on top of his folder."},
+          {"speaker": "matteo", "text": "You came prepared."},
+          {"speaker": "nika", "text": "I do not like arriving somewhere that already considers me its last hope."},
+          {"speaker": "matteo", "text": "Last, no. First person to open the calendar, yes."},
+          {"speaker": null, "text": "He smiled for the first time, briefly, without trying to turn it into a promise. Then he stepped away from the gates and made room for her."}
+        ]
+      },
+      "next": "ep1_matteo_welcome"
+    },
+    {
+      "id": "ep1_matteo_direct_response",
+      "episode": 1,
+      "title": {"ru": "Без обходных путей", "en": "No Detours"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Если вы зовёте меня спасать расписание, сначала назовите угрозу. Я умею работать с плохими новостями."},
+          {"speaker": "matteo", "text": "Половина команды ищет другую работу. Поставщики ждут оплату. А я обещал юбилей, который отель может не пережить."},
+          {"speaker": "nika", "text": "Вот это уже похоже на задачу, а не на приветствие."},
+          {"speaker": "matteo", "text": "Вы не смягчаете углы."},
+          {"speaker": "nika", "text": "После свадьбы, которую отменили за месяц до даты, я экономлю время на углах."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "If you hired me to rescue a schedule, name the threat first. I can work with bad news."},
+          {"speaker": "matteo", "text": "Half the team is looking for another job. Suppliers are waiting for payment. And I promised an anniversary the hotel may not survive."},
+          {"speaker": "nika", "text": "That sounds like a task, not a greeting."},
+          {"speaker": "matteo", "text": "You do not soften the corners."},
+          {"speaker": "nika", "text": "After a wedding cancelled a month before the date, I am saving time on corners."}
+        ]
+      },
+      "next": "ep1_matteo_welcome"
     },
     {
       "id": "ep1_matteo_welcome",
@@ -101,14 +182,26 @@
       "assetId": "villa",
       "dialogue": {
         "ru": [
-          {"speaker": "matteo", "text": "Ваш кабинет на первом этаже. Команда уже знает, что вы не просили это лето о снисхождении."},
+          {"speaker": null, "text": "Внутри прохлада пахла воском и старым камнем. На стене висели фотографии гостей, которые смеялись так уверенно, будто отели никогда не закрываются."},
+          {"speaker": "matteo", "text": "Ваш кабинет на первом этаже. Команда знает, что вы не просили это лето о снисхождении."},
           {"speaker": "nika", "text": "Я просила только нормальный контракт и возможность делать свою работу."},
-          {"speaker": "matteo", "text": "Тогда у нас есть общий язык. Это редкая роскошь в этом доме."}
+          {"speaker": "matteo", "text": "Контракт лежит на столе. В нём нет пункта о спасении моей семьи."},
+          {"speaker": "nika", "text": "Хорошо. Я не беру семейные проекты без сметы."},
+          {"speaker": null, "text": "Маттео задержал на ней взгляд, будто проверял, обиделась ли она на шутку. Не нашёл ответа и выбрал ключ."},
+          {"speaker": "matteo", "text": "В шестьдесят лет отель пережил войны, штормы и двух владельцев с плохим вкусом. Теперь у него есть десять недель."},
+          {"speaker": "nika", "text": "А у меня — десять недель, чтобы понять, могу ли я снова кому-то доверять. Начнём с расписания."},
+          {"speaker": "matteo", "text": "Справедливо. Кухня уже пытается вас накормить или допросить."}
         ],
         "en": [
+          {"speaker": null, "text": "Inside, the cool air smelled of wax and old stone. Photographs lined the wall: guests laughing with the confidence of people who believed hotels never closed."},
           {"speaker": "matteo", "text": "Your office is on the ground floor. The team knows you did not come here asking summer to go easy on you."},
           {"speaker": "nika", "text": "I asked for a proper contract and a chance to do my job."},
-          {"speaker": "matteo", "text": "Then we have a language in common. That is a rare luxury in this house."}
+          {"speaker": "matteo", "text": "The contract is on the desk. It contains no clause about saving my family."},
+          {"speaker": "nika", "text": "Good. I do not take family projects without a budget."},
+          {"speaker": null, "text": "Matteo watched her as if checking whether she had taken offence. Finding no answer, he chose a key."},
+          {"speaker": "matteo", "text": "At sixty, the hotel has survived wars, storms, and two owners with poor taste. Now it has ten weeks."},
+          {"speaker": "nika", "text": "And I have ten weeks to learn whether I can trust anyone again. Let us start with the schedule."},
+          {"speaker": "matteo", "text": "Fair. The kitchen is already trying to feed you or interrogate you."}
         ]
       },
       "next": "ep1_kitchen"
@@ -120,30 +213,84 @@
       "assetId": "kitchen",
       "dialogue": {
         "ru": [
+          {"speaker": null, "text": "На кухне гремела посуда. Мужчина в белом фартуке держал нож как дирижёрскую палочку и спорил с кастрюлей."},
           {"speaker": "elio", "text": "Вы Ника. Отлично. Я уже поставил воду для кофе — это мой способ приветствовать людей и проверять их характер."},
           {"speaker": "nika", "text": "А если я пью чай?"},
-          {"speaker": "elio", "text": "Тогда придётся признать, что у вас есть тайны."}
+          {"speaker": "elio", "text": "Тогда придётся признать, что у вас есть тайны. Или очень взрослый режим сна."},
+          {"speaker": "nika", "text": "Я организатор, а не свидетель по делу о кофе."},
+          {"speaker": "elio", "text": "Все так говорят до первой отмены банкета. Потом становятся свидетелями добровольно."},
+          {"speaker": null, "text": "Он поставил перед ней чашку, не спрашивая разрешения, но оставил рядом чайник. Ника заметила жест и решила не благодарить слишком быстро."}
         ],
         "en": [
+          {"speaker": null, "text": "The kitchen clattered. A man in a white apron held a knife like a conductor's baton and argued with a saucepan."},
           {"speaker": "elio", "text": "You must be Nika. Excellent. I put water on for coffee — my way of welcoming people and testing their character."},
           {"speaker": "nika", "text": "What if I drink tea?"},
-          {"speaker": "elio", "text": "Then I will have to admit you have secrets."}
+          {"speaker": "elio", "text": "Then I will have to admit you have secrets. Or a very responsible sleep schedule."},
+          {"speaker": "nika", "text": "I organise events. I am not a witness in a coffee case."},
+          {"speaker": "elio", "text": "Everyone says that until the first banquet is cancelled. Then they volunteer as witnesses."},
+          {"speaker": null, "text": "He set down a cup without asking, but left a kettle beside it. Nika noticed the gesture and decided not to thank him too quickly."}
         ]
       },
       "choices": [
         {
           "id": "elio_humor",
           "label": {"ru": "Подыграть: попросить кофе и опасный вопрос", "en": "Play along: ask for coffee and a dangerous question"},
-          "to": "ep1_work_briefing",
-          "effects": {"trustElio": 1, "relationshipElio": 1, "metElio": true, "elioKitchen": true, "lastChoice": "elio_humor"}
+          "to": "ep1_elio_humor_response",
+          "effects": {"trustElio": 1, "relationshipElio": 1, "elioApproach": "playful", "metElio": true, "elioKitchen": true, "lastChoice": "elio_humor"}
         },
         {
           "id": "elio_boundary",
           "label": {"ru": "Улыбнуться, но вернуть разговор к работе", "en": "Smile, then steer back to work"},
-          "to": "ep1_work_briefing",
-          "effects": {"trustElio": 2, "relationshipElio": 0, "metElio": true, "elioKitchen": true, "lastChoice": "elio_boundary"}
+          "to": "ep1_elio_boundary_response",
+          "effects": {"trustElio": 2, "relationshipElio": 0, "elioApproach": "boundary", "metElio": true, "elioKitchen": true, "lastChoice": "elio_boundary"}
         }
       ]
+    },
+    {
+      "id": "ep1_elio_humor_response",
+      "episode": 1,
+      "title": {"ru": "Опасный вопрос", "en": "A Dangerous Question"},
+      "assetId": "kitchen",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Кофе. И опасный вопрос: кто в отеле делает вид, что всё нормально?"},
+          {"speaker": "elio", "text": "Маттео. Он делает это плечами. Очень убедительные плечи."},
+          {"speaker": "nika", "text": "А ты?"},
+          {"speaker": "elio", "text": "Я делаю вид, что соус не убежал. Между нами это более честная форма паники."},
+          {"speaker": null, "text": "Ника рассмеялась — коротко, почти непривычно. Элио не стал ловить смех и просто подвинул сахар."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "Coffee. And a dangerous question: who here is pretending everything is fine?"},
+          {"speaker": "elio", "text": "Matteo. He does it with his shoulders. Very convincing shoulders."},
+          {"speaker": "nika", "text": "And you?"},
+          {"speaker": "elio", "text": "I pretend the sauce did not escape. Between us, that is the more honest kind of panic."},
+          {"speaker": null, "text": "Nika laughed, briefly and almost out of practice. Elio did not try to catch the laugh; he only moved the sugar closer."}
+        ]
+      },
+      "next": "ep1_work_briefing"
+    },
+    {
+      "id": "ep1_elio_boundary_response",
+      "episode": 1,
+      "title": {"ru": "Рабочее утро", "en": "A Working Morning"},
+      "assetId": "kitchen",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Чай, если есть. И список задач. Улыбка не отменяет отсутствие персонала."},
+          {"speaker": "elio", "text": "Есть чай, задачи и человек, который редко слышит просьбу с первого раза. Уже лучше, чем мой завтрак."},
+          {"speaker": "nika", "text": "Спасибо за чай. Остальное пришли на почту."},
+          {"speaker": null, "text": "Элио кивнул без обиды, записал её имя на листке и поставил рядом с ним чистую чашку. Границу он услышал, а не превратил в вызов."},
+          {"speaker": "elio", "text": "Маттео будет рад. Он любит людей, которых нельзя отвлечь красивым соусом."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "Tea, if you have it. And a task list. A smile does not replace missing staff."},
+          {"speaker": "elio", "text": "Tea, tasks, and a person who rarely hears a request the first time. Still better than my breakfast."},
+          {"speaker": "nika", "text": "Thank you for the tea. Send the rest by email."},
+          {"speaker": null, "text": "Elio nodded without offence, wrote her name on a sheet, and put a clean cup beside it. He heard the boundary instead of turning it into a challenge."},
+          {"speaker": "elio", "text": "Matteo will be pleased. He likes people who cannot be distracted by a handsome sauce."}
+        ]
+      },
+      "next": "ep1_work_briefing"
     },
     {
       "id": "ep1_work_briefing",
@@ -152,16 +299,36 @@
       "assetId": "villa",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "К полудню Ника получила расписание, список поставщиков и карту террасы. Папка была слишком тонкой для семидесятилетней истории."},
+          {"speaker": null, "text": "К полудню Ника получила расписание, список поставщиков, карту террасы и три ключа, каждый из которых открывал не ту дверь, которую обещал."},
           {"speaker": "matteo", "text": "Через десять недель у Villa Serena юбилей. Нам нужны гости, партнёры и причина остаться независимыми."},
           {"speaker": "nika", "text": "Значит, я приехала не просто расставлять цветы."},
-          {"speaker": "matteo", "text": "Цветы тоже важны. Но они не оплачивают кухню."}
+          {"speaker": "matteo", "text": "Цветы важны. Но они не оплачивают кухню, прачечную и людей, которые делают вид, что не считают часы."},
+          {"speaker": "nika", "text": "Почему вы не наняли финансового менеджера?"},
+          {"speaker": "matteo", "text": "Потому что каждый человек хочет получить полную картину. А полная картина пока выглядит как счёт, который никто не хочет подписывать."},
+          {"speaker": null, "text": "Он показал ей таблицу бронирований. Пустые строки выглядели аккуратнее заполненных: в них не было ни одного обещания, которое можно нарушить."},
+          {"speaker": "nika", "text": "Пустые номера — не единственная проблема. Здесь исчезли фамилии постоянной команды."},
+          {"speaker": "matteo", "text": "Я знаю. Поэтому завтра вы поговорите с каждым отделом, а сегодня — со мной."},
+          {"speaker": null, "text": "В кабинете пахло пылью от архивов и апельсином с его стола. Ника поставила чемодан у стены, но не стала распаковывать его: пока это было обещание, а не дом."},
+          {"speaker": "matteo", "text": "Если вам понадобится что-то, чего нет в договоре, сначала спросите. У нас здесь слишком много решений, принятых за спиной друг друга."},
+          {"speaker": "nika", "text": "Это предупреждение или инструкция?"},
+          {"speaker": "matteo", "text": "Сегодня — инструкция. Предупреждение вы уже нашли сами."},
+          {"speaker": "nika", "text": "Сегодня я поговорю с цифрами. Они обычно не умеют обижаться."}
         ],
         "en": [
-          {"speaker": null, "text": "By noon, Nika had a schedule, a supplier list, and a map of the terrace. The folder was too thin for a seventy-year history."},
+          {"speaker": null, "text": "By noon, Nika had a schedule, a supplier list, a terrace map, and three keys, each opening a door other than the one it promised."},
           {"speaker": "matteo", "text": "Villa Serena turns seventy in ten weeks. We need guests, partners, and a reason to stay independent."},
           {"speaker": "nika", "text": "So I did not come here just to arrange flowers."},
-          {"speaker": "matteo", "text": "Flowers matter too. They do not pay for the kitchen."}
+          {"speaker": "matteo", "text": "Flowers matter. They do not pay for the kitchen, the laundry, or the people pretending they are not counting hours."},
+          {"speaker": "nika", "text": "Why did you not hire a finance manager?"},
+          {"speaker": "matteo", "text": "Because every person wants the whole picture. The whole picture currently looks like a bill nobody wants to sign."},
+          {"speaker": null, "text": "He showed her the booking table. Empty rows looked tidier than filled ones: there was no promise in them yet to break."},
+          {"speaker": "nika", "text": "Empty rooms are not the only problem. The permanent staff have vanished from this list."},
+          {"speaker": "matteo", "text": "I know. Tomorrow you will speak to every department. Today, you speak with me."},
+          {"speaker": null, "text": "The office smelled of archive dust and the orange on his desk. Nika left her suitcase against the wall but did not unpack it: for now, it was a promise, not a home."},
+          {"speaker": "matteo", "text": "If you need something outside the contract, ask first. We have too many decisions made behind each other's backs."},
+          {"speaker": "nika", "text": "Is that a warning or an instruction?"},
+          {"speaker": "matteo", "text": "Today, an instruction. You found the warning yourself."},
+          {"speaker": "nika", "text": "Today I will speak with the numbers. They rarely take offence."}
         ]
       },
       "next": "ep1_hotel_crisis"
@@ -175,28 +342,116 @@
         "ru": [
           {"speaker": "nika", "text": "В расписании нет половины постоянной команды. Это не оптимизация, Маттео. Это отсутствие людей."},
           {"speaker": "matteo", "text": "Я знаю, сколько людей у меня работает. Я не знаю, сколько сможет остаться после осени."},
-          {"speaker": "nika", "text": "Тогда мне нужны цифры, а не успокаивающие формулировки."}
+          {"speaker": "nika", "text": "Тогда мне нужны цифры, а не успокаивающие формулировки."},
+          {"speaker": "matteo", "text": "Успокаивающие формулировки дешевле зарплат. Поэтому ими так часто пользуются."},
+          {"speaker": null, "text": "Он открыл ящик стола, но остановился, увидев папку с красной закладкой. Между пальцами Маттео на секунду появилась усталость, которую он обычно прятал за короткими ответами."},
+          {"speaker": "nika", "text": "Что в красной папке?"},
+          {"speaker": "matteo", "text": "Варианты. Ни один не нравится."},
+          {"speaker": "nika", "text": "Мне не нужно, чтобы вариант нравился. Мне нужно понимать, на чём стоит отель и кто уже двигает пол."},
+          {"speaker": null, "text": "Маттео провёл пальцем по краю папки и убрал руку. Ника узнала этот жест: человек не прячет документ, когда считает его неважным."},
+          {"speaker": "nika", "text": "Я могу начать с людей и прийти к вам с вопросами. Или вы можете не заставлять меня угадывать."},
+          {"speaker": "matteo", "text": "Я не хочу, чтобы вы угадывали. Я хочу понять, зададите ли вы вопрос, когда ответ вам не понравится."},
+          {"speaker": "matteo", "text": "Тогда выбирайте, с чего начать. С условий переговоров или с людей, которые переживут их последствия."}
         ],
         "en": [
-          {"speaker": "nika", "text": "Half the permanent team is missing from this schedule. That is not optimization, Matteo. That is people disappearing."},
+          {"speaker": "nika", "text": "Half the permanent team is missing from this schedule. That is not optimisation, Matteo. That is people disappearing."},
           {"speaker": "matteo", "text": "I know how many people work for me. I do not know how many can stay after autumn."},
-          {"speaker": "nika", "text": "Then I need numbers, not reassuring language."}
+          {"speaker": "nika", "text": "Then I need numbers, not reassuring language."},
+          {"speaker": "matteo", "text": "Reassuring language is cheaper than wages. That is why people use it so often."},
+          {"speaker": null, "text": "He opened a drawer, then stopped at a red-tabbed folder. For a second, fatigue showed between his fingers, the thing he usually hid behind short answers."},
+          {"speaker": "nika", "text": "What is in the red folder?"},
+          {"speaker": "matteo", "text": "Options. None of them are pleasant."},
+          {"speaker": "nika", "text": "I do not need an option to be pleasant. I need to know what the hotel stands on and who is already moving the floor."},
+          {"speaker": null, "text": "Matteo ran a finger along the folder's edge and withdrew his hand. Nika knew the gesture: people did not hide a document they considered unimportant."},
+          {"speaker": "nika", "text": "I can start with the staff and bring you questions. Or you can stop making me guess."},
+          {"speaker": "matteo", "text": "I do not want you to guess. I want to know whether you will ask when the answer displeases you."},
+          {"speaker": "matteo", "text": "Then choose where to begin. The negotiation terms, or the people who will live with their consequences."}
         ]
       },
       "choices": [
         {
           "id": "hotel_numbers",
           "label": {"ru": "Попросить показать условия переговоров", "en": "Ask to see the negotiation terms"},
-          "to": "ep1_harbor_walk",
-          "effects": {"fundingEvidence": 1, "investorTerms": "known-risk", "askedAboutHotel": true, "lastChoice": "hotel_numbers"}
+          "to": "ep1_hotel_numbers_response",
+          "effects": {"fundingEvidence": 1, "investorTerms": "known-risk", "hotelEvidence": "numbers", "askedAboutHotel": true, "lastChoice": "hotel_numbers"}
         },
         {
           "id": "hotel_staff",
           "label": {"ru": "Сначала поговорить с командой", "en": "Speak to the team first"},
-          "to": "ep1_harbor_walk",
-          "effects": {"staffTrust": 2, "fundingEvidence": 0, "askedAboutHotel": true, "lastChoice": "hotel_staff"}
+          "to": "ep1_hotel_staff_response",
+          "effects": {"staffTrust": 2, "fundingEvidence": 0, "investorTerms": "unknown", "hotelEvidence": "staff", "askedAboutHotel": true, "lastChoice": "hotel_staff"}
         }
       ]
+    },
+    {
+      "id": "ep1_hotel_numbers_response",
+      "episode": 1,
+      "title": {"ru": "Условия на столе", "en": "Terms on the Table"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Покажите условия. Если я должна собрать юбилей, я должна знать, до какой даты у нас есть отель."},
+          {"speaker": null, "text": "Маттео достал из папки предложение Aurea Hospitality и разложил страницы рядом с расписанием. Ника прочитала заголовок дважды."},
+          {"speaker": "matteo", "text": "Инвестиция закрывает текущие долги. В обмен Aurea получает эксклюзивное право управлять подготовкой к юбилею и пересматривает штат после аудита."},
+          {"speaker": "nika", "text": "То есть деньги приходят сейчас, а право решать, кто останется, — потом. Где срок ответа?"},
+          {"speaker": "matteo", "text": "Через четырнадцать дней. После этого они могут снять предложение или изменить сумму."},
+          {"speaker": "nika", "text": "Вот это и есть цифра. И вот это — не помощь без условий."},
+          {"speaker": "nika", "text": "А что будет с моим контрактом, если вы примете предложение?"},
+          {"speaker": "matteo", "text": "В нём останется срок. Всё остальное зависит от людей, которые придут проверять отель."},
+          {"speaker": "nika", "text": "Тогда я запишу не только дату. Я запишу, кто получил право задавать следующие вопросы."},
+          {"speaker": null, "text": "Он не забрал страницы, когда она сфотографировала таблицу расходов. Впервые за день Маттео позволил ей увидеть не только проблему, но и цену молчания."},
+          {"speaker": "matteo", "text": "Теперь вы знаете достаточно, чтобы спорить со мной по существу."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "Show me the terms. If I am meant to build an anniversary, I need to know how long we have a hotel."},
+          {"speaker": null, "text": "Matteo took out Aurea Hospitality's proposal and spread the pages beside the schedule. Nika read the heading twice."},
+          {"speaker": "matteo", "text": "The investment clears the immediate debts. In return, Aurea receives exclusive authority over the anniversary preparation and reviews the staff after an audit."},
+          {"speaker": "nika", "text": "So the money arrives now, and the right to decide who stays comes later. What is the response deadline?"},
+          {"speaker": "matteo", "text": "Fourteen days. After that, they can withdraw the offer or change the amount."},
+          {"speaker": "nika", "text": "That is a number. And that is not help without conditions."},
+          {"speaker": "nika", "text": "What happens to my contract if you accept the offer?"},
+          {"speaker": "matteo", "text": "Its term remains. Everything else depends on the people who come to inspect the hotel."},
+          {"speaker": "nika", "text": "Then I will record more than the date. I will record who gets to ask the next questions."},
+          {"speaker": null, "text": "He did not take the pages when she photographed the expense table. For the first time that day, Matteo let her see not only the problem, but the price of silence."},
+          {"speaker": "matteo", "text": "Now you know enough to argue with me properly."}
+        ]
+      },
+      "next": "ep1_harbor_walk"
+    },
+    {
+      "id": "ep1_hotel_staff_response",
+      "episode": 1,
+      "title": {"ru": "Имена в расписании", "en": "Names on the Schedule"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Начнём с команды. Пустые клетки — это чьи-то счета, а не только ваши проблемы."},
+          {"speaker": null, "text": "В прачечной она познакомилась с синьорой Джулией, которая работала здесь двадцать семь лет и знала по именам все машины, кроме той, что снова сломалась."},
+          {"speaker": "giulia", "text": "Нам не сказали, будет ли осенью работа. Люди уходят туда, где обещают хотя бы ответ."},
+          {"speaker": "nika", "text": "Я не могу обещать работу. Но могу добиться, чтобы вопросы дошли до владельца."},
+          {"speaker": null, "text": "Элио принёс список смен и два подноса: один для людей, другой — для того, чтобы Ника не забыла поесть."},
+          {"speaker": "elio", "text": "Если хотите услышать правду, не стойте в дверях. Двери делают разговоры официальными."},
+          {"speaker": "nika", "text": "Тогда сегодня без официальных разговоров. Завтра попросим Маттео ответить вслух."},
+          {"speaker": null, "text": "Джулия показала ей заметки в старом блокноте: кто умеет работать ночью, кто ухаживает за родителями, кто уже получил отказ от другого отеля."},
+          {"speaker": "nika", "text": "Я не обещаю спасти всех. Но не позволю, чтобы их вычеркнули одной строкой."},
+          {"speaker": "elio", "text": "Это не обещание, которое легко выполнить. Поэтому я запомню, что вы его не дали."},
+          {"speaker": null, "text": "К концу часа у неё было больше имён, чем цифр, и первое ощущение, что отель держится не на стенах."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "We start with the team. Empty cells are people's bills, not only your problem."},
+          {"speaker": null, "text": "In the laundry she met Signora Giulia, who had worked there for twenty-seven years and knew every machine by name except the one that had broken again."},
+          {"speaker": "giulia", "text": "Nobody told us whether there will be work in autumn. People leave for places that promise at least an answer."},
+          {"speaker": "nika", "text": "I cannot promise jobs. I can make sure the questions reach the owner."},
+          {"speaker": null, "text": "Elio brought a shift list and two trays: one for the staff, and one to keep Nika from forgetting to eat."},
+          {"speaker": "elio", "text": "If you want the truth, do not stand in the doorway. Doors make conversations official."},
+          {"speaker": "nika", "text": "Then no official conversations today. Tomorrow we ask Matteo to answer out loud."},
+          {"speaker": null, "text": "Giulia showed her notes in an old notebook: who could work nights, who cared for parents, and who had already been refused by another hotel."},
+          {"speaker": "nika", "text": "I cannot promise to save everyone. But I will not let them be erased in one line."},
+          {"speaker": "elio", "text": "That is not an easy promise to keep. So I will remember that you did not make it lightly."},
+          {"speaker": null, "text": "By the end of the hour, she had more names than numbers and the first sense that the hotel was held up by more than its walls."}
+        ]
+      },
+      "next": "ep1_harbor_walk"
     },
     {
       "id": "ep1_harbor_walk",
@@ -205,16 +460,24 @@
       "assetId": "harbor",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "После обеда Ника вышла к воде с пустым стаканом кофе и слишком большим количеством вопросов."},
+          {"speaker": null, "text": "После обеда Ника вышла к воде с пустым стаканом кофе и слишком большим количеством вопросов. Ветер разносил запах водорослей по набережной."},
           {"speaker": "elio", "text": "Первый день, а вы уже смотрите на море так, будто оно задолжало вам объяснение."},
           {"speaker": "nika", "text": "Море хотя бы не делает вид, что у него всё под контролем."},
-          {"speaker": "elio", "text": "Вот теперь я точно поставлю вам чай. Он лучше подходит к такой честности."}
+          {"speaker": "elio", "text": "В таком случае не показывайте ему наши таблицы. Море может уйти и оставить нас с ними."},
+          {"speaker": "nika", "text": "Ты всегда шутишь, когда люди нервничают?"},
+          {"speaker": "elio", "text": "Нет. Иногда я готовлю. Шутки быстрее и почти не требуют посуды."},
+          {"speaker": "nika", "text": "Я видела список смен. Люди боятся не работы, а того, что их не заметят."},
+          {"speaker": "elio", "text": "Тогда заметили хотя бы вы. Для первого дня это много. Для спасения отеля — пока мало."}
         ],
         "en": [
-          {"speaker": null, "text": "After lunch, Nika walked down to the water with an empty coffee cup and too many questions."},
+          {"speaker": null, "text": "After lunch, Nika walked down to the water with an empty coffee cup and too many questions. The wind carried the smell of seaweed along the promenade."},
           {"speaker": "elio", "text": "First day, and you already look at the sea as if it owes you an explanation."},
           {"speaker": "nika", "text": "The sea at least does not pretend it has everything under control."},
-          {"speaker": "elio", "text": "Then I am definitely making you tea. It suits that kind of honesty."}
+          {"speaker": "elio", "text": "Then do not show it our spreadsheets. The sea may leave and abandon us with them."},
+          {"speaker": "nika", "text": "Do you always joke when people are nervous?"},
+          {"speaker": "elio", "text": "No. Sometimes I cook. Jokes are faster and require almost no dishes."},
+          {"speaker": "nika", "text": "I saw the shift list. People are afraid not of work, but of not being noticed."},
+          {"speaker": "elio", "text": "Then you noticed them. For a first day, that is a lot. For saving a hotel, it is not enough yet."}
         ]
       },
       "next": "ep1_leo_entrance"
@@ -226,16 +489,32 @@
       "assetId": "harbor",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "У дальнего пирса мужчина держал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить."},
+          {"speaker": null, "text": "У дальнего пирса мужчина удерживал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить."},
           {"speaker": "leo", "text": "Ника?"},
           {"speaker": "nika", "text": "Леонардо Витале."},
-          {"speaker": "leo", "text": "Я не думал, что ты когда-нибудь вернёшься сюда."}
+          {"speaker": "leo", "text": "Я не думал, что ты когда-нибудь вернёшься сюда."},
+          {"speaker": "nika", "text": "Я тоже. Но отель предложил работу, а у меня был чемодан и плохое настроение."},
+          {"speaker": null, "text": "Лео улыбнулся, но улыбка не дошла до глаз. Восемь лет назад он умел так же смотреть на неё, будто всё важное можно сказать после."},
+          {"speaker": "leo", "text": "Я приехал по работе. Проверяю состояние старых зданий перед реконструкцией."},
+          {"speaker": "nika", "text": "Тогда мы оба здесь по работе. Это должно упростить разговор."},
+          {"speaker": null, "text": "Солнце уже село за крышами гавани. В синих сумерках чертежи казались слишком белыми, а лицо Лео — слишком знакомым."},
+          {"speaker": "leo", "text": "Я видел твоё имя в списке сотрудников. Хотел написать, но не знал, имею ли право."},
+          {"speaker": "nika", "text": "Право не появляется от того, что человек долго молчит."},
+          {"speaker": null, "text": "Он кивнул. Впервые за вечер Лео не попытался спорить с очевидным."}
         ],
         "en": [
           {"speaker": null, "text": "By the far pier, a man held a tube of blueprints under his arm. He turned at the sound of footsteps, and the past was older than Nika wanted to remember."},
           {"speaker": "leo", "text": "Nika?"},
           {"speaker": "nika", "text": "Leonardo Vitale."},
-          {"speaker": "leo", "text": "I did not think you would ever come back here."}
+          {"speaker": "leo", "text": "I did not think you would ever come back here."},
+          {"speaker": "nika", "text": "Neither did I. But the hotel offered me work, and I had a suitcase and a bad mood."},
+          {"speaker": null, "text": "Leo smiled, but it did not reach his eyes. Eight years ago, he had looked at her the same way, as if everything important could be said later."},
+          {"speaker": "leo", "text": "I am here for work. I inspect old buildings before renovation."},
+          {"speaker": "nika", "text": "Then we are both here for work. That should make the conversation easier."},
+          {"speaker": null, "text": "The sun had already slipped behind the harbour roofs. In the blue dusk, the blueprints looked too white, and Leo's face too familiar."},
+          {"speaker": "leo", "text": "I saw your name on the staff list. I wanted to write, but I did not know whether I had the right."},
+          {"speaker": "nika", "text": "A right does not appear because someone stays silent for a long time."},
+          {"speaker": null, "text": "He nodded. For the first time that evening, Leo did not argue with the obvious."}
         ]
       },
       "next": "ep1_leo_choice"
@@ -247,30 +526,92 @@
       "assetId": "night",
       "dialogue": {
         "ru": [
-          {"speaker": "nika", "text": "Я тоже не думала. Но ты здесь."},
-          {"speaker": "leo", "text": "Я работаю над проектом реконструкции. Не знал, что ты устроилась в Villa Serena."},
-          {"speaker": "nika", "text": "Ты не спрашивал."}
+          {"speaker": "leo", "text": "Я слышал, что Villa Serena снова готовит большой сезон."},
+          {"speaker": "nika", "text": "Она готовит сезон. Я пытаюсь, чтобы он не рассыпался до первого гостя."},
+          {"speaker": "leo", "text": "У меня есть вопросы к зданию. И к тебе."},
+          {"speaker": "nika", "text": "Вопросы к зданию можно прислать Маттео. Остальные — не обязаны получать ответ сегодня."},
+          {"speaker": "leo", "text": "Я помню, что ты говорила так, когда хотела закрыть разговор."},
+          {"speaker": "nika", "text": "Память не даёт тебе разрешение войти снова."},
+          {"speaker": "leo", "text": "Нет. Но она объясняет, почему я всё ещё стою здесь и жду твоего решения."},
+          {"speaker": null, "text": "Лео опустил чертежи. В его молчании Ника услышала знакомую паузу — ту, после которой восемь лет назад он уехал."}
         ],
         "en": [
-          {"speaker": "nika", "text": "Neither did I. And yet here you are."},
-          {"speaker": "leo", "text": "I am working on a renovation project. I did not know you had taken a job at Villa Serena."},
-          {"speaker": "nika", "text": "You did not ask."}
+          {"speaker": "leo", "text": "I heard Villa Serena was preparing for a major season again."},
+          {"speaker": "nika", "text": "It is preparing. I am trying to keep it from falling apart before the first guest arrives."},
+          {"speaker": "leo", "text": "I have questions about the building. And about you."},
+          {"speaker": "nika", "text": "You can send the building questions to Matteo. The others do not have to be answered today."},
+          {"speaker": "leo", "text": "I remember you said that when you wanted a conversation to end."},
+          {"speaker": "nika", "text": "Memory does not give you permission to come back in."},
+          {"speaker": "leo", "text": "No. But it explains why I am still standing here, waiting for your decision."},
+          {"speaker": null, "text": "Leo lowered the blueprints. In his silence, Nika heard the familiar pause that had preceded his departure eight years ago."}
         ]
       },
       "choices": [
         {
           "id": "leo_hear",
           "label": {"ru": "Дать ему возможность объясниться", "en": "Give him a chance to explain"},
-          "to": "ep1_hook",
-          "effects": {"trustLeo": 1, "relationshipLeo": 1, "metLeo": true, "leoTruthHeard": true, "lastChoice": "leo_hear"}
+          "to": "ep1_leo_hear_response",
+          "effects": {"trustLeo": 1, "relationshipLeo": 1, "metLeo": true, "leoTruthHeard": false, "leoConversation": "heard", "lastChoice": "leo_hear"}
         },
         {
           "id": "leo_distance",
           "label": {"ru": "Остановить разговор на этом", "en": "End the conversation there"},
-          "to": "ep1_hook",
-          "effects": {"trustLeo": 0, "relationshipLeo": 0, "metLeo": true, "leoTruthHeard": false, "lastChoice": "leo_distance"}
+          "to": "ep1_leo_distance_response",
+          "effects": {"trustLeo": 0, "relationshipLeo": 0, "metLeo": true, "leoTruthHeard": false, "leoConversation": "distance", "lastChoice": "leo_distance"}
         }
       ]
+    },
+    {
+      "id": "ep1_leo_hear_response",
+      "episode": 1,
+      "title": {"ru": "Не оправдание", "en": "Not an Excuse"},
+      "assetId": "night",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "У тебя пять минут. Не для красивой версии — для честной."},
+          {"speaker": "leo", "text": "Я уехал после того лета. Получил предложение в Милане и не нашёл смелости сказать тебе, что уезжаю."},
+          {"speaker": "nika", "text": "Ты всё ещё говоришь вокруг главного."},
+          {"speaker": "leo", "text": "Да. Причину я могу объяснить, но не здесь и не за пять минут. Я не хочу снова спрятать её внутри удобной версии."},
+          {"speaker": "nika", "text": "Тогда это не объяснение. Это обещание объяснения."},
+          {"speaker": "leo", "text": "Справедливо. Сейчас я могу сказать только о работе: здание на грани, его хотят перестроить, а имя клиента я не имею права называть до отчёта."},
+          {"speaker": "nika", "text": "На сегодня достаточно. Не превращай мою паузу в согласие."},
+          {"speaker": "leo", "text": "Не превращу. Решать, когда продолжать разговор, не мне."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "You have five minutes. Not for a beautiful version — for an honest one."},
+          {"speaker": "leo", "text": "I left after that summer because I got an offer in Milan and was afraid to choose between a career and what we had."},
+          {"speaker": "nika", "text": "You did not choose. You disappeared."},
+          {"speaker": "leo", "text": "Yes. I left you with silence and called it circumstances. That is not an excuse."},
+          {"speaker": "nika", "text": "And now you are inspecting Villa Serena. What can you actually tell me?"},
+          {"speaker": "leo", "text": "Only that the building is close to the edge and someone wants to rebuild it. I cannot name the client before the report is signed."},
+          {"speaker": "nika", "text": "You are asking me to trust someone who is hiding half the sentence again."},
+          {"speaker": "leo", "text": "No. I am asking for one chance not to hide that I was wrong. Whether that is enough is not my decision."}
+        ]
+      },
+      "next": "ep1_hook"
+    },
+    {
+      "id": "ep1_leo_distance_response",
+      "episode": 1,
+      "title": {"ru": "Граница", "en": "The Boundary"},
+      "assetId": "night",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Нет. Не сегодня. У меня первый рабочий день, а не заседание по делу восьмилетней давности."},
+          {"speaker": "leo", "text": "Понимаю."},
+          {"speaker": "nika", "text": "Если вопросы по зданию — отправь их Маттео. Личные разговоры начинаются только тогда, когда я сама их начинаю."},
+          {"speaker": "leo", "text": "Я не буду тебя останавливать."},
+          {"speaker": null, "text": "Ника ушла первой. Лео не окликнул её и не оставил объяснений вслед — только свернул чертежи и вернулся к пирсу."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "No. Not today. It is my first day at work, not a hearing about eight years ago."},
+          {"speaker": "leo", "text": "I understand."},
+          {"speaker": "nika", "text": "If you have building questions, send them to Matteo. Personal conversations begin when I begin them."},
+          {"speaker": "leo", "text": "I will not stop you."},
+          {"speaker": null, "text": "Nika left first. Leo did not call after her or leave an explanation in her wake; he rolled up the blueprints and returned to the pier."}
+        ]
+      },
+      "next": "ep1_hook"
     },
     {
       "id": "ep1_hook",
@@ -279,22 +620,22 @@
       "assetId": "night",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "Лео опустил взгляд на чертежи. На полях стоял золотой знак Aurea Hospitality — компании, о которой Маттео отказался говорить."},
-          {"speaker": "leo", "text": "Ника, я должен был сказать тебе раньше: Villa Serena — не просто объект в нашем проекте."},
-          {"speaker": "nika", "text": "А что это?"},
-          {"speaker": "leo", "text": "Место, которое Aurea собирается купить. И место, из которого я однажды уже ушёл, не объяснившись."},
-          {"speaker": null, "text": "В окне отеля погас один из огней. Ника впервые подумала, что это лето потребует от неё не только хорошего расписания."}
+          {"speaker": null, "text": "В кабинете Нику ждала папка, которой утром не было. На обложке стояло только: «Villa Serena — десять недель»."},
+          {"speaker": "nika", "text": "Я ещё не согласилась остаться до конца."},
+          {"speaker": null, "text": "Внутри лежал перечёркнутый план юбилейной недели и список вопросов о ней самой — о работе, о Лео и о том, сколько она готова выдержать."},
+          {"speaker": "matteo", "text": "Ника, не открывайте последнюю страницу."},
+          {"speaker": null, "text": "Свет в коридоре погас. Лето началось с работы; к ночи у Villa Serena появился вопрос, на который Ника уже не могла ответить за всех. И в этот раз она не собиралась делать вид, что не услышала его."}
         ],
         "en": [
-          {"speaker": null, "text": "Leo lowered his eyes to the blueprints. A gold Aurea Hospitality mark sat in the margin — the company Matteo had refused to discuss."},
-          {"speaker": "leo", "text": "Nika, I should have told you sooner: Villa Serena is not just another site in our project."},
-          {"speaker": "nika", "text": "What is it, then?"},
-          {"speaker": "leo", "text": "A place Aurea intends to buy. And a place I already left once without explaining why."},
-          {"speaker": null, "text": "One of the hotel lights went dark. For the first time, Nika understood that this summer would demand more than a flawless schedule."}
+          {"speaker": null, "text": "A folder waited in Nika's office that had not been there that morning. Its cover said only: 'Villa Serena — ten weeks.'"},
+          {"speaker": "nika", "text": "I have not agreed to stay until the end."},
+          {"speaker": null, "text": "Inside was a crossed-out anniversary plan and a list of questions about her — about work, Leo, and how much she was prepared to endure."},
+          {"speaker": "matteo", "text": "Nika, do not open the last page."},
+          {"speaker": null, "text": "The corridor lights went out. Summer had begun with a job; by night, Villa Serena had a question Nika could no longer answer for everyone. This time, she would not pretend she had failed to hear it."}
         ]
       },
       "ending": true,
-      "endingId": "ep1-aurea-hook",
+      "endingId": "ep1-serena-question",
       "nextEpisode": "ep2"
     }
   ]

@@ -1,0 +1,11 @@
+{
+  "target": "EP1 repaired runtime and narrative verification",
+  "inScope": [
+    "runtime,narrative,localization,ui,mobile-input,save-back"
+  ],
+  "outOfScope": [
+    "EP2-EP10,production-art,publication,release-packaging,blind-playtest-results"
+  ],
+  "acceptanceContract": "EP1 technical repair complete with honest Concept Proof and production-art stop lines",
+  "mutationBoundary": "local-source-and-tests"
+}

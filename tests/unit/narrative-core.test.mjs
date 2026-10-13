@@ -77,6 +77,19 @@ test('known save version migrates and future or corrupt saves fail closed', () =
     history: []
   };
   assert.equal(migrateSave(legacy).schemaVersion, CURRENT_SAVE_VERSION);
+  const oldState = Object.fromEntries(Object.entries(initial).filter(([key]) => !['hotelEvidence', 'matteoApproach', 'elioApproach', 'leoConversation'].includes(key)));
+  const upgraded = deserializeSave(JSON.stringify({
+    schemaVersion: 1,
+    locale: 'ru',
+    cursor: { sceneId: 'ep1_arrival', dialogueIndex: 0 },
+    state: oldState,
+    history: [{ sceneId: 'ep1_arrival', dialogueIndex: 0, state: oldState }]
+  }), graph);
+  assert.ok(upgraded);
+  assert.equal(upgraded.schemaVersion, CURRENT_SAVE_VERSION);
+  assert.equal(upgraded.state.hotelEvidence, 'none');
+  assert.equal(upgraded.state.leoConversation, 'none');
+  assert.equal(upgraded.history.length, 1);
   assert.throws(() => migrateSave({ schemaVersion: CURRENT_SAVE_VERSION + 1 }), /future save version/i);
   assert.equal(deserializeSave('{not json', graph), null);
 });

@@ -1,0 +1,11 @@
+{
+  "target": "ep1",
+  "inScope": [
+    "runtime narrative ui"
+  ],
+  "outOfScope": [
+    "release publication"
+  ],
+  "acceptanceContract": "EP1 narrative repair and concept proof preparation",
+  "mutationBoundary": "local-source-and-tests"
+}

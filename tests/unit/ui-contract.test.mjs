@@ -13,7 +13,12 @@ function fakeButton(choiceId = undefined) {
     disabled: false,
     addEventListener(type, handler) { listeners.set(type, handler); },
     removeEventListener(type) { listeners.delete(type); },
-    click() { listeners.get('click')?.({ currentTarget: this, preventDefault() {} }); }
+    dispatch(type, event = {}) {
+      listeners.get(type)?.({ currentTarget: this, preventDefault() {}, ...event });
+    },
+    click(detail = 1) {
+      this.dispatch('click', { detail });
+    }
   };
 }
 
@@ -42,5 +47,28 @@ test('choice input owns the gesture and cannot fall through to advance', () => {
   controller.unlock();
   next.click();
   assert.deepEqual(calls, ['choose:matteo_formal', 'advance']);
+  controller.destroy();
+});
+
+test('one pointer gesture owns its click and fast repeat cannot cross a rerender lock', () => {
+  const next = fakeButton();
+  const choice = fakeButton('leo_distance');
+  const calls = [];
+  const controller = createInputController({ nextButton: next }, {
+    onAdvance: () => calls.push('advance'),
+    onChoose: id => calls.push(`choose:${id}`)
+  });
+  controller.bindChoiceButtons([choice]);
+
+  choice.dispatch('pointerdown', { pointerId: 7, pointerType: 'touch' });
+  choice.dispatch('pointerup', { pointerId: 7, pointerType: 'touch' });
+  choice.click(1);
+  choice.click(2);
+  next.click(1);
+  assert.deepEqual(calls, ['choose:leo_distance']);
+
+  controller.unlock();
+  next.click(1);
+  assert.deepEqual(calls, ['choose:leo_distance', 'advance']);
   controller.destroy();
 });

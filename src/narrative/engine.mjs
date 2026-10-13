@@ -2,7 +2,7 @@ import { getLocalizedText } from './localization.mjs';
 import { deserializeSave, serializeSave } from './save.mjs';
 import { applyEffects, canEnter, createInitialState, validateGraph } from './state.mjs';
 
-const ENGINE_SCHEMA_VERSION = 1;
+const ENGINE_SCHEMA_VERSION = 2;
 
 export class NarrativeEngine {
   #graph;
@@ -51,6 +51,12 @@ export class NarrativeEngine {
 
   isEnding() {
     return this.currentScene().ending === true;
+  }
+
+  isEpisodeComplete() {
+    if (!this.isEnding()) return false;
+    const lines = this.currentScene().dialogue[this.#locale];
+    return this.#cursor.dialogueIndex === lines.length - 1;
   }
 
   canBack() {

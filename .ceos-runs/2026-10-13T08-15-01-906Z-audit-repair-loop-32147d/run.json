@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.12",
+  "runId": "2026-10-13T08-15-01-906Z-audit-repair-loop-32147d",
+  "pipeline": "audit-repair-loop",
+  "artOutputGateRequired": false,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-13T08-15-01-906Z-audit-repair-loop-32147d",
+  "createdAt": "2026-10-13T08:15:01.911Z",
+  "updatedAt": "2026-10-13T08:47:27.293Z",
+  "completedAt": null,
+  "cycle": 1,
+  "maxCycles": 3,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "audit-repair-loop",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "REPAIRING",
+  "nextStage": "VERIFIED",
+  "verdict": null,
+  "stopReason": null,
+  "checkpointCount": 6,
+  "scopeSha256": "511ba0a161b2cdcc11a02a64b94d478b99ef90ad99ad47ef2209b0977f425d45",
+  "capabilitiesSha256": "f486586081ea4f68a12204be072b1b41ded6da84ef041e177189e563b16843bd",
+  "sourceAtStart": {
+    "available": true,
+    "head": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "clean": false,
+    "worktreeSha256": "d5ca2f5ac19ad49efad364b9446c6128cdbdc9567a90db2864f72d674e24be36"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_reasoner_web"
+    ],
+    "webReviews": [
+      {
+        "schemaVersion": 1,
+        "kind": "narrative",
+        "phase": "analysis",
+        "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+        "agent": "ceos_reasoner_web",
+        "reviewTraceId": "stage3-narrative-analysis-01a13457",
+        "taskId": "01a13457-b5a8-7691-86c9-44f66919dca0",
+        "evidenceArtifact": {
+          "input": "artifacts/evidence/stage3-web-analysis.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-analysis.json",
+          "projectRelativePath": "artifacts/evidence/stage3-web-analysis.json",
+          "type": "file",
+          "sha256": "9776891f07f67adaaaecdbf5131d8c2a2a54515496d8440baed4c6803a6d3369",
+          "size": 3796
+        },
+        "input": {
+          "evidence": [
+            "artifacts/evidence/stage3-pre-repair-audit.json",
+            "narrative/graph.json",
+            "narrative/NARRATIVE_BIBLE.md",
+            "narrative/EPISODE_OUTLINE.md",
+            "narrative/ROUTE_MAP.md",
+            "narrative/story-promises.json",
+            "narrative/episode-1.md",
+            "docs/CONCEPT.md"
+          ],
+          "scope": "causal continuity, knowledge provenance, route openness, and compact repair contract",
+          "model": "chatgpt-web/gpt-6-sol",
+          "reasoning": "high"
+        },
+        "status": "FINDINGS",
+        "reviewedItems": [
+          "narrative/graph.json:EP1",
+          "docs/CONCEPT.md:EP1-EP6 promises",
+          "narrative/NARRATIVE_BIBLE.md:cast-and-state",
+          "narrative/EPISODE_OUTLINE.md:EP1-EP3",
+          "narrative/ROUTE_MAP.md:EP1",
+          "narrative/story-promises.json:EP1"
+        ],
+        "evidenceRefs": [
+          "artifacts/evidence/stage3-pre-repair-audit.json",
+          "narrative/graph.json",
+          "docs/CONCEPT.md",
+          "narrative/NARRATIVE_BIBLE.md",
+          "narrative/EPISODE_OUTLINE.md",
+          "narrative/ROUTE_MAP.md",
+          "narrative/story-promises.json",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png"
+        ],
+        "receivedEvidenceRefs": [
+          "artifacts/evidence/stage3-pre-repair-audit.json",
+          "narrative/graph.json",
+          "docs/CONCEPT.md",
+          "narrative/NARRATIVE_BIBLE.md",
+          "narrative/EPISODE_OUTLINE.md",
+          "narrative/ROUTE_MAP.md",
+          "narrative/story-promises.json",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png"
+        ],
+        "decision": "REWORK: repair the causal EP1 slice before concept-proof review; do not treat this as artistic or Concept Proof acceptance.",
+        "findings": [
+          {
+            "id": "EP1-LEO-DISTANCE",
+            "detail": "leo_distance converges into the same Leo explanation as leo_hear."
+          },
+          {
+            "id": "EP1-LEO-KNOWLEDGE",
+            "detail": "leoTruthHeard is true without the corresponding explanation being shown."
+          },
+          {
+            "id": "EP1-AUREA-TIMING",
+            "detail": "ep1_hook prematurely reveals Aurea, intended purchase, and Leo's connection."
+          },
+          {
+            "id": "EP1-HOTEL-KNOWLEDGE",
+            "detail": "hotel_numbers mutates fundingEvidence and investorTerms before displaying terms."
+          },
+          {
+            "id": "EP1-STAFF-TRUST",
+            "detail": "hotel_staff mutates staffTrust before a staff conversation."
+          },
+          {
+            "id": "EP1-UNSUPPORTED-CLAIM",
+            "detail": "ep1_hook claims Matteo refused Aurea discussion without a preceding conversation."
+          },
+          {
+            "id": "EP1-REACTION-MISSING",
+            "detail": "All four choices lack immediate branch-owned reaction scenes."
+          }
+        ],
+        "unresolved": [
+          "full-season narrative validation remains pending because EP2-EP10 are not authored",
+          "production art remains BLOCKED_ART_PRODUCTION",
+          "independent blind playtest remains pending"
+        ],
+        "actualPixelsReceived": true,
+        "repairContract": [
+          "keep route none until EP6",
+          "use reaction scenes for all four decisions",
+          "apply knowledge effects only after the corresponding dialogue or visible event",
+          "keep the Aurea mark on Leo's drawings and full eight-year conversation for EP3",
+          "verify RU/EN branch parity and terminal Back/save behavior"
+        ],
+        "limitations": [
+          "advisory text review; this record is not artistic acceptance or Concept Proof acceptance"
+        ],
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-13T08:47:11.206Z"
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "visual-qa",
+        "phase": "analysis",
+        "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+        "agent": "ceos_reasoner_web",
+        "reviewTraceId": "stage3-mobile-visual-analysis-01a1346e",
+        "taskId": "01a1346e-00a4-7343-bac8-314b0f1152fb",
+        "evidenceArtifact": {
+          "input": "artifacts/evidence/stage3-web-visual-analysis.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-visual-analysis.json",
+          "projectRelativePath": "artifacts/evidence/stage3-web-visual-analysis.json",
+          "type": "file",
+          "sha256": "0fd8394f28384d3524838e273c04a1f75de2c55d6c976fc8e2a9ff7da976d751",
+          "size": 3378
+        },
+        "status": "FINDINGS",
+        "reviewedItems": [
+          "ep1-ru-start-360x640",
+          "ep1-ru-choice-390x844",
+          "ep1-ru-terminal-430x932",
+          "ep1-en-start-430x932"
+        ],
+        "evidenceRefs": [
+          "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png",
+          "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png"
+        ],
+        "receivedEvidenceRefs": [
+          "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+          "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png",
+          "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png"
+        ],
+        "visualEvidence": [
+          {
+            "ref": "ep1-ru-start-360x640",
+            "path": "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+            "sha256": "85210d9cadb9ba12f1ef6721ab31290ce9ce1215ceecb1660627c84b70f5299f",
+            "observation": "RU start screen is readable with no critical overlap; the portrait placeholder leaves the dialogue card clear."
+          },
+          {
+            "ref": "ep1-ru-choice-390x844",
+            "path": "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+            "sha256": "c3fb7e421f8122bf60b46b1e6dbf3b77c38984854db3b27630a928cc9f6129bf",
+            "observation": "RU choice screen shows both touch targets, readable wrapping, and safe spacing above the action row."
+          },
+          {
+            "ref": "ep1-ru-terminal-430x932",
+            "path": "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png",
+            "sha256": "79ecdf9aa3372e93308c45eaff74fc5c1522b856b21",
+            "observation": "Terminal screen keeps the final paragraph inside the card and leaves Back/New Game accessible."
+          },
+          {
+            "ref": "ep1-en-start-430x932",
+            "path": "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png",
+            "sha256": "3799f1edbe5e6b74548bb7575b4bde2c550e9abb862ed760dad8d11b23c89429",
+            "observation": "English start screen preserves the same composition and readable control labels."
+          }
+        ],
+        "actualPixelsReceived": true,
+        "decision": "MOBILE_UI_ADVISORY: PARTIAL. Readability, composition, touch-target sizing, and responsive layout are acceptable in the supplied states; full mobile acceptance remains open for runtime touch/orientation checks. Production-art acceptance is not evaluated.",
+        "findings": [
+          {
+            "id": "MOBILE-CHOICE-EVIDENCE",
+            "detail": "The first choice screenshot was captured before choice buttons were visible; the current 390x844 receipt was re-captured with both choices present."
+          },
+          {
+            "id": "MOBILE-TERMINAL-POLISH",
+            "detail": "The disabled completion button has lower contrast than active controls; the separate status line remains visible."
+          }
+        ],
+        "unresolved": [
+          "actual touch areas and orientation-change behavior require runtime verification",
+          "production art remains BLOCKED_ART_PRODUCTION",
+          "independent blind playtest remains pending"
+        ],
+        "limitations": [
+          "advisory screenshot review only; no artistic acceptance and no Concept Proof decision"
+        ],
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-13T08:47:11.391Z"
+      }
+    ],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [
+          "ceos_reasoner_web"
+        ],
+        "webReviews": [
+          {
+            "schemaVersion": 1,
+            "kind": "narrative",
+            "phase": "analysis",
+            "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+            "agent": "ceos_reasoner_web",
+            "reviewTraceId": "stage3-narrative-analysis-01a13457",
+            "taskId": "01a13457-b5a8-7691-86c9-44f66919dca0",
+            "evidenceArtifact": {
+              "input": "artifacts/evidence/stage3-web-analysis.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-analysis.json",
+              "projectRelativePath": "artifacts/evidence/stage3-web-analysis.json",
+              "type": "file",
+              "sha256": "9776891f07f67adaaaecdbf5131d8c2a2a54515496d8440baed4c6803a6d3369",
+              "size": 3796
+            },
+            "input": {
+              "evidence": [
+                "artifacts/evidence/stage3-pre-repair-audit.json",
+                "narrative/graph.json",
+                "narrative/NARRATIVE_BIBLE.md",
+                "narrative/EPISODE_OUTLINE.md",
+                "narrative/ROUTE_MAP.md",
+                "narrative/story-promises.json",
+                "narrative/episode-1.md",
+                "docs/CONCEPT.md"
+              ],
+              "scope": "causal continuity, knowledge provenance, route openness, and compact repair contract",
+              "model": "chatgpt-web/gpt-6-sol",
+              "reasoning": "high"
+            },
+            "status": "FINDINGS",
+            "reviewedItems": [
+              "narrative/graph.json:EP1",
+              "docs/CONCEPT.md:EP1-EP6 promises",
+              "narrative/NARRATIVE_BIBLE.md:cast-and-state",
+              "narrative/EPISODE_OUTLINE.md:EP1-EP3",
+              "narrative/ROUTE_MAP.md:EP1",
+              "narrative/story-promises.json:EP1"
+            ],
+            "evidenceRefs": [
+              "artifacts/evidence/stage3-pre-repair-audit.json",
+              "narrative/graph.json",
+              "docs/CONCEPT.md",
+              "narrative/NARRATIVE_BIBLE.md",
+              "narrative/EPISODE_OUTLINE.md",
+              "narrative/ROUTE_MAP.md",
+              "narrative/story-promises.json",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png"
+            ],
+            "receivedEvidenceRefs": [
+              "artifacts/evidence/stage3-pre-repair-audit.json",
+              "narrative/graph.json",
+              "docs/CONCEPT.md",
+              "narrative/NARRATIVE_BIBLE.md",
+              "narrative/EPISODE_OUTLINE.md",
+              "narrative/ROUTE_MAP.md",
+              "narrative/story-promises.json",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png"
+            ],
+            "decision": "REWORK: repair the causal EP1 slice before concept-proof review; do not treat this as artistic or Concept Proof acceptance.",
+            "findings": [
+              {
+                "id": "EP1-LEO-DISTANCE",
+                "detail": "leo_distance converges into the same Leo explanation as leo_hear."
+              },
+              {
+                "id": "EP1-LEO-KNOWLEDGE",
+                "detail": "leoTruthHeard is true without the corresponding explanation being shown."
+              },
+              {
+                "id": "EP1-AUREA-TIMING",
+                "detail": "ep1_hook prematurely reveals Aurea, intended purchase, and Leo's connection."
+              },
+              {
+                "id": "EP1-HOTEL-KNOWLEDGE",
+                "detail": "hotel_numbers mutates fundingEvidence and investorTerms before displaying terms."
+              },
+              {
+                "id": "EP1-STAFF-TRUST",
+                "detail": "hotel_staff mutates staffTrust before a staff conversation."
+              },
+              {
+                "id": "EP1-UNSUPPORTED-CLAIM",
+                "detail": "ep1_hook claims Matteo refused Aurea discussion without a preceding conversation."
+              },
+              {
+                "id": "EP1-REACTION-MISSING",
+                "detail": "All four choices lack immediate branch-owned reaction scenes."
+              }
+            ],
+            "unresolved": [
+              "full-season narrative validation remains pending because EP2-EP10 are not authored",
+              "production art remains BLOCKED_ART_PRODUCTION",
+              "independent blind playtest remains pending"
+            ],
+            "actualPixelsReceived": true,
+            "repairContract": [
+              "keep route none until EP6",
+              "use reaction scenes for all four decisions",
+              "apply knowledge effects only after the corresponding dialogue or visible event",
+              "keep the Aurea mark on Leo's drawings and full eight-year conversation for EP3",
+              "verify RU/EN branch parity and terminal Back/save behavior"
+            ],
+            "limitations": [
+              "advisory text review; this record is not artistic acceptance or Concept Proof acceptance"
+            ],
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-13T08:47:11.206Z"
+          },
+          {
+            "schemaVersion": 1,
+            "kind": "visual-qa",
+            "phase": "analysis",
+            "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+            "agent": "ceos_reasoner_web",
+            "reviewTraceId": "stage3-mobile-visual-analysis-01a1346e",
+            "taskId": "01a1346e-00a4-7343-bac8-314b0f1152fb",
+            "evidenceArtifact": {
+              "input": "artifacts/evidence/stage3-web-visual-analysis.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-visual-analysis.json",
+              "projectRelativePath": "artifacts/evidence/stage3-web-visual-analysis.json",
+              "type": "file",
+              "sha256": "0fd8394f28384d3524838e273c04a1f75de2c55d6c976fc8e2a9ff7da976d751",
+              "size": 3378
+            },
+            "status": "FINDINGS",
+            "reviewedItems": [
+              "ep1-ru-start-360x640",
+              "ep1-ru-choice-390x844",
+              "ep1-ru-terminal-430x932",
+              "ep1-en-start-430x932"
+            ],
+            "evidenceRefs": [
+              "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png",
+              "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png"
+            ],
+            "receivedEvidenceRefs": [
+              "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+              "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png",
+              "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png"
+            ],
+            "visualEvidence": [
+              {
+                "ref": "ep1-ru-start-360x640",
+                "path": "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+                "sha256": "85210d9cadb9ba12f1ef6721ab31290ce9ce1215ceecb1660627c84b70f5299f",
+                "observation": "RU start screen is readable with no critical overlap; the portrait placeholder leaves the dialogue card clear."
+              },
+              {
+                "ref": "ep1-ru-choice-390x844",
+                "path": "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+                "sha256": "c3fb7e421f8122bf60b46b1e6dbf3b77c38984854db3b27630a928cc9f6129bf",
+                "observation": "RU choice screen shows both touch targets, readable wrapping, and safe spacing above the action row."
+              },
+              {
+                "ref": "ep1-ru-terminal-430x932",
+                "path": "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png",
+                "sha256": "79ecdf9aa3372e93308c45eaff74fc5c1522b856b21",
+                "observation": "Terminal screen keeps the final paragraph inside the card and leaves Back/New Game accessible."
+              },
+              {
+                "ref": "ep1-en-start-430x932",
+                "path": "artifacts/evidence/stage3/screenshots/ep1-en-start-430x932.png",
+                "sha256": "3799f1edbe5e6b74548bb7575b4bde2c550e9abb862ed760dad8d11b23c89429",
+                "observation": "English start screen preserves the same composition and readable control labels."
+              }
+            ],
+            "actualPixelsReceived": true,
+            "decision": "MOBILE_UI_ADVISORY: PARTIAL. Readability, composition, touch-target sizing, and responsive layout are acceptable in the supplied states; full mobile acceptance remains open for runtime touch/orientation checks. Production-art acceptance is not evaluated.",
+            "findings": [
+              {
+                "id": "MOBILE-CHOICE-EVIDENCE",
+                "detail": "The first choice screenshot was captured before choice buttons were visible; the current 390x844 receipt was re-captured with both choices present."
+              },
+              {
+                "id": "MOBILE-TERMINAL-POLISH",
+                "detail": "The disabled completion button has lower contrast than active controls; the separate status line remains visible."
+              }
+            ],
+            "unresolved": [
+              "actual touch areas and orientation-change behavior require runtime verification",
+              "production art remains BLOCKED_ART_PRODUCTION",
+              "independent blind playtest remains pending"
+            ],
+            "limitations": [
+              "advisory screenshot review only; no artistic acceptance and no Concept Proof decision"
+            ],
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-13T08:47:11.391Z"
+          }
+        ],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  },
+  "lastDefectCount": 8
+}

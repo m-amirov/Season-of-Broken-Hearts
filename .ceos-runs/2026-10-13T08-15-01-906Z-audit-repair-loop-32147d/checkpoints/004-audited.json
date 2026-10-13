@@ -1,0 +1,54 @@
+{
+  "index": 4,
+  "stage": "AUDITED",
+  "at": "2026-10-13T08:47:16.150Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Web narrative and visual advisory findings persisted; repairs and native verification are complete for the scoped EP1 slice.",
+  "metadata": {
+    "webPreflight": "READY",
+    "webAgentsUsed": [
+      "ceos_reasoner_web"
+    ],
+    "webReviewDecisions": [
+      "REWORK",
+      "MOBILE_UI_ADVISORY: PARTIAL"
+    ],
+    "artisticAcceptance": "NOT_EVALUATED",
+    "conceptProof": "AWAITING_BLIND_PLAYTEST",
+    "defectCount": 7
+  },
+  "source": {
+    "available": true,
+    "head": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "clean": false,
+    "worktreeSha256": "219a1163b342b27dcaf32d2c8bc5e3f09a444eea43e2e5e529a1fa1d14204e95"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage3-pre-repair-audit.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-pre-repair-audit.json",
+      "projectRelativePath": "artifacts/evidence/stage3-pre-repair-audit.json",
+      "type": "file",
+      "sha256": "d5529bab17d80507219b3ce55ec26c88157ab5d6cae10fb31a70f31cbc44f00b",
+      "size": 2144
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-analysis.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-analysis.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-analysis.json",
+      "type": "file",
+      "sha256": "9776891f07f67adaaaecdbf5131d8c2a2a54515496d8440baed4c6803a6d3369",
+      "size": 3796
+    },
+    {
+      "input": "artifacts/evidence/stage3-web-visual-analysis.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-web-visual-analysis.json",
+      "projectRelativePath": "artifacts/evidence/stage3-web-visual-analysis.json",
+      "type": "file",
+      "sha256": "0fd8394f28384d3524838e273c04a1f75de2c55d6c976fc8e2a9ff7da976d751",
+      "size": 3378
+    }
+  ]
+}

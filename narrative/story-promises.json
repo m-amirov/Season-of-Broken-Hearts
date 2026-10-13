@@ -5,13 +5,13 @@
       "id": "ep1-villa-crisis",
       "status": "authored",
       "setup": {"sceneId": "ep1_hotel_crisis"},
-      "payoff": {"sceneId": "ep1_hook"}
+      "payoff": {"sceneId": "ep1_hook", "evidence": "Nika finds an unannounced Villa Serena folder and learns the crisis has become personal."}
     },
     {
       "id": "ep1-leo-return",
       "status": "authored",
       "setup": {"sceneId": "ep1_leo_entrance"},
-      "payoff": {"sceneId": "ep1_hook"}
+      "payoff": {"sceneId": "ep1_hook", "evidence": "Leo respects Nika's boundary or accepts a limited conversation; neither branch reveals the client."}
     },
     {
       "id": "matteo-negotiation-documents",

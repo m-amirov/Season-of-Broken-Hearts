@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "stage": "stage3-pre-repair-audit",
+  "source": {
+    "head": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "comparisonHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "worktreeNote": "The CEOS run directory is created by the audit pipeline and is the only post-run untracked path at collection time."
+  },
+  "runtimeReproduction": {
+    "method": "real browser walkthrough through http://127.0.0.1:4173",
+    "cleanSave": true,
+    "choicesVisited": ["matteo_formal", "elio_humor", "hotel_numbers", "leo_hear"],
+    "observed": {
+      "sceneId": "ep1_hook",
+      "dialogueIndex": 0,
+      "expectedFinalLineCount": 5,
+      "nextButtonText": "Эпизод завершён",
+      "nextButtonDisabled": true,
+      "steps": 31,
+      "firstLineVisible": "Лео опустил взгляд на чертежи. На полях стоял золотой знак Aurea Hospitality — компании, о которой Маттео отказался говорить."
+    },
+    "finding": "P0_CONFIRMED: renderer disables Next for the whole terminal scene instead of only after the last dialogue line."
+  },
+  "staticBaseline": {
+    "episodeScenes": 10,
+    "choices": 8,
+    "terminalDialogueLinesRu": 5,
+    "terminalDialogueLinesEn": 5,
+    "ruWordCount": 409,
+    "enWordCount": 490,
+    "routeAtEp1End": "none",
+    "productionArtStatus": "BLOCKED_ART_PRODUCTION"
+  },
+  "confirmedAuditTargets": [
+    "P0 terminal-scene gating and durable completion state",
+    "P1 knowledge provenance and branch-causal dialogue",
+    "P1 observable consequences for all four decisions",
+    "P1 EP1 authored length and literary continuity",
+    "P1 complete RU/EN UI localization",
+    "P1 physical gesture ownership during pointer/click transitions",
+    "P1 scene-only crossfade and preload verification",
+    "Concept Proof Gate protocol without fabricated reader results",
+    "game-spec declarations aligned with implemented runtime"
+  ],
+  "outOfScope": [
+    "EP2-EP10 authoring",
+    "production art generation or approval",
+    "release ZIP, publication, moderation, external Yandex acceptance"
+  ]
+}

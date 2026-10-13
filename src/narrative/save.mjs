@@ -1,6 +1,23 @@
 import { validateGraph } from './state.mjs';
 
-export const CURRENT_SAVE_VERSION = 1;
+export const CURRENT_SAVE_VERSION = 2;
+
+function validStateValue(value, definition) {
+  return typeof value === definition?.type &&
+    (definition.type === 'boolean' || definition.values.includes(value));
+}
+
+function migrateState(state, graph) {
+  if (!state || typeof state !== 'object' || Array.isArray(state)) throw new Error('Invalid save state');
+  const migrated = structuredClone(graph.initialState);
+  for (const [key, value] of Object.entries(state)) {
+    if (!graph.stateSchema[key] || !validStateValue(value, graph.stateSchema[key])) {
+      throw new Error(`Invalid save state field ${key}`);
+    }
+    migrated[key] = value;
+  }
+  return migrated;
+}
 
 function validCursor(cursor, graph, locale) {
   const scene = graph.scenes.find(candidate => candidate.id === cursor?.sceneId);
@@ -24,17 +41,21 @@ function isValidState(state, graph) {
     });
 }
 
-export function migrateSave(payload) {
+export function migrateSave(payload, graph = null) {
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) throw new Error('Invalid save payload');
   const version = payload.schemaVersion ?? 0;
   if (version > CURRENT_SAVE_VERSION) throw new Error(`Future save version ${version} is not supported`);
-  if (version === 0) {
+  if (version < CURRENT_SAVE_VERSION) {
+    const state = graph ? migrateState(payload.state, graph) : payload.state;
+    const history = Array.isArray(payload.history)
+      ? payload.history.map(item => ({ ...item, state: graph ? migrateState(item.state, graph) : item.state }))
+      : [];
     return {
       schemaVersion: CURRENT_SAVE_VERSION,
       locale: payload.locale ?? 'ru',
       cursor: payload.cursor,
-      state: payload.state,
-      history: Array.isArray(payload.history) ? payload.history : []
+      state,
+      history
     };
   }
   return structuredClone(payload);
@@ -52,7 +73,7 @@ export function serializeSave(snapshot) {
 
 export function deserializeSave(raw, graph) {
   try {
-    const payload = migrateSave(typeof raw === 'string' ? JSON.parse(raw) : raw);
+    const payload = migrateSave(typeof raw === 'string' ? JSON.parse(raw) : raw, graph);
     if (validateGraph(graph).valid !== true || !validCursor(payload.cursor, graph, payload.locale) || !isValidState(payload.state, graph)) return null;
     const history = (payload.history ?? []).filter(item => validCursor(item, graph, payload.locale) && isValidState(item.state, graph));
     return {

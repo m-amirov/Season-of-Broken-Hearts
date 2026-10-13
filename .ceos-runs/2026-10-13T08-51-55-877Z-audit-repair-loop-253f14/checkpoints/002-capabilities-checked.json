@@ -1,0 +1,14 @@
+{
+  "index": 2,
+  "stage": "CAPABILITIES_CHECKED",
+  "at": "2026-10-13T08:51:56.019Z",
+  "auto": true,
+  "artifacts": [
+    {
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-13T08-51-55-877Z-audit-repair-loop-253f14\\capabilities.json",
+      "type": "file",
+      "sha256": "16e52355ab546425f3ce5208138a1d9369e3927c41e39da3f368d831480136a8",
+      "size": 2527
+    }
+  ]
+}

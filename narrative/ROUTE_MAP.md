@@ -5,20 +5,21 @@
 ```text
 ep1_arrival
   → ep1_gate
-      ├─ matteo_formal ─┐
-      └─ matteo_direct ─┴→ ep1_matteo_welcome → ep1_kitchen
-          ├─ elio_humor ───┐
-          └─ elio_boundary ┴→ ep1_work_briefing → ep1_hotel_crisis
-              ├─ hotel_numbers ─┐
-              └─ hotel_staff   ─┴→ ep1_harbor_walk → ep1_leo_entrance
+      ├─ matteo_formal → ep1_matteo_formal_response ─┐
+      └─ matteo_direct → ep1_matteo_direct_response ─┴→ ep1_matteo_welcome → ep1_kitchen
+          ├─ elio_humor → ep1_elio_humor_response ───┐
+          └─ elio_boundary → ep1_elio_boundary_response ─┴→ ep1_work_briefing → ep1_hotel_crisis
+              ├─ hotel_numbers → ep1_hotel_numbers_response ─┐
+              └─ hotel_staff → ep1_hotel_staff_response ─────┴→ ep1_harbor_walk → ep1_leo_entrance
                   → ep1_leo_choice
-                      ├─ leo_hear ─────┐
-                      └─ leo_distance ─┴→ ep1_hook (EP1 transition)
+                      ├─ leo_hear → ep1_leo_hear_response ─────┐
+                      └─ leo_distance → ep1_leo_distance_response ─┴→ ep1_hook (EP1 transition)
 ```
 
-EP1 имеет 10 сцен и 8 выборов. Все 16 комбинаций выбора сходятся к одному
-клиффхэнгеру; изменения видны в репликах/следующем состоянии, но ни один выбор
-не закрывает Маттео, Лео, Элио или независимый путь.
+EP1 имеет 18 сцен и 8 выборов. Все 16 комбинаций выбора сходятся к одному
+клиффхэнгеру после непосредственной реакционной сцены; изменения видны в
+репликах и состоянии, но ни один выбор не закрывает Маттео, Лео, Элио или
+независимый путь.
 
 ## Full-season topology (planned)
 
@@ -37,8 +38,8 @@ EP1 имеет 10 сцен и 8 выборов. Все 16 комбинаций �
 | Route | `route` | остаётся `none` |
 | Trust | `trustMatteo`, `trustLeo`, `trustElio` | выборы знакомства |
 | Romance | `relationshipMatteo`, `relationshipLeo`, `relationshipElio` | только наблюдаемый отклик, без lock |
-| Hotel | `staffTrust`, `fundingEvidence`, `investorTerms` | конфликт дня 1 |
-| Knowledge | `met*`, `leoTruthHeard`, `askedAboutHotel` | scene provenance |
+| Hotel | `staffTrust`, `fundingEvidence`, `investorTerms`, `hotelEvidence` | предъявленный документ или разговор с командой |
+| Knowledge | `met*`, `leoConversation`, `leoTruthHeard`, `askedAboutHotel` | scene provenance; полное объяснение Лео не в EP1 |
 
 ## Planned route locks
 

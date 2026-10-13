@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "kind": "audit-repair-remediation",
+  "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+  "scope": {
+    "target": "EP1 narrative repair and Concept Proof preparation",
+    "inScope": ["runtime", "narrative", "localization", "ui", "mobile-input", "save-back"],
+    "outOfScope": ["EP2-EP10 authoring", "production art", "publication", "release packaging", "blind playtest results"]
+  },
+  "confirmedDefects": [
+    {"id": "P0-ENDING-CURSOR", "repair": "Completion is derived from the last dialogue index; all five ep1_hook lines remain readable and completion is persisted through save/reload."},
+    {"id": "P1-LEO-DISTANCE", "repair": "The refusal branch has its own scene and does not receive Leo's explanation."},
+    {"id": "P1-KNOWLEDGE-PROVENANCE", "repair": "hotelEvidence, investorTerms, leoConversation, and leoTruthHeard are applied only after visible/heard evidence."},
+    {"id": "P1-AUREA-TIMING", "repair": "EP1 ends on the sealed-folder hook; the Aurea/Leo connection remains reserved for EP3."},
+    {"id": "P1-CHOICE-REACTIONS", "repair": "All four decisions have branch-owned immediate reaction scenes and distinct state effects without route lock."},
+    {"id": "P1-LENGTH-LOCALIZATION", "repair": "EP1 was expanded to a full vertical-slice reading length with RU/EN parity and localized UI labels."},
+    {"id": "P1-GESTURE-OWNERSHIP", "repair": "Pointer ownership spans pointerdown/click/rerender/animation so one physical gesture cannot repeat an action."},
+    {"id": "P1-SPEC-DRIFT", "repair": "game-spec.yaml now marks unimplemented audio, ads, and Gameplay API capabilities as disabled rather than implemented."}
+  ],
+  "changedFiles": [
+    "src/narrative/engine.mjs",
+    "src/narrative/save.mjs",
+    "src/ui/renderer.mjs",
+    "src/ui/input-controller.mjs",
+    "src/main.mjs",
+    "narrative/graph.json",
+    "narrative/NARRATIVE_BIBLE.md",
+    "narrative/EPISODE_OUTLINE.md",
+    "narrative/ROUTE_MAP.md",
+    "narrative/episode-1.md",
+    "narrative/story-promises.json",
+    "game-spec.yaml",
+    "tests/unit/engine.test.mjs",
+    "tests/unit/narrative-core.test.mjs",
+    "tests/unit/ui-contract.test.mjs",
+    "tools/qa/ep1-browser-regression.js"
+  ],
+  "acceptance": [
+    "npm test",
+    "npm run narrative:fixtures",
+    "npm run narrative:validate",
+    "real-browser EP1 RU/EN walkthrough",
+    "Back/reload/New Game and final five-line regression",
+    "mobile screenshots at 360x640, 390x844, and 430x932",
+    "Concept Proof status remains AWAITING_BLIND_PLAYTEST"
+  ],
+  "webReviewRefs": [
+    "artifacts/evidence/stage3-web-analysis.json",
+    "artifacts/evidence/stage3-web-visual-analysis.json"
+  ],
+  "productionArt": "BLOCKED_ART_PRODUCTION"
+}

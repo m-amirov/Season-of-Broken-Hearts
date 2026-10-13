@@ -52,10 +52,10 @@ visual:
       gameplayRatioTarget: 0.0
 
 audio:
-  enabled: true
+  enabled: false
   autoplay: false
-  muteSetting: true
-  pauseForAds: true
+  muteSetting: false
+  pauseForAds: false
 
 accessibility:
   reducedMotion: true
@@ -65,7 +65,8 @@ accessibility:
 
 localization:
   languages: [ru, en]
-  autoDetectYandexLanguage: true
+  autoDetectYandexLanguage: false
+  browserLanguageDetection: true
   fallback: ru
 
 platform:
@@ -75,10 +76,10 @@ platform:
     enabled: false
     boards: []
   ads:
-    fullscreen: true
-    rewarded: true
+    fullscreen: false
+    rewarded: false
     fullscreenPolicy: result-navigation-only
-  gameplayApi: true
+  gameplayApi: false
   pwa: false
   serviceWorker: false
   externalRuntimeAssets: false

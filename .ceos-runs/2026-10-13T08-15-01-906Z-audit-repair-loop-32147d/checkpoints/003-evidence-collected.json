@@ -1,0 +1,32 @@
+{
+  "index": 3,
+  "stage": "EVIDENCE_COLLECTED",
+  "at": "2026-10-13T08:18:12.822Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "browserReproduction": "P0_CONFIRMED",
+    "webPreflight": "READY",
+    "artProduction": "BLOCKED_ART_PRODUCTION",
+    "defectCount": 9
+  },
+  "source": {
+    "available": true,
+    "head": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "clean": false,
+    "worktreeSha256": "bace500d82d47c8be95314fc5c1a65fe689fb7b27edacbc319141dc37c244aa2"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage3-pre-repair-audit.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-pre-repair-audit.json",
+      "projectRelativePath": "artifacts/evidence/stage3-pre-repair-audit.json",
+      "type": "file",
+      "sha256": "d5529bab17d80507219b3ce55ec26c88157ab5d6cae10fb31a70f31cbc44f00b",
+      "size": 2144
+    }
+  ]
+}

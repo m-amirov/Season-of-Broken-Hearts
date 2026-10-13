@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "kind": "narrative",
+  "phase": "analysis",
+  "sourceHead": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+  "agent": "ceos_reasoner_web",
+  "reviewTraceId": "stage3-narrative-analysis-01a13457",
+  "taskId": "01a13457-b5a8-7691-86c9-44f66919dca0",
+  "evidenceArtifact": "artifacts/evidence/stage3-web-analysis.json",
+  "input": {
+    "evidence": [
+      "artifacts/evidence/stage3-pre-repair-audit.json",
+      "narrative/graph.json",
+      "narrative/NARRATIVE_BIBLE.md",
+      "narrative/EPISODE_OUTLINE.md",
+      "narrative/ROUTE_MAP.md",
+      "narrative/story-promises.json",
+      "narrative/episode-1.md",
+      "docs/CONCEPT.md"
+    ],
+    "scope": "causal continuity, knowledge provenance, route openness, and compact repair contract",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high"
+  },
+  "status": "FINDINGS",
+  "reviewedItems": [
+    "narrative/graph.json:EP1",
+    "docs/CONCEPT.md:EP1-EP6 promises",
+    "narrative/NARRATIVE_BIBLE.md:cast-and-state",
+    "narrative/EPISODE_OUTLINE.md:EP1-EP3",
+    "narrative/ROUTE_MAP.md:EP1",
+    "narrative/story-promises.json:EP1"
+  ],
+  "evidenceRefs": [
+    "artifacts/evidence/stage3-pre-repair-audit.json",
+    "narrative/graph.json",
+    "docs/CONCEPT.md",
+    "narrative/NARRATIVE_BIBLE.md",
+    "narrative/EPISODE_OUTLINE.md",
+    "narrative/ROUTE_MAP.md",
+    "narrative/story-promises.json",
+    "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+    "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+    "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png"
+  ],
+  "receivedEvidenceRefs": [
+    "artifacts/evidence/stage3-pre-repair-audit.json",
+    "narrative/graph.json",
+    "docs/CONCEPT.md",
+    "narrative/NARRATIVE_BIBLE.md",
+    "narrative/EPISODE_OUTLINE.md",
+    "narrative/ROUTE_MAP.md",
+    "narrative/story-promises.json",
+    "artifacts/evidence/stage3/screenshots/ep1-ru-start-360x640.png",
+    "artifacts/evidence/stage3/screenshots/ep1-ru-choice-390x844.png",
+    "artifacts/evidence/stage3/screenshots/ep1-ru-terminal-430x932.png"
+  ],
+  "decision": "REWORK: repair the causal EP1 slice before concept-proof review; do not treat this as artistic or Concept Proof acceptance.",
+  "findings": [
+    {"id": "EP1-LEO-DISTANCE", "detail": "leo_distance converges into the same Leo explanation as leo_hear."},
+    {"id": "EP1-LEO-KNOWLEDGE", "detail": "leoTruthHeard is true without the corresponding explanation being shown."},
+    {"id": "EP1-AUREA-TIMING", "detail": "ep1_hook prematurely reveals Aurea, intended purchase, and Leo's connection."},
+    {"id": "EP1-HOTEL-KNOWLEDGE", "detail": "hotel_numbers mutates fundingEvidence and investorTerms before displaying terms."},
+    {"id": "EP1-STAFF-TRUST", "detail": "hotel_staff mutates staffTrust before a staff conversation."},
+    {"id": "EP1-UNSUPPORTED-CLAIM", "detail": "ep1_hook claims Matteo refused Aurea discussion without a preceding conversation."},
+    {"id": "EP1-REACTION-MISSING", "detail": "All four choices lack immediate branch-owned reaction scenes."}
+  ],
+  "unresolved": [
+    "full-season narrative validation remains pending because EP2-EP10 are not authored",
+    "production art remains BLOCKED_ART_PRODUCTION",
+    "independent blind playtest remains pending"
+  ],
+  "actualPixelsReceived": true,
+  "repairContract": [
+    "keep route none until EP6",
+    "use reaction scenes for all four decisions",
+    "apply knowledge effects only after the corresponding dialogue or visible event",
+    "keep the Aurea mark on Leo's drawings and full eight-year conversation for EP3",
+    "verify RU/EN branch parity and terminal Back/save behavior"
+  ],
+  "limitations": ["advisory text review; this record is not artistic acceptance or Concept Proof acceptance"]
+}

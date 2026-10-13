@@ -1,21 +1,47 @@
 export function createInputController(elements, handlers) {
   let locked = false;
+  let activeGesture = null;
   let choiceCleanups = [];
   const cleanups = [];
 
-  const run = (callback, event) => {
+  const reject = event => {
     event?.preventDefault?.();
-    if (locked) return false;
+    return false;
+  };
+
+  const claimPointer = (button, event) => {
+    if (locked || activeGesture) return reject(event);
+    activeGesture = { button, pointerId: event.pointerId };
+    return true;
+  };
+
+  const cancelPointer = event => {
+    if (activeGesture?.pointerId === event.pointerId) activeGesture = null;
+  };
+
+  const runClick = (button, callback, event) => {
+    event?.preventDefault?.();
+    if (locked || event?.detail > 1) return false;
+    if (activeGesture && activeGesture.button !== button) return false;
+    activeGesture = null;
     locked = true;
     callback?.();
     return true;
   };
 
-  const bind = (button, callback) => {
+  const bind = (button, callback, cleanupList = cleanups) => {
     if (!button) return;
-    const listener = event => run(callback, event);
-    button.addEventListener('click', listener);
-    cleanups.push(() => button.removeEventListener('click', listener));
+    const pointerdown = event => claimPointer(button, event);
+    const pointercancel = cancelPointer;
+    const click = event => runClick(button, callback, event);
+    button.addEventListener('pointerdown', pointerdown, { passive: false });
+    button.addEventListener('pointercancel', pointercancel);
+    button.addEventListener('click', click);
+    cleanupList.push(() => {
+      button.removeEventListener('pointerdown', pointerdown);
+      button.removeEventListener('pointercancel', pointercancel);
+      button.removeEventListener('click', click);
+    });
   };
 
   bind(elements.nextButton, handlers.onAdvance);
@@ -31,13 +57,12 @@ export function createInputController(elements, handlers) {
       for (const cleanup of choiceCleanups) cleanup();
       choiceCleanups = [];
       for (const button of buttons) {
-        const listener = event => run(() => handlers.onChoose?.(button.dataset.choiceId), event);
-        button.addEventListener('click', listener);
-        choiceCleanups.push(() => button.removeEventListener('click', listener));
+        bind(button, () => handlers.onChoose?.(button.dataset.choiceId), choiceCleanups);
       }
     },
     unlock() {
       locked = false;
+      activeGesture = null;
     },
     lock() {
       locked = true;
@@ -49,6 +74,7 @@ export function createInputController(elements, handlers) {
       for (const cleanup of choiceCleanups) cleanup();
       for (const cleanup of cleanups) cleanup();
       choiceCleanups = [];
+      activeGesture = null;
     }
   };
 }

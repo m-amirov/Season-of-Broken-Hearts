@@ -38,7 +38,8 @@ button:focus-visible { outline: 3px solid #ffd98c; outline-offset: 3px; }
 .secondary-button, .primary-button { padding: 9px 12px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .88rem; }
 .secondary-button { background: rgba(255, 255, 255, .06); }
 .primary-button { min-width: 132px; border-color: #ffd98c; color: #211b20; background: #ffd98c; font-weight: 700; }
-button:disabled { cursor: not-allowed; opacity: .42; transform: none; }
+button:disabled { cursor: not-allowed; opacity: .86; transform: none; }
+.primary-button:disabled { color: #4a3929; background: #c7aa78; border-color: #f0ce8b; }
 .runtime-status { min-height: 1.3em; margin: 0; color: rgba(255, 246, 231, .62); font-family: ui-sans-serif, system-ui, sans-serif; font-size: .72rem; }
 
 @media (min-width: 700px) {

@@ -1,0 +1,31 @@
+{
+  "index": 6,
+  "stage": "REPAIRING",
+  "at": "2026-10-13T08:47:27.291Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Repairs implemented locally; proceed to native verification and fresh evidence.",
+  "metadata": {
+    "repairOwner": "parent-native",
+    "repairStatus": "implemented",
+    "productionArt": "BLOCKED_ART_PRODUCTION",
+    "defectCount": 8
+  },
+  "source": {
+    "available": true,
+    "head": "86be51027e4bd9f76285d47f72601ab5f44e0d97",
+    "clean": false,
+    "worktreeSha256": "0dbeef70b7e7ea86fdfcc4782c7fc47ea499554fdc02883ccfdb859cf0dc0b40"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/stage3-remediation-packet.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\evidence\\stage3-remediation-packet.json",
+      "projectRelativePath": "artifacts/evidence/stage3-remediation-packet.json",
+      "type": "file",
+      "sha256": "93ada450025b276dda94226401c749e1211ecba1e172e6e49d365165fe70985f",
+      "size": 2729
+    }
+  ]
+}
