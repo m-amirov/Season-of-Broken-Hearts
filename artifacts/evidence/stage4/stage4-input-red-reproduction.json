@@ -1,0 +1,20 @@
+{
+  "status": "RED_REPRODUCED_BEFORE_FIX",
+  "reproductionSourceHead": "4f8976ed68923db7fa1c03f09db371bc44e4e487",
+  "fixedSourceHead": "7fd8b95004d560bc375173d93573c80ab8e410c1",
+  "browser": "Chromium via Playwright CLI",
+  "sequence": [
+    "open EP1 in a real browser",
+    "reach the first choice scene",
+    "pointerdown on matteo_formal with pointerType touch",
+    "pointerup on document.body outside the button",
+    "click matteo_direct"
+  ],
+  "observedBeforeFix": {
+    "savedCursor": {"sceneId": "ep1_gate", "dialogueIndex": 7},
+    "nextChoiceTransition": "blocked",
+    "consoleErrors": 0
+  },
+  "regressionTest": "tests/unit/ui-contract.test.mjs :: pointerup outside the pressed button releases ownership for the next button",
+  "browserRegression": "tools/qa/ep1-input-regression.js :: pointerupOutside"
+}
