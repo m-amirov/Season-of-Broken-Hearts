@@ -51,7 +51,7 @@ test('first entry into a later episode generates a fresh localized title once', 
     episode: 2,
     title: { ru: 'Тестовая глава', en: 'Test chapter' },
     assetId: extended.scenes[0].assetId,
-    dialogue: { ru: [{ text: 'Тест' }], en: [{ text: 'Test' }] },
+    dialogue: { ru: [{ speaker: null, text: 'Тест' }], en: [{ speaker: null, text: 'Test' }] },
     ending: true
   });
   // Changing the EP1 ending to an ordinary transition makes the fixture reachable.
