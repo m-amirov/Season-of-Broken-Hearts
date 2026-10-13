@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "game": "Season of Broken Hearts",
+  "status": "PROPOSED_ART_DIRECTION",
+  "sourceOfTruth": [
+    "docs/CONCEPT.md",
+    "narrative/NARRATIVE_BIBLE.md",
+    "narrative/graph.json",
+    "artifacts/art-direction/ART_BIBLE.md"
+  ],
+  "medium": "cinematic semi-realistic 2D illustration",
+  "mood": [
+    "adult romantic tension",
+    "summer warmth over financial uncertainty",
+    "restrained emotional intimacy"
+  ],
+  "palette": {
+    "limestone": "#E9DCC6",
+    "seaBlue": "#24516B",
+    "nightBlue": "#172A43",
+    "olive": "#6F7852",
+    "terracotta": "#BB745A",
+    "warmCream": "#F5E8D4",
+    "shadow": "#222A31"
+  },
+  "camera": {
+    "dialogue": "natural perspective, generally human eye level",
+    "framing": "intentional close/mid framing; avoid wide angle figure distortion",
+    "negativeSpace": "separate CG from UI; validate visible source pixels at actual crop"
+  },
+  "cast": [
+    "nika",
+    "matteo",
+    "elio",
+    "leo",
+    "giulia"
+  ],
+  "locales": [
+    "ru",
+    "en"
+  ],
+  "output": {
+    "orientation": "portrait-first",
+    "mobileViewports": [
+      "360x640",
+      "390x844",
+      "430x932"
+    ],
+    "desktopViewport": "1920x900",
+    "format": "high-quality web image, asset budget to be measured",
+    "textBakedIntoImages": false,
+    "watermark": false
+  },
+  "ruleSet": {
+    "preferFullSceneCG": true,
+    "noInGameText": true,
+    "identityContinuityRequired": true,
+    "actualSourcePixelAndRuntimeReviewRequired": true,
+    "useOldFrameUntilImageDecoded": true,
+    "reducedMotionRequired": true,
+    "candidateBudgetPerAsset": 2,
+    "maxMaterialRepairAttempts": 3
+  },
+  "prohibited": [
+    "image hallucinated text",
+    "identity drift",
+    "age regression",
+    "floating actors",
+    "bad anatomy",
+    "wrong actor / location / time / prop",
+    "water visually replacing supporting pavement",
+    "crop clipping dialogue-safe important silhouettes",
+    "generic luxury fantasy hotel",
+    "random decorative petals / hearts",
+    "sprites used without reason",
+    "CSS masking repeated source-art defects"
+  ],
+  "acceptance": {
+    "artBible": "PROPOSED",
+    "referenceSheets": "NOT_YET_PRODUCED",
+    "contactSheet": "NOT_YET_PRODUCED",
+    "pilotCG": "NOT_YET_PRODUCED",
+    "runtimeReview": "BLOCKED_ART_PRODUCTION",
+    "independentReview": "NOT_YET_PERFORMED"
+  }
+}
