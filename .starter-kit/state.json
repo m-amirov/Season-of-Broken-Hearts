@@ -574,7 +574,7 @@
     "contract:package-json": {
       "target": "package.json",
       "sourceHash": "a4fa7355f58b05b5d0c1a72fc629265f633ab57e9c34d6060ef21d940308f2a9",
-      "targetHash": "d76e232a975bf193c407c9df2876a00c0c637d48ab10369b6e661cf4dc3be84c"
+      "targetHash": "a09d9ef2cffe57d804c4d627d1a5ab77814ba0259b39d33fe9f63e15d755eb65"
     },
     "contract:yandex-requirements": {
       "target": "config/yandex-requirements.yaml",

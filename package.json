@@ -4,6 +4,7 @@
   "scripts": {
     "test": "node --test tests/unit/*.test.mjs",
     "dev": "node tools/dev-server.mjs",
+    "dev:lan": "node tools/dev-server.mjs --host 0.0.0.0",
     "narrative:fixtures": "node tools/narrative/export-fixtures.mjs",
     "narrative:validate": "node tools/narrative/narrative-game-check.mjs --project . --profile config/narrative-game.local.json --require-enabled && node tools/narrative/conditional-dialogue-validation.mjs",
     "starter-kit:self-test": "node tools/starter-kit/self-test.mjs",
