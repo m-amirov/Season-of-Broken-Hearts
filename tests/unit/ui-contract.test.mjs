@@ -33,11 +33,30 @@ function fakeEventTarget() {
   };
 }
 
-test('every EP1 scene asset resolves to a named placeholder', () => {
+test('EP1 CG mappings are scoped and unfinished scenes remain placeholders', () => {
   const graph = JSON.parse(fs.readFileSync(new URL('../../narrative/graph.json', import.meta.url), 'utf8'));
+  const accepted = new Set([
+    'ep1_arrival',
+    'ep1_gate',
+    'ep1_matteo_formal_response',
+    'ep1_matteo_direct_response',
+    'ep1_kitchen',
+    'ep1_elio_humor_response',
+    'ep1_elio_boundary_response',
+    'ep1_leo_entrance'
+  ]);
   for (const scene of graph.scenes) {
-    assert.equal(manifest.assets[scene.assetId].kind, 'placeholder');
-    assert.match(manifest.assets[scene.assetId].src, /^\/assets\/.+\.svg$/);
+    const asset = manifest.assets[scene.assetId];
+    assert.ok(asset, `missing manifest entry for ${scene.id}`);
+    if (accepted.has(scene.id)) {
+      assert.equal(asset.kind, 'production-cg');
+      assert.match(asset.src, /^\/assets\/production\/cg\/.+\.png$/);
+      assert.match(asset.sha256, /^[a-f0-9]{64}$/);
+      assert.deepEqual(asset.dimensions, { width: 1024, height: 1536 });
+    } else {
+      assert.equal(asset.kind, 'placeholder');
+      assert.match(asset.src, /^\/assets\/.+\.svg$/);
+    }
   }
 });
 

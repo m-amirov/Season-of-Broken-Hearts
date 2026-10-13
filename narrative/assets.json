@@ -1,11 +1,35 @@
 {
   "schemaVersion": 1,
-  "status": "BLOCKED_ART_PRODUCTION",
+  "status": "PARTIAL_EP1_CG_INTEGRATED",
   "assets": {
     "arrival": {"src": "/assets/placeholder-arrival.svg", "kind": "placeholder"},
     "villa": {"src": "/assets/placeholder-villa.svg", "kind": "placeholder"},
     "kitchen": {"src": "/assets/placeholder-kitchen.svg", "kind": "placeholder"},
     "harbor": {"src": "/assets/placeholder-harbor.svg", "kind": "placeholder"},
-    "night": {"src": "/assets/placeholder-night.svg", "kind": "placeholder"}
+    "night": {"src": "/assets/placeholder-night.svg", "kind": "placeholder"},
+    "ep1-arrival-cg": {
+      "src": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "kind": "production-cg",
+      "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+      "dimensions": {"width": 1024, "height": 1536}
+    },
+    "ep1-matteo-gate-cg": {
+      "src": "/assets/production/cg/ep1-matteo-gate-cg.png",
+      "kind": "production-cg",
+      "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf",
+      "dimensions": {"width": 1024, "height": 1536}
+    },
+    "ep1-elio-kitchen-cg": {
+      "src": "/assets/production/cg/ep1-elio-kitchen-cg.png",
+      "kind": "production-cg",
+      "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918",
+      "dimensions": {"width": 1024, "height": 1536}
+    },
+    "ep1-leo-harbor-cg": {
+      "src": "/assets/production/cg/ep1-leo-harbor-cg.png",
+      "kind": "production-cg",
+      "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa",
+      "dimensions": {"width": 1024, "height": 1536}
+    }
   }
 }

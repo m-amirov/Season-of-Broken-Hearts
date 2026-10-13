@@ -12,7 +12,14 @@ export function createAssetManager(manifest, imageFactory = () => new Image()) {
     if (cache.has(src)) return cache.get(src);
     const promise = new Promise((resolve, reject) => {
       const image = imageFactory();
-      image.onload = () => resolve(image);
+      image.onload = async () => {
+        try {
+          if (typeof image.decode === 'function') await image.decode();
+          resolve(image);
+        } catch (error) {
+          reject(new Error(`Unable to decode ${src}`, { cause: error }));
+        }
+      };
       image.onerror = () => reject(new Error(`Unable to preload ${src}`));
       image.src = src;
     });

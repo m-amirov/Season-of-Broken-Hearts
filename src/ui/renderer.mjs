@@ -87,6 +87,7 @@ export function createRenderer(root) {
 
   let previousSceneId = null;
   let pendingSceneReady = Promise.resolve();
+  let renderToken = 0;
 
   function animateSceneChange() {
     pendingSceneReady = new Promise(resolve => {
@@ -140,12 +141,27 @@ export function createRenderer(root) {
         : '';
       speaker.hidden = !line.speaker;
       text.textContent = line.text;
-      image.src = assetManager.sourceFor(scene);
       image.alt = `${title.textContent} ${labels.placeholder}`;
 
       if (sceneChanged) {
         image.classList.remove('scene-fade-in');
-        animateSceneChange();
+        const token = ++renderToken;
+        const source = assetManager.sourceFor(scene);
+        pendingSceneReady = assetManager.preloadSceneAsset(scene)
+          .then(() => {
+            if (token !== renderToken) return;
+            image.src = source;
+            image.dataset.assetId = scene.assetId;
+            image.dataset.sceneId = scene.id;
+            delete image.dataset.assetStatus;
+            return animateSceneChange();
+          })
+          .catch(() => {
+            if (token !== renderToken) return;
+            image.dataset.assetStatus = 'fallback-last-valid';
+          });
+      } else {
+        pendingSceneReady = Promise.resolve();
       }
 
       choices.replaceChildren();

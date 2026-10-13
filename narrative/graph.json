@@ -62,7 +62,7 @@
       "id": "ep1_arrival",
       "episode": 1,
       "title": {"ru": "Никогда не возвращайся", "en": "Never Come Back"},
-      "assetId": "arrival",
+      "assetId": "ep1-arrival-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед."},
@@ -91,7 +91,7 @@
       "id": "ep1_gate",
       "episode": 1,
       "title": {"ru": "Ворота Villa Serena", "en": "The Villa Serena Gate"},
-      "assetId": "villa",
+      "assetId": "ep1-matteo-gate-cg",
       "dialogue": {
         "ru": [
           {"speaker": "matteo", "text": "Ника Воронцова? Маттео Риччи. Вы приехали на сорок минут раньше."},
@@ -133,7 +133,7 @@
       "id": "ep1_matteo_formal_response",
       "episode": 1,
       "title": {"ru": "Папка на месте", "en": "The Folder in Place"},
-      "assetId": "villa",
+      "assetId": "ep1-matteo-gate-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "Ника вынула из сумки распечатанный план недели и положила его поверх его папки."},
@@ -156,7 +156,7 @@
       "id": "ep1_matteo_direct_response",
       "episode": 1,
       "title": {"ru": "Без обходных путей", "en": "No Detours"},
-      "assetId": "villa",
+      "assetId": "ep1-matteo-gate-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "Если вы зовёте меня спасать расписание, сначала назовите угрозу. Я умею работать с плохими новостями."},
@@ -210,7 +210,7 @@
       "id": "ep1_kitchen",
       "episode": 1,
       "title": {"ru": "Соль по вкусу", "en": "Salt to Taste"},
-      "assetId": "kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "На кухне гремела посуда. Мужчина в белом фартуке держал нож как дирижёрскую палочку и спорил с кастрюлей."},
@@ -250,7 +250,7 @@
       "id": "ep1_elio_humor_response",
       "episode": 1,
       "title": {"ru": "Опасный вопрос", "en": "A Dangerous Question"},
-      "assetId": "kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "Кофе. И опасный вопрос: кто в отеле делает вид, что всё нормально?"},
@@ -273,7 +273,7 @@
       "id": "ep1_elio_boundary_response",
       "episode": 1,
       "title": {"ru": "Рабочее утро", "en": "A Working Morning"},
-      "assetId": "kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "Чай, если есть. И список задач. Улыбка не отменяет отсутствие персонала."},
@@ -486,7 +486,7 @@
       "id": "ep1_leo_entrance",
       "episode": 1,
       "title": {"ru": "Чертежи на ветру", "en": "Blueprints in the Wind"},
-      "assetId": "harbor",
+      "assetId": "ep1-leo-harbor-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "У дальнего пирса мужчина удерживал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить."},
