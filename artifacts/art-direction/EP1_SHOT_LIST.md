@@ -29,7 +29,7 @@
 | `ep1-matteo-office` | `ep1_work_briefing`, `ep1_hotel_crisis`, `ep1_hotel_numbers_response` | Financial papers, booking table, red folder; exact shown evidence matches route | B |
 | `ep1-staff-laundry` | `ep1_hotel_staff_response` | Laundry and staff meeting with Giulia | B |
 | `ep1-harbor-afternoon` | `ep1_harbor_walk` | Elio/Nika by the waterfront after lunch | B |
-| `ep1-leo-night` | `ep1_leo_choice`, `ep1_leo_hear_response`, `ep1_leo_distance_response` | Quay after dusk; Leon and Nika optional conversation; refusal composition must not imply unwanted intimacy | B |
+| `ep1-leo-night` | `ep1_leo_choice`, `ep1_leo_hear_response`, `ep1_leo_distance_response` | Quay after dusk; Leo and Nika optional conversation; refusal composition must not imply unwanted intimacy | B |
 | `ep1-last-page` | `ep1_hook` | Nika in hotel office / dark corridor, sealed mystery folder and Matteo warning; no harbor art | B |
 
 **Critical: `ep1_hook` currently uses `night` placeholder; never substitute Leo quay artwork for night office.** Planned changes to the asset IDs / mapping must follow actual dialogue and `narrative/graph.json` with no silent plot modification.
