@@ -193,6 +193,8 @@ test('cinematic reader has an independent episode slide and a borderless dialogu
   assert.match(style, /\.episode-intro\s*\{/);
   assert.match(style, /\.episode-intro-title\s*\{[^}]*text-shadow:/s);
   assert.match(style, /\.episode-intro-skip\s*\{[^}]*color:\s*#f2d7a8/s);
+  assert.match(style, /\.episode-intro-skip\s*\{[^}]*font:\s*600 \.78rem/s);
+  assert.match(style, /\.novel-shell\[data-intro-active='true'\] \.scene-art img\s*\{[^}]*brightness\(\.92\)/s);
   assert.match(style, /\.novel-shell\[data-intro-active='true'\]\s+\.reader-topbar/s);
   assert.match(style, /\.menu-action\s*\{[^}]*background:/s);
   assert.match(renderer, /chapter\.title/);
