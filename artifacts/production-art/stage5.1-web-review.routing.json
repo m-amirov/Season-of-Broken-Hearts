@@ -1,0 +1,26 @@
+{
+  "phase": "analysis",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage5.1-web-review.receipt.json",
+  "sourceHead": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+  "status": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["nika", "matteo", "elio", "leo", "bianca", "giulia"],
+  "evidenceRefs": ["nika", "matteo", "elio", "leo", "bianca", "giulia"],
+  "receivedEvidenceRefs": ["nika", "matteo", "elio", "leo", "bianca", "giulia"],
+  "decision": "PROCEED_TO_RUN_SCOPED_NATIVE_CAPABILITY_CHECK",
+  "findings": [
+    "All six supplied reference PNG derivatives were visibly received and each was described from concrete pixel content.",
+    "The six identities are visually distinct and the reference sheets share a coherent mature semi-realistic presentation.",
+    "This review is limited to character-reference identity and transport; it does not approve generated CGs or provider cryptographic attestation."
+  ],
+  "unresolved": ["Cryptographic provider attestation is absent.", "No production CG has been generated or accepted."],
+  "visualEvidence": [
+    {"ref": "nika", "path": "artifacts/production-art/transport-probe/reference-probe-01.png", "sha256": "8804e38c2a114baf27ec85184f3b0001cd168331b632dcb0066b4912c7bb599a", "observation": "Dark chestnut wavy bob, oval face, light eyes, freckles, white linen shirt, beige trousers and brown bag remain consistent across three views."},
+    {"ref": "matteo", "path": "artifacts/production-art/transport-probe/reference-probe-02.png", "sha256": "41c7f0799c01d78bf2228397432a5b40afde51e2226185dc48c65056ccaa5c98", "observation": "Angular mature male face, dark wavy hair, short stubble, dark eyes, open white shirt, cream trousers and brown folder are visible."},
+    {"ref": "elio", "path": "artifacts/production-art/transport-probe/reference-probe-03.png", "sha256": "14b035e77af38874226956f5baa9eb1728d853623d3335159884d0358318c74c", "observation": "Short highlighted hair, warm freckled face, friendly expression and white chef jacket with dark apron are visible in three views."},
+    {"ref": "leo", "path": "artifacts/production-art/transport-probe/reference-probe-04.png", "sha256": "72d7876848e87c07cc94ab74676da5da22f02ae71000cbed56597277004c4b37", "observation": "Long narrow face, medium chestnut hair, green-grey eyes, clean-shaven appearance, stone jacket and blueprint sheets are visible."},
+    {"ref": "bianca", "path": "artifacts/production-art/transport-probe/reference-probe-05.png", "sha256": "86fec78eaddd77737dd774d3ddc09fd9d706bb465b3ed54c3bac91bba5c342b6", "observation": "Long copper-auburn hair, light eyes, elongated face and tailored charcoal suit with ivory blouse are visible."},
+    {"ref": "giulia", "path": "artifacts/production-art/transport-probe/reference-probe-06.png", "sha256": "26fdd7cf78d2b43a43a2d66c8ebd587c3a668fd12a62b51134b256b87ecea1a2", "observation": "Mature face, silver-threaded low bun, warm brown eyes, age texture, sage-grey shirt and beige work apron are visible."}
+  ]
+}

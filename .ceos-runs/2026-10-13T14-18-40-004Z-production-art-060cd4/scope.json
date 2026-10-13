@@ -1,0 +1,21 @@
+{
+  "target": "Stage 5.1 current-HEAD character canon review and bounded EP1 CG recovery",
+  "inScope": [
+    "current-HEAD approved character manifest",
+    "Web High visual-content canon review",
+    "fresh native capability challenge",
+    "four EP1 CGs only if image persistence is proven",
+    "scoped runtime integration and verification"
+  ],
+  "outOfScope": [
+    "EP2-EP10",
+    "mass season generation",
+    "marketing covers",
+    "character redesign",
+    "release packaging",
+    "Yandex publication",
+    "final release build"
+  ],
+  "acceptanceContract": "Six approved reference pixels are independently reviewed with per-image observations and SHA bindings; fresh run-scoped native image capability is attested; every generated PNG is physically persisted, decoded and SHA-256 verified; only four EP1 briefs are integrated after visual and runtime checks",
+  "mutationBoundary": "Preserve approved originals and existing run history; write only scoped production-art evidence, four EP1 CG outputs and corresponding scene mappings; do not rewrite narrative canon, SDK contracts or unrelated dirty worktree files"
+}

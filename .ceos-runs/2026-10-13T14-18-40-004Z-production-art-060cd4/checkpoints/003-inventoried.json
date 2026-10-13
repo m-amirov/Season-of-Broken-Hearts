@@ -1,0 +1,78 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-13T14:18:49.259Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "reviewedReferenceCount": 6,
+    "plannedCgCount": 4,
+    "approvedReferenceOriginalsUnchanged": true
+  },
+  "source": {
+    "available": true,
+    "head": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+    "clean": false,
+    "worktreeSha256": "3f4f327d78e296db58f69f3578729dff77b6b14057bbe0ba6aa2d21ae94e346c"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/character-reference-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\character-reference-manifest.json",
+      "projectRelativePath": "artifacts/production-art/character-reference-manifest.json",
+      "type": "file",
+      "sha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4",
+      "size": 8962
+    },
+    {
+      "input": "artifacts/production-art/ep1-cg-asset-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-cg-asset-manifest.json",
+      "projectRelativePath": "artifacts/production-art/ep1-cg-asset-manifest.json",
+      "type": "file",
+      "sha256": "f873c8406253256fefcbe6b92acd705bd943d7c6610d175f1efebc080aea2b36",
+      "size": 4373
+    },
+    {
+      "input": "artifacts/production-art/art-briefs/S01-ep1-arrival-cg.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\art-briefs\\S01-ep1-arrival-cg.json",
+      "projectRelativePath": "artifacts/production-art/art-briefs/S01-ep1-arrival-cg.json",
+      "type": "file",
+      "sha256": "63ff40878ff928145ad90b0691f6c060365365ce76a1bc7bf673066181c4dd38",
+      "size": 2427
+    },
+    {
+      "input": "artifacts/production-art/art-briefs/S02-ep1-matteo-gate-cg.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\art-briefs\\S02-ep1-matteo-gate-cg.json",
+      "projectRelativePath": "artifacts/production-art/art-briefs/S02-ep1-matteo-gate-cg.json",
+      "type": "file",
+      "sha256": "5c6de29d7752bf5d51e44b303107ab42f8f5f4fada1c02d3b8f66a27510f5d02",
+      "size": 2855
+    },
+    {
+      "input": "artifacts/production-art/art-briefs/S06-ep1-elio-kitchen-cg.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\art-briefs\\S06-ep1-elio-kitchen-cg.json",
+      "projectRelativePath": "artifacts/production-art/art-briefs/S06-ep1-elio-kitchen-cg.json",
+      "type": "file",
+      "sha256": "2b724864cc105a97cd262fcda2f2caa12ae3b235c19e5475869fcc6f028091e7",
+      "size": 2922
+    },
+    {
+      "input": "artifacts/production-art/art-briefs/S14-ep1-leo-harbor-cg.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\art-briefs\\S14-ep1-leo-harbor-cg.json",
+      "projectRelativePath": "artifacts/production-art/art-briefs/S14-ep1-leo-harbor-cg.json",
+      "type": "file",
+      "sha256": "180c13f3b1726ac480ee02c75bbfde77fa5754cd8b45ea634b539da88d83e708",
+      "size": 3001
+    },
+    {
+      "input": "artifacts/production-art/stage5.1-web-review.receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-web-review.receipt.json",
+      "projectRelativePath": "artifacts/production-art/stage5.1-web-review.receipt.json",
+      "type": "file",
+      "sha256": "903aa39e6f61a02e574d26a12a0ecdb172187fb59c6acc8edc2440a4c3ed3e4d",
+      "size": 19576
+    }
+  ]
+}

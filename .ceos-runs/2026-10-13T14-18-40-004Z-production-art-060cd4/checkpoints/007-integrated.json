@@ -1,0 +1,39 @@
+{
+  "index": 7,
+  "stage": "INTEGRATED",
+  "at": "2026-10-13T15:05:36.448Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_BATCH_REWORK: CG-01 candidate 2, CG-02 and CG-04 remain REWORK on independent pixel review; no runtime mappings changed.",
+  "metadata": {
+    "batchVerdict": "BLOCKED_BATCH_REWORK",
+    "runtimeIntegration": false,
+    "visualAcceptance": "CG-03 PASS; CG-01 CG-02 CG-04 REWORK",
+    "providerAttestation": false
+  },
+  "source": {
+    "available": true,
+    "head": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+    "clean": false,
+    "worktreeSha256": "5d8463a8bee851ed3745827dee83236ba6bd52a2dbafd0d3009ab6af47060aab"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage5.1-cg-acceptance.receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-cg-acceptance.receipt.json",
+      "projectRelativePath": "artifacts/production-art/stage5.1-cg-acceptance.receipt.json",
+      "type": "file",
+      "sha256": "9991de4c04a03ca18c46d2d3edfe93959292181029f92a462d27ff2245929a3d",
+      "size": 4485
+    },
+    {
+      "input": "artifacts/production-art/stage5.1-cg-generation-record.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-cg-generation-record.json",
+      "projectRelativePath": "artifacts/production-art/stage5.1-cg-generation-record.json",
+      "type": "file",
+      "sha256": "dfb2982b2e64f59b08b64520bc29bda490e9e39b4269a0fdf91e1becd55e34cb",
+      "size": 5606
+    }
+  ]
+}

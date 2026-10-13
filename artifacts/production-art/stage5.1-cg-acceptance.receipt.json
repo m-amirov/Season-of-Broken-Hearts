@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "pipeline": "production-art",
+  "sourceHead": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+  "ceosRunId": "2026-10-13T14-18-40-004Z-production-art-060cd4",
+  "reviewStandard": "host-observed Web High visual-content review",
+  "providerAttestation": false,
+  "actualPixelsReceived": true,
+  "runtimeScreenshots": false,
+  "runtimeIntegration": false,
+  "verdict": "BLOCKED_BATCH_REWORK",
+  "items": [
+    {
+      "cue": "CG-01",
+      "sceneId": "ep1_arrival",
+      "path": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+      "references": ["assets/characters/references/originals/nika.png"],
+      "referenceSha256": ["91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"],
+      "reviewAgent": "01a135b9-a49c-76c0-a737-147063425bff",
+      "verdict": "REWORK",
+      "identity": "PASS",
+      "sceneAndCast": "PASS",
+      "reason": "The suitcase remains too close to the left edge under the 390x844 and 360x640 central cover crops; reviewer requires the complete suitcase in the central 60-65% safe area.",
+      "transport": "Pixels received and described; no provider attestation claimed.",
+      "candidateLimit": "Two candidates used; no further generation for this cue in this run."
+    },
+    {
+      "cue": "CG-02",
+      "sceneId": "ep1_gate",
+      "path": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf",
+      "references": ["assets/characters/references/originals/nika.png", "assets/characters/references/originals/matteo.png"],
+      "referenceSha256": ["91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d", "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"],
+      "reviewAgent": "01a135c1-341e-7e11-9541-ffcf9c66ea93",
+      "verdict": "REWORK",
+      "identity": "PASS for Nika and Matteo",
+      "sceneAndCast": "PASS",
+      "reason": "Keys, much of Nika's bag and part of Matteo's folder are lost or too close to the edge in portrait cover, especially 390x844.",
+      "transport": "Pixels received and described; no provider attestation claimed."
+    },
+    {
+      "cue": "CG-03",
+      "sceneId": "ep1_kitchen",
+      "path": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918",
+      "references": ["assets/characters/references/originals/nika.png", "assets/characters/references/originals/elio.png"],
+      "referenceSha256": ["91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d", "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"],
+      "reviewAgent": "01a135c4-30ff-7cd3-a323-d54349618b70",
+      "verdict": "PASS",
+      "identity": "PASS for Nika and Elio",
+      "sceneAndCast": "PASS",
+      "reason": "Identity, kitchen plausibility, anatomy, grounding, daytime chronology, portrait crops and no baked UI/text all passed pixel review.",
+      "transport": "Pixels received and described; no provider attestation claimed."
+    },
+    {
+      "cue": "CG-04",
+      "sceneId": "ep1_leo_entrance",
+      "path": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa",
+      "references": ["assets/characters/references/originals/nika.png", "assets/characters/references/originals/leo.png"],
+      "referenceSha256": ["91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d", "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"],
+      "reviewAgent": "01a135c6-7df4-7e10-ae98-700ecdbdb754",
+      "verdict": "REWORK",
+      "identity": "PASS for Nika; Leo recognizable and compatible with latest reference",
+      "sceneAndCast": "PASS",
+      "reason": "The blueprint tube does not read as architectural drawings, and the tube/bag are too close to portrait crop edges at 390x844 and 360x640.",
+      "transport": "Pixels received and described; no provider attestation claimed."
+    }
+  ],
+  "blockingFindings": [
+    "CG-01 unresolved after candidate 2; candidate cap reached.",
+    "CG-02 requires mobile-safe repositioning of keys, folder and bag.",
+    "CG-04 requires a more legible blueprint prop and mobile-safe framing."
+  ],
+  "acceptanceBoundary": "This is a bounded visual-content result, not runtime visual acceptance, not release readiness, and not final art approval."
+}

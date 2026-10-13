@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "CREATED_FROM_ACTUAL_PIXELS",
-  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "sourceHead": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
   "sourceManifest": "artifacts/production-art/character-reference-manifest.json",
   "path": "artifacts/production-art/character-reference-contact-sheet.png",
   "format": "PNG",

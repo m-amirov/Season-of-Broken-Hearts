@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.12",
+  "runId": "2026-10-13T14-18-40-004Z-production-art-060cd4",
+  "pipeline": "production-art",
+  "artOutputGateRequired": true,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-13T14-18-40-004Z-production-art-060cd4",
+  "createdAt": "2026-10-13T14:18:40.010Z",
+  "updatedAt": "2026-10-13T15:05:36.450Z",
+  "completedAt": "2026-10-13T15:05:36.450Z",
+  "cycle": 1,
+  "maxCycles": 3,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "visual-content",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "visual-content",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "INTEGRATED",
+    "reason": "BLOCKED_BATCH_REWORK: CG-01 candidate 2, CG-02 and CG-04 remain REWORK on independent pixel review; no runtime mappings changed."
+  },
+  "checkpointCount": 7,
+  "scopeSha256": "798361b0195e4e1939f100b18ea00d2178166a1dc5b2145e69efb7a4de8839cc",
+  "capabilitiesSha256": "7147263168332791fd3473293ec9be5840a22683ccf1e77304c8fffbc7331a14",
+  "sourceAtStart": {
+    "available": true,
+    "head": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+    "clean": false,
+    "worktreeSha256": "b34cc0324bb81333ae32bd28b0cc301b83c0b0dfdf6b3025ce9c1042c2f1ce4a"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviews": [
+      {
+        "phase": "analysis",
+        "agent": "ceos_art_director_web",
+        "evidenceArtifact": {
+          "input": "artifacts/production-art/stage5.1-web-review.receipt.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-web-review.receipt.json",
+          "projectRelativePath": "artifacts/production-art/stage5.1-web-review.receipt.json",
+          "type": "file",
+          "sha256": "903aa39e6f61a02e574d26a12a0ecdb172187fb59c6acc8edc2440a4c3ed3e4d",
+          "size": 19576
+        },
+        "sourceHead": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+        "status": "PASS",
+        "actualPixelsReceived": true,
+        "reviewedItems": [
+          "nika",
+          "matteo",
+          "elio",
+          "leo",
+          "bianca",
+          "giulia"
+        ],
+        "evidenceRefs": [
+          "nika",
+          "matteo",
+          "elio",
+          "leo",
+          "bianca",
+          "giulia"
+        ],
+        "receivedEvidenceRefs": [
+          "nika",
+          "matteo",
+          "elio",
+          "leo",
+          "bianca",
+          "giulia"
+        ],
+        "decision": "PROCEED_TO_RUN_SCOPED_NATIVE_CAPABILITY_CHECK",
+        "findings": [
+          "All six supplied reference PNG derivatives were visibly received and each was described from concrete pixel content.",
+          "The six identities are visually distinct and the reference sheets share a coherent mature semi-realistic presentation.",
+          "This review is limited to character-reference identity and transport; it does not approve generated CGs or provider cryptographic attestation."
+        ],
+        "unresolved": [
+          "Cryptographic provider attestation is absent.",
+          "No production CG has been generated or accepted."
+        ],
+        "visualEvidence": [
+          {
+            "ref": "nika",
+            "path": "artifacts/production-art/transport-probe/reference-probe-01.png",
+            "sha256": "8804e38c2a114baf27ec85184f3b0001cd168331b632dcb0066b4912c7bb599a",
+            "observation": "Dark chestnut wavy bob, oval face, light eyes, freckles, white linen shirt, beige trousers and brown bag remain consistent across three views."
+          },
+          {
+            "ref": "matteo",
+            "path": "artifacts/production-art/transport-probe/reference-probe-02.png",
+            "sha256": "41c7f0799c01d78bf2228397432a5b40afde51e2226185dc48c65056ccaa5c98",
+            "observation": "Angular mature male face, dark wavy hair, short stubble, dark eyes, open white shirt, cream trousers and brown folder are visible."
+          },
+          {
+            "ref": "elio",
+            "path": "artifacts/production-art/transport-probe/reference-probe-03.png",
+            "sha256": "14b035e77af38874226956f5baa9eb1728d853623d3335159884d0358318c74c",
+            "observation": "Short highlighted hair, warm freckled face, friendly expression and white chef jacket with dark apron are visible in three views."
+          },
+          {
+            "ref": "leo",
+            "path": "artifacts/production-art/transport-probe/reference-probe-04.png",
+            "sha256": "72d7876848e87c07cc94ab74676da5da22f02ae71000cbed56597277004c4b37",
+            "observation": "Long narrow face, medium chestnut hair, green-grey eyes, clean-shaven appearance, stone jacket and blueprint sheets are visible."
+          },
+          {
+            "ref": "bianca",
+            "path": "artifacts/production-art/transport-probe/reference-probe-05.png",
+            "sha256": "86fec78eaddd77737dd774d3ddc09fd9d706bb465b3ed54c3bac91bba5c342b6",
+            "observation": "Long copper-auburn hair, light eyes, elongated face and tailored charcoal suit with ivory blouse are visible."
+          },
+          {
+            "ref": "giulia",
+            "path": "artifacts/production-art/transport-probe/reference-probe-06.png",
+            "sha256": "26fdd7cf78d2b43a43a2d66c8ebd587c3a668fd12a62b51134b256b87ecea1a2",
+            "observation": "Mature face, silver-threaded low bun, warm brown eyes, age texture, sage-grey shirt and beige work apron are visible."
+          }
+        ],
+        "localScreenshotArtifacts": [
+          {
+            "input": "artifacts/production-art/transport-probe/reference-probe-01.png",
+            "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-01.png",
+            "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-01.png",
+            "type": "file",
+            "sha256": "8804e38c2a114baf27ec85184f3b0001cd168331b632dcb0066b4912c7bb599a",
+            "size": 231667
+          },
+          {
+            "input": "artifacts/production-art/transport-probe/reference-probe-02.png",
+            "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-02.png",
+            "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-02.png",
+            "type": "file",
+            "sha256": "41c7f0799c01d78bf2228397432a5b40afde51e2226185dc48c65056ccaa5c98",
+            "size": 216067
+          },
+          {
+            "input": "artifacts/production-art/transport-probe/reference-probe-03.png",
+            "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-03.png",
+            "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-03.png",
+            "type": "file",
+            "sha256": "14b035e77af38874226956f5baa9eb1728d853623d3335159884d0358318c74c",
+            "size": 220416
+          },
+          {
+            "input": "artifacts/production-art/transport-probe/reference-probe-04.png",
+            "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-04.png",
+            "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-04.png",
+            "type": "file",
+            "sha256": "72d7876848e87c07cc94ab74676da5da22f02ae71000cbed56597277004c4b37",
+            "size": 221852
+          },
+          {
+            "input": "artifacts/production-art/transport-probe/reference-probe-05.png",
+            "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-05.png",
+            "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-05.png",
+            "type": "file",
+            "sha256": "86fec78eaddd77737dd774d3ddc09fd9d706bb465b3ed54c3bac91bba5c342b6",
+            "size": 221429
+          },
+          {
+            "input": "artifacts/production-art/transport-probe/reference-probe-06.png",
+            "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-06.png",
+            "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-06.png",
+            "type": "file",
+            "sha256": "26fdd7cf78d2b43a43a2d66c8ebd587c3a668fd12a62b51134b256b87ecea1a2",
+            "size": 212045
+          }
+        ],
+        "recordedAt": "2026-10-13T14:20:44.528Z"
+      }
+    ],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [
+          "ceos_art_director_web"
+        ],
+        "webReviews": [
+          {
+            "phase": "analysis",
+            "agent": "ceos_art_director_web",
+            "evidenceArtifact": {
+              "input": "artifacts/production-art/stage5.1-web-review.receipt.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-web-review.receipt.json",
+              "projectRelativePath": "artifacts/production-art/stage5.1-web-review.receipt.json",
+              "type": "file",
+              "sha256": "903aa39e6f61a02e574d26a12a0ecdb172187fb59c6acc8edc2440a4c3ed3e4d",
+              "size": 19576
+            },
+            "sourceHead": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+            "status": "PASS",
+            "actualPixelsReceived": true,
+            "reviewedItems": [
+              "nika",
+              "matteo",
+              "elio",
+              "leo",
+              "bianca",
+              "giulia"
+            ],
+            "evidenceRefs": [
+              "nika",
+              "matteo",
+              "elio",
+              "leo",
+              "bianca",
+              "giulia"
+            ],
+            "receivedEvidenceRefs": [
+              "nika",
+              "matteo",
+              "elio",
+              "leo",
+              "bianca",
+              "giulia"
+            ],
+            "decision": "PROCEED_TO_RUN_SCOPED_NATIVE_CAPABILITY_CHECK",
+            "findings": [
+              "All six supplied reference PNG derivatives were visibly received and each was described from concrete pixel content.",
+              "The six identities are visually distinct and the reference sheets share a coherent mature semi-realistic presentation.",
+              "This review is limited to character-reference identity and transport; it does not approve generated CGs or provider cryptographic attestation."
+            ],
+            "unresolved": [
+              "Cryptographic provider attestation is absent.",
+              "No production CG has been generated or accepted."
+            ],
+            "visualEvidence": [
+              {
+                "ref": "nika",
+                "path": "artifacts/production-art/transport-probe/reference-probe-01.png",
+                "sha256": "8804e38c2a114baf27ec85184f3b0001cd168331b632dcb0066b4912c7bb599a",
+                "observation": "Dark chestnut wavy bob, oval face, light eyes, freckles, white linen shirt, beige trousers and brown bag remain consistent across three views."
+              },
+              {
+                "ref": "matteo",
+                "path": "artifacts/production-art/transport-probe/reference-probe-02.png",
+                "sha256": "41c7f0799c01d78bf2228397432a5b40afde51e2226185dc48c65056ccaa5c98",
+                "observation": "Angular mature male face, dark wavy hair, short stubble, dark eyes, open white shirt, cream trousers and brown folder are visible."
+              },
+              {
+                "ref": "elio",
+                "path": "artifacts/production-art/transport-probe/reference-probe-03.png",
+                "sha256": "14b035e77af38874226956f5baa9eb1728d853623d3335159884d0358318c74c",
+                "observation": "Short highlighted hair, warm freckled face, friendly expression and white chef jacket with dark apron are visible in three views."
+              },
+              {
+                "ref": "leo",
+                "path": "artifacts/production-art/transport-probe/reference-probe-04.png",
+                "sha256": "72d7876848e87c07cc94ab74676da5da22f02ae71000cbed56597277004c4b37",
+                "observation": "Long narrow face, medium chestnut hair, green-grey eyes, clean-shaven appearance, stone jacket and blueprint sheets are visible."
+              },
+              {
+                "ref": "bianca",
+                "path": "artifacts/production-art/transport-probe/reference-probe-05.png",
+                "sha256": "86fec78eaddd77737dd774d3ddc09fd9d706bb465b3ed54c3bac91bba5c342b6",
+                "observation": "Long copper-auburn hair, light eyes, elongated face and tailored charcoal suit with ivory blouse are visible."
+              },
+              {
+                "ref": "giulia",
+                "path": "artifacts/production-art/transport-probe/reference-probe-06.png",
+                "sha256": "26fdd7cf78d2b43a43a2d66c8ebd587c3a668fd12a62b51134b256b87ecea1a2",
+                "observation": "Mature face, silver-threaded low bun, warm brown eyes, age texture, sage-grey shirt and beige work apron are visible."
+              }
+            ],
+            "localScreenshotArtifacts": [
+              {
+                "input": "artifacts/production-art/transport-probe/reference-probe-01.png",
+                "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-01.png",
+                "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-01.png",
+                "type": "file",
+                "sha256": "8804e38c2a114baf27ec85184f3b0001cd168331b632dcb0066b4912c7bb599a",
+                "size": 231667
+              },
+              {
+                "input": "artifacts/production-art/transport-probe/reference-probe-02.png",
+                "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-02.png",
+                "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-02.png",
+                "type": "file",
+                "sha256": "41c7f0799c01d78bf2228397432a5b40afde51e2226185dc48c65056ccaa5c98",
+                "size": 216067
+              },
+              {
+                "input": "artifacts/production-art/transport-probe/reference-probe-03.png",
+                "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-03.png",
+                "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-03.png",
+                "type": "file",
+                "sha256": "14b035e77af38874226956f5baa9eb1728d853623d3335159884d0358318c74c",
+                "size": 220416
+              },
+              {
+                "input": "artifacts/production-art/transport-probe/reference-probe-04.png",
+                "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-04.png",
+                "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-04.png",
+                "type": "file",
+                "sha256": "72d7876848e87c07cc94ab74676da5da22f02ae71000cbed56597277004c4b37",
+                "size": 221852
+              },
+              {
+                "input": "artifacts/production-art/transport-probe/reference-probe-05.png",
+                "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-05.png",
+                "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-05.png",
+                "type": "file",
+                "sha256": "86fec78eaddd77737dd774d3ddc09fd9d706bb465b3ed54c3bac91bba5c342b6",
+                "size": 221429
+              },
+              {
+                "input": "artifacts/production-art/transport-probe/reference-probe-06.png",
+                "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\transport-probe\\reference-probe-06.png",
+                "projectRelativePath": "artifacts/production-art/transport-probe/reference-probe-06.png",
+                "type": "file",
+                "sha256": "26fdd7cf78d2b43a43a2d66c8ebd587c3a668fd12a62b51134b256b87ecea1a2",
+                "size": 212045
+              }
+            ],
+            "recordedAt": "2026-10-13T14:20:44.528Z"
+          }
+        ],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  }
+}

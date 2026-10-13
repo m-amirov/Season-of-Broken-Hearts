@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "stage": "5.1",
+  "status": "BLOCKED_HOST_COMPOSER_PROMPT_INTEGRITY",
+  "sourceHead": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+  "previousRunPreserved": "2026-10-13T13-31-13-914Z-production-art-c8cbf5",
+  "observedAt": "2026-10-13T13:52:58.029Z",
+  "webPreflight": {
+    "status": "READY",
+    "bridgeHealthy": true,
+    "acceptingTurns": true,
+    "activeHttpTurns": 0,
+    "activeBrowserTurns": 0,
+    "interpretation": "bridge health is not treated as delivery proof"
+  },
+  "textOnlyProbe": {
+    "agentId": "01a13589-575a-74a1-abc7-f7bb2942388f",
+    "agentType": "ceos_reasoner_web",
+    "model": "chatgpt-web/gpt-6-sol",
+    "promptSentConfirmation": false,
+    "responseReceived": false,
+    "images": 0,
+    "traceId": "3e1ac0db600f",
+    "transport": "inline",
+    "maxMessageChars": 88751,
+    "estimatedInputTokens": 28298,
+    "error": "ChatGPT composer did not preserve the complete prompt (expectedChars=88751, actualChars=181011, commonPrefixChars=43160)",
+    "errorCode": "prompt_attachment_integrity",
+    "failureClass": "WEB_UNAVAILABLE",
+    "rateLimitSignal": false,
+    "attachmentQuotaSignal": false
+  },
+  "sessionAndHostEvidence": {
+    "sessionVerified": true,
+    "composerReady": true,
+    "effortControlReady": true,
+    "chatgptSurface": "https://chatgpt.com/",
+    "browserHost": "launcher",
+    "codexWebGptReleaseVersion": "6.1.6",
+    "experimentalFreshConversationPerTurn": true,
+    "useSavedChats": true,
+    "diagnosticDirectory": "C:/Users/user/.codex-chatgpt-web/diagnostics/browser-turns/3e1ac0db600f-32a5a5b6",
+    "diagnosticCheckpoints": [
+      "03-composer-ready.json",
+      "04-session-verified.json",
+      "05-effort-control-ready.json",
+      "10-effort-selection-complete.json",
+      "11-turn-failed.json"
+    ]
+  },
+  "rootCause": {
+    "classification": "HOST_SESSION_COMPOSER_STATE",
+    "evidence": {
+      "staleComposerAtComposerReadyChars": 92235,
+      "intendedPromptChars": 88751,
+      "observedComposerChars": 181011,
+      "sumOfStaleAndIntendedPlusObservedFormattingDelta": 180986
+    },
+    "statement": "The launcher uses a saved ChatGPT surface and reaches composer-ready with a stale 92235-character draft. Its attachPrompt path relies on contenteditable.fill(\"\") without a verified empty-state guard, so the new prompt is appended and fails integrity before submission."
+  },
+  "classificationBoundary": {
+    "currentTextProbe": "WEB_UNAVAILABLE",
+    "previousImageBearingRuns": "ATTACHMENT_TRANSPORT",
+    "rateLimited": false,
+    "attachmentQuotaExhausted": false,
+    "nativeFallbackUsed": false,
+    "actualPixelsReceived": false
+  },
+  "nextSafeAction": "Disable saved-chat reuse or apply an equivalent host-side verified composer-clear fix, then rerun one text-only control probe before any image-bearing turn."
+}

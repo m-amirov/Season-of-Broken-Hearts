@@ -1,0 +1,303 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-13T15:05:06.994Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "persistence": "PASS",
+    "generatedCandidateCount": 5,
+    "cueCount": 4,
+    "approvedReferencesUnchanged": true,
+    "artOutputs": [
+      {
+        "path": "assets/production/cg/ep1-arrival-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "path": "assets/production/cg/ep1-arrival-cg-v2.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "path": "assets/production/cg/ep1-matteo-gate-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "path": "assets/production/cg/ep1-elio-kitchen-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "path": "assets/production/cg/ep1-leo-harbor-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      }
+    ],
+    "artOutputGate": {
+      "status": "PASS_ART_BATCH_MECHANICAL",
+      "checks": [
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-arrival-cg.png",
+          "sha256": "ada685552224102c731180b3867a600c7afbf65aad239286d14b798d6573fc01",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        },
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-arrival-cg-v2.png",
+          "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        },
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-matteo-gate-cg.png",
+          "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        },
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-elio-kitchen-cg.png",
+          "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        },
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-leo-harbor-cg.png",
+          "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        }
+      ]
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+    "clean": false,
+    "worktreeSha256": "03c786699440cbbf2852b6c24b78e96e9fc41caae9b3c0b69bb2476449382c96"
+  },
+  "artifacts": [
+    {
+      "input": "assets/production/cg/ep1-arrival-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-arrival-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-arrival-cg.png",
+      "type": "file",
+      "sha256": "ada685552224102c731180b3867a600c7afbf65aad239286d14b798d6573fc01",
+      "size": 2789799
+    },
+    {
+      "input": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-arrival-cg-v2.png",
+      "projectRelativePath": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "type": "file",
+      "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+      "size": 2756788
+    },
+    {
+      "input": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-matteo-gate-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "type": "file",
+      "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf",
+      "size": 2935141
+    },
+    {
+      "input": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-elio-kitchen-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "type": "file",
+      "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918",
+      "size": 2620196
+    },
+    {
+      "input": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-leo-harbor-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "type": "file",
+      "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa",
+      "size": 2661333
+    },
+    {
+      "input": "artifacts/production-art/ep1-arrival-cg-output-receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-arrival-cg-output-receipt.json",
+      "projectRelativePath": "artifacts/production-art/ep1-arrival-cg-output-receipt.json",
+      "type": "file",
+      "sha256": "2de96622c3e7a8410658ff96850c466d1e514f79d89fc1e525e338c767f70886",
+      "size": 791
+    },
+    {
+      "input": "artifacts/production-art/ep1-arrival-cg-v2-output-receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-arrival-cg-v2-output-receipt.json",
+      "projectRelativePath": "artifacts/production-art/ep1-arrival-cg-v2-output-receipt.json",
+      "type": "file",
+      "sha256": "b312f3a08f90325f8b4e9f302e3decc0b846ef63b8d39896ba57808a9248fb0d",
+      "size": 794
+    },
+    {
+      "input": "artifacts/production-art/ep1-matteo-gate-cg-output-receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-matteo-gate-cg-output-receipt.json",
+      "projectRelativePath": "artifacts/production-art/ep1-matteo-gate-cg-output-receipt.json",
+      "type": "file",
+      "sha256": "19c7509d614f6dff88282ef266eedd946037efd5a71e42b329a3ef268e6aafcf",
+      "size": 795
+    },
+    {
+      "input": "artifacts/production-art/ep1-elio-kitchen-cg-output-receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-elio-kitchen-cg-output-receipt.json",
+      "projectRelativePath": "artifacts/production-art/ep1-elio-kitchen-cg-output-receipt.json",
+      "type": "file",
+      "sha256": "452513549bd541f3c80ff69c411d5cde6bf0bca39f57e973c657d255e57d2afe",
+      "size": 796
+    },
+    {
+      "input": "artifacts/production-art/ep1-leo-harbor-cg-output-receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-leo-harbor-cg-output-receipt.json",
+      "projectRelativePath": "artifacts/production-art/ep1-leo-harbor-cg-output-receipt.json",
+      "type": "file",
+      "sha256": "daf4f52a86d2226d6e191343035233ab3562498cc81ccedcca42af102086046c",
+      "size": 794
+    },
+    {
+      "input": "artifacts/production-art/stage5.1-cg-generation-record.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-cg-generation-record.json",
+      "projectRelativePath": "artifacts/production-art/stage5.1-cg-generation-record.json",
+      "type": "file",
+      "sha256": "dfb2982b2e64f59b08b64520bc29bda490e9e39b4269a0fdf91e1becd55e34cb",
+      "size": 5606
+    },
+    {
+      "input": "assets\\production\\cg\\ep1-arrival-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-arrival-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-arrival-cg.png",
+      "type": "file",
+      "sha256": "ada685552224102c731180b3867a600c7afbf65aad239286d14b798d6573fc01",
+      "size": 2789799
+    },
+    {
+      "input": "assets\\production\\cg\\ep1-arrival-cg-v2.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-arrival-cg-v2.png",
+      "projectRelativePath": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "type": "file",
+      "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+      "size": 2756788
+    },
+    {
+      "input": "assets\\production\\cg\\ep1-matteo-gate-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-matteo-gate-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "type": "file",
+      "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf",
+      "size": 2935141
+    },
+    {
+      "input": "assets\\production\\cg\\ep1-elio-kitchen-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-elio-kitchen-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "type": "file",
+      "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918",
+      "size": 2620196
+    },
+    {
+      "input": "assets\\production\\cg\\ep1-leo-harbor-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\assets\\production\\cg\\ep1-leo-harbor-cg.png",
+      "projectRelativePath": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "type": "file",
+      "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa",
+      "size": 2661333
+    }
+  ]
+}

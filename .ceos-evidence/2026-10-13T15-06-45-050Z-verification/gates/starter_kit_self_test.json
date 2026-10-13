@@ -1,0 +1,14 @@
+{
+  "id": "starter_kit_self_test",
+  "command": "npm run starter-kit:self-test",
+  "required": true,
+  "risk": "R0",
+  "status": "PASS",
+  "startedAt": "2026-10-13T15:06:45.191Z",
+  "completedAt": "2026-10-13T15:06:45.780Z",
+  "exitCode": 0,
+  "stdout": "\n> starter-kit:self-test\n> node tools/starter-kit/self-test.mjs\n\n{\n  \"status\": \"PASS\",\n  \"mode\": \"target\",\n  \"version\": \"0.5.12\",\n  \"manifestSchemaVersion\": 2,\n  \"updaterSchemaVersion\": 2,\n  \"manifestEntries\": 118,\n  \"skills\": 15,\n  \"targetStatus\": \"clean\"\n}\n",
+  "stderr": "",
+  "signal": null,
+  "error": null
+}

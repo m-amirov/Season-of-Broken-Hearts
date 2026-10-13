@@ -1,0 +1,56 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-13T14:21:05.301Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "webReview": "PASS",
+    "actualPixelsReceived": true,
+    "referenceCount": 6,
+    "briefCount": 4,
+    "manifestSha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4"
+  },
+  "source": {
+    "available": true,
+    "head": "759f5f632124db5f87422a6ceaaaa76c87d99b3e",
+    "clean": false,
+    "worktreeSha256": "e65c89120ca83c27b9bebdb2dd625d4c62677983fcfa677265f3025bc8c61921"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/character-reference-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\character-reference-manifest.json",
+      "projectRelativePath": "artifacts/production-art/character-reference-manifest.json",
+      "type": "file",
+      "sha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4",
+      "size": 8962
+    },
+    {
+      "input": "artifacts/production-art/ep1-cg-asset-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\ep1-cg-asset-manifest.json",
+      "projectRelativePath": "artifacts/production-art/ep1-cg-asset-manifest.json",
+      "type": "file",
+      "sha256": "f873c8406253256fefcbe6b92acd705bd943d7c6610d175f1efebc080aea2b36",
+      "size": 4373
+    },
+    {
+      "input": "artifacts/production-art/stage5.1-web-review.receipt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-web-review.receipt.json",
+      "projectRelativePath": "artifacts/production-art/stage5.1-web-review.receipt.json",
+      "type": "file",
+      "sha256": "903aa39e6f61a02e574d26a12a0ecdb172187fb59c6acc8edc2440a4c3ed3e4d",
+      "size": 19576
+    },
+    {
+      "input": "artifacts/production-art/stage5.1-web-review.routing.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5.1-web-review.routing.json",
+      "projectRelativePath": "artifacts/production-art/stage5.1-web-review.routing.json",
+      "type": "file",
+      "sha256": "e486254f04306a7db49b8f53f2cbc4f23c4c505eb7f7c239c4cb9bb8b34ea36f",
+      "size": 3031
+    }
+  ]
+}
