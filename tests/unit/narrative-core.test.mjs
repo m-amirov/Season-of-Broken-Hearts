@@ -70,7 +70,8 @@ test('save round-trip preserves cursor, state, locale, and history', () => {
     locale: 'en',
     cursor: { sceneId: 'ep1_leo_choice', dialogueIndex: 1 },
     state: createInitialState(graph),
-    history: [{ sceneId: 'ep1_arrival', dialogueIndex: 2, state: createInitialState(graph) }]
+    history: [{ sceneId: 'ep1_arrival', dialogueIndex: 2, state: createInitialState(graph) }],
+    readerProgress: { seenEpisodes: [1], tutorialAdvances: 2 }
   };
   const restored = deserializeSave(serializeSave(snapshot), graph);
   assert.deepEqual(restored, snapshot);
