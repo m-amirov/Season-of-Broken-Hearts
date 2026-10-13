@@ -76,26 +76,55 @@ async function boot() {
     applySettings(settings);
     const renderer = createRenderer(root);
     const assetManager = createAssetManager(manifest);
-    const ui = { menuOpen: false, menuView: 'main' };
+    const ui = { menuOpen: false, menuView: 'main', introEpisode: null };
+    let introTimeout = null;
+    let renderSequence = 0;
     let controller;
 
     const focusLater = node => {
       queueMicrotask(() => node?.focus?.({ preventScroll: true }));
     };
 
+    const dismissIntro = () => {
+      if (ui.introEpisode === null) return;
+      clearTimeout(introTimeout);
+      introTimeout = null;
+      ui.introEpisode = null;
+      engine.markEpisodeIntroSeen();
+      render();
+      focusLater(renderer.elements.stage);
+    };
+
     const render = () => {
+      if (engine.needsEpisodeIntro()) {
+        const episode = engine.episodeIntro().episode;
+        if (ui.introEpisode !== episode) {
+          clearTimeout(introTimeout);
+          ui.introEpisode = episode;
+          introTimeout = setTimeout(dismissIntro, 2300);
+        }
+      } else if (ui.introEpisode !== null) {
+        clearTimeout(introTimeout);
+        introTimeout = null;
+        ui.introEpisode = null;
+      }
+
+      const sequence = ++renderSequence;
       const rendered = renderer.render({
         engine,
         assetManager,
         notice,
         menuOpen: ui.menuOpen,
         menuView: ui.menuView,
-        settings
+        settings,
+        showIntro: ui.introEpisode !== null
       });
       controller.bindChoiceButtons(rendered.choiceButtons);
       controller.setMenuOpen(ui.menuOpen);
       controller.lock();
-      rendered.ready.then(() => controller.unlock());
+      rendered.ready.then(() => {
+        if (sequence === renderSequence && ui.introEpisode === null && !ui.menuOpen) controller.unlock();
+      });
       storageWrite(SAVE_KEY, engine.save());
       notice = '';
 
@@ -117,16 +146,16 @@ async function boot() {
 
     controller = createInputController(renderer.elements, {
       onAdvance: () => {
-        if (ui.menuOpen || engine.choices().length > 0 || engine.isEpisodeComplete()) {
+        if (ui.introEpisode !== null || ui.menuOpen || engine.choices().length > 0 || engine.isEpisodeComplete()) {
           controller.unlock();
           return;
         }
         engine.advance();
         render();
       },
-      onChoose: choiceId => { if (!ui.menuOpen) { engine.choose(choiceId); render(); } },
+      onChoose: choiceId => { if (!ui.menuOpen && ui.introEpisode === null) { engine.choose(choiceId); render(); } },
       onBack: () => {
-        if (!ui.menuOpen && engine.back()) render();
+        if (!ui.menuOpen && ui.introEpisode === null && engine.back()) render();
         else controller.unlock();
       },
       onMenu: () => {
@@ -184,7 +213,14 @@ async function boot() {
       }
     });
 
-    window.addEventListener('pagehide', () => storageWrite(SAVE_KEY, engine.save()), { passive: true });
+    renderer.elements.episodeIntro.addEventListener('click', event => {
+      event.stopPropagation();
+      dismissIntro();
+    });
+    window.addEventListener('pagehide', () => {
+      clearTimeout(introTimeout);
+      storageWrite(SAVE_KEY, engine.save());
+    }, { passive: true });
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden') storageWrite(SAVE_KEY, engine.save());
     }, { passive: true });
