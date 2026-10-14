@@ -4,6 +4,7 @@ export const UI_TEXT = {
   ru: {
     appLabel: 'Сезон разбитых сердец', back: 'Назад', menu: 'Меню', close: 'Закрыть',
     resume: 'Продолжить', newGame: 'Новая игра', settings: 'Настройки', settingsTitle: 'Настройки чтения',
+    beginStory: 'Начать историю', mainMenu: 'Главное меню', genreLabel: 'РОМАНТИЧЕСКАЯ НОВЕЛЛА', openingLabel: 'Лето на итальянском побережье',
     language: 'Язык', russian: 'Русский', english: 'English', textSize: 'Размер текста',
     smaller: 'Меньше', normal: 'Обычный', larger: 'Больше', contrast: 'Контраст', contrastOn: 'Повышенный',
     contrastOff: 'Обычный', motion: 'Анимация', motionOn: 'Системная', motionOff: 'Выключена',
@@ -19,6 +20,7 @@ export const UI_TEXT = {
   en: {
     appLabel: 'Season of Broken Hearts', back: 'Back', menu: 'Menu', close: 'Close',
     resume: 'Resume', newGame: 'New Game', settings: 'Settings', settingsTitle: 'Reading settings',
+    beginStory: 'Begin the story', mainMenu: 'Main menu', genreLabel: 'A ROMANTIC VISUAL NOVEL', openingLabel: 'A summer on the Italian coast',
     language: 'Language', russian: 'Русский', english: 'English', textSize: 'Text size',
     smaller: 'Smaller', normal: 'Normal', larger: 'Larger', contrast: 'Contrast', contrastOn: 'High',
     contrastOff: 'Standard', motion: 'Animation', motionOn: 'System', motionOff: 'Off',
@@ -106,7 +108,8 @@ export function createRenderer(root) {
   const menuContinueButton = button('menu-action menu-primary');
   const menuNewGameButton = button('menu-action');
   const menuSettingsButton = button('menu-action');
-  menuMain.append(menuContinueButton, menuNewGameButton, menuSettingsButton);
+  const menuHomeButton = button('menu-action menu-home');
+  menuMain.append(menuContinueButton, menuNewGameButton, menuSettingsButton, menuHomeButton);
 
   const settingsPanel = element('section', 'reader-menu-panel');
   const settingsTitle = element('h3', 'reader-panel-title');
@@ -146,6 +149,32 @@ export function createRenderer(root) {
   const orientationText = element('p', 'orientation-text');
   orientationLock.append(orientationIcon, orientationTitle, orientationText);
 
+  // The independent title screen always precedes gameplay, including when a save exists.
+  // No automatic save is made on the title screen, so Resume is never fabricated.
+  const home = element('section', 'home-screen');
+  home.setAttribute('role', 'region');
+  const homeBackdrop = element('div', 'home-backdrop');
+  homeBackdrop.setAttribute('aria-hidden', 'true');
+  const homePortrait = element('div', 'home-portrait');
+  homePortrait.setAttribute('aria-hidden', 'true');
+  const homeShade = element('div', 'home-shade');
+  homeShade.setAttribute('aria-hidden', 'true');
+  const homeContent = element('div', 'home-content');
+  const homeKicker = element('p', 'home-kicker');
+  const homeTitle = element('h1', 'home-title');
+  const homeDivider = element('span', 'home-divider');
+  homeDivider.setAttribute('aria-hidden', 'true');
+  const homeSubtitle = element('p', 'home-subtitle');
+  const homeActions = element('nav', 'home-actions');
+  const homeStartButton = button('home-action home-primary');
+  const homeResumeButton = button('home-action home-primary');
+  const homeNewGameButton = button('home-action home-secondary');
+  const homeSettingsButton = button('home-action home-secondary');
+  homeActions.append(homeStartButton, homeResumeButton, homeNewGameButton, homeSettingsButton);
+  homeContent.append(homeKicker, homeTitle, homeDivider, homeSubtitle, homeActions);
+  home.append(homeBackdrop, homePortrait, homeShade, homeContent);
+  home.hidden = true;
+
   // A standalone title slide, distinct from the dialogue and independent of scene navigation.
   const episodeIntro = button('episode-intro');
   episodeIntro.hidden = true;
@@ -156,7 +185,7 @@ export function createRenderer(root) {
   const introSkip = element('span', 'episode-intro-skip');
   episodeIntro.append(introNumber, introRule, introTitle, introSkip);
 
-  shell.append(stage, menu, episodeIntro, orientationLock);
+  shell.append(stage, home, menu, episodeIntro, orientationLock);
   root.append(shell);
 
   let previousSceneId = null;
@@ -201,7 +230,7 @@ export function createRenderer(root) {
   function updateMenu({ labels, engine, menuOpen, menuView, settings }) {
     menu.hidden = !menuOpen;
     menu.setAttribute('aria-label', labels.menu);
-    menuKicker.textContent = `${labels.episodeBase} ${engine.episodeIntro().episode}`;
+    menuKicker.textContent = labels.appLabel;
     menuTitle.textContent = labels.menu;
     menuCloseButton.textContent = `× ${labels.close}`;
     menuCloseButton.setAttribute('aria-label', labels.close);
@@ -209,6 +238,7 @@ export function createRenderer(root) {
     menuContinueButton.textContent = labels.resume;
     menuNewGameButton.textContent = labels.newGame;
     menuSettingsButton.textContent = labels.settings;
+    menuHomeButton.textContent = labels.mainMenu;
     menuMain.hidden = menuView !== 'main';
     settingsPanel.hidden = menuView !== 'settings';
     confirmationPanel.hidden = menuView !== 'confirm';
@@ -224,11 +254,12 @@ export function createRenderer(root) {
   return {
     elements: {
       root, shell, stage, advanceSurface: stage, image, title: sceneTitle, sceneTitle, speaker, text, choices, status,
-      backButton, menuButton, menu, menuCloseButton, menuContinueButton, menuSettingsButton, menuNewGameButton,
+      backButton, menuButton, menu, menuCloseButton, menuContinueButton, menuSettingsButton, menuNewGameButton, menuHomeButton,
+      home, homeStartButton, homeResumeButton, homeNewGameButton, homeSettingsButton,
       settingsBackButton, newGameConfirmButton, newGameCancelButton, settingsTitle, confirmationTitle, localeButtons, settingButtons,
       orientationLock, orientationTitle, orientationText, episodeIntro
     },
-    render({ engine, assetManager, notice = '', menuOpen = false, menuView = 'main', settings = {}, showIntro = false }) {
+    render({ engine, assetManager, notice = '', menuOpen = false, menuView = 'main', settings = {}, showIntro = false, homeOpen = false, hasResume = false }) {
       const locale = engine.locale();
       const labels = UI_TEXT[locale] ?? UI_TEXT.ru;
       const scene = engine.currentScene();
@@ -286,10 +317,24 @@ export function createRenderer(root) {
       status.textContent = notice || (complete ? labels.complete : engine.isEnding() ? labels.cliffhanger : labels.saved);
       backButton.disabled = !engine.canBack();
       dialogue.dataset.hasChoices = String(choiceButtons.length > 0);
+      home.hidden = !homeOpen;
+      home.setAttribute('aria-label', labels.mainMenu);
+      homeKicker.textContent = labels.genreLabel;
+      homeTitle.textContent = labels.appLabel;
+      homeSubtitle.textContent = labels.openingLabel;
+      homeStartButton.textContent = labels.beginStory;
+      homeResumeButton.textContent = labels.resume;
+      homeNewGameButton.textContent = labels.newGame;
+      homeSettingsButton.textContent = labels.settings;
+      homeStartButton.hidden = hasResume;
+      homeResumeButton.hidden = !hasResume;
+      homeNewGameButton.hidden = !hasResume;
       updateMenu({ labels, engine, menuOpen, menuView, settings });
-      episodeIntro.hidden = !showIntro;
-      shell.dataset.introActive = String(showIntro);
-      stage.inert = Boolean(showIntro || menuOpen);
+      episodeIntro.hidden = !showIntro || homeOpen;
+      shell.dataset.introActive = String(showIntro && !homeOpen);
+      shell.dataset.homeActive = String(homeOpen);
+      stage.inert = Boolean(showIntro || menuOpen || homeOpen);
+      home.inert = Boolean(menuOpen);
       if (showIntro) {
         const chapter = engine.episodeIntro();
         introNumber.textContent = `${labels.episodeBase} ${chapter.episode}`;
