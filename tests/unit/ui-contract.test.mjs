@@ -243,6 +243,11 @@ test('modal keyboard handling remains accessible in the main UI', () => {
   assert.match(main, /event\.key !== 'Tab'/);
   assert.match(main, /focusable\.includes\(active\)/);
   assert.match(main, /\(event\.shiftKey \? last : first\)\.focus/);
+  const closeMenu = main.match(/const closeMenu = \(\) => \{([\s\S]*?)\n    \};/)?.[1];
+  assert.ok(closeMenu, 'closeMenu handler must exist');
+  assert.match(closeMenu, /renderer\.elements\.homeSettingsButton/);
+  assert.match(closeMenu, /renderer\.elements\.homeNewGameButton/);
+  assert.match(closeMenu, /renderer\.elements\.menuButton/);
 });
 
 test('spec reflects the current mixed art and platform locale behavior', () => {
