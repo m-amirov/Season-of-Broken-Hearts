@@ -93,6 +93,8 @@ async function boot() {
     const focusLater = node => {
       queueMicrotask(() => node?.focus?.({ preventScroll: true }));
     };
+    const isTouchPrimary = () => window.matchMedia?.('(pointer: coarse)')?.matches === true
+      || navigator.maxTouchPoints > 0;
 
     const dismissIntro = () => {
       if (ui.introEpisode === null) return;
@@ -254,6 +256,45 @@ async function boot() {
       }
     });
 
+    // Keep Tab within the active modal and offer predictable Escape navigation.
+    // This is independent of the pointer gesture controller.
+    document.addEventListener('keydown', event => {
+      if (!ui.menuOpen) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        if (ui.menuView !== 'main' && !ui.homeOpen) {
+          ui.menuView = 'main';
+          render();
+          focusLater(renderer.elements.menuContinueButton);
+        } else {
+          closeMenu();
+        }
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      const elements = renderer.elements;
+      const actions = ui.menuView === 'settings'
+        ? [...elements.settingButtons, elements.settingsBackButton]
+        : ui.menuView === 'confirm'
+          ? [elements.newGameConfirmButton, elements.newGameCancelButton]
+          : [elements.menuContinueButton, elements.menuNewGameButton, elements.menuSettingsButton, elements.menuHomeButton];
+      const focusable = [elements.menuCloseButton, ...actions].filter(button => !button.disabled && !button.hidden);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      const active = document.activeElement;
+      if (!focusable.includes(active)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus({ preventScroll: true });
+      } else if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus({ preventScroll: true });
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus({ preventScroll: true });
+      }
+    });
+
     renderer.elements.homeStartButton.addEventListener('click', startReading);
     renderer.elements.homeResumeButton.addEventListener('click', startReading);
     renderer.elements.homeNewGameButton.addEventListener('click', () => {
@@ -283,7 +324,10 @@ async function boot() {
       }
     }, { passive: true });
     render();
-    focusLater(hasValidSave ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton);
+    // Programmatic initial focus looks like an accidental double border on touch devices.
+    if (!isTouchPrimary()) {
+      focusLater(hasValidSave ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton);
+    }
   } catch (error) {
     showBootError(root, error, resolveLocale());
     console.error(error);
