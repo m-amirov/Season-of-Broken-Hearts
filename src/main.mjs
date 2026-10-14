@@ -70,13 +70,14 @@ async function boot() {
     const engine = new NarrativeEngine(graph, { locale: platformLocale });
     let notice = '';
     const saved = storageRead(SAVE_KEY);
-    if (saved && !engine.load(saved)) notice = UI_TEXT[engine.locale()].corruptSave;
+    const hasValidSave = Boolean(saved && engine.load(saved));
+    if (saved && !hasValidSave) notice = UI_TEXT[engine.locale()].corruptSave;
 
     const settings = readSettings();
     applySettings(settings);
     const renderer = createRenderer(root);
     const assetManager = createAssetManager(manifest);
-    const ui = { menuOpen: false, menuView: 'main', introEpisode: null };
+    const ui = { menuOpen: false, menuView: 'main', introEpisode: null, homeOpen: true, hasResume: hasValidSave };
     let introTimeout = null;
     let renderSequence = 0;
     let controller;
@@ -96,7 +97,7 @@ async function boot() {
     };
 
     const render = () => {
-      if (engine.needsEpisodeIntro()) {
+      if (!ui.homeOpen && engine.needsEpisodeIntro()) {
         const episode = engine.episodeIntro().episode;
         if (ui.introEpisode !== episode) {
           clearTimeout(introTimeout);
@@ -117,15 +118,20 @@ async function boot() {
         menuOpen: ui.menuOpen,
         menuView: ui.menuView,
         settings,
-        showIntro: ui.introEpisode !== null
+        showIntro: ui.introEpisode !== null,
+        homeOpen: ui.homeOpen,
+        hasResume: ui.hasResume
       });
       controller.bindChoiceButtons(rendered.choiceButtons);
-      controller.setMenuOpen(ui.menuOpen);
+      controller.setMenuOpen(ui.menuOpen || ui.homeOpen || ui.introEpisode !== null);
       controller.lock();
       rendered.ready.then(() => {
-        if (sequence === renderSequence && ui.introEpisode === null && !ui.menuOpen) controller.unlock();
+        if (sequence === renderSequence && ui.introEpisode === null && !ui.menuOpen && !ui.homeOpen) controller.unlock();
       });
-      storageWrite(SAVE_KEY, engine.save());
+      if (!ui.homeOpen) {
+        storageWrite(SAVE_KEY, engine.save());
+        ui.hasResume = true;
+      }
       notice = '';
 
       const scene = engine.currentScene();
@@ -141,21 +147,40 @@ async function boot() {
       ui.menuOpen = false;
       ui.menuView = 'main';
       render();
-      focusLater(renderer.elements.stage);
+      focusLater(ui.homeOpen ? (ui.hasResume ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton) : renderer.elements.stage);
+    };
+
+    const startReading = () => {
+      if (!ui.homeOpen) return;
+      ui.homeOpen = false;
+      ui.menuOpen = false;
+      ui.menuView = 'main';
+      ui.hasResume = true;
+      render();
+      if (ui.introEpisode === null) focusLater(renderer.elements.stage);
+    };
+
+    const showLanding = () => {
+      ui.homeOpen = true;
+      ui.hasResume = true;
+      ui.menuOpen = false;
+      ui.menuView = 'main';
+      render();
+      focusLater(renderer.elements.homeResumeButton);
     };
 
     controller = createInputController(renderer.elements, {
       onAdvance: () => {
-        if (ui.introEpisode !== null || ui.menuOpen || engine.choices().length > 0 || engine.isEpisodeComplete()) {
+        if (ui.homeOpen || ui.introEpisode !== null || ui.menuOpen || engine.choices().length > 0 || engine.isEpisodeComplete()) {
           controller.unlock();
           return;
         }
         engine.advance();
         render();
       },
-      onChoose: choiceId => { if (!ui.menuOpen && ui.introEpisode === null) { engine.choose(choiceId); render(); } },
+      onChoose: choiceId => { if (!ui.homeOpen && !ui.menuOpen && ui.introEpisode === null) { engine.choose(choiceId); render(); } },
       onBack: () => {
-        if (!ui.menuOpen && ui.introEpisode === null && engine.back()) render();
+        if (!ui.homeOpen && !ui.menuOpen && ui.introEpisode === null && engine.back()) render();
         else controller.unlock();
       },
       onMenu: () => {
@@ -172,9 +197,13 @@ async function boot() {
         focusLater(renderer.elements.settingsTitle);
       },
       onSettingsBack: () => {
-        ui.menuView = 'main';
-        render();
-        focusLater(renderer.elements.menuSettingsButton);
+        if (ui.homeOpen) {
+          closeMenu();
+        } else {
+          ui.menuView = 'main';
+          render();
+          focusLater(renderer.elements.menuSettingsButton);
+        }
       },
       onNewGameRequest: () => {
         ui.menuView = 'confirm';
@@ -186,14 +215,19 @@ async function boot() {
         storageClear(SAVE_KEY);
         ui.menuOpen = false;
         ui.menuView = 'main';
+        ui.homeOpen = false;
+        ui.hasResume = true;
         render();
-        focusLater(renderer.elements.stage);
       },
       onNewGameCancel: () => {
-        ui.menuView = 'main';
-        render();
-        focusLater(renderer.elements.menuNewGameButton);
+        if (ui.homeOpen) closeMenu();
+        else {
+          ui.menuView = 'main';
+          render();
+          focusLater(renderer.elements.menuNewGameButton);
+        }
       },
+      onHome: showLanding,
       onLocale: locale => {
         engine.setLocale(locale);
         render();
@@ -213,6 +247,21 @@ async function boot() {
       }
     });
 
+    renderer.elements.homeStartButton.addEventListener('click', startReading);
+    renderer.elements.homeResumeButton.addEventListener('click', startReading);
+    renderer.elements.homeNewGameButton.addEventListener('click', () => {
+      ui.menuOpen = true;
+      ui.menuView = 'confirm';
+      render();
+      focusLater(renderer.elements.confirmationTitle);
+    });
+    renderer.elements.homeSettingsButton.addEventListener('click', () => {
+      ui.menuOpen = true;
+      ui.menuView = 'settings';
+      render();
+      focusLater(renderer.elements.settingsTitle);
+    });
+
     renderer.elements.episodeIntro.addEventListener('click', event => {
       event.stopPropagation();
       dismissIntro();
@@ -225,6 +274,7 @@ async function boot() {
       if (document.visibilityState === 'hidden') storageWrite(SAVE_KEY, engine.save());
     }, { passive: true });
     render();
+    focusLater(hasValidSave ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton);
   } catch (error) {
     showBootError(root, error, resolveLocale());
     console.error(error);
