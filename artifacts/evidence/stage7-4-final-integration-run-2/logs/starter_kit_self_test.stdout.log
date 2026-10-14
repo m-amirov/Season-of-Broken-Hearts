@@ -1,0 +1,14 @@
+
+> starter-kit:self-test
+> node tools/starter-kit/self-test.mjs
+
+{
+  "status": "PASS",
+  "mode": "target",
+  "version": "0.5.13",
+  "manifestSchemaVersion": 2,
+  "updaterSchemaVersion": 2,
+  "manifestEntries": 119,
+  "skills": 15,
+  "targetStatus": "clean"
+}

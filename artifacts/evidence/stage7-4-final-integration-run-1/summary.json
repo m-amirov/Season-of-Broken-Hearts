@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "ceosVersion": "0.5.13",
+  "mode": "verification",
+  "releaseBaselineRef": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage7-4-integration",
+  "manifestFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts-stage7-4-integration\\.codex-os\\project.yml",
+  "startedAt": "2026-10-14T06:43:55.518Z",
+  "completedAt": "2026-10-14T06:43:56.526Z",
+  "host": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v22.21.0",
+    "hostname": "TOPSKIY-PC"
+  },
+  "verdict": "PASS",
+  "counts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "CONFIGURATION_ERROR": 0,
+    "BLOCKED": 0,
+    "SKIP": 0
+  },
+  "gates": [
+    {
+      "id": "starter_kit_self_test",
+      "status": "PASS",
+      "required": true,
+      "risk": "R0",
+      "exitCode": 0
+    }
+  ]
+}
