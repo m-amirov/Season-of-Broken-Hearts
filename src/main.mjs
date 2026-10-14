@@ -268,10 +268,12 @@ async function boot() {
     });
     window.addEventListener('pagehide', () => {
       clearTimeout(introTimeout);
-      storageWrite(SAVE_KEY, engine.save());
+      if (!ui.homeOpen || ui.hasResume) storageWrite(SAVE_KEY, engine.save());
     }, { passive: true });
     document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'hidden') storageWrite(SAVE_KEY, engine.save());
+      if (document.visibilityState === 'hidden' && (!ui.homeOpen || ui.hasResume)) {
+        storageWrite(SAVE_KEY, engine.save());
+      }
     }, { passive: true });
     render();
     focusLater(hasValidSave ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton);
