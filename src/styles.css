@@ -225,11 +225,6 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 .reader-confirmation-text { margin: 0; color: rgba(255, 245, 228, .78); font: 1rem/1.5 Georgia, serif; }
 .boot-error { margin: 0; padding: 24px; color: #fff6e7; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
 
-.orientation-lock { position: absolute; z-index: 30; inset: 0; display: none; place-items: center; align-content: center; gap: 12px; padding: 28px; color: #fff5e6; text-align: center; background: #122330; }
-.orientation-icon { color: #f2c38c; font: 3rem/1 ui-sans-serif, system-ui, sans-serif; }
-.orientation-title { margin: 0; font-size: 1.7rem; font-weight: 500; }
-.orientation-text { max-width: 28ch; margin: 0; color: rgba(255, 245, 228, .72); font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
-
 
 /* The menu retains explicit control surfaces; the reading HUD does not. */
 .reader-menu-card {
@@ -259,8 +254,6 @@ button:disabled { cursor: not-allowed; opacity: .45; }
   .scene-atmosphere { background: linear-gradient(180deg, rgba(7, 18, 26, .08), transparent 44%, rgba(7, 19, 28, .44) 62%, rgba(6, 17, 25, .92) 82%, #07151e); }
   .scene-art::after { background: linear-gradient(180deg, rgba(8, 18, 26, .32), transparent 30%, rgba(9, 21, 29, .08) 51%, rgba(7, 18, 25, .66) 100%); }
 }
-@media (max-height: 700px) and (orientation: landscape) and (pointer: coarse) { .orientation-lock { display: grid; } }
-.touch-landscape .orientation-lock { display: grid; }
 @media (max-height: 700px) and (orientation: landscape) and (pointer: fine) {
   .reader-sheet { max-height: min(67dvh, 310px); }
   .dialogue-text { min-height: 1.5em; }
