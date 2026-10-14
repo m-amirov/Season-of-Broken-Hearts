@@ -145,9 +145,6 @@ export function createInputController(elements, handlers) {
   bind(elements.menuNewGameButton, handlers.onNewGameRequest, cleanups, { narrative: false });
   bind(elements.newGameConfirmButton, handlers.onNewGameConfirm, cleanups, { narrative: false });
   bind(elements.newGameCancelButton, handlers.onNewGameCancel, cleanups, { narrative: false });
-  for (const button of elements.localeButtons ?? []) {
-    bind(button, () => handlers.onLocale?.(button.dataset.locale), cleanups, { narrative: false });
-  }
   for (const button of elements.settingButtons ?? []) {
     bind(button, () => handlers.onSetting?.(button.dataset.setting), cleanups, { narrative: false });
   }

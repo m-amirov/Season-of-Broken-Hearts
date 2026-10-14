@@ -11,7 +11,7 @@ export function normalizeLocale(value) {
 
 export function resolveLocale(sdk, browserLanguage = globalThis.navigator?.language) {
   const sdkLanguage = sdk?.environment?.i18n?.lang;
-  return normalizeLocale(sdkLanguage || browserLanguage || 'ru');
+  return normalizeLocale(sdkLanguage || browserLanguage);
 }
 
 export function initYandexSdk() {

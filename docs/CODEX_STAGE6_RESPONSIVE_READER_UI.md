@@ -35,10 +35,10 @@ Preserve Season of Broken Hearts’ name, Mediterranean visual atmosphere, typog
 - **Top left:** `Назад / Back` (label and arrow), disabled/inactive only when `engine.canBack()===false`; backed by existing snapshot state history.
 - **Top right:** `☰ Меню / Menu`, opens a real accessible menu overlay, not a full game reset.
 - A subtle episode/progress marker may sit between them if it fits, but avoid huge repeating title text and debug banners in the reading state.
-- **No visible RU/EN buttons during gameplay.** Locale defaults to Yandex Games SDK `environment.i18n.lang` on platform; browser language fallback when SDK data missing/local LAN; preserve a localized explicit language option only inside Settings if needed, not in the HUD. Normalize non-ru to en for the two supported languages; define precedence for an existing save’s locale vs platform override, ensure no corruption and test.
+- **No visible RU/EN controls anywhere in the player UI.** Locale defaults to Yandex Games SDK `environment.i18n.lang` on platform; browser language fallback when SDK data is missing/local LAN. Normalize `ru*` to `ru`, `en*` to `en`, and every other value to `en`; an existing save's locale never overrides the current platform locale.
 - **No permanent large Continue button or New Game button** on dialogue screens. Provide a subtle noninteractive advance cue when a dialogue can progress. At choices, clear choice cards appear; a tap outside them must NOT skip/choose.
 - Keep speaker labels distinct and accessible, wrap long RU/EN text; no shadows or busy animation that reduce readability.
-- Menu should provide: `Продолжить / Resume`, `Новая игра / New Game` (confirmation preserving save unless confirmed), `Настройки / Settings` (at minimum language only if supported, readable text controls/reduced motion if feasible). Do not add unattainable features (cloud save, paid items, audio) or dead buttons.
+- Menu should provide: `Продолжить / Resume`, `Новая игра / New Game` (confirmation preserving save unless confirmed), `Настройки / Settings` (readable text controls/reduced motion if feasible; language is platform-selected). Do not add unattainable features (cloud save, paid items, audio) or dead buttons.
 - Opening menu must not advance narrative; closing it returns to same scene+line+choices+locale+saved state. Lock narrative inputs under modal/menu.
 - Terminal/cliffhanger screens must remain readable and navigable without fake Continue.
 

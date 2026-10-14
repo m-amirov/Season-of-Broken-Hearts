@@ -79,6 +79,22 @@ test('engine save and load restore the complete snapshot', () => {
   assert.deepEqual(restored.snapshot(), engine.snapshot());
 });
 
+test('platform locale can replace a saved locale without changing progress', () => {
+  const engine = new NarrativeEngine(graph, { locale: 'ru' });
+  reachGate(engine);
+  engine.choose('matteo_formal');
+  const saved = engine.save();
+  const restored = new NarrativeEngine(graph, { locale: 'en' });
+  assert.equal(restored.load(saved), true);
+  const beforeLocaleOverride = restored.snapshot();
+  assert.equal(restored.setLocale('en'), true);
+  assert.equal(restored.locale(), 'en');
+  assert.deepEqual(restored.snapshot().cursor, beforeLocaleOverride.cursor);
+  assert.deepEqual(restored.snapshot().state, beforeLocaleOverride.state);
+  assert.deepEqual(restored.snapshot().history, beforeLocaleOverride.history);
+  assert.deepEqual(restored.snapshot().readerProgress, beforeLocaleOverride.readerProgress);
+});
+
 test('terminal scene remains readable until its final line and completion survives reload', () => {
   const engine = new NarrativeEngine(graph);
   const selected = ['matteo_formal', 'elio_humor', 'hotel_numbers', 'leo_hear'];

@@ -14,3 +14,9 @@ test('local fallback uses browser language when SDK language is unavailable', ()
   assert.equal(resolveLocale({ local: true }, 'en-GB'), 'en');
   assert.equal(normalizeLocale(undefined), 'en');
 });
+
+test('unsupported SDK and browser languages use the English fallback', () => {
+  assert.equal(resolveLocale({ environment: { i18n: { lang: 'fr-FR' } } }, 'ru-RU'), 'en');
+  assert.equal(resolveLocale({ local: true }, 'de-DE'), 'en');
+  assert.equal(resolveLocale({ local: true }, ''), 'en');
+});

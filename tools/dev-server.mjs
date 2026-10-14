@@ -10,7 +10,7 @@ const PROJECT_ROOT = path.resolve(path.dirname(FILE), '..');
 const DEFAULT_HOST = '127.0.0.1';
 const DEFAULT_PORT = 4173;
 const SOURCE_EXTENSIONS = new Set(['.css', '.js', '.mjs']);
-const ASSET_EXTENSIONS = new Set(['.gif', '.jpeg', '.jpg', '.png', '.svg', '.webp']);
+const ASSET_EXTENSIONS = new Set(['.gif', '.jpeg', '.jpg', '.png', '.svg', '.webp', '.woff2']);
 const MIME_TYPES = {
   '.css': 'text/css; charset=utf-8',
   '.gif': 'image/gif',
@@ -22,7 +22,8 @@ const MIME_TYPES = {
   '.mjs': 'text/javascript; charset=utf-8',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
-  '.webp': 'image/webp'
+  '.webp': 'image/webp',
+  '.woff2': 'font/woff2'
 };
 
 const localSdk = `window.YaGames = window.YaGames || { init: () => Promise.resolve({ local: true }) };`;

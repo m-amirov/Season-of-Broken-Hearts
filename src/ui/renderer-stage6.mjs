@@ -5,7 +5,7 @@ export const UI_TEXT = {
     appLabel: 'Сезон разбитых сердец', back: 'Назад', menu: 'Меню', close: 'Закрыть',
     resume: 'Продолжить', newGame: 'Новая игра', settings: 'Настройки', settingsTitle: 'Настройки чтения',
     beginStory: 'Начать историю', mainMenu: 'Главное меню', genreLabel: 'РОМАНТИЧЕСКАЯ НОВЕЛЛА', openingLabel: 'Лето на итальянском побережье',
-    language: 'Язык', russian: 'Русский', english: 'English', textSize: 'Размер текста',
+    textSize: 'Размер текста',
     smaller: 'Меньше', normal: 'Обычный', larger: 'Больше', contrast: 'Контраст', contrastOn: 'Повышенный',
     contrastOff: 'Обычный', motion: 'Анимация', motionOn: 'Системная', motionOff: 'Выключена',
     backToMenu: 'К меню', confirmNewGameTitle: 'Начать новую игру?',
@@ -21,7 +21,7 @@ export const UI_TEXT = {
     appLabel: 'Season of Broken Hearts', back: 'Back', menu: 'Menu', close: 'Close',
     resume: 'Resume', newGame: 'New Game', settings: 'Settings', settingsTitle: 'Reading settings',
     beginStory: 'Begin the story', mainMenu: 'Main menu', genreLabel: 'A ROMANTIC VISUAL NOVEL', openingLabel: 'A summer on the Italian coast',
-    language: 'Language', russian: 'Русский', english: 'English', textSize: 'Text size',
+    textSize: 'Text size',
     smaller: 'Smaller', normal: 'Normal', larger: 'Larger', contrast: 'Contrast', contrastOn: 'High',
     contrastOff: 'Standard', motion: 'Animation', motionOn: 'System', motionOff: 'Off',
     backToMenu: 'Back to menu', confirmNewGameTitle: 'Start a new game?',
@@ -52,10 +52,10 @@ export function createRenderer(root) {
   root.replaceChildren();
 
   const shell = element('section', 'novel-shell');
-  shell.setAttribute('aria-label', UI_TEXT.ru.appLabel);
+  shell.setAttribute('aria-label', UI_TEXT.en.appLabel);
   const stage = element('section', 'reader-stage');
   stage.tabIndex = 0;
-  stage.setAttribute('aria-label', UI_TEXT.ru.tapToContinue);
+  stage.setAttribute('aria-label', UI_TEXT.en.tapToContinue);
 
   const art = element('div', 'scene-art');
   const image = document.createElement('img');
@@ -114,12 +114,6 @@ export function createRenderer(root) {
   const settingsPanel = element('section', 'reader-menu-panel');
   const settingsTitle = element('h3', 'reader-panel-title');
   settingsTitle.tabIndex = -1;
-  const languageLabel = element('p', 'reader-setting-label');
-  const localeButtons = [button('setting-choice'), button('setting-choice')];
-  localeButtons[0].dataset.locale = 'ru';
-  localeButtons[1].dataset.locale = 'en';
-  const languageChoices = element('div', 'setting-choice-row');
-  languageChoices.append(...localeButtons);
   const settingButtons = [];
   for (const setting of ['textSize', 'contrast', 'motion']) {
     const settingButton = button('setting-row');
@@ -127,7 +121,7 @@ export function createRenderer(root) {
     settingButtons.push(settingButton);
   }
   const settingsBackButton = button('menu-action menu-back');
-  settingsPanel.append(settingsTitle, languageLabel, languageChoices, ...settingButtons, settingsBackButton);
+  settingsPanel.append(settingsTitle, ...settingButtons, settingsBackButton);
 
   const confirmationPanel = element('section', 'reader-menu-panel');
   const confirmationTitle = element('h3', 'reader-panel-title');
@@ -213,15 +207,9 @@ export function createRenderer(root) {
     return pendingSceneReady;
   }
 
-  function updateSettings(labels, settings, locale) {
+  function updateSettings(labels, settings) {
     const scale = Number(settings?.scale ?? 1);
     const scaleLabel = scale <= .95 ? labels.smaller : scale >= 1.2 ? labels.larger : labels.normal;
-    languageLabel.textContent = labels.language;
-    localeButtons[0].textContent = labels.russian;
-    localeButtons[1].textContent = labels.english;
-    for (const localeButton of localeButtons) {
-      localeButton.setAttribute('aria-pressed', String(localeButton.dataset.locale === locale));
-    }
     settingButtons[0].textContent = `${labels.textSize}: ${scaleLabel}`;
     settingButtons[1].textContent = `${labels.contrast}: ${settings?.contrast ? labels.contrastOn : labels.contrastOff}`;
     settingButtons[2].textContent = `${labels.motion}: ${settings?.reducedMotion ? labels.motionOff : labels.motionOn}`;
@@ -248,7 +236,7 @@ export function createRenderer(root) {
     confirmationText.textContent = labels.confirmNewGameText;
     newGameConfirmButton.textContent = labels.confirmNewGame;
     newGameCancelButton.textContent = labels.cancel;
-    updateSettings(labels, settings, engine.locale());
+    updateSettings(labels, settings);
   }
 
   return {
@@ -256,17 +244,19 @@ export function createRenderer(root) {
       root, shell, stage, advanceSurface: stage, image, title: sceneTitle, sceneTitle, speaker, text, choices, status,
       backButton, menuButton, menu, menuCloseButton, menuContinueButton, menuSettingsButton, menuNewGameButton, menuHomeButton,
       home, homeStartButton, homeResumeButton, homeNewGameButton, homeSettingsButton,
-      settingsBackButton, newGameConfirmButton, newGameCancelButton, settingsTitle, confirmationTitle, localeButtons, settingButtons,
+      settingsBackButton, newGameConfirmButton, newGameCancelButton, settingsTitle, confirmationTitle, settingButtons,
       orientationLock, orientationTitle, orientationText, episodeIntro
     },
     render({ engine, assetManager, notice = '', menuOpen = false, menuView = 'main', settings = {}, showIntro = false, homeOpen = false, hasResume = false }) {
       const locale = engine.locale();
-      const labels = UI_TEXT[locale] ?? UI_TEXT.ru;
+      const labels = UI_TEXT[locale] ?? UI_TEXT.en;
       const scene = engine.currentScene();
       const line = engine.currentLine();
       const sceneChanged = previousSceneId !== scene.id;
       previousSceneId = scene.id;
 
+      if (document.documentElement) document.documentElement.lang = locale;
+      document.title = labels.appLabel;
       shell.setAttribute('aria-label', labels.appLabel);
       stage.setAttribute('aria-label', labels.appLabel);
       backLabel.textContent = labels.back;

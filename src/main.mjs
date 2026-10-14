@@ -50,11 +50,11 @@ function updateOrientationGuard() {
   document.documentElement.classList.toggle('touch-landscape', isTouchLandscape);
 }
 
-function showBootError(root, error, locale = 'ru') {
+function showBootError(root, error, locale = 'en') {
   root.replaceChildren();
   const message = document.createElement('p');
   message.className = 'boot-error';
-  message.textContent = UI_TEXT[locale]?.bootError ?? UI_TEXT.ru.bootError;
+  message.textContent = UI_TEXT[locale]?.bootError ?? UI_TEXT.en.bootError;
   message.title = error instanceof Error ? error.message : String(error);
   root.append(message);
 }
@@ -71,6 +71,9 @@ async function boot() {
     let notice = '';
     const saved = storageRead(SAVE_KEY);
     const hasValidSave = Boolean(saved && engine.load(saved));
+    // A save carries its historical locale for backwards-compatible migration,
+    // but the platform locale is authoritative for this launch.
+    if (hasValidSave) engine.setLocale(platformLocale);
     if (saved && !hasValidSave) notice = UI_TEXT[engine.locale()].corruptSave;
 
     const settings = readSettings();
@@ -229,10 +232,6 @@ async function boot() {
         }
       },
       onHome: showLanding,
-      onLocale: locale => {
-        engine.setLocale(locale);
-        render();
-      },
       onSetting: setting => {
         if (setting === 'textSize') {
           const currentIndex = TEXT_SCALES.indexOf(settings.scale);

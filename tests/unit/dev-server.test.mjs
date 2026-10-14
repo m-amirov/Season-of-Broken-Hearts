@@ -109,7 +109,7 @@ test('dev server keeps the default local binding and serves the root', async t =
 
   const rootResponse = await fetchText(server, '/');
   assert.equal(rootResponse.response.status, 200);
-  assert.match(rootResponse.body, /Сезон разбитых сердец/);
+  assert.match(rootResponse.body, /Season of Broken Hearts/);
   assert.doesNotMatch(server.getOutput().stdout, /LAN access enabled/);
 });
 
@@ -143,6 +143,7 @@ test('runtime allowlist serves EP1 public closure only', async t => {
     '/sdk.js',
     '/src/main.mjs',
     '/src/styles.css',
+    '/assets/fonts/literata-cyrillic.woff2',
     '/narrative/graph.json',
     '/narrative/assets.json',
     '/assets/placeholder-arrival.svg',

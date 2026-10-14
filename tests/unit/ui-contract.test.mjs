@@ -60,6 +60,30 @@ test('EP1 CG mappings are scoped and unfinished scenes remain placeholders', () 
   }
 });
 
+test('editorial typography is local, swap-enabled, and covers both scripts', () => {
+  const style = fs.readFileSync(new URL('../../src/styles.css', import.meta.url), 'utf8');
+  for (const family of ['Prata', 'Literata', 'Manrope']) {
+    assert.match(style, new RegExp(`font-family: '${family}'`));
+    assert.match(style, new RegExp(`font-family: '${family}'[^}]*font-display: swap`, 's'));
+  }
+  assert.match(style, /assets\/fonts\/[^']+\.woff2/);
+  assert.match(style, /U\+0400-045F/);
+  assert.doesNotMatch(style, /fonts\.(googleapis|gstatic)\.com/);
+});
+
+test('locale is platform-selected and no manual language control is rendered', () => {
+  const renderer = fs.readFileSync(new URL('../../src/ui/renderer-stage6.mjs', import.meta.url), 'utf8');
+  const input = fs.readFileSync(new URL('../../src/ui/input-controller.mjs', import.meta.url), 'utf8');
+  const main = fs.readFileSync(new URL('../../src/main.mjs', import.meta.url), 'utf8');
+  const html = fs.readFileSync(new URL('../../index.html', import.meta.url), 'utf8');
+  assert.doesNotMatch(renderer, /localeButtons|languageLabel|data\.locale/);
+  assert.doesNotMatch(input, /onLocale|localeButtons/);
+  assert.match(main, /const platformLocale = resolveLocale\(sdk\)/);
+  assert.match(main, /if \(hasValidSave\) engine\.setLocale\(platformLocale\)/);
+  assert.match(html, /<html lang="en">/);
+  assert.doesNotMatch(html, /fonts\.(googleapis|gstatic)\.com/);
+});
+
 test('choice input owns the gesture and cannot fall through to advance', () => {
   const next = fakeButton();
   const choice = fakeButton('matteo_formal');
