@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "stage": "7.3",
+  "verdict": "PASS_STAGE7_3_INFRASTRUCTURE_RECOVERY",
+  "scope": "Starter Kit and Yandex registry infrastructure only",
+  "baseProjectHead": "f4173bc806933cfa2615062451dcec9aa7a56bda",
+  "projectCodeHead": "232977f7b924a3fbe2356fbf16ed72509043b805",
+  "starterKitHead": "69e6f0e8fe9741ed65e934fb6236b0d85f98025f",
+  "rootCause": {
+    "class": "EOL_UNSTABLE_TEXT_HASHING",
+    "detail": "Starter Kit state, semantic acceptance, and Yandex registry alignment hashed checkout bytes directly. Windows CRLF targets therefore differed from LF source and snapshot hashes although their text content was identical.",
+    "requirementsRawSha256": "ce7c701d94f70ef5dc51c9a973d6f43ed7d0224ed37cb203d00bbb6a8ebaa430",
+    "requirementsNormalizedSha256": "2bdc83003adc47e034c859039b59c2cb1fc03a62e1f6fc81554fac76dfa0d1d2",
+    "consoleRawSha256": "e7ff7113a58678eec2d7ee562853bdf7c6d2d0968d3d897a062accb4814744ed",
+    "consoleNormalizedSha256": "2c9eba18ab1dcffec29972e9b6314396e32fcfcbce20d138bb7a257d7bda14e3"
+  },
+  "sourceChanges": [
+    "tools/yandex/registry-hash.mjs",
+    "tools/yandex/requirements-audit.mjs",
+    "tools/yandex/docs-watch.mjs",
+    "tools/starter-kit/lib.mjs",
+    "tools/starter-kit/status-core.mjs",
+    "tools/starter-kit/semantic-acceptance.mjs",
+    "tools/starter-kit/update-engine.mjs",
+    "tests/starter-kit/target-aware-updater.test.mjs",
+    "starter-kit.manifest.json"
+  ],
+  "projectChanges": [
+    "config/manifest-entries.json",
+    ".starter-kit/manifest.json",
+    ".starter-kit/state.json",
+    ".starter-kit/update-report.json",
+    "tools/yandex/registry-hash.mjs",
+    "tools/yandex/requirements-audit.mjs",
+    "tools/yandex/docs-watch.mjs",
+    "tools/starter-kit/lib.mjs",
+    "tools/starter-kit/status-core.mjs",
+    "tools/starter-kit/semantic-acceptance.mjs",
+    "tools/starter-kit/update-engine.mjs"
+  ],
+  "runs": [
+    {
+      "id": "stage7-3-recovery-final-run-1",
+      "starterKitStatus": "clean",
+      "starterKitSelfTest": "PASS",
+      "yandexRequirementsAudit": "PASS",
+      "yandexConsoleAudit": "PASS",
+      "updaterDryRun": { "created": 0, "updated": 0, "merged": 0, "resolved": 0, "conflicts": 0, "preserved": 112 },
+      "ceosVerification": "PASS",
+      "contractValidation": "BLOCK_RELEASE_EVIDENCE_MISSING"
+    },
+    {
+      "id": "stage7-3-recovery-final-run-2",
+      "starterKitStatus": "clean",
+      "starterKitSelfTest": "PASS",
+      "yandexRequirementsAudit": "PASS",
+      "yandexConsoleAudit": "PASS",
+      "updaterDryRun": { "created": 0, "updated": 0, "merged": 0, "resolved": 0, "conflicts": 0, "preserved": 112 },
+      "ceosVerification": "PASS",
+      "contractValidation": "BLOCK_RELEASE_EVIDENCE_MISSING"
+    }
+  ],
+  "releaseBlocker": "Release contract evidence is missing; no publication, video, or fabricated release artifact was created.",
+  "ceosEvidence": [
+    ".ceos-evidence/stage7-3-recovery-final-run-1",
+    ".ceos-evidence/stage7-3-recovery-final-run-2"
+  ]
+}
