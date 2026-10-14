@@ -3,6 +3,7 @@ import manifest from '../narrative/assets.json' with { type: 'json' };
 import { createAssetManager } from './assets/asset-manager.mjs';
 import { NarrativeEngine } from './narrative/engine.mjs';
 import { initYandexSdk, resolveLocale } from './platform/yandex-sdk.mjs';
+import { storageRead, storageWrite, storageClear } from './platform/storage.mjs';
 import { createInputController } from './ui/input-controller.mjs';
 import { createRenderer, UI_TEXT } from './ui/renderer.mjs';
 
@@ -10,23 +11,6 @@ const SAVE_KEY = 'season-of-broken-hearts.save.v1';
 const SETTINGS_KEY = 'season-of-broken-hearts.reader-settings.v1';
 const TEXT_SCALES = [0.92, 1, 1.12, 1.25];
 const DEFAULT_SETTINGS = Object.freeze({ scale: 1, contrast: false, reducedMotion: false });
-
-function storageRead(key) {
-  try { return window.localStorage.getItem(key); } catch { return null; }
-}
-
-function storageWrite(key, value) {
-  try {
-    window.localStorage.setItem(key, value);
-    return true;
-  } catch {
-    return false; // Do not report a successful save when storage is unavailable.
-  }
-}
-
-function storageClear(key) {
-  try { window.localStorage.removeItem(key); } catch { /* no-op */ }
-}
 
 function readSettings() {
   try {
