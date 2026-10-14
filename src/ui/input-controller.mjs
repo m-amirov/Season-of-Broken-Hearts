@@ -140,6 +140,7 @@ export function createInputController(elements, handlers) {
   bind(elements.menuCloseButton, handlers.onMenuClose, cleanups, { narrative: false });
   bind(elements.menuContinueButton, handlers.onMenuClose, cleanups, { narrative: false });
   bind(elements.menuSettingsButton, handlers.onSettings, cleanups, { narrative: false });
+  bind(elements.menuHomeButton, handlers.onHome, cleanups, { narrative: false });
   bind(elements.settingsBackButton, handlers.onSettingsBack, cleanups, { narrative: false });
   bind(elements.menuNewGameButton, handlers.onNewGameRequest, cleanups, { narrative: false });
   bind(elements.newGameConfirmButton, handlers.onNewGameConfirm, cleanups, { narrative: false });
