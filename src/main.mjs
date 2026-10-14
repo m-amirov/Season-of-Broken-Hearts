@@ -140,10 +140,17 @@ async function boot() {
     };
 
     const closeMenu = () => {
+      const previousView = ui.menuView;
       ui.menuOpen = false;
       ui.menuView = 'main';
       render();
-      focusLater(ui.homeOpen ? (ui.hasResume ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton) : renderer.elements.stage);
+      // Restore the invoking control, not an unrelated reading surface or default home action.
+      const target = ui.homeOpen
+        ? previousView === 'settings' ? renderer.elements.homeSettingsButton
+          : previousView === 'confirm' ? renderer.elements.homeNewGameButton
+            : ui.hasResume ? renderer.elements.homeResumeButton : renderer.elements.homeStartButton
+        : renderer.elements.menuButton;
+      focusLater(target);
     };
 
     const startReading = () => {
