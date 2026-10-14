@@ -86,13 +86,13 @@ Implement coherent gesture ownership adapted to the existing controller:
 1. A small user-facing interface description and/or runtime before-after screenshots (real, not mock evidence), not just CSS changes.
 2. Updated production UI modules and CSS with simple maintained structure.
 3. Proper modal/menu lifecycle, keyboard/focus handling, locale strategy.
-4. Automated regression tests of gestures and menu/back/save/choice input; orientation detection.
+4. Automated regression tests of gestures and menu/back/save/choice input; platform orientation ownership (no game-owned rotation detection or blocker).
 5. Real browser screenshot matrix covering portrait mobile and widescreen desktop:
    - arrival `ep1_arrival`,
    - choice branch near `ep1_gate`,
    - `ep1_kitchen`,
    - `ep1_leo_entrance`,
-   - menu open, settings if added, mobile rotate prompt,
+   - menu open, settings if added, phone landscape without a game-owned rotate overlay,
    - narrow desktop resize,
    - long RU and EN dialogue,
    - slow asset decode and failed asset (existing fallback).
