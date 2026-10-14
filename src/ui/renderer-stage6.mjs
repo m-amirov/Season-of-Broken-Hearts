@@ -15,7 +15,6 @@ export const UI_TEXT = {
     complete: 'Эпизод завершён', saveFailed: 'Не удалось сохранить прогресс. Проверьте настройки браузера.', cliffhanger: 'Продолжение следует',
     corruptSave: 'Сохранение повреждено или устарело — начата новая игра.',
     bootError: 'Не удалось открыть эпизод. Перезагрузите страницу.', placeholder: 'сценический фон',
-    rotateTitle: 'Поверните устройство', rotateText: 'Эта история открывается в портретной ориентации.'
   },
   en: {
     appLabel: 'Season of Broken Hearts', back: 'Back', menu: 'Menu', close: 'Close',
@@ -31,7 +30,6 @@ export const UI_TEXT = {
     complete: 'Episode complete', saveFailed: 'Progress could not be saved. Check browser storage settings.', cliffhanger: 'To be continued',
     corruptSave: 'The save is damaged or outdated — a new game has started.',
     bootError: 'Unable to open the episode. Reload the page.', placeholder: 'scene background',
-    rotateTitle: 'Rotate your device', rotateText: 'This story is designed for portrait orientation.'
   }
 };
 
@@ -135,14 +133,6 @@ export function createRenderer(root) {
   menu.append(menuShade, menuCard);
   menu.hidden = true;
 
-  const orientationLock = element('section', 'orientation-lock');
-  orientationLock.setAttribute('role', 'status');
-  const orientationIcon = element('span', 'orientation-icon', '↻');
-  orientationIcon.setAttribute('aria-hidden', 'true');
-  const orientationTitle = element('h2', 'orientation-title');
-  const orientationText = element('p', 'orientation-text');
-  orientationLock.append(orientationIcon, orientationTitle, orientationText);
-
   // The independent title screen always precedes gameplay, including when a save exists.
   // No automatic save is made on the title screen, so Resume is never fabricated.
   const home = element('section', 'home-screen');
@@ -179,7 +169,7 @@ export function createRenderer(root) {
   const introSkip = element('span', 'episode-intro-skip');
   episodeIntro.append(introNumber, introRule, introTitle, introSkip);
 
-  shell.append(stage, home, menu, episodeIntro, orientationLock);
+  shell.append(stage, home, menu, episodeIntro);
   root.append(shell);
 
   let previousSceneId = null;
@@ -245,7 +235,7 @@ export function createRenderer(root) {
       backButton, menuButton, menu, menuCloseButton, menuContinueButton, menuSettingsButton, menuNewGameButton, menuHomeButton,
       home, homeStartButton, homeResumeButton, homeNewGameButton, homeSettingsButton,
       settingsBackButton, newGameConfirmButton, newGameCancelButton, settingsTitle, confirmationTitle, settingButtons,
-      orientationLock, orientationTitle, orientationText, episodeIntro
+      episodeIntro
     },
     render({ engine, assetManager, notice = '', menuOpen = false, menuView = 'main', settings = {}, showIntro = false, homeOpen = false, hasResume = false }) {
       const locale = engine.locale();
@@ -334,8 +324,6 @@ export function createRenderer(root) {
         introSkip.textContent = labels.tapToContinue;
         episodeIntro.setAttribute('aria-label', `${chapter.title}. ${labels.skipIntro}`);
       }
-      orientationTitle.textContent = labels.rotateTitle;
-      orientationText.textContent = labels.rotateText;
       return { choiceButtons, sceneChanged, ready: pendingSceneReady };
     }
   };
