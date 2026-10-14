@@ -12,7 +12,7 @@ export const UI_TEXT = {
     confirmNewGameText: 'Текущее сохранение будет удалено. Это действие нельзя отменить.',
     confirmNewGame: 'Начать заново', cancel: 'Отмена', episode: 'Эпизод 1', episodeBase: 'Эпизод', skipIntro: 'Пропустить заставку',
     tapToContinue: 'Нажмите, чтобы продолжить', chooseResponse: 'Выберите ответ',
-    complete: 'Эпизод завершён', saved: 'Сохранено', cliffhanger: 'Продолжение следует',
+    complete: 'Эпизод завершён', saveFailed: 'Не удалось сохранить прогресс. Проверьте настройки браузера.', cliffhanger: 'Продолжение следует',
     corruptSave: 'Сохранение повреждено или устарело — начата новая игра.',
     bootError: 'Не удалось открыть эпизод. Перезагрузите страницу.', placeholder: 'сценический фон',
     rotateTitle: 'Поверните устройство', rotateText: 'Эта история открывается в портретной ориентации.'
@@ -28,7 +28,7 @@ export const UI_TEXT = {
     confirmNewGameText: 'Your current save will be deleted. This cannot be undone.',
     confirmNewGame: 'Start over', cancel: 'Cancel', episode: 'Episode 1', episodeBase: 'Episode', skipIntro: 'Skip episode title',
     tapToContinue: 'Tap to continue', chooseResponse: 'Choose a response',
-    complete: 'Episode complete', saved: 'Saved', cliffhanger: 'To be continued',
+    complete: 'Episode complete', saveFailed: 'Progress could not be saved. Check browser storage settings.', cliffhanger: 'To be continued',
     corruptSave: 'The save is damaged or outdated — a new game has started.',
     bootError: 'Unable to open the episode. Reload the page.', placeholder: 'scene background',
     rotateTitle: 'Rotate your device', rotateText: 'This story is designed for portrait orientation.'
@@ -67,7 +67,7 @@ export function createRenderer(root) {
 
   const topbar = element('header', 'reader-topbar');
   const backButton = button('reader-nav-button reader-back');
-  const backIcon = element('span', 'reader-nav-icon', '←');
+  const backIcon = element('span', 'reader-nav-icon'); // CSS-drawn arrow, independent of font glyph metrics
   backIcon.setAttribute('aria-hidden', 'true');
   const backLabel = element('span', 'reader-nav-label');
   backButton.append(backIcon, backLabel);
@@ -304,7 +304,9 @@ export function createRenderer(root) {
       const complete = engine.isEpisodeComplete();
       advanceHint.textContent = labels.tapToContinue;
       advanceHint.hidden = choiceButtons.length > 0 || complete || !engine.showTutorialHint();
-      status.textContent = notice || (complete ? labels.complete : engine.isEnding() ? labels.cliffhanger : labels.saved);
+      // Successful autosaves are intentionally silent. Only actual warnings and end states are announced.
+      status.textContent = notice || (complete ? labels.complete : engine.isEnding() ? labels.cliffhanger : '');
+      status.hidden = status.textContent.length === 0;
       backButton.disabled = !engine.canBack();
       dialogue.dataset.hasChoices = String(choiceButtons.length > 0);
       home.hidden = !homeOpen;
