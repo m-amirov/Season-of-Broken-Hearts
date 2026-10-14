@@ -109,4 +109,5 @@ test('startup does not fabricate a save and never starts the episode before titl
   assert.match(source, /if \(!ui\.homeOpen\) \{\s*storageWrite\(SAVE_KEY, engine\.save\(\)\)/s);
   assert.match(source, /homeStartButton\.addEventListener\('click', startReading\)/);
   assert.match(source, /homeResumeButton\.addEventListener\('click', startReading\)/);
+  assert.match(source, /if \(!ui\.homeOpen \|\| ui\.hasResume\) storageWrite\(SAVE_KEY, engine\.save\(\)\)/);
 });
