@@ -1,0 +1,7 @@
+{
+  "isRepo": true,
+  "branch": "codex/stage7-4-infrastructure-integrated",
+  "head": "8ceb8ebfdd66348e7aeb45194aba1dccf031ed96",
+  "dirty": true,
+  "porcelain": " M .starter-kit/manifest.json\n M .starter-kit/state.json\n M .starter-kit/update-report.json\n M config/manifest-entries.json\n M tools/starter-kit/lib.mjs\n M tools/starter-kit/semantic-acceptance.mjs\n M tools/starter-kit/status-core.mjs\n M tools/starter-kit/update-engine.mjs\n M tools/yandex/docs-watch.mjs\n M tools/yandex/requirements-audit.mjs\n?? .ceos-evidence/2026-10-14T06-31-54-786Z-verification/\n?? tools/yandex/registry-hash.mjs"
+}

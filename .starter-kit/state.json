@@ -3,7 +3,7 @@
   "updaterSchemaVersion": 2,
   "installedVersion": "0.5.13",
   "attemptedVersion": "0.5.13",
-  "sourceManifestHash": "2585ad7dae7c10576d1d1c7159dace4638e2dad115acfd3c872bd809a7ee1817",
+  "sourceManifestHash": "c8b53703984ad7875e1dd79698a26141e2192489c2560bcbc3c8b303b97ca646",
   "targetProfile": {
     "schemaVersion": 1,
     "profileName": "mature-yandex-phaser",
@@ -223,8 +223,8 @@
     },
     "managed:tool-lib": {
       "target": "tools/starter-kit/lib.mjs",
-      "sourceHash": "553bde6e478144e082b90c6bb713f6fbf2ea3be7c1656d8544014f2fbd42bad0",
-      "targetHash": "553bde6e478144e082b90c6bb713f6fbf2ea3be7c1656d8544014f2fbd42bad0"
+      "sourceHash": "3392a7a6b7e0b4cc791574e315033b2ca0d00a6fb79d7535d43320129be803ff",
+      "targetHash": "3392a7a6b7e0b4cc791574e315033b2ca0d00a6fb79d7535d43320129be803ff"
     },
     "managed:tool-manifest": {
       "target": "tools/starter-kit/manifest.mjs",
@@ -253,8 +253,8 @@
     },
     "managed:tool-semantic-acceptance": {
       "target": "tools/starter-kit/semantic-acceptance.mjs",
-      "sourceHash": "60312146a1a45d12c7d0d98d39daea0835774203870eb727fd71305a19b518c7",
-      "targetHash": "60312146a1a45d12c7d0d98d39daea0835774203870eb727fd71305a19b518c7"
+      "sourceHash": "30bd724a05a25773ab398fa17e62a46948b013e55a699b436df9a0c198f5a170",
+      "targetHash": "30bd724a05a25773ab398fa17e62a46948b013e55a699b436df9a0c198f5a170"
     },
     "managed:tool-status": {
       "target": "tools/starter-kit/status.mjs",
@@ -263,13 +263,13 @@
     },
     "managed:tool-status-core": {
       "target": "tools/starter-kit/status-core.mjs",
-      "sourceHash": "9c1e4007dfd7bd3ecf3889f7af6c7bee8bf9904fd966513342fce068886dd3e7",
-      "targetHash": "9c1e4007dfd7bd3ecf3889f7af6c7bee8bf9904fd966513342fce068886dd3e7"
+      "sourceHash": "35fc083a0a20a5154b45f635cf8a26002f45a1b58628096c465d3de8bc63b676",
+      "targetHash": "35fc083a0a20a5154b45f635cf8a26002f45a1b58628096c465d3de8bc63b676"
     },
     "managed:tool-update-engine": {
       "target": "tools/starter-kit/update-engine.mjs",
-      "sourceHash": "e5a414ffc36d9499cba14a78da46f0a3013c0908daf765f3a468471f60e553ab",
-      "targetHash": "e5a414ffc36d9499cba14a78da46f0a3013c0908daf765f3a468471f60e553ab"
+      "sourceHash": "0847a3f8f303cebb895ed903d5a10e762bffa8f6f49bc3c05c745d1c0a10ebfe",
+      "targetHash": "0847a3f8f303cebb895ed903d5a10e762bffa8f6f49bc3c05c745d1c0a10ebfe"
     },
     "managed:tool-update-self-test": {
       "target": "tools/starter-kit/update-self-test.mjs",
@@ -278,8 +278,8 @@
     },
     "managed:tool-yandex-requirements-audit": {
       "target": "tools/yandex/requirements-audit.mjs",
-      "sourceHash": "06c6ae4c0bc9b24b1448f2f00a05592e638bd8581fdc95ebef3fbc36f4b98e9b",
-      "targetHash": "06c6ae4c0bc9b24b1448f2f00a05592e638bd8581fdc95ebef3fbc36f4b98e9b"
+      "sourceHash": "5389f7d59ecc736bf48ee1a39757b2fac36abe1bb91116ab01e73cfd28655705",
+      "targetHash": "5389f7d59ecc736bf48ee1a39757b2fac36abe1bb91116ab01e73cfd28655705"
     },
     "managed:tool-yandex-sdk-validation": {
       "target": "tools/yandex/sdk-validation.mjs",
@@ -293,8 +293,8 @@
     },
     "managed:tool-yandex-docs-watch": {
       "target": "tools/yandex/docs-watch.mjs",
-      "sourceHash": "5c2f1cd78e953bdc5df7574399fe77191a02275e2f376adebb350e806fc225a3",
-      "targetHash": "5c2f1cd78e953bdc5df7574399fe77191a02275e2f376adebb350e806fc225a3"
+      "sourceHash": "d84ed734b18a0e8ab752ff2ebc44bf17a1ef6ea7ac50dcee6c8c7d3a1a3a82af",
+      "targetHash": "d84ed734b18a0e8ab752ff2ebc44bf17a1ef6ea7ac50dcee6c8c7d3a1a3a82af"
     },
     "managed:tool-yandex-media-validation": {
       "target": "tools/yandex/media-validation.mjs",
@@ -435,6 +435,11 @@
       "target": "migrations/0.5.11-to-0.5.12.md",
       "sourceHash": "0d72e86d41331356d8485d7cf28a7bca4ca8b44a461a21f5ff030fab5eda29b8",
       "targetHash": "0d72e86d41331356d8485d7cf28a7bca4ca8b44a461a21f5ff030fab5eda29b8"
+    },
+    "managed:tool-yandex-registry-hash": {
+      "target": "tools/yandex/registry-hash.mjs",
+      "sourceHash": "22db85345c506ef890a5735ac9ea82ca4607a33cfd7a31fa0e554e05a0d135de",
+      "targetHash": "22db85345c506ef890a5735ac9ea82ca4607a33cfd7a31fa0e554e05a0d135de"
     }
   },
   "projectOwned": {
@@ -610,8 +615,8 @@
     },
     "managed:manifest-entry-config": {
       "target": "config/manifest-entries.json",
-      "sourceHash": "be0cff6a1cf6da731c511502ca7e125fd304081de75fff064b91b143c9f9452d",
-      "targetHash": "be0cff6a1cf6da731c511502ca7e125fd304081de75fff064b91b143c9f9452d"
+      "sourceHash": "118791dea326dd8aed1df9bd0ca944dda1f94ba878773e840c4c7672e99527ca",
+      "targetHash": "118791dea326dd8aed1df9bd0ca944dda1f94ba878773e840c4c7672e99527ca"
     }
   },
   "conflicts": [],
