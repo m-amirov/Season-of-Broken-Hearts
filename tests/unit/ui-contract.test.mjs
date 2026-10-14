@@ -226,3 +226,29 @@ test('cinematic reader has an independent episode slide and a borderless dialogu
   assert.match(renderer, /sceneTitle\.hidden = true/);
   assert.match(renderer, /advanceHint\.hidden = choiceButtons\.length > 0 \|\| complete \|\| !engine\.showTutorialHint\(\)/);
 });
+
+test('Back icon stays aligned and is not a font-rendered arrow', () => {
+  const css = fs.readFileSync(new URL('../../src/styles.css', import.meta.url), 'utf8');
+  const renderer = fs.readFileSync(new URL('../../src/ui/renderer-stage6.mjs', import.meta.url), 'utf8');
+  assert.match(css, /\.reader-nav-icon::before\s*\{/);
+  assert.match(css, /\.reader-nav-icon::after\s*\{/);
+  assert.match(css, /\.reader-nav-button\s*\{[^}]*min-height:\s*44px;/s);
+  assert.match(renderer, /const backIcon = element\('span', 'reader-nav-icon'\)/);
+  assert.doesNotMatch(renderer, /reader-nav-icon', '←'/);
+});
+
+test('modal keyboard handling remains accessible in the main UI', () => {
+  const main = fs.readFileSync(new URL('../../src/main.mjs', import.meta.url), 'utf8');
+  assert.match(main, /event\.key === 'Escape'/);
+  assert.match(main, /event\.key !== 'Tab'/);
+  assert.match(main, /focusable\.includes\(active\)/);
+  assert.match(main, /\(event\.shiftKey \? last : first\)\.focus/);
+});
+
+test('spec reflects the current mixed art and platform locale behavior', () => {
+  const spec = fs.readFileSync(new URL('../../game-spec.yaml', import.meta.url), 'utf8');
+  assert.match(spec, /assetCreation: mixed-production-cg-and-placeholders/);
+  assert.match(spec, /productionArtStatus: EP1_PARTIAL_INTEGRATION/);
+  assert.match(spec, /autoDetectYandexLanguage: true/);
+  assert.match(spec, /fallback: en/);
+});
