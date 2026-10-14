@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "sourceHead": "c74713e2d1d6fd8ef110a794e1ad42ccbb5a6e5c",
+  "script": "tools/qa/stage7-locale-acceptance.js",
+  "cases": [
+    { "source": "Yandex debug SDK RU", "input": "ru-RU", "expected": "ru", "observedHtmlLang": "ru", "manualLocaleControls": 0 },
+    { "source": "Yandex debug SDK EN", "input": "en-US", "expected": "en", "observedHtmlLang": "en", "manualLocaleControls": 0 },
+    { "source": "local browser RU fallback", "input": "ru-RU", "expected": "ru", "observedHtmlLang": "ru", "manualLocaleControls": 0 },
+    { "source": "local browser EN fallback", "input": "en-US", "expected": "en", "observedHtmlLang": "en", "manualLocaleControls": 0 }
+  ],
+  "rulesVerified": [
+    "YaGames.init result environment.i18n.lang has priority",
+    "navigator.language is used only for local fallback",
+    "unsupported languages normalize to en",
+    "saved locale is not a startup override",
+    "title, settings and game UI expose no RU/EN selector"
+  ]
+}

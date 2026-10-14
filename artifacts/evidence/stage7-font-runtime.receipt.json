@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "sourceHead": "c74713e2d1d6fd8ef110a794e1ad42ccbb5a6e5c",
+  "script": "tools/qa/stage7-font-runtime.js",
+  "locale": "en",
+  "fonts": [
+    { "family": "Prata", "loaded": true },
+    { "family": "Literata", "loaded": true },
+    { "family": "Manrope", "loaded": true }
+  ],
+  "externalFontResources": [],
+  "localFontResources": [
+    "http://127.0.0.1:4173/assets/fonts/literata-latin.woff2",
+    "http://127.0.0.1:4173/assets/fonts/prata-latin.woff2",
+    "http://127.0.0.1:4173/assets/fonts/manrope-latin.woff2"
+  ]
+}

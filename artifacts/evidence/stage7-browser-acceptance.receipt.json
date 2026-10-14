@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "sourceHead": "c74713e2d1d6fd8ef110a794e1ad42ccbb5a6e5c",
+  "runtime": {
+    "url": "http://127.0.0.1:4173/",
+    "tool": "@playwright/cli",
+    "script": "tools/qa/stage7-browser-acceptance.js",
+    "server": "tools/dev-server.mjs"
+  },
+  "assertions": [
+    "fresh title screen is shown before EP1 and does not fabricate a save",
+    "saved title screen exposes Resume and New Game",
+    "reload and Resume preserve the exact saved cursor",
+    "New Game confirmation is reachable and cancellable",
+    "no data-locale controls are present in Settings",
+    "no horizontal or vertical overflow in the checked states",
+    "EP1 intro, dialogue, choice, menu and settings states render"
+  ],
+  "viewports": {
+    "desktop": [[1366, 768], [1600, 900], [1920, 900], [1920, 1080]],
+    "mobilePortrait": [[360, 640], [390, 844], [430, 932]]
+  },
+  "savedCursor": { "sceneId": "ep1_gate", "dialogueIndex": 7 },
+  "screenshots": [
+    { "path": "output/playwright/stage7/home-desktop-1366x768.png", "bytes": 1153083, "sha256": "d994efa8bb298e889932dff9f59d7789f3e1876bb8978e02a64aea62856616a4" },
+    { "path": "output/playwright/stage7/home-desktop-1600x900.png", "bytes": 1504054, "sha256": "e39dfbc7678f5d89813c1a85abc9c89e5576ddafc0dd6b5ce053363ccf78d99b" },
+    { "path": "output/playwright/stage7/home-desktop-1920x900.png", "bytes": 1712318, "sha256": "b22bb27ba0a08080842adbb89f9db4afe4905433f10176aa013bfa601b208a1d" },
+    { "path": "output/playwright/stage7/home-desktop-1920x1080.png", "bytes": 2036703, "sha256": "7fca2f608ea706b56c8c13ac09d8972a1d0f638b11b0fea1a833fcd887e9d2bb" },
+    { "path": "output/playwright/stage7/home-mobile-360x640.png", "bytes": 317220, "sha256": "13fd2fda25057ec426ea7abbe03f81151208a5ea69ca27c9a0896dbb62a9657a" },
+    { "path": "output/playwright/stage7/home-mobile-390x844.png", "bytes": 415840, "sha256": "175f25954d1d64630131c367b73cdf047b2ef9e5d40d13ab33f49fd8f6977daf" },
+    { "path": "output/playwright/stage7/home-mobile-430x932.png", "bytes": 487416, "sha256": "7615538b4897daa03ce805ce6d930eabb45fb2e1b4dd18f57904f55e1099aa2c" },
+    { "path": "output/playwright/stage7/home-saved-mobile-390x844.png", "bytes": 405198, "sha256": "3179240704a7f5194b82c5c225bb1adf00137fc655a1a838a8c241a21380b3d5" },
+    { "path": "output/playwright/stage7/settings-desktop-1600x900.png", "bytes": 257487, "sha256": "96e4e7b3a921ac5b7d6d4c142165ffd8a2b8bd24ff0872c9b89d6020a64559ec" },
+    { "path": "output/playwright/stage7/settings-mobile-reader-390x844.png", "bytes": 105875, "sha256": "bb3a231673c65d6ebad007bbfa5ec9e569c098d7e8a1b459a1e8bf15db498fda" },
+    { "path": "output/playwright/stage7/new-game-confirmation-mobile-390x844.png", "bytes": 110790, "sha256": "5aa3fa3aaeb437b4702a29bab17dace0d2b03283a3cff7d943767fa91a02cfa5" },
+    { "path": "output/playwright/stage7/ingame-menu-desktop-1600x900.png", "bytes": 251370, "sha256": "3051db2c3978e7a6a0dc20e0e00aa7ff2011e2a1beff070b5ecdabd87517cd7f" },
+    { "path": "output/playwright/stage7/ep1-intro-mobile-390x844.png", "bytes": 306154, "sha256": "d2547708e5851f1c27ba25c01f8cb21acd24b0a02805dc98e4bc7e5c5f4d6b0e" },
+    { "path": "output/playwright/stage7/dialogue-mobile-390x844.png", "bytes": 488145, "sha256": "88a61e51786bea14469d96b01f053f9c38aff1534c7168939472a51f5befb199" },
+    { "path": "output/playwright/stage7/choice-mobile-390x844.png", "bytes": 478707, "sha256": "c851d89b8a9b86eaa74d420e11caafc0ea4b47fcd1896381581180cbac95168e" }
+  ],
+  "independentVisualReview": {
+    "provider": "Web High / ceos_art_director_web",
+    "scope": "final desktop title 1366x768 plus affected mobile dialogue and choice states",
+    "status": "PASS",
+    "findings": ["B1 desktop right-edge strip and seam eliminated", "B2 mobile Back/Menu contrast accepted"]
+  }
+}

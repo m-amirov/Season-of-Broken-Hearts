@@ -1,0 +1,7 @@
+{
+  "isRepo": true,
+  "branch": "codex/stage7-premium-ui",
+  "head": "c74713e2d1d6fd8ef110a794e1ad42ccbb5a6e5c",
+  "dirty": true,
+  "porcelain": "?? .ceos-evidence/2026-10-14T04-48-34-807Z-verification/\n?? .ceos-evidence/2026-10-14T05-01-08-308Z-verification/\n?? .ceos-evidence/2026-10-14T05-05-07-522Z-verification/\n?? artifacts/evidence/stage7-browser-acceptance.receipt.json\n?? artifacts/evidence/stage7-locale-acceptance.receipt.json\n?? output/playwright/stage7-baseline-title-1280x720.png\n?? output/playwright/stage7-baseline-title-360x640.png\n?? output/playwright/stage7-baseline-title-390x844.png\n?? output/playwright/stage7/"
+}
