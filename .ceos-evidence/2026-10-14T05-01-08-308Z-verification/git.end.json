@@ -1,0 +1,7 @@
+{
+  "isRepo": true,
+  "branch": "codex/stage7-premium-ui",
+  "head": "81faa01ca7eab900a5dd4a9ee79c942069f933e1",
+  "dirty": true,
+  "porcelain": "M  .starter-kit/update-report.json\n M artifacts/evidence/rights-manifest.json\n M docs/CODEX_STAGE6_RESPONSIVE_READER_UI.md\n M index.html\n M src/main.mjs\n M src/platform/yandex-sdk.mjs\n M src/styles.css\n M src/ui/input-controller.mjs\n M src/ui/renderer-stage6.mjs\n M tests/unit/dev-server.test.mjs\n M tests/unit/engine.test.mjs\n M tests/unit/sdk.test.mjs\n M tests/unit/ui-contract.test.mjs\n M tools/dev-server.mjs\n?? .ceos-evidence/2026-10-14T04-48-34-807Z-verification/\n?? .ceos-evidence/2026-10-14T05-01-08-308Z-verification/\n?? assets/fonts/\n?? docs/CODEX_STAGE7_AUTOMATIC_LOCALE.md\n?? output/playwright/stage7-baseline-title-1280x720.png\n?? output/playwright/stage7-baseline-title-360x640.png\n?? output/playwright/stage7-baseline-title-390x844.png\n?? output/playwright/stage7/\n?? tools/qa/stage7-browser-acceptance.js\n?? tools/qa/stage7-locale-acceptance.js"
+}

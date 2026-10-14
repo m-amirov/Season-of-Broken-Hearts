@@ -1,0 +1,7 @@
+{
+  "isRepo": true,
+  "branch": "codex/stage7-premium-ui",
+  "head": "81faa01ca7eab900a5dd4a9ee79c942069f933e1",
+  "dirty": true,
+  "porcelain": "M  .starter-kit/update-report.json\n M artifacts/evidence/rights-manifest.json\n M src/styles.css\n M tests/unit/dev-server.test.mjs\n M tests/unit/ui-contract.test.mjs\n M tools/dev-server.mjs\n?? assets/fonts/\n?? output/playwright/stage7-baseline-title-1280x720.png\n?? output/playwright/stage7-baseline-title-360x640.png\n?? output/playwright/stage7-baseline-title-390x844.png\n?? output/playwright/stage7/\n?? tools/qa/stage7-browser-acceptance.js"
+}
