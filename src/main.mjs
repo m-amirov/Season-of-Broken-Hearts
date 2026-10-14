@@ -157,7 +157,7 @@ async function boot() {
       ui.menuView = 'main';
       ui.hasResume = true;
       render();
-      if (ui.introEpisode === null) focusLater(renderer.elements.stage);
+      focusLater(ui.introEpisode !== null ? renderer.elements.episodeIntro : renderer.elements.stage);
     };
 
     const showLanding = () => {
@@ -218,6 +218,7 @@ async function boot() {
         ui.homeOpen = false;
         ui.hasResume = true;
         render();
+        focusLater(ui.introEpisode !== null ? renderer.elements.episodeIntro : renderer.elements.stage);
       },
       onNewGameCancel: () => {
         if (ui.homeOpen) closeMenu();
