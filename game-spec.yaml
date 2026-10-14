@@ -39,8 +39,8 @@ content:
 
 visual:
   artDirection: Mediterranean summer, limestone, sea light, intimate evening contrast
-  assetCreation: placeholder-only
-  productionArtStatus: BLOCKED_ART_PRODUCTION
+  assetCreation: mixed-production-cg-and-placeholders
+  productionArtStatus: EP1_PARTIAL_INTEGRATION
   imageModelPreferred: false
   proceduralFallback: true
   firstGenerationMayBeFinal: false
@@ -68,9 +68,9 @@ accessibility:
 
 localization:
   languages: [ru, en]
-  autoDetectYandexLanguage: false
+  autoDetectYandexLanguage: true
   browserLanguageDetection: true
-  fallback: ru
+  fallback: en
 
 platform:
   cloudSave: false
