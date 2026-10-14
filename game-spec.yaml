@@ -17,6 +17,8 @@ game:
   audience: 16+
   sessionMinutes: 20
   orientation: portrait-first
+  # Mobile portrait is selected in Yandex Games Console; the hosted platform
+  # handles unsupported orientation. No in-game rotate-device overlay exists.
   responsiveModes:
     mobile: portrait-only
     desktop: landscape
