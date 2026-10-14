@@ -16,7 +16,12 @@ function storageRead(key) {
 }
 
 function storageWrite(key, value) {
-  try { window.localStorage.setItem(key, value); } catch { /* private browsing is still playable */ }
+  try {
+    window.localStorage.setItem(key, value);
+    return true;
+  } catch {
+    return false; // Do not report a successful save when storage is unavailable.
+  }
 }
 
 function storageClear(key) {
@@ -113,11 +118,17 @@ async function boot() {
         ui.introEpisode = null;
       }
 
+      // Persist before rendering status, so the UI never claims success without a write.
+      let saveFailed = false;
+      if (!ui.homeOpen) {
+        saveFailed = !storageWrite(SAVE_KEY, engine.save());
+        if (!saveFailed) ui.hasResume = true;
+      }
       const sequence = ++renderSequence;
       const rendered = renderer.render({
         engine,
         assetManager,
-        notice,
+        notice: saveFailed ? UI_TEXT[engine.locale()].saveFailed : notice,
         menuOpen: ui.menuOpen,
         menuView: ui.menuView,
         settings,
@@ -131,10 +142,6 @@ async function boot() {
       rendered.ready.then(() => {
         if (sequence === renderSequence && ui.introEpisode === null && !ui.menuOpen && !ui.homeOpen) controller.unlock();
       });
-      if (!ui.homeOpen) {
-        storageWrite(SAVE_KEY, engine.save());
-        ui.hasResume = true;
-      }
       notice = '';
 
       const scene = engine.currentScene();
