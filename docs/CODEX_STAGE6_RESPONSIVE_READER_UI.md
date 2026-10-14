@@ -1,5 +1,8 @@
 # Codex — Stage 6: Responsive Cinematic Reader UI
 
+> **Orientation policy update (2026-10-14):** Mobile portrait orientation is selected in the Yandex Games Console. The Yandex-hosted platform owns the unsupported-orientation notice; the game must not create a rotate-device overlay, detect touch-landscape to block interaction, or lock orientation through CSS/JavaScript. Desktop remains responsive. Local standalone landscape QA stays unblocked. This update supersedes the old overlay instruction below.
+
+
 **Project:** Season of Broken Hearts — `m-amirov/Season-of-Broken-Hearts`  
 **Reference (read-only):** `m-amirov/kiss-at-the-edge-of-the-world`, especially `src/literary-player.js` and `src/literary.css` on verified main.  
 **Source HEAD for preflight:** `c12faa3f629c24ccc278b049e60bad2d65062138` (refresh before editing).  
@@ -60,7 +63,7 @@ Implement coherent gesture ownership adapted to the existing controller:
 - Support 360×640, 390×844, 430×932, plus narrow/short heights and safe-area insets / on-screen browser bars.
 - Use `100dvh`, `env(safe-area-inset-*)`, and proper content sizing; no horizontal overflow, clipped dialogue, unreachable choices, offscreen top nav or phone keyboard traps.
 - Vertical **image-led** layout: art fills the stage; lower panel overlaps the lower portion. Preserve character faces, major props, and approved asset-specific focal points; the current images are 1024×1536 portrait.
-- On **mobile devices rotated to landscape**, show accessible localized `Поверните устройство / Rotate your device` orientation overlay (CSS/layout-detected landscape small-screen), not a cramped active reader. Preserve game state, pause/block stage gesture, restore instantly on portrait. Check game/catalog orientation metadata appropriate for Yandex; do not assume `screen.orientation.lock()` works in browser. Never apply the rotate overlay to actual desktop landscape windows.
+- Configure **portrait orientation for mobile in the Yandex Games Console**. Do not implement an in-game `Поверните устройство / Rotate your device` screen, touch-landscape guard, or CSS orientation blocker; the hosted platform handles the notice. In a standalone local browser, allow landscape rendering without a blocking overlay. Never block touch-enabled desktop or tablet layouts.
 - A tablet/laptop touch screen should not be misclassified simply because `pointer:coarse`; combine viewport/device heuristics responsibly and test a desktop window resized narrow.
 
 ### PC/desktop: **landscape and resizable**
@@ -107,7 +110,7 @@ Run at least:
 
 Starter Kit semantic `package.json`/config edits require official acceptance workflow, no gate weakening. Do not run final release/media contract as a substitute for this scoped UI stage. No publishing.
 
-Before claiming PASS, inspect screenshots from real browser of **phone portrait, phone landscape orientation overlay, and desktop widescreen**. Only if browser screenshots are truly available and checked, report runtime visual PASS; otherwise mark browser acceptance as BLOCKED/NOT_VERIFIED and explain precise missing evidence.
+Before claiming PASS, inspect screenshots from real browser of **phone portrait, locally rendered phone landscape without an in-game overlay, and desktop widescreen**. Verify the publisher's portrait orientation setting in the Yandex Games Console separately. Only if browser screenshots are truly available and checked, report runtime visual PASS; otherwise mark browser acceptance as BLOCKED/NOT_VERIFIED and explain precise missing evidence.
 
 Keep all unrelated user files, artist source PNGs, canon references and CEOS terminal histories intact. No force-push.
 
