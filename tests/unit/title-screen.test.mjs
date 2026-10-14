@@ -106,8 +106,39 @@ test('startup does not fabricate a save and never starts the episode before titl
   assert.match(source, /homeOpen:\s*true/);
   assert.match(source, /const hasValidSave = Boolean\(saved && engine\.load\(saved\)\)/);
   assert.match(source, /if \(!ui\.homeOpen && engine\.needsEpisodeIntro\(\)\)/);
-  assert.match(source, /if \(!ui\.homeOpen\) \{\s*storageWrite\(SAVE_KEY, engine\.save\(\)\)/s);
+  assert.match(source, /if \(!ui\.homeOpen\) \{\s*saveFailed = !storageWrite\(SAVE_KEY, engine\.save\(\)\);\s*if \(!saveFailed\) ui\.hasResume = true;/s);
   assert.match(source, /homeStartButton\.addEventListener\('click', startReading\)/);
   assert.match(source, /homeResumeButton\.addEventListener\('click', startReading\)/);
   assert.match(source, /if \(!ui\.homeOpen \|\| ui\.hasResume\) storageWrite\(SAVE_KEY, engine\.save\(\)\)/);
+});
+
+test('ordinary reading has no saved badge; storage failure remains visible', t => {
+  const prior = globalThis.document;
+  globalThis.document = { createElement: name => new FakeElement(name) };
+  t.after(() => { if (prior === undefined) delete globalThis.document; else globalThis.document = prior; });
+  const renderer = createRenderer(new FakeElement('main'));
+  const engine = new NarrativeEngine(graph);
+  const assets = { sourceFor: () => '/assets/placeholder-arrival.svg', preloadSceneAsset: () => Promise.resolve() };
+  renderer.render({ engine, assetManager: assets, homeOpen: false, hasResume: true });
+  assert.equal(renderer.elements.status.textContent, '');
+  assert.equal(renderer.elements.status.hidden, true);
+  const warning = 'Не удалось сохранить прогресс. Проверьте настройки браузера.';
+  renderer.render({ engine, assetManager: assets, homeOpen: false, hasResume: true, notice: warning });
+  assert.equal(renderer.elements.status.textContent, warning);
+  assert.equal(renderer.elements.status.hidden, false);
+});
+
+test('font-independent Back arrow is accessible without a glyph', t => {
+  const prior = globalThis.document;
+  globalThis.document = { createElement: name => new FakeElement(name) };
+  t.after(() => { if (prior === undefined) delete globalThis.document; else globalThis.document = prior; });
+  const renderer = createRenderer(new FakeElement('main'));
+  const arrow = renderer.elements.backButton.children[0];
+  assert.equal(arrow.className, 'reader-nav-icon');
+  assert.equal(arrow.textContent ?? '', '');
+  assert.equal(arrow.attributes['aria-hidden'], 'true');
+  const engine = new NarrativeEngine(graph);
+  const assets = { sourceFor: () => '/assets/placeholder-arrival.svg', preloadSceneAsset: () => Promise.resolve() };
+  renderer.render({ engine, assetManager: assets, homeOpen: false, hasResume: true });
+  assert.equal(renderer.elements.backButton.attributes['aria-label'], 'Назад');
 });
