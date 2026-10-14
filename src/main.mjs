@@ -31,14 +31,6 @@ function applySettings(settings) {
   document.body.classList.toggle('reduced-motion', settings.reducedMotion);
 }
 
-function updateOrientationGuard() {
-  const isTouchLandscape = navigator.maxTouchPoints > 0
-    && window.innerWidth > window.innerHeight
-    && window.innerHeight <= 700
-    && window.innerWidth <= 1000;
-  document.documentElement.classList.toggle('touch-landscape', isTouchLandscape);
-}
-
 function showBootError(root, error, locale = 'en') {
   root.replaceChildren();
   const message = document.createElement('p');
@@ -51,9 +43,6 @@ function showBootError(root, error, locale = 'en') {
 async function boot() {
   const root = document.querySelector('#app');
   try {
-    updateOrientationGuard();
-    window.addEventListener('resize', updateOrientationGuard, { passive: true });
-    window.addEventListener('orientationchange', updateOrientationGuard, { passive: true });
     const sdk = await initYandexSdk();
     const platformLocale = resolveLocale(sdk);
     const engine = new NarrativeEngine(graph, { locale: platformLocale });
