@@ -3,31 +3,56 @@
   "start": "ep2_morning_brief",
   "requiredPreviousEpisode": 1,
   "stateSchema": {
-    "routeLocked": { "type": "boolean" },
-    "fakeDatingStatus": { "type": "string", "values": ["none", "active", "ended"] },
-    "fakeDatingTermsKnown": { "type": "boolean" },
-    "biancaRoleKnown": { "type": "boolean" },
-    "biancaTrust": { "type": "string", "values": ["unknown", "professional", "guarded"] },
-    "publicAgreement": { "type": "string", "values": ["unknown", "consented", "declined"] },
-    "consentBoundary": { "type": "string", "values": ["unknown", "clear", "unclear"] },
-    "ep2BudgetChoice": { "type": "string", "values": ["none", "open", "improvise"] },
-    "matteoFutureTalk": { "type": "string", "values": ["none", "open", "deferred"] }
+    "fakeDatingStatus": {
+      "type": "string",
+      "values": ["none", "active", "ended"]
+    },
+    "fakeDatingTermsKnown": {
+      "type": "boolean"
+    },
+    "biancaRoleKnown": {
+      "type": "boolean"
+    },
+    "biancaTrust": {
+      "type": "string",
+      "values": ["unknown", "professional", "guarded"]
+    },
+    "publicAgreement": {
+      "type": "string",
+      "values": ["unknown", "consented", "declined"]
+    },
+    "matteoPublicGesture": {
+      "type": "string",
+      "values": ["none", "hand", "declined"]
+    },
+    "consentBoundary": {
+      "type": "string",
+      "values": ["unknown", "clear", "unclear"]
+    },
+    "ep2BudgetChoice": {
+      "type": "string",
+      "values": ["none", "open", "improvise"]
+    },
+    "matteoFutureTalk": {
+      "type": "string",
+      "values": ["none", "open", "deferred"]
+    }
   },
   "stateSchemaExtensions": {
     "trustMatteo": [2, 3, 4],
     "relationshipMatteo": [2, 3, 4],
-    "staffTrust": [3, 4, 5],
-    "fundingEvidence": [2, 3, 4, 5],
-    "matteoApproach": ["transparent"],
+    "staffTrust": [1, 2, 3, 4, 5],
+    "fundingEvidence": [1, 2, 3, 4, 5],
+    "matteoApproach": ["transparent", "direct"],
     "hotelEvidence": ["documents", "public"]
   },
   "initialState": {
-    "routeLocked": false,
     "fakeDatingStatus": "none",
     "fakeDatingTermsKnown": false,
     "biancaRoleKnown": false,
     "biancaTrust": "unknown",
     "publicAgreement": "unknown",
+    "matteoPublicGesture": "none",
     "consentBoundary": "unknown",
     "ep2BudgetChoice": "none",
     "matteoFutureTalk": "none"
@@ -36,26 +61,38 @@
     {
       "id": "ep2_morning_brief",
       "episode": 2,
-      "title": { "ru": "Договор на семь дней", "en": "A Seven-Day Agreement" },
+      "day": 2,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["wedding-prep-schedule", "nika-work-role"],
+      "title": {"ru": "Договор на семь дней", "en": "A Seven-Day Agreement"},
       "assetId": "ep2-morning-brief-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "На второй день Ника проснулась от звона бокалов во дворе и поняла, что у свадьбы уже есть расписание, а у её собственной работы — только список чужих просьб." },
-          { "speaker": "matteo", "text": "Джулия добавила ещё один пункт. Репетиция, семейный обед и встреча с поставщиком. В таком порядке, если никто не передумает." },
-          { "speaker": "nika", "text": "Люди обычно передумывают, когда им не оставляют места для ответа." },
-          { "speaker": "matteo", "text": "Я заметил. Поэтому пришёл не с решением, а с вопросом." },
-          { "speaker": "nika", "text": "Хорошее начало. Какой вопрос?" },
-          { "speaker": "matteo", "text": "Сможешь помочь мне пережить эту неделю так, чтобы моя семья не приняла рабочую вежливость за обещание?" },
-          { "speaker": null, "text": "Он произнёс это без улыбки. Впервые за утро просьба звучала не как ещё одна строка в его расписании." }
+          {"speaker": null, "text": "На второй день Ника проснулась от звона бокалов во дворе и поняла, что у свадьбы уже есть расписание, а у её собственной работы — только список чужих просьб."},
+          {"speaker": "matteo", "text": "Джулия добавила репетицию, семейный обед и встречу с поставщиком. В таком порядке, если никто не передумает."},
+          {"speaker": "nika", "text": "Люди обычно передумывают, когда им не оставляют места для ответа."},
+          {"speaker": "giulia", "text": "Я оставила место. На плане оно называется «если мама снова решит, что знает лучше»."},
+          {"speaker": "matteo", "text": "Поэтому я пришёл не с решением, а с вопросом."},
+          {"speaker": "nika", "text": "Наконец-то вопрос, который не начинается со слова «срочно»."},
+          {"speaker": "matteo", "text": "Сможешь помочь мне пережить эту неделю так, чтобы моя семья не приняла рабочую вежливость за обещание?"},
+          {"speaker": "nika", "text": "Смогу помочь со свадьбой. С обещаниями разбирайтесь сами — я уже однажды взяла чужие на себя."},
+          {"speaker": null, "text": "В папке лежали две накладные на белое бельё: одна оплачена, вторая отмечена как срочная. Ника сверила даты и увидела, что поставщик получил один и тот же заказ дважды."},
+          {"speaker": "nika", "text": "Начнём с того, что кто-то здесь платит за одну простыню два раза."},
+          {"speaker": "giulia", "text": "Отлично. Если ты спасёшь бюджет до завтрака, я отменю тост про семейную интуицию."}
         ],
         "en": [
-          { "speaker": null, "text": "On the second morning, Nika woke to the clink of glasses in the courtyard and realized the wedding already had a schedule while her own work had only a list of other people's requests." },
-          { "speaker": "matteo", "text": "Giulia added another item. Rehearsal, family lunch, and a supplier meeting. In that order, unless someone changes their mind." },
-          { "speaker": "nika", "text": "People usually change their minds when no one leaves them room to answer." },
-          { "speaker": "matteo", "text": "I noticed. That is why I came with a question, not a decision." },
-          { "speaker": "nika", "text": "Good start. What is the question?" },
-          { "speaker": "matteo", "text": "Can you help me survive this week without my family mistaking professional courtesy for a promise?" },
-          { "speaker": null, "text": "He said it without a smile. For the first time that morning, the request did not sound like another line in his schedule." }
+          {"speaker": null, "text": "On the second morning, Nika woke to glasses clinking in the courtyard and realized the wedding already had a schedule while her own job had only a list of other people's requests."},
+          {"speaker": "matteo", "text": "Giulia added the rehearsal, family lunch, and a supplier meeting. In that order, unless someone changes their mind."},
+          {"speaker": "nika", "text": "People usually change their minds when no one leaves them room to answer."},
+          {"speaker": "giulia", "text": "I left room. On the plan it is labelled ‘if Mum decides she knows best again’."},
+          {"speaker": "matteo", "text": "That is why I came with a question, not a decision."},
+          {"speaker": "nika", "text": "At last, a question that does not begin with ‘urgent’."},
+          {"speaker": "matteo", "text": "Can you help me survive this week without my family mistaking professional courtesy for a promise?"},
+          {"speaker": "nika", "text": "I can help with the wedding. Promises are your department. I have already taken someone else's on as my own."},
+          {"speaker": null, "text": "Two invoices for white linen lay in the folder: one paid, the other marked urgent. Nika checked the dates and saw that the supplier had received the same order twice."},
+          {"speaker": "nika", "text": "We will start with whoever is paying twice for one tablecloth."},
+          {"speaker": "giulia", "text": "Perfect. If you save the budget before breakfast, I will cancel the toast about family intuition."}
         ]
       },
       "next": "ep2_wedding_budget"
@@ -63,64 +100,173 @@
     {
       "id": "ep2_wedding_budget",
       "episode": 2,
-      "title": { "ru": "Смета без фокусов", "en": "A Budget Without Tricks" },
+      "day": 2,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo"],
+      "knowledgeDelta": ["reserve-cut", "staff-budget-risk"],
+      "title": {"ru": "Смета без фокусов", "en": "A Budget Without Tricks"},
       "assetId": "ep2-wedding-budget-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "nika", "text": "Сначала смета. Если праздник держится на невысказанных обещаниях, он развалится ещё до первого тоста." },
-          { "speaker": "matteo", "text": "Смета держится на том, что я урезал резерв для команды." },
-          { "speaker": "nika", "text": "Тогда это не резерв. Это долг, который вы записали на людей, у которых нет права возражать." },
-          { "speaker": "matteo", "text": "Есть два часа до встречи с семьёй. Что ты предлагаешь?" },
-          { "speaker": null, "text": "В таблице оставались два честных пути: открыть цифры тем, кого они затрагивают, или успеть собрать красивую версию до того, как вопросы станут громкими." }
+          {"speaker": null, "text": "Маттео разложил на столе счета, как карты, которые не обещали выигрыша. На последней странице Ника увидела строку «резерв на персонал» — уменьшенную ровно на сумму второго заказа."},
+          {"speaker": "nika", "text": "Сначала смета. Если праздник держится на невысказанных обещаниях, он развалится ещё до первого тоста."},
+          {"speaker": "matteo", "text": "Я урезал резерв, чтобы не сорвать оплату музыкантам."},
+          {"speaker": "nika", "text": "Тогда это не резерв. Это долг, который вы записали на людей, у которых нет права возражать."},
+          {"speaker": "matteo", "text": "Есть два часа до встречи с семьёй. Что ты предлагаешь?"},
+          {"speaker": "nika", "text": "Либо показать команде настоящую дыру и вместе убрать лишнее, либо собрать временное решение и честно назвать его временным."},
+          {"speaker": "matteo", "text": "Второе оставит мне время до вечера."},
+          {"speaker": "nika", "text": "И оставит команде сюрприз на завтра."},
+          {"speaker": null, "text": "Он не стал спорить. Просто придвинул к ней обе версии таблицы."}
         ],
         "en": [
-          { "speaker": "nika", "text": "The budget first. If a celebration rests on unspoken promises, it will fall apart before the first toast." },
-          { "speaker": "matteo", "text": "The budget rests on a reserve I cut from the team." },
-          { "speaker": "nika", "text": "Then it is not a reserve. It is a debt written against people who have no right to object." },
-          { "speaker": "matteo", "text": "We have two hours before the family meeting. What do you suggest?" },
-          { "speaker": null, "text": "The spreadsheet offered two honest paths: open the figures to the people they affected, or assemble a beautiful version before the questions grew loud." }
+          {"speaker": null, "text": "Matteo spread the bills across the desk like cards that promised no one a win. On the last page, Nika found a line marked ‘staff reserve’, reduced by exactly the cost of the duplicate order."},
+          {"speaker": "nika", "text": "We start with the budget. If a celebration rests on promises nobody says aloud, it will fall apart before the first toast."},
+          {"speaker": "matteo", "text": "I cut the reserve so the musicians could be paid on time."},
+          {"speaker": "nika", "text": "Then it is not a reserve. It is a debt written onto people who have no room to object."},
+          {"speaker": "matteo", "text": "We have two hours before the family meeting. What do you suggest?"},
+          {"speaker": "nika", "text": "Either show the team the real hole and remove something together, or make a temporary plan and call it temporary."},
+          {"speaker": "matteo", "text": "The second gives me time until tonight."},
+          {"speaker": "nika", "text": "And gives the team a surprise tomorrow."},
+          {"speaker": null, "text": "He did not argue. He simply moved both versions of the table towards her."}
         ]
       },
       "choices": [
         {
           "id": "ep2_budget_open",
-          "label": { "ru": "Показать команде реальные цифры", "en": "Show the team the real numbers" },
-          "to": "ep2_family_rehearsal",
-          "effects": { "ep2BudgetChoice": "open", "staffTrust": 1, "fundingEvidence": 1, "hotelEvidence": "documents" }
+          "label": {"ru": "Показать команде реальные цифры", "en": "Show the team the real numbers"},
+          "to": "ep2_workday_inventory",
+          "effects": {"ep2BudgetChoice": "open", "staffTrust": 1, "fundingEvidence": 1, "hotelEvidence": "documents"}
         },
         {
           "id": "ep2_budget_improvise",
-          "label": { "ru": "Собрать временное решение до встречи", "en": "Build a temporary solution before the meeting" },
-          "to": "ep2_family_rehearsal",
-          "effects": { "ep2BudgetChoice": "improvise", "staffTrust": 0, "fundingEvidence": 0 }
+          "label": {"ru": "Собрать временное решение до встречи", "en": "Build a temporary solution before the meeting"},
+          "to": "ep2_workday_inventory",
+          "effects": {"ep2BudgetChoice": "improvise", "staffTrust": 0, "fundingEvidence": 0}
         }
       ]
     },
     {
+      "id": "ep2_workday_inventory",
+      "episode": 2,
+      "day": 2,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "matteo"],
+      "knowledgeDelta": ["reserve-cut-observed", "duplicate-order-corrected"],
+      "title": {"ru": "Работа до тоста", "en": "Work Before the Toast"},
+      "assetId": "ep2-workday-inventory-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Ника не понесла таблицу в семью сразу. Сначала она прошла по служебному коридору, сверила коробки и нашла шесть наборов бокалов, записанных как четыре."},
+          {"speaker": "matteo", "text": "Ты могла просто отправить письмо поставщику."},
+          {"speaker": "nika", "text": "Письмо не заметит, что официантка уже переносит два подноса одна."},
+          {"speaker": null, "text": "Старшая официантка Лаура остановилась у двери, услышав своё имя в таблице смен."},
+          {"speaker": "nika", "text": "Лаура, мне нужно знать, что реально можно переставить, а что уже держится на чужой спине."},
+          {"speaker": "matteo", "text": "Она не должна разбирать это вместо администрации."},
+          {"speaker": "nika", "text": "Не должна. Поэтому администрация сейчас слушает."},
+          {"speaker": null, "text": "Лаура назвала два часа, которые можно освободить, и одну смену, которую нельзя сокращать без потери людей. Ника зачеркнула красивую, но пустую строку в плане."},
+          {"speaker": "nika", "text": "Вот так и выглядит работа организатора: праздник начинается с того, что кто-то перестаёт считать сотрудников расходным материалом."},
+          {"speaker": null, "text": "Маттео поставил подпись рядом с её исправлением. Не попросил оставить решение за ним — просто подписал."},
+          {"speaker": null, "text": "Если бы они открыли цифры, команда получила место для возражения до репетиции. Если бы отложили разговор, красивый план пришлось бы удерживать руками тех, кого из него вычеркнули.", "when": {"ep2BudgetChoice": "improvise"}},
+          {"speaker": null, "text": "Открытая таблица уже лежала у Лауры на телефоне. Ника видела, как раздражение сменилось рабочим вопросом — это было меньше похоже на спасение и больше на нормальную смену.", "when": {"ep2BudgetChoice": "open"}}
+        ],
+        "en": [
+          {"speaker": null, "text": "Nika did not take the table to the family straight away. She walked the service corridor first, checked the boxes, and found six sets of glasses recorded as four."},
+          {"speaker": "matteo", "text": "You could have sent the supplier an email."},
+          {"speaker": "nika", "text": "An email would not notice that a server is already carrying two trays alone."},
+          {"speaker": null, "text": "Laura, the senior server, stopped at the door when she heard her name in the shift table."},
+          {"speaker": "nika", "text": "Laura, I need to know what can actually move and what is already balanced on someone else's back."},
+          {"speaker": "matteo", "text": "She should not have to sort this out for management."},
+          {"speaker": "nika", "text": "She should not. That is why management is listening now."},
+          {"speaker": null, "text": "Laura named two hours they could free and one shift they could not cut without losing people. Nika crossed out a beautiful, empty line in the plan."},
+          {"speaker": "nika", "text": "This is what an organiser's work looks like: the celebration starts when someone stops counting staff as disposable."},
+          {"speaker": null, "text": "Matteo signed beside her correction. He did not ask to keep the decision for himself. He simply signed."},
+          {"speaker": null, "text": "If they opened the numbers, the team got room to object before the rehearsal. If they delayed, the pretty plan would have to be held together by the people it erased.", "when": {"ep2BudgetChoice": "improvise"}},
+          {"speaker": null, "text": "The open table was already on Laura's phone. Nika watched irritation turn into a practical question. It looked less like rescue and more like a normal shift.", "when": {"ep2BudgetChoice": "open"}}
+        ]
+      },
+      "next": "ep2_family_rehearsal"
+    },
+    {
       "id": "ep2_family_rehearsal",
       "episode": 2,
-      "title": { "ru": "Репетиция семьи", "en": "Family Rehearsal" },
+      "day": 3,
+      "location": "villa-courtyard",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["giulia-wedding-priority", "family-pressure-visible"],
+      "title": {"ru": "Репетиция семьи", "en": "The Family Rehearsal"},
       "assetId": "ep2-family-rehearsal-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "giulia", "text": "Если кто-нибудь ещё раз переставит цветы, я выйду замуж за человека, который умеет читать план зала." },
-          { "speaker": "matteo", "text": "Я читаю планы. Просто не всегда успеваю их защищать." },
-          { "speaker": "nika", "text": "Это не проблема плана. Это проблема того, что все считают ваше молчание согласием." },
-          { "speaker": null, "when": { "ep2BudgetChoice": "open" }, "text": "Когда Ника развернула смету перед старшей официанткой, та не улыбнулась — зато задала первый вопрос по делу." },
-          { "speaker": null, "when": { "ep2BudgetChoice": "improvise" }, "text": "Ника спрятала временную таблицу до конца репетиции. Праздник выглядел спокойнее, но спокойствие оказалось взятым взаймы." },
-          { "speaker": "giulia", "text": "Маттео, ты наконец привёл человека, который говорит до того, как загорится кухня." },
-          { "speaker": "matteo", "text": "Я привёл человека, который не обязан меня спасать." },
-          { "speaker": null, "text": "Взгляд Джулии задержался на них дольше, чем требовала шутка." }
+          {"speaker": null, "text": "К полудню двор превратился в спор между двумя рядами стульев. Один вёл к морю, другой — к столу, за которым старшие Риччи уже распределяли тосты."},
+          {"speaker": "giulia", "text": "Если кто-нибудь ещё раз переставит цветы, я выйду замуж за человека, который умеет читать план зала."},
+          {"speaker": "matteo", "text": "Я читаю планы. Просто не всегда успеваю их защищать."},
+          {"speaker": "nika", "text": "План здесь ни при чём. Все считают ваше молчание согласием — включая вас."},
+          {"speaker": "giulia", "text": "Я хочу свадьбу, на которой меня не будут показывать как доказательство, что наша семья всё ещё умеет быть счастливой."},
+          {"speaker": "matteo", "text": "Это не то, что мы собирались делать."},
+          {"speaker": "giulia", "text": "Вы собирались сделать это очень красиво. Иногда разница только в бюджете."},
+          {"speaker": null, "text": "Ника сняла со схемы лишнюю сцену и поставила вместо неё тент для дождя. Впервые за утро Джулия посмотрела не на брата, а на собственный план."},
+          {"speaker": "nika", "text": "У тебя есть два часа. Что важнее: идеальная картинка или место, где ты сама сможешь сказать «да»?"},
+          {"speaker": "giulia", "text": "Место. Картинка пусть догоняет."}
         ],
         "en": [
-          { "speaker": "giulia", "text": "If one more person moves the flowers, I am marrying someone who can read a room plan." },
-          { "speaker": "matteo", "text": "I can read plans. I do not always manage to defend them." },
-          { "speaker": "nika", "text": "That is not a planning problem. It is a problem of everyone treating your silence as consent." },
-          { "speaker": null, "when": { "ep2BudgetChoice": "open" }, "text": "When Nika unfolded the budget for the senior server, the woman did not smile — but she asked the first useful question." },
-          { "speaker": null, "when": { "ep2BudgetChoice": "improvise" }, "text": "Nika kept the temporary table hidden until rehearsal ended. The celebration looked calmer, but the calm had been borrowed." },
-          { "speaker": "giulia", "text": "Matteo, you finally brought someone who speaks before the kitchen catches fire." },
-          { "speaker": "matteo", "text": "I brought someone who is not obliged to save me." },
-          { "speaker": null, "text": "Giulia's gaze stayed on them longer than the joke required." }
+          {"speaker": null, "text": "By noon the courtyard had become an argument between two rows of chairs. One faced the sea; the other faced the table where the senior Riccis were already assigning toasts."},
+          {"speaker": "giulia", "text": "If anyone moves the flowers again, I will marry someone who can read a floor plan."},
+          {"speaker": "matteo", "text": "I can read plans. I do not always manage to defend them."},
+          {"speaker": "nika", "text": "The plan is not the problem. Everyone treats your silence as agreement, including you."},
+          {"speaker": "giulia", "text": "I want a wedding where I am not displayed as proof that our family still knows how to be happy."},
+          {"speaker": "matteo", "text": "That is not what we meant to do."},
+          {"speaker": "giulia", "text": "You meant to do it beautifully. Sometimes the difference is only the budget."},
+          {"speaker": null, "text": "Nika removed an unnecessary stage from the layout and replaced it with a rain canopy. For the first time that morning, Giulia looked at her own plan instead of her brother."},
+          {"speaker": "nika", "text": "You have two hours. What matters more: a perfect picture or a place where you can say yes yourself?"},
+          {"speaker": "giulia", "text": "The place. The picture can catch up."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep2_giulia_personal_plan",
+          "label": {"ru": "Оставить Джулии её собственный план", "en": "Keep Giulia's own plan"},
+          "to": "ep2_family_rehearsal_response",
+          "effects": {"staffTrust": 2}
+        },
+        {
+          "id": "ep2_giulia_family_plan",
+          "label": {"ru": "Сохранить семейный формат без нового спора", "en": "Keep the family format without another fight"},
+          "to": "ep2_family_rehearsal_response",
+          "effects": {"staffTrust": 1}
+        }
+      ]
+    },
+    {
+      "id": "ep2_family_rehearsal_response",
+      "episode": 2,
+      "day": 3,
+      "location": "family-dining-room",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["giulia-plan-respected"],
+      "title": {"ru": "Право на свою свадьбу", "en": "Her Own Wedding"},
+      "assetId": "ep2-family-rehearsal-response-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Джулия сама перенесла карточки гостей. Маттео открыл рот, чтобы остановить её, но Ника уже убрала из прохода коробки с бокалами."},
+          {"speaker": "giulia", "text": "Спасибо. Я не хотела, чтобы ты спасал мою свадьбу. Я хотела, чтобы ты перестал подписывать за меня решения."},
+          {"speaker": "matteo", "text": "Я понял."},
+          {"speaker": "nika", "text": "Понимание обычно проверяют не словами, а тем, кто держит список через час."},
+          {"speaker": "matteo", "text": "Тогда список у Джулии."},
+          {"speaker": null, "text": "Он отдал ей планшет. Это не исправляло привычку Маттео управлять всем сразу, но впервые меняло её последствия в тот же день."},
+          {"speaker": "giulia", "text": "А теперь о семейной проблеме, которую вы оба обходите вокруг стола."},
+          {"speaker": "nika", "text": "Я не семейная проблема."},
+          {"speaker": "giulia", "text": "Нет. Ты человек, которого мой брат попросил стать удобным объяснением. Я просто хочу понять, согласилась ли ты."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Giulia moved the place cards herself. Matteo opened his mouth to stop her, but Nika had already cleared the glass boxes from the aisle."},
+          {"speaker": "giulia", "text": "Thank you. I did not want you to save my wedding. I wanted you to stop signing decisions for me."},
+          {"speaker": "matteo", "text": "I understand."},
+          {"speaker": "nika", "text": "Understanding is usually tested by who is holding the list an hour later."},
+          {"speaker": "matteo", "text": "Then the list is Giulia's."},
+          {"speaker": null, "text": "He handed her the tablet. It did not undo Matteo's habit of managing everything at once, but it changed its consequences that same day."},
+          {"speaker": "giulia", "text": "Now, about the family problem you are both circling around the table."},
+          {"speaker": "nika", "text": "I am not a family problem."},
+          {"speaker": "giulia", "text": "No. You are the person my brother asked to become a convenient explanation. I want to know whether you agreed."}
         ]
       },
       "next": "ep2_fake_terms"
@@ -128,94 +274,254 @@
     {
       "id": "ep2_fake_terms",
       "episode": 2,
-      "title": { "ru": "Условия вслух", "en": "Terms Said Aloud" },
+      "day": 4,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo"],
+      "knowledgeDelta": ["fake-dating-scope", "consent-boundaries"],
+      "title": {"ru": "Условия вслух", "en": "Terms Out Loud"},
       "assetId": "ep2-fake-terms-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "matteo", "text": "Моя семья уже решила, что мы вместе. Я могу попросить их остановиться, но тогда Джулия получит ещё один семейный скандал перед свадьбой." },
-          { "speaker": "nika", "text": "Ты просишь меня сыграть роль, чтобы не произносить неудобную правду." },
-          { "speaker": "matteo", "text": "Я прошу только то, на что ты сама согласишься. Публичные жесты — по предварительному вопросу. Личные разговоры — не часть сделки." },
-          { "speaker": "nika", "text": "И срок?" },
-          { "speaker": "matteo", "text": "Семь дней. Или меньше, если ты скажешь остановиться." },
-          { "speaker": null, "text": "Он вытащил чистый лист. Ника заметила, что Маттео впервые пытался не угадать её ответ, а оставить его ей." }
+          {"speaker": null, "text": "Маттео положил на стол чистый лист. Не договор с печатью, а список того, что можно предложить и что нельзя выдавать за согласие."},
+          {"speaker": "matteo", "text": "Моя семья уже решила, что мы вместе. Я могу попросить их остановиться, но тогда Джулия получит ещё один семейный скандал перед свадьбой."},
+          {"speaker": "nika", "text": "Ты просишь меня сыграть роль, чтобы не произносить неудобную правду."},
+          {"speaker": "matteo", "text": "Я предлагаю тебе выбрать. Семь дней публичной договорённости, только семейные события. Личные разговоры и прикосновения не входят в сделку."},
+          {"speaker": "nika", "text": "Публичные жесты — по предварительному вопросу. Поцелуи — никогда не подразумеваются. Работа — отдельно."},
+          {"speaker": "matteo", "text": "Да."},
+          {"speaker": "nika", "text": "А если я скажу нет?"},
+          {"speaker": "matteo", "text": "Ты останешься организатором свадьбы и сезона. Я объясню семье, что это моя просьба, а не твоя вина."},
+          {"speaker": "nika", "text": "И ты не уберёшь меня с проекта, если Бьянка увидит отказ?"},
+          {"speaker": "matteo", "text": "Нет. Если я связываю работу с этим ответом, это уже не договор, а давление."},
+          {"speaker": null, "text": "Он оставил ручку между ними. Не подтолкнул к ней и не убрал лист, когда Ника замолчала."}
         ],
         "en": [
-          { "speaker": "matteo", "text": "My family has already decided we are together. I can ask them to stop, but Giulia will get another family crisis before her wedding." },
-          { "speaker": "nika", "text": "You are asking me to play a role so you do not have to say an uncomfortable truth." },
-          { "speaker": "matteo", "text": "I am asking only for what you choose. Public gestures require a question first. Private conversations are not part of the deal." },
-          { "speaker": "nika", "text": "And the term?" },
-          { "speaker": "matteo", "text": "Seven days. Or less if you tell me to stop." },
-          { "speaker": null, "text": "He pulled out a blank sheet. Nika noticed that Matteo was trying, for once, not to guess her answer but to leave it to her." }
+          {"speaker": null, "text": "Matteo placed a blank sheet on the desk. Not a stamped contract, just a list of what could be offered and what could not be treated as consent."},
+          {"speaker": "matteo", "text": "My family has already decided we are together. I can ask them to stop, but then Giulia gets another family scandal before her wedding."},
+          {"speaker": "nika", "text": "You are asking me to play a role so you do not have to say the uncomfortable truth."},
+          {"speaker": "matteo", "text": "I am offering you a choice. Seven days of a public arrangement, family events only. Private conversation and touch are not part of it."},
+          {"speaker": "nika", "text": "Public gestures require a question first. Kisses are never implied. Work stays separate."},
+          {"speaker": "matteo", "text": "Yes."},
+          {"speaker": "nika", "text": "And if I say no?"},
+          {"speaker": "matteo", "text": "You remain the season and wedding organiser. I will tell my family it was my request, not your fault."},
+          {"speaker": "nika", "text": "And you will not remove me from the project because Bianca sees a refusal?"},
+          {"speaker": "matteo", "text": "No. If I tie your job to this answer, it is pressure, not an agreement."},
+          {"speaker": null, "text": "He left the pen between them. He did not push it closer or take the sheet away when Nika fell silent."}
         ]
       },
       "choices": [
         {
           "id": "ep2_terms_public",
-          "label": { "ru": "Согласиться на публичную договорённость", "en": "Agree to the public arrangement" },
+          "label": {"ru": "Согласиться на публичную договорённость", "en": "Agree to the public arrangement"},
           "to": "ep2_bianca_arrives",
-          "effects": { "fakeDatingStatus": "active", "fakeDatingTermsKnown": true, "trustMatteo": 1, "relationshipMatteo": 1, "matteoApproach": "transparent" }
+          "effects": {"fakeDatingStatus": "active", "fakeDatingTermsKnown": true, "publicAgreement": "consented", "consentBoundary": "clear", "trustMatteo": 1, "relationshipMatteo": 1, "matteoApproach": "transparent"}
         },
         {
           "id": "ep2_terms_limits",
-          "label": { "ru": "Согласиться только при жёстких границах", "en": "Agree only with firm boundaries" },
+          "label": {"ru": "Согласиться только при жёстких границах", "en": "Agree only with firm boundaries"},
           "to": "ep2_bianca_arrives",
-          "effects": { "fakeDatingStatus": "active", "fakeDatingTermsKnown": true, "trustMatteo": 1, "relationshipMatteo": 0, "matteoApproach": "direct" }
+          "effects": {"fakeDatingStatus": "active", "fakeDatingTermsKnown": true, "publicAgreement": "consented", "consentBoundary": "clear", "trustMatteo": 1, "relationshipMatteo": 0, "matteoApproach": "direct"}
+        },
+        {
+          "id": "ep2_terms_decline",
+          "label": {"ru": "Отказаться от договорённости", "en": "Decline the arrangement"},
+          "to": "ep2_refusal_response",
+          "effects": {"fakeDatingStatus": "none", "fakeDatingTermsKnown": true, "publicAgreement": "declined", "consentBoundary": "clear", "trustMatteo": 1, "relationshipMatteo": 0, "matteoApproach": "direct", "matteoFutureTalk": "deferred"}
         }
       ]
     },
     {
+      "id": "ep2_refusal_response",
+      "episode": 2,
+      "day": 4,
+      "location": "family-dining-room",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["agreement-refused-without-work-penalty"],
+      "title": {"ru": "Нет — это тоже ответ", "en": "No Is an Answer Too"},
+      "assetId": "ep2-refusal-response-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Маттео сообщил Джулии до семейного ужина. Он не попросил Нику присутствовать и не назвал отказ причиной сорванного плана."},
+          {"speaker": "giulia", "text": "Ты сказал им, что я не должна строить свадьбу на чужой роли?"},
+          {"speaker": "matteo", "text": "Сказал, что попросил Нику и получил отказ."},
+          {"speaker": "giulia", "text": "И никто не будет делать из неё виноватую?"},
+          {"speaker": "matteo", "text": "Не будет."},
+          {"speaker": "nika", "text": "Я всё ещё могу собрать твою репетицию. Просто не буду стоять рядом с Маттео в качестве доказательства семейного мира."},
+          {"speaker": "giulia", "text": "Тогда у меня впервые появилась свадьба, а не семейный спектакль. Это уже улучшение."},
+          {"speaker": null, "text": "Маттео убрал из общего календаря пометку «пара». Рядом остались её рабочие задачи, те же сроки и та же ставка."},
+          {"speaker": "nika", "text": "Если это исчезнет из моего договора завтра, я узнаю."},
+          {"speaker": "matteo", "text": "Поэтому я оставил копию у тебя."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Matteo told Giulia before the family dinner. He did not ask Nika to attend or call the refusal the reason the plan had failed."},
+          {"speaker": "giulia", "text": "Did you tell them I should not build my wedding around someone else's role?"},
+          {"speaker": "matteo", "text": "I told them I asked Nika and she said no."},
+          {"speaker": "giulia", "text": "And nobody is going to make her the villain?"},
+          {"speaker": "matteo", "text": "Nobody will."},
+          {"speaker": "nika", "text": "I can still run your rehearsal. I just will not stand beside Matteo as proof that the family is at peace."},
+          {"speaker": "giulia", "text": "Then I have a wedding for the first time, not a family performance. That is already an improvement."},
+          {"speaker": null, "text": "Matteo removed the label ‘couple’ from the shared calendar. Her work tasks remained beside it, with the same deadlines and rate."},
+          {"speaker": "nika", "text": "If that disappears from my contract tomorrow, I will know."},
+          {"speaker": "matteo", "text": "That is why I left a copy with you."}
+        ]
+      },
+      "next": "ep2_refusal_workday"
+    },
+    {
+      "id": "ep2_refusal_workday",
+      "episode": 2,
+      "day": 5,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "giulia", "matteo"],
+      "knowledgeDelta": ["professional-collaboration-preserved", "wedding-risk-replanned"],
+      "title": {"ru": "Работа без алиби", "en": "Work Without an Alibi"},
+      "assetId": "ep2-refusal-workday-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "К вечеру отказ перестал быть новостью и стал рабочим условием. Заказчик цветов прислал неверную палитру, а дождь пришёл на два часа раньше прогноза."},
+          {"speaker": "giulia", "text": "Скажи, что ты бы сделала, если бы не пришлось одновременно выглядеть влюблённой в моего брата."},
+          {"speaker": "nika", "text": "Убрала бы сцену. Перенесла бы тент ближе к кухне. И не обещала бы гостям сухие туфли."},
+          {"speaker": "matteo", "text": "Это звучит не очень празднично."},
+          {"speaker": "nika", "text": "Зато честно. Праздник не обязан быть идеальным, чтобы не стать дорогим провалом."},
+          {"speaker": null, "text": "На столе лежали два плана: в одном Ника брала на себя разговор с семьёй, в другом оставляла решение Джулии и только переставляла людей."},
+          {"speaker": "giulia", "text": "Я хочу сама сказать матери про тент."},
+          {"speaker": "nika", "text": "Тогда я буду рядом как организатор, не как твоя защитная ширма."}
+        ],
+        "en": [
+          {"speaker": null, "text": "By evening the refusal had stopped being news and become a working condition. The florist sent the wrong palette, and the rain arrived two hours before the forecast."},
+          {"speaker": "giulia", "text": "Tell me what you would do if you did not also have to look in love with my brother."},
+          {"speaker": "nika", "text": "Remove the stage. Move the canopy closer to the kitchen. And stop promising guests dry shoes."},
+          {"speaker": "matteo", "text": "That does not sound very festive."},
+          {"speaker": "nika", "text": "It sounds honest. A celebration does not have to be perfect to avoid becoming an expensive failure."},
+          {"speaker": null, "text": "Two plans lay on the table. In one, Nika took the family conversation. In the other, Giulia kept the decision and Nika only moved the people."},
+          {"speaker": "giulia", "text": "I want to tell my mother about the canopy myself."},
+          {"speaker": "nika", "text": "Then I will stand beside you as the organiser, not as your shield."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep2_refusal_help_giulia",
+          "label": {"ru": "Помочь Джулии провести разговор самой", "en": "Help Giulia lead the conversation herself"},
+          "to": "ep2_refusal_bianca_arrival",
+          "effects": {"staffTrust": 2, "fundingEvidence": 1, "matteoFutureTalk": "deferred"}
+        },
+        {
+          "id": "ep2_refusal_keep_role",
+          "label": {"ru": "Остаться в рамках своей роли", "en": "Stay within the professional role"},
+          "to": "ep2_refusal_bianca_arrival",
+          "effects": {"staffTrust": 1, "fundingEvidence": 1, "matteoFutureTalk": "deferred"}
+        }
+      ]
+    },
+    {
+      "id": "ep2_refusal_bianca_arrival",
+      "episode": 2,
+      "day": 6,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "bianca"],
+      "knowledgeDelta": ["bianca-role", "aurea-business-case"],
+      "title": {"ru": "Бьянка без семейной роли", "en": "Bianca Without a Family Role"},
+      "assetId": "ep2-refusal-bianca-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Бьянка приехала с папкой и не посмотрела на общий календарь. В нём больше не было пометки о паре — только имя Ники, должность и срок договора."},
+          {"speaker": "bianca", "text": "Бьянка Моретти. Я представляю Aurea Hospitality по аудиту, а не семейную комиссию по вашим улыбкам."},
+          {"speaker": "nika", "text": "Улыбки отменились. Рабочие вопросы остались."},
+          {"speaker": "bianca", "text": "Это хороший способ начать. Мне нужны цифры, сроки и имена ответственных. Не жертвы и не герои."},
+          {"speaker": "matteo", "text": "Если это приглашение к продаже, выбери другой стол."},
+          {"speaker": "bianca", "text": "Это приглашение проверить, способен ли отель платить людям без красивого фасада. Покупка — один из вариантов, не единственный."},
+          {"speaker": "nika", "text": "Тогда дайте нам таблицу, которую можно проверить, и не называйте мой отказ частью финансового риска."},
+          {"speaker": "bianca", "text": "Я пришла именно за цифрами. Личная жизнь владельца в отчёт не войдёт."},
+          {"speaker": null, "text": "Бьянка положила визитку рядом со сметой. Ника впервые увидела в ней не бывшую невесту Маттео, а человека, который защищал собственную сделку от эмоционального шума."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Bianca arrived with a folder and did not look at the shared calendar. It no longer had a couple's label, only Nika's name, job, and contract dates."},
+          {"speaker": "bianca", "text": "Bianca Moretti. I represent Aurea Hospitality for the audit, not a family committee judging your smiles."},
+          {"speaker": "nika", "text": "The smiles are cancelled. The work remains."},
+          {"speaker": "bianca", "text": "A good place to start. I need numbers, dates, and people responsible. Not victims or heroes."},
+          {"speaker": "matteo", "text": "If this is an invitation to sell, choose another table."},
+          {"speaker": "bianca", "text": "It is an invitation to test whether the hotel can pay people without a beautiful facade. A purchase is one option, not the only one."},
+          {"speaker": "nika", "text": "Then give us a table we can check, and do not count my refusal as a financial risk."},
+          {"speaker": "bianca", "text": "I came for the numbers. The owner's personal life will not enter the report."},
+          {"speaker": null, "text": "Bianca placed her card beside the budget. For the first time, Nika saw not Matteo's former fiancée but someone protecting her own deal from emotional noise."}
+        ]
+      },
+      "next": "ep2_rehearsal_failure"
+    },
+    {
       "id": "ep2_bianca_arrives",
       "episode": 2,
-      "title": { "ru": "Бьянка из Aurea", "en": "Bianca from Aurea" },
+      "day": 6,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "bianca"],
+      "knowledgeDelta": ["bianca-role", "aurea-business-case"],
+      "title": {"ru": "Бьянка из Aurea", "en": "Bianca from Aurea"},
       "assetId": "ep2-bianca-arrives-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "bianca", "text": "Бьянка Моретти. Я представляю Aurea Hospitality по текущему аудиту, а не семейную комиссию по вашим улыбкам." },
-          { "speaker": "nika", "text": "Хорошо. У нас и так достаточно людей, которые делают выводы по улыбкам." },
-          { "speaker": "bianca", "text": "Тогда мы договоримся о языке. Мне нужны цифры, сроки и имена ответственных. Не жертвы и не герои." },
-          { "speaker": "matteo", "text": "Бьянка, если это приглашение к продаже, выбери другой стол." },
-          { "speaker": "bianca", "text": "Это приглашение сначала посмотреть, что именно вы готовы защищать. Покупка — только один из вариантов." },
-          { "speaker": null, "text": "Она положила визитку рядом со сметой и не посмотрела на их сцепленные руки. Это было почти облегчением." }
+          {"speaker": null, "text": "Бьянка пришла ровно к назначенному времени и сначала проверила не их лица, а папку со сметой."},
+          {"speaker": "bianca", "text": "Бьянка Моретти. Я представляю Aurea Hospitality по текущему аудиту, а не семейную комиссию по вашим улыбкам."},
+          {"speaker": "nika", "text": "Хорошо. У нас и так достаточно людей, которые делают выводы по улыбкам."},
+          {"speaker": "bianca", "text": "Тогда договоримся о языке. Мне нужны цифры, сроки и имена ответственных. Не жертвы и не герои."},
+          {"speaker": "matteo", "text": "Бьянка, если это приглашение к продаже, выбери другой стол."},
+          {"speaker": "bianca", "text": "Это приглашение сначала посмотреть, что именно вы готовы защищать. Покупка — только один из вариантов."},
+          {"speaker": "nika", "text": "И если мы продолжаем публичную роль, она не даёт Aurea права считать нас согласными на ваши условия."},
+          {"speaker": "bianca", "text": "Публичная роль не заменяет подпись. Это я как раз умею отличать."},
+          {"speaker": null, "text": "Она положила визитку рядом со сметой и не посмотрела на их сцепленные руки. Это было почти облегчением."}
         ],
         "en": [
-          { "speaker": "bianca", "text": "Bianca Moretti. I represent Aurea Hospitality on the current audit, not a family committee judging your smiles." },
-          { "speaker": "nika", "text": "Good. We already have enough people drawing conclusions from smiles." },
-          { "speaker": "bianca", "text": "Then we will agree on a language. I need numbers, dates, and accountable names. Not victims or heroes." },
-          { "speaker": "matteo", "text": "Bianca, if this is an invitation to sell, choose another table." },
-          { "speaker": "bianca", "text": "It is an invitation to see what you are actually prepared to protect. Buying is only one option." },
-          { "speaker": null, "text": "She placed her card beside the budget and did not look at their joined hands. It was almost a relief." }
+          {"speaker": null, "text": "Bianca arrived exactly on time and checked the budget folder before she checked either of their faces."},
+          {"speaker": "bianca", "text": "Bianca Moretti. I represent Aurea Hospitality for the current audit, not a family committee judging your smiles."},
+          {"speaker": "nika", "text": "Good. We have enough people who draw conclusions from smiles."},
+          {"speaker": "bianca", "text": "Then let us agree on language. I need numbers, dates, and people responsible. Not victims or heroes."},
+          {"speaker": "matteo", "text": "Bianca, if this is an invitation to sell, choose another table."},
+          {"speaker": "bianca", "text": "It is an invitation to see what you are actually prepared to protect. A purchase is only one option."},
+          {"speaker": "nika", "text": "And if we continue the public role, it does not give Aurea the right to count us as agreeing to your terms."},
+          {"speaker": "bianca", "text": "A public role does not replace a signature. That is a distinction I know how to make."},
+          {"speaker": null, "text": "She placed her card beside the budget and did not look at their linked hands. It was almost a relief."}
         ]
       },
       "choices": [
         {
           "id": "ep2_bianca_professional",
-          "label": { "ru": "Говорить с Бьянкой по делу", "en": "Keep the conversation professional" },
+          "label": {"ru": "Говорить с Бьянкой по делу", "en": "Keep the conversation professional"},
           "to": "ep2_bianca_professional_response",
-          "effects": { "biancaRoleKnown": true }
+          "effects": {"biancaRoleKnown": true, "biancaTrust": "professional"}
         },
         {
           "id": "ep2_bianca_pushback",
-          "label": { "ru": "Попросить её раскрыть интерес Aurea", "en": "Ask her to disclose Aurea's interest" },
+          "label": {"ru": "Попросить её раскрыть интерес Aurea", "en": "Ask her to state Aurea's interest"},
           "to": "ep2_bianca_pushback_response",
-          "effects": { "biancaRoleKnown": true }
+          "effects": {"biancaRoleKnown": true, "biancaTrust": "guarded"}
         }
       ]
     },
     {
       "id": "ep2_bianca_professional_response",
       "episode": 2,
-      "title": { "ru": "Цифры без угрозы", "en": "Numbers Without a Threat" },
+      "day": 6,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "bianca", "matteo"],
+      "knowledgeDelta": ["aurea-checkable-table"],
+      "title": {"ru": "Цифры без угрозы", "en": "Numbers Without a Threat"},
       "assetId": "ep2-bianca-professional-response-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "bianca", "text": "Профессиональный разговор не означает доверия. Он означает, что завтра вы получите таблицу, которую можно проверить." },
-          { "speaker": "nika", "text": "И что Aurea не назовёт это согласием на продажу." },
-          { "speaker": "bianca", "text": "Если кто-то так назовёт, попросите меня повторить условия вслух." }
+          {"speaker": "bianca", "text": "Профессиональный разговор не означает доверия. Он означает, что завтра вы получите таблицу, которую можно проверить по счетам и сменам."},
+          {"speaker": "nika", "text": "И что Aurea не назовёт проверку согласием на продажу."},
+          {"speaker": "bianca", "text": "Если кто-то так назовёт, попросите меня повторить условия вслух."},
+          {"speaker": "matteo", "text": "Ты всегда так спокойно говоришь о чужих долгах?"},
+          {"speaker": "bianca", "text": "Нет. Я просто не делаю вид, что отсутствие разговора уменьшает сумму."},
+          {"speaker": null, "text": "Она открыла ноутбук и показала не презентацию, а список расходов по неделям. Внизу стояли две строки: инвестиции и сокращение смен."},
+          {"speaker": "nika", "text": "Вот эту часть мы обсудим с людьми до того, как назовём её эффективностью."}
         ],
         "en": [
-          { "speaker": "bianca", "text": "A professional conversation is not trust. It means you will receive a table tomorrow that can be checked." },
-          { "speaker": "nika", "text": "And Aurea will not call that consent to a sale." },
-          { "speaker": "bianca", "text": "If anyone does, ask me to repeat the terms aloud." }
+          {"speaker": "bianca", "text": "A professional conversation does not mean trust. It means you will receive a table tomorrow that can be checked against bills and shifts."},
+          {"speaker": "nika", "text": "And Aurea will not call the review consent to sell."},
+          {"speaker": "bianca", "text": "If someone does, ask me to repeat the terms aloud."},
+          {"speaker": "matteo", "text": "Do you always speak so calmly about other people's debts?"},
+          {"speaker": "bianca", "text": "No. I simply do not pretend that avoiding a conversation reduces the amount."},
+          {"speaker": null, "text": "She opened a laptop and showed them not a presentation but a weekly expense list. At the bottom were two lines: investment and fewer shifts."},
+          {"speaker": "nika", "text": "We will discuss that part with the people involved before calling it efficiency."}
         ]
       },
       "next": "ep2_public_agreement"
@@ -223,18 +529,32 @@
     {
       "id": "ep2_bianca_pushback_response",
       "episode": 2,
-      "title": { "ru": "Вопрос с ценой", "en": "A Question Has a Price" },
+      "day": 6,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "bianca", "matteo"],
+      "knowledgeDelta": ["aurea-interest-and-price"],
+      "title": {"ru": "Вопрос с ценой", "en": "The Question Has a Price"},
       "assetId": "ep2-bianca-pushback-response-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "bianca", "text": "Вы хотите, чтобы я раскрыла интерес Aurea до того, как владелец покажет полную отчётность. Это честный вопрос, но он работает в обе стороны." },
-          { "speaker": "nika", "text": "Тогда начнём с того, что отель не будет отвечать в темноте." },
-          { "speaker": "bianca", "text": "Согласна. Но свет покажет не только мои цифры." }
+          {"speaker": "nika", "text": "Вы хотите, чтобы я поверила в «один из вариантов». Назовите цену остальных."},
+          {"speaker": "bianca", "text": "Продажа даёт быстрый капитал и меняет штат. Ограниченная инвестиция сохраняет имя отеля, но требует контроля расходов. Независимость требует доказательств, которых у вас пока мало."},
+          {"speaker": "matteo", "text": "Мы не просили лекцию."},
+          {"speaker": "bianca", "text": "Вы просили не ставить вас в темноте. Свет показывает и то, что не понравится владельцу."},
+          {"speaker": "nika", "text": "И что Aurea считает доказательством?"},
+          {"speaker": "bianca", "text": "Оплаченные счета, защищённые смены и план, который переживёт один удачный вечер."},
+          {"speaker": null, "text": "Ника записала три пункта на обороте накладной. Под ними Бьянка поставила дату следующей встречи — без подписи и без обещания."},
+          {"speaker": "nika", "text": "Тогда у нас есть работа. И у вас — причина вернуться не за фотографией."}
         ],
         "en": [
-          { "speaker": "bianca", "text": "You want Aurea's interest disclosed before the owner shows full accounts. It is a fair question, but it cuts both ways." },
-          { "speaker": "nika", "text": "Then we begin with the hotel refusing to answer in the dark." },
-          { "speaker": "bianca", "text": "Agreed. But the light will show more than my numbers." }
+          {"speaker": "nika", "text": "You want me to believe in ‘one option’. Name the price of the others."},
+          {"speaker": "bianca", "text": "A sale brings quick capital and changes the staff. Limited investment keeps the hotel's name but requires spending controls. Independence requires evidence you do not have much of yet."},
+          {"speaker": "matteo", "text": "We did not ask for a lecture."},
+          {"speaker": "bianca", "text": "You asked not to be kept in the dark. Light also shows what the owner will dislike."},
+          {"speaker": "nika", "text": "And what counts as evidence to Aurea?"},
+          {"speaker": "bianca", "text": "Paid bills, protected shifts, and a plan that survives one successful evening."},
+          {"speaker": null, "text": "Nika wrote three points on the back of an invoice. Bianca put the date of the next meeting beneath them, without a signature or a promise."},
+          {"speaker": "nika", "text": "Then we have work. And you have a reason to return for more than a photograph."}
         ]
       },
       "next": "ep2_public_agreement"
@@ -242,62 +562,119 @@
     {
       "id": "ep2_public_agreement",
       "episode": 2,
-      "title": { "ru": "До первого тоста", "en": "Before the First Toast" },
+      "day": 7,
+      "location": "villa-courtyard",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["public-gesture-consent"],
+      "title": {"ru": "До первого тоста", "en": "Before the First Toast"},
       "assetId": "ep2-public-agreement-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "matteo", "text": "Через десять минут нас попросят поднять бокалы. Джулия думает, что это просто семейная фотография." },
-          { "speaker": "nika", "text": "А ты думаешь, что это просто десять минут?" },
-          { "speaker": "matteo", "text": "Нет. Поэтому спрашиваю сейчас. Можно взять тебя за руку?" },
-          { "speaker": "nika", "text": "Можно. Но только если ты услышишь «нет» с той же скоростью." },
-          { "speaker": null, "text": "Свадебный фотограф поднял камеру. Ника успела заметить, что на этот раз Маттео ждал её кивка, а не семейного одобрения." }
+          {"speaker": null, "text": "Через десять минут должны были поднять бокалы. Договор действовал только на семейные события, но камера уже искала историю, которую можно будет пересказать за столом."},
+          {"speaker": "matteo", "text": "Джулия думает, что это просто семейная фотография."},
+          {"speaker": "nika", "text": "А ты думаешь, что это просто десять минут?"},
+          {"speaker": "matteo", "text": "Нет. Поэтому спрашиваю сейчас. Можно взять тебя за руку?"},
+          {"speaker": "nika", "text": "Можно. Но только если ты услышишь «нет» с той же скоростью."},
+          {"speaker": "matteo", "text": "Услышу."},
+          {"speaker": "giulia", "text": "И если Ника скажет нет, фотограф снимет моё нормальное лицо. Это тоже будет впервые."},
+          {"speaker": null, "text": "Фотограф поднял камеру. На этот раз Маттео ждал ответа Ники, а не семейного одобрения."}
         ],
         "en": [
-          { "speaker": "matteo", "text": "In ten minutes someone will ask us to raise our glasses. Giulia thinks it is only a family photograph." },
-          { "speaker": "nika", "text": "And you think it is only ten minutes?" },
-          { "speaker": "matteo", "text": "No. That is why I am asking now. May I take your hand?" },
-          { "speaker": "nika", "text": "You may. But hear 'no' just as quickly." },
-          { "speaker": null, "text": "The wedding photographer lifted the camera. Nika noticed that this time Matteo waited for her nod, not for the family's approval." }
+          {"speaker": null, "text": "They were due to raise their glasses in ten minutes. The agreement covered family events only, but the camera was already looking for a story to repeat at the table."},
+          {"speaker": "matteo", "text": "Giulia thinks it is just a family photograph."},
+          {"speaker": "nika", "text": "And you think it is just ten minutes?"},
+          {"speaker": "matteo", "text": "No. That is why I am asking now. May I take your hand?"},
+          {"speaker": "nika", "text": "You may. But only if you hear no at the same speed."},
+          {"speaker": "matteo", "text": "I will."},
+          {"speaker": "giulia", "text": "And if Nika says no, the photographer can take my normal face. That will be a first too."},
+          {"speaker": null, "text": "The photographer raised the camera. This time Matteo waited for Nika's answer, not the family's approval."}
         ]
       },
       "choices": [
         {
           "id": "ep2_public_yes",
-          "label": { "ru": "Кивнуть и остаться рядом", "en": "Nod and stay beside him" },
+          "label": {"ru": "Разрешить взять себя за руку", "en": "Let him take your hand"},
           "to": "ep2_rehearsal_failure",
-          "effects": { "publicAgreement": "consented", "consentBoundary": "clear", "relationshipMatteo": 2, "trustMatteo": 2 }
+          "effects": {"matteoPublicGesture": "hand", "relationshipMatteo": 2, "trustMatteo": 2}
         },
         {
           "id": "ep2_public_no",
-          "label": { "ru": "Отказаться от фотографии", "en": "Decline the photograph" },
-          "to": "ep2_rehearsal_failure",
-          "effects": { "publicAgreement": "declined", "consentBoundary": "clear", "relationshipMatteo": 0, "trustMatteo": 2 }
+          "label": {"ru": "Отказаться от жеста, оставив договор в силе", "en": "Decline the gesture and keep the agreement"},
+          "to": "ep2_public_refusal",
+          "effects": {"matteoPublicGesture": "declined", "relationshipMatteo": 0, "trustMatteo": 2}
         }
       ]
     },
     {
+      "id": "ep2_public_refusal",
+      "episode": 2,
+      "day": 7,
+      "location": "villa-courtyard",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["physical-boundary-respected"],
+      "title": {"ru": "Кадр без прикосновения", "en": "A Frame Without Touch"},
+      "assetId": "ep2-public-refusal-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Нет. Я останусь рядом, но без руки."},
+          {"speaker": null, "text": "Фотограф опустил камеру, ожидая семейного объяснения. Маттео повернулся к нему раньше, чем кто-либо успел придумать причину."},
+          {"speaker": "matteo", "text": "Снимок будет без этого жеста. Это не ошибка постановки."},
+          {"speaker": "giulia", "text": "И не повод менять план. Ника пришла работать, а не изображать приложение к брату."},
+          {"speaker": "nika", "text": "Спасибо. Теперь можно вернуться к тарелкам, которые действительно нужно переставить."},
+          {"speaker": null, "text": "Маттео отошёл на шаг. Никто не отнял у Ники место в расписании, но камера больше не получила того, чего она не давала."},
+          {"speaker": "matteo", "text": "Я запомню."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "No. I will stay beside you, but without the hand."},
+          {"speaker": null, "text": "The photographer lowered the camera, waiting for a family explanation. Matteo turned to him before anyone could invent one."},
+          {"speaker": "matteo", "text": "The photograph will be without that gesture. It is not a staging error."},
+          {"speaker": "giulia", "text": "And it is not a reason to change the plan. Nika came to work, not to be an attachment to my brother."},
+          {"speaker": "nika", "text": "Thank you. Now we can return to the plates that actually need moving."},
+          {"speaker": null, "text": "Matteo stepped back. Nobody removed Nika's place from the schedule, but the camera received nothing she had not given."},
+          {"speaker": "matteo", "text": "I will remember."}
+        ]
+      },
+      "next": "ep2_rehearsal_failure"
+    },
+    {
       "id": "ep2_rehearsal_failure",
       "episode": 2,
-      "title": { "ru": "Когда план срывается", "en": "When the Plan Breaks" },
+      "day": 8,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["public-performance-cost", "service-problem-solved"],
+      "title": {"ru": "Когда план срывается", "en": "When the Plan Breaks"},
       "assetId": "ep2-rehearsal-failure-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "За час до семейного ужина отключился холодильник с десертами. За сорок минут до ужина выяснилось, что запасной ключ лежит в комнате Маттео." },
-          { "speaker": "matteo", "text": "Я разберусь." },
-          { "speaker": "nika", "text": "Мы разберёмся. Ты отвечаешь за решение, команда — за то, чтобы оно сработало." },
-          { "speaker": null, "when": { "publicAgreement": "consented" }, "text": "Маттео снова протянул руку, но остановился до касания. Ника сама сократила расстояние — не потому, что фотограф смотрел, а потому, что хотела." },
-          { "speaker": null, "when": { "publicAgreement": "declined" }, "text": "Маттео кивнул, когда Ника осталась у двери вместо семейного кадра. Отказ не превратился в наказание, и от этого стало чуть легче дышать." },
-          { "speaker": "matteo", "text": "Ты не обязана делать вид, что всё под контролем." },
-          { "speaker": "nika", "text": "И ты тоже." }
+          {"speaker": null, "text": "За час до семейного ужина отключился холодильник с десертами. За сорок минут выяснилось, что запасной ключ лежит в комнате Маттео, а официанты уже повторяют гостям историю про счастливую пару."},
+          {"speaker": "matteo", "text": "Я разберусь с холодильником."},
+          {"speaker": "nika", "text": "Мы разберёмся. Ты отвечаешь за решение, команда — за то, чтобы оно сработало."},
+          {"speaker": "giulia", "text": "А я отвечаю за то, чтобы никто не подавал растаявший десерт как семейную традицию."},
+          {"speaker": null, "text": "Ника нашла свободную морозильную камеру на кухне, сняла с ужина лишний курс и отправила гостям новый тайминг."},
+          {"speaker": "matteo", "text": "Ты не обязана держать всё одна."},
+          {"speaker": "nika", "text": "Я и не держу. Я распределяю. Это разные вещи."},
+          {"speaker": null, "text": "Если Маттео держал её за руку, несколько гостей решили, что публичная роль включает больше. Ника остановила очередную шутку на полуслове и вернула разговор к меню.", "when": {"matteoPublicGesture": "hand"}},
+          {"speaker": null, "text": "После отказа камера исчезла из коридора, но семейные ожидания остались. Маттео сам пресёк разговор о том, почему Ника не играет близость.", "when": {"matteoPublicGesture": "declined"}},
+          {"speaker": null, "text": "Маттео протянул руку и остановился до касания. Ника сама сократила расстояние — не потому, что фотограф смотрел, а потому, что хотела.", "when": {"matteoPublicGesture": "hand"}},
+          {"speaker": null, "text": "Маттео не протянул руку вообще. Вместо этого он взял на себя разговор с родственником, который назвал отказ Ники неблагодарностью.", "when": {"matteoPublicGesture": "declined"}},
+          {"speaker": "nika", "text": "Вот цена красивого жеста: люди начинают считать, что видели больше, чем им показали."},
+          {"speaker": "matteo", "text": "И цена отказа — тоже не должна лежать на тебе."}
         ],
         "en": [
-          { "speaker": null, "text": "An hour before dinner, the dessert refrigerator failed. Forty minutes before dinner, they discovered the spare key was in Matteo's room." },
-          { "speaker": "matteo", "text": "I will handle it." },
-          { "speaker": "nika", "text": "We will handle it. You are responsible for the decision; the team is responsible for making it work." },
-          { "speaker": null, "when": { "publicAgreement": "consented" }, "text": "Matteo offered his hand again, then stopped before touching her. Nika closed the distance herself — not because the photographer was watching, but because she wanted to." },
-          { "speaker": null, "when": { "publicAgreement": "declined" }, "text": "Matteo nodded when Nika stayed by the door instead of joining the family photograph. Her refusal did not become a punishment, and breathing grew slightly easier." },
-          { "speaker": "matteo", "text": "You do not have to pretend everything is under control." },
-          { "speaker": "nika", "text": "Neither do you." }
+          {"speaker": null, "text": "An hour before the family dinner, the dessert refrigerator failed. Forty minutes later they learned the spare key was in Matteo's room, while servers were already repeating the story of a happy couple to guests."},
+          {"speaker": "matteo", "text": "I will deal with the refrigerator."},
+          {"speaker": "nika", "text": "We will. You own the decision; the team makes it work."},
+          {"speaker": "giulia", "text": "And I own the part where nobody serves melted dessert as a family tradition."},
+          {"speaker": null, "text": "Nika found a free freezer in the kitchen, removed an unnecessary course, and sent the guests a new timeline."},
+          {"speaker": "matteo", "text": "You do not have to hold everything alone."},
+          {"speaker": "nika", "text": "I am not holding it. I am distributing it. Those are different things."},
+          {"speaker": null, "text": "When Matteo held her hand, several guests decided the public role included more. Nika stopped the next joke and returned the conversation to the menu.", "when": {"matteoPublicGesture": "hand"}},
+          {"speaker": null, "text": "After her refusal, the camera left the corridor, but the family's expectations remained. Matteo cut off a question about why Nika was not performing intimacy.", "when": {"matteoPublicGesture": "declined"}},
+          {"speaker": null, "text": "Matteo offered his hand and stopped before touching her. Nika closed the distance herself, not because the photographer was watching, but because she wanted to.", "when": {"matteoPublicGesture": "hand"}},
+          {"speaker": null, "text": "Matteo did not offer his hand at all. Instead, he took the conversation with a relative who called Nika's refusal ungrateful.", "when": {"matteoPublicGesture": "declined"}},
+          {"speaker": "nika", "text": "That is the price of a beautiful gesture: people start believing they saw more than they did."},
+          {"speaker": "matteo", "text": "And the price of refusal should not be yours either."}
         ]
       },
       "next": "ep2_rooftop_after"
@@ -305,67 +682,102 @@
     {
       "id": "ep2_rooftop_after",
       "episode": 2,
-      "title": { "ru": "После шума", "en": "After the Noise" },
+      "day": 9,
+      "location": "villa-rooftop",
+      "presentCharacters": ["nika", "matteo"],
+      "knowledgeDelta": ["agreement-window-closed", "future-talk-separated-from-contract"],
+      "title": {"ru": "После шума", "en": "After the Noise"},
       "assetId": "ep2-rooftop-after-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "matteo", "text": "Бьянка оставила цифры на столе. Aurea не требует ответа сегодня, но уже знает, сколько мы теряем на каждом красивом жесте." },
-          { "speaker": "nika", "text": "Красивые жесты не должны оплачиваться чужой зарплатой." },
-          { "speaker": "matteo", "text": "Я знаю. Вопрос в том, научусь ли я делать что-то до того, как это скажет кто-нибудь ещё." },
-          { "speaker": "nika", "text": "Скажи прямо, чего ты хочешь от этих семи дней." },
-          { "speaker": "matteo", "text": "Чтобы ты увидела меня не только человеком, который держит дверь закрытой. Но я не хочу получить это через роль, от которой ты не можешь отказаться." }
+          {"speaker": null, "text": "На девятый день свадебная неделя закончилась не салютом, а списком возвращённых стульев. Срок публичной договорённости тоже закончился: семь дней — не пожизненная роль."},
+          {"speaker": "matteo", "text": "Бьянка оставила цифры на столе. Aurea не требует ответа сегодня, но уже знает, сколько мы теряем на каждом красивом жесте."},
+          {"speaker": "nika", "text": "Красивые жесты не должны оплачиваться чужой зарплатой."},
+          {"speaker": "matteo", "text": "Я знаю. Вопрос в том, научусь ли я делать что-то до того, как это скажет кто-нибудь ещё."},
+          {"speaker": "nika", "text": "Скажи прямо: чего ты хочешь после этих семи дней? Не от роли. От разговора."},
+          {"speaker": "matteo", "text": "Увидеть, что ты можешь остаться рядом, если тебе не приходится изображать это."},
+          {"speaker": "nika", "text": "Это уже другой вопрос. И на него нельзя ответить сроком в договоре."},
+          {"speaker": null, "text": "Ника закрыла лист с условиями. Завтра она будет работать рядом с Маттео, но не в его публичной роли.", "when": {"publicAgreement": "consented"}},
+          {"speaker": null, "text": "Ника закрыла лист с условиями. Завтра она будет работать рядом с Маттео без обещания близости — и это не станет причиной убрать её из проекта.", "when": {"publicAgreement": "declined"}}
         ],
         "en": [
-          { "speaker": "matteo", "text": "Bianca left the numbers on the table. Aurea does not need an answer tonight, but it already knows what every beautiful gesture costs us." },
-          { "speaker": "nika", "text": "Beautiful gestures should not be paid for with someone else's wages." },
-          { "speaker": "matteo", "text": "I know. The question is whether I can learn to act before someone else has to say it." },
-          { "speaker": "nika", "text": "Say plainly what you want from these seven days." },
-          { "speaker": "matteo", "text": "For you to see me as more than the person who keeps the door shut. But I do not want to get that through a role you cannot leave." }
+          {"speaker": null, "text": "On day nine, wedding week ended not with fireworks but with a list of returned chairs. The public arrangement ended too: seven days was not a lifetime role."},
+          {"speaker": "matteo", "text": "Bianca left the numbers. Aurea does not need an answer today, but it already knows how much we lose on every beautiful gesture."},
+          {"speaker": "nika", "text": "Beautiful gestures should not be paid for with someone else's wages."},
+          {"speaker": "matteo", "text": "I know. The question is whether I will learn to act before someone else says it."},
+          {"speaker": "nika", "text": "Say it plainly: what do you want after these seven days? Not from the role. From the conversation."},
+          {"speaker": "matteo", "text": "To see whether you can stay beside me when you do not have to perform it."},
+          {"speaker": "nika", "text": "That is a different question. A contract cannot answer it by date."},
+          {"speaker": null, "text": "Nika closed the terms sheet. Tomorrow she would work beside Matteo, but not in his public role.", "when": {"publicAgreement": "consented"}},
+          {"speaker": null, "text": "Nika closed the terms sheet. Tomorrow she would work beside Matteo without promising closeness, and that would not remove her from the project.", "when": {"publicAgreement": "declined"}}
         ]
       },
       "choices": [
         {
           "id": "ep2_boundary_clear",
-          "label": { "ru": "Ещё раз проговорить границы", "en": "State the boundaries again" },
+          "label": {"ru": "Закрыть договор и обсудить личное позже", "en": "Close the arrangement and discuss the personal later"},
+          "requires": {"publicAgreement": "consented"},
           "to": "ep2_transition",
-          "effects": { "consentBoundary": "clear", "matteoFutureTalk": "open", "trustMatteo": 3 }
+          "effects": {"fakeDatingStatus": "ended", "consentBoundary": "clear", "matteoFutureTalk": "open", "trustMatteo": 3}
         },
         {
           "id": "ep2_boundary_unspoken",
-          "label": { "ru": "Оставить разговор до завтра", "en": "Leave the conversation for tomorrow" },
+          "label": {"ru": "Закрыть договор без нового обещания", "en": "Close the arrangement without a new promise"},
+          "requires": {"publicAgreement": "consented"},
           "to": "ep2_transition",
-          "effects": { "consentBoundary": "unclear", "matteoFutureTalk": "deferred", "trustMatteo": 2 }
+          "effects": {"fakeDatingStatus": "ended", "consentBoundary": "unclear", "matteoFutureTalk": "deferred", "trustMatteo": 2}
+        },
+        {
+          "id": "ep2_decline_keep_work",
+          "label": {"ru": "Оставить только рабочие отношения", "en": "Keep it strictly professional"},
+          "requires": {"publicAgreement": "declined"},
+          "to": "ep2_transition",
+          "effects": {"fakeDatingStatus": "none", "consentBoundary": "clear", "matteoFutureTalk": "deferred", "trustMatteo": 1}
+        },
+        {
+          "id": "ep2_decline_revisit_later",
+          "label": {"ru": "Вернуться к личному разговору только по обоюдному желанию", "en": "Revisit the personal only by mutual choice"},
+          "requires": {"publicAgreement": "declined"},
+          "to": "ep2_transition",
+          "effects": {"fakeDatingStatus": "none", "consentBoundary": "clear", "matteoFutureTalk": "open", "trustMatteo": 2}
         }
       ]
     },
     {
       "id": "ep2_transition",
       "episode": 2,
-      "title": { "ru": "Вопрос Бьянки", "en": "Bianca's Question" },
+      "day": 9,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "bianca", "giulia"],
+      "knowledgeDelta": ["aurea-land-value", "seven-day-agreement-closed"],
+      "title": {"ru": "Вопрос Бьянки", "en": "Bianca's Question"},
       "assetId": "ep2-transition-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "Утром в папке Ника нашла распечатку без логотипа. В ней Aurea считала не только задолженность Villa Serena, но и стоимость её земли." },
-          { "speaker": "bianca", "text": "Я не положила это туда, чтобы напугать вас. Я положила это туда, чтобы вы перестали спорить с цифрой, которой ещё никто не назвал вслух." },
-          { "speaker": "nika", "text": "А если отель не хочет становиться частью сети?" },
-          { "speaker": "bianca", "text": "Тогда ему нужен план, который выдержит не только гордость владельца, но и зарплаты команды." },
-          { "speaker": "matteo", "text": "У нас семьдесят дней до юбилея." },
-          { "speaker": "nika", "text": "Нет. У нас семьдесят дней до правды, которую нельзя будет спрятать за свадебными фотографиями." },
-          { "speaker": null, "text": "За окном Джулия снова проверяла список гостей. Внутри папки лежал первый срок — и ни одного ответа, который можно было бы сыграть." }
+          {"speaker": null, "text": "Утром в папке Ника нашла распечатку без логотипа. Aurea считала не только задолженность Villa Serena, но и стоимость её земли."},
+          {"speaker": "bianca", "text": "Я не положила это туда, чтобы напугать вас. Я положила это, чтобы вы перестали спорить с цифрой, которой ещё никто не назвал вслух."},
+          {"speaker": "nika", "text": "А если отель не хочет становиться частью сети?"},
+          {"speaker": "bianca", "text": "Тогда ему нужен план, который выдержит не только гордость владельца, но и зарплаты команды."},
+          {"speaker": "matteo", "text": "У нас семьдесят дней до юбилея."},
+          {"speaker": "nika", "text": "Нет. У нас семьдесят дней до правды, которую нельзя будет спрятать за свадебными фотографиями."},
+          {"speaker": null, "text": "За окном Джулия снова проверяла список гостей. Внутри папки лежал первый срок — и ни одного ответа, который можно было бы сыграть."},
+          {"speaker": null, "text": "Публичная договорённость осталась в прошлом. Если между Никой и Маттео возникнет что-то ещё, это начнётся не с продления роли, а с нового согласия.", "when": {"fakeDatingStatus": "ended"}},
+          {"speaker": null, "text": "Ника отказалась от роли, но не от работы. В папке Aurea теперь было достаточно цифр, чтобы следующий разговор не зависел от того, кто с кем стоит на фотографии.", "when": {"fakeDatingStatus": "none"}}
         ],
         "en": [
-          { "speaker": null, "text": "The next morning, Nika found a printout without a logo in her folder. Aurea had calculated not only Villa Serena's debt, but the value of its land." },
-          { "speaker": "bianca", "text": "I did not put it there to frighten you. I put it there so you would stop arguing with a number nobody had said aloud yet." },
-          { "speaker": "nika", "text": "And if the hotel does not want to become part of a chain?" },
-          { "speaker": "bianca", "text": "Then it needs a plan that can carry more than the owner's pride and still pay the team." },
-          { "speaker": "matteo", "text": "We have seventy days until the anniversary." },
-          { "speaker": "nika", "text": "No. We have seventy days until the truth can no longer hide behind wedding photographs." },
-          { "speaker": null, "text": "Outside, Giulia checked the guest list again. Inside the folder lay the first deadline — and not a single answer that could be acted out." }
+          {"speaker": null, "text": "That morning Nika found a logo-less printout in the folder. Aurea was counting not only Villa Serena's debt but the value of its land."},
+          {"speaker": "bianca", "text": "I did not put it there to frighten you. I put it there so you would stop arguing with a number nobody had said aloud."},
+          {"speaker": "nika", "text": "And if the hotel does not want to become part of a chain?"},
+          {"speaker": "bianca", "text": "Then it needs a plan that can withstand more than the owner's pride and still pay the team."},
+          {"speaker": "matteo", "text": "We have seventy days before the anniversary."},
+          {"speaker": "nika", "text": "No. We have seventy days before the truth can no longer hide behind wedding photographs."},
+          {"speaker": null, "text": "Outside, Giulia checked the guest list again. Inside the folder was the first deadline, and not one answer that could be performed."},
+          {"speaker": null, "text": "The public arrangement was over. If anything else grew between Nika and Matteo, it would begin with new consent, not an extension of a role.", "when": {"fakeDatingStatus": "ended"}},
+          {"speaker": null, "text": "Nika had declined the role, not the work. Aurea's folder now held enough numbers for the next conversation to stand apart from who appeared together in a photograph.", "when": {"fakeDatingStatus": "none"}}
         ]
       },
       "ending": true,
-      "endingId": "ep2-contract-week",
-      "nextEpisode": "ep3"
+      "endingId": "ep2-contract-week"
     }
   ]
 }

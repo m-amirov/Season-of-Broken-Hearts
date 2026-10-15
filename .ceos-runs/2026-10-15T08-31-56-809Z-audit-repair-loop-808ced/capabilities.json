@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "ceosVersion": "0.5.18",
+  "observedAt": "2026-10-15T08:31:56.807Z",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "codexHome": "C:\\Users\\user\\.codex",
+  "filesystem": {
+    "exists": true,
+    "readable": true,
+    "writable": true
+  },
+  "executables": {
+    "node": {
+      "available": true,
+      "exitCode": 0,
+      "version": "v22.21.0",
+      "error": null
+    },
+    "npm": {
+      "available": true,
+      "exitCode": 0,
+      "version": "10.9.4",
+      "error": null
+    },
+    "git": {
+      "available": true,
+      "exitCode": 0,
+      "version": "git version 2.53.0.windows.2",
+      "error": null
+    }
+  },
+  "project": {
+    "manifest": {
+      "available": true,
+      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.codex-os\\project.yml",
+      "profile": "yandex-games",
+      "productionAccess": "read-only",
+      "error": null
+    },
+    "packageJson": {
+      "available": true,
+      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\package.json",
+      "error": null
+    },
+    "browser": {
+      "configured": true,
+      "requiredByManifest": false,
+      "gate": null,
+      "source": "dependency"
+    }
+  },
+  "web": {
+    "status": "READY",
+    "ready": true,
+    "reason": "Web reasoning bridge is healthy and accepting turns",
+    "manifestFile": "C:\\Users\\user\\.codex\\ceos\\hybrid-routing.json",
+    "healthUrl": "http://127.0.0.1:17841/healthz",
+    "source": "live-preflight"
+  },
+  "imageGeneration": {
+    "status": "unavailable",
+    "capabilityPresence": "ABSENT",
+    "serviceAvailability": "unavailable",
+    "provider": "native-host",
+    "callable": false,
+    "generationAllowed": false,
+    "trustedForGeneration": false,
+    "source": "cli-attestation",
+    "attestationFile": null,
+    "observedTool": null,
+    "trustScope": "manual-diagnostic-only"
+  },
+  "nativeAgents": {
+    "root": "C:\\Users\\user\\.codex\\agents",
+    "present": [
+      "ceos-bulk-checker.toml",
+      "ceos-explorer.toml",
+      "ceos-implementer.toml",
+      "ceos-asset-generator.toml",
+      "ceos-debugger.toml",
+      "ceos-reviewer.toml",
+      "ceos-verifier.toml"
+    ],
+    "missing": []
+  },
+  "limitations": [
+    "Manual image-generation override recorded for diagnostics only; production generation requires a fresh run-scoped in-session observation or session-bound host attestation."
+  ]
+}

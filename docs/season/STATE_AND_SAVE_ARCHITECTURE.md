@@ -18,13 +18,32 @@ EP1 save.
 | Hotel evidence | `fundingEvidence`, `investorTerms`, `budgetPlan`, `alternativeBudget`, `staffProtection`, `publicDisclosure` | business scenes | only after source document, action or public disclosure |
 | Career | `nikaCareerPlan`, `matteoCareerChoice`, `leoCareerChoice`, `elioCareerChoice` | career decision scenes | one authored choice can be revised only by a later explicit choice |
 | Knowledge | `biancaRoleKnown`, `fakeDatingTermsKnown`, `staffCutsKnown`, `aureaClientKnown`, `leoAureaLinkKnown`, `exclusiveTermsSeen`, `elioRestaurantOfferKnown`, `budgetGapKnown`, `publicTruthKnown` | source scenes | provenance-required booleans |
-| Consent/boundary | `fakeDatingStatus`, `matteoPublicGesture`, `leoRepairChoice`, `elioClarityChoice` | boundary conversations | refusal remains a meaningful value |
+| Consent/boundary | `fakeDatingStatus`, `publicAgreement`, `consentBoundary`, `matteoPublicGesture`, `leoAccountability`, `leoEvidence` | EP2 agreement closure and EP3 evidence/accountability | refusal, distance and unverified evidence remain meaningful values |
 | Route progress | `matteoCommitment`, `leoAccountability`, `leoCommitment`, `elioClarity`, `elioCommitment`, `independentProgress` | route scenes | selected-route domain only |
 | Result | `endingId`, `hotelOutcome` | EP10 final resolver | written once at final resolution, then immutable |
 
 The inherited EP1 keys remain authoritative. New keys are added only when they
 have a named owner, a bounded domain, an antecedent scene and a consumer in the
 route explorer or an authored payoff.
+
+## Implemented EP2–EP3 state consumers
+
+The current authored fragments use the following bounded keys with explicit
+consumers; these are not decorative flags:
+
+- EP2: `fakeDatingStatus` closes the agreement on day 9;
+  `publicAgreement` separates contract consent from `matteoPublicGesture`;
+  `consentBoundary` and `matteoFutureTalk` carry the boundary conversation;
+  `ep2BudgetChoice`, `biancaTrust` and `staffTrust` change subsequent work and
+  business reactions.
+- EP3: `ep3SurveyChoice` and `ep3SurveyAction` alter the survey/report path;
+  `leoAccountability` records listen/action/distance; `leoEvidence` separates
+  an unverified drawing lead from a checked appendix; `leoAureaLinkKnown` and
+  `fundingEvidence` carry only the evidence actually obtained.
+
+`leoRepairChoice` is not used by the EP2–EP3 implementation and is not added to
+the compiled graph. EP6 remains the only route-lock and romance values remain
+separate from consent and evidence.
 
 ## Proposed bounded domains
 

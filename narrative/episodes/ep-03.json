@@ -3,10 +3,25 @@
   "start": "ep3_old_photo",
   "requiredPreviousEpisode": 2,
   "stateSchema": {
-    "leoAureaLinkKnown": { "type": "boolean" },
-    "leoAccountability": { "type": "string", "values": ["none", "acknowledged", "verified"] },
-    "leoEvidence": { "type": "string", "values": ["none", "drawing", "terms"] },
-    "ep3SurveyChoice": { "type": "string", "values": ["none", "joined", "declined"] }
+    "leoAureaLinkKnown": {
+      "type": "boolean"
+    },
+    "leoAccountability": {
+      "type": "string",
+      "values": ["none", "acknowledged", "verified"]
+    },
+    "leoEvidence": {
+      "type": "string",
+      "values": ["none", "drawing", "terms"]
+    },
+    "ep3SurveyChoice": {
+      "type": "string",
+      "values": ["none", "joined", "declined"]
+    },
+    "ep3SurveyAction": {
+      "type": "string",
+      "values": ["none", "report", "hold"]
+    }
   },
   "stateSchemaExtensions": {
     "trustLeo": [2, 3, 4],
@@ -19,30 +34,41 @@
     "leoAureaLinkKnown": false,
     "leoAccountability": "none",
     "leoEvidence": "none",
-    "ep3SurveyChoice": "none"
+    "ep3SurveyChoice": "none",
+    "ep3SurveyAction": "none"
   },
   "scenes": [
     {
       "id": "ep3_old_photo",
       "episode": 3,
-      "title": { "ru": "Восемь лет молчания", "en": "Eight Years of Silence" },
+      "day": 10,
+      "location": "archive-room",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["old-summer-memory", "leo-return-context"],
+      "title": {"ru": "Восемь лет молчания", "en": "Eight Years of Silence"},
       "assetId": "ep3-old-photo-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "На десятый день Лео пришёл не к Нике, а в архив. Он принёс фотографию старого пирса, где они когда-то обещали друг другу не исчезать без объяснений." },
-          { "speaker": "leo", "text": "Я не знал, что в архиве остались эти коробки." },
-          { "speaker": "nika", "text": "Ты не спрашивал. Восемь лет — длинный срок для человека, который однажды решил, что вопросы можно оставить на потом." },
-          { "speaker": "leo", "text": "Я пришёл не за фотографией." },
-          { "speaker": "nika", "text": "Тогда не используй её как входной билет." },
-          { "speaker": null, "text": "Лео положил снимок лицом вниз. Это было маленькое движение, но впервые он не просил прошлое говорить вместо него." }
+          {"speaker": null, "text": "На десятый день Лео пришёл не к Нике, а в архив. Ника разбирала коробки с программами старых банкетов, когда он положил на стол фотографию пирса."},
+          {"speaker": "leo", "text": "Я не знал, что эти коробки остались."},
+          {"speaker": "nika", "text": "Ты не спрашивал. Восемь лет — длинный срок для человека, который решил, что вопросы можно оставить на потом."},
+          {"speaker": "leo", "text": "Я пришёл не за фотографией."},
+          {"speaker": "nika", "text": "Тогда не используй её как входной билет."},
+          {"speaker": null, "text": "Ника перевернула снимок лицом вниз и вернулась к описи. На обратной стороне старой программы стояла дата: за два дня до его отъезда."},
+          {"speaker": "leo", "text": "Я помню этот день."},
+          {"speaker": "nika", "text": "Я тоже. Поэтому сначала закончу работу."},
+          {"speaker": null, "text": "Лео убрал руки от коробки. В архиве было слишком много вещей, которые нельзя было взять без разрешения."}
         ],
         "en": [
-          { "speaker": null, "text": "On day ten, Leo came not to Nika but to the archive. He brought a photograph of the old pier where they had once promised not to disappear without an explanation." },
-          { "speaker": "leo", "text": "I did not know these boxes were still in the archive." },
-          { "speaker": "nika", "text": "You did not ask. Eight years is a long time for someone who decided questions could wait." },
-          { "speaker": "leo", "text": "I did not come for the photograph." },
-          { "speaker": "nika", "text": "Then do not use it as an entrance ticket." },
-          { "speaker": null, "text": "Leo placed the photograph face down. It was a small movement, but for once he did not ask the past to speak for him." }
+          {"speaker": null, "text": "On day ten, Leo came not to Nika but to the archive. She was sorting old banquet programmes when he placed a photograph of the pier on the table."},
+          {"speaker": "leo", "text": "I did not know these boxes were still here."},
+          {"speaker": "nika", "text": "You did not ask. Eight years is a long time for someone who decided questions could wait."},
+          {"speaker": "leo", "text": "I did not come for the photograph."},
+          {"speaker": "nika", "text": "Then do not use it as an entrance ticket."},
+          {"speaker": null, "text": "Nika turned the photograph face down and returned to the inventory. The back of an old programme carried a date: two days before he left."},
+          {"speaker": "leo", "text": "I remember that day."},
+          {"speaker": "nika", "text": "So do I. That is why I am finishing the work first."},
+          {"speaker": null, "text": "Leo moved his hands away from the boxes. The archive held too many things that could not be taken without permission."}
         ]
       },
       "next": "ep3_survey_start"
@@ -50,100 +76,280 @@
     {
       "id": "ep3_survey_start",
       "episode": 3,
-      "title": { "ru": "Обследование", "en": "The Survey" },
+      "day": 10,
+      "location": "archive-room",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["survey-role-offered"],
+      "title": {"ru": "Обследование", "en": "The Survey"},
       "assetId": "ep3-survey-start-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "leo", "text": "Мне нужно провести обследование западного крыла. Aurea хочет понять, что можно перестроить до юбилея." },
-          { "speaker": "nika", "text": "А ты хочешь понять, что нельзя трогать." },
-          { "speaker": "leo", "text": "Я хочу не прятать вторую часть фразы. Но сначала мне нужно узнать, что именно подписал заказчик." },
-          { "speaker": "nika", "text": "Я могу пойти с тобой как сотрудница отеля, не как человек из твоего прошлого." },
-          { "speaker": "leo", "text": "Это будет честнее, чем просить тебя снова быть личным свидетелем моей работы." }
+          {"speaker": "leo", "text": "Мне нужно провести обследование западного крыла. Aurea хочет понять, что можно перестроить до юбилея."},
+          {"speaker": "nika", "text": "А ты хочешь понять, что нельзя трогать."},
+          {"speaker": "leo", "text": "Я хочу не прятать вторую часть фразы. Но сначала мне нужно проверить, что именно подписал заказчик."},
+          {"speaker": "nika", "text": "Я могу пойти как сотрудница отеля, не как человек из твоего прошлого."},
+          {"speaker": "leo", "text": "Это будет честнее, чем просить тебя снова быть личным свидетелем моей работы."},
+          {"speaker": "nika", "text": "И если я не пойду, ты пришлёшь полный отчёт Маттео, а не только удобную страницу?"},
+          {"speaker": "leo", "text": "Да. Даже если она испортит план заказчика."}
         ],
         "en": [
-          { "speaker": "leo", "text": "I need to survey the west wing. Aurea wants to know what can be rebuilt before the anniversary." },
-          { "speaker": "nika", "text": "And you want to know what must not be touched." },
-          { "speaker": "leo", "text": "I want to stop hiding the second half of the sentence. But first I need to know what the client actually signed." },
-          { "speaker": "nika", "text": "I can come as a hotel employee, not as someone from your past." },
-          { "speaker": "leo", "text": "That would be more honest than asking you to be a personal witness to my work again." }
+          {"speaker": "leo", "text": "I need to survey the west wing. Aurea wants to know what can be rebuilt before the anniversary."},
+          {"speaker": "nika", "text": "And you want to know what must not be touched."},
+          {"speaker": "leo", "text": "I do not want to hide the second half of the sentence. But first I need to check what the client actually signed."},
+          {"speaker": "nika", "text": "I can come as a hotel employee, not as a person from your past."},
+          {"speaker": "leo", "text": "That is more honest than asking you to be a personal witness to my work again."},
+          {"speaker": "nika", "text": "And if I do not come, you will send Matteo the full report, not only the convenient page?"},
+          {"speaker": "leo", "text": "Yes. Even if it damages the client's plan."}
         ]
       },
       "choices": [
         {
           "id": "ep3_survey_join",
-          "label": { "ru": "Пойти на обследование как сотрудница", "en": "Join the survey as an employee" },
+          "label": {"ru": "Пойти на обследование как сотрудница", "en": "Join the survey as a hotel employee"},
           "to": "ep3_survey_join_response",
-          "effects": {}
+          "effects": {"ep3SurveyChoice": "joined"}
         },
         {
           "id": "ep3_survey_decline",
-          "label": { "ru": "Остаться в отеле и ждать отчёта", "en": "Stay at the hotel and wait for the report" },
+          "label": {"ru": "Остаться в отеле и ждать отчёта", "en": "Stay at the hotel and wait for the report"},
           "to": "ep3_survey_decline_response",
-          "effects": {}
+          "effects": {"ep3SurveyChoice": "declined"}
         }
       ]
     },
     {
       "id": "ep3_survey_join_response",
       "episode": 3,
-      "title": { "ru": "Рабочая дистанция", "en": "A Working Distance" },
+      "day": 10,
+      "location": "west-wing",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["west-wing-condition-observed"],
+      "title": {"ru": "Рабочая дистанция", "en": "Professional Distance"},
       "assetId": "ep3-survey-join-response-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "Ника записала размеры западного крыла и задала вопросы, которые не имели отношения к их прошлому." },
-          { "speaker": "leo", "text": "Спасибо, что пришла как сотрудница. Так честнее для всех." },
-          { "speaker": "nika", "text": "Честнее — не значит проще." }
+          {"speaker": null, "text": "В западном крыле Ника держала фонарь, планшет и список вопросов. Лео измерял проём, но не пытался превратить тишину в свидание."},
+          {"speaker": "leo", "text": "Спасибо, что пришла как сотрудница. Так честнее для всех."},
+          {"speaker": "nika", "text": "Честнее — не значит проще."},
+          {"speaker": null, "text": "За стеной кухни проходила старая вентиляция. Новый план номеров перекрывал её и сокращал путь между кухней и прачечной."},
+          {"speaker": "nika", "text": "Если вы закроете этот проход, люди будут носить посуду через гостевой зал."},
+          {"speaker": "leo", "text": "Я внесу это в отчёт."},
+          {"speaker": "nika", "text": "Внеси как ограничение, не как пожелание. Красивые слова хуже треснувшей балки, когда на них начинают опираться."},
+          {"speaker": null, "text": "Лео перестал измерять стену и записал формулировку дословно."}
         ],
         "en": [
-          { "speaker": null, "text": "Nika recorded the west wing measurements and asked questions that had nothing to do with their past." },
-          { "speaker": "leo", "text": "Thank you for coming as an employee. It is more honest for everyone." },
-          { "speaker": "nika", "text": "More honest does not mean easier." }
+          {"speaker": null, "text": "In the west wing, Nika carried the torch, tablet, and question list. Leo measured the doorway without trying to turn the silence into a date."},
+          {"speaker": "leo", "text": "Thank you for coming as an employee. It is more honest for everyone."},
+          {"speaker": "nika", "text": "More honest does not mean easier."},
+          {"speaker": null, "text": "The old kitchen ventilation ran behind the wall. The new room plan blocked it and shortened the route between the kitchen and laundry."},
+          {"speaker": "nika", "text": "If you close this passage, staff will carry dishes through the guest hall."},
+          {"speaker": "leo", "text": "I will put it in the report."},
+          {"speaker": "nika", "text": "Put it in as a constraint, not a preference. Pretty words are worse than a cracked beam when people start leaning on them."},
+          {"speaker": null, "text": "Leo stopped measuring the wall and wrote the wording down exactly."}
         ]
       },
-      "next": "ep3_eight_years"
+      "next": "ep3_survey_site_problem"
+    },
+    {
+      "id": "ep3_survey_site_problem",
+      "episode": 3,
+      "day": 11,
+      "location": "west-wing",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["aurea-plan-conflict", "staff-route-at-risk"],
+      "title": {"ru": "Линия, которую нельзя стереть", "en": "The Line That Cannot Be Erased"},
+      "assetId": "ep3-survey-site-problem-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Утром на плане появилась новая линия: будущая перегородка проходила через нишу, где сотрудники хранили подносы и ключи от служебного входа."},
+          {"speaker": "nika", "text": "Это не пустой угол. Здесь начинается каждая смена."},
+          {"speaker": "leo", "text": "Заказчик назвал его неиспользуемым пространством."},
+          {"speaker": "nika", "text": "Заказчик не носит подносы по лестнице после двенадцати часов работы."},
+          {"speaker": null, "text": "Лео достал телефон и открыл письмо с правками. Внизу стояло требование не перегружать отчёт «внутренними операционными деталями»."},
+          {"speaker": "leo", "text": "Я могу отправить отчёт сейчас или сначала запросить полный бриф."},
+          {"speaker": "nika", "text": "Сначала зафиксируй то, что увидел. Потом пусть объясняют, почему рабочий проход стал деталью."}
+        ],
+        "en": [
+          {"speaker": null, "text": "By morning a new line had appeared on the plan: the future partition crossed the niche where staff kept trays and keys to the service entrance."},
+          {"speaker": "nika", "text": "This is not an empty corner. Every shift starts here."},
+          {"speaker": "leo", "text": "The client called it unused space."},
+          {"speaker": "nika", "text": "The client does not carry trays up the stairs after a twelve-hour shift."},
+          {"speaker": null, "text": "Leo opened a revision email on his phone. At the bottom was a request not to overload the report with ‘internal operational details’."},
+          {"speaker": "leo", "text": "I can send the report now or request the full brief first."},
+          {"speaker": "nika", "text": "Record what you saw first. Then they can explain why a working passage became a detail."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep3_report_conflict",
+          "label": {"ru": "Потребовать, чтобы конфликт вошёл в отчёт", "en": "Require the conflict to enter the report"},
+          "to": "ep3_staff_walkthrough",
+          "effects": {"ep3SurveyAction": "report"}
+        },
+        {
+          "id": "ep3_hold_conflict",
+          "label": {"ru": "Сначала запросить полный бриф", "en": "Request the full brief first"},
+          "to": "ep3_staff_walkthrough",
+          "effects": {"ep3SurveyAction": "hold"}
+        }
+      ]
+    },
+    {
+      "id": "ep3_staff_walkthrough",
+      "episode": 3,
+      "day": 11,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "leo", "giulia"],
+      "knowledgeDelta": ["staff-route-confirmed", "operational-cost-made-visible"],
+      "title": {"ru": "Неиспользуемый проход", "en": "The Unused Passage"},
+      "assetId": "ep3-staff-walkthrough-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "giulia", "text": "Если они закроют нишу, утром я буду выдавать ключи из гостевого холла. Гости увидят не порядок, а то, как мы его добываем."},
+          {"speaker": "nika", "text": "Покажи нам обычную смену. Не объясняй, что должно быть на плане — покажи, что происходит без него."},
+          {"speaker": null, "text": "Джулия провела их через кухню, прачечную и служебную лестницу. На бумаге путь был коротким; с подносами и тележкой он превращался в три лишних разворота."},
+          {"speaker": "leo", "text": "Я поставил это как оптимизацию, потому что видел только метры."},
+          {"speaker": "nika", "text": "Тогда в отчёте должны появиться часы, руки и люди, которые платят за красивую линию."},
+          {"speaker": "giulia", "text": "И не называйте это просьбой персонала. Это условие, при котором смена вообще работает."},
+          {"speaker": null, "text": "Лео перечеркнул слово «неиспользуемый» и оставил место для фактического маршрута."}
+        ],
+        "en": [
+          {"speaker": "giulia", "text": "If they close the niche, I will hand out keys from the guest hall in the morning. Guests will see not order, but how we manage to create it."},
+          {"speaker": "nika", "text": "Show us a normal shift. Do not explain what belongs on the plan — show us what happens without it."},
+          {"speaker": null, "text": "Giulia led them through the kitchen, laundry, and service stairs. On paper the route was short; with trays and a cart it became three extra turns."},
+          {"speaker": "leo", "text": "I marked it as optimisation because I only saw the metres."},
+          {"speaker": "nika", "text": "Then the report needs hours, hands, and the people who pay for a pretty line."},
+          {"speaker": "giulia", "text": "And do not call it a staff request. It is the condition that lets the shift work at all."},
+          {"speaker": null, "text": "Leo crossed out ‘unused’ and left room for the actual route."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep3_staff_route_record",
+          "label": {"ru": "Внести маршрут в отчёт как обязательное условие", "en": "Record the route as a required condition"},
+          "to": "ep3_eight_years",
+          "effects": {"staffTrust": 3, "fundingEvidence": 3}
+        },
+        {
+          "id": "ep3_staff_route_compromise",
+          "label": {"ru": "Потребовать рабочий обходной маршрут до решения", "en": "Require a workable detour before any decision"},
+          "to": "ep3_eight_years",
+          "effects": {"staffTrust": 2, "fundingEvidence": 2}
+        }
+      ]
     },
     {
       "id": "ep3_survey_decline_response",
       "episode": 3,
-      "title": { "ru": "Отчёт вместо жеста", "en": "A Report Instead of a Gesture" },
+      "day": 10,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["professional-distance-maintained"],
+      "title": {"ru": "Отчёт вместо жеста", "en": "A Report Instead of a Gesture"},
       "assetId": "ep3-survey-decline-response-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "Ника осталась в кабинете и попросила прислать отчёт через Маттео. Она не обязана была превращать рабочий день в проверку личной готовности." },
-          { "speaker": "leo", "text": "Я пришлю материалы. Без попытки задержать тебя разговором." },
-          { "speaker": "nika", "text": "Тогда у нас впервые будет разговор, начатый не исчезновением и не погоней." }
+          {"speaker": null, "text": "Ника осталась в кабинете и попросила прислать отчёт через Маттео. Она не обязана была превращать рабочий день в проверку личной готовности."},
+          {"speaker": "leo", "text": "Я пришлю материалы. Без попытки задержать тебя разговором."},
+          {"speaker": "nika", "text": "Тогда у нас впервые будет разговор, начатый не исчезновением и не погоней."},
+          {"speaker": null, "text": "Через час письмо пришло с приложением: схема западного крыла, фотография вентиляции и короткая пометка о служебном проходе."},
+          {"speaker": "nika", "text": "Ты всё-таки написал про проход."},
+          {"speaker": "leo", "text": "Я сказал, что пришлю полный отчёт."},
+          {"speaker": "nika", "text": "Полный отчёт — не доказательство изменения. Но это хотя бы действие."}
         ],
         "en": [
-          { "speaker": null, "text": "Nika stayed in the office and asked for the report through Matteo. She did not have to turn a workday into a test of personal readiness." },
-          { "speaker": "leo", "text": "I will send the materials. I will not try to keep you here with a conversation." },
-          { "speaker": "nika", "text": "Then for once we will have a conversation that began with neither disappearance nor pursuit." }
+          {"speaker": null, "text": "Nika stayed in the office and asked Leo to send the report through Matteo. She did not have to turn a workday into a test of personal readiness."},
+          {"speaker": "leo", "text": "I will send the materials. Without trying to keep you in the conversation."},
+          {"speaker": "nika", "text": "Then for once we will have a conversation started by neither disappearance nor pursuit."},
+          {"speaker": null, "text": "An hour later the email arrived with a west-wing plan, a photograph of the ventilation, and a short note about the service passage."},
+          {"speaker": "nika", "text": "You wrote about the passage after all."},
+          {"speaker": "leo", "text": "I said I would send the full report."},
+          {"speaker": "nika", "text": "A full report is not proof that you have changed. It is at least an action."}
         ]
       },
-      "next": "ep3_eight_years"
+      "next": "ep3_report_delivery"
+    },
+    {
+      "id": "ep3_report_delivery",
+      "episode": 3,
+      "day": 11,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["aurea-plan-conflict", "report-source-recorded"],
+      "title": {"ru": "Страница, которую можно проверить", "en": "A Page That Can Be Checked"},
+      "assetId": "ep3-report-delivery-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Ника распечатала отчёт и приложила его к рабочему журналу. В нём не было объяснения их прошлого — только измерения, фото и одна неудобная строка о проходе персонала."},
+          {"speaker": "leo", "text": "Я мог прислать только выводы, которые нужны заказчику."},
+          {"speaker": "nika", "text": "Мог. Но прислал то, что нужно было проверить мне."},
+          {"speaker": "leo", "text": "Это не должно покупать мне разговор."},
+          {"speaker": "nika", "text": "Не покупает. Но теперь я знаю, что ты умеешь отправить файл, не исчезнув после него."},
+          {"speaker": null, "text": "Она поставила на полях вопрос к сроку исправления. Лео не стал отвечать вместо заказчика."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Nika printed the report and attached it to the work log. It contained no explanation of their past, only measurements, photographs, and one inconvenient line about the staff passage."},
+          {"speaker": "leo", "text": "I could have sent only the conclusions the client needed."},
+          {"speaker": "nika", "text": "You could. Instead you sent what I needed to check."},
+          {"speaker": "leo", "text": "That should not buy me a conversation."},
+          {"speaker": "nika", "text": "It does not. I know now that you can send a file without disappearing afterwards."},
+          {"speaker": null, "text": "She wrote a question about the correction deadline in the margin. Leo did not answer for the client."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep3_review_report",
+          "label": {"ru": "Зафиксировать конфликт в рабочем журнале", "en": "Record the conflict in the work log"},
+          "to": "ep3_eight_years",
+          "effects": {"ep3SurveyAction": "report"}
+        },
+        {
+          "id": "ep3_hold_report",
+          "label": {"ru": "Оставить вопрос до полной проверки", "en": "Hold the question for a full check"},
+          "to": "ep3_eight_years",
+          "effects": {"ep3SurveyAction": "hold"}
+        }
+      ]
     },
     {
       "id": "ep3_eight_years",
       "episode": 3,
-      "title": { "ru": "Не красивая версия", "en": "Not the Beautiful Version" },
+      "day": 12,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["leo-left-by-choice", "leo-silence-accounted"],
+      "title": {"ru": "Не красивая версия", "en": "Not the Beautiful Version"},
       "assetId": "ep3-eight-years-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "nika", "text": "Восемь лет — это не пауза, Лео. Это восемь лет решений, принятых без меня." },
-          { "speaker": "leo", "text": "Я знаю. Я уехал в Милан после предложения, которого ждал всю жизнь, и решил, что сначала надо стать кем-то, а потом вернуться к тебе." },
-          { "speaker": "nika", "text": "Ты решил, что я буду ждать, пока ты станешь готовым." },
-          { "speaker": "leo", "text": "Нет. Я решил, что если не позвоню, мне не придётся услышать, что ты не будешь." },
-          { "speaker": "nika", "text": "Вот это уже похоже на правду." },
-          { "speaker": "leo", "text": "Я не прошу считать это доказательством любви. Это доказательство трусости." },
-          { "speaker": null, "text": "На столе между ними лежал старый снимок. Ника не перевернула его." }
+          {"speaker": null, "text": "Они говорили в кабинете, где между двумя стульями лежал отчёт Лео и старый снимок пирса. Рабочая папка не давала разговору превратиться в воспоминание без последствий."},
+          {"speaker": "nika", "text": "Восемь лет — это не пауза, Лео. Это восемь лет решений, принятых без меня."},
+          {"speaker": "leo", "text": "Я уехал в Милан после предложения, которого ждал. Решил, что сначала стану кем-то, а потом вернусь к тебе."},
+          {"speaker": "nika", "text": "Ты решил, что я буду ждать, пока ты станешь готовым."},
+          {"speaker": "leo", "text": "Нет. Я решил, что если не позвоню, мне не придётся услышать, что ты не будешь."},
+          {"speaker": "nika", "text": "Вот это уже похоже на правду."},
+          {"speaker": "leo", "text": "Я мог объясниться из Милана. Мог вернуться через месяц. Мог написать, когда понял, что молчание стало привычкой. Я не сделал ничего из этого."},
+          {"speaker": "nika", "text": "Потому что было неудобно?"},
+          {"speaker": "leo", "text": "Потому что мне было страшно услышать твой ответ и признать, что карьеру я выбрал сам."},
+          {"speaker": "nika", "text": "Это не трагедия, которую нужно мне простить. Это твой выбор и его цена."},
+          {"speaker": "leo", "text": "Я не прошу считать это доказательством любви. Это доказательство трусости."},
+          {"speaker": null, "text": "Ника не перевернула фотографию. Но и не убрала отчёт с середины стола.", "when": {"ep3SurveyAction": "report"}},
+          {"speaker": null, "text": "Ника оставила отчёт закрытым до полной проверки. Его честность не превращала рабочий документ в индульгенцию.", "when": {"ep3SurveyAction": "hold"}}
         ],
         "en": [
-          { "speaker": "nika", "text": "Eight years is not a pause, Leo. It is eight years of decisions made without me." },
-          { "speaker": "leo", "text": "I know. I left for Milan after an offer I had wanted all my life and decided I had to become someone before I could come back to you." },
-          { "speaker": "nika", "text": "You decided I would wait while you became ready." },
-          { "speaker": "leo", "text": "No. I decided that if I did not call, I would not have to hear you say you would not." },
-          { "speaker": "nika", "text": "That sounds closer to the truth." },
-          { "speaker": "leo", "text": "I am not asking you to count it as proof of love. It is proof of cowardice." },
-          { "speaker": null, "text": "The old photograph lay between them. Nika did not turn it over." }
+          {"speaker": null, "text": "They spoke in the office with Leo's report and the old pier photograph between them. The work folder kept the conversation from becoming a memory without consequences."},
+          {"speaker": "nika", "text": "Eight years is not a pause, Leo. It is eight years of decisions made without me."},
+          {"speaker": "leo", "text": "I left for Milan after an offer I had been waiting for. I decided I would become someone first, then come back to you."},
+          {"speaker": "nika", "text": "You decided I would wait while you became ready."},
+          {"speaker": "leo", "text": "No. I decided that if I did not call, I would not have to hear you say you would not."},
+          {"speaker": "nika", "text": "That sounds closer to the truth."},
+          {"speaker": "leo", "text": "I could have explained from Milan. I could have returned a month later. I could have written when I realised silence had become a habit. I did none of it."},
+          {"speaker": "nika", "text": "Because it was uncomfortable?"},
+          {"speaker": "leo", "text": "Because I was afraid of your answer and of admitting that I chose the career myself."},
+          {"speaker": "nika", "text": "That is not a tragedy I have to forgive. It is your choice and its cost."},
+          {"speaker": "leo", "text": "I am not asking you to call it proof of love. It is proof of cowardice."},
+          {"speaker": null, "text": "Nika did not turn the photograph over. She also did not remove the report from the middle of the table.", "when": {"ep3SurveyAction": "report"}},
+          {"speaker": null, "text": "Nika left the report closed until it could be checked. His honesty did not turn a work document into an absolution.", "when": {"ep3SurveyAction": "hold"}}
         ]
       },
       "next": "ep3_accountability_choice"
@@ -151,136 +357,261 @@
     {
       "id": "ep3_accountability_choice",
       "episode": 3,
-      "title": { "ru": "Что он готов назвать", "en": "What He Is Willing to Name" },
+      "day": 12,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["leo-repair-options"],
+      "title": {"ru": "Что он готов сделать", "en": "What He Is Willing to Do"},
       "assetId": "ep3-accountability-choice-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "leo", "text": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе." },
-          { "speaker": "nika", "text": "Тогда назови, что ты сделаешь сейчас, если я не стану возвращать тебе прошлое." },
-          { "speaker": "leo", "text": "Сдам отчёт честно. Даже если Aurea решит, что честность неудобна для проекта." },
-          { "speaker": "nika", "text": "И не будешь использовать нашу историю как аргумент в переговорах?" },
-          { "speaker": "leo", "text": "Не буду. Это твоя история тоже." }
+          {"speaker": "leo", "text": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе."},
+          {"speaker": "nika", "text": "Тогда назови, что ты сделаешь сейчас, если я не стану возвращать тебе прошлое."},
+          {"speaker": "leo", "text": "Сдам отчёт честно. И назову заказчика, когда смогу подтвердить это документом."},
+          {"speaker": "nika", "text": "Не будешь использовать нашу историю в переговорах?"},
+          {"speaker": "leo", "text": "Не буду. Это твоя история тоже."},
+          {"speaker": null, "text": "Ника записала его обещание рядом со сроком отчёта. Она не обещала ответить ему тем же."}
         ],
         "en": [
-          { "speaker": "leo", "text": "I could name more details, but I do not want to turn a confession into a way of getting access to you." },
-          { "speaker": "nika", "text": "Then name what you will do now if I do not return the past to you." },
-          { "speaker": "leo", "text": "I will submit an honest report. Even if Aurea decides honesty is inconvenient for the project." },
-          { "speaker": "nika", "text": "And you will not use our history as an argument in the negotiation?" },
-          { "speaker": "leo", "text": "I will not. It is your history too." }
+          {"speaker": "leo", "text": "I can name more details, but I do not want to turn a confession into access to you."},
+          {"speaker": "nika", "text": "Then tell me what you will do now if I do not give you the past back."},
+          {"speaker": "leo", "text": "I will submit the report honestly. And I will name the client when I can support it with a document."},
+          {"speaker": "nika", "text": "You will not use our history in the negotiations?"},
+          {"speaker": "leo", "text": "I will not. It is your history too."},
+          {"speaker": null, "text": "Nika wrote his promise beside the report deadline. She did not promise to return it."}
         ]
       },
       "choices": [
         {
-          "id": "ep3_accountability_accept",
-          "label": { "ru": "Признать, что это можно проверить делом", "en": "Accept that actions can prove it" },
+          "id": "ep3_accountability_listen",
+          "label": {"ru": "Выслушать его и попросить подтверждать делом", "en": "Hear him and ask for action"},
           "to": "ep3_aurea_drawing",
-          "effects": { "leoConversation": "accountability", "leoAccountability": "acknowledged", "leoTruthHeard": true, "trustLeo": 2, "relationshipLeo": 1 }
+          "effects": {"leoConversation": "accountability", "leoAccountability": "acknowledged", "leoTruthHeard": true, "trustLeo": 2, "relationshipLeo": 1}
+        },
+        {
+          "id": "ep3_accountability_action",
+          "label": {"ru": "Потребовать конкретный отчёт и раскрытие клиента", "en": "Require a concrete report and client disclosure"},
+          "to": "ep3_aurea_drawing",
+          "effects": {"leoConversation": "accountability", "leoAccountability": "acknowledged", "leoTruthHeard": true, "trustLeo": 3, "relationshipLeo": 0}
         },
         {
           "id": "ep3_accountability_distance",
-          "label": { "ru": "Оставить личную часть разговора закрытой", "en": "Keep the personal part closed" },
+          "label": {"ru": "Оставить личную часть разговора закрытой", "en": "Keep the personal part closed"},
           "to": "ep3_aurea_drawing",
-          "effects": { "leoConversation": "distance", "leoAccountability": "acknowledged", "leoTruthHeard": true, "trustLeo": 0, "relationshipLeo": 0 }
+          "effects": {"leoConversation": "distance", "leoAccountability": "acknowledged", "leoTruthHeard": true, "trustLeo": 0, "relationshipLeo": 0}
         }
       ]
     },
     {
       "id": "ep3_aurea_drawing",
       "episode": 3,
-      "title": { "ru": "Линия на плане", "en": "A Line on the Plan" },
+      "day": 13,
+      "location": "west-wing",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["aurea-mark-seen", "link-not-yet-verified"],
+      "title": {"ru": "Линия на плане", "en": "A Line on the Plan"},
       "assetId": "ep3-aurea-drawing-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "В западном крыле пахло пылью и старым камнем. На плане Лео обвёл арку, которую Aurea считала препятствием для новых номеров." },
-          { "speaker": "nika", "text": "Ты знал, кто заказал обследование?" },
-          { "speaker": "leo", "text": "Сначала — нет. Потом увидел приложение к договору. Aurea Hospitality. Я должен был сказать сразу, как понял." },
-          { "speaker": "nika", "text": "Ты снова почти оставил главное на последней странице." },
-          { "speaker": "leo", "text": "Да. Но сейчас я могу показать, где именно их план ломает живую часть отеля." },
-          { "speaker": null, "text": "Под линией старого плана обнаружилась подпись, совпадавшая с датой первого письма Бьянки." }
+          {"speaker": null, "text": "В западном крыле снова пахло пылью и старым камнем. Лео разложил планы на полу, чтобы не закрывать ими проход."},
+          {"speaker": "leo", "text": "Вот отметка, которую я увидел в приложении к заказу. A.H. и дата первого письма Бьянки."},
+          {"speaker": "nika", "text": "Отметка — это связь, но пока не доказательство того, какие условия подписаны."},
+          {"speaker": "leo", "text": "Согласен. Я мог показать её раньше."},
+          {"speaker": "nika", "text": "Ты снова почти оставил главное на последней странице."},
+          {"speaker": "leo", "text": "На этот раз я оставлю тебе и страницу, и время её проверить."},
+          {"speaker": null, "text": "Ника сфотографировала план, не забирая оригинал. В рабочем журнале она записала: «связь Aurea — рабочая гипотеза»."}
         ],
         "en": [
-          { "speaker": null, "text": "The west wing smelled of dust and old stone. On the plan, Leo circled an arch Aurea considered an obstacle to the new rooms." },
-          { "speaker": "nika", "text": "Did you know who commissioned the survey?" },
-          { "speaker": "leo", "text": "Not at first. Then I saw the contract appendix. Aurea Hospitality. I should have said it as soon as I understood." },
-          { "speaker": "nika", "text": "You almost left the important part on the last page again." },
-          { "speaker": "leo", "text": "Yes. But I can show you exactly where their plan breaks the living part of the hotel." },
-          { "speaker": null, "text": "Beneath the old plan, a signature appeared with the same date as Bianca's first letter." }
+          {"speaker": null, "text": "The west wing smelled of dust and old stone again. Leo spread the plans across the floor without blocking the passage."},
+          {"speaker": "leo", "text": "This is the mark I saw in the order appendix. A.H. and the date of Bianca's first letter."},
+          {"speaker": "nika", "text": "A mark is a link, not yet proof of what terms were signed."},
+          {"speaker": "leo", "text": "I agree. I could have shown it earlier."},
+          {"speaker": "nika", "text": "You almost left the important part on the last page again."},
+          {"speaker": "leo", "text": "This time I will leave you both the page and time to check it."},
+          {"speaker": null, "text": "Nika photographed the plan without taking the original. In the work log she wrote: ‘Aurea link — working lead’."}
         ]
       },
       "choices": [
         {
           "id": "ep3_mark_aurea_link",
-          "label": { "ru": "Зафиксировать связь Aurea в материалах", "en": "Record Aurea's connection in the file" },
-          "to": "ep3_matteo_confrontation",
-          "effects": { "leoAureaLinkKnown": true, "leoEvidence": "drawing", "fundingEvidence": 2, "hotelEvidence": "documents" }
+          "label": {"ru": "Зафиксировать отметку как рабочую улику", "en": "Record the mark as a working lead"},
+          "to": "ep3_document_check",
+          "effects": {"leoAureaLinkKnown": true, "leoEvidence": "drawing", "fundingEvidence": 2, "hotelEvidence": "documents"}
         },
         {
           "id": "ep3_protect_process",
-          "label": { "ru": "Не использовать связь против Лео", "en": "Do not use the connection against Leo" },
-          "to": "ep3_matteo_confrontation",
-          "effects": { "leoAureaLinkKnown": true, "leoEvidence": "drawing", "fundingEvidence": 1, "hotelEvidence": "documents" }
+          "label": {"ru": "Сохранить отметку в материалах до проверки", "en": "Keep the mark in the file until it is checked"},
+          "to": "ep3_document_check",
+          "effects": {"leoAureaLinkKnown": true, "leoEvidence": "drawing", "fundingEvidence": 1, "hotelEvidence": "documents"}
         }
       ]
     },
     {
-      "id": "ep3_matteo_confrontation",
+      "id": "ep3_document_check",
       "episode": 3,
-      "title": { "ru": "Не защищать от правды", "en": "Do Not Protect the Truth" },
-      "assetId": "ep3-matteo-confrontation-cg",
+      "day": 14,
+      "location": "archive-room",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["aurea-appendix-verified-or-held"],
+      "title": {"ru": "Проверка до обвинения", "en": "Check Before Accusation"},
+      "assetId": "ep3-document-check-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "matteo", "text": "Ты видела приложение к договору?" },
-          { "speaker": "nika", "text": "Видела. Лео показал его сам, хотя мог оставить в папке." },
-          { "speaker": "matteo", "text": "Он работает на Aurea." },
-          { "speaker": "nika", "text": "Он проводит для них обследование. Это факт. Остальное нужно выяснять до того, как мы назовём его предателем." },
-          { "speaker": "matteo", "text": "Я не хочу, чтобы ты защищала его из-за прошлого." },
-          { "speaker": "nika", "text": "Я не защищаю Лео. Я защищаю порядок, в котором доказательство идёт раньше обвинения." },
-          { "speaker": null, "text": "Маттео взял копию, но не вырвал её из рук Ники. На этот раз он тоже дождался разрешения." }
+          {"speaker": null, "text": "В архиве Ника нашла журнал входящих писем и попросила Лео открыть приложение к заказу на её экране, не пересказывая его по памяти."},
+          {"speaker": "nika", "text": "Если дата совпадёт, это всё ещё не делает Aurea злодеем. Это делает их стороной переговоров."},
+          {"speaker": "leo", "text": "И делает мой отчёт частью их плана, нравится мне это или нет."},
+          {"speaker": "nika", "text": "Нам не нужно нравится. Нам нужно не ошибиться публично."},
+          {"speaker": null, "text": "Дата в журнале совпала с датой письма Бьянки. Это связывало материалы, но ещё не отвечало на вопрос, какие условия действительно подписаны."},
+          {"speaker": "leo", "text": "Можно открыть приложение полностью и зафиксировать его условия. Или оставить отметку рабочей версией до общей проверки."},
+          {"speaker": "nika", "text": "Сначала решим, что именно мы готовы назвать доказательством."}
         ],
         "en": [
-          { "speaker": "matteo", "text": "You saw the contract appendix?" },
-          { "speaker": "nika", "text": "I did. Leo showed it himself, although he could have left it in the folder." },
-          { "speaker": "matteo", "text": "He works for Aurea." },
-          { "speaker": "nika", "text": "He is surveying for them. That is a fact. The rest needs checking before we call him a traitor." },
-          { "speaker": "matteo", "text": "I do not want you protecting him because of the past." },
-          { "speaker": "nika", "text": "I am not protecting Leo. I am protecting the order in which evidence comes before accusation." },
-          { "speaker": null, "text": "Matteo took the copy without pulling it from Nika's hands. This time, he waited for permission too." }
+          {"speaker": null, "text": "In the archive, Nika found the incoming-mail log and asked Leo to open the order appendix on her screen instead of retelling it from memory."},
+          {"speaker": "nika", "text": "If the date matches, that still does not make Aurea the villain. It makes them a party to the negotiation."},
+          {"speaker": "leo", "text": "And it makes my report part of their plan, whether I like it or not."},
+          {"speaker": "nika", "text": "We do not need to like it. We need not be wrong in public."},
+          {"speaker": null, "text": "The date in the log matched Bianca's letter. It linked the materials, but it did not yet answer which terms had actually been signed."},
+          {"speaker": "leo", "text": "We can open the full appendix and record its terms. Or keep the mark as a working lead until it is reviewed together."},
+          {"speaker": "nika", "text": "First we decide what we are prepared to call evidence."}
         ]
       },
       "choices": [
         {
-          "id": "ep3_share_findings",
-          "label": { "ru": "Передать копию Джулии и команде", "en": "Share the copy with Giulia and the team" },
-          "to": "ep3_quiet_return",
-          "effects": { "leoAccountability": "verified", "fundingEvidence": 3, "staffTrust": 2, "hotelEvidence": "public" }
+          "id": "ep3_verify_aurea_attachment",
+          "label": {"ru": "Проверить приложение и зафиксировать условия", "en": "Verify the appendix and record its terms"},
+          "requires": {"leoEvidence": "drawing"},
+          "to": "ep3_document_check_response",
+          "effects": {"leoAureaLinkKnown": true, "leoEvidence": "terms", "fundingEvidence": 3}
         },
         {
-          "id": "ep3_keep_process_private",
-          "label": { "ru": "Оставить материалы у Маттео до проверки", "en": "Keep the file with Matteo until it is checked" },
+          "id": "ep3_keep_as_lead",
+          "label": {"ru": "Оставить это рабочей гипотезой", "en": "Keep it as a working lead"},
+          "requires": {"leoEvidence": "drawing"},
+          "to": "ep3_document_check_response",
+          "effects": {"leoAureaLinkKnown": true, "leoEvidence": "drawing", "fundingEvidence": 2}
+        }
+      ]
+    },
+    {
+      "id": "ep3_document_check_response",
+      "episode": 3,
+      "day": 14,
+      "location": "archive-room",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["aurea-appendix-status-recorded"],
+      "title": {"ru": "Статус доказательства", "en": "Evidence Status"},
+      "assetId": "ep3-document-check-response-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Ника открыла приложение на общем экране и сверила подпись с копией Бьянки. Западное крыло действительно рассматривалось под новые номера, а служебный проход был отмечен как объект оптимизации.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "Теперь это документ, а не удобная версия.", "when": {"leoEvidence": "terms"}},
+          {"speaker": null, "text": "Ника сохранила совпадающую дату и отметку в рабочем журнале, но не назвала их доказательством условий. Полный текст ещё должен пройти проверку.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "leo", "text": "Я не буду делать из рабочей версии вывод, который она пока не выдерживает.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "nika", "text": "Теперь Маттео получит ровно тот объём, который мы можем подтвердить."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Nika opened the appendix on a shared screen and matched the signature against Bianca's copy. The west wing was being considered for new rooms, and the service passage was marked for optimisation.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "Now it is a document, not a convenient version.", "when": {"leoEvidence": "terms"}},
+          {"speaker": null, "text": "Nika saved the matching date and mark in the work log, but did not call them proof of the terms. The full text still needed checking.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "leo", "text": "I will not turn a working lead into a conclusion it cannot support yet.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "nika", "text": "Matteo will receive exactly the amount we can support."}
+        ]
+      },
+      "next": "ep3_matteo_confrontation"
+    },
+    {
+      "id": "ep3_matteo_confrontation",
+      "episode": 3,
+      "day": 15,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "leo"],
+      "knowledgeDelta": ["aurea-link-disclosure-scope", "hotel-evidence-scope"],
+      "title": {"ru": "Не защищать от правды", "en": "Do Not Protect Anyone from the Truth"},
+      "assetId": "ep3-matteo-confrontation-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "matteo", "text": "Ты видела приложение к договору?"},
+          {"speaker": "nika", "text": "Мы проверили его. Лео показал отметку и открыл документ, но это не даёт нам права дописать остальное.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "nika", "text": "У нас есть отметка на плане и совпадающая дата. Это рабочая версия, не готовое обвинение.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "matteo", "text": "Он работает на Aurea."},
+          {"speaker": "nika", "text": "Он проводит для них обследование. Это факт. Объём их контроля нужно читать в документе, а не угадывать по прошлому Лео."},
+          {"speaker": "leo", "text": "Я не буду просить вас скрыть связь, чтобы сохранить лицо."},
+          {"speaker": "matteo", "text": "Я не хочу, чтобы Ника защищала тебя из-за прошлого."},
+          {"speaker": "nika", "text": "Я не защищаю Лео. Я выбираю порядок, в котором доказательство идёт раньше обвинения."},
+          {"speaker": null, "text": "Маттео взял копию только после её разрешения. Лео остался у двери, не пытаясь решить за неё, кому отдавать папку."}
+        ],
+        "en": [
+          {"speaker": "matteo", "text": "You saw the contract appendix?"},
+          {"speaker": "nika", "text": "We checked it. Leo showed the mark and opened the document, but that does not give us the right to invent the rest.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "nika", "text": "We have a mark on the plan and a matching date. It is a working lead, not a finished accusation.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "matteo", "text": "He works for Aurea."},
+          {"speaker": "nika", "text": "He is surveying for them. That is a fact. We read the scope of their control in the document, not into Leo's past."},
+          {"speaker": "leo", "text": "I will not ask you to hide the link so I can save face."},
+          {"speaker": "matteo", "text": "I do not want Nika protecting you because of the past."},
+          {"speaker": "nika", "text": "I am not protecting Leo. I am choosing the order in which evidence comes before accusation."},
+          {"speaker": null, "text": "Matteo took the copy only after she gave permission. Leo stayed by the door instead of deciding who should receive the folder."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep3_share_verified",
+          "label": {"ru": "Передать проверенное приложение Джулии и команде", "en": "Share the verified appendix with Giulia and the team"},
+          "requires": {"leoEvidence": "terms"},
           "to": "ep3_quiet_return",
-          "effects": { "leoAccountability": "acknowledged", "fundingEvidence": 2, "staffTrust": 1 }
+          "effects": {"leoAccountability": "verified", "fundingEvidence": 4, "staffTrust": 3, "hotelEvidence": "public"}
+        },
+        {
+          "id": "ep3_keep_verified_private",
+          "label": {"ru": "Оставить проверенное приложение у Маттео до общей проверки", "en": "Keep the verified appendix with Matteo for a joint review"},
+          "requires": {"leoEvidence": "terms"},
+          "to": "ep3_quiet_return",
+          "effects": {"leoAccountability": "acknowledged", "fundingEvidence": 3, "staffTrust": 2}
+        },
+        {
+          "id": "ep3_share_lead",
+          "label": {"ru": "Передать команде неподтверждённую рабочую версию", "en": "Share the unverified working lead with the team"},
+          "requires": {"leoEvidence": "drawing"},
+          "to": "ep3_quiet_return",
+          "effects": {"leoAccountability": "acknowledged", "fundingEvidence": 2, "staffTrust": 2}
+        },
+        {
+          "id": "ep3_keep_lead_private",
+          "label": {"ru": "Оставить рабочую версию у Маттео до проверки", "en": "Keep the working lead with Matteo until it is checked"},
+          "requires": {"leoEvidence": "drawing"},
+          "to": "ep3_quiet_return",
+          "effects": {"leoAccountability": "acknowledged", "fundingEvidence": 2, "staffTrust": 1}
         }
       ]
     },
     {
       "id": "ep3_quiet_return",
       "episode": 3,
-      "title": { "ru": "После признания", "en": "After the Admission" },
+      "day": 16,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["leo-next-action-observed"],
+      "title": {"ru": "Без обещаний", "en": "Without Promises"},
       "assetId": "ep3-quiet-return-cg",
       "dialogue": {
         "ru": [
-          { "speaker": "leo", "text": "Ты не обязана отвечать сегодня ни на вопрос о прошлом, ни на вопрос обо мне." },
-          { "speaker": "nika", "text": "Ты удивительно часто говоришь правильные вещи после того, как восемь лет делал неправильные." },
-          { "speaker": "leo", "text": "Это не просит у тебя доверия. Только оставляет тебе право заметить, если я снова начну прятаться." },
-          { "speaker": "nika", "text": "Я замечу. И не буду объяснять твоё молчание вместо тебя." },
-          { "speaker": null, "text": "Лео кивнул и ушёл к западному крылу. Ника осталась у окна — с папкой Aurea, старой фотографией и будущим, которое впервые не требовало немедленного ответа." }
+          {"speaker": "leo", "text": "Ты не обязана отвечать сегодня ни на вопрос о прошлом, ни на вопрос обо мне."},
+          {"speaker": "nika", "text": "Ты говоришь правильные вещи после того, как восемь лет делал неправильные."},
+          {"speaker": "leo", "text": "Это не просит у тебя доверия. Только оставляет тебе право заметить, если я снова начну прятаться."},
+          {"speaker": "nika", "text": "Я замечу. И не буду объяснять твоё молчание вместо тебя.", "when": {"leoConversation": "accountability"}},
+          {"speaker": "nika", "text": "Я проверю следующий отчёт сама. Личные объяснения на сегодня закончены.", "when": {"leoConversation": "distance"}},
+          {"speaker": "leo", "text": "Если документ подтвердится, я отправлю исправленный отчёт не только заказчику, но и команде отеля.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "Если это останется только отметкой, я не назову её доказательством ради удобного вывода.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": null, "text": "Лео кивнул и ушёл к западному крылу. Ника осталась у окна — с фотографией, рабочей папкой и ответом, который пока не требовал прощения."}
         ],
         "en": [
-          { "speaker": "leo", "text": "You do not have to answer today about the past or about me." },
-          { "speaker": "nika", "text": "You say the right things surprisingly often after doing the wrong ones for eight years." },
-          { "speaker": "leo", "text": "It is not asking for your trust. It leaves you the right to notice if I start hiding again." },
-          { "speaker": "nika", "text": "I will notice. And I will not explain your silence for you." },
-          { "speaker": null, "text": "Leo nodded and returned to the west wing. Nika stayed by the window with the Aurea file, the old photograph, and a future that no longer demanded an immediate answer." }
+          {"speaker": "leo", "text": "You do not have to answer today about the past or about me."},
+          {"speaker": "nika", "text": "You say the right things after doing the wrong ones for eight years."},
+          {"speaker": "leo", "text": "It is not asking for your trust. It leaves you the right to notice if I start hiding again."},
+          {"speaker": "nika", "text": "I will notice. And I will not explain your silence for you.", "when": {"leoConversation": "accountability"}},
+          {"speaker": "nika", "text": "I will check the next report myself. The personal explanations are over for today.", "when": {"leoConversation": "distance"}},
+          {"speaker": "leo", "text": "If the document is confirmed, I will send the corrected report to the hotel team, not only to the client.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "If it remains only a mark, I will not call it proof because a convenient conclusion wants one.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": null, "text": "Leo nodded and returned to the west wing. Nika stayed by the window with the photograph, the work folder, and an answer that did not require forgiveness yet."}
         ]
       },
       "next": "ep3_transition"
@@ -288,29 +619,36 @@
     {
       "id": "ep3_transition",
       "episode": 3,
-      "title": { "ru": "Имя на полях", "en": "A Name in the Margins" },
+      "day": 16,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "bianca", "leo"],
+      "knowledgeDelta": ["aurea-link-carried-forward"],
+      "title": {"ru": "Имя на полях", "en": "A Name in the Margins"},
       "assetId": "ep3-transition-cg",
       "dialogue": {
         "ru": [
-          { "speaker": null, "text": "Вечером Ника вписала в рабочий журнал имя Aurea рядом с датой обследования. Не как обвинение и не как обещание — как знание, за которым теперь последуют действия." },
-          { "speaker": "bianca", "text": "Вы нашли приложение." },
-          { "speaker": "nika", "text": "Мы нашли его. Это важно." },
-          { "speaker": "bianca", "text": "Тогда завтра поговорим о том, что Aurea действительно готова предложить. У отеля будет право не согласиться, но не будет права не знать условий." },
-          { "speaker": "nika", "text": "Подходит. Только не называйте это спасением, пока мы не увидели цену." },
-          { "speaker": null, "text": "За стеной Лео включил свет в западном крыле. На этот раз Ника знала, чью работу она видит — и могла выбрать, что с этим знанием делать." }
+          {"speaker": null, "text": "Вечером Ника вписала в рабочий журнал имя Aurea рядом с датой обследования. Не как обвинение и не как обещание — как факт, степень проверки которого она тоже записала."},
+          {"speaker": "bianca", "text": "Вы нашли приложение.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "nika", "text": "Мы проверили приложение. Теперь можно обсуждать его условия, а не додумывать их.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "bianca", "text": "Вы нашли отметку.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "nika", "text": "Мы нашли рабочую связь и оставили её в статусе проверки. Завтра я задам вопросы по документам, а не по слухам.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "bianca", "text": "У отеля будет право не согласиться, но не будет права не знать условий."},
+          {"speaker": "nika", "text": "Подходит. Только не называйте это спасением, пока мы не увидели цену."},
+          {"speaker": null, "text": "За стеной Лео включил свет в западном крыле. Ника знала, чью работу видит, но ещё не решила, что это знание должно значить для её личной жизни."}
         ],
         "en": [
-          { "speaker": null, "text": "That evening, Nika wrote Aurea's name in the work log beside the survey date. Not as an accusation or a promise — as knowledge that now required action." },
-          { "speaker": "bianca", "text": "You found the appendix." },
-          { "speaker": "nika", "text": "We found it. That matters." },
-          { "speaker": "bianca", "text": "Then tomorrow we discuss what Aurea is actually prepared to offer. The hotel may refuse, but it will not have the right to remain uninformed." },
-          { "speaker": "nika", "text": "Fine. Just do not call it rescue until we have seen the price." },
-          { "speaker": null, "text": "Behind the wall, Leo turned on the light in the west wing. This time Nika knew whose work she was seeing — and could choose what to do with that knowledge." }
+          {"speaker": null, "text": "That evening Nika wrote Aurea's name in the work log beside the survey date. Not as an accusation or a promise, but as a fact whose level of verification she recorded too."},
+          {"speaker": "bianca", "text": "You found the appendix.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "nika", "text": "We checked the appendix. Now we can discuss its terms instead of guessing them.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "bianca", "text": "You found the mark.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "nika", "text": "We found a working link and kept it under review. Tomorrow I will ask about documents, not rumours.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "bianca", "text": "The hotel may refuse, but it will not have the right to remain uninformed."},
+          {"speaker": "nika", "text": "Fine. Just do not call it rescue until we have seen the price."},
+          {"speaker": null, "text": "Behind the wall, Leo turned on the light in the west wing. Nika knew whose work she was seeing, but had not decided what that knowledge should mean for her private life."}
         ]
       },
       "ending": true,
-      "endingId": "ep3-aurea-link",
-      "nextEpisode": "ep4"
+      "endingId": "ep3-aurea-link"
     }
   ]
 }

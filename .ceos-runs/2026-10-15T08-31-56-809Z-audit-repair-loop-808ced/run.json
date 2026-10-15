@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.18",
+  "runId": "2026-10-15T08-31-56-809Z-audit-repair-loop-808ced",
+  "pipeline": "audit-repair-loop",
+  "artMode": null,
+  "artOutputGateRequired": false,
+  "narrativeDualFormatRequired": false,
+  "nativeProducerRouteRequired": false,
+  "artAcceptanceProfile": null,
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-15T08-31-56-809Z-audit-repair-loop-808ced",
+  "createdAt": "2026-10-15T08:31:56.811Z",
+  "updatedAt": "2026-10-15T08:49:21.032Z",
+  "completedAt": "2026-10-15T08:49:21.032Z",
+  "cycle": 1,
+  "maxCycles": 3,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "audit-repair-loop",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "AUDITED",
+    "reason": "Independent Web High transport failed twice; confirmed native fallback route unavailable because gpt-5.6 is unsupported on this ChatGPT account. Local evidence is not an independent editorial verdict."
+  },
+  "checkpointCount": 4,
+  "scopeSha256": "b9f7aca47d69c41bb4b6c8bf839a05408c1d03bdcf7db5f027fa529a374a9687",
+  "capabilitiesSha256": "4ee7f872753ae034bfd533d8dbd3283a3217aa186ca270e91a8ca3967f5747ad",
+  "sourceAtStart": {
+    "available": true,
+    "head": "16e53a7cd4ca3a49c515565bf2606a10911f53fd",
+    "clean": false,
+    "worktreeSha256": "8203473dbfe6caf88044e6679ed70ea55c59a343cf6b8a0a01c053f30492d1bf"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": true,
+    "fallbackReason": "Web High transport failed twice; native ceos_reviewer unavailable because gpt-5.6 is unsupported on ChatGPT account",
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": true,
+        "fallbackReason": "Web High transport failed twice; native ceos_reviewer unavailable because gpt-5.6 is unsupported on ChatGPT account"
+      }
+    }
+  }
+}

@@ -2,6 +2,16 @@
   "schemaVersion": 1,
   "baseGraph": "narrative/graph.json",
   "outputGraph": "narrative/graph.json",
+  "baseStateKeys": [
+    "route", "trustMatteo", "trustLeo", "trustElio", "relationshipMatteo",
+    "relationshipLeo", "relationshipElio", "staffTrust", "fundingEvidence",
+    "investorTerms", "hotelEvidence", "matteoApproach", "elioApproach",
+    "leoConversation", "metMatteo", "metElio", "metLeo", "leoTruthHeard",
+    "elioKitchen", "askedAboutHotel", "lastChoice", "routeLocked",
+    "fakeDatingStatus", "fakeDatingTermsKnown", "biancaRoleKnown", "biancaTrust",
+    "publicAgreement", "consentBoundary", "ep2BudgetChoice", "matteoFutureTalk",
+    "leoAureaLinkKnown", "leoAccountability", "leoEvidence", "ep3SurveyChoice"
+  ],
   "authoredEpisodes": [2, 3],
   "plannedEpisodes": [4, 5, 6, 7, 8, 9, 10],
   "fragments": [

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_STAGE9_WEB_TRANSPORT",
+  "head": "16e53a7cd4ca3a49c515565bf2606a10911f53fd",
+  "webPreflight": "READY",
+  "webAttempts": [
+    {
+      "role": "ceos_reasoner_web",
+      "model": "chatgpt-web/gpt-6-sol",
+      "reasoning": "high",
+      "status": "ERROR",
+      "detail": "stream disconnected before completion: ChatGPT did not confirm that the prompt was sent"
+    },
+    {
+      "role": "ceos_reasoner_web",
+      "model": "chatgpt-web/gpt-6-sol",
+      "reasoning": "high",
+      "status": "ERROR",
+      "detail": "stream disconnected before completion: ChatGPT did not confirm that the prompt was sent"
+    }
+  ],
+  "nativeFallback": {
+    "role": "ceos_reviewer",
+    "requestedModel": "gpt-5.6",
+    "status": "ERROR",
+    "detail": "The gpt-5.6 model is not supported when using Codex with a ChatGPT account"
+  },
+  "verdict": null,
+  "note": "No independent editorial verdict was fabricated. Local editorial and technical evidence remains separate from this blocked gate."
+}

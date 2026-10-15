@@ -7,7 +7,15 @@ const manifestPath = path.join(root, 'narrative', 'episodes', 'manifest.json');
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 const basePath = path.join(root, manifest.baseGraph);
 const outputPath = path.join(root, manifest.outputGraph);
-const baseGraph = JSON.parse(fs.readFileSync(basePath, 'utf8'));
+const loadedBaseGraph = JSON.parse(fs.readFileSync(basePath, 'utf8'));
+const baseStateKeys = manifest.baseStateKeys ?? Object.keys(loadedBaseGraph.stateSchema ?? {});
+const baseGraph = {
+  ...loadedBaseGraph,
+  scenes: loadedBaseGraph.scenes.filter(scene => (scene.episode ?? 1) < 2),
+  stateSchema: Object.fromEntries(baseStateKeys.map(key => [key, loadedBaseGraph.stateSchema[key]])),
+  initialState: Object.fromEntries(baseStateKeys.map(key => [key, loadedBaseGraph.initialState[key]]))
+};
+delete baseGraph.episodeManifest;
 const fragments = manifest.fragments.map(entry => JSON.parse(fs.readFileSync(path.join(root, entry.path), 'utf8')));
 const graph = buildGraph(baseGraph, fragments);
 const serialized = `${JSON.stringify(graph, null, 2)}\n`;

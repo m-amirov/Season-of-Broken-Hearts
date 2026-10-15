@@ -1,0 +1,15 @@
+{
+  "stage": "9.3",
+  "scope": "EP2-EP3 editorial hardening",
+  "sourceHead": "16e53a7cd4ca3a49c515565bf2606a10911f53fd",
+  "runId": "2026-10-15T08:31:56-809Z-audit-repair-loop-808ced",
+  "status": "BLOCKED_STAGE9_WEB_TRANSPORT",
+  "baseline": {
+    "ep2": { "scenes": 11, "choices": 10, "ruWords": 853, "enWords": 1001 },
+    "ep3": { "scenes": 10, "choices": 8, "ruWords": 682, "enWords": 831 },
+    "routeExplorer": { "visitedStates": 17910, "visitedScenes": 39, "terminals": 512, "deadEnds": 0 }
+  },
+  "localResult": "LOCAL_EDITORIAL_AND_TECHNICAL_EVIDENCE_READY",
+  "independentReview": "BLOCKED_STAGE9_WEB_TRANSPORT",
+  "next": "Obtain an independently confirmed editorial reviewer route before declaring full acceptance; preserve EP1 and do not generate images"
+}

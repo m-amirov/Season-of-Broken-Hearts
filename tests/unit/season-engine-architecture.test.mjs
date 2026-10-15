@@ -5,7 +5,7 @@ import { NarrativeEngine } from '../../src/narrative/engine.mjs';
 import { buildGraph } from '../../src/narrative/graph-builder.mjs';
 import { exploreGraph } from '../../src/narrative/route-explorer.mjs';
 import { deserializeSave } from '../../src/narrative/save.mjs';
-import { createInitialState } from '../../src/narrative/state.mjs';
+import { createInitialState, getDialogueLines } from '../../src/narrative/state.mjs';
 import graph from '../../narrative/graph.json' with { type: 'json' };
 
 function minimalGraph() {
@@ -134,7 +134,7 @@ function advanceToEpisodeEnd(engine) {
 }
 
 test('Batch A graph reaches every authored EP2-EP3 scene and keeps route open', () => {
-  const report = exploreGraph(graph, { maxStates: 100_000 });
+  const report = exploreGraph(graph, { maxStates: 1_000_000 });
   assert.equal(report.valid, true, report.errors.join('; '));
   const reached = report.visitedScenes;
   for (const scene of graph.scenes.filter(scene => scene.episode >= 2)) {
@@ -145,6 +145,63 @@ test('Batch A graph reaches every authored EP2-EP3 scene and keeps route open', 
   assert.equal(report.terminals.some(terminal => terminal.path.includes('ep2_budget_open')), true);
   assert.equal(report.routes.size, 0);
   assert.equal(report.hotelOutcomes.size, 0);
+});
+
+function chooseById(engine, choiceId) {
+  let guard = 0;
+  while (!engine.choices().some(choice => choice.id === choiceId)) {
+    assert.ok(!engine.isEpisodeComplete(), `choice ${choiceId} was not reached`);
+    assert.equal(engine.advance().ok, true);
+    assert.ok(guard++ < 1_000, `choice ${choiceId} search exceeded guard`);
+  }
+  assert.equal(engine.choose(choiceId).ok, true);
+}
+
+test('EP2 consent and refusal are separate, close before EP3, and preserve the open route', () => {
+  const accepted = new NarrativeEngine(graph);
+  advanceToEpisodeEnd(accepted);
+  assert.deepEqual(accepted.continueEpisode(), { ok: true, type: 'episode', episode: 2 });
+  chooseById(accepted, 'ep2_budget_open');
+  chooseById(accepted, 'ep2_giulia_personal_plan');
+  chooseById(accepted, 'ep2_terms_public');
+  chooseById(accepted, 'ep2_bianca_professional');
+  chooseById(accepted, 'ep2_public_no');
+  chooseById(accepted, 'ep2_boundary_clear');
+  advanceToEpisodeEnd(accepted);
+  assert.equal(accepted.snapshot().state.publicAgreement, 'consented');
+  assert.equal(accepted.snapshot().state.matteoPublicGesture, 'declined');
+  assert.equal(accepted.snapshot().state.fakeDatingStatus, 'ended');
+  assert.equal(accepted.snapshot().state.route, 'none');
+  assert.deepEqual(accepted.continueEpisode(), { ok: true, type: 'episode', episode: 3 });
+
+  chooseById(accepted, 'ep3_survey_join');
+  chooseById(accepted, 'ep3_report_conflict');
+  chooseById(accepted, 'ep3_staff_route_record');
+  chooseById(accepted, 'ep3_accountability_action');
+  chooseById(accepted, 'ep3_mark_aurea_link');
+  chooseById(accepted, 'ep3_keep_as_lead');
+  chooseById(accepted, 'ep3_share_lead');
+  advanceToEpisodeEnd(accepted);
+  assert.equal(accepted.snapshot().state.leoEvidence, 'drawing');
+  assert.equal(accepted.snapshot().state.leoAccountability, 'acknowledged');
+  assert.equal(accepted.snapshot().state.route, 'none');
+  assert.equal(getDialogueLines(accepted.currentScene(), 'ru', accepted.snapshot().state).some(line => line.text.includes('приложение')), false);
+  assert.ok(accepted.currentScene().dialogue.ru.some(line => line.text.includes('рабочую связь')));
+
+  const refused = new NarrativeEngine(graph);
+  advanceToEpisodeEnd(refused);
+  refused.continueEpisode();
+  chooseById(refused, 'ep2_budget_improvise');
+  chooseById(refused, 'ep2_giulia_family_plan');
+  chooseById(refused, 'ep2_terms_decline');
+  chooseById(refused, 'ep2_refusal_help_giulia');
+  chooseById(refused, 'ep2_decline_keep_work');
+  advanceToEpisodeEnd(refused);
+  assert.equal(refused.snapshot().state.publicAgreement, 'declined');
+  assert.equal(refused.snapshot().state.fakeDatingStatus, 'none');
+  assert.equal(refused.snapshot().state.relationshipMatteo, 0);
+  assert.equal(refused.snapshot().state.route, 'none');
+  assert.deepEqual(refused.continueEpisode(), { ok: true, type: 'episode', episode: 3 });
 });
 
 test('runtime continues EP1 to EP2 to EP3 and round-trips the expanded save', () => {

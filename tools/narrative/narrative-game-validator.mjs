@@ -9,7 +9,11 @@ const validText = s => typeof s === 'string' && s.trim().length > 0;
 const primitive = x => x===null || ['string','number','boolean'].includes(typeof x);
 const idOK = x => validText(x) && /^[A-Za-z0-9_.:-]+$/.test(x);
 const stable = obj => JSON.stringify(obj);
-const MAX_STATES=4096;
+// EP2-EP3 editorial state domains are intentionally branch-sensitive. Keep
+// this bounded, but large enough to match the project route explorer's
+// declared verification envelope without silently converting coverage into a
+// false PASS at the old 4096-state ceiling.
+const MAX_STATES=100_000;
 
 export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined) {
   const errors=[], warnings=[];
