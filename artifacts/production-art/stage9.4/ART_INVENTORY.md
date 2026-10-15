@@ -2,7 +2,7 @@
 
 Статус inventory: `PASS_STAGE9_4_ART_INVENTORY_OPTIMIZED`
 
-Source HEAD: `5ac58032d314103059977014c8168988529b9f6f`
+Source HEAD: `5ac58032d314103059977014c8168988529b9f6f`  
 Editorial evidence: EP2/EP3 authored hashes and canon hashes match the current checkout. The independent Stage 9.3.2 receipts cover targeted changed scopes only; they are not reused as art acceptance.
 
 ## Coverage
