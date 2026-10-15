@@ -591,7 +591,7 @@
     "contract:AGENTS.md": {
       "target": "AGENTS.md",
       "sourceHash": "3e6d4ec28be6a3636836f5c2c9d69c71994b22b2ffa2efdb5c5e85f4f8ca01ff",
-      "targetHash": "3e6d4ec28be6a3636836f5c2c9d69c71994b22b2ffa2efdb5c5e85f4f8ca01ff"
+      "targetHash": "12e966579a3db50cbb3bb0830ec94b0cd6548f791991da90b879405f50f0e46e"
     },
     "contract:package-json": {
       "target": "package.json",
@@ -626,7 +626,7 @@
     "managed:skill-policy": {
       "target": "config/skill-policy.json",
       "sourceHash": "15328a009b3d7e6a1745697674522d10908bc139d98a1cf8e6262c6341364f6e",
-      "targetHash": "15328a009b3d7e6a1745697674522d10908bc139d98a1cf8e6262c6341364f6e"
+      "targetHash": "847a79c31511bd0d34e3cc2582a25ffe6031eca35e1c1c4c06b38354dc378e49"
     },
     "managed:manifest-entry-config": {
       "target": "config/manifest-entries.json",

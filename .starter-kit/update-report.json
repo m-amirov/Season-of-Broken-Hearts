@@ -94,10 +94,6 @@
       "target": ".agents/skills/yandex-release-validation/SKILL.md"
     },
     {
-      "logicalId": "contract:AGENTS.md",
-      "target": "AGENTS.md"
-    },
-    {
       "logicalId": "contract:package-json",
       "target": "package.json"
     },
@@ -168,10 +164,6 @@
     {
       "logicalId": "managed:yandex-requirements-diff-2026-08-18",
       "target": "docs/YANDEX_REQUIREMENTS_DIFF_2026-07-01_TO_2026-08-18.md"
-    },
-    {
-      "logicalId": "managed:skill-policy",
-      "target": "config/skill-policy.json"
     },
     {
       "logicalId": "managed:external-skill-sources",
@@ -475,7 +467,18 @@
     }
   ],
   "merged": [],
-  "resolved": [],
+  "resolved": [
+    {
+      "logicalId": "contract:AGENTS.md",
+      "target": "AGENTS.md",
+      "resolution": "accept-current"
+    },
+    {
+      "logicalId": "managed:skill-policy",
+      "target": "config/skill-policy.json",
+      "resolution": "accept-current"
+    }
+  ],
   "projectOwned": [
     "index.html",
     "package-lock.json",

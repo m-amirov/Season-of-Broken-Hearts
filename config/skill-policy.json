@@ -47,7 +47,7 @@
     "singleFinalTaskBarrier": true,
     "repeatGreenChecksWithoutStateChange": "forbidden",
     "conceptProofRequiredBeforeProduction": true,
-    "blindPlaytestRequiredBeforeMassContent": false,
+    "blindPlaytestRequiredBeforeMassContent": true,
     "stopProjectIsTerminal": true,
     "testHarnessAdjudicationRequired": true,
     "screenshotVisualGateRequiredForProductionVisiblePasses": true,
