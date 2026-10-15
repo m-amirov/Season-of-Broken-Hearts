@@ -27,7 +27,7 @@ export function runNarrativeGameProfile(root,profile) {
   const promises=profile.promisesPath===undefined
     ? undefined
     : JSON.parse(fs.readFileSync(resolveInside(root,profile.promisesPath),'utf8'));
-  return checkNarrativeGame(model,saves,promises);
+  return checkNarrativeGame(model,saves,promises,{maxStates:profile.maxStates});
 }
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){

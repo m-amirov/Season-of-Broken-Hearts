@@ -3,7 +3,7 @@
   "updaterSchemaVersion": 2,
   "installedVersion": "0.5.13",
   "attemptedVersion": "0.5.13",
-  "sourceManifestHash": "662257dcaa4d504cd0c63324d4e3f15273a8ce2906ef33ddf56cee7b6e6abcdf",
+  "sourceManifestHash": "65ed0e5f9dafef1489b813f1c6f64e4343f5942e17185702e011381d7b589bd3",
   "targetProfile": {
     "schemaVersion": 1,
     "profileName": "mature-yandex-phaser",
@@ -408,8 +408,8 @@
     },
     "managed:narrative-game-validator": {
       "target": "tools/narrative/narrative-game-validator.mjs",
-      "sourceHash": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733",
-      "targetHash": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733"
+      "sourceHash": "bf54f86f252ad1798aa43120c49aaf94a961502dacc502204c7849c809c6f200",
+      "targetHash": "bf54f86f252ad1798aa43120c49aaf94a961502dacc502204c7849c809c6f200"
     },
     "managed:story-promise-validator": {
       "target": "tools/narrative/story-promise-validator.mjs",
@@ -418,8 +418,8 @@
     },
     "managed:narrative-game-profile-cli": {
       "target": "tools/narrative/narrative-game-check.mjs",
-      "sourceHash": "1794008e28646e28e781deefe72c90fa18c0f9411196675c2845544f69d25c1b",
-      "targetHash": "1794008e28646e28e781deefe72c90fa18c0f9411196675c2845544f69d25c1b"
+      "sourceHash": "510ce3ac01ea68404d30a8b1230139ff0d226603c601230afbc0e9c3762c58eb",
+      "targetHash": "510ce3ac01ea68404d30a8b1230139ff0d226603c601230afbc0e9c3762c58eb"
     },
     "managed:narrative-game-profile-template": {
       "target": "config/optional-profiles/narrative-game.json",
@@ -428,8 +428,8 @@
     },
     "managed:narrative-game-profile-doc": {
       "target": "docs/NARRATIVE_GAME_PROFILE.md",
-      "sourceHash": "521b4e1ba5e85a5c002ce94aa3dada206bb785e2c9772a276588b897ac3f66fd",
-      "targetHash": "521b4e1ba5e85a5c002ce94aa3dada206bb785e2c9772a276588b897ac3f66fd"
+      "sourceHash": "159d9e20ee1bb924e7851768fe48aadc46e15e199a8ef5d2df890a7f6a747244",
+      "targetHash": "159d9e20ee1bb924e7851768fe48aadc46e15e199a8ef5d2df890a7f6a747244"
     },
     "migration:0.5.11-to-0.5.12": {
       "target": "migrations/0.5.11-to-0.5.12.md",
@@ -596,7 +596,7 @@
     "contract:package-json": {
       "target": "package.json",
       "sourceHash": "5e836dc5b3f1a657140840e7b09ab0360835fddfb8b25d1d1deab52174c9373c",
-      "targetHash": "339f876cfcba3a624333186a359910d2021628a6b8211126dabaa40e284ac347"
+      "targetHash": "3f9eac021d714c617ea3f21ea2059aeda3fca2d2ccd0fa14d3bb5c56e175df47"
     },
     "contract:yandex-requirements": {
       "target": "config/yandex-requirements.yaml",

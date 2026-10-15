@@ -9,15 +9,14 @@ const validText = s => typeof s === 'string' && s.trim().length > 0;
 const primitive = x => x===null || ['string','number','boolean'].includes(typeof x);
 const idOK = x => validText(x) && /^[A-Za-z0-9_.:-]+$/.test(x);
 const stable = obj => JSON.stringify(obj);
-// EP2-EP3 editorial state domains are intentionally branch-sensitive. Keep
-// this bounded, but large enough to match the project route explorer's
-// declared verification envelope without silently converting coverage into a
-// false PASS at the old 4096-state ceiling.
-const MAX_STATES=100_000;
+const DEFAULT_MAX_STATES=4096;
 
-export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined) {
+export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, options={}) {
   const errors=[], warnings=[];
   const fail=(code,scope='')=>errors.push({code,scope});
+  const maxStates=options?.maxStates ?? DEFAULT_MAX_STATES;
+  if(!Number.isSafeInteger(maxStates)||maxStates<1)
+    return {status:'BLOCKED_NARRATIVE_GAME',errors:[{code:'BAD_MAX_STATES',scope:'maxStates'}],warnings:[]};
   if(model?.schemaVersion!==1 || !Array.isArray(model.scenes) || model.scenes.length===0 ||
       !validText(model.start) || !Array.isArray(model.characters) ||
       !Array.isArray(model.locales) || !model.locales.length ||
@@ -92,7 +91,7 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined) {
   while(queue.length){
     const q=queue.shift(),k=nodeKey(q.id,q.state);
     if(nodes.has(k))continue;
-    if(nodes.size>=MAX_STATES){fail('STATE_SPACE_LIMIT');break;}
+    if(nodes.size>=maxStates){fail('STATE_SPACE_LIMIT',`maxStates:${maxStates}`);break;}
     const scene=scenes.get(q.id), edges=[];
     nodes.set(k,{id:q.id,state:q.state,edges,ending:scene.ending===true});
     if(!byScene.has(q.id))byScene.set(q.id,[]);
