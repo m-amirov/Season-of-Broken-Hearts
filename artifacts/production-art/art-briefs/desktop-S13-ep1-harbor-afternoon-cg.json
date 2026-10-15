@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S13",
+  "authoredSceneId": "ep1_harbor_walk",
+  "assetId": "ep1-harbor-afternoon-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-harbor-afternoon-cg.png",
+  "requiredCast": [
+    "nika",
+    "elio"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Walks beside the water after lunch with an empty coffee cup and too many questions."
+    },
+    {
+      "character": "elio",
+      "action": "Talks about staff and being noticed at a warm but respectful distance."
+    }
+  ],
+  "location": "Public Italian waterfront promenade with low stone sea wall, pavement-water boundary, boats and coastal buildings.",
+  "time": "afternoon",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "elio",
+      "path": "assets/characters/references/originals/elio.png",
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "desktop": {
+    "composition": "Standalone wide afternoon harbor walk with the pair placed on a real promenade and horizontal coastline/boats providing context; preserve calm lower dialogue-safe area and respectful distance.",
+    "framing": "Faces, empty cup, feet/contact, stone wall and clear waterline visible at every desktop viewport; daytime must be unmistakable.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "portrait": {
+    "composition": "The generated daylight portrait source remains authoritative.",
+    "framing": "Do not replace or stretch it.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "blueprint tube",
+    "Leo",
+    "night lighting",
+    "readable signs",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "water replacing pavement",
+    "forced intimacy",
+    "romantic hearts"
+  ],
+  "qualityAcceptance": [
+    "Afternoon public harbor remains distinct from Leo dusk/night.",
+    "Identity and cup match mobile.",
+    "Desktop waterline and ground plane are physically clear."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_harbor_afternoon", "at": [0, 0] },
+  "sceneContinuity": "The afternoon harbor beat follows the villa work scenes and precedes Leo's separate harbor encounter; keep Nika and Elio on the public waterfront in bright afternoon light with the cup and waterline readable."
+}

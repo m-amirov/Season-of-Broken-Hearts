@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S02",
+  "coveredSceneIds": [
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "authoredSceneId": "ep1_gate|ep1_matteo_formal_response|ep1_matteo_direct_response",
+  "assetId": "ep1-matteo-gate-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "nativeFallbackAllowed": true,
+  "sourceExisting": "assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+  "requiredCast": [
+    "nika",
+    "matteo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Matteo offers one hand while holding a ring of keys and a closed folder; Nika meets him at a respectful professional distance."
+    },
+    {
+      "character": "matteo",
+      "action": "Matteo offers one hand while holding a ring of keys and a closed folder; Nika meets him at a respectful professional distance."
+    }
+  ],
+  "location": "Villa Serena old coastal gate and stone entrance court",
+  "time": "morning, continuous with the arrival",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "matteo",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "new-outfit",
+    "continuityNote": "Same morning gate look continues from S01; Matteo enters in a darker structured host look so the two silhouettes separate immediately.",
+    "nika": {
+      "outfit": "Same dusty-blue blouse, taupe trousers and practical bag as S01; sleeves remain lightly rolled for an early work arrival.",
+      "palette": [
+        "dusty blue",
+        "warm taupe",
+        "soft sand"
+      ],
+      "silhouette": "relaxed elegant professional traveller",
+      "accessoriesProps": [
+        "small gold earrings",
+        "thin chain",
+        "practical leather bag",
+        "printed week plan"
+      ]
+    },
+    "matteo": {
+      "outfit": "Deep olive structured overshirt over a charcoal fine-gauge knit, stone trousers and dark brown leather belt.",
+      "palette": [
+        "deep olive",
+        "charcoal",
+        "stone",
+        "dark brown"
+      ],
+      "silhouette": "structured mature host silhouette with stronger shoulders",
+      "accessoriesProps": [
+        "ring of keys",
+        "closed document folder",
+        "ink-marked fingers"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep faces, handshake, keys, folder and gate readable above the mobile dialogue layer.",
+    "landscape": "Use the wide entrance court and respectful gap while keeping handshake, keys and folder at readable scale.",
+    "invariants": [
+      "Matteo holds keys/folder",
+      "no matching pale-linen uniform",
+      "same morning gate continuity"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "dusty blue/taupe Nika against deep olive/charcoal Matteo",
+    "silhouetteContrast": "soft relaxed separates against structured overshirt and mature shoulder line",
+    "pairs": [
+      "nika-matteo"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use the wide entrance court and respectful gap while keeping handshake, keys and folder at readable scale.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep faces, handshake, keys, folder and gate readable above the mobile dialogue layer.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_gate",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "Same morning gate look continues from S01; Matteo enters in a darker structured host look so the two silhouettes separate immediately.",
+  "reworkReason": "Primary Nika/Matteo wardrobe collision in a shared scene."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED_ART_BATCH",
+  "firstFailedIndex": 0,
+  "inspected": [],
+  "issues": [
+    "ART_BATCH_PATH_INVALID"
+  ],
+  "recordedAt": "2026-10-14T07:48:43.598Z"
+}

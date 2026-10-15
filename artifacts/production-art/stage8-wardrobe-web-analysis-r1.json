@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "WH-ART-EP1-WARDROBE-1014-R1",
+  "reviewTraceId": "WH-ART-EP1-WARDROBE-1014-R1",
+  "taskId": "01a13a26-3a25-7852-9154-f30c2f974e85",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage8-wardrobe-web-analysis-r1.json",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "verdict": "REWORK_REQUIRED",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "framesReviewed": 10,
+  "reviewedItems": ["ep1-staff-laundry-cg-portrait", "ep1-staff-laundry-cg-landscape", "ep1-harbor-afternoon-cg-portrait", "ep1-harbor-afternoon-cg-landscape", "ep1-leo-harbor-cg-portrait", "ep1-leo-harbor-cg-landscape", "ep1-leo-night-cg-portrait", "ep1-leo-night-cg-landscape", "ep1-hook-cg-portrait", "ep1-hook-cg-landscape"],
+  "evidenceRefs": ["ep1-staff-laundry-cg-portrait", "ep1-staff-laundry-cg-landscape", "ep1-harbor-afternoon-cg-portrait", "ep1-harbor-afternoon-cg-landscape", "ep1-leo-harbor-cg-portrait", "ep1-leo-harbor-cg-landscape", "ep1-leo-night-cg-portrait", "ep1-leo-night-cg-landscape", "ep1-hook-cg-portrait", "ep1-hook-cg-landscape"],
+  "receivedEvidenceRefs": ["ep1-staff-laundry-cg-portrait", "ep1-staff-laundry-cg-landscape", "ep1-harbor-afternoon-cg-portrait", "ep1-harbor-afternoon-cg-landscape", "ep1-leo-harbor-cg-portrait", "ep1-leo-harbor-cg-landscape", "ep1-leo-night-cg-portrait", "ep1-leo-night-cg-landscape", "ep1-hook-cg-portrait", "ep1-hook-cg-landscape"],
+  "visualEvidence": [
+    {"ref":"ep1-staff-laundry-cg-portrait","path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"869688bd0b8cac74642a8c7696b2ba54d76b9de5dd6c5357aa594c5c1c827fe3","observation":"Three-person laundry composition has distinct Nika olive utility layer, Giulia terracotta apron and Elio dark olive staff apron; Nika notebook is visible in portrait."},
+    {"ref":"ep1-staff-laundry-cg-landscape","path":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","sha256":"f0c914c724dcb56f378307d7c38a4c8f1a65acb9fcf1ffce797bd4c3b02d67e0","observation":"Landscape keeps three distinct staff silhouettes and laundry setting, but Nika notebook parity must be verified after bounded rework."},
+    {"ref":"ep1-harbor-afternoon-cg-portrait","path":"assets/production/cg/ep1-harbor-afternoon-cg.png","sha256":"d96c2b2e681c8c0c04e63259ad1ad7f8dc078376866e4ebfbb21bb4cf81b6508","observation":"Nika has outdoor blue overshirt and cup; Elio remains in dark work apron, requiring civilian waterfront wardrobe correction."},
+    {"ref":"ep1-harbor-afternoon-cg-landscape","path":"assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","sha256":"4b93cdcdf249d7f6db9754aea9464d69e6f10eae022af42fdb6a2ef382bb0665","observation":"Wide harbor geography and cup read correctly, but Elio's work apron is contextually mismatched to the walk and must be removed in both variants."},
+    {"ref":"ep1-leo-harbor-cg-portrait","path":"assets/production/cg/ep1-leo-harbor-cg.png","sha256":"3518d8f107fb497f6e444caa2512d15749ca27815bddaae139600b49554a1d27","observation":"Leo has distinct charcoal/rust field silhouette, blueprint tube and shoulder bag; Nika evening layer is visually separate."},
+    {"ref":"ep1-leo-harbor-cg-landscape","path":"assets/production/cg/ep1-leo-harbor-cg-landscape.png","sha256":"2fc4c7d05ede5286d5d8009a09871dff81dbb1fa362c92aa6ae6851f95fabd15","observation":"Wide blue-hour composition preserves Leo identity, blueprint tube, separation and harbor geography."},
+    {"ref":"ep1-leo-night-cg-portrait","path":"assets/production/cg/ep1-leo-night-cg.png","sha256":"ef0697f4b819f86f60fcf6fe6d8dc933a8947ccac8b68b29c9020c9d8df67c21","observation":"Night choice frame retains S14 wardrobe and emotional distance with Leo's charcoal/rust layers and rolled plans."},
+    {"ref":"ep1-leo-night-cg-landscape","path":"assets/production/cg/ep1-leo-night-cg-landscape.png","sha256":"1d756f84cb4a60bd587426e8cd42a885f3c0f0ca98fe3bc0b348568ea3b71872","observation":"Landscape night frame retains wardrobe continuity, negative space and practical harbor lights."},
+    {"ref":"ep1-hook-cg-portrait","path":"assets/production/cg/ep1-hook-cg.png","sha256":"2b9422107ae8c023bfc9d794a48f4f8a0e76cc1e7f58daef3094f30a5d8c103a","observation":"Hook has distinct olive Nika blazer and dark brown Matteo jacket; sealed folder remains closed with no readable spoiler."},
+    {"ref":"ep1-hook-cg-landscape","path":"assets/production/cg/ep1-hook-cg-landscape.png","sha256":"ace48244d0db718b3498b3728e67007554e79907bb9a04ccf4fec19a52e08036","observation":"Wide hook composition preserves office tension, closed sealed folder and wardrobe separation."}
+  ],
+  "evidenceLimitations": [
+    "The Web task could view only the final ten supplied attachments, items 11-20; the arrival, gate, lobby, kitchen and office pair remain unreviewed in this analysis turn.",
+    "No provider-attested evidence is claimed; evidence is source-bound PNGs supplied by the parent.",
+    "Authored cues are bound by the parent-provided project briefs and wardrobe matrix; the Web turn received image evidence only."
+  ],
+  "findings": [
+    {"id":"WARDROBE-01","severity":"P1","status":"REWORK_REQUIRED","detail":"Elio remains in a dark work apron in both harbor variants although the authored beat is an after-lunch public waterfront conversation; change to a civilian dark tobacco-olive overshirt."},
+    {"id":"CONTINUITY-02","severity":"P2","status":"REWORK_REQUIRED","detail":"Nika's notebook is visible in laundry portrait but not clearly retained in landscape; make the notebook an explicit cross-format invariant."},
+    {"id":"WARDROBE-03","severity":"PASS","detail":"Leo charcoal/rust silhouette and blueprint tube are distinct and continuous across blue-hour and night pairs."},
+    {"id":"CONTINUITY-04","severity":"PASS","detail":"Leo and Nika preserve evening layers and emotional distance across route-choice frames."},
+    {"id":"HOOK-05","severity":"PASS","detail":"Hook folder remains closed and sealed with no exposed final page or readable spoiler."},
+    {"id":"COVERAGE-06","severity":"BLOCKING","status":"INCOMPLETE_EVIDENCE","detail":"Only 10 of 20 requested PNGs were viewable; the first five family pairs require a separate source-bound Web review."}
+  ],
+  "unresolved": ["WARDROBE-01", "CONTINUITY-02", "COVERAGE-06", "The first five family pairs were unavailable as attachments and are not visually accepted."],
+  "decision": "Apply only the two bounded corrections above, then complete a separate Web review for the missing ten PNGs and a final acceptance review across all 20 variants."
+}

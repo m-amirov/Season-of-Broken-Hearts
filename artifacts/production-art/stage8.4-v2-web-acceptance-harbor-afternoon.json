@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-harbor-afternoon.json",
+  "reviewId": "review-ep1-harbor-afternoon-cg-20261015-045922-a7f3",
+  "reviewTraceId": "trace-57027e2c4b2654c00350b0ebf4406d20fe8d3762-ep1-harbor-afternoon-cg-6c91",
+  "taskId": "task-ep1-harbor-afternoon-cg-acceptance-9d42",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-harbor-afternoon-cg:source:portrait","ep1-harbor-afternoon-cg:source:landscape","ep1-harbor-afternoon-cg:runtime:390x844","ep1-harbor-afternoon-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-harbor-afternoon-cg.png","assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-harbor-afternoon-cg.png","artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-harbor-afternoon-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-harbor-afternoon-cg.png","assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-harbor-afternoon-cg.png","artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-harbor-afternoon-cg.png"],
+  "visualEvidence": [
+    {"ref":"harbor-source-p","path":"assets/production/cg/ep1-harbor-afternoon-cg.png","sha256":"dd4dc3cfe621d2880867926a2508f0bd54b4a62389529647138413c1ead3ba83","width":1024,"height":1536,"observation":"Portrait clearly conveys Nika and Elio walking beside the sea in an afternoon harbor promenade."},
+    {"ref":"harbor-source-l","path":"assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","sha256":"93be91cb263835f2373fab3e34609869e0c0afa4f3a54e3048e5b73dd30c1976","width":1672,"height":941,"observation":"Landscape preserves the pair, harbor setting and reflective workplace conversation."},
+    {"ref":"harbor-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-harbor-afternoon-cg.png","sha256":"b533b220131bc8bddad33b1262ac9fe451ef4346508cd4b957b2f61ca9f6d191","width":390,"height":844,"observation":"Mobile runtime keeps both characters, harbor water and conversational dynamic with readable text."},
+    {"ref":"harbor-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-harbor-afternoon-cg.png","sha256":"dc734eb2ff21a0306323591a143b45ba405ab31ac2eb0075b754f54216e6dc5d","width":1600,"height":900,"observation":"Desktop runtime keeps pair, harbor wall, boats, daylight and readable dialogue UI."}
+  ],
+  "findings": [
+    {"id":"HARBOR-AFTERNOON-P2-001","severity":"P2","status":"OPEN","authoredCue":"Nika and Elio discuss the staff shift list by the harbor.","observation":"The shift list is not a visually readable document in the frame; the cue is carried by conversational staging.","playerImpact":"No material comprehension loss is demonstrated because harbor, pair and reflective workplace conversation are clear.","materialPlayerImpact":false,"evidenceRef":"harbor-runtime-p390"},
+    {"id":"HARBOR-AFTERNOON-P3-002","severity":"P3","status":"OPEN","authoredCue":"The pair talk beside the harbor after lunch.","observation":"Desktop gradient suppresses some lower promenade detail.","playerImpact":"Scene recognition and dialogue readability remain intact.","materialPlayerImpact":false,"evidenceRef":"harbor-runtime-l1600"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

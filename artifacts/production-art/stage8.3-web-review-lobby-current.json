@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "reviewId": "WH-ART-EP1-1014-S83-LOBBY-CURRENT",
+  "reviewTraceId": "01a13c17-cce3-70d2-ae2b-f1b2c5d1d36f",
+  "taskId": "01a13c17-cce3-70d2-ae2b-f1b2c5d1d36f",
+  "agent": "ceos_art_director_web",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "verdict": "REWORK",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "reviewedItems": [
+    "ep1-lobby-cg:portrait-source",
+    "ep1-lobby-cg:runtime-390x844"
+  ],
+  "evidenceRefs": ["lobby-source-current", "lobby-runtime-390-current"],
+  "receivedEvidenceRefs": ["lobby-source-current", "lobby-runtime-390-current"],
+  "visualEvidence": [
+    {
+      "ref": "lobby-source-current",
+      "path": "assets/production/cg/ep1-lobby-cg.png",
+      "sha256": "062053c67572ac5602e1f0def0f2fb6a9918b7d24d138c4bbd706029cc08e0af",
+      "observation": "Source portrait contains Nika, Matteo and the extended guiding hand at the right edge."
+    },
+    {
+      "ref": "lobby-runtime-390-current",
+      "path": "artifacts/evidence/stage8.3-targeted-runtime/390x844/ep1-lobby-cg.png",
+      "sha256": "f271d04ca7db64b00be370a31b6ca8f7106abb27c2373dd3703fe23023dc28ac",
+      "dimensions": "390x844",
+      "observation": "Mobile-only contain framing keeps the full guiding hand, both faces, interaction and readable dialogue."
+    }
+  ],
+  "findings": [
+    {
+      "id": "LOBBY-MOBILE-FRAMING-REPAIRED",
+      "severity": "P2",
+      "status": "PASS",
+      "rootCause": "RUNTIME_FRAMING_DEFECT",
+      "detail": "The supplied 390x844 runtime frame passes the requested hand/face/dialogue-safe composition check."
+    },
+    {
+      "id": "LOBBY-WALL-PHOTOS-NARRATIVE-MISMATCH",
+      "severity": "P2",
+      "status": "REWORK",
+      "rootCause": "SOURCE_ART_DEFECT",
+      "detail": "Reviewer flagged the wall photographs as a narrative-location mismatch; no new generation is authorized in this scoped repair because this was not one of the three confirmed defects."
+    }
+  ],
+  "unresolved": [
+    "Independent current desktop continuity frame was not delivered in this bounded review.",
+    "Wall-photo narrative mismatch is outside the three-defect repair scope."
+  ],
+  "decision": "REWORK",
+  "evidenceLimitations": ["No runtime log was supplied to the reviewer; local scoped QA separately reports zero console/request/HTTP errors."],
+  "recordedAt": "2026-10-14T20:27:25.2721865Z"
+}

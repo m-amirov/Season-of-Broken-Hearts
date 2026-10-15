@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S05",
+  "coveredSceneIds": [
+    "S05"
+  ],
+  "authoredSceneId": "ep1_matteo_welcome",
+  "assetId": "ep1-lobby-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "nativeFallbackAllowed": true,
+  "sourceExisting": "assets/production/cg/ep1-lobby-cg-landscape.png",
+  "requiredCast": [
+    "nika",
+    "matteo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Matteo guides Nika through the lobby and selects a key while she studies the working space."
+    },
+    {
+      "character": "matteo",
+      "action": "Matteo guides Nika through the lobby and selects a key while she studies the working space."
+    }
+  ],
+  "location": "Villa Serena old-stone lobby with arches and guest photographs",
+  "time": "morning, continuous walk from the gate",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "matteo",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "same-outfit",
+    "continuityNote": "Continuous morning walk from the gate into the villa; retain the gate outfits, but remove the suitcase from the active gesture and let the architecture carry the transition.",
+    "nika": {
+      "outfit": "Same dusty-blue blouse, taupe trousers, small jewellery and leather bag; blouse cuffs remain rolled.",
+      "palette": [
+        "dusty blue",
+        "warm taupe",
+        "soft sand"
+      ],
+      "silhouette": "relaxed elegant professional traveller",
+      "accessoriesProps": [
+        "small gold earrings",
+        "thin chain",
+        "leather bag"
+      ]
+    },
+    "matteo": {
+      "outfit": "Same deep olive structured overshirt, charcoal knit, stone trousers and dark belt as the gate.",
+      "palette": [
+        "deep olive",
+        "charcoal",
+        "stone",
+        "dark brown"
+      ],
+      "silhouette": "structured mature host silhouette",
+      "accessoriesProps": [
+        "ring of keys",
+        "selected key in hand"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep guiding gesture, faces and old-stone interior visible.",
+    "landscape": "Use arches, stair and wall photographs as a villa anchor without widening into an empty establishing shot.",
+    "invariants": [
+      "same morning outfits as S02-S04",
+      "Matteo guides Nika inside",
+      "no extra cast"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "dusty blue/taupe against deep olive/charcoal",
+    "silhouetteContrast": "relaxed separates against structured host layers",
+    "pairs": [
+      "nika-matteo"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use arches, stair and wall photographs as a villa anchor without widening into an empty establishing shot.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep guiding gesture, faces and old-stone interior visible.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_matteo_welcome",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "Continuous morning walk from the gate into the villa; retain the gate outfits, but remove the suitcase from the active gesture and let the architecture carry the transition.",
+  "reworkReason": "The continuous scene must preserve a deliberate, distinct pair rather than two pale linen silhouettes."
+}

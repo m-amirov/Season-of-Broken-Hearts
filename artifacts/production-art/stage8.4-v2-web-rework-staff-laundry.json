@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "reviewId": "staff-laundry-v2-20261015-0811-7f3a",
+  "reviewTraceId": "web-high-laundry-57027e2-9c41",
+  "taskId": "ep1-staff-laundry-cg-acceptance-20261015-4d82",
+  "agent": "ceos_art_director_web",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "REWORK",
+  "decision": "REWORK_REQUIRED",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-staff-laundry-cg:source:portrait","ep1-staff-laundry-cg:source:landscape","ep1-staff-laundry-cg:runtime:390x844","ep1-staff-laundry-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-staff-laundry-cg.png","assets/production/cg/ep1-staff-laundry-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png","artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-staff-laundry-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-staff-laundry-cg.png","assets/production/cg/ep1-staff-laundry-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png","artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-staff-laundry-cg.png"],
+  "visualEvidence": [
+    {"ref":"laundry-source-p","path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870","width":1024,"height":1536,"observation":"Source portrait contains Nika with notebook, Giulia with linen and recognizable Elio at right with trays."},
+    {"ref":"laundry-source-l","path":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","sha256":"4cd3a10aff6ef44dcacf4993b3c69bf817920a33d31b8e471cb4f62d367fb3ef","width":1672,"height":941,"observation":"Landscape clearly presents all three staff, laundry actions, Elio's trays and clipboard."},
+    {"ref":"laundry-runtime-p390-old","path":"artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png","sha256":"86208b8739c63a9bce1707a5f251917c12deb4dfa25d91e6a552a3981cc01dea","width":390,"height":844,"observation":"Old mobile framing presents Nika and Giulia but crops Elio almost entirely beyond the right boundary; his face and action props are not sufficiently visible."},
+    {"ref":"laundry-runtime-l1600-old","path":"artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-staff-laundry-cg.png","sha256":"6a77540ce96ce2058d0075ef94209a0d048efa07bb0c8196a4a0090b5fa65","width":1600,"height":900,"observation":"Desktop framing presents all three staff and their actions clearly."}
+  ],
+  "findings": [
+    {"id":"PORTRAIT_RUNTIME_ELIO_NOT_RECOGNIZABLE","severity":"P1","status":"OPEN","authoredCue":"Nika, Giulia and Elio meet in the working laundry. Giulia handles linen, Elio brings a shift list and trays, Nika takes notes.","observation":"The old 390x844 gameplay viewport crops out Elio's recognizable face and the objects establishing his action, while landscape preserves the staging.","playerImpact":"Mobile players cannot visually identify Elio as the third participant or recognize his assigned action from this illustration; this materially compromises the authored three-character composition.","materialPlayerImpact":true,"impactCode":"ESSENTIAL_CHARACTER_UNRECOGNIZABLE","evidenceRef":"laundry-runtime-p390-old","actualPixelsReceived":true}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": "Adjust only mobile presentation of the existing portrait asset so Elio's recognizable face and enough of his participation remain visible alongside Nika and Giulia; preserve dialogue readability and verify with a new 390x844 independent review.",
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": true,
+  "evidenceLimitations": ["This REWORK receipt applies to the old 50% 18% mobile framing. It does not claim the subsequent 60% 18% repair." ]
+}

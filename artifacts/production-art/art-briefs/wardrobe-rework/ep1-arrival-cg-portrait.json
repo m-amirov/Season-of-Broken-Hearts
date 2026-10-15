@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S01",
+  "coveredSceneIds": [
+    "S01"
+  ],
+  "authoredSceneId": "ep1_arrival",
+  "assetId": "ep1-arrival-cg",
+  "variant": "portrait",
+  "targetDimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "nativeFallbackAllowed": false,
+  "sourceExisting": "assets/production/cg/ep1-arrival-cg-v2.png",
+  "requiredCast": [
+    "nika"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Nika closes the taxi door and stands beside her vintage suitcase and practical bag at the Villa Serena gate."
+    }
+  ],
+  "location": "Villa Serena stone gate and coastal road",
+  "time": "morning, warm Mediterranean daylight",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "new-outfit",
+    "continuityNote": "Arrival/travel baseline; establish Nika's own relaxed-elegant identity before she meets Matteo.",
+    "nika": {
+      "outfit": "Dusty-blue cotton blouse with rolled cuffs, warm taupe high-waisted wide-leg trousers, soft sand leather belt and brown practical crossbody bag.",
+      "palette": [
+        "dusty blue",
+        "warm taupe",
+        "soft sand"
+      ],
+      "silhouette": "relaxed tailored travel separates with a clean feminine line",
+      "accessoriesProps": [
+        "small gold earrings",
+        "thin chain",
+        "practical leather bag",
+        "vintage suitcase"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep face, suitcase and gate readable above the dialogue-safe lower area.",
+    "landscape": "Use the horizontal space for the gate, sea depth and full suitcase without making Nika a small figure.",
+    "invariants": [
+      "same dusty-blue/taupe outfit",
+      "same suitcase and bag",
+      "same daytime arrival beat"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": false,
+    "paletteContrast": "single-character establishing frame",
+    "silhouetteContrast": "Nika is readable as a modern professional traveller."
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use the horizontal space for the gate, sea depth and full suitcase without making Nika a small figure.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep face, suitcase and gate readable above the dialogue-safe lower area.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_arrival",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "Arrival/travel baseline; establish Nika's own relaxed-elegant identity before she meets Matteo.",
+  "reworkReason": "Current baseline is too close to Matteo's pale linen register and lacks a distinct arrival look."
+}

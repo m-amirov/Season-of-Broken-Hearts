@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "stage": "INTEGRATED",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "runtimeManifest": "narrative/assets.json",
+  "dualFormatManifest": "artifacts/production-art/stage8-dual-format-batch-manifest.json",
+  "handoffManifest": "artifacts/production-art/stage8-ep1-dual-format-manifest.json",
+  "assetManager": {
+    "module": "src/assets/asset-manager.mjs",
+    "selection": "real viewport aspect ratio; landscape at >=1.15, portrait otherwise",
+    "preload": "cache by selected source and await decode",
+    "fallback": "last valid decoded frame; no placeholder substitution",
+    "legacyCompatibility": "asset.src and variants.desktop remain read-compatible"
+  },
+  "renderer": {
+    "module": "src/ui/renderer-stage6.mjs",
+    "resize": "selected source is re-evaluated on resize and stale async swaps are token-rejected",
+    "crossfade": "preload/decode completes before src swap; existing frame remains visible during pending load"
+  },
+  "sceneMappings": {
+    "ep1_arrival": "ep1-arrival-cg",
+    "ep1_gate": "ep1-matteo-gate-cg",
+    "ep1_matteo_formal_response": "ep1-matteo-gate-cg",
+    "ep1_matteo_direct_response": "ep1-matteo-gate-cg",
+    "ep1_matteo_welcome": "ep1-lobby-cg",
+    "ep1_kitchen": "ep1-elio-kitchen-cg",
+    "ep1_elio_humor_response": "ep1-elio-kitchen-cg",
+    "ep1_elio_boundary_response": "ep1-elio-kitchen-cg",
+    "ep1_work_briefing": "ep1-matteo-office-cg",
+    "ep1_hotel_crisis": "ep1-matteo-office-cg",
+    "ep1_hotel_numbers_response": "ep1-matteo-office-cg",
+    "ep1_hotel_staff_response": "ep1-staff-laundry-cg",
+    "ep1_harbor_walk": "ep1-harbor-afternoon-cg",
+    "ep1_leo_entrance": "ep1-leo-harbor-cg",
+    "ep1_leo_choice": "ep1-leo-night-cg",
+    "ep1_leo_hear_response": "ep1-leo-night-cg",
+    "ep1_leo_distance_response": "ep1-leo-night-cg",
+    "ep1_hook": "ep1-hook-cg"
+  },
+  "coverage": {
+    "sceneCount": 18,
+    "portraitScenes": 18,
+    "landscapeScenes": 18,
+    "uniqueFamilies": 10,
+    "portraitVariants": 10,
+    "landscapeVariants": 10,
+    "runtimePlaceholdersInEp1": 0
+  },
+  "elioKitchen": {
+    "portrait": "repaired production PNG",
+    "landscape": "repaired production PNG",
+    "requiredInvariants": ["white apron", "upright knife", "correct cookware and kitchen action"]
+  },
+  "status": "INTEGRATED_PENDING_RUNTIME_AND_VISUAL_ACCEPTANCE"
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S15",
+  "coveredSceneIds": [
+    "S15",
+    "S16",
+    "S17"
+  ],
+  "authoredSceneId": "ep1_leo_choice|ep1_leo_hear_response|ep1_leo_distance_response",
+  "assetId": "ep1-leo-night-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "nativeFallbackAllowed": true,
+  "sourceExisting": "assets/production/cg/ep1-leo-night-cg-landscape.png",
+  "requiredCast": [
+    "nika",
+    "leo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Leo lowers or rolls the blueprints while Nika holds a clear boundary; their physical distance remains part of the emotional action."
+    },
+    {
+      "character": "leo",
+      "action": "Leo lowers or rolls the blueprints while Nika holds a clear boundary; their physical distance remains part of the emotional action."
+    }
+  ],
+  "location": "night harbor pier with practical lights and open water",
+  "time": "night, immediately following the blue-hour meeting",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "same-outfit",
+    "continuityNote": "The choice and both responses occur in the same night encounter; retain S14's evening layers so route branches do not create a costume discontinuity.",
+    "nika": {
+      "outfit": "Same muted navy jacket, dusty-blue knit, taupe trousers and brown shoulder bag as S14.",
+      "palette": [
+        "muted navy",
+        "dusty blue",
+        "muted taupe",
+        "brown"
+      ],
+      "silhouette": "contained evening silhouette with deliberate personal distance",
+      "accessoriesProps": [
+        "small earrings",
+        "thin chain",
+        "brown shoulder bag"
+      ]
+    },
+    "leo": {
+      "outfit": "Same charcoal field jacket, faded rust knit, dark trousers and weathered boots as S14.",
+      "palette": [
+        "charcoal",
+        "faded rust",
+        "weathered brown"
+      ],
+      "silhouette": "slender architectural field-work silhouette held apart in the frame",
+      "accessoriesProps": [
+        "lowered/rolled blueprint tube",
+        "shoulder bag"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep both faces, the emotional gap and practical harbour lights visible.",
+    "landscape": "Use negative space to preserve distance without shrinking Leo into an unreadable background; keep night exposure safe for dialogue.",
+    "invariants": [
+      "same outfits as S14",
+      "same night harbor",
+      "route choice changes dialogue, not wardrobe",
+      "no premature romantic closeness"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "navy/blue Nika against charcoal/rust Leo",
+    "silhouetteContrast": "controlled modern layer against narrow architectural field layers",
+    "pairs": [
+      "nika-leo"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use negative space to preserve distance without shrinking Leo into an unreadable background; keep night exposure safe for dialogue.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep both faces, the emotional gap and practical harbour lights visible.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_leo_choice",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "The choice and both responses occur in the same night encounter; retain S14's evening layers so route branches do not create a costume discontinuity.",
+  "reworkReason": "Current family needs stable night continuity and a clearer Leo silhouette across both choice branches."
+}

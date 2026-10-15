@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-10-14T08:37:44.1338412Z",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "server": "http://127.0.0.1:4173/",
+  "sceneId": "ep1_arrival",
+  "dialogueOpen": true,
+  "checks": [
+    {
+      "viewport": "1920x900",
+      "assetFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+      "complete": true,
+      "naturalWidth": 1672,
+      "blackFrame": false,
+      "screenshot": "output/playwright/stage8-ep1-dialogue-1920x900.png"
+    },
+    {
+      "viewport": "390x844",
+      "assetFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "complete": true,
+      "naturalWidth": 1024,
+      "blackFrame": false,
+      "screenshot": "output/playwright/stage8-ep1-dialogue-390x844.png"
+    },
+    {
+      "viewport": "360x640",
+      "assetFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "complete": true,
+      "naturalWidth": 1024,
+      "blackFrame": false,
+      "screenshot": "output/playwright/stage8-ep1-dialogue-360x640.png"
+    }
+  ],
+  "resizeReturnCheck": {
+    "viewport": "1920x900",
+    "sceneId": "ep1_arrival",
+    "assetFormat": "landscape",
+    "assetSrc": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+    "dialogueOpen": true,
+    "complete": true,
+    "blackFrame": false
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "network": {
+    "runtimeRequestsStatus": "all listed requests returned 200 OK",
+    "checkedStaticAssets": [
+      "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "/assets/production/cg/ep1-arrival-cg-landscape.png"
+    ]
+  },
+  "verdict": "PASS_SCOPED_RUNTIME_SMOKE",
+  "visualAcceptance": "NOT_VERIFIED",
+  "scopeNote": "Representative first-scene runtime smoke only; this is not full visual acceptance of all ten production CG families."
+}

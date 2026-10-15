@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "stage": "Stage 8.4",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "ceos": {
+    "version": "0.5.14",
+    "runId": "2026-10-15T04-57-04-675Z-production-art-f336fb",
+    "state": "CANON_READY",
+    "nextStage": "GENERATING",
+    "integrity": "PASS",
+    "webPreflight": "READY",
+    "webAgentsUsed": ["ceos_art_director_web"],
+    "routedWebReviewCount": 11,
+    "generationInvoked": false,
+    "generationGate": "BLOCKED_NO_FRESH_NATIVE_GENERATION_ATTESTATION"
+  },
+  "acceptance": {
+    "productionCgCount": 20,
+    "formatFamilies": 10,
+    "pass": 20,
+    "rework": 0,
+    "blocked": 0,
+    "openP0P1": 0,
+    "openMaterialP2": 0,
+    "historicalReworkResolved": true,
+    "currentPixelEvidenceRequiredAndReceived": true,
+    "receipts": [
+      "stage8.4-v2-web-acceptance-arrival.json",
+      "stage8.4-v2-web-acceptance-matteo-gate.json",
+      "stage8.4-v2-web-acceptance-elio-kitchen.json",
+      "stage8.4-v2-web-acceptance-harbor-afternoon.json",
+      "stage8.4-v2-web-acceptance-leo-harbor.json",
+      "stage8.4-v2-web-acceptance-leo-night.json",
+      "stage8.4-v2-web-acceptance-hook.json",
+      "stage8.4-v2-web-acceptance-lobby.json",
+      "stage8.4-v2-web-acceptance-matteo-office.json",
+      "stage8.4-v2-web-acceptance-staff-laundry-repaired.json"
+    ]
+  },
+  "disputedFrames": {
+    "matteoOffice": {
+      "decision": "PASS",
+      "finding": "Keys and folder remain secondary P3 advisory details; the authored work briefing and office action are readable without requiring those props to be visually distinguished."
+    },
+    "staffLaundry": {
+      "decision": "PASS_AFTER_MINIMAL_REPAIR",
+      "finding": "Old mobile framing made Elio insufficiently recognizable and caused a P1. The repaired frame preserves his face, shoulder, apron and trays while keeping the dialogue readable.",
+      "repair": "src/styles.css: object-position 60% 18% for ep1-staff-laundry-cg; source PNGs unchanged"
+    },
+    "lobby": {
+      "decision": "PASS",
+      "finding": "The wall photographs are hotel-history/ambient detail, not a plot-significant object. Existing mobile framing is preserved; the key and guiding gesture remain understandable."
+    }
+  },
+  "resolvedBlockingFinding": {
+    "severity": "P1",
+    "impactCode": "ESSENTIAL_CHARACTER_UNRECOGNIZABLE",
+    "cue": "Nika, Giulia and Elio meet in the working laundry. Giulia handles linen, Elio brings a shift list and trays, Nika takes notes.",
+    "oldEvidence": {
+      "path": "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png",
+      "sha256": "86208b8739c63a9bce1707a5f251917c12deb4dfa25d91e6a552a3981cc01dea"
+    },
+    "minimalFix": "CSS-only mobile object-position adjustment to 60% 18%; no image generation or source replacement.",
+    "repairedEvidence": {
+      "path": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png",
+      "sha256": "61f5d9353cd516dcb5906118d0b7ef25d9d1e13e1b37f8f570f347f98c49d226"
+    },
+    "finalReceipt": "stage8.4-v2-web-acceptance-staff-laundry-repaired.json"
+  },
+  "hashReconciliation": {
+    "receipt": "stage8.4-staff-laundry-hash-reconciliation.json",
+    "verified": true,
+    "generationPerformed": false,
+    "historicalReceiptsModified": false,
+    "runtimeSha256": "71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870",
+    "canonicalManifestSha256": "71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870"
+  },
+  "checks": {
+    "npmTest": "PASS: 63/63",
+    "narrativeValidate": "PASS_DECLARED_NARRATIVE_GRAPH",
+    "wardrobeContinuity": "PASS_WARDROBE_CONTINUITY_RULES",
+    "dualFormatHandoff": "PASS_DUAL_FORMAT_HANDOFF_DECLARED",
+    "artOutputBatch": "PASS_ART_BATCH_MECHANICAL",
+    "runtimeQa": "PASS: disputed, package 2, package 3 and repaired Staff Laundry captures; no console/request/http errors",
+    "webReviewVerify": "PASS for all 11 routed V2 records",
+    "diffCheck": "PASS"
+  },
+  "release": {
+    "prPrepared": false,
+    "mergeOrPush": false,
+    "reason": "CEOS remains at CANON_READY because GENERATING requires a fresh run-scoped native image-generation attestation and producer trace; no generation was needed or authorized by the acceptance evidence."
+  }
+}

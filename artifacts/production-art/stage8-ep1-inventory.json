@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "stage": "8",
+  "scope": "EP1 scenes S01-S18",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sourceFiles": [
+    "narrative/NARRATIVE_BIBLE.md",
+    "narrative/EPISODE_OUTLINE.md",
+    "narrative/STYLE_GUIDE.md",
+    "narrative/ROUTE_MAP.md",
+    "narrative/episode-1.md",
+    "narrative/graph.json",
+    "narrative/assets.json",
+    "artifacts/art-direction/ART_BIBLE.md",
+    "artifacts/art-direction/VISUAL_LANGUAGE.json",
+    "artifacts/art-direction/EP1_SHOT_LIST.md",
+    "artifacts/production-art/ep1-cg-asset-manifest.json"
+  ],
+  "summary": {
+    "sceneCount": 18,
+    "existingProductionAssetCount": 4,
+    "newProductionAssetCount": 6,
+    "productionAssetCountAfterBatch": 10,
+    "placeholderSceneCountBeforeBatch": 10,
+    "placeholderSceneCountAfterBatch": 0,
+    "reusedExistingAssetSceneMappings": 7,
+    "reusedNewAssetSceneMappings": 7,
+    "elioskitchenDefect": "CONFIRMED: authored cue says white apron and knife held like a conductor baton; accepted CG shows a dark apron and towel/pan instead."
+  },
+  "inventoryTable": [
+    {"sceneId":"ep1_arrival","sceneNumber":"S01","location":"Villa Serena exterior gate / low stone wall","time":"morning","characters":["Nika"],"currentAsset":"ep1-arrival-cg-v2","status":"PRODUCTION","decision":"KEEP accepted Nika arrival CG; suitcase, gate and coastal setting match the authored beat."},
+    {"sceneId":"ep1_gate","sceneNumber":"S02","location":"Villa Serena gate / entrance court","time":"morning","characters":["Nika","Matteo"],"currentAsset":"ep1-matteo-gate-cg","status":"PRODUCTION","decision":"REUSE accepted gate CG for the first meeting; keys/folder and respectful distance are visible."},
+    {"sceneId":"ep1_matteo_formal_response","sceneNumber":"S03","location":"Villa Serena gate / entrance court","time":"morning","characters":["Nika","Matteo"],"currentAsset":"ep1-matteo-gate-cg","status":"PRODUCTION_REUSED","decision":"Reuse gate CG; the authored folder handoff is a dialogue beat and does not require a new location."},
+    {"sceneId":"ep1_matteo_direct_response","sceneNumber":"S04","location":"Villa Serena gate / entrance court","time":"morning","characters":["Nika","Matteo"],"currentAsset":"ep1-matteo-gate-cg","status":"PRODUCTION_REUSED","decision":"Reuse gate CG; the direct branch remains in the same encounter space."},
+    {"sceneId":"ep1_matteo_welcome","sceneNumber":"S05","location":"Villa Serena lobby / cool stone interior","time":"late morning","characters":["Nika","Matteo"],"currentAsset":"villa -> ep1-lobby-cg","status":"PLACEHOLDER","decision":"Replace with a lobby CG; the text establishes interior stone, wax, guest photographs and the office handoff."},
+    {"sceneId":"ep1_kitchen","sceneNumber":"S06","location":"Working Villa Serena kitchen","time":"late morning","characters":["Nika","Elio"],"currentAsset":"ep1-elio-kitchen-cg","status":"PRODUCTION_NEEDS_REPAIR","decision":"Repair only the confirmed prop/wardrobe mismatch; keep the accepted kitchen composition and character identities."},
+    {"sceneId":"ep1_elio_humor_response","sceneNumber":"S07","location":"Working Villa Serena kitchen","time":"late morning","characters":["Nika","Elio"],"currentAsset":"ep1-elio-kitchen-cg","status":"PRODUCTION_REUSED","decision":"Reuse repaired kitchen CG; humor branch changes dialogue, not physical location."},
+    {"sceneId":"ep1_elio_boundary_response","sceneNumber":"S08","location":"Working Villa Serena kitchen","time":"late morning","characters":["Nika","Elio"],"currentAsset":"ep1-elio-kitchen-cg","status":"PRODUCTION_REUSED","decision":"Reuse repaired kitchen CG; boundary branch remains spatially continuous."},
+    {"sceneId":"ep1_work_briefing","sceneNumber":"S09","location":"Nika's Villa Serena office / work table","time":"noon","characters":["Nika","Matteo"],"currentAsset":"villa -> ep1-matteo-office-cg","status":"PLACEHOLDER","decision":"Replace with a work-office CG; schedule, suppliers, map and three mismatched keys are authored props."},
+    {"sceneId":"ep1_hotel_crisis","sceneNumber":"S10","location":"Nika's Villa Serena office / work table","time":"afternoon","characters":["Nika","Matteo"],"currentAsset":"villa -> ep1-matteo-office-cg","status":"PLACEHOLDER","decision":"Reuse office CG; crisis dialogue is a continuation at the same table before the hotel-evidence choice."},
+    {"sceneId":"ep1_hotel_numbers_response","sceneNumber":"S11","location":"Nika's Villa Serena office / work table","time":"afternoon","characters":["Nika","Matteo"],"currentAsset":"villa -> ep1-matteo-office-cg","status":"PLACEHOLDER","decision":"Reuse office CG; the Aurea proposal is a readable-in-story but not readable-in-art prop, so no baked text."},
+    {"sceneId":"ep1_hotel_staff_response","sceneNumber":"S12","location":"Villa Serena laundry / staff service area","time":"afternoon","characters":["Nika","Giulia","Elio"],"currentAsset":"villa -> ep1-staff-laundry-cg","status":"PLACEHOLDER","decision":"Use a separate three-person laundry/staff CG; the cast and service setting differ materially from the office."},
+    {"sceneId":"ep1_harbor_walk","sceneNumber":"S13","location":"Villa Serena waterfront / public harbor walk","time":"after lunch, afternoon","characters":["Nika","Elio"],"currentAsset":"harbor -> ep1-harbor-afternoon-cg","status":"PLACEHOLDER","decision":"Replace with an afternoon waterfront CG; sea wall, empty coffee cup and public harbor walk must be distinct from the later quay."},
+    {"sceneId":"ep1_leo_entrance","sceneNumber":"S14","location":"Far stone quay / harbor","time":"blue dusk","characters":["Nika","Leo"],"currentAsset":"ep1-leo-harbor-cg","status":"PRODUCTION","decision":"KEEP accepted Leo entrance CG; blueprint tube, paved quay, waterline and emotional distance match the cue."},
+    {"sceneId":"ep1_leo_choice","sceneNumber":"S15","location":"Far stone quay / harbor","time":"blue dusk after sunset","characters":["Nika","Leo"],"currentAsset":"night -> ep1-leo-night-cg","status":"PLACEHOLDER","decision":"Replace with a night-quay CG; both choice responses remain in this same conversation space and must preserve distance."},
+    {"sceneId":"ep1_leo_hear_response","sceneNumber":"S16","location":"Far stone quay / harbor","time":"blue dusk after sunset","characters":["Nika","Leo"],"currentAsset":"night -> ep1-leo-night-cg","status":"PLACEHOLDER","decision":"Reuse night-quay CG; the hear branch is dialogue-only and must not imply a resolved romance or reveal the EP3 client mark."},
+    {"sceneId":"ep1_leo_distance_response","sceneNumber":"S17","location":"Far stone quay / harbor","time":"blue dusk after sunset","characters":["Nika","Leo"],"currentAsset":"night -> ep1-leo-night-cg","status":"PLACEHOLDER","decision":"Reuse night-quay CG; the distance branch is dialogue-only and must not imply unwanted intimacy."},
+    {"sceneId":"ep1_hook","sceneNumber":"S18","location":"Nika's Villa Serena office / dark interior","time":"night","characters":["Nika","Matteo"],"currentAsset":"night -> ep1-hook-cg","status":"PLACEHOLDER","decision":"Use a separate night-office CG; never substitute the Leo quay. Show sealed Villa Serena folder and restrained mystery without readable text or new plot information."}
+  ],
+  "batch": [
+    {"assetId":"ep1-lobby-cg","sceneIds":["ep1_matteo_welcome"],"sceneNumbers":["S05"],"cast":["nika","matteo"],"time":"late morning","location":"Villa Serena lobby / cool stone interior"},
+    {"assetId":"ep1-matteo-office-cg","sceneIds":["ep1_work_briefing","ep1_hotel_crisis","ep1_hotel_numbers_response"],"sceneNumbers":["S09","S10","S11"],"cast":["nika","matteo"],"time":"noon to afternoon","location":"Nika's Villa Serena office / work table"},
+    {"assetId":"ep1-staff-laundry-cg","sceneIds":["ep1_hotel_staff_response"],"sceneNumbers":["S12"],"cast":["nika","giulia","elio"],"time":"afternoon","location":"Villa Serena laundry / staff service area"},
+    {"assetId":"ep1-harbor-afternoon-cg","sceneIds":["ep1_harbor_walk"],"sceneNumbers":["S13"],"cast":["nika","elio"],"time":"after lunch, afternoon","location":"Villa Serena waterfront / public harbor walk"},
+    {"assetId":"ep1-leo-night-cg","sceneIds":["ep1_leo_choice","ep1_leo_hear_response","ep1_leo_distance_response"],"sceneNumbers":["S15","S16","S17"],"cast":["nika","leo"],"time":"blue dusk after sunset","location":"Far stone quay / harbor"},
+    {"assetId":"ep1-hook-cg","sceneIds":["ep1_hook"],"sceneNumbers":["S18"],"cast":["nika","matteo"],"time":"night","location":"Nika's Villa Serena office / dark interior"}
+  ],
+  "confirmedDefects": [
+    {"id":"ST8-ELIO-001","severity":"P1","sceneId":"ep1_kitchen","assetId":"ep1-elio-kitchen-cg","sourceCue":"graph.json scene ep1_kitchen paragraph 0","finding":"Text says Elio wears a white apron and holds a knife like a conductor baton; current pixels show a dark apron and a towel/pan, with no knife in the described pose.","decision":"bounded source-art repair; do not rewrite authored text"},
+    {"id":"ST8-PLACEHOLDER-001","severity":"P1","sceneIds":["ep1_matteo_welcome","ep1_work_briefing","ep1_hotel_crisis","ep1_hotel_numbers_response","ep1_hotel_staff_response","ep1_harbor_walk","ep1_leo_choice","ep1_leo_hear_response","ep1_leo_distance_response","ep1_hook"],"finding":"Required EP1 narrative locations are still mapped to placeholders.","decision":"replace by six scene-bound CG assets; preserve graph and authored dialogue"}
+  ]
+}

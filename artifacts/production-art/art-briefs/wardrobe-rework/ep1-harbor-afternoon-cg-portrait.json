@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S13",
+  "coveredSceneIds": [
+    "S13"
+  ],
+  "authoredSceneId": "ep1_harbor_walk",
+  "assetId": "ep1-harbor-afternoon-cg",
+  "variant": "portrait",
+  "targetDimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "nativeFallbackAllowed": false,
+  "sourceExisting": "assets/production/cg/ep1-harbor-afternoon-cg.png",
+  "requiredCast": [
+    "nika",
+    "elio"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Nika walks beside the water with an empty coffee cup while Elio speaks with her about staff and the hotel."
+    },
+    {
+      "character": "elio",
+      "action": "Nika walks beside the water with an empty coffee cup while Elio speaks with her about staff and the hotel."
+    }
+  ],
+  "location": "stone harbor promenade and public waterfront",
+  "time": "after lunch, late afternoon daylight",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "elio",
+      "path": "assets/characters/references/originals/elio.png",
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "new-outfit",
+    "continuityNote": "After the staff conversation, the pair move outdoors after lunch; Nika takes a lighter harbor layer and Elio remains in practical dark workwear.",
+    "nika": {
+      "outfit": "Dusty-blue chambray overshirt over an ivory tee, sand trousers, brown belt and practical crossbody bag.",
+      "palette": [
+        "dusty blue",
+        "ivory",
+        "sand",
+        "brown"
+      ],
+      "silhouette": "open outdoor overshirt with relaxed walking movement",
+      "accessoriesProps": [
+        "small earrings",
+        "thin chain",
+        "empty coffee cup",
+        "practical bag"
+      ]
+    },
+    "elio": {
+      "outfit": "Dark tobacco-olive overshirt over a rolled cream shirt, dark trousers and worn practical shoes; no apron off duty on the harbor walk.",
+      "palette": [
+        "dark tobacco",
+        "olive",
+        "cream"
+      ],
+      "silhouette": "warm active staff silhouette, visibly different from Nika's airy overshirt",
+      "accessoriesProps": [
+        "empty coffee cup context",
+        "rolled sleeves",
+        "worn practical shoes"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep empty cup, faces and harbour waterline visible above dialogue; Elio remains in civilian outdoor layers.",
+    "landscape": "Use stone promenade, boats and seaweed-weather atmosphere while keeping the conversational pair at readable scale; no staff apron in either format.",
+    "invariants": [
+      "after-lunch daylight",
+      "Nika has cup",
+      "Elio is off duty in a dark civilian outdoor layer",
+      "conversation remains grounded, not a romance climax"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "dusty blue/ivory Nika against tobacco/olive Elio",
+    "silhouetteContrast": "open walking overshirt against compact working apron",
+    "pairs": [
+      "nika-elio"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use stone promenade, boats and seaweed-weather atmosphere while keeping the conversational pair at readable scale.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep empty cup, faces and harbour waterline visible above dialogue.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_harbor_walk",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "After the staff conversation, the pair move outdoors after lunch; Nika takes a lighter harbor layer and Elio remains in practical dark workwear.",
+  "reworkReason": "Harbor scene needs an outdoor/social-context variation instead of the same villa work uniform."
+}

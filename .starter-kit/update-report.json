@@ -6,43 +6,12 @@
   "dryRun": false,
   "fromVersion": "0.5.13",
   "toVersion": "0.5.13",
-  "sourceManifestHash": "c8b53703984ad7875e1dd79698a26141e2192489c2560bcbc3c8b303b97ca646",
+  "sourceManifestHash": "662257dcaa4d504cd0c63324d4e3f15273a8ce2906ef33ddf56cee7b6e6abcdf",
   "targetProfile": "mature-yandex-phaser",
   "projectType": "mature",
   "skillRoot": ".agents/skills",
-  "created": [
-    {
-      "logicalId": "managed:tool-yandex-registry-hash",
-      "target": "tools/yandex/registry-hash.mjs",
-      "ownership": "managed"
-    }
-  ],
-  "updated": [
-    {
-      "logicalId": "managed:tool-lib",
-      "target": "tools/starter-kit/lib.mjs"
-    },
-    {
-      "logicalId": "managed:tool-semantic-acceptance",
-      "target": "tools/starter-kit/semantic-acceptance.mjs"
-    },
-    {
-      "logicalId": "managed:tool-status-core",
-      "target": "tools/starter-kit/status-core.mjs"
-    },
-    {
-      "logicalId": "managed:tool-update-engine",
-      "target": "tools/starter-kit/update-engine.mjs"
-    },
-    {
-      "logicalId": "managed:tool-yandex-requirements-audit",
-      "target": "tools/yandex/requirements-audit.mjs"
-    },
-    {
-      "logicalId": "managed:tool-yandex-docs-watch",
-      "target": "tools/yandex/docs-watch.mjs"
-    }
-  ],
+  "created": [],
+  "updated": [],
   "preserved": [
     {
       "logicalId": "skill:asset-provenance-and-rights:SKILL.md",
@@ -285,6 +254,10 @@
       "target": "docs/MANIFEST_SCHEMA.md"
     },
     {
+      "logicalId": "managed:manifest-entry-config",
+      "target": "config/manifest-entries.json"
+    },
+    {
       "logicalId": "managed:manifest-json-schema",
       "target": "config/starter-kit-manifest.schema.json"
     },
@@ -313,6 +286,10 @@
       "target": "tools/starter-kit/init-project.mjs"
     },
     {
+      "logicalId": "managed:tool-lib",
+      "target": "tools/starter-kit/lib.mjs"
+    },
+    {
       "logicalId": "managed:tool-manifest",
       "target": "tools/starter-kit/manifest.mjs"
     },
@@ -333,12 +310,28 @@
       "target": "tools/starter-kit/self-test.mjs"
     },
     {
+      "logicalId": "managed:tool-semantic-acceptance",
+      "target": "tools/starter-kit/semantic-acceptance.mjs"
+    },
+    {
       "logicalId": "managed:tool-status",
       "target": "tools/starter-kit/status.mjs"
     },
     {
+      "logicalId": "managed:tool-status-core",
+      "target": "tools/starter-kit/status-core.mjs"
+    },
+    {
+      "logicalId": "managed:tool-update-engine",
+      "target": "tools/starter-kit/update-engine.mjs"
+    },
+    {
       "logicalId": "managed:tool-update-self-test",
       "target": "tools/starter-kit/update-self-test.mjs"
+    },
+    {
+      "logicalId": "managed:tool-yandex-requirements-audit",
+      "target": "tools/yandex/requirements-audit.mjs"
     },
     {
       "logicalId": "managed:tool-yandex-sdk-validation",
@@ -347,6 +340,14 @@
     {
       "logicalId": "managed:tool-yandex-project-contract-validation",
       "target": "tools/yandex/project-contract-validation.mjs"
+    },
+    {
+      "logicalId": "managed:tool-yandex-docs-watch",
+      "target": "tools/yandex/docs-watch.mjs"
+    },
+    {
+      "logicalId": "managed:tool-yandex-registry-hash",
+      "target": "tools/yandex/registry-hash.mjs"
     },
     {
       "logicalId": "managed:tool-yandex-media-validation",
@@ -437,6 +438,18 @@
       "target": "docs/NARRATIVE_SCENE_VISUAL_CONTRACT.md"
     },
     {
+      "logicalId": "managed:narrative-art-handoff",
+      "target": "tools/narrative/narrative-art-handoff.mjs"
+    },
+    {
+      "logicalId": "test:narrative-art-handoff",
+      "target": "tests/starter-kit/narrative-art-handoff.test.mjs"
+    },
+    {
+      "logicalId": "managed:narrative-dual-format-art-doc",
+      "target": "docs/NARRATIVE_DUAL_FORMAT_ART.md"
+    },
+    {
       "logicalId": "managed:narrative-game-validator",
       "target": "tools/narrative/narrative-game-validator.mjs"
     },
@@ -462,13 +475,7 @@
     }
   ],
   "merged": [],
-  "resolved": [
-    {
-      "logicalId": "managed:manifest-entry-config",
-      "target": "config/manifest-entries.json",
-      "resolution": "accept-incoming"
-    }
-  ],
+  "resolved": [],
   "projectOwned": [
     "index.html",
     "package-lock.json",

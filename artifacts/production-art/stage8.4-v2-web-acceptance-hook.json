@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-hook.json",
+  "reviewId": "8f6e0c5f-b2da-4d42-bf75-3c2a3f4e7b91",
+  "reviewTraceId": "6d3453c2-2dbf-43e1-a48d-7c7e7b1fb4ad",
+  "taskId": "2fa2a2c1-7b3a-4f8c-91f3-5e2fd7d29fd1",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-hook-cg:source:portrait","ep1-hook-cg:source:landscape","ep1-hook-cg:runtime:390x844","ep1-hook-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-hook-cg.png","assets/production/cg/ep1-hook-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-hook-cg.png","artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-hook-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-hook-cg.png","assets/production/cg/ep1-hook-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-hook-cg.png","artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-hook-cg.png"],
+  "visualEvidence": [
+    {"ref":"hook-source-p","path":"assets/production/cg/ep1-hook-cg.png","sha256":"2b9422107ae8c023bfc9d794a48f4f8a0e76cc1e7f58daef3094f30a5d8c103a","width":1024,"height":1536,"observation":"Portrait clearly reads as Nika's office with a newly appeared folder on the desk, tense interaction and ominous mood."},
+    {"ref":"hook-source-l","path":"assets/production/cg/ep1-hook-cg-landscape.png","sha256":"ace48244d0db718b3498b3728e67007554e79907bb9a04ccf4fec19a52e08036","width":1672,"height":941,"observation":"Landscape preserves office identity, night atmosphere, mysterious folder and uneasy transition."},
+    {"ref":"hook-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-hook-cg.png","sha256":"02a8433d2ea0be65efb07579ea5da0ac378ad0637832e5485f646f9cb89bb714","width":390,"height":844,"observation":"Mobile runtime preserves office, tense staging and hook; overlay reduces folder prominence but not comprehension."},
+    {"ref":"hook-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-hook-cg.png","sha256":"f759203e6f84283447fedcb2c10742e7ad6034d3e6353bf3089e8f08c1f3e80c","width":1600,"height":900,"observation":"Desktop runtime keeps office identity, tense staging, mysterious folder and episode-end hook under readable dialogue UI."}
+  ],
+  "findings": [
+    {"id":"HOOK-P2-001","severity":"P2","status":"OPEN","authoredCue":"A mysterious folder appears in Nika's office as the episode hook.","observation":"Portrait dialogue overlay reduces the folder's visual prominence compared with source art.","playerImpact":"The office, tense interaction and ominous setup remain clear; the folder still reads and no material hook failure is demonstrated.","materialPlayerImpact":false,"evidenceRef":"hook-runtime-p390"},
+    {"id":"HOOK-P3-002","severity":"P3","status":"OPEN","authoredCue":"The episode ends on an uneasy question.","observation":"Landscape keeps the folder secondary behind character staging.","playerImpact":"The episode-end hook lands without requiring every narrative detail to be legible inside the art.","materialPlayerImpact":false,"evidenceRef":"hook-runtime-l1600"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

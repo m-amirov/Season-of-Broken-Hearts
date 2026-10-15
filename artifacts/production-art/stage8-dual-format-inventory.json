@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "stage": "8-recovery-dual-format",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "scope": "EP1 S01-S18, ten unique production CG families, portrait and landscape variants",
+  "requirements": {
+    "portrait": {"dimensions": "1024x1536", "aspect": "2:3"},
+    "landscape": {"target": "1920x1080", "nativeFallback": "closest supported landscape 16:9 or documented native equivalent"},
+    "coverage": "18/18 scenes through ten unique asset IDs"
+  },
+  "sceneMappings": [
+    {"assetId":"ep1-arrival-cg","sceneIds":["S01"],"portrait":"assets/production/cg/ep1-arrival-cg-v2.png","landscape":"assets/production/cg/ep1-arrival-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-matteo-gate-cg","sceneIds":["S02","S03","S04"],"portrait":"assets/production/cg/ep1-matteo-gate-cg.png","landscape":"assets/production/cg/ep1-matteo-gate-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-lobby-cg","sceneIds":["S05"],"portrait":"assets/production/cg/ep1-lobby-cg.png","landscape":"assets/production/cg/ep1-lobby-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-elio-kitchen-cg","sceneIds":["S06","S07","S08"],"portrait":"assets/production/cg/ep1-elio-kitchen-cg.png","landscape":"assets/production/cg/ep1-elio-kitchen-cg-landscape.png","status":"desktop_required_elio_repaired_both_variants"},
+    {"assetId":"ep1-matteo-office-cg","sceneIds":["S09","S10","S11"],"portrait":"assets/production/cg/ep1-matteo-office-cg.png","landscape":"assets/production/cg/ep1-matteo-office-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-staff-laundry-cg","sceneIds":["S12"],"portrait":"assets/production/cg/ep1-staff-laundry-cg.png","landscape":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-harbor-afternoon-cg","sceneIds":["S13"],"portrait":"assets/production/cg/ep1-harbor-afternoon-cg.png","landscape":"assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-leo-harbor-cg","sceneIds":["S14"],"portrait":"assets/production/cg/ep1-leo-harbor-cg.png","landscape":"assets/production/cg/ep1-leo-harbor-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-leo-night-cg","sceneIds":["S15","S16","S17"],"portrait":"assets/production/cg/ep1-leo-night-cg.png","landscape":"assets/production/cg/ep1-leo-night-cg-landscape.png","status":"desktop_required"},
+    {"assetId":"ep1-hook-cg","sceneIds":["S18"],"portrait":"assets/production/cg/ep1-hook-cg.png","landscape":"assets/production/cg/ep1-hook-cg-landscape.png","status":"desktop_required"}
+  ],
+  "currentState": {"portraitProductionFamilies": 10, "portraitSceneCoverage": 18, "landscapeProductionFamilies": 0, "landscapeSceneCoverage": 0, "placeholdersAfterMapping": 0},
+  "protected": ["narrative text", "choices", "save schema", "Stage 7 UI", "approved mobile CGs except confirmed Elio repair", "EP2-EP10"]
+}

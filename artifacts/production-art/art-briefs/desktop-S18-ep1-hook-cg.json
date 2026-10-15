@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S18",
+  "authoredSceneId": "ep1_hook",
+  "assetId": "ep1-hook-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-hook-cg.png",
+  "requiredCast": [
+    "nika",
+    "matteo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Looks toward a sealed Villa Serena folder without opening it."
+    },
+    {
+      "character": "matteo",
+      "action": "Warns Nika not to open the last page while remaining physically separate."
+    }
+  ],
+  "location": "Villa Serena private office at night with dark stone, closed shutters, one practical lamp and a visibly closed sealed folder.",
+  "time": "night",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "matteo",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"
+    }
+  ],
+  "desktop": {
+    "composition": "Standalone wide dark-office hook: use horizontal desk/doorway separation, one practical lamp and closed sealed folder as quiet focal point; keep faces/hands legible and preserve lower dialogue-safe value area.",
+    "framing": "Folder must be visibly closed with no exposed page or readable text; office must be distinct from quay at all desktop viewports.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "portrait": {
+    "composition": "The candidate-2 portrait source with visibly closed sealed folder remains authoritative.",
+    "framing": "Do not replace or stretch it.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "forbiddenProps": [
+    "harbor",
+    "water",
+    "Leo",
+    "readable folder text",
+    "Aurea logo",
+    "extra characters",
+    "opened last page",
+    "open portfolio",
+    "exposed pages",
+    "horror effects",
+    "hearts",
+    "UI",
+    "dialogue",
+    "watermark",
+    "forced intimacy"
+  ],
+  "qualityAcceptance": [
+    "Sealed-folder/no-reveal cue matches mobile.",
+    "Both identities and office night continuity match mobile.",
+    "Landscape is a real wide composition, not portrait crop."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_hook", "at": [0, 0] },
+  "sceneContinuity": "The closing night-office image follows the Leo quay branches and returns to Villa Serena for the episode hook; end on the closed sealed folder and unresolved question without exposing a final page or borrowing the harbor setting."
+}

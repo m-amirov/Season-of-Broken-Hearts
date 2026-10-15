@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "WH-ART-EP1-1014-DF-A1",
+  "reviewTraceId": "WH-ART-EP1-1014-DF-A1",
+  "phase": "analysis",
+  "taskId": "01a1396b-70da-7183-a8d7-d8b497eeccf6",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage8-dual-format-web-analysis.json",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "evidenceRefs": [
+    "ep1-arrival-cg-v2", "ep1-matteo-gate-cg", "ep1-lobby-cg", "ep1-elio-kitchen-cg",
+    "ep1-matteo-office-cg", "ep1-staff-laundry-cg", "ep1-harbor-afternoon-cg", "ep1-leo-harbor-cg",
+    "ep1-leo-night-cg", "ep1-hook-cg"
+  ],
+  "receivedEvidenceRefs": [
+    "ep1-arrival-cg-v2", "ep1-matteo-gate-cg", "ep1-lobby-cg", "ep1-elio-kitchen-cg",
+    "ep1-matteo-office-cg", "ep1-staff-laundry-cg", "ep1-harbor-afternoon-cg", "ep1-leo-harbor-cg",
+    "ep1-leo-night-cg", "ep1-hook-cg"
+  ],
+  "framesReviewed": 10,
+  "reviewedItems": [
+    "ep1-arrival-cg-v2", "ep1-matteo-gate-cg", "ep1-lobby-cg", "ep1-elio-kitchen-cg",
+    "ep1-matteo-office-cg", "ep1-staff-laundry-cg", "ep1-harbor-afternoon-cg", "ep1-leo-harbor-cg",
+    "ep1-leo-night-cg", "ep1-hook-cg"
+  ],
+  "summary": "Все десять текущих portrait-вариантов визуально проверены как baseline. Identity, locations, time, actions and continuity are suitable for independent landscape counterparts.",
+  "findings": [
+    {"severity":"P2","asset":"ep1-arrival-cg","status":"PASS_BASELINE","observation":"Nika arrives alone at the sunny Mediterranean villa gate with suitcase and leather bag; preserve gate, sea and warm morning light."},
+    {"severity":"P2","asset":"ep1-matteo-gate-cg","status":"PASS_BASELINE","observation":"Nika and Matteo meet at the same gate; Matteo identity, keys/folder and greeting gesture must remain legible."},
+    {"severity":"P2","asset":"ep1-lobby-cg","status":"PASS_BASELINE","observation":"Villa lobby interior continues the gate route; preserve architectural anchor and Matteo guiding gesture."},
+    {"severity":"P1","asset":"ep1-elio-kitchen-cg","status":"PASS_BASELINE_PROPS_CONFIRMED","observation":"Elio is in white kitchen uniform/apron with upright kitchen knife and cookware; keep the domestic professional context."},
+    {"severity":"P2","asset":"ep1-matteo-office-cg","status":"PASS_BASELINE","observation":"Matteo office retains table, neutral papers/maps, keys and red folder without readable invented text."},
+    {"severity":"P2","asset":"ep1-staff-laundry-cg","status":"PASS_BASELINE","observation":"Giulia remains central with linen while Elio reads as a distinct background staff member; preserve baskets and shelves."},
+    {"severity":"P2","asset":"ep1-harbor-afternoon-cg","status":"PASS_BASELINE","observation":"Nika and Elio remain on a daylight harbor promenade with cup, boats, waterline and dark work apron."},
+    {"severity":"P2","asset":"ep1-leo-harbor-cg","status":"PASS_BASELINE","observation":"Leo remains distinct at the blue-hour harbor with rolled plans and restrained first-meeting eye-line."},
+    {"severity":"P2","asset":"ep1-leo-night-cg","status":"PASS_BASELINE","observation":"Night quay preserves Nika/Leo distance, readable faces, waterline and practical lights."},
+    {"severity":"P1","asset":"ep1-hook-cg","status":"PASS_BASELINE_HOOK_SEALED","observation":"The sealed folder remains closed with no exposed final page; landscape must not reveal spoiler text or contents."}
+  ],
+  "unresolved": [
+    "Landscape PNGs and current-runtime desktop screenshots do not yet exist; final dual-format acceptance remains pending.",
+    "The landscape variants must be independently reviewed for identity, safe frame, props and story continuity after generation."
+  ],
+  "specialChecks": {
+    "Elio": {
+      "status": "PASS",
+      "invariants": ["white apron/white chef uniform", "upright kitchen knife", "kitchen surfaces and cookware remain visible", "domestic professional, not threatening beat"]
+    },
+    "Hook": {
+      "status": "PASS",
+      "invariants": ["closed sealed folder", "no exposed final page", "no readable spoiler text", "folder remains a visible story anchor"]
+    }
+  },
+  "desktopCompositionRequirements": [
+    "Use independent 16:9 landscape staging, not crop, stretch or blurred portrait fill.",
+    "Keep faces, eye-lines and key props readable above the real dialogue-safe region.",
+    "Keep one strong environmental anchor per location and preserve the established emotional distance.",
+    "Do not add cast, props, UI or readable text to fill horizontal space.",
+    "Night harbor and hook office need controlled exposure so faces and story props remain legible."
+  ],
+  "crossFormatInvariants": [
+    "Nika: dark jaw-length wavy bob, light linen EP1 wardrobe, stable face and age.",
+    "Matteo: dark hair, adult stronger jaw/stubble, light linen wardrobe, keys/folders where authored.",
+    "Elio: young highlighted hair/freckles; white kitchen uniform in S06-S08, dark work apron only in the harbor beat.",
+    "Leo: younger slender silhouette, long chestnut hair, harbor/evening identity, rolled plans and shoulder bag where authored.",
+    "Giulia: mature silver-threaded bun and housekeeping/laundry identity.",
+    "Location/time progression: villa gate and interiors → staff areas → daytime harbor → blue hour/night harbor → evening office hook.",
+    "Hook folder remains closed and sealed in both formats."
+  ],
+  "perAssetStatus": {
+    "ep1-arrival-cg": "PASS_BASELINE",
+    "ep1-matteo-gate-cg": "PASS_BASELINE",
+    "ep1-lobby-cg": "PASS_BASELINE",
+    "ep1-elio-kitchen-cg": "PASS_BASELINE_ELIO_PROPS_CONFIRMED",
+    "ep1-matteo-office-cg": "PASS_BASELINE",
+    "ep1-staff-laundry-cg": "PASS_BASELINE",
+    "ep1-harbor-afternoon-cg": "PASS_BASELINE",
+    "ep1-leo-harbor-cg": "PASS_BASELINE",
+    "ep1-leo-night-cg": "PASS_BASELINE",
+    "ep1-hook-cg": "PASS_BASELINE_HOOK_SEALED_FOLDER_CONFIRMED"
+  },
+  "visualEvidence": [
+    {"ref":"ep1-arrival-cg-v2","path":"assets/production/cg/ep1-arrival-cg-v2.png","sha256":"5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80","bytes":2756788,"pixelDimensions":"1024x1536","observation":"Nika, suitcase, coastal gate, stone paving and warm morning light; no conflicting cast."},
+    {"ref":"ep1-matteo-gate-cg","path":"assets/production/cg/ep1-matteo-gate-cg.png","sha256":"960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf","bytes":2935141,"pixelDimensions":"1024x1536","observation":"Nika and Matteo at the stone entrance court; keys/folder and greeting gesture remain visible."},
+    {"ref":"ep1-lobby-cg","path":"assets/production/cg/ep1-lobby-cg.png","sha256":"cc9c839087f75268169a8f2878c768a14b82c00a2eb359f4d2f42aa324c69eee","bytes":2588922,"pixelDimensions":"1024x1536","observation":"Nika and Matteo in the old Mediterranean lobby with interior direction and key handoff."},
+    {"ref":"ep1-elio-kitchen-cg","path":"assets/production/cg/ep1-elio-kitchen-cg.png","sha256":"fe06bab4e2d0c81173d0f76db93d3f41bf252add190e521b45738cd7eac14462","bytes":2418999,"pixelDimensions":"1024x1536","observation":"Nika and Elio in a working kitchen; Elio wears the repaired white apron and holds an upright kitchen knife with cookware context."},
+    {"ref":"ep1-matteo-office-cg","path":"assets/production/cg/ep1-matteo-office-cg.png","sha256":"04077bce222b7181b0c35f3a6cf4289939bac61eaaba4074c708d975ac019d86","bytes":2407893,"pixelDimensions":"1024x1536","observation":"Nika and Matteo at a work table with neutral maps/papers, folder and keys; no readable invented document text."},
+    {"ref":"ep1-staff-laundry-cg","path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"2b3ebe01508a27219cc4e382d15b811fbb301b0a903e23c38701cd2b7746952a","bytes":2525063,"pixelDimensions":"1024x1536","observation":"Nika, Giulia and Elio in a grounded service laundry with linen and shelving."},
+    {"ref":"ep1-harbor-afternoon-cg","path":"assets/production/cg/ep1-harbor-afternoon-cg.png","sha256":"bb2e152b46bbdb9a1d8d65c7f8cdfb8d97cf58643c739e6dcc446421a8308329","bytes":2810450,"pixelDimensions":"1024x1536","observation":"Nika with cup and Elio on a daylight public waterfront; waterline and coastal architecture are readable."},
+    {"ref":"ep1-leo-harbor-cg","path":"assets/production/cg/ep1-leo-harbor-cg.png","sha256":"f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa","bytes":2661333,"pixelDimensions":"1024x1536","observation":"Nika and Leo on the stone quay at blue dusk with waterline, blueprint tube and emotional distance."},
+    {"ref":"ep1-leo-night-cg","path":"assets/production/cg/ep1-leo-night-cg.png","sha256":"835d0f178d656e420bbdd344d26d6689d34628c4e340332ef710a751317248c1","bytes":2639334,"pixelDimensions":"1024x1536","observation":"Nika and Leo separated at the night quay; practical lights, ground and waterline remain readable."},
+    {"ref":"ep1-hook-cg","path":"assets/production/cg/ep1-hook-cg.png","sha256":"6a47becb307d3a1e50dd55162d5cf39f5831f5aed0483d566eb300895f31289a","bytes":2108674,"pixelDimensions":"1024x1536","observation":"Night office hook with Nika/Matteo and a closed sealed folder; no final page is exposed."}
+  ],
+  "decision": "APPROVE_TEN_LANDSCAPE_COUNTERPARTS",
+  "limitation": "This is analysis only. Final acceptance requires actual landscape PNGs, current-runtime screenshots and a separate dual-format Web High acceptance review."
+}

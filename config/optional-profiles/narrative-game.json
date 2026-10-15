@@ -3,5 +3,6 @@
   "profile": "narrative-game",
   "enabled": false,
   "modelPath": "narrative/graph.json",
-  "savesPath": "narrative/save-fixtures.json"
+  "savesPath": "narrative/save-fixtures.json",
+  "dualFormatManifestPath": "artifacts/production-art/ep1-dual-format.json"
 }

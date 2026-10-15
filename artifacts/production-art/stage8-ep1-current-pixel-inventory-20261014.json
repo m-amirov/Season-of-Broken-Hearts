@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "stage": "8-recovery",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "scope": "Existing EP1 production CGs; no generation or replacement performed",
+  "generatedInThisRecovery": 0,
+  "families": 10,
+  "frames": 20,
+  "variants": {
+    "portrait": {"count": 10, "dimensions": "1024x1536"},
+    "desktop": {"count": 10, "dimensions": "1672x941"}
+  },
+  "assets": [
+    {"family":"arrival","portrait":{"path":"assets/production/cg/ep1-arrival-cg-v2.png","sha256":"94d2d7ac289f422a28ec0bc57448974e68906083cb737ad25c03488287447462","bytes":2691022,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-arrival-cg-landscape.png","sha256":"b5054dc0348269cac5506344cc20f009f9538f4358ebd85e1dff334aa394c223","bytes":3046351,"width":1672,"height":941}},
+    {"family":"matteo-gate","portrait":{"path":"assets/production/cg/ep1-matteo-gate-cg.png","sha256":"67aa72676ecde81b58a5de74a97f3f30a2d1e98946f2e02d2b77c63828367d6a","bytes":2686113,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-matteo-gate-cg-landscape.png","sha256":"ee76b8b61ed57da92c3ba754ee6d5b799fc6e1e38c9282bc49351dc956e18515","bytes":2826439,"width":1672,"height":941}},
+    {"family":"lobby","portrait":{"path":"assets/production/cg/ep1-lobby-cg.png","sha256":"062053c67572ac5602e1f0def0f2fb6a9918b7d24d138c4bbd706029cc08e0af","bytes":2572498,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-lobby-cg-landscape.png","sha256":"0ea4bd80397dacc3e975e2398a4b6ae8f4b61a5b3af2fa6080e3726c80d260b1","bytes":2644861,"width":1672,"height":941}},
+    {"family":"elio-kitchen","portrait":{"path":"assets/production/cg/ep1-elio-kitchen-cg.png","sha256":"c9e04f5bce700f1858140aefdbaefa596790619a6809b3eb6bcf4035b55caf92","bytes":2490291,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-elio-kitchen-cg-landscape.png","sha256":"50f301010df9b1e79c97fe02a3aac218c73fb22af9a3a17a09b66070bfb01e4d","bytes":2441366,"width":1672,"height":941}},
+    {"family":"matteo-office","portrait":{"path":"assets/production/cg/ep1-matteo-office-cg.png","sha256":"16b33e09e97f438944c19e71ed5bc28f71df7bf0d3e3e7d1d3553479bb650882","bytes":2345777,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-matteo-office-cg-landscape.png","sha256":"ab0c392e98ec7c28c683a6692329a4a3edef4111a9fdbac728b770f7c880b349","bytes":2394753,"width":1672,"height":941}},
+    {"family":"staff-laundry","portrait":{"path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870","bytes":2377914,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","sha256":"4cd3a10aff6ef44dcacf4993b3c69bf817920a33d31b8e471cb4f62d367fb3ef","bytes":2496384,"width":1672,"height":941}},
+    {"family":"harbor-afternoon","portrait":{"path":"assets/production/cg/ep1-harbor-afternoon-cg.png","sha256":"dd4dc3cfe621d2880867926a2508f0bd54b4a62389529647138413c1ead3ba83","bytes":2610593,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","sha256":"93be91cb263835f2373fab3e34609869e0c0afa4f3a54e3048e5b73dd30c1976","bytes":3004069,"width":1672,"height":941}},
+    {"family":"leo-harbor","portrait":{"path":"assets/production/cg/ep1-leo-harbor-cg.png","sha256":"3518d8f107fb497f6e444caa2512d15749ca27815bddaae139600b49554a1d27","bytes":2515732,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-leo-harbor-cg-landscape.png","sha256":"2fc4c7d05ede5286d5d8009a09871dff81dbb1fa362c92aa6ae6851f95fabd15","bytes":2678556,"width":1672,"height":941}},
+    {"family":"leo-night","portrait":{"path":"assets/production/cg/ep1-leo-night-cg.png","sha256":"ef0697f4b819f86f60fcf6fe6d8dc933a8947ccac8b68b29c9020c9d8df67c21","bytes":2524412,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-leo-night-cg-landscape.png","sha256":"1d756f84cb4a60bd587426e8cd42a885f3c0f0ca98fe3bc0b348568ea3b71872","bytes":2629710,"width":1672,"height":941}},
+    {"family":"hook","portrait":{"path":"assets/production/cg/ep1-hook-cg.png","sha256":"2b9422107ae8c023bfc9d794a48f4f8a0e76cc1e7f58daef3094f30a5d8c103a","bytes":1974731,"width":1024,"height":1536},"desktop":{"path":"assets/production/cg/ep1-hook-cg-landscape.png","sha256":"ace48244d0db718b3498b3728e67007554e79907bb9a04ccf4fec19a52e08036","bytes":2013501,"width":1672,"height":941}}
+  ],
+  "visualAcceptance": "NOT_VERIFIED",
+  "independentWebHighRequired": true,
+  "recordedAt": "2026-10-14T13:04:00.000Z"
+}

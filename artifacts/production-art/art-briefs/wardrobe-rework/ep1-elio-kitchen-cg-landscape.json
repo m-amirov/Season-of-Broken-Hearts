@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S06",
+  "coveredSceneIds": [
+    "S06",
+    "S07",
+    "S08"
+  ],
+  "authoredSceneId": "ep1_kitchen|ep1_elio_humor_response|ep1_elio_boundary_response",
+  "assetId": "ep1-elio-kitchen-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "nativeFallbackAllowed": true,
+  "sourceExisting": "assets/production/cg/ep1-elio-kitchen-cg-landscape.png",
+  "requiredCast": [
+    "nika",
+    "elio"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Elio holds an upright kitchen knife like a conductor baton, argues with a saucepan and sets a cup beside Nika while cookware remains active around him."
+    },
+    {
+      "character": "elio",
+      "action": "Elio holds an upright kitchen knife like a conductor baton, argues with a saucepan and sets a cup beside Nika while cookware remains active around him."
+    }
+  ],
+  "location": "Villa Serena working professional kitchen",
+  "time": "late morning, hot daylight through service windows",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "elio",
+      "path": "assets/characters/references/originals/elio.png",
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "variant-of-previous",
+    "continuityNote": "Same first-day base outfit for Nika, adapted for a hot working kitchen with sleeves rolled and bag set aside; Elio changes into a clearly professional kitchen uniform.",
+    "nika": {
+      "outfit": "Dusty-blue blouse with sleeves rolled to the forearm, warm taupe trousers and small gold jewellery; leather bag is set on a bench, not worn during the kitchen action.",
+      "palette": [
+        "dusty blue",
+        "warm taupe",
+        "soft sand"
+      ],
+      "silhouette": "mobile relaxed work-ready separates",
+      "accessoriesProps": [
+        "small earrings",
+        "thin chain",
+        "cup",
+        "kettle nearby"
+      ]
+    },
+    "elio": {
+      "outfit": "White chef jacket under a clean white apron, sleeves rolled, dark olive work trousers and practical kitchen shoes.",
+      "palette": [
+        "white",
+        "cream",
+        "dark olive"
+      ],
+      "silhouette": "light active kitchen-worker silhouette distinct from both Nika and Matteo",
+      "accessoriesProps": [
+        "upright kitchen knife held like a conductor's baton",
+        "saucepan",
+        "cup",
+        "kettle",
+        "stainless worktop"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep white apron, upright knife, cookware, faces and cup visible above the dialogue layer.",
+    "landscape": "Use the wide kitchen station and steel surfaces to make the knife unequivocally culinary, preserve eye-line and keep the lower worktop dialogue-safe.",
+    "invariants": [
+      "white apron/chef uniform in both",
+      "upright kitchen knife in both",
+      "cookware and non-threatening professional context in both"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "dusty blue/taupe Nika against white/dark-olive Elio",
+    "silhouetteContrast": "soft office-travel separates against active chef uniform",
+    "pairs": [
+      "nika-elio"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use the wide kitchen station and steel surfaces to make the knife unequivocally culinary, preserve eye-line and keep the lower worktop dialogue-safe.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep white apron, upright knife, cookware, faces and cup visible above the dialogue layer.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_kitchen",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "Same first-day base outfit for Nika, adapted for a hot working kitchen with sleeves rolled and bag set aside; Elio changes into a clearly professional kitchen uniform.",
+  "reworkReason": "Keep the confirmed Elio semantic fix while separating Nika from the pale linen register and making the kitchen action explicit."
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S14",
+  "authoredSceneId": "ep1_leo_entrance",
+  "assetId": "ep1-leo-harbor-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-leo-harbor-cg.png",
+  "requiredCast": [
+    "nika",
+    "leo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "leo",
+      "action": "Holds an unbranded blueprint tube at the far pier and turns at footsteps."
+    },
+    {
+      "character": "nika",
+      "action": "Recognizes Leo after eight years while maintaining emotional distance."
+    }
+  ],
+  "location": "Stone harbor quay with readable paving, waterline, roofs and far pier.",
+  "time": "blue dusk",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "desktop": {
+    "composition": "Independent wide first-reunion frame using the horizontal quay, harbor roofs and water depth; preserve a meaningful gap, grounded stone plane and natural lower dialogue-safe negative space.",
+    "framing": "Both faces, Leo's tube, feet/contact shadows and waterline remain readable at all desktop viewports; no seawall ambiguity.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "portrait": {
+    "composition": "The existing accepted blue-dusk portrait source remains authoritative.",
+    "framing": "Do not alter the mobile source.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "forbiddenProps": [
+    "former Leo design with heavy stubble",
+    "extra characters",
+    "Aurea logo",
+    "embrace",
+    "floating feet",
+    "water replacing pavement",
+    "daylight",
+    "readable blueprint text",
+    "UI",
+    "dialogue",
+    "watermark"
+  ],
+  "qualityAcceptance": [
+    "Leo identity and blue dusk match mobile.",
+    "Tube belongs to Leo and ground plane is coherent.",
+    "Landscape is a distinct wide reunion composition."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_leo_harbor", "at": [0, 0] },
+  "sceneContinuity": "Leo's harbor introduction follows the afternoon waterfront branch but is its own encounter; preserve the same coastal geography while separating Leo's posture, wardrobe and emotional focus from the earlier Nika-Elio harbor image."
+}

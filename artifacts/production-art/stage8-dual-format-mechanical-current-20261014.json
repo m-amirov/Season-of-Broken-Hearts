@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-14T08:29:00Z",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "manifest": "artifacts/production-art/stage8-ep1-dual-format-manifest.json",
+  "manifestSha256AtRecord": "e50dc9af60fef6bd17f2b6c4590c0261e1e1e374b76eefc3fb7e3d0cac851139",
+  "validator": {
+    "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+    "requiredScenes": 18,
+    "mappedScenes": 18,
+    "uniqueAssets": 10,
+    "variantFilesChecked": 20,
+    "errors": [],
+    "visualAcceptance": "NOT_VERIFIED"
+  },
+  "continuationEvidence": {
+    "batchManifest": "artifacts/production-art/stage8-dual-format-batch-manifest.json",
+    "desktopReceipts": [
+      "artifacts/production-art/receipts/S14-ep1-leo-harbor-cg-landscape.json",
+      "artifacts/production-art/receipts/S15-17-ep1-leo-night-cg-landscape.json",
+      "artifacts/production-art/receipts/S18-ep1-hook-cg-landscape.json"
+    ],
+    "allDesktopFiles": "real PNGs with PASS_ART_OUTPUT_MECHANICAL receipts; no new Image Gen call was made by this turn"
+  },
+  "verdictBoundary": "Mechanical dual-format coverage is complete; current-runtime/Web visual acceptance and the interrupted CEOS run provenance remain unresolved."
+}

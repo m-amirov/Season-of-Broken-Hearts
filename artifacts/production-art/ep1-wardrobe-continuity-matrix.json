@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "WARDROBE_CONTINUITY_V1",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "episode": 1,
+  "status": "REWORK_REQUIRED_PENDING_GENERATION",
+  "scope": "All ten EP1 production CG families; both portrait and landscape variants are governed by the same wardrobe facts.",
+  "characterReferences": {
+    "nika": {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    "matteo": {"path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    "elio": {"path": "assets/characters/references/originals/elio.png", "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"},
+    "leo": {"path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    "giulia": {"path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  },
+  "families": [
+    {
+      "assetId": "ep1-arrival-cg",
+      "sceneIds": ["S01"],
+      "authoredSceneIds": ["ep1_arrival"],
+      "requiredCast": ["nika"],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Arrival/travel baseline; establish Nika's own relaxed-elegant identity before she meets Matteo.",
+        "nika": {"outfit": "Dusty-blue cotton blouse with rolled cuffs, warm taupe high-waisted wide-leg trousers, soft sand leather belt and brown practical crossbody bag.", "palette": ["dusty blue", "warm taupe", "soft sand"], "silhouette": "relaxed tailored travel separates with a clean feminine line", "accessoriesProps": ["small gold earrings", "thin chain", "practical leather bag", "vintage suitcase"]}
+      },
+      "sharedSceneDistinctness": {"required": false, "paletteContrast": "single-character establishing frame", "silhouetteContrast": "Nika is readable as a modern professional traveller."},
+      "dualFormatVerification": {"portrait": "Keep face, suitcase and gate readable above the dialogue-safe lower area.", "landscape": "Use the horizontal space for the gate, sea depth and full suitcase without making Nika a small figure.", "invariants": ["same dusty-blue/taupe outfit", "same suitcase and bag", "same daytime arrival beat"]},
+      "reworkReason": "Current baseline is too close to Matteo's pale linen register and lacks a distinct arrival look."
+    },
+    {
+      "assetId": "ep1-matteo-gate-cg",
+      "sceneIds": ["S02", "S03", "S04"],
+      "authoredSceneIds": ["ep1_gate", "ep1_matteo_formal_response", "ep1_matteo_direct_response"],
+      "requiredCast": ["nika", "matteo"],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Same morning gate look continues from S01; Matteo enters in a darker structured host look so the two silhouettes separate immediately.",
+        "nika": {"outfit": "Same dusty-blue blouse, taupe trousers and practical bag as S01; sleeves remain lightly rolled for an early work arrival.", "palette": ["dusty blue", "warm taupe", "soft sand"], "silhouette": "relaxed elegant professional traveller", "accessoriesProps": ["small gold earrings", "thin chain", "practical leather bag", "printed week plan"]},
+        "matteo": {"outfit": "Deep olive structured overshirt over a charcoal fine-gauge knit, stone trousers and dark brown leather belt.", "palette": ["deep olive", "charcoal", "stone", "dark brown"], "silhouette": "structured mature host silhouette with stronger shoulders", "accessoriesProps": ["ring of keys", "closed document folder", "ink-marked fingers"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "dusty blue/taupe Nika against deep olive/charcoal Matteo", "silhouetteContrast": "soft relaxed separates against structured overshirt and mature shoulder line", "pairs": ["nika-matteo"]},
+      "dualFormatVerification": {"portrait": "Keep faces, handshake, keys, folder and gate readable above the mobile dialogue layer.", "landscape": "Use the wide entrance court and respectful gap while keeping handshake, keys and folder at readable scale.", "invariants": ["Matteo holds keys/folder", "no matching pale-linen uniform", "same morning gate continuity"]},
+      "reworkReason": "Primary Nika/Matteo wardrobe collision in a shared scene."
+    },
+    {
+      "assetId": "ep1-lobby-cg",
+      "sceneIds": ["S05"],
+      "authoredSceneIds": ["ep1_matteo_welcome"],
+      "requiredCast": ["nika", "matteo"],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Continuous morning walk from the gate into the villa; retain the gate outfits, but remove the suitcase from the active gesture and let the architecture carry the transition.",
+        "nika": {"outfit": "Same dusty-blue blouse, taupe trousers, small jewellery and leather bag; blouse cuffs remain rolled.", "palette": ["dusty blue", "warm taupe", "soft sand"], "silhouette": "relaxed elegant professional traveller", "accessoriesProps": ["small gold earrings", "thin chain", "leather bag"]},
+        "matteo": {"outfit": "Same deep olive structured overshirt, charcoal knit, stone trousers and dark belt as the gate.", "palette": ["deep olive", "charcoal", "stone", "dark brown"], "silhouette": "structured mature host silhouette", "accessoriesProps": ["ring of keys", "selected key in hand"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "dusty blue/taupe against deep olive/charcoal", "silhouetteContrast": "relaxed separates against structured host layers", "pairs": ["nika-matteo"]},
+      "dualFormatVerification": {"portrait": "Keep guiding gesture, faces and old-stone interior visible.", "landscape": "Use arches, stair and wall photographs as a villa anchor without widening into an empty establishing shot.", "invariants": ["same morning outfits as S02-S04", "Matteo guides Nika inside", "no extra cast"]},
+      "reworkReason": "The continuous scene must preserve a deliberate, distinct pair rather than two pale linen silhouettes."
+    },
+    {
+      "assetId": "ep1-elio-kitchen-cg",
+      "sceneIds": ["S06", "S07", "S08"],
+      "authoredSceneIds": ["ep1_kitchen", "ep1_elio_humor_response", "ep1_elio_boundary_response"],
+      "requiredCast": ["nika", "elio"],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Same first-day base outfit for Nika, adapted for a hot working kitchen with sleeves rolled and bag set aside; Elio changes into a clearly professional kitchen uniform.",
+        "nika": {"outfit": "Dusty-blue blouse with sleeves rolled to the forearm, warm taupe trousers and small gold jewellery; leather bag is set on a bench, not worn during the kitchen action.", "palette": ["dusty blue", "warm taupe", "soft sand"], "silhouette": "mobile relaxed work-ready separates", "accessoriesProps": ["small earrings", "thin chain", "cup", "kettle nearby"]},
+        "elio": {"outfit": "White chef jacket under a clean white apron, sleeves rolled, dark olive work trousers and practical kitchen shoes.", "palette": ["white", "cream", "dark olive"], "silhouette": "light active kitchen-worker silhouette distinct from both Nika and Matteo", "accessoriesProps": ["upright kitchen knife held like a conductor's baton", "saucepan", "cup", "kettle", "stainless worktop"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "dusty blue/taupe Nika against white/dark-olive Elio", "silhouetteContrast": "soft office-travel separates against active chef uniform", "pairs": ["nika-elio"]},
+      "dualFormatVerification": {"portrait": "Keep white apron, upright knife, cookware, faces and cup visible above the dialogue layer.", "landscape": "Use the wide kitchen station and steel surfaces to make the knife unequivocally culinary, preserve eye-line and keep the lower worktop dialogue-safe.", "invariants": ["white apron/chef uniform in both", "upright kitchen knife in both", "cookware and non-threatening professional context in both"]},
+      "reworkReason": "Keep the confirmed Elio semantic fix while separating Nika from the pale linen register and making the kitchen action explicit."
+    },
+    {
+      "assetId": "ep1-matteo-office-cg",
+      "sceneIds": ["S09", "S10", "S11"],
+      "authoredSceneIds": ["ep1_work_briefing", "ep1_hotel_crisis", "ep1_hotel_numbers_response"],
+      "requiredCast": ["nika", "matteo"],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Noon office work marks a social-context change after the tour; Nika shifts to a calm work-layer and Matteo shifts to his more controlled office structure.",
+        "nika": {"outfit": "Muted taupe sleeveless knit top under a washed-olive lightweight blazer, charcoal-taupe trousers and slim leather watch.", "palette": ["muted taupe", "washed olive", "charcoal-taupe"], "silhouette": "clean professional work silhouette with softer tailoring", "accessoriesProps": ["small earrings", "thin chain", "slim watch", "schedule sheets", "three keys"]},
+        "matteo": {"outfit": "Charcoal structured overshirt-jacket over a tobacco knit, stone trousers and dark brown belt/watch.", "palette": ["charcoal", "tobacco", "stone", "dark brown"], "silhouette": "controlled office-owner structure, clearly heavier and darker than Nika", "accessoriesProps": ["keys", "closed red-tabbed folder", "neutral papers/maps"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "washed olive/taupe Nika against charcoal/tobacco Matteo", "silhouetteContrast": "soft tailored blazer against structured overshirt-jacket", "pairs": ["nika-matteo"]},
+      "dualFormatVerification": {"portrait": "Keep hands, faces, table edge, keys and closed folder above the mobile dialogue layer.", "landscape": "Use opposite sides of the work table and shutter light; preserve practical office intimacy and readable props without invented document text.", "invariants": ["same office wardrobe across S09-S11", "Matteo remains darker/more structured", "no readable invented documents"]},
+      "reworkReason": "Current office family repeats the same light-linen language and fails the professional-context change."
+    },
+    {
+      "assetId": "ep1-staff-laundry-cg",
+      "sceneIds": ["S12"],
+      "authoredSceneIds": ["ep1_hotel_staff_response"],
+      "requiredCast": ["nika", "giulia", "elio"],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Same afternoon work look as the office, adapted with rolled sleeves and a practical service layer; Giulia and Elio establish the staff-world costume code.",
+        "nika": {"outfit": "Washed-olive utility overshirt over an ivory tee, taupe trousers, rolled sleeves and leather watch.", "palette": ["washed olive", "ivory", "muted taupe"], "silhouette": "practical service-visit layer over relaxed professional base", "accessoriesProps": ["small earrings", "watch", "notebook held in both formats"]},
+        "giulia": {"outfit": "Cream blouse under a warm terracotta housekeeping apron, charcoal skirt and sensible low shoes.", "palette": ["cream", "warm terracotta", "charcoal"], "silhouette": "grounded senior-housekeeper apron silhouette", "accessoriesProps": ["folded towels", "linen", "laundry basket", "hair gathered back"]},
+        "elio": {"outfit": "Cream staff shirt under a dark olive work apron, sleeves rolled and practical trousers.", "palette": ["cream", "dark olive", "warm brown"], "silhouette": "active background staff silhouette, distinct from Giulia and Nika", "accessoriesProps": ["shift list", "two trays", "laundry shelving"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "olive/ivory Nika, terracotta/cream Giulia, dark-olive/cream Elio", "silhouetteContrast": "utility overshirt, senior apron and active staff apron are visibly different", "pairs": ["nika-giulia", "nika-elio", "giulia-elio"]},
+      "dualFormatVerification": {"portrait": "Keep Giulia central with towels, Nika engaged with the same notebook, and Elio legible in the background without crowding the dialogue layer.", "landscape": "Use table, baskets and shelving to explain the laundry while maintaining a readable three-person triangle; keep Nika's notebook visible as in portrait.", "invariants": ["Giulia owns the linen action", "Elio carries shift list/trays", "Nika reads as visiting professional", "Nika holds the same notebook in both variants"]},
+      "reworkReason": "Current service scene lacks a staff-specific costume code and repeats the office/gate palette too literally."
+    },
+    {
+      "assetId": "ep1-harbor-afternoon-cg",
+      "sceneIds": ["S13"],
+      "authoredSceneIds": ["ep1_harbor_walk"],
+      "requiredCast": ["nika", "elio"],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+      "continuityNote": "After the staff conversation, the pair move outdoors after lunch; Nika takes a lighter harbor layer and Elio changes out of the staff apron into a dark civilian outdoor layer appropriate for the waterfront walk.",
+        "nika": {"outfit": "Dusty-blue chambray overshirt over an ivory tee, sand trousers, brown belt and practical crossbody bag.", "palette": ["dusty blue", "ivory", "sand", "brown"], "silhouette": "open outdoor overshirt with relaxed walking movement", "accessoriesProps": ["small earrings", "thin chain", "empty coffee cup", "practical bag"]},
+        "elio": {"outfit": "Dark tobacco-olive overshirt over a rolled cream shirt, dark trousers and worn practical shoes; no apron off duty on the harbor walk.", "palette": ["dark tobacco", "olive", "cream"], "silhouette": "warm civilian waterfront silhouette, visibly different from Nika's airy overshirt", "accessoriesProps": ["empty coffee cup context", "rolled sleeves", "worn practical shoes"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "dusty blue/ivory Nika against tobacco/olive Elio", "silhouetteContrast": "open walking overshirt against compact civilian outdoor overshirt", "pairs": ["nika-elio"]},
+      "dualFormatVerification": {"portrait": "Keep empty cup, faces and harbour waterline visible above dialogue; Elio remains in civilian outdoor layers.", "landscape": "Use stone promenade, boats and seaweed-weather atmosphere while keeping the conversational pair at readable scale; no staff apron in either format.", "invariants": ["after-lunch daylight", "Nika has cup", "Elio is off duty in a dark civilian outdoor layer", "conversation remains grounded, not a romance climax"]},
+      "reworkReason": "Harbor scene needs an outdoor/social-context variation instead of the same villa work uniform."
+    },
+    {
+      "assetId": "ep1-leo-harbor-cg",
+      "sceneIds": ["S14"],
+      "authoredSceneIds": ["ep1_leo_entrance"],
+      "requiredCast": ["nika", "leo"],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Sun has dropped behind the harbour roofs; both characters add an evening layer. The outfit change signals a new emotional and temporal register.",
+        "nika": {"outfit": "Muted navy lightweight jacket over a dusty-blue knit top, muted taupe trousers, thin chain and brown shoulder bag.", "palette": ["muted navy", "dusty blue", "muted taupe", "brown"], "silhouette": "quiet evening layer with restrained modern line", "accessoriesProps": ["small earrings", "thin chain", "brown shoulder bag"]},
+        "leo": {"outfit": "Charcoal architectural field jacket over a faded rust knit, dark trousers and weathered brown boots.", "palette": ["charcoal", "faded rust", "weathered brown"], "silhouette": "slender quiet field-work silhouette, softer and narrower than Matteo", "accessoriesProps": ["blueprint tube under arm", "shoulder bag", "rolled plans"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "navy/dusty-blue Nika against charcoal/rust Leo", "silhouetteContrast": "clean evening jacket against slender architectural field jacket", "pairs": ["nika-leo"]},
+      "dualFormatVerification": {"portrait": "Keep blueprint tube, faces and blue-hour reflections readable.", "landscape": "Use far-pier geometry and water reflections for horizontal depth while preserving the charged eye-line and blueprint tube.", "invariants": ["blue hour", "Leo carries blueprint tube", "Leo remains distinct from Matteo", "same emotional first-meeting restraint"]},
+      "reworkReason": "Leo needs a visual code distinct from Matteo, and the blue-hour transition requires an explicit evening layer."
+    },
+    {
+      "assetId": "ep1-leo-night-cg",
+      "sceneIds": ["S15", "S16", "S17"],
+      "authoredSceneIds": ["ep1_leo_choice", "ep1_leo_hear_response", "ep1_leo_distance_response"],
+      "requiredCast": ["nika", "leo"],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "The choice and both responses occur in the same night encounter; retain S14's evening layers so route branches do not create a costume discontinuity.",
+        "nika": {"outfit": "Same muted navy jacket, dusty-blue knit, taupe trousers and brown shoulder bag as S14.", "palette": ["muted navy", "dusty blue", "muted taupe", "brown"], "silhouette": "contained evening silhouette with deliberate personal distance", "accessoriesProps": ["small earrings", "thin chain", "brown shoulder bag"]},
+        "leo": {"outfit": "Same charcoal field jacket, faded rust knit, dark trousers and weathered boots as S14.", "palette": ["charcoal", "faded rust", "weathered brown"], "silhouette": "slender architectural field-work silhouette held apart in the frame", "accessoriesProps": ["lowered/rolled blueprint tube", "shoulder bag"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "navy/blue Nika against charcoal/rust Leo", "silhouetteContrast": "controlled modern layer against narrow architectural field layers", "pairs": ["nika-leo"]},
+      "dualFormatVerification": {"portrait": "Keep both faces, the emotional gap and practical harbour lights visible.", "landscape": "Use negative space to preserve distance without shrinking Leo into an unreadable background; keep night exposure safe for dialogue.", "invariants": ["same outfits as S14", "same night harbor", "route choice changes dialogue, not wardrobe", "no premature romantic closeness"]},
+      "reworkReason": "Current family needs stable night continuity and a clearer Leo silhouette across both choice branches."
+    },
+    {
+      "assetId": "ep1-hook-cg",
+      "sceneIds": ["S18"],
+      "authoredSceneIds": ["ep1_hook"],
+      "requiredCast": ["nika", "matteo"],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Night return to Nika's office is a new social and emotional context; both adults shift into darker, more controlled office layers while the sealed folder remains the story anchor.",
+        "nika": {"outfit": "Ivory blouse under a washed-olive blazer, dark taupe trousers, small earrings and thin chain; practical bag rests beside the desk.", "palette": ["ivory", "washed olive", "dark taupe"], "silhouette": "quiet evening-office tailoring with contained posture", "accessoriesProps": ["small earrings", "thin chain", "practical bag", "sealed folder on desk"]},
+        "matteo": {"outfit": "Dark brown structured jacket over a charcoal shirt, stone-dark trousers and dark leather belt/watch.", "palette": ["dark brown", "charcoal", "stone", "dark leather"], "silhouette": "controlled standing authority, clearly separate from Nika's softer blazer line", "accessoriesProps": ["closed sealed Villa Serena folder", "stopping hand gesture"]}
+      },
+      "sharedSceneDistinctness": {"required": true, "paletteContrast": "ivory/olive Nika against dark brown/charcoal Matteo", "silhouetteContrast": "soft evening blazer against structured standing jacket", "pairs": ["nika-matteo"]},
+      "dualFormatVerification": {"portrait": "Keep Nika, Matteo and the closed sealed folder legible above dialogue; no last page or readable spoiler text.", "landscape": "Use office depth and corridor darkness for pressure while keeping the folder a clear foreground anchor and both faces readable.", "invariants": ["folder closed and sealed", "no exposed final page", "night office", "Matteo standing and Nika seated/contained"]},
+      "reworkReason": "Hook needs a night-office wardrobe shift and stronger Nika/Matteo silhouette contrast without revealing the folder contents."
+    }
+  ],
+  "coverage": {"families": 10, "sceneIds": 18, "portraitRequired": 10, "landscapeRequired": 10},
+  "acceptance": "A family is complete only when its portrait and landscape rework both pass mechanical integrity, wardrobe continuity validation and independent visual acceptance."
+}

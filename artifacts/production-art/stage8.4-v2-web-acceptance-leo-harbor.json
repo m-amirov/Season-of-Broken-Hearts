@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-leo-harbor.json",
+  "reviewId": "review-2026-10-15-ep1-leo-harbor-cg-7d7ce2cc",
+  "reviewTraceId": "trace-7f12b0b2-3fb2-4f4f-9a1b-4a1d5d5d2c61",
+  "taskId": "task-0c0f0e8b-8fcb-4e44-bf8d-6c84e5a3c0dd",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-leo-harbor-cg:source:portrait","ep1-leo-harbor-cg:source:landscape","ep1-leo-harbor-cg:runtime:390x844","ep1-leo-harbor-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-leo-harbor-cg.png","assets/production/cg/ep1-leo-harbor-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-harbor-cg.png","artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-harbor-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-leo-harbor-cg.png","assets/production/cg/ep1-leo-harbor-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-harbor-cg.png","artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-harbor-cg.png"],
+  "visualEvidence": [
+    {"ref":"leo-harbor-source-p","path":"assets/production/cg/ep1-leo-harbor-cg.png","sha256":"3518d8f107fb497f6e444caa2512d15749ca27815bddaae139600b49554a1d27","width":1024,"height":1536,"observation":"Portrait frames Nika and Leo at the pier with the blueprint tube, harbor and blue-orange dusk; tense recognition reads."},
+    {"ref":"leo-harbor-source-l","path":"assets/production/cg/ep1-leo-harbor-cg-landscape.png","sha256":"2fc4c7d05ede5286d5d8009a09871dff81dbb1fa362c92aa6ae6851f95fabd15","width":1672,"height":941,"observation":"Landscape preserves characters, blueprint tube, marina and charged reunion context."},
+    {"ref":"leo-harbor-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-harbor-cg.png","sha256":"dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2","width":390,"height":844,"observation":"Mobile runtime keeps both faces, Leo's upper body, blueprint tube and readable dialogue."},
+    {"ref":"leo-harbor-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-harbor-cg.png","sha256":"13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c","width":1600,"height":900,"observation":"Desktop runtime keeps characters, blueprint tube, harbor and emotional beat under dialogue UI."}
+  ],
+  "findings": [
+    {"id":"LEO-HARBOR-P2-001","severity":"P2","status":"OPEN","authoredCue":"Leo meets Nika by the far pier with blueprints at blue dusk.","observation":"Portrait crop compresses some harbor depth.","playerImpact":"Both characters, blueprint tube, pier and tense recognition remain clear.","materialPlayerImpact":false,"evidenceRef":"leo-harbor-runtime-p390"},
+    {"id":"LEO-HARBOR-P3-002","severity":"P3","status":"OPEN","authoredCue":"The reunion occurs on the harbor pier.","observation":"Landscape dialogue overlay mutes lower pier texture and reflections.","playerImpact":"Recognition, story prop and emotional beat remain readable.","materialPlayerImpact":false,"evidenceRef":"leo-harbor-runtime-l1600"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "stage": "8.5-verified-existing-art-reuse",
+  "status": "DOCUMENTED",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "generationInvoked": false,
+  "assetOrigin": "Existing Stage 8 production CGs carried forward from the documented Stage 8.4 acceptance packet; no PNG was generated or rewritten in this recovery.",
+  "historicalEvidence": [
+    "artifacts/production-art/stage8-ep1-inventory.json",
+    "artifacts/production-art/stage8.4-v2-final-coverage-summary.json",
+    "artifacts/production-art/stage8-dual-format-output-batch-receipt-20261014.json",
+    "artifacts/production-art/stage8-dual-format-output-batch-receipt-20261014-retry2.json"
+  ],
+  "currentPhysicalManifest": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json",
+  "historicalGenerationLedgersPreserved": true,
+  "historicalReceiptsModified": false,
+  "provenanceLimit": "The packet documents source and acceptance lineage; it does not claim a new producer invocation. Current bytes are verified independently by the Stage 8.5 manifest and CEOS reuse gate."
+}

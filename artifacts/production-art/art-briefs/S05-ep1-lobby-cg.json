@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S05",
+  "authoredSceneId": "ep1_matteo_welcome",
+  "cue": {"id":"ep1_matteo_welcome","at":[0,0]},
+  "assetId": "ep1-lobby-cg",
+  "requiredCast": ["nika","matteo"],
+  "narrativeActions": [
+    {"character":"nika","action":"Enters Villa Serena and stands ready to begin work; she is professional, guarded and not romantically posed."},
+    {"character":"matteo","action":"Guides Nika through the lobby, holding a key and indicating the first-floor office without dominating her space."}
+  ],
+  "sceneContinuity": "Late morning immediately after the gate; this is the first interior of the same old family hotel.",
+  "location": "Villa Serena lobby with cool old stone, waxed floor, framed guest photographs and white shutters; believable Italian coastal hotel, not a luxury fantasy atrium.",
+  "time": "late morning, cool daylight entering from side windows",
+  "characterReferences": [
+    {"character":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character":"matteo","path":"assets/characters/references/originals/matteo.png","sha256":"fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"}
+  ],
+  "forbiddenProps": ["extra characters","readable guest names","readable signs","logos","UI","dialogue","watermark","romantic embrace","fantasy atrium","tuxedo"],
+  "desktop": {"composition":"Full-scene lobby with Nika and Matteo in a natural eye-level two-person composition, framed photographs and a visible route toward a ground-floor office; reserve calm lower space for the real dialogue sheet.","framing":"No clipped heads, hands or key; no wide-angle distortion; keep both faces readable in a 1920x900 crop.","requiredVisibleCast":["nika","matteo"]},
+  "portrait": {"composition":"Deliberate waist-up or mid-thigh portrait-safe crop preserving both faces, Matteo's key and the stone/photo context above the runtime dialogue overlay at 360x640, 390x844 and 430x932.","framing":"Keep character silhouettes clear of the lower dialogue sheet; do not turn the lobby into a flat backdrop.","requiredVisibleCast":["nika","matteo"]},
+  "qualityAcceptance":["Identity matches approved references and gate continuity.","Lobby reads as lived-in old Mediterranean hotel interior with coherent perspective and light.","No baked text, logos, UI or accidental extra cast."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

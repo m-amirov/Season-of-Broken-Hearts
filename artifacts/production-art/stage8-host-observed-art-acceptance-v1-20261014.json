@@ -1,0 +1,56 @@
+{
+  "receiptType": "HOST_OBSERVED_ART_ACCEPTANCE_V1",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "runtimeReceipt": "artifacts/evidence/stage8-dual-format-runtime.json",
+  "runtimeReceiptStatus": "PASS_STAGE8_DUAL_FORMAT_RUNTIME_QA",
+  "webPreflight": {
+    "status": "READY",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "transportProbe": {
+      "actualPixelsReceived": true,
+      "image": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-hook-cg.png",
+      "sha256": "d82098082b0c7f892f6f20b24ffb61ad2f17895957fd644e8ea6db4c3ddae07f",
+      "verdict": "PASS_TRANSPORT_PREFLIGHT_ONLY"
+    },
+    "fullSourceAttachment": {
+      "actualPixelsReceived": false,
+      "verdict": "BLOCKED_ATTACHMENT_TRANSPORT",
+      "failure": "composer disconnect: prompt preservation mismatch"
+    }
+  },
+  "reviewer": {
+    "agentId": "01a13ba9-a180-75d2-9f8e-bede8969c0dc",
+    "role": "ceos_art_director_web",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high"
+  },
+  "packets": [
+    {"packet":"1/10","family":"ep1-arrival-cg","portrait":"PASS","landscape":"PASS","P0":0,"P1":0,"P2":0,"P3":1},
+    {"packet":"2/10","family":"ep1-matteo-gate-cg","portrait":"PASS","landscape":"PASS","P0":0,"P1":0,"P2":1,"P3":1,"note":"Initial handshake/week-plan findings were superseded as scope overreach; static cue contract is hand offer with keys/folder."},
+    {"packet":"3/10","family":"ep1-lobby-cg","portrait":"REWORK","landscape":"PASS","P0":0,"P1":0,"P2":1,"P3":0,"defect":"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME"},
+    {"packet":"4/10","family":"ep1-elio-kitchen-cg","portrait":"PASS","landscape":"PASS","P0":0,"P1":0,"P2":0,"P3":1},
+    {"packet":"5/10","family":"ep1-matteo-office-cg","portrait":"REWORK","landscape":"REWORK","P0":0,"P1":2,"P2":0,"P3":0,"defect":"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE"},
+    {"packet":"6/10","family":"ep1-staff-laundry-cg","portrait":"REWORK","landscape":"PASS","P0":0,"P1":1,"P2":0,"P3":0,"defect":"PORTRAIT_REQUIRED_ELIO_CROPPED"},
+    {"packet":"7/10","family":"ep1-harbor-afternoon-cg","portrait":"PASS","landscape":"PASS","P0":0,"P1":0,"P2":0,"P3":1},
+    {"packet":"8/10","family":"ep1-leo-harbor-cg","portrait":"PASS","landscape":"PASS","P0":0,"P1":0,"P2":0,"P3":1},
+    {"packet":"9/10","family":"ep1-leo-night-cg","portrait":"NOT_REVIEWED","landscape":"NOT_REVIEWED","transport":"BLOCKED_ATTACHMENT_TRANSPORT"},
+    {"packet":"10/10","family":"ep1-hook-cg","portrait":"NOT_REVIEWED","landscape":"NOT_REVIEWED","transport":"BLOCKED_ATTACHMENT_TRANSPORT"}
+  ],
+  "currentRuntimePixels": {
+    "arrival": {"portrait390":"73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36","landscape1600":"ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0"},
+    "matteoGate": {"portrait390":"44e06f937335367a4067f9f521bb782fbea19357c3baa1101697d6493662b183","landscape1600":"1cdb9c8fe75717b671aa5acd8c80692e14e7a2eb14c4bc44c7ecbc3273ec7fe0"},
+    "lobby": {"portrait390":"9ec5bddba72a7f794587557a116beaf18b04a3268d8e3bda75e8420ee50ff143","landscape1600":"d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4"},
+    "elioKitchen": {"portrait390":"73f7fa79305002a59ecbe0341c4d23a3779055bbaac54385d52a3e4c5a28a7a6","landscape1600":"bdf4dd87a957e975ed1e556c9e5b12524c8d5f8aa9959e46cbf5118b0a9d1a14"},
+    "matteoOffice": {"portrait390":"b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1","landscape1600":"6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5"},
+    "staffLaundry": {"portrait390":"84a2bf06ec5cc40aa51c8366f32f191867cc3b7772187896ceac5017b4d180d5","landscape1600":"f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92"},
+    "harborAfternoon": {"portrait390":"03baaee9079575c2dc9751072118f63709c67c8136462903b0de5cc3e25c66ec","landscape1600":"e3b30ef1fa13130535061f749a8ee7c6189a06451a18dc76860358262b8623a5"},
+    "leoHarbor": {"portrait390":"dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2","landscape1600":"13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c"},
+    "leoNight": {"portrait390":"398cfa1803a83fd09ee4e0ce18fdc8e950f2305a568e6034c8931a05e451e4cf","landscape1600":"1f308bb78d5c7b59fea9e1a079b08210814f62857c20d7740651caeaae1bb7b6"},
+    "hook": {"portrait390":"02a8433d2ea0be65efb07579ea5da0ac378ad0637832e5485f646f9cb89bb714","landscape1600":"f759203e6f84283447fedcb2c10742e7ad6034d3e6353bf3089e8f08c1f3e80c"}
+  },
+  "decision": "BLOCKED_WEB_TRANSPORT",
+  "independentArtStatus": "REWORK_REQUIRED",
+  "blockingReason": "Packets 9/10 could not receive actual pixels after bounded transport retries; packets 3, 5 and 6 contain confirmed P1/P2 defects and no image regeneration was authorized or performed.",
+  "generatedOrReplacedImages": []
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S13",
+  "authoredSceneId": "ep1_harbor_walk",
+  "cue": {"id":"ep1_harbor_walk","at":[0,0]},
+  "assetId": "ep1-harbor-afternoon-cg",
+  "requiredCast": ["nika","elio"],
+  "narrativeActions": [
+    {"character":"nika","action":"Walks beside the water after lunch with an empty coffee cup and too many questions, alert rather than romantically swept away."},
+    {"character":"elio","action":"Talks with Nika about staff and being noticed, carrying no dramatic prop and keeping a warm but respectful distance."}
+  ],
+  "sceneContinuity": "Afternoon harbor walk before the far-quay dusk encounter with Leo; use the same coast but a public waterfront path, not the later night quay.",
+  "location": "Italian coastal waterfront promenade with low stone sea wall, public harbor details, distant boats and clear pavement-water boundary.",
+  "time": "after lunch, afternoon with soft sun",
+  "characterReferences": [
+    {"character":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character":"elio","path":"assets/characters/references/originals/elio.png","sha256":"ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"}
+  ],
+  "forbiddenProps": ["extra characters","blueprint tube","Leo","night lighting","readable signs","logos","UI","dialogue","watermark","water replacing pavement","forced intimacy","romantic hearts"],
+  "desktop": {"composition":"Full-scene public harbor walk with Nika and Elio in a conversational two-person arrangement, visible low sea wall and real walkway; retain a calm lower zone for dialogue.","framing":"Natural eye-level perspective, faces and coffee cup readable in a 1920x900 crop, clear waterline and foot grounding.","requiredVisibleCast":["nika","elio"]},
+  "portrait": {"composition":"Portrait-safe waist-up or mid-thigh composition keeps both faces, empty cup, stone wall and water context above the dialogue overlay at 360x640, 390x844 and 430x932.","framing":"Do not use the later Leo quay silhouette or dusk palette; no cut heads or feet on water.","requiredVisibleCast":["nika","elio"]},
+  "qualityAcceptance":["The time reads as afternoon and the location is distinct from the accepted blue-dusk Leo encounter.","Elio remains the approved freckled short-haired chef, without the former identity drift.","No baked text or invented brands."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

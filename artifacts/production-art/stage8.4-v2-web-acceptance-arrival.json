@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-arrival.json",
+  "reviewId": "4a8f2e9c-4a74-4f18-a28a-6777f1cb3b85",
+  "reviewTraceId": "0f4dc1da-9ddf-4f00-a71d-9953298f16bc",
+  "taskId": "8702d4b5-b775-4864-9fba-b7c829404661",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-arrival-cg:source:portrait","ep1-arrival-cg:source:landscape","ep1-arrival-cg:runtime:390x844","ep1-arrival-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-arrival-cg-v2.png","assets/production/cg/ep1-arrival-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-arrival-cg.png","artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-arrival-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-arrival-cg-v2.png","assets/production/cg/ep1-arrival-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-arrival-cg.png","artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-arrival-cg.png"],
+  "visualEvidence": [
+    {"ref":"arrival-source-p","path":"assets/production/cg/ep1-arrival-cg-v2.png","sha256":"94d2d7ac289f422a28ec0bc57448974e68906083cb737ad25c03488287447462","width":1024,"height":1536,"observation":"Portrait shows Nika arriving with luggage at a coastal Villa Serena entrance; sea, villa and reflective expression read."},
+    {"ref":"arrival-source-l","path":"assets/production/cg/ep1-arrival-cg-landscape.png","sha256":"b5054dc0348269cac5506344cc20f009f9538f4358ebd85e1dff334aa394c223","width":1672,"height":941,"observation":"Landscape expands the coast, sea, villa grounds and arrival luggage while keeping Nika focal."},
+    {"ref":"arrival-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-arrival-cg.png","sha256":"73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36","width":390,"height":844,"observation":"Mobile runtime preserves Nika, villa exterior, coastal light, suitcase portion and readable dialogue overlay."},
+    {"ref":"arrival-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-arrival-cg.png","sha256":"ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0","width":1600,"height":900,"observation":"Desktop runtime retains suitcase, villa, sea and reflective arrival cue without UI obstruction."}
+  ],
+  "findings": [],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

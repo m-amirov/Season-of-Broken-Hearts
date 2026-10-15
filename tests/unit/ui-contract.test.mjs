@@ -33,31 +33,39 @@ function fakeEventTarget() {
   };
 }
 
-test('EP1 CG mappings are scoped and unfinished scenes remain placeholders', () => {
+test('EP1 CG mappings cover the scoped production art families', () => {
   const graph = JSON.parse(fs.readFileSync(new URL('../../narrative/graph.json', import.meta.url), 'utf8'));
-  const accepted = new Set([
+  const productionScenes = new Set([
     'ep1_arrival',
     'ep1_gate',
     'ep1_matteo_formal_response',
     'ep1_matteo_direct_response',
+    'ep1_matteo_welcome',
     'ep1_kitchen',
     'ep1_elio_humor_response',
     'ep1_elio_boundary_response',
-    'ep1_leo_entrance'
+    'ep1_work_briefing',
+    'ep1_hotel_crisis',
+    'ep1_hotel_numbers_response',
+    'ep1_hotel_staff_response',
+    'ep1_harbor_walk',
+    'ep1_leo_entrance',
+    'ep1_leo_choice',
+    'ep1_leo_hear_response',
+    'ep1_leo_distance_response',
+    'ep1_hook'
   ]);
   for (const scene of graph.scenes) {
+    if (scene.episode !== 1) continue;
     const asset = manifest.assets[scene.assetId];
     assert.ok(asset, `missing manifest entry for ${scene.id}`);
-    if (accepted.has(scene.id)) {
-      assert.equal(asset.kind, 'production-cg');
-      assert.match(asset.src, /^\/assets\/production\/cg\/.+\.png$/);
-      assert.match(asset.sha256, /^[a-f0-9]{64}$/);
-      assert.deepEqual(asset.dimensions, { width: 1024, height: 1536 });
-    } else {
-      assert.equal(asset.kind, 'placeholder');
-      assert.match(asset.src, /^\/assets\/.+\.svg$/);
-    }
+    assert.ok(productionScenes.has(scene.id));
+    assert.equal(asset.kind, 'production-cg');
+    assert.match(asset.variants?.portrait?.src, /^\/assets\/production\/cg\/.+\.png$/);
+    assert.match(asset.variants?.portrait?.sha256, /^[a-f0-9]{64}$/);
+    assert.deepEqual(asset.variants?.portrait?.dimensions, { width: 1024, height: 1536 });
   }
+  assert.equal(productionScenes.size, 18);
 });
 
 test('editorial typography is local, swap-enabled, and covers both scripts', () => {

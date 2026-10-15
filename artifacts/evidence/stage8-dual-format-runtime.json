@@ -1,0 +1,1950 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE8_DUAL_FORMAT_RUNTIME_QA",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "baseUrl": "http://127.0.0.1:4174/",
+  "viewports": [
+    {
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "width": 1920,
+      "height": 900
+    },
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 430,
+      "height": 932
+    }
+  ],
+  "routes": [
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "sceneCount": 14,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "captures": [
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-arrival-cg.png",
+      "screenshotSha256": "690d918086f05f74581bec67986c9bee355ff6df9c0d4e4110be4b7ade612df5",
+      "screenshotBytes": 1623302,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "b4a987b2bd5e43f01c2fb5ab2372fa06db31b3c31fca389e6706e2659d326cea",
+      "screenshotBytes": 1551307,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-lobby-cg.png",
+      "screenshotSha256": "79ce9eeb9e26102220d77285a53887e29087f3a16ba8552581003a21dda11827",
+      "screenshotBytes": 1459076,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "042d9e581459cc07b1a7ec15e9931badd0d9c1400d93d9059415b67531de4af1",
+      "screenshotBytes": 1431038,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-matteo-office-cg.png",
+      "screenshotSha256": "cf5142d0cd164470b9f1c871e5f846defc8939411f59572c15af72c868b97dec",
+      "screenshotBytes": 1374629,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "fe454f04dfb1154527b8ffce52f81ae0bad965d1ba522d2bd3fda4696158f6a3",
+      "screenshotBytes": 1573480,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "5dab5134a8b6e1caffa876ec7ec5b58fcd57f2382609b1ad1b9d9db3b3bf800a",
+      "screenshotBytes": 1409535,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-night-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-leo-night-cg.png",
+      "screenshotSha256": "32520d5f2c409e4f8b7096cd709c0e4c2960827d5b3100a0bbc60e7cd5f3da21",
+      "screenshotBytes": 1394353,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-hook-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-hook-cg.png",
+      "screenshotSha256": "01a0127dcadc996163f2adbc1c83be6f8fef0df4783c85794a6c3e0c2643e922",
+      "screenshotBytes": 1202204,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1366x768/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "cd2f62230e6834a4092bfa95d0506c968ae220d147ed9cd12803a9c95ba9b434",
+      "screenshotBytes": 1385599,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1366,
+          "height": 768
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-arrival-cg.png",
+      "screenshotSha256": "ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0",
+      "screenshotBytes": 2138924,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "1cdb9c8fe75717b671aa5acd8c80692e14e7a2eb14c4bc44c7ecbc3273ec7fe0",
+      "screenshotBytes": 2042575,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-lobby-cg.png",
+      "screenshotSha256": "d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4",
+      "screenshotBytes": 1925164,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "bdf4dd87a957e975ed1e556c9e5b12524c8d5f8aa9959e46cbf5118b0a9d1a14",
+      "screenshotBytes": 1877459,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-matteo-office-cg.png",
+      "screenshotSha256": "6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5",
+      "screenshotBytes": 1802513,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "e3b30ef1fa13130535061f749a8ee7c6189a06451a18dc76860358262b8623a5",
+      "screenshotBytes": 2073674,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c",
+      "screenshotBytes": 1853245,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-night-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-leo-night-cg.png",
+      "screenshotSha256": "1f308bb78d5c7b59fea9e1a079b08210814f62857c20d7740651caeaae1bb7b6",
+      "screenshotBytes": 1835103,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-hook-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-hook-cg.png",
+      "screenshotSha256": "f759203e6f84283447fedcb2c10742e7ad6034d3e6353bf3089e8f08c1f3e80c",
+      "screenshotBytes": 1581122,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92",
+      "screenshotBytes": 1824593,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-arrival-cg.png",
+      "screenshotSha256": "98bad064d217afdbb52d937cdfbb2d86dda42a74ad8b261386f2d0f3ce4be12a",
+      "screenshotBytes": 2406693,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "2a60e8d18eb9285709f140456770415908d60f0c671a2eb3ba68100a2a3a3ebb",
+      "screenshotBytes": 2294959,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-lobby-cg.png",
+      "screenshotSha256": "18845355854a04af36ee2aa01b10b36e191d182c2a5e34d821fe153a878b395d",
+      "screenshotBytes": 2169635,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "d6b36a5fc6feb0e8774b3f76801f956e3c66f5ee0a5bae881c155612103887d3",
+      "screenshotBytes": 2122594,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-matteo-office-cg.png",
+      "screenshotSha256": "a9f58e85ac1f768bd1af6da394c6c7ed3e1f3cf24dcd44c0205ba7f3ec356022",
+      "screenshotBytes": 2048086,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "4c87e82399bd12bdbd8dcc90da372eab8371bbb0c6b1dc60e181d9e63a19284d",
+      "screenshotBytes": 2330835,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "45857cd83aaa5a0849f35573df0bff2390e693e8f6d19abbf1dba630d5621086",
+      "screenshotBytes": 2095267,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-night-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-leo-night-cg.png",
+      "screenshotSha256": "5208a2a3dbe5da9ded0d8ee5530bd0ec4e55be71e59fac22c8349342f16681b6",
+      "screenshotBytes": 2086420,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-hook-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-hook-cg.png",
+      "screenshotSha256": "311136b9ca219386cc6959d7689d947d84be88bfcffea6181ef9c5feed41e9d6",
+      "screenshotBytes": 1785266,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x900/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "7abb70c1d4186a013f721c7464e018426e4cc6b5ea6887bd0e99c927533f649f",
+      "screenshotBytes": 2071389,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-arrival-cg.png",
+      "screenshotSha256": "7f5b148d53e54721596d78b7fe359bf09f024a3012f01399951ab0012ff507be",
+      "screenshotBytes": 2876016,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "c58aef9f522e4c5ff306a0da1e4fccdafb6713a6e2b169da8a7463a85f64aff1",
+      "screenshotBytes": 2750553,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-lobby-cg.png",
+      "screenshotSha256": "9deca1c1dd6f6f230d4c9b075d1e3336bee54e6b936a2ac8ea5be2bd88141664",
+      "screenshotBytes": 2596724,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "2fa244f450a085a7e51043d979b4ed16a5a8f2c96fb2545525fd4c481f23be3a",
+      "screenshotBytes": 2524723,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-matteo-office-cg.png",
+      "screenshotSha256": "d83fb7ab7837a410cb40249575d9570f261d1414a64ba2cdc88050d3495c5059",
+      "screenshotBytes": 2428337,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "453965de4bf6ea9d566f49ea0d2c8914703205f91a4bb3ccb0ebbb5882fab140",
+      "screenshotBytes": 2795152,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "df97dfbe8c355327d5f747f09d428dbf788bd84f70ca50627da828207e32159e",
+      "screenshotBytes": 2502462,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-leo-night-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-leo-night-cg.png",
+      "screenshotSha256": "c3ec979b606f4156eb5a61bf1f4767af29222099c5b19aac442b48f921a7619b",
+      "screenshotBytes": 2480883,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-hook-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-hook-cg.png",
+      "screenshotSha256": "cb4369efdbf0dcdefd65a62e263e49936962f226348aad5d7b91e58819cf3e8d",
+      "screenshotBytes": 2129180,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/1920x1080/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "aa144a8a3d990402fb40fb144d5dc2803e8418668281cef50b17201c7405e7d0",
+      "screenshotBytes": 2465644,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-arrival-cg.png",
+      "screenshotSha256": "91c62615bb1fe7a4720350586f3c4dac01876227096d172c758679f015dabc29",
+      "screenshotBytes": 363439,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "e03989c7568cf4c760a71fca6f63b102d5de9b80266db4b4eb032446c01435ea",
+      "screenshotBytes": 357201,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-lobby-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-lobby-cg.png",
+      "screenshotSha256": "781f5b3d1d300ca4cf794275e7e07644530de21db7576fd5bf953b4f01cee84f",
+      "screenshotBytes": 335255,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "2cdce69c4c7f1eb3b2cce8e4e7182fd0bc5c89bf220ac399e7d968f00435456b",
+      "screenshotBytes": 339817,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-matteo-office-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-matteo-office-cg.png",
+      "screenshotSha256": "45b4ec0f7a3c11bc810909e9388b52548ed83f29aa6061663fdae20340efa510",
+      "screenshotBytes": 328335,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "67176280409e55285b81570185634d988378e82b547e3219b62de17255bbdb3a",
+      "screenshotBytes": 351251,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "78ecc3e10da72d2bb62af887be0423e8700059d728910d0d2c0b5aca7abdc740",
+      "screenshotBytes": 320701,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-leo-night-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-leo-night-cg.png",
+      "screenshotSha256": "630cc95c750fced7a6ad3f8faba744f0f95855b28c624ee170d27dc148ca5917",
+      "screenshotBytes": 307073,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-hook-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-hook-cg.png",
+      "screenshotSha256": "d82098082b0c7f892f6f20b24ffb61ad2f17895957fd644e8ea6db4c3ddae07f",
+      "screenshotBytes": 283443,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/360x640/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "d6070c888df4da5ed130a60f7e4731b84db577c9d33302b126365b4043838d73",
+      "screenshotBytes": 325860,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-arrival-cg.png",
+      "screenshotSha256": "73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36",
+      "screenshotBytes": 485660,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "44e06f937335367a4067f9f521bb782fbea19357c3baa1101697d6493662b183",
+      "screenshotBytes": 485949,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-lobby-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-lobby-cg.png",
+      "screenshotSha256": "9ec5bddba72a7f794587557a116beaf18b04a3268d8e3bda75e8420ee50ff143",
+      "screenshotBytes": 454985,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "73f7fa79305002a59ecbe0341c4d23a3779055bbaac54385d52a3e4c5a28a7a6",
+      "screenshotBytes": 455901,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-matteo-office-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-matteo-office-cg.png",
+      "screenshotSha256": "b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1",
+      "screenshotBytes": 443696,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "03baaee9079575c2dc9751072118f63709c67c8136462903b0de5cc3e25c66ec",
+      "screenshotBytes": 473099,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2",
+      "screenshotBytes": 436645,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-leo-night-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-leo-night-cg.png",
+      "screenshotSha256": "398cfa1803a83fd09ee4e0ce18fdc8e950f2305a568e6034c8931a05e451e4cf",
+      "screenshotBytes": 418459,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-hook-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-hook-cg.png",
+      "screenshotSha256": "02a8433d2ea0be65efb07579ea5da0ac378ad0637832e5485f646f9cb89bb714",
+      "screenshotBytes": 384084,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "84a2bf06ec5cc40aa51c8366f32f191867cc3b7772187896ceac5017b4d180d5",
+      "screenshotBytes": 434915,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_arrival",
+      "assetId": "ep1-arrival-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-arrival-cg.png",
+      "screenshotSha256": "8f02211679e23b7258f02677a23143302efa9c22930c73862dd14febb689989e",
+      "screenshotBytes": 578410,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_gate",
+      "assetId": "ep1-matteo-gate-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-matteo-gate-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-matteo-gate-cg.png",
+      "screenshotSha256": "7ee9afdd390e1e86b96f6ab381b0db2535dfd708fdb0469707f92c64fc6df0f9",
+      "screenshotBytes": 582371,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "assetId": "ep1-lobby-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-lobby-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-lobby-cg.png",
+      "screenshotSha256": "3f33aff24ed54ac43799275badf5d2ee4431b5ec61bb93986eb5240574b64025",
+      "screenshotBytes": 547501,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_kitchen",
+      "assetId": "ep1-elio-kitchen-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-elio-kitchen-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-elio-kitchen-cg.png",
+      "screenshotSha256": "657bc6940cbd5544b2aa67b21723b26949aa393e61abd55ccfa17cdfe068434a",
+      "screenshotBytes": 548420,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_work_briefing",
+      "assetId": "ep1-matteo-office-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-matteo-office-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-matteo-office-cg.png",
+      "screenshotSha256": "ed40140a0ccff395521d52792b7eac4edd69d442e5e01dc106fd27bf138554f4",
+      "screenshotBytes": 530468,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_harbor_walk",
+      "assetId": "ep1-harbor-afternoon-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-harbor-afternoon-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-harbor-afternoon-cg.png",
+      "screenshotSha256": "636e5f12c4af3e77cd8495898c4fd5cfbeea1c313b085a633d844a5dac24faab",
+      "screenshotBytes": 566534,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_leo_entrance",
+      "assetId": "ep1-leo-harbor-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-leo-harbor-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "3ace6ba206d1f1e09467914477bd6ebbaa0d1e1637263d4f9ae07c6a6b1488f7",
+      "screenshotBytes": 525137,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_leo_choice",
+      "assetId": "ep1-leo-night-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-leo-night-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-leo-night-cg.png",
+      "screenshotSha256": "cad3601acfa86bb3f093c541dbc782e4664f0e019d6aa1707c732504fcfe0dd4",
+      "screenshotBytes": 504436,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_hook",
+      "assetId": "ep1-hook-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-hook-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-hook-cg.png",
+      "screenshotSha256": "45255c86a93910fe2f362ca7a5a1439daa1d512714e05d3af6b03d7f147b9e38",
+      "screenshotBytes": 460637,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "assetId": "ep1-staff-laundry-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage8-dual-format/runtime/430x932/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "e0be456c0cfed35626859c1d8be757adc54f4a2997059e64eff2f6ceaa92220f",
+      "screenshotBytes": 522596,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true
+      }
+    }
+  ],
+  "resize": {
+    "portrait": {
+      "sceneId": "ep1_arrival",
+      "dialogueIndex": 0,
+      "assetId": "ep1-arrival-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "artBounds": {
+        "width": 390,
+        "height": 844
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait"
+    },
+    "landscape": {
+      "sceneId": "ep1_arrival",
+      "dialogueIndex": 0,
+      "assetId": "ep1-arrival-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-arrival-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "artBounds": {
+        "width": 1920,
+        "height": 1080
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape"
+    },
+    "portraitAgain": {
+      "sceneId": "ep1_arrival",
+      "dialogueIndex": 0,
+      "assetId": "ep1-arrival-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-arrival-cg-v2.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "artBounds": {
+        "width": 360,
+        "height": 640
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait"
+    },
+    "consoleErrors": []
+  },
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "coverage": {
+    "sceneCount": 18,
+    "expectedSceneCount": 18,
+    "portraitCaptures": 30,
+    "landscapeCaptures": 40,
+    "uniquePortraitAssets": 10,
+    "uniqueLandscapeAssets": 10
+  }
+}
