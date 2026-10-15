@@ -3,16 +3,32 @@
   "profile": "narrative-game",
   "status": "BLOCKED_ART_OUTPUT",
   "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
-  "episodeScope": [2, 3],
+  "episodeScope": [
+    2,
+    3
+  ],
   "dualFormatContract": {
-    "portrait": {"width": 1024, "height": 1536, "aspect": "2:3"},
-    "desktop": {"width": 1920, "height": 1080, "aspect": "16:9"}
+    "portrait": {
+      "width": 1024,
+      "height": 1536,
+      "aspect": "2:3",
+      "contract": "config/production-art-dimensions.json"
+    },
+    "desktop": {
+      "width": 1672,
+      "height": 941,
+      "aspect": "near-16:9",
+      "kind": "background",
+      "contract": "config/production-art-dimensions.json"
+    }
   },
   "runtimeAdmission": "NONE",
   "assets": {
     "ep2-office-morning-brief-cg": {
       "status": "PARTIAL_NOT_ADMITTED",
-      "sceneIds": ["ep2_morning_brief"],
+      "sceneIds": [
+        "ep2_morning_brief"
+      ],
       "portrait": {
         "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
         "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
@@ -58,5 +74,17 @@
     "ep3-office-quiet-return-cg"
   ],
   "sceneMappings": "PENDING_GENERATION_AND_FULL_DUAL_FORMAT_COVERAGE",
-  "provenance": "All generated and failed candidate facts are recorded in the Terra ledger and receipts; no provider-signed byte receipt was exposed."
+  "provenance": "All generated and failed candidate facts are recorded in the Terra ledger and receipts; no provider-signed byte receipt was exposed.",
+  "runtimeTargets": {
+    "desktop": "1920x1080 viewport (not source PNG pixel dimensions)",
+    "mobile": "actual 360x640, 390x844, 430x932 viewports"
+  },
+  "resolutionDecision": {
+    "status": "SPECIFICATION_CONFLICT_RESOLVED_REQUIRES_FRESH_OUTPUT_GATE",
+    "sourceOfTruth": "config/production-art-dimensions.json",
+    "nativeLandscape": "1672x941",
+    "prior1920x1080Gate": "Historical strict target mismatch; retain failed receipt verbatim. Does not mean pixels are art-accepted.",
+    "nextAction": "Locate the original unchanged 1672x941 S19 PNG by SHA-256, run a new ceos art-output-verify --kind background --width 1672 --height 941 --receipt <new-file>; do not reuse the historic failure receipt as PASS.",
+    "productionArtAccepted": false
+  }
 }
