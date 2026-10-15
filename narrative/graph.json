@@ -4326,7 +4326,7 @@
           },
           {
             "speaker": null,
-            "text": "За стеной кухни проходила старая вентиляция. Новый план номеров перекрывал прямой проход между кухней и прачечной."
+            "text": "За стеной кухни проходила старая вентиляция. Ниша с ключами примыкала к прямому проходу между кухней и прачечной: новый план перекрывал его, и тележкам пришлось бы уходить из кухни через гостевой зал и возвращаться к прачечной по служебной лестнице."
           },
           {
             "speaker": "nika",
@@ -4360,7 +4360,7 @@
           },
           {
             "speaker": null,
-            "text": "The old kitchen ventilation ran behind the wall. The new room plan blocked the direct passage between the kitchen and laundry."
+            "text": "The old kitchen ventilation ran behind the wall. The key niche joined the direct passage between the kitchen and laundry: the new plan blocked it, forcing carts out through the guest hall and back to the laundry by the service stairs."
           },
           {
             "speaker": "nika",
@@ -4606,7 +4606,7 @@
     {
       "id": "ep3_survey_decline_response",
       "episode": 3,
-      "day": 10,
+      "day": 11,
       "location": "villa-office",
       "presentCharacters": [
         "nika",
@@ -4636,7 +4636,7 @@
           },
           {
             "speaker": null,
-            "text": "Через час через Маттео пришёл полный отчёт с приложениями: схема западного крыла, фотография вентиляции и короткая пометка о служебном проходе."
+            "text": "На следующий день через Маттео пришёл полный отчёт с приложениями: схема западного крыла, фотография вентиляции и короткая пометка о служебном проходе."
           },
           {
             "speaker": "nika",
@@ -4666,7 +4666,7 @@
           },
           {
             "speaker": null,
-            "text": "An hour later Matteo delivered the full report with its attachments: a west-wing plan, a photograph of the ventilation, and a short note about the service passage."
+            "text": "The next day Matteo delivered the full report with its attachments: a west-wing plan, a photograph of the ventilation, and a short note about the service passage."
           },
           {
             "speaker": "nika",
@@ -4816,6 +4816,15 @@
             "speaker": null,
             "text": "На столе лежала черновая папка с рабочими наблюдениями; итоговый отчёт оставался закрыт до полного брифа.",
             "when": {
+              "ep3SurveyChoice": "joined",
+              "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "На столе лежал уже полученный полный отчёт; выбор hold оставлял открытой только его проверку, а не факт передачи.",
+            "when": {
+              "ep3SurveyChoice": "declined",
               "ep3SurveyAction": "hold"
             }
           },
@@ -4920,6 +4929,15 @@
             "speaker": null,
             "text": "A draft folder of working observations lay on the table; the final report remained closed until the full brief arrived.",
             "when": {
+              "ep3SurveyChoice": "joined",
+              "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "The full report already received lay on the table; the hold choice left only its review open, not the fact of delivery.",
+            "when": {
+              "ep3SurveyChoice": "declined",
               "ep3SurveyAction": "hold"
             }
           },
@@ -5376,7 +5394,7 @@
         "ru": [
           {
             "speaker": null,
-            "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией письма Бьянки, зарегистрированной в журнале входящих писем за ту же дату. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
+            "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией того же приложения, вложенной в письмо Бьянки и зарегистрированной в журнале входящих писем за ту же дату. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5410,7 +5428,7 @@
         "en": [
           {
             "speaker": null,
-            "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against Bianca's copy registered in the incoming-mail log under the same date. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
+            "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against a copy of the same appendix attached to Bianca's letter and registered in the incoming-mail log under the same date. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
             "when": {
               "leoEvidence": "terms"
             }
