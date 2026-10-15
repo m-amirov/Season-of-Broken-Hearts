@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "stage": "8.5-verified-existing-art-reuse",
   "status": "DOCUMENTED",
-  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
   "generationInvoked": false,
   "assetOrigin": "Existing Stage 8 production CGs carried forward from the documented Stage 8.4 acceptance packet; no PNG was generated or rewritten in this recovery.",
   "historicalEvidence": [

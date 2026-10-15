@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "stage": "8.5-verified-existing-art-reuse",
   "status": "PASS",
-  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
   "actualPixelsReceived": true,
   "captureEvidence": [
     "artifacts/production-art/stage8.4-v2-runtime-package2.json",

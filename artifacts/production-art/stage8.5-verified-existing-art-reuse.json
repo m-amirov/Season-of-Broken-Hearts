@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "mode": "VERIFIED_EXISTING_ART_REUSE",
   "generationInvoked": false,
-  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
   "dependencies": [
     { "path": "config/narrative-game.local.json", "sha256": "f9bf6968ae39f16a34d839be20cbebb610438d77c29949e50c8ba2fecb84dec0" },
     { "path": "narrative/graph.json", "sha256": "0900855f1c289c1464f5178cba749455f15386daf0e32a1edcd9b249b8a2eefc" },
@@ -13,25 +13,25 @@
     { "path": "src/ui/renderer-stage6.mjs", "sha256": "b075282e49d31a815f380db96125897333a8c36827e1602f821f62fac0bea6e2" },
     { "path": "config/wardrobe-rules.json", "sha256": "5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246" },
     { "path": "package.json", "sha256": "5604e5c29d7af2446b9dd0b761834b7cdc52d6944352081b136c4bdbb1906754" },
-    { "path": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json", "sha256": "f67d085f1a100261489c8018d040a01ce2c722d1cc29ea77c9d768b31b065e38" },
-    { "path": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json", "sha256": "023eda825db0b55aebdce8dd91729a449aebee733c78d1982838f0c83b826e8f" }
+    { "path": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json", "sha256": "b07d8963fa2ed941b1aeb25b76c3d38f51e4df57b9d40c63a39a489c3cf82a61" },
+    { "path": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json", "sha256": "1d784fc6b4967cda4c796568b7e64415262a1605ebd0ae550a2364270e8a78f6" }
   ],
   "assetManifest": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json",
-  "assetManifestSha256": "f67d085f1a100261489c8018d040a01ce2c722d1cc29ea77c9d768b31b065e38",
+  "assetManifestSha256": "b07d8963fa2ed941b1aeb25b76c3d38f51e4df57b9d40c63a39a489c3cf82a61",
   "dualFormatManifest": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json",
   "provenance": {
     "status": "DOCUMENTED",
-    "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
     "evidence": "artifacts/production-art/stage8.5-verified-existing-art-provenance.json",
-    "evidenceSha256": "dc9915cceb4f72f424734a9c29c63bc70b58e7c4efcb4d10408855562073e2f2"
+    "evidenceSha256": "40af9586ffeeba7031de4d458f6dcf0107961fae22c8c9621168321e981fb3a5"
   },
   "artAcceptance": {
     "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
     "status": "PASS",
     "actualPixelsReceived": true,
-    "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
-    "evidence": "artifacts/production-art/stage8.4-v2-final-coverage-summary.json",
-    "evidenceSha256": "5e5fb620e667ee39685a22e019a45615ab93a2e49d02f113db471615fd4f4bf0",
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-post-integration-art-currentness.json",
+    "evidenceSha256": "b503adebca5914d671255f5ea5c1ebdb43f8f9129d82731e84b70359197e8c8f",
     "reviewedItems": [
       "ep1-arrival-cg:portrait", "ep1-arrival-cg:desktop",
       "ep1-matteo-gate-cg:portrait", "ep1-matteo-gate-cg:desktop",
@@ -51,9 +51,9 @@
   "runtimeEvidence": {
     "status": "PASS",
     "actualPixelsReceived": true,
-    "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
-    "evidence": "artifacts/production-art/stage8.5-verified-existing-art-runtime-evidence.json",
-    "evidenceSha256": "49ff53a67047648f1a9b66a453d361f380917a5a8f54943f18ff0dc8e6365cd0",
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-post-integration-runtime-currentness.json",
+    "evidenceSha256": "5c91ab3d9a3d679ff87405e339d489e8919436f6f979770e0eff8a05264f1196",
     "screenshots": [
       { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-arrival-cg.png", "sha256": "73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36" },
       { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-arrival-cg.png", "sha256": "ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0" },
@@ -79,9 +79,9 @@
   },
   "canon": {
     "status": "CURRENT",
-    "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
-    "evidence": "artifacts/production-art/stage8-dual-format-canon.json",
-    "evidenceSha256": "1ee00f0d0fafe77eef2d0f6d0def06437ec1a62e41447d9db90e3335c3b641bb"
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json",
+    "evidenceSha256": "1d784fc6b4967cda4c796568b7e64415262a1605ebd0ae550a2364270e8a78f6"
   },
   "issueSummary": { "openP0": 0, "openP1": 0, "openMaterialP2": 0 },
   "receipts": [
