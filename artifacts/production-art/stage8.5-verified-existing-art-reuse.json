@@ -3,6 +3,10 @@
   "mode": "VERIFIED_EXISTING_ART_REUSE",
   "generationInvoked": false,
   "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+  "currentness": {
+    "mode": "DEPENDENCY_BASED_REUSE",
+    "baseHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a"
+  },
   "dependencies": [
     { "path": "config/narrative-game.local.json", "sha256": "f9bf6968ae39f16a34d839be20cbebb610438d77c29949e50c8ba2fecb84dec0" },
     { "path": "narrative/graph.json", "sha256": "0900855f1c289c1464f5178cba749455f15386daf0e32a1edcd9b249b8a2eefc" },
