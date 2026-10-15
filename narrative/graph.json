@@ -4807,7 +4807,7 @@
           },
           {
             "speaker": null,
-            "text": "После обхода Лео передал обновлённый отчёт Нике: конфликт с проходом уже был внесён в рабочий журнал.",
+            "text": "После обхода Лео передал обновлённый отчёт Нике: конфликт с проходом уже был внесён в отчёт и отдельно отмечен в рабочем журнале.",
             "when": {
               "ep3SurveyChoice": "joined",
               "ep3SurveyAction": "report"
@@ -4897,7 +4897,7 @@
           },
           {
             "speaker": null,
-            "text": "After the walkthrough, Leo handed Nika the revised report: the passage conflict was already in the work log.",
+            "text": "After the walkthrough, Leo handed Nika the revised report: the passage conflict was already in the report and separately recorded in the work log.",
             "when": {
               "ep3SurveyChoice": "joined",
               "ep3SurveyAction": "report"

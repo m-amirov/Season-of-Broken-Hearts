@@ -325,7 +325,7 @@
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "Они говорили в кабинете, где между двумя стульями лежал отчёт Лео и старый снимок пирса. Рабочая папка не давала разговору превратиться в воспоминание без последствий."},
-          {"speaker": null, "text": "После обхода Лео передал обновлённый отчёт Нике: конфликт с проходом уже был внесён в рабочий журнал.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "report"}},
+          {"speaker": null, "text": "После обхода Лео передал обновлённый отчёт Нике: конфликт с проходом уже был внесён в отчёт и отдельно отмечен в рабочем журнале.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "report"}},
           {"speaker": null, "text": "После обхода Лео передал рабочие наблюдения, но оставил отчёт закрытым до полного брифа; запрос он записал в журнал.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "hold"}},
           {"speaker": null, "text": "Маршрут вошёл в отчёт как обязательное условие, а не как пожелание персонала.", "when": {"staffTrust": 3}},
           {"speaker": null, "text": "Обходной маршрут остался обязательным условием: менять линию можно только после проверки, что он действительно работает.", "when": {"staffTrust": 2}},
@@ -344,7 +344,7 @@
         ],
         "en": [
           {"speaker": null, "text": "They spoke in the office with Leo's report and the old pier photograph between them. The work folder kept the conversation from becoming a memory without consequences."},
-          {"speaker": null, "text": "After the walkthrough, Leo handed Nika the revised report: the passage conflict was already in the work log.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "report"}},
+          {"speaker": null, "text": "After the walkthrough, Leo handed Nika the revised report: the passage conflict was already in the report and separately recorded in the work log.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "report"}},
           {"speaker": null, "text": "After the walkthrough, Leo handed over working observations but kept the report closed until the full brief arrived; he logged the request.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "hold"}},
           {"speaker": null, "text": "The route entered the report as a required condition, not a staff preference.", "when": {"staffTrust": 3}},
           {"speaker": null, "text": "The detour remained a required condition: the line could change only after the workaround proved workable.", "when": {"staffTrust": 2}},
