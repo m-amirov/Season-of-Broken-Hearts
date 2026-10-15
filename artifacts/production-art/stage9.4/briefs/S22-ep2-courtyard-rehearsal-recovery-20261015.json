@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "f69cb085f185a549a3071c454d89061fe548e845",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S22",
+  "assetFamilyId": "ep2-courtyard-rehearsal-cg",
+  "cue": {
+    "id": "ep2_family_rehearsal_layout",
+    "at": [3, 7],
+    "authoredExcerpt": "Ника сняла со схемы лишнюю сцену и поставила вместо неё тент для дождя. Впервые за утро Джулия посмотрела не на брата, а на собственный план."
+  },
+  "requiredCast": ["nika", "matteo", "giulia"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Снимает лишнюю сцену со схемы и ставит тент для дождя, возвращая разговор к рабочему плану."},
+    {"character": "matteo", "action": "Слушает Нику и Джулию, оставаясь участником семейного решения без навязанного контроля."},
+    {"character": "giulia", "action": "Смотрит на собственный план и выбирает место, где сама сможет сказать да."}
+  ],
+  "sceneContinuity": "После утренней офисной работы день 3 переносит конфликт в Villa Serena courtyard; следующий beat продолжает в dining room, где Giulia сама управляет карточками гостей. Не показывать публичный жест, фотографа или романтическое обещание.",
+  "location": "Villa Serena courtyard opening toward the sea, two rows of chairs, flowers and a practical rain canopy",
+  "timeOfDay": "Day 3 midday, bright coastal daylight with weather building at the courtyard edge",
+  "wardrobe": {
+    "nika": "EP1-consistent off-white linen work layer with practical trousers and shoulder bag kept outside the seating plan",
+    "matteo": "Distinct restrained summer-work layer, open collar and rolled sleeves, no ceremony styling",
+    "giulia": "Sage-grey work shirt, beige utility apron and dark work trousers, visibly competent rather than decorative"
+  },
+  "emotionalTone": "Family pressure turns into Giulia's agency; direct, practical and unsentimental.",
+  "physicalAction": "Nika points from the altered plan to the rain canopy while Giulia studies her own wedding layout and Matteo listens between the chair rows.",
+  "facialExpression": "Nika direct and focused; Matteo attentive and chastened; Giulia frustrated but self-possessed.",
+  "forbiddenProps": [
+    "readable invented plans, labels or wedding stationery text",
+    "luxury palace architecture or a generic resort",
+    "photographer, family crowd or ceremony in progress",
+    "romantic embrace, handholding or accepted public touch",
+    "Aurea drawing, contract revelation or invented plot evidence"
+  ],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "desktop": {
+    "width": 1672,
+    "height": 941,
+    "runtimeViewportTarget": {"width": 1920, "height": 1080},
+    "outputGateCommand": "ceos art-output-verify --kind background --width 1672 --height 941",
+    "composition": "Genuine wide courtyard composition: chair rows lead toward the sea and canopy, with Giulia's plan/action in the foreground and Nika and Matteo at distinct readable depths.",
+    "framing": "16:9 landscape, eye-level natural perspective, all three faces and the altered plan/canopy action above a quiet lower dialogue band.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "composition": "Genuine vertical courtyard composition that keeps Giulia, the altered plan and rain canopy visible while preserving Nika's pointing hand and Matteo's listening posture.",
+    "framing": "2:3 portrait, eye-level medium shot with natural negative space below the action; faces and plan remain readable at 390x844, 360x640 and 430x932 cover framing.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "canonReferences": [
+    "assets/production/cg/ep1-matteo-office-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+    "artifacts/production-art/character-reference-contact-sheet.png"
+  ],
+  "qualityAcceptance": [
+    "All three supplied identities remain distinct and match the reference pixels.",
+    "The courtyard, two chair directions, canopy and Giulia's agency are immediately readable without invented text.",
+    "Both formats preserve all required faces, the plan action and a dialogue-safe lower region under the declared viewports.",
+    "No ceremony, romance, photographer, extra cast or premature Aurea knowledge appears."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}
+
+
