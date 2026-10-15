@@ -4326,7 +4326,7 @@
           },
           {
             "speaker": null,
-            "text": "За стеной кухни проходила старая вентиляция. Новый план номеров перекрывал её и сокращал путь между кухней и прачечной."
+            "text": "За стеной кухни проходила старая вентиляция. Новый план номеров перекрывал прямой проход между кухней и прачечной."
           },
           {
             "speaker": "nika",
@@ -4360,7 +4360,7 @@
           },
           {
             "speaker": null,
-            "text": "The old kitchen ventilation ran behind the wall. The new room plan blocked it and shortened the route between the kitchen and laundry."
+            "text": "The old kitchen ventilation ran behind the wall. The new room plan blocked the direct passage between the kitchen and laundry."
           },
           {
             "speaker": "nika",
@@ -4636,7 +4636,7 @@
           },
           {
             "speaker": null,
-            "text": "Через час письмо пришло с приложением: схема западного крыла, фотография вентиляции и короткая пометка о служебном проходе."
+            "text": "Через час через Маттео пришёл полный отчёт с приложениями: схема западного крыла, фотография вентиляции и короткая пометка о служебном проходе."
           },
           {
             "speaker": "nika",
@@ -4666,7 +4666,7 @@
           },
           {
             "speaker": null,
-            "text": "An hour later the email arrived with a west-wing plan, a photograph of the ventilation, and a short note about the service passage."
+            "text": "An hour later Matteo delivered the full report with its attachments: a west-wing plan, a photograph of the ventilation, and a short note about the service passage."
           },
           {
             "speaker": "nika",
@@ -5348,7 +5348,7 @@
         "ru": [
           {
             "speaker": null,
-            "text": "Ника открыла приложение на общем экране и сверила подпись с копией Бьянки. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
+            "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией письма Бьянки, сохранённой в архивном журнале. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5382,7 +5382,7 @@
         "en": [
           {
             "speaker": null,
-            "text": "Nika opened the appendix on a shared screen and matched the signature against Bianca's copy. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
+            "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against Bianca's copy preserved in the archive log. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5671,7 +5671,49 @@
             "text": "После получения полного брифа я отправлю исправленный отчёт заказчику и команде отеля; проверенное приложение уже будет приложено к пакету.",
             "when": {
               "leoEvidence": "terms",
+              "ep3SurveyChoice": "joined",
               "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "После полной проверки уже полученного отчёта я отправлю исправленную версию заказчику и команде отеля; отдельный запрос полного брифа здесь не нужен.",
+            "when": {
+              "leoEvidence": "terms",
+              "ep3SurveyChoice": "declined",
+              "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Проверенное приложение я передал команде; теперь они видят условия, а не только последствия для отеля.",
+            "when": {
+              "leoEvidence": "terms",
+              "hotelEvidence": "public"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Проверенное приложение я оставил у Маттео для совместной проверки, не выдавая его за публичное решение.",
+            "when": {
+              "leoEvidence": "terms",
+              "fundingEvidence": 3
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Рабочую версию я передал команде с пометкой «гипотеза»; Маттео не назвал её доказательством.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 2
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Рабочую версию я оставил у Маттео до проверки, чтобы гипотеза не стала общим обвинением.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 1
             }
           },
           {
@@ -5726,7 +5768,49 @@
             "text": "After the full brief arrives, I will send the corrected report to the client and the hotel team; the verified appendix will already be attached to the package.",
             "when": {
               "leoEvidence": "terms",
+              "ep3SurveyChoice": "joined",
               "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "After the report already received is fully checked, I will send the corrected version to the client and the hotel team; a separate full-brief request is not needed here.",
+            "when": {
+              "leoEvidence": "terms",
+              "ep3SurveyChoice": "declined",
+              "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "I shared the verified appendix with the team; they can now see the terms, not only the consequences for the hotel.",
+            "when": {
+              "leoEvidence": "terms",
+              "hotelEvidence": "public"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "I left the verified appendix with Matteo for joint review rather than presenting it as a public decision.",
+            "when": {
+              "leoEvidence": "terms",
+              "fundingEvidence": 3
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "I shared the working lead with the team marked as a hypothesis; Matteo did not call it proof.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 2
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "I left the working lead with Matteo until it could be checked, so a hypothesis would not become a public accusation.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 1
             }
           },
           {
