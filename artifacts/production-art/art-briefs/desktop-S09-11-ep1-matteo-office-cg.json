@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S09",
+  "coveredSceneIds": [
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "authoredSceneId": "ep1_work_briefing|ep1_hotel_crisis|ep1_hotel_numbers_response",
+  "assetId": "ep1-matteo-office-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-matteo-office-cg.png",
+  "requiredCast": [
+    "nika",
+    "matteo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Works through schedules, suppliers, terrace map, mismatched keys and the hotel crisis at the work table."
+    },
+    {
+      "character": "matteo",
+      "action": "Brings the crisis, listens and may reveal only a neutral closed folder."
+    }
+  ],
+  "location": "Villa Serena ground-floor private office with old stone, shutters, wood work table, neutral papers, map, three keys and closed folder.",
+  "time": "noon to afternoon",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "matteo",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"
+    }
+  ],
+  "desktop": {
+    "composition": "Standalone wide office-table composition using horizontal workspace depth and shutter light; Nika and Matteo occupy separate sides, with hands, key ring, neutral papers and closed folder legible above dialogue-safe lower space.",
+    "framing": "No readable document text, no premature client reveal; faces and props remain uncropped at all desktop viewports.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "portrait": {
+    "composition": "The generated portrait office source remains authoritative.",
+    "framing": "Do not replace or stretch it.",
+    "requiredVisibleCast": [
+      "nika",
+      "matteo"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable document text",
+    "Aurea logo",
+    "readable brand marks",
+    "fantasy hotel",
+    "UI",
+    "dialogue",
+    "watermark",
+    "romantic embrace",
+    "tuxedo"
+  ],
+  "qualityAcceptance": [
+    "One mise-en-scene serves S09-S11 without revealing a later answer.",
+    "Identity and props match mobile source.",
+    "Landscape office uses genuine horizontal composition."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_matteo_office", "at": [0, 0] },
+  "sceneContinuity": "The office conversation follows the lobby and introductions and leads into the staff and harbor routes; preserve the Villa Serena office, the same morning light and the map/folder/key work that motivates the next movement."
+}

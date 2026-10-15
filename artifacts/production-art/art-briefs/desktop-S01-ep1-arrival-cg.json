@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S01",
+  "authoredSceneId": "ep1_arrival",
+  "assetId": "ep1-arrival-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-arrival-cg-v2.png",
+  "requiredCast": [
+    "nika"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Stands beside her travel suitcase after leaving the taxi and looks toward Villa Serena with restrained fatigue and cautious interest."
+    }
+  ],
+  "location": "Villa Serena old coastal gate approach, low stone wall, white shutters, Mediterranean morning light.",
+  "time": "morning",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    }
+  ],
+  "desktop": {
+    "composition": "Independent wide cinematic exterior: use horizontal space for the gate, wall, coastal view and taxi approach; Nika and suitcase occupy a readable third with open landscape/architecture supporting the arrival beat and lower dialogue-safe value area.",
+    "framing": "Natural eye-level lens, no portrait crop or blurred side fill; face, hands, suitcase, feet/contact shadow, gate and important architecture remain visible at 1366x768, 1600x900, 1920x900 and 1920x1080.",
+    "requiredVisibleCast": [
+      "nika"
+    ]
+  },
+  "portrait": {
+    "composition": "The existing approved mobile composition remains authoritative for 360x640, 390x844 and 430x932.",
+    "framing": "Do not alter the mobile source.",
+    "requiredVisibleCast": [
+      "nika"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable signs",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "luxury fantasy architecture",
+    "hearts"
+  ],
+  "qualityAcceptance": [
+    "Nika identity/wardrobe matches mobile reference.",
+    "Suitcase and feet are grounded.",
+    "Landscape is a standalone arrival composition, not a stretched portrait."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_arrival", "at": [0, 0] },
+  "sceneContinuity": "The opening arrival establishes the villa gate and morning setting before the next beat introduces Matteo at the same gate; keep the coastal hotel architecture continuous."
+}

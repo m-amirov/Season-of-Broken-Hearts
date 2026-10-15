@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S12",
+  "authoredSceneId": "ep1_hotel_staff_response",
+  "assetId": "ep1-staff-laundry-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-staff-laundry-cg.png",
+  "requiredCast": [
+    "nika",
+    "giulia",
+    "elio"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Listens in the laundry/service area and treats empty shifts as people's lives."
+    },
+    {
+      "character": "giulia",
+      "action": "Works as the competent long-serving laundry lead and shows the practical staff reality."
+    },
+    {
+      "character": "elio",
+      "action": "Appears at the service route as a working chef, not the romantic focal point."
+    }
+  ],
+  "location": "Villa Serena laundry/service room with folded linens, baskets, working table, shelves and staff routes.",
+  "time": "afternoon",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "giulia",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+    },
+    {
+      "character": "elio",
+      "path": "assets/characters/references/originals/elio.png",
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "desktop": {
+    "composition": "Independent horizontal three-person service scene: use wide room depth and linen table to separate all faces; Giulia anchors the work context, Nika listens, Elio remains at the route edge.",
+    "framing": "All three faces, relevant hands, linen context and grounded surfaces remain visible at all desktop viewports without crowding the dialogue zone.",
+    "requiredVisibleCast": [
+      "nika",
+      "giulia",
+      "elio"
+    ]
+  },
+  "portrait": {
+    "composition": "The generated three-person portrait source remains authoritative.",
+    "framing": "Do not replace or stretch it.",
+    "requiredVisibleCast": [
+      "nika",
+      "giulia",
+      "elio"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "servant stereotype",
+    "readable labels",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "forced intimacy",
+    "glamour pose",
+    "dark fantasy laundry"
+  ],
+  "qualityAcceptance": [
+    "Giulia remains mature competent context anchor.",
+    "All three identities match mobile.",
+    "Landscape gives each character genuine horizontal space."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_staff_laundry", "at": [0, 0] },
+  "sceneContinuity": "The laundry beat branches from the office and kitchen introductions and returns the group to practical hotel work before the harbor; retain the service corridor context and clear relationships among Nika, Giulia and Elio."
+}

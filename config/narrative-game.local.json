@@ -4,5 +4,6 @@
   "enabled": true,
   "modelPath": "narrative/graph.json",
   "savesPath": "narrative/save-fixtures.json",
-  "promisesPath": "narrative/story-promises.json"
+  "promisesPath": "narrative/story-promises.json",
+  "dualFormatManifestPath": "artifacts/production-art/stage8-ep1-dual-format-manifest.json"
 }

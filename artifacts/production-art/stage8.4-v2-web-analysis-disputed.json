@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-analysis-disputed.json",
+  "reviewId": "WH-ART-EP1-1015-V2-DISPUTED-A1",
+  "reviewTraceId": "01a13de1-013b-7e60-8da1-5f01598c046b",
+  "taskId": "01a13de1-013b-7e60-8da1-5f01598c046b",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": [
+    "ep1-lobby-cg:portrait:390x844",
+    "ep1-lobby-cg:landscape:1600x900",
+    "ep1-matteo-office-cg:portrait:390x844",
+    "ep1-matteo-office-cg:landscape:1600x900",
+    "ep1-staff-laundry-cg:portrait:390x844",
+    "ep1-staff-laundry-cg:landscape:1600x900"
+  ],
+  "evidenceRefs": [
+    "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-staff-laundry-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+    "assets/production/cg/ep1-staff-laundry-cg.png",
+    "assets/production/cg/ep1-staff-laundry-cg-landscape.png"
+  ],
+  "receivedEvidenceRefs": [
+    "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-staff-laundry-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+    "assets/production/cg/ep1-staff-laundry-cg.png",
+    "assets/production/cg/ep1-staff-laundry-cg-landscape.png"
+  ],
+  "visualEvidence": [
+    {"ref":"lobby-p390-v2","path":"artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png","sha256":"f271d04ca7db64b00be370a31b6ca8f7106abb27c2373dd3703fe23023dc28ac","width":390,"height":844,"observation":"Nika and Matteo are recognizable; the partially cropped guiding hand still communicates direction above the dialogue sheet."},
+    {"ref":"lobby-l1600-v2","path":"artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png","sha256":"d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4","width":1600,"height":900,"observation":"Landscape shows the full guiding gesture, lobby architecture and dialogue-safe cast."},
+    {"ref":"office-p390-v2","path":"artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png","sha256":"b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1","width":390,"height":844,"observation":"The live frame clearly reads as Nika and Matteo reviewing documents in an office; keys/folder are secondary and not needed to understand the meeting."},
+    {"ref":"office-l1600-v2","path":"artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png","sha256":"6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5","width":1600,"height":900,"observation":"Landscape preserves the worktable, maps, cast identity and review action; the keys/folder are not story-critical for comprehension."},
+    {"ref":"laundry-p390-v2","path":"artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-staff-laundry-cg.png","sha256":"86208b8739c63a9bce1707a5f251917c12deb4dfa25d91e6a552a3981cc01dea","width":390,"height":844,"observation":"Elio is cropped at the right edge, but Nika with notebook, Giulia with linen and the working laundry remain recognizable; no material comprehension failure is proven."},
+    {"ref":"laundry-l1600-v2","path":"artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-staff-laundry-cg.png","sha256":"6a77540ce96ce2058d0075ef94209a0d048efa07c02ab0c8196a4a0090b5fa65","width":1600,"height":900,"observation":"Landscape clearly shows all three staff, laundry context, notebook, linen and Elio's work props."},
+    {"ref":"office-source-v2","path":"assets/production/cg/ep1-matteo-office-cg.png","sha256":"16b33e09e97f438944c19e71ed5bc28f71df7bf0d3e3e7d1d3553479bb650882","width":1024,"height":1536,"observation":"Source portrait contains the documents, maps, closed red folder and keys."},
+    {"ref":"office-source-landscape-v2","path":"assets/production/cg/ep1-matteo-office-cg-landscape.png","sha256":"ab0c392e98ec7c28c683a6692329a4a3edef4111a9fdbac728b770f7c880b349","width":1672,"height":941,"observation":"Source landscape preserves office identity and worktable context."},
+    {"ref":"laundry-source-v2","path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870","width":1024,"height":1536,"observation":"Source portrait contains the three-person laundry composition and Nika's notebook."},
+    {"ref":"laundry-source-landscape-v2","path":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","sha256":"4cd3a10aff6ef44dcacf4993b3c69bf817920a33d31b8e471cb4f62d367fb3ef","width":1672,"height":941,"observation":"Source landscape contains all three staff and laundry work props."}
+  ],
+  "findings": [
+    {"id":"ART-V2-LOBBY-001","severity":"P3","status":"ADVISORY","authoredCue":"Matteo guides Nika into Villa Serena.","observation":"The portrait hand reaches the right edge but direction remains understandable; landscape shows it fully.","playerImpact":"The player understands that Matteo guides Nika inward.","materialPlayerImpact":false,"evidenceRef":"lobby-p390-v2"},
+    {"id":"ART-V2-LOBBY-002","severity":"P2","status":"ADVISORY","authoredCue":"The lobby wall displays photographs of guests.","observation":"Framed images read more as architectural photographs than laughing guest portraits.","playerImpact":"This is a minor decorative mismatch; the photographs are not required for scene action or plot comprehension.","materialPlayerImpact":false,"evidenceRef":"lobby-p390-v2"},
+    {"id":"ART-V2-OFFICE-001","severity":"P2","status":"ADVISORY","authoredCue":"Nika and Matteo review hotel work, figures, documents and keys.","observation":"The meeting, documents and maps are clear. The keys and closed red folder are secondary and partly obscured in the portrait runtime frame.","playerImpact":"The player understands the office briefing without separately identifying those objects.","materialPlayerImpact":false,"evidenceRef":"office-p390-v2"},
+    {"id":"ART-V2-LAUNDRY-001","severity":"P2","status":"ADVISORY","authoredCue":"Nika, Giulia and Elio meet in the working laundry; Giulia handles linen, Elio brings a shift list and trays, and Nika takes notes.","observation":"Elio is nearly outside the portrait frame, while Nika, her notebook, Giulia, linen and the laundry remain clear; landscape shows the complete trio and props.","playerImpact":"The mobile player gets less complete cast coverage, but the current scene and dialogue remain understandable; no material comprehension failure is demonstrated.","materialPlayerImpact":false,"evidenceRef":"laundry-p390-v2"}
+  ],
+  "resolvedFindings": [
+    {"historicalFinding":"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME","v2Disposition":"PASS","reason":"The gesture remains understandable in the current portrait frame; preserve the existing mobile framing."},
+    {"historicalFinding":"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE","v2Disposition":"ADVISORY_P2","reason":"Documents and the office meeting are clear; keys and folder are not required to understand the authored action."},
+    {"historicalFinding":"PORTRAIT_REQUIRED_ELIO_CROPPED","v2Disposition":"ADVISORY_P2","reason":"Elio's mobile crop is imperfect, but identity/presence and the staff-laundry scene remain understandable; no material impact is proven."},
+    {"historicalFinding":"LOBBY-WALL-PHOTOS-NARRATIVE-MISMATCH","v2Disposition":"ADVISORY_P2","reason":"The wall photographs are not a plot-critical object or required interaction."}
+  ],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "evidenceLimitations": [
+    "All six current runtime screenshots were delivered and visually reviewed.",
+    "The independent reviewer did not receive the two raw Lobby source attachments in the delivered attachment set; Lobby acceptance is based on both current runtime frames. Local source inventory remains complete.",
+    "Provider-attested byte identity is not claimed beyond the supplied frame refs; local hash verification is recorded separately."
+  ],
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "WH-ART-EP1-1014-A1",
+  "reviewTraceId": "WH-ART-EP1-1014-A1",
+  "taskId": "01a13944-5a55-77e2-ae1c-899c0a49ed95",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage8-web-analysis.json",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "evidenceRefs": ["nika","matteo","elio","leo","giulia","bianca","ep1-arrival-cg-v2","ep1-matteo-gate-cg","ep1-elio-kitchen-cg","ep1-leo-harbor-cg"],
+  "receivedEvidenceRefs": ["nika","matteo","elio","leo","giulia","bianca","ep1-arrival-cg-v2","ep1-matteo-gate-cg","ep1-elio-kitchen-cg","ep1-leo-harbor-cg"],
+  "framesReviewed": 10,
+  "reviewedItems": ["nika","matteo","elio","leo","giulia","bianca","ep1-arrival-cg-v2","ep1-matteo-gate-cg","ep1-elio-kitchen-cg","ep1-leo-harbor-cg"],
+  "verdict": "ACCEPT_WITH_BOUNDED_REWORK",
+  "scope": "EP1 S01-S18",
+  "findings": [
+    {"severity":"P1","asset":"assets/production/cg/ep1-elio-kitchen-cg.png","status":"CONFIRMED","issue":"Authored cue requires a white apron and a knife used like a conductor baton; supplied current pixels show a dark apron and towel/pan.","requiredAction":"Change only apron and prop while preserving face, hair, age, body, Nika, kitchen, lighting and composition.","repairScope":"ELIO_KITCHEN_ONLY"},
+    {"severity":"P2","status":"ACCEPT_WITH_NOTES","issue":"Supplied references and accepted CGs are stylistically coherent and moderately painterly/photorealistic.","requiredAction":"Keep the established visual standard; do not regenerate accepted art for style preference."},
+    {"severity":"P2","status":"NOT_VERIFIED","issue":"Giulia and Bianca were supplied only as references; their in-game identity is not yet runtime-verifiable.","requiredAction":"Use the original Giulia reference for S12; Bianca is out of Stage 8 scope."}
+  ],
+  "identityAssessment": {"Nika":"PASS","Matteo":"PASS","Elio":"PASS_IDENTITY_REPAIR_PROP_ONLY","Leo":"PASS","Giulia":"REFERENCE_ONLY","Bianca":"REFERENCE_ONLY","confirmedOtherP0P1":0},
+  "continuityAssessment": {
+    "verdict":"PASS_CONCEPTUAL",
+    "distinctLocations":["S05 hotel lobby","S09-S11 Matteo private office","S12 staff/laundry","S13 afternoon harbor","S15-S17 night quay","S18 night office"],
+    "requirements":["Lobby must differ from gate and office.","S13 daytime harbor must not become evening/night.","S15-S17 need their own night-quay light.","S18 must preserve office architecture while changing light.","Reuse one CG only when location, time and mise-en-scene remain stable."],
+    "limitation":"Analysis received references and accepted-CG pixels, not the new batch or runtime screenshots; final semantic/runtime continuity remains to be verified after integration."
+  },
+  "batchRecommendation": {
+    "status":"APPROVE_SIX_CUE_GENERATION",
+    "globalCompositionRules":{"desktop":"1920x900: keep faces, hands and essential props above the real dialogue zone.","portrait":"360x640, 390x844, 430x932: verify faces and required props after actual crop and dialogue overlay.","critical":"Portrait cover crop can retain only a narrow central slice; compose multi-character scenes for portrait safety or create a separate portrait variant.","style":"Cinematic semi-realistic Mediterranean drama; natural anatomy; no baked UI/text/watermarks."},
+    "cues":[
+      {"cue":"S05","location":"HOTEL_LOBBY","cast":["Nika","Matteo"],"requiredProps":"Reception/guest-photo/stone cues that unambiguously read as lobby.","negativeSpace":"Lower dialogue-safe zone; compact central faces for portrait.","avoid":"Gate composition or private office."},
+      {"cue":"S09-S11","location":"MATTEO_OFFICE_DAY","cast":["Nika","Matteo"],"requiredProps":"Work table, neutral documents, keys and private-office cues.","negativeSpace":"Faces and gestures above dialogue; no readable invented document text.","avoid":"Lobby ambiguity; one CG only if mise-en-scene stays stable."},
+      {"cue":"S12","location":"STAFF_LAUNDRY","cast":["Nika","Giulia","Elio"],"requiredProps":"Linen, baskets, shelves or laundry equipment.","negativeSpace":"All three faces and location-defining objects remain visible on portrait.","avoid":"Kitchen props and identity drift.","priority":"Most difficult portrait-safe composition."},
+      {"cue":"S13","location":"AFTERNOON_HARBOR","cast":["Nika","Elio"],"requiredProps":"Daylight promenade, waterline, boats and coastal architecture.","negativeSpace":"Faces and empty cup remain legible.","avoid":"Night lighting or Leo harbor composition."},
+      {"cue":"S15-S17","location":"NIGHT_QUAY","cast":["Nika","Leo"],"requiredProps":"Night water, quay and shore lights.","negativeSpace":"Faces sufficiently lit on all portrait targets.","avoid":"Daylight, overly dark faces, forced intimacy."},
+      {"cue":"S18","location":"MATTEO_OFFICE_NIGHT","cast":["Nika","Matteo"],"requiredProps":"Same office identity, practical lamp, sealed folder without readable text.","negativeSpace":"Faces and folder above dialogue.","avoid":"Harbor/water, opened last page, premature client reveal."}
+    ]
+  },
+  "visualEvidence": [
+    {"ref":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d","bytes":2493846,"pixelDimensions":"1536x1024","observation":"Approved reference visibly shows Nika's dark jaw-length wavy bob, hazel eyes, freckles and off-white linen EP1 wardrobe."},
+    {"ref":"matteo","path":"assets/characters/references/originals/matteo.png","sha256":"fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23","bytes":2130673,"pixelDimensions":"1448x1086","observation":"Approved reference visibly shows Matteo's dark wavy hair, short stubble, strong jaw and white linen shirt with folder."},
+    {"ref":"elio","path":"assets/characters/references/originals/elio.png","sha256":"ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f","bytes":2507794,"pixelDimensions":"1448x1086","observation":"Approved reference visibly shows Elio's short highlighted textured hair, freckles, warm expression, white chef shirt and dark apron."},
+    {"ref":"leo","path":"assets/characters/references/originals/leo.png","sha256":"0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875","bytes":2281332,"pixelDimensions":"1122x1402","observation":"Approved reference visibly shows Leo's long chestnut hair, narrow clean-shaven face, muted green-grey eyes and stone jacket."},
+    {"ref":"giulia","path":"assets/characters/references/originals/giulia.png","sha256":"4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a","bytes":2409650,"pixelDimensions":"1448x1086","observation":"Approved reference visibly shows Giulia's mature features, silver-threaded low bun and sage-grey laundry-worker wardrobe."},
+    {"ref":"bianca","path":"assets/characters/references/originals/bianca.png","sha256":"c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9","bytes":2137778,"pixelDimensions":"1448x1086","observation":"Approved reference visibly shows Bianca's copper-auburn hair and tailored charcoal professional silhouette; she is out of Stage 8 scope."},
+    {"ref":"ep1-arrival-cg-v2","path":"assets/production/cg/ep1-arrival-cg-v2.png","sha256":"5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80","bytes":2756788,"pixelDimensions":"1024x1536","observation":"Accepted arrival pixels show Nika, suitcase, old coastal gate, stone paving and morning light with no conflicting cast."},
+    {"ref":"ep1-matteo-gate-cg","path":"assets/production/cg/ep1-matteo-gate-cg.png","sha256":"960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf","bytes":2935141,"pixelDimensions":"1024x1536","observation":"Accepted gate pixels show Nika and Matteo at respectful distance, Matteo holding keys/folder and offering a hand on the stone entrance court."},
+    {"ref":"ep1-elio-kitchen-cg","path":"assets/production/cg/ep1-elio-kitchen-cg.png","sha256":"ee21d16c69080422f633e53331d82706000f75808cdeDCDFB1E356C0B6610918","bytes":2620196,"pixelDimensions":"1024x1536","observation":"Accepted kitchen pixels show stable Nika/Elio identity and a real working kitchen, but visibly show a dark apron and towel/pan instead of the authored white apron and knife baton."},
+    {"ref":"ep1-leo-harbor-cg","path":"assets/production/cg/ep1-leo-harbor-cg.png","sha256":"f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa","bytes":2661333,"pixelDimensions":"1024x1536","observation":"Accepted Leo entrance pixels show Nika and Leo on grounded stone quay at blue dusk with waterline, blueprint tube and emotional distance."}
+  ],
+  "decision": "APPROVE_SIX_CUE_GENERATION_WITH_ELIO_BOUNDED_REPAIR",
+  "unresolved": ["New batch source pixels and runtime screenshots are not yet available; final acceptance remains pending integration and current-HEAD browser captures."],
+  "acceptedAssetPolicy":{"KEEP":["ep1-arrival-cg-v2.png","ep1-matteo-gate-cg.png","ep1-leo-harbor-cg.png"],"BOUNDED_REWORK":["ep1-elio-kitchen-cg.png"]},
+  "releaseImplications":{"artDirection":"ACCEPTED_WITH_BOUNDED_REWORK","newAssets":"NOT_GENERATED_OR_REVIEWED","runtimeVisualAcceptance":"NOT_VERIFIED","productionArtBatchPass":false}
+}

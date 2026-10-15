@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "ceosVersion": "0.5.12",
+  "ceosVersion": "0.5.13",
   "mode": "verification",
   "releaseBaselineRef": null,
-  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
-  "manifestFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.codex-os\\project.yml",
-  "startedAt": "2026-10-13T10:10:21.331Z",
-  "completedAt": "2026-10-13T10:10:22.138Z",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art",
+  "manifestFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\.codex-os\\project.yml",
+  "startedAt": "2026-10-14T19:15:36.472Z",
+  "completedAt": "2026-10-14T19:15:38.172Z",
   "host": {
     "platform": "win32",
     "arch": "x64",

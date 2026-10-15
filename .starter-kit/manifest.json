@@ -739,7 +739,7 @@
         "mature"
       ],
       "conflictPolicy": "semantic-merge",
-      "sha256": "191fa4c92098028dff475e4682abd5c0b7b73dfe47b1c5e7d4b94bc8814c98e5"
+      "sha256": "15328a009b3d7e6a1745697674522d10908bc139d98a1cf8e6262c6341364f6e"
     },
     {
       "source": "docs/EXTERNAL_SKILL_SOURCES.md",
@@ -1076,7 +1076,7 @@
         "mature"
       ],
       "conflictPolicy": "semantic-merge",
-      "sha256": "118791dea326dd8aed1df9bd0ca944dda1f94ba878773e840c4c7672e99527ca"
+      "sha256": "458567cbb71af9fa475bfc9f407b43c44ec4bd3b99bcf4600b89a859844f68a1"
     },
     {
       "source": "config/starter-kit-manifest.schema.json",
@@ -1799,6 +1799,54 @@
       "sha256": "855a2f321fc9ad00eaeaf0b6268fc6720bd551f09c9a3617727155d3866cdbb7"
     },
     {
+      "source": "tools/narrative/narrative-art-handoff.mjs",
+      "logicalId": "managed:narrative-art-handoff",
+      "ownership": "managed",
+      "target": "tools/narrative/narrative-art-handoff.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "4c19334e772adcb56760be658d86f3fb6316916c1d58b9cefa9590198c900b66"
+    },
+    {
+      "source": "tests/starter-kit/narrative-art-handoff.test.mjs",
+      "logicalId": "test:narrative-art-handoff",
+      "ownership": "managed",
+      "target": "tests/starter-kit/narrative-art-handoff.test.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "2c0d0c615b992da378fa86532a7fa330ce3a77925e2e6c502ff9a447bf027cbd"
+    },
+    {
+      "source": "docs/NARRATIVE_DUAL_FORMAT_ART.md",
+      "logicalId": "managed:narrative-dual-format-art-doc",
+      "ownership": "managed",
+      "target": "docs/NARRATIVE_DUAL_FORMAT_ART.md",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "e72670097add0c4b33f1dfe25b1588b343423d4526d0c3a867b22b75b309e1ec"
+    },
+    {
       "source": "tools/narrative/narrative-game-validator.mjs",
       "logicalId": "managed:narrative-game-validator",
       "ownership": "managed",
@@ -1860,7 +1908,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "92ecc2abcffd976171ab284ed42f5e08220bbc0bab8ce83ae808890ecfff8c0d"
+      "sha256": "029616dd27377bbf7a2a82ac22a7e374fd66b88bd910896c82718a92d80792b9"
     },
     {
       "source": "docs/NARRATIVE_GAME_PROFILE.md",
@@ -1876,7 +1924,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "d40215002121d9ae2a2c18da4f101e4cdd47f60536f4afeca6b17bb85b65c7e2"
+      "sha256": "521b4e1ba5e85a5c002ce94aa3dada206bb785e2c9772a276588b897ac3f66fd"
     },
     {
       "source": "migrations/0.5.11-to-0.5.12.md",

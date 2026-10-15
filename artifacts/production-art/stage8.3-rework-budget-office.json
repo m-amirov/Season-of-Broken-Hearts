@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "scopeKey": "ep1-matteo-office-cg:portrait",
+  "proposedMethod": "generation",
+  "proposedStrategyKey": "native-portrait-recomposition-safe-zone-v2",
+  "transportState": "READY",
+  "findings": [
+    {
+      "id": "P1-REQUIRED-KEYS-FOLDER-UNDER-DIALOGUE-SAFE-ZONE",
+      "status": "OPEN",
+      "severity": "P1",
+      "authoredCue": "S09-S11 office briefing requires Matteo's keys and closed red-tabbed folder to remain visible while the dialogue references the staffing crisis and work materials.",
+      "observation": "Current 1024x1536 portrait source places the keys and closed folder in the lower table band; current 360x640, 390x844 and 430x932 runtime frames put them under the dialogue-safe overlay.",
+      "playerImpact": "The authored objects cannot be recognized at the moment the dialogue relies on them.",
+      "evidenceRef": "artifacts/production-art/stage8-host-observed-art-acceptance-v1-20261014.json#packets[4]",
+      "actualPixelsReceived": true
+    }
+  ],
+  "attempts": [
+    {
+      "scopeKey": "ep1-matteo-office-cg:portrait",
+      "method": "generation",
+      "strategyKey": "wardrobe-rework-native-portrait-v1",
+      "outcome": "FAIL",
+      "evidenceRef": "artifacts/production-art/receipts/wardrobe-rework-ep1-matteo-office-portrait.json"
+    }
+  ]
+}

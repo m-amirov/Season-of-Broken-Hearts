@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ep1-matteo-gate-cg",
+  "variant": "portrait",
+  "sceneIds": ["S02", "S03", "S04"],
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-matteo-gate-cg.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1393e-a6d1-73e0-b9d1-e83481564ae8\\exec-2c918272-beae-43d5-ae16-9c6aeab277b3.png",
+  "generator": "image_gen.imagegen",
+  "operation": "bounded wardrobe-continuity edit of existing Gate CG",
+  "promptConstraint": "Preserve approved Gate composition, identities, wardrobes, keys and folder; add the same small vintage brown rolling suitcase from Arrival beside Nika, fully visible and scene-consistent.",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "5823c6ee6620508727902442ddcd5e26dcf7f18082c83e486587290ce79a2e75",
+  "bytes": 2739250,
+  "dimensions": {"width": 1024, "height": 1536},
+  "visualSpotCheck": "PASS_LOCAL_SPOT_CHECK_NOT_WEB_ACCEPTANCE",
+  "continuityFix": "Arrival suitcase remains present at the Gate; no suitcase handoff is authored in EP1 text.",
+  "recordedAt": "2026-10-14T12:00:00.000Z"
+}

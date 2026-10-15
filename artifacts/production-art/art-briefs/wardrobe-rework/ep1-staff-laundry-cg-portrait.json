@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S12",
+  "coveredSceneIds": [
+    "S12"
+  ],
+  "authoredSceneId": "ep1_hotel_staff_response",
+  "assetId": "ep1-staff-laundry-cg",
+  "variant": "portrait",
+  "targetDimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "nativeFallbackAllowed": false,
+  "sourceExisting": "assets/production/cg/ep1-staff-laundry-cg.png",
+  "requiredCast": [
+    "nika",
+    "giulia",
+    "elio"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Giulia folds linen, Elio carries a shift list and two trays, and Nika listens to the staff questions beside the working machines."
+    },
+    {
+      "character": "giulia",
+      "action": "Giulia folds linen, Elio carries a shift list and two trays, and Nika listens to the staff questions beside the working machines."
+    },
+    {
+      "character": "elio",
+      "action": "Giulia folds linen, Elio carries a shift list and two trays, and Nika listens to the staff questions beside the working machines."
+    }
+  ],
+  "location": "Villa Serena laundry with folding table, baskets and shelving",
+  "time": "afternoon",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "giulia",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+    },
+    {
+      "character": "elio",
+      "path": "assets/characters/references/originals/elio.png",
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "variant-of-previous",
+    "continuityNote": "Same afternoon work look as the office, adapted with rolled sleeves and a practical service layer; Giulia and Elio establish the staff-world costume code.",
+    "nika": {
+      "outfit": "Washed-olive utility overshirt over an ivory tee, taupe trousers, rolled sleeves and leather watch.",
+      "palette": [
+        "washed olive",
+        "ivory",
+        "muted taupe"
+      ],
+      "silhouette": "practical service-visit layer over relaxed professional base",
+      "accessoriesProps": [
+        "small earrings",
+        "watch",
+        "small notebook held in both variants"
+      ]
+    },
+    "giulia": {
+      "outfit": "Cream blouse under a warm terracotta housekeeping apron, charcoal skirt and sensible low shoes.",
+      "palette": [
+        "cream",
+        "warm terracotta",
+        "charcoal"
+      ],
+      "silhouette": "grounded senior-housekeeper apron silhouette",
+      "accessoriesProps": [
+        "folded towels",
+        "linen",
+        "laundry basket",
+        "hair gathered back"
+      ]
+    },
+    "elio": {
+      "outfit": "Cream staff shirt under a dark olive work apron, sleeves rolled and practical trousers.",
+      "palette": [
+        "cream",
+        "dark olive",
+        "warm brown"
+      ],
+      "silhouette": "active background staff silhouette, distinct from Giulia and Nika",
+      "accessoriesProps": [
+        "shift list",
+        "two trays",
+        "laundry shelving"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep Giulia central with towels, Nika engaged and holding the small notebook, and Elio legible in the background without crowding the dialogue layer.",
+    "landscape": "Use table, baskets and shelving to explain the laundry while maintaining a readable three-person triangle; keep Nika's notebook visible as in portrait.",
+    "invariants": [
+      "Giulia owns the linen action",
+      "Elio carries shift list/trays",
+      "Nika reads as visiting professional",
+      "Nika holds the same notebook in both variants"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "olive/ivory Nika, terracotta/cream Giulia, dark-olive/cream Elio",
+    "silhouetteContrast": "utility overshirt, senior apron and active staff apron are visibly different",
+    "pairs": [
+      "nika-giulia",
+      "nika-elio",
+      "giulia-elio"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use table, baskets and shelving to explain the laundry while maintaining a readable three-person triangle.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "giulia",
+      "elio"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep Giulia central with towels, Nika engaged, and Elio legible in the background without crowding the dialogue layer.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "giulia",
+      "elio"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_hotel_staff_response",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "Same afternoon work look as the office, adapted with rolled sleeves and a practical service layer; Giulia and Elio establish the staff-world costume code.",
+  "reworkReason": "Current service scene lacks a staff-specific costume code and repeats the office/gate palette too literally."
+}

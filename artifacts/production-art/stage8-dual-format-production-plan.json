@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_DUAL_FORMAT_ART_INCOMPLETE",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "manifest": "artifacts/production-art/stage8-ep1-dual-format-manifest.json",
+  "scope": "EP1, 18 authored scenes, 10 unique CG families",
+  "formatTargets": {
+    "portrait": {"target": "1024x1536", "aspect": "2:3", "familiesReady": 10},
+    "desktop": {"target": "1920x1080", "minimum": "1280x720", "aspect": "16:9", "familiesReady": 7, "familiesPendingGeneration": 3}
+  },
+  "families": [
+    {"assetId":"ep1-arrival-cg","sceneIds":["ep1_arrival"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY"},
+    {"assetId":"ep1-matteo-gate-cg","sceneIds":["ep1_gate","ep1_matteo_formal_response","ep1_matteo_direct_response"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY"},
+    {"assetId":"ep1-lobby-cg","sceneIds":["ep1_matteo_welcome"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY"},
+    {"assetId":"ep1-elio-kitchen-cg","sceneIds":["ep1_kitchen","ep1_elio_humor_response","ep1_elio_boundary_response"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY","note":"Confirmed P1 Elio kitchen repair is represented by the current source pixels; artistic acceptance remains separate."},
+    {"assetId":"ep1-matteo-office-cg","sceneIds":["ep1_work_briefing","ep1_hotel_crisis","ep1_hotel_numbers_response"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY"},
+    {"assetId":"ep1-staff-laundry-cg","sceneIds":["ep1_hotel_staff_response"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY"},
+    {"assetId":"ep1-harbor-afternoon-cg","sceneIds":["ep1_harbor_walk"],"portrait":"READY_MECHANICAL_ONLY","desktop":"READY_MECHANICAL_ONLY"},
+    {"assetId":"ep1-leo-harbor-cg","sceneIds":["ep1_leo_entrance"],"portrait":"READY_MECHANICAL_ONLY","desktop":"PENDING_GENERATION"},
+    {"assetId":"ep1-leo-night-cg","sceneIds":["ep1_leo_choice","ep1_leo_hear_response","ep1_leo_distance_response"],"portrait":"READY_MECHANICAL_ONLY","desktop":"PENDING_GENERATION"},
+    {"assetId":"ep1-hook-cg","sceneIds":["ep1_hook"],"portrait":"READY_MECHANICAL_ONLY","desktop":"PENDING_GENERATION"}
+  ],
+  "acceptance": {
+    "mechanical": "BLOCK until all 10 families have real portrait and desktop descriptors verified by CEOS.",
+    "visual": "NOT_VERIFIED; requires independent current-runtime portrait and desktop pixel review.",
+    "finalStage8": "PASS_STAGE8_EP1_PRODUCTION_ART_ACCEPTANCE is forbidden until all pairs are integrated and artistically accepted."
+  }
+}

@@ -232,7 +232,8 @@
         "routes",
         "dialogue",
         "state",
-        "saves"
+        "saves",
+        "dual-format-art-handoff"
       ],
       "activation": "explicit game-owned opt-in only"
     }

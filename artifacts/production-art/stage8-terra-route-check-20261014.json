@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+  "runId": "2026-10-14T12-40-09-650Z-production-art-00c268",
+  "agentId": "01a13a6a-6fcb-7c81-9566-30446f6308b0",
+  "parentSessionId": "01a13a69-dbda-7f63-a998-4a03a4b2ae9d",
+  "agentRole": "ceos_asset_generator",
+  "actualModel": "gpt-5.6-terra",
+  "actualEffort": "medium",
+  "traceFile": "C:/Users/user/.codex/sessions/2026/10/14/rollout-2026-10-14T15-36-56-01a13a6a-6fcb-7c81-9566-30446f6308b0.jsonl",
+  "traceSha256": "12844056b15f7688018bb5e6a30962a440418ec379c3416abfc9b951a6692e2f",
+  "evidenceAssurance": "host-observed-local-jsonl-not-provider-signed",
+  "generationCapability": "NOT_VERIFIED",
+  "imageGenerationCall": false,
+  "recordedAt": "2026-10-14T13:00:00.000Z"
+}

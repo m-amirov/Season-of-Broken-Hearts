@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "scopeKey": "ep1-staff-laundry-cg:portrait",
+  "proposedMethod": "generation",
+  "proposedStrategyKey": "native-portrait-recomposition-three-person-triangle-v2",
+  "transportState": "READY",
+  "findings": [
+    {
+      "id": "P1-PORTRAIT-REQUIRED-ELIO-CROPPED",
+      "status": "OPEN",
+      "severity": "P1",
+      "authoredCue": "S12 staff response requires Nika, Giulia and Elio to be readable as participants in the laundry interaction; Elio carries the shift list and two trays.",
+      "observation": "Current portrait source places Elio at the far right edge; current 360x640, 390x844 and 430x932 runtime frames crop his face and body so he no longer reads as a complete participant.",
+      "playerImpact": "The scene loses one of the three staff voices and weakens the authored interaction and wardrobe continuity.",
+      "evidenceRef": "artifacts/production-art/stage8-host-observed-art-acceptance-v1-20261014.json#packets[5]",
+      "actualPixelsReceived": true
+    }
+  ],
+  "attempts": [
+    {
+      "scopeKey": "ep1-staff-laundry-cg:portrait",
+      "method": "generation",
+      "strategyKey": "wardrobe-rework-native-portrait-v1",
+      "outcome": "FAIL",
+      "evidenceRef": "artifacts/production-art/receipts/wardrobe-rework-ep1-staff-laundry-portrait-notebook-open.json"
+    }
+  ]
+}

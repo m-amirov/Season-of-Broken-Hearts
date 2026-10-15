@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-leo-night.json",
+  "reviewId": "e4a9b726-32d1-4c8f-9a52-71e0b63d284f",
+  "reviewTraceId": "7c2f51a8-9b04-4e6d-8f31-a25c90d743b6",
+  "taskId": "a83e126f-5d49-4cb7-91a2-6e0f37d84b25",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-leo-night-cg:source:portrait","ep1-leo-night-cg:source:landscape","ep1-leo-night-cg:runtime:390x844","ep1-leo-night-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-leo-night-cg.png","assets/production/cg/ep1-leo-night-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-night-cg.png","artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-night-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-leo-night-cg.png","assets/production/cg/ep1-leo-night-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-night-cg.png","artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-night-cg.png"],
+  "visualEvidence": [
+    {"ref":"leo-night-source-p","path":"assets/production/cg/ep1-leo-night-cg.png","sha256":"ef0697f4b819f86f60fcf6fe6d8dc933a8947ccac8b68b29c9020c9d8df67c21","width":1024,"height":1536,"observation":"Portrait shows Leo and Nika's emotional distance, blueprints, harbor lights and evening time."},
+    {"ref":"leo-night-source-l","path":"assets/production/cg/ep1-leo-night-cg-landscape.png","sha256":"1d756f84cb4a60bd587426e8cd42a885f3c0f0ca98fe3bc0b348568ea3b71872","width":1672,"height":941,"observation":"Landscape preserves characters, rolled blueprints, harbor and tense post-separation staging."},
+    {"ref":"leo-night-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-night-cg.png","sha256":"eddc6b1b9f2ffd6c94a8921f191831a60f0ea8279cd90bca0f9d0df86b2df2bb","width":390,"height":844,"observation":"Mobile runtime keeps both faces, opposing gaze directions, blueprints and readable dialogue; Leo remains recognizable despite side crop."},
+    {"ref":"leo-night-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-night-cg.png","sha256":"e8e2ad527f7e2f11c0ec3569657b602523dd721379851819b973d0d4bf1ab804","width":1600,"height":900,"observation":"Desktop runtime keeps full two-person staging, emotional distance, blueprints, harbor and clear dialogue."}
+  ],
+  "findings": [
+    {"id":"LEO-NIGHT-P3-001","severity":"P3","status":"OPEN","authoredCue":"Leo and Nika hold an emotionally tense blue-dusk conversation.","observation":"The left side of Leo's figure is cropped in the portrait runtime.","playerImpact":"Face, gaze, clothing, blueprints and emotional dynamic remain recognizable; no repair is required.","materialPlayerImpact":false,"evidenceRef":"leo-night-runtime-p390"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

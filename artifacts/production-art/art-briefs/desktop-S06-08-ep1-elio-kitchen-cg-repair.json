@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S06",
+  "coveredSceneIds": [
+    "S06",
+    "S07",
+    "S08"
+  ],
+  "authoredSceneId": "ep1_kitchen",
+  "assetId": "ep1-elio-kitchen-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-elio-kitchen-cg.png",
+  "requiredCast": [
+    "nika",
+    "elio"
+  ],
+  "narrativeActions": [
+    {
+      "character": "elio",
+      "action": "Wears a clearly white chef apron and holds a kitchen knife upright like a conductor baton beside a saucepan; coffee cup and kettle remain plausible."
+    },
+    {
+      "character": "nika",
+      "action": "Stands as a professional newcomer at a respectful distance."
+    }
+  ],
+  "location": "Working Villa Serena service kitchen with counters, stove, saucepan, cup and kettle.",
+  "time": "late morning",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "elio",
+      "path": "assets/characters/references/originals/elio.png",
+      "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"
+    }
+  ],
+  "desktop": {
+    "composition": "Independent wide working-kitchen composition: use horizontal counter/stove depth and walking space while keeping Nika and Elio apart, white apron and knife above dialogue-safe lower value area; preserve the repaired authored action.",
+    "framing": "Both faces, hands, white apron, upright knife, saucepan, cup and kettle remain readable at all desktop viewports; no knife crop or weapon-like staging.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "portrait": {
+    "composition": "The repaired portrait source is authoritative and must retain the same white apron and knife action.",
+    "framing": "Do not alter the mobile source.",
+    "requiredVisibleCast": [
+      "nika",
+      "elio"
+    ]
+  },
+  "forbiddenProps": [
+    "dark apron",
+    "towel replacing knife",
+    "extra characters",
+    "flambé spectacle",
+    "impossible food handling",
+    "forced touch",
+    "readable labels",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark"
+  ],
+  "qualityAcceptance": [
+    "White apron and knife baton match the authored cue in both variants.",
+    "Elio/Nika identity and kitchen continuity match mobile.",
+    "Landscape is standalone and physically grounded."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_elio_kitchen", "at": [0, 0] },
+  "sceneContinuity": "The kitchen introduction follows Nika's lobby arrival and precedes the office, laundry and harbor beats; Elio must remain in the working kitchen with the repaired white apron, upright knife and correct cookware/action."
+}

@@ -1,0 +1,957 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE8_3_TARGETED_RUNTIME_QA",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "viewports": [
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 430,
+      "height": 932
+    },
+    {
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "targetAssets": [
+    "ep1-lobby-cg",
+    "ep1-matteo-office-cg",
+    "ep1-staff-laundry-cg"
+  ],
+  "captures": [
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "dialogueIndex": 0,
+      "assetId": "ep1-lobby-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-lobby-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 640,
+        "top": 0,
+        "right": 360,
+        "bottom": 640,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/360x640/ep1-lobby-cg.png",
+      "screenshotSha256": "93c3219ba3231afa4ba4c9511d6c79c7cdbabbcd4d473e6a68106c51aaf5bcf3",
+      "screenshotBytes": 333953
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_work_briefing",
+      "dialogueIndex": 0,
+      "assetId": "ep1-matteo-office-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-matteo-office-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 640,
+        "top": 0,
+        "right": 360,
+        "bottom": 640,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/360x640/ep1-matteo-office-cg.png",
+      "screenshotSha256": "45b4ec0f7a3c11bc810909e9388b52548ed83f29aa6061663fdae20340efa510",
+      "screenshotBytes": 328335
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 640,
+        "top": 0,
+        "right": 360,
+        "bottom": 640,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/360x640/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "251f04c9f8a5f28ecd30fd6919dfef5198595543ba2c48fb661e4be7233c0c79",
+      "screenshotBytes": 325914
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "dialogueIndex": 0,
+      "assetId": "ep1-lobby-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-lobby-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/390x844/ep1-lobby-cg.png",
+      "screenshotSha256": "f271d04ca7db64b00be370a31b6ca8f7106abb27c2373dd3703fe23023dc28ac",
+      "screenshotBytes": 431197
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_work_briefing",
+      "dialogueIndex": 0,
+      "assetId": "ep1-matteo-office-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-matteo-office-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/390x844/ep1-matteo-office-cg.png",
+      "screenshotSha256": "b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1",
+      "screenshotBytes": 443696
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/390x844/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "86208b8739c63a9bce1707a5f251917c12deb4dfa25d91e6a552a3981cc01dea",
+      "screenshotBytes": 434908
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "dialogueIndex": 0,
+      "assetId": "ep1-lobby-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-lobby-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 932,
+        "top": 0,
+        "right": 430,
+        "bottom": 932,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/430x932/ep1-lobby-cg.png",
+      "screenshotSha256": "3186913406af1f953a820c52a0ddcd3c5359ac264d5fea89c835b7342df73a44",
+      "screenshotBytes": 511237
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_work_briefing",
+      "dialogueIndex": 0,
+      "assetId": "ep1-matteo-office-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-matteo-office-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 932,
+        "top": 0,
+        "right": 430,
+        "bottom": 932,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/430x932/ep1-matteo-office-cg.png",
+      "screenshotSha256": "21131b2096a751a367f2edf46315bc2a1e28c36ef86974379bd713ad7758def8",
+      "screenshotBytes": 530477
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 932,
+        "top": 0,
+        "right": 430,
+        "bottom": 932,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/430x932/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "94b61588875170f4e9478770b7a426faf04e34a32c3222bd40ccc0989fed2d05",
+      "screenshotBytes": 522591
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "dialogueIndex": 0,
+      "assetId": "ep1-lobby-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "top": 0,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1366x768/ep1-lobby-cg.png",
+      "screenshotSha256": "79ce9eeb9e26102220d77285a53887e29087f3a16ba8552581003a21dda11827",
+      "screenshotBytes": 1459076
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_work_briefing",
+      "dialogueIndex": 0,
+      "assetId": "ep1-matteo-office-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "top": 0,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1366x768/ep1-matteo-office-cg.png",
+      "screenshotSha256": "cf5142d0cd164470b9f1c871e5f846defc8939411f59572c15af72c868b97dec",
+      "screenshotBytes": 1374629
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 768,
+        "top": 0,
+        "right": 1366,
+        "bottom": 768,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1366x768/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "cd2f62230e6834a4092bfa95d0506c968ae220d147ed9cd12803a9c95ba9b434",
+      "screenshotBytes": 1385599
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "dialogueIndex": 0,
+      "assetId": "ep1-lobby-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1600x900/ep1-lobby-cg.png",
+      "screenshotSha256": "1ce0d669982e8db6603e919308d36abeeb67a88b221cce08138a8ef0f4cc40a5",
+      "screenshotBytes": 1925157
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_work_briefing",
+      "dialogueIndex": 0,
+      "assetId": "ep1-matteo-office-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1600x900/ep1-matteo-office-cg.png",
+      "screenshotSha256": "898286310164b9880aa4e126b2da6fca2ee2a7e68f013f23e52b15a4d0e90ec9",
+      "screenshotBytes": 1802596
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1600x900/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92",
+      "screenshotBytes": 1824593
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_matteo_welcome",
+      "dialogueIndex": 0,
+      "assetId": "ep1-lobby-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-lobby-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1920x1080/ep1-lobby-cg.png",
+      "screenshotSha256": "5f92bbb68b4fa427503c93eda8c323920696b3b3838fcbb28abbab560dc61b60",
+      "screenshotBytes": 2596760
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_work_briefing",
+      "dialogueIndex": 0,
+      "assetId": "ep1-matteo-office-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1920x1080/ep1-matteo-office-cg.png",
+      "screenshotSha256": "ebef224e268d8ddec7ab32bedcec569093dcb4a6ad02059120a54c2048efb628",
+      "screenshotBytes": 2428307
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.3-targeted-runtime/1920x1080/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "aa144a8a3d990402fb40fb144d5dc2803e8418668281cef50b17201c7405e7d0",
+      "screenshotBytes": 2465644
+    }
+  ],
+  "routes": [
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "coverage": {
+    "required": [
+      "360x640/ep1-lobby-cg",
+      "360x640/ep1-matteo-office-cg",
+      "360x640/ep1-staff-laundry-cg",
+      "390x844/ep1-lobby-cg",
+      "390x844/ep1-matteo-office-cg",
+      "390x844/ep1-staff-laundry-cg",
+      "430x932/ep1-lobby-cg",
+      "430x932/ep1-matteo-office-cg",
+      "430x932/ep1-staff-laundry-cg",
+      "1366x768/ep1-lobby-cg",
+      "1366x768/ep1-matteo-office-cg",
+      "1366x768/ep1-staff-laundry-cg",
+      "1600x900/ep1-lobby-cg",
+      "1600x900/ep1-matteo-office-cg",
+      "1600x900/ep1-staff-laundry-cg",
+      "1920x1080/ep1-lobby-cg",
+      "1920x1080/ep1-matteo-office-cg",
+      "1920x1080/ep1-staff-laundry-cg"
+    ],
+    "captured": [
+      "360x640/ep1-lobby-cg",
+      "360x640/ep1-matteo-office-cg",
+      "360x640/ep1-staff-laundry-cg",
+      "390x844/ep1-lobby-cg",
+      "390x844/ep1-matteo-office-cg",
+      "390x844/ep1-staff-laundry-cg",
+      "430x932/ep1-lobby-cg",
+      "430x932/ep1-matteo-office-cg",
+      "430x932/ep1-staff-laundry-cg",
+      "1366x768/ep1-lobby-cg",
+      "1366x768/ep1-matteo-office-cg",
+      "1366x768/ep1-staff-laundry-cg",
+      "1600x900/ep1-lobby-cg",
+      "1600x900/ep1-matteo-office-cg",
+      "1600x900/ep1-staff-laundry-cg",
+      "1920x1080/ep1-lobby-cg",
+      "1920x1080/ep1-matteo-office-cg",
+      "1920x1080/ep1-staff-laundry-cg"
+    ],
+    "missing": []
+  }
+}

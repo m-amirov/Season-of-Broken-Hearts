@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "sourceEvidence": "artifacts/production-art/stage8-web-acceptance-packets1-8-20261014.json",
+  "requiredExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ]
+}

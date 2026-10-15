@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S12",
+  "authoredSceneId": "ep1_hotel_staff_response",
+  "cue": {"id":"ep1_hotel_staff_response","at":[0,0]},
+  "assetId": "ep1-staff-laundry-cg",
+  "requiredCast": ["nika","giulia","elio"],
+  "narrativeActions": [
+    {"character":"nika","action":"Asks to begin with the team and listens in the laundry/service area, treating empty shifts as people's lives rather than only numbers."},
+    {"character":"giulia","action":"Works as the long-serving laundry lead, grounded and competent, showing Nika the practical staff reality."},
+    {"character":"elio","action":"Appears in the service context as a working chef and confirms the kitchen has duties to complete; he is not the romantic focal point."}
+  ],
+  "sceneContinuity": "Afternoon after the office crisis; this is a distinct staff-service location with an authored three-person cast.",
+  "location": "Real Villa Serena laundry/service room with folded linens, working table, warm industrial daylight and visible routes for staff; not a generic warehouse.",
+  "time": "afternoon",
+  "characterReferences": [
+    {"character":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character":"giulia","path":"assets/characters/references/originals/giulia.png","sha256":"4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"character":"elio","path":"assets/characters/references/originals/elio.png","sha256":"ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"}
+  ],
+  "forbiddenProps": ["extra characters","servant stereotype","readable labels","logos","UI","dialogue","watermark","forced intimacy","glamour pose","dark fantasy laundry"],
+  "desktop": {"composition":"Three-person service scene with Giulia as the working-context anchor, Nika listening in the foreground and Elio naturally present at the edge of the laundry route; keep all faces and hands readable without crowding.","framing":"Natural eye-level perspective, grounded feet or deliberate mid-thigh crop, lower dialogue-safe area at 1920x900.","requiredVisibleCast":["nika","giulia","elio"]},
+  "portrait": {"composition":"Deliberate compact three-person composition that retains identity cues, Giulia's laundry work context and Nika's listening posture above the dialogue sheet at 360x640, 390x844 and 430x932.","framing":"Do not crop Giulia or Elio into anonymous fragments; avoid overlapping faces and preserve safe dialogue space.","requiredVisibleCast":["nika","giulia","elio"]},
+  "qualityAcceptance":["Giulia reads as a mature competent colleague with approved features and uniform.","Elio's identity and chef wardrobe match the approved reference without becoming the focal romantic lead.","The room is spatially coherent and the cast is exactly Nika, Giulia and Elio."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

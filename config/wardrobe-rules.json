@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "WARDROBE_CONTINUITY_V1",
+  "enforcement": "mandatory",
+  "appliesTo": "Every production-art brief and every portrait/landscape CG family in the narrative-game profile.",
+  "failurePolicy": "A brief or batch is not production-ready when wardrobe identity, scene context, continuity type, or shared-scene silhouette contrast is missing.",
+  "characterIdentity": {
+    "nika": {
+      "role": "intellectual, restrained, alive, modern protagonist",
+      "palette": ["ivory", "soft sand", "warm beige", "washed olive", "dusty blue", "muted taupe"],
+      "silhouette": "relaxed elegant Mediterranean tailoring with soft natural fabrics; practical movement and a readable feminine line",
+      "formality": "understated professional, adapting to travel, service spaces, office work and evening pressure",
+      "signatureElements": ["small earrings", "thin chain", "practical leather bag"],
+      "forbiddenDefault": "The same light shirt plus the same light trousers in every scene without an authored continuity reason."
+    },
+    "matteo": {
+      "role": "composed, affluent, controlled, masculine Mediterranean elegance",
+      "palette": ["deep olive", "tobacco", "charcoal", "stone", "muted navy", "dark brown", "off-white"],
+      "silhouette": "structured overshirt, jacket or tailored separates; mature shoulders and controlled vertical line",
+      "formality": "confident adult host and owner, more structured than Nika and never her light-linen duplicate",
+      "signatureElements": ["keys", "closed folder or work papers", "dark leather belt or watch"],
+      "forbiddenDefault": "A pale linen uniform that duplicates Nika's colour, texture and relaxed silhouette."
+    },
+    "elio": {
+      "role": "warm, approachable, sunlit, tactile kitchen professional",
+      "palette": ["white", "cream", "warm ochre", "dark olive", "tobacco"],
+      "silhouette": "lighter, active workwear with rolled sleeves and clear kitchen/service function",
+      "formality": "approachable working staff; practical rather than managerial",
+      "signatureElements": ["white kitchen apron/uniform in kitchen scenes", "upright kitchen knife with cookware context", "dark work apron outside the kitchen when authored"]
+    },
+    "leo": {
+      "role": "quiet, introspective, slightly artistic and architectural",
+      "palette": ["charcoal", "ink navy", "faded rust", "weathered brown", "soft stone"],
+      "silhouette": "slender architectural field layers, long vertical lines and a thoughtful working silhouette",
+      "formality": "professional but solitary; distinct from Matteo's host/owner structure",
+      "signatureElements": ["blueprint tube", "shoulder bag", "architectural field jacket or quiet coat"]
+    },
+    "giulia": {
+      "role": "mature, grounded, trusted housekeeping presence",
+      "palette": ["warm terracotta", "cream", "faded olive", "charcoal"],
+      "silhouette": "practical housekeeping apron and rolled, serviceable layers",
+      "formality": "experienced staff uniform with domestic warmth",
+      "signatureElements": ["linen/towels", "housekeeping apron", "hair gathered back"]
+    },
+    "bianca": {
+      "role": "reserved Mediterranean supporting presence",
+      "palette": ["muted plum", "stone", "cream", "deep teal"],
+      "silhouette": "distinct supporting silhouette; never inherit Nika or Matteo's base look",
+      "formality": "scene-dependent supporting role",
+      "signatureElements": ["one stable accessory declared by the brief"]
+    }
+  },
+  "sceneRules": [
+    "Wardrobe changes or visibly varies with time of day, location, temperature/atmosphere, formality, action and emotional tone.",
+    "Adjacent scenes without a time break may reuse an outfit; a location, time, social-context or long-duration change requires a new outfit or an explicit visual variation.",
+    "Every asset family declares outfit, accessories/props and continuity type for every involved character.",
+    "Shared-scene characters must have contrast in colour, cut, texture and costume role; faces alone are insufficient.",
+    "Portrait and landscape versions share identity and wardrobe facts but are independently composed and safe for their respective interface areas.",
+    "Character references remain authoritative for face, age, hair and body identity; wardrobe rework must not create a new character design."
+  ],
+  "requiredBriefFields": [
+    "sceneIds",
+    "requiredCast",
+    "wardrobe",
+    "wardrobe.continuityType",
+    "wardrobe.continuityNote",
+    "wardrobe.<character>.outfit",
+    "wardrobe.<character>.palette",
+    "wardrobe.<character>.silhouette",
+    "wardrobe.<character>.accessoriesProps",
+    "sharedSceneDistinctness",
+    "dualFormatVerification"
+  ],
+  "dualFormat": {
+    "portrait": {"width": 1024, "height": 1536, "aspect": "2:3"},
+    "landscape": {"width": 1672, "height": 941, "aspect": "16:9-native-fallback", "target": "1920x1080"},
+    "invariant": "Do not change wardrobe, identity, props or emotional beat between formats; change only intentional composition and framing."
+  }
+}

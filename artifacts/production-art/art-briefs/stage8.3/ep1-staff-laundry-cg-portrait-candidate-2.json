@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S12",
+  "authoredSceneId": "ep1_hotel_staff_response",
+  "cue": {"id": "ep1_hotel_staff_response", "at": [0, 0]},
+  "assetId": "ep1-staff-laundry-cg",
+  "requiredCast": ["nika", "giulia", "elio"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Listens to staff questions beside the working machines while holding a small notebook."},
+    {"character": "giulia", "action": "Folds linen at the table as the senior housekeeper leading the laundry exchange."},
+    {"character": "elio", "action": "Carries a shift list and two trays as a clearly readable active staff participant in the laundry."}
+  ],
+  "sceneContinuity": "Candidate 2 is a bounded portrait-safe repair after candidate 1 clipped Elio at the right edge. Preserve the same afternoon laundry, identities, wardrobes, notebook, linen action and staff interaction while recomposing a readable three-person triangle.",
+  "location": "Villa Serena laundry with folding table, baskets, shelving and working machines.",
+  "time": "afternoon",
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"character": "elio", "path": "assets/characters/references/originals/elio.png", "sha256": "ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"}
+  ],
+  "forbiddenProps": ["extra characters", "readable invented document text", "logos", "UI", "dialogue", "watermark", "threatening action", "matching pale-linen duplicate silhouettes"],
+  "desktop": {"composition": "Do not replace the accepted independent landscape counterpart. Keep its same cast, wardrobe, laundry, notebook and authored action.", "framing": "Landscape counterpart remains unchanged and independently staged.", "requiredVisibleCast": ["nika", "giulia", "elio"]},
+  "portrait": {"composition": "Recompose a readable three-person triangle for mobile. Keep Nika and Giulia fully readable, and give Elio a complete face, shoulders and clearly carried shift list/two trays inside the portrait frame, with all three above the dialogue layer at 360x640, 390x844 and 430x932. Giulia remains central with linen; Elio is not a clipped edge silhouette.", "framing": "Keep the laundry ground plane and service props legible, preserve natural anatomy and avoid crowding the dialogue overlay.", "requiredVisibleCast": ["nika", "giulia", "elio"]},
+  "qualityAcceptance": ["all three identities match approved references", "wardrobe matches the continuity matrix", "Elio reads as an active staff participant", "laundry ground plane and props remain clear", "natural anatomy and no baked text or UI"],
+  "candidateNumber": 2,
+  "priorRejection": {"candidateNumber": 1, "revision": "Bring Elio fully inside the portrait composition while preserving Nika, Giulia, the laundry, notebook and authored staff action.", "findings": ["P1 PORTRAIT_REQUIRED_ELIO_CROPPED in current 360x640, 390x844 and 430x932 runtime pixels."], "evidencePath": "artifacts/production-art/stage8-host-observed-art-acceptance-v1-20261014.json", "sha256": "b2940e24a30e3c64fdd019105c259d0281ad27f2833fd835076a407d3a76dc1a"},
+  "repairReason": "Confirmed P1 portrait source/framing defect: Elio is present in the source but cropped at the right edge in mobile runtime.",
+  "repairStrategy": "native-portrait-recomposition-three-person-triangle-v2"
+}

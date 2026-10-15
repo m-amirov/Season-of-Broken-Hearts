@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "WH-ART-EP1-WARDROBE-1014-A1",
+  "reviewTraceId": "WH-ART-EP1-WARDROBE-1014-A1",
+  "taskId": "01a139f9-d0b6-7102-9796-6a96dcef48c0",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage8-wardrobe-web-analysis.json",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "verdict": "REWORK_REQUIRED",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "framesReviewed": 10,
+  "reviewedItems": ["ep1-staff-laundry-cg-portrait", "ep1-staff-laundry-cg-landscape", "ep1-harbor-afternoon-cg-portrait", "ep1-harbor-afternoon-cg-landscape", "ep1-leo-harbor-cg-portrait", "ep1-leo-harbor-cg-landscape", "ep1-leo-night-cg-portrait", "ep1-leo-night-cg-landscape", "ep1-hook-cg-portrait", "ep1-hook-cg-landscape"],
+  "evidenceRefs": ["ep1-staff-laundry-cg-portrait", "ep1-staff-laundry-cg-landscape", "ep1-harbor-afternoon-cg-portrait", "ep1-harbor-afternoon-cg-landscape", "ep1-leo-harbor-cg-portrait", "ep1-leo-harbor-cg-landscape", "ep1-leo-night-cg-portrait", "ep1-leo-night-cg-landscape", "ep1-hook-cg-portrait", "ep1-hook-cg-landscape"],
+  "receivedEvidenceRefs": ["ep1-staff-laundry-cg-portrait", "ep1-staff-laundry-cg-landscape", "ep1-harbor-afternoon-cg-portrait", "ep1-harbor-afternoon-cg-landscape", "ep1-leo-harbor-cg-portrait", "ep1-leo-harbor-cg-landscape", "ep1-leo-night-cg-portrait", "ep1-leo-night-cg-landscape", "ep1-hook-cg-portrait", "ep1-hook-cg-landscape"],
+  "visualEvidence": [
+    {"ref":"ep1-staff-laundry-cg-portrait","path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"2b3ebe01508a27219cc4e382d15b811fbb301b0a903e23c38701cd2b7746952a","observation":"Portrait shows the three-person laundry composition, repeated pale Nika styling and staff-world wardrobe requiring a distinct service variation."},
+    {"ref":"ep1-staff-laundry-cg-landscape","path":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","sha256":"da61aef44711a32d7231c086d236b68efab3329154d0ee3fc517201252d08d20","observation":"Landscape preserves the laundry setting but repeats the wardrobe issue; rework must keep linen, trays and all three identities."},
+    {"ref":"ep1-harbor-afternoon-cg-portrait","path":"assets/production/cg/ep1-harbor-afternoon-cg.png","sha256":"bb2e152b46bbdb9a1d8d65c7f8cdfb8d97cf58643c739e6dcc446421a8308329","observation":"Portrait shows the harbor conversation with repeated pale Nika wardrobe; cup and outdoor context must remain consistent after rework."},
+    {"ref":"ep1-harbor-afternoon-cg-landscape","path":"assets/production/cg/ep1-harbor-afternoon-cg-landscape.png","sha256":"05e9ef8bccb8be939d00a37d2cd67ea1726711f4b59f861e692d490e228f6a3d","observation":"Landscape shows the same harbor beat but needs matched coffee-cup treatment and a context-sensitive outdoor wardrobe."},
+    {"ref":"ep1-leo-harbor-cg-portrait","path":"assets/production/cg/ep1-leo-harbor-cg.png","sha256":"f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa","observation":"Portrait shows blue-hour Leo encounter with pale neutral overlap; Leo needs a distinct architectural field silhouette and Nika an evening layer."},
+    {"ref":"ep1-leo-harbor-cg-landscape","path":"assets/production/cg/ep1-leo-harbor-cg-landscape.png","sha256":"eef5f322e9af92217990bdc84e3ebeecc60d23fee88ab703b4ee7f422f993527","observation":"Landscape preserves harbor geography and blueprint tube but requires the same corrected wardrobe identity as portrait."},
+    {"ref":"ep1-leo-night-cg-portrait","path":"assets/production/cg/ep1-leo-night-cg.png","sha256":"835d0f178d656e420bbdd344d26d6689d34628c4e340332ef710a751317248c1","observation":"Portrait night choice scene can retain continuous harbor outfits, but must inherit the corrected Leo and Nika evening wardrobe."},
+    {"ref":"ep1-leo-night-cg-landscape","path":"assets/production/cg/ep1-leo-night-cg-landscape.png","sha256":"9ba4980b9cce78f2ee56a8f63d8e6ea8c48a86d244b50118a62c2d173392f2f3","observation":"Landscape night encounter preserves distance and lights; corrected continuous wardrobe must not drift between route branches."},
+    {"ref":"ep1-hook-cg-portrait","path":"assets/production/cg/ep1-hook-cg.png","sha256":"6a47becb307d3a1e50dd55162d5cf39f5831f5aed0483d566eb300895f31289a","observation":"Portrait hook retains the closed sealed folder but repeats pale wardrobe; rework must shift both adults to evening office silhouettes."},
+    {"ref":"ep1-hook-cg-landscape","path":"assets/production/cg/ep1-hook-cg-landscape.png","sha256":"381a2b508b4b7c66069aec261077f3cf23edb59a34985e657e4e27e8c38ec187","observation":"Landscape hook keeps the folder closed and visible; rework must preserve the spoiler-safe desk tension and wardrobe contrast."}
+  ],
+  "evidenceLimitations": [
+    "The Web task reported the first five family pairs were not viewable as image attachments in that turn; those families are not marked visually accepted.",
+    "The five received family pairs were reviewed for repeated pale wardrobe, context variation and cross-format prop continuity.",
+    "No provider-attested evidence is claimed; source-bound evidence remains the supplied PNGs and parent-collected runtime captures."
+  ],
+  "primaryFinding": "Systemic wardrobe identity collision: Nika and Matteo share a pale-linen register, and Nika's same white-blouse/beige-trouser look repeats through service, harbor, Leo and hook contexts.",
+  "findings": [
+    {"id":"wardrobe-identity-collision","severity":"P1","detail":"Nika and Matteo are insufficiently separated by colour, silhouette and material; current pale-linen overlap weakens character readability."},
+    {"id":"wardrobe-scene-repetition","severity":"P1","detail":"Nika's outfit repeats across service, harbor, Leo and hook contexts without enough scene-appropriate variation."},
+    {"id":"elio-kitchen-hard-gate","severity":"P1","detail":"Both formats must preserve white apron/chef uniform, upright kitchen knife and cookware in a non-threatening professional kitchen context."},
+    {"id":"harbor-cup-consistency","severity":"P2","detail":"Portrait and landscape harbor variants must use the same coffee-cup type and authored prop treatment."},
+    {"id":"leo-silhouette","severity":"P1","detail":"Leo requires a charcoal/rust architectural field silhouette distinct from Matteo and Nika."},
+    {"id":"hook-spoiler-safety","severity":"P1","detail":"Hook wardrobe may change, but the sealed folder must remain closed with no exposed final page in either format."}
+  ],
+  "perFamily": [
+    {"assetId":"ep1-arrival-cg","status":"REWORK_REQUIRED","requiredRework":["Give Nika a distinctive dusty-blue/taupe arrival outfit.","Preserve face, luggage, gate and arrival action."],"crossFormatInvariants":["same arrival wardrobe identity","same luggage and gate action"]},
+    {"assetId":"ep1-matteo-gate-cg","status":"REWORK_REQUIRED","requiredRework":["Give Matteo a deep-olive/charcoal structured host silhouette distinct from Nika.","Preserve keys, folder, handshake and gate geography."],"crossFormatInvariants":["same Matteo wardrobe in both formats","no pale-linen duplicate"]},
+    {"assetId":"ep1-lobby-cg","status":"REWORK_REQUIRED","requiredRework":["Retain gate outfits across the continuous morning transition while separating visitor and host silhouettes.","Preserve lobby architecture and guiding gesture."],"crossFormatInvariants":["same morning outfit state","same cast and lobby action"]},
+    {"assetId":"ep1-elio-kitchen-cg","status":"REWORK_REQUIRED","requiredRework":["Elio must wear white chef uniform/apron.","Show upright kitchen knife and cookware in a clearly domestic professional context.","Keep Nika distinct from the pale Matteo register."],"crossFormatInvariants":["white apron","upright kitchen knife","cookware","same kitchen action"]},
+    {"assetId":"ep1-matteo-office-cg","status":"REWORK_REQUIRED","requiredRework":["Use a justified noon office wardrobe change.","Keep Matteo darker and more structured than Nika; preserve table, keys and closed red folder."],"crossFormatInvariants":["same office wardrobe across S09-S11","same office props"]},
+    {"assetId":"ep1-staff-laundry-cg","status":"REWORK_REQUIRED","requiredRework":["Give Nika a service-appropriate olive layer.","Keep Giulia's mature housekeeping identity and Elio's distinct staff role.","Preserve linen, trays and laundry action."],"crossFormatInvariants":["same three cast","same laundry props","distinct staff silhouettes"]},
+    {"assetId":"ep1-harbor-afternoon-cg","status":"REWORK_REQUIRED","requiredRework":["Give Nika an outdoor harbor variation.","Keep Elio in context-appropriate dark workwear and make the coffee cup type identical across formats.","Preserve harbor conversation."],"crossFormatInvariants":["same cup type","same bags/props","same harbor action"]},
+    {"assetId":"ep1-leo-harbor-cg","status":"REWORK_REQUIRED","requiredRework":["Give Leo a charcoal/rust architectural field silhouette distinct from Nika and Matteo.","Preserve blueprint tube, shoulder bag and blue-hour eye-line."],"crossFormatInvariants":["same Leo identity and wardrobe","same blueprint tube and harbor geography"]},
+    {"assetId":"ep1-leo-night-cg","status":"REWORK_REQUIRED","requiredRework":["Propagate the corrected S14 evening outfits without inventing a new night change.","Preserve distance, rolled plans, bags and night harbor lights."],"crossFormatInvariants":["same outfits as S14","same emotional distance","same props"]},
+    {"assetId":"ep1-hook-cg","status":"REWORK_REQUIRED","requiredRework":["Use a distinct evening-office wardrobe for Nika and Matteo.","Keep folder closed and sealed; never expose the final page or readable spoiler."],"crossFormatInvariants":["same wardrobe facts","closed sealed folder","no final page"]}
+  ],
+  "resolvedRequirements": {
+    "scope": "Ten existing EP1 families, both portrait and landscape, controlled rework.",
+    "wardrobeRule": "WARDROBE_CONTINUITY_V1 is mandatory and validator-enforced.",
+    "preserve": ["approved face/age identity", "authored cast/actions/props", "dual-format independence", "continuous-scene outfit logic"],
+    "doNotDo": ["cosmetic regeneration without a wardrobe reason", "story rewrite", "new cast", "format-specific wardrobe drift"]
+  },
+  "unresolved": ["First five family pairs were not viewable in the Web turn and require parent/runtime verification after generation."],
+  "decision": "Proceed to bounded wardrobe rework using the project-owned matrix; do not accept any family until both formats are independently verified."
+}

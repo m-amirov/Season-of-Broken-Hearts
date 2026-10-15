@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "WH-ART-EP1-1014-S83-OFFICE-A1",
+  "reviewTraceId": "01a13bf7-37b9-7431-ad32-08373070433e",
+  "taskId": "01a13bf7-37b9-7431-ad32-08373070433e",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage8.3-web-analysis-office.json",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "verdict": "REWORK",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "evidenceRefs": ["ep1-matteo-office-cg-portrait", "ep1-matteo-office-cg-runtime-390x844"],
+  "receivedEvidenceRefs": ["ep1-matteo-office-cg-portrait", "ep1-matteo-office-cg-runtime-390x844"],
+  "visualEvidence": [
+    {"ref": "ep1-matteo-office-cg-portrait", "path": "assets/production/cg/ep1-matteo-office-cg.png", "sha256": "16b33e09e97f438944c19e71ed5bc28f71df7bf0d3e3e7d1d3553479bb650882", "observation": "Raw 1024x1536 office portrait visibly contains Nika, Matteo, neutral maps and the closed red folder with keys on the lower table."},
+    {"ref": "ep1-matteo-office-cg-runtime-390x844", "path": "artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-matteo-office-cg.png", "sha256": "b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1", "observation": "Current 390x844 runtime keeps faces and dialogue readable but the dialogue gradient places the keys and folder in a materially obscured lower band."}
+  ],
+  "reviewedItems": ["ep1-matteo-office-cg-portrait", "ep1-matteo-office-cg-runtime-390x844"],
+  "findings": [
+    {"id": "P1-REQUIRED-KEYS-FOLDER-UNDER-DIALOGUE-SAFE-ZONE", "severity": "P1", "status": "REWORK", "rootCause": "PORTRAIT_COMPOSITION_DIALOGUE_SAFE_AREA", "detail": "Keys and closed red-tabbed folder exist in the raw portrait but fall into the live dialogue gradient in the 390x844 runtime frame; faces and dialogue remain readable.", "actualPixelsReceived": true},
+    {"id": "OFFICE-IDENTITY-WARDROBE", "severity": "P2", "status": "PASS", "detail": "Nika and Matteo identity and office wardrobe remain coherent in supplied pixels."}
+  ],
+  "requiredRepair": "Recompose only the portrait candidate so three keys and the closed folder are clearly above the dialogue-safe band; preserve identity, wardrobe, office, time and desktop counterpart.",
+  "unresolved": ["Independent acceptance remains pending until the repaired portrait pixels are reviewed."],
+  "decision": "REWORK"
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "mode": "VERIFIED_EXISTING_ART_REUSE",
+  "generationInvoked": false,
+  "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+  "currentness": {
+    "mode": "DEPENDENCY_BASED_REUSE",
+    "baseHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a"
+  },
+  "dependencies": [
+    { "path": "config/narrative-game.local.json", "sha256": "f9bf6968ae39f16a34d839be20cbebb610438d77c29949e50c8ba2fecb84dec0" },
+    { "path": "narrative/graph.json", "sha256": "0900855f1c289c1464f5178cba749455f15386daf0e32a1edcd9b249b8a2eefc" },
+    { "path": "narrative/assets.json", "sha256": "78396409d4898a9ddb6c2e93b790f4a089940958ad4f30dfcef1f03033b1c5e4" },
+    { "path": "src/assets/asset-manager.mjs", "sha256": "5fbb23b06eef109e727b85cd0c8b4e2d6a8661cb93472e2cef458aecd47655cd" },
+    { "path": "src/main.mjs", "sha256": "9ea304c31d32243b6340d5af5275e3dbdb716026a7a7d2a2777c371d4c549d15" },
+    { "path": "src/styles.css", "sha256": "b90f6b0207276bbbf7ca7c0da1cf2eacdddbe67de36286eab7b7e7e4ec30d810" },
+    { "path": "src/ui/renderer-stage6.mjs", "sha256": "b075282e49d31a815f380db96125897333a8c36827e1602f821f62fac0bea6e2" },
+    { "path": "config/wardrobe-rules.json", "sha256": "5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246" },
+    { "path": "package.json", "sha256": "5604e5c29d7af2446b9dd0b761834b7cdc52d6944352081b136c4bdbb1906754" },
+    { "path": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json", "sha256": "b07d8963fa2ed941b1aeb25b76c3d38f51e4df57b9d40c63a39a489c3cf82a61" },
+    { "path": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json", "sha256": "1d784fc6b4967cda4c796568b7e64415262a1605ebd0ae550a2364270e8a78f6" }
+  ],
+  "assetManifest": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json",
+  "assetManifestSha256": "b07d8963fa2ed941b1aeb25b76c3d38f51e4df57b9d40c63a39a489c3cf82a61",
+  "dualFormatManifest": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json",
+  "provenance": {
+    "status": "DOCUMENTED",
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-verified-existing-art-provenance.json",
+    "evidenceSha256": "40af9586ffeeba7031de4d458f6dcf0107961fae22c8c9621168321e981fb3a5"
+  },
+  "artAcceptance": {
+    "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+    "status": "PASS",
+    "actualPixelsReceived": true,
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-post-integration-art-currentness.json",
+    "evidenceSha256": "b503adebca5914d671255f5ea5c1ebdb43f8f9129d82731e84b70359197e8c8f",
+    "reviewedItems": [
+      "ep1-arrival-cg:portrait", "ep1-arrival-cg:desktop",
+      "ep1-matteo-gate-cg:portrait", "ep1-matteo-gate-cg:desktop",
+      "ep1-lobby-cg:portrait", "ep1-lobby-cg:desktop",
+      "ep1-elio-kitchen-cg:portrait", "ep1-elio-kitchen-cg:desktop",
+      "ep1-matteo-office-cg:portrait", "ep1-matteo-office-cg:desktop",
+      "ep1-staff-laundry-cg:portrait", "ep1-staff-laundry-cg:desktop",
+      "ep1-harbor-afternoon-cg:portrait", "ep1-harbor-afternoon-cg:desktop",
+      "ep1-leo-harbor-cg:portrait", "ep1-leo-harbor-cg:desktop",
+      "ep1-leo-night-cg:portrait", "ep1-leo-night-cg:desktop",
+      "ep1-hook-cg:portrait", "ep1-hook-cg:desktop"
+    ],
+    "unresolved": [],
+    "reviewCount": 11,
+    "generationPerformed": false
+  },
+  "runtimeEvidence": {
+    "status": "PASS",
+    "actualPixelsReceived": true,
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-post-integration-runtime-currentness.json",
+    "evidenceSha256": "5c91ab3d9a3d679ff87405e339d489e8919436f6f979770e0eff8a05264f1196",
+    "screenshots": [
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-arrival-cg.png", "sha256": "73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-arrival-cg.png", "sha256": "ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-elio-kitchen-cg.png", "sha256": "b85ee602e57ffef190427650a90c30883d20635a3b1f19123f720493da5c396b" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-elio-kitchen-cg.png", "sha256": "bdf4dd87a957e975ed1e556c9e5b12524c8d5f8aa9959e46cbf5118b0a9d1a14" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-harbor-afternoon-cg.png", "sha256": "b533b220131bc8bddad33b1262ac9fe451ef4346508cd4b957b2f61ca9f6d191" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-harbor-afternoon-cg.png", "sha256": "dc734eb2ff21a0306323591a143b45ba405ab31ac2eb0075b754f54216e6dc5d" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-matteo-gate-cg.png", "sha256": "44e06f937335367a4067f9f521bb782fbea19357c3baa1101697d6493662b183" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-matteo-gate-cg.png", "sha256": "1cdb9c8fe75717b671aa5acd8c80692e14e7a2eb14c4bc44c7ecbc3273ec7fe0" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-hook-cg.png", "sha256": "02a8433d2ea0be65efb07579ea5da0ac378ad0637832e5485f646f9cb89bb714" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-hook-cg.png", "sha256": "f759203e6f84283447fedcb2c10742e7ad6034d3e6353bf3089e8f08c1f3e80c" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-harbor-cg.png", "sha256": "dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-harbor-cg.png", "sha256": "13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-night-cg.png", "sha256": "eddc6b1b9f2ffd6c94a8921f191831a60f0ea8279cd90bca0f9d0df86b2df2bb" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-night-cg.png", "sha256": "e8e2ad527f7e2f11c0ec3569657b602523dd721379851819b973d0d4bf1ab804" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png", "sha256": "61f5d9353cd516dcb5906118d0b7ef25d9d1e13e1b37f8f570f347f98c49d226" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/1600x900/ep1-staff-laundry-cg.png", "sha256": "f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png", "sha256": "f271d04ca7db64b00be370a31b6ca8f7106abb27c2373dd3703fe23023dc28ac" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png", "sha256": "d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png", "sha256": "b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1" },
+      { "path": "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png", "sha256": "6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5" }
+    ]
+  },
+  "canon": {
+    "status": "CURRENT",
+    "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+    "evidence": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json",
+    "evidenceSha256": "1d784fc6b4967cda4c796568b7e64415262a1605ebd0ae550a2364270e8a78f6"
+  },
+  "issueSummary": { "openP0": 0, "openP1": 0, "openMaterialP2": 0 },
+  "receipts": [
+    { "path": "artifacts/production-art/stage8.4-v2-final-coverage-summary.json", "sha256": "5e5fb620e667ee39685a22e019a45615ab93a2e49d02f113db471615fd4f4bf0" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-arrival.json", "sha256": "db307d34666fde0c80c9d887b1cd82ea392f7191bdd1027733587aee40689e95" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-elio-kitchen.json", "sha256": "78b90cf2eee6241cce8dde627c9fc50bbefa3959c8c6fc1357f4fa69fb4022ee" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-harbor-afternoon.json", "sha256": "326764df30f775ff7e51894ebc4aef8de71d0ef61ffd48ab773181f8af144e37" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-hook.json", "sha256": "ff2247fe196c4de4e4266f2d75522570393b71abde8599b3d9676bc0f3f8a083" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-leo-harbor.json", "sha256": "2c78790aabf925fd00c195e19fd2331494cd6774967f60d816cc65815027c43c" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-leo-night.json", "sha256": "524ffcca53d53607c655e4fd09a9dc5be38bb31fb8b0b3399d5db397e986451c" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-lobby.json", "sha256": "52a16d04a471dacc7e479a10a15beff2e8feb4d1f33aa91842110025c34898aa" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-matteo-gate.json", "sha256": "2892756633a85a90fc8cfc662a4f03d51251325964fd25c82725f08e9059087d" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-matteo-office.json", "sha256": "c9be303c758345d7f0ba18d5229d1ba4611b4cb7c82b830e5f00cc42dca70a7b" },
+    { "path": "artifacts/production-art/stage8.4-v2-web-acceptance-staff-laundry-repaired.json", "sha256": "cad2f2dd9b03ff3350a50945ed7aa80e398c1925e5904af4933f021d863d1ea0" }
+  ]
+}

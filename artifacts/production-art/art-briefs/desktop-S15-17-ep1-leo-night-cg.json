@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S15",
+  "coveredSceneIds": [
+    "S15",
+    "S16",
+    "S17"
+  ],
+  "authoredSceneId": "ep1_leo_choice|ep1_leo_hear_response|ep1_leo_distance_response",
+  "assetId": "ep1-leo-night-cg",
+  "variant": "landscape",
+  "targetDimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "nativeFallbackAllowed": true,
+  "sourceMobile": "assets/production/cg/ep1-leo-night-cg.png",
+  "requiredCast": [
+    "nika",
+    "leo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Keeps measured distance while deciding whether to hear Leo or end the personal conversation."
+    },
+    {
+      "character": "leo",
+      "action": "Waits at the far quay with regret and restraint; no client identity is revealed."
+    }
+  ],
+  "location": "Far stone quay with readable pavement, mooring hardware, waterline and distant shore lights.",
+  "time": "blue dusk after sunset",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "desktop": {
+    "composition": "Standalone wide night-quay scene using horizontal shore lights and physical distance between Nika and Leo; unresolved tension is expressed through gaze/posture, not intimacy.",
+    "framing": "Both faces sufficiently lit, grounded lower bodies/pavement and waterline readable at all desktop viewports, with choice/dialogue-safe lower space.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "portrait": {
+    "composition": "The generated night-quay portrait source remains authoritative.",
+    "framing": "Do not replace or stretch it.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "heavy stubble",
+    "Aurea logo",
+    "readable client mark",
+    "daylight",
+    "embrace",
+    "forced touch",
+    "floating feet",
+    "water replacing pavement",
+    "readable blueprint text",
+    "UI",
+    "dialogue",
+    "watermark"
+  ],
+  "qualityAcceptance": [
+    "Leo identity and unresolved distance match mobile.",
+    "Night shore and ground plane are clear.",
+    "Landscape uses horizontal space without dark unreadable faces."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": { "id": "ep1_leo_night", "at": [0, 0] },
+  "sceneContinuity": "The night quay sequence follows the daytime harbor branches and carries the Leo route into a more intimate night setting; preserve the waterline, practical lights, tube and the established Leo-Nika identity while allowing wider negative space."
+}

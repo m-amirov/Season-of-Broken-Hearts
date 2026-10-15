@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE8_3_TARGETED_RUNTIME_QA",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "targetAssets": [
+    "ep1-leo-harbor-cg",
+    "ep1-leo-night-cg",
+    "ep1-hook-cg"
+  ],
+  "captures": [
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_leo_entrance",
+      "dialogueIndex": 0,
+      "assetId": "ep1-leo-harbor-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-leo-harbor-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 15%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2",
+      "screenshotBytes": 436645
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_leo_choice",
+      "dialogueIndex": 0,
+      "assetId": "ep1-leo-night-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-leo-night-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-night-cg.png",
+      "screenshotSha256": "eddc6b1b9f2ffd6c94a8921f191831a60f0ea8279cd90bca0f9d0df86b2df2bb",
+      "screenshotBytes": 418513
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_hook",
+      "dialogueIndex": 0,
+      "assetId": "ep1-hook-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-hook-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "50% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-hook-cg.png",
+      "screenshotSha256": "02a8433d2ea0be65efb07579ea5da0ac378ad0637832e5485f646f9cb89bb714",
+      "screenshotBytes": 384084
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_leo_entrance",
+      "dialogueIndex": 0,
+      "assetId": "ep1-leo-harbor-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-leo-harbor-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-harbor-cg.png",
+      "screenshotSha256": "13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c",
+      "screenshotBytes": 1853245
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_leo_choice",
+      "dialogueIndex": 0,
+      "assetId": "ep1-leo-night-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-leo-night-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-night-cg.png",
+      "screenshotSha256": "e8e2ad527f7e2f11c0ec3569657b602523dd721379851819b973d0d4bf1ab804",
+      "screenshotBytes": 1835061
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_hook",
+      "dialogueIndex": 0,
+      "assetId": "ep1-hook-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-hook-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-hook-cg.png",
+      "screenshotSha256": "f759203e6f84283447fedcb2c10742e7ad6034d3e6353bf3089e8f08c1f3e80c",
+      "screenshotBytes": 1581122
+    }
+  ],
+  "routes": [
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "coverage": {
+    "required": [
+      "390x844/ep1-leo-harbor-cg",
+      "390x844/ep1-leo-night-cg",
+      "390x844/ep1-hook-cg",
+      "1600x900/ep1-leo-harbor-cg",
+      "1600x900/ep1-leo-night-cg",
+      "1600x900/ep1-hook-cg"
+    ],
+    "captured": [
+      "390x844/ep1-leo-harbor-cg",
+      "390x844/ep1-leo-night-cg",
+      "390x844/ep1-hook-cg",
+      "1600x900/ep1-leo-harbor-cg",
+      "1600x900/ep1-leo-night-cg",
+      "1600x900/ep1-hook-cg"
+    ],
+    "missing": []
+  }
+}

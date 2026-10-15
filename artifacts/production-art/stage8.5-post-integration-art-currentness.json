@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "stage": "8.5-post-integration-currentness",
+  "status": "PASS",
+  "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+  "acceptedSourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "dependencyReuse": "VERIFIED",
+  "generationInvoked": false,
+  "previousAcceptance": {
+    "path": "artifacts/production-art/stage8.4-v2-final-coverage-summary.json",
+    "sha256": "5e5fb620e667ee39685a22e019a45615ab93a2e49d02f113db471615fd4f4bf0",
+    "productionCgCount": 20,
+    "pass": 20,
+    "rework": 0,
+    "blocked": 0,
+    "routedWebReviewCount": 11
+  },
+  "unchangedVisualDependencies": [
+    { "path": "config/narrative-game.local.json", "sha256": "f9bf6968ae39f16a34d839be20cbebb610438d77c29949e50c8ba2fecb84dec0" },
+    { "path": "narrative/graph.json", "sha256": "0900855f1c289c1464f5178cba749455f15386daf0e32a1edcd9b249b8a2eefc" },
+    { "path": "narrative/assets.json", "sha256": "78396409d4898a9ddb6c2e93b790f4a089940958ad4f30dfcef1f03033b1c5e4" },
+    { "path": "src/assets/asset-manager.mjs", "sha256": "5fbb23b06eef109e727b85cd0c8b4e2d6a8661cb93472e2cef458aecd47655cd" },
+    { "path": "src/main.mjs", "sha256": "9ea304c31d32243b6340d5af5275e3dbdb716026a7a7d2a2777c371d4c549d15" },
+    { "path": "src/styles.css", "sha256": "b90f6b0207276bbbf7ca7c0da1cf2eacdddbe67de36286eab7b7e7e4ec30d810" },
+    { "path": "src/ui/renderer-stage6.mjs", "sha256": "b075282e49d31a815f380db96125897333a8c36827e1602f821f62fac0bea6e2" },
+    { "path": "config/wardrobe-rules.json", "sha256": "5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246" },
+    { "path": "artifacts/production-art/stage8.5-verified-existing-art-manifest.json", "sha256": "f67d085f1a100261489c8018d040a01ce2c722d1cc29ea77c9d768b31b065e38" },
+    { "path": "artifacts/production-art/stage8.5-verified-existing-art-dual-format-manifest.json", "sha256": "023eda825db0b55aebdce8dd91729a449aebee733c78d1982838f0c83b826e8f" }
+  ],
+  "assertion": "The integration commit adds the already-tested Stage 8 files and evidence; it does not alter the accepted PNG bytes, scene mapping, wardrobe rules or renderer dependencies listed above."
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "scopeKey": "ep1-lobby-cg:portrait",
+  "proposedMethod": "css",
+  "proposedStrategyKey": "asset-specific-focal-point-right-v2",
+  "transportState": "READY",
+  "findings": [
+    {
+      "id": "P2-PORTRAIT-GUIDING-HAND-OUT-OF-FRAME",
+      "status": "OPEN",
+      "severity": "P2",
+      "authoredCue": "S05 lobby cue requires Matteo's guiding hand and selected key to communicate where Nika is being led.",
+      "observation": "The current portrait source contains the arm and hand, but centered cover framing clips the guiding hand on 360x640, 390x844 and 430x932 runtime frames while the landscape composition passes.",
+      "playerImpact": "The direction of the guided walk is less clear on mobile.",
+      "evidenceRef": "artifacts/production-art/stage8-host-observed-art-acceptance-v1-20261014.json#packets[2]",
+      "actualPixelsReceived": true
+    }
+  ],
+  "attempts": [
+    {
+      "scopeKey": "ep1-lobby-cg:portrait",
+      "method": "css",
+      "strategyKey": "default-centered-cover-v1",
+      "outcome": "FAIL",
+      "evidenceRef": "artifacts/production-art/stage8-host-observed-art-acceptance-v1-20261014.json#packets[2]"
+    }
+  ]
+}

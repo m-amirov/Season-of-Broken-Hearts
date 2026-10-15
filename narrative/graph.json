@@ -179,7 +179,7 @@
       "id": "ep1_matteo_welcome",
       "episode": 1,
       "title": {"ru": "Чужая ответственность", "en": "Someone Else's Responsibility"},
-      "assetId": "villa",
+      "assetId": "ep1-lobby-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "Внутри прохлада пахла воском и старым камнем. На стене висели фотографии гостей, которые смеялись так уверенно, будто отели никогда не закрываются."},
@@ -296,7 +296,7 @@
       "id": "ep1_work_briefing",
       "episode": 1,
       "title": {"ru": "Лето по минутам", "en": "Summer, Measured in Minutes"},
-      "assetId": "villa",
+      "assetId": "ep1-matteo-office-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "К полудню Ника получила расписание, список поставщиков, карту террасы и три ключа, каждый из которых открывал не ту дверь, которую обещал."},
@@ -337,7 +337,7 @@
       "id": "ep1_hotel_crisis",
       "episode": 1,
       "title": {"ru": "Цена тишины", "en": "The Price of Silence"},
-      "assetId": "villa",
+      "assetId": "ep1-matteo-office-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "В расписании нет половины постоянной команды. Это не оптимизация, Маттео. Это отсутствие людей."},
@@ -387,7 +387,7 @@
       "id": "ep1_hotel_numbers_response",
       "episode": 1,
       "title": {"ru": "Условия на столе", "en": "Terms on the Table"},
-      "assetId": "villa",
+      "assetId": "ep1-matteo-office-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "Покажите условия. Если я должна собрать юбилей, я должна знать, до какой даты у нас есть отель."},
@@ -422,7 +422,7 @@
       "id": "ep1_hotel_staff_response",
       "episode": 1,
       "title": {"ru": "Имена в расписании", "en": "Names on the Schedule"},
-      "assetId": "villa",
+      "assetId": "ep1-staff-laundry-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "Начнём с команды. Пустые клетки — это чьи-то счета, а не только ваши проблемы."},
@@ -457,7 +457,7 @@
       "id": "ep1_harbor_walk",
       "episode": 1,
       "title": {"ru": "После полудня", "en": "After Noon"},
-      "assetId": "harbor",
+      "assetId": "ep1-harbor-afternoon-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "После обеда Ника вышла к воде с пустым стаканом кофе и слишком большим количеством вопросов. Ветер разносил запах водорослей по набережной."},
@@ -523,7 +523,7 @@
       "id": "ep1_leo_choice",
       "episode": 1,
       "title": {"ru": "Восемь лет", "en": "Eight Years"},
-      "assetId": "night",
+      "assetId": "ep1-leo-night-cg",
       "dialogue": {
         "ru": [
           {"speaker": "leo", "text": "Я слышал, что Villa Serena снова готовит большой сезон."},
@@ -565,7 +565,7 @@
       "id": "ep1_leo_hear_response",
       "episode": 1,
       "title": {"ru": "Не оправдание", "en": "Not an Excuse"},
-      "assetId": "night",
+      "assetId": "ep1-leo-night-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "У тебя пять минут. Не для красивой версии — для честной."},
@@ -594,7 +594,7 @@
       "id": "ep1_leo_distance_response",
       "episode": 1,
       "title": {"ru": "Граница", "en": "The Boundary"},
-      "assetId": "night",
+      "assetId": "ep1-leo-night-cg",
       "dialogue": {
         "ru": [
           {"speaker": "nika", "text": "Нет. Не сегодня. У меня первый рабочий день, а не заседание по делу восьмилетней давности."},
@@ -617,7 +617,7 @@
       "id": "ep1_hook",
       "episode": 1,
       "title": {"ru": "Не возвращайся", "en": "Do Not Come Back"},
-      "assetId": "night",
+      "assetId": "ep1-hook-cg",
       "dialogue": {
         "ru": [
           {"speaker": null, "text": "В кабинете Нику ждала папка, которой утром не было. На обложке стояло только: «Villa Serena — десять недель»."},

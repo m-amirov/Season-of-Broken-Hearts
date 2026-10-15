@@ -1,0 +1,55 @@
+{
+  "phase": "acceptance",
+  "agent": "ceos_art_director_web",
+  "taskId": "stage8-ep1-production-art-acceptance-packets-1-8",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "reviewedItems": [
+    "ep1-arrival-cg:portrait390", "ep1-arrival-cg:landscape1600",
+    "ep1-matteo-gate-cg:portrait390", "ep1-matteo-gate-cg:landscape1600",
+    "ep1-lobby-cg:portrait390", "ep1-lobby-cg:landscape1600",
+    "ep1-elio-kitchen-cg:portrait390", "ep1-elio-kitchen-cg:landscape1600",
+    "ep1-matteo-office-cg:portrait390", "ep1-matteo-office-cg:landscape1600",
+    "ep1-staff-laundry-cg:portrait390", "ep1-staff-laundry-cg:landscape1600",
+    "ep1-harbor-afternoon-cg:portrait390", "ep1-harbor-afternoon-cg:landscape1600",
+    "ep1-leo-harbor-cg:portrait390", "ep1-leo-harbor-cg:landscape1600"
+  ],
+  "evidenceRefs": [
+    "arrival-p390", "arrival-l1600", "gate-p390", "gate-l1600", "lobby-p390", "lobby-l1600",
+    "kitchen-p390", "kitchen-l1600", "office-p390", "office-l1600", "laundry-p390", "laundry-l1600",
+    "harbor-p390", "harbor-l1600", "leo-harbor-p390", "leo-harbor-l1600"
+  ],
+  "receivedEvidenceRefs": [
+    "arrival-p390", "arrival-l1600", "gate-p390", "gate-l1600", "lobby-p390", "lobby-l1600",
+    "kitchen-p390", "kitchen-l1600", "office-p390", "office-l1600", "laundry-p390", "laundry-l1600",
+    "harbor-p390", "harbor-l1600", "leo-harbor-p390", "leo-harbor-l1600"
+  ],
+  "actualPixelsReceived": true,
+  "decision": "REWORK",
+  "evidenceArtifact": "artifacts/production-art/stage8-web-acceptance-packets1-8-20261014.json",
+  "findings": [
+    {"id":"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME","severity":"P2","family":"ep1-lobby-cg","orientation":"portrait","evidenceRef":"lobby-p390"},
+    {"id":"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE","severity":"P1","family":"ep1-matteo-office-cg","orientation":"portrait+landscape","evidenceRef":"office-p390"},
+    {"id":"PORTRAIT_REQUIRED_ELIO_CROPPED","severity":"P1","family":"ep1-staff-laundry-cg","orientation":"portrait","evidenceRef":"laundry-p390"}
+  ],
+  "unresolved": ["PORTRAIT_GUIDING_HAND_OUT_OF_FRAME","REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE","PORTRAIT_REQUIRED_ELIO_CROPPED"],
+  "visualEvidence": [
+    {"ref":"arrival-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-arrival-cg.png","sha256":"73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36","observation":"Nika and Matteo remain fully visible in the arrival portrait above the dialogue area."},
+    {"ref":"arrival-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-arrival-cg.png","sha256":"ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0","observation":"Landscape arrival preserves the gate setting and both required faces."},
+    {"ref":"gate-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-matteo-gate-cg.png","sha256":"44e06f937335367a4067f9f521bb782fbea19357c3baa1101697d6493662b183","observation":"Matteo offers the hand while the gate props remain visible in portrait."},
+    {"ref":"gate-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-matteo-gate-cg.png","sha256":"1cdb9c8fe75717b671aa5acd8c80692e14e7a2eb14c4bc44c7ecbc3273ec7fe0","observation":"Landscape gate composition keeps the hand offer and suitcase continuity readable."},
+    {"ref":"lobby-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-lobby-cg.png","sha256":"9ec5bddba72a7f794587557a116beaf18b04a3268d8e3bda75e8420ee50ff143","observation":"Portrait lobby keeps the cast and architecture but crops the guiding hand at the right edge."},
+    {"ref":"lobby-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-lobby-cg.png","sha256":"d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4","observation":"Landscape lobby shows the full guiding hand, staircase and dialogue-safe faces."},
+    {"ref":"kitchen-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-elio-kitchen-cg.png","sha256":"73f7fa79305002a59ecbe0341c4d23a3779055bbaac54385d52a3e4c5a28a7a6","observation":"Kitchen portrait shows Elio in white workwear with the required knife."},
+    {"ref":"kitchen-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-elio-kitchen-cg.png","sha256":"bdf4dd87a957e975ed1e556c9e5b12524c8d5f8aa9959e46cbf5118b0a9d1a14","observation":"Landscape kitchen keeps the cast, professional action and location readable."},
+    {"ref":"office-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-matteo-office-cg.png","sha256":"b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1","observation":"Portrait office places the keys and closed red-tabbed folder beneath the dialogue zone."},
+    {"ref":"office-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-matteo-office-cg.png","sha256":"6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5","observation":"Landscape office repeats the required props too low for reliable dialogue-safe reading."},
+    {"ref":"laundry-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-staff-laundry-cg.png","sha256":"84a2bf06ec5cc40aa51c8366f32f191867cc3b7772187896ceac5017b4d180d5","observation":"Portrait laundry crop pushes Elio to the right edge and removes reliable face/action readability."},
+    {"ref":"laundry-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-staff-laundry-cg.png","sha256":"f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92","observation":"Landscape laundry preserves all three staff members and the work props."},
+    {"ref":"harbor-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-harbor-afternoon-cg.png","sha256":"03baaee9079575c2dc9751072118f63709c67c8136462903b0de5cc3e25c66ec","observation":"Afternoon harbor portrait preserves off-duty Elio, cup and waterfront context."},
+    {"ref":"harbor-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-harbor-afternoon-cg.png","sha256":"e3b30ef1fa13130535061f749a8ee7c6189a06451a18dc76860358262b8623a5","observation":"Landscape harbor composition maintains the grounded conversation and coastal setting."},
+    {"ref":"leo-harbor-p390","path":"artifacts/evidence/stage8-dual-format/runtime/390x844/ep1-leo-harbor-cg.png","sha256":"dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2","observation":"Leo Harbor portrait keeps both faces, blueprint tube and blue-hour water above dialogue."},
+    {"ref":"leo-harbor-l1600","path":"artifacts/evidence/stage8-dual-format/runtime/1600x900/ep1-leo-harbor-cg.png","sha256":"13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c","observation":"Leo Harbor landscape preserves the restrained first meeting and full pier context."}
+  ],
+  "evidenceLimitations": ["Leo Night and Hook were not submitted after the bounded attachment transport retry limit; no acceptance claim is made for them."]
+}

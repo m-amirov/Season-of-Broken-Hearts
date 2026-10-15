@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scenario": "tools/qa/stage8-current-input-lifecycle.mjs",
+  "result": {
+    "status": "PASS",
+    "locale": "ru",
+    "advancesToChoice": 16,
+    "backRestored": true,
+    "saveReloadResume": true,
+    "overflow": [
+      {
+        "viewport": "360x640",
+        "width": 360,
+        "clientWidth": 360,
+        "height": 640,
+        "clientHeight": 640
+      },
+      {
+        "viewport": "390x844",
+        "width": 390,
+        "clientWidth": 390,
+        "height": 844,
+        "clientHeight": 844
+      },
+      {
+        "viewport": "430x932",
+        "width": 430,
+        "clientWidth": 430,
+        "height": 932,
+        "clientHeight": 932
+      },
+      {
+        "viewport": "1366x768",
+        "width": 1366,
+        "clientWidth": 1366,
+        "height": 768,
+        "clientHeight": 768
+      }
+    ]
+  }
+}

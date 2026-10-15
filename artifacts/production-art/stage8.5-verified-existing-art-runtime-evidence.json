@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "stage": "8.5-verified-existing-art-reuse",
+  "status": "PASS",
+  "sourceHead": "51b0fe826cc6c51daf7f127892c90845bfc8880a",
+  "actualPixelsReceived": true,
+  "captureEvidence": [
+    "artifacts/production-art/stage8.4-v2-runtime-package2.json",
+    "artifacts/production-art/stage8.4-v2-runtime-package3.json",
+    "artifacts/production-art/stage8.4-v2-runtime-staff-laundry-repaired.json",
+    "artifacts/evidence/stage8.4-v2-runtime/"
+  ],
+  "consoleErrors": 0,
+  "requestFailures": 0,
+  "httpErrors": 0,
+  "screenshots": [
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-arrival-cg.png", "sha256": "73a0aad9a68227473c9cc536e64b9995b0b450b2a9f3881d31190db9944a5a36" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-arrival-cg.png", "sha256": "ebd5c83ced0e2d117c2e0785be523108ca78132726bc6535a97bf5f7afc34eb0" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-elio-kitchen-cg.png", "sha256": "b85ee602e57ffef190427650a90c30883d20635a3b1f19123f720493da5c396b" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-elio-kitchen-cg.png", "sha256": "bdf4dd87a957e975ed1e556c9e5b12524c8d5f8aa9959e46cbf5118b0a9d1a14" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-harbor-afternoon-cg.png", "sha256": "b533b220131bc8bddad33b1262ac9fe451ef4346508cd4b957b2f61ca9f6d191" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-harbor-afternoon-cg.png", "sha256": "dc734eb2ff21a0306323591a143b45ba405ab31ac2eb0075b754f54216e6dc5d" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-matteo-gate-cg.png", "sha256": "44e06f937335367a4067f9f521bb782fbea19357c3baa1101697d6493662b183" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-matteo-gate-cg.png", "sha256": "1cdb9c8fe75717b671aa5acd8c80692e14e7a2eb14c4bc44c7ecbc3273ec7fe0" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-hook-cg.png", "sha256": "02a8433d2ea0be65efb07579ea5da0ac378ad0637832e5485f646f9cb89bb714" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-hook-cg.png", "sha256": "f759203e6f84283447fedcb2c10742e7ad6034d3e6353bf3089e8f08c1f3e80c" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-harbor-cg.png", "sha256": "dd5fb135642e720d5d4761d48b701e608b9cbab3fdf00874944833ac317645f2" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-harbor-cg.png", "sha256": "13823da2567d914fedcd69d9c994e7386f85b2e8883d5c54b5c4d6b7c467e35c" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/390x844/ep1-leo-night-cg.png", "sha256": "eddc6b1b9f2ffd6c94a8921f191831a60f0ea8279cd90bca0f9d0df86b2df2bb" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-package3/1600x900/ep1-leo-night-cg.png", "sha256": "e8e2ad527f7e2f11c0ec3569657b602523dd721379851819b973d0d4bf1ab804" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png", "sha256": "61f5d9353cd516dcb5906118d0b7ef25d9d1e13e1b37f8f570f347f98c49d226" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/1600x900/ep1-staff-laundry-cg.png", "sha256": "f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png", "sha256": "f271d04ca7db64b00be370a31b6ca8f7106abb27c2373dd3703fe23023dc28ac" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png", "sha256": "d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png", "sha256": "b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1" },
+    { "path": "artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png", "sha256": "6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5" }
+  ],
+  "coverage": { "productionCgFamilies": 10, "sourceVariants": 20, "runtimeScreenshots": 20, "viewports": ["390x844", "1600x900"] }
+}

@@ -1,0 +1,253 @@
+{
+  "status": "PASS_ART_BATCH_MECHANICAL",
+  "inspected": [
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-lobby-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "cc9c839087f75268169a8f2878c768a14b82c00a2eb359f4d2f42aa324c69eee",
+      "bytes": 2588922,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-matteo-office-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "04077bce222b7181b0c35f3a6cf4289939bac61eaaba4074c708d975ac019d86",
+      "bytes": 2407893,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-staff-laundry-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "2b3ebe01508a27219cc4e382d15b811fbb301b0a903e23c38701cd2b7746952a",
+      "bytes": 2525063,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-harbor-afternoon-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "bb2e152b46bbdb9a1d8d65c7f8cdfb8d97cf58643c739e6dcc446421a8308329",
+      "bytes": 2810450,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-leo-night-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "835d0f178d656e420bbdd344d26d6689d34628c4e340332ef710a751317248c1",
+      "bytes": 2639334,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-hook-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "6a47becb307d3a1e50dd55162d5cf39f5831f5aed0483d566eb300895f31289a",
+      "bytes": 2108674,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-elio-kitchen-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "fe06bab4e2d0c81173d0f76db93d3f41bf252add190e521b45738cd7eac14462",
+      "bytes": 2418999,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    }
+  ],
+  "issues": [],
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-14T07:50:20.781Z"
+}

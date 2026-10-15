@@ -120,13 +120,28 @@ async function boot() {
       notice = '';
 
       const scene = engine.currentScene();
+      const assetViewport = rendered.assetViewport ?? {
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
       const nextScene = engine.graph().scenes.find(candidate => candidate.id === scene.next);
-      if (nextScene) assetManager.preloadSceneAsset(nextScene).catch(() => {});
+      if (nextScene) assetManager.preloadSceneAsset(nextScene, assetViewport).catch(() => {});
       for (const choice of engine.choices()) {
         const choiceScene = engine.graph().scenes.find(candidate => candidate.id === choice.to);
-        if (choiceScene) assetManager.preloadSceneAsset(choiceScene).catch(() => {});
+        if (choiceScene) assetManager.preloadSceneAsset(choiceScene, assetViewport).catch(() => {});
       }
     };
+
+    let resizeFrame = null;
+    const scheduleViewportPreload = () => {
+      if (resizeFrame !== null) return;
+      const schedule = window.requestAnimationFrame ?? (callback => window.setTimeout(callback, 0));
+      resizeFrame = schedule(() => {
+        resizeFrame = null;
+        render();
+      });
+    };
+    window.addEventListener('resize', scheduleViewportPreload, { passive: true });
 
     const closeMenu = () => {
       const previousView = ui.menuView;

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-staff-laundry-repaired.json",
+  "reviewId": "review-63b9f4d7-1f8b-4a8d-a4e2-bc5c6f4aa901",
+  "reviewTraceId": "trace-c8f1d7ab-5f31-4d53-a6c0-6a8d94c7e2f4",
+  "taskId": "task-ep1-staff-laundry-cg-57027e2c-post-repair-acceptance",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-staff-laundry-cg:source:portrait","ep1-staff-laundry-cg:source:landscape","ep1-staff-laundry-cg:runtime:390x844:repaired","ep1-staff-laundry-cg:runtime:1600x900:repaired"],
+  "evidenceRefs": ["assets/production/cg/ep1-staff-laundry-cg.png","assets/production/cg/ep1-staff-laundry-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png","artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/1600x900/ep1-staff-laundry-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-staff-laundry-cg.png","assets/production/cg/ep1-staff-laundry-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png","artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/1600x900/ep1-staff-laundry-cg.png"],
+  "visualEvidence": [
+    {"ref":"laundry-master-portrait","path":"assets/production/cg/ep1-staff-laundry-cg.png","sha256":"71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870","width":1024,"height":1536,"observation":"Source establishes Nika taking notes, Giulia handling linen and recognizable Elio carrying trays in the working laundry."},
+    {"ref":"laundry-master-landscape","path":"assets/production/cg/ep1-staff-laundry-cg-landscape.png","sha256":"4cd3a10aff6ef44dcacf4993b3c69bf817920a33d31b8e471cb4f62d367fb3ef","width":1672,"height":941,"observation":"Landscape preserves all three characters, laundry context, Elio's trays and shift-list action."},
+    {"ref":"laundry-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png","sha256":"61f5d9353cd516dcb5906118d0b7ef25d9d1e13e1b37f8f570f347f98c49d226","width":390,"height":844,"observation":"Repaired mobile framing retains Nika and Giulia plus Elio's recognizable face, shoulder, apron and carried trays at the right edge; dialogue remains readable."},
+    {"ref":"laundry-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/1600x900/ep1-staff-laundry-cg.png","sha256":"f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92","width":1600,"height":900,"observation":"Desktop runtime cleanly preserves all three characters, laundry actions and readable dialogue."}
+  ],
+  "findings": [],
+  "resolvedFindings": [{"id":"PORTRAIT_REQUIRED_ELIO_CROPPED","severity":"P1","status":"RESOLVED","evidenceRef":"laundry-runtime-p390","resolution":"The mobile framing repair retains Elio's recognizable face and enough body/action context for the three-person laundry scene."}],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["The repair changes only mobile CSS framing; production PNG hashes and provenance remain unchanged.","Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied repaired pixels." ]
+}

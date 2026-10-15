@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-matteo-office.json",
+  "reviewId": "1c9f6d11-6116-4cb4-9e0d-1a64d42aa4d4",
+  "reviewTraceId": "0e8f8c99-6e04-49cb-b676-c91d66c4795a",
+  "taskId": "8f7d2151-6d84-4979-a0e6-3a60170f43c7",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-matteo-office-cg:source:portrait","ep1-matteo-office-cg:source:landscape","ep1-matteo-office-cg:runtime:390x844","ep1-matteo-office-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-matteo-office-cg.png","assets/production/cg/ep1-matteo-office-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png","artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-matteo-office-cg.png","assets/production/cg/ep1-matteo-office-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png","artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png"],
+  "visualEvidence": [
+    {"ref":"office-source-p","path":"assets/production/cg/ep1-matteo-office-cg.png","sha256":"16b33e09e97f438944c19e71ed5bc28f71df7bf0d3e3e7d1d3553479bb650882","width":1024,"height":1536,"observation":"Portrait clearly conveys Nika and Matteo reviewing hotel work materials, maps and documents in a tense office briefing; keys and red folder are secondary desk props."},
+    {"ref":"office-source-l","path":"assets/production/cg/ep1-matteo-office-cg-landscape.png","sha256":"ab0c392e98ec7c28c683a6692329a4a3edef4111a9fdbac728b770f7c880b349","width":1672,"height":941,"observation":"Landscape preserves office, characters, desk maps and papers, red folder and keys with clear work context."},
+    {"ref":"office-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-matteo-office-cg.png","sha256":"b62a7277426ccfc7c6e25b50e32c162c99269814b78b1af74b44146a72f147c1","width":390,"height":844,"observation":"Mobile runtime keeps both characters, office, paperwork review and readable dialogue; keys/folder are under the dialogue-safe zone but not needed for comprehension."},
+    {"ref":"office-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-matteo-office-cg.png","sha256":"6bb97e6323c0eef37cd6eda95b82751098ea398453c02b6d36c51fcb65949fb5","width":1600,"height":900,"observation":"Desktop runtime keeps Nika, Matteo, documents, maps, work mood and readable dialogue; keys/folder remain secondary."}
+  ],
+  "findings": [
+    {"id":"OFFICE-P3-001","severity":"P3","status":"OPEN","authoredCue":"The prose names a ring of keys and a red folder among office briefing materials.","observation":"Portrait runtime reduces visibility of small desk props under the dialogue-safe zone.","playerImpact":"The office briefing and active plot action remain clear; distinct key/folder recognition is not required for the current action.","materialPlayerImpact":false,"evidenceRef":"office-runtime-p390"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

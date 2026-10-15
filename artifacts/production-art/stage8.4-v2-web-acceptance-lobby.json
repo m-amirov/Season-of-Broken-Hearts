@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-lobby.json",
+  "reviewId": "0c5f8ea0-84ba-4892-95f6-3b175543ac0e",
+  "reviewTraceId": "c5ac5f55-4fda-4b2d-9669-6763c4a3b45d",
+  "taskId": "ep1-lobby-cg-57027e2c4b2654c00350b0ebf4406d20fe8d3762-web-acceptance",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-lobby-cg:source:portrait","ep1-lobby-cg:source:landscape","ep1-lobby-cg:runtime:390x844","ep1-lobby-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-lobby-cg.png","assets/production/cg/ep1-lobby-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png","artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-lobby-cg.png","assets/production/cg/ep1-lobby-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png","artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png"],
+  "visualEvidence": [
+    {"ref":"lobby-source-p","path":"assets/production/cg/ep1-lobby-cg.png","sha256":"062053c67572ac5602e1f0def0f2fb6a9918b7d24d138c4bbd706029cc08e0af","width":1024,"height":1536,"observation":"Portrait shows Matteo guiding Nika through the stone lobby; selected key, wall photos and interior context read."},
+    {"ref":"lobby-source-l","path":"assets/production/cg/ep1-lobby-cg-landscape.png","sha256":"0ea4bd80397dacc3e975e2398a4b6ae8f4b61a5b3af2fa6080e3726c80d260b1","width":1672,"height":941,"observation":"Landscape expands lobby depth, staircase, reception and framed wall photos while keeping key and gesture legible."},
+    {"ref":"lobby-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime/390x844/ep1-lobby-cg.png","sha256":"f271d04ca7db64b00be370a31b6ca8f7106abb27c2373dd3703fe23023dc28ac","width":390,"height":844,"observation":"Current mobile framing keeps both characters, selected key and enough pointing arm to understand direction; text panel does not cover critical cues."},
+    {"ref":"lobby-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime/1600x900/ep1-lobby-cg.png","sha256":"d2be05faa6f4f5d43bcabaa6af38857f0d59ee5bae0d43ee69bd78d0459a24e4","width":1600,"height":900,"observation":"Desktop runtime retains Matteo guiding Nika, key, lobby architecture and wall photos with readable narrative hierarchy."}
+  ],
+  "findings": [],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

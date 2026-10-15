@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S15",
+  "coveredSceneIds": ["S15","S16","S17"],
+  "authoredSceneId": "ep1_leo_choice|ep1_leo_hear_response|ep1_leo_distance_response",
+  "cue": {"id":"ep1_leo_choice","at":[0,0]},
+  "assetId": "ep1-leo-night-cg",
+  "requiredCast": ["nika","leo"],
+  "narrativeActions": [
+    {"character":"nika","action":"Keeps a measured distance while deciding whether to hear Leo's version or end the personal conversation."},
+    {"character":"leo","action":"Waits at the far quay with regret and restraint; his blueprint tube may remain nearby but no new client identity is revealed."}
+  ],
+  "sceneContinuity": "Blue dusk after the accepted Leo entrance CG; this single quay composition safely serves the choice and both responses because the authored movement remains verbal and spatially contained.",
+  "location": "Far stone quay at the harbor with a clearly readable paved surface, low mooring hardware, waterline and distant coastal lights; same shore geometry as the entrance, later in the evening.",
+  "time": "blue dusk after sunset",
+  "characterReferences": [
+    {"character":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character":"leo","path":"assets/characters/references/originals/leo.png","sha256":"0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ],
+  "forbiddenProps": ["extra characters","heavy stubble","Aurea logo","readable client mark","daylight","embrace","forced touch","floating feet","water replacing pavement","readable blueprint text","UI","dialogue","watermark"],
+  "desktop": {"composition":"Two-person full-scene quay composition with Nika and Leo apart, mutual recognition and unresolved tension expressed through gaze and posture; preserve visible pavement, waterline and dialogue-safe lower area.","framing":"Natural human-eye-level lens, both faces and grounded lower bodies readable at 1920x900, no romantic embrace.","requiredVisibleCast":["nika","leo"]},
+  "portrait": {"composition":"Deliberate waist-up or mid-thigh portrait composition keeps Nika and Leo's faces, emotional distance and the physical quay above the dialogue overlay at 360x640, 390x844 and 430x932.","framing":"Do not crop Leo's identity into a generic silhouette; avoid waterline ambiguity and keep enough negative space for the choice UI.","requiredVisibleCast":["nika","leo"]},
+  "qualityAcceptance":["Leo matches the approved clean-shaven chestnut-haired reference and stays visibly distinct from Matteo.","The emotional beat remains unresolved and route-neutral; no EP3 client mark is introduced.","The quay is physically grounded and reads as later than the accepted entrance frame."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

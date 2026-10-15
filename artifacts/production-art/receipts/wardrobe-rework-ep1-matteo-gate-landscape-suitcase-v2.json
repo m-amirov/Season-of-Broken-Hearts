@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ep1-matteo-gate-cg",
+  "variant": "landscape",
+  "sceneIds": ["S02", "S03", "S04"],
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage8-ep1-production-art\\assets\\production\\cg\\ep1-matteo-gate-cg-landscape.png",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1393e-a6d1-73e0-b9d1-e83481564ae8\\exec-eba7371d-c471-43eb-8837-79b6eb29bcc9.png",
+  "reference": "assets/production/cg/ep1-arrival-cg-landscape.png",
+  "generator": "image_gen.imagegen",
+  "operation": "bounded continuity edit using Arrival luggage reference",
+  "promptConstraint": "Same vintage brown leather trunk as Arrival: boxy body, brass hardware, short top handle, no wheels, no telescopic handle, no modern pockets; preserve Gate identities, wardrobe and wide composition.",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "ee76b8b61ed57da92c3ba754ee6d5b799fc6e1e38c9282bc49351dc956e18515",
+  "bytes": 2826439,
+  "dimensions": {"width": 1672, "height": 941},
+  "visualSpotCheck": "PASS_LOCAL_SPOT_CHECK_NOT_WEB_ACCEPTANCE",
+  "continuityFix": "Gate luggage now matches Arrival vintage trunk construction and silhouette.",
+  "recordedAt": "2026-10-14T12:05:00.000Z"
+}

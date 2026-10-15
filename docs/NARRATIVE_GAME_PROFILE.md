@@ -56,4 +56,24 @@ Statuses: `planned` can refer to unwritten future material and cannot earn PASS;
 
 The response includes an independent `storyPromises.status`: `SKIPPED_OPTIONAL_STORY_PROMISES`, `PASS_DECLARED_PROMISE_REFERENCES`, `NOT_VERIFIED_PROMISE_EVIDENCE` or `BLOCKED_PROMISE_REFERENCES`. Even when the main result is `PASS_DECLARED_NARRATIVE_GRAPH`, it **never proves artistic quality, emotional credibility, actually authored cues, real runtime saves, or that all planned promises are fulfilled**. For those, use CEOS `romance-narrative`, `narrative-continuity-engine` and `reader-experience-review`.
 
+## Dual-format production-art handoff
+
+Illustrated narrative projects may declare `dualFormatManifestPath` in their
+project-owned enabled profile. The Starter Kit handoff check verifies that the
+manifest maps every scene in the selected episode and declares separate
+`portrait` and `desktop` descriptors for every referenced asset. It checks only
+the project contract: paths, SHA-256 fields and dimensions must be declared;
+it does not read image bytes or grant artistic acceptance.
+
+Run:
+`node tools/narrative/narrative-art-handoff.mjs --project . --profile config/narrative-game.local.json --manifest artifacts/production-art/ep1-dual-format.json --source-head <current-head>`
+
+Pass the same project-relative manifest path to the new CEOS
+`production-art` run as `metadata.dualFormatManifest`. CEOS then verifies
+confined real PNG files, decoded dimensions, hashes, independent variants and
+the separate visual acceptance gate. Missing desktop or portrait art must stay
+an explicit blocked/pending state; do not add placeholder paths to earn a
+handoff pass. The profile remains opt-in and generic games do not receive this
+contract.
+
 This feature adds no mandatory release gate, new user questionnaire, art generation, runtime scripts, or changes to existing game content.

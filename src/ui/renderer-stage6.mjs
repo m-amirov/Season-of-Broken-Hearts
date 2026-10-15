@@ -175,6 +175,7 @@ export function createRenderer(root) {
   let previousSceneId = null;
   let pendingSceneReady = Promise.resolve();
   let renderToken = 0;
+  let lastSceneContext = null;
 
   function animateSceneChange() {
     pendingSceneReady = new Promise(resolve => {
@@ -195,6 +196,75 @@ export function createRenderer(root) {
       });
     });
     return pendingSceneReady;
+  }
+
+  function viewportForAssets() {
+    return {
+      width: stage.clientWidth || globalThis.innerWidth || 0,
+      height: stage.clientHeight || globalThis.innerHeight || 0
+    };
+  }
+
+  function assetSelectionFor(assetManager, scene, viewport) {
+    if (typeof assetManager.selectionFor === 'function') {
+      return assetManager.selectionFor(scene, viewport);
+    }
+    return {
+      src: assetManager.sourceFor(scene, viewport),
+      format: 'legacy',
+      requestedFormat: 'legacy',
+      fallback: false
+    };
+  }
+
+  function applyAssetMetadata(scene, selection) {
+    image.dataset.assetId = scene.assetId;
+    image.dataset.sceneId = scene.id;
+    image.dataset.assetSrc = selection.src;
+    image.dataset.assetFormat = selection.format;
+    image.dataset.assetRequestedFormat = selection.requestedFormat;
+    if (selection.fallback) image.dataset.assetStatus = 'legacy-portrait-fallback';
+    else delete image.dataset.assetStatus;
+  }
+
+  function renderSceneArt(scene, assetManager, { force = false } = {}) {
+    const viewport = viewportForAssets();
+    const selection = assetSelectionFor(assetManager, scene, viewport);
+    if (!force && image.dataset.assetSrc === selection.src) {
+      // Several authored scenes intentionally reuse one CG. Keep the decoded
+      // frame and crossfade untouched, but advance scene metadata so runtime
+      // evidence, alt text and resize handling never refer to the prior cue.
+      applyAssetMetadata(scene, selection);
+      return pendingSceneReady;
+    }
+    image.classList.remove('scene-fade-in');
+    const token = ++renderToken;
+    pendingSceneReady = assetManager.preloadSceneAsset(scene, viewport)
+      .then(() => {
+        if (token !== renderToken) return;
+        image.src = selection.src;
+        art.style.setProperty('--scene-image', `url("${selection.src}")`);
+        applyAssetMetadata(scene, selection);
+        return animateSceneChange();
+      })
+      .catch(() => {
+        if (token !== renderToken) return;
+        // Keep the already decoded image and its background on a failed swap.
+        image.dataset.assetStatus = 'fallback-last-valid';
+      });
+    return pendingSceneReady;
+  }
+
+  function handleViewportChange() {
+    if (!lastSceneContext) return;
+    const { scene, assetManager } = lastSceneContext;
+    const selection = assetSelectionFor(assetManager, scene, viewportForAssets());
+    if (selection.src === image.dataset.assetSrc) return;
+    renderSceneArt(scene, assetManager, { force: true });
+  }
+
+  if (typeof globalThis.addEventListener === 'function') {
+    globalThis.addEventListener('resize', handleViewportChange, { passive: true });
   }
 
   function updateSettings(labels, settings) {
@@ -244,6 +314,7 @@ export function createRenderer(root) {
       const line = engine.currentLine();
       const sceneChanged = previousSceneId !== scene.id;
       previousSceneId = scene.id;
+      lastSceneContext = { scene, assetManager };
 
       if (document.documentElement) document.documentElement.lang = locale;
       document.title = labels.appLabel;
@@ -263,24 +334,9 @@ export function createRenderer(root) {
       text.textContent = line.text;
       image.alt = `${sceneTitle.textContent} · ${labels.placeholder}`;
 
-      if (sceneChanged) {
-        image.classList.remove('scene-fade-in');
-        const token = ++renderToken;
-        const source = assetManager.sourceFor(scene);
-        pendingSceneReady = assetManager.preloadSceneAsset(scene)
-          .then(() => {
-            if (token !== renderToken) return;
-            image.src = source;
-            art.style.setProperty('--scene-image', `url("${source}")`);
-            image.dataset.assetId = scene.assetId;
-            image.dataset.sceneId = scene.id;
-            delete image.dataset.assetStatus;
-            return animateSceneChange();
-          })
-          .catch(() => {
-            if (token !== renderToken) return;
-            image.dataset.assetStatus = 'fallback-last-valid';
-          });
+      const selectedSource = assetSelectionFor(assetManager, scene, viewportForAssets()).src;
+      if (sceneChanged || !image.dataset.assetSrc || image.dataset.assetSrc !== selectedSource) {
+        renderSceneArt(scene, assetManager);
       } // Preserve the outstanding decode promise across menu/intro re-renders.
 
       choices.replaceChildren();
@@ -324,7 +380,12 @@ export function createRenderer(root) {
         introSkip.textContent = labels.tapToContinue;
         episodeIntro.setAttribute('aria-label', `${chapter.title}. ${labels.skipIntro}`);
       }
-      return { choiceButtons, sceneChanged, ready: pendingSceneReady };
+      return {
+        choiceButtons,
+        sceneChanged,
+        ready: pendingSceneReady,
+        assetViewport: viewportForAssets()
+      };
     }
   };
 }

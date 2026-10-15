@@ -5,10 +5,10 @@
 {
   "status": "PASS",
   "mode": "target",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "manifestSchemaVersion": 2,
   "updaterSchemaVersion": 2,
-  "manifestEntries": 118,
+  "manifestEntries": 122,
   "skills": 15,
   "targetStatus": "clean"
 }

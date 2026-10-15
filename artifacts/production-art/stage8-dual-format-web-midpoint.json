@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "phase": "midpoint",
+  "agent": "ceos_art_director_web",
+  "taskId": "01a1396b-70da-7183-a8d7-d8b497eeccf6",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "BLOCKED_WEB_TRANSPORT",
+  "verdict": "NOT_VERIFIED",
+  "actualPixelsReceived": false,
+  "scope": "Dual-format visual review of 10 portrait/landscape production-art families and current runtime evidence.",
+  "transportAttempts": [
+    {
+      "turnId": "01a1399f-3878-75c0-bae7-fd4128846712",
+      "error": "stream disconnected before completion: ChatGPT did not confirm that the prompt was sent"
+    },
+    {
+      "turnId": "01a139a0-9ed1-7031-a2e7-ae339930ad20",
+      "error": "stream disconnected before completion: ChatGPT composer did not preserve the complete prompt"
+    },
+    {
+      "turnId": "01a139a5-3f47-75e0-9009-659a29de702f",
+      "error": "stream disconnected before completion: ChatGPT did not accept all prompt attachments"
+    }
+  ],
+  "previousAnalysisRef": "artifacts/production-art/stage8-dual-format-web-analysis.json",
+  "localRuntimeEvidenceRef": "artifacts/evidence/stage8-dual-format-runtime.json",
+  "unresolved": [
+    "Independent Web High midpoint review of all landscape counterparts was not returned.",
+    "Independent Web High comparison of portrait and landscape runtime pixels was not returned."
+  ],
+  "decision": "BLOCKED_VISUAL_ACCEPTANCE: Web High transport repeatedly rejected the attachment-bearing review; no visual PASS is asserted."
+}

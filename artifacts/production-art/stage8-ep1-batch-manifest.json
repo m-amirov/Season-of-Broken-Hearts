@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "stage": "8",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "style": "Cinematic semi-realistic digital painting, mature Mediterranean romantic drama, natural anatomy, subtle painterly texture, believable Italian coastal architecture, natural eye-level lens, no baked text or UI.",
+  "scope": "Six new EP1 scene-bound CGs plus one bounded repair of the confirmed Elio Kitchen mismatch.",
+  "candidateBudget": {"newAssetCandidatesPerCue": 2,"repairAttemptsPerRootCause": 3},
+  "assets": [
+    {"assetId":"ep1-lobby-cg","sceneIds":["ep1_matteo_welcome"],"outputTarget":"assets/production/cg/ep1-lobby-cg.png","path":"assets/production/cg/ep1-lobby-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S05-ep1-lobby-cg.json","kind":"background","candidateNumber":1},
+    {"assetId":"ep1-matteo-office-cg","sceneIds":["ep1_work_briefing","ep1_hotel_crisis","ep1_hotel_numbers_response"],"outputTarget":"assets/production/cg/ep1-matteo-office-cg.png","path":"assets/production/cg/ep1-matteo-office-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S09-11-ep1-matteo-office-cg.json","kind":"background","candidateNumber":1},
+    {"assetId":"ep1-staff-laundry-cg","sceneIds":["ep1_hotel_staff_response"],"outputTarget":"assets/production/cg/ep1-staff-laundry-cg.png","path":"assets/production/cg/ep1-staff-laundry-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S12-ep1-staff-laundry-cg.json","kind":"background","candidateNumber":1},
+    {"assetId":"ep1-harbor-afternoon-cg","sceneIds":["ep1_harbor_walk"],"outputTarget":"assets/production/cg/ep1-harbor-afternoon-cg.png","path":"assets/production/cg/ep1-harbor-afternoon-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S13-ep1-harbor-afternoon-cg.json","kind":"background","candidateNumber":1},
+    {"assetId":"ep1-leo-night-cg","sceneIds":["ep1_leo_choice","ep1_leo_hear_response","ep1_leo_distance_response"],"outputTarget":"assets/production/cg/ep1-leo-night-cg.png","path":"assets/production/cg/ep1-leo-night-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S15-17-ep1-leo-night-cg.json","kind":"background","candidateNumber":1},
+    {"assetId":"ep1-hook-cg","sceneIds":["ep1_hook"],"outputTarget":"assets/production/cg/ep1-hook-cg.png","path":"assets/production/cg/ep1-hook-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S18-ep1-hook-cg-candidate-2.json","kind":"background","candidateNumber":2},
+    {"assetId":"ep1-elio-kitchen-cg","sceneIds":["ep1_kitchen","ep1_elio_humor_response","ep1_elio_boundary_response"],"outputTarget":"assets/production/cg/ep1-elio-kitchen-cg.png","path":"assets/production/cg/ep1-elio-kitchen-cg.png","width":1024,"height":1536,"brief":"artifacts/production-art/art-briefs/S06-ep1-elio-kitchen-cg-repair.json","kind":"background","candidateNumber":1,"repairOf":"assets/production/cg/ep1-elio-kitchen-cg.png","repairReason":"The authored cue requires a white apron and a knife held like a conductor baton; the current pixels showed a dark apron and towel/pan instead."}
+  ]
+}

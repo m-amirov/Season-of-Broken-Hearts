@@ -1684,6 +1684,51 @@
       "conflictPolicy": "replace-if-baseline"
     },
     {
+      "source": "tools/narrative/narrative-art-handoff.mjs",
+      "logicalId": "managed:narrative-art-handoff",
+      "ownership": "managed",
+      "target": "tools/narrative/narrative-art-handoff.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline"
+    },
+    {
+      "source": "tests/starter-kit/narrative-art-handoff.test.mjs",
+      "logicalId": "test:narrative-art-handoff",
+      "ownership": "managed",
+      "target": "tests/starter-kit/narrative-art-handoff.test.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline"
+    },
+    {
+      "source": "docs/NARRATIVE_DUAL_FORMAT_ART.md",
+      "logicalId": "managed:narrative-dual-format-art-doc",
+      "ownership": "managed",
+      "target": "docs/NARRATIVE_DUAL_FORMAT_ART.md",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline"
+    },
+    {
       "source": "tools/narrative/narrative-game-validator.mjs",
       "logicalId": "managed:narrative-game-validator",
       "ownership": "managed",

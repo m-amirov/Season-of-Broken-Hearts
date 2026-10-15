@@ -1,0 +1,21 @@
+{
+  "phase": "analysis",
+  "agent": "ceos_art_director_web",
+  "reviewTraceId": "stage8-ep1-dual-format-analysis-20261014",
+  "taskId": "stage8-ep1-dual-format-analysis-20261014",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "FINDINGS",
+  "reviewedItems": ["arrival-portrait-desktop", "elio-kitchen-portrait-desktop", "ep1-dual-format-mechanical-manifest"],
+  "evidenceRefs": ["stage8-dual-format-representative-pixels", "stage8-dual-format-mechanical-manifest"],
+  "receivedEvidenceRefs": ["stage8-dual-format-representative-pixels", "stage8-dual-format-mechanical-manifest"],
+  "actualPixelsReceived": true,
+  "decision": "Representative Arrival and Elio Kitchen pairs support a partial canon-ready direction; EP1-wide canon, desktop artistic acceptance, and runtime visual acceptance remain unverified. The three missing desktop variants remain a hard dual-format blocker.",
+  "findings": [
+    {"id": "elio-kitchen-location-continuity", "detail": "Portrait and desktop kitchen layouts require a cue-bound check as valid alternate angles of one location."},
+    {"id": "elio-kitchen-staging", "detail": "The knife pose may read as threatening and requires comparison with the exact authored cue."},
+    {"id": "dialogue-panel-overlap", "detail": "Low suitcase and lower kitchen staging require runtime checks with the dialogue sheet open."},
+    {"id": "dual-format-coverage", "detail": "Desktop variants are absent for ep1-leo-harbor-cg, ep1-leo-night-cg, and ep1-hook-cg."}
+  ],
+  "unresolved": ["elio-kitchen-location-continuity", "elio-kitchen-staging", "dialogue-panel-overlap", "dual-format-coverage"],
+  "evidenceArtifact": "artifacts/production-art/stage8-dual-format-web-review-20261014.json"
+}

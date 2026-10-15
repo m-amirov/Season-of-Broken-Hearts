@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE8_3_TARGETED_RUNTIME_QA",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "targetAssets": [
+    "ep1-staff-laundry-cg"
+  ],
+  "captures": [
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "objectPosition": "60% 18%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "portrait",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/390x844/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "61f5d9353cd516dcb5906118d0b7ef25d9d1e13e1b37f8f570f347f98c49d226",
+      "screenshotBytes": 444626
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneId": "ep1_hotel_staff_response",
+      "dialogueIndex": 0,
+      "assetId": "ep1-staff-laundry-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "objectPosition": "50% 50%",
+      "artBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "choicesVisible": false,
+      "expectedFormat": "landscape",
+      "screenshot": "artifacts/evidence/stage8.4-v2-runtime-staff-laundry-repaired/1600x900/ep1-staff-laundry-cg.png",
+      "screenshotSha256": "f602e5906c50fd65f78637e61c230be8328579a916f62105067885fb938c1b92",
+      "screenshotBytes": 1824593
+    }
+  ],
+  "routes": [
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "formal-humor-numbers-hear",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "direct-boundary-staff-distance",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "coverage": {
+    "required": [
+      "390x844/ep1-staff-laundry-cg",
+      "1600x900/ep1-staff-laundry-cg"
+    ],
+    "captured": [
+      "390x844/ep1-staff-laundry-cg",
+      "1600x900/ep1-staff-laundry-cg"
+    ],
+    "missing": []
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S14",
+  "coveredSceneIds": [
+    "S14"
+  ],
+  "authoredSceneId": "ep1_leo_entrance",
+  "assetId": "ep1-leo-harbor-cg",
+  "variant": "portrait",
+  "targetDimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "nativeFallbackAllowed": false,
+  "sourceExisting": "assets/production/cg/ep1-leo-harbor-cg.png",
+  "requiredCast": [
+    "nika",
+    "leo"
+  ],
+  "narrativeActions": [
+    {
+      "character": "nika",
+      "action": "Leo holds a tube of blueprints under his arm as he turns toward Nika and their restrained first meeting begins."
+    },
+    {
+      "character": "leo",
+      "action": "Leo holds a tube of blueprints under his arm as he turns toward Nika and their restrained first meeting begins."
+    }
+  ],
+  "location": "far harbor pier with old coastal buildings and water reflections",
+  "time": "blue hour, sun already behind the harbor roofs",
+  "characterReferences": [
+    {
+      "character": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "character": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "wardrobe": {
+    "continuityType": "new-outfit",
+    "continuityNote": "Sun has dropped behind the harbour roofs; both characters add an evening layer. The outfit change signals a new emotional and temporal register.",
+    "nika": {
+      "outfit": "Muted navy lightweight jacket over a dusty-blue knit top, muted taupe trousers, thin chain and brown shoulder bag.",
+      "palette": [
+        "muted navy",
+        "dusty blue",
+        "muted taupe",
+        "brown"
+      ],
+      "silhouette": "quiet evening layer with restrained modern line",
+      "accessoriesProps": [
+        "small earrings",
+        "thin chain",
+        "brown shoulder bag"
+      ]
+    },
+    "leo": {
+      "outfit": "Charcoal architectural field jacket over a faded rust knit, dark trousers and weathered brown boots.",
+      "palette": [
+        "charcoal",
+        "faded rust",
+        "weathered brown"
+      ],
+      "silhouette": "slender quiet field-work silhouette, softer and narrower than Matteo",
+      "accessoriesProps": [
+        "blueprint tube under arm",
+        "shoulder bag",
+        "rolled plans"
+      ]
+    }
+  },
+  "dualFormatVerification": {
+    "portrait": "Keep blueprint tube, faces and blue-hour reflections readable.",
+    "landscape": "Use far-pier geometry and water reflections for horizontal depth while preserving the charged eye-line and blueprint tube.",
+    "invariants": [
+      "blue hour",
+      "Leo carries blueprint tube",
+      "Leo remains distinct from Matteo",
+      "same emotional first-meeting restraint"
+    ]
+  },
+  "sharedSceneDistinctness": {
+    "required": true,
+    "paletteContrast": "navy/dusty-blue Nika against charcoal/rust Leo",
+    "silhouetteContrast": "clean evening jacket against slender architectural field jacket",
+    "pairs": [
+      "nika-leo"
+    ]
+  },
+  "forbiddenProps": [
+    "extra characters",
+    "readable invented document text",
+    "logos",
+    "UI",
+    "dialogue",
+    "watermark",
+    "matching pale-linen duplicate silhouettes"
+  ],
+  "desktop": {
+    "composition": "Use far-pier geometry and water reflections for horizontal depth while preserving the charged eye-line and blueprint tube.",
+    "framing": "Independent wide composition; keep all faces, hands, authored props and environmental anchor readable above the dialogue-safe lower band.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "portrait": {
+    "composition": "Keep blueprint tube, faces and blue-hour reflections readable.",
+    "framing": "Mobile-safe portrait composition; keep all faces, hands, authored props and the focal location readable above the dialogue layer.",
+    "requiredVisibleCast": [
+      "nika",
+      "leo"
+    ]
+  },
+  "qualityAcceptance": [
+    "Character identity and age match the approved reference originals.",
+    "Wardrobe fields match WARDROBE_CONTINUITY_V1 and distinguish shared-scene silhouettes.",
+    "Authored actions and props remain visible and belong to the correct character.",
+    "Portrait and landscape preserve the same wardrobe, cast, location, time and emotional beat.",
+    "No baked text, UI, watermark, extra cast or spoiler reveal."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "cue": {
+    "id": "ep1_leo_entrance",
+    "at": [
+      0,
+      0
+    ]
+  },
+  "sceneContinuity": "Sun has dropped behind the harbour roofs; both characters add an evening layer. The outfit change signals a new emotional and temporal register.",
+  "reworkReason": "Leo needs a visual code distinct from Matteo, and the blue-hour transition requires an explicit evening layer."
+}

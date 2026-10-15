@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-14T12-40-09-650Z-production-art-00c268",
+  "terraContextToolObserved": "image_gen.imagegen",
+  "terraContextToolAvailable": true,
+  "imageGenerationInvoked": false,
+  "serviceAvailability": "UNKNOWN",
+  "status": "NOT_VERIFIED",
+  "reason": "CEOS capability-challenge is valid only immediately before GENERATING; the recovery run is blocked at CANON_READY by missing independent Web High analysis, so no generation authorization or service attestation was attempted.",
+  "noProductionGeneration": true,
+  "recordedAt": "2026-10-14T13:02:00.000Z"
+}

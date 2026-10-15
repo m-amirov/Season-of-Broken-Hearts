@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-elio-kitchen.json",
+  "reviewId": "9fcd5416-ff4f-4d72-84b1-4d2f2730e225",
+  "reviewTraceId": "5f2f6180-66d9-4517-b567-e38a201dcd3a",
+  "taskId": "6a16d892-7809-456e-9edc-1c70355056a5",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "PASS",
+  "actualPixelsReceived": true,
+  "reviewedItems": ["ep1-elio-kitchen-cg:source:portrait","ep1-elio-kitchen-cg:source:landscape","ep1-elio-kitchen-cg:runtime:390x844","ep1-elio-kitchen-cg:runtime:1600x900"],
+  "evidenceRefs": ["assets/production/cg/ep1-elio-kitchen-cg.png","assets/production/cg/ep1-elio-kitchen-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-elio-kitchen-cg.png","artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-elio-kitchen-cg.png"],
+  "receivedEvidenceRefs": ["assets/production/cg/ep1-elio-kitchen-cg.png","assets/production/cg/ep1-elio-kitchen-cg-landscape.png","artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-elio-kitchen-cg.png","artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-elio-kitchen-cg.png"],
+  "visualEvidence": [
+    {"ref":"kitchen-source-p","path":"assets/production/cg/ep1-elio-kitchen-cg.png","sha256":"c9e04f5bce700f1858140aefdbaefa596790619a6809b3eb6bcf4035b55caf92","width":1024,"height":1536,"observation":"White-apron Elio, knife, saucepan, Nika and professional kitchen identity are clear."},
+    {"ref":"kitchen-source-l","path":"assets/production/cg/ep1-elio-kitchen-cg-landscape.png","sha256":"50f301010df9b1e79c97fe02a3aac218c73fb22af9a3a17a09b66070bfb01e4d","width":1672,"height":941,"observation":"Landscape preserves the characters, kitchen context and coffee/tea interaction."},
+    {"ref":"kitchen-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-elio-kitchen-cg.png","sha256":"b85ee602e57ffef190427650a90c30883d20635a3b1f19123f720493da5c396b","width":390,"height":844,"observation":"Mobile crop keeps both characters, key props, kitchen identity and readable dialogue."},
+    {"ref":"kitchen-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-elio-kitchen-cg.png","sha256":"bdf4dd87a957e975ed1e556c9e5b12524c8d5f8aa9959e46cbf5118b0a9d1a14","width":1600,"height":900,"observation":"Desktop presentation preserves the authored interaction and dialogue readability."}
+  ],
+  "findings": [
+    {"id":"ELIO-KITCHEN-P2-001","severity":"P2","status":"OPEN","authoredCue":"The working kitchen and Elio's knife/saucepan interaction welcome Nika.","observation":"Mobile crop reduces surrounding breathing room, but retains both characters and key action props.","playerImpact":"Kitchen location and playful work interaction remain understandable.","materialPlayerImpact":false,"evidenceRef":"kitchen-runtime-p390"},
+    {"id":"ELIO-KITCHEN-P3-002","severity":"P3","status":"OPEN","authoredCue":"Dialogue plays over the kitchen scene.","observation":"The lower runtime gradient softens secondary detail.","playerImpact":"Dialogue remains readable and scene comprehension is unaffected.","materialPlayerImpact":false,"evidenceRef":"kitchen-runtime-l1600"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent; the independent reviewer assessed the supplied pixels." ]
+}

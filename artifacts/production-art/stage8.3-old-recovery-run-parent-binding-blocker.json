@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "originalRunId": "2026-10-14T12-40-09-650Z-production-art-00c268",
+  "originalRunState": "CANON_READY",
+  "originalNextStage": "GENERATING",
+  "originalProducerParentSessionId": "01a13a69-dbda-7f63-a998-4a03-a4b2ae9d",
+  "currentParentSessionId": "01a13be9-93fc-79c0-b5b8-b96c5814bf4b",
+  "childTrace": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\14\\rollout-2026-10-14T22-54-24-01a13bfa-f434-7d51-a3d1-ea45b40f881b.jsonl",
+  "producerRouteCheck": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+  "reason": "The historical recovery run is bound to a prior parent session and cannot accept the current-turn producer trace without re-binding historical state.",
+  "action": "Created a new scoped Stage 8.3 recovery-run bound to the current parent; no historical checkpoint was rewritten.",
+  "recordedAt": "2026-10-14T20:44:29.9028493Z"
+}

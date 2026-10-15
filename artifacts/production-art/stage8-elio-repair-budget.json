@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "scopeKey": "S06-ep1-elio-kitchen-cg",
+  "proposedMethod": "generation",
+  "proposedStrategyKey": "native-full-scene-bounded-prop-wardrobe-repair-v1",
+  "transportState": "READY",
+  "findings": [
+    {
+      "id": "P1-ELIO-KITCHEN-APRON-KNIFE",
+      "status": "OPEN",
+      "severity": "P1",
+      "authoredCue": "S06 ep1_kitchen requires Elio in a white apron holding a kitchen knife upright like a conductor baton beside the saucepan.",
+      "observation": "Current ep1-elio-kitchen-cg pixels show a dark apron and a towel/pan instead of the authored white apron and knife baton.",
+      "playerImpact": "The accepted scene contradicts the authored action and weakens the character's introduction and branch continuity.",
+      "evidenceRef": "artifacts/production-art/stage8-web-analysis.json#findings[0]",
+      "actualPixelsReceived": true
+    }
+  ],
+  "attempts": []
+}

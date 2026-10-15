@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "sceneId": "S06",
+  "authoredSceneId": "ep1_kitchen",
+  "cue": {"id":"ep1_kitchen","at":[0,0]},
+  "assetId": "ep1-elio-kitchen-cg",
+  "requiredCast": ["nika","elio"],
+  "narrativeActions": [
+    {"character":"elio","action":"Wears a clearly white chef apron and holds a kitchen knife upright like a conductor's baton while standing beside a saucepan; a coffee cup and nearby kettle remain available."},
+    {"character":"nika","action":"Stands as a professional newcomer at a respectful distance, alert and free to choose coffee or tea."}
+  ],
+  "sceneContinuity": "Bounded repair of the accepted kitchen image. Preserve its identity, working-kitchen geometry and respectful distance; correct only the authored white apron and knife-vs-towel/pan mismatch.",
+  "location": "Same working Villa Serena kitchen as the accepted asset, with real counters, stove, saucepan, coffee cup and kettle.",
+  "time": "late morning, warm working light",
+  "sourceAsset": {"path":"assets/production/cg/ep1-elio-kitchen-cg.png","sha256":"ee21d16c69080422f633e53331d82706000f75808cdeDCDFB1E356C0B6610918"},
+  "characterReferences": [
+    {"character":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character":"elio","path":"assets/characters/references/originals/elio.png","sha256":"ddbd87a64f65f79ef7cb0c029986aaedaa6f0638a1f214c1dff7c2f28c35779f"}
+  ],
+  "forbiddenProps": ["dark apron","towel replacing knife","extra characters","flambé spectacle","impossible food handling","forced touch","readable labels","logos","UI","dialogue","watermark","long dark locks","model-like face"],
+  "desktop": {"composition":"Keep the accepted full-scene kitchen composition and camera; make Elio's apron clearly white and his hand visibly hold one kitchen knife upright like a conductor baton, while saucepan, cup and kettle remain plausible.","framing":"Preserve both faces, hands and corrected prop in the 1920x900 runtime crop.","requiredVisibleCast":["nika","elio"]},
+  "portrait": {"composition":"Preserve the accepted portrait-safe arrangement, with the white apron and knife visible above the dialogue overlay at 360x640, 390x844 and 430x932.","framing":"No new intimacy, identity drift, or lower-body crop that hides the corrected action.","requiredVisibleCast":["nika","elio"]},
+  "qualityAcceptance":["The corrected image matches the exact authored paragraph without rewriting it.","Elio identity remains the approved freckled short-haired chef; Nika remains unchanged.","No new props, labels, watermarks or baked UI."],
+  "candidateNumber": 1,
+  "priorRejection": null,
+  "repairReason": "Confirmed P1 source-art mismatch in current accepted CG: dark apron and towel/pan do not match the authored white apron and knife baton action."
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "productionPngsChangedThisRepair": [],
+  "runtimeOnlyRepair": {
+    "file": "src/styles.css",
+    "change": "ep1-lobby-cg mobile-only object-fit:contain with centered 18% vertical position",
+    "runtimeStatus": "PASS_STAGE8_3_TARGETED_RUNTIME_QA",
+    "captureEvidence": "artifacts/evidence/stage8.3-targeted-runtime-final-20261014.json",
+    "captures": 18,
+    "viewports": ["360x640", "390x844", "430x932", "1366x768", "1600x900", "1920x1080"],
+    "consoleErrors": 0,
+    "requestFailures": 0,
+    "httpErrors": 0
+  },
+  "independentWebCoverage": {
+    "rawPortraitLandscapeAnalysisRecords": 20,
+    "rawRecordsWithCurrentPhysicalHash": 18,
+    "rawRecordsWithStalePhysicalHash": ["ep1-matteo-gate-cg:portrait", "ep1-matteo-gate-cg:landscape"],
+    "finalAcceptancePassRecords": 0,
+    "currentOfficeReview": "REWORK_P1",
+    "currentLobbyReview": "REWORK_OUT_OF_SCOPE_WALL_PHOTO_FINDING",
+    "staffCandidateIndependentReview": "BLOCKED_ATTACHMENT_TRANSPORT_AFTER_BOUNDED_RETRIES",
+    "evidence": [
+      "artifacts/production-art/stage8.3-web-analysis-office.json",
+      "artifacts/production-art/stage8.3-web-review-lobby-current.json",
+      "artifacts/production-art/stage8-wardrobe-web-analysis-final.json",
+      "artifacts/production-art/stage8.3-web-staff-candidate-attachment-failure-20261014.json",
+      "artifacts/production-art/stage8.3-web-staff-candidate-attachment-failure-retry2-20261014.json"
+    ]
+  },
+  "candidateOutcomes": {
+    "officePortraitCandidate2": {
+      "sha256": "0c2f8556795173a06c34b33f2603888deb7049602a66c4b98ae79d7c7f30ed3a",
+      "mechanical": "PASS_ART_OUTPUT_MECHANICAL",
+      "art": "REWORK_P1_props_still_under_dialogue_safe_zone",
+      "integrated": false
+    },
+    "staffLaundryPortraitCandidate2": {
+      "sha256": "f13cd460fd7498864e5a77ad84fb78ca17d5485e47965bb22e225837b0efa2a7",
+      "mechanical": "PASS_ART_OUTPUT_MECHANICAL",
+      "art": "REWORK_wardrobe_continuity_mismatch",
+      "integrated": false
+    }
+  },
+  "existingManifestDrift": {
+    "file": "narrative/assets.json",
+    "asset": "ep1-staff-laundry-cg portrait",
+    "manifestSha256": "869688bd0b8cac74642a8c7696b2ba54d76b9de5dd6c5357aa594c5c1c827fe3",
+    "physicalSha256": "71055dc03dff4fe7430d1e511571566417542eca527ab56b762e19622d736870",
+    "action": "preserved; not edited in this scoped repair"
+  },
+  "verdict": "BLOCKED_CEOS_RECOVERY",
+  "recordedAt": "2026-10-14T20:45:39.5332879Z"
+}

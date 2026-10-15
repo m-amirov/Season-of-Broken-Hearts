@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/production-art/stage8.4-v2-web-acceptance-matteo-gate.json",
+  "reviewId": "webhigh-art-acceptance-matteo-gate-20261015-a7f32",
+  "reviewTraceId": "ceos-art-director-web-matteo-gate-57027e2-a7f32",
+  "taskId": "ep1-matteo-gate-cg-acceptance-20261015",
+  "agent": "ceos_art_director_web",
+  "assurance": "strict",
+  "sourceHead": "57027e2c4b2654c00350b0ebf4406d20fe8d3762",
+  "status": "PASS",
+  "decision": "ACCEPT",
+  "actualPixelsReceived": true,
+  "reviewedItems": [
+    "ep1-matteo-gate-cg:source:portrait",
+    "ep1-matteo-gate-cg:source:landscape",
+    "ep1-matteo-gate-cg:runtime:390x844",
+    "ep1-matteo-gate-cg:runtime:1600x900"
+  ],
+  "evidenceRefs": [
+    "assets/production/cg/ep1-matteo-gate-cg.png",
+    "assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+    "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-matteo-gate-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-matteo-gate-cg.png"
+  ],
+  "receivedEvidenceRefs": [
+    "assets/production/cg/ep1-matteo-gate-cg.png",
+    "assets/production/cg/ep1-matteo-gate-cg-landscape.png",
+    "artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-matteo-gate-cg.png",
+    "artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-matteo-gate-cg.png"
+  ],
+  "visualEvidence": [
+    {"ref":"gate-source-p","path":"assets/production/cg/ep1-matteo-gate-cg.png","sha256":"67aa72676ecde81b58a5de74a97f3f30a2d1e98946f2e02d2b77c63828367d6a","width":1024,"height":1536,"observation":"Portrait shows the first meeting at the villa gate, recognizable cast and handshake; keys and folder are present but secondary."},
+    {"ref":"gate-source-l","path":"assets/production/cg/ep1-matteo-gate-cg-landscape.png","sha256":"ee76b8b61ed57da92c3ba754ee6d5b799fc6e1e38c9282bc49351dc956e18515","width":1672,"height":941,"observation":"Landscape preserves gate, villa, sea, characters, handshake, folder and key ring."},
+    {"ref":"gate-runtime-p390","path":"artifacts/evidence/stage8.4-v2-runtime-package2/390x844/ep1-matteo-gate-cg.png","sha256":"44e06f937335367a4067f9f521bb782fbea19357c3baa1101697d6493662b183","width":390,"height":844,"observation":"Mobile frame keeps both faces, handshake, gate context and readable dialogue; secondary keys are outside the crop without harming comprehension."},
+    {"ref":"gate-runtime-l1600","path":"artifacts/evidence/stage8.4-v2-runtime-package2/1600x900/ep1-matteo-gate-cg.png","sha256":"1cdb9c8fe75717b671aa5acd8c80692e14e7a2eb14c4bc44c7ecbc3273ec7fe0","width":1600,"height":900,"observation":"Desktop frame keeps characters, handshake, folder, keys, gate and readable dialogue."}
+  ],
+  "findings": [
+    {"id":"MATTEO-GATE-P2-001","severity":"P2","status":"OPEN","authoredCue":"Matteo holds a folder and ring of keys while greeting Nika.","observation":"The portrait runtime crop partly removes the folder and keys, while source and landscape show them.","playerImpact":"The first meeting and work context remain clear; the secondary objects are not needed for the current action.","materialPlayerImpact":false,"evidenceRef":"gate-runtime-p390"},
+    {"id":"MATTEO-GATE-P2-002","severity":"P2","status":"OPEN","authoredCue":"The gate scene establishes the work crisis and first meeting.","observation":"The concrete crisis is carried mainly by dialogue rather than a visually explicit crisis prop.","playerImpact":"No material comprehension loss is demonstrated; the authored action remains understandable.","materialPlayerImpact":false,"evidenceRef":"gate-runtime-l1600"}
+  ],
+  "resolvedFindings": [],
+  "historicalExactLines": [
+    "    {\"id\":\"PORTRAIT_GUIDING_HAND_OUT_OF_FRAME\",\"severity\":\"P2\",\"family\":\"ep1-lobby-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"lobby-p390\"},",
+    "    {\"id\":\"REQUIRED_KEYS_FOLDER_UNDER_DIALOGUE_SAFE_ZONE\",\"severity\":\"P1\",\"family\":\"ep1-matteo-office-cg\",\"orientation\":\"portrait+landscape\",\"evidenceRef\":\"office-p390\"},",
+    "    {\"id\":\"PORTRAIT_REQUIRED_ELIO_CROPPED\",\"severity\":\"P1\",\"family\":\"ep1-staff-laundry-cg\",\"orientation\":\"portrait\",\"evidenceRef\":\"laundry-p390\"}"
+  ],
+  "unresolved": [],
+  "minimumFix": null,
+  "additionalGenerationRequired": false,
+  "mandatoryArtRepairRequired": false,
+  "evidenceLimitations": ["Local SHA-256 values were verified by the parent against the attached files; the reviewer assessed the supplied pixels independently.","This acceptance does not claim technical or release-gate status outside the reviewed art." ]
+}
