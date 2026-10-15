@@ -1,6 +1,6 @@
 import { getDialogueLines, validateGraph } from './state.mjs';
 
-export const CURRENT_SAVE_VERSION = 3;
+export const CURRENT_SAVE_VERSION = 4;
 
 function episodeNumber(scene) {
   return Number.isSafeInteger(scene?.episode) && scene.episode > 0 ? scene.episode : 1;
@@ -79,13 +79,13 @@ export function migrateSave(payload, graph = null) {
   const version = payload.schemaVersion ?? 0;
   if (version > CURRENT_SAVE_VERSION) throw new Error(`Future save version ${version} is not supported`);
   if (version < CURRENT_SAVE_VERSION) {
-    // v2 has an already-validated state schema; only v0/v1 need field migration.
-    const needsStateMigration = version < 2;
-    const state = graph && needsStateMigration ? migrateState(payload.state, graph) : payload.state;
+    // v4 adds bounded season fields. Every pre-v4 state is projected onto the
+    // current schema so EP1 saves acquire only declared defaults.
+    const state = graph ? migrateState(payload.state, graph) : payload.state;
     const history = Array.isArray(payload.history)
       ? payload.history.map(item => ({
           ...item,
-          state: graph && needsStateMigration ? migrateState(item.state, graph) : item.state
+          state: graph ? migrateState(item.state, graph) : item.state
         }))
       : [];
     return {
@@ -94,7 +94,7 @@ export function migrateSave(payload, graph = null) {
       cursor: payload.cursor,
       state,
       history,
-      readerProgress: legacyReaderProgress(payload, graph)
+      readerProgress: payload.readerProgress ?? legacyReaderProgress(payload, graph)
     };
   }
   return structuredClone(payload);

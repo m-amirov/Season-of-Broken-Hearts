@@ -124,7 +124,7 @@ async function boot() {
         width: window.innerWidth,
         height: window.innerHeight
       };
-      const nextScene = engine.graph().scenes.find(candidate => candidate.id === scene.next);
+      const nextScene = engine.graph().scenes.find(candidate => candidate.id === (scene.next ?? scene.nextEpisodeStart));
       if (nextScene) assetManager.preloadSceneAsset(nextScene, assetViewport).catch(() => {});
       for (const choice of engine.choices()) {
         const choiceScene = engine.graph().scenes.find(candidate => candidate.id === choice.to);
@@ -178,8 +178,14 @@ async function boot() {
 
     controller = createInputController(renderer.elements, {
       onAdvance: () => {
-        if (ui.homeOpen || ui.introEpisode !== null || ui.menuOpen || engine.choices().length > 0 || engine.isEpisodeComplete()) {
+        if (ui.homeOpen || ui.introEpisode !== null || ui.menuOpen || engine.choices().length > 0) {
           controller.unlock();
+          return;
+        }
+        if (engine.isEpisodeComplete()) {
+          const result = engine.continueEpisode();
+          if (result.ok) render();
+          else controller.unlock();
           return;
         }
         engine.advance();

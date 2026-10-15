@@ -2,7 +2,7 @@
 
 ## Existing compatibility boundary
 
-EP1 currently uses `graph.schemaVersion=1`, `CURRENT_SAVE_VERSION=3`, the
+EP1 currently uses `graph.schemaVersion=1`, `CURRENT_SAVE_VERSION=4`, the
 existing 23 state keys and save key
 `season-of-broken-hearts.save.v1`. EP1 scene IDs and choice IDs are stable.
 The full-season implementation must not rewrite those IDs or discard a valid
@@ -55,19 +55,24 @@ narrative/episodes/ep-02.json
 narrative/episodes/ep-03.json
 ...
 narrative/episodes/ep-10.json
-narrative/graph-build.mjs
+narrative/episodes/manifest.json
+src/narrative/graph-builder.mjs
+tools/narrative/graph-build.mjs
 narrative/season-architecture.json
 ```
 
-The builder must:
+The implemented builder currently:
 
-1. load EP1 graph unchanged and assert its scene/choice IDs;
-2. load episodes in numeric order;
-3. reject duplicate scene/choice IDs and unknown state keys;
-4. attach episode/day/location metadata;
-5. validate every RU/EN dialogue and every choice target;
-6. emit deterministic key ordering and a stable JSON artifact;
-7. write a build receipt containing source file hashes and graph hash.
+1. load the EP1 graph and preserve its scene/dialogue/effect semantics;
+2. load authored fragments in numeric order;
+3. reject duplicate scene IDs, conflicting domains and invalid state extensions;
+4. connect adjacent episode endings through project-owned `episodeEnd` + `next` links;
+5. validate every RU/EN dialogue and every choice target through `validateGraph`;
+6. emit a deterministic JSON artifact and expose `--check` for drift detection.
+
+Day/location metadata, source hashes and a build receipt remain a production
+hardening item before the first complete-season release candidate; they are not
+silently claimed by the current Batch A gate.
 
 No runtime code may read the planning Markdown directly.
 

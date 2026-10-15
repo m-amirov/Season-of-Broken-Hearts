@@ -1,0 +1,15 @@
+{
+  "stage": "stage9",
+  "batch": "A",
+  "episodes": [2, 3],
+  "status": "AUTHORED_AND_ENGINE_INTEGRATED",
+  "scenes": { "episode2": 11, "episode3": 10, "newTotal": 21 },
+  "choices": { "episode2": 10, "episode3": 8, "newTotal": 18 },
+  "localization": "RU_EN_PARITY_PASS",
+  "routeLock": "NOT_AVAILABLE_BEFORE_EP6",
+  "productionArt": "NOT_STARTED",
+  "missingProductionAssetIds": 21,
+  "independentWebReview": "BLOCKED_STAGE9_WEB_TRANSPORT",
+  "nativeFallback": "BLOCKED_MODEL_UNSUPPORTED_GPT_5_6",
+  "next": "CONTINUE_EP4_EP5_AFTER_REVIEW_TRANSPORT_RECOVERY"
+}

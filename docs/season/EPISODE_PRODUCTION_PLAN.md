@@ -2,14 +2,18 @@
 
 Этот документ переводит beat sheet в production-ready список сцен. Он не
 является отдельным графом: стабильные IDs и route/state requirements должны
-сверяться с `narrative/season-architecture.json`, а после Phase 9.2 — с
-собранным executable graph.
+сверяться с `narrative/season-architecture.json` и собранным executable graph.
+EP2–EP3 authored runtime fragments теперь находятся в `narrative/episodes/`;
+таблицы ниже фиксируют их production intent.
 
 ## Общий scene contract
 
-Каждая сцена обязана иметь `id`, `episode`, `dayStart`, `dayEnd`, `location`,
-`wardrobeFamily`, `entryGuard`, `dialogue.ru`, `dialogue.en`, `choices` и
-`exit`. Choice обязан указывать понятный игроку вопрос, immediate reaction,
+Каждая production-ready сцена обязана иметь `id`, `episode`, `dayStart`,
+`dayEnd`, `location`, `wardrobeFamily`, `entryGuard`, `dialogue.ru`,
+`dialogue.en`, `choices` и `exit`. В текущем Batch A runtime-фрагменте
+реализованы executable IDs, bilingual dialogue, choices/effects и exits;
+day/location/wardrobe остаются отдельными art-handoff metadata до V2-приёмки.
+Choice обязан указывать понятный игроку вопрос, immediate reaction,
 state effect, delayed payoff и legal back/save boundary. Смена локации или дня
 оформляется отдельной transition-сценой, не скрытой сменой background.
 
@@ -21,14 +25,14 @@ RU — авторский текст; EN — полноценная локали
 
 | Scene ID | Time / place | Function | Choice and effect |
 |---|---|---|---|
-| `ep2_morning_brief` | day 2, Villa hall | Nika receives wedding schedule and sees staff gap | Ask for authority → `nikaCareerPlan=villa-season`; ask for staff voice → `staffTrust+1` |
-| `ep2_wedding_budget` | day 3, office | Concrete budget pressure, no romance shortcut | Cut guest experience / cut non-essential spend / find partner → `budgetPlan` branch |
-| `ep2_family_rehearsal` | day 4, courtyard | Introduces sister and family pressure | Mediate / refuse family role / support sister privately → `matteoTrust`, `staffTrust` |
-| `ep2_fake_terms` | day 5, library | Matteo offers seven-day public agreement | Accept / decline / counter with written boundaries → `fakeDatingStatus`, `fakeDatingTermsKnown` |
-| `ep2_bianca_arrives` | day 6, entrance | Bianca enters as Aurea representative | Private meeting / direct questions / defer → `biancaRoleKnown`, `aureaClientKnown` |
-| `ep2_public_agreement` | day 7, terrace | Shows agreement as bounded public action | Hand / verbal introduction / stop the scene → `matteoPublicGesture`, no automatic romance |
-| `ep2_rehearsal_failure` | day 8, service corridor | Staff shortage has visible consequence | Protect team / protect schedule / disclose gap → `staffTrust`, `staffCutsKnown` |
-| `ep2_rooftop_after` | day 9, rooftop | Nika states what the agreement does not mean | Slow pace / end agreement early / continue seven days → boundary state |
+| `ep2_morning_brief` | day 2, Villa hall | Nika receives the wedding schedule and asks for a voluntary role | No choice; proceeds to the budget question |
+| `ep2_wedding_budget` | day 3, office | Concrete budget pressure, no romance shortcut | Open figures → `staffTrust+1`, `fundingEvidence+1`; improvise → no evidence |
+| `ep2_family_rehearsal` | day 4, courtyard | Family pressure reflects whether figures were opened | Conditional dialogue; no route effect |
+| `ep2_fake_terms` | day 5, library | Matteo offers a seven-day public agreement | Public / firm-boundary agreement → `fakeDatingStatus=active`, terms known |
+| `ep2_bianca_arrives` | day 6, entrance | Bianca enters as an Aurea business representative | Professional / pushback → `biancaRoleKnown`, trust posture and evidence |
+| `ep2_public_agreement` | day 7, terrace | Public action is explicitly consented or declined | Stay / decline → `publicAgreement` and separate boundary state |
+| `ep2_rehearsal_failure` | day 8, service corridor | Staff shortage has a visible operational consequence | State-dependent reaction; no hidden romance consequence |
+| `ep2_rooftop_after` | day 9, rooftop | Nika states what the agreement does not mean | Clear / deferred boundary conversation → trust and future-talk state |
 | `ep2_transition` | day 9, staff room | Schedule opens Leo survey slot | No choice; preserves `route=none` |
 
 **Acceptance:** agreement refusal still reaches Bianca's information; no
@@ -38,12 +42,12 @@ RU — авторский текст; EN — полноценная локали
 
 | Scene ID | Time / place | Function | Choice and effect |
 |---|---|---|---|
-| `ep3_old_photo` | day 10, archive | Nika chooses whether to keep a shared memory | Keep / return / ask who kept it → `leoConversation` |
-| `ep3_survey_start` | day 11, old port | Establishes why Leo is physically at Villa Serena | Observe work / ask client / leave → knowledge only follows chosen cue |
-| `ep3_eight_years` | day 12, harbor | Leo gives the full chronology | Listen / demand timeline / end talk → `leoPastExplained`, `leoAccountability` |
-| `ep3_accountability_choice` | day 13, seawall | Nika names the damage without promising forgiveness | Ask what he would do now / ask why he hid it / distance → `leoRepairChoice` |
-| `ep3_aurea_drawing` | day 14, survey room | Aurea mark becomes player-visible | Inspect with Leo / inspect alone / refuse access → `leoAureaLinkKnown` |
-| `ep3_matteo_confrontation` | day 15, office | Matteo must explain access and client boundary | Share document / keep private / require written rule → `investorTerms`, `matteoTrust` |
+| `ep3_old_photo` | day 10, archive | Nika separates a shared memory from access to her | No choice; Leo's accountability conversation follows |
+| `ep3_survey_start` | day 11, old port | Establishes why Leo is physically at Villa Serena | Join / decline survey → `ep3SurveyChoice`, evidence delta |
+| `ep3_eight_years` | day 12, harbor | Leo gives the full chronology | No route effect; the next choice decides accountability posture |
+| `ep3_accountability_choice` | day 13, seawall | Nika names the damage without promising forgiveness | Accept action test / keep distance → `leoAccountability`, trust and relationship |
+| `ep3_aurea_drawing` | day 14, survey room | Aurea mark becomes player-visible | Record / protect process → `leoAureaLinkKnown`, evidence |
+| `ep3_matteo_confrontation` | day 15, office | Matteo must explain access and client boundary | Share / keep private → `leoAccountability`, staff and evidence |
 | `ep3_quiet_return` | day 16, Villa garden | Nika separates memory from present intention | No route lock; `route=none` |
 | `ep3_transition` | day 16, office | Wedding weekend begins | `staffCutsKnown` may become true only if EP2/EP3 evidence exists |
 

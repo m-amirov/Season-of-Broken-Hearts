@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "baseGraph": "narrative/graph.json",
+  "outputGraph": "narrative/graph.json",
+  "authoredEpisodes": [2, 3],
+  "plannedEpisodes": [4, 5, 6, 7, 8, 9, 10],
+  "fragments": [
+    { "episode": 2, "path": "narrative/episodes/ep-02.json" },
+    { "episode": 3, "path": "narrative/episodes/ep-03.json" }
+  ]
+}

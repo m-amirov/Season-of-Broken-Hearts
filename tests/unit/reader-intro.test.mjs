@@ -47,8 +47,8 @@ test('tutorial appears only during first two dialogue lines of New Game, never r
 test('first entry into a later episode generates a fresh localized title once', () => {
   const extended = structuredClone(graph);
   extended.scenes.push({
-    id: 'ep2_preview',
-    episode: 2,
+    id: 'ep11_preview',
+    episode: 11,
     title: { ru: 'Тестовая глава', en: 'Test chapter' },
     assetId: extended.scenes[0].assetId,
     dialogue: { ru: [{ speaker: null, text: 'Тест' }], en: [{ speaker: null, text: 'Test' }] },
@@ -57,11 +57,12 @@ test('first entry into a later episode generates a fresh localized title once', 
   // Changing the EP1 ending to an ordinary transition makes the fixture reachable.
   const hook = extended.scenes.find(scene => scene.id === 'ep1_hook');
   delete hook.ending;
-  hook.next = 'ep2_preview';
+  delete hook.episodeEnd;
+  hook.next = 'ep11_preview';
   const engine = new NarrativeEngine(extended);
   engine.markEpisodeIntroSeen();
   const visited = new Set();
-  while (engine.currentScene().id !== 'ep2_preview') {
+  while (engine.currentScene().id !== 'ep11_preview') {
     const scene = engine.currentScene();
     const state = JSON.stringify(engine.snapshot().cursor);
     assert.ok(!visited.has(state), 'progress stalled: ' + state);
