@@ -3640,14 +3640,7 @@
           },
           {
             "speaker": null,
-            "text": "Ника ответила согласием, и Маттео взял её за руку только для фотографии.",
-            "when": {
-              "matteoPublicGesture": "hand"
-            }
-          },
-          {
-            "speaker": null,
-            "text": "Маттео протянул руку и остановился до касания. Ника сама сократила расстояние — не потому, что фотограф смотрел, а потому, что хотела.",
+            "text": "Маттео протянул руку и остановился до касания. Ника ответила согласием и сама сократила расстояние — не потому, что фотограф смотрел, а потому, что хотела.",
             "when": {
               "matteoPublicGesture": "hand"
             }
@@ -3733,14 +3726,7 @@
           },
           {
             "speaker": null,
-            "text": "Nika answered yes, and Matteo took her hand only for the photograph.",
-            "when": {
-              "matteoPublicGesture": "hand"
-            }
-          },
-          {
-            "speaker": null,
-            "text": "Matteo offered his hand and stopped before touching her. Nika closed the distance herself, not because the photographer was watching, but because she wanted to.",
+            "text": "Matteo offered his hand and stopped before touching her. Nika answered yes and closed the distance herself, not because the photographer was watching, but because she wanted to.",
             "when": {
               "matteoPublicGesture": "hand"
             }
