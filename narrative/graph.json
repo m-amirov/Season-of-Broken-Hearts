@@ -4538,17 +4538,7 @@
           },
           {
             "speaker": null,
-            "text": "Он внёс конфликт в отчёт и оставил в нём фактический маршрут, прежде чем отправить обновлённую версию.",
-            "when": {
-              "ep3SurveyAction": "report"
-            }
-          },
-          {
-            "speaker": null,
-            "text": "Он записал запрос полного брифа в рабочий журнал и оставил отчёт на проверке, пока заказчик не объяснит условия.",
-            "when": {
-              "ep3SurveyAction": "hold"
-            }
+            "text": "Лео оставил фактический маршрут в материалах обхода; окончательную формулировку отчёта он внесёт после выбранного решения команды."
           }
         ],
         "en": [
@@ -4582,17 +4572,7 @@
           },
           {
             "speaker": null,
-            "text": "He entered the conflict and the actual route in the report before sending the revised version.",
-            "when": {
-              "ep3SurveyAction": "report"
-            }
-          },
-          {
-            "speaker": null,
-            "text": "He recorded the request for the full brief in the work log and held the report until the client explained the terms.",
-            "when": {
-              "ep3SurveyAction": "hold"
-            }
+            "text": "Leo left the actual route in the walkthrough materials; he would finalize the report after the team's decision."
           }
         ]
       },
@@ -5368,7 +5348,7 @@
         "ru": [
           {
             "speaker": null,
-            "text": "Ника открыла приложение на общем экране и сверила подпись с копией Бьянки. Западное крыло действительно рассматривалось под новые номера, а служебный проход был отмечен как объект оптимизации.",
+            "text": "Ника открыла приложение на общем экране и сверила подпись с копией Бьянки. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5402,7 +5382,7 @@
         "en": [
           {
             "speaker": null,
-            "text": "Nika opened the appendix on a shared screen and matched the signature against Bianca's copy. The west wing was being considered for new rooms, and the service passage was marked for optimisation.",
+            "text": "Nika opened the appendix on a shared screen and matched the signature against Bianca's copy. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5682,7 +5662,16 @@
             "speaker": "leo",
             "text": "По проверенному приложению я отправлю исправленный отчёт не только заказчику, но и команде отеля.",
             "when": {
-              "leoEvidence": "terms"
+              "leoEvidence": "terms",
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "После получения полного брифа я отправлю исправленный отчёт заказчику и команде отеля; проверенное приложение уже будет приложено к пакету.",
+            "when": {
+              "leoEvidence": "terms",
+              "ep3SurveyAction": "hold"
             }
           },
           {
@@ -5728,7 +5717,16 @@
             "speaker": "leo",
             "text": "Using the verified appendix, I will send the corrected report to the hotel team, not only to the client.",
             "when": {
-              "leoEvidence": "terms"
+              "leoEvidence": "terms",
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "After the full brief arrives, I will send the corrected report to the client and the hotel team; the verified appendix will already be attached to the package.",
+            "when": {
+              "leoEvidence": "terms",
+              "ep3SurveyAction": "hold"
             }
           },
           {

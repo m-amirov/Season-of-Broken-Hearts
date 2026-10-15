@@ -212,8 +212,7 @@
           {"speaker": "nika", "text": "Тогда в отчёте должны появиться часы, руки и люди, которые платят за красивую линию."},
           {"speaker": "giulia", "text": "И не называйте это просьбой персонала. Это условие, при котором смена вообще работает."},
           {"speaker": null, "text": "Лео перечеркнул слово «неиспользуемый» и оставил место для фактического маршрута."},
-          {"speaker": null, "text": "Он внёс конфликт в отчёт и оставил в нём фактический маршрут, прежде чем отправить обновлённую версию.", "when": {"ep3SurveyAction": "report"}},
-          {"speaker": null, "text": "Он записал запрос полного брифа в рабочий журнал и оставил отчёт на проверке, пока заказчик не объяснит условия.", "when": {"ep3SurveyAction": "hold"}}
+          {"speaker": null, "text": "Лео оставил фактический маршрут в материалах обхода; окончательную формулировку отчёта он внесёт после выбранного решения команды."}
         ],
         "en": [
           {"speaker": "giulia", "text": "If they close the niche, I will hand out keys from the guest hall in the morning. Guests will see not order, but how we manage to create it."},
@@ -223,8 +222,7 @@
           {"speaker": "nika", "text": "Then the report needs hours, hands, and the people who pay for a pretty line."},
           {"speaker": "giulia", "text": "And do not call it a staff request. It is the condition that lets the shift work at all."},
           {"speaker": null, "text": "Leo crossed out ‘unused’ and left room for the actual route."},
-          {"speaker": null, "text": "He entered the conflict and the actual route in the report before sending the revised version.", "when": {"ep3SurveyAction": "report"}},
-          {"speaker": null, "text": "He recorded the request for the full brief in the work log and held the report until the client explained the terms.", "when": {"ep3SurveyAction": "hold"}}
+          {"speaker": null, "text": "Leo left the actual route in the walkthrough materials; he would finalize the report after the team's decision."}
         ]
       },
       "choices": [
@@ -515,14 +513,14 @@
       "assetId": "ep3-document-check-response-cg",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "Ника открыла приложение на общем экране и сверила подпись с копией Бьянки. Западное крыло действительно рассматривалось под новые номера, а служебный проход был отмечен как объект оптимизации.", "when": {"leoEvidence": "terms"}},
+          {"speaker": null, "text": "Ника открыла приложение на общем экране и сверила подпись с копией Бьянки. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.", "when": {"leoEvidence": "terms"}},
           {"speaker": "leo", "text": "Теперь это документ, а не удобная версия.", "when": {"leoEvidence": "terms"}},
           {"speaker": null, "text": "Ника сохранила совпадающую дату и отметку в рабочем журнале, но не назвала их доказательством условий. Полный текст ещё должен пройти проверку.", "when": {"leoEvidence": "drawing"}},
           {"speaker": "leo", "text": "Я не буду делать из рабочей версии вывод, который она пока не выдерживает.", "when": {"leoEvidence": "drawing"}},
           {"speaker": "nika", "text": "Теперь Маттео получит ровно тот объём, который мы можем подтвердить."}
         ],
         "en": [
-          {"speaker": null, "text": "Nika opened the appendix on a shared screen and matched the signature against Bianca's copy. The west wing was being considered for new rooms, and the service passage was marked for optimisation.", "when": {"leoEvidence": "terms"}},
+          {"speaker": null, "text": "Nika opened the appendix on a shared screen and matched the signature against Bianca's copy. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.", "when": {"leoEvidence": "terms"}},
           {"speaker": "leo", "text": "Now it is a document, not a convenient version.", "when": {"leoEvidence": "terms"}},
           {"speaker": null, "text": "Nika saved the matching date and mark in the work log, but did not call them proof of the terms. The full text still needed checking.", "when": {"leoEvidence": "drawing"}},
           {"speaker": "leo", "text": "I will not turn a working lead into a conclusion it cannot support yet.", "when": {"leoEvidence": "drawing"}},
@@ -613,7 +611,8 @@
           {"speaker": "leo", "text": "Это не просит у тебя доверия. Только оставляет тебе право заметить, если я снова начну прятаться."},
           {"speaker": "nika", "text": "Я замечу. И не буду объяснять твоё молчание вместо тебя.", "when": {"leoConversation": "accountability"}},
           {"speaker": "nika", "text": "Я проверю следующий отчёт сама. Личные объяснения на сегодня закончены.", "when": {"leoConversation": "distance"}},
-          {"speaker": "leo", "text": "По проверенному приложению я отправлю исправленный отчёт не только заказчику, но и команде отеля.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "По проверенному приложению я отправлю исправленный отчёт не только заказчику, но и команде отеля.", "when": {"leoEvidence": "terms", "ep3SurveyAction": "report"}},
+          {"speaker": "leo", "text": "После получения полного брифа я отправлю исправленный отчёт заказчику и команде отеля; проверенное приложение уже будет приложено к пакету.", "when": {"leoEvidence": "terms", "ep3SurveyAction": "hold"}},
           {"speaker": "leo", "text": "Если это останется только отметкой, я не назову её доказательством ради удобного вывода.", "when": {"leoEvidence": "drawing"}},
           {"speaker": null, "text": "Лео кивнул и ушёл к западному крылу. Ника осталась у окна — с фотографией, рабочей папкой и ответом, который пока не требовал прощения."}
         ],
@@ -623,7 +622,8 @@
           {"speaker": "leo", "text": "It is not asking for your trust. It leaves you the right to notice if I start hiding again."},
           {"speaker": "nika", "text": "I will notice. And I will not explain your silence for you.", "when": {"leoConversation": "accountability"}},
           {"speaker": "nika", "text": "I will check the next report myself. The personal explanations are over for today.", "when": {"leoConversation": "distance"}},
-          {"speaker": "leo", "text": "Using the verified appendix, I will send the corrected report to the hotel team, not only to the client.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "Using the verified appendix, I will send the corrected report to the hotel team, not only to the client.", "when": {"leoEvidence": "terms", "ep3SurveyAction": "report"}},
+          {"speaker": "leo", "text": "After the full brief arrives, I will send the corrected report to the client and the hotel team; the verified appendix will already be attached to the package.", "when": {"leoEvidence": "terms", "ep3SurveyAction": "hold"}},
           {"speaker": "leo", "text": "If it remains only a mark, I will not call it proof because a convenient conclusion wants one.", "when": {"leoEvidence": "drawing"}},
           {"speaker": null, "text": "Leo nodded and returned to the west wing. Nika stayed by the window with the photograph, the work folder, and an answer that did not require forgiveness yet."}
         ]
