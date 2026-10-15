@@ -4,7 +4,7 @@
 
 `BLOCKED_STAGE9_4_PRODUCTION_ART_OUTPUT`
 
-Inventory and source-bound briefing are complete for all 32 scenes. The fresh CEOS capability challenge and the real Terra producer route passed, but the first batch stopped at the mandatory per-output gate: S19 landscape returned `1672x941` while the project dual-format contract requires `1920x1080`. No further Image Gen call, runtime integration, Web High V2 acceptance, commit or push was performed.
+Inventory and source-bound briefing are complete for all 32 scenes. The fresh CEOS capability challenge and the real Terra producer route passed, but the first batch stopped at the mandatory per-output gate: S19 landscape returned `1672x941` while the project dual-format contract requires `1920x1080`. No further Image Gen call, runtime integration or merge was performed; the blocked evidence batch was committed and pushed as `08e1ed3c1c2d9e8ed255f6aa84acaaedb4c696c0`.
 
 ## Current evidence
 
@@ -32,8 +32,8 @@ Inventory and source-bound briefing are complete for all 32 scenes. The fresh CE
 | Narrative validation | `narrative:validate` PASS; 3 existing promise warnings, no errors |
 | Unit tests | `npm test` PASS, 73/73 |
 | Save/Back/locale | NOT_VERIFIED for Stage 9.4 |
-| PR #6 | Draft boundary preserved; no commit/push/merge |
-| Final HEAD | `e0e79d98e18984a0cce59a7356425458824f3e9b` |
+| PR #6 | Feature branch commit `08e1ed3c1c2d9e8ed255f6aa84acaaedb4c696c0` pushed; no merge and no Ready transition |
+| Final HEAD | `08e1ed3c1c2d9e8ed255f6aa84acaaedb4c696c0` evidence commit; no runtime source changes |
 | Final verdict | `BLOCKED_STAGE9_4_PRODUCTION_ART_OUTPUT` |
 
 ## Completed files
