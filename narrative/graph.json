@@ -2018,7 +2018,7 @@
           },
           {
             "speaker": "nika",
-            "text": "Начнём с того, что кто-то здесь платит за одну простыню два раза."
+            "text": "Начнём с риска заплатить за один комплект белья дважды."
           },
           {
             "speaker": "giulia",
@@ -2064,7 +2064,7 @@
           },
           {
             "speaker": "nika",
-            "text": "We will start with whoever is paying twice for one tablecloth."
+            "text": "We will start with the risk of paying twice for one linen set."
           },
           {
             "speaker": "giulia",
@@ -2104,7 +2104,7 @@
           },
           {
             "speaker": "matteo",
-            "text": "Я урезал резерв, чтобы не сорвать оплату музыкантам."
+            "text": "Я урезал резерв, чтобы закрыть второй заказ и не сорвать оплату музыкантам."
           },
           {
             "speaker": "nika",
@@ -2142,7 +2142,7 @@
           },
           {
             "speaker": "matteo",
-            "text": "I cut the reserve so the musicians could be paid on time."
+            "text": "I cut the reserve to cover the duplicate order and keep the musicians paid on time."
           },
           {
             "speaker": "nika",
@@ -2262,7 +2262,7 @@
           },
           {
             "speaker": null,
-            "text": "Если бы они открыли цифры, команда получила место для возражения до репетиции. Если бы отложили разговор, красивый план пришлось бы удерживать руками тех, кого из него вычеркнули.",
+            "text": "Ника передала Лауре временный график, но оставила полную таблицу до вечера. До репетиции команда могла возразить только на уровне смен, а настоящая дыра в бюджете оставалась у Маттео в папке.",
             "when": {
               "ep2BudgetChoice": "improvise"
             }
@@ -2318,7 +2318,7 @@
           },
           {
             "speaker": null,
-            "text": "If they opened the numbers, the team got room to object before the rehearsal. If they delayed, the pretty plan would have to be held together by the people it erased.",
+            "text": "Nika gave Laura a temporary schedule but kept the full table until evening. Before the rehearsal, the team could object only at the level of shifts while the real budget hole remained in Matteo's folder.",
             "when": {
               "ep2BudgetChoice": "improvise"
             }
@@ -2490,6 +2490,20 @@
           },
           {
             "speaker": "giulia",
+            "text": "Это остаётся моим планом. Я сама решу, что убрать, а что оставить.",
+            "when": {
+              "staffTrust": 2
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "Семейный формат остаётся, но финальное решение по плану всё равно моё.",
+            "when": {
+              "staffTrust": 1
+            }
+          },
+          {
+            "speaker": "giulia",
             "text": "Спасибо. Я не хотела, чтобы ты спасал мою свадьбу. Я хотела, чтобы ты перестал подписывать за меня решения."
           },
           {
@@ -2525,6 +2539,20 @@
           {
             "speaker": null,
             "text": "Giulia moved the place cards herself. Matteo opened his mouth to stop her, but Nika had already cleared the glass boxes from the aisle."
+          },
+          {
+            "speaker": "giulia",
+            "text": "It remains my plan. I will decide what stays and what goes.",
+            "when": {
+              "staffTrust": 2
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "The family format stays, but the final decision about the plan is still mine.",
+            "when": {
+              "staffTrust": 1
+            }
           },
           {
             "speaker": "giulia",
@@ -3386,11 +3414,11 @@
           },
           {
             "speaker": "nika",
-            "text": "Можно. Но только если ты услышишь «нет» с той же скоростью."
+            "text": "Ответ будет моим, а не частью семейной фотографии."
           },
           {
             "speaker": "matteo",
-            "text": "Услышу."
+            "text": "Я подожду ответа."
           },
           {
             "speaker": "giulia",
@@ -3420,11 +3448,11 @@
           },
           {
             "speaker": "nika",
-            "text": "You may. But only if you hear no at the same speed."
+            "text": "The answer will be mine, not part of the family photograph."
           },
           {
             "speaker": "matteo",
-            "text": "I will."
+            "text": "I will wait for your answer."
           },
           {
             "speaker": "giulia",
@@ -3612,6 +3640,13 @@
           },
           {
             "speaker": null,
+            "text": "Ника ответила согласием, и Маттео взял её за руку только для фотографии.",
+            "when": {
+              "matteoPublicGesture": "hand"
+            }
+          },
+          {
+            "speaker": null,
             "text": "Маттео протянул руку и остановился до касания. Ника сама сократила расстояние — не потому, что фотограф смотрел, а потому, что хотела.",
             "when": {
               "matteoPublicGesture": "hand"
@@ -3626,11 +3661,31 @@
           },
           {
             "speaker": "nika",
-            "text": "Вот цена красивого жеста: люди начинают считать, что видели больше, чем им показали."
+            "text": "Вот цена красивого жеста: люди начинают считать, что видели больше, чем им показали.",
+            "when": {
+              "matteoPublicGesture": "hand"
+            }
           },
           {
             "speaker": "matteo",
-            "text": "И цена отказа — тоже не должна лежать на тебе."
+            "text": "И я должен был остановить эту историю раньше.",
+            "when": {
+              "matteoPublicGesture": "hand"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "Вот цена отказа: людям всё равно приходится объяснять границы, но это не моя работа в одиночку.",
+            "when": {
+              "matteoPublicGesture": "declined"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "И это объяснение я беру на себя.",
+            "when": {
+              "matteoPublicGesture": "declined"
+            }
           }
         ],
         "en": [
@@ -3678,6 +3733,13 @@
           },
           {
             "speaker": null,
+            "text": "Nika answered yes, and Matteo took her hand only for the photograph.",
+            "when": {
+              "matteoPublicGesture": "hand"
+            }
+          },
+          {
+            "speaker": null,
             "text": "Matteo offered his hand and stopped before touching her. Nika closed the distance herself, not because the photographer was watching, but because she wanted to.",
             "when": {
               "matteoPublicGesture": "hand"
@@ -3692,11 +3754,31 @@
           },
           {
             "speaker": "nika",
-            "text": "That is the price of a beautiful gesture: people start believing they saw more than they did."
+            "text": "That is the price of a beautiful gesture: people start believing they saw more than they did.",
+            "when": {
+              "matteoPublicGesture": "hand"
+            }
           },
           {
             "speaker": "matteo",
-            "text": "And the price of refusal should not be yours either."
+            "text": "And I should have stopped that story sooner.",
+            "when": {
+              "matteoPublicGesture": "hand"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "That is the price of refusal: people still need boundaries explained, but that is not my work alone.",
+            "when": {
+              "matteoPublicGesture": "declined"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "And I will take that explanation on myself.",
+            "when": {
+              "matteoPublicGesture": "declined"
+            }
           }
         ]
       },
@@ -3724,7 +3806,21 @@
         "ru": [
           {
             "speaker": null,
-            "text": "На девятый день свадебная неделя закончилась не салютом, а списком возвращённых стульев. Срок публичной договорённости тоже закончился: семь дней — не пожизненная роль."
+            "text": "На девятый день свадебная неделя закончилась не салютом, а списком возвращённых стульев."
+          },
+          {
+            "speaker": null,
+            "text": "Срок публичной договорённости тоже закончился: семь дней — не пожизненная роль.",
+            "when": {
+              "publicAgreement": "consented"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Предложенная публичная договорённость так и не стала частью её работы: отказ не лишил Нику ни проекта, ни права на свои границы.",
+            "when": {
+              "publicAgreement": "declined"
+            }
           },
           {
             "speaker": "matteo",
@@ -3768,7 +3864,21 @@
         "en": [
           {
             "speaker": null,
-            "text": "On day nine, wedding week ended not with fireworks but with a list of returned chairs. The public arrangement ended too: seven days was not a lifetime role."
+            "text": "On day nine, wedding week ended not with fireworks but with a list of returned chairs."
+          },
+          {
+            "speaker": null,
+            "text": "The public arrangement ended too: seven days was not a lifetime role.",
+            "when": {
+              "publicAgreement": "consented"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "The proposed public arrangement never became part of her work: refusal cost Nika neither the project nor the right to her own boundaries.",
+            "when": {
+              "publicAgreement": "declined"
+            }
           },
           {
             "speaker": "matteo",
@@ -3840,7 +3950,7 @@
           "to": "ep2_transition",
           "effects": {
             "fakeDatingStatus": "ended",
-            "consentBoundary": "unclear",
+            "consentBoundary": "clear",
             "matteoFutureTalk": "deferred",
             "trustMatteo": 2
           }
@@ -3905,7 +4015,7 @@
         "ru": [
           {
             "speaker": null,
-            "text": "Утром в папке Ника нашла распечатку без логотипа. Aurea считала не только задолженность Villa Serena, но и стоимость её земли."
+            "text": "Позже в тот же день Ника нашла в папке распечатку без логотипа. Aurea считала не только задолженность Villa Serena, но и стоимость её земли."
           },
           {
             "speaker": "bianca",
@@ -3949,7 +4059,7 @@
         "en": [
           {
             "speaker": null,
-            "text": "That morning Nika found a logo-less printout in the folder. Aurea was counting not only Villa Serena's debt but the value of its land."
+            "text": "Later that day Nika found a logo-less printout in the folder. Aurea was counting not only Villa Serena's debt but the value of its land."
           },
           {
             "speaker": "bianca",
@@ -4439,6 +4549,20 @@
           {
             "speaker": null,
             "text": "Лео перечеркнул слово «неиспользуемый» и оставил место для фактического маршрута."
+          },
+          {
+            "speaker": null,
+            "text": "Он внёс конфликт в отчёт и оставил в нём фактический маршрут, прежде чем отправить обновлённую версию.",
+            "when": {
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Он записал запрос полного брифа в рабочий журнал и оставил отчёт на проверке, пока заказчик не объяснит условия.",
+            "when": {
+              "ep3SurveyAction": "hold"
+            }
           }
         ],
         "en": [
@@ -4469,6 +4593,20 @@
           {
             "speaker": null,
             "text": "Leo crossed out ‘unused’ and left room for the actual route."
+          },
+          {
+            "speaker": null,
+            "text": "He entered the conflict and the actual route in the report before sending the revised version.",
+            "when": {
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "He recorded the request for the full brief in the work log and held the report until the client explained the terms.",
+            "when": {
+              "ep3SurveyAction": "hold"
+            }
           }
         ]
       },
@@ -4702,6 +4840,36 @@
             "text": "Они говорили в кабинете, где между двумя стульями лежал отчёт Лео и старый снимок пирса. Рабочая папка не давала разговору превратиться в воспоминание без последствий."
           },
           {
+            "speaker": null,
+            "text": "После обхода Лео передал обновлённый отчёт Нике: конфликт с проходом уже был внесён в рабочий журнал.",
+            "when": {
+              "ep3SurveyChoice": "joined",
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "После обхода Лео передал рабочие наблюдения, но оставил отчёт закрытым до полного брифа; запрос он записал в журнал.",
+            "when": {
+              "ep3SurveyChoice": "joined",
+              "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Маршрут вошёл в отчёт как обязательное условие, а не как пожелание персонала.",
+            "when": {
+              "staffTrust": 3
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Обходной маршрут остался обязательным условием: менять линию можно только после проверки, что он действительно работает.",
+            "when": {
+              "staffTrust": 2
+            }
+          },
+          {
             "speaker": "nika",
             "text": "Восемь лет — это не пауза, Лео. Это восемь лет решений, принятых без меня."
           },
@@ -4760,6 +4928,36 @@
           {
             "speaker": null,
             "text": "They spoke in the office with Leo's report and the old pier photograph between them. The work folder kept the conversation from becoming a memory without consequences."
+          },
+          {
+            "speaker": null,
+            "text": "After the walkthrough, Leo handed Nika the revised report: the passage conflict was already in the work log.",
+            "when": {
+              "ep3SurveyChoice": "joined",
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "After the walkthrough, Leo handed over working observations but kept the report closed until the full brief arrived; he logged the request.",
+            "when": {
+              "ep3SurveyChoice": "joined",
+              "ep3SurveyAction": "hold"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "The route entered the report as a required condition, not a staff preference.",
+            "when": {
+              "staffTrust": 3
+            }
+          },
+          {
+            "speaker": null,
+            "text": "The detour remained a required condition: the line could change only after the workaround proved workable.",
+            "when": {
+              "staffTrust": 2
+            }
           },
           {
             "speaker": "nika",
@@ -4848,7 +5046,7 @@
           },
           {
             "speaker": "leo",
-            "text": "Сдам отчёт честно. И назову заказчика, когда смогу подтвердить это документом."
+            "text": "Сдам отчёт честно. И назову того, кто утвердил эти условия, когда смогу подтвердить это документом."
           },
           {
             "speaker": "nika",
@@ -4874,7 +5072,7 @@
           },
           {
             "speaker": "leo",
-            "text": "I will submit the report honestly. And I will name the client when I can support it with a document."
+            "text": "I will submit the report honestly. And I will name the person who approved these terms when I can support it with a document."
           },
           {
             "speaker": "nika",
@@ -5297,7 +5495,17 @@
           },
           {
             "speaker": "nika",
-            "text": "Он проводит для них обследование. Это факт. Объём их контроля нужно читать в документе, а не угадывать по прошлому Лео."
+            "text": "Он проводит для них обследование; это подтверждено приложением. Объём их контроля нужно читать в документе, а не угадывать по прошлому Лео.",
+            "when": {
+              "leoEvidence": "terms"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "У нас есть рабочая связь Лео с Aurea, но это ещё не подтверждённый объём их контроля. Его нужно читать в документе, а не угадывать по прошлому Лео.",
+            "when": {
+              "leoEvidence": "drawing"
+            }
           },
           {
             "speaker": "leo",
@@ -5341,7 +5549,17 @@
           },
           {
             "speaker": "nika",
-            "text": "He is surveying for them. That is a fact. We read the scope of their control in the document, not into Leo's past."
+            "text": "He is surveying for them; the appendix confirms that. We read the scope of their control in the document, not into Leo's past.",
+            "when": {
+              "leoEvidence": "terms"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "We have a working link between Leo and Aurea, but not a confirmed scope of their control. We read that in the document, not into Leo's past.",
+            "when": {
+              "leoEvidence": "drawing"
+            }
           },
           {
             "speaker": "leo",
@@ -5476,7 +5694,7 @@
           },
           {
             "speaker": "leo",
-            "text": "Если документ подтвердится, я отправлю исправленный отчёт не только заказчику, но и команде отеля.",
+            "text": "По проверенному приложению я отправлю исправленный отчёт не только заказчику, но и команде отеля.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5522,7 +5740,7 @@
           },
           {
             "speaker": "leo",
-            "text": "If the document is confirmed, I will send the corrected report to the hotel team, not only to the client.",
+            "text": "Using the verified appendix, I will send the corrected report to the hotel team, not only to the client.",
             "when": {
               "leoEvidence": "terms"
             }
