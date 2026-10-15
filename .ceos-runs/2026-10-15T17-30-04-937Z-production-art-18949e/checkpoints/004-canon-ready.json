@@ -1,0 +1,50 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-15T17:34:52.370Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Canon frozen for S22-S23; Web High analysis PASS with current reference pixels and no material pre-generation changes.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "cfedd6185c0b650fe4958d24c925948000eb24f0",
+    "clean": false,
+    "worktreeSha256": "9b68672094a527b40acc5261d78f8e489f980a7e60010c53f320f3befe6b3aab"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_FREEZE_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_FREEZE_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_FREEZE_20261015.json",
+      "type": "file",
+      "sha256": "d572af8d3dbbcf88c4e676fd321b5b8f4afcc7b65de6725c7166d2e502e6b753",
+      "size": 3047
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261015.json",
+      "type": "file",
+      "sha256": "f8057e525f77372e2962622fe5e8dd8007bf98dcd51075623e13357cafe254bd",
+      "size": 3242
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/briefs/S22-ep2-courtyard-rehearsal-recovery-20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\briefs\\S22-ep2-courtyard-rehearsal-recovery-20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/briefs/S22-ep2-courtyard-rehearsal-recovery-20261015.json",
+      "type": "file",
+      "sha256": "585ab03be7872859ef1f035757ec19969734a1f99a44b3a69ae3ec62d1414ad0",
+      "size": 5314
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\briefs\\S23-ep2-dining-rehearsal-response-recovery-20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261015.json",
+      "type": "file",
+      "sha256": "a5ac2128983e7ed678e5f52914c9bf59a45b4fb3b705ab996edc33fdae42305f",
+      "size": 5245
+    }
+  ]
+}
