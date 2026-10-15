@@ -47,3 +47,20 @@ keep the independent art acceptance, save/runtime/route/locale gates and
 official Yandex release requirements. It does not authorize publication,
 submission to moderation, or fake release evidence. Do not edit managed
 `.starter-kit/core/CONCEPT_PROOF_GATE.md` for this local exception.
+
+## Stage 9.4 native CG dimensions versus runtime viewports
+
+For EP2–EP3, the project-owned dimension contract is
+`config/production-art-dimensions.json`: native source portrait PNG
+`1024×1536`, independent landscape PNG `1672×941` (near 16:9).
+`1920×1080` is a CEOS desktop **target** and a runtime capture viewport,
+not a mandatory exact raster size for each native Image Gen output.
+CEOS `docs/NARRATIVE_DUAL_FORMAT_ART.md` accepts landscape from
+`1280×720` near 16:9; the project keeps the stricter known native
+`1672×941` pixel check via `ceos art-output-verify --width 1672 --height 941`.
+Do not alter the global CEOS gate, crop, resize, upscale, or stretch an image
+to satisfy a mismatch. Separate full-scene portrait/landscape compositions,
+real PNG/hash verification, runtime framing and independent pixel-based Web High
+V2 acceptance remain mandatory. Preserve the original S19 failed receipt
+unaltered; rerun actual preserved S19 landscape bytes under the corrected
+specification and persist a **new** output-gate receipt before admitting art.
