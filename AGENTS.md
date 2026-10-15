@@ -80,6 +80,18 @@ Before mass content or meta-system production, follow
 authorizes manual review. Production requires `CONTINUE_PRODUCTION`; an explicit
 `STOP_PROJECT` activates `$project-termination` and ends product repair loops.
 
+**Project-specific owner decision (2026-10-15):** For Season of Broken Hearts
+the owner explicitly authorized full-season EP2–EP10 production and accepted
+the risk of missing three independent blind-playtest sessions. Read
+`artifacts/concept-proof/FULL_SEASON_OWNER_DECISION_2026-10-15.md` and
+`PROJECT_RULES.md` before treating the old EP1 pilot decision as a blocker.
+This is a documented waiver of the *pre-production timing condition only*:
+`CONTINUE_PRODUCTION` for the season is authorized while
+`BLIND_PLAYTEST_FORMAL_PASS = NOT_ATTESTED` and
+`AWAITING_BLIND_PLAYTEST` remain true. Never fabricate human observations or
+claim concept-proof formal PASS. All technical, art, narrative, Yandex,
+publication and release barriers are unchanged.
+
 Maximum three materially different fix attempts for one root cause. Then create `artifacts/ESCALATION_REPORT.md`.
 
 ## Failure memory

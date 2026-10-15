@@ -20,3 +20,30 @@ Project-owned extension point. Add game-specific architecture, protected systems
   force until real assets, provenance and current-runtime pixel evidence exist.
 - Save schema changes require a migration or a deterministic safe reset; Back
   always restores a complete pre-command state snapshot.
+
+## Full-season concept-proof owner exception (2026-10-15)
+
+The project owner explicitly accepted the risk of missing independent EP1
+blind-playtest sessions and authorized `CONTINUE_PRODUCTION` for EP2–EP10.
+Authoritative owner record:
+`artifacts/concept-proof/FULL_SEASON_OWNER_DECISION_2026-10-15.md`.
+
+This is a project-specific **waiver of the requirement to finish the
+three-person blind playtest before mass content production**, not a claim that
+the playtest was passed. `BLIND_PLAYTEST_FORMAL_PASS` remains
+`NOT_ATTESTED` and the observation ledger remains
+`AWAITING_BLIND_PLAYTEST`. The 2026-10-13 `EP1_DECISION.md` is historical;
+its EP1-only authorization scope is superseded by the newer decision.
+
+For Stage 9, accept the newer `CONTINUE_PRODUCTION` owner decision and
+proceed with full-season architecture, narrative, route implementation, and
+production under unchanged technical/narrative/visual quality gates.
+Do not block *solely* for the absent three reader sessions or the earlier
+EP1 pilot limit. Do not amend historical playtest sessions, erase missing
+evidence, infer reader comprehension, or claim product validation PASS.
+
+This override is narrower than the overall Starter Kit quality rules:
+keep the independent art acceptance, save/runtime/route/locale gates and
+official Yandex release requirements. It does not authorize publication,
+submission to moderation, or fake release evidence. Do not edit managed
+`.starter-kit/core/CONCEPT_PROOF_GATE.md` for this local exception.
