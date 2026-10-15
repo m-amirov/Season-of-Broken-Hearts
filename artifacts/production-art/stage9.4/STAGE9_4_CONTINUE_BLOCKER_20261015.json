@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "stage": "9.4",
+  "status": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+  "runId": "2026-10-15T13-30-16-951Z-production-art-a03477",
+  "project": "Season of Broken Hearts",
+  "branch": "codex/stage9-full-season-architecture",
+  "head": "94d925b1f14767ba74808e18e5e7ef2b03379235",
+  "draftPr": 6,
+  "ceos": {
+    "installedVersion": "0.5.20",
+    "selfTest": {"tests": 282, "passed": 282, "failed": 0},
+    "largeTraceFix": "0.5.19 incremental JSONL scanning with original-byte SHA-256"
+  },
+  "recoveryEvidence": {
+    "integrityDrift": {
+      "path": "artifacts/production-art/stage9.4/ART_INVENTORY.md",
+      "checkpointSha256": "6810fa4bc8638e7ade1b8c01a1c44d2fe0075c0ca4a200369d0878538ee03b72",
+      "restored": true,
+      "method": "restored the two trailing Markdown spaces required by checkpoint bytes"
+    },
+    "originalTerraTrace": {
+      "path": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T16-41-47-01a13fcc-2b4d-7661-a857-ddd17aab55c5.jsonl",
+      "bytes": 45526815,
+      "sizeMiB": 43.42,
+      "routeCheck": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+      "sha256": "f1c6cd4d7923f43e614bccb7395c0967c13064683660a009a2c771366790d96f",
+      "generationCapability": "NOT_VERIFIED"
+    },
+    "freshCapabilityChallenge": {
+      "challengeId": "cap-e10a614d82299c5d39fc",
+      "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+      "turnId": "01a14087-f5e7-7cb1-b8f6-10244ccbed92",
+      "presence": "PRESENT",
+      "serviceAvailability": "UNKNOWN",
+      "observedTool": "image_gen.imagegen",
+      "generationAllowed": true
+    }
+  },
+  "blockedAction": {
+    "action": "PRODUCE_BOUNDED_ART_BATCH",
+    "batch": [
+      "S22 ep2-courtyard-rehearsal-cg portrait+landscape",
+      "S23 ep2-dining-rehearsal-response-cg portrait+landscape"
+    ],
+    "childTrace": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T20-13-13-01a1408d-bcf7-74c2-9ad8-3a90190f0854.jsonl",
+    "childTraceBytes": 735159,
+    "childRouteCheck": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+    "boundRunParentSessionId": "01a13fbf-2911-7841-b352-e3a21b3fce4d",
+    "currentParentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "rootCause": "The persisted run is bound to the previous parent session; the current-turn Terra child is a genuine child but cannot satisfy that immutable run parent binding.",
+    "pngsCreated": 0,
+    "outputGateReceiptsCreated": 0,
+    "leaseReleased": true,
+    "imageGenerationInvoked": false
+  },
+  "coverage": {
+    "acceptedPairs": 3,
+    "remainingPairs": 22,
+    "remainingPngs": 44,
+    "repeatedAcceptedScenes": [],
+    "newCandidateAttempts": 0
+  },
+  "classification": "INFRASTRUCTURE_BLOCKER",
+  "nextSafeAction": "Create an explicitly linked recovery production-art run bound to the current parent session, or resume from the original bound parent session; do not alter the immutable run parent binding and do not generate under the parent model."
+}
