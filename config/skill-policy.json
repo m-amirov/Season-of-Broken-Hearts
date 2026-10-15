@@ -47,7 +47,7 @@
     "singleFinalTaskBarrier": true,
     "repeatGreenChecksWithoutStateChange": "forbidden",
     "conceptProofRequiredBeforeProduction": true,
-    "blindPlaytestRequiredBeforeMassContent": true,
+    "blindPlaytestRequiredBeforeMassContent": false,
     "stopProjectIsTerminal": true,
     "testHarnessAdjudicationRequired": true,
     "screenshotVisualGateRequiredForProductionVisiblePasses": true,
@@ -237,5 +237,24 @@
       ],
       "activation": "explicit game-owned opt-in only"
     }
-  ]
+  ],
+  "projectOwnerExceptions": {
+    "conceptProofBeforeMassProduction": {
+      "decision": "CONTINUE_PRODUCTION",
+      "exceptionCode": "OWNER_ACCEPTED_BLIND_PLAYTEST_RISK_2026_10_15",
+      "decisionRecord": "artifacts/concept-proof/FULL_SEASON_OWNER_DECISION_2026-10-15.md",
+      "scope": "EP2–EP10 full-season production, not release",
+      "blindPlaytestFormalPass": "NOT_ATTESTED",
+      "observationStatus": "AWAITING_BLIND_PLAYTEST",
+      "waives": [
+        "blindPlaytestRequiredBeforeMassContent"
+      ],
+      "retainedGates": [
+        "conceptProofRequiredBeforeProduction",
+        "screenshotVisualGateRequiredForProductionVisiblePasses",
+        "yandexRequirementsMayNotBeWeakened",
+        "mandatoryEvidenceForRelease"
+      ]
+    }
+  }
 }
