@@ -4803,7 +4803,21 @@
         "ru": [
           {
             "speaker": null,
-            "text": "Они говорили в кабинете, где между двумя стульями лежал отчёт Лео и старый снимок пирса. Рабочая папка не давала разговору превратиться в воспоминание без последствий."
+            "text": "Они говорили в кабинете, где между двумя стульями лежала рабочая папка и старый снимок пирса. Папка не давала разговору превратиться в воспоминание без последствий."
+          },
+          {
+            "speaker": null,
+            "text": "На столе лежал обновлённый отчёт Лео, уже переданный Нике после обхода.",
+            "when": {
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "На столе лежала черновая папка с рабочими наблюдениями; итоговый отчёт оставался закрыт до полного брифа.",
+            "when": {
+              "ep3SurveyAction": "hold"
+            }
           },
           {
             "speaker": null,
@@ -4893,7 +4907,21 @@
         "en": [
           {
             "speaker": null,
-            "text": "They spoke in the office with Leo's report and the old pier photograph between them. The work folder kept the conversation from becoming a memory without consequences."
+            "text": "They spoke in the office with a work folder and the old pier photograph between them. The folder kept the conversation from becoming a memory without consequences."
+          },
+          {
+            "speaker": null,
+            "text": "The updated report Leo had handed Nika after the walkthrough lay on the table.",
+            "when": {
+              "ep3SurveyAction": "report"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "A draft folder of working observations lay on the table; the final report remained closed until the full brief arrived.",
+            "when": {
+              "ep3SurveyAction": "hold"
+            }
           },
           {
             "speaker": null,
@@ -5348,7 +5376,7 @@
         "ru": [
           {
             "speaker": null,
-            "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией письма Бьянки, сохранённой в архивном журнале. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
+            "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией письма Бьянки, зарегистрированной в журнале входящих писем за ту же дату. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5382,7 +5410,7 @@
         "en": [
           {
             "speaker": null,
-            "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against Bianca's copy preserved in the archive log. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
+            "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against Bianca's copy registered in the incoming-mail log under the same date. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.",
             "when": {
               "leoEvidence": "terms"
             }
@@ -5717,6 +5745,38 @@
             }
           },
           {
+            "speaker": null,
+            "text": "Ника записала передачу приложения в журнале: следующий обход начнётся с проверенных условий.",
+            "when": {
+              "leoEvidence": "terms",
+              "hotelEvidence": "public"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Ника оставила в журнале отметку о совместной проверке; команда получит условия после согласования с Маттео.",
+            "when": {
+              "leoEvidence": "terms",
+              "fundingEvidence": 3
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Ника пометила рабочую версию как гипотезу и записала, что команда получила её только с этой оговоркой.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 2
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Ника оставила в журнале отметку о сохранении гипотезы у Маттео до проверки.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 1
+            }
+          },
+          {
             "speaker": "leo",
             "text": "Если это останется только отметкой, я не назову её доказательством ради удобного вывода.",
             "when": {
@@ -5808,6 +5868,38 @@
           {
             "speaker": "leo",
             "text": "I left the working lead with Matteo until it could be checked, so a hypothesis would not become a public accusation.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 1
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Nika recorded the appendix handoff in the log: the next walkthrough would begin from verified terms.",
+            "when": {
+              "leoEvidence": "terms",
+              "hotelEvidence": "public"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Nika left a joint-review note in the log; the team would receive the terms after Matteo's review.",
+            "when": {
+              "leoEvidence": "terms",
+              "fundingEvidence": 3
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Nika marked the working lead as a hypothesis and recorded that the team received it with that qualification.",
+            "when": {
+              "leoEvidence": "drawing",
+              "staffTrust": 2
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Nika recorded that the working lead remained with Matteo until it could be checked.",
             "when": {
               "leoEvidence": "drawing",
               "staffTrust": 1

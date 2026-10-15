@@ -324,7 +324,9 @@
       "assetId": "ep3-eight-years-cg",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "Они говорили в кабинете, где между двумя стульями лежал отчёт Лео и старый снимок пирса. Рабочая папка не давала разговору превратиться в воспоминание без последствий."},
+          {"speaker": null, "text": "Они говорили в кабинете, где между двумя стульями лежала рабочая папка и старый снимок пирса. Папка не давала разговору превратиться в воспоминание без последствий."},
+          {"speaker": null, "text": "На столе лежал обновлённый отчёт Лео, уже переданный Нике после обхода.", "when": {"ep3SurveyAction": "report"}},
+          {"speaker": null, "text": "На столе лежала черновая папка с рабочими наблюдениями; итоговый отчёт оставался закрыт до полного брифа.", "when": {"ep3SurveyAction": "hold"}},
           {"speaker": null, "text": "После обхода Лео передал обновлённый отчёт Нике: конфликт с проходом уже был внесён в отчёт и отдельно отмечен в рабочем журнале.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "report"}},
           {"speaker": null, "text": "После обхода Лео передал рабочие наблюдения, но оставил отчёт закрытым до полного брифа; запрос он записал в журнал.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "hold"}},
           {"speaker": null, "text": "Маршрут вошёл в отчёт как обязательное условие, а не как пожелание персонала.", "when": {"staffTrust": 3}},
@@ -343,7 +345,9 @@
           {"speaker": null, "text": "Ника оставила отчёт закрытым до полной проверки. Его честность не превращала рабочий документ в индульгенцию.", "when": {"ep3SurveyAction": "hold"}}
         ],
         "en": [
-          {"speaker": null, "text": "They spoke in the office with Leo's report and the old pier photograph between them. The work folder kept the conversation from becoming a memory without consequences."},
+          {"speaker": null, "text": "They spoke in the office with a work folder and the old pier photograph between them. The folder kept the conversation from becoming a memory without consequences."},
+          {"speaker": null, "text": "The updated report Leo had handed Nika after the walkthrough lay on the table.", "when": {"ep3SurveyAction": "report"}},
+          {"speaker": null, "text": "A draft folder of working observations lay on the table; the final report remained closed until the full brief arrived.", "when": {"ep3SurveyAction": "hold"}},
           {"speaker": null, "text": "After the walkthrough, Leo handed Nika the revised report: the passage conflict was already in the report and separately recorded in the work log.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "report"}},
           {"speaker": null, "text": "After the walkthrough, Leo handed over working observations but kept the report closed until the full brief arrived; he logged the request.", "when": {"ep3SurveyChoice": "joined", "ep3SurveyAction": "hold"}},
           {"speaker": null, "text": "The route entered the report as a required condition, not a staff preference.", "when": {"staffTrust": 3}},
@@ -513,14 +517,14 @@
       "assetId": "ep3-document-check-response-cg",
       "dialogue": {
         "ru": [
-          {"speaker": null, "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией письма Бьянки, сохранённой в архивном журнале. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.", "when": {"leoEvidence": "terms"}},
+          {"speaker": null, "text": "Ника открыла приложение на общем экране и сверила подпись, номер приложения и сторону заказа с копией письма Бьянки, зарегистрированной в журнале входящих писем за ту же дату. В приложении Aurea была указана стороной заказа, а Лео — ответственным за обследование западного крыла; служебный проход был отмечен как объект оптимизации.", "when": {"leoEvidence": "terms"}},
           {"speaker": "leo", "text": "Теперь это документ, а не удобная версия.", "when": {"leoEvidence": "terms"}},
           {"speaker": null, "text": "Ника сохранила совпадающую дату и отметку в рабочем журнале, но не назвала их доказательством условий. Полный текст ещё должен пройти проверку.", "when": {"leoEvidence": "drawing"}},
           {"speaker": "leo", "text": "Я не буду делать из рабочей версии вывод, который она пока не выдерживает.", "when": {"leoEvidence": "drawing"}},
           {"speaker": "nika", "text": "Теперь Маттео получит ровно тот объём, который мы можем подтвердить."}
         ],
         "en": [
-          {"speaker": null, "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against Bianca's copy preserved in the archive log. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.", "when": {"leoEvidence": "terms"}},
+          {"speaker": null, "text": "Nika opened the appendix on a shared screen and matched the signature, appendix number, and contracting party against Bianca's copy registered in the incoming-mail log under the same date. The appendix named Aurea as the contracting party and Leo as responsible for surveying the west wing; the service passage was marked for optimisation.", "when": {"leoEvidence": "terms"}},
           {"speaker": "leo", "text": "Now it is a document, not a convenient version.", "when": {"leoEvidence": "terms"}},
           {"speaker": null, "text": "Nika saved the matching date and mark in the work log, but did not call them proof of the terms. The full text still needed checking.", "when": {"leoEvidence": "drawing"}},
           {"speaker": "leo", "text": "I will not turn a working lead into a conclusion it cannot support yet.", "when": {"leoEvidence": "drawing"}},
@@ -618,6 +622,10 @@
           {"speaker": "leo", "text": "Проверенное приложение я оставил у Маттео для совместной проверки, не выдавая его за публичное решение.", "when": {"leoEvidence": "terms", "fundingEvidence": 3}},
           {"speaker": "leo", "text": "Рабочую версию я передал команде с пометкой «гипотеза»; Маттео не назвал её доказательством.", "when": {"leoEvidence": "drawing", "staffTrust": 2}},
           {"speaker": "leo", "text": "Рабочую версию я оставил у Маттео до проверки, чтобы гипотеза не стала общим обвинением.", "when": {"leoEvidence": "drawing", "staffTrust": 1}},
+          {"speaker": null, "text": "Ника записала передачу приложения в журнале: следующий обход начнётся с проверенных условий.", "when": {"leoEvidence": "terms", "hotelEvidence": "public"}},
+          {"speaker": null, "text": "Ника оставила в журнале отметку о совместной проверке; команда получит условия после согласования с Маттео.", "when": {"leoEvidence": "terms", "fundingEvidence": 3}},
+          {"speaker": null, "text": "Ника пометила рабочую версию как гипотезу и записала, что команда получила её только с этой оговоркой.", "when": {"leoEvidence": "drawing", "staffTrust": 2}},
+          {"speaker": null, "text": "Ника оставила в журнале отметку о сохранении гипотезы у Маттео до проверки.", "when": {"leoEvidence": "drawing", "staffTrust": 1}},
           {"speaker": "leo", "text": "Если это останется только отметкой, я не назову её доказательством ради удобного вывода.", "when": {"leoEvidence": "drawing"}},
           {"speaker": null, "text": "Лео кивнул и ушёл к западному крылу. Ника осталась у окна — с фотографией, рабочей папкой и ответом, который пока не требовал прощения."}
         ],
@@ -634,6 +642,10 @@
           {"speaker": "leo", "text": "I left the verified appendix with Matteo for joint review rather than presenting it as a public decision.", "when": {"leoEvidence": "terms", "fundingEvidence": 3}},
           {"speaker": "leo", "text": "I shared the working lead with the team marked as a hypothesis; Matteo did not call it proof.", "when": {"leoEvidence": "drawing", "staffTrust": 2}},
           {"speaker": "leo", "text": "I left the working lead with Matteo until it could be checked, so a hypothesis would not become a public accusation.", "when": {"leoEvidence": "drawing", "staffTrust": 1}},
+          {"speaker": null, "text": "Nika recorded the appendix handoff in the log: the next walkthrough would begin from verified terms.", "when": {"leoEvidence": "terms", "hotelEvidence": "public"}},
+          {"speaker": null, "text": "Nika left a joint-review note in the log; the team would receive the terms after Matteo's review.", "when": {"leoEvidence": "terms", "fundingEvidence": 3}},
+          {"speaker": null, "text": "Nika marked the working lead as a hypothesis and recorded that the team received it with that qualification.", "when": {"leoEvidence": "drawing", "staffTrust": 2}},
+          {"speaker": null, "text": "Nika recorded that the working lead remained with Matteo until it could be checked.", "when": {"leoEvidence": "drawing", "staffTrust": 1}},
           {"speaker": "leo", "text": "If it remains only a mark, I will not call it proof because a convenient conclusion wants one.", "when": {"leoEvidence": "drawing"}},
           {"speaker": null, "text": "Leo nodded and returned to the west wing. Nika stayed by the window with the photograph, the work folder, and an answer that did not require forgiveness yet."}
         ]
