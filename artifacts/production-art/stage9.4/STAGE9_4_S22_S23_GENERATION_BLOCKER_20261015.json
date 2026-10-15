@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_S22_S23_GENERATION_BLOCKER",
+  "status": "BLOCKED_ART_OUTPUT",
+  "recordedAt": "2026-10-15T17:42:00Z",
+  "runId": "2026-10-15T17-30-04-937Z-production-art-18949e",
+  "linkedFromRunId": "2026-10-15T13-30-16-951Z-production-art-a03477",
+  "sourceHeadBeforeGeneration": "eee9e7e629c1a3ce1a5a474798a793f601cf3fe2",
+  "producerRoute": {
+    "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "agentId": "01a140a2-6a03-78a3-aa84-2c641f092d5e",
+    "parentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "agentRole": "ceos_asset_generator",
+    "actualModel": "gpt-5.6-terra",
+    "actualEffort": "medium",
+    "traceFile": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T20-35-48-01a140a2-6a03-78a3-aa84-2c641f092d5e.jsonl",
+    "traceSha256": "dd5a0a9437e9a9726fb8c1ac854fa0def564463ed82f2a80a0e71b35c03509b2"
+  },
+  "capability": {
+    "attestation": ".ceos-runs/2026-10-15T17-30-04-937Z-production-art-18949e/capability-attestation/image-generation.json",
+    "attestationSha256": "d690b912e4244866e9a18f76bbE7ED3577f1402feb50735fdDF18C8D69d60197",
+    "challengeId": "cap-f0305594b8fd22dbe6a9",
+    "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "turnId": "01a1409f-0a07-7080-a25a-38cc3da4f079",
+    "trustedForGeneration": true,
+    "generationAllowed": true,
+    "observedTool": "image_gen.imagegen"
+  },
+  "failedOutput": {
+    "pairId": "S22",
+    "format": "portrait",
+    "expectedProjectPath": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+    "expectedDimensions": "1024x1536",
+    "externalGeneratedPath": "C:/Users/user/.codex/generated_images/01a140a2-6a03-78a3-aa84-2c641f092d5e/exec-a1108883-d8f1-4fd8-85ee-3cb3da923d81.png",
+    "externalBytes": 2726336,
+    "externalSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "externalFileObserved": true,
+    "outputReceipt": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-20261015.json",
+    "outputReceiptSha256": "a5b693295839d584d7e3795b12f052999340dea669fb1e19472d2cdca337c492",
+    "outputGateStatus": "BLOCKED_ART_OUTPUT",
+    "outputGateIssue": "ART_FILE_NOT_FOUND",
+    "reason": "Native Image Gen returned a real PNG outside the project, but child-side persistence to the declared project path did not execute."
+  },
+  "batchStop": {
+    "nextCallsNotIssued": ["S22 landscape", "S23 portrait", "S23 landscape"],
+    "imageGenerationInvocationsAfterFailure": 0,
+    "syntheticOrPlaceholderFilesCreated": 0,
+    "s19ToS21Touched": false,
+    "requiredAction": "Preserve the failed receipt and external original; do not claim S22 acceptance or continue generation from this terminal blocker."
+  },
+  "rootCause": "Producer route and current-turn capability trust passed, but the native generated image was not persisted into the project-owned output path before the mandatory CEOS output gate. This is an output transport/persistence blocker, not a parent binding or visual acceptance PASS.",
+  "provenanceNote": "The external PNG is recorded as an observed original only; it is not a project asset, output-gate PASS, runtime pixel receipt, or Web High acceptance receipt."
+}

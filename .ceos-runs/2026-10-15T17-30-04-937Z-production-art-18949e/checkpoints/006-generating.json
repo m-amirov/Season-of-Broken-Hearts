@@ -1,0 +1,60 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-15T17:43:12.459Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_ART_OUTPUT: trusted parent binding, Terra child route and current-turn Image Gen capability passed, but S22 portrait was not persisted to its project output path; CEOS stopped the batch before the remaining three calls.",
+  "metadata": {
+    "blockerCode": "BLOCKED_ART_OUTPUT",
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T20-35-48-01a140a2-6a03-78a3-aa84-2c641f092d5e.jsonl",
+    "producerTraceSha256": "dd5a0a9437e9a9726fb8c1ac854fa0def564463ed82f2a80a0e71b35c03509b2",
+    "generatedAssetCount": 1,
+    "integratedAssetCount": 0,
+    "newPngs": 0,
+    "newOutputReceipts": 0,
+    "failedOutputGate": "ART_FILE_NOT_FOUND",
+    "imageGenerationInvokedAfterFailure": 0
+  },
+  "source": {
+    "available": true,
+    "head": "eee9e7e629c1a3ce1a5a474798a793f601cf3fe2",
+    "clean": false,
+    "worktreeSha256": "1358c3f79b8ee8cbce94a59f003025337f97eb7ea647b18adbde04bbbee6161e"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_GENERATION_BLOCKER_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_GENERATION_BLOCKER_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_GENERATION_BLOCKER_20261015.json",
+      "type": "file",
+      "sha256": "d0f5b996854089f4e80c7cfbc19d744ea8485e678ef424cad40c726c643afdb9",
+      "size": 3178
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S22-portrait-art-output-20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-20261015.json",
+      "type": "file",
+      "sha256": "a5b693295839d584d7e3795b12f052999340dea669fb1e19472d2cdca337c492",
+      "size": 341
+    },
+    {
+      "input": ".ceos-runs/2026-10-15T17-30-04-937Z-production-art-18949e/capability-attestation/image-generation.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-15T17-30-04-937Z-production-art-18949e\\capability-attestation\\image-generation.json",
+      "projectRelativePath": ".ceos-runs/2026-10-15T17-30-04-937Z-production-art-18949e/capability-attestation/image-generation.json",
+      "type": "file",
+      "sha256": "d690b912e4244866e9a18f76bbe7ed3577f1402feb50735fddf18c8d69d60197",
+      "size": 526
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261015.json",
+      "type": "file",
+      "sha256": "f8057e525f77372e2962622fe5e8dd8007bf98dcd51075623e13357cafe254bd",
+      "size": 3242
+    }
+  ]
+}
