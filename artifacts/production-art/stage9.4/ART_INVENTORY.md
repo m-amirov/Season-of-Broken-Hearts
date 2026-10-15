@@ -1,8 +1,8 @@
 # Stage 9.4 Production Art Inventory — EP2–EP3
 
-Статус inventory: `PASS_STAGE9_4_ART_INVENTORY`
+Статус inventory: `PASS_STAGE9_4_ART_INVENTORY_OPTIMIZED`
 
-Source HEAD: `e0e79d98e18984a0cce59a7356425458824f3e9b`  
+Source HEAD: `5ac58032d314103059977014c8168988529b9f6f`
 Editorial evidence: EP2/EP3 authored hashes and canon hashes match the current checkout. The independent Stage 9.3.2 receipts cover targeted changed scopes only; they are not reused as art acceptance.
 
 ## Coverage
@@ -57,6 +57,17 @@ All static dialogue beats with authored characters use unified full-scene CG fam
 | `ep3-office-aurea-transition-cg` | 3 | `ep3_transition` | pair | Bianca, Aurea record and west-wing light establish the next question |
 
 Machine-readable scene/family mapping, reasons and source hashes are in [`ART_REUSE_MATRIX.json`](./ART_REUSE_MATRIX.json).
+
+## Recovery optimization decision
+
+The inventory remains at 24 visual families and 25 dual-format pairs after a
+fresh current-HEAD review. Seven immediate continuation rows reuse an already
+planned family; the two public-gesture states remain separate conditional
+pairs because they encode opposite physical actions. No EP1 pair is reused:
+the checked EP1 compositions do not simultaneously match the EP2–EP3 cast,
+wardrobe, time, location and authored action. This is the smallest truthful
+scope without replacing authored full-scene beats with sprites or changing the
+accepted script.
 
 ## Protected invariants
 

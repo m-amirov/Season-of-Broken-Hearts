@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "stage": "9.4",
-  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
   "sourceHashes": {
     "narrative/episodes/ep-02.json": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
     "narrative/episodes/ep-03.json": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
@@ -31,7 +31,8 @@
     "noNewArtRows": 7,
     "productionPairsPlanned": 25,
     "plannedPngFiles": 50,
-    "visualAcceptance": "NOT_VERIFIED"
+    "visualAcceptance": "NOT_VERIFIED",
+    "optimizationDecision": "24 families / 25 pairs retained: 7 continuation rows reuse a family; 2 opposite consent states remain distinct; 0 EP1 pairs qualify for reuse under cast, wardrobe, location, time and action constraints."
   },
   "scenes": [
     {"sceneId":"ep2_morning_brief","episode":2,"narrativeCue":"Day 2 morning office briefing; wedding schedule, duplicate linen invoices and Nika's work role are established.","existingAsset":null,"decision":"NEW_CG","newFamilyId":"ep2-office-morning-brief-cg","reason":"EP1 office art has only Nika and Matteo in a different day/context; this authored beat requires Giulia, wedding planning materials and morning continuity."},

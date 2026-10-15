@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-service-inventory-cg.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+  "bytes": 2365508,
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "alpha": {
+    "opaque": 1572864,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1572864,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 1536
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-15T13:54:25.941Z"
+}

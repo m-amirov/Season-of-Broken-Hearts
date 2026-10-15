@@ -1,0 +1,1387 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE9_4_RUNTIME_VISUAL_CAPTURE",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "baseUrl": "http://127.0.0.1:4174/",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 1920,
+      "height": 900
+    },
+    {
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 430,
+      "height": 932
+    }
+  ],
+  "routes": [
+    {
+      "route": "transparent-budget",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "temporary-budget",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "transparent-budget",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "temporary-budget",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "transparent-budget",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "temporary-budget",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "transparent-budget",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "temporary-budget",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "transparent-budget",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "temporary-budget",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "transparent-budget",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "temporary-budget",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "sceneCount": 17,
+      "capturedScenes": [
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory"
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "captures": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x1080/transparent-budget/ep2_morning_brief.png",
+      "screenshotSha256": "34593ac7a01e722597a001d4dd521d7d585fc5e60a4e02355555cb6806a0b60f",
+      "screenshotBytes": 2464659,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x1080/transparent-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "86b3874c14279af73a6eac8b08eaa146869eca48855d38c9314e9f3f5ab60b11",
+      "screenshotBytes": 2394926,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x1080/transparent-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "201cb169aad97164730cbed504b816b82842709d43be690dbb979d2d88872283",
+      "screenshotBytes": 2331868,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x1080/temporary-budget/ep2_morning_brief.png",
+      "screenshotSha256": "34593ac7a01e722597a001d4dd521d7d585fc5e60a4e02355555cb6806a0b60f",
+      "screenshotBytes": 2464659,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x1080/temporary-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "86b3874c14279af73a6eac8b08eaa146869eca48855d38c9314e9f3f5ab60b11",
+      "screenshotBytes": 2394926,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x1080/temporary-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "201cb169aad97164730cbed504b816b82842709d43be690dbb979d2d88872283",
+      "screenshotBytes": 2331868,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/transparent-budget/ep2_morning_brief.png",
+      "screenshotSha256": "42129b2fcbf4362afc5069caad534d223558c1e455be41a9cd9a85b8c38b5299",
+      "screenshotBytes": 2088147,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/transparent-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "c0f80c4b8b6b93af44d25cea36f9ad13dfe9e9c9927e1fb7581b48f3dbb2daca",
+      "screenshotBytes": 2036623,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/transparent-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "141f27f4a17d3da7efb3f71d074a561a17d9245e03cd4839f4e8fdce126a2f35",
+      "screenshotBytes": 1963804,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/temporary-budget/ep2_morning_brief.png",
+      "screenshotSha256": "61d7f6c305ee98e7725be7bd9af5879bf6b69a1b7438794ef83e114891622ee6",
+      "screenshotBytes": 2088169,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/temporary-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "2024f9f0405afdf86c386c6fe1a717e3bb809f0e39a5052503563e0dc4241d3f",
+      "screenshotBytes": 2036613,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/temporary-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "88187ffa0fc9c1a3baa7a1ffec4441debb4bb0f6546a1f857e51a34b12634311",
+      "screenshotBytes": 1963844,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1600x900/transparent-budget/ep2_morning_brief.png",
+      "screenshotSha256": "214e4b2f55caaca6c112d8a550fba1020eba3a60d121534f09481b1c25af5b3e",
+      "screenshotBytes": 1827328,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1600x900/transparent-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "f388010528a8b11a56ae7e8ce24e9729350655b6f717e3581b7f8e6be8e154a5",
+      "screenshotBytes": 1789396,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1600x900/transparent-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "4b77cb46700fb259d93ab3d89cddad2e68a096ea541e462db97e344fea8662d0",
+      "screenshotBytes": 1727429,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1600x900/temporary-budget/ep2_morning_brief.png",
+      "screenshotSha256": "c547796a1330be7023fbf932e97822ca637f0e8ee8365e37a7bd75e56a00f088",
+      "screenshotBytes": 1827355,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1600x900/temporary-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "a184375d7963b067663c27840f0a3ba22ab8f41ddeda2d62021c4181035fe804",
+      "screenshotBytes": 1789434,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "landscape",
+      "source": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/1600x900/temporary-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "865c0c36738e48245a74a642a10a359868148ae568e129e70c93781494b6bf91",
+      "screenshotBytes": 1727401,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/390x844/transparent-budget/ep2_morning_brief.png",
+      "screenshotSha256": "071a189f99307a748b7513fcc689b95286979509fc1997497515824d411cc4b2",
+      "screenshotBytes": 474077,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-budget-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/390x844/transparent-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "80343f92148a305d2254c2677dc0dbd8bfec557a1217c38f3434c1233f2fb388",
+      "screenshotBytes": 469754,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-service-inventory-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/390x844/transparent-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "14e88cbbe1b4cf0d44a576748ce833e3ed30a115cd205cf6f2bad0be9c348b98",
+      "screenshotBytes": 440517,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/390x844/temporary-budget/ep2_morning_brief.png",
+      "screenshotSha256": "363d17cf037f525befca9f839a3c155315768ecba9e89901e0166c858adfac90",
+      "screenshotBytes": 474072,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-budget-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/390x844/temporary-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "e9cc37a5cc4a98d140c13104e7497ccdb1f66ab5b5f0730ea98e7779218143a8",
+      "screenshotBytes": 469851,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-service-inventory-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/390x844/temporary-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "bf5155eec8968975f484f1445df151b02265cdfbc06e1f194a0cb9a880bdbbba",
+      "screenshotBytes": 440522,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/360x640/transparent-budget/ep2_morning_brief.png",
+      "screenshotSha256": "4a8c97d0059d39173786bb4b18f3ca7ae1b986a36921fb96a96e1e5b6987827e",
+      "screenshotBytes": 349072,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-budget-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/360x640/transparent-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "10de2d740254c82d984a42f5686d410eb9af297a59ccc9f9501ef29fb90d6785",
+      "screenshotBytes": 347343,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-service-inventory-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/360x640/transparent-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "2acf2b1c41f8d98540318a10fff7af696183ac691421ab4b6ee5a0516eba247f",
+      "screenshotBytes": 325194,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/360x640/temporary-budget/ep2_morning_brief.png",
+      "screenshotSha256": "f3ce350d617c1612ebb463163867f7c8b56ee8d5ab60f5e9b3c6d9943a060b43",
+      "screenshotBytes": 349050,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-budget-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/360x640/temporary-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "a3c320d29496a6481ddb02f5679a8df1d78c01f654bbbaf121f93305367fa753",
+      "screenshotBytes": 347340,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-service-inventory-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/360x640/temporary-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "645d9dd9364374ca999ec979b091388e45944ab4225bdad721276be6047bc967",
+      "screenshotBytes": 325186,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/430x932/transparent-budget/ep2_morning_brief.png",
+      "screenshotSha256": "89e5b4ebd13715c60978f99d89ba8d42f120c1204567b2febe132b43ab410156",
+      "screenshotBytes": 568773,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-budget-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/430x932/transparent-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "64396157f217e38d91f59ec0d7ce9f295f4134f814998d7ecfa6bf04c2e2d090",
+      "screenshotBytes": 561171,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "transparent-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-service-inventory-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/430x932/transparent-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "505dbc633cb54451ff8a7465c22fd5352d78168f210ef06c2671f6666a3aa689",
+      "screenshotBytes": 528800,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/430x932/temporary-budget/ep2_morning_brief.png",
+      "screenshotSha256": "89e5b4ebd13715c60978f99d89ba8d42f120c1204567b2febe132b43ab410156",
+      "screenshotBytes": 568773,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-office-budget-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/430x932/temporary-budget/ep2_wedding_budget.png",
+      "screenshotSha256": "7bf22cb11649f186eb9920aa2fbd8042b399cfb9c21da5ba0bba1adb3ef2dae9",
+      "screenshotBytes": 561208,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "temporary-budget",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "format": "portrait",
+      "source": "/assets/production/cg/ep2-service-inventory-cg.png",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/stage9.4-ep2-runtime/430x932/temporary-budget/ep2_workday_inventory.png",
+      "screenshotSha256": "505dbc633cb54451ff8a7465c22fd5352d78168f210ef06c2671f6666a3aa689",
+      "screenshotBytes": 528800,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    }
+  ],
+  "transitionChecks": {
+    "back": {
+      "before": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 0
+      },
+      "afterAdvance": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 1
+      },
+      "afterBack": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 0
+      },
+      "restored": true
+    },
+    "newGame": {
+      "cursor": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 0
+      },
+      "resetToStart": true
+    },
+    "locale": {
+      "htmlLang": "ru",
+      "title": "Сезон разбитых сердец"
+    }
+  },
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

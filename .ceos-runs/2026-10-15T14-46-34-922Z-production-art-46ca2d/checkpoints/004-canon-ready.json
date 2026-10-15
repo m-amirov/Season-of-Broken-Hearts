@@ -1,0 +1,83 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-15T14:47:58.875Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "canon": {
+      "artBible": "artifacts/art-direction/ART_BIBLE.md",
+      "visualLanguage": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "prohibitedPatterns": "artifacts/art-direction/PROHIBITED_PATTERNS.md",
+      "contactSheet": "artifacts/production-art/character-reference-contact-sheet.png"
+    },
+    "webAnalysis": {
+      "reviewId": "S19-STAGE9.4-NARRATIVE_ART_ACCEPTANCE_V2-20261015",
+      "actualPixelsReceived": true,
+      "status": "PASS",
+      "p0": 0,
+      "p1": 0,
+      "p2Advisory": 2
+    },
+    "s19Brief": "artifacts/production-art/stage9.4/briefs/S19-ep2-office-morning-brief-recovery.json",
+    "sourceHead": "5ac58032d314103059977014c8168988529b9f6f"
+  },
+  "source": {
+    "available": true,
+    "head": "5ac58032d314103059977014c8168988529b9f6f",
+    "clean": false,
+    "worktreeSha256": "89ef27f828ed4e20c675675ecc1e88f9a994707fc7d987faf88be836e28ab1c6"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/art-direction/ART_BIBLE.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\art-direction\\ART_BIBLE.md",
+      "projectRelativePath": "artifacts/art-direction/ART_BIBLE.md",
+      "type": "file",
+      "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96",
+      "size": 16037
+    },
+    {
+      "input": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\art-direction\\VISUAL_LANGUAGE.json",
+      "projectRelativePath": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "type": "file",
+      "sha256": "a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785",
+      "size": 2356
+    },
+    {
+      "input": "artifacts/art-direction/PROHIBITED_PATTERNS.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\art-direction\\PROHIBITED_PATTERNS.md",
+      "projectRelativePath": "artifacts/art-direction/PROHIBITED_PATTERNS.md",
+      "type": "file",
+      "sha256": "ae309acb607139b2cc1ca0dcba18d0c20281231d5b702e7ab86766669d141071",
+      "size": 1653
+    },
+    {
+      "input": "artifacts/production-art/character-reference-contact-sheet.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\character-reference-contact-sheet.png",
+      "projectRelativePath": "artifacts/production-art/character-reference-contact-sheet.png",
+      "type": "file",
+      "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+      "size": 2570840
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/briefs/S19-ep2-office-morning-brief-recovery.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\briefs\\S19-ep2-office-morning-brief-recovery.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/briefs/S19-ep2-office-morning-brief-recovery.json",
+      "type": "file",
+      "sha256": "fb4da9239a0f82de457c24d140c6534dabf098caffd0de09e20c1d86a5f22a32",
+      "size": 5057
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/WEB_HIGH_V2_S19_SOURCE_CANON_REVIEW_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\WEB_HIGH_V2_S19_SOURCE_CANON_REVIEW_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/WEB_HIGH_V2_S19_SOURCE_CANON_REVIEW_20261015.json",
+      "type": "file",
+      "sha256": "7818c7e551305b12942c90812ea06cf14c9c493b9739cc21393c86d72829b431",
+      "size": 4376
+    }
+  ]
+}

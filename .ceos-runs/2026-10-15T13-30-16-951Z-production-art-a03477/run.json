@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.18",
+  "runId": "2026-10-15T13-30-16-951Z-production-art-a03477",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerParentSessionId": "01a13fbf-2911-7841-b352-e3a21b3fce4d",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-15T13-30-16-951Z-production-art-a03477",
+  "createdAt": "2026-10-15T13:30:16.953Z",
+  "updatedAt": "2026-10-15T14:39:23.172Z",
+  "completedAt": null,
+  "cycle": 1,
+  "maxCycles": 3,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "CANON_READY",
+  "nextStage": "GENERATING",
+  "verdict": null,
+  "stopReason": null,
+  "checkpointCount": 6,
+  "scopeSha256": "b1df043cb029e6de23a55a6876ed583d80d8062ea6b7508ea4e35ee76a624a26",
+  "capabilitiesSha256": "2a5761e898a98adb8b09c60d1ed8db66afd852743a617e0e425c18405b7c2c7c",
+  "sourceAtStart": {
+    "available": true,
+    "head": "5ac58032d314103059977014c8168988529b9f6f",
+    "clean": false,
+    "worktreeSha256": "e39a7a6b576a8b1ba9a9f6b1c7213693a3e1c03d6d03613ca03ed82e120e65b3"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviews": [
+      {
+        "schemaVersion": 1,
+        "reviewId": "S19-STAGE9.4-NARRATIVE_ART_ACCEPTANCE_V2-20261015",
+        "reviewTraceId": "01a13fc4-cf47-79c0-aad5-99f974c5da65",
+        "phase": "analysis",
+        "taskId": "01a13fc4-cf47-79c0-aad5-99f974c5da65",
+        "agent": "ceos_art_director_web",
+        "evidenceArtifact": {
+          "input": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S19_RECOVERY_RECHECK.json",
+          "projectRelativePath": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+          "type": "file",
+          "sha256": "116a85ec19dd8879098d6f0a0e76b5607e7dd97bcd74fc29ad36dbb068ceee01",
+          "size": 2181
+        },
+        "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+        "status": "PASS",
+        "assurance": "visual-content",
+        "actualPixelsReceived": true,
+        "evidenceRefs": [
+          "s19-portrait-1024x1536",
+          "s19-landscape-1672x941",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference"
+        ],
+        "receivedEvidenceRefs": [
+          "s19-portrait-1024x1536",
+          "s19-landscape-1672x941",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference"
+        ],
+        "reviewedItems": [
+          "s19-portrait-1024x1536",
+          "s19-landscape-1672x941",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference"
+        ],
+        "framesReviewed": 5,
+        "visualEvidence": [
+          {
+            "ref": "s19-portrait-1024x1536",
+            "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
+            "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+            "bytes": 2516178,
+            "pixelDimensions": "1024x1536",
+            "observation": "Portrait source pixels show all three required people in the Villa Serena office, the invoice gesture and neutral papers above the lower dialogue-safe region."
+          },
+          {
+            "ref": "s19-landscape-1672x941",
+            "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+            "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+            "bytes": 2506516,
+            "pixelDimensions": "1672x941",
+            "observation": "Landscape source pixels are an independent wide composition with readable faces, office depth, Matteo folder, Giulia paper and Nika's duplicate-order gesture."
+          },
+          {
+            "ref": "nika-reference",
+            "path": "assets/characters/references/originals/nika.png",
+            "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+            "bytes": 2493846,
+            "pixelDimensions": "1536x1024",
+            "observation": "Reference pixels establish Nika's face, hair, age impression and off-white linen continuity."
+          },
+          {
+            "ref": "matteo-reference",
+            "path": "assets/characters/references/originals/matteo.png",
+            "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+            "bytes": 2130673,
+            "pixelDimensions": "1448x1086",
+            "observation": "Reference pixels establish Matteo's face, dark hair, facial hair and restrained summer-work wardrobe."
+          },
+          {
+            "ref": "giulia-reference",
+            "path": "assets/characters/references/originals/giulia.png",
+            "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+            "bytes": 2409650,
+            "pixelDimensions": "1448x1086",
+            "observation": "Reference pixels establish Giulia's face, grey hair, sage work shirt and beige apron identity."
+          }
+        ],
+        "decision": "PASS_SOURCE_ART_CANON",
+        "findings": [
+          {
+            "id": "S19-P2-01",
+            "severity": "P2",
+            "status": "OPEN",
+            "category": "SOURCE_COMPOSITION_RISK",
+            "observation": "The invoice gesture and papers sit low in both source compositions; the landscape gesture is approximately 75-80% down the frame.",
+            "disposition": "ADVISORY_RUNTIME_CHECK_ONLY",
+            "materialPlayerImpact": false
+          },
+          {
+            "id": "S19-P2-02",
+            "severity": "P2",
+            "status": "OPEN",
+            "category": "WARDROBE_CONSISTENCY",
+            "observation": "The portrait apron bib and shoulder straps are less prominent than in the reference and landscape, but Giulia remains recognizable and the authored work role is preserved.",
+            "disposition": "ADVISORY_NO_REGENERATION",
+            "materialPlayerImpact": false
+          }
+        ],
+        "unresolved": [
+          "Current runtime dialogue overlay and responsive crop must be checked at all declared desktop and mobile viewports.",
+          "Runtime scene-to-asset mapping and preload/crossfade behavior are not established by source pixels."
+        ],
+        "summary": "Independent Web High source-pixel review received the S19 portrait, landscape and three character reference images. No P0/P1 factual art defect or regeneration trigger was found; runtime acceptance remains pending.",
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-15T13:39:42.532Z"
+      },
+      {
+        "schemaVersion": 1,
+        "reviewId": "WH-V2-S19-S21-5ac58032-20261015",
+        "reviewTraceId": "01a13ff8-9bb5-7253-8a6a-88d522b0a3de",
+        "taskId": "01a13ff8-9bb5-7253-8a6a-88d522b0a3de",
+        "agent": "ceos_art_director_web",
+        "phase": "acceptance",
+        "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+        "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+        "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "evidenceArtifact": {
+          "input": "artifacts/evidence/stage9.4-ep2-runtime.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\stage9.4-ep2-runtime.json",
+          "projectRelativePath": "artifacts/evidence/stage9.4-ep2-runtime.json",
+          "type": "file",
+          "sha256": "641d5e0e224f9504aeb50aa3ecba814f296b3c55e34d2f525cdd4f990b21f1fe",
+          "size": 41962
+        },
+        "historicalExactLines": [
+          "The original rejection was a real result **against that older contract**;",
+          "2. Read its actual PNG bytes, dimensions and SHA-256. Expected SHA-256:",
+          "   `17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299`."
+        ],
+        "evidenceRefs": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ],
+        "resolvedFindings": [
+          {
+            "id": "Current runtime dialogue overlay and responsive crop must be checked at all declared desktop and mobile viewports.",
+            "evidenceRef": "E4",
+            "resolution": "Current runtime receipt covers all six declared viewports and 36 scene/route captures with no overflow, console, request or HTTP errors."
+          },
+          {
+            "id": "Runtime scene-to-asset mapping and preload/crossfade behavior are not established by source pixels.",
+            "evidenceRef": "E4",
+            "resolution": "Runtime receipt confirms current scene IDs, selected asset variants, decoded native dimensions, successful transitions, Back and New Game checks."
+          }
+        ],
+        "receivedEvidenceRefs": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ],
+        "reviewedItems": [
+          "E1",
+          "E2",
+          "E3",
+          "E4",
+          "E5"
+        ],
+        "framesReviewed": 5,
+        "visualEvidence": [
+          {
+            "ref": "E1",
+            "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+            "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+            "bytes": 2506516,
+            "pixelDimensions": "1672x941",
+            "observation": "S19 landscape source pixels: Nika, Matteo and Giulia in Villa Serena office with duplicate invoice papers; no romance/Aurea/extra actors."
+          },
+          {
+            "ref": "E2",
+            "path": "assets/production/cg/ep2-office-budget-cg.png",
+            "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+            "bytes": 2425207,
+            "pixelDimensions": "1024x1536",
+            "observation": "S20 portrait source pixels: only Nika and Matteo, office budget documents and professional distance."
+          },
+          {
+            "ref": "E3",
+            "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png",
+            "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+            "bytes": 2312711,
+            "pixelDimensions": "1672x941",
+            "observation": "S21 landscape source pixels: Nika and Matteo in service corridor with glassware boxes, trays and correction record; Laura not visible."
+          },
+          {
+            "ref": "E4",
+            "path": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/transparent-budget/ep2_morning_brief.png",
+            "sha256": "42129b2fcbf4362afc5069caad534d223558c1e455be41a9cd9a85b8c38b5299",
+            "bytes": 2088147,
+            "pixelDimensions": "1920x900",
+            "viewport": "1920x900",
+            "sceneId": "ep2_morning_brief",
+            "observation": "S19 runtime pixels show the current landscape family with readable Russian dialogue and no critical crop."
+          },
+          {
+            "ref": "E5",
+            "path": "artifacts/evidence/stage9.4-ep2-runtime/390x844/temporary-budget/ep2_workday_inventory.png",
+            "sha256": "bf5155eec8968975f484f1445df151b02265cdfbc06e1f194a0cb9a880bdbbba",
+            "bytes": 440522,
+            "pixelDimensions": "390x844",
+            "viewport": "390x844",
+            "sceneId": "ep2_workday_inventory",
+            "observation": "S21 mobile runtime pixels preserve both actors, corridor action, props and readable Russian dialogue."
+          }
+        ],
+        "decision": "PASS",
+        "findings": [
+          {
+            "id": "ART-V2-S19-001",
+            "severity": "P2",
+            "status": "OPEN",
+            "category": "narrative_object_specificity",
+            "observation": "Two documents are present, but pixels cannot prove they are duplicate linen invoices.",
+            "playerImpact": "The exact discrepancy is supplied by authored dialogue; the core action is clear.",
+            "materialPlayerImpact": false,
+            "evidenceRef": [
+              "E1",
+              "E4"
+            ],
+            "disposition": "ADVISORY_NO_REGENERATION"
+          },
+          {
+            "id": "ART-V2-S21-002",
+            "severity": "P2",
+            "status": "OPEN",
+            "category": "wardrobe_continuity",
+            "observation": "Matteo changes from a white shirt to a dark shirt and Nika adds a jacket between office and service-corridor images.",
+            "playerImpact": "This may read as an unexplained time/wardrobe change, but character identity and action remain clear.",
+            "materialPlayerImpact": false,
+            "evidenceRef": [
+              "E1",
+              "E2",
+              "E3",
+              "E5"
+            ],
+            "disposition": "ADVISORY_NO_REGENERATION"
+          },
+          {
+            "id": "ART-V2-S21-003",
+            "severity": "P2",
+            "status": "OPEN",
+            "category": "narrative_action_specificity",
+            "observation": "Matteo is visibly recording the correction, but a completed signature is not visually distinguishable.",
+            "playerImpact": "The document action is clear and the authored dialogue carries the exact signing fact.",
+            "materialPlayerImpact": false,
+            "evidenceRef": [
+              "E3",
+              "E5"
+            ],
+            "disposition": "ADVISORY_NO_REGENERATION"
+          }
+        ],
+        "unresolved": [],
+        "coverageLimitations": [
+          "This acceptance covers the five supplied source/runtime pixels; the remaining local runtime screenshots remain separately recorded in the current runtime receipt.",
+          "S20 runtime pixels and S21 desktop runtime pixels were not supplied to this Web turn and are not claimed as individually reviewed here."
+        ],
+        "summary": "Independent Web High V2 acceptance passed S19/S20/S21 supplied pixels with zero P0/P1 and three advisory P2 findings; regeneration is not justified.",
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-15T14:39:23.172Z"
+      }
+    ],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [
+          "ceos_art_director_web"
+        ],
+        "webReviews": [
+          {
+            "schemaVersion": 1,
+            "reviewId": "S19-STAGE9.4-NARRATIVE_ART_ACCEPTANCE_V2-20261015",
+            "reviewTraceId": "01a13fc4-cf47-79c0-aad5-99f974c5da65",
+            "phase": "analysis",
+            "taskId": "01a13fc4-cf47-79c0-aad5-99f974c5da65",
+            "agent": "ceos_art_director_web",
+            "evidenceArtifact": {
+              "input": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S19_RECOVERY_RECHECK.json",
+              "projectRelativePath": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+              "type": "file",
+              "sha256": "116a85ec19dd8879098d6f0a0e76b5607e7dd97bcd74fc29ad36dbb068ceee01",
+              "size": 2181
+            },
+            "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+            "status": "PASS",
+            "assurance": "visual-content",
+            "actualPixelsReceived": true,
+            "evidenceRefs": [
+              "s19-portrait-1024x1536",
+              "s19-landscape-1672x941",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference"
+            ],
+            "receivedEvidenceRefs": [
+              "s19-portrait-1024x1536",
+              "s19-landscape-1672x941",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference"
+            ],
+            "reviewedItems": [
+              "s19-portrait-1024x1536",
+              "s19-landscape-1672x941",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference"
+            ],
+            "framesReviewed": 5,
+            "visualEvidence": [
+              {
+                "ref": "s19-portrait-1024x1536",
+                "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
+                "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+                "bytes": 2516178,
+                "pixelDimensions": "1024x1536",
+                "observation": "Portrait source pixels show all three required people in the Villa Serena office, the invoice gesture and neutral papers above the lower dialogue-safe region."
+              },
+              {
+                "ref": "s19-landscape-1672x941",
+                "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+                "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+                "bytes": 2506516,
+                "pixelDimensions": "1672x941",
+                "observation": "Landscape source pixels are an independent wide composition with readable faces, office depth, Matteo folder, Giulia paper and Nika's duplicate-order gesture."
+              },
+              {
+                "ref": "nika-reference",
+                "path": "assets/characters/references/originals/nika.png",
+                "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+                "bytes": 2493846,
+                "pixelDimensions": "1536x1024",
+                "observation": "Reference pixels establish Nika's face, hair, age impression and off-white linen continuity."
+              },
+              {
+                "ref": "matteo-reference",
+                "path": "assets/characters/references/originals/matteo.png",
+                "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+                "bytes": 2130673,
+                "pixelDimensions": "1448x1086",
+                "observation": "Reference pixels establish Matteo's face, dark hair, facial hair and restrained summer-work wardrobe."
+              },
+              {
+                "ref": "giulia-reference",
+                "path": "assets/characters/references/originals/giulia.png",
+                "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+                "bytes": 2409650,
+                "pixelDimensions": "1448x1086",
+                "observation": "Reference pixels establish Giulia's face, grey hair, sage work shirt and beige apron identity."
+              }
+            ],
+            "decision": "PASS_SOURCE_ART_CANON",
+            "findings": [
+              {
+                "id": "S19-P2-01",
+                "severity": "P2",
+                "status": "OPEN",
+                "category": "SOURCE_COMPOSITION_RISK",
+                "observation": "The invoice gesture and papers sit low in both source compositions; the landscape gesture is approximately 75-80% down the frame.",
+                "disposition": "ADVISORY_RUNTIME_CHECK_ONLY",
+                "materialPlayerImpact": false
+              },
+              {
+                "id": "S19-P2-02",
+                "severity": "P2",
+                "status": "OPEN",
+                "category": "WARDROBE_CONSISTENCY",
+                "observation": "The portrait apron bib and shoulder straps are less prominent than in the reference and landscape, but Giulia remains recognizable and the authored work role is preserved.",
+                "disposition": "ADVISORY_NO_REGENERATION",
+                "materialPlayerImpact": false
+              }
+            ],
+            "unresolved": [
+              "Current runtime dialogue overlay and responsive crop must be checked at all declared desktop and mobile viewports.",
+              "Runtime scene-to-asset mapping and preload/crossfade behavior are not established by source pixels."
+            ],
+            "summary": "Independent Web High source-pixel review received the S19 portrait, landscape and three character reference images. No P0/P1 factual art defect or regeneration trigger was found; runtime acceptance remains pending.",
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-15T13:39:42.532Z"
+          },
+          {
+            "schemaVersion": 1,
+            "reviewId": "WH-V2-S19-S21-5ac58032-20261015",
+            "reviewTraceId": "01a13ff8-9bb5-7253-8a6a-88d522b0a3de",
+            "taskId": "01a13ff8-9bb5-7253-8a6a-88d522b0a3de",
+            "agent": "ceos_art_director_web",
+            "phase": "acceptance",
+            "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+            "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+            "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "evidenceArtifact": {
+              "input": "artifacts/evidence/stage9.4-ep2-runtime.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\stage9.4-ep2-runtime.json",
+              "projectRelativePath": "artifacts/evidence/stage9.4-ep2-runtime.json",
+              "type": "file",
+              "sha256": "641d5e0e224f9504aeb50aa3ecba814f296b3c55e34d2f525cdd4f990b21f1fe",
+              "size": 41962
+            },
+            "historicalExactLines": [
+              "The original rejection was a real result **against that older contract**;",
+              "2. Read its actual PNG bytes, dimensions and SHA-256. Expected SHA-256:",
+              "   `17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299`."
+            ],
+            "evidenceRefs": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ],
+            "resolvedFindings": [
+              {
+                "id": "Current runtime dialogue overlay and responsive crop must be checked at all declared desktop and mobile viewports.",
+                "evidenceRef": "E4",
+                "resolution": "Current runtime receipt covers all six declared viewports and 36 scene/route captures with no overflow, console, request or HTTP errors."
+              },
+              {
+                "id": "Runtime scene-to-asset mapping and preload/crossfade behavior are not established by source pixels.",
+                "evidenceRef": "E4",
+                "resolution": "Runtime receipt confirms current scene IDs, selected asset variants, decoded native dimensions, successful transitions, Back and New Game checks."
+              }
+            ],
+            "receivedEvidenceRefs": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ],
+            "reviewedItems": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ],
+            "framesReviewed": 5,
+            "visualEvidence": [
+              {
+                "ref": "E1",
+                "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+                "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+                "bytes": 2506516,
+                "pixelDimensions": "1672x941",
+                "observation": "S19 landscape source pixels: Nika, Matteo and Giulia in Villa Serena office with duplicate invoice papers; no romance/Aurea/extra actors."
+              },
+              {
+                "ref": "E2",
+                "path": "assets/production/cg/ep2-office-budget-cg.png",
+                "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+                "bytes": 2425207,
+                "pixelDimensions": "1024x1536",
+                "observation": "S20 portrait source pixels: only Nika and Matteo, office budget documents and professional distance."
+              },
+              {
+                "ref": "E3",
+                "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png",
+                "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+                "bytes": 2312711,
+                "pixelDimensions": "1672x941",
+                "observation": "S21 landscape source pixels: Nika and Matteo in service corridor with glassware boxes, trays and correction record; Laura not visible."
+              },
+              {
+                "ref": "E4",
+                "path": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/transparent-budget/ep2_morning_brief.png",
+                "sha256": "42129b2fcbf4362afc5069caad534d223558c1e455be41a9cd9a85b8c38b5299",
+                "bytes": 2088147,
+                "pixelDimensions": "1920x900",
+                "viewport": "1920x900",
+                "sceneId": "ep2_morning_brief",
+                "observation": "S19 runtime pixels show the current landscape family with readable Russian dialogue and no critical crop."
+              },
+              {
+                "ref": "E5",
+                "path": "artifacts/evidence/stage9.4-ep2-runtime/390x844/temporary-budget/ep2_workday_inventory.png",
+                "sha256": "bf5155eec8968975f484f1445df151b02265cdfbc06e1f194a0cb9a880bdbbba",
+                "bytes": 440522,
+                "pixelDimensions": "390x844",
+                "viewport": "390x844",
+                "sceneId": "ep2_workday_inventory",
+                "observation": "S21 mobile runtime pixels preserve both actors, corridor action, props and readable Russian dialogue."
+              }
+            ],
+            "decision": "PASS",
+            "findings": [
+              {
+                "id": "ART-V2-S19-001",
+                "severity": "P2",
+                "status": "OPEN",
+                "category": "narrative_object_specificity",
+                "observation": "Two documents are present, but pixels cannot prove they are duplicate linen invoices.",
+                "playerImpact": "The exact discrepancy is supplied by authored dialogue; the core action is clear.",
+                "materialPlayerImpact": false,
+                "evidenceRef": [
+                  "E1",
+                  "E4"
+                ],
+                "disposition": "ADVISORY_NO_REGENERATION"
+              },
+              {
+                "id": "ART-V2-S21-002",
+                "severity": "P2",
+                "status": "OPEN",
+                "category": "wardrobe_continuity",
+                "observation": "Matteo changes from a white shirt to a dark shirt and Nika adds a jacket between office and service-corridor images.",
+                "playerImpact": "This may read as an unexplained time/wardrobe change, but character identity and action remain clear.",
+                "materialPlayerImpact": false,
+                "evidenceRef": [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "E5"
+                ],
+                "disposition": "ADVISORY_NO_REGENERATION"
+              },
+              {
+                "id": "ART-V2-S21-003",
+                "severity": "P2",
+                "status": "OPEN",
+                "category": "narrative_action_specificity",
+                "observation": "Matteo is visibly recording the correction, but a completed signature is not visually distinguishable.",
+                "playerImpact": "The document action is clear and the authored dialogue carries the exact signing fact.",
+                "materialPlayerImpact": false,
+                "evidenceRef": [
+                  "E3",
+                  "E5"
+                ],
+                "disposition": "ADVISORY_NO_REGENERATION"
+              }
+            ],
+            "unresolved": [],
+            "coverageLimitations": [
+              "This acceptance covers the five supplied source/runtime pixels; the remaining local runtime screenshots remain separately recorded in the current runtime receipt.",
+              "S20 runtime pixels and S21 desktop runtime pixels were not supplied to this Web turn and are not claimed as individually reviewed here."
+            ],
+            "summary": "Independent Web High V2 acceptance passed S19/S20/S21 supplied pixels with zero P0/P1 and three advisory P2 findings; regeneration is not justified.",
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-15T14:39:23.172Z"
+          }
+        ],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  }
+}

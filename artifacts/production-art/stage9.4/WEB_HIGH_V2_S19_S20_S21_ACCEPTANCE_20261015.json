@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "WH-V2-S19-S21-5ac58032-20261015",
+  "reviewTraceId": "01a13ff8-9bb5-7253-8a6a-88d522b0a3de",
+  "taskId": "01a13ff8-9bb5-7253-8a6a-88d522b0a3de",
+  "agent": "ceos_art_director_web",
+  "phase": "acceptance",
+  "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "status": "PASS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "evidenceArtifact": {
+    "input": "artifacts/evidence/stage9.4-ep2-runtime.json",
+    "path": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture/artifacts/evidence/stage9.4-ep2-runtime.json",
+    "projectRelativePath": "artifacts/evidence/stage9.4-ep2-runtime.json",
+    "type": "file",
+    "sha256": "641d5e0e224f9504aeb50aa3ecba814f296b3c55e34d2f525cdd4f990b21f1fe",
+    "size": 41962
+  },
+  "evidenceRefs": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "receivedEvidenceRefs": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "reviewedItems": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "framesReviewed": 5,
+  "visualEvidence": [
+    {
+      "ref": "E1",
+      "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+      "bytes": 2506516,
+      "pixelDimensions": "1672x941",
+      "observation": "S19 landscape source pixels: Nika, Matteo and Giulia in Villa Serena office with duplicate invoice papers; no romance/Aurea/extra actors."
+    },
+    {
+      "ref": "E2",
+      "path": "assets/production/cg/ep2-office-budget-cg.png",
+      "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+      "bytes": 2425207,
+      "pixelDimensions": "1024x1536",
+      "observation": "S20 portrait source pixels: only Nika and Matteo, office budget documents and professional distance."
+    },
+    {
+      "ref": "E3",
+      "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png",
+      "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+      "bytes": 2312711,
+      "pixelDimensions": "1672x941",
+      "observation": "S21 landscape source pixels: Nika and Matteo in service corridor with glassware boxes, trays and correction record; Laura not visible."
+    },
+    {
+      "ref": "E4",
+      "path": "artifacts/evidence/stage9.4-ep2-runtime/1920x900/transparent-budget/ep2_morning_brief.png",
+      "sha256": "42129b2fcbf4362afc5069caad534d223558c1e455be41a9cd9a85b8c38b5299",
+      "bytes": 2088147,
+      "pixelDimensions": "1920x900",
+      "viewport": "1920x900",
+      "sceneId": "ep2_morning_brief",
+      "observation": "S19 runtime pixels show the current landscape family with readable Russian dialogue and no critical crop."
+    },
+    {
+      "ref": "E5",
+      "path": "artifacts/evidence/stage9.4-ep2-runtime/390x844/temporary-budget/ep2_workday_inventory.png",
+      "sha256": "bf5155eec8968975f484f1445df151b02265cdfbc06e1f194a0cb9a880bdbbba",
+      "bytes": 440522,
+      "pixelDimensions": "390x844",
+      "viewport": "390x844",
+      "sceneId": "ep2_workday_inventory",
+      "observation": "S21 mobile runtime pixels preserve both actors, corridor action, props and readable Russian dialogue."
+    }
+  ],
+  "decision": "PASS",
+  "findings": [
+    {
+      "id": "ART-V2-S19-001",
+      "severity": "P2",
+      "status": "OPEN",
+      "category": "narrative_object_specificity",
+      "observation": "Two documents are present, but pixels cannot prove they are duplicate linen invoices.",
+      "playerImpact": "The exact discrepancy is supplied by authored dialogue; the core action is clear.",
+      "materialPlayerImpact": false,
+      "evidenceRef": [
+        "E1",
+        "E4"
+      ],
+      "disposition": "ADVISORY_NO_REGENERATION"
+    },
+    {
+      "id": "ART-V2-S21-002",
+      "severity": "P2",
+      "status": "OPEN",
+      "category": "wardrobe_continuity",
+      "observation": "Matteo changes from a white shirt to a dark shirt and Nika adds a jacket between office and service-corridor images.",
+      "playerImpact": "This may read as an unexplained time/wardrobe change, but character identity and action remain clear.",
+      "materialPlayerImpact": false,
+      "evidenceRef": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "disposition": "ADVISORY_NO_REGENERATION"
+    },
+    {
+      "id": "ART-V2-S21-003",
+      "severity": "P2",
+      "status": "OPEN",
+      "category": "narrative_action_specificity",
+      "observation": "Matteo is visibly recording the correction, but a completed signature is not visually distinguishable.",
+      "playerImpact": "The document action is clear and the authored dialogue carries the exact signing fact.",
+      "materialPlayerImpact": false,
+      "evidenceRef": [
+        "E3",
+        "E5"
+      ],
+      "disposition": "ADVISORY_NO_REGENERATION"
+    }
+  ],
+  "unresolved": [
+    "Web review scope is limited to the five supplied source/runtime pixels; remaining viewports have local runtime receipts but were not individually supplied to this reviewer.",
+    "S20 runtime pixels and S21 desktop runtime pixels were not supplied to this acceptance turn."
+  ],
+  "summary": "Independent Web High V2 acceptance passed S19/S20/S21 supplied pixels with zero P0/P1 and three advisory P2 findings; regeneration is not justified."
+}

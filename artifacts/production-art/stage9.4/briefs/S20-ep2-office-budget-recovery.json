@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S20",
+  "assetFamilyId": "ep2-office-budget-cg",
+  "cue": {
+    "id": "ep2_wedding_budget_table",
+    "at": [0, 0],
+    "authoredExcerpt": "Маттео разложил на столе счета, как карты, которые не обещали выигрыша. На последней странице Ника увидела строку «резерв на персонал» — уменьшенную ровно на сумму второго заказа."
+  },
+  "requiredCast": ["nika", "matteo"],
+  "narrativeActions": [
+    {"character": "matteo", "action": "Раскладывает счета и придвигает Нике обе версии таблицы бюджета."},
+    {"character": "nika", "action": "Проверяет уменьшенный резерв и называет его долгом перед командой."}
+  ],
+  "sceneContinuity": "Сцена следует сразу за проверкой двойной накладной и предшествует рабочей инвентаризации; Matteo и Nika остаются в том же офисе и переходят от семейного расписания к деловой ответственности.",
+  "location": "Villa Serena office, same working table with invoices, budget sheets and neutral folders",
+  "timeOfDay": "Second morning before the family meeting, warm daylight with no change to the office weather or architecture",
+  "wardrobe": {
+    "nika": "EP1-consistent off-white linen shirt, light beige trousers and brown belt; practical work posture",
+    "matteo": "White open-collar linen shirt with rolled sleeves, cream trousers, brown belt and document folder"
+  },
+  "emotionalTone": "Clear-eyed accountability under time pressure; Matteo is worried but not villainous, Nika is direct and fair.",
+  "physicalAction": "Matteo spreads two budget versions across the table; Nika studies the staff reserve and points to the hidden shortfall.",
+  "facialExpression": "Nika concentrated and unsentimental, Matteo tired and honestly concerned, neither performing romance.",
+  "forbiddenProps": [
+    "readable invented budget numbers or brand marks",
+    "wedding rings, tuxedos or public ceremony props",
+    "Bianca or Giulia inserted into this two-person office beat",
+    "Aurea documents, drawings or future revelations"
+  ],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"}
+  ],
+  "desktop": {
+    "width": 1672,
+    "height": 941,
+    "runtimeViewportTarget": {"width": 1920, "height": 1080},
+    "outputGateCommand": "ceos art-output-verify --kind background --width 1672 --height 941",
+    "composition": "Genuine wide office composition with the budget table spanning the foreground; Matteo presents the papers from one side while Nika reads and challenges the reserve from the other.",
+    "framing": "16:9 landscape, eye-level medium-wide camera, both faces, hands and the two paper groups visible with lower dialogue-safe negative space.",
+    "requiredVisibleCast": ["nika", "matteo"]
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "composition": "Genuine vertical two-person office composition with the table and both paper groups readable as shapes, preserving hands and faces without cropping the second character.",
+    "framing": "2:3 portrait, eye-level medium shot, both faces and the budget gesture remain visible at 390x844, 360x640 and 430x932 cover framing.",
+    "requiredVisibleCast": ["nika", "matteo"]
+  },
+  "canonReferences": [
+    "assets/production/cg/ep1-matteo-office-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+    "artifacts/production-art/character-reference-contact-sheet.png"
+  ],
+  "qualityAcceptance": [
+    "Nika and Matteo remain identity-consistent with the supplied references and EP1 office canon.",
+    "The two-person budget discussion and staff-reserve gesture read without invented legible text.",
+    "Both formats preserve both faces, hands and paper groups under the specified mobile cover viewports.",
+    "The image contains no extra cast, romance, ceremony state or premature Aurea information."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

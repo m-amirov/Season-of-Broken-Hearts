@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE9_4_S19_RECOVERY",
+  "runId": "2026-10-15T13-30-16-951Z-production-art-a03477",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "assetFamilyId": "ep2-office-morning-brief-cg",
+  "sceneIds": ["ep2_morning_brief"],
+  "historicalFailureReceipt": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-landscape-candidate1-failure.json",
+  "landscape": {
+    "originalPath": "C:\\Users\\user\\.codex\\generated_images\\01a13f5f-61fb-71b3-8300-b02e365c3c3e\\exec-7453a64c-5edb-4900-b53b-659a48edd532.png",
+    "projectPath": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+    "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+    "bytes": 2506516,
+    "width": 1672,
+    "height": 941,
+    "sourceExists": true,
+    "sourceBytesUnchanged": true,
+    "outputGate": "artifacts/production-art/stage9.4/receipts/S19-landscape-native-resolution-recheck.json",
+    "outputGateStatus": "PASS_ART_OUTPUT_MECHANICAL"
+  },
+  "portrait": {
+    "projectPath": "assets/production/cg/ep2-office-morning-brief-cg.png",
+    "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+    "bytes": 2516178,
+    "width": 1024,
+    "height": 1536,
+    "outputGate": "artifacts/production-art/stage9.4/receipts/S19-portrait-native-resolution-recheck.json",
+    "outputGateStatus": "PASS_ART_OUTPUT_MECHANICAL"
+  },
+  "sourceReview": {
+    "status": "PASS_FOR_TARGETED_SOURCE_REVIEW",
+    "requiredCast": ["nika", "matteo", "giulia"],
+    "location": "Villa Serena office",
+    "observations": [
+      "Portrait and landscape are separate compositions, not a crop/stretch pair.",
+      "Nika, Matteo and Giulia remain visually distinct and placed in a professional office discussion.",
+      "Multiple neutral invoice sheets support the duplicate-linen-order beat without readable invented text.",
+      "No romantic contact, Aurea revelation or extra cast is visible.",
+      "Source anatomy, grounding and dialogue-safe lower space remain suitable for runtime recheck."
+    ],
+    "visualAcceptance": "PENDING_CURRENT_RUNTIME_AND_INDEPENDENT_WEB_HIGH_V2"
+  }
+}

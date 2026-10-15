@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "sourceEvidence": "artifacts/production-art/stage9.4/ART_DIMENSION_CONTRACT_RESOLUTION.md",
+  "requiredExactLines": [
+    "The original rejection was a real result **against that older contract**;",
+    "2. Read its actual PNG bytes, dimensions and SHA-256. Expected SHA-256:",
+    "   `17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299`."
+  ]
+}

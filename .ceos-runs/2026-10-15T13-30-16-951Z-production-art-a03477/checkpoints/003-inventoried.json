@@ -1,0 +1,74 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-15T13:33:02.000Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "inventory": {
+      "sceneCount": 32,
+      "families": 24,
+      "dualFormatPairs": 25,
+      "plannedPngs": 50,
+      "ep1PairsReused": 0,
+      "continuationRowsReused": 7,
+      "consentVariantPairs": 2,
+      "generationAttemptsAvoided": 7
+    },
+    "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+    "s19": {
+      "landscapeMechanical": "PASS_ART_OUTPUT_MECHANICAL",
+      "portraitMechanical": "PASS_ART_OUTPUT_MECHANICAL"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "5ac58032d314103059977014c8168988529b9f6f",
+    "clean": false,
+    "worktreeSha256": "1db9c2c5b7e9848a31019fb82bcce69e731c4d48efc09ed1d623b1647f7ebe9f"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/ART_INVENTORY.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\ART_INVENTORY.md",
+      "projectRelativePath": "artifacts/production-art/stage9.4/ART_INVENTORY.md",
+      "type": "file",
+      "sha256": "6810fa4bc8638e7ade1b8c01a1c44d2fe0075c0ca4a200369d0878538ee03b72",
+      "size": 6631
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\ART_REUSE_MATRIX.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+      "type": "file",
+      "sha256": "4d28855a9edb29ae04d828d6557be52f099137c55c0cc769374b4ef98cb197c5",
+      "size": 15670
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\SOURCE_BOUND_ART_BRIEFS.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+      "type": "file",
+      "sha256": "589bf3593376b7b7ea6b0522110f9a8175c388a8313b97db82a60bfc94afa182",
+      "size": 75860
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/ART_INVENTORY_OPTIMIZATION_2026-10-15.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\ART_INVENTORY_OPTIMIZATION_2026-10-15.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/ART_INVENTORY_OPTIMIZATION_2026-10-15.json",
+      "type": "file",
+      "sha256": "5491f9cc7d6e4d82b13deef7dac472e9bddd5d5cdacbadf0709d5ef9d523b221",
+      "size": 1375
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S19_RECOVERY_RECHECK.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+      "type": "file",
+      "sha256": "116a85ec19dd8879098d6f0a0e76b5607e7dd97bcd74fc29ad36dbb068ceee01",
+      "size": 2181
+    }
+  ]
+}
