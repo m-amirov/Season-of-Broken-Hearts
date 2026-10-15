@@ -2,7 +2,7 @@
   "stage": "9.3",
   "scope": "EP2-EP3 editorial hardening",
   "sourceHead": "16e53a7cd4ca3a49c515565bf2606a10911f53fd",
-  "runId": "2026-10-15T08:31:56-809Z-audit-repair-loop-808ced",
+  "runId": "2026-10-15T08:57:09-665Z-audit-repair-loop-f00c9d",
   "status": "BLOCKED_STAGE9_WEB_TRANSPORT",
   "baseline": {
     "ep2": { "scenes": 11, "choices": 10, "ruWords": 853, "enWords": 1001 },
