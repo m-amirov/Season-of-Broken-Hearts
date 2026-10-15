@@ -1,0 +1,64 @@
+{
+  "schema": "stage9.3.2.independent-editorial-review.v1",
+  "episode": 2,
+  "verdict": "PASS",
+  "reviewedSourceHead": "eaa6616d591ce4d1c7235a09f8710365f9762c24",
+  "currentSourceHead": "9938c4b47ecfecd1ef7e798d869755a3421076ff",
+  "dependencyReuse": {
+    "allowed": true,
+    "reason": "EP2 authored content hash is unchanged after the review; only EP3 and generated graph content changed afterward.",
+    "currentEpisodeHashMatchesReviewedEpisodeHash": true
+  },
+  "sourceHashes": {
+    "episodeFile": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+    "graphFileAtCurrentHead": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf5442",
+    "packet": "53c38a0987b1c31bfe186446e48e0e0187272bac734f8babfeb03a34502d2b19"
+  },
+  "canonHashes": {
+    "narrative/NARRATIVE_BIBLE.md": "6ce57ac42b4251a45e00aff9ff5064081e23b57e3ab1320d52c33de559e075c1",
+    "narrative/STYLE_GUIDE.md": "d8b66fc2689b461434bf74a01c63a43e127cda4c9a224ae27c3ae2455fefc466",
+    "docs/season/TIMELINE_AND_KNOWLEDGE_MATRIX.md": "6916386948b73145031b6452e4fd8ed9bcdeac14df3b78c0174c17c539f11032",
+    "docs/season/FULL_SEASON_ROUTE_MAP.md": "8563cf5ad54a6530a25ba0bbbeb9293ee9c675d0fca69882086ce0fe186446f8",
+    "docs/season/STATE_AND_SAVE_ARCHITECTURE.md": "604a6eabec8fc6716e8a37bb1ed17ead51e40c4f5f05b532bcf06e534d06f223"
+  },
+  "stateSchemaHash": "0423072aac40418a02c515cd0029556fd248a9beeed4e39dc64f4e5823521d88",
+  "reviewer": {
+    "identity": "independent Web High reviewer",
+    "route": "ceos_reasoner_web",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoningEffort": "high",
+    "runId": "01a13f0f-a94d-7b02-a3e2-1cb2ff463d7c",
+    "browserTraceId": "7a8f9141eaa0",
+    "diagnosticDirectory": "C:\\Users\\user\\.codex-chatgpt-web\\diagnostics\\browser-turns\\7a8f9141eaa0-71e7ac40"
+  },
+  "inputScope": {
+    "sceneIds": [
+      "ep2_morning_brief",
+      "ep2_wedding_budget",
+      "ep2_workday_inventory",
+      "ep2_family_rehearsal_response",
+      "ep2_public_agreement",
+      "ep2_public_refusal",
+      "ep2_rehearsal_failure",
+      "ep2_rooftop_after",
+      "ep2_transition"
+    ],
+    "locales": ["ru", "en"],
+    "scope": "changed EP2 packet and causally affected branches"
+  },
+  "delivery": {
+    "sendAccepted": true,
+    "responseVisible": true,
+    "turnCompleted": true,
+    "receiptPersisted": true,
+    "completionEvidence": ["14-send-accepted.json", "15-response-visible.json", "17-turn-completed.json"]
+  },
+  "reviewerOutput": {
+    "verdict": "PASS",
+    "summary": "Повторная редакторская проверка изменённых фрагментов EP2 на русском и английском языках завершена. Все заявленные проблемные области получили содержательные исправления. Причинно-следственная связь дублирующего заказа и бюджетного решения ясна. Выбор влияет на информированность команды, Джулия сохраняет право принимать решения о собственной свадьбе. Публичный жест требует явного согласия, отказ уважается и имеет отдельные последствия. На девятый день договорённость завершается, профессиональные отношения сохраняются, дальнейшая близость требует нового согласия. Переход к конфликту с Aurea происходит позже в тот же день. Подтверждённых дефектов P0–P2 в предоставленных фрагментах не обнаружено. Достижимость условных состояний вне пакета не проверялась.",
+    "coveredLocales": ["ru", "en"],
+    "materialFindings": [],
+    "unresolvedIssues": [],
+    "deliveryAcknowledgement": "I reviewed only the supplied changed packet."
+  }
+}

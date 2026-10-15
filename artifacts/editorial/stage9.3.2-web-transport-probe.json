@@ -1,0 +1,68 @@
+{
+  "schema": "stage9.3.2.web-transport-probe.v1",
+  "recordedAt": "2026-10-15T10:49:15.765Z",
+  "sourceHead": "9938c4b47ecfecd1ef7e798d869755a3421076ff",
+  "route": {
+    "ceosVersion": "0.5.18",
+    "bridgeVersion": "6.1.6",
+    "route": "http://127.0.0.1:17841/v1",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoningEffort": "high",
+    "agentRole": "ceos_reasoner_web"
+  },
+  "preflight": {
+    "status": "READY",
+    "healthUrl": "http://127.0.0.1:17841/healthz",
+    "acceptingTurns": true,
+    "activeHttpTurns": 0,
+    "activeBrowserTurns": 0,
+    "browserAuthenticated": true,
+    "modelCatalogHttpStatus": 200
+  },
+  "minimumProbe": {
+    "prompt": "Прочитай фразу «Ника приехала работать в Villa Serena». Ответь одним предложением, где указаны героиня и место действия.",
+    "traceId": "b41be3c6fe57",
+    "deliveryStatus": "CONFIRMED",
+    "hostInvocationAccepted": true,
+    "turnCreated": true,
+    "promptDeliveryConfirmed": true,
+    "responseReceived": true,
+    "responseCompleted": true,
+    "response": "Главная героиня — Ника, место действия — Villa Serena.",
+    "receiptPersisted": true,
+    "note": "The browser-turn directory for this earlier probe was rotated; the trace and host result are retained in the run record and this receipt. The later editorial trace below provides current on-disk browser completion evidence."
+  },
+  "currentCompletionEvidence": {
+    "traceId": "11c16752eae8",
+    "diagnosticDirectory": "C:\\Users\\user\\.codex-chatgpt-web\\diagnostics\\browser-turns\\11c16752eae8-15947e89",
+    "stages": [
+      "14-send-accepted.json",
+      "15-response-visible.json",
+      "16-turn-completed.json"
+    ],
+    "turns": {
+      "user": 1,
+      "assistantTextChars": 11075,
+      "streamingStatusCount": 0,
+      "renderedCompletionActionCount": 7
+    }
+  },
+  "rootCauseAssessment": {
+    "classification": "TRANSPORT_CONTEXT_PAYLOAD_MISMATCH",
+    "supportedBy": [
+      "Previous failed turns reported composer expectedChars/actualChars mismatch after inherited context duplication.",
+      "A clean fork_context=false minimum probe completed on the same authenticated bridge and Web High route.",
+      "The bridge remained healthy and accepting turns; no rate-limit or authorization failure was observed."
+    ],
+    "notConfirmed": [
+      "Provider account outage",
+      "Model unavailability",
+      "Receipt persistence failure"
+    ]
+  },
+  "transportRepair": {
+    "codeChange": false,
+    "operationalChange": "Fresh run-scoped Web High turns with fork_context=false, compact bounded packets, and no reuse of the exhausted large-payload retry.",
+    "result": "PASS_STAGE9_WEB_TRANSPORT_RECOVERY"
+  }
+}
