@@ -8,8 +8,7 @@
     "src/narrative/route-explorer.mjs",
     "src/narrative/engine.mjs",
     "src/narrative/save.mjs",
-    "tools/narrative/graph-build.mjs",
-    "tools/narrative/narrative-game-validator.mjs"
+    "tools/narrative/graph-build.mjs"
   ],
   "verification": {
     "focusedTests": "PASS 6/6",
