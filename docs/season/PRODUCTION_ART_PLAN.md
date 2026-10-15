@@ -3,6 +3,17 @@
 Статус: planning only. EP1 production CG остаются принятыми и не
 пересоздаются. Ни один новый PNG не генерируется в Phase 9.1.
 
+## Stage 9.4 source PNG dimensions vs runtime viewport
+
+Project-owned source of truth: `config/production-art-dimensions.json`.
+
+- Portrait **source PNG**: native `1024×1536` (2:3).
+- Landscape **source PNG**: native `1672×941` (near 16:9), separately composed; CEOS minimum accepted for desktop CG is `1280×720` near 16:9, while `1920×1080` is its *target*, not a mandatory per-output pixel match.
+- `1920×1080` (and other desktop sizes) is a **runtime browser capture viewport**; it must not be confused with Image Gen's PNG raster dimensions.
+- The Stage 9.4 per-output gate remains strict: run `ceos art-output-verify` with explicit `--width 1672 --height 941` for actual landscape PNGs, `1024×1536` for portraits. Do not weaken decode, SHA-256, alpha/bounds, completeness or independent actual-pixel acceptance checks.
+- The previous S19 landscape output `1672×941` was `BLOCKED` only against the earlier project-specified `1920×1080` exact check. Preserve its original failure receipt; rerun the gate on the **unaltered same bytes** with a fresh receipt and verify the original SHA-256 before any mechanical admission. This specification change does not itself supply a new passing receipt, a complete dual-format pair, runtime captures or Web High V2 PASS.
+- No crop/stretch/upscale of the portrait or landscape variant; genuine independent compositions and mobile/desktop framing remain mandatory.
+
 ## Art gates and order
 
 For every new scene family:
