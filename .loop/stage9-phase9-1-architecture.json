@@ -1,0 +1,35 @@
+{
+  "stage": "stage9",
+  "phase": "9.1",
+  "status": "PASS_STAGE9_NARRATIVE_ARCHITECTURE",
+  "recordedAt": "2026-10-15",
+  "source": {
+    "originMain": "476d71b6bf247a01fcf59617a68e58f518f50700",
+    "ownerDecision": "artifacts/concept-proof/FULL_SEASON_OWNER_DECISION_2026-10-15.md",
+    "decision": "CONTINUE_PRODUCTION",
+    "exceptionCode": "OWNER_ACCEPTED_BLIND_PLAYTEST_RISK_2026_10_15",
+    "blindPlaytestFormalPass": "NOT_ATTESTED",
+    "observationStatus": "AWAITING_BLIND_PLAYTEST"
+  },
+  "architecture": {
+    "contract": "narrative/season-architecture.json",
+    "episodes": 10,
+    "routes": 4,
+    "relationshipEndings": 7,
+    "hotelOutcomes": 3,
+    "expectedLegalEndingPairs": 21,
+    "routeLockEpisode": 6,
+    "timelineDays": [1, 70],
+    "ep1Changed": false
+  },
+  "verification": {
+    "architectureContract": "PASS_STAGE9_NARRATIVE_ARCHITECTURE_CONTRACT",
+    "unitTests": "PASS 66/66",
+    "ep1NarrativeValidation": "PASS_DECLARED_NARRATIVE_GRAPH",
+    "conditionalDialogue": "PASS_CONDITIONAL_DIALOGUE_SCHEMA",
+    "wardrobeContinuity": "PASS_WARDROBE_CONTINUITY_RULES",
+    "fullSeasonRuntimeReachability": "NOT_YET_ATTESTED",
+    "humanBlindPlaytest": "NOT_ATTESTED"
+  },
+  "next": "PHASE_9_2_ENGINE_ARCHITECTURE"
+}

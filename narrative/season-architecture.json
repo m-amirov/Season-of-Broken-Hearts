@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "canon": "docs/CONCEPT.md",
+    "ep1Graph": "narrative/graph.json",
+    "sourceHead": "9d4cfe9372265a9f389787555967d3cf15b30faf",
+    "status": "architecture-contract"
+  },
+  "season": {
+    "episodeCount": 10,
+    "contractDays": [1, 70],
+    "routeLockEpisode": 6,
+    "sharedCoreEpisodes": [1, 2, 3, 4, 5, 6],
+    "routeEpisodes": [7, 8, 9, 10],
+    "epilogueOffsetMonths": 6,
+    "relationshipEndingCount": 7,
+    "hotelOutcomeCount": 3,
+    "expectedLegalEndingPairs": 21
+  },
+  "routes": [
+    {
+      "id": "matteo",
+      "emotionalPremise": "Can responsibility become shared trust instead of control?",
+      "signatureConflict": "Matteo must disclose the deal and delegate without making Nika carry his business or emotional risk.",
+      "independentGoal": "Keep Villa Serena viable while transferring operational responsibility to a real team.",
+      "signatureSceneFamilies": ["public-contract", "open-ledger", "delegation-with-boundaries", "shared-future-plan"]
+    },
+    {
+      "id": "leo",
+      "emotionalPremise": "Can a first love survive an honest account of the choice that ended it?",
+      "signatureConflict": "Leo must take responsibility for eight years of silence and choose an ethical career position toward Aurea.",
+      "independentGoal": "Define an architectural practice that protects living heritage without hiding behind a client brief.",
+      "signatureSceneFamilies": ["old-archive", "site-survey", "accountability-timeline", "heritage-choice"]
+    },
+    {
+      "id": "elio",
+      "emotionalPremise": "Can new love remain equal when both people have real professional futures?",
+      "signatureConflict": "Elio must stop using humor to avoid the future; Nika must not become his reason to abandon his restaurant.",
+      "independentGoal": "Launch a restaurant concept without treating the Villa team or Nika as disposable support.",
+      "signatureSceneFamilies": ["night-kitchen", "trial-menu", "restaurant-offer", "career-distance-plan"]
+    },
+    {
+      "id": "independent",
+      "emotionalPremise": "Can Nika choose a complete life without turning independence into emotional retreat?",
+      "signatureConflict": "Nika builds her professional identity and friendships without using a romance as proof that she recovered.",
+      "independentGoal": "Leave the season with a self-authored event portfolio and a chosen next step.",
+      "signatureSceneFamilies": ["portfolio-build", "client-negotiation", "staff-solidarity", "self-authored-future"]
+    }
+  ],
+  "relationshipEndings": [
+    {
+      "id": "matteo-hope",
+      "route": "matteo",
+      "kind": "happy",
+      "condition": "route=matteo && matteoTrust>=3 && relationshipMatteo>=3 && matteoCommitment=mutual-plan && matteoCareerChoice=delegation && publicDisclosure=full",
+      "payoff": "Matteo shares responsibility, publishes the terms and agrees to a relationship that does not require Nika to give up her career."
+    },
+    {
+      "id": "matteo-goodbye",
+      "route": "matteo",
+      "kind": "bitter",
+      "condition": "route=matteo && (matteoTrust<3 || matteoCommitment!=mutual-plan || matteoCareerChoice=control)",
+      "payoff": "Nika names the affection and the cost of Matteo's control, then leaves without accepting a half-truth as a future."
+    },
+    {
+      "id": "leo-second-chance",
+      "route": "leo",
+      "kind": "happy",
+      "condition": "route=leo && leoTrust>=3 && relationshipLeo>=3 && leoAccountability=verified && leoCareerChoice=heritage-plan",
+      "payoff": "Leo chooses an accountable heritage practice and asks for a present-tense relationship rather than claiming their past."
+    },
+    {
+      "id": "leo-echo",
+      "route": "leo",
+      "kind": "bitter",
+      "condition": "route=leo && (leoTrust<3 || leoAccountability!=verified || leoCareerChoice=aurea)",
+      "payoff": "Nika refuses to repeat the old silence; memory remains real, but it is not permission to restart the same relationship."
+    },
+    {
+      "id": "elio-table-for-two",
+      "route": "elio",
+      "kind": "happy",
+      "condition": "route=elio && elioTrust>=3 && relationshipElio>=3 && elioClarity=discussed && elioCareerChoice=hybrid-plan",
+      "payoff": "Elio opens the restaurant path with a workable distance plan and Nika chooses him without abandoning her own work."
+    },
+    {
+      "id": "elio-separate-kitchens",
+      "route": "elio",
+      "kind": "bitter",
+      "condition": "route=elio && (elioTrust<3 || elioClarity!=discussed || elioCareerChoice=unplanned-departure)",
+      "payoff": "They admit that honest affection cannot by itself solve incompatible plans; the separation is chosen without punishment."
+    },
+    {
+      "id": "nika-own-way",
+      "route": "independent",
+      "kind": "independent",
+      "condition": "route=independent && independentProgress=self-authored && nikaCareerPlan=portfolio",
+      "payoff": "Nika accepts a future defined by her work, friendships and boundaries, with romance left open rather than treated as a failure."
+    }
+  ],
+  "hotelOutcomes": [
+    {
+      "id": "independence",
+      "condition": "alternativeBudget=viable && staffTrust>=4 && fundingEvidence>=3 && staffProtection=secured && publicDisclosure=full",
+      "payoff": "Villa Serena remains family-owned with a transparent operating plan and protected staff roles."
+    },
+    {
+      "id": "limited-investment",
+      "condition": "investorTerms=limited-investment && staffTrust>=3 && staffProtection=secured && publicDisclosure=full",
+      "payoff": "Aurea invests without control; the agreement limits cuts, preserves local identity and is publicly reviewable."
+    },
+    {
+      "id": "sale",
+      "condition": "otherwise",
+      "payoff": "The sale closes under the disclosed terms. It changes work and ownership, but is not framed as a moral punishment for romance."
+    }
+  ],
+  "routeLock": {
+    "sceneId": "ep6_route_choice",
+    "legalBefore": ["route=none"],
+    "legalAfter": ["route in matteo|leo|elio|independent", "routeLocked=true"],
+    "choiceMustBeExplicit": true,
+    "romanceConsentIsSeparate": true,
+    "allRoutesReachable": true
+  },
+  "timeline": [
+    {"episode": 1, "days": [1, 1], "anchor": "arrival, first meetings, hotel crisis and Leo returns", "locations": ["villa-gate", "kitchen", "harbor", "night-pier"]},
+    {"episode": 2, "days": [2, 9], "anchor": "sister's wedding preparation and voluntary seven-day public agreement", "locations": ["villa-hall", "market", "family-dining-room", "courtyard", "rooftop"]},
+    {"episode": 3, "days": [10, 16], "anchor": "Leo's account of eight years and the Aurea link", "locations": ["archive-room", "coastal-survey", "old-port", "villa-office"]},
+    {"episode": 4, "days": [17, 23], "anchor": "wedding evening, public intimacy and first cut information", "locations": ["chapel", "villa-terrace", "service-corridor", "staff-room"]},
+    {"episode": 5, "days": [24, 30], "anchor": "restaurant service crisis and Elio's honest invitation", "locations": ["kitchen", "dining-room", "supply-market", "night-kitchen"]},
+    {"episode": 6, "days": [31, 36], "anchor": "negotiation documents, Leo's role and informed route lock", "locations": ["villa-office", "aurea-meeting-room", "library", "pier"]},
+    {"episode": 7, "days": [37, 44], "anchor": "first route-specific future conversation and investor deadline", "locations": ["route-specific", "villa-boardroom", "harbor"]},
+    {"episode": 8, "days": [45, 51], "anchor": "career decisions and alternative budget crisis", "locations": ["route-specific", "staff-room", "villa-office", "market"]},
+    {"episode": 9, "days": [52, 64], "anchor": "Villa Serena seventieth anniversary and public truth", "locations": ["villa-grounds", "anniversary-terrace", "public-forum", "night-garden"]},
+    {"episode": 10, "days": [65, 70], "anchor": "final relationship decision, hotel outcome and six-month epilogue", "locations": ["route-specific", "villa-office", "harbor", "epilogue-location"]}
+  ],
+  "stateDomains": {
+    "route": ["route", "routeLocked"],
+    "trust": ["trustMatteo", "trustLeo", "trustElio", "staffTrust"],
+    "relationship": ["relationshipMatteo", "relationshipLeo", "relationshipElio"],
+    "hotel": ["fundingEvidence", "investorTerms", "budgetPlan", "alternativeBudget", "staffProtection", "publicDisclosure", "hotelOutcome"],
+    "career": ["nikaCareerPlan", "matteoCareerChoice", "leoCareerChoice", "elioCareerChoice"],
+    "knowledge": ["biancaRoleKnown", "fakeDatingTermsKnown", "staffCutsKnown", "aureaClientKnown", "leoAureaLinkKnown", "exclusiveTermsSeen", "elioRestaurantOfferKnown", "budgetGapKnown", "publicTruthKnown"],
+    "consentAndBoundaries": ["fakeDatingStatus", "matteoPublicGesture", "leoRepairChoice", "elioClarityChoice"],
+    "ending": ["endingId", "hotelOutcome"]
+  },
+  "promises": [
+    {"id": "matteo-negotiation-documents", "setup": ["ep2_fake_terms", "ep6_terms_read"], "payoff": ["ep9_public_forum", "ep10_matteo-final"], "status": "planned"},
+    {"id": "elio-restaurant-departure", "setup": ["ep5_elio_offer", "ep7_elio_offer"], "payoff": ["ep8_elio_future", "ep10_elio-final"], "status": "planned"},
+    {"id": "season-hotel-outcome", "setup": ["ep1_hotel_crisis", "ep6_terms_read"], "payoff": ["ep10_hotel-resolution"], "status": "planned"},
+    {"id": "bianca-not-villain", "setup": ["ep2_bianca_arrives"], "payoff": ["ep9_public_forum"], "status": "planned"},
+    {"id": "leo-aurea-link", "setup": ["ep3_aurea_drawing"], "payoff": ["ep6_leo_role", "ep10_leo-final"], "status": "planned"},
+    {"id": "nika-career-recovery", "setup": ["ep1_arrival", "ep5_ambition_conversation"], "payoff": ["ep10_career-resolution"], "status": "planned"},
+    {"id": "independent-life-not-punishment", "setup": ["ep2_public_agreement", "ep5_choice_kiss_or_friendship"], "payoff": ["ep10_independent-final"], "status": "planned"},
+    {"id": "anniversary-public-truth", "setup": ["ep4_cut_list", "ep8_budget_crisis"], "payoff": ["ep9_public_forum"], "status": "planned"}
+  ],
+  "validationContract": {
+    "requiredRouteCount": 4,
+    "requiredRelationshipEndingCount": 7,
+    "requiredHotelOutcomeCount": 3,
+    "requiredLegalEndingPairs": 21,
+    "requiredRouteLockEpisode": 6,
+    "forbiddenRouteBeforeEpisode": 6,
+    "requiredLocales": ["ru", "en"],
+    "requiredSaveMigrations": ["v1-to-v4", "v2-to-v4", "v3-to-v4"],
+    "requiredInvariants": [
+      "ep1-stable-scene-ids",
+      "knowledge-has-antecedent",
+      "route-lock-is-explicit",
+      "hotel-outcome-does-not-read-relationship-ending",
+      "relationship-ending-does-not-read-hotel-outcome",
+      "back-restores-complete-state",
+      "locale-does-not-change-progression",
+      "new-game-clears-season-state",
+      "every-final-state-round-trips"
+    ]
+  }
+}
