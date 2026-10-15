@@ -1,0 +1,22 @@
+{
+  "target": "Stage 9.4 production art EP2-EP3",
+  "inScope": [
+    "EP2 and EP3 authored scenes",
+    "production art inventory",
+    "source-bound briefs",
+    "real PNG generation",
+    "runtime mapping",
+    "responsive visual QA",
+    "independent NARRATIVE_ART_ACCEPTANCE_V2",
+    "targeted regression"
+  ],
+  "outOfScope": [
+    "EP4-EP5",
+    "published/submitted Yandex state",
+    "secrets",
+    "unrelated dirty worktrees",
+    "scenario rewrites absent proven visual defect"
+  ],
+  "acceptanceContract": "PASS_STAGE9_4_INTEGRATED only when inventory, source-bound canon/briefs, producer capability, admitted dual-format PNGs, runtime visual evidence, independent Web High V2 acceptance, and required regression gates pass",
+  "mutationBoundary": "Only artifacts/production-art/stage9.4, scoped EP2-EP3 production assets, asset manifests/mappings, and required preload/crossfade code/tests; preserve EP1 accepted art and authored narrative"
+}

@@ -1,0 +1,67 @@
+{
+  "index": 7,
+  "stage": "GENERATING",
+  "at": "2026-10-15T11:50:48.377Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_STAGE9_4_IMAGE_CAPABILITY: native route was available, but batch stopped at mandatory output gate because S19 landscape was 1672x941 instead of required 1920x1080. Preserve the valid portrait and failure evidence; no further generation.",
+  "metadata": {
+    "producerTraceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\15\\rollout-2026-10-15T14-42-58-01a13f5f-61fb-71b3-8300-b02e365c3c3e.jsonl",
+    "producerRouteStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "agentRole": "ceos_asset_generator",
+    "actualModel": "gpt-5.6-terra",
+    "actualEffort": "medium",
+    "artOutputs": [
+      {
+        "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      }
+    ],
+    "failedOutput": {
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a13f5f-61fb-71b3-8300-b02e365c3c3e\\exec-7453a64c-5edb-4900-b53b-659a48edd532.png",
+      "kind": "background",
+      "expectedWidth": 1920,
+      "expectedHeight": 1080,
+      "actualWidth": 1672,
+      "actualHeight": 941,
+      "gateReceipt": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-landscape-candidate1-failure.json"
+    },
+    "batch": "stage9.4-bounded-production-batch-1",
+    "stopReason": "BLOCKED_ART_OUTPUT: landscape dimension mismatch; no further Image Gen call"
+  },
+  "source": {
+    "available": true,
+    "head": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+    "clean": false,
+    "worktreeSha256": "3df8d0ec2595343635997f693597312d7a8223f7af3f1fce0e3e84a73e578a8d"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/S19-batch1-native-generation-ledger.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S19-batch1-native-generation-ledger.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S19-batch1-native-generation-ledger.json",
+      "type": "file",
+      "sha256": "3428129bdbeb9223f61d7e0e4531469becc814e4d994ba9fac8f7c7c7c5d37f8",
+      "size": 2927
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-portrait-candidate1.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S19-ep2-office-morning-brief-portrait-candidate1.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-portrait-candidate1.json",
+      "type": "file",
+      "sha256": "a858a54d196f245d1e4b29fbc34f5fb339e1757ab02c2895eb569fb68bf46eba",
+      "size": 824
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-landscape-candidate1-failure.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S19-ep2-office-morning-brief-landscape-candidate1-failure.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-landscape-candidate1-failure.json",
+      "type": "file",
+      "sha256": "6d77cf1dfe934d6b89ed7d70b1b5a72b1ac85d37f5c7d2b5f354f78384ad57a1",
+      "size": 815
+    }
+  ]
+}

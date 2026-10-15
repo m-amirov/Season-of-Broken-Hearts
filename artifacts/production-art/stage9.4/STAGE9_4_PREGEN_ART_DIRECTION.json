@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "review": "STAGE_9_4_EP2_EP3_PRE_GENERATION",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "reviewerRoute": "ceos_art_director_web",
+  "reviewerAgentId": "01a13f4f-56e9-7261-90e9-d7ee21c6d35a",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "verdict": "PASS_FOR_BRIEFING",
+  "generationAuthorized": false,
+  "visualAcceptance": "NOT_PERFORMED",
+  "pixelBundle": {
+    "referencesSupplied": [
+      "artifacts/production-art/character-reference-contact-sheet.png",
+      "assets/production/cg/ep1-matteo-office-cg.png",
+      "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "assets/production/cg/ep1-leo-harbor-cg.png",
+      "assets/production/cg/ep1-leo-harbor-cg-landscape.png"
+    ],
+    "purpose": "pre-generation canon direction only; not current-runtime acceptance"
+  },
+  "mappingReconciliation": {
+    "status": "PASS",
+    "scenesTotal": 32,
+    "ep2Scenes": 17,
+    "ep3Scenes": 15,
+    "uniqueAssetFamilies": 24,
+    "newCgSceneRows": 23,
+    "conditionalVariantRows": 2,
+    "noNewArtRows": 7,
+    "plannedProductionPairs": 25,
+    "approvedEp1Reuse": 0,
+    "finding": "Все сцены имеют явное family mapping; NO_NEW_ART ограничен продолжениями с нейтральной постановкой; accepted/refused public gesture разделены."
+  },
+  "canon": {
+    "status": "PASS",
+    "style": "cinematic semi-realistic illustration, natural eye-level perspective, Mediterranean Villa Serena continuity",
+    "bianca": "independent business principal, calm and exact, not villain-styled",
+    "giulia": "competent mature staff participant with authored agency",
+    "identityDrift": "none observed in supplied reference/EP1 pixel packet"
+  },
+  "remainingP1Locks": [
+    {"id":"P1_CAST_AND_AGENCY","status":"PARTIALLY_LOCKED","required":"Bind exact visible cast and authored action for multi-character families; keep Bianca as professional decision-maker and Giulia as competent participant."},
+    {"id":"P1_CONSENT_BRANCH_BINDING","status":"PARTIALLY_LOCKED","required":"Persist separate accepted/refused asset IDs and runtime mappings; accepted shows consented touch, refused shows no accepted contact."},
+    {"id":"P1_AUREA_KNOWLEDGE_BOUNDARY","status":"PARTIALLY_LOCKED","required":"Keep EP3 drawing as unverified lead and documents non-readable/non-final until the authored verification state."},
+    {"id":"P1_TEMPORAL_SPATIAL_CONTINUITY","status":"PARTIALLY_LOCKED","required":"Preserve day/time/weather/wardrobe and office/courtyard/rooftop/archive/west-wing transitions."},
+    {"id":"P1_CRITICAL_COMPOSITION_SAFETY","status":"PARTIALLY_LOCKED","required":"Bind portrait and landscape focal points to actual UI overlap and target viewports before generation."}
+  ],
+  "final": {
+    "decision": "PASS_FOR_BRIEFING",
+    "mappingComplete": true,
+    "confirmedP0": 0,
+    "confirmedP1VisualDefects": 0,
+    "cosmeticRegenerationRequests": 0,
+    "nextGate": "Resolve factual locks in the production briefs, then run the run-scoped capability challenge immediately before GENERATING."
+  }
+}

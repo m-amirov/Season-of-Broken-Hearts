@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_STAGE9_4_RUNTIME_VISUAL",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "runtimeIntegration": "NOT_STARTED",
+  "reason": "The first dual-format family failed the mandatory output gate; no partial asset was wired into runtime.",
+  "requiredViewports": ["1920x900", "1600x900", "390x844", "360x640", "430x932"],
+  "captures": [],
+  "preloadCrossfade": {
+    "status": "NOT_VERIFIED",
+    "requiredChecks": [
+      "next-image preload and decode",
+      "last-frame retention without white/black flash",
+      "stale-request cancellation during fast transitions",
+      "decoded-frame crossfade",
+      "slow-connection fallback and reduced-motion behavior"
+    ]
+  },
+  "continuityStates": {
+    "status": "NOT_VERIFIED",
+    "states": [
+      "agreement",
+      "refusal",
+      "public gesture accepted",
+      "public gesture refused",
+      "Leo trust",
+      "Leo distance",
+      "Aurea verified",
+      "Aurea unverified"
+    ]
+  }
+}

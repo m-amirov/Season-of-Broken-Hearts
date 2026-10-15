@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_STAGE9_4_ART_ACCEPTANCE",
+  "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "analysisReview": {
+    "status": "PASS_FOR_BRIEFING",
+    "record": "artifacts/production-art/stage9.4/CEOS_STAGE9_4_ANALYSIS_REVIEW.json",
+    "verification": "ceos web-review-verify PASS",
+    "route": "ceos_art_director_web",
+    "trace": "571baf29f72e"
+  },
+  "acceptanceReview": {
+    "status": "NOT_STARTED",
+    "reason": "No complete generated dual-format batch and no current-runtime screenshots were available after the mandatory output gate stopped production.",
+    "actualPixelsReceived": false,
+    "runtimeScreenshotHashes": [],
+    "reviewerRoute": null,
+    "receipt": null
+  },
+  "unresolved": [
+    "S19 landscape must pass the declared 1920x1080 output contract.",
+    "S20 and remaining EP2-EP3 families remain pending generation.",
+    "Independent visual acceptance cannot be claimed from the pre-generation briefing review."
+  ]
+}

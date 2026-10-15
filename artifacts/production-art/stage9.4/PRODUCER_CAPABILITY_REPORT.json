@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_NATIVE_ROUTE_BUT_BATCH_BLOCKED",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "ceosVersion": "0.5.18",
+  "runId": "2026-10-15T11-16-57-828Z-production-art-36075c",
+  "capabilityChallenge": {
+    "challengeId": "cap-8114b069581c063523b0",
+    "sessionId": "01a13f46-ef1c-76a3-9908-1b44bce49e97",
+    "turnId": "01a13f52-a86c-73e2-b505-33fc4c7a9ff7",
+    "presence": "PRESENT",
+    "serviceAvailability": "UNKNOWN",
+    "generationAllowed": true,
+    "trustedForGeneration": true,
+    "observedTool": "image_gen.imagegen",
+    "attestation": ".ceos-runs/2026-10-15T11-16-57-828Z-production-art-36075c/capability-attestation/image-generation.json"
+  },
+  "producerRoute": {
+    "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "agentId": "01a13f5f-61fb-71b3-8300-b02e365c3c3e",
+    "agentRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "traceFile": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T14-42-58-01a13f5f-61fb-71b3-8300-b02e365c3c3e.jsonl",
+    "traceSha256": "1088b2e92d027f907ab02f5f7e9d65a915d626a0be08edcab7b112410293431a",
+    "evidenceAssurance": "host-observed-local-jsonl-not-provider-signed",
+    "generationCapabilityField": "NOT_VERIFIED"
+  },
+  "actualInvocation": {
+    "tool": "image_gen.imagegen",
+    "provider": "native-host",
+    "providerByteReceipt": null,
+    "batchLedger": "artifacts/production-art/stage9.4/S19-batch1-native-generation-ledger.json"
+  },
+  "verdict": "The current run-scoped parent capability and Terra producer route were both observed. Production nevertheless stopped at the mandatory output gate after the first landscape candidate returned 1672x941 instead of the contract's 1920x1080; this is not reported as a missing capability."
+}

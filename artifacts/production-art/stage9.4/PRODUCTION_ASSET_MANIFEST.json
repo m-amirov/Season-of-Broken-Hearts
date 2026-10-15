@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "status": "BLOCKED_ART_OUTPUT",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "episodeScope": [2, 3],
+  "dualFormatContract": {
+    "portrait": {"width": 1024, "height": 1536, "aspect": "2:3"},
+    "desktop": {"width": 1920, "height": 1080, "aspect": "16:9"}
+  },
+  "runtimeAdmission": "NONE",
+  "assets": {
+    "ep2-office-morning-brief-cg": {
+      "status": "PARTIAL_NOT_ADMITTED",
+      "sceneIds": ["ep2_morning_brief"],
+      "portrait": {
+        "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
+        "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+        "width": 1024,
+        "height": 1536,
+        "candidate": 1,
+        "outputGate": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-portrait-candidate1.json",
+        "visualAcceptance": "NOT_VERIFIED"
+      },
+      "desktop": null,
+      "blockedVariant": {
+        "candidate": 1,
+        "actualDimensions": "1672x941",
+        "expectedDimensions": "1920x1080",
+        "sourceSha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+        "failureReceipt": "artifacts/production-art/stage9.4/receipts/S19-ep2-office-morning-brief-landscape-candidate1-failure.json"
+      }
+    }
+  },
+  "pendingFamilies": [
+    "ep2-office-budget-cg",
+    "ep2-service-inventory-cg",
+    "ep2-courtyard-rehearsal-cg",
+    "ep2-dining-rehearsal-response-cg",
+    "ep2-office-fake-terms-cg",
+    "ep2-dining-refusal-response-cg",
+    "ep2-service-refusal-workday-cg",
+    "ep2-bianca-arrival-cg",
+    "ep2-bianca-audit-cg",
+    "ep2-public-gesture-cg",
+    "ep2-service-rehearsal-failure-cg",
+    "ep2-rooftop-after-cg",
+    "ep2-office-aurea-transition-cg",
+    "ep3-archive-intake-cg",
+    "ep3-west-wing-survey-cg",
+    "ep3-service-staff-walkthrough-cg",
+    "ep3-office-report-path-cg",
+    "ep3-office-eight-years-cg",
+    "ep3-west-wing-aurea-drawing-cg",
+    "ep3-archive-document-check-cg",
+    "ep3-office-aurea-transition-cg",
+    "ep3-office-matteo-confrontation-cg",
+    "ep3-office-quiet-return-cg"
+  ],
+  "sceneMappings": "PENDING_GENERATION_AND_FULL_DUAL_FORMAT_COVERAGE",
+  "provenance": "All generated and failed candidate facts are recorded in the Terra ledger and receipts; no provider-signed byte receipt was exposed."
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "path": "C:\\Users\\user\\.codex\\generated_images\\01a13f5f-61fb-71b3-8300-b02e365c3c3e\\exec-7453a64c-5edb-4900-b53b-659a48edd532.png",
+  "kind": "background",
+  "status": "BLOCKED_ART_OUTPUT",
+  "issues": [
+    "ART_DIMENSION_MISMATCH"
+  ],
+  "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+  "bytes": 2506516,
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "alpha": {
+    "opaque": 1573352,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1573352,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1672,
+    "height": 941
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-15T11:49:54.538Z"
+}

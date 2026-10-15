@@ -1,0 +1,68 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-15T11:25:09.096Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Complete EP2-EP3 inventory and source-bound brief set; no generation yet.",
+  "metadata": {
+    "sceneCoverage": {
+      "checked": 32,
+      "total": 32,
+      "complete": true
+    },
+    "families": {
+      "checked": 24,
+      "total": 24,
+      "complete": true
+    },
+    "existingApprovedReuse": 0,
+    "plannedPairs": 25,
+    "visualAcceptance": "NOT_VERIFIED",
+    "editorialEvidence": {
+      "ep2": "targeted PASS with current episode hash",
+      "ep3": "targeted PASS with current episode hash"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+    "clean": false,
+    "worktreeSha256": "e83b8231d546e01bd4bcf1620e468b9a5a7458bf9598eee2928a45356b8768fe"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/ART_INVENTORY.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\ART_INVENTORY.md",
+      "projectRelativePath": "artifacts/production-art/stage9.4/ART_INVENTORY.md",
+      "type": "file",
+      "sha256": "3f4dfc5ee3f7ddb6e71514bfb42ff09135ef786a3f3a2b5eebaeb876156fcc64",
+      "size": 6031
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\ART_REUSE_MATRIX.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+      "type": "file",
+      "sha256": "d9f2de5a6b8affe954d2390bd34c235d243b451b5db493caa52d25396aa0255e",
+      "size": 15436
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\SOURCE_BOUND_ART_BRIEFS.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+      "type": "file",
+      "sha256": "5939d16920e29e2bee908b8aa7ece4c65604252e1bddfb11291f1fa455ba391e",
+      "size": 57568
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/CHARACTER_IDENTITY_REPORT.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\CHARACTER_IDENTITY_REPORT.md",
+      "projectRelativePath": "artifacts/production-art/stage9.4/CHARACTER_IDENTITY_REPORT.md",
+      "type": "file",
+      "sha256": "b6d0bc33a3f5b25983b09572bac462012931cf358acfd913d3756abcb410b5f8",
+      "size": 3255
+    }
+  ]
+}
