@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_SOURCE_BOUND_ACCEPTANCE_LEDGER",
+  "status": "PASS_STAGE9_4_S19_S23_REUSE_LEDGER",
+  "recordedAt": "2026-10-16",
+  "currentHead": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+  "branch": "codex/stage9-full-season-architecture",
+  "currentness": {
+    "mode": "DEPENDENCY_BASED_REUSE",
+    "historicalReviewsAreNotFresh": true,
+    "generationInvoked": false,
+    "acceptedPngsMutated": false,
+    "productInputsUnchangedFrom": "b6e0df490490f3509980d9de5e373869b374338d",
+    "productInputsUnchangedTo": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+    "productInputsUnchanged": true,
+    "basis": "The local commit after PR #6 adds evidence/run references only; the narrative, art mappings, dimensions contract and accepted PNG bytes are unchanged. Existing Web High receipts retain their original source heads and are explicitly reused as historical evidence, not reissued as fresh reviews."
+  },
+  "progress": {
+    "plannedPairs": 25,
+    "plannedPngs": 50,
+    "acceptedPairs": 5,
+    "acceptedPngs": 10,
+    "remainingPairs": 20,
+    "remainingPngs": 40,
+    "acceptedPairIds": ["S19", "S20", "S21", "S22", "S23"]
+  },
+  "dependencyEvidence": [
+    { "path": "narrative/graph.json", "bytes": 241013, "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544" },
+    { "path": "narrative/assets.json", "bytes": 10348, "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c" },
+    { "path": "narrative/episodes/ep-02.json", "bytes": 73052, "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e" },
+    { "path": "config/production-art-dimensions.json", "bytes": 1776, "sha256": "a95d321be585b7c66621052b5c4be32c48c989658820a807618d7e04a7b7e7ce" }
+  ],
+  "mechanicalRevalidation": {
+    "status": "PASS_ART_BATCH_MECHANICAL",
+    "manifest": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_BATCH_GATE_MANIFEST_20261016.json",
+    "manifestSha256": "063253e4e32fb15598ff198b29d5bf67d80766fcfcd7c5a5452b8d1ae219685f",
+    "receipt": "artifacts/production-art/stage9.4/receipts/STAGE9_4_S19_S23_REUSE_OUTPUT_BATCH_REVALIDATED_20261016.json",
+    "receiptSha256": "708c21e684de8430679f96e125e60e2b3bddc74f2035beeaec0e5f5843608691",
+    "scope": "S19-S23, 5 pairs, 10 existing PNGs; native portrait 1024x1536 and landscape 1672x941"
+  },
+  "groups": [
+    {
+      "pairs": ["S19", "S20", "S21"],
+      "acceptance": "HISTORICAL_WEB_HIGH_V2_PASS",
+      "webReceipt": {
+        "path": "artifacts/production-art/stage9.4/WEB_HIGH_V2_S19_S20_S21_ACCEPTANCE_20261015_V7.json",
+        "sha256": "c617b728c2df201bd94fbf461b2f449d2ee1ff877f82e10df60d51b077380cd8",
+        "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+        "scope": "NARRATIVE_ART_ACCEPTANCE_V2 acceptance of supplied E1-E5 pixels; zero P0/P1, three advisory P2; S20 runtime and S21 desktop were not individually supplied to that Web turn",
+        "actualPixelsReceived": true,
+        "freshInThisTurn": false
+      },
+      "runtimeReceipt": {
+        "path": "artifacts/evidence/stage9.4-ep2-runtime.json",
+        "sha256": "641d5e0e224f9504aeb50aa3ecba814f296b3c55e34d2f525cdd4f990b21f1fe",
+        "scope": "S19-S21 runtime matrix, 36 captures, six viewport classes, save/Back/New Game/locale checks"
+      },
+      "pairsDetail": [
+        {
+          "id": "S19",
+          "assets": [
+            { "path": "assets/production/cg/ep2-office-morning-brief-cg.png", "bytes": 2516178, "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35", "dimensions": "1024x1536", "receipt": "artifacts/production-art/stage9.4/receipts/S19-portrait-native-resolution-recheck.json", "receiptSha256": "64bb9436cca6125c2be80c345ce197de7fc5d9607360f65cca2ac60d9ea577a9" },
+            { "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png", "bytes": 2506516, "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299", "dimensions": "1672x941", "receipt": "artifacts/production-art/stage9.4/receipts/S19-landscape-native-resolution-recheck.json", "receiptSha256": "3d206260ff3747e18ebd6df09b85c486feb1abb591f7c54f2d74bd3b117a9e54" }
+          ]
+        },
+        {
+          "id": "S20",
+          "assets": [
+            { "path": "assets/production/cg/ep2-office-budget-cg.png", "bytes": 2425207, "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793", "dimensions": "1024x1536", "receipt": "artifacts/production-art/stage9.4/receipts/S20-ep2-office-budget-cg-portrait-native-candidate1.json", "receiptSha256": "539c19d941106f987cbcfec1fb356bbf94e97a8c84fe72a17ca5186c12b4fc20" },
+            { "path": "assets/production/cg/ep2-office-budget-cg-landscape.png", "bytes": 2408297, "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005", "dimensions": "1672x941", "receipt": "artifacts/production-art/stage9.4/receipts/S20-ep2-office-budget-cg-landscape-native-candidate1.json", "receiptSha256": "f934d5be4e105d2a14e9b6f8fe741b685d2657c284aad76b6ab8543d4fdcac53" }
+          ]
+        },
+        {
+          "id": "S21",
+          "assets": [
+            { "path": "assets/production/cg/ep2-service-inventory-cg.png", "bytes": 2365508, "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47", "dimensions": "1024x1536", "receipt": "artifacts/production-art/stage9.4/receipts/S21-ep2-service-inventory-cg-portrait-native-candidate1.json", "receiptSha256": "d987af20f82222d623ad76f5b54267155a79a0f931633d95e6fc89b834eba0ce" },
+            { "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png", "bytes": 2312711, "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867", "dimensions": "1672x941", "receipt": "artifacts/production-art/stage9.4/receipts/S21-ep2-service-inventory-cg-landscape-native-candidate1.json", "receiptSha256": "5334d1a1195492ec85da91228789262cb346a68f6a2bb2ae6418616c72bcf7f0" }
+          ]
+        }
+      ]
+    },
+    {
+      "pairs": ["S22", "S23"],
+      "acceptance": "CEOS_PARTIAL_PASS_AND_HISTORICAL_WEB_HIGH_V2_PASS",
+      "ceosRun": {
+        "runId": "2026-10-16T06-48-01-039Z-production-art-cb957d",
+        "verdict": "PARTIAL_PASS",
+        "runJsonSha256": "6f9ee689ce7527aa5d552d67a7ef1c11d7a297bfb6a53f072ec1e99336917753",
+        "sourceHead": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+        "historicalProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+        "scope": "S22/S23 only, 2 scenes, 4 PNG variants, runtime desktop/mobile, batch-only; EP2 final acceptance and release readiness not claimed",
+        "immutable": true
+      },
+      "webReceipt": {
+        "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+        "sha256": "652f01a076c20d3f383e5b2890a1e6b1df65c89a6c9746ef61bd6f3afedc8177",
+        "sourceHead": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+        "scope": "S22/S23 assets and four current-runtime screenshots; actualPixelsReceived=true; zero unresolved findings; two non-blocking advisories",
+        "actualPixelsReceived": true,
+        "freshInThisTurn": false
+      },
+      "webSummaryReceipt": {
+        "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+        "sha256": "7cfd63465942664eee32733c5d921c5009f5e644d22db6d9c35dcc9a292def42"
+      },
+      "runtimeReceipt": {
+        "path": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+        "sha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527",
+        "scope": "S22/S23 at 1366x768 and 390x844, both transitions, no console/request/HTTP errors or overflow"
+      },
+      "pairsDetail": [
+        {
+          "id": "S22",
+          "assets": [
+            { "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png", "bytes": 2726336, "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8", "dimensions": "1024x1536", "receipt": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-recovered-20261016.json", "receiptSha256": "1b09bd0ebe2eabb853f0e2d5d3701039fb1c76f4308227335665b7b6c9a51f9c" },
+            { "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png", "bytes": 2817060, "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90", "dimensions": "1672x941", "receipt": "artifacts/production-art/stage9.4/receipts/S22-landscape-art-output-20261016-a5ed04.json", "receiptSha256": "4780c3b52c671ae186272afe7838cd3bad9d922994ebe7459dc15a09d2fddba0" }
+          ]
+        },
+        {
+          "id": "S23",
+          "assets": [
+            { "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png", "bytes": 2529135, "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc", "dimensions": "1024x1536", "receipt": "artifacts/production-art/stage9.4/receipts/S23-portrait-art-output-20261016-a5ed04.json", "receiptSha256": "2c2ac12157fe0e28da754ec5ffc7dbf20793d60d962532af8c5098dcd0ae66cc" },
+            { "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png", "bytes": 2413767, "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031", "dimensions": "1672x941", "receipt": "artifacts/production-art/stage9.4/receipts/S23-landscape-art-output-20261016-a5ed04.json", "receiptSha256": "f7f3ec6e193686e8f162bd6bd9e3aa01cedbf4c03355fc6331f31ab51f081f07" }
+          ]
+        }
+      ]
+    }
+  ],
+  "boundary": {
+    "freshWebAcceptanceForCurrentTurn": false,
+    "freshCapabilityChallengeForS24S26": "NOT_RUN",
+    "currentBinding": "BLOCKED_AMBIGUOUS_RUNS_AND_ACTIVE_LIFECYCLE_CURRENT_TURN_UNBOUND",
+    "S24S26": "NOT_STARTED",
+    "episodeFinalAcceptance": false,
+    "releaseReady": false
+  }
+}
