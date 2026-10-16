@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-generation-blocker",
+  "status": "BLOCKED",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "stage": "GENERATING",
+  "sourceHead": "9450f13a5c32c1022ba75ab0116ca5673ff63a5c",
+  "batch": "S24-S26",
+  "actionId": "f40799ace8187be494264f8365f8479c59c198e6ace0b0c9e10bfe93b486c77e",
+  "lease": {
+    "claimed": true,
+    "token": "6ecfcfd4-1c0b-4360-b911-a6413d7fb909",
+    "releasedAfterCheckpoint": true
+  },
+  "webHigh": {
+    "preflightStatus": "DISABLED",
+    "ready": false,
+    "fallbackAllowedByCli": true,
+    "reason": "Web reasoning routes are disabled by CEOS hybrid-routing policy",
+    "userConstraint": "Web High must not be bypassed",
+    "decision": "BLOCKED_NO_NATIVE_FALLBACK"
+  },
+  "nativeImageGeneration": {
+    "capabilityChallengeAttempts": 2,
+    "challengeStatus": "BLOCKED",
+    "challengeError": "BLOCKED_ACTIVE_LIFECYCLE_CURRENT_TURN_UNBOUND",
+    "generationAllowed": false,
+    "trustedForGeneration": false,
+    "callable": false,
+    "observedTool": null,
+    "serviceAvailability": "unknown",
+    "manualOrEnvironmentOverrideUsed": false
+  },
+  "sessionDiagnostics": {
+    "status": "BLOCKED",
+    "selectionError": "BLOCKED_ACTIVE_LIFECYCLE_CURRENT_TURN_UNBOUND",
+    "selectedSessionId": null,
+    "trustedHostSessionId": "01a14562-0e24-7b81-9f61-818ceba5a20f",
+    "trustedHostTurnId": "01a14562-4083-75c1-8b2a-4c75204fe80d",
+    "activeLifecycleCount": 2,
+    "currentTurnBoundLifecycle": false
+  },
+  "producerRoute": {
+    "status": "NOT_ATTEMPTED",
+    "reason": "Native capability challenge failed before any producer invocation; no child trace was fabricated or reused."
+  },
+  "outputs": {
+    "generated": 0,
+    "artOutputVerifyReceipts": 0,
+    "placeholderPngs": 0,
+    "targetPairsMutated": [],
+    "protectedAcceptedPairsUntouched": ["S19", "S20", "S21", "S22", "S23"]
+  },
+  "decision": {
+    "terminalVerdict": "BLOCKED",
+    "reason": "Required fresh native Image Gen attestation is unavailable in the current bound lifecycle, and required Web High is disabled. Do not bypass either gate, generate placeholders, or claim S24-S26 production progress."
+  }
+}
