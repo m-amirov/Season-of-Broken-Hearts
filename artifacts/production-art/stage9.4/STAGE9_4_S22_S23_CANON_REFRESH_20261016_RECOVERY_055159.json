@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_S22_S23_CANON_REFRESH",
+  "status": "PASS_CANON_CURRENT_HEAD_REVALIDATED",
+  "recordedAt": "2026-10-16T05:51:59.849Z",
+  "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+  "linkedTerminalRuns": [
+    "2026-10-16T04-56-38-829Z-production-art-86041d",
+    "2026-10-16T05-32-33-553Z-production-art-1cd351"
+  ],
+  "scope": {
+    "pairs": ["S22", "S23"],
+    "protectedAcceptedPairs": ["S19", "S20", "S21"],
+    "formats": {
+      "portrait": {"width": 1024, "height": 1536, "ratio": "2:3"},
+      "landscape": {"width": 1672, "height": 941, "ratio": "near-16:9"}
+    }
+  },
+  "canonSources": [
+    "narrative/episodes/ep-02.json",
+    "docs/CONCEPT.md",
+    "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_FREEZE_20261016.json"
+  ],
+  "references": [
+    {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d", "bytes": 2493846},
+    {"path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23", "bytes": 2130673},
+    {"path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a", "bytes": 2409650},
+    {"path": "artifacts/production-art/character-reference-contact-sheet.png", "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b", "bytes": 2570840}
+  ],
+  "reusedAsset": {
+    "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+    "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "bytes": 2726336,
+    "dimensions": "1024x1536",
+    "regenerated": false,
+    "receipt": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-recovered-20261016.json"
+  },
+  "generationTargets": [
+    {"sceneId": "S22", "assetFamilyId": "ep2-courtyard-rehearsal-cg", "format": "landscape", "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png", "brief": "artifacts/production-art/stage9.4/briefs/S22-ep2-courtyard-rehearsal-recovery-20261016-current.json"},
+    {"sceneId": "S23", "assetFamilyId": "ep2-dining-rehearsal-response-cg", "format": "portrait", "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png", "brief": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261016-current.json"},
+    {"sceneId": "S23", "assetFamilyId": "ep2-dining-rehearsal-response-cg", "format": "landscape", "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png", "brief": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261016-current.json"}
+  ],
+  "acceptanceBoundary": {
+    "s19S21Touched": false,
+    "s22PortraitRegenerated": false,
+    "finalWebAcceptance": "NOT_PERFORMED",
+    "runtimePixelChecks": "NOT_PERFORMED",
+    "canonRefreshIsNotGenerationAuthorization": true
+  },
+  "provenance": "Fresh current-head canon snapshot for the linked recovery run; historical terminal runs and all accepted/protected bytes remain immutable."
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S22",
+  "assetFamilyId": "ep2-courtyard-rehearsal-cg",
+  "cue": {"id": "ep2_family_rehearsal_layout", "at": [3, 7], "authoredExcerpt": "Ника сняла со схемы лишнюю сцену и поставила вместо неё тент для дождя. Впервые за утро Джулия посмотрела не на брата, а на собственный план."},
+  "requiredCast": ["nika", "matteo", "giulia"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Снимает лишнюю сцену со схемы и ставит тент для дождя, возвращая разговор к рабочему плану."},
+    {"character": "matteo", "action": "Слушает Нику и Джулию, оставаясь участником семейного решения без навязанного контроля."},
+    {"character": "giulia", "action": "Смотрит на собственный план и выбирает место, где сама сможет сказать да."}
+  ],
+  "sceneContinuity": "Day 3 courtyard rehearsal continues into S23 dining-room handoff; no public gesture, photographer or romantic promise.",
+  "location": "Villa Serena courtyard opening toward the sea, two rows of chairs, flowers and a practical rain canopy",
+  "timeOfDay": "Day 3 midday, bright coastal daylight with weather building at the courtyard edge",
+  "wardrobe": {"nika": "EP1-consistent off-white linen work layer with practical trousers", "matteo": "Restrained summer-work layer, open collar and rolled sleeves", "giulia": "Sage-grey work shirt, beige utility apron and dark work trousers"},
+  "emotionalTone": "Family pressure turns into Giulia's agency; direct, practical and unsentimental.",
+  "physicalAction": "Nika points from the altered plan to the rain canopy while Giulia studies her own plan and Matteo listens between the chair rows.",
+  "facialExpression": "Nika direct and focused; Matteo attentive and chastened; Giulia frustrated but self-possessed.",
+  "forbiddenProps": ["readable invented plans or labels", "luxury palace or generic resort", "photographer or family crowd", "romantic embrace or handholding", "Aurea drawing, contract revelation or invented plot evidence"],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "desktop": {"width": 1672, "height": 941, "runtimeViewportTarget": {"width": 1920, "height": 1080}, "composition": "Independent wide courtyard composition with chair rows leading toward the sea and canopy; Giulia's plan/action in the foreground and Nika and Matteo at distinct readable depths.", "framing": "Eye-level natural perspective, all three faces and the altered plan/canopy action above a quiet lower dialogue band.", "requiredVisibleCast": ["nika", "matteo", "giulia"]},
+  "portrait": {"width": 1024, "height": 1536, "composition": "Vertical courtyard composition keeping Giulia, the altered plan and rain canopy visible while preserving Nika's pointing hand and Matteo's listening posture.", "framing": "Eye-level medium shot with natural negative space below the action; faces and plan remain readable at mobile cover framing.", "requiredVisibleCast": ["nika", "matteo", "giulia"]},
+  "canonReferences": ["assets/production/cg/ep1-matteo-office-cg.png", "assets/production/cg/ep1-matteo-office-cg-landscape.png", "artifacts/production-art/character-reference-contact-sheet.png"],
+  "qualityAcceptance": ["All three identities remain distinct and match reference pixels.", "Courtyard, chair rows, canopy and Giulia's agency read without invented text.", "Independent landscape composition preserves the plan action and dialogue-safe lower region.", "No ceremony, romance, photographer, extra cast or premature Aurea knowledge."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

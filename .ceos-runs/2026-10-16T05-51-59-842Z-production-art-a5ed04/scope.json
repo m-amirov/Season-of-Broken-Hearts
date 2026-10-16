@@ -1,0 +1,32 @@
+{
+  "target": "Stage 9.4 current-head linked recovery: generate and integrate S22-S23 dual-format CG pairs; reuse recovered S22 portrait by exact SHA",
+  "inScope": [
+    "S22-S23 only",
+    "S22 landscape new generation",
+    "S23 portrait new generation",
+    "S23 landscape new generation",
+    "current-head canon and provenance",
+    "Draft PR 6 evidence only"
+  ],
+  "outOfScope": [
+    "S19-S21 regeneration or modification",
+    "S22 portrait regeneration",
+    "story or gameplay changes",
+    "merge",
+    "publication",
+    "Yandex submission",
+    "release claim"
+  ],
+  "acceptanceContract": "S22 and S23 each have real portrait and landscape PNGs, fresh output receipts, runtime evidence, independent NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance, and source-bound current-head integration evidence; no S19-S21 changes and no S22 portrait regeneration",
+  "mutationBoundary": "Only project-owned Stage 9.4 S22-S23 assets, manifests, runtime mappings, receipts, current-head canon refresh and linked recovery evidence on the existing PR branch; preserve all historical CEOS runs and accepted S19-S21/S22 portrait bytes",
+  "resolutionReceiptContract": {
+    "schemaVersion": 1,
+    "requiredExactLines": [
+      "The original rejection was a real result **against that older contract**;",
+      "2. Read its actual PNG bytes, dimensions and SHA-256. Expected SHA-256:",
+      "   `17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299`."
+    ],
+    "sourceEvidence": "artifacts/production-art/stage9.4/ART_DIMENSION_CONTRACT_RESOLUTION.md",
+    "sourceEvidenceSha256": "5035acf16f4e85baa42ea2ba54cb6b7969cec9aa9bb35bc10db515e670e567a5"
+  }
+}

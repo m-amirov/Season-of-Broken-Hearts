@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "REGISTERED_APPROVED_OWNER_REFERENCES",
-  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
   "entries": [
     {
       "assetId": "character-reference-nika",
@@ -348,6 +348,70 @@
       "transformations": [],
       "approvalStatus": "MECHANICAL_PASS_VISUAL_PENDING",
       "buildUsage": "Runtime asset mapped to ep2_workday_inventory landscape variant."
+    },
+    {
+      "assetId": "ep2-courtyard-rehearsal-cg",
+      "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+      "purpose": "Stage 9.4 S22 portrait recovered anchor for the Villa Serena courtyard rehearsal.",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2726336,
+      "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+      "creationMethod": "Verified existing native output reused by exact SHA; S22 portrait regeneration forbidden.",
+      "originalSource": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-recovered-20261016.json",
+      "licenseOrPermission": "Owner-approved project use under the project production-art contract.",
+      "transformations": [],
+      "approvalStatus": "MECHANICAL_PASS_VISUAL_PENDING",
+      "buildUsage": "Runtime asset mapped to ep2_family_rehearsal portrait variant."
+    },
+    {
+      "assetId": "ep2-courtyard-rehearsal-cg-landscape",
+      "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+      "purpose": "Stage 9.4 S22 landscape CG for the Villa Serena courtyard rehearsal.",
+      "format": "PNG",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2817060,
+      "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+      "creationMethod": "Native Image Gen output from the current-head source-bound S22 brief; no resampling or crop.",
+      "originalSource": "C:/Users/user/.codex/sessions/2026/10/16/rollout-2026-10-16T08-56-43-01a14348-bde7-7520-a999-098b56b860c5.jsonl#image_gen.imagegen",
+      "licenseOrPermission": "Owner-approved project use under the project production-art contract.",
+      "transformations": [],
+      "approvalStatus": "MECHANICAL_PASS_VISUAL_PENDING",
+      "buildUsage": "Runtime asset mapped to ep2_family_rehearsal landscape variant."
+    },
+    {
+      "assetId": "ep2-dining-rehearsal-response-cg",
+      "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+      "purpose": "Stage 9.4 S23 portrait CG for the Villa Serena family dining-room response.",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2529135,
+      "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+      "creationMethod": "Native Image Gen output from the current-head source-bound S23 brief; no resampling or crop.",
+      "originalSource": "C:/Users/user/.codex/sessions/2026/10/16/rollout-2026-10-16T08-56-43-01a14348-bde7-7520-a999-098b56b860c5.jsonl#image_gen.imagegen",
+      "licenseOrPermission": "Owner-approved project use under the project production-art contract.",
+      "transformations": [],
+      "approvalStatus": "MECHANICAL_PASS_VISUAL_PENDING",
+      "buildUsage": "Runtime asset mapped to ep2_family_rehearsal_response portrait variant."
+    },
+    {
+      "assetId": "ep2-dining-rehearsal-response-cg-landscape",
+      "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+      "purpose": "Stage 9.4 S23 landscape CG for the Villa Serena family dining-room response.",
+      "format": "PNG",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2413767,
+      "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+      "creationMethod": "Native Image Gen output from the current-head source-bound S23 brief; independent landscape composition with no crop/stretch.",
+      "originalSource": "C:/Users/user/.codex/sessions/2026/10/16/rollout-2026-10-16T08-56-43-01a14348-bde7-7520-a999-098b56b860c5.jsonl#image_gen.imagegen",
+      "licenseOrPermission": "Owner-approved project use under the project production-art contract.",
+      "transformations": [],
+      "approvalStatus": "MECHANICAL_PASS_VISUAL_PENDING",
+      "buildUsage": "Runtime asset mapped to ep2_family_rehearsal_response landscape variant."
     }
   ]
 }

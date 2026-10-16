@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.23",
+  "runId": "2026-10-16T05-51-59-842Z-production-art-a5ed04",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerParentSessionId": "01a14343-4aa3-7ca2-ad7a-f35b0855d655",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T05-51-59-842Z-production-art-a5ed04",
+  "createdAt": "2026-10-16T05:51:59.849Z",
+  "updatedAt": "2026-10-16T06:11:50.540Z",
+  "completedAt": "2026-10-16T06:11:50.540Z",
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "INTEGRATED",
+    "reason": "S22-S23 outputs and project manifest mappings are preserved, but CEOS narrative dual-format integration is blocked because the mandatory full EP2 scene inventory has 15 unmapped scenes outside this narrowly authorized scope."
+  },
+  "checkpointCount": 8,
+  "scopeSha256": "f0d5522ee2cd24aa7615c1db1c6ba7d0577a0c3b0cb98d4d65c068e6fa9db3fe",
+  "capabilitiesSha256": "0be3df4d9bc42bd3ef6e76693fe6a0870f763fd126d743a2ba977d4eb27c2738",
+  "sourceAtStart": {
+    "available": true,
+    "head": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "clean": false,
+    "worktreeSha256": "aa27efe94bfadf47929b43d4c167d94fe6cee25f9a8d5ae10ce137bf0c4b59f7"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviews": [
+      {
+        "schemaVersion": 1,
+        "reviewId": "stage9.4-ep2-s22-s23-canon-20261016-0853",
+        "reviewTraceId": "01a14345-a21f-7311-addb-9ff98c08bdcd",
+        "taskId": "01a14345-a21f-7311-addb-9ff98c08bdcd",
+        "pipeline": "production-art",
+        "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+        "phase": "analysis",
+        "agent": "ceos_art_director_web",
+        "transport": "multi_agent_v1",
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "evidenceArtifact": {
+          "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+          "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+          "type": "file",
+          "sha256": "8e97f899aab9a8d068f5de6155fe19c991b232fd6e017d6ace3c9d0648b17e49",
+          "size": 3122
+        },
+        "reviewedItems": [
+          "S22-recovered-portrait",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "evidenceRefs": [
+          "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "assets/characters/references/originals/nika.png",
+          "assets/characters/references/originals/matteo.png",
+          "assets/characters/references/originals/giulia.png",
+          "artifacts/production-art/character-reference-contact-sheet.png"
+        ],
+        "receivedEvidenceRefs": [
+          "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "assets/characters/references/originals/nika.png",
+          "assets/characters/references/originals/matteo.png",
+          "assets/characters/references/originals/giulia.png",
+          "artifacts/production-art/character-reference-contact-sheet.png"
+        ],
+        "visualEvidence": [
+          {
+            "ref": "S22-recovered-portrait",
+            "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+            "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+            "bytes": 2726336,
+            "pixelDimensions": "1024x1536"
+          },
+          {
+            "ref": "nika-reference",
+            "path": "assets/characters/references/originals/nika.png",
+            "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+            "bytes": 2493846
+          },
+          {
+            "ref": "matteo-reference",
+            "path": "assets/characters/references/originals/matteo.png",
+            "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+            "bytes": 2130673
+          },
+          {
+            "ref": "giulia-reference",
+            "path": "assets/characters/references/originals/giulia.png",
+            "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+            "bytes": 2409650
+          },
+          {
+            "ref": "accepted-style-contact-sheet",
+            "path": "artifacts/production-art/character-reference-contact-sheet.png",
+            "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+            "bytes": 2570840
+          }
+        ],
+        "findings": [
+          {
+            "id": "ART-001",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "observation": "The existing courtyard canopy can resemble a sunshade.",
+            "disposition": "In S22 landscape emphasize practical rain protection through canopy slope, attachment points and plausible drainage; do not modify S22 portrait."
+          },
+          {
+            "id": "ART-002",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "observation": "The existing architectural plan's altered status is not unambiguous.",
+            "disposition": "Use visible revision marks or amended layout geometry in S22 landscape without readable text."
+          },
+          {
+            "id": "ART-003",
+            "severity": "P2",
+            "status": "GENERATION_CRITERION",
+            "observation": "S23 requires three simultaneous narrative actions without compromising Giulia's agency.",
+            "disposition": "Prioritize Giulia's guest-card decision and Matteo's tablet handoff; show Nika clearing boxes while keeping the passage visibly unobstructed."
+          }
+        ],
+        "unresolved": [
+          "S22 landscape generation pixels have not been supplied.",
+          "S23 portrait generation pixels have not been supplied.",
+          "S23 landscape generation pixels have not been supplied.",
+          "Actual gameplay viewport cropping and narrative readability remain unverified."
+        ],
+        "protectedAssets": {
+          "s22Portrait": {
+            "action": "PRESERVE_EXACTLY",
+            "regenerationAllowed": false
+          },
+          "s19ToS21": {
+            "action": "PROTECTED_OUT_OF_SCOPE",
+            "modificationAllowed": false
+          },
+          "characterReferences": {
+            "action": "PRESERVE_ORIGINALS"
+          }
+        },
+        "generationCriteria": {
+          "S22_landscape": {
+            "location": "Villa Serena sea-facing courtyard",
+            "time": "Day 3 midday",
+            "characters": [
+              "Nika",
+              "Matteo",
+              "Giulia"
+            ],
+            "composition": "Wide composition showing the architectural plan, all three characters, practical rain canopy and sea-facing courtyard.",
+            "actions": {
+              "Nika": "Points from revised plan toward canopy.",
+              "Giulia": "Studies her own plan and remains the central decision-maker.",
+              "Matteo": "Listens without directing."
+            },
+            "requiredObjects": [
+              "architectural plan with visible revisions",
+              "practical rain canopy"
+            ],
+            "forbidden": [
+              "ceremony",
+              "photographer",
+              "romantic touching",
+              "additional family crowd",
+              "Aurea evidence",
+              "readable invented text"
+            ]
+          },
+          "S23_portrait": {
+            "location": "Villa Serena family dining room",
+            "time": "Immediate continuation of S22",
+            "composition": "Vertical framing centered on Giulia's decision with guest cards, tablet handoff and Nika clearing the passage visible.",
+            "actions": {
+              "Giulia": "Moves guest cards and receives tablet as decision-maker.",
+              "Nika": "Removes boxes from the passage.",
+              "Matteo": "Hands tablet to Giulia cooperatively."
+            },
+            "requiredObjects": [
+              "guest cards",
+              "tablet",
+              "boxes being cleared",
+              "visible unobstructed passage"
+            ],
+            "forbidden": [
+              "blocked walkway",
+              "ceremony or rings",
+              "romantic couple pose",
+              "additional cast",
+              "Aurea evidence",
+              "readable invented text"
+            ]
+          },
+          "S23_landscape": {
+            "location": "Same Villa Serena family dining room",
+            "time": "Same continuous Day 3 sequence",
+            "composition": "Wide interior staging showing Giulia organizing cards, Matteo handing the tablet and Nika moving boxes from the visible passage.",
+            "visualHierarchy": [
+              "Giulia's agency and decision",
+              "tablet handover",
+              "Nika clearing the passage",
+              "recognizable dining room"
+            ],
+            "forbidden": [
+              "blocked walkway",
+              "ceremony or rings",
+              "romantic couple pose",
+              "additional cast",
+              "Aurea evidence",
+              "readable invented text"
+            ]
+          }
+        },
+        "decision": "PASS_CANON_READY",
+        "finalAcceptance": "NOT_PERFORMED",
+        "coverageLimitations": [
+          "Review covers the five supplied images and stated narrative canon.",
+          "No P0 or P1 findings were identified.",
+          "P2 findings are generation criteria and do not block CANON_READY.",
+          "No generated pixels for the three requested variants or runtime frames were available."
+        ],
+        "summary": "PASS: visual canon is ready for S22 landscape and both S23 variants. Existing S22 portrait must be reused unchanged. Preserve Giulia's agency, practical environmental storytelling and Day 3 continuity. Final art acceptance remains pending.",
+        "recordedAt": "2026-10-16T05:56:15.463Z",
+        "localScreenshotArtifacts": []
+      }
+    ],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [
+          "ceos_art_director_web"
+        ],
+        "webReviews": [
+          {
+            "schemaVersion": 1,
+            "reviewId": "stage9.4-ep2-s22-s23-canon-20261016-0853",
+            "reviewTraceId": "01a14345-a21f-7311-addb-9ff98c08bdcd",
+            "taskId": "01a14345-a21f-7311-addb-9ff98c08bdcd",
+            "pipeline": "production-art",
+            "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+            "phase": "analysis",
+            "agent": "ceos_art_director_web",
+            "transport": "multi_agent_v1",
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "evidenceArtifact": {
+              "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+              "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+              "type": "file",
+              "sha256": "8e97f899aab9a8d068f5de6155fe19c991b232fd6e017d6ace3c9d0648b17e49",
+              "size": 3122
+            },
+            "reviewedItems": [
+              "S22-recovered-portrait",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "evidenceRefs": [
+              "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+              "assets/characters/references/originals/nika.png",
+              "assets/characters/references/originals/matteo.png",
+              "assets/characters/references/originals/giulia.png",
+              "artifacts/production-art/character-reference-contact-sheet.png"
+            ],
+            "receivedEvidenceRefs": [
+              "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+              "assets/characters/references/originals/nika.png",
+              "assets/characters/references/originals/matteo.png",
+              "assets/characters/references/originals/giulia.png",
+              "artifacts/production-art/character-reference-contact-sheet.png"
+            ],
+            "visualEvidence": [
+              {
+                "ref": "S22-recovered-portrait",
+                "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+                "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+                "bytes": 2726336,
+                "pixelDimensions": "1024x1536"
+              },
+              {
+                "ref": "nika-reference",
+                "path": "assets/characters/references/originals/nika.png",
+                "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+                "bytes": 2493846
+              },
+              {
+                "ref": "matteo-reference",
+                "path": "assets/characters/references/originals/matteo.png",
+                "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+                "bytes": 2130673
+              },
+              {
+                "ref": "giulia-reference",
+                "path": "assets/characters/references/originals/giulia.png",
+                "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+                "bytes": 2409650
+              },
+              {
+                "ref": "accepted-style-contact-sheet",
+                "path": "artifacts/production-art/character-reference-contact-sheet.png",
+                "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+                "bytes": 2570840
+              }
+            ],
+            "findings": [
+              {
+                "id": "ART-001",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "observation": "The existing courtyard canopy can resemble a sunshade.",
+                "disposition": "In S22 landscape emphasize practical rain protection through canopy slope, attachment points and plausible drainage; do not modify S22 portrait."
+              },
+              {
+                "id": "ART-002",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "observation": "The existing architectural plan's altered status is not unambiguous.",
+                "disposition": "Use visible revision marks or amended layout geometry in S22 landscape without readable text."
+              },
+              {
+                "id": "ART-003",
+                "severity": "P2",
+                "status": "GENERATION_CRITERION",
+                "observation": "S23 requires three simultaneous narrative actions without compromising Giulia's agency.",
+                "disposition": "Prioritize Giulia's guest-card decision and Matteo's tablet handoff; show Nika clearing boxes while keeping the passage visibly unobstructed."
+              }
+            ],
+            "unresolved": [
+              "S22 landscape generation pixels have not been supplied.",
+              "S23 portrait generation pixels have not been supplied.",
+              "S23 landscape generation pixels have not been supplied.",
+              "Actual gameplay viewport cropping and narrative readability remain unverified."
+            ],
+            "protectedAssets": {
+              "s22Portrait": {
+                "action": "PRESERVE_EXACTLY",
+                "regenerationAllowed": false
+              },
+              "s19ToS21": {
+                "action": "PROTECTED_OUT_OF_SCOPE",
+                "modificationAllowed": false
+              },
+              "characterReferences": {
+                "action": "PRESERVE_ORIGINALS"
+              }
+            },
+            "generationCriteria": {
+              "S22_landscape": {
+                "location": "Villa Serena sea-facing courtyard",
+                "time": "Day 3 midday",
+                "characters": [
+                  "Nika",
+                  "Matteo",
+                  "Giulia"
+                ],
+                "composition": "Wide composition showing the architectural plan, all three characters, practical rain canopy and sea-facing courtyard.",
+                "actions": {
+                  "Nika": "Points from revised plan toward canopy.",
+                  "Giulia": "Studies her own plan and remains the central decision-maker.",
+                  "Matteo": "Listens without directing."
+                },
+                "requiredObjects": [
+                  "architectural plan with visible revisions",
+                  "practical rain canopy"
+                ],
+                "forbidden": [
+                  "ceremony",
+                  "photographer",
+                  "romantic touching",
+                  "additional family crowd",
+                  "Aurea evidence",
+                  "readable invented text"
+                ]
+              },
+              "S23_portrait": {
+                "location": "Villa Serena family dining room",
+                "time": "Immediate continuation of S22",
+                "composition": "Vertical framing centered on Giulia's decision with guest cards, tablet handoff and Nika clearing the passage visible.",
+                "actions": {
+                  "Giulia": "Moves guest cards and receives tablet as decision-maker.",
+                  "Nika": "Removes boxes from the passage.",
+                  "Matteo": "Hands tablet to Giulia cooperatively."
+                },
+                "requiredObjects": [
+                  "guest cards",
+                  "tablet",
+                  "boxes being cleared",
+                  "visible unobstructed passage"
+                ],
+                "forbidden": [
+                  "blocked walkway",
+                  "ceremony or rings",
+                  "romantic couple pose",
+                  "additional cast",
+                  "Aurea evidence",
+                  "readable invented text"
+                ]
+              },
+              "S23_landscape": {
+                "location": "Same Villa Serena family dining room",
+                "time": "Same continuous Day 3 sequence",
+                "composition": "Wide interior staging showing Giulia organizing cards, Matteo handing the tablet and Nika moving boxes from the visible passage.",
+                "visualHierarchy": [
+                  "Giulia's agency and decision",
+                  "tablet handover",
+                  "Nika clearing the passage",
+                  "recognizable dining room"
+                ],
+                "forbidden": [
+                  "blocked walkway",
+                  "ceremony or rings",
+                  "romantic couple pose",
+                  "additional cast",
+                  "Aurea evidence",
+                  "readable invented text"
+                ]
+              }
+            },
+            "decision": "PASS_CANON_READY",
+            "finalAcceptance": "NOT_PERFORMED",
+            "coverageLimitations": [
+              "Review covers the five supplied images and stated narrative canon.",
+              "No P0 or P1 findings were identified.",
+              "P2 findings are generation criteria and do not block CANON_READY.",
+              "No generated pixels for the three requested variants or runtime frames were available."
+            ],
+            "summary": "PASS: visual canon is ready for S22 landscape and both S23 variants. Existing S22 portrait must be reused unchanged. Preserve Giulia's agency, practical environmental storytelling and Day 3 continuity. Final art acceptance remains pending.",
+            "recordedAt": "2026-10-16T05:56:15.463Z",
+            "localScreenshotArtifacts": []
+          }
+        ],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  }
+}

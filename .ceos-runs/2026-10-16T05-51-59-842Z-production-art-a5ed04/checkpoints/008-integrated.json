@@ -1,0 +1,85 @@
+{
+  "index": 8,
+  "stage": "INTEGRATED",
+  "at": "2026-10-16T06:11:50.538Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "S22-S23 outputs and project manifest mappings are preserved, but CEOS narrative dual-format integration is blocked because the mandatory full EP2 scene inventory has 15 unmapped scenes outside this narrowly authorized scope.",
+  "metadata": {
+    "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "blockerCode": "NARRATIVE_DUAL_FORMAT_FULL_EPISODE_COVERAGE",
+    "dualFormatManifest": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_DUAL_FORMAT_MANIFEST_20261016_A5ED04.json",
+    "requiredEpisodeScenes": 17,
+    "mappedScenes": 2,
+    "unmappedScenes": 15,
+    "s22PortraitRegenerated": false,
+    "s19S21Touched": false,
+    "visualAcceptance": "NOT_VERIFIED",
+    "runtimePixelChecks": "NOT_PERFORMED"
+  },
+  "source": {
+    "available": true,
+    "head": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "clean": false,
+    "worktreeSha256": "ab6e34719e4896647b78e52a2538ead43c0f8b09f1d2432455722a9577619c0c"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_DUAL_FORMAT_MANIFEST_20261016_A5ED04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_DUAL_FORMAT_MANIFEST_20261016_A5ED04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_DUAL_FORMAT_MANIFEST_20261016_A5ED04.json",
+      "type": "file",
+      "sha256": "429e0e41f6abcb6d6d03d049019db1458710eae4c2a2e422528fe800027c63e2",
+      "size": 4686
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INTEGRATION_BLOCKED_20261016_A5ED04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_INTEGRATION_BLOCKED_20261016_A5ED04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INTEGRATION_BLOCKED_20261016_A5ED04.json",
+      "type": "file",
+      "sha256": "5d8f8b5568a9b271304e29c52b860c5506c8a0ab70baaf3cb388c30c4bc16817",
+      "size": 3098
+    },
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c",
+      "size": 10348
+    },
+    {
+      "input": "artifacts/evidence/rights-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\rights-manifest.json",
+      "projectRelativePath": "artifacts/evidence/rights-manifest.json",
+      "type": "file",
+      "sha256": "b9259c183ff3bf1b529cf8dafc0cb49ecab918b57cd2a1c0e6d44f57e8c3aaa9",
+      "size": 23275
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S22-landscape-art-output-20261016-a5ed04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S22-landscape-art-output-20261016-a5ed04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S22-landscape-art-output-20261016-a5ed04.json",
+      "type": "file",
+      "sha256": "4780c3b52c671ae186272afe7838cd3bad9d922994ebe7459dc15a09d2fddba0",
+      "size": 831
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S23-portrait-art-output-20261016-a5ed04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S23-portrait-art-output-20261016-a5ed04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S23-portrait-art-output-20261016-a5ed04.json",
+      "type": "file",
+      "sha256": "2c2ac12157fe0e28da754ec5ffc7dbf20793d60d962532af8c5098dcd0ae66cc",
+      "size": 829
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S23-landscape-art-output-20261016-a5ed04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S23-landscape-art-output-20261016-a5ed04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S23-landscape-art-output-20261016-a5ed04.json",
+      "type": "file",
+      "sha256": "f7f3ec6e193686e8f162bd6bd9e3aa01cedbf4c03355fc6331f31ab51f081f07",
+      "size": 837
+    }
+  ]
+}

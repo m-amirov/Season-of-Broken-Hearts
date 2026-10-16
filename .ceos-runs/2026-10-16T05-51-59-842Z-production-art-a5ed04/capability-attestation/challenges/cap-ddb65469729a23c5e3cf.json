@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "challengeId": "cap-ddb65469729a23c5e3cf",
+  "runId": "2026-10-16T05-51-59-842Z-production-art-a5ed04",
+  "capability": "image-generation",
+  "sessionId": "01a14343-4aa3-7ca2-ad7a-f35b0855d655",
+  "turnId": "01a14345-a2f6-7010-aec2-22c6c7839be6",
+  "createdAt": "2026-10-16T05:56:23.493Z",
+  "expiresAt": "2026-10-16T06:26:23.494Z",
+  "nonceSha256": "65fdd587dacf2274d635296fec302b285f7eda3bbe4ab6691d84a2a1bbd5612c",
+  "status": "CONSUMED",
+  "source": "ceos-in-session-challenge",
+  "consumedAt": "2026-10-16T05:56:27.757Z"
+}

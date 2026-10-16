@@ -1,0 +1,72 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-16T05:53:03.885Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Fresh current-head inventory and canon snapshot linked to immutable blocked history; S19-S21 and S22 portrait protected.",
+  "metadata": {
+    "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "s22PortraitRegenerated": false,
+    "s22PortraitSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "targetGeneratedOutputs": [
+      "S22-landscape",
+      "S23-portrait",
+      "S23-landscape"
+    ]
+  },
+  "source": {
+    "available": true,
+    "head": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "clean": false,
+    "worktreeSha256": "a577645cecad67d199e19d6ea5fd306862b6c681ee66dfaada84ef80d8a9e1cd"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INVENTORY_20261016_RECOVERY_055159.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_INVENTORY_20261016_RECOVERY_055159.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INVENTORY_20261016_RECOVERY_055159.json",
+      "type": "file",
+      "sha256": "c398c0d702807b119037016a5da9167b32df7fcd173114b9a85f26619b9199d8",
+      "size": 2147
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+      "type": "file",
+      "sha256": "8e97f899aab9a8d068f5de6155fe19c991b232fd6e017d6ace3c9d0648b17e49",
+      "size": 3122
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016_A5ED04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016_A5ED04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016_A5ED04.json",
+      "type": "file",
+      "sha256": "cbe3a62a67528f83b394ff1a49403ac22e3fd0447b04ca6e47e1b8af5c8bae8a",
+      "size": 1223
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/briefs/S22-ep2-courtyard-rehearsal-recovery-20261016-current.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\briefs\\S22-ep2-courtyard-rehearsal-recovery-20261016-current.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/briefs/S22-ep2-courtyard-rehearsal-recovery-20261016-current.json",
+      "type": "file",
+      "sha256": "d31476e35afd4ac61cbdc03fe14b86ee4f4176bec0a377868a468f5eb26db65c",
+      "size": 4443
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261016-current.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\briefs\\S23-ep2-dining-rehearsal-response-recovery-20261016-current.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261016-current.json",
+      "type": "file",
+      "sha256": "185eea49786b77569ff7cb33c084a91145117c0a2dffb69a5a1c571c4aa595e1",
+      "size": 4382
+    }
+  ]
+}

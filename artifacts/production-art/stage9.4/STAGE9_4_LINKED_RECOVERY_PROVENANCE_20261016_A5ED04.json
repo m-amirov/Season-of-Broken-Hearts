@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_LINKED_RECOVERY_PROVENANCE",
+  "status": "PROVENANCE_SNAPSHOT",
+  "recordedAt": "2026-10-16T05:51:59.849Z",
+  "project": "Season of Broken Hearts",
+  "stage": "9.4",
+  "sourceRun": {"runId": "2026-10-16T05-32-33-553Z-production-art-1cd351", "state": "BLOCKED", "historyPolicy": "immutable; do not reopen or rewrite"},
+  "recoveryRun": {"runId": "2026-10-16T05-51-59-842Z-production-art-a5ed04", "ceosVersion": "0.5.23", "projectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture", "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301", "parentSessionId": "01a14343-4aa3-7ca2-ad7a-f35b0855d655"},
+  "scope": {"pairs": ["S22", "S23"], "protectedAcceptedPairs": ["S19", "S20", "S21"], "forbidden": ["S22 portrait regeneration", "S19-S21 changes", "release publication", "merge", "Yandex submission"]},
+  "sourceEvidence": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+  "provenance": "This file links the fresh current-head recovery run to the immutable blocked history. It is not a capability attestation, generation receipt, producer route receipt or art acceptance receipt."
+}

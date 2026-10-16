@@ -1,0 +1,14 @@
+{
+  "index": 1,
+  "stage": "SCOPE_LOCKED",
+  "at": "2026-10-16T05:51:59.849Z",
+  "auto": true,
+  "artifacts": [
+    {
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T05-51-59-842Z-production-art-a5ed04\\scope.json",
+      "type": "file",
+      "sha256": "fcad6347d2658a4558b3c6b9f4cbf9435070f762623d1dc00ab3a0253e0de667",
+      "size": 1668
+    }
+  ]
+}
