@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_TRUSTED_WORKTREE_BINDING_CHECK",
+  "status": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+  "recordedAt": "2026-10-16T05:11:35.612Z",
+  "runId": "2026-10-16T04-56-38-829Z-production-art-86041d",
+  "runProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+  "runProjectRealpath": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+  "git": {
+    "root": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+    "branch": "codex/stage9-full-season-architecture",
+    "head": "7b715174f8c7f820053bd1b2ef4b97c0c3c3a058",
+    "dirty": false,
+    "remoteFreshness": "IN_SYNC"
+  },
+  "runtimeMarkers": {
+    "sessionFile": "C:/Users/user/.codex/ceos/runtime/current-session.json",
+    "turnFile": "C:/Users/user/.codex/ceos/runtime/current-turn.json",
+    "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "turnId": "01a1431e-3f26-7712-8225-e7f1485a8ee4",
+    "sessionCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+    "turnCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+    "sessionObservedAt": "2026-10-16T05:05:27.665Z",
+    "turnObservedAt": "2026-10-16T05:10:18.653Z",
+    "sessionCwdMatchesRunProject": false,
+    "turnCwdMatchesRunProject": false
+  },
+  "ceos": {
+    "version": "0.5.21",
+    "continueInspect": "NEEDS_RECOVERY_DECISION",
+    "continueGuided": "NEEDS_RECOVERY_DECISION",
+    "action": "PREPARE_LINKED_RECOVERY_PLAN",
+    "oldRunIntegrity": "PASS",
+    "oldRunState": "BLOCKED",
+    "oldRunCheckpointsPreserved": true,
+    "oldRunReopened": false
+  },
+  "rootCause": {
+    "code": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "detail": "The trusted CEOS hook session and turn are bound to the permanent checkout, while the Stage 9.4 production-art run is bound to the dedicated PR worktree. CEOS requires the realpath of the hook current-turn cwd to equal the run projectDir before GENERATING can be claimed.",
+    "comparison": "runtimeMarkers.turnCwd != runProjectDir",
+    "permanentCheckoutIsUsableForPr6": false,
+    "permanentCheckoutReason": "It is a dirty main checkout with unrelated local files; using it would cross the PR worktree boundary."
+  },
+  "safeRecoveryBoundary": {
+    "linkedRunCreated": false,
+    "reason": "A new run in the same untrusted parent context would reproduce the same fail-closed binding block. A supported trusted Codex task/turn whose hook cwd resolves to the PR worktree is required before linked recovery.",
+    "forbiddenActionsNotTaken": [
+      "runtime marker edits",
+      "session ID substitution",
+      "capability attestation borrowing",
+      "generation before trusted binding",
+      "S19-S21 regeneration"
+    ]
+  },
+  "assetChecks": {
+    "s22PortraitRegenerated": false,
+    "s22PortraitPath": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+    "s22PortraitSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "s22PortraitBytes": 2726336,
+    "s22PortraitDimensions": "1024x1536",
+    "s22PortraitOutputGate": "PASS_ART_OUTPUT_MECHANICAL",
+    "newImageGenCalls": 0,
+    "newLandscapeOrS23Pngs": 0,
+    "runtimePixelChecks": "NOT_PERFORMED",
+    "webFinalAcceptance": "NOT_PERFORMED"
+  },
+  "verification": {
+    "ceosSelfTest": "289/289 PASS",
+    "s22PortraitHashAndGate": "PASS",
+    "gitPreflight": "IN_SYNC",
+    "targetWorktreeClean": true
+  },
+  "nextSafeAction": "Start or resume a supported Codex task whose actual CEOS hook current-turn.cwd resolves to the PR worktree, then run ceos continue 2026-10-16T04-56-38-829Z-production-art-86041d --project <that-worktree> --mode guided --json. Only after CEOS returns an executable linked recovery action may a fresh run/session/turn capability challenge and Terra generation be attempted."
+}
