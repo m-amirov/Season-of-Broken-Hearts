@@ -1,0 +1,32 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-13T11:25:04.815Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-head recovery inventory complete; Stage 5 and recovery docs present. Proceeding to canon analysis before bounded generation.",
+  "metadata": {
+    "scopeComplete": true,
+    "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "realRasterReferences": 0,
+    "styleExplorations": 0,
+    "pilotCg": 0
+  },
+  "source": {
+    "available": true,
+    "head": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "clean": false,
+    "worktreeSha256": "ae00dd5311ed00c97b1723be703f9de8775175bd77d0f223c6a367733dc1720d"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage5-recovery-inventory.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5-recovery-inventory.json",
+      "projectRelativePath": "artifacts/production-art/stage5-recovery-inventory.json",
+      "type": "file",
+      "sha256": "87eda86234c210293b46f4c1466e5b828230adc03a37a9df94c64fec7c2d01d0",
+      "size": 1403
+    }
+  ]
+}

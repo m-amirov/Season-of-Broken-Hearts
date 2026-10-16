@@ -1,0 +1,42 @@
+{
+  "runId": "2026-10-13T11-24-03-269Z-production-art-11d7ec",
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "capabilityChallenge": {
+    "challengeId": "cap-f786f657f0b6d896dc8f",
+    "presence": "PRESENT",
+    "serviceAvailability": "UNKNOWN",
+    "generationAllowed": true,
+    "trustedForGeneration": true,
+    "attestationFile": ".ceos-runs/2026-10-13T11-24-03-269Z-production-art-11d7ec/capability-attestation/image-generation.json"
+  },
+  "scope": "bounded EP1 arrival style exploration only",
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": "style-a",
+      "producer": "image_gen.imagegen",
+      "result": "INLINE_PNG_RETURNED_NO_LOCAL_PATH",
+      "persisted": false,
+      "sha256": null,
+      "dimensions": null,
+      "receipt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": "style-a-persistence-retry",
+      "producer": "image_gen.imagegen",
+      "result": "INLINE_PNG_RETURNED_NO_LOCAL_PATH",
+      "persisted": false,
+      "sha256": null,
+      "dimensions": null,
+      "receipt": null,
+      "persistenceError": "Temporary stdin writer was malformed before bytes were written."
+    }
+  ],
+  "repositoryAssetsCreated": [],
+  "contactSheet": "NOT_CREATED",
+  "characterReferences": "NOT_CREATED",
+  "productionArtAcceptance": "BLOCKED_IMAGE_OUTPUT_PERSISTENCE",
+  "visualStyleApproval": "PENDING",
+  "cgBatch": "NOT_STARTED"
+}

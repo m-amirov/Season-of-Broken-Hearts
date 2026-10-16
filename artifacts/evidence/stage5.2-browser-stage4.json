@@ -1,0 +1,300 @@
+{
+  "status": "PASS",
+  "scenario": "tools/qa/ep1-stage4-walkthrough.js",
+  "result": {
+    "status": "PASS",
+    "browser": "Chromium via Playwright CLI",
+    "cases": {
+      "ru": {
+        "locale": "ru",
+        "viewport": {
+          "width": 1920,
+          "height": 900
+        },
+        "path": [
+          "matteo_formal",
+          "elio_humor",
+          "hotel_numbers",
+          "leo_hear"
+        ],
+        "finalLineCount": 6,
+        "delayedConsequence": "Ника положила фотографию условий Aurea",
+        "terminalCursor": {
+          "sceneId": "ep1_hook",
+          "dialogueIndex": 5
+        },
+        "reloadCursor": {
+          "sceneId": "ep1_hook",
+          "dialogueIndex": 5
+        },
+        "backCursor": {
+          "sceneId": "ep1_hook",
+          "dialogueIndex": 4
+        },
+        "newGameCursor": {
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0
+        },
+        "layouts": [
+          {
+            "label": "ep1-ru-arrival",
+            "viewport": {
+              "width": 1920,
+              "height": 900
+            },
+            "boxes": [
+              {
+                "selector": ".scene-art",
+                "left": 600,
+                "top": 0,
+                "right": 1320,
+                "bottom": 595,
+                "width": 720,
+                "height": 595,
+                "withinViewport": true
+              },
+              {
+                "selector": ".dialogue-text",
+                "left": 641,
+                "top": 693,
+                "right": 1279,
+                "bottom": 751,
+                "width": 638,
+                "height": 58,
+                "withinViewport": true
+              },
+              {
+                "selector": ".primary-button",
+                "left": 1164,
+                "top": 838,
+                "right": 1296,
+                "bottom": 886,
+                "width": 132,
+                "height": 48,
+                "withinViewport": true
+              }
+            ],
+            "overflow": {
+              "document": false,
+              "dialogueText": false
+            },
+            "pass": true
+          },
+          {
+            "label": "ep1-ru-first-choice",
+            "viewport": {
+              "width": 1920,
+              "height": 900
+            },
+            "boxes": [
+              {
+                "selector": ".scene-art",
+                "left": 600,
+                "top": 0,
+                "right": 1320,
+                "bottom": 490,
+                "width": 720,
+                "height": 490,
+                "withinViewport": true
+              },
+              {
+                "selector": ".dialogue-text",
+                "left": 641,
+                "top": 602,
+                "right": 1279,
+                "bottom": 631,
+                "width": 638,
+                "height": 29,
+                "withinViewport": true
+              },
+              {
+                "selector": ".choices",
+                "left": 624,
+                "top": 692,
+                "right": 1296,
+                "bottom": 797,
+                "width": 672,
+                "height": 105,
+                "withinViewport": true
+              }
+            ],
+            "overflow": {
+              "document": false,
+              "dialogueText": false
+            },
+            "pass": true
+          }
+        ],
+        "screenshot": "artifacts/evidence/stage4/screenshots/ep1-ru-terminal-1920x900.png"
+      },
+      "en": {
+        "locale": "en",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "path": [
+          "matteo_direct",
+          "elio_boundary",
+          "hotel_staff",
+          "leo_distance"
+        ],
+        "finalLineCount": 6,
+        "delayedConsequence": "Nika opened Giulia's notebook",
+        "terminalCursor": {
+          "sceneId": "ep1_hook",
+          "dialogueIndex": 5
+        },
+        "reloadCursor": {
+          "sceneId": "ep1_hook",
+          "dialogueIndex": 5
+        },
+        "backCursor": {
+          "sceneId": "ep1_hook",
+          "dialogueIndex": 4
+        },
+        "newGameCursor": {
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0
+        },
+        "layouts": [
+          {
+            "label": "ep1-en-arrival",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "boxes": [
+              {
+                "selector": ".scene-art",
+                "left": 0,
+                "top": 0,
+                "right": 390,
+                "bottom": 539,
+                "width": 390,
+                "height": 539,
+                "withinViewport": true
+              },
+              {
+                "selector": ".dialogue-text",
+                "left": 31,
+                "top": 637,
+                "right": 359,
+                "bottom": 713,
+                "width": 328,
+                "height": 76,
+                "withinViewport": true
+              },
+              {
+                "selector": ".primary-button",
+                "left": 244,
+                "top": 782,
+                "right": 376,
+                "bottom": 830,
+                "width": 132,
+                "height": 48,
+                "withinViewport": true
+              }
+            ],
+            "overflow": {
+              "document": false,
+              "dialogueText": false
+            },
+            "pass": true
+          },
+          {
+            "label": "ep1-en-first-choice",
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "boxes": [
+              {
+                "selector": ".scene-art",
+                "left": 0,
+                "top": 0,
+                "right": 390,
+                "bottom": 434,
+                "width": 390,
+                "height": 434,
+                "withinViewport": true
+              },
+              {
+                "selector": ".dialogue-text",
+                "left": 31,
+                "top": 546,
+                "right": 359,
+                "bottom": 597,
+                "width": 328,
+                "height": 51,
+                "withinViewport": true
+              },
+              {
+                "selector": ".choices",
+                "left": 14,
+                "top": 636,
+                "right": 376,
+                "bottom": 741,
+                "width": 362,
+                "height": 105,
+                "withinViewport": true
+              }
+            ],
+            "overflow": {
+              "document": false,
+              "dialogueText": false
+            },
+            "pass": true
+          }
+        ],
+        "screenshot": "artifacts/evidence/stage4/screenshots/ep1-en-terminal-390x844.png"
+      },
+      "narrowLayout": {
+        "label": "ep1-ru-first-choice-360x640",
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "boxes": [
+          {
+            "selector": ".scene-art",
+            "left": 0,
+            "top": 0,
+            "right": 360,
+            "bottom": 231,
+            "width": 360,
+            "height": 231,
+            "withinViewport": true
+          },
+          {
+            "selector": ".dialogue-text",
+            "left": 31,
+            "top": 343,
+            "right": 329,
+            "bottom": 388,
+            "width": 298,
+            "height": 45,
+            "withinViewport": true
+          },
+          {
+            "selector": ".choices",
+            "left": 14,
+            "top": 416,
+            "right": 346,
+            "bottom": 537,
+            "width": 332,
+            "height": 121,
+            "withinViewport": true
+          }
+        ],
+        "overflow": {
+          "document": false,
+          "dialogueText": false
+        },
+        "pass": true
+      }
+    },
+    "consoleErrors": [],
+    "requestFailures": []
+  }
+}

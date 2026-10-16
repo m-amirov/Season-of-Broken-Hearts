@@ -1,0 +1,83 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-13T11:37:39.459Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "Inline PNG generation was callable, but no project-local output path was available and no bytes were persisted; stop fail-closed.",
+  "metadata": {
+    "blocker": "BLOCKED_IMAGE_OUTPUT_PERSISTENCE",
+    "generatorCapability": "PRESENT",
+    "generationAllowed": true,
+    "persistedGeneratedPngs": 0,
+    "contactSheet": "NOT_CREATED",
+    "characterReferences": "NOT_CREATED",
+    "visualStyleApproval": "PENDING",
+    "cgBatch": "NOT_STARTED"
+  },
+  "source": {
+    "available": true,
+    "head": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "clean": false,
+    "worktreeSha256": "b22ad9642e9892d70f49262ecba1b337249e184d3ba4096816f41419a1cfde0b"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/STAGE5_IMAGE_PERSISTENCE_BLOCKER.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\STAGE5_IMAGE_PERSISTENCE_BLOCKER.md",
+      "projectRelativePath": "artifacts/production-art/STAGE5_IMAGE_PERSISTENCE_BLOCKER.md",
+      "type": "file",
+      "sha256": "def8a82699eb4cc23a12ea54563dd2f258fbded6fe2118b069ae6eb554906418",
+      "size": 1574
+    },
+    {
+      "input": "artifacts/production-art/stage5-generation-attempt.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5-generation-attempt.json",
+      "projectRelativePath": "artifacts/production-art/stage5-generation-attempt.json",
+      "type": "file",
+      "sha256": "ec3a1f7eecaf37308b845df1ed275b358b46cb41f320ef5e9bcbf589a7baa128",
+      "size": 1388
+    },
+    {
+      "input": "artifacts/production-art/prompts/style-exploration-arrival.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\prompts\\style-exploration-arrival.md",
+      "projectRelativePath": "artifacts/production-art/prompts/style-exploration-arrival.md",
+      "type": "file",
+      "sha256": "233a6fe5e8691454328e3cc5ef210ff3bc102cb55a2ade7f440a028743c3f175",
+      "size": 1343
+    },
+    {
+      "input": "artifacts/production-art/prompts/nika-reference.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\prompts\\nika-reference.md",
+      "projectRelativePath": "artifacts/production-art/prompts/nika-reference.md",
+      "type": "file",
+      "sha256": "624c52e544ef5bd9694c654702e5d36f79c5faff26b3b7dd7cb4dc7421016ae0",
+      "size": 727
+    },
+    {
+      "input": "artifacts/production-art/prompts/matteo-reference.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\prompts\\matteo-reference.md",
+      "projectRelativePath": "artifacts/production-art/prompts/matteo-reference.md",
+      "type": "file",
+      "sha256": "13515102e2390b21650e428f6587095cf657f5470a432ea3faf9d372567da6d5",
+      "size": 738
+    },
+    {
+      "input": "artifacts/production-art/prompts/elio-reference.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\prompts\\elio-reference.md",
+      "projectRelativePath": "artifacts/production-art/prompts/elio-reference.md",
+      "type": "file",
+      "sha256": "ecbc23ee81298ad5345c69891d9efd80ca88986f46eb6e6d901cbf6269f2cb5d",
+      "size": 706
+    },
+    {
+      "input": "artifacts/production-art/prompts/leo-reference.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\prompts\\leo-reference.md",
+      "projectRelativePath": "artifacts/production-art/prompts/leo-reference.md",
+      "type": "file",
+      "sha256": "07ca2df6bf6f7a1314bc6df56bc9e514a7fc65aee6830b0e28d5dcd9ffabacd7",
+      "size": 752
+    }
+  ]
+}

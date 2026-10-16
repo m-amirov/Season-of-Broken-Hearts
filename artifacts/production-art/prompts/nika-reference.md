@@ -1,0 +1,3 @@
+# Nika reference prompt
+
+Create one separate PNG character reference for Nika Vorontsova in the selected single 2D semi-realistic painterly style. Three-quarter portrait/full upper body with a readable full face, natural anatomy, believable adult proportions and a neutral guarded-observant expression. Nika is 28, an event planner: dark ash-brown jaw-length bob, grey-hazel eyes, expressive but controlled features, pragmatic light summer cream-linen clothing with one restrained rust/coral accent. Use a quiet warm neutral Mediterranean-toned background only as a reference backdrop; no scene UI, no captions, no logo, no watermark, no baked text, no collage, no extra characters. Preserve identity for later full-scene CGs.

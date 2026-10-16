@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "CURRENT_HEAD_INVENTORY",
+  "sourceHead": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "runId": "2026-10-13T11-24-03-269Z-production-art-11d7ec",
+  "stageContract": "docs/CODEX_STAGE5_ART_PILOT.md",
+  "recoveryContract": "docs/CODEX_STAGE5_RECOVERY.md",
+  "scope": {
+    "styleExplorations": {"required": 2, "maximum": 3, "sameBeat": "EP1 gate encounter, used only as a style test"},
+    "characterReferences": ["nika", "matteo", "elio", "leo"],
+    "contactSheet": {"required": true, "mustUseActualPixels": true, "labelsOutsideArt": true},
+    "pilotCg": {"required": 4, "status": "OUT_OF_SCOPE_UNTIL_OWNER_APPROVAL"}
+  },
+  "canon": {
+    "upstreamArtBible": "artifacts/art-direction/ART_BIBLE.md",
+    "upstreamVisualLanguage": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+    "localAnchorPreservation": "artifacts/production-art/recovery-preserved-local-artifacts.json",
+    "shotList": "artifacts/art-direction/EP1_SHOT_LIST.md"
+  },
+  "requiredPerAsset": ["actual bytes", "dimensions", "sha256", "producer/tool", "prompt or brief", "provenance", "approval state"],
+  "currentAssets": {
+    "realRasterReferences": 0,
+    "styleExplorations": 0,
+    "contactSheets": 0,
+    "pilotCgs": 0,
+    "runtimeMappingsChanged": false
+  },
+  "stopLines": ["no CG batch before explicit owner approval", "no mass season art", "no fabricated pixel/hash/PASS evidence"]
+}

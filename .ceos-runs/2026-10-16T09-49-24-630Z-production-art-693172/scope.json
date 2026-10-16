@@ -1,0 +1,28 @@
+{
+  "target": "Stage 9.4 current canonical EP2 production batch: preserve accepted S19-S23 as verified existing-art reuse and produce the next bounded S24-S26 dual-format batch",
+  "inScope": [
+    "current-head S19-S23 verified existing-art reuse, exactly 5 accepted pairs and 10 existing PNGs with byte/hash/dimension revalidation",
+    "S24 dual-format pair",
+    "S25 dual-format pair",
+    "S26 dual-format pair",
+    "source-bound briefs",
+    "fresh Terra native generation",
+    "per-image CEOS output gates",
+    "runtime desktop/mobile pixel QA",
+    "independent Web High analysis and acceptance",
+    "batch-only evidence"
+  ],
+  "outOfScope": [
+    "S19-S23 regeneration or mutation",
+    "EP3",
+    "any other EP2 families",
+    "episode-final acceptance",
+    "release readiness",
+    "merge",
+    "publish",
+    "Yandex submission",
+    "changes to narrative source, save schema, runtime behavior, secrets or managed CEOS history"
+  ],
+  "acceptanceContract": "S19-S23 reuse is mechanically revalidated with exact current bytes and remains untouched; S24-S26 produce six real project-owned PNGs with source-bound provenance and per-image output receipts; affected runtime desktop/mobile pixel QA and independent Web High acceptance are recorded; CEOS reaches only truthful batch-level status and does not claim EP2 final acceptance or release readiness",
+  "mutationBoundary": "Only new Stage 9.4 evidence, source-bound S24-S26 briefs/receipts, six S24-S26 PNG outputs and their scoped runtime/Web evidence may be added; preserve all existing S19-S23 bytes, mappings, receipts, historical runs and untracked user data; no merge or publication"
+}

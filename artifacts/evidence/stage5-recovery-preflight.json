@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_SOURCE_RECONCILIATION",
+  "repositoryRoot": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "remote": "https://github.com/m-amirov/Season-of-Broken-Hearts.git",
+  "branch": "main",
+  "head": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "originMain": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "fetch": {"command": "git fetch origin main", "status": "PASS"},
+  "stage5Document": {
+    "path": "docs/CODEX_STAGE5_ART_PILOT.md",
+    "status": "PRESENT",
+    "addedBy": "dfdcdef772445c56e6f2de1efb6c32f426b70cb2"
+  },
+  "recoveryDocument": {"path": "docs/CODEX_STAGE5_RECOVERY.md", "status": "READ"},
+  "oldReportCorrection": {
+    "path": "artifacts/production-art/GENERATION_BLOCKER.md",
+    "preserved": true,
+    "currentDocumentMissingClaim": "SUPERSEDED_BY_SOURCE_RECONCILIATION"
+  },
+  "oldCeosRun": {
+    "runId": "2026-10-13T11-08-25-655Z-production-art-e2a267",
+    "status": "TERMINAL_BLOCKED_NOT_REOPENED",
+    "evidenceHead": "04db0cc35748d80e497ee022750a5bc4f40c848e"
+  },
+  "generation": {
+    "styleExploration": "INLINE_OUTPUT_NOT_PERSISTED",
+    "characterReferences": "NOT_STARTED",
+    "pilotCg": "NOT_STARTED",
+    "reason": "current run-scoped capability attestation passed, but no project-local output path was available; no generated PNG is claimed",
+    "runId": "2026-10-13T11-24-03-269Z-production-art-11d7ec",
+    "blocker": "BLOCKED_IMAGE_OUTPUT_PERSISTENCE"
+  },
+  "verdict": "SOURCE_SYNC_RECOVERED; IMAGE_PRODUCTION_BLOCKED"
+}

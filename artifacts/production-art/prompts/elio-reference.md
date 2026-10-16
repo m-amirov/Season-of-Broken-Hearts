@@ -1,0 +1,3 @@
+# Elio reference prompt
+
+Create one separate PNG character reference for Elio Benedetti in the same selected single 2D semi-realistic painterly style as Nika and Matteo. Three-quarter portrait/full upper body with a readable full face, natural adult anatomy and a humane, witty but guarded expression. Elio is 30, a working chef: dark loose curls, expressive brown eyes, realistic terracotta apron or overshirt over practical kitchen attire, lived-in hands and believable working posture. Use a quiet neutral Mediterranean-toned reference backdrop; no scene UI, captions, logo, watermark, baked text, collage or extra characters. Preserve identity and avoid turning the apron into a costume or stereotype.

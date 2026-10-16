@@ -1,0 +1,3411 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_RUNTIME_PREVIEW_CAPTURED",
+  "sourceHead": "502f042ddbce756c213b5101102a9c7648b95e69",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "previewObjectPosition": null,
+  "previewObjectPositions": {
+    "CG-01-v1": "50% 10%",
+    "CG-01-v2": "50% 10%",
+    "CG-02": "50% 5%",
+    "CG-03": "50% 5%",
+    "CG-04": "50% 0%"
+  },
+  "viewports": [
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 430,
+      "height": 932
+    },
+    {
+      "width": 1920,
+      "height": 900
+    }
+  ],
+  "cases": [
+    {
+      "id": "CG-01-v1",
+      "cue": "CG-01",
+      "asset": "assets/production/cg/ep1-arrival-cg.png",
+      "captures": [
+        {
+          "label": "CG-01-v1-anchor-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v1/anchor-360x640.png",
+          "sha256": "cd070b201f937a9cd792b37df2adcfd9b157047366bdef3bd7800d8ddf7dc717",
+          "bytes": 244639,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 320
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 364,
+            "height": 323
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0105
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 64,
+            "right": 1019,
+            "bottom": 964,
+            "width": 1014,
+            "height": 901
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.083,
+                0.54,
+                0.424
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 107,
+                "top": 27,
+                "right": 195,
+                "bottom": 136
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.066,
+                0.995,
+                1.072
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 202,
+                "top": 21,
+                "right": 358,
+                "bottom": 343
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0,
+                0.6,
+                0.3,
+                0.98
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.953,
+                0.298,
+                1.601
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 305,
+                "right": 107,
+                "bottom": 512
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v1-anchor-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v1/anchor-390x844.png",
+          "sha256": "9d7968f3b8b88ac12cd5c0e5c67b4f698573a91701c64907f546dcbf1cdadf98",
+          "bytes": 393269,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 513
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 394,
+            "height": 518
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0103
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 20,
+            "right": 1019,
+            "bottom": 1353,
+            "width": 1014,
+            "height": 1333
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.088,
+                0.54,
+                0.319
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 116,
+                "top": 45,
+                "right": 211,
+                "bottom": 164
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.077,
+                0.995,
+                0.757
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 219,
+                "top": 39,
+                "right": 388,
+                "bottom": 388
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0,
+                0.6,
+                0.3,
+                0.98
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.676,
+                0.298,
+                1.114
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 347,
+                "right": 116,
+                "bottom": 572
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v1-anchor-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v1/anchor-430x932.png",
+          "sha256": "fa44a9e661ff238afbc46f6b80ffe894ff56dc1dc29d0653287931be1ab3521b",
+          "bytes": 481712,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 591
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 597
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0095
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 14,
+            "right": 1019,
+            "bottom": 1408,
+            "width": 1014,
+            "height": 1394
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.089,
+                0.54,
+                0.309
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 128,
+                "top": 53,
+                "right": 232,
+                "bottom": 183
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.078,
+                0.995,
+                0.728
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 241,
+                "top": 46,
+                "right": 428,
+                "bottom": 430
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0,
+                0.6,
+                0.3,
+                0.98
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.651,
+                0.298,
+                1.07
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 384,
+                "right": 128,
+                "bottom": 632
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v1-anchor-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v1/anchor-1920x900.png",
+          "sha256": "b1a800e3b13c86aaf3ac19399cbda226f9d412b0958139a7512f81be22cee543",
+          "bytes": 785919,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 595
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -3,
+            "width": 727,
+            "height": 601
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 70,
+            "right": 1019,
+            "bottom": 908,
+            "width": 1014,
+            "height": 838
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.082,
+                0.54,
+                0.448
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 815,
+                "top": 49,
+                "right": 989,
+                "bottom": 267
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.063,
+                0.995,
+                1.145
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 1004,
+                "top": 38,
+                "right": 1316,
+                "bottom": 681
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0,
+                0.6,
+                0.3,
+                0.98
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                1.017,
+                0.298,
+                1.713
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 596,
+                "top": 605,
+                "right": 815,
+                "bottom": 1020
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        }
+      ]
+    },
+    {
+      "id": "CG-01-v2",
+      "cue": "CG-01",
+      "asset": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "captures": [
+        {
+          "label": "CG-01-v2-anchor-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v2/anchor-360x640.png",
+          "sha256": "245ceb89e05eff1d5af0039ce426289d2a09d65f7fde7a8969ceef03fc61dbf4",
+          "bytes": 249146,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 320
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 364,
+            "height": 323
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0105
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 64,
+            "right": 1019,
+            "bottom": 964,
+            "width": 1014,
+            "height": 901
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.083,
+                0.54,
+                0.424
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 107,
+                "top": 27,
+                "right": 195,
+                "bottom": 136
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.066,
+                0.995,
+                1.072
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 202,
+                "top": 21,
+                "right": 358,
+                "bottom": 343
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                1.021,
+                0.338,
+                1.618
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 20,
+                "top": 327,
+                "right": 122,
+                "bottom": 518
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v2-anchor-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v2/anchor-390x844.png",
+          "sha256": "69bf0962eeac0de9a191b020bf7eed029c249d371e73151aae7615ecb50fa2c7",
+          "bytes": 402928,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 513
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 394,
+            "height": 518
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0103
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 20,
+            "right": 1019,
+            "bottom": 1353,
+            "width": 1014,
+            "height": 1333
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.088,
+                0.54,
+                0.319
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 116,
+                "top": 45,
+                "right": 211,
+                "bottom": 164
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.077,
+                0.995,
+                0.757
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 219,
+                "top": 39,
+                "right": 388,
+                "bottom": 388
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                0.722,
+                0.338,
+                1.125
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 22,
+                "top": 371,
+                "right": 132,
+                "bottom": 577
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v2-anchor-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v2/anchor-430x932.png",
+          "sha256": "02a479eb9b7aff30024cdf8869f639b9bbeac873853f6f103bc04d937f746cd7",
+          "bytes": 494754,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 591
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 597
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0095
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 14,
+            "right": 1019,
+            "bottom": 1408,
+            "width": 1014,
+            "height": 1394
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.089,
+                0.54,
+                0.309
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 128,
+                "top": 53,
+                "right": 232,
+                "bottom": 183
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.078,
+                0.995,
+                0.728
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 241,
+                "top": 46,
+                "right": 428,
+                "bottom": 430
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                0.695,
+                0.338,
+                1.081
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 24,
+                "top": 411,
+                "right": 146,
+                "bottom": 638
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v2-anchor-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-01-v2/anchor-1920x900.png",
+          "sha256": "4fd2d2e98528433a2310dcbdee0fda1af31dbeda3fba180eb9b7f2440cf2b033",
+          "bytes": 786422,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 595
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -3,
+            "width": 727,
+            "height": 601
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 10%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 70,
+            "right": 1019,
+            "bottom": 908,
+            "width": 1014,
+            "height": 838
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.082,
+                0.54,
+                0.448
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 815,
+                "top": 49,
+                "right": 989,
+                "bottom": 267
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.063,
+                0.995,
+                1.145
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 1004,
+                "top": 38,
+                "right": 1316,
+                "bottom": 681
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                1.09,
+                0.338,
+                1.732
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 640,
+                "top": 649,
+                "right": 844,
+                "bottom": 1030
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        }
+      ]
+    },
+    {
+      "id": "CG-02",
+      "cue": "CG-02",
+      "asset": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "captures": [
+        {
+          "label": "CG-02-anchor-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/anchor-360x640.png",
+          "sha256": "ec0029883a33d3b4af17746a7f81bf6813dbc641f3b2eea23197cf1329a25d56",
+          "bytes": 245096,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 3,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 320
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 364,
+            "height": 323
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0105
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 32,
+            "right": 1019,
+            "bottom": 933,
+            "width": 1014,
+            "height": 901
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.221,
+                0.369,
+                0.545
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 35,
+                "top": 71,
+                "right": 133,
+                "bottom": 174
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.067,
+                0.823,
+                0.442
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 209,
+                "top": 21,
+                "right": 296,
+                "bottom": 142
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.545,
+                0.611,
+                0.868
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 151,
+                "top": 174,
+                "right": 220,
+                "bottom": 278
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.752,
+                0.63,
+                0.995,
+                1.107
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 271,
+                "top": 202,
+                "right": 358,
+                "bottom": 354
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.664,
+                0.197,
+                1.261
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 213,
+                "right": 71,
+                "bottom": 404
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Он протянул руку, но другой держал связку ключей и папку, прижатую к груди. Ника пожала свободную ладонь и заметила чернила на его пальцах.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-choice-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/choice-360x640.png",
+          "sha256": "0aa240d06570202313011c53ff726907e6d381b387fd8d70a14d2dc12cf7a893",
+          "bytes": 189152,
+          "stateLabel": "choice",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 7,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 231
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -1,
+            "width": 364,
+            "height": 233
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0097
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 44,
+            "right": 1019,
+            "bottom": 695,
+            "width": 1014,
+            "height": 651
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.286,
+                0.369,
+                0.735
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 35,
+                "top": 66,
+                "right": 133,
+                "bottom": 170
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.074,
+                0.823,
+                0.593
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 209,
+                "top": 17,
+                "right": 296,
+                "bottom": 137
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.735,
+                0.611,
+                1.183
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 151,
+                "top": 170,
+                "right": 220,
+                "bottom": 273
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.752,
+                0.853,
+                0.995,
+                1.513
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 271,
+                "top": 197,
+                "right": 358,
+                "bottom": 350
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.9,
+                0.197,
+                1.726
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 208,
+                "right": 71,
+                "bottom": 399
+              }
+            }
+          },
+          "choicesVisible": true,
+          "dialogueText": "Вы всегда так быстро переходите к диагнозу?",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-anchor-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/anchor-390x844.png",
+          "sha256": "4a291f279fb02819d451ccbff84873de6c178f270d38b279404ff1a91a7df38c",
+          "bytes": 396495,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 3,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 513
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 394,
+            "height": 518
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0103
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 10,
+            "right": 1019,
+            "bottom": 1343,
+            "width": 1014,
+            "height": 1333
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.165,
+                0.369,
+                0.384
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 37,
+                "top": 85,
+                "right": 144,
+                "bottom": 197
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.062,
+                0.823,
+                0.315
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 227,
+                "top": 32,
+                "right": 321,
+                "bottom": 162
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.384,
+                0.611,
+                0.603
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 163,
+                "top": 197,
+                "right": 238,
+                "bottom": 309
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.753,
+                0.442,
+                0.995,
+                0.764
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 293,
+                "top": 227,
+                "right": 388,
+                "bottom": 392
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.465,
+                0.197,
+                0.868
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 238,
+                "right": 77,
+                "bottom": 445
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Он протянул руку, но другой держал связку ключей и папку, прижатую к груди. Ника пожала свободную ладонь и заметила чернила на его пальцах.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-choice-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/choice-390x844.png",
+          "sha256": "3b0ee722b1435e788b2c8beaaa33cbff92e213ba7c6d8dccbce1af0d70573e8e",
+          "bytes": 338856,
+          "stateLabel": "choice",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 7,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 434
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 394,
+            "height": 438
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 20,
+            "right": 1019,
+            "bottom": 1149,
+            "width": 1014,
+            "height": 1128
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.186,
+                0.369,
+                0.445
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 37,
+                "top": 81,
+                "right": 144,
+                "bottom": 193
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.064,
+                0.823,
+                0.363
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 227,
+                "top": 28,
+                "right": 321,
+                "bottom": 158
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.445,
+                0.611,
+                0.704
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 163,
+                "top": 193,
+                "right": 238,
+                "bottom": 305
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.753,
+                0.513,
+                0.995,
+                0.894
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 293,
+                "top": 223,
+                "right": 388,
+                "bottom": 388
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.54,
+                0.197,
+                1.017
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 234,
+                "right": 77,
+                "bottom": 441
+              }
+            }
+          },
+          "choicesVisible": true,
+          "dialogueText": "Вы всегда так быстро переходите к диагнозу?",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-anchor-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/anchor-430x932.png",
+          "sha256": "a1a4f2ea5a43f2e7a5466b288c115e017dc39eb1d53abc16ab2ba163bfd71381",
+          "bytes": 484062,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 3,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 591
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 597
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0095
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 7,
+            "right": 1019,
+            "bottom": 1401,
+            "width": 1014,
+            "height": 1394
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.16,
+                0.369,
+                0.37
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 41,
+                "top": 95,
+                "right": 159,
+                "bottom": 218
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.061,
+                0.823,
+                0.303
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 250,
+                "top": 36,
+                "right": 354,
+                "bottom": 179
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.37,
+                0.611,
+                0.579
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 180,
+                "top": 218,
+                "right": 263,
+                "bottom": 342
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.752,
+                0.425,
+                0.995,
+                0.733
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 324,
+                "top": 251,
+                "right": 428,
+                "bottom": 433
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.447,
+                0.197,
+                0.832
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 264,
+                "right": 85,
+                "bottom": 492
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Он протянул руку, но другой держал связку ключей и папку, прижатую к груди. Ника пожала свободную ладонь и заметила чернила на его пальцах.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-choice-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/choice-430x932.png",
+          "sha256": "f78c273c2147edabd9f9184df195c45977a0de5c77fbcd4f85dc95328f30ceb9",
+          "bytes": 431891,
+          "stateLabel": "choice",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 7,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 522
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 527
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 15,
+            "right": 1019,
+            "bottom": 1246,
+            "width": 1014,
+            "height": 1231
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.175,
+                0.369,
+                0.412
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 41,
+                "top": 91,
+                "right": 159,
+                "bottom": 215
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.062,
+                0.823,
+                0.337
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 250,
+                "top": 33,
+                "right": 354,
+                "bottom": 176
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.412,
+                0.611,
+                0.649
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 180,
+                "top": 215,
+                "right": 263,
+                "bottom": 339
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.752,
+                0.474,
+                0.995,
+                0.824
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 324,
+                "top": 248,
+                "right": 428,
+                "bottom": 430
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.499,
+                0.197,
+                0.936
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 261,
+                "right": 85,
+                "bottom": 489
+              }
+            }
+          },
+          "choicesVisible": true,
+          "dialogueText": "Вы всегда так быстро переходите к диагнозу?",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-anchor-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/anchor-1920x900.png",
+          "sha256": "3287f0734227796fe39206483854cf23356a55b9fff3611bacf7960218060d79",
+          "bytes": 794503,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 3,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 584
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -3,
+            "width": 727,
+            "height": 590
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0096
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 36,
+            "right": 1019,
+            "bottom": 858,
+            "width": 1014,
+            "height": 823
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.237,
+                0.369,
+                0.591
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 669,
+                "top": 138,
+                "right": 865,
+                "bottom": 345
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.069,
+                0.823,
+                0.479
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 1018,
+                "top": 40,
+                "right": 1193,
+                "bottom": 280
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.591,
+                0.611,
+                0.946
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 902,
+                "top": 345,
+                "right": 1040,
+                "bottom": 552
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.752,
+                0.685,
+                0.995,
+                1.208
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 1142,
+                "top": 400,
+                "right": 1316,
+                "bottom": 705
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.722,
+                0.197,
+                1.376
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 596,
+                "top": 422,
+                "right": 742,
+                "bottom": 803
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Он протянул руку, но другой держал связку ключей и папку, прижатую к груди. Ника пожала свободную ладонь и заметила чернила на его пальцах.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-02-choice-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-02/choice-1920x900.png",
+          "sha256": "be261946e1ae53c5f4d9f6a491c616c9649fba98fb71987b2c3dc355b841f5b8",
+          "bytes": 686277,
+          "stateLabel": "choice",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_gate",
+          "dialogueIndex": 7,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 490
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -2,
+            "width": 727,
+            "height": 495
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 42,
+            "right": 1019,
+            "bottom": 732,
+            "width": 1014,
+            "height": 690
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.15,
+                0.37,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.273,
+                0.369,
+                0.696
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 669,
+                "top": 134,
+                "right": 865,
+                "bottom": 341
+              }
+            },
+            "matteoFace": {
+              "sourceNormalized": [
+                0.58,
+                0.06,
+                0.82,
+                0.28
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.072,
+                0.823,
+                0.562
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 1018,
+                "top": 35,
+                "right": 1193,
+                "bottom": 275
+              }
+            },
+            "offeredHandshake": {
+              "sourceNormalized": [
+                0.42,
+                0.34,
+                0.61,
+                0.53
+              ],
+              "runtimeNormalized": [
+                0.419,
+                0.696,
+                0.611,
+                1.119
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 902,
+                "top": 341,
+                "right": 1040,
+                "bottom": 548
+              }
+            },
+            "keysAndFolder": {
+              "sourceNormalized": [
+                0.75,
+                0.39,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.752,
+                0.807,
+                0.995,
+                1.43
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 1142,
+                "top": 395,
+                "right": 1316,
+                "bottom": 701
+              }
+            },
+            "nikaBag": {
+              "sourceNormalized": [
+                0,
+                0.41,
+                0.2,
+                0.76
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.851,
+                0.197,
+                1.631
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 596,
+                "top": 417,
+                "right": 742,
+                "bottom": 799
+              }
+            }
+          },
+          "choicesVisible": true,
+          "dialogueText": "Вы всегда так быстро переходите к диагнозу?",
+          "consoleErrors": [],
+          "requestFailures": []
+        }
+      ]
+    },
+    {
+      "id": "CG-03",
+      "cue": "CG-03",
+      "asset": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "captures": [
+        {
+          "label": "CG-03-anchor-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-03/anchor-360x640.png",
+          "sha256": "0e706c81199d88df24cb025ea1a44b4a1a6514d95ac59911f79efcfcfb8bf0ed",
+          "bytes": 228607,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_kitchen",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 320
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 364,
+            "height": 323
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0105
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 32,
+            "right": 1019,
+            "bottom": 933,
+            "width": 1014,
+            "height": 901
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.12,
+                0.12,
+                0.38,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.116,
+                0.169,
+                0.379,
+                0.459
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 42,
+                "top": 54,
+                "right": 136,
+                "bottom": 147
+              }
+            },
+            "elioFace": {
+              "sourceNormalized": [
+                0.58,
+                0.07,
+                0.83,
+                0.26
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.084,
+                0.833,
+                0.408
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 209,
+                "top": 27,
+                "right": 300,
+                "bottom": 131
+              }
+            },
+            "kitchenWorkline": {
+              "sourceNormalized": [
+                0.38,
+                0.38,
+                1,
+                0.96
+              ],
+              "runtimeNormalized": [
+                0.379,
+                0.613,
+                1.005,
+                1.602
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 136,
+                "top": 196,
+                "right": 362,
+                "bottom": 513
+              }
+            },
+            "cupAndCounter": {
+              "sourceNormalized": [
+                0,
+                0.73,
+                0.28,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                1.21,
+                0.278,
+                1.67
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 387,
+                "right": 100,
+                "bottom": 535
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "На кухне гремела посуда. Мужчина в белом фартуке держал нож как дирижёрскую палочку и спорил с кастрюлей.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-03-anchor-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-03/anchor-390x844.png",
+          "sha256": "aacd3fea02090845afda54bbaf5a938462f1a51d523fd7989c3430c0d87fdada",
+          "bytes": 368720,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_kitchen",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 513
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 394,
+            "height": 518
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0103
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 10,
+            "right": 1019,
+            "bottom": 1343,
+            "width": 1014,
+            "height": 1333
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.12,
+                0.12,
+                0.38,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.116,
+                0.131,
+                0.379,
+                0.327
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 45,
+                "top": 67,
+                "right": 148,
+                "bottom": 168
+              }
+            },
+            "elioFace": {
+              "sourceNormalized": [
+                0.58,
+                0.07,
+                0.83,
+                0.26
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.073,
+                0.833,
+                0.292
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 227,
+                "top": 37,
+                "right": 325,
+                "bottom": 150
+              }
+            },
+            "kitchenWorkline": {
+              "sourceNormalized": [
+                0.38,
+                0.38,
+                1,
+                0.96
+              ],
+              "runtimeNormalized": [
+                0.379,
+                0.43,
+                1.005,
+                1.098
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 148,
+                "top": 221,
+                "right": 392,
+                "bottom": 564
+              }
+            },
+            "cupAndCounter": {
+              "sourceNormalized": [
+                0,
+                0.73,
+                0.28,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.833,
+                0.278,
+                1.144
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 428,
+                "right": 108,
+                "bottom": 587
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "На кухне гремела посуда. Мужчина в белом фартуке держал нож как дирижёрскую палочку и спорил с кастрюлей.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-03-anchor-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-03/anchor-430x932.png",
+          "sha256": "a70b785345f0430b8e016e83e5bcb2b7edaeed9c89eebce5d08872149361e2f2",
+          "bytes": 445942,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_kitchen",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 591
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 597
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0095
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 7,
+            "right": 1019,
+            "bottom": 1401,
+            "width": 1014,
+            "height": 1394
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.12,
+                0.12,
+                0.38,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.116,
+                0.127,
+                0.379,
+                0.314
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 50,
+                "top": 75,
+                "right": 163,
+                "bottom": 186
+              }
+            },
+            "elioFace": {
+              "sourceNormalized": [
+                0.58,
+                0.07,
+                0.83,
+                0.26
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.072,
+                0.833,
+                0.281
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 250,
+                "top": 43,
+                "right": 358,
+                "bottom": 166
+              }
+            },
+            "kitchenWorkline": {
+              "sourceNormalized": [
+                0.38,
+                0.38,
+                1,
+                0.96
+              ],
+              "runtimeNormalized": [
+                0.379,
+                0.414,
+                1.005,
+                1.053
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 163,
+                "top": 244,
+                "right": 432,
+                "bottom": 622
+              }
+            },
+            "cupAndCounter": {
+              "sourceNormalized": [
+                0,
+                0.73,
+                0.28,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.799,
+                0.278,
+                1.097
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 472,
+                "right": 119,
+                "bottom": 648
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "На кухне гремела посуда. Мужчина в белом фартуке держал нож как дирижёрскую палочку и спорил с кастрюлей.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-03-anchor-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-03/anchor-1920x900.png",
+          "sha256": "0dacd96d1590175a17483183bdf84dfeeccff9887b695c014991efb134ffca3c",
+          "bytes": 763932,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_kitchen",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 595
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -3,
+            "width": 727,
+            "height": 601
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 5%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 35,
+            "right": 1019,
+            "bottom": 873,
+            "width": 1014,
+            "height": 838
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.12,
+                0.12,
+                0.38,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.116,
+                0.178,
+                0.379,
+                0.49
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 684,
+                "top": 106,
+                "right": 873,
+                "bottom": 292
+              }
+            },
+            "elioFace": {
+              "sourceNormalized": [
+                0.58,
+                0.07,
+                0.83,
+                0.26
+              ],
+              "runtimeNormalized": [
+                0.581,
+                0.087,
+                0.833,
+                0.435
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 1018,
+                "top": 52,
+                "right": 1200,
+                "bottom": 259
+              }
+            },
+            "kitchenWorkline": {
+              "sourceNormalized": [
+                0.38,
+                0.38,
+                1,
+                0.96
+              ],
+              "runtimeNormalized": [
+                0.379,
+                0.655,
+                1.005,
+                1.718
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 873,
+                "top": 390,
+                "right": 1324,
+                "bottom": 1022
+              }
+            },
+            "cupAndCounter": {
+              "sourceNormalized": [
+                0,
+                0.73,
+                0.28,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                1.297,
+                0.278,
+                1.792
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 596,
+                "top": 772,
+                "right": 800,
+                "bottom": 1066
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "На кухне гремела посуда. Мужчина в белом фартуке держал нож как дирижёрскую палочку и спорил с кастрюлей.",
+          "consoleErrors": [],
+          "requestFailures": []
+        }
+      ]
+    },
+    {
+      "id": "CG-04",
+      "cue": "CG-04",
+      "asset": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "captures": [
+        {
+          "label": "CG-04-anchor-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-04/anchor-360x640.png",
+          "sha256": "60b988296cee9e07b122360b4386b504d8de3f69bf81489347f32de6bedd43a3",
+          "bytes": 194843,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_leo_entrance",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 297
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -1,
+            "width": 364,
+            "height": 300
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 0%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0115
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 0,
+            "right": 1019,
+            "bottom": 835,
+            "width": 1014,
+            "height": 835
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.14,
+                0.38,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.257,
+                0.379,
+                0.625
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 35,
+                "top": 77,
+                "right": 136,
+                "bottom": 186
+              }
+            },
+            "leoFace": {
+              "sourceNormalized": [
+                0.56,
+                0.04,
+                0.83,
+                0.27
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.074,
+                0.833,
+                0.497
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 202,
+                "top": 22,
+                "right": 300,
+                "bottom": 148
+              }
+            },
+            "blueprintTube": {
+              "sourceNormalized": [
+                0.72,
+                0.5,
+                1,
+                0.69
+              ],
+              "runtimeNormalized": [
+                0.722,
+                0.92,
+                1.005,
+                1.269
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 260,
+                "top": 274,
+                "right": 362,
+                "bottom": 377
+              }
+            },
+            "pavedQuay": {
+              "sourceNormalized": [
+                0,
+                0.64,
+                1,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                1.177,
+                1.005,
+                1.839
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 350,
+                "right": 362,
+                "bottom": 547
+              }
+            },
+            "waterline": {
+              "sourceNormalized": [
+                0,
+                0.44,
+                1,
+                0.64
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.809,
+                1.005,
+                1.177
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 241,
+                "right": 362,
+                "bottom": 350
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "У дальнего пирса мужчина удерживал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-04-anchor-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-04/anchor-390x844.png",
+          "sha256": "449dcaa99b05ee1bdca0f028bef8c8970d45d825f47f20528b1cf46d8a0a671b",
+          "bytes": 328066,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_leo_entrance",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 488
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 394,
+            "height": 493
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 0%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0094
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 0,
+            "right": 1019,
+            "bottom": 1269,
+            "width": 1014,
+            "height": 1269
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.14,
+                0.38,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.169,
+                0.379,
+                0.411
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 37,
+                "top": 83,
+                "right": 148,
+                "bottom": 201
+              }
+            },
+            "leoFace": {
+              "sourceNormalized": [
+                0.56,
+                0.04,
+                0.83,
+                0.27
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.048,
+                0.833,
+                0.327
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 219,
+                "top": 24,
+                "right": 325,
+                "bottom": 159
+              }
+            },
+            "blueprintTube": {
+              "sourceNormalized": [
+                0.72,
+                0.5,
+                1,
+                0.69
+              ],
+              "runtimeNormalized": [
+                0.722,
+                0.605,
+                1.005,
+                0.835
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 282,
+                "top": 295,
+                "right": 392,
+                "bottom": 407
+              }
+            },
+            "pavedQuay": {
+              "sourceNormalized": [
+                0,
+                0.64,
+                1,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.774,
+                1.005,
+                1.21
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 378,
+                "right": 392,
+                "bottom": 590
+              }
+            },
+            "waterline": {
+              "sourceNormalized": [
+                0,
+                0.44,
+                1,
+                0.64
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.532,
+                1.005,
+                0.774
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 260,
+                "right": 392,
+                "bottom": 378
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "У дальнего пирса мужчина удерживал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-04-anchor-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-04/anchor-430x932.png",
+          "sha256": "01939b98b8c11544e21b524ed201f3876020ceb39091ca9f51d868d23cf29505",
+          "bytes": 406357,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_leo_entrance",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 563
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 568
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 0%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0094
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 0,
+            "right": 1019,
+            "bottom": 1328,
+            "width": 1014,
+            "height": 1328
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.14,
+                0.38,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.162,
+                0.379,
+                0.393
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 41,
+                "top": 91,
+                "right": 163,
+                "bottom": 221
+              }
+            },
+            "leoFace": {
+              "sourceNormalized": [
+                0.56,
+                0.04,
+                0.83,
+                0.27
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.046,
+                0.833,
+                0.312
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 241,
+                "top": 26,
+                "right": 358,
+                "bottom": 176
+              }
+            },
+            "blueprintTube": {
+              "sourceNormalized": [
+                0.72,
+                0.5,
+                1,
+                0.69
+              ],
+              "runtimeNormalized": [
+                0.722,
+                0.578,
+                1.005,
+                0.798
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 311,
+                "top": 325,
+                "right": 432,
+                "bottom": 449
+              }
+            },
+            "pavedQuay": {
+              "sourceNormalized": [
+                0,
+                0.64,
+                1,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.74,
+                1.005,
+                1.156
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 416,
+                "right": 432,
+                "bottom": 651
+              }
+            },
+            "waterline": {
+              "sourceNormalized": [
+                0,
+                0.44,
+                1,
+                0.64
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.509,
+                1.005,
+                0.74
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": -2,
+                "top": 286,
+                "right": 432,
+                "bottom": 416
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "У дальнего пирса мужчина удерживал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-04-anchor-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-object-position-targeted/CG-04/anchor-1920x900.png",
+          "sha256": "11e82dcd7f954a10c07d197b50af275a5891f39ae3c86d6bdb0331d252abbb4b",
+          "bytes": 688682,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_leo_entrance",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 584
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -3,
+            "width": 727,
+            "height": 590
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 0%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0096
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 0,
+            "right": 1019,
+            "bottom": 823,
+            "width": 1014,
+            "height": 823
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.1,
+                0.14,
+                0.38,
+                0.34
+              ],
+              "runtimeNormalized": [
+                0.096,
+                0.261,
+                0.379,
+                0.635
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 669,
+                "top": 153,
+                "right": 873,
+                "bottom": 371
+              }
+            },
+            "leoFace": {
+              "sourceNormalized": [
+                0.56,
+                0.04,
+                0.83,
+                0.27
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.075,
+                0.833,
+                0.504
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 1004,
+                "top": 44,
+                "right": 1200,
+                "bottom": 294
+              }
+            },
+            "blueprintTube": {
+              "sourceNormalized": [
+                0.72,
+                0.5,
+                1,
+                0.69
+              ],
+              "runtimeNormalized": [
+                0.722,
+                0.934,
+                1.005,
+                1.288
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 1120,
+                "top": 545,
+                "right": 1324,
+                "bottom": 752
+              }
+            },
+            "pavedQuay": {
+              "sourceNormalized": [
+                0,
+                0.64,
+                1,
+                1
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                1.195,
+                1.005,
+                1.867
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 596,
+                "top": 698,
+                "right": 1324,
+                "bottom": 1090
+              }
+            },
+            "waterline": {
+              "sourceNormalized": [
+                0,
+                0.44,
+                1,
+                0.64
+              ],
+              "runtimeNormalized": [
+                -0.005,
+                0.822,
+                1.005,
+                1.195
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 596,
+                "top": 480,
+                "right": 1324,
+                "bottom": 698
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "У дальнего пирса мужчина удерживал под локтем тубус с чертежами. Он повернулся на звук шагов — и прошлое оказалось старше, чем Ника хотела помнить.",
+          "consoleErrors": [],
+          "requestFailures": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "CG-01-v1",
+      "cue": "CG-01",
+      "path": "assets/production/cg/ep1-arrival-cg.png",
+      "sha256": "ada685552224102c731180b3867a600c7afbf65aad239286d14b798d6573fc01",
+      "bytes": 2789799,
+      "expectedDimensions": "1024x1536"
+    },
+    {
+      "id": "CG-01-v2",
+      "cue": "CG-01",
+      "path": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+      "bytes": 2756788,
+      "expectedDimensions": "1024x1536"
+    },
+    {
+      "id": "CG-02",
+      "cue": "CG-02",
+      "path": "assets/production/cg/ep1-matteo-gate-cg.png",
+      "sha256": "960ed775b178e84a67e141c276b5ff1ed3dd8d4dea6f2bbb39115747701affcf",
+      "bytes": 2935141,
+      "expectedDimensions": "1024x1536"
+    },
+    {
+      "id": "CG-03",
+      "cue": "CG-03",
+      "path": "assets/production/cg/ep1-elio-kitchen-cg.png",
+      "sha256": "ee21d16c69080422f633e53331d82706000f75808cdedcdfb1e356c0b6610918",
+      "bytes": 2620196,
+      "expectedDimensions": "1024x1536"
+    },
+    {
+      "id": "CG-04",
+      "cue": "CG-04",
+      "path": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "sha256": "f7a559d8dbb693c73c9b973f6eba5b0fa510b26f45ddbfe7e39b7a0478f814aa",
+      "bytes": 2661333,
+      "expectedDimensions": "1024x1536"
+    }
+  ]
+}

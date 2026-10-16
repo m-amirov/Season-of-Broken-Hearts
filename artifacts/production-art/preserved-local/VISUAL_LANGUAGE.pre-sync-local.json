@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "PROPOSED_NOT_APPROVED",
+  "sourceHead": "04db0cc35748d80e497ee022750a5bc4f40c848e",
+  "directionId": "mediterranean-editorial-gouache",
+  "summary": "Cinematic Mediterranean editorial gouache with restrained brush grain, natural proportions, warm limestone, sea-glass reflected light and indigo evening contrast.",
+  "rendering": {
+    "surface": "controlled digital gouache with visible but subordinate brush grain",
+    "perspective": "human-eye height, normal-lens cinematic perspective",
+    "anatomy": "natural adult proportions; no corrective deformation for mobile crops",
+    "edges": "selective dry-brush edges with readable faces and hands",
+    "lighting": "warm directional sun plus cool sea fill; indigo evening without neon rim light"
+  },
+  "palette": {
+    "limestone": "#D8C4A4",
+    "sunlitCream": "#F3E6C8",
+    "terracotta": "#A65C43",
+    "mutedCoral": "#C98268",
+    "seaGlass": "#6F9D9A",
+    "deepWater": "#244A5A",
+    "eveningIndigo": "#1C2840",
+    "blueShadow": "#334761",
+    "reflectedGold": "#D6A86A"
+  },
+  "characters": {
+    "nika": {"age": 28, "identityAnchors": ["dark ash-brown jaw-length bob", "grey-hazel eyes", "cream linen and rust/coral layer", "observant guarded posture"]},
+    "matteo": {"age": 33, "identityAnchors": ["dark wavy hair", "controlled brown eyes", "stone linen shirt", "economical gestures and tired responsibility"]},
+    "elio": {"age": 30, "identityAnchors": ["dark loose curls", "warm expressive eyes", "faded terracotta apron or overshirt", "open posture and restrained humour"]},
+    "leo": {"age": 31, "identityAnchors": ["soft dark-brown wave", "green-grey eyes", "charcoal overshirt", "held-back speech in shoulders and hands"]}
+  },
+  "contactSheet": {
+    "purpose": "comparative exploratory canon; not runtime art",
+    "layout": "2x2 equal portrait studies with shared light and neutral limestone/sea-light setting",
+    "camera": "consistent 3/4 waist-up, human-eye height",
+    "mobileSafeArea": "negative lower-third for later dialogue overlay",
+    "bakedTextAllowed": false,
+    "watermarksAllowed": false
+  },
+  "prohibitedPatterns": [
+    "universal purple-blue gradient",
+    "neon rim light or excessive glow",
+    "glassmorphism or dashboard-like cards inside art",
+    "generic stock-photo glamour posing",
+    "floating cut-out characters without a supporting ground plane",
+    "malformed anatomy, enlarged heads, disconnected hands or impossible joints",
+    "baked dialogue, UI, captions, logos, watermarks or signatures",
+    "wardrobe or props that contradict the narrative canon",
+    "all characters rendered with the same face, age or emotional expression"
+  ],
+  "approval": {
+    "ownerDecision": "PENDING",
+    "contactSheetPath": null,
+    "contactSheetSha256": null,
+    "reviewEvidence": null
+  }
+}

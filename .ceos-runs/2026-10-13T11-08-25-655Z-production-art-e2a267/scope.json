@@ -1,0 +1,26 @@
+{
+  "target": "Stage 5 EP1 art pilot: Art Bible, four-character visual direction and bounded contact sheet, then four pilot CG integration and current-runtime visual QA",
+  "inScope": [
+    "Stage 5 contract preflight",
+    "Art Bible",
+    "VISUAL_LANGUAGE",
+    "four-character canon",
+    "comparative contact sheet",
+    "four pilot CGs",
+    "EP1 mappings",
+    "preload/crossfade regression",
+    "current-runtime desktop/mobile screenshots",
+    "provenance and evidence"
+  ],
+  "outOfScope": [
+    "mass season generation",
+    "Episodes 2-10 art",
+    "publication",
+    "moderation",
+    "deployment",
+    "release ZIP",
+    "unrelated narrative/runtime refactors"
+  ],
+  "acceptanceContract": "Current-head pilot evidence proves Art Bible and visual direction, all generated outputs pass mechanical output gates, four CGs are integrated only in authored EP1 cues, preload/crossfade behavior is verified, and independent pixel-backed visual acceptance is recorded; otherwise BLOCKED or FAIL",
+  "mutationBoundary": "artifacts/art-direction; artifacts/production-art; assets/production; narrative/assets.json; scoped runtime mapping/preload changes; artifacts/evidence; docs/CODEX_STAGE5_ART_PILOT.md only if restored from authoritative source"
+}

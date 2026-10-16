@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED",
+  "verdict": "BLOCKED_PRE_GENERATION",
+  "testedSourceHead": "04db0cc35748d80e497ee022750a5bc4f40c848e",
+  "branch": "main",
+  "worktreeAtCapture": "dirty_due_to_ceos_run_and_stage5_evidence_only",
+  "ceosRun": "2026-10-13T11-08-25-655Z-production-art-e2a267",
+  "webPreflight": "READY",
+  "nativeImageCapability": "NOT_CHALLENGED_BECAUSE_GENERATION_STOPPED_BEFORE_BRIEF_READY",
+  "stageContract": {
+    "path": "docs/CODEX_STAGE5_ART_PILOT.md",
+    "status": "MISSING_ON_CURRENT_MAIN_AND_ORIGIN_MAIN"
+  },
+  "references": {
+    "required": ["nika", "matteo", "elio", "leo"],
+    "availableRealImageFiles": 0,
+    "status": "BLOCKED_NO_CHARACTER_REFERENCE_PIXELS"
+  },
+  "artBible": {
+    "status": "PROPOSED_NOT_APPROVED",
+    "path": "artifacts/art-direction/ART_BIBLE.md",
+    "visualLanguagePath": "artifacts/art-direction/VISUAL_LANGUAGE.json"
+  },
+  "notVerified": [
+    "contact sheet",
+    "four pilot CGs",
+    "integration",
+    "preload/crossfade",
+    "runtime screenshots",
+    "independent visual acceptance"
+  ],
+  "evidence": [
+    "artifacts/production-art/stage5-inventory.json",
+    "artifacts/production-art/GENERATION_BLOCKER.md"
+  ]
+}

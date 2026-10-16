@@ -1,0 +1,47 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-13T11:10:38.010Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_PRE_GENERATION: authoritative Stage 5 contract is missing from main/origin/main and no real local character-reference pixels exist; CEOS source-bound brief cannot pass.",
+  "metadata": {
+    "artBibleStatus": "PROPOSED_NOT_APPROVED",
+    "stage5Contract": "MISSING",
+    "characterReferencePixels": 0,
+    "generationStarted": false
+  },
+  "source": {
+    "available": true,
+    "head": "04db0cc35748d80e497ee022750a5bc4f40c848e",
+    "clean": false,
+    "worktreeSha256": "dd8f65b580cb3de5f4998fd9ede3370584246778f92e382a8ec08cc09226a2c8"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/art-direction/ART_BIBLE.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\art-direction\\ART_BIBLE.md",
+      "projectRelativePath": "artifacts/art-direction/ART_BIBLE.md",
+      "type": "file",
+      "sha256": "b3ac5660a5e6bb39709d0a80467f431142bbf9c73bf9a939eadce874f8f77020",
+      "size": 5819
+    },
+    {
+      "input": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\art-direction\\VISUAL_LANGUAGE.json",
+      "projectRelativePath": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "type": "file",
+      "sha256": "e29ee78540359ac4a5322af8c548dbf3a01f50f2f685e56ff8b220f9a12614ba",
+      "size": 2834
+    },
+    {
+      "input": "artifacts/production-art/GENERATION_BLOCKER.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\GENERATION_BLOCKER.md",
+      "projectRelativePath": "artifacts/production-art/GENERATION_BLOCKER.md",
+      "type": "file",
+      "sha256": "ef9d72dea2e7f9903bd46b5b3f3cd78fae03abdc958b7e50f69777947442c59a",
+      "size": 1167
+    }
+  ]
+}

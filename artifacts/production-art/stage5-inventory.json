@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_PRE_GENERATION",
+  "stage": "5",
+  "sourceHead": "04db0cc35748d80e497ee022750a5bc4f40c848e",
+  "runId": "2026-10-13T11-08-25-655Z-production-art-e2a267",
+  "authoritativeContract": {
+    "path": "docs/CODEX_STAGE5_ART_PILOT.md",
+    "existsInCurrentMain": false,
+    "existsInOriginMain": false,
+    "historyMatch": false,
+    "impact": "Stage 5-specific acceptance and generation limits cannot be verified."
+  },
+  "lockedScope": {
+    "characters": ["nika", "matteo", "elio", "leo"],
+    "exploration": "one comparative contact sheet after contract/reference blockers are resolved",
+    "pilotCgs": 4,
+    "runtimeIntegration": "EP1 only, after explicit visual-direction approval",
+    "massSeasonGeneration": false
+  },
+  "assetFamilies": [
+    {"id": "character-canon-contact-sheet", "kind": "exploration", "status": "BLOCKED_NO_REFERENCES", "characters": ["nika", "matteo", "elio", "leo"]},
+    {"id": "ep1-pilot-cg-01", "kind": "cg", "status": "PENDING_DIRECTION_APPROVAL"},
+    {"id": "ep1-pilot-cg-02", "kind": "cg", "status": "PENDING_DIRECTION_APPROVAL"},
+    {"id": "ep1-pilot-cg-03", "kind": "cg", "status": "PENDING_DIRECTION_APPROVAL"},
+    {"id": "ep1-pilot-cg-04", "kind": "cg", "status": "PENDING_DIRECTION_APPROVAL"}
+  ],
+  "requiredEvidenceBeforeGeneration": [
+    "authoritative docs/CODEX_STAGE5_ART_PILOT.md restored or explicitly replaced by owner",
+    "real local reference pixels for Nika, Matteo, Elio and Leo, or explicit owner authorization for text-only exploratory seed generation",
+    "source-bound art brief passing ceos art-brief-verify",
+    "fresh run-scoped CEOS capability challenge and attestation in the actual producing context"
+  ],
+  "notRun": [
+    "image generation",
+    "art-output-verify",
+    "contact-sheet pixel review",
+    "pilot CG integration",
+    "runtime preload/crossfade regression",
+    "current-HEAD visual acceptance"
+  ]
+}

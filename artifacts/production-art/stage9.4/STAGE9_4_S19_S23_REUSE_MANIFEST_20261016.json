@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_CURRENT_HEAD_VERIFIED_EXISTING_ART_REUSE",
+  "status": "PENDING_CEOS_BATCH_MECHANICAL_GATE",
+  "stage": "9.4",
+  "sourceHead": "b6e0df490490f3509980d9de5e373869b374338d",
+  "branch": "codex/stage9-full-season-architecture",
+  "mode": "VERIFIED_EXISTING_ART_REUSE",
+  "generationInvoked": false,
+  "protectedPairs": ["S19", "S20", "S21", "S22", "S23"],
+  "pairCount": 5,
+  "pngCount": 10,
+  "reuseRule": "Reuse exact project-owned PNG bytes only; no regeneration, crop, resize, stretch, replacement or mapping mutation for S19-S23.",
+  "historicalProvenance": [
+    {
+      "path": "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+      "sha256": "4d28855a9edb29ae04d828d6557be52f099137c55c0cc769374b4ef98cb197c5",
+      "role": "Stage 9.4 reuse decision and family mapping"
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+      "sha256": "116a85ec19dd8879098d6f0a0e76b5607e7dd97bcd74fc29ad36dbb068ceee01",
+      "role": "S19 corrected native-dimension output-gate receipts"
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "sha256": "8bb8445416b72a40d5c631f4480cf6feb3f7321608caa62fcb3683a35b8b4605",
+      "role": "Historical S22-S23 reuse contract"
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "sha256": "8c98981e83e6cf429ff106033c3c7b16f81d0eab2b3870ae6e242f1aec55698e",
+      "role": "Historical source-bound reuse provenance"
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "sha256": "7cfd63465942664eee32733c5d921c5009f5e644d22db6d9c35dcc9a292def42",
+      "role": "Historical scoped Web High acceptance"
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "sha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527",
+      "role": "Historical scoped runtime pixel QA"
+    },
+    {
+      "runId": "2026-10-16T06-40-09-235Z-production-art-a0db75",
+      "role": "Historical reuse evidence run; immutable"
+    },
+    {
+      "runId": "2026-10-16T06-48-01-039Z-production-art-cb957d",
+      "role": "Historical S22-S23 partial batch run; immutable"
+    }
+  ],
+  "currentDependencyEvidence": [
+    { "path": "narrative/graph.json", "bytes": 241013, "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544" },
+    { "path": "narrative/assets.json", "bytes": 10348, "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c" },
+    { "path": "narrative/episodes/ep-02.json", "bytes": 73052, "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e" },
+    { "path": "config/production-art-dimensions.json", "bytes": 1776, "sha256": "a95d321be585b7c66621052b5c4be32c48c989658820a807618d7e04a7b7e7ce" }
+  ],
+  "pairs": [
+    {
+      "sceneId": "S19",
+      "assetId": "ep2-office-morning-brief-cg",
+      "portrait": { "path": "assets/production/cg/ep2-office-morning-brief-cg.png", "kind": "background", "width": 1024, "height": 1536, "bytes": 2516178, "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35" },
+      "landscape": { "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png", "kind": "background", "width": 1672, "height": 941, "bytes": 2506516, "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299" }
+    },
+    {
+      "sceneId": "S20",
+      "assetId": "ep2-office-budget-cg",
+      "portrait": { "path": "assets/production/cg/ep2-office-budget-cg.png", "kind": "background", "width": 1024, "height": 1536, "bytes": 2425207, "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793" },
+      "landscape": { "path": "assets/production/cg/ep2-office-budget-cg-landscape.png", "kind": "background", "width": 1672, "height": 941, "bytes": 2408297, "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005" }
+    },
+    {
+      "sceneId": "S21",
+      "assetId": "ep2-service-inventory-cg",
+      "portrait": { "path": "assets/production/cg/ep2-service-inventory-cg.png", "kind": "background", "width": 1024, "height": 1536, "bytes": 2365508, "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47" },
+      "landscape": { "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png", "kind": "background", "width": 1672, "height": 941, "bytes": 2312711, "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867" }
+    },
+    {
+      "sceneId": "S22",
+      "assetId": "ep2-family-rehearsal-cg",
+      "portrait": { "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png", "kind": "background", "width": 1024, "height": 1536, "bytes": 2726336, "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8" },
+      "landscape": { "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png", "kind": "background", "width": 1672, "height": 941, "bytes": 2817060, "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90" }
+    },
+    {
+      "sceneId": "S23",
+      "assetId": "ep2-family-rehearsal-response-cg",
+      "portrait": { "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png", "kind": "background", "width": 1024, "height": 1536, "bytes": 2529135, "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc" },
+      "landscape": { "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png", "kind": "background", "width": 1672, "height": 941, "bytes": 2413767, "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031" }
+    }
+  ],
+  "acceptanceBoundary": "This manifest records safe byte reuse and current mechanical revalidation only. S24-S26 generation, runtime QA, independent Web High acceptance and EP2 final acceptance remain separate gates."
+}

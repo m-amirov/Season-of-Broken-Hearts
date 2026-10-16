@@ -1,0 +1,81 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-16T09:50:25.860Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_AMBIGUOUS_WORKTREE_SESSIONS: live project-scoped CEOS hooks expose multiple eligible same-worktree sessions; parent binding is untrusted. Preserve S19-S23 reuse evidence and stop before capability attestation, producer route check and Image Gen.",
+  "metadata": {
+    "untrackedPreservation": {
+      "status": "PRESERVED",
+      "statusEntries": 49,
+      "recursiveFiles": 205,
+      "bytes": 51977482,
+      "classification": ".loop/stage9.4-untracked-classification-20261016.md"
+    },
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23"
+    ],
+    "protectedPngCount": 10,
+    "reuseManifest": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_REUSE_MANIFEST_20261016.json",
+    "reuseBatchGate": "PASS_ART_BATCH_MECHANICAL",
+    "bindingStatus": "BLOCKED_AMBIGUOUS_WORKTREE_SESSIONS",
+    "capabilityChallenge": "NOT_TRUSTED",
+    "producerRouteCheck": "NOT_ATTEMPTED",
+    "imageGenerationInvoked": false,
+    "historicalRunsModified": false
+  },
+  "source": {
+    "available": true,
+    "head": "b6e0df490490f3509980d9de5e373869b374338d",
+    "clean": false,
+    "worktreeSha256": "b225824b97b424a232faf995297d7f6dc31a06ae470af38c6a1372d3af140f93"
+  },
+  "artifacts": [
+    {
+      "input": ".loop/stage9.4-untracked-classification-20261016.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.loop\\stage9.4-untracked-classification-20261016.md",
+      "projectRelativePath": ".loop/stage9.4-untracked-classification-20261016.md",
+      "type": "file",
+      "sha256": "70f8f79cc885b007cba92a449850ef8e4865140c53efd0cfa0a99e13fc666482",
+      "size": 4180
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_REUSE_MANIFEST_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_S19_S23_REUSE_MANIFEST_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_REUSE_MANIFEST_20261016.json",
+      "type": "file",
+      "sha256": "af99ff40f3bb0928370d87079b7a472b9dd36bede6ea3ce9118474a6607aefbc",
+      "size": 6012
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_BATCH_GATE_MANIFEST_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_S19_S23_BATCH_GATE_MANIFEST_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_BATCH_GATE_MANIFEST_20261016.json",
+      "type": "file",
+      "sha256": "063253e4e32fb15598ff198b29d5bf67d80766fcfcd7c5a5452b8d1ae219685f",
+      "size": 1757
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/STAGE9_4_S19_S23_REUSE_OUTPUT_BATCH_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\receipts\\STAGE9_4_S19_S23_REUSE_OUTPUT_BATCH_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/STAGE9_4_S19_S23_REUSE_OUTPUT_BATCH_20261016.json",
+      "type": "file",
+      "sha256": "9a10878057d70d382380ea04b7d258a90680e0585a3696a04f789d7ed9f855a9",
+      "size": 9201
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_CURRENT_RUN_BINDING_BLOCKER_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_CURRENT_RUN_BINDING_BLOCKER_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_CURRENT_RUN_BINDING_BLOCKER_20261016.json",
+      "type": "file",
+      "sha256": "c2e641d66e848e6e2e03ebe68a6c823d8ab7f84c0df195ff0c5927b6d5194e90",
+      "size": 2366
+    }
+  ]
+}

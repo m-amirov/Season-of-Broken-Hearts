@@ -1,0 +1,18 @@
+{
+  "target": "Season of Broken Hearts EP1 dual-format art recovery",
+  "inScope": [
+    "CEOS dual-format infrastructure",
+    "Starter Kit handoff",
+    "EP1 scene/asset manifest",
+    "adaptive portrait-desktop runtime selection",
+    "mechanical art verification"
+  ],
+  "outOfScope": [
+    "Yandex publication",
+    "moderation submission",
+    "final art generation without fresh capability attestation",
+    "rewriting prior runs"
+  ],
+  "acceptanceContract": "Every mapped EP1 scene has real portrait and desktop assets with verified paths, SHA-256, dimensions, decoded PNGs, and fresh runtime visual acceptance; missing desktop remains BLOCKED",
+  "mutationBoundary": "May update scoped CEOS/Starter Kit contracts, Stage8 manifest/plan, asset selection runtime and tests; must not change authored story order, dialogue, predicates, save schema, publish settings, secrets, or existing accepted evidence"
+}

@@ -1,0 +1,29 @@
+{
+  "target": "Stage 5 recovery: bounded style exploration and four separate EP1 character reference candidates",
+  "inScope": [
+    "source reconciliation",
+    "Stage 5 Art Bible",
+    "style exploration",
+    "comparative contact sheet",
+    "Nika reference",
+    "Matteo reference",
+    "Elio reference",
+    "Leo reference",
+    "provenance",
+    "SHA-256",
+    "owner approval checkpoint"
+  ],
+  "outOfScope": [
+    "four pilot CG batch",
+    "runtime integration",
+    "narrative mapping",
+    "preload changes",
+    "EP2-EP10 art",
+    "mass generation",
+    "marketing",
+    "release packaging",
+    "publication"
+  ],
+  "acceptanceContract": "Current-head evidence contains actual generated pixels for 2-3 style explorations, a real contact sheet, four separate PNG references with provenance and hashes, and an explicit AWAITING_ART_STYLE_APPROVAL checkpoint; otherwise BLOCKED",
+  "mutationBoundary": "artifacts/art-direction; artifacts/production-art; artifacts/evidence; assets/production-references; .loop; .ceos-runs"
+}

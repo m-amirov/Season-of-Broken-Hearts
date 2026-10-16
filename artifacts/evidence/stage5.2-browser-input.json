@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scenario": "tools/qa/ep1-input-regression.js",
+  "result": {
+    "status": "PASS",
+    "locale": "en",
+    "results": {
+      "pointerupOutside": "ep1_matteo_direct_response",
+      "pointercancelOutside": "ep1_matteo_formal_response",
+      "dragOffRelease": "ep1_matteo_direct_response",
+      "doubleTap": "ep1_matteo_formal_response",
+      "keyboardActivation": "ep1_matteo_direct_response",
+      "screenReaderClick": "ep1_matteo_formal_response",
+      "touchChoiceTransition": "ep1_matteo_formal_response"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scenario": "tools/qa/ep1-orientation-regression.js",
+  "result": {
+    "status": "PASS",
+    "results": [
+      {
+        "viewport": "360x640",
+        "metrics": {
+          "innerWidth": 360,
+          "innerHeight": 640,
+          "documentWidth": 360,
+          "documentHeight": 640,
+          "bodyWidth": 360,
+          "bodyHeight": 640,
+          "overflowX": "visible"
+        }
+      },
+      {
+        "viewport": "390x844",
+        "metrics": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "documentWidth": 390,
+          "documentHeight": 844,
+          "bodyWidth": 390,
+          "bodyHeight": 844,
+          "overflowX": "visible"
+        }
+      },
+      {
+        "viewport": "430x932",
+        "metrics": {
+          "innerWidth": 430,
+          "innerHeight": 932,
+          "documentWidth": 430,
+          "documentHeight": 932,
+          "bodyWidth": 430,
+          "bodyHeight": 932,
+          "overflowX": "visible"
+        }
+      }
+    ]
+  }
+}

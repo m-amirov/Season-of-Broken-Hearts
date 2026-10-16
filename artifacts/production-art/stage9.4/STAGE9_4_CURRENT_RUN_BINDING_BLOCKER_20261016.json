@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_CURRENT_RUN_BINDING_BLOCKER",
+  "status": "BLOCKED_AMBIGUOUS_WORKTREE_SESSIONS",
+  "runId": "2026-10-16T09-49-24-630Z-production-art-693172",
+  "ceosVersion": "0.5.23",
+  "projectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+  "sourceHead": "b6e0df490490f3509980d9de5e373869b374338d",
+  "producerParentSessionIdAtRunCreation": null,
+  "liveGlobalMarkers": {
+    "sessionFile": "C:/Users/user/.codex/ceos/runtime/current-session.json",
+    "turnFile": "C:/Users/user/.codex/ceos/runtime/current-turn.json",
+    "sessionId": "01a1441a-7ca6-7303-8269-a718efe058a3",
+    "turnId": "01a1441a-d4a1-7062-afb2-13921b1efe0b",
+    "cwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts"
+  },
+  "scopedRuntimeObservation": {
+    "worktreeKey": "19505ba6adeb38d18e7dd26aa04c5845244bc4ac0b711c743130ffa8d2c32be4",
+    "scopedRootsObserved": 3,
+    "eligibleRoots": [
+      {
+        "sessionId": "01a1441a-7ca6-7303-8269-a718efe058a3",
+        "turnId": "01a1441a-d4a1-7062-afb2-13921b1efe0b",
+        "turnObservedAt": "2026-10-16T09:46:13.289Z"
+      },
+      {
+        "sessionId": "01a143e2-96a9-7e81-a9ea-64b436e9346e",
+        "turnId": "01a1440d-7562-7550-ad2d-8377b3e17f23",
+        "turnObservedAt": "2026-10-16T09:31:35.627Z"
+      }
+    ],
+    "oneIncompleteRootWasIgnored": true
+  },
+  "hooks": {
+    "configFile": "C:/Users/user/.codex/hooks.json",
+    "script": "C:/Users/user/.codex/ceos/hooks/ceos-runtime-context.mjs",
+    "requiredFields": ["hook_event_name", "session_id", "cwd"],
+    "globalMarkersMatchProjectCwd": true,
+    "projectScopedSelection": "AMBIGUOUS"
+  },
+  "checks": {
+    "webPreflight": "READY",
+    "s19S23ReuseBatchGate": "PASS_ART_BATCH_MECHANICAL",
+    "capabilityChallenge": "BLOCKED_AMBIGUOUS_WORKTREE_SESSIONS",
+    "producerRouteCheck": "NOT_ATTEMPTED_WITHOUT_TRUSTED_PARENT",
+    "imageGenerationInvoked": false,
+    "newPngsCreated": 0,
+    "historicalRunsModified": false
+  },
+  "requiredRecovery": "Allow the other live/stale same-worktree session marker to close through its real hook lifecycle, then start or resume a supported Codex task in this canonical checkout and create a fresh run-scoped capability challenge. Do not delete or hand-edit scoped markers, session IDs, run.json, checkpoints or historical hashes."
+}

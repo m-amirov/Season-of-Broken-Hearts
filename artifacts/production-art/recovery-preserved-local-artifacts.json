@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "PRESERVED_BEFORE_UPSTREAM_FAST_FORWARD",
+  "sourceHeadBeforeSync": "04db0cc35748d80e497ee022750a5bc4f40c848e",
+  "sourceHeadAfterSync": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+  "backupRoot": "C:\\Users\\user\\AppData\\Local\\Temp\\soh-stage5-recovery-local-20261013-142215",
+  "files": [
+    {"path": "artifacts/art-direction/ART_BIBLE.md", "sha256": "B3AC5660A5E6BB39709D0A80467F431142BBF9C73BF9A939EADCE874F8F77020", "role": "local character anchors and proposed style"},
+    {"path": "artifacts/art-direction/VISUAL_LANGUAGE.json", "sha256": "E29EE78540359AC4A5322AF8C548DBF3A01F50F2F685E56FF8B220F9A12614BA", "role": "local visual language proposal"},
+    {"path": "artifacts/production-art/GENERATION_BLOCKER.md", "sha256": "EF9D72DEA2E7F9903BD46B5B3F3CD78FAE03ABDC958B7E50F69777947442C59A", "role": "preserved historical blocker"}
+  ],
+  "preservationMethod": "hash-verified copy before fast-forward plus byte-identical in-repository preservation snapshots; no reset --hard; no force operation",
+  "inRepositoryPreservationSnapshots": [
+    {"path": "artifacts/production-art/preserved-local/ART_BIBLE.pre-sync-local.md", "sha256": "B3AC5660A5E6BB39709D0A80467F431142BBF9C73BF9A939EADCE874F8F77020"},
+    {"path": "artifacts/production-art/preserved-local/VISUAL_LANGUAGE.pre-sync-local.json", "sha256": "E29EE78540359AC4A5322AF8C548DBF3A01F50F2F685E56FF8B220F9A12614BA"},
+    {"path": "artifacts/production-art/GENERATION_BLOCKER.md", "sha256": "EF9D72DEA2E7F9903BD46B5B3F3CD78FAE03ABDC958B7E50F69777947442C59A"}
+  ],
+  "currentUpstreamFiles": [
+    "artifacts/art-direction/ART_BIBLE.md",
+    "artifacts/art-direction/VISUAL_LANGUAGE.json",
+    "artifacts/art-direction/EP1_SHOT_LIST.md",
+    "docs/CODEX_STAGE5_ART_PILOT.md",
+    "docs/CODEX_STAGE5_RECOVERY.md"
+  ]
+}

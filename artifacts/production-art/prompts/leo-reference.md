@@ -1,0 +1,3 @@
+# Leo reference prompt
+
+Create one separate PNG character reference for Leonardo (Leo) Vitale in the same selected single 2D semi-realistic painterly style as Nika, Matteo and Elio. Three-quarter portrait/full upper body with a readable full face, natural adult anatomy and a restrained, thoughtful expression. Leo is 31, an architect: dark brown wave, green-grey eyes, clean visual distinction from Matteo, practical summer clothing in charcoal/olive/stone tones, held-back speech suggested only through posture and expression. Include a blueprint tube only if the neutral reference context justifies it; do not force a prop. No scene UI, captions, logo, watermark, baked text, collage or extra characters. Preserve identity for later full-scene CGs.

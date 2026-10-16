@@ -1,0 +1,31 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-13T11:10:18.407Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Inventory persisted. Stage 5 contract and character reference pixels are missing; no generation authorized.",
+  "metadata": {
+    "scopeComplete": true,
+    "assetFamiliesChecked": 5,
+    "generatedAssets": 0,
+    "massGeneration": false
+  },
+  "source": {
+    "available": true,
+    "head": "04db0cc35748d80e497ee022750a5bc4f40c848e",
+    "clean": false,
+    "worktreeSha256": "6207d2737ab9bbd4e542a247e34b66477d2edd48b4dbf205d081d96677bba64f"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage5-inventory.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5-inventory.json",
+      "projectRelativePath": "artifacts/production-art/stage5-inventory.json",
+      "type": "file",
+      "sha256": "112997875f60344abb808801fa7675aadf0107b5896f423de3919dc452d435a5",
+      "size": 1933
+    }
+  ]
+}

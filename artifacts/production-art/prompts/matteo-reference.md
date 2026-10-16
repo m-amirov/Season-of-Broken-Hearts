@@ -1,0 +1,3 @@
+# Matteo reference prompt
+
+Create one separate PNG character reference for Matteo Ricci in the same selected single 2D semi-realistic painterly style as Nika. Three-quarter portrait/full upper body with a readable full face, natural adult anatomy and a controlled but tired expression. Matteo is 33, a boutique-hotel owner: dark wavy hair, brown eyes, believable business-casual summer clothing in stone/white linen with a restrained navy accent, practical and quietly worn rather than tuxedoed or luxurious. Use a quiet neutral Mediterranean-toned reference backdrop; no scene UI, captions, logo, watermark, baked text, collage or extra characters. Keep him visually distinct from Leo and preserve the identity for later full-scene CGs.

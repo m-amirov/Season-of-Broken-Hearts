@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_RUNTIME_PREVIEW_CAPTURED",
+  "sourceHead": "e669cdb8b070db183e7dc65897b73bdc72d52825",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "previewObjectPosition": null,
+  "previewObjectPositions": {
+    "CG-01-v2": "50% 18%"
+  },
+  "usePreview": true,
+  "viewports": [
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 430,
+      "height": 932
+    },
+    {
+      "width": 1920,
+      "height": 900
+    }
+  ],
+  "cases": [
+    {
+      "id": "CG-01-v2",
+      "cue": "CG-01",
+      "asset": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "captures": [
+        {
+          "label": "CG-01-v2-anchor-360x640",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-cg01-18/CG-01-v2/anchor-360x640.png",
+          "sha256": "e52e09c9d84d2675a983c569f768c63df0e4f5807d2d659c08a046a56dde3213",
+          "bytes": 247864,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 360,
+            "height": 320
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -2,
+            "width": 364,
+            "height": 323
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 18%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0105
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 114,
+            "right": 1019,
+            "bottom": 1015,
+            "width": 1014,
+            "height": 901
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.027,
+                0.54,
+                0.368
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 107,
+                "top": 8,
+                "right": 195,
+                "bottom": 118
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.009,
+                0.995,
+                1.016
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 202,
+                "top": 3,
+                "right": 358,
+                "bottom": 325
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                0.964,
+                0.338,
+                1.561
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 20,
+                "top": 309,
+                "right": 122,
+                "bottom": 500
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v2-anchor-390x844",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-cg01-18/CG-01-v2/anchor-390x844.png",
+          "sha256": "e86e63892903dcf91c50bf19416990988f9233b8b6c18cd1648596e00efe5810",
+          "bytes": 401404,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 390,
+            "height": 513
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 394,
+            "height": 518
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 18%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0103
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 37,
+            "right": 1019,
+            "bottom": 1370,
+            "width": 1014,
+            "height": 1333
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.076,
+                0.54,
+                0.307
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 116,
+                "top": 39,
+                "right": 211,
+                "bottom": 157
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.065,
+                0.995,
+                0.745
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 219,
+                "top": 33,
+                "right": 388,
+                "bottom": 382
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                0.71,
+                0.338,
+                1.113
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 22,
+                "top": 364,
+                "right": 132,
+                "bottom": 571
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v2-anchor-430x932",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-cg01-18/CG-01-v2/anchor-430x932.png",
+          "sha256": "e338cc3f790fb926c3bf9d8548389caa64f5c756002cd95df5b702b7741e9e01",
+          "bytes": 495418,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 0,
+            "top": 0,
+            "width": 430,
+            "height": 591
+          },
+          "imageRect": {
+            "left": -2,
+            "top": -3,
+            "width": 434,
+            "height": 597
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 18%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0095
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 26,
+            "right": 1019,
+            "bottom": 1420,
+            "width": 1014,
+            "height": 1394
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.081,
+                0.54,
+                0.301
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 128,
+                "top": 48,
+                "right": 232,
+                "bottom": 178
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                0.07,
+                0.995,
+                0.72
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 241,
+                "top": 41,
+                "right": 428,
+                "bottom": 425
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                0.687,
+                0.338,
+                1.072
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 24,
+                "top": 406,
+                "right": 146,
+                "bottom": 634
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        },
+        {
+          "label": "CG-01-v2-anchor-1920x900",
+          "screenshot": "artifacts/evidence/stage5.2/runtime-cg01-18/CG-01-v2/anchor-1920x900.png",
+          "sha256": "defb7d2c1116cbad446fe875f1016d359b017e1eda80c60221e7b23a68d155d8",
+          "bytes": 787965,
+          "stateLabel": "anchor",
+          "viewport": {
+            "width": 1920,
+            "height": 900
+          },
+          "sceneId": "ep1_arrival",
+          "dialogueIndex": 0,
+          "sceneArt": {
+            "left": 600,
+            "top": 0,
+            "width": 720,
+            "height": 595
+          },
+          "imageRect": {
+            "left": 596,
+            "top": -3,
+            "width": 727,
+            "height": 601
+          },
+          "source": {
+            "width": 1024,
+            "height": 1536
+          },
+          "css": {
+            "objectFit": "cover",
+            "objectPosition": "50% 18%",
+            "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)",
+            "transformScaleX": 1.01,
+            "transformScaleY": 1.0101
+          },
+          "cropSourcePixels": {
+            "left": 5,
+            "top": 126,
+            "right": 1019,
+            "bottom": 963,
+            "width": 1014,
+            "height": 838
+          },
+          "landmarks": {
+            "nikaFace": {
+              "sourceNormalized": [
+                0.3,
+                0.09,
+                0.54,
+                0.29
+              ],
+              "runtimeNormalized": [
+                0.298,
+                0.015,
+                0.54,
+                0.382
+              ],
+              "clipped": false,
+              "runtimePixels": {
+                "left": 815,
+                "top": 9,
+                "right": 989,
+                "bottom": 227
+              }
+            },
+            "villaEntrance": {
+              "sourceNormalized": [
+                0.56,
+                0.08,
+                0.99,
+                0.67
+              ],
+              "runtimeNormalized": [
+                0.561,
+                -0.003,
+                0.995,
+                1.078
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 1004,
+                "top": -2,
+                "right": 1316,
+                "bottom": 642
+              }
+            },
+            "suitcase": {
+              "sourceNormalized": [
+                0.06,
+                0.64,
+                0.34,
+                0.99
+              ],
+              "runtimeNormalized": [
+                0.056,
+                1.023,
+                0.338,
+                1.665
+              ],
+              "clipped": true,
+              "runtimePixels": {
+                "left": 640,
+                "top": 609,
+                "right": 844,
+                "bottom": 991
+              }
+            }
+          },
+          "choicesVisible": false,
+          "dialogueText": "Южный воздух пах морской солью, пылью и лимонной кожурой. Ника Воронцова закрыла дверцу такси и не стала смотреть вслед.",
+          "consoleErrors": [],
+          "requestFailures": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "CG-01-v2",
+      "cue": "CG-01",
+      "path": "assets/production/cg/ep1-arrival-cg-v2.png",
+      "sha256": "5fa0e6e0338422e855352e3f27369fbd42de39a01fd25771f792d314de2cbe80",
+      "bytes": 2756788,
+      "expectedDimensions": "1024x1536"
+    }
+  ]
+}

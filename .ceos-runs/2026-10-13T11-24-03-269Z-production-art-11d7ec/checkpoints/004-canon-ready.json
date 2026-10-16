@@ -1,0 +1,64 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-13T11:31:24.094Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current source-bound canon and real-pixel analysis permit only bounded style exploration; no CG batch.",
+  "metadata": {
+    "canonStatus": "PROPOSED_ART_DIRECTION",
+    "styleApproval": "PENDING",
+    "baselineReview": "PROCEED_TO_BOUNDED_STYLE_EXPLORATION",
+    "productionArtAcceptance": "NOT_PERFORMED",
+    "cgBatch": "NOT_STARTED"
+  },
+  "source": {
+    "available": true,
+    "head": "f5be4d20df4de42401c71b22bb2dcdde951f2493",
+    "clean": false,
+    "worktreeSha256": "b95448ce02bbb91c427ccaa768d65a229d0469f3800d18de3651643e02a29ccc"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/art-direction/ART_BIBLE.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\art-direction\\ART_BIBLE.md",
+      "projectRelativePath": "artifacts/art-direction/ART_BIBLE.md",
+      "type": "file",
+      "sha256": "770912e30d5ab30cbcd7a54ffdcfc0eb89d60b42db516bcb7333b0f8a49e7167",
+      "size": 16134
+    },
+    {
+      "input": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\art-direction\\VISUAL_LANGUAGE.json",
+      "projectRelativePath": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "type": "file",
+      "sha256": "c7dfe220dea319313f2b25a44b6dedb1b952bdd366d32c9deeffd1013bfaf440",
+      "size": 2442
+    },
+    {
+      "input": "artifacts/art-direction/EP1_SHOT_LIST.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\art-direction\\EP1_SHOT_LIST.md",
+      "projectRelativePath": "artifacts/art-direction/EP1_SHOT_LIST.md",
+      "type": "file",
+      "sha256": "9e35fbca287ddb3a6967181c32694fc34527f895242a444696e224bbe777135e",
+      "size": 6538
+    },
+    {
+      "input": "artifacts/production-art/stage5-recovery-inventory.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage5-recovery-inventory.json",
+      "projectRelativePath": "artifacts/production-art/stage5-recovery-inventory.json",
+      "type": "file",
+      "sha256": "87eda86234c210293b46f4c1466e5b828230adc03a37a9df94c64fec7c2d01d0",
+      "size": 1403
+    },
+    {
+      "input": "artifacts/production-art/web-analysis-stage5.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\web-analysis-stage5.json",
+      "projectRelativePath": "artifacts/production-art/web-analysis-stage5.json",
+      "type": "file",
+      "sha256": "195d7232632daa7b86e174ef90ddd4a62592d8d2306a03fff940a099910a075f",
+      "size": 2543
+    }
+  ]
+}
