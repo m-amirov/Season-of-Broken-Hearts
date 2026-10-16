@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_LINKED_RECOVERY_INVENTORY",
+  "status": "PASS_STAGE9_4_S22_S23_INVENTORIED",
+  "sourceHead": "0b55ac34ca54a1f7448e04afe6fa1f22ea733652",
+  "runId": "2026-10-16T04-56-38-829Z-production-art-86041d",
+  "linkedFromRunId": "2026-10-15T17-30-04-937Z-production-art-18949e",
+  "linkedRecoveryProvenance": "artifacts/production-art/stage9.4/STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016.json",
+  "protectedAcceptedPairs": ["S19", "S20", "S21"],
+  "scope": {"pairs": 2, "pngs": 4, "episodes": [2], "scenes": ["S22", "S23"]},
+  "items": [
+    {
+      "pairId": "S22",
+      "sceneId": "S22",
+      "assetFamilyId": "ep2-courtyard-rehearsal-cg",
+      "brief": "artifacts/production-art/stage9.4/briefs/S22-ep2-courtyard-rehearsal-recovery-20261015.json",
+      "briefStatus": "REQUIRES_CURRENT_HEAD_REFRESH",
+      "outputs": [
+        {
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "kind": "background",
+          "width": 1024,
+          "height": 1536,
+          "format": "portrait",
+          "status": "PRESENT_RECOVERED_OUTPUT_GATE_PASS",
+          "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+          "receipt": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-recovered-20261016.json"
+        },
+        {
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+          "kind": "background",
+          "width": 1672,
+          "height": 941,
+          "format": "landscape",
+          "status": "PENDING_GENERATION"
+        }
+      ],
+      "runtimeSceneIds": ["ep2_family_rehearsal"]
+    },
+    {
+      "pairId": "S23",
+      "sceneId": "S23",
+      "assetFamilyId": "ep2-dining-rehearsal-response-cg",
+      "brief": "artifacts/production-art/stage9.4/briefs/S23-ep2-dining-rehearsal-response-recovery-20261015.json",
+      "briefStatus": "REQUIRES_CURRENT_HEAD_REFRESH",
+      "outputs": [
+        {
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+          "kind": "background",
+          "width": 1024,
+          "height": 1536,
+          "format": "portrait",
+          "status": "PENDING_GENERATION"
+        },
+        {
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+          "kind": "background",
+          "width": 1672,
+          "height": 941,
+          "format": "landscape",
+          "status": "PENDING_GENERATION"
+        }
+      ],
+      "runtimeSceneIds": ["ep2_family_rehearsal_response"]
+    }
+  ],
+  "acceptance": {
+    "required": ["real PNG bytes", "one ceos art-output-verify receipt per output", "runtime desktop and mobile pixels", "NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance"],
+    "forbidden": ["S19-S21 regeneration", "placeholder or synthetic PNG", "forged capability, provider or Web receipts"]
+  }
+}
