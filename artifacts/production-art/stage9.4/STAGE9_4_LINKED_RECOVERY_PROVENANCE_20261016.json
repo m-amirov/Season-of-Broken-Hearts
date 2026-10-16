@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_LINKED_RECOVERY_PROVENANCE",
+  "status": "PROVENANCE_SNAPSHOT",
+  "recordedAt": "2026-10-16T04:56:52.403Z",
+  "project": "Season of Broken Hearts",
+  "stage": "9.4",
+  "sourceRun": {
+    "runId": "2026-10-15T17-30-04-937Z-production-art-18949e",
+    "pipeline": "production-art",
+    "state": "BLOCKED",
+    "verdict": "BLOCKED",
+    "runSha256": "30b9479587b59e881fb34d54b55587f9c8f4a6e3436b23f3ca6718b842fcf931",
+    "scopeSha256": "4f2f6c72b655179a15944b544a94eafe1dae3e7ad57f155cf012a2f3fcee8941",
+    "scopeFileSha256": "099dfac0f2d46e6de6c82874484bf5417bf5c944d4d8b4d61567496675bdfa2e",
+    "canonCheckpointFile": "004-canon-ready.json",
+    "canonCheckpointSha256": "32c966617db9dfe4f15230b0b94157a3a553c4a96ef32582d943315e5e9d1c84",
+    "blockerCode": "STAGE_BLOCKED",
+    "blockerReason": "BLOCKED_ART_OUTPUT / ART_FILE_NOT_FOUND",
+    "historyPolicy": "immutable; do not reopen or rewrite this terminal run"
+  },
+  "recovery": {
+    "runId": "2026-10-16T04-56-38-829Z-production-art-86041d",
+    "pipeline": "production-art",
+    "scopeSha256": "4f2f6c72b655179a15944b544a94eafe1dae3e7ad57f155cf012a2f3fcee8941",
+    "parentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "sourceHead": "0778e50fcf5f88fef4738345d9d783f0a034a045",
+    "supportedMechanism": "new scoped production-art run after the terminal ART_FILE_NOT_FOUND blocker; source run, scope and canon hashes are preserved here",
+    "reopenDecision": "The terminal run is not reopened because CEOS 0.5.21 does not allow ART_FILE_NOT_FOUND reopen. The new run is linked by immutable provenance and uses a fresh run-scoped capability challenge before any new generation."
+  },
+  "preserve": [
+    "source run checkpoints and receipts",
+    "S19-S21 accepted PNG bytes and acceptance evidence",
+    "source-bound inventory and canon",
+    "2026-10-15 failed S22 portrait receipt"
+  ],
+  "scope": "S22-S23 only; no S19-S21 changes",
+  "provenance": "This file links the new scoped run to the immutable terminal source run; it is not a capability attestation, generation receipt, route receipt or art acceptance receipt."
+}
