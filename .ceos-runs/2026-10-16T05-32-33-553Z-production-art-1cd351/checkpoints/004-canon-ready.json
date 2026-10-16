@@ -1,0 +1,52 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-16T05:36:50.144Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-head canon revalidated and independent Web art-direction analysis recorded; protect S19-S21 and recovered S22 portrait.",
+  "metadata": {
+    "sourceHead": "79935b6632c6233bd84d22f6bab4f479073986b7",
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviewStatus": "PASS",
+    "webReviewTraceId": "01a14333-cab4-7cf1-a816-90bec727382d",
+    "actualPixelsReceived": true,
+    "artDirectionStatus": "PASS_BOUNDED_ART_DIRECTION_REVIEW",
+    "finalAcceptance": "NOT_PERFORMED",
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "protectedS22Portrait": "DO_NOT_REGENERATE",
+    "canonStatus": "PASS_CANON_CURRENT_HEAD_REVALIDATED"
+  },
+  "source": {
+    "available": true,
+    "head": "79935b6632c6233bd84d22f6bab4f479073986b7",
+    "clean": false,
+    "worktreeSha256": "aab1fa69012e7eab8d1a6b56f4d42eb88c61c73c111a7f60b6b1c34c2b8a0f17"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+      "type": "file",
+      "sha256": "d897b137167ef36e1739439f73eb248a2b230a735ef38eaa397cec256014872f",
+      "size": 2845
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016_CURRENT.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016_CURRENT.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016_CURRENT.json",
+      "type": "file",
+      "sha256": "5d08f24572d386846461c96d88150491e514bfffed3feb997dc5ccef8bdfb7ae",
+      "size": 5076
+    }
+  ]
+}
