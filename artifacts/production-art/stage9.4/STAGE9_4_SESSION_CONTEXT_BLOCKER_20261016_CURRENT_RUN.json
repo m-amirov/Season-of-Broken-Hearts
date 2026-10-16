@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_SESSION_CONTEXT_BLOCKER",
+  "status": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+  "recordedAt": "2026-10-16T05:37:09.874Z",
+  "runId": "2026-10-16T05-32-33-553Z-production-art-1cd351",
+  "stage": "GENERATING",
+  "runProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+  "runProjectRealpath": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+  "git": {
+    "head": "0a281b039a8cc0b458fbde5fc52f74e79e01bbb2",
+    "branch": "codex/stage9-full-season-architecture",
+    "dirty": false
+  },
+  "runtimeMarkers": {
+    "sessionFile": "C:/Users/user/.codex/ceos/runtime/current-session.json",
+    "turnFile": "C:/Users/user/.codex/ceos/runtime/current-turn.json",
+    "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "turnId": "01a14333-cb7d-77c1-9757-a9ae2971b129",
+    "sessionCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+    "turnCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+    "sessionObservedAt": "2026-10-16T05:31:21.581Z",
+    "turnObservedAt": "2026-10-16T05:33:51.523Z",
+    "sessionCwdMatchesRunProject": false,
+    "turnCwdMatchesRunProject": false
+  },
+  "ceos": {
+    "version": "0.5.22",
+    "continueStatus": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "action": "CREATE_LINKED_SESSION_RECOVERY",
+    "integrityBeforeStop": "PASS",
+    "canonCheckpoint": "CANON_READY",
+    "currentHeadCanon": "PASS_CANON_CURRENT_HEAD_REVALIDATED",
+    "webAnalysis": "PASS",
+    "webFinalAcceptance": "NOT_PERFORMED"
+  },
+  "rootCause": {
+    "code": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "detail": "The current trusted CEOS hook session and turn remain bound to the permanent checkout. The current-head recovery run is bound to the dedicated PR worktree, and CEOS requires realpath(current-turn.cwd) to equal run.projectDir before GENERATING work is claimable.",
+    "comparison": "runtimeMarkers.turnCwd != runProjectDir",
+    "permanentCheckoutState": "dirty main checkout with unrelated user files",
+    "safeAlternativeAvailable": false
+  },
+  "preserved": {
+    "s19S21Modified": false,
+    "s22PortraitRegenerated": false,
+    "s22PortraitSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "newImageGenCalls": 0,
+    "newCapabilityChallenge": false,
+    "newLandscapeOrS23Pngs": 0,
+    "runtimePixelChecks": "NOT_PERFORMED",
+    "webFinalAcceptance": "NOT_PERFORMED"
+  },
+  "forbiddenActionsNotTaken": [
+    "runtime marker edits",
+    "session ID substitution",
+    "borrowing stale capability attestations",
+    "generation before trusted binding",
+    "S22 portrait regeneration",
+    "S19-S21 changes"
+  ],
+  "nextSafeAction": "Start or resume a supported Codex task whose actual CEOS hook current-turn.cwd resolves to the PR worktree, then run ceos continue 2026-10-16T05-32-33-553Z-production-art-1cd351 --project <that-worktree> --mode guided --json. Only after an executable linked-session recovery action is returned may a fresh run-scoped capability challenge be issued."
+}

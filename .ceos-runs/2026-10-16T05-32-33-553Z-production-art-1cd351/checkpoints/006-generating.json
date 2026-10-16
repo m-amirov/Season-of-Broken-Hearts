@@ -1,0 +1,45 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-16T05:37:40.602Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "Stopped before Terra child route and Image Gen because trusted CEOS hook cwd does not match the current-head production-art worktree.",
+  "metadata": {
+    "blockerCode": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "trustedBinding": false,
+    "currentTurnCwdMatchesProject": false,
+    "capabilityChallengeId": "cap-caf45a44d3672ab7bdef",
+    "capabilityAttestation": "PRESENT/UNKNOWN current run-session-turn; parent callable surface only",
+    "producerContext": "NOT_VERIFIED",
+    "producerTraceFile": null,
+    "generatedAssetCount": 0,
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "s22PortraitRegenerated": false,
+    "s22PortraitSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "webFinalAcceptance": "NOT_PERFORMED",
+    "runtimePixelChecks": "NOT_PERFORMED",
+    "sourceHead": "0a281b039a8cc0b458fbde5fc52f74e79e01bbb2"
+  },
+  "source": {
+    "available": true,
+    "head": "0a281b039a8cc0b458fbde5fc52f74e79e01bbb2",
+    "clean": false,
+    "worktreeSha256": "c0e1ffb644ed4ba8e3ef4ef8d4ca265481a2e1731a462a221839dccca11cec9b"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_SESSION_CONTEXT_BLOCKER_20261016_CURRENT_RUN.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_SESSION_CONTEXT_BLOCKER_20261016_CURRENT_RUN.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_SESSION_CONTEXT_BLOCKER_20261016_CURRENT_RUN.json",
+      "type": "file",
+      "sha256": "18ef222c6a248b477613ff66f2aeef184257d3d16d9a33f78b19878b3712c0b2",
+      "size": 3149
+    }
+  ]
+}
