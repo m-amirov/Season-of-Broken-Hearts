@@ -13,8 +13,8 @@
   "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
   "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T04-56-38-829Z-production-art-86041d",
   "createdAt": "2026-10-16T04:56:38.832Z",
-  "updatedAt": "2026-10-16T05:01:07.592Z",
-  "completedAt": null,
+  "updatedAt": "2026-10-16T05:02:06.267Z",
+  "completedAt": "2026-10-16T05:02:06.267Z",
   "cycle": 1,
   "maxCycles": 3,
   "webRequired": true,
@@ -35,11 +35,15 @@
     "sourceOfTruth": "native-collected-current-HEAD-evidence",
     "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
   },
-  "state": "CANON_READY",
-  "nextStage": "GENERATING",
-  "verdict": null,
-  "stopReason": null,
-  "checkpointCount": 5,
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "GENERATING",
+    "reason": "Stopped before Terra generation because the trusted CEOS hook cwd does not match the production-art project worktree."
+  },
+  "checkpointCount": 6,
   "scopeSha256": "4f2f6c72b655179a15944b544a94eafe1dae3e7ad57f155cf012a2f3fcee8941",
   "capabilitiesSha256": "24f01a4429e9db83bc5366906488fcc369f5cdea41577ac901aac52a79159f2f",
   "sourceAtStart": {
