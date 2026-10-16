@@ -23,6 +23,63 @@ EP1 имеет 18 сцен и 8 выборов. Все 16 комбинаций �
 отражается через `hotelEvidence=numbers`, а разговор с командой — через
 `hotelEvidence=staff`. Остальной клиффхэнгер остаётся общим.
 
+## EP2–EP3 executable editorial topology
+
+```text
+EP2, days 2–9
+ep2_morning_brief → ep2_wedding_budget
+  ├─ ep2_budget_open → ep2_workday_inventory
+  └─ ep2_budget_improvise → ep2_workday_inventory
+→ ep2_family_rehearsal
+  ├─ ep2_giulia_personal_plan → ep2_family_rehearsal_response
+  └─ ep2_giulia_family_plan → ep2_family_rehearsal_response
+→ ep2_fake_terms
+  ├─ ep2_terms_public → ep2_public_agreement
+  ├─ ep2_terms_limits → ep2_public_agreement
+  └─ ep2_terms_decline → ep2_refusal_response → ep2_refusal_workday
+      ├─ ep2_refusal_help_giulia → ep2_refusal_bianca_arrival
+      └─ ep2_refusal_keep_role → ep2_refusal_bianca_arrival
+→ ep2_bianca_arrives
+  ├─ ep2_bianca_professional → ep2_bianca_professional_response
+  └─ ep2_bianca_pushback → ep2_bianca_pushback_response
+→ ep2_public_agreement / ep2_public_refusal
+→ ep2_rehearsal_failure → ep2_rooftop_after → ep2_transition (day 9)
+
+EP3, days 10–16
+ep3_old_photo → ep3_survey_start
+  ├─ ep3_survey_join → ep3_survey_join_response → ep3_survey_site_problem
+  │   ├─ ep3_report_conflict → ep3_staff_walkthrough
+  │   └─ ep3_hold_conflict → ep3_staff_walkthrough
+  │       ├─ ep3_staff_route_record → ep3_eight_years
+  │       └─ ep3_staff_route_compromise → ep3_eight_years
+  └─ ep3_survey_decline → ep3_survey_decline_response → ep3_report_delivery
+      ├─ ep3_review_report → ep3_eight_years
+      └─ ep3_hold_report → ep3_eight_years
+→ ep3_eight_years → ep3_accountability_choice
+  ├─ ep3_accountability_listen
+  ├─ ep3_accountability_action
+  └─ ep3_accountability_distance
+→ ep3_aurea_drawing
+  ├─ ep3_mark_aurea_link → ep3_document_check
+  └─ ep3_protect_process → ep3_document_check
+→ ep3_document_check_response → ep3_matteo_confrontation
+  ├─ verified Aurea attachment → share or keep private
+  └─ unverified lead → share or keep private
+→ ep3_quiet_return → ep3_transition (day 16)
+```
+
+`publicAgreement` отвечает только за согласие на публичную договорённость;
+`matteoPublicGesture` — за отдельный жест. Поэтому отказ от прикосновения не
+переписывает согласие на договор. Договор закрывается в `ep2_rooftop_after`
+на девятый день (`fakeDatingStatus=ended` при согласии); при отказе он не
+возникает (`fakeDatingStatus=none`). Ни одна из веток EP2–EP3 не меняет
+`route` и не создаёт route-lock до EP6.
+
+`leoEvidence=terms` появляется только после проверки приложения Aurea.
+`leoEvidence=drawing` означает неподтверждённую зацепку и не может быть
+озвучено как установленный факт. Проверка, раскрытие и сохранение в тайне
+разведены отдельными выборами.
+
 ## Full-season topology (planned)
 
 - EP1–5: общее ядро, знакомство и романтические предпочтения.

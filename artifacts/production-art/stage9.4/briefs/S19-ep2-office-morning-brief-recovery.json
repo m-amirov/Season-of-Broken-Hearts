@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S19",
+  "assetFamilyId": "ep2-office-morning-brief-cg",
+  "cue": {
+    "id": "ep2_morning_brief_invoices",
+    "at": [8, 0],
+    "authoredExcerpt": "В папке лежали две накладные на белое бельё: одна оплачена, вторая отмечена как срочная. Ника сверила даты и увидела, что поставщик получил один и тот же заказ дважды."
+  },
+  "requiredCast": ["nika", "matteo", "giulia"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Сверяет две накладные на белое бельё и указывает на двойной заказ."},
+    {"character": "matteo", "action": "Стоит у рабочего стола с папкой и слушает вопрос Ники без навязанного решения."},
+    {"character": "giulia", "action": "Держит план свадебной недели и участвует в деловом обсуждении бюджета."}
+  ],
+  "sceneContinuity": "После утреннего разговора о расписании сцена ведёт к бюджетной проверке и рабочей инвентаризации Villa Serena; никакого публичного жеста или романтического обещания здесь нет.",
+  "location": "Villa Serena office, working table with neutral papers and two linen invoices",
+  "timeOfDay": "Second morning, bright warm daylight entering the office from the courtyard",
+  "wardrobe": {
+    "nika": "EP1-consistent off-white linen shirt, light beige trousers, brown belt and shoulder bag kept outside the working table",
+    "matteo": "White open-collar linen shirt with rolled sleeves, cream trousers, brown belt and document folder",
+    "giulia": "Sage-grey rolled-sleeve work shirt, beige utility apron and dark work trousers"
+  },
+  "emotionalTone": "Practical tension softened by dry family humor; Nika is observant and professionally firm.",
+  "physicalAction": "Nika compares two invoices on the table while Matteo and Giulia remain engaged in the same office discussion.",
+  "facialExpression": "Nika focused and guarded, Matteo tired but receptive, Giulia alert and wry rather than decorative.",
+  "forbiddenProps": [
+    "readable invented invoice text or brand marks",
+    "wedding rings, tuxedos or completed ceremony styling",
+    "romantic embrace or accepted physical intimacy",
+    "any Aurea drawing or document revelation"
+  ],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "desktop": {
+    "width": 1672,
+    "height": 941,
+    "runtimeViewportTarget": {"width": 1920, "height": 1080},
+    "outputGateCommand": "ceos art-output-verify --kind background --width 1672 --height 941",
+    "composition": "Genuine wide office composition with the table and invoice comparison in the foreground; Nika anchors one side, Matteo and Giulia remain clearly readable at distinct depths.",
+    "framing": "16:9 landscape, eye-level medium-wide camera, all three faces and the invoice gesture inside the central safe area with open lower space for the dialogue panel.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "composition": "Genuine vertical office composition that keeps Nika's hands and both invoice sheets visible while stacking Matteo and Giulia in a natural conversational triangle.",
+    "framing": "2:3 portrait, eye-level medium shot, all three faces and the double-order gesture remain visible at 390x844, 360x640 and 430x932 cover framing.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "canonReferences": [
+    "assets/production/cg/ep1-matteo-office-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+    "artifacts/production-art/character-reference-contact-sheet.png"
+  ],
+  "qualityAcceptance": [
+    "All three referenced identities remain distinct and match the supplied character pixels.",
+    "The office, invoice comparison and professional tone are immediately readable without invented text.",
+    "Both formats preserve all required faces and the invoice gesture under the specified mobile cover viewports.",
+    "No romantic consent, Aurea revelation or ceremony state appears before it is authored."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

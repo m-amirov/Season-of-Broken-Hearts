@@ -1,0 +1,19 @@
+{
+  "target": "Stage 9.3 editorial hardening of EP2 and EP3 narrative/runtime graph",
+  "inScope": [
+    "EP2/EP3 authored RU/EN scenes and choices",
+    "timeline/knowledge/consent state",
+    "narrative graph and route reachability",
+    "save/Back/locale/New Game behavior",
+    "editorial evidence and future art handoff"
+  ],
+  "outOfScope": [
+    "EP1 prose and accepted EP1 CG",
+    "EP4-EP10 authored content",
+    "image generation",
+    "publication/deployment/release ZIP",
+    "Yandex submission"
+  ],
+  "acceptanceContract": "EP2 and EP3 are dramatically complete with coherent chronology, source-bound knowledge, meaningful refusal/consent consequences, natural RU/EN dialogue, reachable non-route-locked branches, passing project checks, fresh independent editorial verdict or explicit blocker, and no production image generation",
+  "mutationBoundary": "Only EP2/EP3 narrative fragments, directly related continuity/measurement docs, focused narrative tests, and source-bound art handoff documentation after editorial acceptance; no secrets, publication, image generation, or unrelated dirty worktrees"
+}

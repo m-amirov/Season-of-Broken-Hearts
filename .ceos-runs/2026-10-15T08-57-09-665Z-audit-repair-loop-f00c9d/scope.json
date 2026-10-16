@@ -1,0 +1,19 @@
+{
+  "target": "Stage 9.3 EP2-EP3 editorial hardening",
+  "inScope": [
+    "narrative/episodes/ep-02.json",
+    "narrative/episodes/ep-03.json",
+    "narrative/graph.json",
+    "tests/unit/season-engine-architecture.test.mjs",
+    "continuity docs",
+    "editorial evidence"
+  ],
+  "outOfScope": [
+    "EP1 content",
+    "production CG generation",
+    "Yandex publication",
+    "merge"
+  ],
+  "acceptanceContract": "Local editorial and technical evidence is current; independent editorial verdict is required for full PASS",
+  "mutationBoundary": "Edit only scoped narrative, continuity, graph, tests and evidence files; do not publish or generate images"
+}

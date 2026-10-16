@@ -1,0 +1,42 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-16T06:48:14.406Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Canonical inputs and independent S22/S23 pixel review are recorded; reuse preserves existing bytes and canon.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+    "clean": false,
+    "worktreeSha256": "0a9793a68983853f9c81b471a7f506824eede17a6052d4a53e2fe3d210e02126"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "type": "file",
+      "sha256": "8c98981e83e6cf429ff106033c3c7b16f81d0eab2b3870ae6e242f1aec55698e",
+      "size": 1823
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "type": "file",
+      "sha256": "7cfd63465942664eee32733c5d921c5009f5e644d22db6d9c35dcc9a292def42",
+      "size": 2981
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+      "type": "file",
+      "sha256": "652f01a076c20d3f383e5b2890a1e6b1df65c89a6c9746ef61bd6f3afedc8177",
+      "size": 4329
+    }
+  ]
+}

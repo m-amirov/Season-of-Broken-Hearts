@@ -1,0 +1,14 @@
+{
+  "index": 2,
+  "stage": "CAPABILITIES_CHECKED",
+  "at": "2026-10-16T06:48:01.143Z",
+  "auto": true,
+  "artifacts": [
+    {
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T06-48-01-039Z-production-art-cb957d\\capabilities.json",
+      "type": "file",
+      "sha256": "2b6b3c6d662753500eb6801988b15dbea071fd030cfb3ae93baf2fcd58bcbe8c",
+      "size": 2592
+    }
+  ]
+}

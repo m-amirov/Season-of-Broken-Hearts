@@ -1,0 +1,45 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-16T05:56:19.381Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Fresh strict Web art-direction review received current reference pixels; canon ready, P2 criteria retained, final acceptance pending.",
+  "metadata": {
+    "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReview": "PASS",
+    "actualPixelsReceived": true,
+    "p0P1Findings": 0,
+    "protectedS22Portrait": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "s19S21Protected": true
+  },
+  "source": {
+    "available": true,
+    "head": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+    "clean": false,
+    "worktreeSha256": "c48b0d76cbd54cd67785932dfbaf63f60cf408944a3ff769708061daafd6b6bf"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016_RECOVERY_A5ED04.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016_RECOVERY_A5ED04.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016_RECOVERY_A5ED04.json",
+      "type": "file",
+      "sha256": "2b48456f2edc5a67f132f98aa6fd714d38ab01dede530ca46f98eaa164ad3996",
+      "size": 6439
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016_RECOVERY_055159.json",
+      "type": "file",
+      "sha256": "8e97f899aab9a8d068f5de6155fe19c991b232fd6e017d6ace3c9d0648b17e49",
+      "size": 3122
+    }
+  ]
+}

@@ -1,0 +1,21 @@
++{
+  "schemaVersion": 1,
+  "status": "BLOCKED_NATIVE_AGENT_ROUTE_TRACE_TOO_LARGE",
+  "runId": "2026-10-15T13-30-16-951Z-production-art-a03477",
+  "ceosVersion": "0.5.18",
+  "required": {
+    "agentRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "effort": "medium"
+  },
+  "childAgentId": "01a13fcc-2b4d-7661-a857-ddd17aab55c5",
+  "traceFile": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T16-41-47-01a13fcc-2b4d-7661-a857-ddd17aab55c5.jsonl",
+  "traceBytes": 45526815,
+  "traceMegabytes": 43.42,
+  "validatorLimitBytes": 33554432,
+  "command": "ceos producer-route-check 2026-10-15T13-30-16-951Z-production-art-a03477 --trace <actual-child-rollout.jsonl> --codex-home C:/Users/user/.codex --json",
+  "result": "BLOCKED_NATIVE_AGENT_TRACE_INVALID",
+  "detail": "Trace size outside supported limits",
+  "evidence": "The original child rollout is preserved byte-for-byte; no derived or hand-authored trace was substituted.",
+  "impact": "The four mechanically valid S20/S21 outputs cannot be advanced through the immutable GENERATING checkpoint until CEOS accepts the genuine rollout trace."
+}

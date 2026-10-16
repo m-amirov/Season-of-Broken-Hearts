@@ -1,0 +1,63 @@
+{
+  "index": 3,
+  "stage": "EVIDENCE_COLLECTED",
+  "at": "2026-10-15T08:57:17.667Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "webPreflight": "READY",
+    "webAgentsUsed": [],
+    "nativeFallbackUsed": true,
+    "independentVerdict": "BLOCKED_STAGE9_WEB_TRANSPORT"
+  },
+  "source": {
+    "available": true,
+    "head": "c43b181f7a4dc14f9de10b9976ddad57fd9e14bc",
+    "clean": false,
+    "worktreeSha256": "228df760abb251e9a99ad747e6b1eb4730cc15f374042733457965b23870d142"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/editorial/stage9.3-audit.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-audit.md",
+      "projectRelativePath": "artifacts/editorial/stage9.3-audit.md",
+      "type": "file",
+      "sha256": "ea1e415f0948c60a3491d033eddc01e9de3dfcc005fd6a1230b9bab20f0e4ee0",
+      "size": 7412
+    },
+    {
+      "input": "artifacts/editorial/stage9.3-remediation-packet.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-remediation-packet.md",
+      "projectRelativePath": "artifacts/editorial/stage9.3-remediation-packet.md",
+      "type": "file",
+      "sha256": "731eca05c44a4e87a194aaf47012a562abe97bfe9ba3e8dff2793808c3df576f",
+      "size": 2249
+    },
+    {
+      "input": "artifacts/editorial/stage9.3-independent-review.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-independent-review.json",
+      "projectRelativePath": "artifacts/editorial/stage9.3-independent-review.json",
+      "type": "file",
+      "sha256": "be86d48f46b276525323d33b60fc6e7528a38fa8df2599b03f3637f607863478",
+      "size": 1029
+    },
+    {
+      "input": "artifacts/editorial/stage9.3-literary-report.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-literary-report.json",
+      "projectRelativePath": "artifacts/editorial/stage9.3-literary-report.json",
+      "type": "file",
+      "sha256": "9f9aad5b7c65a752d4eea35a4bb14dbd5a628ac6f9c13a4e74240540d50f29ff",
+      "size": 14060
+    },
+    {
+      "input": "artifacts/editorial/stage9.3-literary-report.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-literary-report.md",
+      "projectRelativePath": "artifacts/editorial/stage9.3-literary-report.md",
+      "type": "file",
+      "sha256": "c7cb7471f2abbd4d145af159ffc059c16b011967ab2d35ed8983fe0aba7ae67c",
+      "size": 1932
+    }
+  ]
+}

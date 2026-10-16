@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "type": "independent-editorial-review-transport-diagnostic",
+  "sourceCommit": "7a51aea27834bd199b57ed541d79db0036976314",
+  "scope": [
+    "EP2",
+    "EP3"
+  ],
+  "webPreflight": {
+    "status": "READY",
+    "route": "ceos_reasoner_web",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "deliveryAccepted": false
+  },
+  "attempts": [
+    {
+      "runId": "01a13eeb-e3dd-76c3-b862-b5816ae43ba4",
+      "scope": "EP2",
+      "payloadBytes": 87567,
+      "status": "NOT_DELIVERED",
+      "error": "stream disconnected before completion: ChatGPT did not confirm that the prompt was sent. Check the ChatGPT tab before continuing."
+    },
+    {
+      "runId": "01a13eed-50d4-7353-888f-33024da5f2cd",
+      "scope": "EP2",
+      "payloadBytes": 76124,
+      "status": "NOT_DELIVERED",
+      "error": "stream disconnected before completion: ChatGPT composer did not preserve the complete prompt (expectedChars=172821, actualChars=357529, commonPrefixChars=90003)"
+    }
+  ],
+  "nativeFallback": {
+    "route": "ceos_reviewer",
+    "model": "gpt-5.6",
+    "reasoning": "high",
+    "status": "UNAVAILABLE",
+    "error": "The 'gpt-5.6' model is not supported when using Codex with a ChatGPT account."
+  },
+  "verdict": "BLOCKED_STAGE9_WEB_TRANSPORT",
+  "editorialReceipt": "NOT_CREATED",
+  "note": "This diagnostic records failed delivery only; it is not an independent editorial verdict and does not attest prose quality."
+}

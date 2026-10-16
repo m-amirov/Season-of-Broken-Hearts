@@ -2,7 +2,7 @@ import { getLocalizedText } from './localization.mjs';
 import { deserializeSave, serializeSave } from './save.mjs';
 import { applyEffects, canEnter, createInitialState, getDialogueLines, validateGraph } from './state.mjs';
 
-const ENGINE_SCHEMA_VERSION = 3;
+const ENGINE_SCHEMA_VERSION = 4;
 
 export class NarrativeEngine {
   #graph;
@@ -82,13 +82,19 @@ export class NarrativeEngine {
   }
 
   isEnding() {
-    return this.currentScene().ending === true;
+    return this.currentScene().ending === true || this.currentScene().episodeEnd === true;
   }
 
   isEpisodeComplete() {
     if (!this.isEnding()) return false;
     const lines = this.#dialogueLines();
     return this.#cursor.dialogueIndex === lines.length - 1;
+  }
+
+  isSeasonComplete() {
+    if (!this.isEpisodeComplete()) return false;
+    const scene = this.currentScene();
+    return scene.episodeEnd ? !scene.next : !scene.nextEpisodeStart;
   }
 
   canBack() {
@@ -128,11 +134,26 @@ export class NarrativeEngine {
         return { ok: true, type: 'dialogue' };
       }
       if (scene.choices) return { ok: false, reason: 'choice-required' };
-      if (scene.ending) return { ok: false, reason: 'episode-complete' };
+      if (scene.ending || scene.episodeEnd) return { ok: false, reason: 'episode-complete' };
       this.#recordSnapshot();
       this.#cursor = { sceneId: scene.next, dialogueIndex: 0 };
       this.#recordForwardProgress();
       return { ok: true, type: 'scene' };
+    });
+  }
+
+  continueEpisode() {
+    return this.#withLock(() => {
+      if (!this.isEpisodeComplete()) return { ok: false, reason: 'episode-not-complete' };
+      const current = this.currentScene();
+      const nextEpisodeStart = current.nextEpisodeStart ?? (current.episodeEnd ? current.next : null);
+      if (!nextEpisodeStart) return { ok: false, reason: 'season-complete' };
+      const nextScene = this.#graph.scenes.find(scene => scene.id === nextEpisodeStart);
+      if (!nextScene) return { ok: false, reason: 'missing-episode-start' };
+      this.#recordSnapshot();
+      this.#cursor = { sceneId: nextEpisodeStart, dialogueIndex: 0 };
+      this.#recordForwardProgress();
+      return { ok: true, type: 'episode', episode: nextScene.episode ?? 1 };
     });
   }
 

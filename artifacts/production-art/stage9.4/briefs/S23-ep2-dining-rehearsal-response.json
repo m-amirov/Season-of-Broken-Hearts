@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "94d925b1f14767ba74808e18e5e7ef2b03379235",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S23",
+  "assetFamilyId": "ep2-dining-rehearsal-response-cg",
+  "cue": {
+    "id": "ep2_family_rehearsal_response_tablet",
+    "at": [4, 0],
+    "authoredExcerpt": "Джулия сама перенесла карточки гостей. Маттео открыл рот, чтобы остановить её, но Ника уже убрала из прохода коробки с бокалами."
+  },
+  "requiredCast": ["nika", "matteo", "giulia"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Убирает коробки с бокалами из прохода и делает рабочее пространство безопасным для решения Джулии."},
+    {"character": "matteo", "action": "Передаёт планшет Джулии и принимает, что список и решение принадлежат ей."},
+    {"character": "giulia", "action": "Переносит карточки гостей и удерживает право самой решать, что останется в её плане."}
+  ],
+  "sceneContinuity": "Это непосредственное продолжение courtyard rehearsal в family dining room; дальше сцена переходит к условиям публичной договорённости. Сохранять ту же wedding-prep одежду и не превращать рабочую handoff-сцену в романтический треугольник.",
+  "location": "Villa Serena family dining room with a long table, guest cards, a clear passage and a practical tablet handoff",
+  "timeOfDay": "Day 3 afternoon, warm daylight continuing from the courtyard rehearsal",
+  "wardrobe": {
+    "nika": "Same day-3 off-white linen work layer as the courtyard beat, practical sleeves and trousers",
+    "matteo": "Same restrained summer-work layer as the courtyard beat, no ceremony styling",
+    "giulia": "Same sage-grey work shirt and beige utility apron, active at the guest-card table"
+  },
+  "emotionalTone": "Earned agency and a tested change in control habits; the room stays practical and clear.",
+  "physicalAction": "Giulia moves guest cards, Nika clears the box-filled aisle and Matteo hands the tablet to Giulia across the table.",
+  "facialExpression": "Giulia resolute; Nika encouraging and alert; Matteo accepting the correction without defensiveness.",
+  "forbiddenProps": [
+    "readable invented guest names or tablet text",
+    "blocked walkway, unsafe floating boxes or extra family crowd",
+    "romantic embrace, couple pose or public hand gesture",
+    "wedding ceremony, rings or luxury-resort styling",
+    "Aurea document or knowledge not present in this authored beat"
+  ],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "desktop": {
+    "width": 1672,
+    "height": 941,
+    "runtimeViewportTarget": {"width": 1920, "height": 1080},
+    "outputGateCommand": "ceos art-output-verify --kind background --width 1672 --height 941",
+    "composition": "Genuine wide dining-room composition: the long table, clear passage and left-to-right tablet handoff establish the three roles without crowding or romantic alignment.",
+    "framing": "16:9 landscape, eye-level table-corner camera, guest cards and tablet visible as non-readable shapes above a quiet lower dialogue band.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "composition": "Genuine vertical dining-room composition that keeps Giulia's hands and tablet handoff readable, with Nika's cleared passage and Matteo's accepting posture visible.",
+    "framing": "2:3 portrait, eye-level medium shot with the table edge and lower dialogue-safe area kept clear; all faces remain readable at 390x844, 360x640 and 430x932 cover framing.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "canonReferences": [
+    "artifacts/production-art/character-reference-contact-sheet.png",
+    "assets/production/cg/ep1-matteo-office-cg.png",
+    "assets/production/cg/ep1-matteo-office-cg-landscape.png"
+  ],
+  "qualityAcceptance": [
+    "All three supplied identities and same-day wardrobe continuity remain clear.",
+    "The dining room, clear passage, guest-card action and tablet handoff are immediately readable without invented text.",
+    "Both formats preserve the three faces, hands and safe dialogue separation at the declared desktop and portrait viewports.",
+    "No blocked walkway, ceremony, romance, extra cast or premature Aurea knowledge appears."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

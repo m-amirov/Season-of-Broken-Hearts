@@ -1,0 +1,33 @@
+{
+  "index": 8,
+  "stage": "GENERATING",
+  "at": "2026-10-15T17:16:37.364Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH: current Terra child route is bound to the current parent session, while this persisted run is immutably bound to the previous parent session; no generation or receipts were created.",
+  "metadata": {
+    "blockerCode": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+    "childRouteStatus": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+    "acceptedPairs": 3,
+    "remainingPairs": 22,
+    "newPngs": 0,
+    "newOutputReceipts": 0
+  },
+  "source": {
+    "available": true,
+    "head": "2983ddcef771f1e5cc042f3680ef3e28e1c0f49e",
+    "clean": false,
+    "worktreeSha256": "5d69bb99f6ee51fc3f7a2782a4d03d653cca715ffc534ee7b467479e40f48676"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_CONTINUE_BLOCKER_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_CONTINUE_BLOCKER_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_CONTINUE_BLOCKER_20261015.json",
+      "type": "file",
+      "sha256": "57a9ab2987443b9a5fc98b4848dde709a5127f3e7b2b9a53b8c47564472a1336",
+      "size": 2947
+    }
+  ]
+}

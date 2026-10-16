@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "narrative/graph.json",
+  "assumptions": {
+    "wordsPerMinute": 180,
+    "secondsPerChoice": 3,
+    "secondsPerSceneTransition": 1.5,
+    "note": "Reading time is a transparent lexical estimate; interaction time is not a measured playtest."
+  },
+  "routeExplorer": {
+    "maxStates": 1000000,
+    "valid": true,
+    "visitedStates": 555286,
+    "terminals": 13824,
+    "visitedScenes": 50,
+    "deadEnds": [],
+    "errors": [],
+    "truncated": false
+  },
+  "episodePassages": {
+    "2": {
+      "sourceCorpus": {
+        "scenes": 17,
+        "choices": 17,
+        "uniqueRuWords": 2223,
+        "uniqueEnWords": 2636
+      },
+      "reachablePassages": 1280,
+      "summary": {
+        "ru": {
+          "words": {
+            "min": 1559,
+            "max": 1649,
+            "median": 1582.5
+          },
+          "scenes": {
+            "min": 12,
+            "max": 13,
+            "median": 12
+          },
+          "choices": {
+            "min": 5,
+            "max": 6,
+            "median": 6
+          },
+          "readingWithoutInteractionsMinutes": {
+            "min": 8.7,
+            "max": 9.2,
+            "median": 8.8
+          },
+          "estimatedWithInteractionsMinutes": {
+            "min": 9.2,
+            "max": 9.8,
+            "median": 9.3
+          }
+        },
+        "en": {
+          "words": {
+            "min": 1849,
+            "max": 1972,
+            "median": 1881
+          },
+          "scenes": {
+            "min": 12,
+            "max": 13,
+            "median": 12
+          },
+          "choices": {
+            "min": 5,
+            "max": 6,
+            "median": 6
+          },
+          "readingWithoutInteractionsMinutes": {
+            "min": 10.3,
+            "max": 11,
+            "median": 10.45
+          },
+          "estimatedWithInteractionsMinutes": {
+            "min": 10.8,
+            "max": 11.6,
+            "median": 11
+          }
+        }
+      },
+      "significantConsequenceChoices": [
+        {
+          "sceneId": "ep2_wedding_budget",
+          "choiceId": "ep2_budget_open",
+          "effects": {
+            "ep2BudgetChoice": "open",
+            "staffTrust": 1,
+            "fundingEvidence": 1,
+            "hotelEvidence": "documents"
+          }
+        },
+        {
+          "sceneId": "ep2_wedding_budget",
+          "choiceId": "ep2_budget_improvise",
+          "effects": {
+            "ep2BudgetChoice": "improvise",
+            "staffTrust": 0,
+            "fundingEvidence": 0
+          }
+        },
+        {
+          "sceneId": "ep2_family_rehearsal",
+          "choiceId": "ep2_giulia_personal_plan",
+          "effects": {
+            "staffTrust": 2
+          }
+        },
+        {
+          "sceneId": "ep2_family_rehearsal",
+          "choiceId": "ep2_giulia_family_plan",
+          "effects": {
+            "staffTrust": 1
+          }
+        },
+        {
+          "sceneId": "ep2_fake_terms",
+          "choiceId": "ep2_terms_public",
+          "effects": {
+            "fakeDatingStatus": "active",
+            "fakeDatingTermsKnown": true,
+            "publicAgreement": "consented",
+            "consentBoundary": "clear",
+            "trustMatteo": 1,
+            "relationshipMatteo": 1,
+            "matteoApproach": "transparent"
+          }
+        },
+        {
+          "sceneId": "ep2_fake_terms",
+          "choiceId": "ep2_terms_limits",
+          "effects": {
+            "fakeDatingStatus": "active",
+            "fakeDatingTermsKnown": true,
+            "publicAgreement": "consented",
+            "consentBoundary": "clear",
+            "trustMatteo": 1,
+            "relationshipMatteo": 0,
+            "matteoApproach": "direct"
+          }
+        },
+        {
+          "sceneId": "ep2_fake_terms",
+          "choiceId": "ep2_terms_decline",
+          "effects": {
+            "fakeDatingStatus": "none",
+            "fakeDatingTermsKnown": true,
+            "publicAgreement": "declined",
+            "consentBoundary": "clear",
+            "trustMatteo": 1,
+            "relationshipMatteo": 0,
+            "matteoApproach": "direct",
+            "matteoFutureTalk": "deferred"
+          }
+        },
+        {
+          "sceneId": "ep2_refusal_workday",
+          "choiceId": "ep2_refusal_help_giulia",
+          "effects": {
+            "staffTrust": 2,
+            "fundingEvidence": 1,
+            "matteoFutureTalk": "deferred"
+          }
+        },
+        {
+          "sceneId": "ep2_refusal_workday",
+          "choiceId": "ep2_refusal_keep_role",
+          "effects": {
+            "staffTrust": 1,
+            "fundingEvidence": 1,
+            "matteoFutureTalk": "deferred"
+          }
+        },
+        {
+          "sceneId": "ep2_bianca_arrives",
+          "choiceId": "ep2_bianca_professional",
+          "effects": {
+            "biancaRoleKnown": true,
+            "biancaTrust": "professional"
+          }
+        },
+        {
+          "sceneId": "ep2_bianca_arrives",
+          "choiceId": "ep2_bianca_pushback",
+          "effects": {
+            "biancaRoleKnown": true,
+            "biancaTrust": "guarded"
+          }
+        },
+        {
+          "sceneId": "ep2_public_agreement",
+          "choiceId": "ep2_public_yes",
+          "effects": {
+            "matteoPublicGesture": "hand",
+            "relationshipMatteo": 2,
+            "trustMatteo": 2
+          }
+        },
+        {
+          "sceneId": "ep2_public_agreement",
+          "choiceId": "ep2_public_no",
+          "effects": {
+            "matteoPublicGesture": "declined",
+            "relationshipMatteo": 0,
+            "trustMatteo": 2
+          }
+        },
+        {
+          "sceneId": "ep2_rooftop_after",
+          "choiceId": "ep2_boundary_clear",
+          "effects": {
+            "fakeDatingStatus": "ended",
+            "consentBoundary": "clear",
+            "matteoFutureTalk": "open",
+            "trustMatteo": 3
+          }
+        },
+        {
+          "sceneId": "ep2_rooftop_after",
+          "choiceId": "ep2_boundary_unspoken",
+          "effects": {
+            "fakeDatingStatus": "ended",
+            "consentBoundary": "unclear",
+            "matteoFutureTalk": "deferred",
+            "trustMatteo": 2
+          }
+        },
+        {
+          "sceneId": "ep2_rooftop_after",
+          "choiceId": "ep2_decline_keep_work",
+          "effects": {
+            "fakeDatingStatus": "none",
+            "consentBoundary": "clear",
+            "matteoFutureTalk": "deferred",
+            "trustMatteo": 1
+          }
+        },
+        {
+          "sceneId": "ep2_rooftop_after",
+          "choiceId": "ep2_decline_revisit_later",
+          "effects": {
+            "fakeDatingStatus": "none",
+            "consentBoundary": "clear",
+            "matteoFutureTalk": "open",
+            "trustMatteo": 2
+          }
+        }
+      ]
+    },
+    "3": {
+      "sourceCorpus": {
+        "scenes": 15,
+        "choices": 19,
+        "uniqueRuWords": 1487,
+        "uniqueEnWords": 1838
+      },
+      "reachablePassages": 184320,
+      "summary": {
+        "ru": {
+          "words": {
+            "min": 1093,
+            "max": 1228,
+            "median": 1221.5
+          },
+          "scenes": {
+            "min": 12,
+            "max": 13,
+            "median": 13
+          },
+          "choices": {
+            "min": 6,
+            "max": 7,
+            "median": 7
+          },
+          "readingWithoutInteractionsMinutes": {
+            "min": 6.1,
+            "max": 6.8,
+            "median": 6.8
+          },
+          "estimatedWithInteractionsMinutes": {
+            "min": 6.6,
+            "max": 7.5,
+            "median": 7.4
+          }
+        },
+        "en": {
+          "words": {
+            "min": 1344,
+            "max": 1508,
+            "median": 1504
+          },
+          "scenes": {
+            "min": 12,
+            "max": 13,
+            "median": 13
+          },
+          "choices": {
+            "min": 6,
+            "max": 7,
+            "median": 7
+          },
+          "readingWithoutInteractionsMinutes": {
+            "min": 7.5,
+            "max": 8.4,
+            "median": 8.4
+          },
+          "estimatedWithInteractionsMinutes": {
+            "min": 8,
+            "max": 9,
+            "median": 9
+          }
+        }
+      },
+      "significantConsequenceChoices": [
+        {
+          "sceneId": "ep3_survey_start",
+          "choiceId": "ep3_survey_join",
+          "effects": {
+            "ep3SurveyChoice": "joined"
+          }
+        },
+        {
+          "sceneId": "ep3_survey_start",
+          "choiceId": "ep3_survey_decline",
+          "effects": {
+            "ep3SurveyChoice": "declined"
+          }
+        },
+        {
+          "sceneId": "ep3_survey_site_problem",
+          "choiceId": "ep3_report_conflict",
+          "effects": {
+            "ep3SurveyAction": "report"
+          }
+        },
+        {
+          "sceneId": "ep3_survey_site_problem",
+          "choiceId": "ep3_hold_conflict",
+          "effects": {
+            "ep3SurveyAction": "hold"
+          }
+        },
+        {
+          "sceneId": "ep3_staff_walkthrough",
+          "choiceId": "ep3_staff_route_record",
+          "effects": {
+            "staffTrust": 3,
+            "fundingEvidence": 3
+          }
+        },
+        {
+          "sceneId": "ep3_staff_walkthrough",
+          "choiceId": "ep3_staff_route_compromise",
+          "effects": {
+            "staffTrust": 2,
+            "fundingEvidence": 2
+          }
+        },
+        {
+          "sceneId": "ep3_report_delivery",
+          "choiceId": "ep3_review_report",
+          "effects": {
+            "ep3SurveyAction": "report"
+          }
+        },
+        {
+          "sceneId": "ep3_report_delivery",
+          "choiceId": "ep3_hold_report",
+          "effects": {
+            "ep3SurveyAction": "hold"
+          }
+        },
+        {
+          "sceneId": "ep3_accountability_choice",
+          "choiceId": "ep3_accountability_listen",
+          "effects": {
+            "leoConversation": "accountability",
+            "leoAccountability": "acknowledged",
+            "leoTruthHeard": true,
+            "trustLeo": 2,
+            "relationshipLeo": 1
+          }
+        },
+        {
+          "sceneId": "ep3_accountability_choice",
+          "choiceId": "ep3_accountability_action",
+          "effects": {
+            "leoConversation": "accountability",
+            "leoAccountability": "acknowledged",
+            "leoTruthHeard": true,
+            "trustLeo": 3,
+            "relationshipLeo": 0
+          }
+        },
+        {
+          "sceneId": "ep3_accountability_choice",
+          "choiceId": "ep3_accountability_distance",
+          "effects": {
+            "leoConversation": "distance",
+            "leoAccountability": "acknowledged",
+            "leoTruthHeard": true,
+            "trustLeo": 0,
+            "relationshipLeo": 0
+          }
+        },
+        {
+          "sceneId": "ep3_aurea_drawing",
+          "choiceId": "ep3_mark_aurea_link",
+          "effects": {
+            "leoAureaLinkKnown": true,
+            "leoEvidence": "drawing",
+            "fundingEvidence": 2,
+            "hotelEvidence": "documents"
+          }
+        },
+        {
+          "sceneId": "ep3_aurea_drawing",
+          "choiceId": "ep3_protect_process",
+          "effects": {
+            "leoAureaLinkKnown": true,
+            "leoEvidence": "drawing",
+            "fundingEvidence": 1,
+            "hotelEvidence": "documents"
+          }
+        },
+        {
+          "sceneId": "ep3_document_check",
+          "choiceId": "ep3_verify_aurea_attachment",
+          "effects": {
+            "leoAureaLinkKnown": true,
+            "leoEvidence": "terms",
+            "fundingEvidence": 3
+          }
+        },
+        {
+          "sceneId": "ep3_document_check",
+          "choiceId": "ep3_keep_as_lead",
+          "effects": {
+            "leoAureaLinkKnown": true,
+            "leoEvidence": "drawing",
+            "fundingEvidence": 2
+          }
+        },
+        {
+          "sceneId": "ep3_matteo_confrontation",
+          "choiceId": "ep3_share_verified",
+          "effects": {
+            "leoAccountability": "verified",
+            "fundingEvidence": 4,
+            "staffTrust": 3,
+            "hotelEvidence": "public"
+          }
+        },
+        {
+          "sceneId": "ep3_matteo_confrontation",
+          "choiceId": "ep3_keep_verified_private",
+          "effects": {
+            "leoAccountability": "acknowledged",
+            "fundingEvidence": 3,
+            "staffTrust": 2
+          }
+        },
+        {
+          "sceneId": "ep3_matteo_confrontation",
+          "choiceId": "ep3_share_lead",
+          "effects": {
+            "leoAccountability": "acknowledged",
+            "fundingEvidence": 2,
+            "staffTrust": 2
+          }
+        },
+        {
+          "sceneId": "ep3_matteo_confrontation",
+          "choiceId": "ep3_keep_lead_private",
+          "effects": {
+            "leoAccountability": "acknowledged",
+            "fundingEvidence": 2,
+            "staffTrust": 1
+          }
+        }
+      ]
+    }
+  },
+  "editorialNotes": [
+    "EP2 agreement consent and public gesture consent are separate state domains.",
+    "EP2 refusal preserves work, pay, professional access and the EP3 transition.",
+    "EP2 agreement closes on day 9; EP4 requires fresh consent for any later public gesture.",
+    "EP3 distinguishes an unverified Aurea drawing lead from a checked attachment.",
+    "EP6 remains the only planned route-lock; EP2 and EP3 outcomes are route-neutral."
+  ],
+  "openPromises": [
+    {
+      "id": "matteo-negotiation-documents",
+      "status": "reinforced; payoff planned for EP6+"
+    },
+    {
+      "id": "bianca-not-villain",
+      "status": "reinforced; payoff planned for EP6+"
+    },
+    {
+      "id": "leo-aurea-link",
+      "status": "reinforced with verified/unverified provenance; payoff planned for EP6+"
+    },
+    {
+      "id": "nika-career-recovery",
+      "status": "reinforced through EP2 work choices; payoff planned for EP5+"
+    }
+  ]
+}

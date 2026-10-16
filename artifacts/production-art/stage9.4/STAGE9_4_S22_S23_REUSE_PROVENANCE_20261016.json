@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "DOCUMENTED",
+  "runId": "2026-10-16T06-40-09-235Z-production-art-a0db75",
+  "sourceHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+  "currentHeadAtEvidence": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+  "scopeSha256": "b5201f49e0a646000940dc56e952e2dad4548d7c7a26f05fa495ad5576e28e8f",
+  "mode": "VERIFIED_EXISTING_ART_REUSE",
+  "currentness": {
+    "mode": "DEPENDENCY_BASED_REUSE",
+    "baseHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+    "reason": "Only scoped batch manifests and evidence were added after the product dependency head; existing PNG bytes and runtime mappings remain source-bound."
+  },
+  "canonicalInputs": [
+    { "path": "narrative/graph.json", "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544" },
+    { "path": "narrative/assets.json", "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c" },
+    { "path": "narrative/episodes/ep-02.json", "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e" },
+    { "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json", "sha256": "58ffb6876bbc5db85d1538a2c6568b7ff34d29d1103a01b6115f4f7247bd0c10" },
+    { "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json", "sha256": "aba2e9b97aff4771729b5d78258bb2cbef20c0cfad8f26a5735af295a4c91763" }
+  ],
+  "protected": [
+    "S19-S21 existing PNG bytes and mappings",
+    "S22 portrait existing PNG bytes",
+    "terminal CEOS runs 2026-10-16T05-32-33-553Z-production-art-1cd351 and 2026-10-16T05-51-59-842Z-production-art-a5ed04"
+  ],
+  "generationInvoked": false,
+  "acceptanceBoundary": "Evidence supports only S22-S23 BATCH_INTEGRATION PARTIAL_PASS; EP2 final acceptance and release readiness remain unclaimed."
+}

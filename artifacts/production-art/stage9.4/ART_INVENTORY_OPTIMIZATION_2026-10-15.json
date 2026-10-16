@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE9_4_ART_INVENTORY_OPTIMIZED",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "scope": "EP2-EP3",
+  "sceneCount": 32,
+  "familiesBeforeReview": 24,
+  "familiesAfterOptimization": 24,
+  "dualFormatPairsAfterOptimization": 25,
+  "plannedPngs": 50,
+  "existingEp1PairsReused": 0,
+  "continuationRowsReused": 7,
+  "conditionalConsentPairs": 2,
+  "generationAttemptsAvoided": 7,
+  "decision": "KEEP_24_FAMILIES_25_PAIRS",
+  "rationale": [
+    "Seven immediate continuation rows preserve the same location, cast, wardrobe, time and physical setup, so they reuse an already planned family.",
+    "Accepted and refused public-gesture states remain separate pairs because they show opposite physical actions.",
+    "No EP1 pair satisfies all EP2-EP3 cast, wardrobe, time, location and authored-action constraints; reusing one would misstate the authored beat.",
+    "Static multi-character narrative beats remain unified full-scene CGs; sprites are not introduced as a budget workaround."
+  ],
+  "protectedInvariants": [
+    "EP1 assets remain unchanged.",
+    "No readable invented documents or premature Aurea terms.",
+    "No romantic contact is shown for refusal states.",
+    "Portrait and landscape are independently composed native PNGs."
+  ],
+  "visualAcceptance": "PENDING_GENERATION_AND_CURRENT_RUNTIME_PIXELS"
+}

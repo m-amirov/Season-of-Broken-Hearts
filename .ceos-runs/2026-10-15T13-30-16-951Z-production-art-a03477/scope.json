@@ -1,0 +1,35 @@
+{
+  "target": "Stage 9.4 recovery: revalidate preserved S19 landscape under corrected native dimensions; optimize EP2-EP3 dual-format inventory; produce, integrate and independently accept required art and runtime pixels",
+  "inScope": [
+    "S19 corrected mechanical recheck",
+    "EP2-EP3 optimized inventory",
+    "source-bound briefs",
+    "bounded Terra Medium native generation",
+    "dual-format runtime integration",
+    "current-HEAD runtime visual QA",
+    "NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance",
+    "targeted regression tests"
+  ],
+  "outOfScope": [
+    "EP1 art",
+    "story topology",
+    "save schema",
+    "publication",
+    "moderation",
+    "release ZIP",
+    "Yandex external submission",
+    "main merge"
+  ],
+  "acceptanceContract": "S19 exact preserved bytes pass 1672x941; optimized inventory is current-HEAD and justified; every admitted EP2-EP3 family has genuine portrait and landscape PNGs with receipts and provenance; current runtime captures pass required desktop/mobile matrix; independent Web High V2 pixel acceptance passes all materially distinct compositions; targeted and final project gates are green with no open P0/P1 art defects",
+  "mutationBoundary": "Only project-owned artifacts, EP2-EP3 production CG files, runtime mappings required for those CGs, receipts, runtime/evidence records, and scoped tests; preserve EP1 and immutable historical evidence",
+  "resolutionReceiptContract": {
+    "schemaVersion": 1,
+    "requiredExactLines": [
+      "The original rejection was a real result **against that older contract**;",
+      "2. Read its actual PNG bytes, dimensions and SHA-256. Expected SHA-256:",
+      "   `17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299`."
+    ],
+    "sourceEvidence": "artifacts/production-art/stage9.4/ART_DIMENSION_CONTRACT_RESOLUTION.md",
+    "sourceEvidenceSha256": "5035acf16f4e85baa42ea2ba54cb6b7969cec9aa9bb35bc10db515e670e567a5"
+  }
+}

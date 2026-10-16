@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "fd77accf1d9b94f4c1775725d93eba662847eda0",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S24",
+  "assetFamilyId": "ep2-dining-refusal-response-cg",
+  "cue": {
+    "id": "ep2_refusal_response_boundary_dinner",
+    "at": [4, 0],
+    "authoredExcerpt": "Маттео убрал из общего календаря пометку «пара». Рядом остались её рабочие задачи, те же сроки и та же ставка."
+  },
+  "requiredCast": ["nika", "matteo", "giulia"],
+  "narrativeActions": [
+    {"character": "matteo", "action": "Explains the refusal to Giulia and removes the couple label from the shared calendar without blaming Nika."},
+    {"character": "giulia", "action": "Listens, protects Nika's work and reclaims her own wedding plan."},
+    {"character": "nika", "action": "Remains a paid organizer and keeps professional distance from Matteo."}
+  ],
+  "sceneContinuity": "Day 4 family-dining consequence after the declined arrangement; work deadlines and rate remain intact while the public couple framing is removed.",
+  "location": "Villa Serena family dining room with a shared planning calendar, dining table and warm evening service context",
+  "timeOfDay": "Day 4 before the family dinner, warm late-afternoon interior light",
+  "wardrobe": {
+    "nika": "EP1-consistent off-white linen shirt, light beige trousers, practical organizer layers; no bridal styling",
+    "matteo": "Restrained owner-work shirt with rolled sleeves, stone trousers and a neutral folder",
+    "giulia": "Sage-grey work shirt, beige utility apron and dark work trousers, visibly engaged rather than decorative"
+  },
+  "emotionalTone": "A calm boundary conversation that protects work and gives Giulia agency; no melodrama or reconciliation",
+  "physicalAction": "Matteo indicates a non-readable calendar change; Giulia listens across the table; Nika holds or receives a neutral work copy while keeping personal space.",
+  "facialExpression": "Matteo steady and accountable, Giulia attentive and relieved, Nika calm and professionally guarded",
+  "forbiddenProps": [
+    "readable invented calendar or contract text",
+    "romantic couple pose, touch or wedding-ad styling",
+    "Nika presented as Matteo's partner",
+    "blaming or confrontational family staging",
+    "extra cast"
+  ],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "desktop": {
+    "width": 1672,
+    "height": 941,
+    "runtimeViewportTarget": {"width": 1920, "height": 1080},
+    "composition": "Independent wide dining-room staging with Matteo as the verbal bridge, Giulia visibly participating and Nika as a professional third participant; calendar and table establish the room.",
+    "framing": "Eye-level medium-wide horizontal composition; faces, hands and non-readable calendar gesture remain above the dialogue band with open lower safe space.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "composition": "Independent vertical dining-room composition retaining all three faces, the professional spacing and a recognizable calendar/table cue without readable text.",
+    "framing": "2:3 eye-level medium composition; all faces and the boundary gesture remain clear at 360x640, 390x844 and 430x932 cover viewports with dialogue-safe lower space.",
+    "requiredVisibleCast": ["nika", "matteo", "giulia"]
+  },
+  "canonReferences": [
+    "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+    "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_CANON_20261016.json",
+    "assets/production-art/character-reference-contact-sheet.png"
+  ],
+  "qualityAcceptance": [
+    "Three identities and the family dining-room location are immediately readable.",
+    "The image communicates refusal without blame and preserves Nika's paid work role.",
+    "Portrait and landscape are independently composed and preserve faces, action and dialogue-safe space.",
+    "No romantic contact, readable invented text or extra cast appears."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

@@ -1,0 +1,104 @@
+{
+  "index": 8,
+  "stage": "REAUDITED",
+  "at": "2026-10-16T06:48:37.895Z",
+  "cycle": 1,
+  "outcome": "PARTIAL_PASS",
+  "skipped": false,
+  "note": "S22/S23 batch accepted only: mechanical dual-format, runtime pixel QA and independent Web High PASS. EP2 final acceptance and release readiness remain separate gates.",
+  "metadata": {
+    "dualFormatManifest": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+    "evidenceContract": {
+      "schemaVersion": 1,
+      "assertionsExecuted": 4,
+      "sourceHead": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+      "claims": [
+        {
+          "id": "locked-batch-scope",
+          "assertionId": "BATCH_SCOPE_EXACT_SOURCE_BOUND",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "dual-format-mechanical",
+          "assertionId": "BATCH_DUAL_FORMAT_REAL_PNG_SHA_RUNTIME_MAPPING",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "runtime-pixel-qa",
+          "assertionId": "S22_S23_RUNTIME_PIXEL_QA_DESKTOP_MOBILE",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "web-high-acceptance",
+          "assertionId": "NARRATIVE_ART_ACCEPTANCE_V2_INDEPENDENT_WEB_HIGH",
+          "status": "PASS",
+          "executions": 1
+        }
+      ],
+      "coverage": {
+        "complete": true,
+        "scope": "S22/S23 exact locked batch only; 2 scenes, 4 PNG variants, 4 runtime screenshots",
+        "checked": 2,
+        "total": 2
+      },
+      "unresolved": []
+    },
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_BATCH_MECHANICAL",
+      "verificationMode": "BATCH_INTEGRATION",
+      "episode": 2,
+      "episodeScenes": 17,
+      "requiredScenes": 2,
+      "mappedScenes": 2,
+      "uniqueAssets": 2,
+      "variantFilesChecked": 4,
+      "runtimeMappingsChecked": 2,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "File and mapping integrity only. Portrait and desktop pixels require separate independent runtime/Web High acceptance."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+    "clean": false,
+    "worktreeSha256": "6ea3e82e70d3ab00bd11a1c0d0edb7551d678eb8496d422a0aa233a4ab5c94cf"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "type": "file",
+      "sha256": "aba2e9b97aff4771729b5d78258bb2cbef20c0cfad8f26a5735af295a4c91763",
+      "size": 2478
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "type": "file",
+      "sha256": "8bb8445416b72a40d5c631f4480cf6feb3f7321608caa62fcb3683a35b8b4605",
+      "size": 5520
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+      "type": "file",
+      "sha256": "652f01a076c20d3f383e5b2890a1e6b1df65c89a6c9746ef61bd6f3afedc8177",
+      "size": 4329
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "type": "file",
+      "sha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527",
+      "size": 4254
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-16T05:02:06.265Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "Stopped before Terra generation because the trusted CEOS hook cwd does not match the production-art project worktree.",
+  "metadata": {
+    "code": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "projectCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+    "markerCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+    "newImageGenCalls": 0,
+    "finalAcceptance": "NOT_PERFORMED"
+  },
+  "source": {
+    "available": true,
+    "head": "dab0b45b7dab0446c3cf5b7bd740e9a3f51bdfb1",
+    "clean": false,
+    "worktreeSha256": "4d0352c5e4b1083abb14f96f1d95377e993c3e6100fe335ba343211d616fc56d"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_SESSION_CONTEXT_BLOCKER_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_SESSION_CONTEXT_BLOCKER_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_SESSION_CONTEXT_BLOCKER_20261016.json",
+      "type": "file",
+      "sha256": "310351e8a456efc98500d6801064142184979be210e24b156a3bb500e73ff47a",
+      "size": 2794
+    }
+  ]
+}

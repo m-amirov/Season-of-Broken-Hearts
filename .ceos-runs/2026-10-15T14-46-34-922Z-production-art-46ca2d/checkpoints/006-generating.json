@@ -1,0 +1,87 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-15T14:48:23.757Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_STAGE9_4_PRODUCTION_ART_OUTPUT: producer-route validator rejected the actual ceos_asset_generator child trace because 45526815 bytes exceeds the CEOS 0.5.18 supported limit of 33554432 bytes. Preserve the generated S20/S21 outputs and do not regenerate or advance by assertion.",
+  "metadata": {
+    "producerRouteFailure": {
+      "status": "BLOCKED_NATIVE_AGENT_TRACE_INVALID",
+      "traceFile": "C:/Users/user/.codex/sessions/2026/10/15/rollout-2026-10-15T16-41-47-01a13fcc-2b4d-7661-a857-ddd17aab55c5.jsonl",
+      "traceBytes": 45526815,
+      "validatorLimitBytes": 33554432,
+      "childAgentId": "01a13fcc-2b4d-7661-a857-ddd17aab55c5",
+      "effectiveModel": "gpt-5.6-terra",
+      "reasoning": "medium"
+    },
+    "attemptedBatch": {
+      "families": [
+        "S20",
+        "S21"
+      ],
+      "pngs": 4,
+      "imageGenCalls": 4,
+      "mechanicalReceipts": 4,
+      "visualAcceptance": "PENDING_REVIEW_RECORD_ONLY"
+    },
+    "sourceHead": "5ac58032d314103059977014c8168988529b9f6f"
+  },
+  "source": {
+    "available": true,
+    "head": "5ac58032d314103059977014c8168988529b9f6f",
+    "clean": false,
+    "worktreeSha256": "d30f54a0bce8ed9589bb14e8941e212ee9fc2484dc6d08fa12d931f6c9800153"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/PRODUCER_ROUTE_BLOCKER_2026-10-15.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\PRODUCER_ROUTE_BLOCKER_2026-10-15.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/PRODUCER_ROUTE_BLOCKER_2026-10-15.json",
+      "type": "file",
+      "sha256": "7b08976804cb3296f0b15d375c8e15c305a695cf0a11fe09f7d86c1d69ec0573",
+      "size": 1122
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/PRODUCTION_ASSET_MANIFEST_RECOVERY_20261015.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\PRODUCTION_ASSET_MANIFEST_RECOVERY_20261015.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/PRODUCTION_ASSET_MANIFEST_RECOVERY_20261015.json",
+      "type": "file",
+      "sha256": "cdddafc31acd00e00057a04ec6c679d4216e64ac7402f86ebc843102e59e763d",
+      "size": 5069
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S20-ep2-office-budget-cg-portrait-native-candidate1.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S20-ep2-office-budget-cg-portrait-native-candidate1.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S20-ep2-office-budget-cg-portrait-native-candidate1.json",
+      "type": "file",
+      "sha256": "539c19d941106f987cbcfec1fb356bbf94e97a8c84fe72a17ca5186c12b4fc20",
+      "size": 817
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S20-ep2-office-budget-cg-landscape-native-candidate1.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S20-ep2-office-budget-cg-landscape-native-candidate1.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S20-ep2-office-budget-cg-landscape-native-candidate1.json",
+      "type": "file",
+      "sha256": "f934d5be4e105d2a14e9b6f8fe741b685d2657c284aad76b6ab8543d4fdcac53",
+      "size": 825
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S21-ep2-service-inventory-cg-portrait-native-candidate1.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S21-ep2-service-inventory-cg-portrait-native-candidate1.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S21-ep2-service-inventory-cg-portrait-native-candidate1.json",
+      "type": "file",
+      "sha256": "d987af20f82222d623ad76f5b54267155a79a0f931633d95e6fc89b834eba0ce",
+      "size": 821
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/receipts/S21-ep2-service-inventory-cg-landscape-native-candidate1.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\receipts\\S21-ep2-service-inventory-cg-landscape-native-candidate1.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/receipts/S21-ep2-service-inventory-cg-landscape-native-candidate1.json",
+      "type": "file",
+      "sha256": "5334d1a1195492ec85da91228789262cb346a68f6a2bb2ae6418616c72bcf7f0",
+      "size": 829
+    }
+  ]
+}

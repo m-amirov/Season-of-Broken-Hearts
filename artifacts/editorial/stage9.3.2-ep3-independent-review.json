@@ -1,0 +1,65 @@
+{
+  "schema": "stage9.3.2.independent-editorial-review.v1",
+  "episode": 3,
+  "verdict": "PASS",
+  "sourceHead": "9938c4b47ecfecd1ef7e798d869755a3421076ff",
+  "sourceHashes": {
+    "episodeFile": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+    "graphFile": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf5442",
+    "packet": "9c3b02cdbaadbfa618847fe8cbd73cb57afde82ef475b6d971da65a5091eb144"
+  },
+  "canonHashes": {
+    "narrative/NARRATIVE_BIBLE.md": "6ce57ac42b4251a45e00aff9ff5064081e23b57e3ab1320d52c33de559e075c1",
+    "narrative/STYLE_GUIDE.md": "d8b66fc2689b461434bf74a01c63a43e127cda4c9a224ae27c3ae2455fefc466",
+    "docs/season/TIMELINE_AND_KNOWLEDGE_MATRIX.md": "6916386948b73145031b6452e4fd8ed9bcdeac14df3b78c0174c17c539f11032",
+    "docs/season/FULL_SEASON_ROUTE_MAP.md": "8563cf5ad54a6530a25ba0bbbeb9293ee9c675d0fca69882086ce0fe186446f8",
+    "docs/season/STATE_AND_SAVE_ARCHITECTURE.md": "604a6eabec8fc6716e8a37bb1ed17ead51e40c4f5f05b532bcf06e534d06f223"
+  },
+  "stateSchemaHash": "0423072aac40418a02c515cd0029556fd248a9beeed4e39dc64f4e5823521d88",
+  "reviewer": {
+    "identity": "independent Web High reviewer",
+    "route": "ceos_reasoner_web",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoningEffort": "high",
+    "runId": "01a13f2c-e052-7572-ae9e-1903e7223a15",
+    "browserTraceId": "11c16752eae8",
+    "diagnosticDirectory": "C:\\Users\\user\\.codex-chatgpt-web\\diagnostics\\browser-turns\\11c16752eae8-15947e89"
+  },
+  "inputScope": {
+    "sceneIds": [
+      "ep3_survey_join_response",
+      "ep3_survey_decline_response",
+      "ep3_staff_walkthrough",
+      "ep3_eight_years",
+      "ep3_document_check_response",
+      "ep3_matteo_confrontation",
+      "ep3_quiet_return"
+    ],
+    "locales": ["ru", "en"],
+    "scope": "final changed EP3 delta packet"
+  },
+  "delivery": {
+    "sendAccepted": true,
+    "responseVisible": true,
+    "turnCompleted": true,
+    "receiptPersisted": true,
+    "completionEvidence": ["14-send-accepted.json", "15-response-visible.json", "16-turn-completed.json"]
+  },
+  "reviewerOutput": {
+    "verdict": "PASS",
+    "summary": "Targeted EP3 re-review passed for RU and EN. Declined/hold report states are distinguished consistently. The declined report arrives through Matteo on Day 12, matching its availability in the subsequent scene. Spatial routing is understandable, archive-copy provenance is established, and disclosure choices have visible consequences. No confirmed P0/P1/P2 defects remain within the reviewed scope.",
+    "coveredSceneIds": [
+      "ep3_survey_join_response",
+      "ep3_survey_decline_response",
+      "ep3_staff_walkthrough",
+      "ep3_eight_years",
+      "ep3_document_check_response",
+      "ep3_matteo_confrontation",
+      "ep3_quiet_return"
+    ],
+    "coveredLocales": ["ru", "en"],
+    "materialFindings": [],
+    "unresolvedIssues": [],
+    "deliveryAcknowledgement": "I reviewed only the supplied delta packet."
+  }
+}

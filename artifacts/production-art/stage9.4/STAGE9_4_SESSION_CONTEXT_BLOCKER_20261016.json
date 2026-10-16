@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+  "recordedAt": "2026-10-16T05:01:51.498Z",
+  "stage": "9.4",
+  "runId": "2026-10-16T04-56-38-829Z-production-art-86041d",
+  "runStateBeforeStop": {
+    "state": "CANON_READY",
+    "nextStage": "GENERATING",
+    "verdict": null,
+    "checkpointCount": 5,
+    "producerParentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9"
+  },
+  "ceosContinue": {
+    "status": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "mode": "inspect",
+    "executable": false,
+    "action": "CREATE_LINKED_SESSION_RECOVERY"
+  },
+  "rootCause": {
+    "code": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "detail": "The active CEOS runtime hook is bound to the permanent checkout, while this production-art run is bound to the project worktree. The continuation controller requires fs.realpath(current-turn.cwd) to equal the run projectDir before GENERATING work is claimable.",
+    "runProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+    "sessionMarker": "C:/Users/user/.codex/ceos/runtime/current-session.json",
+    "turnMarker": "C:/Users/user/.codex/ceos/runtime/current-turn.json",
+    "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "turnId": "01a14312-f8c5-7220-a9c3-25191a4babfd",
+    "markerCwd": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+    "markerObservedAt": "2026-10-16T04:58:00.456Z",
+    "comparison": "markerCwd != runProjectDir"
+  },
+  "trustEvidence": {
+    "freshRunCapabilityChallenge": "cap-7246c10d895ad37d872c",
+    "capabilityAttestation": "PRESENT / UNKNOWN / trustedForGeneration=true in run-session-turn scope",
+    "bindingResult": "capability attestation does not override the continuation controller's project-cwd trust check",
+    "parentSessionIdWasNotEdited": true,
+    "turnMarkerWasNotEdited": true,
+    "sessionIdWasNotSubstituted": true
+  },
+  "stoppedWork": {
+    "newImageGenCallsAfterRecovery": 0,
+    "newS22PortraitGeneration": 0,
+    "newLandscapeOrS23Pngs": 0,
+    "webFinalAcceptance": "NOT_PERFORMED",
+    "runtimeIntegration": "NOT_PERFORMED"
+  },
+  "requiredRecovery": "Start a supported trusted turn whose CEOS hook current-turn.cwd resolves to the project worktree, then use ceos continue guided to create or claim the linked recovery action. Do not edit runtime markers or bypass the cwd binding check.",
+  "preserved": [
+    "2026-10-15 terminal BLOCKED run and receipts",
+    "2026-10-16 linked recovery run checkpoints and fresh capability evidence",
+    "S19-S21 accepted bytes and receipts",
+    "S22 portrait original, materialization evidence and mechanical output receipt"
+  ],
+  "verdictBoundary": "BLOCKED; no production generation or art acceptance is claimed from this state."
+}

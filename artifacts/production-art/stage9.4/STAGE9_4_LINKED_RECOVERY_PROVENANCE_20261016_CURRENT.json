@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_LINKED_RECOVERY_PROVENANCE",
+  "status": "PROVENANCE_SNAPSHOT",
+  "recordedAt": "2026-10-16T05:32:33.556Z",
+  "project": "Season of Broken Hearts",
+  "stage": "9.4",
+  "sourceRun": {
+    "runId": "2026-10-16T04-56-38-829Z-production-art-86041d",
+    "state": "BLOCKED",
+    "verdict": "BLOCKED",
+    "blocker": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "historyPolicy": "immutable; do not reopen or rewrite"
+  },
+  "recoveryRun": {
+    "runId": "2026-10-16T05-32-33-553Z-production-art-1cd351",
+    "ceosVersion": "0.5.22",
+    "projectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+    "sourceHead": "019cd2d4c5fe9ac32d82adf4131cfffad4a95b43",
+    "scopeSha256": "aa2d59be5063719f6b1e9556b963719342621df3ab1f11275f2589b689f42481",
+    "createdFromCurrentHeadCanonRefresh": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+    "parentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9"
+  },
+  "scope": {
+    "pairs": ["S22", "S23"],
+    "protectedAcceptedPairs": ["S19", "S20", "S21"],
+    "forbidden": ["S22 portrait regeneration", "S19-S21 changes", "release publication", "merge", "Yandex submission"]
+  },
+  "provenance": "This file links the current-head recovery run to the immutable terminal run. It is not a capability attestation, generation receipt, route receipt or art acceptance receipt."
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_CURRENT_HEAD_INVENTORY",
+  "status": "PASS_CURRENT_HEAD_INVENTORIED",
+  "recordedAt": "2026-10-16T05:32:33.556Z",
+  "sourceHead": "019cd2d4c5fe9ac32d82adf4131cfffad4a95b43",
+  "runId": "2026-10-16T05-32-33-553Z-production-art-1cd351",
+  "linkedFromRunId": "2026-10-16T04-56-38-829Z-production-art-86041d",
+  "protectedAcceptedPairs": ["S19", "S20", "S21"],
+  "scope": {"pairs": 2, "pngs": 4, "episodes": [2], "scenes": ["S22", "S23"]},
+  "canon": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+  "items": [
+    {
+      "pairId": "S22",
+      "sceneId": "S22",
+      "assetFamilyId": "ep2-courtyard-rehearsal-cg",
+      "outputs": [
+        {
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "kind": "background",
+          "width": 1024,
+          "height": 1536,
+          "format": "portrait",
+          "status": "PRESENT_RECOVERED_OUTPUT_GATE_PASS",
+          "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+          "receipt": "artifacts/production-art/stage9.4/receipts/S22-portrait-art-output-recovered-20261016.json",
+          "regenerated": false,
+          "visualAcceptance": "NOT_VERIFIED"
+        },
+        {
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+          "kind": "background",
+          "width": 1672,
+          "height": 941,
+          "format": "landscape",
+          "status": "PENDING_GENERATION"
+        }
+      ]
+    },
+    {
+      "pairId": "S23",
+      "sceneId": "S23",
+      "assetFamilyId": "ep2-dining-rehearsal-response-cg",
+      "outputs": [
+        {
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+          "kind": "background",
+          "width": 1024,
+          "height": 1536,
+          "format": "portrait",
+          "status": "PENDING_GENERATION"
+        },
+        {
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+          "kind": "background",
+          "width": 1672,
+          "height": 941,
+          "format": "landscape",
+          "status": "PENDING_GENERATION"
+        }
+      ]
+    }
+  ],
+  "acceptance": {
+    "required": ["real PNG bytes", "one ceos art-output-verify receipt per output", "runtime desktop and mobile pixels", "NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance"],
+    "forbidden": ["S19-S21 regeneration", "S22 portrait regeneration", "placeholder or synthetic PNG", "forged capability, provider or Web receipts"]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "target": "Stage 9.4 bounded S22-S23 BATCH_INTEGRATION recovery",
+  "inScope": [
+    "S22-S23 existing dual-format PNGs and runtime mappings",
+    "S22-S23 runtime pixel QA and independent Web High acceptance"
+  ],
+  "outOfScope": [
+    "S19-S21 regeneration or modification",
+    "S22 portrait regeneration",
+    "EP2 episode-final acceptance",
+    "merge",
+    "publish",
+    "Yandex submission",
+    "release readiness"
+  ],
+  "acceptanceContract": "BATCH_INTEGRATION PARTIAL_PASS only after exact scoped dual-format mechanical verification, runtime pixel QA, and independent NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance; never episode PASS or release readiness",
+  "mutationBoundary": "Only current-head S22-S23 batch evidence, receipts, runtime evidence and CEOS checkpoints; preserve all existing PNG bytes, S19-S21, S22 portrait and terminal CEOS runs"
+}

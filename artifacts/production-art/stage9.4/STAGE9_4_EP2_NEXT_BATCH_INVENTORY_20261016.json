@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "status": "INVENTORIED_PENDING_GENERATION",
+  "runId": "2026-10-16T07-03-35-218Z-production-art-eef31b",
+  "sourceHead": "b32f00580e262aced9fbee01e928e4fac2b91462",
+  "episode": 2,
+  "batch": {
+    "families": 3,
+    "pairs": 3,
+    "pngs": 6,
+    "familyOrder": [
+      "ep2-dining-refusal-response-cg",
+      "ep2-office-fake-terms-cg",
+      "ep2-service-refusal-workday-cg"
+    ]
+  },
+  "sourceEvidence": {
+    "narrative/graph.json": {
+      "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544",
+      "bytes": 241013
+    },
+    "narrative/assets.json": {
+      "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c",
+      "bytes": 10348
+    },
+    "narrative/episodes/ep-02.json": {
+      "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "bytes": 73052
+    },
+    "artifacts/production-art/stage9.4/ART_INVENTORY.md": {
+      "sha256": "6810fa4bc8638e7ade1b8c01a1c44d2fe0075c0ca4a200369d0878538ee03b72",
+      "bytes": 6631
+    },
+    "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json": {
+      "sha256": "4d28855a9edb29ae04d828d6557be52f099137c55c0cc769374b4ef98cb197c5",
+      "bytes": 15670
+    }
+  },
+  "referenceEvidence": {
+    "assets/characters/references/originals/nika.png": {
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "bytes": 2493846,
+      "pixelDimensions": "1536x1024"
+    },
+    "assets/characters/references/originals/matteo.png": {
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+      "bytes": 2130673,
+      "pixelDimensions": "1448x1086"
+    },
+    "assets/characters/references/originals/giulia.png": {
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "bytes": 2409650,
+      "pixelDimensions": "1448x1086"
+    },
+    "artifacts/production-art/character-reference-contact-sheet.png": {
+      "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+      "bytes": 2570840,
+      "purpose": "accepted visual-language baseline"
+    }
+  },
+  "pairs": [
+    {
+      "familyId": "ep2-dining-refusal-response-cg",
+      "sceneId": "ep2_refusal_response",
+      "assetId": "ep2-refusal-response-cg",
+      "day": 4,
+      "location": "family-dining-room",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "narrativeCue": "After refusal, Matteo tells Giulia; the calendar loses the couple label and Nika remains a paid organizer.",
+      "requiredAction": "Show professional boundary and work continuity; no romantic contact or couple pose.",
+      "portrait": {
+        "path": "assets/production/cg/ep2-dining-refusal-response-cg.png",
+        "width": 1024,
+        "height": 1536,
+        "kind": "background"
+      },
+      "landscape": {
+        "path": "assets/production/cg/ep2-dining-refusal-response-cg-landscape.png",
+        "width": 1672,
+        "height": 941,
+        "kind": "background"
+      }
+    },
+    {
+      "familyId": "ep2-office-fake-terms-cg",
+      "sceneId": "ep2_fake_terms",
+      "assetId": "ep2-fake-terms-cg",
+      "day": 4,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo"],
+      "narrativeCue": "Private office terms: blank sheet, pen left between them and explicit limits on public gestures and touch.",
+      "requiredAction": "Preserve physical distance, clear consent boundaries and an untouched pen; do not depict intimacy that was not agreed.",
+      "portrait": {
+        "path": "assets/production/cg/ep2-fake-terms-cg.png",
+        "width": 1024,
+        "height": 1536,
+        "kind": "background"
+      },
+      "landscape": {
+        "path": "assets/production/cg/ep2-fake-terms-cg-landscape.png",
+        "width": 1672,
+        "height": 941,
+        "kind": "background"
+      }
+    },
+    {
+      "familyId": "ep2-service-refusal-workday-cg",
+      "sceneId": "ep2_refusal_workday",
+      "assetId": "ep2-refusal-workday-cg",
+      "day": 5,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "giulia", "matteo"],
+      "narrativeCue": "Rain arrives early; Nika and Giulia choose a tent placement and Giulia speaks to her mother herself while Matteo stays in role.",
+      "requiredAction": "Show operational planning and Giulia's agency in rainy conditions with professional distance; do not reuse the dry inventory setup or romantic pairing.",
+      "portrait": {
+        "path": "assets/production/cg/ep2-service-refusal-workday-cg.png",
+        "width": 1024,
+        "height": 1536,
+        "kind": "background"
+      },
+      "landscape": {
+        "path": "assets/production/cg/ep2-service-refusal-workday-cg-landscape.png",
+        "width": 1672,
+        "height": 941,
+        "kind": "background"
+      }
+    }
+  ],
+  "protectedAcceptedScope": {
+    "pairs": ["S19", "S20", "S21", "S22", "S23"],
+    "rule": "DO_NOT_MODIFY_OR_REGENERATE",
+    "episodeFinalAcceptance": "PENDING_UNTIL_ALL_17_EP2_SCENES_ARE_COVERED"
+  },
+  "forbidden": [
+    "S19-S23 regeneration or mutation",
+    "EP3 generation in this run",
+    "placeholder or synthetic PNG",
+    "reused portrait as landscape",
+    "fabricated capability, producer, output or Web receipts",
+    "episode final acceptance before complete EP2 coverage"
+  ]
+}

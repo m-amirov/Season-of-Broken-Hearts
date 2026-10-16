@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "0a9440e9bbf1e25962785f48629fbf308b4d7301",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S23",
+  "assetFamilyId": "ep2-dining-rehearsal-response-cg",
+  "cue": {"id": "ep2_family_rehearsal_response_tablet", "at": [4, 0], "authoredExcerpt": "Джулия сама перенесла карточки гостей. Маттео открыл рот, чтобы остановить её, но Ника уже убрала из прохода коробки с бокалами."},
+  "requiredCast": ["nika", "matteo", "giulia"],
+  "narrativeActions": [
+    {"character": "nika", "action": "Убирает коробки с бокалами из прохода и делает рабочее пространство безопасным для решения Джулии."},
+    {"character": "matteo", "action": "Передаёт планшет Джулии и принимает, что список и решение принадлежат ей."},
+    {"character": "giulia", "action": "Переносит карточки гостей и удерживает право самой решать, что останется в её плане."}
+  ],
+  "sceneContinuity": "Immediate continuation of S22 in the family dining room; same day-3 wardrobe, practical handoff, no romantic triangle or ceremony styling.",
+  "location": "Villa Serena family dining room with a long table, guest cards, a clear passage and a practical tablet handoff",
+  "timeOfDay": "Day 3 afternoon, warm daylight continuing from the courtyard rehearsal",
+  "wardrobe": {"nika": "Same day-3 off-white linen work layer", "matteo": "Same restrained summer-work layer, no ceremony styling", "giulia": "Same sage-grey work shirt and beige utility apron"},
+  "emotionalTone": "Earned agency and a tested change in control habits; practical and clear.",
+  "physicalAction": "Giulia moves guest cards, Nika clears the box-filled aisle and Matteo hands the tablet to Giulia across the table.",
+  "facialExpression": "Giulia resolute; Nika encouraging and alert; Matteo accepting the correction without defensiveness.",
+  "forbiddenProps": ["readable invented guest names or tablet text", "blocked walkway or unsafe floating boxes", "romantic embrace or couple pose", "wedding ceremony or rings", "Aurea document or knowledge not present in this beat"],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "desktop": {"width": 1672, "height": 941, "runtimeViewportTarget": {"width": 1920, "height": 1080}, "composition": "Independent wide dining-room composition: long table, clear passage and left-to-right tablet handoff establish the three roles without crowding or romantic alignment.", "framing": "Eye-level table-corner camera, guest cards and tablet visible as non-readable shapes above a quiet lower dialogue band.", "requiredVisibleCast": ["nika", "matteo", "giulia"]},
+  "portrait": {"width": 1024, "height": 1536, "composition": "Vertical dining-room composition keeping Giulia's hands and tablet handoff readable, with Nika's cleared passage and Matteo's accepting posture visible.", "framing": "Eye-level medium shot with table edge and lower dialogue-safe area clear; all faces remain readable at mobile cover framing.", "requiredVisibleCast": ["nika", "matteo", "giulia"]},
+  "canonReferences": ["artifacts/production-art/character-reference-contact-sheet.png", "assets/production/cg/ep1-matteo-office-cg.png", "assets/production/cg/ep1-matteo-office-cg-landscape.png"],
+  "qualityAcceptance": ["All three identities and same-day wardrobe continuity remain clear.", "Dining room, clear passage, guest-card action and tablet handoff read without invented text.", "Both formats preserve faces, hands and dialogue separation.", "No blocked walkway, ceremony, romance, extra cast or premature Aurea knowledge."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

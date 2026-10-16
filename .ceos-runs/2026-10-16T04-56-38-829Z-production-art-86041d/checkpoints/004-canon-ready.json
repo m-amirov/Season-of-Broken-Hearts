@@ -1,0 +1,42 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-16T05:00:59.321Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-head canon freeze and independent Web High art direction; S22 portrait usable as anchor, no final art acceptance.",
+  "metadata": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "artDirectionStatus": "PASS_ART_DIRECTION_WITH_P2_ADVISORIES",
+    "finalAcceptance": "NOT_PERFORMED",
+    "usableCanonAnchor": "S22 portrait"
+  },
+  "source": {
+    "available": true,
+    "head": "8712221a25e2bfae59b036908fc9c4ba88209e92",
+    "clean": false,
+    "worktreeSha256": "73e6548fbe610aece804ae76d57711c59e2dbb456f8243105c118c5b0560b513"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_FREEZE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_FREEZE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_FREEZE_20261016.json",
+      "type": "file",
+      "sha256": "cdf20a24629d7465a96b2d09aa693f63ee6d684770e3eeb822e4933f40463a89",
+      "size": 2911
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/S22_S23_WEB_ART_DIRECTION_ANALYSIS_20261016.json",
+      "type": "file",
+      "sha256": "1ce94286800033dca742b9fdbaaf848a999a29d350ee0cb490a83d1c5cf052a7",
+      "size": 4532
+    }
+  ]
+}

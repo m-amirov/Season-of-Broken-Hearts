@@ -1,0 +1,21 @@
+{
+  "target": "Stage 9.4 linked recovery: generate and integrate S22-S23 dual-format CG pairs",
+  "inScope": [
+    "S22-S23 only",
+    "2 portrait PNGs 1024x1536",
+    "2 landscape PNGs 1672x941",
+    "dimension and asset QA",
+    "runtime evidence",
+    "Web High art acceptance",
+    "linked recovery provenance"
+  ],
+  "outOfScope": [
+    "S19-S21",
+    "historical run 2026-10-15T13-30-16-951Z-production-art-a03477",
+    "release publication",
+    "merge",
+    "Yandex submission"
+  ],
+  "acceptanceContract": "S22 and S23 each have real portrait and landscape PNGs, fresh output receipts, runtime evidence, independent NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance, and source-bound integration evidence; no S19-S21 changes",
+  "mutationBoundary": "Only project-owned Stage 9.4 S22-S23 assets, manifests, runtime mappings, receipts, and linked recovery evidence on the existing PR branch; preserve all historical CEOS runs and accepted S19-S21 bytes"
+}

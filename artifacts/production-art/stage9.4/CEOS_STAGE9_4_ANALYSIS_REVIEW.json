@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "WH-ART-STAGE9.4-ANALYSIS-1015",
+  "reviewTraceId": "571baf29f72e",
+  "phase": "analysis",
+  "taskId": "01a13f4f-56e9-7261-90e9-d7ee21c6d35a",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/STAGE9_4_PREGEN_ART_DIRECTION.json",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "status": "FINDINGS",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "evidenceRefs": [
+    "stage9.4-character-reference-contact-sheet",
+    "ep1-matteo-office-cg",
+    "ep1-matteo-office-cg-landscape",
+    "ep1-leo-harbor-cg",
+    "ep1-leo-harbor-cg-landscape"
+  ],
+  "receivedEvidenceRefs": [
+    "stage9.4-character-reference-contact-sheet",
+    "ep1-matteo-office-cg",
+    "ep1-matteo-office-cg-landscape",
+    "ep1-leo-harbor-cg",
+    "ep1-leo-harbor-cg-landscape"
+  ],
+  "framesReviewed": 5,
+  "reviewedItems": [
+    "stage9.4-character-reference-contact-sheet",
+    "ep1-matteo-office-cg",
+    "ep1-matteo-office-cg-landscape",
+    "ep1-leo-harbor-cg",
+    "ep1-leo-harbor-cg-landscape"
+  ],
+  "summary": "Bounded pre-generation canon and mapping review for the 32 EP2-EP3 scenes. The reviewer received the supplied pixel bundle and reconciled 24 visual families, 25 planned portrait/landscape pairs, 23 new-CG rows, 2 consent variants and 7 continuation rows.",
+  "visualEvidence": [
+    {
+      "ref": "stage9.4-character-reference-contact-sheet",
+      "path": "artifacts/production-art/character-reference-contact-sheet.png",
+      "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+      "bytes": 2570840,
+      "pixelDimensions": "1800x1300",
+      "observation": "Supplied identity packet for Nika, Matteo, Elio, Leo, Bianca and Giulia; used for canon direction only."
+    },
+    {
+      "ref": "ep1-matteo-office-cg",
+      "path": "assets/production/cg/ep1-matteo-office-cg.png",
+      "sha256": "16b33e09e97f438944c19e71ed5bc28f71df7bf0d3e3e7d1d3553479bb650882",
+      "bytes": 2345777,
+      "pixelDimensions": "1024x1536",
+      "observation": "Approved EP1 office composition and Matteo/Nika canon reference."
+    },
+    {
+      "ref": "ep1-matteo-office-cg-landscape",
+      "path": "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+      "sha256": "ab0c392e98ec7c28c683a6692329a4a3edef4111a9fdbac728b770f7c880b349",
+      "bytes": 2394753,
+      "pixelDimensions": "1672x941",
+      "observation": "Approved EP1 landscape composition reference for desktop-safe framing."
+    },
+    {
+      "ref": "ep1-leo-harbor-cg",
+      "path": "assets/production/cg/ep1-leo-harbor-cg.png",
+      "sha256": "3518d8f107fb497f6e444caa2512d15749ca27815bddaae139600b49554a1d27",
+      "bytes": 2515732,
+      "pixelDimensions": "1024x1536",
+      "observation": "Approved EP1 Leo/Nika identity, distance and harbor continuity reference."
+    },
+    {
+      "ref": "ep1-leo-harbor-cg-landscape",
+      "path": "assets/production/cg/ep1-leo-harbor-cg-landscape.png",
+      "sha256": "2fc4c7d05ede5286d5d8009a09871dff81dbb1fa362c92aa6ae6851f95fabd15",
+      "bytes": 2678556,
+      "pixelDimensions": "1672x941",
+      "observation": "Approved EP1 landscape framing reference for Leo/Nika harbor scenes."
+    }
+  ],
+  "decision": "PASS_FOR_BRIEFING",
+  "findings": [
+    {
+      "severity": "P1",
+      "id": "P1_CAST_AND_AGENCY",
+      "status": "PARTIALLY_LOCKED",
+      "detail": "Generated briefs must bind visible cast and authored action; Bianca remains a professional decision-maker and Giulia remains an active participant."
+    },
+    {
+      "severity": "P1",
+      "id": "P1_CONSENT_BRANCH_BINDING",
+      "status": "PARTIALLY_LOCKED",
+      "detail": "Accepted and refused public-gesture states require separate asset IDs and runtime mappings; the refused state must not show accepted contact."
+    },
+    {
+      "severity": "P1",
+      "id": "P1_AUREA_KNOWLEDGE_BOUNDARY",
+      "status": "PARTIALLY_LOCKED",
+      "detail": "The EP3 drawing remains an unverified lead and documents must not show readable final information before authored verification."
+    },
+    {
+      "severity": "P1",
+      "id": "P1_TEMPORAL_SPATIAL_CONTINUITY",
+      "status": "PARTIALLY_LOCKED",
+      "detail": "Briefs must preserve day/time, wardrobe and office/courtyard/rooftop/archive/west-wing transitions."
+    },
+    {
+      "severity": "P1",
+      "id": "P1_CRITICAL_COMPOSITION_SAFETY",
+      "status": "PARTIALLY_LOCKED",
+      "detail": "Portrait and landscape focal points must be verified against real UI overlap and target viewports after generation."
+    }
+  ],
+  "unresolved": [
+    "This review authorizes briefing only; it is not production-image acceptance.",
+    "New EP2-EP3 PNGs and current-runtime screenshots do not yet exist.",
+    "The factual locks above must remain explicit in CEOS-compatible per-family briefs before GENERATING."
+  ],
+  "limitation": "Independent art acceptance remains pending until actual generated pixels and current-runtime screenshots are supplied in a separate Web High V2 review."
+}

@@ -1,0 +1,1877 @@
+{
+  "schemaVersion": 1,
+  "stage": "9.4",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "sourceFiles": {
+    "graph": {
+      "path": "narrative/graph.json",
+      "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544"
+    },
+    "ep2": {
+      "path": "narrative/episodes/ep-02.json",
+      "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e"
+    },
+    "ep3": {
+      "path": "narrative/episodes/ep-03.json",
+      "sha256": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66"
+    },
+    "narrativeBible": {
+      "path": "narrative/NARRATIVE_BIBLE.md",
+      "sha256": "6ce57ac42b4251a45e00aff9ff5064081e23b57e3ab1320d52c33de559e075c1"
+    },
+    "styleGuide": {
+      "path": "narrative/STYLE_GUIDE.md",
+      "sha256": "d8b66fc2689b461434bf74a01c63a43e127cda4c9a224ae27c3ae2455fefc466"
+    },
+    "timeline": {
+      "path": "docs/season/TIMELINE_AND_KNOWLEDGE_MATRIX.md",
+      "sha256": "6916386948b73145031b6452e4fd8ed9bcdeac14df3b78c0174c17c539f11032"
+    },
+    "artBible": {
+      "path": "artifacts/art-direction/ART_BIBLE.md",
+      "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96"
+    },
+    "visualLanguage": {
+      "path": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "sha256": "a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785"
+    },
+    "wardrobeRules": {
+      "path": "config/wardrobe-rules.json",
+      "sha256": "5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246"
+    },
+    "characterReferences": {
+      "path": "artifacts/production-art/character-reference-manifest.json",
+      "sha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4"
+    }
+  },
+  "globalNegativeConstraints": [
+    "no baked dialogue or UI",
+    "no logos, watermarks or readable invented document text",
+    "no extra cast",
+    "no identity drift, plastic anatomy or floating figures",
+    "no fantasy/luxury-resort architecture",
+    "no decorative hearts or petals",
+    "no premature Aurea knowledge",
+    "no romantic touch unless authored and consented"
+  ],
+  "dualFormatContract": {
+    "portrait": {
+      "width": 1024,
+      "height": 1536,
+      "aspect": "2:3",
+      "safeArea": "Keep faces, hands, key props and a natural lower dialogue-safe zone visible at 360x640, 390x844 and 430x932.",
+      "contract": "config/production-art-dimensions.json",
+      "outputGateCommand": "ceos art-output-verify --project . --file <actual-portrait.png> --kind background --width 1024 --height 1536 --receipt <new-receipt.json> --json"
+    },
+    "landscape": {
+      "width": 1672,
+      "height": 941,
+      "aspect": "near-16:9",
+      "safeArea": "Use independent wide staging; keep cast, action and location readable above the dialogue band.",
+      "runtimeViewportTarget": {
+        "width": 1920,
+        "height": 1080
+      },
+      "ceosMinimumAccepted": {
+        "width": 1280,
+        "height": 720
+      },
+      "outputGateCommand": "ceos art-output-verify --project . --file <actual-landscape.png> --kind background --width 1672 --height 941 --receipt <new-receipt.json> --json",
+      "contract": "config/production-art-dimensions.json"
+    }
+  },
+  "acceptanceCriteria": [
+    "faces and age match the approved reference originals",
+    "cast, location, day/time and physical action match the named scene family",
+    "wardrobe continuity and shared-scene silhouette contrast pass WARDROBE_CONTINUITY_V1",
+    "portrait and landscape are independently composed but preserve story invariants",
+    "important hands, documents, plans, keys, camera, trays and photo remain visible without invented text",
+    "no anatomy, grounding, perspective, crop or dialogue-safe-area P0/P1 defect",
+    "actual source PNG and current-HEAD runtime screenshots receive independent pixel review"
+  ],
+  "briefs": [
+    {
+      "assetFamilyId": "ep2-office-morning-brief-cg",
+      "sceneIds": [
+        "ep2_morning_brief"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Open day 2 with wedding logistics, duplicate linen invoices and Nika's professional role.",
+      "location": "Villa Serena ground-floor office with shutter light, old stone and practical work table",
+      "timeOfDay": "day 2 morning",
+      "characters": [
+        "nika",
+        "matteo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Wedding-prep work morning; retain approved identities while shifting Nika and Matteo into fresh practical work layers and Giulia into a competent office-to-housekeeping layer.",
+        "nika": {
+          "outfit": "ivory blouse, washed-olive lightweight blazer, taupe trousers, practical leather bag",
+          "palette": [
+            "ivory",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "soft professional organizer",
+          "accessoriesProps": [
+            "small earrings",
+            "thin chain",
+            "bag",
+            "invoice folder"
+          ]
+        },
+        "matteo": {
+          "outfit": "charcoal/tobacco structured overshirt, stone trousers, dark belt/watch",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "controlled owner structure",
+          "accessoriesProps": [
+            "keys",
+            "closed folder",
+            "schedule papers"
+          ]
+        },
+        "giulia": {
+          "outfit": "sage-grey shirt, beige utility apron, dark work trousers, hair in low bun",
+          "palette": [
+            "sage",
+            "beige",
+            "navy"
+          ],
+          "silhouette": "grounded senior staff",
+          "accessoriesProps": [
+            "wedding cards",
+            "linen schedule"
+          ]
+        }
+      },
+      "physicalAction": "Nika compares two linen invoices at the table while Matteo presents the schedule and Giulia stands with the rehearsal cards.",
+      "facialExpression": "Nika alert and analytical; Matteo asking rather than commanding; Giulia wry and practically engaged.",
+      "emotionalTone": "work pressure under family warmth",
+      "cameraPosition": "human eye level, three-quarter office table, 50mm natural perspective",
+      "composition": "triangular three-person working composition; invoices and schedule in foreground; open shutters establish Villa Serena; preserve lower quiet band for dialogue.",
+      "portraitFocalPoint": "Nika's hands on the duplicate invoices, with Matteo and Giulia's faces above the dialogue-safe area.",
+      "landscapeFocalPoint": "Use the table and window axis to separate the three roles while keeping the invoices legible as shapes, not text.",
+      "negativeConstraints": [
+        "no romantic touch",
+        "no extra staff",
+        "no readable invoice text"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "artifacts/production-art/character-reference-manifest.json",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-office-budget-cg",
+      "sceneIds": [
+        "ep2_wedding_budget"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Make the staff-reserve choice and the two budget paths physically readable.",
+      "location": "same Villa Serena office, documents spread across a wooden table",
+      "timeOfDay": "day 2 morning, immediately after the briefing",
+      "characters": [
+        "nika",
+        "matteo"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Continue the office work layers from the morning brief; no new social context between adjacent scenes.",
+        "nika": {
+          "outfit": "ivory blouse, washed-olive blazer, taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "seated practical organizer",
+          "accessoriesProps": [
+            "watch",
+            "invoice sheets",
+            "pencil"
+          ]
+        },
+        "matteo": {
+          "outfit": "charcoal/tobacco overshirt, stone trousers",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "standing but yielding owner",
+          "accessoriesProps": [
+            "two table versions",
+            "keys"
+          ]
+        }
+      },
+      "physicalAction": "Matteo slides both table versions toward Nika; she traces the reduced staff reserve line without touching him.",
+      "facialExpression": "Nika firm and concerned for staff; Matteo tired, listening and not defensive.",
+      "emotionalTone": "ethical pressure and negotiated honesty",
+      "cameraPosition": "eye-level over-table two-shot, no wide-angle distortion",
+      "composition": "Nika and Matteo on opposite sides of the table; papers form a visual boundary; hands and table edge remain above dialogue overlay.",
+      "portraitFocalPoint": "Nika's hand and the two non-readable table versions between the faces.",
+      "landscapeFocalPoint": "The desk diagonal leads from Matteo's offered documents to Nika's decision, with the office architecture anchoring scale.",
+      "negativeConstraints": [
+        "no Giulia in frame",
+        "no romantic proximity",
+        "no readable invented numbers"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/production/cg/ep1-matteo-office-cg.png",
+        "assets/production/cg/ep1-matteo-office-cg-landscape.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep1-matteo-office-cg — rejected: wrong day/context and no two-version budget action"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-service-inventory-cg",
+      "sceneIds": [
+        "ep2_workday_inventory"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Show operational labor behind the budget choice without turning Laura into an un-authored cast addition.",
+      "location": "Villa Serena service corridor beside storage boxes and a staff passage",
+      "timeOfDay": "day 2 late morning",
+      "characters": [
+        "nika",
+        "matteo"
+      ],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Roll sleeves and loosen the office layers for a working corridor; Matteo remains owner-structured and Nika remains the practical organizer.",
+        "nika": {
+          "outfit": "olive blazer with rolled sleeves, ivory blouse, taupe trousers",
+          "palette": [
+            "olive",
+            "ivory",
+            "taupe"
+          ],
+          "silhouette": "mobile organizer",
+          "accessoriesProps": [
+            "inventory sheet",
+            "pen",
+            "practical bag"
+          ]
+        },
+        "matteo": {
+          "outfit": "charcoal overshirt with rolled sleeves, stone trousers",
+          "palette": [
+            "charcoal",
+            "stone",
+            "tobacco"
+          ],
+          "silhouette": "owner learning the route",
+          "accessoriesProps": [
+            "signed schedule",
+            "keys"
+          ]
+        }
+      },
+      "physicalAction": "Nika checks glassware boxes and a two-tray load while Matteo signs beside her correction; Laura is suggested by the open doorway and work route, not added as a third visible actor.",
+      "facialExpression": "Nika focused; Matteo attentive and chastened.",
+      "emotionalTone": "practical solidarity",
+      "cameraPosition": "eye level down the corridor, grounded 50mm perspective",
+      "composition": "repeating corridor lines lead to boxes and trays; keep a clear doorway gap for Laura's authored presence without inventing her body.",
+      "portraitFocalPoint": "Nika's inventory sheet, stacked glassware and Matteo's signing hand.",
+      "landscapeFocalPoint": "Long corridor and tray route make the labor path legible while faces remain medium-sized.",
+      "negativeConstraints": [
+        "no extra visible Laura portrait",
+        "no warehouse architecture",
+        "no unsafe floating trays"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/production/cg/ep1-staff-laundry-cg.png",
+        "assets/production/cg/ep1-staff-laundry-cg-landscape.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep1-staff-laundry-cg — rejected: wrong architecture, cast and action"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-courtyard-rehearsal-cg",
+      "sceneIds": [
+        "ep2_family_rehearsal"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Let Giulia choose the wedding space instead of being displayed as family proof.",
+      "location": "Villa Serena courtyard opening toward the sea",
+      "timeOfDay": "day 3 midday",
+      "characters": [
+        "nika",
+        "matteo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Fresh wedding-prep day; preserve each identity and use distinct roles rather than coordinated family styling.",
+        "nika": {
+          "outfit": "soft sand blouse, washed-olive blazer, taupe trousers",
+          "palette": [
+            "sand",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "calm event organizer",
+          "accessoriesProps": [
+            "floor plan",
+            "pen"
+          ]
+        },
+        "matteo": {
+          "outfit": "deep olive structured overshirt, off-white trousers, dark belt",
+          "palette": [
+            "deep olive",
+            "off-white",
+            "brown"
+          ],
+          "silhouette": "host under family pressure",
+          "accessoriesProps": [
+            "chair plan",
+            "keys"
+          ]
+        },
+        "giulia": {
+          "outfit": "sage-grey work shirt, beige apron, navy trousers",
+          "palette": [
+            "sage",
+            "beige",
+            "navy"
+          ],
+          "silhouette": "mature practical bride-to-be",
+          "accessoriesProps": [
+            "flowers",
+            "guest cards"
+          ]
+        }
+      },
+      "physicalAction": "Nika removes a decorative stage from the plan and points to a rain tent; Giulia looks from the flowers to her own plan while Matteo listens.",
+      "facialExpression": "Giulia frustrated then self-possessed; Nika direct; Matteo recognizing his control problem.",
+      "emotionalTone": "family pressure turning into agency",
+      "cameraPosition": "eye level across the courtyard, natural wide-medium shot",
+      "composition": "two chair rows create opposing directions; rain tent and sea establish place; three faces form a readable triangle with no crowding.",
+      "portraitFocalPoint": "Giulia and the altered plan/tent, with Nika's hand visible and Matteo held back.",
+      "landscapeFocalPoint": "Chair rows lead toward sea and tent while keeping all three adults at readable scale.",
+      "negativeConstraints": [
+        "no luxury palace",
+        "no photographer",
+        "no romantic touch"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "artifacts/production-art/character-reference-manifest.json",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-dining-rehearsal-response-cg",
+      "sceneIds": [
+        "ep2_family_rehearsal_response"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Visualize Giulia taking ownership while Nika clears a safe working passage.",
+      "location": "Villa Serena family dining room with a long table and guest-card setup",
+      "timeOfDay": "day 3 afternoon",
+      "characters": [
+        "nika",
+        "matteo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate continuation of the courtyard rehearsal; preserve the same wedding-prep clothing.",
+        "nika": {
+          "outfit": "soft sand blouse, olive blazer, taupe trousers",
+          "palette": [
+            "sand",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "active organizer",
+          "accessoriesProps": [
+            "cleared box",
+            "guest-card stack"
+          ]
+        },
+        "matteo": {
+          "outfit": "deep olive structured overshirt, off-white trousers",
+          "palette": [
+            "deep olive",
+            "off-white",
+            "brown"
+          ],
+          "silhouette": "owner yielding the tablet",
+          "accessoriesProps": [
+            "tablet"
+          ]
+        },
+        "giulia": {
+          "outfit": "sage-grey shirt, beige apron, navy trousers",
+          "palette": [
+            "sage",
+            "beige",
+            "navy"
+          ],
+          "silhouette": "decisive senior staff",
+          "accessoriesProps": [
+            "guest cards",
+            "tablet target"
+          ]
+        }
+      },
+      "physicalAction": "Giulia moves guest cards; Nika removes boxes from the passage; Matteo hands Giulia the tablet.",
+      "facialExpression": "Giulia resolute; Nika encouraging; Matteo accepting the correction.",
+      "emotionalTone": "earned agency",
+      "cameraPosition": "eye level at table corner, moderate depth",
+      "composition": "dining table and clear passage are both visible; tablet handoff is the focal action, not a romantic triangle.",
+      "portraitFocalPoint": "Giulia's hands and tablet above the dialogue sheet.",
+      "landscapeFocalPoint": "Table, passage and three-person handoff read left-to-right.",
+      "negativeConstraints": [
+        "no family crowd",
+        "no blocked walkway",
+        "no readable tablet text"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-dining-refusal-response-cg",
+      "sceneIds": [
+        "ep2_refusal_response"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Make refusal preserve work, pay and professional access while removing the couple label.",
+      "location": "Villa Serena family dining room before the family dinner",
+      "timeOfDay": "day 4 evening",
+      "characters": [
+        "nika",
+        "matteo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "New day and refusal context; keep wedding-prep role contrast without any visual couple signal.",
+        "nika": {
+          "outfit": "dusty-blue blouse, olive work jacket, dark taupe trousers",
+          "palette": [
+            "dusty blue",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "professional and self-contained",
+          "accessoriesProps": [
+            "work contract copy"
+          ]
+        },
+        "matteo": {
+          "outfit": "charcoal jacket, tobacco knit, stone trousers",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "owner taking responsibility",
+          "accessoriesProps": [
+            "calendar tablet",
+            "keys"
+          ]
+        },
+        "giulia": {
+          "outfit": "cream blouse, faded-olive apron, dark trousers",
+          "palette": [
+            "cream",
+            "olive",
+            "navy"
+          ],
+          "silhouette": "family member reclaiming agency",
+          "accessoriesProps": [
+            "dinner cards"
+          ]
+        }
+      },
+      "physicalAction": "Matteo shows the calendar without the couple label; Nika holds the work copy; Giulia checks that no one will blame Nika.",
+      "facialExpression": "Nika guarded but steady; Matteo direct and accountable; Giulia relieved and protective.",
+      "emotionalTone": "boundary respected without melodrama",
+      "cameraPosition": "eye level, three-shot with a visible table boundary",
+      "composition": "separate seating/standing positions; no clasped hands or romantic alignment; contract copy and calendar are neutral shapes.",
+      "portraitFocalPoint": "Nika's work copy and the empty space where a couple marker would have been.",
+      "landscapeFocalPoint": "Use the long table to show professional distance and Giulia's position between family and work.",
+      "negativeConstraints": [
+        "no couple pose",
+        "no accusatory family crowd",
+        "no readable calendar text"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-office-fake-terms-cg",
+      "sceneIds": [
+        "ep2_fake_terms"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Stage the voluntary seven-day public agreement as terms and boundaries, not romance.",
+      "location": "Villa Serena office, quiet desk with a blank sheet",
+      "timeOfDay": "day 4 late afternoon",
+      "characters": [
+        "nika",
+        "matteo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Business-meeting variation after the family response; Nika and Matteo remain clearly distinct.",
+        "nika": {
+          "outfit": "ivory blouse, dark olive blazer, taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "upright guarded professional",
+          "accessoriesProps": [
+            "watch",
+            "blank terms sheet"
+          ]
+        },
+        "matteo": {
+          "outfit": "dark brown structured jacket, charcoal shirt, stone-dark trousers",
+          "palette": [
+            "brown",
+            "charcoal",
+            "stone"
+          ],
+          "silhouette": "controlled but non-invasive owner",
+          "accessoriesProps": [
+            "pen left between them",
+            "keys"
+          ]
+        }
+      },
+      "physicalAction": "Matteo leaves the pen between them and does not push it; Nika reads the blank terms sheet from her side of the desk.",
+      "facialExpression": "Nika evaluating and protective; Matteo open, tense and waiting.",
+      "emotionalTone": "consent under pressure, handled with care",
+      "cameraPosition": "eye-level symmetrical two-shot with a real desk boundary",
+      "composition": "empty space and pen carry the boundary; hands remain apart; no fake contract lettering.",
+      "portraitFocalPoint": "the blank sheet and untouched pen between the faces, with a deep lower safe zone.",
+      "landscapeFocalPoint": "Desk axis and open space preserve distance and make the choice feel voluntary.",
+      "negativeConstraints": [
+        "no kiss or handholding",
+        "no signed contract",
+        "no readable text",
+        "no villain lighting"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-service-refusal-workday-cg",
+      "sceneIds": [
+        "ep2_refusal_workday"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Keep Nika's refusal inside a competent rainy workday and let Giulia speak for herself.",
+      "location": "Villa Serena service corridor opening toward the kitchen, rain visible beyond",
+      "timeOfDay": "day 5 late afternoon, rain earlier than forecast",
+      "characters": [
+        "nika",
+        "giulia",
+        "matteo"
+      ],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Wedding-prep work layers adapted for rain and service movement; no public-romance styling.",
+        "nika": {
+          "outfit": "olive rain-ready jacket over dusty-blue blouse, dark taupe trousers",
+          "palette": [
+            "olive",
+            "dusty blue",
+            "taupe"
+          ],
+          "silhouette": "mobile event organizer",
+          "accessoriesProps": [
+            "two plans",
+            "weather folder"
+          ]
+        },
+        "giulia": {
+          "outfit": "cream shirt, faded-olive utility apron, dark trousers",
+          "palette": [
+            "cream",
+            "olive",
+            "navy"
+          ],
+          "silhouette": "grounded decision-maker",
+          "accessoriesProps": [
+            "tent plan",
+            "flowers palette"
+          ]
+        },
+        "matteo": {
+          "outfit": "charcoal overshirt, tobacco knit, stone trousers",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "owner held at professional distance",
+          "accessoriesProps": [
+            "timing sheet"
+          ]
+        }
+      },
+      "physicalAction": "Nika compares two plans; Giulia reaches for the conversation with her mother while Matteo stays out of the romantic role.",
+      "facialExpression": "Giulia determined; Nika practical; Matteo listening rather than directing.",
+      "emotionalTone": "honest work under weather pressure",
+      "cameraPosition": "eye level along service route, natural perspective",
+      "composition": "rain/awning at edge, plans on a service table, three separate working positions.",
+      "portraitFocalPoint": "Giulia and the tent plan with Nika's organizing hand; Matteo secondary but visible.",
+      "landscapeFocalPoint": "The corridor-to-kitchen route explains operational choices and rain without becoming a generic storm shot.",
+      "negativeConstraints": [
+        "no romantic touch",
+        "no dramatic thunder fantasy",
+        "no extra family members"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-bianca-arrival-cg",
+      "sceneIds": [
+        "ep2_refusal_bianca_arrival",
+        "ep2_bianca_arrives"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Introduce Bianca as a calm Aurea business principal whose audit is separate from romantic consent.",
+      "location": "Villa Serena office, estimate folder on the work table",
+      "timeOfDay": "day 6 morning",
+      "characters": [
+        "nika",
+        "matteo",
+        "bianca"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Business-meeting family; Bianca gets an executive silhouette distinct from Nika and Matteo, while the two state paths remain visually neutral.",
+        "nika": {
+          "outfit": "ivory blouse, muted olive blazer, dark taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "practical organizer",
+          "accessoriesProps": [
+            "estimate folder",
+            "watch"
+          ]
+        },
+        "matteo": {
+          "outfit": "dark charcoal jacket, tobacco knit, stone trousers",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "controlled owner",
+          "accessoriesProps": [
+            "keys",
+            "closed folder"
+          ]
+        },
+        "bianca": {
+          "outfit": "slate-charcoal tailored suit, ivory blouse, black pointed heels",
+          "palette": [
+            "slate",
+            "ivory",
+            "black"
+          ],
+          "silhouette": "upright executive principal",
+          "accessoriesProps": [
+            "structured handbag",
+            "gold rectangular earrings",
+            "watch",
+            "business card"
+          ]
+        }
+      },
+      "physicalAction": "Bianca places her card beside the estimate and checks the folder before faces; Nika keeps the work boundary visible and Matteo does not frame her as a romantic rival.",
+      "facialExpression": "Bianca composed and exact; Nika alert; Matteo guarded but listening.",
+      "emotionalTone": "professional scrutiny without melodrama",
+      "cameraPosition": "eye level, three-quarter table meeting",
+      "composition": "Bianca anchors one side of the table; card/estimate foreground; no clasped hands or couple staging.",
+      "portraitFocalPoint": "Bianca's face and business card beside the estimate, with Nika/Matteo separated behind.",
+      "landscapeFocalPoint": "The table and window geometry establish a negotiation room rather than a confrontation stage.",
+      "negativeConstraints": [
+        "no villain styling",
+        "no jealousy triangle",
+        "no readable card/estimate text",
+        "no romantic handholding"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/bianca.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-bianca-audit-cg",
+      "sceneIds": [
+        "ep2_bianca_professional_response",
+        "ep2_bianca_pushback_response"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Make Bianca's options and Nika's staff-first objection measurable without baking financial claims into art.",
+      "location": "same Villa Serena office meeting table with open laptop",
+      "timeOfDay": "day 6 late morning",
+      "characters": [
+        "nika",
+        "bianca",
+        "matteo"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate continuation of Bianca's arrival; preserve all three identities and meeting silhouettes.",
+        "nika": {
+          "outfit": "ivory blouse, muted olive blazer, dark taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "practical organizer",
+          "accessoriesProps": [
+            "pencil",
+            "invoice back for notes"
+          ]
+        },
+        "matteo": {
+          "outfit": "dark charcoal jacket, tobacco knit, stone trousers",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "owner under scrutiny",
+          "accessoriesProps": [
+            "keys",
+            "closed folder"
+          ]
+        },
+        "bianca": {
+          "outfit": "slate-charcoal tailored suit, ivory blouse, black heels",
+          "palette": [
+            "slate",
+            "ivory",
+            "black"
+          ],
+          "silhouette": "calm executive",
+          "accessoriesProps": [
+            "open laptop",
+            "structured handbag",
+            "business card"
+          ]
+        }
+      },
+      "physicalAction": "Bianca points to an open weekly-expense table; Nika writes three criteria on the back of an invoice; Matteo watches the cost of each option.",
+      "facialExpression": "Bianca measured; Nika skeptical but engaged; Matteo uncomfortable with the numbers.",
+      "emotionalTone": "business clarity with human stakes",
+      "cameraPosition": "eye level across laptop/table, natural 50mm",
+      "composition": "laptop is visible but screen text is abstract; bodies form a work triangle with no villain centre.",
+      "portraitFocalPoint": "Bianca's pointing hand, laptop edge and Nika's note, all above dialogue.",
+      "landscapeFocalPoint": "The wide table shows investment, cuts and independent options as three physical document groups without readable text.",
+      "negativeConstraints": [
+        "no readable numbers or slogans",
+        "no sale signed",
+        "no emotional villain pose"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/bianca.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep2-bianca-arrival-cg — rejected for laptop/expense-list action"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-public-gesture-cg",
+      "sceneIds": [
+        "ep2_public_agreement",
+        "ep2_public_refusal"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Separate public-agreement consent from consent to a hand gesture in a photographed courtyard moment.",
+      "location": "Villa Serena courtyard prepared for family photographs",
+      "timeOfDay": "day 7 midday",
+      "characters": [
+        "nika",
+        "matteo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Formal wedding-prep variation; both conditional variants retain identical faces, clothing, courtyard and photographer position.",
+        "nika": {
+          "outfit": "cream blouse, muted olive jacket, dark taupe trousers",
+          "palette": [
+            "cream",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "self-possessed professional",
+          "accessoriesProps": [
+            "small earrings",
+            "thin chain"
+          ]
+        },
+        "matteo": {
+          "outfit": "deep olive tailored jacket, off-white shirt, dark trousers",
+          "palette": [
+            "deep olive",
+            "off-white",
+            "dark brown"
+          ],
+          "silhouette": "host waiting for consent",
+          "accessoriesProps": [
+            "watch",
+            "raised hand that stops before contact in refusal variant"
+          ]
+        },
+        "giulia": {
+          "outfit": "cream/sage family-service dress layer with practical shoes",
+          "palette": [
+            "cream",
+            "sage",
+            "terracotta"
+          ],
+          "silhouette": "grounded witness",
+          "accessoriesProps": [
+            "photographer cue cards"
+          ]
+        }
+      },
+      "physicalAction": "Agreement variant: Matteo takes Nika's hand only after her yes. Refusal variant: Nika remains beside him without contact, Matteo steps back and the photographer lowers the camera.",
+      "facialExpression": "Agreement: mutual relief without romantic climax. Refusal: Nika calm and firm; Matteo accepting; Giulia protective.",
+      "emotionalTone": "public pressure contained by explicit consent",
+      "cameraPosition": "eye level, photographer-facing medium-wide",
+      "composition": "Courtyard and family context stay visible; agreement has a light hand contact; refusal has a clear physical gap and lowered camera.",
+      "portraitFocalPoint": "Faces, hands or deliberate non-contact above the dialogue sheet; no accidental touch in refusal.",
+      "landscapeFocalPoint": "Use courtyard depth and photographer axis to make the two physical states unambiguous.",
+      "negativeConstraints": [
+        "no kiss",
+        "no implied consent in refusal",
+        "no crowd covering hands",
+        "no baked camera controls"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria; both conditional variants must be independently composed and mapped to the actual state"
+    },
+    {
+      "assetFamilyId": "ep2-service-rehearsal-failure-cg",
+      "sceneIds": [
+        "ep2_rehearsal_failure"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Show a real hotel failure and Nika distributing the response instead of carrying it alone.",
+      "location": "Villa Serena service corridor beside kitchen/freezer route",
+      "timeOfDay": "day 8 late afternoon before family dinner",
+      "characters": [
+        "nika",
+        "matteo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Same wedding-prep day adapted for an active service crisis; aprons and work layers remain functional.",
+        "nika": {
+          "outfit": "olive work jacket, cream blouse, dark taupe trousers",
+          "palette": [
+            "olive",
+            "cream",
+            "taupe"
+          ],
+          "silhouette": "mobile crisis organizer",
+          "accessoriesProps": [
+            "new timing sheet",
+            "freezer key note"
+          ]
+        },
+        "matteo": {
+          "outfit": "charcoal jacket, tobacco knit, stone trousers",
+          "palette": [
+            "charcoal",
+            "tobacco",
+            "stone"
+          ],
+          "silhouette": "owner taking a defined task",
+          "accessoriesProps": [
+            "spare-key note"
+          ]
+        },
+        "giulia": {
+          "outfit": "cream shirt, faded-olive apron, dark trousers",
+          "palette": [
+            "cream",
+            "olive",
+            "navy"
+          ],
+          "silhouette": "senior service lead",
+          "accessoriesProps": [
+            "dessert tray",
+            "kitchen route list"
+          ]
+        }
+      },
+      "physicalAction": "Nika directs the dessert transfer and revised timing; Matteo owns the refrigerator decision; Giulia protects the guests from a failed service.",
+      "facialExpression": "Nika decisive; Matteo concerned but cooperative; Giulia dryly determined.",
+      "emotionalTone": "competence under pressure",
+      "cameraPosition": "eye level along corridor toward kitchen, grounded perspective",
+      "composition": "freezer/kitchen route, dessert tray and timing sheet create a clear action chain; no romantic centre.",
+      "portraitFocalPoint": "Nika's rerouting hand and dessert tray, with faces above the dialogue band.",
+      "landscapeFocalPoint": "The corridor depth shows where food moves and why the plan changes.",
+      "negativeConstraints": [
+        "no spoiled food close-up",
+        "no extra family crowd",
+        "no decorative luxury kitchen"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/production/cg/ep1-staff-laundry-cg.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-rooftop-after-cg",
+      "sceneIds": [
+        "ep2_rooftop_after"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Close the seven-day role on a rooftop while preserving the difference between work, public performance and personal choice.",
+      "location": "Villa Serena rooftop terrace with returned chairs and coastal horizon",
+      "timeOfDay": "day 9 evening",
+      "characters": [
+        "nika",
+        "matteo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "The public window ends; use restrained evening work layers, not a wedding look or route-lock styling.",
+        "nika": {
+          "outfit": "ivory blouse under dark olive blazer, dark taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "contained evening professional",
+          "accessoriesProps": [
+            "closed terms sheet",
+            "small bag"
+          ]
+        },
+        "matteo": {
+          "outfit": "dark brown jacket, charcoal shirt, stone-dark trousers",
+          "palette": [
+            "brown",
+            "charcoal",
+            "stone"
+          ],
+          "silhouette": "quiet owner without public pose",
+          "accessoriesProps": [
+            "Aurea figures folder",
+            "keys"
+          ]
+        }
+      },
+      "physicalAction": "Nika closes the terms sheet; returned chairs and Aurea figures remain between her and Matteo as he asks what she wants after the role.",
+      "facialExpression": "Nika cautious and lucid; Matteo hopeful but not entitled.",
+      "emotionalTone": "intimacy through restraint",
+      "cameraPosition": "human eye level, medium two-shot against sea and rooftop parapet",
+      "composition": "Physical gap remains readable; chairs anchor the ended event; horizon is stable and not a waterline trap.",
+      "portraitFocalPoint": "faces and closed terms sheet above the dialogue zone, with the sea only as context.",
+      "landscapeFocalPoint": "Rooftop edge and returned chairs frame the distance without making either actor small.",
+      "negativeConstraints": [
+        "no fireworks",
+        "no handholding unless a later authored beat says so",
+        "no route lock",
+        "no floating figures"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep2-office-aurea-transition-cg",
+      "sceneIds": [
+        "ep2_transition"
+      ],
+      "sourceEpisode": "EP2",
+      "sourceHash": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "narrativePurpose": "Turn the wedding cover into a business deadline without adding knowledge not yet earned.",
+      "location": "Villa Serena office at night, window toward courtyard where Giulia checks the guest list",
+      "timeOfDay": "day 9 late evening",
+      "characters": [
+        "nika",
+        "matteo",
+        "bianca",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Business-transition evening; Bianca is present as representative, Giulia is separated behind the window, and the public role is already closed.",
+        "nika": {
+          "outfit": "dark olive blazer, ivory blouse, dark taupe trousers",
+          "palette": [
+            "olive",
+            "ivory",
+            "taupe"
+          ],
+          "silhouette": "active analyst",
+          "accessoriesProps": [
+            "work journal",
+            "neutral valuation sheet"
+          ]
+        },
+        "matteo": {
+          "outfit": "dark brown jacket, charcoal shirt, stone-dark trousers",
+          "palette": [
+            "brown",
+            "charcoal",
+            "stone"
+          ],
+          "silhouette": "owner facing deadline",
+          "accessoriesProps": [
+            "keys",
+            "folder"
+          ]
+        },
+        "bianca": {
+          "outfit": "slate-charcoal suit, ivory blouse, black heels",
+          "palette": [
+            "slate",
+            "ivory",
+            "black"
+          ],
+          "silhouette": "calm executive",
+          "accessoriesProps": [
+            "neutral Aurea packet",
+            "structured handbag"
+          ]
+        },
+        "giulia": {
+          "outfit": "sage-grey shirt, beige apron, dark trousers",
+          "palette": [
+            "sage",
+            "beige",
+            "navy"
+          ],
+          "silhouette": "working family presence beyond glass",
+          "accessoriesProps": [
+            "guest list"
+          ]
+        }
+      },
+      "physicalAction": "Bianca leaves a neutral valuation sheet; Nika writes the seventy-day deadline in the journal; Giulia checks the list beyond the window while the public role remains closed.",
+      "facialExpression": "Nika resolved; Matteo exposed; Bianca factual; Giulia unaware of the full folder contents.",
+      "emotionalTone": "summer surface, hard financial truth",
+      "cameraPosition": "eye level from inside office, window creating depth",
+      "composition": "Four roles separated by desk/window planes; no readable land price or Aurea logo; the west-facing light remains ordinary night architecture.",
+      "portraitFocalPoint": "Nika's journal and Bianca/Matteo faces above the dialogue safe area; Giulia only as contextual figure if visible without crowding.",
+      "landscapeFocalPoint": "Office foreground and window background establish simultaneous work/family worlds.",
+      "negativeConstraints": [
+        "no readable valuation figures",
+        "no Aurea logo",
+        "no public-couple pose",
+        "no premature legal document detail"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep1-hook-cg — rejected: sealed folder and unknown knowledge state are not Aurea transition"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-archive-intake-cg",
+      "sceneIds": [
+        "ep3_old_photo",
+        "ep3_survey_start"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Keep the old photograph a boundary while Leo asks for a professional survey rather than an emotional shortcut.",
+      "location": "Villa Serena archive room with banquet boxes, old programs and a sturdy work table",
+      "timeOfDay": "day 10 morning",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Survey-day family begins in the archive and carries into the immediate survey agreement; both are practical, not romantic.",
+        "nika": {
+          "outfit": "soft stone blouse, washed-olive utility jacket, dark taupe trousers",
+          "palette": [
+            "stone",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "archival working professional",
+          "accessoriesProps": [
+            "archive list",
+            "work gloves optional but not decorative",
+            "old program"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, muted rust knit, dark trousers, weathered boots",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "slender architectural field worker",
+          "accessoriesProps": [
+            "shoulder satchel",
+            "old pier photograph",
+            "rolled plan kept secondary"
+          ]
+        }
+      },
+      "physicalAction": "Leo places the pier photograph on an archive box; Nika turns it face down and keeps the inventory work between them as they agree on the west-wing survey.",
+      "facialExpression": "Nika controlled and observant; Leo regretful but not pleading.",
+      "emotionalTone": "past held at professional distance",
+      "cameraPosition": "eye level over archive table, natural 50mm",
+      "composition": "Boxes and old programs establish the archive; photo is visible but turned down in the second beat; bodies remain grounded on the same side of the table.",
+      "portraitFocalPoint": "Nika's inventory and the face-down photograph, with Leo's hands away from the box.",
+      "landscapeFocalPoint": "Archive shelving and table create depth while preserving the emotional gap.",
+      "negativeConstraints": [
+        "no harbor present-day background",
+        "no romantic touch",
+        "no readable old program text",
+        "no extra cast"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/leo.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep1-leo-harbor-cg — rejected: wrong present location, clothing context and action"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-west-wing-survey-cg",
+      "sceneIds": [
+        "ep3_survey_join_response",
+        "ep3_survey_site_problem"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Make the west-wing survey's service-passage constraint visible while keeping the Aurea knowledge at the authored level.",
+      "location": "Villa Serena west wing, old stone doorway beside the kitchen-to-laundry service passage",
+      "timeOfDay": "days 10–11 daytime survey continuity",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Same survey assignment and field-work look; use the same pair across doorway and plan-conflict continuations.",
+        "nika": {
+          "outfit": "soft stone blouse, olive utility jacket, dark taupe trousers",
+          "palette": [
+            "stone",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "practical survey partner",
+          "accessoriesProps": [
+            "flashlight",
+            "tablet",
+            "question list"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, muted rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "narrow architectural field worker",
+          "accessoriesProps": [
+            "measuring tool",
+            "rolled plan",
+            "phone"
+          ]
+        }
+      },
+      "physicalAction": "Nika holds the light/tablet while Leo measures the doorway; the plan and niche for trays/keys remain visible as a constraint, not a decorative mystery.",
+      "facialExpression": "Nika exact and protective of staff; Leo listening and recording the wording.",
+      "emotionalTone": "professional trust tested by evidence",
+      "cameraPosition": "human eye level, stable doorway perspective",
+      "composition": "Doorway, niche and service route form a coherent ground plane; plan is readable as a line/shape, never text.",
+      "portraitFocalPoint": "Nika's light/tablet and Leo's measuring hands above dialogue.",
+      "landscapeFocalPoint": "The long passage and blocked niche explain operational cost in one glance.",
+      "negativeConstraints": [
+        "no fantasy ruins",
+        "no Aurea logo or verified contract",
+        "no romantic pose",
+        "no floating plans"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/leo.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-service-staff-walkthrough-cg",
+      "sceneIds": [
+        "ep3_staff_walkthrough"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Translate the abstract plan into the actual route, hands and hours of staff work.",
+      "location": "Villa Serena service route from kitchen through laundry to service stairs",
+      "timeOfDay": "day 11 midday",
+      "characters": [
+        "nika",
+        "leo",
+        "giulia"
+      ],
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Giulia enters in her established practical work uniform; Nika and Leo retain survey layers and visible tools.",
+        "nika": {
+          "outfit": "olive utility jacket, stone blouse, dark taupe trousers",
+          "palette": [
+            "olive",
+            "stone",
+            "taupe"
+          ],
+          "silhouette": "observant organizer",
+          "accessoriesProps": [
+            "route list",
+            "pen"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, muted rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "architect recording consequences",
+          "accessoriesProps": [
+            "rolled plan",
+            "measuring tool"
+          ]
+        },
+        "giulia": {
+          "outfit": "sage-grey shirt, beige utility apron, dark navy trousers",
+          "palette": [
+            "sage",
+            "beige",
+            "navy"
+          ],
+          "silhouette": "mature grounded staff lead",
+          "accessoriesProps": [
+            "two trays",
+            "service cart",
+            "keys"
+          ]
+        }
+      },
+      "physicalAction": "Giulia demonstrates the kitchen-laundry-stair route with trays and cart; Leo crosses out ‘unused’ and Nika records the actual route.",
+      "facialExpression": "Giulia matter-of-fact; Nika attentive; Leo embarrassed but constructive.",
+      "emotionalTone": "labor made visible",
+      "cameraPosition": "eye level, deep service corridor with clear floor plane",
+      "composition": "The route bends through a real corridor; trays and cart show scale; all feet/contact surfaces remain clear.",
+      "portraitFocalPoint": "Giulia and the tray/cart route, with Nika and Leo visibly observing rather than blocking.",
+      "landscapeFocalPoint": "Use the corridor depth and stair turn to show the three extra movements.",
+      "negativeConstraints": [
+        "no warehouse",
+        "no decorative staff posing",
+        "no unreadable floating cart",
+        "no extra staff"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/giulia.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep1-staff-laundry-cg — rejected: wrong route, cast and authored evidence"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-office-report-path-cg",
+      "sceneIds": [
+        "ep3_survey_decline_response",
+        "ep3_report_delivery"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Separate report action from personal access: Nika waits for or checks the report without rewarding disappearance or demanding intimacy.",
+      "location": "Villa Serena office with work journal, two chairs and a closed/neutral report folder",
+      "timeOfDay": "day 11–12 office continuity",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "A single office-report family covers awaiting and received states with neutral folder treatment; no visual state is invented in the image.",
+        "nika": {
+          "outfit": "soft stone blouse, olive jacket, dark taupe trousers",
+          "palette": [
+            "stone",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "contained professional",
+          "accessoriesProps": [
+            "work journal",
+            "neutral folder"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, muted rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "quiet field professional",
+          "accessoriesProps": [
+            "satchel",
+            "neutral report folder"
+          ]
+        }
+      },
+      "physicalAction": "Nika marks a question in the work journal while Leo stays on the other side of the office; the folder can be awaiting or received without readable content.",
+      "facialExpression": "Nika cautious and exact; Leo accepting that a file is not a personal purchase.",
+      "emotionalTone": "accountability before reconciliation",
+      "cameraPosition": "eye level, balanced two-shot across desk/chairs",
+      "composition": "Physical distance, folder and journal create the beat; avoid a romantic window tableau.",
+      "portraitFocalPoint": "journal and neutral folder between separate silhouettes.",
+      "landscapeFocalPoint": "Office geometry holds the distance and gives the report a work context.",
+      "negativeConstraints": [
+        "no readable report text",
+        "no embrace",
+        "no disappearance visual gag",
+        "no extra cast"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [
+        "ep1-matteo-office-cg — rejected: wrong cast and report action"
+      ],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-office-eight-years-cg",
+      "sceneIds": [
+        "ep3_eight_years",
+        "ep3_accountability_choice"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Hold the old photo and current report in the same room while Leo takes responsibility without requesting forgiveness.",
+      "location": "Villa Serena office with two chairs, work folder and old pier photograph",
+      "timeOfDay": "day 12 afternoon",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate emotional continuation; keep the survey-day office layers unchanged.",
+        "nika": {
+          "outfit": "soft stone blouse, olive jacket, dark taupe trousers",
+          "palette": [
+            "stone",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "upright guarded professional",
+          "accessoriesProps": [
+            "work folder",
+            "old photograph",
+            "journal"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, muted rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "slender accountable field worker",
+          "accessoriesProps": [
+            "report folder",
+            "satchel"
+          ]
+        }
+      },
+      "physicalAction": "The photo and report/folder stay between the chairs; Nika records Leo's present action beside a deadline and does not turn toward a romantic reconciliation.",
+      "facialExpression": "Nika direct and unsentimental; Leo candid, ashamed and steady.",
+      "emotionalTone": "adult accountability",
+      "cameraPosition": "human eye level, restrained medium two-shot",
+      "composition": "Two chairs and the document/photo boundary define the space; hands remain natural and feet grounded.",
+      "portraitFocalPoint": "faces and the photo/report boundary above the dialogue sheet.",
+      "landscapeFocalPoint": "Negative space between chairs carries the eight-year absence without shrinking either face.",
+      "negativeConstraints": [
+        "no tears as melodrama",
+        "no kiss or touch",
+        "no photo text",
+        "no implied forgiveness"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/leo.png",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-west-wing-aurea-drawing-cg",
+      "sceneIds": [
+        "ep3_aurea_drawing"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Show the Aurea mark as a working hypothesis, not as verified terms or an accusation.",
+      "location": "Villa Serena west wing, old stone floor and open service passage",
+      "timeOfDay": "day 13 daytime",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Continue survey-day field layers; the location/action changes, but no overnight visual reset is required inside the survey sequence.",
+        "nika": {
+          "outfit": "soft stone blouse, olive utility jacket, dark taupe trousers",
+          "palette": [
+            "stone",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "evidence-focused organizer",
+          "accessoriesProps": [
+            "phone/camera",
+            "work journal"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, muted rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "architect with rolled plans",
+          "accessoriesProps": [
+            "plans on floor",
+            "blueprint tube or rolled plan",
+            "phone"
+          ]
+        }
+      },
+      "physicalAction": "Leo points to a small non-readable mark/date on the plan; Nika photographs it without taking the original and writes ‘working hypothesis’ in the journal.",
+      "facialExpression": "Leo uneasy but transparent; Nika skeptical and methodical.",
+      "emotionalTone": "evidence before accusation",
+      "cameraPosition": "eye level lowered slightly to include the floor plan without distortion",
+      "composition": "Plans lie flat on the stone floor with clear contact; bodies stand beside, not on, the passage; mark is abstract.",
+      "portraitFocalPoint": "Nika's camera/journal and Leo's pointing hand above the dialogue safe zone.",
+      "landscapeFocalPoint": "Floor-plan diagonal leads into the west-wing passage and keeps both faces readable.",
+      "negativeConstraints": [
+        "no readable A.H. text",
+        "no verified contract",
+        "no ominous conspiracy props",
+        "no floating plans"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/leo.png",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-archive-document-check-cg",
+      "sceneIds": [
+        "ep3_document_check",
+        "ep3_document_check_response"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Make the provenance check visible while keeping verified versus working-lead state truthful and non-readable.",
+      "location": "Villa Serena archive room with incoming-mail ledger and shared screen/table",
+      "timeOfDay": "day 14 morning",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Archive verification is a new formal work context; retain character identity but use a slightly cleaner office/survey variation.",
+        "nika": {
+          "outfit": "ivory blouse, muted olive jacket, dark trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "dark taupe"
+          ],
+          "silhouette": "methodical records reviewer",
+          "accessoriesProps": [
+            "incoming-mail ledger",
+            "pen",
+            "shared screen"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, faded rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "professional under review",
+          "accessoriesProps": [
+            "order appendix on screen",
+            "satchel"
+          ]
+        }
+      },
+      "physicalAction": "Nika aligns the date in the incoming-mail log with the non-readable shared appendix while Leo opens the attachment; the screen shows structure, not text or a branch-specific claim.",
+      "facialExpression": "Nika careful and skeptical; Leo transparent and willing to be checked.",
+      "emotionalTone": "method over convenient story",
+      "cameraPosition": "eye level over shared screen, no exaggerated close-up",
+      "composition": "Ledger and screen form parallel evidence surfaces; hands and faces remain visible above the dialogue overlay.",
+      "portraitFocalPoint": "date alignment gesture and neutral attachment frame.",
+      "landscapeFocalPoint": "Archive shelves, ledger and screen form a calm verification workspace.",
+      "negativeConstraints": [
+        "no readable Aurea contract",
+        "no villain framing",
+        "no premature verified terms",
+        "no extra archive staff"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-office-matteo-confrontation-cg",
+      "sceneIds": [
+        "ep3_matteo_confrontation"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Put Nika in control of the disclosure order with Matteo and Leo; the image stays valid for verified and limited evidence branches.",
+      "location": "Villa Serena office with doorway, work table and neutral evidence folder/plan",
+      "timeOfDay": "day 15 afternoon",
+      "characters": [
+        "nika",
+        "matteo",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Three-person disclosure meeting; Matteo returns to owner structure, Leo retains field layers and Nika remains the visual decision-maker.",
+        "nika": {
+          "outfit": "ivory blouse, dark olive blazer, dark taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "central evidence gatekeeper",
+          "accessoriesProps": [
+            "neutral copy/folder"
+          ]
+        },
+        "matteo": {
+          "outfit": "dark brown jacket, charcoal shirt, stone trousers",
+          "palette": [
+            "brown",
+            "charcoal",
+            "stone"
+          ],
+          "silhouette": "owner waiting for permission",
+          "accessoriesProps": [
+            "keys",
+            "empty receiving hand"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, faded rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "field professional held at the door",
+          "accessoriesProps": [
+            "neutral plans/satchel"
+          ]
+        }
+      },
+      "physicalAction": "Nika controls the folder handoff; Matteo reaches only after permission; Leo stays by the door and does not decide who receives the evidence.",
+      "facialExpression": "Nika precise; Matteo wary but respectful; Leo accountable and restrained.",
+      "emotionalTone": "evidence before accusation",
+      "cameraPosition": "eye level three-shot, stable office geometry",
+      "composition": "Nika occupies the evidence axis; Matteo and Leo are separated by table/doorway; document surfaces are intentionally non-readable.",
+      "portraitFocalPoint": "Nika's hand and neutral folder between the two men, with all faces clear.",
+      "landscapeFocalPoint": "Office depth makes the doorway and permission boundary legible without making Leo a villain.",
+      "negativeConstraints": [
+        "no readable contract",
+        "no accusatory pointing",
+        "no romantic alliance pose",
+        "no extra Bianca in this scene"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/leo.png",
+        "assets/characters/references/originals/matteo.png",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-office-quiet-return-cg",
+      "sceneIds": [
+        "ep3_quiet_return"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "End the episode on a quiet, non-forgiving response: Leo leaves to work and Nika keeps the record.",
+      "location": "Villa Serena office by a window looking toward the west wing",
+      "timeOfDay": "day 16 late afternoon",
+      "characters": [
+        "nika",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "A quieter end-of-episode office layer; preserve field-work continuity and emotional distance.",
+        "nika": {
+          "outfit": "ivory blouse under washed-olive blazer, dark taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "contained professional at window",
+          "accessoriesProps": [
+            "old photo",
+            "work folder",
+            "journal"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, faded rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "departing field worker",
+          "accessoriesProps": [
+            "satchel",
+            "rolled plans"
+          ]
+        }
+      },
+      "physicalAction": "Leo pauses near the exit and then returns toward the west wing; Nika remains by the window with photo and folder, not turning the scene into an embrace.",
+      "facialExpression": "Nika guarded but settled; Leo respectful and accepting.",
+      "emotionalTone": "distance with accountable possibility",
+      "cameraPosition": "eye level, quiet two-shot with window depth",
+      "composition": "Nika and Leo occupy separate planes; photo/folder are visible but text-free; west-wing light is a spatial cue, not a reveal.",
+      "portraitFocalPoint": "Nika's photo/folder and Leo's departure silhouette above the dialogue sheet.",
+      "landscapeFocalPoint": "Window and exit line preserve the unresolved distance while grounding the office.",
+      "negativeConstraints": [
+        "no kiss or touch",
+        "no forgiveness symbol",
+        "no readable journal text",
+        "no empty black window"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/leo.png",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    },
+    {
+      "assetFamilyId": "ep3-office-aurea-transition-cg",
+      "sceneIds": [
+        "ep3_transition"
+      ],
+      "sourceEpisode": "EP3",
+      "sourceHash": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "narrativePurpose": "Carry the verified or limited Aurea knowledge forward as a recorded fact, not a premature accusation or romance resolution.",
+      "location": "Villa Serena office in evening, west-wing light visible through the wall/window line",
+      "timeOfDay": "day 16 evening",
+      "characters": [
+        "nika",
+        "bianca",
+        "leo"
+      ],
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Business transition combines Bianca's executive silhouette, Nika's working evening layer and Leo's field layers without merging their roles.",
+        "nika": {
+          "outfit": "ivory blouse, dark olive blazer, dark taupe trousers",
+          "palette": [
+            "ivory",
+            "olive",
+            "taupe"
+          ],
+          "silhouette": "active recorder of facts",
+          "accessoriesProps": [
+            "work journal",
+            "neutral folder"
+          ]
+        },
+        "bianca": {
+          "outfit": "slate-charcoal suit, ivory blouse, black heels",
+          "palette": [
+            "slate",
+            "ivory",
+            "black"
+          ],
+          "silhouette": "reserved business principal",
+          "accessoriesProps": [
+            "structured handbag",
+            "neutral packet",
+            "watch"
+          ]
+        },
+        "leo": {
+          "outfit": "charcoal field jacket, faded rust knit, dark trousers",
+          "palette": [
+            "charcoal",
+            "rust",
+            "brown"
+          ],
+          "silhouette": "architect beyond the room",
+          "accessoriesProps": [
+            "satchel",
+            "rolled plans"
+          ]
+        }
+      },
+      "physicalAction": "Nika writes the Aurea fact and its verification level in the journal; Bianca speaks from the office; Leo's light turns on beyond the wall.",
+      "facialExpression": "Nika exact; Bianca calm and non-villainous; Leo unseen or peripheral as working presence.",
+      "emotionalTone": "new question, controlled knowledge",
+      "cameraPosition": "eye level from office toward a lit west-wing axis",
+      "composition": "Journal foreground, Bianca in a measured three-quarter stance, west-wing light as a real architectural cue; no one dominates as a villain.",
+      "portraitFocalPoint": "Nika's journal and Bianca's face above the safe dialogue area; Leo's light only as context.",
+      "landscapeFocalPoint": "Office/west-wing depth connects the evidence record to the next episode without revealing future events.",
+      "negativeConstraints": [
+        "no readable Aurea name or terms",
+        "no villain pose",
+        "no romantic alliance",
+        "no extra family members"
+      ],
+      "canonReferences": [
+        "artifacts/art-direction/ART_BIBLE.md",
+        "assets/characters/references/originals/bianca.png",
+        "assets/characters/references/originals/leo.png",
+        "narrative/NARRATIVE_BIBLE.md",
+        "config/wardrobe-rules.json"
+      ],
+      "reuseCandidates": [],
+      "acceptanceCriteria": "global acceptanceCriteria"
+    }
+  ]
+}

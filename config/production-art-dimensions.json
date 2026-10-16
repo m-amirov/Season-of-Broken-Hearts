@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "scope": "Season of Broken Hearts / Stage 9.4 / EP2–EP3 only",
+  "reference": "CEOS docs/NARRATIVE_DUAL_FORMAT_ART.md — native targets are goals, not the minimum admissible raster dimensions",
+  "outputKind": "background",
+  "sourcePng": {
+    "portrait": {
+      "width": 1024,
+      "height": 1536,
+      "aspect": "2:3"
+    },
+    "desktop": {
+      "width": 1672,
+      "height": 941,
+      "aspect": "near-16:9; independently composed landscape"
+    }
+  },
+  "ceosMinimumAccepted": {
+    "portrait": {
+      "width": 768,
+      "height": 1152,
+      "aspect": "near 2:3"
+    },
+    "desktop": {
+      "width": 1280,
+      "height": 720,
+      "aspect": "near 16:9"
+    }
+  },
+  "runtimeScreenshotViewports": {
+    "desktop": [
+      {
+        "width": 1920,
+        "height": 900
+      },
+      {
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "mobile": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 360,
+        "height": 640
+      },
+      {
+        "width": 430,
+        "height": 932
+      }
+    ]
+  },
+  "artOutputVerification": {
+    "mode": "exact-declared-native-source-pixels",
+    "portraitCommand": "ceos art-output-verify --project . --file <real-portrait.png> --kind background --width 1024 --height 1536 --receipt <new-portrait-receipt.json> --json",
+    "desktopCommand": "ceos art-output-verify --project . --file <real-landscape.png> --kind background --width 1672 --height 941 --receipt <new-landscape-receipt.json> --json",
+    "noResampleOrCropOrStretch": true,
+    "preserveHistoricalFailureReceipts": true,
+    "recheckExistingS19LandscapeWithNewReceipt": true,
+    "notArtAcceptance": true
+  }
+}

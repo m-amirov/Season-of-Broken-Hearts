@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "stage": "9.4",
+  "status": "BLOCKED",
+  "runId": "2026-10-16T07-03-35-218Z-production-art-eef31b",
+  "ceosVersion": "0.5.23",
+  "observedAt": "2026-10-16T08:03:26.6823594Z",
+  "sourceHead": "113d12b5fef2da3b8ecb6273925977f11c18c6fb",
+  "checkpointSourceHead": "fd77accf1d9b94f4c1775725d93eba662847eda0",
+  "rootCause": "Host routing spawned the Terra producer from the active permanent-checkout Codex session instead of the session bound to the production-art worktree and CEOS run.",
+  "sessionBinding": {
+    "expectedParent": {
+      "sessionId": "01a14343-4aa3-7ca2-ad7a-f35b0855d655",
+      "traceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\16\\rollout-2026-10-16T08-50-46-01a14343-4aa3-7ca2-ad7a-f35b0855d655.jsonl",
+      "traceSha256": "e9baa5c5561c2b110d400a7963d4b5bc65061efced95acc41e36058c5b9e5387",
+      "traceBytes": 12877575,
+      "cwd": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+      "originator": "codex-tui",
+      "cliVersion": "0.163.0",
+      "threadSource": "user",
+      "contextWindowId": "01a14343-4aa8-7870-b3fb-9477b665d344"
+    },
+    "actualProducerParent": {
+      "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+      "traceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\15\\rollout-2026-10-15T20-06-53-01a14087-f221-7640-b241-a40f0ae265d9.jsonl",
+      "cwd": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+      "currentSessionMarker": "C:\\Users\\user\\.codex\\ceos\\runtime\\current-session.json",
+      "currentTurnMarker": "C:\\Users\\user\\.codex\\ceos\\runtime\\current-turn.json",
+      "currentTurnId": "01a143b5-6f23-7bf0-bfe9-cac024a4720c"
+    },
+    "producerChild": {
+      "sessionId": "01a1438c-db9b-78a1-aaf4-dfd6019cd29d",
+      "traceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\16\\rollout-2026-10-16T10-11-07-01a1438c-db9b-78a1-aaf4-dfd6019cd29d.jsonl",
+      "traceSha256": "1ed64faa50ca9e2b0dea377f3f7b1f415f9a7e35e682482a28d320b2af92a15f",
+      "traceBytes": 16211728,
+      "cwd": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+      "threadSource": "subagent",
+      "parentThreadIdObservedInTrace": "01a14087-f221-7640-b241-a40f0ae265d9",
+      "agentRole": "ceos_asset_generator",
+      "agentType": null,
+      "contextWindowId": "01a1438c-db9b-78a1-aaf4-dfe873378bce"
+    }
+  },
+  "ceosEvidence": {
+    "routeCheck": {
+      "status": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+      "ok": false,
+      "detail": "Rollout is not a distinct child of the bound parent session"
+    },
+    "projectScopedRuntimeContext": {
+      "status": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+      "currentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+      "currentTurnId": "01a143b5-6f23-7bf0-bfe9-cac024a4720c",
+      "currentCwd": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+      "targetProject": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture"
+    },
+    "continueInspect": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "continueGuided": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "runIntegrity": "PASS",
+    "checkpointCount": 6,
+    "generationInvoked": false,
+    "pngCreated": 0,
+    "receiptsCreated": 0
+  },
+  "hooks": {
+    "configFile": "C:\\Users\\user\\.codex\\hooks.json",
+    "script": "C:\\Users\\user\\.codex\\ceos\\hooks\\ceos-runtime-context.mjs",
+    "requiresLiveFields": ["hook_event_name", "session_id", "cwd"],
+    "scopedMarkerForTargetPresent": false
+  },
+  "ceosFix": {
+    "commit": "433718e00f2ade0873b9d9e0f66c5fc44c4af4cf",
+    "scope": "Recognize the exact generic terminal GENERATING reason emitted by this native parent-binding failure in both continue planning and linked-recovery guards.",
+    "trustChecksChanged": false,
+    "idsTracesAttestationsCheckpointsChanged": false,
+    "regression": "generic generating stop reason with trusted parent-binding evidence recovers",
+    "fullTest": "298/298 PASS",
+    "selfTest": "298/298 PASS",
+    "lint": "PASS",
+    "installedCliPatchVerified": true
+  },
+  "protectedAcceptedPairs": ["S19", "S20", "S21", "S22", "S23"],
+  "requiredHostAction": "Start or resume Codex from the production-art worktree so a live SessionStart/UserPromptSubmit hook records that target cwd and the actual parent session. Then run ceos continue for this run, require SESSION_RECOVERY_AVAILABLE and a successful source-bound linked recovery before a fresh capability challenge and producer-route check.",
+  "verdict": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH"
+}

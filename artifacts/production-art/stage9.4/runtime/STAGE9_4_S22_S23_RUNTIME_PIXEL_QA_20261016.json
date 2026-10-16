@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_STAGE9_4_S22_S23_RUNTIME_PIXEL_QA",
+  "sourceHead": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "id": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "captures": [
+    {
+      "sceneId": "ep2_family_rehearsal",
+      "tag": "S22",
+      "dialogueIndex": 0,
+      "assetId": "ep2-family-rehearsal-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "expectedFormat": "landscape",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "language": "ru",
+      "screenshot": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png",
+      "screenshotSha256": "831a190ea0727b1af755276b25d47a76437eda8ea1f90542d2860c7c42ea042e",
+      "screenshotBytes": 1473301
+    },
+    {
+      "sceneId": "ep2_family_rehearsal_response",
+      "tag": "S23",
+      "dialogueIndex": 0,
+      "assetId": "ep2-family-rehearsal-response-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "expectedFormat": "landscape",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "language": "ru",
+      "screenshot": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png",
+      "screenshotSha256": "0412389549532fe2bcfc993e45a0fdf74de31c9ea2cd35d74d5ff5ee5555055f",
+      "screenshotBytes": 1316592
+    },
+    {
+      "sceneId": "ep2_family_rehearsal",
+      "tag": "S22",
+      "dialogueIndex": 0,
+      "assetId": "ep2-family-rehearsal-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "expectedFormat": "portrait",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "ru",
+      "screenshot": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png",
+      "screenshotSha256": "7380f71ceac7492c29fdef0bac0fbde16b7a203564f6ece4d7cf52bad56d187b",
+      "screenshotBytes": 471233
+    },
+    {
+      "sceneId": "ep2_family_rehearsal_response",
+      "tag": "S23",
+      "dialogueIndex": 0,
+      "assetId": "ep2-family-rehearsal-response-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "expectedFormat": "portrait",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "ru",
+      "screenshot": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png",
+      "screenshotSha256": "e145f08bd0b5e35776f40545d4fd88060adaeb00b36d3c9c14bf9836fac1e951",
+      "screenshotBytes": 457406
+    }
+  ],
+  "transitions": [
+    {
+      "viewport": "desktop",
+      "from": "ep2_family_rehearsal",
+      "choice": "ep2_giulia_personal_plan",
+      "to": "ep2_family_rehearsal_response",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "from": "ep2_family_rehearsal",
+      "choice": "ep2_giulia_personal_plan",
+      "to": "ep2_family_rehearsal_response",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": [],
+  "coverage": {
+    "required": [
+      "desktop/S22",
+      "desktop/S23",
+      "mobile/S22",
+      "mobile/S23"
+    ],
+    "captured": [
+      "desktop/S22",
+      "desktop/S23",
+      "mobile/S22",
+      "mobile/S23"
+    ],
+    "missing": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "task": "stage9-full-season-production",
+  "phase": "9.1",
+  "status": "READY_FOR_ARCHITECTURE",
+  "sourceHead": "9d4cfe9372265a9f389787555967d3cf15b30faf",
+  "originMain": "476d71b6bf247a01fcf59617a68e58f518f50700",
+  "ownerDecision": {
+    "record": "artifacts/concept-proof/FULL_SEASON_OWNER_DECISION_2026-10-15.md",
+    "decision": "CONTINUE_PRODUCTION",
+    "exceptionCode": "OWNER_ACCEPTED_BLIND_PLAYTEST_RISK_2026_10_15",
+    "blindPlaytestFormalPass": "NOT_ATTESTED",
+    "observationStatus": "AWAITING_BLIND_PLAYTEST",
+    "waivedOnly": "blindPlaytestRequiredBeforeMassContent"
+  },
+  "historicalBlocker": "BLOCKED_STAGE9_CONCEPT_PROOF remains historical and is not active under the owner exception.",
+  "protected": ["EP1 canon", "EP1 production art", "permanent dirty main", "Stage 8 worktree", "publication and Yandex submission"],
+  "starterKit": {
+    "status": "clean",
+    "selfTest": "PASS",
+    "managedCoreChanged": false,
+    "semanticResolution": ["contract:AGENTS.md", "managed:skill-policy"],
+    "globalInvariant": "blindPlaytestRequiredBeforeMassContent=true"
+  },
+  "tests": {
+    "ownerExceptionRegression": "PASS",
+    "unitBaseline": "PASS_64"
+  },
+  "nextStep": "Create and independently validate the ten-episode narrative architecture, then proceed to Phase 9.2 engine/state work."
+}

@@ -1,0 +1,62 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-16T05:33:11.900Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-head inventory complete; preserve S19-S21 and reuse exact S22 portrait without regeneration.",
+  "metadata": {
+    "sourceHead": "08ce69218bd05bd5195b639ecbe9b8b33e24a9a0",
+    "inventoryStatus": "PASS_CURRENT_HEAD_INVENTORIED",
+    "currentHeadCanonRefresh": "PASS_CANON_CURRENT_HEAD_REVALIDATED",
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "s22Portrait": {
+      "reused": true,
+      "regenerated": false,
+      "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8"
+    },
+    "pendingOutputs": [
+      "S22 landscape",
+      "S23 portrait",
+      "S23 landscape"
+    ],
+    "finalAcceptance": "NOT_PERFORMED"
+  },
+  "source": {
+    "available": true,
+    "head": "08ce69218bd05bd5195b639ecbe9b8b33e24a9a0",
+    "clean": false,
+    "worktreeSha256": "d837e5a6c70b801a7873a1347e33c81722e4f8ea7e59eba052feadbda73c5c7a"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INVENTORY_20261016_CURRENT.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_INVENTORY_20261016_CURRENT.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INVENTORY_20261016_CURRENT.json",
+      "type": "file",
+      "sha256": "fb6d5500e31594c13d3ebd0e392404f82f195ae38518aa48d6ff2013f1d31139",
+      "size": 2550
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+      "type": "file",
+      "sha256": "d897b137167ef36e1739439f73eb248a2b230a735ef38eaa397cec256014872f",
+      "size": 2845
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016_CURRENT.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016_CURRENT.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_LINKED_RECOVERY_PROVENANCE_20261016_CURRENT.json",
+      "type": "file",
+      "sha256": "b0fce2c617a53c8a197fdc3db00c1f0b5b50b007180ca1c582fcfbd7ad6a9205",
+      "size": 1433
+    }
+  ]
+}

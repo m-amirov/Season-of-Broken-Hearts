@@ -1,0 +1,25 @@
+{
+  "schema": "stage9.3.2.editorial-acceptance.v1",
+  "recordedAt": "2026-10-15T10:49:15.765Z",
+  "sourceHead": "9938c4b47ecfecd1ef7e798d869755a3421076ff",
+  "verdict": "PASS_STAGE9_EDITORIAL_INDEPENDENT",
+  "transportVerdict": "PASS_STAGE9_WEB_TRANSPORT_RECOVERY",
+  "episodeReviews": {
+    "EP2": "artifacts/editorial/stage9.3.2-ep2-independent-review.json",
+    "EP3": "artifacts/editorial/stage9.3.2-ep3-independent-review.json"
+  },
+  "coverage": {
+    "locales": ["ru", "en"],
+    "independentReviewerRoute": "ceos_reasoner_web via chatgpt-web/gpt-6-sol High",
+    "confirmedP0": 0,
+    "confirmedP1": 0,
+    "confirmedP2": 0,
+    "unresolvedIssues": []
+  },
+  "scopeBoundary": {
+    "productionArtEP2EP3": "NOT_STARTED",
+    "humanBlindPlaytest": "NOT_ATTESTED",
+    "historicalReceiptsPreserved": true,
+    "releaseOrPublication": "NOT_AUTHORIZED_BY_THIS_RECEIPT"
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "index": 5,
+  "stage": "GENERATING",
+  "at": "2026-10-16T06:48:21.010Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Verified existing-art reuse only; no generation invoked and no PNG bytes changed.",
+  "metadata": {
+    "existingArtReuse": {
+      "schemaVersion": 1,
+      "mode": "VERIFIED_EXISTING_ART_REUSE",
+      "generationInvoked": false,
+      "sourceHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+      "currentness": {
+        "mode": "DEPENDENCY_BASED_REUSE",
+        "baseHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84"
+      },
+      "dualFormatManifest": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "assetManifest": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_MANIFEST_20261016.json",
+      "assetManifestSha256": "5c9131252610c355b3c653931feffd32d22e26026fcb66a8c559066ac27d4f88",
+      "dependencies": [
+        {
+          "path": "narrative/graph.json",
+          "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544"
+        },
+        {
+          "path": "narrative/assets.json",
+          "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c"
+        },
+        {
+          "path": "narrative/episodes/ep-02.json",
+          "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e"
+        },
+        {
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8"
+        },
+        {
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+          "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90"
+        },
+        {
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+          "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc"
+        },
+        {
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+          "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031"
+        },
+        {
+          "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+          "sha256": "58ffb6876bbc5db85d1538a2c6568b7ff34d29d1103a01b6115f4f7247bd0c10"
+        }
+      ],
+      "provenance": {
+        "status": "DOCUMENTED",
+        "sourceHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+        "evidence": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+        "evidenceSha256": "8c98981e83e6cf429ff106033c3c7b16f81d0eab2b3870ae6e242f1aec55698e"
+      },
+      "artAcceptance": {
+        "status": "PASS",
+        "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+        "sourceHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+        "actualPixelsReceived": true,
+        "evidence": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+        "evidenceSha256": "7cfd63465942664eee32733c5d921c5009f5e644d22db6d9c35dcc9a292def42",
+        "reviewedItems": [
+          "S22-portrait",
+          "S22-landscape",
+          "S23-portrait",
+          "S23-landscape",
+          "S22-desktop-runtime",
+          "S22-mobile-runtime",
+          "S23-desktop-runtime",
+          "S23-mobile-runtime"
+        ],
+        "unresolved": []
+      },
+      "runtimeEvidence": {
+        "status": "PASS",
+        "sourceHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+        "actualPixelsReceived": true,
+        "evidence": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+        "evidenceSha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527",
+        "screenshots": [
+          {
+            "path": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png",
+            "sha256": "831a190ea0727b1af755276b25d47a76437eda8ea1f90542d2860c7c42ea042e"
+          },
+          {
+            "path": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png",
+            "sha256": "0412389549532fe2bcfc993e45a0fdf74de31c9ea2cd35d74d5ff5ee5555055f"
+          },
+          {
+            "path": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png",
+            "sha256": "7380f71ceac7492c29fdef0bac0fbde16b7a203564f6ece4d7cf52bad56d187b"
+          },
+          {
+            "path": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png",
+            "sha256": "e145f08bd0b5e35776f40545d4fd88060adaeb00b36d3c9c14bf9836fac1e951"
+          }
+        ]
+      },
+      "canon": {
+        "status": "CURRENT",
+        "sourceHead": "d34a10d01b702946cbd2fee0d767bfc493d46f84",
+        "evidence": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+        "evidenceSha256": "8c98981e83e6cf429ff106033c3c7b16f81d0eab2b3870ae6e242f1aec55698e"
+      },
+      "receipts": [
+        {
+          "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+          "sha256": "58ffb6876bbc5db85d1538a2c6568b7ff34d29d1103a01b6115f4f7247bd0c10"
+        },
+        {
+          "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+          "sha256": "aba2e9b97aff4771729b5d78258bb2cbef20c0cfad8f26a5735af295a4c91763"
+        },
+        {
+          "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_MANIFEST_20261016.json",
+          "sha256": "5c9131252610c355b3c653931feffd32d22e26026fcb66a8c559066ac27d4f88"
+        },
+        {
+          "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+          "sha256": "8c98981e83e6cf429ff106033c3c7b16f81d0eab2b3870ae6e242f1aec55698e"
+        },
+        {
+          "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+          "sha256": "7cfd63465942664eee32733c5d921c5009f5e644d22db6d9c35dcc9a292def42"
+        },
+        {
+          "path": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+          "sha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527"
+        }
+      ],
+      "issueSummary": {
+        "openP0": 0,
+        "openP1": 0,
+        "openMaterialP2": 0,
+        "nonBlockingAdvisories": [
+          "S23 mobile crop P2",
+          "S22 desktop chair visibility P3"
+        ]
+      },
+      "acceptanceBoundary": {
+        "status": "BATCH_ONLY",
+        "episodeFinalAcceptance": false,
+        "releaseReady": false,
+        "nextRequiredGate": "EPISODE_FINAL_ACCEPTANCE over all 17 EP2 scenes"
+      }
+    },
+    "existingArtReuseGate": {
+      "status": "PASS_VERIFIED_EXISTING_ART_REUSE",
+      "assetCount": 4,
+      "visualAcceptance": "PASS"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+    "clean": false,
+    "worktreeSha256": "ef9689d082a5308c0f2d7dc2d782befcfd9b97ef1f36f8cb6bb989cb6363b652"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_REUSE_CONTRACT_20261016.json",
+      "type": "file",
+      "sha256": "8bb8445416b72a40d5c631f4480cf6feb3f7321608caa62fcb3683a35b8b4605",
+      "size": 5520
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_MANIFEST_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_EXISTING_ART_MANIFEST_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_EXISTING_ART_MANIFEST_20261016.json",
+      "type": "file",
+      "sha256": "5c9131252610c355b3c653931feffd32d22e26026fcb66a8c559066ac27d4f88",
+      "size": 1370
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_REUSE_PROVENANCE_20261016.json",
+      "type": "file",
+      "sha256": "8c98981e83e6cf429ff106033c3c7b16f81d0eab2b3870ae6e242f1aec55698e",
+      "size": 1823
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "type": "file",
+      "sha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527",
+      "size": 4254
+    },
+    {
+      "input": "narrative/graph.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\graph.json",
+      "projectRelativePath": "narrative/graph.json",
+      "type": "file",
+      "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544",
+      "size": 241013
+    },
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c",
+      "size": 10348
+    },
+    {
+      "input": "narrative/episodes/ep-02.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\episodes\\ep-02.json",
+      "projectRelativePath": "narrative/episodes/ep-02.json",
+      "type": "file",
+      "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "size": 73052
+    },
+    {
+      "input": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-courtyard-rehearsal-cg.png",
+      "projectRelativePath": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+      "type": "file",
+      "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+      "size": 2726336
+    },
+    {
+      "input": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-courtyard-rehearsal-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+      "type": "file",
+      "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+      "size": 2817060
+    },
+    {
+      "input": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-dining-rehearsal-response-cg.png",
+      "projectRelativePath": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+      "type": "file",
+      "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+      "size": 2529135
+    },
+    {
+      "input": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-dining-rehearsal-response-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+      "type": "file",
+      "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+      "size": 2413767
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+      "type": "file",
+      "sha256": "58ffb6876bbc5db85d1538a2c6568b7ff34d29d1103a01b6115f4f7247bd0c10",
+      "size": 2498
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_MANIFEST_20261016_CEOS.json",
+      "type": "file",
+      "sha256": "aba2e9b97aff4771729b5d78258bb2cbef20c0cfad8f26a5735af295a4c91763",
+      "size": 2478
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_20261016.json",
+      "type": "file",
+      "sha256": "7cfd63465942664eee32733c5d921c5009f5e644d22db6d9c35dcc9a292def42",
+      "size": 2981
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\desktop\\S22.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png",
+      "type": "file",
+      "sha256": "831a190ea0727b1af755276b25d47a76437eda8ea1f90542d2860c7c42ea042e",
+      "size": 1473301
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\desktop\\S23.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png",
+      "type": "file",
+      "sha256": "0412389549532fe2bcfc993e45a0fdf74de31c9ea2cd35d74d5ff5ee5555055f",
+      "size": 1316592
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\mobile\\S22.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png",
+      "type": "file",
+      "sha256": "7380f71ceac7492c29fdef0bac0fbde16b7a203564f6ece4d7cf52bad56d187b",
+      "size": 471233
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\mobile\\S23.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png",
+      "type": "file",
+      "sha256": "e145f08bd0b5e35776f40545d4fd88060adaeb00b36d3c9c14bf9836fac1e951",
+      "size": 457406
+    }
+  ]
+}

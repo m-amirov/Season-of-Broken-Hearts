@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "S19-STAGE9.4-NARRATIVE_ART_ACCEPTANCE_V2-20261015",
+  "reviewTraceId": "01a13fc4-cf47-79c0-aad5-99f974c5da65",
+  "phase": "analysis",
+  "taskId": "01a13fc4-cf47-79c0-aad5-99f974c5da65",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/S19_RECOVERY_RECHECK.json",
+  "sourceHead": "5ac58032d314103059977014c8168988529b9f6f",
+  "status": "PASS",
+  "assurance": "visual-content",
+  "actualPixelsReceived": true,
+  "evidenceRefs": [
+    "s19-portrait-1024x1536",
+    "s19-landscape-1672x941",
+    "nika-reference",
+    "matteo-reference",
+    "giulia-reference"
+  ],
+  "receivedEvidenceRefs": [
+    "s19-portrait-1024x1536",
+    "s19-landscape-1672x941",
+    "nika-reference",
+    "matteo-reference",
+    "giulia-reference"
+  ],
+  "reviewedItems": [
+    "s19-portrait-1024x1536",
+    "s19-landscape-1672x941",
+    "nika-reference",
+    "matteo-reference",
+    "giulia-reference"
+  ],
+  "framesReviewed": 5,
+  "visualEvidence": [
+    {
+      "ref": "s19-portrait-1024x1536",
+      "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
+      "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+      "bytes": 2516178,
+      "pixelDimensions": "1024x1536",
+      "observation": "Portrait source pixels show all three required people in the Villa Serena office, the invoice gesture and neutral papers above the lower dialogue-safe region."
+    },
+    {
+      "ref": "s19-landscape-1672x941",
+      "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+      "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+      "bytes": 2506516,
+      "pixelDimensions": "1672x941",
+      "observation": "Landscape source pixels are an independent wide composition with readable faces, office depth, Matteo folder, Giulia paper and Nika's duplicate-order gesture."
+    },
+    {
+      "ref": "nika-reference",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "bytes": 2493846,
+      "pixelDimensions": "1536x1024",
+      "observation": "Reference pixels establish Nika's face, hair, age impression and off-white linen continuity."
+    },
+    {
+      "ref": "matteo-reference",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+      "bytes": 2130673,
+      "pixelDimensions": "1448x1086",
+      "observation": "Reference pixels establish Matteo's face, dark hair, facial hair and restrained summer-work wardrobe."
+    },
+    {
+      "ref": "giulia-reference",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "bytes": 2409650,
+      "pixelDimensions": "1448x1086",
+      "observation": "Reference pixels establish Giulia's face, grey hair, sage work shirt and beige apron identity."
+    }
+  ],
+  "decision": "PASS_SOURCE_ART_CANON",
+  "findings": [
+    {
+      "id": "S19-P2-01",
+      "severity": "P2",
+      "status": "OPEN",
+      "category": "SOURCE_COMPOSITION_RISK",
+      "observation": "The invoice gesture and papers sit low in both source compositions; the landscape gesture is approximately 75-80% down the frame.",
+      "disposition": "ADVISORY_RUNTIME_CHECK_ONLY",
+      "materialPlayerImpact": false
+    },
+    {
+      "id": "S19-P2-02",
+      "severity": "P2",
+      "status": "OPEN",
+      "category": "WARDROBE_CONSISTENCY",
+      "observation": "The portrait apron bib and shoulder straps are less prominent than in the reference and landscape, but Giulia remains recognizable and the authored work role is preserved.",
+      "disposition": "ADVISORY_NO_REGENERATION",
+      "materialPlayerImpact": false
+    }
+  ],
+  "unresolved": [
+    "Current runtime dialogue overlay and responsive crop must be checked at all declared desktop and mobile viewports.",
+    "Runtime scene-to-asset mapping and preload/crossfade behavior are not established by source pixels."
+  ],
+  "summary": "Independent Web High source-pixel review received the S19 portrait, landscape and three character reference images. No P0/P1 factual art defect or regeneration trigger was found; runtime acceptance remains pending."
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-15T17-30-04-937Z-production-art-18949e",
+  "capability": "image-generation",
+  "challengeId": "cap-f0305594b8fd22dbe6a9",
+  "sessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+  "turnId": "01a1409f-0a07-7080-a25a-38cc3da4f079",
+  "observedAt": "2026-10-15T17:35:20.662Z",
+  "source": "in-session-agent-observation",
+  "trustScope": "run-session-turn",
+  "presence": "PRESENT",
+  "serviceAvailability": "UNKNOWN",
+  "observedTool": "image_gen.imagegen",
+  "serviceEvidence": null
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_S22_S23_CANON_REFRESH",
+  "status": "PASS_CANON_CURRENT_HEAD_REVALIDATED",
+  "recordedAt": "2026-10-16T05:32:09.0137930Z",
+  "sourceHead": "ddabbe93f8e7e9cc1a509d1cf4379213cf4a516b",
+  "previousCanonSourceHead": "8712221a25e2bfae59b036908fc9c4ba88209e92",
+  "previousTerminalRun": "2026-10-16T04-56-38-829Z-production-art-86041d",
+  "scope": {
+    "pairs": ["S22", "S23"],
+    "protectedAcceptedPairs": ["S19", "S20", "S21"],
+    "formats": {
+      "portrait": {"width": 1024, "height": 1536, "ratio": "2:3"},
+      "landscape": {"width": 1672, "height": 941, "ratio": "16:9"}
+    }
+  },
+  "canonRevalidation": {
+    "canonicalProductSourcesChanged": false,
+    "characterReferencesChanged": false,
+    "acceptedProtectedArtChanged": false,
+    "changesBetweenPreviousCanonAndCurrentHead": [
+      "CEOS production-art checkpoints and recovery evidence",
+      "S22 output transport/materialization evidence",
+      "current session binding blocker evidence"
+    ],
+    "interpretation": "The HEAD mismatch is evidence-only/CEOS-state drift; the locked S22-S23 narrative canon and source reference pixels remain unchanged. Historical canon checkpoint is preserved and not rewritten."
+  },
+  "references": [
+    {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d", "bytes": 2493846},
+    {"path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23", "bytes": 2130673},
+    {"path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a", "bytes": 2409650},
+    {"path": "artifacts/production-art/character-reference-contact-sheet.png", "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b", "bytes": 2570840, "role": "accepted style baseline"}
+  ],
+  "reusedAsset": {
+    "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+    "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+    "bytes": 2726336,
+    "dimensions": "1024x1536",
+    "regenerated": false,
+    "mechanicalGate": "PASS_ART_OUTPUT_MECHANICAL",
+    "visualAcceptance": "NOT_VERIFIED"
+  },
+  "acceptanceBoundary": {
+    "s19S21Touched": false,
+    "s22PortraitRegenerated": false,
+    "finalWebAcceptance": "NOT_PERFORMED",
+    "runtimePixelChecks": "NOT_PERFORMED",
+    "canonRefreshIsNotGenerationAuthorization": true
+  },
+  "evidence": {
+    "gitDiffCommand": "git diff --name-status 0778e50fcf5f88fef4738345d9d783f0a034a045..ddabbe93f8e7e9cc1a509d1cf4379213cf4a516b -- src data config game-spec.yaml assets/characters assets/production/cg",
+    "gitDiffResult": "empty",
+    "remotePreflight": "IN_SYNC",
+    "worktree": "clean"
+  }
+}

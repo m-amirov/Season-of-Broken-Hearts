@@ -1,0 +1,32 @@
+{
+  "target": "Stage 9.4 recovery: S19 resolution revalidation and bounded EP2-EP3 production art",
+  "inScope": [
+    "S19 unchanged-byte revalidation",
+    "corrected native dimension contract",
+    "optimized EP2-EP3 inventory",
+    "native producer output",
+    "runtime integration",
+    "runtime visual QA",
+    "NARRATIVE_ART_ACCEPTANCE_V2"
+  ],
+  "outOfScope": [
+    "EP1 art changes",
+    "publication",
+    "moderation",
+    "secrets",
+    "merge to main",
+    "unreviewed EP2-EP3 families"
+  ],
+  "acceptanceContract": "All admitted pairs have source-bound briefs, physical native portrait and landscape PNGs, mechanical receipts, runtime mapping, current-pixel QA and strict Web V2 acceptance; otherwise preserve exact blocker.",
+  "mutationBoundary": "Only project-owned Stage 9.4 manifests, receipts, runtime mappings, scoped QA tooling/evidence and newly admitted production assets; no historical receipt/checkpoint rewrites.",
+  "resolutionReceiptContract": {
+    "schemaVersion": 1,
+    "requiredExactLines": [
+      "The original rejection was a real result **against that older contract**;",
+      "2. Read its actual PNG bytes, dimensions and SHA-256. Expected SHA-256:",
+      "   `17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299`."
+    ],
+    "sourceEvidence": "artifacts/production-art/stage9.4/ART_DIMENSION_CONTRACT_RESOLUTION.md",
+    "sourceEvidenceSha256": "5035acf16f4e85baa42ea2ba54cb6b7969cec9aa9bb35bc10db515e670e567a5"
+  }
+}

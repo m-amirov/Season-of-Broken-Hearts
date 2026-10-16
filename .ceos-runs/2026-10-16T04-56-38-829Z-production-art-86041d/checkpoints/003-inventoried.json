@@ -1,0 +1,37 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-16T04:57:32.472Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Fresh current-HEAD inventory; S22 portrait is recovered and mechanically gated, remaining three outputs are pending.",
+  "metadata": {
+    "pairCount": 2,
+    "pngCount": 4,
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "recoveredOutputs": [
+      "S22 portrait"
+    ]
+  },
+  "source": {
+    "available": true,
+    "head": "0b55ac34ca54a1f7448e04afe6fa1f22ea733652",
+    "clean": false,
+    "worktreeSha256": "28ef1a3a46cc389a0030a4f299c759da25c26c05debc8dac4963aaefdab4747a"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INVENTORY_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_INVENTORY_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_INVENTORY_20261016.json",
+      "type": "file",
+      "sha256": "39c0febd07bc9cd8ac0d2ac17a33718ddf530e464aaf0b1ce401d3bc8c2d860c",
+      "size": 2875
+    }
+  ]
+}

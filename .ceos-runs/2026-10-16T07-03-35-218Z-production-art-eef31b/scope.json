@@ -1,0 +1,26 @@
+{
+  "target": "Stage 9.4 next bounded EP2 art batch: three unaccepted CG families after accepted S19-S23",
+  "inScope": [
+    "EP2 families ep2-dining-refusal-response-cg/ep2_refusal_response",
+    "ep2-office-fake-terms-cg/ep2_fake_terms",
+    "ep2-service-refusal-workday-cg/ep2_refusal_workday",
+    "six distinct dual-format PNGs",
+    "source-bound briefs",
+    "native Terra generation",
+    "materialization",
+    "per-image CEOS output gates",
+    "runtime desktop/mobile pixel QA",
+    "independent Web High acceptance",
+    "batch-only checkpoint evidence"
+  ],
+  "outOfScope": [
+    "S19-S23 regeneration or mutation",
+    "EP3",
+    "other EP2 families",
+    "episode final acceptance",
+    "release readiness",
+    "game merge/publish"
+  ],
+  "acceptanceContract": "All six listed PNGs are real project-owned files with correct dimensions, SHA-256, provenance and output receipts; runtime pixel QA and independent Web High acceptance pass for all three pairs; CEOS records PARTIAL_PASS batch acceptance only and preserves EPISODE_FINAL_ACCEPTANCE as pending",
+  "mutationBoundary": "Only the three listed EP2 CG pairs, their source-bound briefs, receipts, runtime screenshots and CEOS evidence under artifacts/production-art/stage9.4; preserve all accepted S19-S23 bytes and receipts; no source narrative or runtime behavior changes; no merge or game publish"
+}

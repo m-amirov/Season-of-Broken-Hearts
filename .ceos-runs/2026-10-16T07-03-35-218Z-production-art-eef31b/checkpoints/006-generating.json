@@ -1,0 +1,43 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-16T07:15:16.533Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED: native producer route failed trusted parent binding; no Image Gen, PNG or receipt was created.",
+  "metadata": {
+    "blockerCode": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+    "producerRouteStatus": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+    "producerTraceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\16\\rollout-2026-10-16T10-11-07-01a1438c-db9b-78a1-aaf4-dfd6019cd29d.jsonl",
+    "producerParentSessionId": "01a14343-4aa3-7ca2-ad7a-f35b0855d655",
+    "actualParentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "generationInvoked": false,
+    "pngCreated": 0,
+    "receiptsCreated": 0,
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23"
+    ],
+    "episodeFinalAcceptance": "PENDING"
+  },
+  "source": {
+    "available": true,
+    "head": "fd77accf1d9b94f4c1775725d93eba662847eda0",
+    "clean": false,
+    "worktreeSha256": "6b33f0649366b8c7e9aa96df6f428326967b9f861f55c7870a34dd8571eab75d"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_NATIVE_ROUTE_BLOCKER_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_EP2_NEXT_BATCH_NATIVE_ROUTE_BLOCKER_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_NATIVE_ROUTE_BLOCKER_20261016.json",
+      "type": "file",
+      "sha256": "4482410fd0102b576e934b537dadb3f2abe220c2a36ac248187c52b27099a576",
+      "size": 2562
+    }
+  ]
+}

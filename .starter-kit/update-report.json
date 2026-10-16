@@ -6,12 +6,17 @@
   "dryRun": false,
   "fromVersion": "0.5.13",
   "toVersion": "0.5.13",
-  "sourceManifestHash": "662257dcaa4d504cd0c63324d4e3f15273a8ce2906ef33ddf56cee7b6e6abcdf",
+  "sourceManifestHash": "65ed0e5f9dafef1489b813f1c6f64e4343f5942e17185702e011381d7b589bd3",
   "targetProfile": "mature-yandex-phaser",
   "projectType": "mature",
   "skillRoot": ".agents/skills",
   "created": [],
-  "updated": [],
+  "updated": [
+    {
+      "logicalId": "managed:narrative-art-handoff",
+      "target": "tools/narrative/narrative-art-handoff.mjs"
+    }
+  ],
   "preserved": [
     {
       "logicalId": "skill:asset-provenance-and-rights:SKILL.md",
@@ -95,7 +100,8 @@
     },
     {
       "logicalId": "contract:AGENTS.md",
-      "target": "AGENTS.md"
+      "target": "AGENTS.md",
+      "ownership": "semantic-merge"
     },
     {
       "logicalId": "contract:package-json",
@@ -168,10 +174,6 @@
     {
       "logicalId": "managed:yandex-requirements-diff-2026-08-18",
       "target": "docs/YANDEX_REQUIREMENTS_DIFF_2026-07-01_TO_2026-08-18.md"
-    },
-    {
-      "logicalId": "managed:skill-policy",
-      "target": "config/skill-policy.json"
     },
     {
       "logicalId": "managed:external-skill-sources",
@@ -438,10 +440,6 @@
       "target": "docs/NARRATIVE_SCENE_VISUAL_CONTRACT.md"
     },
     {
-      "logicalId": "managed:narrative-art-handoff",
-      "target": "tools/narrative/narrative-art-handoff.mjs"
-    },
-    {
       "logicalId": "test:narrative-art-handoff",
       "target": "tests/starter-kit/narrative-art-handoff.test.mjs"
     },
@@ -475,7 +473,13 @@
     }
   ],
   "merged": [],
-  "resolved": [],
+  "resolved": [
+    {
+      "logicalId": "managed:skill-policy",
+      "target": "config/skill-policy.json",
+      "resolution": "accept-current"
+    }
+  ],
   "projectOwned": [
     "index.html",
     "package-lock.json",

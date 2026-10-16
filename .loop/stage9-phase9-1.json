@@ -1,0 +1,20 @@
+{
+  "task": "stage9-full-season-production",
+  "phase": "9.1",
+  "status": "BLOCKED_STAGE9_CONCEPT_PROOF",
+  "sourceHead": "233bccb353d9af6b38a35e409c2bf2d4154e54b9",
+  "remoteHead": "233bccb353d9af6b38a35e409c2bf2d4154e54b9",
+  "worktree": "codex/stage9-full-season-architecture",
+  "protected": ["EP1 canon", "permanent dirty checkout", "production secrets", "Yandex publication"],
+  "evidence": {
+    "conceptProofDecision": "CONTINUE_PRODUCTION_BOUNDED_EP1_PILOT",
+    "blindPlaytest": "AWAITING_BLIND_PLAYTEST",
+    "narrativeValidate": "PASS_EP1_ONLY",
+    "unitTests": "PASS_63"
+  },
+  "changedFiles": [
+    "artifacts/stage9/PHASE_9_1_BLOCKER.md",
+    ".loop/stage9-phase9-1.json"
+  ],
+  "nextStep": "Obtain factual blind-playtest records and owner decision before full-season architecture or campaign production."
+}

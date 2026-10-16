@@ -1,0 +1,39 @@
+{
+  "index": 4,
+  "stage": "AUDITED",
+  "at": "2026-10-15T08:57:17.894Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "Independent Web High verdict is unavailable after two bounded transport failures; native gpt-5.6 reviewer route is unsupported on this ChatGPT account. Local evidence is not an independent editorial verdict.",
+  "metadata": {
+    "webPreflight": "READY",
+    "webAgentsUsed": [],
+    "nativeFallbackUsed": true,
+    "independentVerdict": "BLOCKED_STAGE9_WEB_TRANSPORT"
+  },
+  "source": {
+    "available": true,
+    "head": "c43b181f7a4dc14f9de10b9976ddad57fd9e14bc",
+    "clean": false,
+    "worktreeSha256": "0261dfebb1ee0692e6339e88897bffd70c78b9f19aa9bb9e7e5f90c9457215fa"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/editorial/stage9.3-independent-review.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-independent-review.json",
+      "projectRelativePath": "artifacts/editorial/stage9.3-independent-review.json",
+      "type": "file",
+      "sha256": "be86d48f46b276525323d33b60fc6e7528a38fa8df2599b03f3637f607863478",
+      "size": 1029
+    },
+    {
+      "input": "artifacts/editorial/stage9.3-literary-report.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\editorial\\stage9.3-literary-report.json",
+      "projectRelativePath": "artifacts/editorial/stage9.3-literary-report.json",
+      "type": "file",
+      "sha256": "9f9aad5b7c65a752d4eea35a4bb14dbd5a628ac6f9c13a4e74240540d50f29ff",
+      "size": 14060
+    }
+  ]
+}

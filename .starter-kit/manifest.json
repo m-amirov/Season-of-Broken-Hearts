@@ -1860,7 +1860,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733"
+      "sha256": "bf54f86f252ad1798aa43120c49aaf94a961502dacc502204c7849c809c6f200"
     },
     {
       "source": "tools/narrative/story-promise-validator.mjs",
@@ -1892,7 +1892,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "1794008e28646e28e781deefe72c90fa18c0f9411196675c2845544f69d25c1b"
+      "sha256": "510ce3ac01ea68404d30a8b1230139ff0d226603c601230afbc0e9c3762c58eb"
     },
     {
       "source": "config/optional-profiles/narrative-game.json",
@@ -1924,7 +1924,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "521b4e1ba5e85a5c002ce94aa3dada206bb785e2c9772a276588b897ac3f66fd"
+      "sha256": "159d9e20ee1bb924e7851768fe48aadc46e15e199a8ef5d2df890a7f6a747244"
     },
     {
       "source": "migrations/0.5.11-to-0.5.12.md",

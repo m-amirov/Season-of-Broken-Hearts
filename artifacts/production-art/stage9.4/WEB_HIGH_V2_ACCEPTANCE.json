@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_STAGE9_4_ART_ACCEPTANCE",
+  "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+  "analysisReview": {
+    "status": "PASS_FOR_BRIEFING",
+    "record": "artifacts/production-art/stage9.4/CEOS_STAGE9_4_ANALYSIS_REVIEW.json",
+    "verification": "ceos web-review-verify PASS",
+    "route": "ceos_art_director_web",
+    "trace": "571baf29f72e"
+  },
+  "acceptanceReview": {
+    "status": "NOT_STARTED",
+    "reason": "Final art acceptance still awaits complete dual-format outputs, current-runtime screenshots and actually received pixels; corrected source dimensions are not visual acceptance.",
+    "actualPixelsReceived": false,
+    "runtimeScreenshotHashes": [],
+    "reviewerRoute": null,
+    "receipt": null
+  },
+  "unresolved": [
+    "S19 landscape must pass a NEW per-output mechanical gate using the project-native 1672x941 source PNG dimensions; preserve the old 1920x1080-failure receipt as historical evidence.",
+    "S20 and remaining EP2-EP3 families remain pending generation.",
+    "Independent visual acceptance cannot be claimed from the pre-generation briefing review."
+  ],
+  "dimensionContract": "config/production-art-dimensions.json"
+}

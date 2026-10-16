@@ -1,0 +1,53 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-15T11:41:33.241Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "canonRefs": [
+      "narrative/NARRATIVE_BIBLE.md",
+      "narrative/STYLE_GUIDE.md",
+      "docs/season/PRODUCTION_ART_PLAN.md",
+      "artifacts/production-art/character-reference-contact-sheet.png"
+    ],
+    "briefs": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+    "analysisReview": "artifacts/production-art/stage9.4/CEOS_STAGE9_4_ANALYSIS_REVIEW.json",
+    "analysisReviewVerification": "PASS",
+    "sourceHead": "e0e79d98e18984a0cce59a7356425458824f3e9b"
+  },
+  "source": {
+    "available": true,
+    "head": "e0e79d98e18984a0cce59a7356425458824f3e9b",
+    "clean": false,
+    "worktreeSha256": "ab2303399c9a4aed22609451944e532124af6a1aa320c1dda2245ea3f3d95733"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\SOURCE_BOUND_ART_BRIEFS.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json",
+      "type": "file",
+      "sha256": "5939d16920e29e2bee908b8aa7ece4c65604252e1bddfb11291f1fa455ba391e",
+      "size": 57568
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/CEOS_STAGE9_4_ANALYSIS_REVIEW.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\CEOS_STAGE9_4_ANALYSIS_REVIEW.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/CEOS_STAGE9_4_ANALYSIS_REVIEW.json",
+      "type": "file",
+      "sha256": "f2f7052f594080f783a8f46d786749277b7c757cfca033461aa11420a96f2a1b",
+      "size": 5061
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/CHARACTER_IDENTITY_REPORT.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\CHARACTER_IDENTITY_REPORT.md",
+      "projectRelativePath": "artifacts/production-art/stage9.4/CHARACTER_IDENTITY_REPORT.md",
+      "type": "file",
+      "sha256": "b6d0bc33a3f5b25983b09572bac462012931cf358acfd913d3756abcb410b5f8",
+      "size": 3255
+    }
+  ]
+}

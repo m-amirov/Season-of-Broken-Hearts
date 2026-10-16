@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.22",
+  "runId": "2026-10-16T05-32-33-553Z-production-art-1cd351",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerParentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T05-32-33-553Z-production-art-1cd351",
+  "createdAt": "2026-10-16T05:32:33.556Z",
+  "updatedAt": "2026-10-16T05:37:40.603Z",
+  "completedAt": "2026-10-16T05:37:40.603Z",
+  "cycle": 1,
+  "maxCycles": 3,
+  "webRequired": true,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "GENERATING",
+    "reason": "Stopped before Terra child route and Image Gen because trusted CEOS hook cwd does not match the current-head production-art worktree."
+  },
+  "checkpointCount": 6,
+  "scopeSha256": "aa2d59be5063719f6b1e9556b963719342621df3ab1f11275f2589b689f42481",
+  "capabilitiesSha256": "971cb313d272a4f07c52ba7429662f53b531edf40a3eb056ab57a68cad88050d",
+  "sourceAtStart": {
+    "available": true,
+    "head": "019cd2d4c5fe9ac32d82adf4131cfffad4a95b43",
+    "clean": false,
+    "worktreeSha256": "fbadb0cdf64a68ab7cbf7437a8f5ff7f36319aafb52bde3833506c8fa27db6ef"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviews": [
+      {
+        "schemaVersion": 1,
+        "reviewId": "S22-S23-STAGE9.4-CURRENT_HEAD_ART_DIRECTION-20261016",
+        "reviewTraceId": "01a14333-cab4-7cf1-a816-90bec727382d",
+        "taskId": "01a14333-cab4-7cf1-a816-90bec727382d",
+        "phase": "analysis",
+        "agent": "ceos_art_director_web",
+        "pipeline": "production-art",
+        "sourceHead": "79935b6632c6233bd84d22f6bab4f479073986b7",
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "evidenceArtifact": {
+          "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+          "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+          "type": "file",
+          "sha256": "d897b137167ef36e1739439f73eb248a2b230a735ef38eaa397cec256014872f",
+          "size": 2845
+        },
+        "reviewedItems": [
+          "S22-recovered-portrait",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "evidenceRefs": [
+          "S22-recovered-portrait",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "receivedEvidenceRefs": [
+          "S22-recovered-portrait",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "visualEvidence": [
+          {
+            "ref": "S22-recovered-portrait",
+            "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+            "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+            "bytes": 2726336,
+            "pixelDimensions": "1024x1536",
+            "observation": "Courtyard Rehearsal composition is consistent with the supplied Nika, Matteo and Giulia references; no P0/P1 identity or style drift observed."
+          },
+          {
+            "ref": "nika-reference",
+            "path": "assets/characters/references/originals/nika.png",
+            "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+            "bytes": 2493846,
+            "pixelDimensions": "1536x1024",
+            "observation": "Identity anchor received and visually consistent."
+          },
+          {
+            "ref": "matteo-reference",
+            "path": "assets/characters/references/originals/matteo.png",
+            "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+            "bytes": 2130673,
+            "pixelDimensions": "1448x1086",
+            "observation": "Identity anchor received and visually consistent."
+          },
+          {
+            "ref": "giulia-reference",
+            "path": "assets/characters/references/originals/giulia.png",
+            "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+            "bytes": 2409650,
+            "pixelDimensions": "1448x1086",
+            "observation": "Identity anchor received and visually consistent."
+          },
+          {
+            "ref": "accepted-style-contact-sheet",
+            "path": "artifacts/production-art/character-reference-contact-sheet.png",
+            "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+            "bytes": 2570840,
+            "observation": "Accepted visual-language baseline received."
+          }
+        ],
+        "findings": [
+          {
+            "id": "WEB-CURRENT-S22-A1",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "observation": "The S22 pointing gesture approaches the right image boundary; preserve spatial legibility in the landscape composition.",
+            "disposition": "GENERATION_CRITERION"
+          },
+          {
+            "id": "WEB-CURRENT-S22-A2",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "observation": "Fine plan details may be lost on mobile; preserve the action and plan relationship without requiring readable invented text.",
+            "disposition": "RUNTIME_CRITERION"
+          }
+        ],
+        "unresolved": [
+          "WEB-CURRENT-S22-A1",
+          "WEB-CURRENT-S22-A2"
+        ],
+        "protectedAssets": {
+          "s19S21": "DO_NOT_MODIFY",
+          "s22Portrait": "DO_NOT_REGENERATE",
+          "s22PortraitSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8"
+        },
+        "generationCriteria": {
+          "s22Landscape": [
+            "same cast and courtyard canon",
+            "independent wide composition",
+            "preserve pointing action",
+            "no extra cast or ceremony props"
+          ],
+          "s23Portrait": [
+            "authored S23 scene mapping required",
+            "mobile-readable staging",
+            "same character and wardrobe canon",
+            "distinct continuation from S22"
+          ],
+          "s23Landscape": [
+            "same authored beat as portrait",
+            "independent wide composition",
+            "preserve plot-critical objects and passage",
+            "no semantic change"
+          ]
+        },
+        "runtimeCriteria": [
+          "fresh desktop and mobile runtime screenshots",
+          "current-head cue-to-event mapping",
+          "character identity and action after crop",
+          "dialogue-safe lower region",
+          "viewport selection/preload/fallback behavior",
+          "exact PNG SHA-256 binding"
+        ],
+        "decision": "S22/S23 current canon is ready for bounded generation; S22 portrait remains a protected recovered anchor.",
+        "finalAcceptance": "NOT_PERFORMED",
+        "coverageLimitations": [
+          "No S22 landscape, S23 portrait or S23 landscape pixels were available.",
+          "No runtime screenshots or authored scene mapping receipt was reviewed in this analysis phase."
+        ],
+        "summary": "Independent bounded Web High art-direction review passed the supplied current-head canon with no confirmed P0/P1 findings; P2 observations are advisory generation/runtime criteria only.",
+        "recordedAt": "2026-10-16T05:36:44.829Z",
+        "localScreenshotArtifacts": []
+      }
+    ],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [
+          "ceos_art_director_web"
+        ],
+        "webReviews": [
+          {
+            "schemaVersion": 1,
+            "reviewId": "S22-S23-STAGE9.4-CURRENT_HEAD_ART_DIRECTION-20261016",
+            "reviewTraceId": "01a14333-cab4-7cf1-a816-90bec727382d",
+            "taskId": "01a14333-cab4-7cf1-a816-90bec727382d",
+            "phase": "analysis",
+            "agent": "ceos_art_director_web",
+            "pipeline": "production-art",
+            "sourceHead": "79935b6632c6233bd84d22f6bab4f479073986b7",
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "evidenceArtifact": {
+              "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+              "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_CANON_REFRESH_20261016.json",
+              "type": "file",
+              "sha256": "d897b137167ef36e1739439f73eb248a2b230a735ef38eaa397cec256014872f",
+              "size": 2845
+            },
+            "reviewedItems": [
+              "S22-recovered-portrait",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "evidenceRefs": [
+              "S22-recovered-portrait",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "receivedEvidenceRefs": [
+              "S22-recovered-portrait",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "visualEvidence": [
+              {
+                "ref": "S22-recovered-portrait",
+                "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+                "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+                "bytes": 2726336,
+                "pixelDimensions": "1024x1536",
+                "observation": "Courtyard Rehearsal composition is consistent with the supplied Nika, Matteo and Giulia references; no P0/P1 identity or style drift observed."
+              },
+              {
+                "ref": "nika-reference",
+                "path": "assets/characters/references/originals/nika.png",
+                "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+                "bytes": 2493846,
+                "pixelDimensions": "1536x1024",
+                "observation": "Identity anchor received and visually consistent."
+              },
+              {
+                "ref": "matteo-reference",
+                "path": "assets/characters/references/originals/matteo.png",
+                "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+                "bytes": 2130673,
+                "pixelDimensions": "1448x1086",
+                "observation": "Identity anchor received and visually consistent."
+              },
+              {
+                "ref": "giulia-reference",
+                "path": "assets/characters/references/originals/giulia.png",
+                "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+                "bytes": 2409650,
+                "pixelDimensions": "1448x1086",
+                "observation": "Identity anchor received and visually consistent."
+              },
+              {
+                "ref": "accepted-style-contact-sheet",
+                "path": "artifacts/production-art/character-reference-contact-sheet.png",
+                "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+                "bytes": 2570840,
+                "observation": "Accepted visual-language baseline received."
+              }
+            ],
+            "findings": [
+              {
+                "id": "WEB-CURRENT-S22-A1",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "observation": "The S22 pointing gesture approaches the right image boundary; preserve spatial legibility in the landscape composition.",
+                "disposition": "GENERATION_CRITERION"
+              },
+              {
+                "id": "WEB-CURRENT-S22-A2",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "observation": "Fine plan details may be lost on mobile; preserve the action and plan relationship without requiring readable invented text.",
+                "disposition": "RUNTIME_CRITERION"
+              }
+            ],
+            "unresolved": [
+              "WEB-CURRENT-S22-A1",
+              "WEB-CURRENT-S22-A2"
+            ],
+            "protectedAssets": {
+              "s19S21": "DO_NOT_MODIFY",
+              "s22Portrait": "DO_NOT_REGENERATE",
+              "s22PortraitSha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8"
+            },
+            "generationCriteria": {
+              "s22Landscape": [
+                "same cast and courtyard canon",
+                "independent wide composition",
+                "preserve pointing action",
+                "no extra cast or ceremony props"
+              ],
+              "s23Portrait": [
+                "authored S23 scene mapping required",
+                "mobile-readable staging",
+                "same character and wardrobe canon",
+                "distinct continuation from S22"
+              ],
+              "s23Landscape": [
+                "same authored beat as portrait",
+                "independent wide composition",
+                "preserve plot-critical objects and passage",
+                "no semantic change"
+              ]
+            },
+            "runtimeCriteria": [
+              "fresh desktop and mobile runtime screenshots",
+              "current-head cue-to-event mapping",
+              "character identity and action after crop",
+              "dialogue-safe lower region",
+              "viewport selection/preload/fallback behavior",
+              "exact PNG SHA-256 binding"
+            ],
+            "decision": "S22/S23 current canon is ready for bounded generation; S22 portrait remains a protected recovered anchor.",
+            "finalAcceptance": "NOT_PERFORMED",
+            "coverageLimitations": [
+              "No S22 landscape, S23 portrait or S23 landscape pixels were available.",
+              "No runtime screenshots or authored scene mapping receipt was reviewed in this analysis phase."
+            ],
+            "summary": "Independent bounded Web High art-direction review passed the supplied current-head canon with no confirmed P0/P1 findings; P2 observations are advisory generation/runtime criteria only.",
+            "recordedAt": "2026-10-16T05:36:44.829Z",
+            "localScreenshotArtifacts": []
+          }
+        ],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  }
+}
