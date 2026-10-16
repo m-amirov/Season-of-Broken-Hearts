@@ -1,0 +1,58 @@
+{
+  "index": 7,
+  "stage": "VISUAL_VERIFIED",
+  "at": "2026-10-16T06:48:30.048Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Runtime pixel QA passed for both scoped scenes and both formats at desktop/mobile; no runtime errors or overflow.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+    "clean": false,
+    "worktreeSha256": "1a0fb79bed55bf1b2487cdbe0f29bcaa5c87e0b432892bc93973f1a136ccfe48"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/STAGE9_4_S22_S23_RUNTIME_PIXEL_QA_20261016.json",
+      "type": "file",
+      "sha256": "e23ebd8299a1100cb112ec9198a7c5ab7f38c214856bb487c18648c9f37f7527",
+      "size": 4254
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\desktop\\S22.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png",
+      "type": "file",
+      "sha256": "831a190ea0727b1af755276b25d47a76437eda8ea1f90542d2860c7c42ea042e",
+      "size": 1473301
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\desktop\\S23.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png",
+      "type": "file",
+      "sha256": "0412389549532fe2bcfc993e45a0fdf74de31c9ea2cd35d74d5ff5ee5555055f",
+      "size": 1316592
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\mobile\\S22.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png",
+      "type": "file",
+      "sha256": "7380f71ceac7492c29fdef0bac0fbde16b7a203564f6ece4d7cf52bad56d187b",
+      "size": 471233
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\runtime\\screenshots\\mobile\\S23.png",
+      "projectRelativePath": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png",
+      "type": "file",
+      "sha256": "e145f08bd0b5e35776f40545d4fd88060adaeb00b36d3c9c14bf9836fac1e951",
+      "size": 457406
+    }
+  ]
+}

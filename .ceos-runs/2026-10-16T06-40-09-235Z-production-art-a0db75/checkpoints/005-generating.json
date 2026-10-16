@@ -1,0 +1,26 @@
+{
+  "index": 5,
+  "stage": "GENERATING",
+  "at": "2026-10-16T06:48:47.891Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED_EXECUTABLE_STALE: PATH ceos.ps1 resolved to the installed 0.5.23 CLI without the committed BATCH_INTEGRATION implementation; run scope had no dualFormatScope. No generation, PNG mutation, merge or publish occurred. Replaced by fresh explicit CEOS checkout run.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+    "clean": false,
+    "worktreeSha256": "c4808bf6bf45ec9fd24c1291b31331edcb917b2314318ccdc5978a1b0dea84d3"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+      "type": "file",
+      "sha256": "58ffb6876bbc5db85d1538a2c6568b7ff34d29d1103a01b6115f4f7247bd0c10",
+      "size": 2498
+    }
+  ]
+}

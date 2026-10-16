@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "agent": "ceos_art_director_web",
+  "reviewTraceId": "web-high-a0db75-acceptance-20261016",
+  "taskId": "production-art-a0db75-s22-s23-acceptance",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json",
+  "sourceHead": "ef3dda8aef085a348bcc7086c6b4857c84aaa84d",
+  "status": "PASS",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "actualPixelsReceived": true,
+  "reviewedItems": [
+    "S22-portrait", "S22-landscape", "S23-portrait", "S23-landscape",
+    "S22-desktop-runtime", "S22-mobile-runtime", "S23-desktop-runtime", "S23-mobile-runtime"
+  ],
+  "evidenceRefs": [
+    "S22-portrait", "S22-landscape", "S23-portrait", "S23-landscape",
+    "S22-desktop-runtime", "S22-mobile-runtime", "S23-desktop-runtime", "S23-mobile-runtime"
+  ],
+  "receivedEvidenceRefs": [
+    "S22-portrait", "S22-landscape", "S23-portrait", "S23-landscape",
+    "S22-desktop-runtime", "S22-mobile-runtime", "S23-desktop-runtime", "S23-mobile-runtime"
+  ],
+  "visualEvidence": [
+    { "ref": "S22-portrait", "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png", "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8", "observation": "Portrait S22 keeps Nika, Giulia and Matteo legible with the courtyard planning gesture readable." },
+    { "ref": "S22-landscape", "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png", "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90", "observation": "Landscape S22 preserves the terrace, sea, seating conflict and character continuity." },
+    { "ref": "S23-portrait", "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png", "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc", "observation": "Portrait S23 keeps the dining-room action and three-character identity readable." },
+    { "ref": "S23-landscape", "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png", "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031", "observation": "Landscape S23 supports the handoff from Giulia's cards to Matteo's tablet and Nika's crate." },
+    { "ref": "S22-desktop-runtime", "path": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S22.png", "sha256": "831a190ea0727b1af755276b25d47a76437eda8ea1f90542d2860c7c42ea042e", "observation": "Desktop runtime selects the intended landscape S22 PNG, maintains safe dialogue placement and has no overflow." },
+    { "ref": "S22-mobile-runtime", "path": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S22.png", "sha256": "7380f71ceac7492c29fdef0bac0fbde16b7a203564f6ece4d7cf52bad56d187b", "observation": "Mobile runtime selects the intended portrait S22 PNG, keeps faces and dialogue readable and has no overflow." },
+    { "ref": "S23-desktop-runtime", "path": "artifacts/production-art/stage9.4/runtime/screenshots/desktop/S23.png", "sha256": "0412389549532fe2bcfc993e45a0fdf74de31c9ea2cd35d74d5ff5ee5555055f", "observation": "Desktop runtime selects the intended landscape S23 PNG and preserves readable character action." },
+    { "ref": "S23-mobile-runtime", "path": "artifacts/production-art/stage9.4/runtime/screenshots/mobile/S23.png", "sha256": "e145f08bd0b5e35776f40545d4fd88060adaeb00b36d3c9c14bf9836fac1e951", "observation": "Mobile runtime selects the intended portrait S23 PNG; the advisory crop does not block comprehension." }
+  ],
+  "findings": [
+    {
+      "id": "S23-MOBILE-CROP-ADVISORY",
+      "severity": "P2",
+      "status": "OPEN",
+      "materialPlayerImpact": false,
+      "description": "Nika is near the mobile frame edge and the crate is mostly cropped; the action remains understandable.",
+      "evidenceRef": "S23-mobile-runtime"
+    },
+    {
+      "id": "S22-DESKTOP-CHAIR-ADVISORY",
+      "severity": "P3",
+      "status": "OPEN",
+      "materialPlayerImpact": false,
+      "description": "Some chair rows are covered by the characters and reading overlay; the scene remains legible.",
+      "evidenceRef": "S22-desktop-runtime"
+    }
+  ],
+  "unresolved": [],
+  "resolvedFindings": [],
+  "decision": "PASS for the scoped S22/S23 batch only. No regeneration is required; EP2 final acceptance and release readiness are not claimed."
+}

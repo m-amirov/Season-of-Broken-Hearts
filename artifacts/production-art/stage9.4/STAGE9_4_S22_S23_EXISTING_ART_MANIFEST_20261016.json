@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "episode": 2,
+  "scope": "S22-S23",
+  "assets": [
+    {
+      "id": "ep2-family-rehearsal-cg",
+      "format": "portrait",
+      "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+      "kind": "background",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8"
+    },
+    {
+      "id": "ep2-family-rehearsal-cg",
+      "format": "desktop",
+      "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90"
+    },
+    {
+      "id": "ep2-family-rehearsal-response-cg",
+      "format": "portrait",
+      "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+      "kind": "background",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc"
+    },
+    {
+      "id": "ep2-family-rehearsal-response-cg",
+      "format": "desktop",
+      "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031"
+    }
+  ]
+}

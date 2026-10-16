@@ -1,0 +1,33 @@
+{
+  "target": "Stage 9.4 bounded S22-S23 BATCH_INTEGRATION recovery",
+  "inScope": [
+    "S22-S23 existing dual-format PNGs and runtime mappings",
+    "S22-S23 runtime pixel QA and independent Web High acceptance"
+  ],
+  "outOfScope": [
+    "S19-S21 regeneration or modification",
+    "S22 portrait regeneration",
+    "EP2 episode-final acceptance",
+    "merge",
+    "publish",
+    "Yandex submission",
+    "release readiness"
+  ],
+  "acceptanceContract": "BATCH_INTEGRATION PARTIAL_PASS only after exact scoped dual-format mechanical verification, runtime pixel QA, and independent NARRATIVE_ART_ACCEPTANCE_V2 Web High acceptance; never episode PASS or release readiness",
+  "mutationBoundary": "Only current-head S22-S23 batch evidence, receipts, runtime evidence and CEOS checkpoints; preserve all existing PNG bytes, S19-S21, S22 portrait and terminal CEOS runs",
+  "dualFormat": {
+    "mode": "BATCH_INTEGRATION",
+    "batch": {
+      "episode": 2,
+      "sceneIds": [
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response"
+      ],
+      "sourceEvidence": {
+        "path": "artifacts/production-art/stage9.4/STAGE9_4_S22_S23_BATCH_SCOPE_EVIDENCE_20261016.json",
+        "sha256": "58ffb6876bbc5db85d1538a2c6568b7ff34d29d1103a01b6115f4f7247bd0c10",
+        "size": 2498
+      }
+    }
+  }
+}
