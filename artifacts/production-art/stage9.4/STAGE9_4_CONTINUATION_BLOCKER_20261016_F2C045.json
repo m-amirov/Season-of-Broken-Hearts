@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-continuation-blocker",
+  "status": "BLOCKED_CONTINUATION_INTEGRITY",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "stage": "GENERATING",
+  "runRecordedProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts",
+  "recoveryProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture",
+  "currentHead": "6b85aee26370c29226581bcfa5411ec6c47169d8",
+  "branch": "codex/stage9-full-season-architecture",
+  "worktreeDirty": false,
+  "ceosContinue": {
+    "status": "BLOCKED_INTEGRITY",
+    "executable": false,
+    "issues": [
+      "Checkpoint SCOPE_LOCKED references missing artifact under the old project directory.",
+      "Checkpoint INVENTORIED references missing S24-S26 inventory under the old project directory.",
+      "Checkpoint CANON_READY references missing S24-S26 canon freeze under the old project directory."
+    ],
+    "oldProjectDir": "E:/Work/YandexGames/Novells/Season of Broken Hearts/Season of Broken Hearts"
+  },
+  "capabilityChallenge": {
+    "status": "BLOCKED",
+    "error": "BLOCKED_SESSION_CONTEXT_UNVERIFIED",
+    "sessionDiagnostics": {
+      "status": "BLOCKED",
+      "selectedSessionId": null,
+      "trustedHost": null,
+      "candidates": []
+    },
+    "generationAllowed": false,
+    "trustedForGeneration": false,
+    "manualOrEnvironmentOverrideUsed": false
+  },
+  "webHigh": {
+    "preflightStatus": "DISABLED",
+    "ready": false,
+    "reason": "Web reasoning routes are disabled by CEOS hybrid-routing policy",
+    "fallbackUsed": false,
+    "bypassUsed": false
+  },
+  "producerRoute": {
+    "status": "NOT_ATTEMPTED",
+    "reason": "CEOS integrity and session-context gates failed before a child producer could be invoked; no trace was fabricated or reused."
+  },
+  "outputs": {
+    "generated": 0,
+    "integrated": 0,
+    "targetPairsMutated": [],
+    "protectedAcceptedPairsUntouched": ["S19", "S20", "S21", "S22", "S23"]
+  },
+  "recoveryRule": "Do not edit checkpointed absolute paths, relabel old evidence, switch/reset main, or generate a replacement PNG. Restore the original bound project path/lifecycle or create an explicitly authorized linked recovery run."
+}
