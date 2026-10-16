@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "stage": "9.4",
+  "status": "BLOCKED",
+  "blockerCode": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+  "runId": "2026-10-16T07-03-35-218Z-production-art-eef31b",
+  "ceosVersion": "0.5.23",
+  "sourceHead": "fd77accf1d9b94f4c1775725d93eba662847eda0",
+  "scope": {
+    "families": [
+      "ep2-dining-refusal-response-cg",
+      "ep2-office-fake-terms-cg",
+      "ep2-service-refusal-workday-cg"
+    ],
+    "plannedPairs": 3,
+    "plannedPng": 6
+  },
+  "rootCause": "The producer child trace is not a distinct child of the parent session bound to the CEOS run. CEOS trust checks reject the route before native Image Gen.",
+  "runBinding": {
+    "producerParentSessionId": "01a14343-4aa3-7ca2-ad7a-f35b0855d655",
+    "producerParentTurnId": "01a14372-26d8-71c1-9324-69de2014c67f",
+    "actualParentSessionId": "01a14087-f221-7640-b241-a40f0ae265d9",
+    "childAgentId": "01a1438c-db9b-78a1-aaf4-dfd6019cd29d",
+    "childRole": "ceos_asset_generator",
+    "childModel": "gpt-5.6-terra",
+    "childEffort": "medium"
+  },
+  "evidence": {
+    "producerTrace": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\16\\rollout-2026-10-16T10-11-07-01a1438c-db9b-78a1-aaf4-dfd6019cd29d.jsonl",
+    "producerTraceBytes": 16211728,
+    "producerTraceHash": null,
+    "producerTraceHashNote": "Hash read was unavailable because the active rollout process held the JSONL open; the immutable path and size are recorded.",
+    "routeCheck": {
+      "command": "ceos producer-route-check latest --trace <producerTrace> --json",
+      "status": "BLOCKED_NATIVE_AGENT_PARENT_MISMATCH",
+      "ok": false,
+      "detail": "Rollout is not a distinct child of the bound parent session"
+    },
+    "capabilityChallenge": {
+      "challengeId": "cap-e6f7534bc0a94588b8eb",
+      "presence": "PRESENT",
+      "serviceAvailability": "UNKNOWN",
+      "generationAllowed": true,
+      "attestation": ".ceos-runs/2026-10-16T07-03-35-218Z-production-art-eef31b/capability-attestation/image-generation.json"
+    },
+    "briefVerification": "All three briefs returned READY_TO_GENERATE at source HEAD fd77accf1d9b94f4c1775725d93eba662847eda0.",
+    "generationInvoked": false,
+    "pngCreated": 0,
+    "receiptsCreated": 0
+  },
+  "protectedAcceptedPairs": ["S19", "S20", "S21", "S22", "S23"],
+  "requiredRecovery": "Create a producer child whose rollout is verifiably descended from the run-bound trusted parent session, or create a CEOS-supported linked recovery run with a newly trusted parent binding. Do not edit session IDs or attestations manually.",
+  "verdict": "BLOCKED"
+}

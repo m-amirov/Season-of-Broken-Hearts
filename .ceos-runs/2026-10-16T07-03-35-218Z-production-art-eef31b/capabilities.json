@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ceosVersion": "0.5.23",
-  "observedAt": "2026-10-16T07:03:35.216Z",
+  "observedAt": "2026-10-16T07:10:50.072Z",
   "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
   "codexHome": "C:\\Users\\user\\.codex",
   "filesystem": {
@@ -59,16 +59,16 @@
   },
   "imageGeneration": {
     "status": "unknown",
-    "capabilityPresence": "UNKNOWN",
+    "capabilityPresence": "PRESENT",
     "serviceAvailability": "unknown",
     "provider": "native-host",
-    "callable": false,
-    "generationAllowed": false,
-    "trustedForGeneration": false,
-    "source": "cli-attestation",
-    "attestationFile": null,
-    "observedTool": null,
-    "trustScope": "manual-diagnostic-only"
+    "callable": true,
+    "generationAllowed": true,
+    "trustedForGeneration": true,
+    "source": "in-session-observation",
+    "attestationFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T07-03-35-218Z-production-art-eef31b\\capability-attestation\\image-generation.json",
+    "observedTool": "image_gen.imagegen",
+    "trustScope": "run-session-turn"
   },
   "nativeAgents": {
     "root": "C:\\Users\\user\\.codex\\agents",
@@ -83,7 +83,5 @@
     ],
     "missing": []
   },
-  "limitations": [
-    "Manual image-generation override recorded for diagnostics only; production generation requires a fresh run-scoped in-session observation or session-bound host attestation."
-  ]
+  "limitations": []
 }
