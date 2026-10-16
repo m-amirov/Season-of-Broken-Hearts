@@ -14,7 +14,7 @@
   "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
   "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-16T15-16-26-992Z-production-art-f2c045",
   "createdAt": "2026-10-16T15:16:26.997Z",
-  "updatedAt": "2026-10-16T15:46:15.014Z",
+  "updatedAt": "2026-10-16T15:47:15.419Z",
   "completedAt": null,
   "cycle": 1,
   "maxCycles": 1,
@@ -36,11 +36,11 @@
     "sourceOfTruth": "native-collected-current-HEAD-evidence",
     "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
   },
-  "state": "INVENTORIED",
-  "nextStage": "CANON_READY",
+  "state": "CANON_READY",
+  "nextStage": "GENERATING",
   "verdict": null,
   "stopReason": null,
-  "checkpointCount": 3,
+  "checkpointCount": 4,
   "scopeSha256": "d8a27c0cc825a48dd8403c3542f6f9c7ac71abd64fa9b1fb8a2e50144b95def7",
   "capabilitiesSha256": "0e39334961ad05b8e9a015aef2e637b7b0569795bc519bf173de50c3e8622638",
   "sourceAtStart": {
