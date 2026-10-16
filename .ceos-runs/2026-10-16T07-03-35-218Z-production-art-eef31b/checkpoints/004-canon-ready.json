@@ -1,0 +1,55 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-16T07:08:34.820Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Canon frozen and independent Web High pre-generation direction PASS; proceed to source-bound briefs and fresh native capability challenge.",
+  "metadata": {
+    "webPreflightStatus": "READY",
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviewId": "webhigh-ep2-next-batch-c2547ee-pregen",
+    "webReviewTraceId": "webhigh-ep2-next-batch-c2547ee-pregen",
+    "actualPixelsReceived": true,
+    "p2Advisories": [
+      "WEB-EP2-NEXT-LOCATION-DISTINCTION",
+      "WEB-EP2-NEXT-DINING-NONVERBAL",
+      "WEB-EP2-NEXT-RAIN-CUE"
+    ],
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23"
+    ],
+    "episodeFinalAcceptance": "PENDING"
+  },
+  "source": {
+    "available": true,
+    "head": "c2547ee9d6bc38234df3bd86e5022e83b4a6853b",
+    "clean": false,
+    "worktreeSha256": "4244932bdb02edffc2ba72982e52653ac508207cd4c5bfd45155519772eba615"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_CANON_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_EP2_NEXT_BATCH_CANON_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_CANON_20261016.json",
+      "type": "file",
+      "sha256": "2ccb2e2388f6576faa847eb6387dd59369de2e461201115106f9d5a23dae0e10",
+      "size": 3537
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+      "type": "file",
+      "sha256": "4a4596ac23ef016c3abe0c91ca19147e63c04cb87a7b8050ff2eadb620e7e969",
+      "size": 6224
+    }
+  ]
+}

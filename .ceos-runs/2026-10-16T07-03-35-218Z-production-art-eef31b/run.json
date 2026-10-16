@@ -13,7 +13,7 @@
   "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
   "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T07-03-35-218Z-production-art-eef31b",
   "createdAt": "2026-10-16T07:03:35.224Z",
-  "updatedAt": "2026-10-16T07:04:58.476Z",
+  "updatedAt": "2026-10-16T07:08:34.821Z",
   "completedAt": null,
   "cycle": 1,
   "maxCycles": 1,
@@ -35,11 +35,11 @@
     "sourceOfTruth": "native-collected-current-HEAD-evidence",
     "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
   },
-  "state": "INVENTORIED",
-  "nextStage": "CANON_READY",
+  "state": "CANON_READY",
+  "nextStage": "GENERATING",
   "verdict": null,
   "stopReason": null,
-  "checkpointCount": 3,
+  "checkpointCount": 4,
   "scopeSha256": "82528ef3f81541cbc696850d5f494f4950d74ffeddad5674ad6e5f3d839f45e8",
   "capabilitiesSha256": "a175fdca997bbef200a8455828a954c3a9694507b68582a4278f0f27cbb3a6fa",
   "sourceAtStart": {
@@ -50,14 +50,394 @@
   },
   "routingTrace": {
     "webPreflightStatus": "READY",
-    "webAgentsUsed": [],
-    "webReviews": [],
+    "webAgentsUsed": [
+      "ceos_art_director_web"
+    ],
+    "webReviews": [
+      {
+        "schemaVersion": 1,
+        "reviewId": "webhigh-ep2-next-batch-c2547ee-pregen",
+        "reviewTraceId": "webhigh-ep2-next-batch-c2547ee-pregen",
+        "taskId": "ceos-production-art-analysis-ep2-batch-3families",
+        "phase": "analysis",
+        "agent": "ceos_art_director_web",
+        "model": "chatgpt-web/gpt-6-sol",
+        "reasoningEffort": "high",
+        "pipeline": "production-art",
+        "sourceHead": "c2547ee9d6bc38234df3bd86e5022e83b4a6853b",
+        "status": "PASS",
+        "assurance": "strict",
+        "actualPixelsReceived": true,
+        "receivedPixelCount": 4,
+        "evidenceArtifact": {
+          "input": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+          "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+          "type": "file",
+          "sha256": "4a4596ac23ef016c3abe0c91ca19147e63c04cb87a7b8050ff2eadb620e7e969",
+          "size": 6224
+        },
+        "evidenceRefs": [
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "receivedEvidenceRefs": [
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "reviewedItems": [
+          "ep2-dining-refusal-response-cg",
+          "ep2-office-fake-terms-cg",
+          "ep2-service-refusal-workday-cg",
+          "nika-reference",
+          "matteo-reference",
+          "giulia-reference",
+          "accepted-style-contact-sheet"
+        ],
+        "visualEvidence": [
+          {
+            "ref": "nika-reference",
+            "path": "assets/characters/references/originals/nika.png",
+            "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+            "pixelDimensions": "1536x1024"
+          },
+          {
+            "ref": "matteo-reference",
+            "path": "assets/characters/references/originals/matteo.png",
+            "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+            "pixelDimensions": "1448x1086"
+          },
+          {
+            "ref": "giulia-reference",
+            "path": "assets/characters/references/originals/giulia.png",
+            "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+            "pixelDimensions": "1448x1086"
+          },
+          {
+            "ref": "accepted-style-contact-sheet",
+            "path": "artifacts/production-art/character-reference-contact-sheet.png",
+            "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+            "pixelDimensions": "contact-sheet",
+            "bytes": 2570840
+          }
+        ],
+        "familySpecificGenerationCriteria": {
+          "ep2-dining-refusal-response-cg": {
+            "scene": "day 4 family dining room",
+            "cast": [
+              "nika",
+              "matteo",
+              "giulia"
+            ],
+            "intent": "Matteo explains the refusal boundary to Giulia; Nika remains a paid organizer, not a partner.",
+            "composition": [
+              "Three-character staging with Matteo as verbal bridge, Giulia listening and Nika as professional participant.",
+              "Dining-room context reads clearly.",
+              "Calendar is a non-readable prop; interpersonal staging carries the loss of couple framing."
+            ],
+            "performance": [
+              "Nika calm and professional.",
+              "Matteo steady and respectful.",
+              "Giulia attentive, not domineering."
+            ]
+          },
+          "ep2-office-fake-terms-cg": {
+            "scene": "day 4 Villa Serena office",
+            "cast": [
+              "nika",
+              "matteo"
+            ],
+            "intent": "They define boundaries for the public arrangement.",
+            "composition": [
+              "Desk or table separates them.",
+              "Blank sheet and untouched pen remain visible.",
+              "Office identity reads clearly; paperwork is non-readable."
+            ],
+            "performance": [
+              "Measured discussion posture, no flirtation.",
+              "Clear personal space and no leaning into intimacy.",
+              "Consent and limits read through distance, posture and object placement."
+            ]
+          },
+          "ep2-service-refusal-workday-cg": {
+            "scene": "day 5 service corridor / rain-plan staging",
+            "cast": [
+              "nika",
+              "giulia",
+              "matteo"
+            ],
+            "intent": "Operational planning under early rain; Giulia speaks for herself and participates actively.",
+            "composition": [
+              "Back-of-house/service-zone geography with rain-plan logistics.",
+              "Giulia visibly leads a decision.",
+              "Matteo is professional support, not a romantic focal pair with Nika."
+            ],
+            "performance": [
+              "Nika and Giulia coordinate practically.",
+              "Giulia shows agency and initiative.",
+              "Matteo remains a work collaborator."
+            ]
+          }
+        },
+        "forbiddenVisualContradictions": [
+          "couple-coded pose, romantic contact or intimate blocking between Nika and Matteo",
+          "Nika presented as Matteo's partner rather than paid organizer",
+          "readable contract, calendar, tablet or plan text",
+          "glossy wedding-ad or beauty-shoot styling",
+          "dry inventory look reused for the rainy service-day family",
+          "Giulia passive, excluded or visually overruled",
+          "office flirtation/confession beat",
+          "dining confrontation melodrama or couple reconciliation"
+        ],
+        "portraitLandscapeFramingCriteria": {
+          "portrait1024x1536": [
+            "Independent vertical composition.",
+            "Tighter relational emphasis while retaining enough environment to identify the scene.",
+            "Dialogue-safe negative space."
+          ],
+          "landscape1672x941": [
+            "Independent horizontal composition.",
+            "Fuller scene geography and clearer prop/spatial relationships.",
+            "Dialogue-safe negative space."
+          ],
+          "shared": [
+            "No crop/stretch reuse across aspect ratios.",
+            "Full-scene visual-novel readability with stable silhouettes and clean staging."
+          ]
+        },
+        "findings": [
+          {
+            "id": "WEB-EP2-NEXT-LOCATION-DISTINCTION",
+            "family": "all",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "disposition": "GENERATION_CRITERION",
+            "note": "Encode dining room, office and service-corridor markers explicitly so the families do not collapse into one neutral interior."
+          },
+          {
+            "id": "WEB-EP2-NEXT-DINING-NONVERBAL",
+            "family": "ep2-dining-refusal-response-cg",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "disposition": "GENERATION_CRITERION",
+            "note": "Let interpersonal staging carry the calendar-label change; do not rely on readable text."
+          },
+          {
+            "id": "WEB-EP2-NEXT-RAIN-CUE",
+            "family": "ep2-service-refusal-workday-cg",
+            "severity": "P2",
+            "status": "ADVISORY",
+            "disposition": "GENERATION_CRITERION",
+            "note": "Include a clear operational rain-plan cue such as tent materials, corridor logistics or weather-prep context."
+          }
+        ],
+        "unresolved": [],
+        "decision": "PASS for pre-generation art direction; no semantic regeneration finding; apply advisory criteria to the source-bound briefs.",
+        "evidenceProvenance": "Actual reference and style pixels were supplied to the independent Web High role; Web did not generate or persist assets.",
+        "localScreenshotArtifacts": [],
+        "recordedAt": "2026-10-16T07:08:20.982Z"
+      }
+    ],
     "nativeFallbackUsed": false,
     "fallbackReason": null,
     "byCycle": {
       "1": {
-        "webAgentsUsed": [],
-        "webReviews": [],
+        "webAgentsUsed": [
+          "ceos_art_director_web"
+        ],
+        "webReviews": [
+          {
+            "schemaVersion": 1,
+            "reviewId": "webhigh-ep2-next-batch-c2547ee-pregen",
+            "reviewTraceId": "webhigh-ep2-next-batch-c2547ee-pregen",
+            "taskId": "ceos-production-art-analysis-ep2-batch-3families",
+            "phase": "analysis",
+            "agent": "ceos_art_director_web",
+            "model": "chatgpt-web/gpt-6-sol",
+            "reasoningEffort": "high",
+            "pipeline": "production-art",
+            "sourceHead": "c2547ee9d6bc38234df3bd86e5022e83b4a6853b",
+            "status": "PASS",
+            "assurance": "strict",
+            "actualPixelsReceived": true,
+            "receivedPixelCount": 4,
+            "evidenceArtifact": {
+              "input": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+              "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+              "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_WEB_ART_DIRECTION_20261016.json",
+              "type": "file",
+              "sha256": "4a4596ac23ef016c3abe0c91ca19147e63c04cb87a7b8050ff2eadb620e7e969",
+              "size": 6224
+            },
+            "evidenceRefs": [
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "receivedEvidenceRefs": [
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "reviewedItems": [
+              "ep2-dining-refusal-response-cg",
+              "ep2-office-fake-terms-cg",
+              "ep2-service-refusal-workday-cg",
+              "nika-reference",
+              "matteo-reference",
+              "giulia-reference",
+              "accepted-style-contact-sheet"
+            ],
+            "visualEvidence": [
+              {
+                "ref": "nika-reference",
+                "path": "assets/characters/references/originals/nika.png",
+                "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+                "pixelDimensions": "1536x1024"
+              },
+              {
+                "ref": "matteo-reference",
+                "path": "assets/characters/references/originals/matteo.png",
+                "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+                "pixelDimensions": "1448x1086"
+              },
+              {
+                "ref": "giulia-reference",
+                "path": "assets/characters/references/originals/giulia.png",
+                "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+                "pixelDimensions": "1448x1086"
+              },
+              {
+                "ref": "accepted-style-contact-sheet",
+                "path": "artifacts/production-art/character-reference-contact-sheet.png",
+                "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+                "pixelDimensions": "contact-sheet",
+                "bytes": 2570840
+              }
+            ],
+            "familySpecificGenerationCriteria": {
+              "ep2-dining-refusal-response-cg": {
+                "scene": "day 4 family dining room",
+                "cast": [
+                  "nika",
+                  "matteo",
+                  "giulia"
+                ],
+                "intent": "Matteo explains the refusal boundary to Giulia; Nika remains a paid organizer, not a partner.",
+                "composition": [
+                  "Three-character staging with Matteo as verbal bridge, Giulia listening and Nika as professional participant.",
+                  "Dining-room context reads clearly.",
+                  "Calendar is a non-readable prop; interpersonal staging carries the loss of couple framing."
+                ],
+                "performance": [
+                  "Nika calm and professional.",
+                  "Matteo steady and respectful.",
+                  "Giulia attentive, not domineering."
+                ]
+              },
+              "ep2-office-fake-terms-cg": {
+                "scene": "day 4 Villa Serena office",
+                "cast": [
+                  "nika",
+                  "matteo"
+                ],
+                "intent": "They define boundaries for the public arrangement.",
+                "composition": [
+                  "Desk or table separates them.",
+                  "Blank sheet and untouched pen remain visible.",
+                  "Office identity reads clearly; paperwork is non-readable."
+                ],
+                "performance": [
+                  "Measured discussion posture, no flirtation.",
+                  "Clear personal space and no leaning into intimacy.",
+                  "Consent and limits read through distance, posture and object placement."
+                ]
+              },
+              "ep2-service-refusal-workday-cg": {
+                "scene": "day 5 service corridor / rain-plan staging",
+                "cast": [
+                  "nika",
+                  "giulia",
+                  "matteo"
+                ],
+                "intent": "Operational planning under early rain; Giulia speaks for herself and participates actively.",
+                "composition": [
+                  "Back-of-house/service-zone geography with rain-plan logistics.",
+                  "Giulia visibly leads a decision.",
+                  "Matteo is professional support, not a romantic focal pair with Nika."
+                ],
+                "performance": [
+                  "Nika and Giulia coordinate practically.",
+                  "Giulia shows agency and initiative.",
+                  "Matteo remains a work collaborator."
+                ]
+              }
+            },
+            "forbiddenVisualContradictions": [
+              "couple-coded pose, romantic contact or intimate blocking between Nika and Matteo",
+              "Nika presented as Matteo's partner rather than paid organizer",
+              "readable contract, calendar, tablet or plan text",
+              "glossy wedding-ad or beauty-shoot styling",
+              "dry inventory look reused for the rainy service-day family",
+              "Giulia passive, excluded or visually overruled",
+              "office flirtation/confession beat",
+              "dining confrontation melodrama or couple reconciliation"
+            ],
+            "portraitLandscapeFramingCriteria": {
+              "portrait1024x1536": [
+                "Independent vertical composition.",
+                "Tighter relational emphasis while retaining enough environment to identify the scene.",
+                "Dialogue-safe negative space."
+              ],
+              "landscape1672x941": [
+                "Independent horizontal composition.",
+                "Fuller scene geography and clearer prop/spatial relationships.",
+                "Dialogue-safe negative space."
+              ],
+              "shared": [
+                "No crop/stretch reuse across aspect ratios.",
+                "Full-scene visual-novel readability with stable silhouettes and clean staging."
+              ]
+            },
+            "findings": [
+              {
+                "id": "WEB-EP2-NEXT-LOCATION-DISTINCTION",
+                "family": "all",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "disposition": "GENERATION_CRITERION",
+                "note": "Encode dining room, office and service-corridor markers explicitly so the families do not collapse into one neutral interior."
+              },
+              {
+                "id": "WEB-EP2-NEXT-DINING-NONVERBAL",
+                "family": "ep2-dining-refusal-response-cg",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "disposition": "GENERATION_CRITERION",
+                "note": "Let interpersonal staging carry the calendar-label change; do not rely on readable text."
+              },
+              {
+                "id": "WEB-EP2-NEXT-RAIN-CUE",
+                "family": "ep2-service-refusal-workday-cg",
+                "severity": "P2",
+                "status": "ADVISORY",
+                "disposition": "GENERATION_CRITERION",
+                "note": "Include a clear operational rain-plan cue such as tent materials, corridor logistics or weather-prep context."
+              }
+            ],
+            "unresolved": [],
+            "decision": "PASS for pre-generation art direction; no semantic regeneration finding; apply advisory criteria to the source-bound briefs.",
+            "evidenceProvenance": "Actual reference and style pixels were supplied to the independent Web High role; Web did not generate or persist assets.",
+            "localScreenshotArtifacts": [],
+            "recordedAt": "2026-10-16T07:08:20.982Z"
+          }
+        ],
         "nativeFallbackUsed": false,
         "fallbackReason": null
       }
