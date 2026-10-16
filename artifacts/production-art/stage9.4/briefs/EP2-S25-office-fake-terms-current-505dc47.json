@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "505dc47ef26bed2d56fbbb928d05d828d00c667e",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S25",
+  "assetFamilyId": "ep2-office-fake-terms-cg",
+  "cue": { "id": "ep2_fake_terms_consent_boundary", "at": [4, 0], "authoredExcerpt": "Он оставил ручку между ними. Не подтолкнул к ней и не убрал лист, когда Ника замолчала." },
+  "requiredCast": ["nika", "matteo"],
+  "narrativeActions": [
+    {"character": "matteo", "action": "Offers a seven-day public arrangement while leaving the clean sheet and pen between them without pressure."},
+    {"character": "nika", "action": "States that public gestures require a prior question, work remains separate and a no must not cost her the project."}
+  ],
+  "sceneContinuity": "Day 4 private office terms before the refusal branch; this is consent-defining work, not romance and not generic office paperwork.",
+  "location": "Villa Serena office with a working table, two chairs, clean sheet and untouched pen",
+  "timeOfDay": "Day 4 daytime, restrained warm office light",
+  "wardrobe": {"nika": "EP1-consistent practical organizer layers in off-white, muted olive and taupe", "matteo": "Controlled owner-work layers in charcoal, tobacco and stone, no ceremony styling"},
+  "emotionalTone": "Direct, measured negotiation with explicit consent and work boundaries",
+  "physicalAction": "A blank sheet and untouched pen sit between Nika and Matteo; each remains on their own side of the table with clear personal space.",
+  "facialExpression": "Nika focused and guarded, Matteo candid and respectful rather than persuasive through intimacy",
+  "forbiddenProps": ["readable contract or invented terms", "romantic embrace, leaning or flirtation", "wedding rings or glossy wedding-ad styling", "touch presented as part of the agreement", "extra cast"],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"}
+  ],
+  "desktop": {"width": 1672, "height": 941, "runtimeViewportTarget": {"width": 1920, "height": 1080}, "composition": "Independent wide office two-shot with desk/table as the boundary, blank sheet and untouched pen clearly visible, and neutral office architecture anchoring the scene.", "framing": "Eye-level medium two-shot, separate silhouettes and open lower dialogue-safe area; no intimate diagonal or cropped hands.", "requiredVisibleCast": ["nika", "matteo"]},
+  "portrait": {"width": 1024, "height": 1536, "composition": "Independent vertical office two-shot that preserves both faces, the sheet and untouched pen while keeping personal space legible.", "framing": "2:3 eye-level medium composition; both faces and the boundary objects remain above the dialogue band at 360x640, 390x844 and 430x932.", "requiredVisibleCast": ["nika", "matteo"]},
+  "canonReferences": ["artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json", "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_CANON_20261016.json", "artifacts/production-art/character-reference-contact-sheet.png"],
+  "qualityAcceptance": ["The office, clean sheet and untouched pen read without invented text.", "Consent boundaries are expressed by distance, posture and object placement, not romantic contact.", "Both formats preserve identity, action and dialogue-safe space independently.", "No extra cast or premature relationship state appears."],
+  "candidateNumber": 1,
+  "priorRejection": null
+}
