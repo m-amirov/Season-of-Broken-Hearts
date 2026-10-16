@@ -1,0 +1,26 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-16T15:46:15.012Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-run inventory complete for S24-S26: 3 dual-format pairs / 6 pending native PNGs. S19-S23 remain protected and were not regenerated or mutated. Native capability challenge, producer route check, Web High art direction and acceptance remain pending; no generation or acceptance was inferred.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "021098d8147034cb83f4df201fda1c862b0e6833",
+    "clean": false,
+    "worktreeSha256": "06adee0fa1548c906009927e64f1f25f7b9880c21c9719a15ef3b1e6938474bb"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
+      "type": "file",
+      "sha256": "48c3f53458dfb2d7c7a721282c4e14f5481c00f66b4d59e190d1e6495ebd860c",
+      "size": 6699
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-inventory",
+  "status": "INVENTORIED_PENDING_GENERATION",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "sourceHead": "021098d8147034cb83f4df201fda1c862b0e6833",
+  "branch": "codex/stage9-full-season-architecture",
+  "scope": {
+    "batch": "S24-S26",
+    "episode": 2,
+    "families": 3,
+    "pairs": 3,
+    "pngs": 6,
+    "nativePortrait": "1024x1536",
+    "nativeLandscape": "1672x941",
+    "runtimeDesktopTarget": "1920x1080",
+    "runtimeMobileViewports": ["360x640", "390x844", "430x932"]
+  },
+  "sourceEvidence": {
+    "narrative/graph.json": {
+      "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544",
+      "bytes": 241013
+    },
+    "narrative/assets.json": {
+      "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c",
+      "bytes": 10348
+    },
+    "narrative/episodes/ep-02.json": {
+      "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "bytes": 73052
+    },
+    "artifacts/production-art/stage9.4/ART_INVENTORY.md": {
+      "sha256": "6810fa4bc8638e7ade1b8c01a1c44d2fe0075c0ca4a200369d0878538ee03b72",
+      "bytes": 6631
+    },
+    "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json": {
+      "sha256": "4d28855a9edb29ae04d828d6557be52f099137c55c0cc769374b4ef98cb197c5",
+      "bytes": 15670
+    },
+    "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_CANON_20261016.json": {
+      "sha256": "2ccb2e2388f6576faa847eb6387dd59369de2e461201115106f9d5a23dae0e10",
+      "bytes": 3537
+    },
+    "config/production-art-dimensions.json": {
+      "sha256": "a95d321be585b7c66621052b5c4be32c48c989658820a807618d7e04a7b7e7ce",
+      "bytes": 1776
+    }
+  },
+  "referenceEvidence": {
+    "assets/characters/references/originals/nika.png": {
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "bytes": 2493846,
+      "pixelDimensions": "1536x1024"
+    },
+    "assets/characters/references/originals/matteo.png": {
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+      "bytes": 2130673,
+      "pixelDimensions": "1448x1086"
+    },
+    "assets/characters/references/originals/giulia.png": {
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "bytes": 2409650,
+      "pixelDimensions": "1448x1086"
+    },
+    "artifacts/production-art/character-reference-contact-sheet.png": {
+      "sha256": "8082ff00c862a228d96399193188bbb959a486911dbaf0411516277c08f69a9b",
+      "bytes": 2570840,
+      "purpose": "accepted visual-language baseline"
+    }
+  },
+  "pairs": [
+    {
+      "id": "S24",
+      "familyId": "ep2-dining-refusal-response-cg",
+      "sceneId": "ep2_refusal_response",
+      "brief": "artifacts/production-art/stage9.4/briefs/EP2-next-dining-refusal-response.json",
+      "briefSha256": "51265e8191266a4a8902426f2d107709d869cbe8a4404beeed90769e1ce05427",
+      "day": 4,
+      "location": "family-dining-room",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "requiredAction": "Matteo explains the refusal to Giulia while Nika remains a paid organizer; the couple label is removed without blame.",
+      "portrait": {
+        "path": "assets/production/cg/ep2-dining-refusal-response-cg.png",
+        "width": 1024,
+        "height": 1536,
+        "kind": "background",
+        "exists": false,
+        "status": "PENDING_NATIVE_GENERATION"
+      },
+      "landscape": {
+        "path": "assets/production/cg/ep2-dining-refusal-response-cg-landscape.png",
+        "width": 1672,
+        "height": 941,
+        "kind": "background",
+        "exists": false,
+        "status": "PENDING_NATIVE_GENERATION"
+      }
+    },
+    {
+      "id": "S25",
+      "familyId": "ep2-office-fake-terms-cg",
+      "sceneId": "ep2_fake_terms",
+      "brief": "artifacts/production-art/stage9.4/briefs/EP2-next-office-fake-terms.json",
+      "briefSha256": "230f2a15097dbe2b17a326bcab41babd614ddeda0527ad3cbd6ae429b4376739",
+      "day": 4,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo"],
+      "requiredAction": "Nika and Matteo define public-gesture and touch limits across a blank sheet with an untouched pen and clear personal space.",
+      "portrait": {
+        "path": "assets/production/cg/ep2-office-fake-terms-cg.png",
+        "width": 1024,
+        "height": 1536,
+        "kind": "background",
+        "exists": false,
+        "status": "PENDING_NATIVE_GENERATION"
+      },
+      "landscape": {
+        "path": "assets/production/cg/ep2-office-fake-terms-cg-landscape.png",
+        "width": 1672,
+        "height": 941,
+        "kind": "background",
+        "exists": false,
+        "status": "PENDING_NATIVE_GENERATION"
+      }
+    },
+    {
+      "id": "S26",
+      "familyId": "ep2-service-refusal-workday-cg",
+      "sceneId": "ep2_refusal_workday",
+      "brief": "artifacts/production-art/stage9.4/briefs/EP2-next-service-refusal-workday.json",
+      "briefSha256": "680d99e472d9bd974cf6de4e482afbb45b97dd358149f5a7a791206ed506179c",
+      "day": 5,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "giulia", "matteo"],
+      "requiredAction": "Nika and Giulia choose a rain-plan and tent placement while Giulia leads the family decision; Matteo remains a professional collaborator.",
+      "portrait": {
+        "path": "assets/production/cg/ep2-service-refusal-workday-cg.png",
+        "width": 1024,
+        "height": 1536,
+        "kind": "background",
+        "exists": false,
+        "status": "PENDING_NATIVE_GENERATION"
+      },
+      "landscape": {
+        "path": "assets/production/cg/ep2-service-refusal-workday-cg-landscape.png",
+        "width": 1672,
+        "height": 941,
+        "kind": "background",
+        "exists": false,
+        "status": "PENDING_NATIVE_GENERATION"
+      }
+    }
+  ],
+  "protectedAcceptedScope": {
+    "pairs": ["S19", "S20", "S21", "S22", "S23"],
+    "rule": "DO_NOT_MODIFY_OR_REGENERATE"
+  },
+  "checks": {
+    "completeBatchInventory": true,
+    "targetAssetsAreRealFiles": false,
+    "placeholderOrSyntheticPngs": "FORBIDDEN",
+    "portraitLandscapeMustBeDistinct": true,
+    "nativeCapabilityChallenge": "PENDING_BEFORE_GENERATION",
+    "producerRouteCheck": "PENDING_BEFORE_GENERATION",
+    "webHighArtDirection": "REQUIRED_BEFORE_GENERATION",
+    "webHighAcceptance": "REQUIRED_FOR_ALL_SIX_OUTPUTS",
+    "runtimeValidation": "PENDING_OUTPUTS"
+  },
+  "result": {
+    "inventoryComplete": true,
+    "generationAuthorized": false,
+    "reason": "Inventory stage only; no image generation, capability assertion, producer route assertion, Web High verdict or acceptance was inferred."
+  }
+}

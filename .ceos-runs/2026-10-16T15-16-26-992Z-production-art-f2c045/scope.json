@@ -1,0 +1,19 @@
+{
+  "target": "Stage 9.4: remaining S24-S43 production art",
+  "inScope": [
+    "S24-S43",
+    "EP2-EP3 dual-format CG",
+    "asset integration",
+    "runtime validation",
+    "independent art acceptance"
+  ],
+  "outOfScope": [
+    "Accepted S19-S23",
+    "EP1",
+    "story rewrites",
+    "release",
+    "publication"
+  ],
+  "acceptanceContract": "All remaining 20 pairs pass genuine PNG, SHA-256, runtime and independent Web High checks",
+  "mutationBoundary": "Only S24-S43 asset production, manifests, integration and supporting evidence"
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.23",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerBindingMode": "CURRENT_TURN",
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "createdAt": "2026-10-16T15:16:26.997Z",
+  "updatedAt": "2026-10-16T15:46:15.014Z",
+  "completedAt": null,
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "INVENTORIED",
+  "nextStage": "CANON_READY",
+  "verdict": null,
+  "stopReason": null,
+  "checkpointCount": 3,
+  "scopeSha256": "d8a27c0cc825a48dd8403c3542f6f9c7ac71abd64fa9b1fb8a2e50144b95def7",
+  "capabilitiesSha256": "0e39334961ad05b8e9a015aef2e637b7b0569795bc519bf173de50c3e8622638",
+  "sourceAtStart": {
+    "available": true,
+    "head": "021098d8147034cb83f4df201fda1c862b0e6833",
+    "clean": false,
+    "worktreeSha256": "5efcedf61ce3b3114f92b190066be16084e881a55ec26a9a749ad3db0efafe91"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "DISABLED",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": false,
+    "fallbackReason": null,
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": false,
+        "fallbackReason": null
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "ceosVersion": "0.5.23",
+  "observedAt": "2026-10-16T15:16:26.990Z",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "codexHome": "C:\\Users\\user\\.codex",
+  "filesystem": {
+    "exists": true,
+    "readable": true,
+    "writable": true
+  },
+  "executables": {
+    "node": {
+      "available": true,
+      "exitCode": 0,
+      "version": "v22.21.0",
+      "error": null
+    },
+    "npm": {
+      "available": true,
+      "exitCode": 0,
+      "version": "10.9.4",
+      "error": null
+    },
+    "git": {
+      "available": true,
+      "exitCode": 0,
+      "version": "git version 2.53.0.windows.2",
+      "error": null
+    }
+  },
+  "project": {
+    "manifest": {
+      "available": true,
+      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.codex-os\\project.yml",
+      "profile": "yandex-games",
+      "productionAccess": "read-only",
+      "error": null
+    },
+    "packageJson": {
+      "available": true,
+      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\package.json",
+      "error": null
+    },
+    "browser": {
+      "configured": true,
+      "requiredByManifest": false,
+      "gate": null,
+      "source": "dependency"
+    }
+  },
+  "web": {
+    "status": "DISABLED",
+    "ready": false,
+    "reason": "Web reasoning routes are disabled by CEOS hybrid-routing policy",
+    "manifestFile": "C:\\Users\\user\\.codex\\ceos\\hybrid-routing.json",
+    "healthUrl": "http://127.0.0.1:17841/healthz",
+    "source": "live-preflight"
+  },
+  "imageGeneration": {
+    "status": "unknown",
+    "capabilityPresence": "UNKNOWN",
+    "serviceAvailability": "unknown",
+    "provider": "native-host",
+    "callable": false,
+    "generationAllowed": false,
+    "trustedForGeneration": false,
+    "source": "unobserved",
+    "attestationFile": "C:\\Users\\user\\.codex\\ceos\\native-capabilities.json",
+    "observedTool": null,
+    "trustScope": null
+  },
+  "nativeAgents": {
+    "root": "C:\\Users\\user\\.codex\\agents",
+    "present": [
+      "ceos-bulk-checker.toml",
+      "ceos-explorer.toml",
+      "ceos-implementer.toml",
+      "ceos-asset-generator.toml",
+      "ceos-debugger.toml",
+      "ceos-reviewer.toml",
+      "ceos-verifier.toml"
+    ],
+    "missing": []
+  },
+  "limitations": [
+    "Native image-generation capability has no fresh trusted session/run attestation. Manual CLI/environment overrides are diagnostic only and cannot unlock production generation."
+  ]
+}
