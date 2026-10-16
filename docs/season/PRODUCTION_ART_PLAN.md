@@ -32,6 +32,27 @@ Native image generation is not invoked until a fresh CEOS capability challenge
 attests the current run and the applicable script batch has passed narrative
 acceptance. No asset budget is reset by this plan.
 
+### Native producer output transport
+
+The native Image Gen host may first expose a PNG in its producer-owned output
+directory. Before the mandatory CEOS output gate, materialize that exact file
+into the declared project path with the project adapter:
+
+```powershell
+node tools/production-art/materialize-producer-output.mjs `
+  --project . `
+  --source <native-generated-png> `
+  --destination assets/production/cg/<declared-output>.png `
+  --sha256 <producer-reported-sha256> `
+  --width <expected-width> --height <expected-height>
+```
+
+The adapter is no-clobber and fail-closed: missing source bytes, destination
+outside the project, an existing target, hash/dimension mismatch or transport
+integrity failure is `BLOCKED_ART_OUTPUT`. A successful materialization is
+not an art acceptance; immediately run `ceos art-output-verify` against the
+project-owned file and preserve the producer source for provenance.
+
 ## Reuse and new visual families
 
 | Family | Episodes | Reuse | New requirement |
