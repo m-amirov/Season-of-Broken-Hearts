@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "CANON_READY",
+  "runId": "2026-10-16T07-03-35-218Z-production-art-eef31b",
+  "sourceHead": "79634d32f42f3b52270a0f6f4edba17b6d52db5f",
+  "inventory": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_INVENTORY_20261016.json",
+  "scope": [
+    "ep2-dining-refusal-response-cg",
+    "ep2-office-fake-terms-cg",
+    "ep2-service-refusal-workday-cg"
+  ],
+  "identityAnchors": {
+    "nika": "Short dark bob, light complexion, practical off-white work layer; capable and observant.",
+    "matteo": "Dark wavy hair, beard, restrained summer-work layer; professional posture without ceremony styling.",
+    "giulia": "Older competent worker, grey hair, sage-grey shirt and beige utility apron; active decision-maker, never decorative.",
+    "references": [
+      "assets/characters/references/originals/nika.png",
+      "assets/characters/references/originals/matteo.png",
+      "assets/characters/references/originals/giulia.png",
+      "artifacts/production-art/character-reference-contact-sheet.png"
+    ]
+  },
+  "styleCanon": {
+    "medium": "grounded cinematic visual-novel CG, natural photographic-lighting language consistent with accepted EP2 S19-S23 art",
+    "palette": "warm Villa Serena daylight with restrained sea-and-stone neutrals, no glossy wedding-ad styling",
+    "composition": "full-scene CG, authored action readable at a glance, dialogue-safe negative space separated from faces and hands",
+    "formatRule": "portrait and landscape are separately composed native PNGs; landscape is never a crop or stretch of portrait",
+    "textRule": "documents, calendar, tablet and plans are non-readable shapes; no invented readable text"
+  },
+  "familyCanon": [
+    {
+      "familyId": "ep2-dining-refusal-response-cg",
+      "location": "family dining room",
+      "time": "day 4, after refusal",
+      "action": "Matteo explains the refusal to Giulia while Nika remains a paid organizer; the calendar loses the couple label.",
+      "forbidden": ["romantic contact", "couple pose", "ceremony styling", "Aurea knowledge"]
+    },
+    {
+      "familyId": "ep2-office-fake-terms-cg",
+      "location": "Villa Serena office",
+      "time": "day 4, private terms discussion",
+      "action": "Nika and Matteo define public-gesture and touch limits across a blank sheet with an untouched pen between them.",
+      "forbidden": ["touch or embrace", "seductive closeness", "readable invented contract text", "rings or ceremony styling"]
+    },
+    {
+      "familyId": "ep2-service-refusal-workday-cg",
+      "location": "service corridor / rain-plan staging",
+      "time": "day 5, early rain",
+      "action": "Nika and Giulia choose tent placement and Giulia speaks to her mother herself while Matteo stays in a professional role.",
+      "forbidden": ["dry inventory reuse", "romantic pairing", "Giulia sidelined", "extra cast", "readable invented plan text"]
+    }
+  ],
+  "protectedAcceptedScope": {
+    "pairs": ["S19", "S20", "S21", "S22", "S23"],
+    "rule": "DO_NOT_MODIFY_OR_REGENERATE"
+  },
+  "reviewRequirements": [
+    "Fresh Web High art-direction analysis over supplied reference pixels before generation.",
+    "Fresh run-scoped capability challenge and producer-route check before native generation.",
+    "Per-image output gate before the next generation call.",
+    "Independent Web High acceptance with actual source and runtime pixels for all six outputs.",
+    "Batch-only PARTIAL_PASS; EPISODE_FINAL_ACCEPTANCE remains pending until all 17 EP2 scenes are covered."
+  ]
+}
