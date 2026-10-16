@@ -1,0 +1,39 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-16T07:04:58.474Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "inventoryFile": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_INVENTORY_20261016.json",
+    "familyCount": 3,
+    "pairCount": 3,
+    "pngCount": 6,
+    "protectedAcceptedPairs": [
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23"
+    ],
+    "episodeFinalAcceptance": "PENDING"
+  },
+  "source": {
+    "available": true,
+    "head": "b32f00580e262aced9fbee01e928e4fac2b91462",
+    "clean": false,
+    "worktreeSha256": "ad0f4528772974d5a04140a50bd9ef62d11f0499c7f328d27b0552e2ec5b1de4"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_INVENTORY_20261016.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_EP2_NEXT_BATCH_INVENTORY_20261016.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_EP2_NEXT_BATCH_INVENTORY_20261016.json",
+      "type": "file",
+      "sha256": "4389820acf7860883209605208264f8ccecb606b96cf49f6c679b8624a687526",
+      "size": 5324
+    }
+  ]
+}
