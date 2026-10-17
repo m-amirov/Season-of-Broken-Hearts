@@ -1,0 +1,82 @@
+{
+  "index": 21,
+  "stage": "VISUAL_VERIFIED",
+  "at": "2026-10-17T10:44:32.779Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Fresh current-HEAD runtime pixels captured for S24-S26 at 1920x1080 and 390x844; local visual QA passed bounded framing, but independent Web High acceptance remains pending and preload reports missing out-of-scope ep2_bianca_arrives.",
+  "metadata": {
+    "runtimeVisualEvidence": "artifacts/evidence/STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+    "sourceHead": "6f99b01cbe1c7b50d5350045a8495e272dd67749",
+    "batch": "S24-S26",
+    "visualAcceptance": "NOT_VERIFIED",
+    "independentWebReview": "NOT_PERFORMED",
+    "episodeFinalAcceptance": false,
+    "consoleErrorBlocker": "Missing asset for out-of-scope scene ep2_bianca_arrives"
+  },
+  "source": {
+    "available": true,
+    "head": "6f99b01cbe1c7b50d5350045a8495e272dd67749",
+    "clean": false,
+    "worktreeSha256": "c7f4d144958bb3aa31b8029c881994c08703dd6fea7761b8117150c531dbae04"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+      "projectRelativePath": "artifacts/evidence/STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+      "type": "file",
+      "sha256": "8b0cbb3afe5f4573905e9ee9108be55d3dbbce68888fcb8afb7a494afcb5b13b",
+      "size": 5745
+    },
+    {
+      "input": "output/playwright/f2c045-ep2-fake-terms-desktop-6f99b01.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\f2c045-ep2-fake-terms-desktop-6f99b01.png",
+      "projectRelativePath": "output/playwright/f2c045-ep2-fake-terms-desktop-6f99b01.png",
+      "type": "file",
+      "sha256": "ea74f328c1ac62a791ac167b81b7438e35d81f0e49a36eb7434e93118a6ba71f",
+      "size": 2065612
+    },
+    {
+      "input": "output/playwright/f2c045-ep2-fake-terms-mobile-6f99b01.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\f2c045-ep2-fake-terms-mobile-6f99b01.png",
+      "projectRelativePath": "output/playwright/f2c045-ep2-fake-terms-mobile-6f99b01.png",
+      "type": "file",
+      "sha256": "5497fa6470a3eae9bfc567eb214cf8c68c07f1b64094a4584fe5741c227b9f1a",
+      "size": 412396
+    },
+    {
+      "input": "output/playwright/f2c045-ep2-refusal-response-desktop-6f99b01.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\f2c045-ep2-refusal-response-desktop-6f99b01.png",
+      "projectRelativePath": "output/playwright/f2c045-ep2-refusal-response-desktop-6f99b01.png",
+      "type": "file",
+      "sha256": "9891b01f5432609d63ec610c2c70faa8e1693c89ef7632d91e911a1f1ce40abd",
+      "size": 2324292
+    },
+    {
+      "input": "output/playwright/f2c045-ep2-refusal-response-mobile-6f99b01.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\f2c045-ep2-refusal-response-mobile-6f99b01.png",
+      "projectRelativePath": "output/playwright/f2c045-ep2-refusal-response-mobile-6f99b01.png",
+      "type": "file",
+      "sha256": "c8c9a9afb201c0f5749f5a7c21a7a076299231e2a259fe4df4405dc8af635720",
+      "size": 392202
+    },
+    {
+      "input": "output/playwright/f2c045-ep2-refusal-workday-desktop-6f99b01.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\f2c045-ep2-refusal-workday-desktop-6f99b01.png",
+      "projectRelativePath": "output/playwright/f2c045-ep2-refusal-workday-desktop-6f99b01.png",
+      "type": "file",
+      "sha256": "3d48a0db8cad0380392f5af579234953ea720cb684aa730b058f10e9dc7ca70b",
+      "size": 2551365
+    },
+    {
+      "input": "output/playwright/f2c045-ep2-refusal-workday-mobile-6f99b01.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\f2c045-ep2-refusal-workday-mobile-6f99b01.png",
+      "projectRelativePath": "output/playwright/f2c045-ep2-refusal-workday-mobile-6f99b01.png",
+      "type": "file",
+      "sha256": "d3a39f35dde69c5aa482019c74d4feaf2e666a1672cbe7f621a84916c6897690",
+      "size": 471008
+    }
+  ]
+}
