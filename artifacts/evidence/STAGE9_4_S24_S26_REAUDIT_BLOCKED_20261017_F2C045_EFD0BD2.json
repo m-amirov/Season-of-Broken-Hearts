@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_INDEPENDENT_ACCEPTANCE_NOT_PERFORMED",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "stage": "REAUDITED",
+  "sourceHead": "efd0bd2e6aaf23b15fc632afc6d7bba7447c1d1f",
+  "scope": "S24-S26 batch only",
+  "localChecks": {
+    "sourceBoundProgress": "PASS_ART_PROGRESS_REVALIDATED",
+    "acceptedPairs": 5,
+    "plannedPairs": 25,
+    "remainingPairs": 20,
+    "runtimeScenesCaptured": [
+      "ep2_refusal_response",
+      "ep2_fake_terms",
+      "ep2_refusal_workday"
+    ],
+    "runtimeScreenshots": 6,
+    "viewports": ["1920x1080", "390x844"],
+    "noHorizontalOverflow": true,
+    "noVerticalOverflow": true,
+    "targetedTests": "19 passed",
+    "s19S23Mutated": false,
+    "generationInvokedAgain": false
+  },
+  "blockers": [
+    {
+      "code": "INDEPENDENT_WEB_HIGH_REVIEW_NOT_PERFORMED",
+      "severity": "P1",
+      "details": "The local runtime pixels were captured and visually inspected, but no independent Web High acceptance receipt exists for all six runtime frames and three admitted pairs. Web preflight is READY, which does not constitute a completed review."
+    },
+    {
+      "code": "RUNTIME_PRELOAD_MISSING_OUT_OF_SCOPE_ASSET",
+      "severity": "P1",
+      "details": "The browser console reported Missing asset for scene ep2_bianca_arrives while preloading the next authored route. This scene is outside the authorized S24-S26 batch; no placeholder, new asset, or runtime workaround was introduced."
+    },
+    {
+      "code": "BATCH_NOT_EPISODE_FINAL",
+      "severity": "P1",
+      "details": "S24-S26 is a three-pair BATCH_ONLY integration. EP2 has 17 authored scenes; episode-final acceptance and release readiness remain unverified."
+    }
+  ],
+  "evidence": {
+    "runtimeVisualEvidence": "artifacts/evidence/STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+    "currentProgressIndex": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_art-progress-index_20261017_F2C045_EFD0BD2.json",
+    "webPreflight": "READY",
+    "webReviewReceipt": null
+  },
+  "protectedScope": {
+    "s19S23Touched": false,
+    "scenarioTouched": false,
+    "regenerationPerformed": false,
+    "publicationOrReleasePerformed": false
+  },
+  "verdictRule": "Do not promote local runtime PASS or mechanical batch PASS into independent art acceptance, episode-final acceptance, or release readiness."
+}

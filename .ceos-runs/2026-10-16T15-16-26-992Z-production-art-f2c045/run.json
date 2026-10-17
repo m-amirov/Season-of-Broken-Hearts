@@ -14,8 +14,8 @@
   "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
   "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T15-16-26-992Z-production-art-f2c045",
   "createdAt": "2026-10-16T15:16:26.997Z",
-  "updatedAt": "2026-10-17T10:44:32.780Z",
-  "completedAt": null,
+  "updatedAt": "2026-10-17T10:47:14.705Z",
+  "completedAt": "2026-10-17T10:47:14.705Z",
   "cycle": 1,
   "maxCycles": 1,
   "webRequired": false,
@@ -36,11 +36,15 @@
     "sourceOfTruth": "native-collected-current-HEAD-evidence",
     "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
   },
-  "state": "VISUAL_VERIFIED",
-  "nextStage": "REAUDITED",
-  "verdict": null,
-  "stopReason": null,
-  "checkpointCount": 21,
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "REAUDITED",
+    "reason": "BLOCKED: local runtime pixels and mechanical batch checks are persisted, but independent Web High acceptance was not performed; browser preload also reports missing out-of-scope ep2_bianca_arrives. Preserve BATCH_ONLY and do not claim episode-final or release acceptance."
+  },
+  "checkpointCount": 22,
   "scopeSha256": "d8a27c0cc825a48dd8403c3542f6f9c7ac71abd64fa9b1fb8a2e50144b95def7",
   "capabilitiesSha256": "7a762df3270b21a47bafdbfdce2ea7f9db79eb73ec4c324d0645017417292b3a",
   "sourceAtStart": {

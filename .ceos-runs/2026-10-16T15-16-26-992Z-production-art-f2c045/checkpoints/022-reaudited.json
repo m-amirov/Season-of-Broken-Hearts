@@ -1,0 +1,50 @@
+{
+  "index": 22,
+  "stage": "REAUDITED",
+  "at": "2026-10-17T10:47:14.703Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "BLOCKED: local runtime pixels and mechanical batch checks are persisted, but independent Web High acceptance was not performed; browser preload also reports missing out-of-scope ep2_bianca_arrives. Preserve BATCH_ONLY and do not claim episode-final or release acceptance.",
+  "metadata": {
+    "blockerReport": "artifacts/evidence/STAGE9_4_S24_S26_REAUDIT_BLOCKED_20261017_F2C045_EFD0BD2.json",
+    "sourceHead": "efd0bd2e6aaf23b15fc632afc6d7bba7447c1d1f",
+    "batch": "S24-S26",
+    "independentWebReview": "NOT_PERFORMED",
+    "webPreflight": "READY",
+    "episodeFinalAcceptance": false,
+    "releaseReady": false
+  },
+  "source": {
+    "available": true,
+    "head": "efd0bd2e6aaf23b15fc632afc6d7bba7447c1d1f",
+    "clean": false,
+    "worktreeSha256": "8013c580aba368d166c775a9e623666d10e978e88391e61be99d3f85409fdcd9"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/STAGE9_4_S24_S26_REAUDIT_BLOCKED_20261017_F2C045_EFD0BD2.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\STAGE9_4_S24_S26_REAUDIT_BLOCKED_20261017_F2C045_EFD0BD2.json",
+      "projectRelativePath": "artifacts/evidence/STAGE9_4_S24_S26_REAUDIT_BLOCKED_20261017_F2C045_EFD0BD2.json",
+      "type": "file",
+      "sha256": "e5f9365a0f28fb8361a2ae7e4a8760740374d5bf1cf6c66d819fcd5043c62fe7",
+      "size": 2392
+    },
+    {
+      "input": "artifacts/evidence/STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+      "projectRelativePath": "artifacts/evidence/STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json",
+      "type": "file",
+      "sha256": "8b0cbb3afe5f4573905e9ee9108be55d3dbbce68888fcb8afb7a494afcb5b13b",
+      "size": 5745
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_art-progress-index_20261017_F2C045_EFD0BD2.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S19_S23_art-progress-index_20261017_F2C045_EFD0BD2.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_art-progress-index_20261017_F2C045_EFD0BD2.json",
+      "type": "file",
+      "sha256": "ddff69e8a1d076a44daaf57de2ae83c80867bc82e2f40e125200886669779e50",
+      "size": 34766
+    }
+  ]
+}
