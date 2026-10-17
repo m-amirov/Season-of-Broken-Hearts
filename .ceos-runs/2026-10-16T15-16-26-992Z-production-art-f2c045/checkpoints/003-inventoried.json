@@ -16,7 +16,7 @@
   "artifacts": [
     {
       "input": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
-      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
       "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_INVENTORY_20261016_F2C045.json",
       "type": "file",
       "sha256": "48c3f53458dfb2d7c7a721282c4e14f5481c00f66b4d59e190d1e6495ebd860c",

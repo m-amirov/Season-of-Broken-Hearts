@@ -1,0 +1,26 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-16T15:47:15.417Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Canon frozen at current HEAD for S24-S26 only. S19-S23 remain protected. No Image Gen call, native capability attestation, producer-route claim, Web High verdict or acceptance was inferred.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "8b2b612d4ed1aadb8a52a4937ce07875d5b2a9a9",
+    "clean": false,
+    "worktreeSha256": "6e9503d57af5179d430cc1bfe617dc3b0ff5b30c66dd8a3b3375594d4d4b9975"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
+      "type": "file",
+      "sha256": "e72a53c54842b9de8d99341018c29dd3102beefc48d08855e6cb486074f97b48",
+      "size": 4562
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "CEOS_ART_OUTPUT_BATCH_MANIFEST",
+  "sourceHead": "4cc9e434276a8aa987f5c8af02a39f1d4ed1e1f8",
+  "scope": "S19-S23 source-bound revalidation only",
+  "historicalLedger": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_ACCEPTANCE_LEDGER_20261016.json",
+  "assets": [
+    { "id": "S19-portrait", "path": "assets/production/cg/ep2-office-morning-brief-cg.png", "kind": "background", "width": 1024, "height": 1536 },
+    { "id": "S19-landscape", "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png", "kind": "background", "width": 1672, "height": 941 },
+    { "id": "S20-portrait", "path": "assets/production/cg/ep2-office-budget-cg.png", "kind": "background", "width": 1024, "height": 1536 },
+    { "id": "S20-landscape", "path": "assets/production/cg/ep2-office-budget-cg-landscape.png", "kind": "background", "width": 1672, "height": 941 },
+    { "id": "S21-portrait", "path": "assets/production/cg/ep2-service-inventory-cg.png", "kind": "background", "width": 1024, "height": 1536 },
+    { "id": "S21-landscape", "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png", "kind": "background", "width": 1672, "height": 941 },
+    { "id": "S22-portrait", "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png", "kind": "background", "width": 1024, "height": 1536 },
+    { "id": "S22-landscape", "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png", "kind": "background", "width": 1672, "height": 941 },
+    { "id": "S23-portrait", "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png", "kind": "background", "width": 1024, "height": 1536 },
+    { "id": "S23-landscape", "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png", "kind": "background", "width": 1672, "height": 941 }
+  ]
+}

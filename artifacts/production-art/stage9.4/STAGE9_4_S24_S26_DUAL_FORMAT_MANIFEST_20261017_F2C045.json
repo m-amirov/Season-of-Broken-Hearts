@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "kind": "NARRATIVE_DUAL_FORMAT_MANIFEST",
+  "status": "MECHANICAL_OUTPUTS_MAPPED_VISUAL_ACCEPTANCE_PENDING",
+  "recordedAt": "2026-10-17T06:25:00Z",
+  "sourceHead": "4cc9e434276a8aa987f5c8af02a39f1d4ed1e1f8",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "episode": 2,
+  "scope": { "batch": "S24-S26", "pairs": 3, "pngs": 6 },
+  "sceneAssets": {
+    "ep2_refusal_response": "ep2-refusal-response-cg",
+    "ep2_fake_terms": "ep2-fake-terms-cg",
+    "ep2_refusal_workday": "ep2-refusal-workday-cg"
+  },
+  "assets": {
+    "ep2-refusal-response-cg": {
+      "portrait": { "path": "assets/production/cg/ep2-dining-refusal-response-cg.png", "sha256": "07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64", "width": 1024, "height": 1536 },
+      "desktop": { "path": "assets/production/cg/ep2-dining-refusal-response-cg-landscape.png", "sha256": "e858bff2c55d063d91dd2fb87bb74111e2796b17a74b82b320ea0597bee2a29e", "width": 1672, "height": 941 }
+    },
+    "ep2-fake-terms-cg": {
+      "portrait": { "path": "assets/production/cg/ep2-office-fake-terms-cg.png", "sha256": "76f28ed544e549997783976704a11c37fb361ed625e611238bc0a13be59516e1", "width": 1024, "height": 1536 },
+      "desktop": { "path": "assets/production/cg/ep2-office-fake-terms-cg-landscape.png", "sha256": "f6467149fda4a80ebda9f5411d99313ccd85924cbff24dddbb04c7b8754e3994", "width": 1672, "height": 941 }
+    },
+    "ep2-refusal-workday-cg": {
+      "portrait": { "path": "assets/production/cg/ep2-service-refusal-workday-cg.png", "sha256": "488a148c0653adf91b1ee420917d7d1f4e2379834d34d12336da21918d638cd8", "width": 1024, "height": 1536 },
+      "desktop": { "path": "assets/production/cg/ep2-service-refusal-workday-cg-landscape.png", "sha256": "ce495ac33b4f0a07da995a9035f7e4873ff2e4e0f03e224b6fd60e4d344cdd5e", "width": 1672, "height": 941 }
+    }
+  },
+  "sceneMappings": [
+    {
+      "sceneId": "ep2_refusal_response",
+      "assetId": "ep2-refusal-response-cg",
+      "cue": "ep2_refusal_response_boundary_dinner",
+      "manifest": "narrative/assets.json",
+      "portrait": { "path": "assets/production/cg/ep2-dining-refusal-response-cg.png", "sha256": "07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64", "bytes": 2159240, "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-imported-verify-20261017.json", "outputGate": "PASS_ART_OUTPUT_MECHANICAL", "provenance": "verified imported PNG; regeneration forbidden" },
+      "landscape": { "path": "assets/production/cg/ep2-dining-refusal-response-cg-landscape.png", "sha256": "e858bff2c55d063d91dd2fb87bb74111e2796b17a74b82b320ea0597bee2a29e", "bytes": 2366250, "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S24-landscape-candidate-1-output-20261017T0553Z.json", "outputGate": "PASS_ART_OUTPUT_MECHANICAL", "provenance": "native Image Gen output from the approved S24 brief" }
+    },
+    {
+      "sceneId": "ep2_fake_terms",
+      "assetId": "ep2-fake-terms-cg",
+      "cue": "ep2_fake_terms_consent_boundary",
+      "manifest": "narrative/assets.json",
+      "portrait": { "path": "assets/production/cg/ep2-office-fake-terms-cg.png", "sha256": "76f28ed544e549997783976704a11c37fb361ed625e611238bc0a13be59516e1", "bytes": 2161713, "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S25-portrait-candidate-1-output-20261017T0555Z.json", "outputGate": "PASS_ART_OUTPUT_MECHANICAL", "provenance": "native Image Gen output from the approved S25 brief" },
+      "landscape": { "path": "assets/production/cg/ep2-office-fake-terms-cg-landscape.png", "sha256": "f6467149fda4a80ebda9f5411d99313ccd85924cbff24dddbb04c7b8754e3994", "bytes": 2052936, "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S25-landscape-candidate-1-output-20261017T0557Z.json", "outputGate": "PASS_ART_OUTPUT_MECHANICAL", "provenance": "native Image Gen output from the approved S25 brief" }
+    },
+    {
+      "sceneId": "ep2_refusal_workday",
+      "assetId": "ep2-refusal-workday-cg",
+      "cue": "ep2_refusal_workday_rain_plan",
+      "manifest": "narrative/assets.json",
+      "portrait": { "path": "assets/production/cg/ep2-service-refusal-workday-cg.png", "sha256": "488a148c0653adf91b1ee420917d7d1f4e2379834d34d12336da21918d638cd8", "bytes": 2628354, "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S26-portrait-candidate-1-output-20261017T0559Z.json", "outputGate": "PASS_ART_OUTPUT_MECHANICAL", "provenance": "native Image Gen output from the approved S26 brief" },
+      "landscape": { "path": "assets/production/cg/ep2-service-refusal-workday-cg-landscape.png", "sha256": "ce495ac33b4f0a07da995a9035f7e4873ff2e4e0f03e224b6fd60e4d344cdd5e", "bytes": 2731018, "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S26-landscape-candidate-1-output-20261017T0601Z.json", "outputGate": "PASS_ART_OUTPUT_MECHANICAL", "provenance": "native Image Gen output from the approved S26 brief" }
+    }
+  ],
+  "runtimeMapping": { "manifest": "narrative/assets.json", "assetIdsPresent": true, "sceneAssetIdsPresent": true, "runtimeCodeChanged": false, "mappingStatus": "MAPPED_IN_PROJECT_MANIFEST" },
+  "protectedAcceptedScope": { "pairs": ["S19", "S20", "S21", "S22", "S23"], "rule": "DO_NOT_MODIFY_OR_REGENERATE" },
+  "producer": { "agentRole": "ceos_asset_generator", "model": "gpt-5.6-terra", "effort": "medium", "imageGenerationTool": "image_gen.imagegen", "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED", "traceFile": "C:/Users/user/.codex/sessions/2026/10/17/rollout-2026-10-17T08-49-12-01a14868-3a13-7992-be10-94a6eceff15b.jsonl", "traceSha256": "7376d1b4a55f8d93118648b869ee22330a1e2ec564585338884f9306fa8b9ade", "providerByteReceipt": "NOT_ATTESTED" },
+  "acceptance": { "allRequiredPngsPresent": true, "allOutputGatesPass": true, "manifestMappingsPresent": true, "sha256AndDimensionsConfirmed": true, "parentArtisticScreen": "NO_MATERIAL_P0_P1_DEFECT", "runtimeDesktopMobilePixels": "NOT_PERFORMED", "independentNarrativeArtAcceptanceV2": "NOT_PERFORMED", "visualAcceptance": "NOT_VERIFIED" },
+  "provenance": "Source-bound mechanical dual-format mapping for CEOS run f2c045. This artifact does not claim independent visual/runtime/Web acceptance or release readiness."
+}

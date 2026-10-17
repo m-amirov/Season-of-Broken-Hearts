@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "producer": {
+    "agentRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "imageGenerationTool": "image_gen.imagegen",
+    "provider": "native-host",
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "producerTrace": {
+    "path": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\17\\rollout-2026-10-17T08-49-12-01a14868-3a13-7992-be10-94a6eceff15b.jsonl",
+    "sha256": "7376d1b4a55f8d93118648b869ee22330a1e2ec564585338884f9306fa8b9ade",
+    "routeVerdict": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED"
+  },
+  "inputReferences": [
+    { "character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d" },
+    { "character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23" },
+    { "character": "giulia", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a" }
+  ],
+  "outputs": [
+    { "sceneId": "S24", "variant": "landscape", "candidateIndex": 1, "path": "assets/production/cg/ep2-dining-refusal-response-cg-landscape.png", "sha256": "e858bff2c55d063d91dd2fb87bb74111e2796b17a74b82b320ea0597bee2a29e", "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S24-landscape-candidate-1-output-20261017T0553Z.json", "mechanicalGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "S25", "variant": "portrait", "candidateIndex": 1, "path": "assets/production/cg/ep2-office-fake-terms-cg.png", "sha256": "76f28ed544e549997783976704a11c37fb361ed625e611238bc0a13be59516e1", "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S25-portrait-candidate-1-output-20261017T0555Z.json", "mechanicalGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "S25", "variant": "landscape", "candidateIndex": 1, "path": "assets/production/cg/ep2-office-fake-terms-cg-landscape.png", "sha256": "f6467149fda4a80ebda9f5411d99313ccd85924cbff24dddbb04c7b8754e3994", "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S25-landscape-candidate-1-output-20261017T0557Z.json", "mechanicalGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "S26", "variant": "portrait", "candidateIndex": 1, "path": "assets/production/cg/ep2-service-refusal-workday-cg.png", "sha256": "488a148c0653adf91b1ee420917d7d1f4e2379834d34d12336da21918d638cd8", "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S26-portrait-candidate-1-output-20261017T0559Z.json", "mechanicalGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "S26", "variant": "landscape", "candidateIndex": 1, "path": "assets/production/cg/ep2-service-refusal-workday-cg-landscape.png", "sha256": "ce495ac33b4f0a07da995a9035f7e4873ff2e4e0f03e224b6fd60e4d344cdd5e", "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.4/output-receipts/EP2-S26-landscape-candidate-1-output-20261017T0601Z.json", "mechanicalGate": "PASS_ART_OUTPUT_MECHANICAL" }
+  ]
+}

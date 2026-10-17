@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "stage": "INTEGRATED",
+  "status": "BLOCKED",
+  "blockerCode": "NARRATIVE_DUAL_FORMAT_FULL_EPISODE_COVERAGE",
+  "actionId": "798294152000b6f97b03c77052a37a8ea27196e29a929b9a0e92a3a81b0e0028",
+  "sourceHead": "4cc9e434276a8aa987f5c8af02a39f1d4ed1e1f8",
+  "boundedBatch": {
+    "scope": "S24-S26",
+    "dualFormatManifest": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_F2C045.json",
+    "requiredScenes": 3,
+    "mappedScenes": 3,
+    "variantFilesChecked": 6,
+    "allOutputGatesPass": true,
+    "runtimeMappingsPass": true,
+    "rightsShaPass": true,
+    "visualAcceptance": "NOT_VERIFIED"
+  },
+  "ceosRequirement": {
+    "episode": 2,
+    "requiredEpisodeScenes": 17,
+    "mappedScenes": 3,
+    "unmappedScenes": [
+      "ep2_morning_brief",
+      "ep2_wedding_budget",
+      "ep2_workday_inventory",
+      "ep2_family_rehearsal",
+      "ep2_family_rehearsal_response",
+      "ep2_refusal_bianca_arrival",
+      "ep2_bianca_arrives",
+      "ep2_bianca_professional_response",
+      "ep2_bianca_pushback_response",
+      "ep2_public_agreement",
+      "ep2_public_refusal",
+      "ep2_rehearsal_failure",
+      "ep2_rooftop_after",
+      "ep2_transition"
+    ],
+    "reason": "The CEOS narrative-game INTEGRATED gate requires every authored EP2 scene to map to verified portrait and desktop PNGs. Completing only the authorized S24-S26 batch cannot satisfy that complete-episode gate."
+  },
+  "scopeProtection": {
+    "s19S23Touched": false,
+    "scenarioChanged": false,
+    "additionalGenerationPerformed": false,
+    "pushMergePublishPerformed": false
+  },
+  "nextRequiredAction": "Obtain explicit scope authorization and approved briefs/evidence for the remaining EP2 scenes, or use a CEOS contract/run mode that explicitly permits bounded-batch integration; do not fabricate mappings or placeholders."
+}

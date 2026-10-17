@@ -16,7 +16,7 @@
   "artifacts": [
     {
       "input": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
-      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
       "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_CANON_FREEZE_20261016_F2C045.json",
       "type": "file",
       "sha256": "e72a53c54842b9de8d99341018c29dd3102beefc48d08855e6cb486074f97b48",

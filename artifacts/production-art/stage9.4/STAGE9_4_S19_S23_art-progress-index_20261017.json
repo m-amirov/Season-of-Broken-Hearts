@@ -1,0 +1,985 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_SOURCE_BOUND_REVALIDATION",
+  "status": "SOURCE_CURRENTNESS_REVALIDATED",
+  "historicalLedger": {
+    "path": "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_ACCEPTANCE_LEDGER_20261016.json",
+    "sha256": "60127f6975a33ab10fd7e1961035f3488a0a24a00d1577da0b797b8e202c3222",
+    "historicalHead": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+    "plannedPairs": 25,
+    "plannedPngs": 50,
+    "acceptedPairIds": [
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23"
+    ]
+  },
+  "sourceHeads": {
+    "historical": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+    "current": "4cc9e434276a8aa987f5c8af02a39f1d4ed1e1f8"
+  },
+  "currentness": {
+    "mode": "SOURCE_BOUND_REVALIDATION",
+    "historicalLedgerImmutable": true,
+    "acceptedPngsMutated": false,
+    "generationInvoked": false
+  },
+  "dependencyComparisons": [
+    {
+      "path": "narrative/graph.json",
+      "historicalRef": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+      "historical": {
+        "bytes": 241013,
+        "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544"
+      },
+      "current": {
+        "bytes": 241013,
+        "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544"
+      },
+      "changes": []
+    },
+    {
+      "path": "narrative/assets.json",
+      "historicalRef": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+      "historical": {
+        "bytes": 10348,
+        "sha256": "7bfc2229f8bc70985a4805e1c0750ee9805e26bba0e0bbfac823cb3c1b79ec5c"
+      },
+      "current": {
+        "bytes": 12265,
+        "sha256": "abc0b5c89a0aa16714fd6b3c13afcdf2ff2ea09bd7b502c1bb49a9034028757a"
+      },
+      "changes": [
+        {
+          "pointer": "assets.ep2-fake-terms-cg.kind",
+          "before": null,
+          "after": "production-cg"
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.sceneIds[0]",
+          "before": null,
+          "after": "ep2_fake_terms"
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-office-fake-terms-cg.png"
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.landscape.dimensions.height",
+          "before": null,
+          "after": 941
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.landscape.dimensions.width",
+          "before": null,
+          "after": 1672
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.landscape.sha256",
+          "before": null,
+          "after": "f6467149fda4a80ebda9f5411d99313ccd85924cbff24dddbb04c7b8754e3994"
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.landscape.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-office-fake-terms-cg-landscape.png"
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.portrait.dimensions.height",
+          "before": null,
+          "after": 1536
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.portrait.dimensions.width",
+          "before": null,
+          "after": 1024
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.portrait.sha256",
+          "before": null,
+          "after": "76f28ed544e549997783976704a11c37fb361ed625e611238bc0a13be59516e1"
+        },
+        {
+          "pointer": "assets.ep2-fake-terms-cg.variants.portrait.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-office-fake-terms-cg.png"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.kind",
+          "before": null,
+          "after": "production-cg"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.sceneIds[0]",
+          "before": null,
+          "after": "ep2_refusal_response"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-dining-refusal-response-cg.png"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.landscape.dimensions.height",
+          "before": null,
+          "after": 941
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.landscape.dimensions.width",
+          "before": null,
+          "after": 1672
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.landscape.sha256",
+          "before": null,
+          "after": "e858bff2c55d063d91dd2fb87bb74111e2796b17a74b82b320ea0597bee2a29e"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.landscape.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-dining-refusal-response-cg-landscape.png"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.portrait.dimensions.height",
+          "before": null,
+          "after": 1536
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.portrait.dimensions.width",
+          "before": null,
+          "after": 1024
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.portrait.sha256",
+          "before": null,
+          "after": "07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64"
+        },
+        {
+          "pointer": "assets.ep2-refusal-response-cg.variants.portrait.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-dining-refusal-response-cg.png"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.kind",
+          "before": null,
+          "after": "production-cg"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.sceneIds[0]",
+          "before": null,
+          "after": "ep2_refusal_workday"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-service-refusal-workday-cg.png"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.landscape.dimensions.height",
+          "before": null,
+          "after": 941
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.landscape.dimensions.width",
+          "before": null,
+          "after": 1672
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.landscape.sha256",
+          "before": null,
+          "after": "ce495ac33b4f0a07da995a9035f7e4873ff2e4e0f03e224b6fd60e4d344cdd5e"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.landscape.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-service-refusal-workday-cg-landscape.png"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.portrait.dimensions.height",
+          "before": null,
+          "after": 1536
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.portrait.dimensions.width",
+          "before": null,
+          "after": 1024
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.portrait.sha256",
+          "before": null,
+          "after": "488a148c0653adf91b1ee420917d7d1f4e2379834d34d12336da21918d638cd8"
+        },
+        {
+          "pointer": "assets.ep2-refusal-workday-cg.variants.portrait.src",
+          "before": null,
+          "after": "/assets/production/cg/ep2-service-refusal-workday-cg.png"
+        },
+        {
+          "pointer": "status",
+          "before": "STAGE9_4_EP2_BATCH_RUNTIME_MAPPED_WEB_ACCEPTED_PENDING_CEOS_ROUTE_AND_FULL_ART_COVERAGE",
+          "after": "STAGE9_4_EP2_S24_S26_RUNTIME_MAPPED_MECHANICAL_PASS_VISUAL_ACCEPTANCE_PENDING"
+        }
+      ]
+    },
+    {
+      "path": "narrative/episodes/ep-02.json",
+      "historicalRef": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+      "historical": {
+        "bytes": 73052,
+        "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e"
+      },
+      "current": {
+        "bytes": 73052,
+        "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e"
+      },
+      "changes": []
+    },
+    {
+      "path": "config/production-art-dimensions.json",
+      "historicalRef": "94e7a6365827d7e357aa24dd23d2cfdf161557bd",
+      "historical": {
+        "bytes": 1776,
+        "sha256": "a95d321be585b7c66621052b5c4be32c48c989658820a807618d7e04a7b7e7ce"
+      },
+      "current": {
+        "bytes": 1776,
+        "sha256": "a95d321be585b7c66621052b5c4be32c48c989658820a807618d7e04a7b7e7ce"
+      },
+      "changes": []
+    }
+  ],
+  "acceptedPairs": [
+    {
+      "pairId": "S19",
+      "sceneId": "ep2_morning_brief",
+      "assetId": "ep2-morning-brief-cg",
+      "historical": {
+        "sceneId": "ep2_morning_brief",
+        "assetId": "ep2-morning-brief-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+          "kind": "production-cg",
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+              "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+              "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+            "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+            "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "current": {
+        "sceneId": "ep2_morning_brief",
+        "assetId": "ep2-morning-brief-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+          "kind": "production-cg",
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+              "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+              "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-office-morning-brief-cg.png",
+            "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+            "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "visualResultChanged": false,
+      "runtimeMappingUnchanged": true,
+      "assets": [
+        {
+          "format": "portrait",
+          "path": "assets/production/cg/ep2-office-morning-brief-cg.png",
+          "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+          "bytes": 2516178,
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          }
+        },
+        {
+          "format": "landscape",
+          "path": "assets/production/cg/ep2-office-morning-brief-cg-landscape.png",
+          "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+          "bytes": 2506516,
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          }
+        }
+      ]
+    },
+    {
+      "pairId": "S20",
+      "sceneId": "ep2_wedding_budget",
+      "assetId": "ep2-wedding-budget-cg",
+      "historical": {
+        "sceneId": "ep2_wedding_budget",
+        "assetId": "ep2-wedding-budget-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-office-budget-cg.png",
+          "kind": "production-cg",
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-office-budget-cg.png",
+              "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+              "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-office-budget-cg.png",
+            "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+            "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "current": {
+        "sceneId": "ep2_wedding_budget",
+        "assetId": "ep2-wedding-budget-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-office-budget-cg.png",
+          "kind": "production-cg",
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-office-budget-cg.png",
+              "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+              "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-office-budget-cg.png",
+            "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-office-budget-cg-landscape.png",
+            "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "visualResultChanged": false,
+      "runtimeMappingUnchanged": true,
+      "assets": [
+        {
+          "format": "portrait",
+          "path": "assets/production/cg/ep2-office-budget-cg.png",
+          "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+          "bytes": 2425207,
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          }
+        },
+        {
+          "format": "landscape",
+          "path": "assets/production/cg/ep2-office-budget-cg-landscape.png",
+          "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005",
+          "bytes": 2408297,
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          }
+        }
+      ]
+    },
+    {
+      "pairId": "S21",
+      "sceneId": "ep2_workday_inventory",
+      "assetId": "ep2-workday-inventory-cg",
+      "historical": {
+        "sceneId": "ep2_workday_inventory",
+        "assetId": "ep2-workday-inventory-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-service-inventory-cg.png",
+          "kind": "production-cg",
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-service-inventory-cg.png",
+              "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+              "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-service-inventory-cg.png",
+            "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+            "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "current": {
+        "sceneId": "ep2_workday_inventory",
+        "assetId": "ep2-workday-inventory-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-service-inventory-cg.png",
+          "kind": "production-cg",
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-service-inventory-cg.png",
+              "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+              "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-service-inventory-cg.png",
+            "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-service-inventory-cg-landscape.png",
+            "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "visualResultChanged": false,
+      "runtimeMappingUnchanged": true,
+      "assets": [
+        {
+          "format": "portrait",
+          "path": "assets/production/cg/ep2-service-inventory-cg.png",
+          "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+          "bytes": 2365508,
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          }
+        },
+        {
+          "format": "landscape",
+          "path": "assets/production/cg/ep2-service-inventory-cg-landscape.png",
+          "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+          "bytes": 2312711,
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          }
+        }
+      ]
+    },
+    {
+      "pairId": "S22",
+      "sceneId": "ep2_family_rehearsal",
+      "assetId": "ep2-family-rehearsal-cg",
+      "historical": {
+        "sceneId": "ep2_family_rehearsal",
+        "assetId": "ep2-family-rehearsal-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "kind": "production-cg",
+          "sceneIds": [
+            "ep2_family_rehearsal"
+          ],
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+              "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+              "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+            "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+            "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "current": {
+        "sceneId": "ep2_family_rehearsal",
+        "assetId": "ep2-family-rehearsal-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "kind": "production-cg",
+          "sceneIds": [
+            "ep2_family_rehearsal"
+          ],
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+              "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+              "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+            "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+            "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "visualResultChanged": false,
+      "runtimeMappingUnchanged": true,
+      "assets": [
+        {
+          "format": "portrait",
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg.png",
+          "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+          "bytes": 2726336,
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          }
+        },
+        {
+          "format": "landscape",
+          "path": "assets/production/cg/ep2-courtyard-rehearsal-cg-landscape.png",
+          "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+          "bytes": 2817060,
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          }
+        }
+      ]
+    },
+    {
+      "pairId": "S23",
+      "sceneId": "ep2_family_rehearsal_response",
+      "assetId": "ep2-family-rehearsal-response-cg",
+      "historical": {
+        "sceneId": "ep2_family_rehearsal_response",
+        "assetId": "ep2-family-rehearsal-response-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+          "kind": "production-cg",
+          "sceneIds": [
+            "ep2_family_rehearsal_response"
+          ],
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+              "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+              "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+            "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+            "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "current": {
+        "sceneId": "ep2_family_rehearsal_response",
+        "assetId": "ep2-family-rehearsal-response-cg",
+        "assetRecord": {
+          "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+          "kind": "production-cg",
+          "sceneIds": [
+            "ep2_family_rehearsal_response"
+          ],
+          "variants": {
+            "portrait": {
+              "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+              "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+              "dimensions": {
+                "width": 1024,
+                "height": 1536
+              }
+            },
+            "landscape": {
+              "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+              "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+              "dimensions": {
+                "width": 1672,
+                "height": 941
+              }
+            }
+          }
+        },
+        "formats": {
+          "portrait": {
+            "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+            "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+            "dimensions": {
+              "width": 1024,
+              "height": 1536
+            }
+          },
+          "landscape": {
+            "src": "/assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+            "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+            "dimensions": {
+              "width": 1672,
+              "height": 941
+            }
+          }
+        }
+      },
+      "visualResultChanged": false,
+      "runtimeMappingUnchanged": true,
+      "assets": [
+        {
+          "format": "portrait",
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg.png",
+          "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+          "bytes": 2529135,
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          }
+        },
+        {
+          "format": "landscape",
+          "path": "assets/production/cg/ep2-dining-rehearsal-response-cg-landscape.png",
+          "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+          "bytes": 2413767,
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          }
+        }
+      ]
+    }
+  ],
+  "mechanicalRevalidation": {
+    "path": "artifacts/production-art/stage9.4/receipts/STAGE9_4_S19_S23_SOURCE_REVALIDATION_OUTPUT_BATCH_20261017.json",
+    "sha256": "1efe49e680ec6402faae872847a31f0734a534e037a90d65a743a9bc0a78c6e1",
+    "status": "PASS_ART_BATCH_MECHANICAL",
+    "inspected": [
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-office-morning-brief-cg.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "ebd85343315aea4a73d0bdfe9d209c6a202477ed1278878d15a8800c4771bd35",
+        "bytes": 2516178,
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-office-morning-brief-cg-landscape.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "17b0e45c73865b7f12cd79c29b68340653870ce0f519c0b593b1ba66a4338299",
+        "bytes": 2506516,
+        "dimensions": {
+          "width": 1672,
+          "height": 941
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-office-budget-cg.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793",
+        "bytes": 2425207,
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-office-budget-cg-landscape.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005",
+        "bytes": 2408297,
+        "dimensions": {
+          "width": 1672,
+          "height": 941
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-service-inventory-cg.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "62082c1a887d8a3265634d55842f29d91d3167875a1c0abd4a357609842ddb47",
+        "bytes": 2365508,
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-service-inventory-cg-landscape.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "26455fdadfa4c34d787566007b4c5a89d98f0db5c9a7f5b3d682c6e85eec2867",
+        "bytes": 2312711,
+        "dimensions": {
+          "width": 1672,
+          "height": 941
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-courtyard-rehearsal-cg.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "dc66dc8de4c0cf3208e763f5f9614f82fff03bb516d21bedcbf5c7a4c27dcfc8",
+        "bytes": 2726336,
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-courtyard-rehearsal-cg-landscape.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "93ec664a03508a8b0cc1fafc33f5951bad9af89c4cd40be915629bcee8414b90",
+        "bytes": 2817060,
+        "dimensions": {
+          "width": 1672,
+          "height": 941
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-dining-rehearsal-response-cg.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "0c0d1dfe1330639da156509f5f1397b516410422f37d31d5247f3cc411c10dcc",
+        "bytes": 2529135,
+        "dimensions": {
+          "width": 1024,
+          "height": 1536
+        }
+      },
+      {
+        "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-dining-rehearsal-response-cg-landscape.png",
+        "status": "PASS_ART_OUTPUT_MECHANICAL",
+        "sha256": "098eb8f09faa6c21dab94eaf162b875c9a20c1562d1846aae6bb2f00ab642031",
+        "bytes": 2413767,
+        "dimensions": {
+          "width": 1672,
+          "height": 941
+        }
+      }
+    ]
+  },
+  "deferredPairs": [
+    {
+      "id": "S24",
+      "status": "MECHANICAL_ONLY_NOT_ART_ACCEPTED"
+    },
+    {
+      "id": "S25",
+      "status": "MECHANICAL_ONLY_NOT_ART_ACCEPTED"
+    },
+    {
+      "id": "S26",
+      "status": "MECHANICAL_ONLY_NOT_ART_ACCEPTED"
+    }
+  ],
+  "impact": {
+    "acceptedPairsUnaffected": true,
+    "affectedAcceptedPairs": [],
+    "visualResultChangedPairs": [],
+    "deferredPairsRemainSeparate": true
+  },
+  "visualReevaluation": {
+    "status": "NOT_REQUIRED",
+    "reason": "Accepted S19-S23 mappings and PNG bytes are unchanged; current asset-map drift is confined outside the accepted scope."
+  },
+  "generatedAt": "2026-10-17T08:57:46.161Z"
+}

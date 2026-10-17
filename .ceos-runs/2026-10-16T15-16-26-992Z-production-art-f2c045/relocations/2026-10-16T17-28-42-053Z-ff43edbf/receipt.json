@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "at": "2026-10-16T17:28:42.320Z",
+  "originalProject": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "targetProject": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "gitHead": "4793ff5c9ecb3fb26fbdaa242562d6cdd285d215",
+  "originalRunSha256": "aa3b21dc3799e9830c61cc9726a16a2d4e79fa5cb0a208b17dc4b127ec2c7f90",
+  "originals": [
+    {
+      "path": "run.json",
+      "sha256": "aa3b21dc3799e9830c61cc9726a16a2d4e79fa5cb0a208b17dc4b127ec2c7f90"
+    },
+    {
+      "path": "checkpoints\\001-scope-locked.json",
+      "sha256": "bc266d79af025e9503b9c3aca06edbe427241089f361c66d859a388f7ff16493"
+    },
+    {
+      "path": "checkpoints\\002-capabilities-checked.json",
+      "sha256": "3927de97d0c081b0d39a02c316544c319377f493a110793ef7f3a12991b456e8"
+    },
+    {
+      "path": "checkpoints\\003-inventoried.json",
+      "sha256": "51fbbe0a2c5c30d21a2653bcc063f9d256cca77978a37d08437b7f43323b7873"
+    },
+    {
+      "path": "checkpoints\\004-canon-ready.json",
+      "sha256": "94ca2e2c5fe11ed37c737f5fc1df6dc94558d8c0de63e1bc7fb93510d7be51ae"
+    }
+  ],
+  "capabilityTrustInherited": false,
+  "generatedAssetsInherited": false
+}

@@ -1,0 +1,49 @@
+{
+  "index": 19,
+  "stage": "RUN_REOPENED",
+  "at": "2026-10-17T07:09:30.256Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "previousVerdict": "BLOCKED",
+  "previousStopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "INTEGRATED",
+    "reason": "S24-S26 batch integration evidence is complete, but CEOS full-EP2 dual-format coverage gate blocks INTEGRATED: 14 authored scenes remain unmapped outside authorized scope. No S19-S23 or scenario changes."
+  },
+  "reopenReason": "Scoped integration coverage fixed",
+  "dualFormatBatchRecovery": {
+    "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+    "coverageMode": "BATCH_ONLY",
+    "episode": 2,
+    "requiredScenes": 17,
+    "mappedScenes": 3,
+    "coveredSceneIds": [
+      "ep2_fake_terms",
+      "ep2_refusal_response",
+      "ep2_refusal_workday"
+    ],
+    "fullEpisodeCovered": false,
+    "episodeFinalAcceptance": "NOT_VERIFIED",
+    "releaseReady": false,
+    "uniqueAssets": 3,
+    "variantFilesChecked": 6,
+    "visualAcceptance": "NOT_VERIFIED",
+    "errors": [],
+    "disclaimer": "Mechanical verification of these authored scenes only. BATCH_ONLY is never episode final acceptance; real runtime/Web High review remains mandatory."
+  },
+  "recoveryCategory": "NARRATIVE_SCOPED_DUAL_FORMAT_ONLY",
+  "episodeFinalAcceptance": "NOT_VERIFIED",
+  "releaseReady": false,
+  "generationCandidateReused": true,
+  "artisticAcceptance": "NOT_VERIFIED",
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_F2C045.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_F2C045.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_F2C045.json",
+      "type": "file",
+      "sha256": "2a8192cd699aa27a85553092fcdbaecf6c1fc8f4b12ad11b858964c8ce211bd3",
+      "size": 6469
+    }
+  ]
+}

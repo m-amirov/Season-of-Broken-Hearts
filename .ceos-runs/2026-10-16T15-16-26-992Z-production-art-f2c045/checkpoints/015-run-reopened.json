@@ -1,0 +1,58 @@
+{
+  "index": 15,
+  "stage": "RUN_REOPENED",
+  "at": "2026-10-17T05:23:49.557Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "previousVerdict": "BLOCKED",
+  "previousStopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "GENERATING",
+    "reason": "BLOCKED_ART_OUTPUT: S24 portrait native PNG exists only in native generated-images storage (1024x1536, SHA-256 07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64), but copy to target assets/production/cg/ep2-dining-refusal-response-cg.png failed; art-output-verify returned ART_FILE_NOT_FOUND. Fail-closed stop: no next Image Gen call; S24 landscape and S25-S26 not generated. producerParentSessionId=null remains expected CURRENT_TURN state."
+  },
+  "reopenReason": "Recovered original S24 portrait PNG without regeneration",
+  "artOutputRecovery": {
+    "status": "PASS_ART_OUTPUT_TRANSPORT_RECOVERY",
+    "sha256": "07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64",
+    "kind": "background",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2159240,
+    "targetPath": "assets/production/cg/ep2-dining-refusal-response-cg.png",
+    "failedReceipt": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-verify.json",
+    "passReceipt": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-imported-verify-20261017.json",
+    "nativeSourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a14655-dcd9-7de0-84e2-fe22228ca298\\exec-2c98716e-6070-4e14-972c-2f371023912b.png",
+    "sourceSha256": "07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64",
+    "visualAcceptance": "NOT_VERIFIED",
+    "generationInvokedAgain": false
+  },
+  "recoveryCategory": "NATIVE_IMAGE_OUTPUT_TRANSPORT_ONLY",
+  "generationCandidateReused": true,
+  "artisticAcceptance": "NOT_VERIFIED",
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-verify.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\output-receipts\\S24-portrait-art-output-verify.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-verify.json",
+      "type": "file",
+      "sha256": "f495dac2d62f908591b8c1fcf10c852bb45c668e25622e5c77cd5ebe73e3a1a8",
+      "size": 345
+    },
+    {
+      "input": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-imported-verify-20261017.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.4\\output-receipts\\S24-portrait-art-output-imported-verify-20261017.json",
+      "projectRelativePath": "artifacts/production-art/stage9.4/output-receipts/S24-portrait-art-output-imported-verify-20261017.json",
+      "type": "file",
+      "sha256": "a434198bf5c48bcd51b6cd70e56183999205003cac18de30a135548bf9084095",
+      "size": 827
+    },
+    {
+      "input": "assets/production/cg/ep2-dining-refusal-response-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-dining-refusal-response-cg.png",
+      "projectRelativePath": "assets/production/cg/ep2-dining-refusal-response-cg.png",
+      "type": "file",
+      "sha256": "07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64",
+      "size": 2159240
+    }
+  ]
+}

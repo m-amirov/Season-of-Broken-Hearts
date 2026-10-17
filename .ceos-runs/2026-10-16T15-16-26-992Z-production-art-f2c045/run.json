@@ -11,10 +11,10 @@
   "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
   "producerBindingMode": "CURRENT_TURN",
   "producerParentSessionId": null,
-  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
-  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.ceos-runs\\2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T15-16-26-992Z-production-art-f2c045",
   "createdAt": "2026-10-16T15:16:26.997Z",
-  "updatedAt": "2026-10-16T15:47:15.419Z",
+  "updatedAt": "2026-10-17T07:09:30.258Z",
   "completedAt": null,
   "cycle": 1,
   "maxCycles": 1,
@@ -36,13 +36,13 @@
     "sourceOfTruth": "native-collected-current-HEAD-evidence",
     "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
   },
-  "state": "CANON_READY",
-  "nextStage": "GENERATING",
+  "state": "INTEGRATED",
+  "nextStage": "INTEGRATED",
   "verdict": null,
   "stopReason": null,
-  "checkpointCount": 4,
+  "checkpointCount": 19,
   "scopeSha256": "d8a27c0cc825a48dd8403c3542f6f9c7ac71abd64fa9b1fb8a2e50144b95def7",
-  "capabilitiesSha256": "0e39334961ad05b8e9a015aef2e637b7b0569795bc519bf173de50c3e8622638",
+  "capabilitiesSha256": "7a762df3270b21a47bafdbfdce2ea7f9db79eb73ec4c324d0645017417292b3a",
   "sourceAtStart": {
     "available": true,
     "head": "021098d8147034cb83f4df201fda1c862b0e6833",
@@ -63,5 +63,12 @@
         "fallbackReason": null
       }
     }
-  }
+  },
+  "relocation": {
+    "receiptPath": "relocations/2026-10-16T17-28-42-053Z-ff43edbf/receipt.json",
+    "fromProject": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+    "at": "2026-10-16T17:28:42.320Z",
+    "originalRunSha256": "aa3b21dc3799e9830c61cc9726a16a2d4e79fa5cb0a208b17dc4b127ec2c7f90"
+  },
+  "reopenCount": 2
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "ceosVersion": "0.5.23",
-  "observedAt": "2026-10-16T15:16:26.990Z",
-  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts",
+  "ceosVersion": "0.5.33",
+  "observedAt": "2026-10-17T05:48:19.623Z",
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
   "codexHome": "C:\\Users\\user\\.codex",
   "filesystem": {
     "exists": true,
@@ -32,14 +32,14 @@
   "project": {
     "manifest": {
       "available": true,
-      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\.codex-os\\project.yml",
+      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.codex-os\\project.yml",
       "profile": "yandex-games",
       "productionAccess": "read-only",
       "error": null
     },
     "packageJson": {
       "available": true,
-      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\Season of Broken Hearts\\package.json",
+      "file": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\package.json",
       "error": null
     },
     "browser": {
@@ -59,16 +59,16 @@
   },
   "imageGeneration": {
     "status": "unknown",
-    "capabilityPresence": "UNKNOWN",
+    "capabilityPresence": "PRESENT",
     "serviceAvailability": "unknown",
     "provider": "native-host",
-    "callable": false,
-    "generationAllowed": false,
-    "trustedForGeneration": false,
-    "source": "unobserved",
-    "attestationFile": "C:\\Users\\user\\.codex\\ceos\\native-capabilities.json",
-    "observedTool": null,
-    "trustScope": null
+    "callable": true,
+    "generationAllowed": true,
+    "trustedForGeneration": true,
+    "source": "in-session-observation",
+    "attestationFile": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-16T15-16-26-992Z-production-art-f2c045\\capability-attestation\\image-generation.json",
+    "observedTool": "image_gen.imagegen",
+    "trustScope": "run-session-window"
   },
   "nativeAgents": {
     "root": "C:\\Users\\user\\.codex\\agents",
@@ -83,7 +83,5 @@
     ],
     "missing": []
   },
-  "limitations": [
-    "Native image-generation capability has no fresh trusted session/run attestation. Manual CLI/environment overrides are diagnostic only and cannot unlock production generation."
-  ]
+  "limitations": []
 }
