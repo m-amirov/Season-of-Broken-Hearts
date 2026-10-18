@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "phase": "brief-prep",
+  "reviewId": "EP2_REMAINING7_WEB_BRIEF_REVIEW_20261018",
+  "reviewTraceId": "01a14be6-3ccf-7441-8175-794c5e69f30b",
+  "taskId": "stage9.4-ep2-remaining7-source-bound-brief-prep-20261018",
+  "agent": "ceos_art_director_web",
+  "agentId": "01a14be6-3ccf-7441-8175-794c5e69f30b",
+  "sourcePacket": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json",
+  "clarificationRecord": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_CLARIFICATIONS_20261018_5A99008.json",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "status": "PASS",
+  "actualPixelsReceived": false,
+  "reviewedSceneIds": [
+    "ep2_bianca_professional_response",
+    "ep2_bianca_pushback_response",
+    "ep2_public_agreement",
+    "ep2_public_refusal",
+    "ep2_rehearsal_failure",
+    "ep2_rooftop_after",
+    "ep2_transition"
+  ],
+  "reviewedFamilyIds": [
+    "ep2-bianca-audit-cg",
+    "ep2-public-gesture-cg",
+    "ep2-service-rehearsal-failure-cg",
+    "ep2-rooftop-after-cg",
+    "ep2-office-aurea-transition-cg"
+  ],
+  "findings": [
+    {
+      "id": "ART-001",
+      "severity": "P3",
+      "code": "AUDIT_BRANCH_VISUAL_DIFFERENTIATION",
+      "status": "ADVISORY",
+      "description": "Professional and pushback use a closely related physical action; the shared family is acceptable, but the two assetIds must remain distinct and preserve the authored reaction.",
+      "requiredChange": "Keep branch-specific mapping and distinguish discussion of options from staff-first pushback without inventing conflict."
+    },
+    {
+      "id": "ART-002",
+      "severity": "P3",
+      "code": "PUBLIC_GESTURE_CONSENT_BINDING",
+      "status": "ADVISORY",
+      "description": "The clarification correctly separates public-role consent from consent to touch; the generated state must preserve that separation.",
+      "requiredChange": "Allow hand contact only in the separately authored agreement state; refusal keeps a visible gap and no contact."
+    },
+    {
+      "id": "ART-003",
+      "severity": "P3",
+      "code": "PORTRAIT_COMPOSITION_PRIORITY",
+      "status": "ADVISORY",
+      "description": "Audit and transition scenes contain multiple characters and story objects, creating a narrow-portrait priority risk.",
+      "requiredChange": "Prioritize Nika/Bianca document action in audit; keep Giulia secondary beyond the window in transition; do not force identical framing across formats."
+    },
+    {
+      "id": "ART-004",
+      "severity": "P3",
+      "code": "ABSTRACT_FINANCIAL_DOCUMENTS",
+      "status": "ADVISORY",
+      "description": "The clarification removes ambiguity around Aurea figures and prevents premature disclosure.",
+      "requiredChange": "Use abstract documents without readable figures, logos, legal assertions or invented facts."
+    }
+  ],
+  "unresolved": [
+    "Actual PNG pixels, runtime captures, output hashes and dimensions remain pending and are not claimed by this brief review.",
+    "Source files were supplied by current-head packet hashes; independent Web High did not inspect the repository filesystem."
+  ],
+  "summary": "PASS_BRIEF_PREPARATION for all 7 remaining EP2 scenes, 5 families and 14 planned PNGs. No P0/P1 or material P2 defect was found in the supplied brief and clarification bundle. The review authorizes only a bounded generation attempt; it does not establish source integrity, image quality, runtime mapping, artistic acceptance, episode-final acceptance or release readiness.",
+  "decision": "PASS_BRIEF_PREP",
+  "mapping": {
+    "episodeSceneCount": 17,
+    "acceptedBeforePacket": 10,
+    "remainingSceneCount": 7,
+    "assetFamilies": 5,
+    "uniqueAssetIds": 7,
+    "plannedPngCount": 14,
+    "missingSceneMappings": 0,
+    "duplicateSceneIds": 0,
+    "duplicateAssetIds": 0
+  },
+  "generationStarted": false,
+  "protectedAccepted": true,
+  "acceptanceScope": "BRIEF_PREPARATION_ONLY",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

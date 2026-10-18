@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "phase": "midpoint",
+  "reviewId": "EP2_BIANCA_WEB_MIDPOINT_E39DBF_20261017",
+  "reviewTraceId": "web-high-ep2-bianca-midpoint-e39dbf-20261017",
+  "taskId": "stage9.4-ep2-bianca-arrival-midpoint-e39dbf",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/EP2_BIANCA_WEB_MIDPOINT_20261017_E39DBF.json",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "status": "PASS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "reviewedItems": [
+    "assets/production/cg/ep2-bianca-arrival-cg.png portrait 1024x1536",
+    "assets/production/cg/ep2-bianca-arrival-cg-landscape.png landscape 1672x941",
+    "ep2_bianca_arrives desktop runtime 1920x1080",
+    "ep2_bianca_arrives mobile runtime 390x844",
+    "ep2_refusal_bianca_arrival desktop runtime 1920x1080",
+    "ep2_refusal_bianca_arrival mobile runtime 390x844",
+    "Previously supplied Bianca, Nika and Matteo references",
+    "Previously supplied Villa Serena office references"
+  ],
+  "evidenceRefs": [
+    "assets/production/cg/ep2-bianca-arrival-cg.png",
+    "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/1920x1080/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/390x844/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/1920x1080/bianca-refusal/ep2_refusal_bianca_arrival.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/390x844/bianca-refusal/ep2_refusal_bianca_arrival.png"
+  ],
+  "receivedEvidenceRefs": [
+    "assets/production/cg/ep2-bianca-arrival-cg.png",
+    "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/1920x1080/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/390x844/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/1920x1080/bianca-refusal/ep2_refusal_bianca_arrival.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/390x844/bianca-refusal/ep2_refusal_bianca_arrival.png"
+  ],
+  "findings": [
+    {
+      "severity": "P2",
+      "code": "PORTRAIT_MATTEO_EDGE_CROP",
+      "description": "На 390x844 Matteo частично обрезан правой границей; его роль и профессиональная настороженность сохраняются, центральное действие не нарушено.",
+      "blocking": false
+    },
+    {
+      "severity": "P2",
+      "code": "MOBILE_BUSINESS_CARD_CONTRAST",
+      "description": "На мобильном runtime визитка и папка находятся в затемнённой области, но остаются различимыми и не перекрываются диалоговым текстом.",
+      "blocking": false
+    },
+    {
+      "severity": "P2",
+      "code": "PORTRAIT_ESTIMATE_ACTION_IMPLIED",
+      "description": "Визуальный деловой смысл считывается через жест Bianca, закрытую папку и отдельную визитку; непосредственный момент передачи визитки не показан.",
+      "blocking": false
+    },
+    {
+      "severity": "P3",
+      "code": "MORNING_LIGHT_WARMTH",
+      "description": "Свет теплее restrained morning daylight, но согласуется с существующими office CG и не создаёт стилистического разрыва.",
+      "blocking": false
+    },
+    {
+      "severity": "P3",
+      "code": "COMPOSITION_VARIATION",
+      "description": "Portrait и landscape используют разные самостоятельные постановки, сохраняя общий cast, действие и среду.",
+      "blocking": false
+    }
+  ],
+  "unresolved": [],
+  "visualCanon": "PASS",
+  "characterIdentity": "PASS",
+  "sceneMapping": "PASS",
+  "dualFormatRuntime": "PASS",
+  "desktopReadability": "PASS",
+  "mobileReadability": "PASS_WITH_P2",
+  "businessActionReadability": "PASS_WITH_P2",
+  "narrativeNeutrality": "PASS",
+  "summary": "PASS независимой midpoint visual QA по шести фактически полученным изображениям. Новая семья сохраняет identity персонажей, Villa Serena office, профессиональный нейтральный смысл и самостоятельные portrait/landscape композиции. Подтверждённых P0/P1 дефектов нет; P2/P3 замечания необязательны и не требуют генерации.",
+  "decision": "PASS_MIDPOINT_VISUAL_QA; continue to final acceptance after verifying the remaining 360x640 and 430x932 runtime captures in the persisted batch evidence.",
+  "requiredRegeneration": false,
+  "requiresArtRework": false,
+  "acceptanceScope": "BATCH_ONLY",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false,
+  "runtimeEvidence": "artifacts/evidence/stage9.4-bianca-runtime.json",
+  "pixels": {
+    "portraitSha256": "6ddd16297e1b8c4e8d7808aa48e1509ad35cd42766b7016292802f3d04d91be3",
+    "landscapeSha256": "af3baf2fd9ba61a571e6bf60bbcaff17366d1a813fb4b7ccc4585db01d149514",
+    "runtimeCapturesReported": 12,
+    "runtimeCapturesReviewed": 4,
+    "consoleErrors": 0,
+    "requestFailures": 0,
+    "httpFailures": 0,
+    "overflow": 0
+  }
+}

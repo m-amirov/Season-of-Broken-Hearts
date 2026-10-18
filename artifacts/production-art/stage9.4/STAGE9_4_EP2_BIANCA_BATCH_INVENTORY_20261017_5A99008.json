@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_BOUNDED_PRODUCTION_INVENTORY",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "runId": "2026-10-17T15-53-28-454Z-production-art-57e6c1",
+  "episode": 2,
+  "episodeSceneCount": 17,
+  "acceptedSceneCountBeforeBatch": 8,
+  "acceptedScenesBeforeBatch": [
+    "ep2_morning_brief",
+    "ep2_wedding_budget",
+    "ep2_workday_inventory",
+    "ep2_family_rehearsal",
+    "ep2_family_rehearsal_response",
+    "ep2_fake_terms",
+    "ep2_refusal_response",
+    "ep2_refusal_workday"
+  ],
+  "protectedAcceptedPairs": "S19-S26; no regeneration or receipt/checkpoint rewrite",
+  "batch": {
+    "familyId": "ep2-bianca-arrival-cg",
+    "sceneIds": ["ep2_refusal_bianca_arrival", "ep2_bianca_arrives"],
+    "decision": "NEW_CG_FAMILY",
+    "formats": {
+      "portrait": {"width": 1024, "height": 1536},
+      "landscape": {"width": 1672, "height": 941}
+    },
+    "reason": "Bianca is a new visual principal; both day-6 office arrival branches share cast, location, time and neutral professional action per ART_REUSE_MATRIX, while the agreement branch must not inherit a refusal-only asset ID."
+  },
+  "pendingScenesAfterBatchPlan": [
+    "ep2_bianca_professional_response",
+    "ep2_bianca_pushback_response",
+    "ep2_public_agreement",
+    "ep2_public_refusal",
+    "ep2_rehearsal_failure",
+    "ep2_rooftop_after",
+    "ep2_transition"
+  ],
+  "preloadDiagnostic": {
+    "path": "artifacts/evidence/STAGE9_4_EP2_BIANCA_PRELOAD_DIAGNOSTIC_20261017_5A99008.json",
+    "sha256": "37d013cdab8e19ee3803ea1e6a9978b184c19001d6777b4d785d6e095f4f0b3c",
+    "bytes": 1571,
+    "status": "DIAGNOSTIC_ONLY_OUT_OF_SCOPE"
+  },
+  "sourceEvidence": {
+    "narrative/graph.json": {"sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544", "bytes": 241013},
+    "narrative/episodes/ep-02.json": {"sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e", "bytes": 73052},
+    "narrative/assets.json": {"sha256": "abc0b5c89a0aa16714fd6b3c13afcdf2ff2ea09bd7b502c1bb49a9034028757a", "bytes": 12265},
+    "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json": {"sha256": "4d28855a9edb29ae04d828d6557be52f099137c55c0cc769374b4ef98cb197c5", "bytes": 15670},
+    "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json": {"sha256": "589bf3593376b7b7ea6b0522110f9a8175c388a8313b97db82a60bfc94afa182", "bytes": 75860},
+    "artifacts/art-direction/ART_BIBLE.md": {"sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96", "bytes": 16037},
+    "artifacts/evidence/rights-manifest.json": {"sha256": "9da503c7e07708a43b17d1f833cdfae2eb7454dc407a4a078747ef8a3a1be418", "bytes": 29015},
+    "assets/characters/references/originals/nika.png": {"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d", "bytes": 2493846},
+    "assets/characters/references/originals/matteo.png": {"sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23", "bytes": 2130673},
+    "assets/characters/references/originals/bianca.png": {"sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9", "bytes": 2137778}
+  },
+  "status": "READY_FOR_SOURCE_BOUND_BRIEF"
+}

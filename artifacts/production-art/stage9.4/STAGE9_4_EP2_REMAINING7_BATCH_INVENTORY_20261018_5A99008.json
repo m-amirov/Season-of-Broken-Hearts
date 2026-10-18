@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_REMAINING7_BATCH_INVENTORY",
+  "runScope": "2026-10-17T22-08-43-887Z-production-art-7acf22",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourcePacket": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json",
+  "clarificationRecord": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_CLARIFICATIONS_20261018_5A99008.json",
+  "briefReview": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_WEB_BRIEF_REVIEW_20261018_5A99008.json",
+  "protectedAccepted": [
+    "S19-S26",
+    "ep2_refusal_bianca_arrival",
+    "ep2_bianca_arrives"
+  ],
+  "coverage": {
+    "episode": 2,
+    "episodeSceneCount": 17,
+    "acceptedBeforeBatch": 10,
+    "remainingSceneCount": 7,
+    "familyCount": 5,
+    "uniqueAssetCount": 7,
+    "plannedPngCount": 14,
+    "status": "INVENTORY_LOCKED_GENERATION_PENDING"
+  },
+  "formats": {
+    "portrait": { "width": 1024, "height": 1536, "kind": "background" },
+    "landscape": { "width": 1672, "height": 941, "kind": "background" }
+  },
+  "mappings": [
+    {
+      "sceneId": "ep2_bianca_professional_response",
+      "assetId": "ep2-bianca-professional-response-cg",
+      "familyId": "ep2-bianca-audit-cg",
+      "portraitPath": "assets/production/cg/ep2-bianca-professional-response-cg.png",
+      "landscapePath": "assets/production/cg/ep2-bianca-professional-response-cg-landscape.png"
+    },
+    {
+      "sceneId": "ep2_bianca_pushback_response",
+      "assetId": "ep2-bianca-pushback-response-cg",
+      "familyId": "ep2-bianca-audit-cg",
+      "portraitPath": "assets/production/cg/ep2-bianca-pushback-response-cg.png",
+      "landscapePath": "assets/production/cg/ep2-bianca-pushback-response-cg-landscape.png"
+    },
+    {
+      "sceneId": "ep2_public_agreement",
+      "assetId": "ep2-public-agreement-cg",
+      "familyId": "ep2-public-gesture-cg",
+      "portraitPath": "assets/production/cg/ep2-public-agreement-cg.png",
+      "landscapePath": "assets/production/cg/ep2-public-agreement-cg-landscape.png"
+    },
+    {
+      "sceneId": "ep2_public_refusal",
+      "assetId": "ep2-public-refusal-cg",
+      "familyId": "ep2-public-gesture-cg",
+      "portraitPath": "assets/production/cg/ep2-public-refusal-cg.png",
+      "landscapePath": "assets/production/cg/ep2-public-refusal-cg-landscape.png"
+    },
+    {
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "familyId": "ep2-service-rehearsal-failure-cg",
+      "portraitPath": "assets/production/cg/ep2-rehearsal-failure-cg.png",
+      "landscapePath": "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png"
+    },
+    {
+      "sceneId": "ep2_rooftop_after",
+      "assetId": "ep2-rooftop-after-cg",
+      "familyId": "ep2-rooftop-after-cg",
+      "portraitPath": "assets/production/cg/ep2-rooftop-after-cg.png",
+      "landscapePath": "assets/production/cg/ep2-rooftop-after-cg-landscape.png"
+    },
+    {
+      "sceneId": "ep2_transition",
+      "assetId": "ep2-transition-cg",
+      "familyId": "ep2-office-aurea-transition-cg",
+      "portraitPath": "assets/production/cg/ep2-transition-cg.png",
+      "landscapePath": "assets/production/cg/ep2-transition-cg-landscape.png"
+    }
+  ],
+  "generationConstraints": [
+    "Generate only these 14 PNGs through the official ceos_asset_generator Terra route.",
+    "Do not reuse or overwrite protected accepted files.",
+    "Every output requires a distinct output-gate receipt before the next image call.",
+    "Batch acceptance is not episode-final acceptance and is not release readiness."
+  ]
+}

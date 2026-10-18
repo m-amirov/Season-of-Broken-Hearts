@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "mode": "VERIFIED_EXISTING_ART_REUSE",
+  "generationInvoked": false,
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "currentness": {"mode":"EXACT_HEAD"},
+  "dependencies": [
+    {"path":"narrative/assets.json","sha256":"e029d87ed9d84f4c9a5cad4c99a62285a3ada499266e7dbf9861b46fddf16e1f"},
+    {"path":"narrative/episodes/ep-02.json","sha256":"c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e"},
+    {"path":"narrative/graph.json","sha256":"8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544"},
+    {"path":"artifacts/evidence/rights-manifest.json","sha256":"766f9158df2867d0ecdf837376bad53b8cb36455b073d4ad75d7ac3dd06a49c7"},
+    {"path":"assets/production/cg/ep2-bianca-professional-response-cg.png","sha256":"c7c9f52103a9d829cc1371e78c54d4e095c4ffea024cd14788d79923b981ec11"},
+    {"path":"assets/production/cg/ep2-bianca-professional-response-cg-landscape.png","sha256":"50cbf3f0509f690b642ea0267589b62932afb15f06f2086d37b5ad8839cd56eb"},
+    {"path":"assets/production/cg/ep2-bianca-pushback-response-cg.png","sha256":"4c88ad47d66e8bd95019326b447809c2f4089b971b3b2d2ee31575414f5e23ac"},
+    {"path":"assets/production/cg/ep2-bianca-pushback-response-cg-landscape.png","sha256":"640c1f86956da727dea401c6fd37ce26b8dbbd693902ebd6072d8124d463674f"}
+  ],
+  "assetManifest": "artifacts/production-art/stage9.4/EP2_EXISTING_ART_REUSE_ASSET_MANIFEST_20261018_5A99008.json",
+  "assetManifestSha256": "f3957ddc02c20b7dbefcbc47a942d4720d6d76d0e64c15ef28d337a631b7515a",
+  "dualFormatManifest": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_AUDIT_DUAL_FORMAT_MANIFEST_20261018_5A99008.json",
+  "provenance": {
+    "status":"DOCUMENTED",
+    "sourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "evidence":"artifacts/evidence/rights-manifest.json",
+    "evidenceSha256":"766f9158df2867d0ecdf837376bad53b8cb36455b073d4ad75d7ac3dd06a49c7"
+  },
+  "artAcceptance": {
+    "status":"PASS",
+    "profile":"NARRATIVE_ART_ACCEPTANCE_V2",
+    "sourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "actualPixelsReceived":true,
+    "evidence":"artifacts/production-art/stage9.4/EP2_EXISTING_ART_REUSE_WEB_ACCEPTANCE_20261018_5A99008.json",
+    "evidenceSha256":"9fef94760118113d742a8a5185d7b259fdb5ed8025e73d61a2f42defa100c6a2",
+    "reviewedItems":["professional portrait","professional landscape","pushback portrait","pushback landscape","professional mobile runtime","pushback mobile runtime"],
+    "unresolved":[]
+  },
+  "runtimeEvidence": {
+    "status":"PASS",
+    "sourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "actualPixelsReceived":true,
+    "evidence":"artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525.json",
+    "evidenceSha256":"14a39aefccf60ad47e3d5e160a79dfc7687ce049524b8ab332f1462ef45decb6",
+    "screenshots":[
+      {"path":"artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/1920x1080/audit-professional/ep2_bianca_professional_response.png","sha256":"d70b3419da0bee0c2275034a2b391886b09a214cebf83d5e4618edae1f473750"},
+      {"path":"artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/1920x1080/audit-pushback/ep2_bianca_pushback_response.png","sha256":"7bd514083948569f8a09d9a4fdeeb0dc8eafdf669a0af51cee8529da2edc5380"},
+      {"path":"artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/390x844/audit-professional/ep2_bianca_professional_response.png","sha256":"223e0d20034432666c5249c9ba71bceded36e985e610db7f0e021ef583e439af"},
+      {"path":"artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/390x844/audit-pushback/ep2_bianca_pushback_response.png","sha256":"3e242299ffd1de4c8652bc72ae734eb2dd32e4d63a44ae87c1ff14c122898ad2"}
+    ]
+  },
+  "canon": {
+    "status":"CURRENT",
+    "sourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "evidence":"artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_CANON_20261018_5A99008.json",
+    "evidenceSha256":"ea68a36fa72bec66bd1f21b11d1f1ea47e465cadb21be005e83c5e8339085d3e"
+  },
+  "receipts":[
+    {"path":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PROFESSIONAL_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json","sha256":"8482ace901880d073087db7eb1ef3be27c478b8c19f256613a4f875034afbd96"},
+    {"path":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PROFESSIONAL_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json","sha256":"cfdf0e77addc96672b49ffe15c8e3b690faed64003876a4e9229410f9a6f172e"},
+    {"path":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PUSHBACK_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json","sha256":"65a9cfa0f8cf094bdea9a27021283bc11d6f68c1beec483ac50294b6354af237"},
+    {"path":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PUSHBACK_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json","sha256":"5b6e868005d4699f29f2833cb14661e55b1760be86f9d1ab907d4b0030bfb65e"}
+  ],
+  "issueSummary":{"openP0":0,"openP1":0,"openMaterialP2":0}
+}

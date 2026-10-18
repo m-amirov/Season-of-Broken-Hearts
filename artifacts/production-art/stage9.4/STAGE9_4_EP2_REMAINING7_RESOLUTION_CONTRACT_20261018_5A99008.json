@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourceEvidence": "artifacts/production-art/stage9.4/ART_DIMENSION_CONTRACT_RESOLUTION.md",
+  "scope": "EP2 remaining 7 scenes / 5 families / 14 PNG outputs",
+  "requiredExactLines": [
+    "## Correct requirements",
+    "| Portrait native PNG | 1024×1536 | exact `art-output-verify --width 1024 --height 1536` |",
+    "| Independent landscape native PNG | 1672×941 (near 16:9) | exact `art-output-verify --width 1672 --height 941` |"
+  ],
+  "formatContract": {
+    "portrait": { "width": 1024, "height": 1536, "ratio": "2:3" },
+    "landscape": { "width": 1672, "height": 941, "ratio": "near 16:9" }
+  }
+}

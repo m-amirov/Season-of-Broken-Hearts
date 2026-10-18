@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_CURRENT_RUNTIME_VISUAL_QA",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "scope": "S24-S26",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "captureMethod": "Playwright Chromium local runtime",
+  "locale": "ru",
+  "viewports": {
+    "desktop": "1920x1080",
+    "mobile": "390x844"
+  },
+  "screenshots": [
+    {"scene":"S24","variant":"desktop","path":"output/playwright/f2c045-ep2-refusal-response-desktop-6f99b01.png","sha256":"9891b01f5432609d63ec610c2c70faa8e1693c89ef7632d91e911a1f1ce40abd","dimensions":"1920x1080","captureSourceHead":"6f99b01c"},
+    {"scene":"S24","variant":"mobile","path":"output/playwright/f2c045-ep2-refusal-response-mobile-5a99008.png","sha256":"50d60a906b7eb808f802a0c45525a3f08b0512595fbf93f1896d1d4fc1c44ded","dimensions":"390x844","captureSourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38"},
+    {"scene":"S25","variant":"desktop","path":"output/playwright/f2c045-ep2-fake-terms-desktop-6f99b01.png","sha256":"ea74f328c1ac62a791ac167b81b7438e35d81f0e49a36eb7434e93118a6ba71f","dimensions":"1920x1080","captureSourceHead":"6f99b01c"},
+    {"scene":"S25","variant":"mobile","path":"output/playwright/f2c045-ep2-fake-terms-mobile-6f99b01.png","sha256":"5497fa6470a3eae9bfc567eb214cf8c68c07f1b64094a4584fe5741c227b9f1a","dimensions":"390x844","captureSourceHead":"6f99b01c"},
+    {"scene":"S26","variant":"desktop","path":"output/playwright/f2c045-ep2-refusal-workday-desktop-6f99b01.png","sha256":"3d48a0db8cad0380392f5af579234953ea720cb684aa730b058f10e9dc7ca70b","dimensions":"1920x1080","captureSourceHead":"6f99b01c"},
+    {"scene":"S26","variant":"mobile","path":"output/playwright/f2c045-ep2-refusal-workday-mobile-6f99b01.png","sha256":"d3a39f35dde69c5aa482019c74d4feaf2e666a1672cbe7f621a84916c6897690","dimensions":"390x844","captureSourceHead":"6f99b01c"}
+  ],
+  "currentnessProof": {
+    "sourceDiffBase": "6f99b01c",
+    "sourceDiffStat": "src/styles.css | 1 +",
+    "scopeChanges": ["src/styles.css"],
+    "assetBytesRegenerated": false,
+    "narrativeChanged": false,
+    "assetManifestChanged": false,
+    "acceptedS19S23BytesChanged": false
+  },
+  "repair": {
+    "selector": ".scene-art img[data-asset-id='ep2-refusal-response-cg']",
+    "change": "object-fit: contain; object-position: center",
+    "commit": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "computedRuntime": {"scene":"ep2_refusal_response","asset":"ep2-refusal-response-cg","objectFit":"contain","objectPosition":"50% 50%","imageRect":"390x844"}
+  },
+  "runtimeChecks": {
+    "allSixPNGConfirmed": true,
+    "horizontalOverflow": false,
+    "verticalOverflow": false,
+    "repairedS24MobileConsoleErrors": 0,
+    "repairedS24MobileWarnings": 0,
+    "assetSelectionConfirmed": true
+  },
+  "independentWebReview": "PASS",
+  "episodeFinalAcceptance": "NOT_VERIFIED",
+  "releaseReady": false,
+  "outOfScopeDiagnostic": "artifacts/evidence/STAGE9_4_EP2_BIANCA_PRELOAD_DIAGNOSTIC_20261017_5A99008.json"
+}

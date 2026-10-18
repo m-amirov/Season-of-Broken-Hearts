@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "scope": "Stage 9.4 S24-S26 acceptance",
+  "checks": [
+    {"command":"npm test","status":"PASS","detail":"82/82 tests"},
+    {"command":"npm run narrative:validate","status":"PASS","detail":"Declared graph, conditional dialogue schema and wardrobe continuity pass; 3 planned promise warnings remain non-fatal"},
+    {"command":"npm run starter-kit:self-test","status":"PASS","detail":"Starter Kit 0.5.13; 122 manifest entries; 15 skills"},
+    {"command":"npm run starter-kit:status","status":"PASS","detail":"mature-yandex-phaser; clean; unresolved conflicts 0; violations 0"},
+    {"command":"ceos web-preflight --json","status":"READY","detail":"Web High bridge healthy and enabled"},
+    {"command":"ceos verify --mode verification --evidence artifacts/evidence --json","status":"PASS","detail":"CEOS 0.5.37; starter_kit_self_test gate PASS; 0 failures/blocks"},
+    {"command":"ceos art-progress --index artifacts/production-art/stage9.4/STAGE9_4_S19_S23_art-progress-index_20261017_5A99008.json --json","status":"PASS_ART_PROGRESS_REVALIDATED","detail":"S19-S23 preserved: 5/25 pairs, 10/50 PNG; no accepted pair affected"},
+    {"command":"dual-format verification","status":"PASS","detail":"S24-S26: 3 pairs, 6 PNG; current manifest SHA-256 9dbf8ec8c6ada6793f7f1b4ad88511b8dea9246099345e332be30d381aadf7db"},
+    {"command":"runtime visual QA","status":"PASS","detail":"6 current runtime PNG references; no overflow; repaired S24 mobile console errors 0"},
+    {"command":"independent Web High art acceptance","status":"PASS","detail":"S24/S25/S26 final PASS; initial S24 mobile P1 resolved by scoped CSS presentation repair; no P0/P1 remaining"}
+  ],
+  "historicalRunStatusBeforeRecovery": {
+    "state": "BLOCKED",
+    "stage": "REAUDITED",
+    "integrity": "PASS",
+    "reason": "Historical terminal state predates the independent Web High receipt and also records the out-of-scope preload diagnostic."
+  },
+  "nonActions": [
+    "No PNG regeneration",
+    "No S19-S23 regeneration",
+    "No narrative or asset-manifest repair for ep2_bianca_arrives",
+    "No push, merge or release"
+  ],
+  "evidenceRefs": [
+    "artifacts/evidence/STAGE9_4_S24_S26_WEB_ART_ACCEPTANCE_20261017_5A99008.json",
+    "artifacts/evidence/STAGE9_4_S24_S26_CURRENT_RUNTIME_EVIDENCE_20261017_5A99008.json",
+    "artifacts/evidence/STAGE9_4_EP2_BIANCA_PRELOAD_DIAGNOSTIC_20261017_5A99008.json",
+    "artifacts/production-art/stage9.4/STAGE9_4_S19_S23_art-progress-index_20261017_5A99008.json",
+    "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_F2C045_4FF66EA.json"
+  ]
+}

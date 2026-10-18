@@ -1,0 +1,148 @@
+{
+  "status": "PASS_ART_BATCH_MECHANICAL",
+  "inspected": [
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-bianca-professional-response-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "c7c9f52103a9d829cc1371e78c54d4e095c4ffea024cd14788d79923b981ec11",
+      "bytes": 2285707,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-bianca-professional-response-cg-landscape.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "50cbf3f0509f690b642ea0267589b62932afb15f06f2086d37b5ad8839cd56eb",
+      "bytes": 2321476,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "alpha": {
+        "opaque": 1573352,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1573352,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1672,
+        "height": 941
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-bianca-pushback-response-cg.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "4c88ad47d66e8bd95019326b447809c2f4089b971b3b2d2ee31575414f5e23ac",
+      "bytes": 2194981,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "opaque": 1572864,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1572864,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1536
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "schemaVersion": 1,
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-bianca-pushback-response-cg-landscape.png",
+      "kind": "background",
+      "status": "PASS_ART_OUTPUT_MECHANICAL",
+      "issues": [],
+      "sha256": "640c1f86956da727dea401c6fd37ce26b8dbbd693902ebd6072d8124d463674f",
+      "bytes": 2218106,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "alpha": {
+        "opaque": 1573352,
+        "transparent": 0,
+        "partial": 0,
+        "nonzero": 1573352,
+        "cornerAlpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1672,
+        "height": 941
+      },
+      "checkerboard": {
+        "detected": false
+      },
+      "visualAcceptance": "NOT_VERIFIED"
+    }
+  ],
+  "issues": [],
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-18T05:26:46.701Z"
+}

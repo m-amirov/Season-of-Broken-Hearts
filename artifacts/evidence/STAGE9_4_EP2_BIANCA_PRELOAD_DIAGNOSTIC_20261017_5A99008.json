@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "DIAGNOSTIC_ONLY_OUT_OF_SCOPE",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sceneId": "ep2_bianca_arrives",
+  "references": [
+    {"path":"narrative/episodes/ep-02.json","lines":"319,325,455","role":"choice targets and scene declaration"},
+    {"path":"narrative/graph.json","lines":"2712,2729,3084","role":"choice targets and scene declaration"},
+    {"path":"src/main.mjs","lines":"128,131","role":"next-scene and choice-scene preload"},
+    {"path":"src/assets/asset-manager.mjs","lines":"36-38,60-62","role":"manifest selection and preload error"}
+  ],
+  "manifest": {
+    "path": "narrative/assets.json",
+    "entryPresent": false,
+    "relatedEntriesPresent": ["ep2-refusal-response-cg","ep2-fake-terms-cg","ep2-refusal-workday-cg"]
+  },
+  "expectedFiles": [
+    "assets/production/cg/ep2-bianca-arrives-cg.png",
+    "assets/production/cg/ep2-bianca-arrives-cg-landscape.png"
+  ],
+  "filesPresent": false,
+  "runtimeImpact": {
+    "observed": true,
+    "symptom": "preload reports Missing asset for scene ep2_bianca_arrives",
+    "scope": "branch preload after S25 choices; S24-S26 acceptance frames remain renderable",
+    "consoleEvidence": "STAGE9_4_S24_S26_RUNTIME_VISUAL_EVIDENCE_20261017_F2C045_6F99B01.json"
+  },
+  "repairApplied": false,
+  "minimalFutureFixScope": "Add the scene's dual-format manifest entry and actual production assets, then run mechanical output verification, runtime QA and independent art acceptance for the affected route.",
+  "currentRunDisposition": "OUT_OF_SCOPE_NOT_FIXED"
+}

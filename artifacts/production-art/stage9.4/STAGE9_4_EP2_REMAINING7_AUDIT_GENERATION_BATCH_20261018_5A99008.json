@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_REMAINING7_GENERATION_BATCH",
+  "runId": "2026-10-17T22-08-43-887Z-production-art-7acf22",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "familyIds": ["ep2-bianca-audit-cg"],
+  "sceneIds": ["ep2_bianca_professional_response", "ep2_bianca_pushback_response"],
+  "producer": {
+    "agentId": "01a14bee-11f1-7d61-a79f-e1ef459cd4a1",
+    "agentRole": "ceos_asset_generator",
+    "actualModel": "gpt-5.6-terra",
+    "actualEffort": "medium",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "traceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T01-14-15-01a14bee-11f1-7d61-a79f-e1ef459cd4a1.jsonl",
+    "traceSha256": "87d2eb9c39ce80dcc646b85ca2ff286cd8e227e4837d6a0bfe15bb17753b1124",
+    "generationTool": "image_gen.imagegen",
+    "providerByteReceipt": "NOT_ATTESTED",
+    "capabilityAttestation": {
+      "challengeId": "cap-15dcf2dc051dd7653cc0",
+      "sessionId": "01a14b43-d6fa-7472-9b04-323c3ace077f",
+      "turnId": "01a14beb-2777-7db2-b6da-82e7822e0dad",
+      "file": ".ceos-runs/2026-10-17T22-08-43-887Z-production-art-7acf22/capability-attestation/image-generation.json",
+      "presence": "PRESENT",
+      "serviceAvailability": "UNKNOWN",
+      "trustedForGeneration": true
+    }
+  },
+  "outputs": [
+    {
+      "assetId":"ep2-bianca-professional-response-cg",
+      "variant":"portrait",
+      "source":"C:\\Users\\user\\.codex\\generated_images\\01a14bee-11f1-7d61-a79f-e1ef459cd4a1\\exec-ced1e1a4-e999-4b2d-8ed2-11115042495d.png",
+      "target":"assets/production/cg/ep2-bianca-professional-response-cg.png",
+      "sha256":"c7c9f52103a9d829cc1371e78c54d4e095c4ffea024cd14788d79923b981ec11",
+      "bytes":2285707,
+      "width":1024,
+      "height":1536,
+      "transport":"PASS_ART_OUTPUT_TRANSPORT",
+      "outputGate":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PROFESSIONAL_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json",
+      "outputGateStatus":"PASS_ART_OUTPUT_MECHANICAL"
+    },
+    {
+      "assetId":"ep2-bianca-professional-response-cg",
+      "variant":"landscape",
+      "source":"C:\\Users\\user\\.codex\\generated_images\\01a14bee-11f1-7d61-a79f-e1ef459cd4a1\\exec-8f38cf82-c96d-4b80-a00d-a6b921d81b51.png",
+      "target":"assets/production/cg/ep2-bianca-professional-response-cg-landscape.png",
+      "sha256":"50cbf3f0509f690b642ea0267589b62932afb15f06f2086d37b5ad8839cd56eb",
+      "bytes":2321476,
+      "width":1672,
+      "height":941,
+      "transport":"PASS_ART_OUTPUT_TRANSPORT",
+      "outputGate":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PROFESSIONAL_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json",
+      "outputGateStatus":"PASS_ART_OUTPUT_MECHANICAL"
+    },
+    {
+      "assetId":"ep2-bianca-pushback-response-cg",
+      "variant":"portrait",
+      "source":"C:\\Users\\user\\.codex\\generated_images\\01a14bee-11f1-7d61-a79f-e1ef459cd4a1\\exec-59be562e-1cf7-4eb1-b92f-117e1569912f.png",
+      "target":"assets/production/cg/ep2-bianca-pushback-response-cg.png",
+      "sha256":"4c88ad47d66e8bd95019326b447809c2f4089b971b3b2d2ee31575414f5e23ac",
+      "bytes":2194981,
+      "width":1024,
+      "height":1536,
+      "transport":"PASS_ART_OUTPUT_TRANSPORT",
+      "outputGate":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PUSHBACK_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json",
+      "outputGateStatus":"PASS_ART_OUTPUT_MECHANICAL"
+    },
+    {
+      "assetId":"ep2-bianca-pushback-response-cg",
+      "variant":"landscape",
+      "source":"C:\\Users\\user\\.codex\\generated_images\\01a14bee-11f1-7d61-a79f-e1ef459cd4a1\\exec-162b3c3f-7a2d-4ae3-bf4f-4456ffbde45f.png",
+      "target":"assets/production/cg/ep2-bianca-pushback-response-cg-landscape.png",
+      "sha256":"640c1f86956da727dea401c6fd37ce26b8dbbd693902ebd6072d8124d463674f",
+      "bytes":2218106,
+      "width":1672,
+      "height":941,
+      "transport":"PASS_ART_OUTPUT_TRANSPORT",
+      "outputGate":"artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PUSHBACK_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json",
+      "outputGateStatus":"PASS_ART_OUTPUT_MECHANICAL"
+    }
+  ],
+  "candidatePolicy": {"candidateNumber":1,"maxCandidatesPerCueVariant":2,"visualAcceptance":"PENDING","webAcceptance":"PENDING"},
+  "status":"MECHANICAL_OUTPUTS_PASS_VISUAL_ACCEPTANCE_PENDING"
+}

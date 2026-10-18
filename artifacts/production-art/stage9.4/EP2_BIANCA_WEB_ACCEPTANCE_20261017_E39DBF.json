@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "reviewId": "EP2_BIANCA_WEB_ACCEPTANCE_E39DBF_20261017",
+  "reviewTraceId": "web-high-ep2-bianca-acceptance-e39dbf-20261017",
+  "taskId": "stage9.4-ep2-bianca-arrival-acceptance-e39dbf",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/EP2_BIANCA_WEB_ACCEPTANCE_20261017_E39DBF.json",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "status": "PASS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "acceptanceScope": "BATCH_ONLY",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false,
+  "requiredRegeneration": false,
+  "reviewedItems": [
+    "ep2_bianca_arrives agreement runtime 360x640",
+    "ep2_refusal_bianca_arrival refusal runtime 360x640",
+    "ep2_bianca_arrives agreement runtime 430x932",
+    "ep2_refusal_bianca_arrival refusal runtime 430x932",
+    "Prior midpoint: ep2-bianca-arrival-cg portrait 1024x1536",
+    "Prior midpoint: ep2-bianca-arrival-cg landscape 1672x941",
+    "Prior midpoint: both branches desktop 1920x1080 and mobile 390x844"
+  ],
+  "evidenceRefs": [
+    "assets/production/cg/ep2-bianca-arrival-cg.png",
+    "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-refusal/ep2_refusal_bianca_arrival.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/430x932/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/430x932/bianca-refusal/ep2_refusal_bianca_arrival.png",
+    "artifacts/evidence/stage9.4-bianca-runtime.json"
+  ],
+  "receivedEvidenceRefs": [
+    "assets/production/cg/ep2-bianca-arrival-cg.png",
+    "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-refusal/ep2_refusal_bianca_arrival.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/430x932/bianca-agreement/ep2_bianca_arrives.png",
+    "artifacts/evidence/stage9.4-bianca-runtime/430x932/bianca-refusal/ep2_refusal_bianca_arrival.png",
+    "artifacts/evidence/stage9.4-bianca-runtime.json"
+  ],
+  "findings": [
+    {
+      "id": "MATTEO_RIGHT_EDGE_CROP",
+      "severity": "P2",
+      "status": "RESOLVED",
+      "code": "MATTEO_RIGHT_EDGE_CROP",
+      "description": "Matteo sits at the right edge on mobile. His face and professional alertness remain recognizable at 360x640; at 430x932 part of the head/right face exits the frame, without impairing scene comprehension.",
+      "blocking": false
+    },
+    {
+      "id": "BUSINESS_CARD_LOW_CONTRAST",
+      "severity": "P2",
+      "status": "RESOLVED",
+      "code": "BUSINESS_CARD_LOW_CONTRAST",
+      "description": "The card and work folder sit in the darkened lower area. They remain visible at 360x640 and read more confidently at 430x932; dialogue text does not cover them.",
+      "blocking": false
+    },
+    {
+      "id": "CARD_PLACEMENT_ACTION_IMPLIED",
+      "severity": "P2",
+      "status": "RESOLVED",
+      "code": "CARD_PLACEMENT_ACTION_IMPLIED",
+      "description": "Bianca points to the folder while the card is already placed beside it; the static frame communicates the result of the authored action without showing the placement motion.",
+      "blocking": false
+    },
+    {
+      "id": "PORTRAIT_COMPOSITION_DENSITY",
+      "severity": "P3",
+      "status": "RESOLVED",
+      "code": "PORTRAIT_COMPOSITION_DENSITY",
+      "description": "The three-character portrait is dense on narrow mobile screens, but Bianca and Nika retain expressive faces, Matteo remains recognizable, and the professional interaction reads.",
+      "blocking": false
+    }
+  ],
+  "unresolved": [],
+  "resolvedFindings": [
+    {
+      "id": "PNG новой семьи ещё не созданы.",
+      "evidenceRef": "assets/production/cg/ep2-bianca-arrival-cg.png"
+    },
+    {
+      "id": "Точная геометрия dialogue-safe region не подтверждена runtime-скриншотами.",
+      "evidenceRef": "artifacts/evidence/stage9.4-bianca-runtime.json"
+    },
+    {
+      "id": "Не проверены реальные мобильные обрезки и читаемость действия.",
+      "evidenceRef": "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-agreement/ep2_bianca_arrives.png"
+    },
+    {
+      "id": "Не проведена независимая художественная приёмка сгенерированных portrait и landscape.",
+      "evidenceRef": "assets/production/cg/ep2-bianca-arrival-cg-landscape.png"
+    }
+  ],
+  "historicalExactLines": [
+    "## Correct requirements",
+    "| Portrait native PNG | 1024×1536 | exact `art-output-verify --width 1024 --height 1536` |",
+    "| Independent landscape native PNG | 1672×941 (near 16:9) | exact `art-output-verify --width 1672 --height 941` |"
+  ],
+  "visualCanon": "PASS",
+  "characterIdentity": "PASS",
+  "sceneMapping": "PASS",
+  "dualFormatRuntime": "PASS",
+  "desktopReadability": "PASS_FROM_MIDPOINT",
+  "mobileReadability": "PASS_WITH_NONBLOCKING_P2",
+  "narrativeNeutrality": "PASS",
+  "summary": "PASS final independent artistic acceptance for the bounded ep2-bianca-arrival-cg family. The four new 360x640 and 430x932 runtime pixels for both branches, together with the prior midpoint pixel review, confirm character identity, Villa Serena office canon, neutral professional staging, and sufficient business-action readability. No material P0/P1 defect exists; regeneration is not required. This is BATCH_ONLY and does not promote full EP2 or release readiness.",
+  "decision": "PASS_FINAL_BIANCA_BATCH_VISUAL_ACCEPTANCE",
+  "decisionDetails": {
+    "accepted": true,
+    "acceptedAssetFamily": "ep2-bianca-arrival-cg",
+    "acceptedScenes": [
+      "ep2_bianca_arrives",
+      "ep2_refusal_bianca_arrival"
+    ],
+    "blockingDefects": 0,
+    "requiredRegeneration": false,
+    "requiresArtRework": false,
+    "episodeFinalAcceptance": false,
+    "releaseReady": false,
+    "runtimeCapturesReported": 12,
+    "runtimeCapturesIndependentlyReviewed": 8,
+    "consoleErrors": 0,
+    "requestFailures": 0,
+    "httpFailures": 0,
+    "overflow": 0,
+    "portraitSha256": "6ddd16297e1b8c4e8d7808aa48e1509ad35cd42766b7016292802f3d04d91be3",
+    "landscapeSha256": "af3baf2fd9ba61a571e6bf60bbcaff17366d1a813fb4b7ccc4585db01d149514"
+  }
+}

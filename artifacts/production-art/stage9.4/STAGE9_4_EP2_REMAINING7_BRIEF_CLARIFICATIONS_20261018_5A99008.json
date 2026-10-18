@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_REMAINING7_BRIEF_CLARIFICATIONS",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourcePacket": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json",
+  "sourcePacketSha256": "6a321477dc4e3c99cc8e9c173d2c0562553804644d64d215783579295ec5976f",
+  "scope": {
+    "episode": 2,
+    "sceneIds": [
+      "ep2_bianca_professional_response",
+      "ep2_bianca_pushback_response",
+      "ep2_public_agreement",
+      "ep2_public_refusal",
+      "ep2_rehearsal_failure",
+      "ep2_rooftop_after",
+      "ep2_transition"
+    ],
+    "familyIds": [
+      "ep2-bianca-audit-cg",
+      "ep2-public-gesture-cg",
+      "ep2-service-rehearsal-failure-cg",
+      "ep2-rooftop-after-cg",
+      "ep2-office-aurea-transition-cg"
+    ],
+    "requiredPngCount": 14,
+    "protectedScenes": [
+      "S19-S26",
+      "ep2_refusal_bianca_arrival",
+      "ep2_bianca_arrives"
+    ]
+  },
+  "webHighAdvisories": [
+    {
+      "code": "PUBLIC_GESTURE_CONSENT_PRECISION",
+      "severity": "P2",
+      "status": "ADDRESSED",
+      "rule": "Public role agreement and consent to hand contact are separate authored states. Generate agreement with explicit prior-yes hand contact and refusal with a visible gap and no contact."
+    },
+    {
+      "code": "PUBLIC_REFUSAL_PHOTOGRAPHER_STAGING",
+      "severity": "P2",
+      "status": "ADDRESSED",
+      "rule": "The photographer is not added to the cast. If present, only a camera edge/offscreen and lowered-camera gesture may establish the authored action; no readable controls or crowd."
+    },
+    {
+      "code": "AUDIT_BRANCH_VISUAL_STATE",
+      "severity": "P2",
+      "status": "ADDRESSED",
+      "rule": "Professional and pushback responses remain distinct assetIds and use the same neutral audit-family canon while preserving their authored branch mapping."
+    },
+    {
+      "code": "FOUR_CHARACTER_PORTRAIT_DENSITY",
+      "severity": "P2",
+      "status": "ADDRESSED",
+      "rule": "The transition keeps Nika, Matteo and Bianca legible in the office plane; Giulia remains a secondary figure beyond the window, not a fourth foreground portrait."
+    },
+    {
+      "code": "SERVICE_ACTION_CHAIN_READABILITY",
+      "severity": "P2",
+      "status": "ADDRESSED",
+      "rule": "The dessert tray, freezer/kitchen route and Nika-led timing coordination are the primary readable action; the location architecture remains secondary."
+    },
+    {
+      "code": "WARDROBE_AND_IDENTITY_BINDING",
+      "severity": "P2",
+      "status": "ADDRESSED",
+      "rule": "Use day-7/day-9 wardrobe-rules and character references as binding inputs; do not invent wardrobe changes or identity details."
+    },
+    {
+      "code": "ROOFTOP_AUREA_FIGURES_AMBIGUITY",
+      "severity": "P3",
+      "status": "ADDRESSED",
+      "rule": "Aurea figures are abstract financial documents/terms on the sheet, never people, floating numerals, logos or speculative legal graphics."
+    },
+    {
+      "code": "DAYLIGHT_AND_LOCATION_CONTINUITY",
+      "severity": "P3",
+      "status": "ADDRESSED",
+      "rule": "Preserve Villa Serena materials, Mediterranean architecture and authored time-of-day lighting; avoid glossy or melodramatic lighting that changes the scene meaning."
+    }
+  ],
+  "generationInvariants": [
+    "portrait is an independently composed 1024x1536 PNG",
+    "landscape is an independently composed 1672x941 PNG",
+    "no baked dialogue, UI, logo, watermark or readable invented text",
+    "no modification or regeneration of protected accepted assets",
+    "all 14 output gates, hashes, rights entries, mappings and runtime captures are required before batch acceptance",
+    "P0/P1 or materially evidenced P2 visual defects require root-cause repair; P3 remains advisory"
+  ],
+  "decision": "READY_FOR_FRESH_WEB_HIGH_BRIEF_REVIEW_AND_ONE_BOUNDED_PRODUCTION_ART_RUN"
+}

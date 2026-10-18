@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_REMAINING7_CANON_LOCK",
+  "runId": "2026-10-17T22-08-43-887Z-production-art-7acf22",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "canonSources": [
+    {"path":"artifacts/art-direction/ART_BIBLE.md","sha256":"7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96"},
+    {"path":"config/wardrobe-rules.json","sha256":"5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246"},
+    {"path":"artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json","sha256":"589bf3593376b7b7ea6b0522110f9a8175c388a8313b97db82a60bfc94afa182"}
+  ],
+  "protectedAccepted": [
+    "S19-S26",
+    "ep2_refusal_bianca_arrival",
+    "ep2_bianca_arrives"
+  ],
+  "identityRules": {
+    "nika":"Preserve approved face, dark-olive/ivory/taupe wardrobe continuity, practical organizer silhouette and explicit boundary agency.",
+    "matteo":"Preserve approved face, charcoal/brown/tobacco/stone wardrobe continuity and owner role without entitlement or villain coding.",
+    "bianca":"Preserve approved face, long copper-red hair, slate-charcoal suit, ivory blouse, black heels, gold rectangular earrings and measured executive posture.",
+    "giulia":"Preserve approved face, cream/sage/olive service wardrobe and grounded witness/service-lead role; keep secondary when behind the window."
+  },
+  "locationAndLight": {
+    "villaSerena":"Mediterranean architecture, light shutters, textured plaster, warm wood, real table/corridor/terrace surfaces and grounded contact shadows.",
+    "day6":"Restrained practical daylight in office.",
+    "day7":"Natural courtyard midday light.",
+    "day8":"Practical service-corridor late-afternoon light.",
+    "day9":"Restrained dusk on rooftop and ordinary practical night architecture in office."
+  },
+  "compositionRules": [
+    "Use separate portrait 1024x1536 and landscape 1672x941 compositions; never crop, stretch or blur one format into the other.",
+    "Keep authored action and required faces above real dialogue-safe UI at 360x640, 390x844 and 430x932.",
+    "Respect consent: public role agreement is not touch consent; refusal has a visible gap and no hand contact.",
+    "Keep abstract documents unreadable and free of logos, legal claims, floating numerals or baked UI.",
+    "Prefer natural human-eye perspective, correct anatomy, grounded props and clear physical surfaces."
+  ],
+  "familyCanon": [
+    {"familyId":"ep2-bianca-audit-cg","sceneIds":["ep2_bianca_professional_response","ep2_bianca_pushback_response"],"primaryAction":"Laptop weekly-expense table, Nika criteria note, Matteo cost scrutiny.","branchRule":"Distinct assetIds; neutral audit family, no signed sale or invented conflict."},
+    {"familyId":"ep2-public-gesture-cg","sceneIds":["ep2_public_agreement","ep2_public_refusal"],"primaryAction":"Agreement light hand contact after yes; refusal gap, lowered camera and no contact.","branchRule":"Independent state compositions; no photographer as added cast."},
+    {"familyId":"ep2-service-rehearsal-failure-cg","sceneIds":["ep2_rehearsal_failure"],"primaryAction":"Nika-led dessert transfer/timing chain through freezer route.","branchRule":"Operational competence, no spoiled-food close-up or luxury-kitchen spectacle."},
+    {"familyId":"ep2-rooftop-after-cg","sceneIds":["ep2_rooftop_after"],"primaryAction":"Closed terms sheet, returned chairs, physical gap after role ends.","branchRule":"No fireworks, route lock, handholding or floating Aurea figures."},
+    {"familyId":"ep2-office-aurea-transition-cg","sceneIds":["ep2_transition"],"primaryAction":"Nika journal deadline, neutral valuation sheet, Giulia secondary beyond window.","branchRule":"No readable valuation, Aurea logo, legal detail or public-couple pose."}
+  ],
+  "status":"CANON_LOCKED_FOR_BOUNDED_GENERATION"
+}

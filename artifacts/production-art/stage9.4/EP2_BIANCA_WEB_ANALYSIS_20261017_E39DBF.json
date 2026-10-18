@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "EP2_BIANCA_WEB_ANALYSIS_E39DBF_20261017",
+  "reviewTraceId": "web-high-ep2-bianca-s27-e39dbf-20261017",
+  "taskId": "stage9.4-ep2-bianca-arrival-e39dbf",
+  "agent": "ceos_art_director_web",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/EP2_BIANCA_WEB_ANALYSIS_20261017_E39DBF.json",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "status": "PASS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "evidenceRefs": [
+    "assets/characters/references/originals/bianca.png",
+    "assets/characters/references/originals/nika.png",
+    "assets/characters/references/originals/matteo.png",
+    "assets/production/cg/ep2-office-budget-cg.png",
+    "assets/production/cg/ep2-office-budget-cg-landscape.png"
+  ],
+  "receivedEvidenceRefs": [
+    "assets/characters/references/originals/bianca.png",
+    "assets/characters/references/originals/nika.png",
+    "assets/characters/references/originals/matteo.png",
+    "assets/production/cg/ep2-office-budget-cg.png",
+    "assets/production/cg/ep2-office-budget-cg-landscape.png"
+  ],
+  "reviewedItems": [
+    "Bianca character reference",
+    "Nika character reference",
+    "Matteo character reference",
+    "Existing Villa Serena office CG portrait",
+    "Existing Villa Serena office CG landscape",
+    "Source-bound narrative and visual contract"
+  ],
+  "summary": "PASS для art-direction и допуска к генерации. Пять референсов получены и визуально рассмотрены. Канон персонажей различим, существующие office CG задают согласованную архитектуру Villa Serena, материалы и кинематографический стиль. Новая CG должна показывать деловое прибытие Bianca на шестой день, проверку сметы и размещение визитки. Основной конфликт сцены — профессиональная оценка, а не романтическое соперничество. Новые PNG отсутствуют, поэтому generated-asset acceptance не проводилась.",
+  "findings": [
+    {"severity":"P2","code":"AUTHORED_HANDHOLDING_VS_VISUAL_NEUTRALITY","description":"В исходном тексте упоминаются сцепленные руки Nika и Matteo, однако визуальный контракт запрещает романтическую постановку. Оставить положение их рук вне кадра либо закрыть естественной композицией; Bianca направляет внимание на смету."},
+    {"severity":"P2","code":"THREE_CHARACTER_PORTRAIT_DENSITY","description":"Три персонажа, визитка и смета должны оставаться различимыми на мобильных экранах. Нужна компактная треугольная постановка с Bianca у рабочего стола, Nika напротив и Matteo в поддерживающей позиции; не использовать дальний общий план."},
+    {"severity":"P2","code":"DAYLIGHT_AND_WARDROBE_TRANSITION","description":"Для новой сцены нужны утреннее практическое освещение и заявленные деловые костюмы; архитектура, материалы и узнаваемость лиц должны сохранить преемственность с существующими office CG."},
+    {"severity":"P2","code":"BUSINESS_ACTION_READABILITY","description":"Визитка рядом со сметой обязательна: контакт визитки со столом, положение руки Bianca и связь визитки с папкой должны считываться без текста и без увеличения изображения."},
+    {"severity":"P3","code":"REFERENCE_LIGHTING_VARIATION","description":"Различия интенсивности света существующих office CG допустимы; для новой семьи достаточно сохранить архитектурную идентичность и естественную перспективу."}
+  ],
+  "compositionRequirements": {
+    "portrait": {"resolution":"1024x1536","staging":"Самостоятельная вертикальная композиция: Bianca размещает визитку рядом со сметой; Nika оценивает действие; Matteo наблюдает профессионально настороженно.","faces":"Все три лица узнаваемы и достаточно крупны для мобильного просмотра.","eyelines":"Bianca — смета или Nika; Nika — Bianca или документы; Matteo — Bianca или документы; без романтического обмена взглядами.","dialogueSafe":"Лица, взгляды, рука Bianca, визитка и смета выше зоны диалогового интерфейса; ориентир верхние 60–65%, границу подтвердить runtime.","mobile":["360x640","390x844","430x932"],"cropSafety":"Критические элементы держать в защищённой центральной области при cover-crop.","camera":"Естественная перспектива на уровне глаз, средний план, без широкоугольной деформации."},
+    "landscape": {"resolution":"1672x941","staging":"Самостоятельная горизонтальная композиция с тремя персонажами вокруг рабочего стола; Bianca инициирует действие, Nika активно отвечает, Matteo внимательно участвует.","dialogueSafe":"Визитка, смета, значимые жесты и критические части лиц не должны попадать под диалоговую панель; нижние 30–35% зарезервировать и подтвердить runtime.","camera":"Средний групповой план с естественной глубиной, без растягивания пространства.","balance":"Bianca получает акцент действием, без чрезмерного доминирования; все три персонажа участвуют."},
+    "physicalGrounding":["Естественные пропорции тела и рук","Анатомически корректные пальцы","Реальный контакт документов и визитки со столом","Правдоподобные контактные тени","Согласованные свет и перспектива","Без парящих предметов и пересечений конечностей"]
+  },
+  "crossFormatInvariants": {
+    "characters": {"Bianca":"Длинные медно-рыжие волосы, светлые серо-зелёные глаза, характерная форма лица, золотые прямоугольные серьги; slate-charcoal suit, ivory blouse, black pointed heels, structured handbag; деловая собранность без злодейской стилизации.","Nika":"Короткие объёмные волнистые тёмно-каштановые волосы; ivory blouse, muted olive blazer, dark taupe trousers; сдержанная уверенность и профессиональная дистанция.","Matteo":"Тёмные волнистые волосы, выраженные брови, короткая щетина; dark charcoal jacket, tobacco knit, stone trousers; настороженное внимание без ревности или агрессии."},
+    "location":"Villa Serena office: средиземноморская архитектура, светлые ставни, фактура стен, тёплое дерево, рабочий стол и связь интерьера с внешним пространством.",
+    "time":"Day 6 morning; естественный сдержанный дневной свет без вечернего золотого свечения.",
+    "action":"Bianca проверяет папку со сметой и кладёт визитку рядом с ней.",
+    "narrative":"Одинаковое нейтральное деловое событие для ep2_refusal_bianca_arrival и ep2_bianca_arrives.",
+    "castCount":3,
+    "style":"Grounded cinematic semi-realism; natural skin texture; coherent materials; restrained palette; human-eye-level perspective.",
+    "forbidden":["Дополнительные персонажи","Читаемый текст на визитке и документах","Романтические жесты и сцепленные руки","Ревность и визуальное соперничество","Злодейская стилизация Bianca","Обручальные кольца","Глянцевая свадебная эстетика","Встроенные UI-элементы и надписи","Искусственное свечение и чрезмерная ретушь","Растягивание или простое кадрирование одного формата для другого"]
+  },
+  "unresolved":["PNG новой семьи ещё не созданы.","Точная геометрия dialogue-safe region не подтверждена runtime-скриншотами.","Не проверены реальные мобильные обрезки и читаемость действия.","Не проведена независимая художественная приёмка сгенерированных portrait и landscape."],
+  "decision":"PASS_ART_DIRECTION_ANALYSIS; generation brief ready; generated-asset acceptance NOT_EVALUATED"
+}

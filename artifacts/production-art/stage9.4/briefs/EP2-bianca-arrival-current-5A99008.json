@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourceEpisode": "narrative/episodes/ep-02.json",
+  "sceneId": "S27",
+  "sceneIds": ["ep2_refusal_bianca_arrival", "ep2_bianca_arrives"],
+  "assetFamilyId": "ep2-bianca-arrival-cg",
+  "cue": {
+    "id": "ep2_bianca_arrives_business_card",
+    "at": [6, 0],
+    "authoredExcerpt": "Она положила визитку рядом со сметой и не посмотрела на их сцепленные руки. Это было почти облегчением.",
+    "branchConstraint": "The refusal and agreement branches share one neutral professional arrival family; no branch-specific romantic contact is depicted."
+  },
+  "requiredCast": ["nika", "matteo", "bianca"],
+  "narrativeActions": [
+    {"character": "bianca", "action": "Arrives as an Aurea Hospitality business representative, checks the estimate folder before faces, and places her business card beside the estimate."},
+    {"character": "nika", "action": "Keeps the work boundary visible and challenges conclusions drawn from the public role."},
+    {"character": "matteo", "action": "Listens guardedly and does not frame Bianca as a romantic rival."}
+  ],
+  "sceneContinuity": "Day 6 morning in the Villa Serena office immediately after the professional/refusal branch; the visual family must remain neutral to agreement state and preserve the business causality.",
+  "location": "Villa Serena office with estimate folder, work table and daylight window geometry",
+  "timeOfDay": "Day 6 morning, restrained daylight",
+  "wardrobe": {
+    "nika": "Ivory blouse, muted olive blazer and dark taupe trousers; practical organizer silhouette",
+    "matteo": "Dark charcoal jacket, tobacco knit and stone trousers; controlled owner silhouette",
+    "bianca": "Slate-charcoal tailored suit, ivory blouse, black pointed heels, structured handbag and gold rectangular earrings"
+  },
+  "emotionalTone": "Professional scrutiny without melodrama, jealousy shorthand or romantic rivalry",
+  "physicalAction": "Bianca places a business card beside the estimate folder; all three maintain clear personal space, and the table/objects carry the negotiation beat.",
+  "facialExpression": "Bianca composed and exact; Nika alert and boundary-aware; Matteo guarded but listening.",
+  "forbiddenProps": [
+    "readable card, budget or estimate text",
+    "villain styling, jealousy triangle or romantic rivalry",
+    "romantic handholding or couple-coded pose",
+    "wedding rings or glossy wedding-ad styling",
+    "extra cast"
+  ],
+  "characterReferences": [
+    {"character": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"character": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"character": "bianca", "path": "assets/characters/references/originals/bianca.png", "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9"}
+  ],
+  "desktop": {
+    "width": 1672,
+    "height": 941,
+    "runtimeViewportTarget": {"width": 1920, "height": 1080},
+    "composition": "Independent wide three-person office composition: Bianca anchors one side of the table, the estimate/card sit in the foreground, and Nika/Matteo remain separated behind without couple framing.",
+    "framing": "Eye-level three-quarter meeting, natural human perspective, grounded seated/standing contact with the office floor, dialogue-safe lower area and no baked UI/text.",
+    "requiredVisibleCast": ["nika", "matteo", "bianca"]
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "composition": "Independent vertical meeting composition that keeps Bianca's face and card beside the estimate readable while preserving Nika and Matteo as distinct, non-romantic figures.",
+    "framing": "2:3 eye-level medium-wide composition; all three faces, the card/estimate action and a natural dialogue-safe lower area remain intact at 360x640, 390x844 and 430x932.",
+    "requiredVisibleCast": ["nika", "matteo", "bianca"]
+  },
+  "canonReferences": [
+    "artifacts/art-direction/ART_BIBLE.md",
+    "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json",
+    "artifacts/production-art/stage9.4/CHARACTER_IDENTITY_REPORT.md",
+    "config/wardrobe-rules.json"
+  ],
+  "qualityAcceptance": [
+    "Both formats independently preserve Bianca, Nika, Matteo, office geometry, estimate/card action and neutral professional state.",
+    "Human proportions, eye-level perspective, grounded surfaces and coherent scale pass source and runtime inspection.",
+    "No readable generated text, baked UI, romantic contact, villain cues or extra cast.",
+    "Portrait preserves all required faces and dialogue-safe area without forced distortion or bottom truncation."
+  ],
+  "candidateNumber": 1,
+  "priorRejection": null
+}

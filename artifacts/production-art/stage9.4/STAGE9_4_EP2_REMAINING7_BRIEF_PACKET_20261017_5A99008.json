@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_REMAINING7_SOURCE_BOUND_BRIEF_PACKET",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "episode": 2,
+  "episodeSceneCount": 17,
+  "acceptedBeforePacket": 10,
+  "protectedAccepted": [
+    "S19-S26",
+    "ep2_refusal_bianca_arrival",
+    "ep2_bianca_arrives"
+  ],
+  "sourceFiles": {
+    "narrative/graph.json": {
+      "sha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544",
+      "bytes": 241013
+    },
+    "narrative/episodes/ep-02.json": {
+      "sha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+      "bytes": 73052
+    },
+    "narrative/assets.json": {
+      "sha256": "358597a00930a1e64c1686f8d22f9b3e8b798da7a75f0fc41a39433189969b48",
+      "bytes": 13603
+    },
+    "artifacts/production-art/stage9.4/SOURCE_BOUND_ART_BRIEFS.json": {
+      "sha256": "589bf3593376b7b7ea6b0522110f9a8175c388a8313b97db82a60bfc94afa182",
+      "bytes": 75860
+    },
+    "artifacts/art-direction/ART_BIBLE.md": {
+      "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96",
+      "bytes": 16037
+    },
+    "config/wardrobe-rules.json": {
+      "sha256": "5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246",
+      "bytes": 5090
+    },
+    "assets/characters/references/originals/bianca.png": {
+      "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9",
+      "bytes": 2137778
+    },
+    "assets/characters/references/originals/nika.png": {
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "bytes": 2493846
+    },
+    "assets/characters/references/originals/matteo.png": {
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+      "bytes": 2130673
+    },
+    "assets/characters/references/originals/giulia.png": {
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "bytes": 2409650
+    }
+  },
+  "dualFormatContract": {
+    "portrait": {
+      "width": 1024,
+      "height": 1536,
+      "safeViewports": ["360x640", "390x844", "430x932"]
+    },
+    "landscape": {
+      "width": 1672,
+      "height": 941,
+      "runtimeTarget": "1920x1080"
+    },
+    "provenance": "No PNG is admitted by this packet; generation and output-gate receipts belong to a later bounded run."
+  },
+  "globalConstraints": [
+    "no baked dialogue, UI, logos, watermarks or readable invented document text",
+    "preserve approved character identities and wardrobe continuity",
+    "no fabricated Aurea knowledge or legal certainty",
+    "no romance or touch unless the authored cue explicitly and consensually requires it",
+    "portrait and landscape must be independently composed",
+    "do not modify or regenerate S19-S26 or accepted Bianca files"
+  ],
+  "mappingInventory": [
+    {
+      "sceneId": "ep2_bianca_professional_response",
+      "assetId": "ep2-bianca-professional-response-cg",
+      "familyId": "ep2-bianca-audit-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "Do not reuse accepted arrival family: laptop/weekly-expense action is distinct."
+    },
+    {
+      "sceneId": "ep2_bianca_pushback_response",
+      "assetId": "ep2-bianca-pushback-response-cg",
+      "familyId": "ep2-bianca-audit-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "Share the audit family contract with the professional response while preserving authored branch mapping."
+    },
+    {
+      "sceneId": "ep2_public_agreement",
+      "assetId": "ep2-public-agreement-cg",
+      "familyId": "ep2-public-gesture-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "New family; explicit consented hand contact is a state-specific authored cue."
+    },
+    {
+      "sceneId": "ep2_public_refusal",
+      "assetId": "ep2-public-refusal-cg",
+      "familyId": "ep2-public-gesture-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "New state-specific composition; refusal must show physical distance and lowered camera."
+    },
+    {
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "familyId": "ep2-service-rehearsal-failure-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "Do not reuse dry inventory: freezer/kitchen route and dessert transfer are distinct."
+    },
+    {
+      "sceneId": "ep2_rooftop_after",
+      "assetId": "ep2-rooftop-after-cg",
+      "familyId": "ep2-rooftop-after-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "New rooftop family; ended public role and physical distance are plot-critical."
+    },
+    {
+      "sceneId": "ep2_transition",
+      "assetId": "ep2-transition-cg",
+      "familyId": "ep2-office-aurea-transition-cg",
+      "status": "BRIEF_READY_GENERATION_PENDING",
+      "reuseDecision": "Do not reuse Bianca arrival: night office, valuation deadline and window-separated Giulia context are distinct."
+    }
+  ],
+  "briefs": [
+    {
+      "familyId": "ep2-bianca-audit-cg",
+      "sceneIds": ["ep2_bianca_professional_response", "ep2_bianca_pushback_response"],
+      "narrativePurpose": "Make Bianca's options and Nika's staff-first objection measurable without baking financial claims into art.",
+      "location": "Villa Serena office meeting table with open laptop",
+      "timeOfDay": "day 6 late morning",
+      "characters": ["nika", "bianca", "matteo"],
+      "physicalAction": "Bianca points to an open weekly-expense table; Nika writes three criteria on an invoice back; Matteo watches the cost of each option.",
+      "facialExpression": "Bianca measured; Nika skeptical but engaged; Matteo uncomfortable with the numbers.",
+      "composition": "Laptop screen remains abstract; bodies form a work triangle without a villain centre. Keep pointing hand, laptop edge and note above dialogue; wide format separates three document groups without readable text.",
+      "negativeConstraints": ["no readable numbers or slogans", "no sale signed", "no emotional villain pose"],
+      "canonReferences": ["artifacts/art-direction/ART_BIBLE.md", "assets/characters/references/originals/bianca.png", "config/wardrobe-rules.json"]
+    },
+    {
+      "familyId": "ep2-public-gesture-cg",
+      "sceneIds": ["ep2_public_agreement", "ep2_public_refusal"],
+      "narrativePurpose": "Separate public-agreement consent from consent to a hand gesture in a photographed courtyard moment.",
+      "location": "Villa Serena courtyard prepared for family photographs",
+      "timeOfDay": "day 7 midday",
+      "characters": ["nika", "matteo", "giulia"],
+      "physicalAction": "Agreement: Matteo takes Nika's hand only after her yes. Refusal: Nika stays beside him without contact, Matteo steps back and the photographer lowers the camera.",
+      "facialExpression": "Agreement: mutual relief without romantic climax. Refusal: Nika calm and firm; Matteo accepting; Giulia protective.",
+      "composition": "Courtyard and family context stay visible; agreement has light hand contact, refusal has a clear physical gap and lowered camera. Both formats keep faces and hand/non-contact state above dialogue.",
+      "negativeConstraints": ["no kiss", "no implied consent in refusal", "no crowd covering hands", "no baked camera controls"],
+      "canonReferences": ["artifacts/art-direction/ART_BIBLE.md", "narrative/NARRATIVE_BIBLE.md", "config/wardrobe-rules.json"]
+    },
+    {
+      "familyId": "ep2-service-rehearsal-failure-cg",
+      "sceneIds": ["ep2_rehearsal_failure"],
+      "narrativePurpose": "Show a real hotel failure and Nika distributing the response instead of carrying it alone.",
+      "location": "Villa Serena service corridor beside kitchen/freezer route",
+      "timeOfDay": "day 8 late afternoon before family dinner",
+      "characters": ["nika", "matteo", "giulia"],
+      "physicalAction": "Nika directs dessert transfer and revised timing; Matteo owns the refrigerator decision; Giulia protects guests from failed service.",
+      "facialExpression": "Nika decisive; Matteo concerned but cooperative; Giulia dryly determined.",
+      "composition": "Freezer/kitchen route, dessert tray and timing sheet form a clear action chain; no romantic centre, no spoiled-food close-up.",
+      "negativeConstraints": ["no spoiled food close-up", "no extra family crowd", "no decorative luxury kitchen"],
+      "canonReferences": ["artifacts/art-direction/ART_BIBLE.md", "assets/production/cg/ep1-staff-laundry-cg.png", "config/wardrobe-rules.json"]
+    },
+    {
+      "familyId": "ep2-rooftop-after-cg",
+      "sceneIds": ["ep2_rooftop_after"],
+      "narrativePurpose": "Close the seven-day role while preserving the difference between work, public performance and personal choice.",
+      "location": "Villa Serena rooftop terrace with returned chairs and coastal horizon",
+      "timeOfDay": "day 9 evening",
+      "characters": ["nika", "matteo"],
+      "physicalAction": "Nika closes the terms sheet; returned chairs and Aurea figures remain between her and Matteo as he asks what she wants after the role.",
+      "facialExpression": "Nika cautious and lucid; Matteo hopeful but not entitled.",
+      "composition": "Human-eye-level medium two-shot; physical gap remains readable, chairs anchor the ended event, horizon stays stable without a waterline trap.",
+      "negativeConstraints": ["no fireworks", "no handholding unless a later authored beat says so", "no route lock", "no floating figures"],
+      "canonReferences": ["artifacts/art-direction/ART_BIBLE.md", "narrative/NARRATIVE_BIBLE.md", "config/wardrobe-rules.json"]
+    },
+    {
+      "familyId": "ep2-office-aurea-transition-cg",
+      "sceneIds": ["ep2_transition"],
+      "narrativePurpose": "Turn the wedding cover into a business deadline without adding knowledge not yet earned.",
+      "location": "Villa Serena office at night, window toward courtyard where Giulia checks the guest list",
+      "timeOfDay": "day 9 late evening",
+      "characters": ["nika", "matteo", "bianca", "giulia"],
+      "physicalAction": "Bianca leaves a neutral valuation sheet; Nika writes the seventy-day deadline; Giulia checks the list beyond the window while the public role remains closed.",
+      "facialExpression": "Nika resolved; Matteo exposed; Bianca factual; Giulia unaware of the full folder contents.",
+      "composition": "Four roles are separated by desk/window planes; journal and Bianca/Matteo faces stay above dialogue; no readable valuation or Aurea logo.",
+      "negativeConstraints": ["no readable valuation figures", "no Aurea logo", "no public-couple pose", "no premature legal document detail"],
+      "canonReferences": ["artifacts/art-direction/ART_BIBLE.md", "narrative/NARRATIVE_BIBLE.md", "config/wardrobe-rules.json"],
+      "reuseCandidates": ["ep1-hook-cg rejected: sealed folder and unknown knowledge state are not Aurea transition"]
+    }
+  ],
+  "status": "READY_FOR_WEB_HIGH_BRIEF_REVIEW_AND_FUTURE_BOUNDED_RUN",
+  "generation": "NOT_STARTED; no PNGs, output receipts or capability claims are made by this packet"
+}

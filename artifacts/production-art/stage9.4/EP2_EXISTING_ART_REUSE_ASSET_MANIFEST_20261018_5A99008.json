@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "profile": "narrative-game",
+  "episode": 2,
+  "sceneAssets": {
+    "ep2_bianca_professional_response": "ep2-bianca-professional-response-cg",
+    "ep2_bianca_pushback_response": "ep2-bianca-pushback-response-cg"
+  },
+  "assets": [
+    {"id":"ep2-bianca-professional-response-cg","familyId":"ep2-bianca-audit-cg","format":"portrait","path":"assets/production/cg/ep2-bianca-professional-response-cg.png","sha256":"c7c9f52103a9d829cc1371e78c54d4e095c4ffea024cd14788d79923b981ec11","width":1024,"height":1536,"kind":"background"},
+    {"id":"ep2-bianca-professional-response-cg","familyId":"ep2-bianca-audit-cg","format":"desktop","path":"assets/production/cg/ep2-bianca-professional-response-cg-landscape.png","sha256":"50cbf3f0509f690b642ea0267589b62932afb15f06f2086d37b5ad8839cd56eb","width":1672,"height":941,"kind":"background"},
+    {"id":"ep2-bianca-pushback-response-cg","familyId":"ep2-bianca-audit-cg","format":"portrait","path":"assets/production/cg/ep2-bianca-pushback-response-cg.png","sha256":"4c88ad47d66e8bd95019326b447809c2f4089b971b3b2d2ee31575414f5e23ac","width":1024,"height":1536,"kind":"background"},
+    {"id":"ep2-bianca-pushback-response-cg","familyId":"ep2-bianca-audit-cg","format":"desktop","path":"assets/production/cg/ep2-bianca-pushback-response-cg-landscape.png","sha256":"640c1f86956da727dea401c6fd37ce26b8dbbd693902ebd6072d8124d463674f","width":1672,"height":941,"kind":"background"}
+  ],
+  "status": "EXISTING_ASSETS_ONLY_VISUAL_REUSE_PENDING"
+}

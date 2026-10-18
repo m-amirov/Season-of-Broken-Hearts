@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "phase": "analysis",
+  "reviewId": "EP2_REMAINING7_WEB_ANALYSIS_PIXELS_20261018",
+  "reviewTraceId": "01a14be6-3ccf-7441-8175-794c5e69f30b",
+  "taskId": "stage9.4-ep2-remaining7-source-bound-analysis-pixels-20261018",
+  "agent": "ceos_art_director_web",
+  "agentId": "01a14be6-3ccf-7441-8175-794c5e69f30b",
+  "evidenceArtifact": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_WEB_ANALYSIS_PIXELS_20261018_5A99008.json",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourcePacket": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json",
+  "clarificationRecord": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_CLARIFICATIONS_20261018_5A99008.json",
+  "status": "PASS",
+  "assurance": "strict",
+  "actualPixelsReceived": true,
+  "evidenceRefs": [
+    "assets/characters/references/originals/nika.png",
+    "assets/characters/references/originals/matteo.png",
+    "assets/characters/references/originals/bianca.png",
+    "assets/characters/references/originals/giulia.png",
+    "assets/production/cg/ep2-office-budget-cg.png",
+    "assets/production/cg/ep2-office-budget-cg-landscape.png"
+  ],
+  "receivedEvidenceRefs": [
+    "assets/characters/references/originals/nika.png",
+    "assets/characters/references/originals/matteo.png",
+    "assets/characters/references/originals/bianca.png",
+    "assets/characters/references/originals/giulia.png",
+    "assets/production/cg/ep2-office-budget-cg.png",
+    "assets/production/cg/ep2-office-budget-cg-landscape.png"
+  ],
+  "pixelEvidence": [
+    {"path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d","bytes":2493846,"width":1536,"height":1024},
+    {"path":"assets/characters/references/originals/matteo.png","sha256":"fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23","bytes":2130673,"width":1448,"height":1086},
+    {"path":"assets/characters/references/originals/bianca.png","sha256":"c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9","bytes":2137778,"width":1448,"height":1086},
+    {"path":"assets/characters/references/originals/giulia.png","sha256":"4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a","bytes":2409650,"width":1448,"height":1086},
+    {"path":"assets/production/cg/ep2-office-budget-cg.png","sha256":"cdee8ac81f0764392331676c9b9494c794648a472af74be4df08aef85c24a793","bytes":2425207,"width":1024,"height":1536},
+    {"path":"assets/production/cg/ep2-office-budget-cg-landscape.png","sha256":"8c9c88710038baec4273cbe1fefa23c8e12051bc9577472eed9c5969675ff005","bytes":2408297,"width":1672,"height":941}
+  ],
+  "reviewedItems": [
+    "CHARACTER_NIKA",
+    "CHARACTER_MATTEO",
+    "CHARACTER_BIANCA",
+    "CHARACTER_GIULIA",
+    "OFFICE_BUDGET_PORTRAIT",
+    "OFFICE_BUDGET_LANDSCAPE",
+    "REMAINING_7_BRIEF_CANON"
+  ],
+  "reviewedItemDetails": [
+    {"id":"CHARACTER_NIKA","status":"PASS","observation":"Identity and practical organizer silhouette are stable; no material drift."},
+    {"id":"CHARACTER_MATTEO","status":"PASS","observation":"Identity and guarded professional presence are stable; no material drift."},
+    {"id":"CHARACTER_BIANCA","status":"PASS","observation":"Copper-red hair, light eyes and professional slate suit reference are suitable for audit/transition."},
+    {"id":"CHARACTER_GIULIA","status":"PASS","observation":"Grounded service-lead identity and sage/cream working palette are suitable for courtyard/service/window context."},
+    {"id":"OFFICE_BUDGET_PORTRAIT","status":"PASS","observation":"Professional document action, Villa Serena materials and natural light provide a valid office canon reference."},
+    {"id":"OFFICE_BUDGET_LANDSCAPE","status":"PASS","observation":"Independent wide composition preserves office space and work-document hierarchy."},
+    {"id":"REMAINING_7_BRIEF_CANON","status":"PASS","observation":"All seven scene briefs and five families are compatible with the supplied visual references and clarifications."}
+  ],
+  "findings": [
+    {"id":"ART-001","severity":"P3","status":"ADVISORY","code":"AUDIT_THREE_CHARACTER_COMPOSITION","description":"Existing office references show Nika/Matteo; the new audit family must add Bianca as an active participant working with the table.","requiredChange":"Use references as canon only; make Bianca active and keep a readable three-person work triangle."},
+    {"id":"ART-002","severity":"P3","status":"ADVISORY","code":"WARDROBE_CONTEXT_CONTINUITY","description":"Reference pixels do not prove day-7 through day-9 full wardrobe; the declared wardrobe rules remain binding.","requiredChange":"Apply the exact day/state wardrobe in each brief, especially public event and night office."},
+    {"id":"ART-003","severity":"P3","status":"ADVISORY","code":"LOCATION_AND_LIGHTING_CONTINUITY","description":"Existing office references are daytime; the transition must preserve Villa Serena identity under ordinary night light.","requiredChange":"Do not turn night business transition into romantic or theatrical lighting."},
+    {"id":"ART-004","severity":"P3","status":"ADVISORY","code":"PUBLIC_CONSENT_STATE","description":"The supplied references do not contradict the consent contract; future generated states must keep agreement and refusal separate.","requiredChange":"Agreement contact only after separate yes; refusal preserves distance, no contact and lowered camera."},
+    {"id":"ART-005","severity":"P3","status":"ADVISORY","code":"DUAL_FORMAT_REFERENCE_SCOPE","description":"Existing office pair demonstrates independent portrait/landscape treatment but cannot prove future viewport readability.","requiredChange":"Compose every remaining-7 assetId in both formats and verify target runtime viewports after generation."}
+  ],
+  "unresolved": [
+    "The 14 new PNG pixels do not exist yet; no new-asset artistic acceptance is claimed.",
+    "Runtime captures for the remaining scenes are pending.",
+    "The Web reviewer used supplied current reference pixels; source-file hash equality was not independently verified by Web High."
+  ],
+  "summary":"PASS independent Web High analysis/canon review. Six supplied reference/accepted pixels were received and reviewed; they support the visual language, character identity, professional office canon and preparation of the seven source-bound briefs. No P0/P1 or material P2 defect was found. Five P3 advisories remain generation constraints. This is not new-asset acceptance, episode-final PASS or release readiness.",
+  "decision":"CANON_READY_FOR_GENERATING",
+  "mapping":{"episodeSceneCount":17,"acceptedBeforePacket":10,"remainingSceneCount":7,"assetFamilies":5,"uniqueAssetIds":7,"plannedPngCount":14},
+  "episodeFinalAcceptance":false,
+  "releaseReady":false
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "agent": "ceos_art_director_web",
+  "reviewTraceId": "01a14a4d-7b25-7bd3-b24b-8739e4d2a1c0",
+  "taskId": "production-art-f2c045-s24-s26-acceptance",
+  "model": "chatgpt-web/gpt-6-sol",
+  "assurance": "strict",
+  "reviewTraceIds": [
+    "01a14a4d-7b25-7bd3-b24b-8739e4d2a1c0",
+    "01a14a54-12c3-7332-a6d4-165016dc2010"
+  ],
+  "taskId": "production-art-f2c045-s24-s26-acceptance",
+  "evidenceArtifact": "artifacts/evidence/STAGE9_4_S24_S26_WEB_ART_ACCEPTANCE_20261017_5A99008.json",
+  "runId": "2026-10-16T15-16-26-992Z-production-art-f2c045",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "status": "PASS",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "actualPixelsReceived": true,
+  "independentVisualReview": true,
+  "screenshotsReceived": 7,
+  "screenshotsInspected": 7,
+  "reviewedItems": [
+    "S24-desktop-runtime",
+    "S24-mobile-runtime-before-repair",
+    "S25-desktop-runtime",
+    "S25-mobile-runtime",
+    "S26-desktop-runtime",
+    "S26-mobile-runtime",
+    "S24-mobile-runtime-after-repair"
+  ],
+  "sceneResults": {
+    "S24": {
+      "status": "PASS",
+      "initial": "REWORK",
+      "initialFinding": {
+        "id": "S24-MOBILE-CAST-CROP",
+        "severity": "P1",
+        "status": "RESOLVED",
+        "description": "The initial mobile runtime crop clipped Nika and left Giulia only partially readable.",
+        "repair": "CSS-only presentation repair for ep2-refusal-response-cg: object-fit contain; no PNG regeneration."
+      },
+      "repairReview": "PASS",
+      "finalP0P1": []
+    },
+    "S25": {
+      "status": "PASS",
+      "initial": "PASS",
+      "finalP0P1": []
+    },
+    "S26": {
+      "status": "PASS",
+      "initial": "PASS",
+      "finalP0P1": []
+    }
+  },
+  "criteria": {
+    "narrativeCorrespondence": "PASS",
+    "charactersAndAppearance": "PASS",
+    "locationEmotionTime": "PASS",
+    "composition": "PASS",
+    "desktopMobilePresentation": "PASS",
+    "importantObjectClipping": "PASS",
+    "noMaterialP0P1": true
+  },
+  "visualEvidence": [
+    {
+      "ref": "S24-desktop-runtime",
+      "path": "output/playwright/f2c045-ep2-refusal-response-desktop-6f99b01.png",
+      "sha256": "9891b01f5432609d63ec610c2c70faa8e1693c89ef7632d91e911a1f1ce40abd",
+      "pixelDimensions": "1920x1080",
+      "observation": "Family dining-room refusal scene; Nika, Matteo and Giulia are visible and the professional no-blame exchange reads clearly."
+    },
+    {
+      "ref": "S24-mobile-runtime-after-repair",
+      "path": "output/playwright/f2c045-ep2-refusal-response-mobile-5a99008.png",
+      "sha256": "50d60a906b7eb808f802a0c45525a3f08b0512595fbf93f1896d1d4fc1c44ded",
+      "pixelDimensions": "390x844",
+      "observation": "All three faces and the dining-room planning context remain visible; dialogue is readable and no important object is clipped."
+    },
+    {
+      "ref": "S25-desktop-runtime",
+      "path": "output/playwright/f2c045-ep2-fake-terms-desktop-6f99b01.png",
+      "sha256": "ea74f328c1ac62a791ac167b81b7438e35d81f0e49a36eb7434e93118a6ba71f",
+      "pixelDimensions": "1920x1080",
+      "observation": "Villa office daytime scene with Nika and Matteo, clean sheet and untouched pen, separated professional staging."
+    },
+    {
+      "ref": "S25-mobile-runtime",
+      "path": "output/playwright/f2c045-ep2-fake-terms-mobile-6f99b01.png",
+      "sha256": "5497fa6470a3eae9bfc567eb214cf8c68c07f1b64094a4584fe5741c227b9f1a",
+      "pixelDimensions": "390x844",
+      "observation": "Both characters and the consent-boundary staging remain legible without material crop."
+    },
+    {
+      "ref": "S26-desktop-runtime",
+      "path": "output/playwright/f2c045-ep2-refusal-workday-desktop-6f99b01.png",
+      "sha256": "3d48a0db8cad0380392f5af579234953ea720cb684aa730b058f10e9dc7ca70b",
+      "pixelDimensions": "1920x1080",
+      "observation": "Service corridor near the kitchen with early rain, Giulia's active decision, Nika's tent relocation and Matteo's support readable."
+    },
+    {
+      "ref": "S26-mobile-runtime",
+      "path": "output/playwright/f2c045-ep2-refusal-workday-mobile-6f99b01.png",
+      "sha256": "d3a39f35dde69c5aa482019c74d4feaf2e666a1672cbe7f621a84916c6897690",
+      "pixelDimensions": "390x844",
+      "observation": "All three characters, service-corridor context and rain/workday action remain comprehensible on mobile."
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "S24-MOBILE-CAST-CROP",
+      "severity": "P1",
+      "status": "RESOLVED",
+      "resolution": "Scoped CSS presentation repair committed as 5a990085b1a544afb717f9b8c61b8cb0df8b5d38; source PNG bytes and asset mappings unchanged.",
+      "evidenceRef": "S24-mobile-runtime-after-repair"
+    }
+  ],
+  "unresolved": [],
+  "regeneration": {
+    "invoked": false,
+    "reason": "The only material issue was a runtime framing defect; accepted PNGs were not regenerated."
+  },
+  "decision": "PASS for scoped S24-S26 runtime art acceptance only. Episode-final and release readiness are not claimed.",
+  "evidenceRefs": [
+    "S24-desktop-runtime",
+    "S24-mobile-runtime-after-repair",
+    "S25-desktop-runtime",
+    "S25-mobile-runtime",
+    "S26-desktop-runtime",
+    "S26-mobile-runtime"
+  ],
+  "receivedEvidenceRefs": [
+    "S24-desktop-runtime",
+    "S24-mobile-runtime-after-repair",
+    "S25-desktop-runtime",
+    "S25-mobile-runtime",
+    "S26-desktop-runtime",
+    "S26-mobile-runtime"
+  ],
+  "findings": [
+    {
+      "id": "S24-MOBILE-CAST-CROP",
+      "severity": "P1",
+      "status": "RESOLVED",
+      "observation": "Initial mobile runtime framing clipped Nika and left Giulia partially readable.",
+      "resolution": "CSS-only contain framing restored all three faces and preserved dialogue readability.",
+      "evidenceRef": "S24-mobile-runtime-after-repair"
+    }
+  ],
+  "supportingEvidenceRefs": [
+    "artifacts/evidence/STAGE9_4_S24_S26_CURRENT_RUNTIME_EVIDENCE_20261017_5A99008.json",
+    "artifacts/evidence/STAGE9_4_EP2_BIANCA_PRELOAD_DIAGNOSTIC_20261017_5A99008.json",
+    "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_F2C045_4FF66EA.json",
+    "narrative/episodes/ep-02.json",
+    "artifacts/production-art/stage9.4/briefs/EP2-S24-dining-refusal-response-current-505dc47.json",
+    "artifacts/production-art/stage9.4/briefs/EP2-S25-office-fake-terms-current-505dc47.json",
+    "artifacts/production-art/stage9.4/briefs/EP2-S26-service-refusal-workday-current-505dc47.json"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "profile": "narrative-game",
+  "episode": 2,
+  "sceneAssets": {
+    "ep2_refusal_bianca_arrival": "ep2-refusal-bianca-cg",
+    "ep2_bianca_arrives": "ep2-bianca-arrives-cg"
+  },
+  "assets": {
+    "ep2-refusal-bianca-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-bianca-arrival-cg.png",
+        "sha256": "6ddd16297e1b8c4e8d7808aa48e1509ad35cd42766b7016292802f3d04d91be3",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+        "sha256": "af3baf2fd9ba61a571e6bf60bbcaff17366d1a813fb4b7ccc4585db01d149514",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep2-bianca-arrives-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-bianca-arrival-cg.png",
+        "sha256": "6ddd16297e1b8c4e8d7808aa48e1509ad35cd42766b7016292802f3d04d91be3",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+        "sha256": "af3baf2fd9ba61a571e6bf60bbcaff17366d1a813fb4b7ccc4585db01d149514",
+        "width": 1672,
+        "height": 941
+      }
+    }
+  }
+}
