@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "sourceHead": "84f63660d49451550ed75906ce09e599d5dc4fd2",
+  "profile": "narrative-game",
+  "episode": 2,
+  "coverageMode": "BATCH_ONLY",
+  "runId": "2026-10-18T18-09-24-164Z-production-art-4d543a",
+  "episodeFinalAcceptance": false,
+  "sceneAssets": {
+    "ep2_public_agreement": "ep2-public-agreement-cg",
+    "ep2_public_refusal": "ep2-public-refusal-cg",
+    "ep2_rehearsal_failure": "ep2-rehearsal-failure-cg",
+    "ep2_rooftop_after": "ep2-rooftop-after-cg",
+    "ep2_transition": "ep2-transition-cg"
+  },
+  "assets": {
+    "ep2-public-agreement-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-public-agreement-cg.png",
+        "sha256": "57f04d75c69fba5a4c5833f8b1f0569d0de4b97c325272d5d47624eeecd5f608",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-public-agreement-cg-landscape.png",
+        "sha256": "f1debc10ad01d7d922053641989facccae8d341fee67e5b8a9967f0df8aa1552",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep2-public-refusal-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-public-refusal-cg.png",
+        "sha256": "ad5025938713d8b1b0199be639506f9be3df4e89ab6c985939b2c792b5c2726c",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-public-refusal-cg-landscape.png",
+        "sha256": "d717ca355ab7c1dc389c34e3717f8ecdd0133a9cf978b5b6f561dd7416e59d7e",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep2-rehearsal-failure-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+        "sha256": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+        "sha256": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep2-rooftop-after-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-rooftop-after-cg.png",
+        "sha256": "19c9d8160ee3c7c38764fc8b2726f944d80c6387bb7590faa92a3716e30e8a34",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-rooftop-after-cg-landscape.png",
+        "sha256": "8a4d97f2ee151bc59a8e49cca4412237c1bc1da5c8b82730bbddf8cd051ead43",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep2-transition-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep2-office-aurea-transition-cg.png",
+        "sha256": "8b3a5b8ca79d4ecc1db0360714d74ffef2036d630843cc55ce41faca5499d250",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep2-office-aurea-transition-cg-landscape.png",
+        "sha256": "d255cba1bc2b8c76910044eaa2db024730ad6a5fadcb5329770c3074fff20921",
+        "width": 1672,
+        "height": 941
+      }
+    }
+  }
+}
