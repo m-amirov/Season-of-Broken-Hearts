@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { createAssetManager } from '../../src/assets/asset-manager.mjs';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
@@ -47,4 +48,111 @@ test('Stage 9.4 EP2 scene IDs map to admitted dual-format runtime paths', () => 
       });
     }
   }
+});
+
+test('EP2 Bianca agreement and refusal branches resolve a real dual-format asset family', () => {
+  const graph = read('narrative/graph.json');
+  const manifest = read('narrative/assets.json');
+  const expectedScenes = {
+    ep2_refusal_bianca_arrival: 'ep2-refusal-bianca-cg',
+    ep2_bianca_arrives: 'ep2-bianca-arrives-cg'
+  };
+
+  const assets = [];
+  for (const [sceneId, expectedAssetId] of Object.entries(expectedScenes)) {
+    const scene = graph.scenes.find(value => value.id === sceneId);
+    assert.ok(scene, `missing authored scene ${sceneId}`);
+    assert.equal(scene.assetId, expectedAssetId);
+    const asset = manifest.assets[expectedAssetId];
+    assert.ok(asset, `missing manifest asset ${expectedAssetId}`);
+    assert.equal(asset.kind, 'production-cg');
+    assert.equal(asset.familyId, 'ep2-bianca-arrival-cg');
+    assert.notEqual(asset.variants.portrait.src, asset.variants.landscape.src);
+    assets.push(asset);
+    for (const format of ['portrait', 'landscape']) {
+      const descriptor = asset.variants[format];
+      const relativePath = descriptor.src.replace(/^\//, '');
+      const actual = pngInfo(relativePath);
+      assert.deepEqual(actual, {
+        sha256: descriptor.sha256,
+        width: descriptor.dimensions.width,
+        height: descriptor.dimensions.height
+      });
+    }
+  }
+  assert.deepEqual(assets[0].variants, assets[1].variants);
+});
+
+test('EP2 Bianca branches select and preload the correct format on desktop and mobile', async () => {
+  const graph = read('narrative/graph.json');
+  const manifest = read('narrative/assets.json');
+  const scenes = [
+    graph.scenes.find(value => value.id === 'ep2_refusal_bianca_arrival'),
+    graph.scenes.find(value => value.id === 'ep2_bianca_arrives')
+  ];
+  const loaded = [];
+  const manager = createAssetManager(manifest, () => {
+    const image = {
+      decode: async () => {},
+      onload: null,
+      onerror: null
+    };
+    Object.defineProperty(image, 'src', {
+      set(value) {
+        loaded.push(value);
+        queueMicrotask(() => image.onload?.());
+      }
+    });
+    return image;
+  });
+
+  for (const scene of scenes) {
+    assert.equal(manager.selectionFor(scene, { width: 1920, height: 1080 }).format, 'landscape');
+    assert.equal(manager.selectionFor(scene, { width: 390, height: 844 }).format, 'portrait');
+    await manager.preloadSceneAsset(scene, { width: 1920, height: 1080 });
+    await manager.preloadSceneAsset(scene, { width: 390, height: 844 });
+  }
+
+  assert.equal(manager.cachedAssetCount(), 2, 'both Bianca variants should be cached once');
+  assert.deepEqual([...new Set(loaded)].sort(), [
+    '/assets/production/cg/ep2-bianca-arrival-cg-landscape.png',
+    '/assets/production/cg/ep2-bianca-arrival-cg.png'
+  ]);
+});
+
+test('EP2 Bianca narrative branches keep authored continuation and choice targets intact', () => {
+  const graph = read('narrative/graph.json');
+  const arrival = graph.scenes.find(value => value.id === 'ep2_bianca_arrives');
+  const refusal = graph.scenes.find(value => value.id === 'ep2_refusal_bianca_arrival');
+  assert.equal(refusal.next, 'ep2_rehearsal_failure');
+  assert.deepEqual(arrival.choices.map(choice => choice.to).sort(), [
+    'ep2_bianca_professional_response',
+    'ep2_bianca_pushback_response'
+  ]);
+  for (const choice of arrival.choices) {
+    assert.equal(choice.effects.biancaRoleKnown, true);
+    assert.ok(graph.scenes.some(scene => scene.id === choice.to));
+  }
+});
+
+test('Stage 9.4 remaining-seven packet keeps current mappings source-bound without claiming PNGs', () => {
+  const graph = read('narrative/graph.json');
+  const packet = read('artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json');
+  const entries = packet.mappingInventory;
+  assert.equal(entries.length, 7);
+  assert.equal(new Set(entries.map(entry => entry.sceneId)).size, 7);
+  assert.equal(new Set(entries.map(entry => entry.assetId)).size, 7);
+  assert.equal(new Set(entries.map(entry => entry.familyId)).size, 5);
+  for (const entry of entries) {
+    const scene = graph.scenes.find(value => value.id === entry.sceneId);
+    assert.ok(scene, `missing pending scene ${entry.sceneId}`);
+    assert.equal(scene.assetId, entry.assetId);
+    assert.equal(entry.status, 'BRIEF_READY_GENERATION_PENDING');
+  }
+  assert.equal(packet.generation, 'NOT_STARTED; no PNGs, output receipts or capability claims are made by this packet');
+  assert.deepEqual(packet.protectedAccepted, [
+    'S19-S26',
+    'ep2_refusal_bianca_arrival',
+    'ep2_bianca_arrives'
+  ]);
 });
