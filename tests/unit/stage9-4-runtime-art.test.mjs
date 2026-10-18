@@ -135,6 +135,95 @@ test('EP2 Bianca narrative branches keep authored continuation and choice target
   }
 });
 
+test('EP2 remaining five scenes map to hash-bound dual-format PNGs with recorded provenance', () => {
+  const graph = read('narrative/graph.json');
+  const manifest = read('narrative/assets.json');
+  const rights = read('artifacts/evidence/rights-manifest.json').entries;
+  const expected = {
+    ep2_public_agreement: 'ep2-public-agreement-cg',
+    ep2_public_refusal: 'ep2-public-refusal-cg',
+    ep2_rehearsal_failure: 'ep2-rehearsal-failure-cg',
+    ep2_rooftop_after: 'ep2-rooftop-after-cg',
+    ep2_transition: 'ep2-transition-cg'
+  };
+
+  for (const [sceneId, assetId] of Object.entries(expected)) {
+    const scene = graph.scenes.find(value => value.id === sceneId);
+    assert.ok(scene, `missing authored scene ${sceneId}`);
+    assert.equal(scene.assetId, assetId);
+    const asset = manifest.assets[assetId];
+    assert.ok(asset, `missing runtime mapping ${assetId}`);
+    assert.equal(asset.kind, 'production-cg');
+    assert.deepEqual(asset.sceneIds, [sceneId]);
+
+    for (const [format, dimensions] of Object.entries({
+      portrait: { width: 1024, height: 1536 },
+      landscape: { width: 1672, height: 941 }
+    })) {
+      const descriptor = asset.variants[format];
+      const relativePath = descriptor.src.replace(/^\//, '');
+      const actual = pngInfo(relativePath);
+      assert.deepEqual(actual, {
+        sha256: descriptor.sha256,
+        width: dimensions.width,
+        height: dimensions.height
+      });
+      assert.deepEqual(descriptor.dimensions, dimensions);
+
+      const rightsEntry = rights.find(entry => entry.path === relativePath);
+      assert.ok(rightsEntry, `missing rights entry for ${relativePath}`);
+      assert.equal(rightsEntry.sha256, actual.sha256);
+      assert.equal(rightsEntry.bytes, fs.statSync(path.join(root, relativePath)).size);
+      assert.match(rightsEntry.creationMethod, /image_gen\.imagegen/);
+      assert.ok(rightsEntry.originalSource);
+      assert.ok(rightsEntry.licenseOrPermission);
+      assert.deepEqual(rightsEntry.transformations, []);
+    }
+    assert.notEqual(asset.variants.portrait.src, asset.variants.landscape.src);
+  }
+});
+
+test('EP2 remaining five families select and preload the right format across authored branches', async () => {
+  const graph = read('narrative/graph.json');
+  const manifest = read('narrative/assets.json');
+  const sceneIds = [
+    'ep2_public_agreement', 'ep2_public_refusal', 'ep2_rehearsal_failure',
+    'ep2_rooftop_after', 'ep2_transition'
+  ];
+  const scenes = sceneIds.map(id => graph.scenes.find(value => value.id === id));
+  const loaded = [];
+  const manager = createAssetManager(manifest, () => {
+    const image = { decode: async () => {}, onload: null, onerror: null };
+    Object.defineProperty(image, 'src', {
+      set(value) {
+        loaded.push(value);
+        queueMicrotask(() => image.onload?.());
+      }
+    });
+    return image;
+  });
+
+  for (const scene of scenes) {
+    assert.equal(manager.selectionFor(scene, { width: 1600, height: 900 }).format, 'landscape');
+    assert.equal(manager.selectionFor(scene, { width: 390, height: 844 }).format, 'portrait');
+    assert.equal(manager.selectionFor(scene, { width: 360, height: 640 }).format, 'portrait');
+    await manager.preloadSceneAsset(scene, { width: 1600, height: 900 });
+    await manager.preloadSceneAsset(scene, { width: 390, height: 844 });
+  }
+
+  assert.equal(manager.cachedAssetCount(), 10, 'all five portrait/landscape pairs should be decoded');
+  assert.equal(new Set(loaded).size, 10);
+  assert.equal(graph.scenes.find(value => value.id === 'ep2_public_agreement').choices
+    .find(choice => choice.id === 'ep2_public_yes').to, 'ep2_rehearsal_failure');
+  assert.equal(graph.scenes.find(value => value.id === 'ep2_public_agreement').choices
+    .find(choice => choice.id === 'ep2_public_no').to, 'ep2_public_refusal');
+  assert.equal(graph.scenes.find(value => value.id === 'ep2_public_refusal').next, 'ep2_rehearsal_failure');
+  assert.equal(graph.scenes.find(value => value.id === 'ep2_rehearsal_failure').next, 'ep2_rooftop_after');
+  assert.ok(graph.scenes.find(value => value.id === 'ep2_rooftop_after').choices
+    .every(choice => choice.to === 'ep2_transition'));
+  assert.equal(graph.scenes.find(value => value.id === 'ep2_transition').next, 'ep3_old_photo');
+});
+
 test('Stage 9.4 remaining-seven packet keeps current mappings source-bound without claiming PNGs', () => {
   const graph = read('narrative/graph.json');
   const packet = read('artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json');

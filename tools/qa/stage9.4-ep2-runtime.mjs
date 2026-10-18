@@ -138,11 +138,12 @@ try {
       await startFresh(page, `${viewport.width}-${viewport.height}-${route.id}`);
       const seenScenes = [];
       const capturedScenes = [];
+      const routeTargets = new Set(route.targetScenes ?? [...targetScenes]);
       for (let guard = 0; guard < 260; guard += 1) {
         const state = await readRuntime(page, viewport);
         if (!state.sceneId) throw new Error(`Missing scene state at ${viewport.width}x${viewport.height}/${route.id}`);
         if (!seenScenes.includes(state.sceneId)) seenScenes.push(state.sceneId);
-        if (targetScenes.has(state.sceneId) && !capturedScenes.includes(state.sceneId)) {
+        if (routeTargets.has(state.sceneId) && !capturedScenes.includes(state.sceneId)) {
           const file = path.join(screenshotRoot, `${viewport.width}x${viewport.height}`, route.id, `${state.sceneId}.png`);
           fs.mkdirSync(path.dirname(file), { recursive: true });
           await page.screenshot({ path: file, fullPage: true });
@@ -156,7 +157,7 @@ try {
           });
           capturedScenes.push(state.sceneId);
         }
-        if (state.sceneId === 'ep2_workday_inventory' && capturedScenes.includes(state.sceneId)) break;
+        if (capturedScenes.length === routeTargets.size) break;
         const save = await readState(page);
         const choiceButtons = page.locator('.choices .choice-button');
         if (await choiceButtons.count()) {
@@ -170,8 +171,8 @@ try {
           await waitForCursorChange(page, save);
         }
       }
-      if (capturedScenes.length !== targetScenes.size) throw new Error(`Target scene coverage ${capturedScenes.length}/${targetScenes.size} for ${route.id}`);
-      output.routes.push({ route: route.id, viewport, sceneIds: seenScenes, sceneCount: seenScenes.length, capturedScenes, consoleErrors, requestFailures, httpErrors });
+      if (capturedScenes.length !== routeTargets.size) throw new Error(`Target scene coverage ${capturedScenes.length}/${routeTargets.size} for ${route.id}`);
+      output.routes.push({ route: route.id, viewport, sceneIds: seenScenes, sceneCount: seenScenes.length, targetScenes: [...routeTargets], capturedScenes, consoleErrors, requestFailures, httpErrors });
       output.consoleErrors.push(...consoleErrors.map(error => ({ viewport, route: route.id, error })));
       output.requestFailures.push(...requestFailures.map(error => ({ viewport, route: route.id, ...error })));
       output.httpErrors.push(...httpErrors.map(error => ({ viewport, route: route.id, ...error })));
@@ -203,7 +204,8 @@ try {
   };
   await transitionContext.close();
 
-  if (output.captures.length !== viewports.length * routes.length * targetScenes.size) throw new Error(`Screenshot coverage ${output.captures.length}`);
+  const expectedCaptures = viewports.length * routes.reduce((total, route) => total + (route.targetScenes?.length ?? targetScenes.size), 0);
+  if (output.captures.length !== expectedCaptures) throw new Error(`Screenshot coverage ${output.captures.length}/${expectedCaptures}`);
   if (output.consoleErrors.length || output.requestFailures.length || output.httpErrors.length) {
     throw new Error(`Runtime errors: console=${output.consoleErrors.length}, request=${output.requestFailures.length}, http=${output.httpErrors.length}`);
   }
