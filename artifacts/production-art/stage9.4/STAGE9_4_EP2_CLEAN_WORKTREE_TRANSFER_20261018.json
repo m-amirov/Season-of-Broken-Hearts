@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_CLEAN_WORKTREE_TRANSFER",
+  "sourceProject": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "targetProject": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture-work-e02f7c47",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "targetHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourceStatusEntries": 87,
+  "targetTransferredStatusEntries": 71,
+  "entriesDigestSha256": "c60e75edb42814b4bf920267e69fc227901c8b8075207c3d7475be759a3e743f",
+  "excluded": [
+    ".ceos-runs/**",
+    "old session markers",
+    "leases",
+    "capability attestations",
+    "unrelated source modifications"
+  ],
+  "entries": [
+    {
+      "path": "artifacts/evidence/rights-manifest.json",
+      "bytes": 35022,
+      "sha256": "766f9158df2867d0ecdf837376bad53b8cb36455b073d4ad75d7ac3dd06a49c7",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "narrative/assets.json",
+      "bytes": 15050,
+      "sha256": "e029d87ed9d84f4c9a5cad4c99a62285a3ada499266e7dbf9861b46fddf16e1f",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "tests/unit/stage9-4-runtime-art.test.mjs",
+      "bytes": 6536,
+      "sha256": "8573f8bb435e3734d466c4b85f494615266a0ab7d8b303ff67324d2ecb0ccc39",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "tests/unit/ui-contract.test.mjs",
+      "bytes": 12078,
+      "sha256": "a2093614b6a48fa2b0a74c0056b0e7a31135e7f264b40f2be4ba440ea6145c08",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/STAGE9_4_EP2_BIANCA_PRELOAD_DIAGNOSTIC_20261017_5A99008.json",
+      "bytes": 1571,
+      "sha256": "37d013cdab8e19ee3803ea1e6a9978b184c19001d6777b4d785d6e095f4f0b3c",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/STAGE9_4_S24_S26_CURRENT_RUNTIME_EVIDENCE_20261017_5A99008.json",
+      "bytes": 2992,
+      "sha256": "0303e93c56a89e60c8369380bd0b7d5539d3a3a11dadff9edd99e5d454117cd9",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/STAGE9_4_S24_S26_TASK_CHECKS_20261017_5A99008.json",
+      "bytes": 2680,
+      "sha256": "3dc2ddc44fb5f54cd02d548184cd067a8fc54a5a0e16dea09383f57b5b9d4f97",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/STAGE9_4_S24_S26_WEB_ART_ACCEPTANCE_20261017_5A99008.json",
+      "bytes": 6487,
+      "sha256": "916670301a78b337267e659b6712ff7299201f78d56da534788c477a53535ec7",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime.json",
+      "bytes": 22846,
+      "sha256": "85374a922f4c4b5d81338a298b6e35e34a500bfe0bb892d9337dace6ce9f6c92",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/1600x900/bianca-agreement/ep2_bianca_arrives.png",
+      "bytes": 1756668,
+      "sha256": "24320326381626ae5bf93611d38b2ae914e75f4e23d4d646fb9dcd0e026a8339",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/1600x900/bianca-refusal/ep2_refusal_bianca_arrival.png",
+      "bytes": 1770172,
+      "sha256": "484d34a0b17df68df16c61487149f2cdb27b73dbebd41e3abf34a60832533ae2",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/1920x1080/bianca-agreement/ep2_bianca_arrives.png",
+      "bytes": 2362539,
+      "sha256": "3d3b205f3b077ce81412bf208d5aa8dd70dde87a1f4be3737389a1bc08cb0066",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/1920x1080/bianca-refusal/ep2_refusal_bianca_arrival.png",
+      "bytes": 2380146,
+      "sha256": "7409c645645b414f65817e7308ba8a87669769684876cdd027bbbd36526ed54c",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/1920x900/bianca-agreement/ep2_bianca_arrives.png",
+      "bytes": 1984353,
+      "sha256": "47ebec2a5e4270232c8b6498f1b84ca5f6cc5ffc9cff789dfe81aa59a0589c34",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/1920x900/bianca-refusal/ep2_refusal_bianca_arrival.png",
+      "bytes": 2001177,
+      "sha256": "3cc79f9d68bce53c6fed0ba6f7ed02103fad056bfb86a0a9982c78c3061f23aa",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-agreement/ep2_bianca_arrives.png",
+      "bytes": 328910,
+      "sha256": "31140f2c5aad4e075844f70edda9746ac9db9a3a153d7c81855fc08be08b5b1c",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/360x640/bianca-refusal/ep2_refusal_bianca_arrival.png",
+      "bytes": 336567,
+      "sha256": "af39d1eb6a541c2e12f68f05d30ceb8c3276ce9f97055f72ebeeee0e12929150",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/390x844/bianca-agreement/ep2_bianca_arrives.png",
+      "bytes": 448498,
+      "sha256": "50d21d2a056de90a7a9262a07101abde2ecf49aa043dfffa39b358e297edc7c9",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/390x844/bianca-refusal/ep2_refusal_bianca_arrival.png",
+      "bytes": 456713,
+      "sha256": "5e87abdb0b5009711c5460be33c1d28a5cbc80c3ae1bad46fb56d550e5f1080a",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/430x932/bianca-agreement/ep2_bianca_arrives.png",
+      "bytes": 538499,
+      "sha256": "4b1486cf45d66cf36a31d6b01d6b744082f0d4e8ed827bbc3eee9deeef5260cf",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-bianca-runtime/430x932/bianca-refusal/ep2_refusal_bianca_arrival.png",
+      "bytes": 549220,
+      "sha256": "2a9d21749a324601b99933db74667edfc438d56bd2b5330a1a7e1c4a82e4b7ec",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525.json",
+      "bytes": 9062,
+      "sha256": "14a39aefccf60ad47e3d5e160a79dfc7687ce049524b8ab332f1462ef45decb6",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/1920x1080/audit-professional/ep2_bianca_professional_response.png",
+      "bytes": 2268247,
+      "sha256": "d70b3419da0bee0c2275034a2b391886b09a214cebf83d5e4618edae1f473750",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/1920x1080/audit-pushback/ep2_bianca_pushback_response.png",
+      "bytes": 2184421,
+      "sha256": "7bd514083948569f8a09d9a4fdeeb0dc8eafdf669a0af51cee8529da2edc5380",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/390x844/audit-professional/ep2_bianca_professional_response.png",
+      "bytes": 428947,
+      "sha256": "223e0d20034432666c5249c9ba71bceded36e985e610db7f0e021ef583e439af",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/evidence/stage9.4-ep2-audit-runtime-20261018-0525/390x844/audit-pushback/ep2_bianca_pushback_response.png",
+      "bytes": 398219,
+      "sha256": "3e242299ffd1de4c8652bc72ae734eb2dd32e4d63a44ae87c1ff14c122898ad2",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/EP2_BIANCA_WEB_ACCEPTANCE_20261017_E39DBF.json",
+      "bytes": 6596,
+      "sha256": "0d56af0bde9cecabbae442985546b483c9f200f104eb76714ef4da866058d4eb",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/EP2_BIANCA_WEB_ANALYSIS_20261017_E39DBF.json",
+      "bytes": 10290,
+      "sha256": "ad5a39878bd775e7d64a0387321d9425b0f84b8ffa169b25d34d24322bf73a9f",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/EP2_BIANCA_WEB_MIDPOINT_20261017_E39DBF.json",
+      "bytes": 5498,
+      "sha256": "e6857f9371ece57d77328fda9f6d67a06b74f200be90cfa26ef78b4cb8a67313",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/EP2_EXISTING_ART_REUSE_ASSET_MANIFEST_20261018_5A99008.json",
+      "bytes": 1564,
+      "sha256": "f3957ddc02c20b7dbefcbc47a942d4720d6d76d0e64c15ef28d337a631b7515a",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/EP2_EXISTING_ART_REUSE_CONTRACT_20261018_5A99008.json",
+      "bytes": 4894,
+      "sha256": "af393c71b241af9403126629d3d58a4916eb33a46fb693beaabbe6ac3b707327",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/EP2_EXISTING_ART_REUSE_WEB_ACCEPTANCE_20261018_5A99008.json",
+      "bytes": 5053,
+      "sha256": "9fef94760118113d742a8a5185d7b259fdb5ed8025e73d61a2f42defa100c6a2",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_BIANCA_BATCH_INVENTORY_20261017_5A99008.json",
+      "bytes": 3189,
+      "sha256": "214bdee73c9924be9cdab1e451734b30b1af37709ad1e96626919154b1796944",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_BIANCA_DUAL_FORMAT_MANIFEST_20261017_5A99008.json",
+      "bytes": 1281,
+      "sha256": "bdf44186c878e484aa70a46585393763bad0463fc74803ac79e8997387225f0b",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_BIANCA_RESOLUTION_CONTRACT_20261017_5A99008.json",
+      "bytes": 401,
+      "sha256": "c004e33d8847f4b0c2fed5f126539e9b13db3696d7fe09eca7fd975ab57b33e8",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_AUDIT_DUAL_FORMAT_MANIFEST_20261018_5A99008.json",
+      "bytes": 1487,
+      "sha256": "c14af187b2bee085fee747d14e511cfd3d8f484a1860db3cc70d103d2820d76c",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_AUDIT_GENERATION_BATCH_20261018_5A99008.json",
+      "bytes": 4333,
+      "sha256": "c6263d894a12d45a63ecdc59c6a0d3fb8c618b8f0e5f2f0028f4460f6b3df28d",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_AUDIT_WEB_MIDPOINT_20261018_5A99008.json",
+      "bytes": 5976,
+      "sha256": "b37ba75aebc5056754a5e0860d2b67bcd7e80c4ed4c186246f78c4985eab6efc",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BATCH_INVENTORY_20261018_5A99008.json",
+      "bytes": 3612,
+      "sha256": "5d4b16ef0422213fa518ee8072f74be758d7f4cd8a0c59297361d200178e6c17",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_CLARIFICATIONS_20261018_5A99008.json",
+      "bytes": 3896,
+      "sha256": "70d7f08b247575629dbbc69519790c78cb8a75e81003509c0d661f1b9ebd1cad",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_BRIEF_PACKET_20261017_5A99008.json",
+      "bytes": 11110,
+      "sha256": "6a321477dc4e3c99cc8e9c173d2c0562553804644d64d215783579295ec5976f",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_CANON_20261018_5A99008.json",
+      "bytes": 3818,
+      "sha256": "ea68a36fa72bec66bd1f21b11d1f1ea47e465cadb21be005e83c5e8339085d3e",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_RESOLUTION_CONTRACT_20261018_5A99008.json",
+      "bytes": 694,
+      "sha256": "700b2facc7d3ca1090cc888159878bac631387327fea98241d5a87275ebab0b2",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_WEB_ANALYSIS_20261018_5A99008.json",
+      "bytes": 3948,
+      "sha256": "27d6be7608705c114c9e991a35404aaf47d25d796c2e4b8d1c5f7578210decac",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_WEB_ANALYSIS_PIXELS_20261018_5A99008.json",
+      "bytes": 6821,
+      "sha256": "9fbeef41e40bd89c9ed47b6f4d5ec30bfe8ae3efa2368899787b0d265b981f4c",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_EP2_REMAINING7_WEB_BRIEF_REVIEW_20261018_5A99008.json",
+      "bytes": 4010,
+      "sha256": "913ecba133116f1bf6b060775580b35baf2c5b6c0b1522e827a8f06945d4c97e",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_S24_S26_DUAL_FORMAT_MANIFEST_20261017_5A99008.json",
+      "bytes": 1580,
+      "sha256": "fafbb5e2edd90933bc0c3a2b4a7f0fa0ac55775314ad6a8dd927bbdf39dd8cec",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/STAGE9_4_SOURCE_BOUND_REVALIDATION_20261018_5A99008.json",
+      "bytes": 43489,
+      "sha256": "c6eed69a98c6b5018605c2a1529565f94c2dee495c660f6e5fc86e0d3ff6c103",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/briefs/EP2-bianca-arrival-current-5A99008.json",
+      "bytes": 4955,
+      "sha256": "7fb65b80f57c0cc51e72a29358a50fa77a366559457cd6d1f75290def9076f0f",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/briefs/S28-S29-ep2-bianca-audit-current-5A99008.json",
+      "bytes": 4453,
+      "sha256": "36f47383d86d5194261d4d83f3fedffe19b83f68c97e79506c5aa850f121d665",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/briefs/S30-S31-ep2-public-gesture-current-5A99008.json",
+      "bytes": 4188,
+      "sha256": "a8468cfcea7cb46ee29d2a9f609f5630431afeb0323ec8303ef3c5485c668f7d",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/briefs/S32-ep2-rehearsal-failure-current-5A99008.json",
+      "bytes": 3981,
+      "sha256": "cb2c7307074e634b0ce96276ae6ce34ad97ade93056820bcdc5d3d15df611cae",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/briefs/S33-ep2-rooftop-after-current-5A99008.json",
+      "bytes": 3629,
+      "sha256": "ce68edb6c838183df12dc97be1069d12cf19b9dbd5bcfbb874b0d24c2cc06add",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/briefs/S34-ep2-office-aurea-transition-current-5A99008.json",
+      "bytes": 4764,
+      "sha256": "990c4a7912b788b316e4dee1b5cf84851f41f172f9f7c68cbba5faacdc95dc99",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_BIANCA_ARRIVAL_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json",
+      "bytes": 826,
+      "sha256": "5810d53b9813463bb118e3ad7c775ee6634cf72551c8fb05a346d7c28a051119",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_BIANCA_ARRIVAL_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json",
+      "bytes": 818,
+      "sha256": "d6596e2d911b599ad47e9d0b1e2826ecff6ccf1220e131f6464063df5c7c56ae",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PROFESSIONAL_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json",
+      "bytes": 840,
+      "sha256": "cfdf0e77addc96672b49ffe15c8e3b690faed64003876a4e9229410f9a6f172e",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PROFESSIONAL_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json",
+      "bytes": 832,
+      "sha256": "8482ace901880d073087db7eb1ef3be27c478b8c19f256613a4f875034afbd96",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PUSHBACK_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json",
+      "bytes": 836,
+      "sha256": "5b6e868005d4699f29f2833cb14661e55b1760be86f9d1ab907d4b0030bfb65e",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_BIANCA_PUSHBACK_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json",
+      "bytes": 828,
+      "sha256": "65a9cfa0f8cf094bdea9a27021283bc11d6f68c1beec483ac50294b6354af237",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/EP2_EXISTING_ART_REUSE_MECHANICAL_20261018_5A99008.json",
+      "bytes": 3887,
+      "sha256": "063edaeda7655e33304101a387487582293d46484fb984741944aeb0af0aa997",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "artifacts/production-art/stage9.4/receipts/STAGE9_4_S19_S23_CURRENT_HEAD_OUTPUT_BATCH_20261017.json",
+      "bytes": 9401,
+      "sha256": "67a1f3d2f5abd895f3e9b84616c3ed3609bed0dcd5e545192dd321326ea82c06",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "assets/production/cg/ep2-bianca-arrival-cg-landscape.png",
+      "bytes": 2396670,
+      "sha256": "af3baf2fd9ba61a571e6bf60bbcaff17366d1a813fb4b7ccc4585db01d149514",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "assets/production/cg/ep2-bianca-arrival-cg.png",
+      "bytes": 2444392,
+      "sha256": "6ddd16297e1b8c4e8d7808aa48e1509ad35cd42766b7016292802f3d04d91be3",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "assets/production/cg/ep2-bianca-professional-response-cg-landscape.png",
+      "bytes": 2321476,
+      "sha256": "50cbf3f0509f690b642ea0267589b62932afb15f06f2086d37b5ad8839cd56eb",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "assets/production/cg/ep2-bianca-professional-response-cg.png",
+      "bytes": 2285707,
+      "sha256": "c7c9f52103a9d829cc1371e78c54d4e095c4ffea024cd14788d79923b981ec11",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "assets/production/cg/ep2-bianca-pushback-response-cg-landscape.png",
+      "bytes": 2218106,
+      "sha256": "640c1f86956da727dea401c6fd37ce26b8dbbd693902ebd6072d8124d463674f",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "assets/production/cg/ep2-bianca-pushback-response-cg.png",
+      "bytes": 2194981,
+      "sha256": "4c88ad47d66e8bd95019326b447809c2f4089b971b3b2d2ee31575414f5e23ac",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "output/playwright/f2c045-ep2-refusal-response-mobile-5a99008.png",
+      "bytes": 385574,
+      "sha256": "50d60a906b7eb808f802a0c45525a3f08b0512595fbf93f1896d1d4fc1c44ded",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "tools/qa/stage9.4-bianca-runtime.mjs",
+      "bytes": 10863,
+      "sha256": "9c9188c90ff82f587646583f310aacae01718282ca27eed13bd750b2bb00efe0",
+      "sourceTargetMatch": true
+    },
+    {
+      "path": "tools/qa/stage9.4-ep2-audit-runtime.mjs",
+      "bytes": 13169,
+      "sha256": "3fc422b93d717ef3055f705c5209037f000c08d34b63cdc71a29eb76d14f2a3c",
+      "sourceTargetMatch": true
+    }
+  ]
+}
