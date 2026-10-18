@@ -245,10 +245,13 @@ test('Back icon stays aligned and is not a font-rendered arrow', () => {
   assert.doesNotMatch(renderer, /reader-nav-icon', '←'/);
 });
 
-test('S24 mobile contain remains scoped and does not change other scene crops', () => {
+test('mobile contain overrides remain scene-scoped and preserve other scene crops', () => {
   const css = fs.readFileSync(new URL('../../src/styles.css', import.meta.url), 'utf8');
+  const mobileArtRules = css.match(/@media \(max-width: 700px\)\s*\{\s*\.scene-art img\[data-asset-id='ep1-lobby-cg'\][\s\S]*?\n\}/)?.[0];
+  assert.ok(mobileArtRules, 'expected the main mobile scene-art rules');
   assert.match(css, /\.scene-art img\s*\{[^}]*object-fit:\s*cover;[^}]*object-position:\s*50% 18%;/s);
   assert.match(css, /\.scene-art img\[data-asset-id='ep2-refusal-response-cg'\]\s*\{[^}]*object-fit:\s*contain;[^}]*object-position:\s*center;/s);
+  assert.match(mobileArtRules, /\.scene-art img\[data-asset-id='ep2-bianca-professional-response-cg'\]\s*\{[^}]*object-fit:\s*contain;[^}]*object-position:\s*center 18%;/s);
   assert.match(css, /\.scene-art img\[data-asset-id='ep1-staff-laundry-cg'\]\s*\{[^}]*object-position:\s*60% 18%;/s);
   assert.doesNotMatch(css, /@media \(max-width: 700px\)[\s\S]*?\.scene-art img\s*\{[^}]*object-fit:\s*contain;/s);
 });

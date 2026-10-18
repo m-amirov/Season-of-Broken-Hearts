@@ -251,6 +251,7 @@ button:disabled { cursor: not-allowed; opacity: .45; }
 @media (max-width: 700px) {
   .scene-art img[data-asset-id='ep1-lobby-cg'] { object-fit: contain; object-position: center 18%; }
   .scene-art img[data-asset-id='ep2-refusal-response-cg'] { object-fit: contain; object-position: center; }
+  .scene-art img[data-asset-id='ep2-bianca-professional-response-cg'] { object-fit: contain; object-position: center 18%; }
   .reader-sheet { width: calc(100% - 36px); max-height: 58dvh; padding: 8px 2px 10px; bottom: max(18px, env(safe-area-inset-bottom)); }
   .dialogue-text { min-height: 3em; margin: 5px 0 12px; font-size: calc(clamp(1.08rem, 4.45vw, 1.28rem) * var(--reader-scale)); line-height: 1.49; }
   .speaker-name { font-size: .7rem; letter-spacing: .14em; }
