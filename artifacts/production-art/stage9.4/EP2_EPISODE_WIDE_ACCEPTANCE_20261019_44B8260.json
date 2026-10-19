@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_EPISODE_WIDE_ACCEPTANCE",
+  "status": "NOT_VERIFIED",
+  "sourceHead": "44b8260f58956180b1321405bd2113b397d8f4ae",
+  "acceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "checks": {
+    "narrativeSceneCoverage": {"status":"PASS","declaredScenes":17,"mappedScenes":17},
+    "uniquePortraitLandscapeCoverage": {"status":"PASS","acceptedPairs":16,"plannedPairs":16,"pngFiles":32},
+    "runtimeMapping": {"status":"PASS","captureEntries":111,"allCaptureFilesAndHashesVerified":true,"consoleErrors":0,"requestFailures":0,"httpErrors":0},
+    "s24S25S26IndependentDevWebHigh": {"status":"PASS","scenes":["S24","S25","S26"],"actualPixelsReceived":true,"stableBridgeUsed":false,"webReviewVerify":"PASS"},
+    "sourceBoundProgress": {"status":"PASS_ART_PROGRESS_REVALIDATED","index":"artifacts/production-art/stage9.4/STAGE9_4_SOURCE_BOUND_REVALIDATION_20261019_44B8260_CURRENT.json","historicalAcceptedPairs":5,"problems":[]},
+    "ceosContinue": {"status":"BLOCKED_RUN_RELOCATION","reason":"No safe historical production-art run can be relocated: one has post-checkpoint assets drift and one lacks its historical scope artifact."},
+    "episodeFinalAcceptance": {"status":"NOT_VERIFIED","reason":"CEOS has no safe run-bound final acceptance path for the mixed historical/current evidence without mutating or reconstructing historical runs."}
+  },
+  "counts": {"scenes":"17/17","uniqueArtPairs":"16/16"},
+  "releaseReady": false,
+  "stableBridgeUsed": false,
+  "generationInvoked": false,
+  "productionPngsModified": false,
+  "historicalEvidenceModified": false,
+  "reconciliation":"artifacts/production-art/stage9.4/EP2_ART_PROGRESS_RECONCILIATION_20261019_44B8260_COMPLETE.json"
+}

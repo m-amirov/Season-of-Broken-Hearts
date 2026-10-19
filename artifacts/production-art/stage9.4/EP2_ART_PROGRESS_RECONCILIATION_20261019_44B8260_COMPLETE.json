@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "kind": "STAGE9_4_EP2_ART_PROGRESS_RECONCILIATION_CURRENT",
+  "status": "SCENE_LEVEL_ACCEPTANCE_COMPLETE_EPISODE_WIDE_NOT_VERIFIED",
+  "sourceHead": "44b8260f58956180b1321405bd2113b397d8f4ae",
+  "scope": {
+    "episode": "EP2",
+    "sceneCount": 17,
+    "acceptedSceneCount": 17,
+    "uniquePixelPairCount": 16,
+    "acceptedUniquePixelPairCount": 16,
+    "pairDenominatorReason": "ep2_refusal_bianca_arrival and ep2_bianca_arrives intentionally share the same portrait/landscape Bianca-arrival PNG pair.",
+    "acceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2"
+  },
+  "acceptedScenes": [
+    {"sceneId":"ep2_morning_brief","assetId":"ep2-morning-brief-cg","receipt":"artifacts/production-art/stage9.4/WEB_HIGH_V2_S19_S20_S21_ACCEPTANCE_20261015_V7.json","receiptSha256":"c617b728c2df201bd94fbf461b2f449d2ee1ff877f82e10df60d51b077380cd8","receiptSourceHead":"5ac58032d314103059977014c8168988529b9f6f","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE"},
+    {"sceneId":"ep2_wedding_budget","assetId":"ep2-wedding-budget-cg","receipt":"artifacts/production-art/stage9.4/WEB_HIGH_V2_S19_S20_S21_ACCEPTANCE_20261015_V7.json","receiptSha256":"c617b728c2df201bd94fbf461b2f449d2ee1ff877f82e10df60d51b077380cd8","receiptSourceHead":"5ac58032d314103059977014c8168988529b9f6f","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE"},
+    {"sceneId":"ep2_workday_inventory","assetId":"ep2-workday-inventory-cg","receipt":"artifacts/production-art/stage9.4/WEB_HIGH_V2_S19_S20_S21_ACCEPTANCE_20261015_V7.json","receiptSha256":"c617b728c2df201bd94fbf461b2f449d2ee1ff877f82e10df60d51b077380cd8","receiptSourceHead":"5ac58032d314103059977014c8168988529b9f6f","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE"},
+    {"sceneId":"ep2_family_rehearsal","assetId":"ep2-family-rehearsal-cg","receipt":"artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json","receiptSha256":"652f01a076c20d3f383e5b2890a1e6b1df65c89a6c9746ef61bd6f3afedc8177","receiptSourceHead":"ef3dda8aef085a348bcc7086c6b4857c84aaa84d","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE"},
+    {"sceneId":"ep2_family_rehearsal_response","assetId":"ep2-family-rehearsal-response-cg","receipt":"artifacts/production-art/stage9.4/STAGE9_4_S22_S23_WEB_HIGH_ACCEPTANCE_RECEIPT_20261016.json","receiptSha256":"652f01a076c20d3f383e5b2890a1e6b1df65c89a6c9746ef61bd6f3afedc8177","receiptSourceHead":"ef3dda8aef085a348bcc7086c6b4857c84aaa84d","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE"},
+    {"sceneId":"ep2_fake_terms","assetId":"ep2-fake-terms-cg","receipt":"artifacts/evidence/dev-web-high/S25_DEV_BROWSER_ONLY_20261019_44B8260_REVIEW.json","receiptSha256":"a1bca77b477339a43914eb2e610fc169c34f78cdd670bd00a4943d791e89c647","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","actualPixelsReceived":true,"provenance":"CURRENT_DEV_ONLY_WEB_HIGH"},
+    {"sceneId":"ep2_refusal_response","assetId":"ep2-refusal-response-cg","receipt":"artifacts/evidence/dev-web-high/S24_DEV_BROWSER_ONLY_20261019_44B8260_OWNER_REVIEW.json","receiptSha256":"892b42520725248df3c5b315dc4c1598d66478bfefe3f97a40bb6a082021ca26","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","actualPixelsReceived":true,"provenance":"CURRENT_DEV_ONLY_WEB_HIGH"},
+    {"sceneId":"ep2_refusal_workday","assetId":"ep2-refusal-workday-cg","receipt":"artifacts/evidence/dev-web-high/S26_DEV_BROWSER_ONLY_20261019_44B8260_REVIEW.json","receiptSha256":"dd90e0c657be7ac8005a3e1a168972162e7ca3d7bafa625d035d44069fa92069","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","actualPixelsReceived":true,"provenance":"CURRENT_DEV_ONLY_WEB_HIGH"},
+    {"sceneId":"ep2_refusal_bianca_arrival","assetId":"ep2-refusal-bianca-cg","receipt":"artifacts/production-art/stage9.4/EP2_BIANCA_WEB_ACCEPTANCE_20261017_E39DBF.json","receiptSha256":"0d56af0bde9cecabbae442985546b483c9f200f104eb76714ef4da866058d4eb","receiptSourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE_SHARED_PAIR"},
+    {"sceneId":"ep2_bianca_arrives","assetId":"ep2-bianca-arrives-cg","receipt":"artifacts/production-art/stage9.4/EP2_BIANCA_WEB_ACCEPTANCE_20261017_E39DBF.json","receiptSha256":"0d56af0bde9cecabbae442985546b483c9f200f104eb76714ef4da866058d4eb","receiptSourceHead":"5a990085b1a544afb717f9b8c61b8cb0df8b5d38","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE_SHARED_PAIR"},
+    {"sceneId":"ep2_bianca_professional_response","assetId":"ep2-bianca-professional-response-cg","receipt":".ceos-runs/2026-10-18T17-09-41-345Z-production-art-9dbd58/evidence/current-654f/EP2_BIANCA_REUSE_WEB_ACCEPTANCE_20261018_PASS.json","receiptSha256":"24384ed20feaa0169f19f250b57a7ef256c0060c0ef06a539242d93bef1ee162","receiptSourceHead":"2d81e42dac926a8d485f2c88ab1991b16318c9a1","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE_ORIGIN_RUN_INTEGRITY_BLOCKED"},
+    {"sceneId":"ep2_bianca_pushback_response","assetId":"ep2-bianca-pushback-response-cg","receipt":".ceos-runs/2026-10-18T17-09-41-345Z-production-art-9dbd58/evidence/current-654f/EP2_BIANCA_REUSE_WEB_ACCEPTANCE_20261018_PASS.json","receiptSha256":"24384ed20feaa0169f19f250b57a7ef256c0060c0ef06a539242d93bef1ee162","receiptSourceHead":"2d81e42dac926a8d485f2c88ab1991b16318c9a1","provenance":"HISTORICAL_IMMUTABLE_ACCEPTANCE_ORIGIN_RUN_INTEGRITY_BLOCKED"},
+    {"sceneId":"ep2_public_agreement","assetId":"ep2-public-agreement-cg","receipt":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_S30_S34_WEB_ACCEPTANCE_20261019_44B8260.json","receiptSha256":"71bcd6f3a75c5e8b60639d022945a63eb168aeb8d88bfb92cbb3910c03cc6ca2","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","provenance":"CURRENT_CEOS_BATCH_ACCEPTANCE"},
+    {"sceneId":"ep2_public_refusal","assetId":"ep2-public-refusal-cg","receipt":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_S30_S34_WEB_ACCEPTANCE_20261019_44B8260.json","receiptSha256":"71bcd6f3a75c5e8b60639d022945a63eb168aeb8d88bfb92cbb3910c03cc6ca2","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","provenance":"CURRENT_CEOS_BATCH_ACCEPTANCE"},
+    {"sceneId":"ep2_rehearsal_failure","assetId":"ep2-rehearsal-failure-cg","receipt":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_S30_S34_WEB_ACCEPTANCE_20261019_44B8260.json","receiptSha256":"71bcd6f3a75c5e8b60639d022945a63eb168aeb8d88bfb92cbb3910c03cc6ca2","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","provenance":"CURRENT_CEOS_BATCH_ACCEPTANCE"},
+    {"sceneId":"ep2_rooftop_after","assetId":"ep2-rooftop-after-cg","receipt":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_S30_S34_WEB_ACCEPTANCE_20261019_44B8260.json","receiptSha256":"71bcd6f3a75c5e8b60639d022945a63eb168aeb8d88bfb92cbb3910c03cc6ca2","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","provenance":"CURRENT_CEOS_BATCH_ACCEPTANCE"},
+    {"sceneId":"ep2_transition","assetId":"ep2-transition-cg","receipt":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_S30_S34_WEB_ACCEPTANCE_20261019_44B8260.json","receiptSha256":"71bcd6f3a75c5e8b60639d022945a63eb168aeb8d88bfb92cbb3910c03cc6ca2","receiptSourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","provenance":"CURRENT_CEOS_BATCH_ACCEPTANCE"}
+  ],
+  "currentDevReviews": [
+    {
+      "sceneId":"ep2_refusal_response",
+      "receipt":"artifacts/evidence/dev-web-high/S24_DEV_BROWSER_ONLY_20261019_44B8260_OWNER_REVIEW.json",
+      "rawResponse":"artifacts/evidence/dev-web-high/S24_DEV_BROWSER_ONLY_20261019_44B8260_OWNER_REVIEW.raw.txt",
+      "context":"artifacts/e2e/dev-web-s24-owner-context-44b8260.json",
+      "decision":"PASS",
+      "actualPixelsReceived":true,
+      "stableBridgeUsed":false,
+      "provider":"codex-chatgpt-web-dev",
+      "releaseVersion":"6.1.11",
+      "model":"chatgpt-web/gpt-6-sol",
+      "reasoning":"high",
+      "originalPng":{"path":"assets/production/cg/ep2-dining-refusal-response-cg.png","sha256":"07ebfdfe1a9eba858d7667dc9783f7db87213896ccd5002c933ef84491b83a64"},
+      "runtimeCapture":{"path":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_ALL17_RUNTIME_CAPTURES_20261019_44B8260_RETRY2/390x844/decline-refusal/ep2_refusal_response.png","sha256":"baf2fcdf1726c565f627532a6008c8c34dc2318f49b34610eb6a0079c0e3428f","viewport":"390x844"},
+      "transportTraceId":"devweb_9363bc39e8ee4093b36fc9b7ed46c3fd",
+      "webReviewVerify":"PASS"
+    },
+    {
+      "sceneId":"ep2_fake_terms",
+      "receipt":"artifacts/evidence/dev-web-high/S25_DEV_BROWSER_ONLY_20261019_44B8260_REVIEW.json",
+      "rawResponse":"artifacts/evidence/dev-web-high/S25_DEV_BROWSER_ONLY_20261019_44B8260_REVIEW.raw.txt",
+      "context":"artifacts/e2e/dev-web-s25-context-44b8260.json",
+      "decision":"PASS",
+      "actualPixelsReceived":true,
+      "stableBridgeUsed":false,
+      "provider":"codex-chatgpt-web-dev",
+      "releaseVersion":"6.1.11",
+      "model":"chatgpt-web/gpt-6-sol",
+      "reasoning":"high",
+      "originalPng":{"path":"assets/production/cg/ep2-office-fake-terms-cg.png","sha256":"76f28ed544e549997783976704a11c37fb361ed625e611238bc0a13be59516e1"},
+      "runtimeCapture":{"path":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_ALL17_RUNTIME_CAPTURES_20261019_44B8260_RETRY2/390x844/decline-refusal/ep2_fake_terms.png","sha256":"1a03a8b68838dbea0a7584c9d77e442740f8bc63605cb75543d422410ed44bf3","viewport":"390x844"},
+      "transportTraceId":"devweb_09872dd4854444849be366e001c85f66",
+      "webReviewVerify":"PASS"
+    },
+    {
+      "sceneId":"ep2_refusal_workday",
+      "receipt":"artifacts/evidence/dev-web-high/S26_DEV_BROWSER_ONLY_20261019_44B8260_REVIEW.json",
+      "rawResponse":"artifacts/evidence/dev-web-high/S26_DEV_BROWSER_ONLY_20261019_44B8260_REVIEW.raw.txt",
+      "context":"artifacts/e2e/dev-web-s26-context-44b8260.json",
+      "decision":"PASS",
+      "actualPixelsReceived":true,
+      "stableBridgeUsed":false,
+      "provider":"codex-chatgpt-web-dev",
+      "releaseVersion":"6.1.11",
+      "model":"chatgpt-web/gpt-6-sol",
+      "reasoning":"high",
+      "originalPng":{"path":"assets/production/cg/ep2-service-refusal-workday-cg.png","sha256":"488a148c0653adf91b1ee420917d7d1f4e2379834d34d12336da21918d638cd8"},
+      "runtimeCapture":{"path":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_ALL17_RUNTIME_CAPTURES_20261019_44B8260_RETRY2/390x844/decline-refusal/ep2_refusal_workday.png","sha256":"94575e60ef06dae108cfad18092bb9bd200701080b1ca81ad83e6a3c5457b915","viewport":"390x844"},
+      "transportTraceId":"devweb_2208293a83e146b1aff45915fee33f25",
+      "webReviewVerify":"PASS"
+    }
+  ],
+  "uniqueAcceptedAssetPairs": [
+    "ep2-morning-brief-cg","ep2-wedding-budget-cg","ep2-workday-inventory-cg","ep2-family-rehearsal-cg","ep2-family-rehearsal-response-cg","ep2-fake-terms-cg","ep2-refusal-response-cg","ep2-refusal-workday-cg","ep2-bianca-arrival-cg","ep2-bianca-professional-response-cg","ep2-bianca-pushback-response-cg","ep2-public-agreement-cg","ep2-public-refusal-cg","ep2-rehearsal-failure-cg","ep2-rooftop-after-cg","ep2-transition-cg"
+  ],
+  "technicalEvidence": {
+    "dualFormatManifest":{"path":"artifacts/production-art/stage9.4/EP2_FULL_EPISODE_DUAL_FORMAT_MANIFEST_20261019_44B8260.json","sha256":"f61ab02735d030f5c6333492baac5a4dae5a3a18197c5a87025a7021ad474236","sourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","mappedScenes":17,"formatRecords":34},
+    "artOutputManifest":{"path":"artifacts/production-art/stage9.4/EP2_ALL16_ART_OUTPUT_MANIFEST_20261019_44B8260.json","sha256":"c313666e4a16a017bccadf6e7de923f1467d11db52c0aa51683edea392357c92","uniqueArtPairs":16},
+    "artOutputReceipt":{"path":"artifacts/production-art/stage9.4/receipts/EP2_ALL16_ART_OUTPUT_20261019_44B8260.json","sha256":"bd2ac1217c8b506db6dd5eea70eda490ef8ddcfda4c0dd00f9cc1305dba58ca8","status":"PASS_ART_BATCH_MECHANICAL","pngCount":32},
+    "runtime":{"path":".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_ALL17_RUNTIME_20261019_44B8260_RETRY2.json","sha256":"4a29807a9d373e0f9d2d3d8fc9c2f7aa9c3a6e4870483994cac497083430cad5","sourceHead":"44b8260f58956180b1321405bd2113b397d8f4ae","captureEntries":111,"allCaptureFilesAndHashesVerified":true,"consoleErrors":0,"requestFailures":0,"httpErrors":0},
+    "narrative":{"path":"narrative/episodes/ep-02.json","sceneCount":17,"sceneMapping":"PASS"}
+  },
+  "ceos": {
+    "artProgressIndex":{"path":"artifacts/production-art/stage9.4/STAGE9_4_SOURCE_BOUND_REVALIDATION_20261019_44B8260_CURRENT.json","sha256":"a089e67ca21db788409ee863b17bddbb79ab8b46545afc447dab9f9ebbb7f4cc","status":"PASS_ART_PROGRESS_REVALIDATED","historicalAcceptedPairs":5,"plannedPairs":25,"problems":[]},
+    "continue":{"mode":"inspect","status":"BLOCKED_RUN_RELOCATION","progressIndexStatus":"PASS_ART_PROGRESS_REVALIDATED","historicalRunSelection":"not forced","reason":"Both active candidates are unsafe to relocate: cb957d has post-checkpoint narrative/assets.json drift; 7577b2 is missing its historical scope.json. No run or checkpoint was modified."},
+    "episodeWideAcceptance":"NOT_VERIFIED",
+    "releaseReady":false
+  },
+  "integrity": {
+    "stableBridgeUsed":false,
+    "stablePortUsed":false,
+    "generationInvoked":false,
+    "productionPngsModified":false,
+    "historicalEvidenceModified":false,
+    "historicalVerdictsRewritten":false
+  }
+}
