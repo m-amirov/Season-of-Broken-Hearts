@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "auditId": "FULL_SEASON_READINESS_AUDIT_20261019",
+  "recordedAt": "2026-10-19",
+  "verdict": "BLOCKED",
+  "readinessRule": "Эпизод считается полностью готовым только при PASS по сценарию, выборы/маршруты, RU/EN, арт, runtime и QA на доказательной области текущего target; архитектурный план и исторический receipt без current-head binding не повышают статус до PASS.",
+  "scope": {
+    "episodes": "EP1-EP10",
+    "targetWorktree": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture-work-e02f7c47",
+    "mutationsAllowed": [
+      "создание трёх новых audit artifacts",
+      "локальные read-only проверки"
+    ],
+    "mutationsNotPerformed": [
+      "Image Gen/Terra",
+      "изменение игрового кода",
+      "изменение сценариев",
+      "релизная сборка",
+      "RC ZIP",
+      "merge/push/publication"
+    ]
+  },
+  "source": {
+    "sourceHead": "8cf7a5d342b333442d53f6a42e4c3cfe0c994141",
+    "branch": "work-e02f7c47",
+    "remote": "https://github.com/m-amirov/Season-of-Broken-Hearts.git",
+    "originMain": "476d71b6bf247a01fcf59617a68e58f518f50700",
+    "originMainDivergence": {
+      "behind": 0,
+      "ahead": 91,
+      "mergeBase": "476d71b6bf247a01fcf59617a68e58f518f50700"
+    },
+    "gitPreflight": {
+      "status": "BLOCKED_FETCH",
+      "reason": "remote branch refs/heads/work-e02f7c47 отсутствует; preflight для локальной рабочей ветки не получил remote HEAD",
+      "originMainFetch": "PASS"
+    },
+    "worktreeAtAuditStart": {
+      "dirtyCount": 21,
+      "dirtyCategories": [
+        ".ceos-runs/latest.json",
+        "uncommitted CEOS production-art runs",
+        "uncommitted EP2 runtime/Web evidence",
+        "uncommitted EP2 dual-format manifests and receipts"
+      ],
+      "preserved": true,
+      "stagedForAuditCommit": false
+    }
+  },
+  "ceos": {
+    "cliVersion": "0.5.40",
+    "localCheckout": {
+      "branch": "dev-web-high-schema-contract-20261019",
+      "head": "24fa688eeeb922280c24ef9c55e88b2388119cb2",
+      "originMain": "acab291d1d6ef1c916e8033de27b931e3c0b4fd6",
+      "dirty": true
+    },
+    "mainReferenceChecked": true,
+    "episodeArtFinalizationV1": {
+      "status": "PRESENT_ON_ORIGIN_MAIN",
+      "references": [
+        "docs/EPISODE_ART_FINALIZATION_V1.md",
+        "src/episode-art-finalization.mjs",
+        "tests/episode-art-finalization.test.mjs"
+      ]
+    },
+    "nativeImageGeneration": "NOT_USED_BY_SCOPE",
+    "capabilityChallenge": "NOT_RUN_BY_SCOPE"
+  },
+  "checks": {
+    "npm test": {
+      "status": "PASS",
+      "exitCode": 0,
+      "tests": 89,
+      "passed": 89,
+      "failed": 0,
+      "note": "Текущие unit/integration checks; включают engine, save/back/new-game, EP1 combinations, EP1-EP3 graph continuation, EP2 art mappings и input guards. Это не full-season browser acceptance."
+    },
+    "npm run narrative:validate": {
+      "status": "PASS",
+      "exitCode": 0,
+      "declaredGraph": {
+        "scenes": 50,
+        "reachedScenes": 50,
+        "visitedStates": 87252,
+        "declaredEndings": 1,
+        "reachedEndings": 1,
+        "saveFixtures": 23
+      },
+      "conditionalDialogue": "PASS_CONDITIONAL_DIALOGUE_SCHEMA",
+      "wardrobeContinuity": "PASS_WARDROBE_CONTINUITY_RULES",
+      "storyPromises": {
+        "status": "NOT_VERIFIED_PROMISE_EVIDENCE",
+        "declared": 5,
+        "structurallyChecked": 2,
+        "notVerified": 3,
+        "scopes": [
+          "matteo-negotiation-documents",
+          "elio-restaurant-departure",
+          "season-hotel-outcome"
+        ]
+      }
+    },
+    "node tools/narrative/season-architecture-check.mjs": {
+      "status": "PASS",
+      "exitCode": 0,
+      "episodes": 10,
+      "routes": 4,
+      "relationshipEndings": 7,
+      "hotelOutcomes": 3,
+      "expectedEndingPairs": 21,
+      "promises": 8,
+      "meaning": "архитектурный контракт; не доказательство реализации EP4-EP10"
+    },
+    "npm run starter-kit:status": {
+      "status": "PASS",
+      "exitCode": 0,
+      "targetStatus": "clean",
+      "meaning": "managed Starter Kit files; не product/release readiness"
+    },
+    "npm run starter-kit:self-test": {
+      "status": "PASS",
+      "exitCode": 0,
+      "version": "0.5.13",
+      "manifestEntries": 122,
+      "meaning": "Starter Kit contract health; не подтверждение full-season content"
+    }
+  },
+  "canonicalInventory": {
+    "authoredExecutableEpisodes": [1, 2, 3],
+    "plannedOnlyEpisodes": [4, 5, 6, 7, 8, 9, 10],
+    "graphScenes": {
+      "EP1": 18,
+      "EP2": 17,
+      "EP3": 15,
+      "total": 50
+    },
+    "graphChoices": {
+      "EP1": 8,
+      "EP2": 17,
+      "EP3": 19,
+      "total": 44
+    },
+    "productionManifest": {
+      "productionAssetEntries": 27,
+      "uniqueArtPairs": {
+        "EP1": 10,
+        "EP2": 16,
+        "EP3": 0
+      },
+      "referencedProductionPng": {
+        "EP1": 20,
+        "EP2": 32,
+        "EP3": 0
+      },
+      "physicalProductionPng": 53,
+      "unregisteredOrExtraPhysicalPng": 1
+    },
+    "finalSeasonContract": {
+      "routes": ["matteo", "leo", "elio", "independent"],
+      "routeLockEpisode": 6,
+      "relationshipEndings": 7,
+      "hotelOutcomes": 3,
+      "legalEndingPairs": 21
+    }
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "matrix": {
+        "scenario": "PASS",
+        "choicesRoutes": "PASS",
+        "ruEn": "PASS",
+        "art": "NOT_VERIFIED",
+        "runtime": "PASS",
+        "qa": "PASS",
+        "overall": "NOT_VERIFIED"
+      },
+      "coverage": {
+        "scenarioScenes": {"implemented": 18, "planned": 18},
+        "gameScenes": {"implemented": 18, "reachableInGraph": 18},
+        "artPairs": {"implemented": 10, "acceptedHistorical": 10, "currentHeadAccepted": false},
+        "productionPng": {"manifestReferenced": 20, "present": 20},
+        "dialogueLines": {"ru": 148, "en": 148},
+        "choices": {"implemented": 8, "reachableCombinations": 16},
+        "routes": {"routeLockImplemented": 0, "routeLockExpectedBeforeEP6": 0},
+        "testedEndings": {"episodeTransitions": 1, "relationshipEndings": 0, "hotelOutcomes": 0}
+      },
+      "evidence": [
+        "narrative/graph.json",
+        "narrative/ROUTE_MAP.md:19-23",
+        "artifacts/production-art/stage8.5-verified-existing-art-reuse.json",
+        "artifacts/production-art/stage8.5-post-integration-art-currentness.json",
+        "artifacts/production-art/stage8.5-post-integration-runtime-currentness.json",
+        "artifacts/evidence/web-game-playtest.json",
+        "npm test"
+      ],
+      "reason": "EP1 functional graph and historical art/runtime acceptance exist, but art evidence is bound to sourceHead 51b0fe8 while current graph/assets hashes and source HEAD are 8cf7a5d; current-head visual acceptance is therefore NOT_VERIFIED."
+    },
+    {
+      "episode": 2,
+      "matrix": {
+        "scenario": "PASS",
+        "choicesRoutes": "PASS",
+        "ruEn": "PASS",
+        "art": "PASS",
+        "runtime": "PASS",
+        "qa": "PASS",
+        "overall": "PASS"
+      },
+      "coverage": {
+        "scenarioScenes": {"implemented": 17, "planned": 17},
+        "gameScenes": {"implemented": 17, "reachableInGraph": 17},
+        "artPairs": {"implemented": 16, "accepted": 16},
+        "productionPng": {"manifestReferenced": 32, "accepted": 32},
+        "dialogueLines": {"ru": 165, "en": 165},
+        "choices": {"implemented": 17, "reachable": 17},
+        "routes": {"routeLockImplemented": 0, "routeLockExpectedBeforeEP6": 0, "authoredAlternativeBranches": "budget/agreement/refusal/Bianca/public gesture/closing boundary"},
+        "testedEndings": {"episodeTransitions": 1, "relationshipEndings": 0, "hotelOutcomes": 0}
+      },
+      "evidence": [
+        "artifacts/production-art/stage9.4/EP2_EPISODE_ART_FINALIZATION_V1.json",
+        "artifacts/production-art/stage9.4/EP2_EPISODE_ART_FINALIZATION_V1_EVIDENCE_20261019_44B8260.json",
+        "artifacts/production-art/stage9.4/EP2_ART_PROGRESS_RECONCILIATION_20261019_44B8260_COMPLETE.json",
+        ".ceos-runs/2026-10-18T18-09-24-164Z-production-art-4d543a/evidence/EP2_ALL17_RUNTIME_20261019_44B8260_RETRY2.json",
+        "narrative/episodes/ep-02.json",
+        "narrative/graph.json",
+        "narrative/assets.json",
+        "npm test"
+      ],
+      "preservedEvidence": {
+        "status": "PASS_EPISODE_ART_FINALIZATION",
+        "scenes": "17/17",
+        "artPairs": "16/16",
+        "productionPng": "32/32",
+        "runtimeCaptures": "111/111",
+        "independentDevWebHigh": "PASS for scoped S24-S26 and preserved prior scoped receipts",
+        "generationInvokedDuringAudit": false,
+        "repeatAcceptance": false
+      },
+      "reason": "EP2 is the only episode with a current authoritative episode-final art receipt; the separate wide acceptance record remains NOT_VERIFIED for historical run relocation and is not used to overwrite the finalization PASS."
+    },
+    {
+      "episode": 3,
+      "matrix": {
+        "scenario": "PASS",
+        "choicesRoutes": "PASS",
+        "ruEn": "PASS",
+        "art": "NOT_STARTED",
+        "runtime": "BLOCKED",
+        "qa": "BLOCKED",
+        "overall": "BLOCKED"
+      },
+      "coverage": {
+        "scenarioScenes": {"implemented": 15, "planned": 15},
+        "gameScenes": {"implemented": 15, "reachableInGraph": 15},
+        "artPairs": {"implemented": 0, "approvedPlannedPairs": null, "missingSceneMappings": 15},
+        "productionPng": {"manifestReferenced": 0, "present": 0, "approvedRequired": null},
+        "dialogueLines": {"ru": 133, "en": 133},
+        "choices": {"implemented": 19, "reachable": 19},
+        "routes": {"routeLockImplemented": 0, "routeLockExpectedBeforeEP6": 0},
+        "testedEndings": {"episodeTransitions": 0, "technicalTerminalScenes": 1, "relationshipEndings": 0, "hotelOutcomes": 0}
+      },
+      "missingAssetSceneIds": [
+        "ep3_old_photo",
+        "ep3_survey_start",
+        "ep3_survey_join_response",
+        "ep3_survey_site_problem",
+        "ep3_staff_walkthrough",
+        "ep3_survey_decline_response",
+        "ep3_report_delivery",
+        "ep3_eight_years",
+        "ep3_accountability_choice",
+        "ep3_aurea_drawing",
+        "ep3_document_check",
+        "ep3_document_check_response",
+        "ep3_matteo_confrontation",
+        "ep3_quiet_return",
+        "ep3_transition"
+      ],
+      "evidence": [
+        "narrative/episodes/ep-03.json",
+        "narrative/graph.json",
+        "narrative/episodes/manifest.json",
+        "narrative/assets.json",
+        "src/assets/asset-manager.mjs:37-46",
+        "src/ui/renderer-stage6.mjs:230-254",
+        "npm run narrative:validate",
+        "npm test"
+      ],
+      "reason": "Сценарий и graph reachability есть, но assets.json не содержит ни одного EP3 assetId; asset manager выбрасывает Missing asset for scene, поэтому engine-level reachability не равна playable runtime."
+    },
+    {
+      "episode": 4,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json"],
+      "reason": "Только outline/architecture; authored episode fragment и runtime scenes отсутствуют."
+    },
+    {
+      "episode": 5,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json"],
+      "reason": "Только outline/architecture; authored episode fragment и runtime scenes отсутствуют."
+    },
+    {
+      "episode": 6,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json:routeLock"],
+      "reason": "EP6 route-lock существует только в architecture contract; scene ep6_route_choice отсутствует в graph."
+    },
+    {
+      "episode": 7,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json"],
+      "reason": "Только route-specific outline/architecture; authored episode fragment и runtime scenes отсутствуют."
+    },
+    {
+      "episode": 8,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json"],
+      "reason": "Только route-specific outline/architecture; authored episode fragment и runtime scenes отсутствуют."
+    },
+    {
+      "episode": 9,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json"],
+      "reason": "Только outline/architecture; authored episode fragment и runtime scenes отсутствуют."
+    },
+    {
+      "episode": 10,
+      "matrix": {"scenario": "NOT_STARTED", "choicesRoutes": "NOT_STARTED", "ruEn": "NOT_STARTED", "art": "NOT_STARTED", "runtime": "NOT_STARTED", "qa": "NOT_STARTED", "overall": "NOT_STARTED"},
+      "coverage": {"scenarioScenes": {"implemented": 0, "planned": null}, "gameScenes": {"implemented": 0}, "artPairs": {"implemented": 0}, "productionPng": {"implemented": 0}, "choices": {"implemented": 0}, "routes": {"implemented": 0}, "testedEndings": {"relationshipEndings": 0, "hotelOutcomes": 0}},
+      "evidence": ["narrative/episodes/manifest.json", "narrative/EPISODE_OUTLINE.md", "narrative/season-architecture.json"],
+      "reason": "Только финальный outline/architecture; authored episode fragment, route endings, hotel outcomes и runtime scenes отсутствуют."
+    }
+  ],
+  "architectureAudit": {
+    "status": "PARTIAL_IMPLEMENTATION_BLOCKED",
+    "relationshipDevelopment": {
+      "matteo": "EP1-EP2 authored; season disclosure/payoff planned, not implemented",
+      "leo": "EP1-EP3 authored; accountability/Aurea link established, route payoff planned",
+      "elio": "EP1 authored; restaurant/departure payoff planned, not implemented",
+      "independent": "architecture only; no implemented route path"
+    },
+    "chronology": "EP1-EP3 days 1-16 are represented in executable data; EP4-EP10 days 17-70 exist only in season-architecture.json.",
+    "knowledgeProvenance": "Declared graph validator PASS; semantic full-season provenance and payoffs remain NOT_VERIFIED.",
+    "storyPromises": "2/5 structurally checked; 3/5 NOT_VERIFIED by narrative validator; architecture ledger has 8 planned promises.",
+    "routeLock": "Planned for EP6, not implemented; current route remains none and no route effects exist in EP1-EP3.",
+    "unreachableScenes": "0 in declared graph validator; this does not prove runtime asset reachability.",
+    "relationshipEndings": "0/7 implemented or runtime-tested.",
+    "hotelOutcomes": "0/3 implemented or runtime-tested.",
+    "seasonCompletion": "NOT_READY"
+  },
+  "criticalBlockers": [
+    {
+      "id": "B1_MISSING_EP4_EP10_CONTENT",
+      "status": "BLOCKED",
+      "scope": "EP4-EP10",
+      "reason": "No authored episode fragments or runtime scenes; only outline/architecture."
+    },
+    {
+      "id": "B2_EP3_ART_AND_RUNTIME_MAPPING_MISSING",
+      "status": "BLOCKED",
+      "scope": "EP3",
+      "reason": "15 authored EP3 scenes have no assets.json mappings and 0 production PNG; asset manager fails closed on missing scene asset."
+    },
+    {
+      "id": "B3_ROUTE_AND_ENDING_IMPLEMENTATION_MISSING",
+      "status": "BLOCKED",
+      "scope": "EP6-EP10/season",
+      "reason": "No route-lock, four route paths, seven relationship endings or three hotel outcomes in executable graph."
+    },
+    {
+      "id": "B4_EP1_CURRENT_HEAD_VISUAL_EVIDENCE_GAP",
+      "status": "NOT_VERIFIED",
+      "scope": "EP1",
+      "reason": "Historical art/runtime PASS is bound to 51b0fe8; current source HEAD is 8cf7a5d and graph/assets dependencies changed afterward."
+    },
+    {
+      "id": "B5_STORY_PROMISE_PAYOFF_EVIDENCE_GAP",
+      "status": "NOT_VERIFIED",
+      "scope": "season",
+      "reason": "Three declared promises have no verified authored/runtime payoff evidence: Matteo documents, Elio restaurant departure, season hotel outcome."
+    }
+  ],
+  "auditLimitations": [
+    "Не запускался новый browser screenshot/pixel review, чтобы не расходовать art/Web acceptance scope и не создавать новые изображения.",
+    "Исторические receipts не переписывались и не переименовывались в current-head evidence.",
+    "Architecture PASS трактуется только как contract PASS; он не повышает отсутствующие игровые сцены до implemented.",
+    "Starter Kit status/self-test PASS трактуется только как infrastructure/managed-file health.",
+    "Ветка work-e02f7c47 не имеет remote branch; локальный audit commit не означает push или publication."
+  ],
+  "strictCounts": {
+    "fullyReadyEpisodes": 1,
+    "fullyReadyEpisodeIds": ["EP2"],
+    "authoredExecutableEpisodes": 3,
+    "engineReachableEpisodeIds": ["EP1", "EP2", "EP3"],
+    "productionRuntimePlayableEpisodeIds": ["EP1", "EP2"],
+    "episodesBlockedByMissingRuntimeArt": ["EP3"],
+    "notStartedEpisodes": ["EP4", "EP5", "EP6", "EP7", "EP8", "EP9", "EP10"],
+    "missingAuthoredScenes": 0,
+    "missingPlannedEpisodeScenes": "не вычисляется: outline не задаёт численное число сцен для EP4-EP10",
+    "missingProductionArtPairs": "не вычисляется без approved art inventory; 15 authored scene mappings отсутствуют",
+    "missingProductionPng": "не вычисляется без approved art inventory; зарегистрировано 0 EP3 PNG",
+    "missingChoiceImplementations": "не вычисляется для EP4-EP10 без executable scene contract",
+    "missingRouteImplementations": 4,
+    "missingRelationshipEndings": 7,
+    "missingHotelOutcomes": 3
+  }
+}
