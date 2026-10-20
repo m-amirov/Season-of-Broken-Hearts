@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "NOT_VERIFIED",
+  "reasonCode": "NARRATIVE_FINDINGS_INVALID",
+  "sceneId": "ep3_old_photo",
+  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "transport": {
+    "status": "COMPLETED",
+    "provider": "codex-chatgpt-web-dev",
+    "releaseVersion": "6.1.11",
+    "mode": "browser-only",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "traceId": "devweb_98539c844b304bf8d47c8bd4e3a68a9",
+    "actualProjectHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+    "submitted": true,
+    "attachmentAccepted": true,
+    "attachmentRefs": [
+      "nika-approved-reference",
+      "leo-approved-reference",
+      "ep3-old-photo-portrait-candidate-1",
+      "ep3-old-photo-landscape-candidate-2"
+    ]
+  },
+  "responseSha256": "e239ec7750c336ba3acebad5b9fdffd51fb8cf2ea58029e97ea17b40d13593cf",
+  "validationErrors": [
+    "EP3-OLD-PHOTO-001: invalid or missing blocking impactCode for P1",
+    "EP3-OLD-PHOTO-002: invalid or missing blocking impactCode for P2",
+    "EP3-OLD-PHOTO-003: invalid or missing blocking impactCode for P2"
+  ],
+  "rawResponse": "artifacts/evidence/web-high-control/EP3_OLD_PHOTO_WEB_REVIEW_RAW_INVALID_FINDINGS_20261020.txt"
+}

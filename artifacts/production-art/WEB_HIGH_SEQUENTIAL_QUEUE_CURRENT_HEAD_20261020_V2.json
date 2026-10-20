@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "kind": "WEB_HIGH_SEQUENTIAL_QUEUE_CURRENT_HEAD",
+  "recordedAt": "2026-10-20",
+  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "policy": {
+    "order": "one bounded item at a time; persist real raw/trace/receipt evidence before next item",
+    "legacyBridge": "FORBIDDEN",
+    "actualPixelsRequired": true,
+    "massAcceptance": "NOT_STARTED"
+  },
+  "items": [
+    {
+      "sequence": 1,
+      "itemId": "EP3-old-photo-candidate-pair",
+      "status": "NOT_VERIFIED_REWORK",
+      "actualPixelsReceived": true,
+      "transport": "DEV_BROWSER_ONLY_COMPLETED",
+      "traceId": "devweb_1282984ccd8a487ab04a03e67b3209a1",
+      "blocker": "invalid narrative finding schema plus material portrait prop and landscape safe-area findings; candidate budget exhausted",
+      "evidence": "artifacts/evidence/web-high-control/EP3_OLD_PHOTO_WEB_REVIEW_TRACE_CURRENT_HEAD_20261020.md"
+    },
+    {
+      "sequence": 2,
+      "itemId": "EP3-new-pairs",
+      "status": "WAITING_FOR_TRUSTED_NATIVE_GENERATION",
+      "pairs": 14,
+      "pngCount": 28,
+      "briefPacket": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json"
+    },
+    {
+      "sequence": 3,
+      "itemId": "EP4-first-two-authored-beats",
+      "status": "WAITING_FOR_TRUSTED_NATIVE_GENERATION",
+      "pairs": 2,
+      "pngCount": 4,
+      "briefPacket": "artifacts/production-art/stage9.7/EP4_FIRST_BATCH_SOURCE_BOUND_BRIEFS_CURRENT_HEAD_20261020.json"
+    },
+    {
+      "sequence": 4,
+      "itemId": "EP4-remainder-through-EP10",
+      "status": "PLANNED_NOT_GENERATED",
+      "pairs": 76,
+      "pngCount": 152
+    }
+  ],
+  "counts": {
+    "plannedVisualPairs": 119,
+    "currentHeadIndependentAcceptedPairs": 1,
+    "candidatePairsPending": 1,
+    "newPairsRemaining": 92,
+    "newPngRemaining": 184
+  }
+}

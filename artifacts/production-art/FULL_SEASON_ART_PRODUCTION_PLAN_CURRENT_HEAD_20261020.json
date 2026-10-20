@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.1",
+  "kind": "FULL_SEASON_ART_PRODUCTION_PLAN_CURRENT_HEAD",
+  "recordedAt": "2026-10-20",
+  "mode": "DIRECT_DEVELOPMENT",
+  "basePlan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "status": "VALIDATOR_REPAIRED_PRODUCTION_BLOCKED",
+  "validator": {
+    "commit": "e468028",
+    "ep3Briefs": "READY_TO_GENERATE",
+    "ep4Briefs": "READY_TO_GENERATE",
+    "strictChecksPreserved": true
+  },
+  "totals": {
+    "plannedVisualPairs": 119,
+    "runtimeMappedExistingPairs": 26,
+    "currentHeadIndependentAcceptedPairs": 1,
+    "existingCandidatePairsPendingIndependentAcceptance": 1,
+    "existingCandidatePngPendingIndependentAcceptance": 2,
+    "newPairsToCreate": 92,
+    "missingPortraitPng": 92,
+    "missingLandscapePng": 92,
+    "missingPngTotal": 184
+  },
+  "batchState": {
+    "ep3OldPhoto": "NOT_VERIFIED_REWORK; candidate budget exhausted; no regeneration",
+    "ep3NewPairs": "READY_BRIEFS_WAITING_FOR_CURRENT_TURN_CAPABILITY_AND_TRUSTED_PRODUCER_ROUTE",
+    "ep4FirstBatch": "READY_BRIEFS_WAITING_FOR_CURRENT_TURN_CAPABILITY_AND_TRUSTED_PRODUCER_ROUTE",
+    "createdNewPairsThisTurn": 0,
+    "acceptedNewPairsThisTurn": 0
+  },
+  "acceptanceBoundary": {
+    "actualPixelsRequired": true,
+    "runtimeQaRequiredBeforeIntegration": true,
+    "legacyBridge": "FORBIDDEN",
+    "massAcceptance": "NOT_STARTED"
+  },
+  "blockers": [
+    "old_photo visual evidence is real but official receipt normalization is NOT_VERIFIED; portrait story-critical photograph is not readable and landscape dialogue-safe placement is materially risky",
+    "old_photo candidate limit is exhausted; no third candidate or regeneration",
+    "fresh current-turn run-scoped native capability challenge and trusted Terra ceos_asset_generator route are not available in this session; no PNG generation is authorized",
+    "new pairs have no runtime QA or independent Web High acceptance because no new PNGs were created"
+  ],
+  "preservation": {
+    "canonicalS32AndEP2ReusedWithoutRegeneration": true,
+    "historicalEvidenceChanged": false,
+    "originalPngsChanged": false,
+    "parallelWorktreesPreserved": true
+  }
+}

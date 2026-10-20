@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "ep3_old_photo",
+  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "candidateLimit": {
+    "maxCandidatesPerCueAndFormat": 2,
+    "portraitCandidate": 1,
+    "landscapeCandidate": 2,
+    "thirdCandidateAllowed": false
+  },
+  "context": "Independently review the existing EP3 old_photo pair from the attached actual pixels. Do not regenerate, request a third candidate, or treat this review as runtime acceptance: the pair is not mapped in narrative/assets.json. Compare Nika and Leo to the attached approved references and the current-head source-bound brief. Check identity, adult age impression, wardrobe continuity, archive-room location, Nika's control of the photograph, Leo's restrained professional position, forbidden blueprint/tube-like props, anatomy, no baked text/UI, and both portrait and landscape composition. Check that faces, hands, photograph/archive action and a natural lower dialogue-safe region remain usable. Return a JSON object with one concrete visualEvidence observation per attachment, explicit status PASS or REWORK, blocking findings with only material P0/P1/P2 issues, and no claim of runtime or release acceptance. Use only policy impactCode values: WRONG_CHARACTER, WRONG_ACTOR_OR_ACTION, WRONG_LOCATION_OR_TIME, STORY_CRITICAL_PROP_MISSING, STORY_CRITICAL_PROP_OBSCURED, ESSENTIAL_CHARACTER_UNRECOGNIZABLE, NARRATIVE_CONTINUITY_CONTRADICTION, DIALOGUE_OR_CONTROLS_UNREADABLE, CRITICAL_SCENE_MAPPING, ESSENTIAL_GESTURE_UNREADABLE, ESSENTIAL_SUBJECT_CROPPED, STORY_ACTION_UNREADABLE, MATERIAL_RUNTIME_READABILITY. For the portrait photograph failure use STORY_CRITICAL_PROP_OBSCURED. Treat cross-aspect wardrobe variation as advisory with materialPlayerImpact false. If the lower dialogue-safe concern is genuinely material from the supplied pixels, use MATERIAL_RUNTIME_READABILITY; otherwise make it advisory. Do not invent impact codes.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    "artifacts/production-art/stage9.7/EP3_OLD_PHOTO_PROVENANCE_20261020.json",
+    "artifacts/production-art/stage9.7/EP3_OLD_PHOTO_LANDSCAPE_REWORK_PROVENANCE_20261020.json"
+  ],
+  "images": [
+    {
+      "ref": "nika-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "ref": "leo-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    },
+    {
+      "ref": "ep3-old-photo-portrait-candidate-1",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep3-old-photo-cg.png",
+      "sha256": "93389bc83e342bbb3800b1bd51d7bdcb3ab90c8c5f53093d9a4e9eb7204ffe10"
+    },
+    {
+      "ref": "ep3-old-photo-landscape-candidate-2",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep3-old-photo-cg-landscape-rework.png",
+      "sha256": "5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a"
+    }
+  ]
+}

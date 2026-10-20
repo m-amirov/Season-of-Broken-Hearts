@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "WEB_HIGH_REVIEW_OBSERVED_RESULT",
+  "recordType": "CLI_OBSERVED_RESULT_NOT_OFFICIAL_ACCEPTANCE_RECEIPT",
+  "recordedAt": "2026-10-20",
+  "sceneId": "ep3_old_photo",
+  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "status": "NOT_VERIFIED",
+  "reasonCode": "NARRATIVE_FINDINGS_INVALID",
+  "transport": {
+    "status": "COMPLETED",
+    "provider": "codex-chatgpt-web-dev",
+    "releaseVersion": "6.1.11",
+    "mode": "browser-only",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "traceId": "devweb_1282984ccd8a487ab04a03e67b3209a1",
+    "actualProjectHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+    "submitted": true,
+    "attachmentAccepted": true,
+    "attachmentRefs": [
+      "nika-approved-reference",
+      "leo-approved-reference",
+      "ep3-old-photo-portrait-candidate-1",
+      "ep3-old-photo-landscape-candidate-2"
+    ]
+  },
+  "responseSha256": "a6eec0e2dc847ebd0c400b96b42caa35338d25fc3f11f199db1ce8920e860909",
+  "rawResponse": "artifacts/evidence/web-high-control/EP3_OLD_PHOTO_WEB_REVIEW_RAW_CURRENT_HEAD_20261020_V2.txt",
+  "rawResponseSha256": "a6eec0e2dc847ebd0c400b96b42caa35338d25fc3f11f199db1ce8920e860909",
+  "reviewerDecision": "REWORK",
+  "validationErrors": [
+    "EP3-OLD-PHOTO-002: invalid or missing blocking impactCode for P1",
+    "Each finding requires a unique id, P0-P3 severity and OPEN/RESOLVED status"
+  ],
+  "visualEvidenceReceived": true,
+  "candidateBudget": {
+    "maxCandidates": 2,
+    "candidatesSubmitted": 2,
+    "remaining": 0,
+    "thirdCandidateAllowed": false
+  },
+  "preservation": {
+    "historicalReceiptsChanged": false,
+    "originalPngsChanged": false,
+    "runtimeMappingChanged": false
+  }
+}

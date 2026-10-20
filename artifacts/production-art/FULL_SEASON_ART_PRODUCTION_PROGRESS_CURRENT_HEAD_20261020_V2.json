@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "kind": "FULL_SEASON_ART_PRODUCTION_PROGRESS_CURRENT_HEAD",
+  "recordedAt": "2026-10-20",
+  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "plan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_CURRENT_HEAD_20261020.json",
+  "validator": {
+    "status": "FIXED_AND_VERIFIED",
+    "commit": "e468028",
+    "sceneIds": "epN_slug supported",
+    "ep3Packet": "READY_TO_GENERATE",
+    "ep4Packet": "READY_TO_GENERATE",
+    "tests": "424/424 PASS; targeted 13/13 PASS; lint PASS"
+  },
+  "oldPhoto": {
+    "status": "NOT_VERIFIED",
+    "reviewerDecision": "REWORK",
+    "transport": "COMPLETED",
+    "actualPixelsReceived": true,
+    "attachments": "4/4",
+    "traceId": "devweb_1282984ccd8a487ab04a03e67b3209a1",
+    "candidateBudget": "2/2 exhausted",
+    "officialPass": false,
+    "runtimeMapped": false,
+    "evidence": "artifacts/evidence/web-high-control/EP3_OLD_PHOTO_WEB_REVIEW_TRACE_CURRENT_HEAD_20261020.md"
+  },
+  "counts": {
+    "plannedVisualPairs": 119,
+    "runtimeMappedExistingPairs": 26,
+    "currentHeadIndependentAcceptedPairs": 1,
+    "newPairsCreatedThisTurn": 0,
+    "newPairsAcceptedThisTurn": 0,
+    "newPairsRemaining": 92,
+    "newPngRemaining": 184,
+    "candidatePairsPending": 1,
+    "candidatePngPending": 2,
+    "waitingOrPlannedPngTotal": 186
+  },
+  "production": {
+    "newGenerationStarted": false,
+    "reason": "no fresh trusted current-turn native capability challenge and Terra producer route",
+    "massAcceptanceStarted": false,
+    "releaseOrPublicationStarted": false
+  },
+  "nextAction": "Obtain a real current-turn run-scoped native capability challenge and trusted Terra producer route; then generate one bounded EP3 pair, perform mechanical/provenance/runtime QA, and send one sequential DEV Web High pixel review."
+}

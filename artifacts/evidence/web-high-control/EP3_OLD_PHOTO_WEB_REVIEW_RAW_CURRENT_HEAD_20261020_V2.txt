@@ -1,0 +1,89 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_old\_photo",  
+"sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",  
+"status": "REWORK",  
+"reviewedItems": \[  
+"ep3\_old\_photo"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-old-photo-portrait-candidate-1",  
+"ep3-old-photo-landscape-candidate-2"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-old-photo-portrait-candidate-1",  
+"ep3-old-photo-landscape-candidate-2"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "REWORK. Both candidates substantially preserve the approved adult character identities, archival setting, restrained professional relationship, and natural anatomy. The landscape candidate clearly depicts Nika examining an identifiable historical photograph while Leo observes without taking control. However, the portrait candidate does not visibly establish the story-critical object as a photograph: Nika touches a small, apparently blank beige card rather than a recognizable photographic image. This is a material narrative readability failure. The landscape candidate additionally concentrates the photograph and Nika's identifying gesture within the lower portion of the frame, creating a material dialogue-safe composition concern. Neither candidate contains visible baked dialogue, UI, or forbidden blueprint/tube-like props. Nika's additional olive outer layer in the portrait is a nonblocking cross-aspect wardrobe advisory. This decision concerns only the supplied visual evidence and is not runtime, scene-mapping, or release acceptance.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference depicts an adult woman with a short, voluminous, dark-brown wavy bob, defined brows, warm brown-hazel eyes, lightly freckled skin, and natural facial features. She wears a loosely buttoned ivory linen shirt, high-waisted beige linen trousers, a brown leather belt, small gold hoop earrings, a delicate pendant necklace, brown sandals, and a dark-brown leather shoulder bag. The three views establish recognizable facial proportions, hairstyle, wardrobe, and accessories."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference depicts an adult man with medium-length, loosely swept light-brown hair, hazel-green eyes, subtly freckled skin, defined cheekbones, and a lean facial structure. He wears a textured light-beige linen jacket over an open-collar muted olive shirt, pale trousers, a brown leather belt, and brown loafers. A leather messenger bag hangs from his shoulder. The full-body reference also shows rolled papers carried in one hand; this reference detail is not present as a prop in either reviewed scene candidate."  
+},  
+{  
+"ref": "ep3-old-photo-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-old-photo-cg.png",  
+"sha256": "93389bc83e342bbb3800b1bd51d7bdcb3ab90c8c5f53093d9a4e9eb7204ffe10",  
+"observation": "The portrait composition depicts both recognizable adult characters inside a sunlit archival room containing shelves, storage boxes, historical photographs, folders, and a wooden research table. Leo stands slightly behind Nika on the left, wearing his beige jacket and olive shirt, watching without physically controlling her work. Nika occupies the foreground in a white blouse with an additional olive outer layer, holds several folders in her right hand, and extends her left hand toward a small beige rectangular object on the table. The object presents no discernible photographic image and visually resembles a blank card or the reverse of a print. Both faces are recognizable, visible hands appear anatomically plausible, and there are no obvious extra digits, baked text, UI elements, or forbidden rolled-document props. The primary concern is the missing visual identification of the photograph, compounded by its low position in the composition."  
+},  
+{  
+"ref": "ep3-old-photo-landscape-candidate-2",  
+"path": "assets/production/cg/ep3-old-photo-cg-landscape-rework.png",  
+"sha256": "5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a",  
+"observation": "The landscape composition shows Leo on the left leaning toward a wooden archive table while Nika occupies the right foreground, examining a clearly identifiable black-and-white historical waterfront photograph. Nika's fingertips rest at the upper edge of the print, establishing her control of the evidence. Leo observes attentively with his hands supported near the table rather than touching or taking the photograph. Both characters retain recognizable facial characteristics, adult proportions, and broadly consistent reference wardrobes. Shelving, archive boxes, stacked historical prints, framed photographs, and a large daylight window establish the location. Visible hands appear anatomically plausible, and no forbidden blueprint/tube-like props or baked text/UI are present. The photograph and Nika's essential examining gesture occupy the lower portion of the image, leaving insufficient naturally empty space directly beneath them for a conventional lower dialogue panel."  
+}  
+\],  
+"findings": \[  
+{  
+"id": "EP3-OLD-PHOTO-001",  
+"severity": "P1",  
+"status": "OPEN",  
+"impactCode": "STORY\_CRITICAL\_PROP\_OBSCURED",  
+"authoredCue": "Nika must visibly control and examine an identifiable old photograph in the portrait composition.",  
+"observation": "The portrait candidate shows Nika reaching toward a small, pale beige rectangular card on the table. Its visible surface contains no recognizable photographic content. Although Nika's hand reaches the object and she carries archival folders, the central prop cannot reliably be identified as an old photograph. The landscape candidate demonstrates the intended visual distinction by showing an unmistakable black-and-white historical image.",  
+"playerImpact": "The player cannot confidently identify the story-critical photograph in the portrait image. The scene consequently loses the immediate visual connection between Nika's investigative action and the historical evidence. The object should be visibly recognizable as a photograph without requiring dialogue to explain its identity.",  
+"evidenceRef": "ep3-old-photo-portrait-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+},  
+{  
+"id": "EP3-OLD-PHOTO-002",  
+"severity": "P1",  
+"status": "OPEN",  
+"impactCode": "MATERIAL\_RUNTIME\_READABILITY",  
+"authoredCue": "The landscape composition must preserve readable faces, the essential photograph, Nika's examining gesture, and a natural lower dialogue-safe region.",  
+"observation": "In the landscape candidate, the historical photograph lies across the lower central portion of the composition, with Nika's touching fingertips immediately above its upper edge. The photograph and associated hand gesture overlap the region ordinarily occupied by a lower dialogue panel. The framing provides no substantial visually empty region beneath these essential elements.",  
+"playerImpact": "A conventional lower dialogue overlay would risk covering the recognizable historical image and Nika's physical interaction with it. Because both are necessary to understand the scene without supplementary explanation, the composition creates a material readability problem. The photograph and gesture should be positioned sufficiently above the dialogue-sensitive region or otherwise given a compositionally protected area. This is a visual placement assessment, not a claim that an actual runtime dialogue overlay has been observed.",  
+"evidenceRef": "ep3-old-photo-landscape-candidate-2",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+},  
+{  
+"id": "EP3-OLD-PHOTO-003",  
+"severity": "P2",  
+"status": "ADVISORY",  
+"impactCode": "NARRATIVE\_CONTINUITY\_CONTRADICTION",  
+"authoredCue": "Nika's established wardrobe should remain visually coherent across portrait and landscape presentations of the same archival scene.",  
+"observation": "In the portrait candidate, Nika wears an olive overshirt or lightweight jacket over her ivory blouse. In the landscape candidate, she appears in the ivory blouse without that outer layer. Her hairstyle, jewelry, general clothing palette, and recognizable appearance remain consistent.",  
+"playerImpact": "The additional outer layer creates a minor cross-aspect costume discrepancy. It does not prevent character recognition, alter the investigative action, or materially undermine understanding of the scene. Harmonizing the outer layer would improve visual continuity but is not an independent acceptance blocker.",  
+"evidenceRef": "ep3-old-photo-portrait-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": false  
+}  
+\],  
+"unresolved": \[\]  
+}

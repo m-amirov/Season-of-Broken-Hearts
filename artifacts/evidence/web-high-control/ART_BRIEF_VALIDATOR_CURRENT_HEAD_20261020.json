@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "ART_BRIEF_VALIDATOR_CURRENT_HEAD",
+  "recordedAt": "2026-10-20",
+  "projectHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "validatorSource": "E:/Work/codex-engineering-system-dev-web-high-main-20261019/src/art-producer-brief.mjs",
+  "validatorCommit": "e468028",
+  "globalCliSourceHash": "2500e1a1b3753bbb04e0b0473290f496b8c82e3e09bf1beA802b1689c7c7c5c4",
+  "tests": {
+    "targeted": "13/13 PASS",
+    "fullPackage": "424/424 PASS",
+    "lint": "PASS"
+  },
+  "checksPreserved": [
+    "exact source HEAD or narrowly allowlisted brief-only currentness",
+    "real source-file SHA-256 validation",
+    "real character-reference pixels and SHA-256 validation",
+    "dual-format 1024x1536 and 1672x941 contract",
+    "candidate limit of two with prior-rejection evidence",
+    "provenance and substantive narrative fields"
+  ],
+  "validatedPackets": [
+    {
+      "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "status": "READY_TO_GENERATE",
+      "briefCount": 15,
+      "sceneIdPattern": "ep3_*"
+    },
+    {
+      "path": "artifacts/production-art/stage9.7/EP4_FIRST_BATCH_SOURCE_BOUND_BRIEFS_CURRENT_HEAD_20261020.json",
+      "status": "READY_TO_GENERATE",
+      "briefCount": 2,
+      "sceneIdPattern": "ep4_*"
+    }
+  ],
+  "toolAvailability": "NOT_ATTESTED"
+}
