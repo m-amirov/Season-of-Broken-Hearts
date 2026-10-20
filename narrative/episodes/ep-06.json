@@ -1,0 +1,529 @@
+{
+  "episode": 6,
+  "start": "ep6_document_found",
+  "requiredPreviousEpisode": 5,
+  "stateSchema": {
+    "exclusiveTermsSeen": {
+      "type": "boolean"
+    },
+    "aureaClientKnown": {
+      "type": "boolean"
+    },
+    "routeLockSource": {
+      "type": "string",
+      "values": ["none", "ep6_route_choice"]
+    },
+    "matteoCommitment": {
+      "type": "string",
+      "values": ["none", "public-contract"]
+    },
+    "leoCommitment": {
+      "type": "string",
+      "values": ["none", "reopened"]
+    },
+    "elioCommitment": {
+      "type": "string",
+      "values": ["none", "curious"]
+    },
+    "independentProgress": {
+      "type": "string",
+      "values": ["none", "portfolio"]
+    }
+  },
+  "stateSchemaExtensions": {
+    "investorTerms": ["exclusive"],
+    "lastChoice": [
+      "ep6_open_terms",
+      "ep6_return_terms",
+      "ep6_call_witness",
+      "ep6_mark_clauses",
+      "ep6_ask_bianca",
+      "ep6_ask_staff",
+      "ep6_ask_recusal",
+      "ep6_ask_deliverables",
+      "ep6_end_access",
+      "ep6_private_repairs",
+      "ep6_public_meeting",
+      "ep6_leave_meeting",
+      "ep6_slow_talk",
+      "ep6_set_terms",
+      "ep6_route_matteo",
+      "ep6_route_leo",
+      "ep6_route_elio",
+      "ep6_route_independent",
+      "ep6_shared_ledger",
+      "ep6_open_timeline",
+      "ep6_clear_future",
+      "ep6_start_portfolio"
+    ]
+  },
+  "initialState": {
+    "exclusiveTermsSeen": false,
+    "aureaClientKnown": false,
+    "routeLockSource": "none",
+    "matteoCommitment": "none",
+    "leoCommitment": "none",
+    "elioCommitment": "none",
+    "independentProgress": "none"
+  },
+  "scenes": [
+    {
+      "id": "ep6_document_found",
+      "episode": 6,
+      "day": 31,
+      "location": "villa-office",
+      "presentCharacters": ["nika"],
+      "knowledgeDelta": ["sealed-aurea-terms-found"],
+      "title": {"ru": "Папка без подписи", "en": "The Unmarked Folder"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "На тридцать первый день Ника нашла в офисе папку без подписи. Внутри лежали условия Aurea, сложенные так, будто сам порядок страниц должен был остановить вопросы."},
+          {"speaker": "nika", "text": "Я не буду делать вид, что случайная находка — это разрешение читать чужую жизнь. Но если эти условия касаются команды, молчание тоже будет выбором."},
+          {"speaker": null, "text": "Папка не обещала простого ответа. Она обещала цену за то, чтобы его отложить."}
+        ],
+        "en": [
+          {"speaker": null, "text": "On day thirty-one, Nika found an unmarked folder in the office. Inside were Aurea's terms, arranged as if the order of the pages itself could stop questions."},
+          {"speaker": "nika", "text": "I will not pretend that finding this is permission to read someone else's life. But if these terms affect the team, silence is a choice too."},
+          {"speaker": null, "text": "The folder did not promise an easy answer. It promised a cost for delaying one."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_open_terms",
+          "label": {"ru": "Открыть папку и прочитать условия", "en": "Open the folder and read the terms"},
+          "to": "ep6_terms_read",
+          "effects": {"lastChoice": "ep6_open_terms", "exclusiveTermsSeen": true}
+        },
+        {
+          "id": "ep6_return_terms",
+          "label": {"ru": "Вернуть папку и найти свидетеля", "en": "Return the folder and find a witness"},
+          "to": "ep6_terms_read",
+          "effects": {"lastChoice": "ep6_return_terms", "exclusiveTermsSeen": false}
+        },
+        {
+          "id": "ep6_call_witness",
+          "label": {"ru": "Позвать свидетеля до чтения", "en": "Call a witness before reading"},
+          "to": "ep6_terms_read",
+          "effects": {"lastChoice": "ep6_call_witness", "exclusiveTermsSeen": true}
+        }
+      ]
+    },
+    {
+      "id": "ep6_terms_read",
+      "episode": 6,
+      "day": 32,
+      "location": "library",
+      "presentCharacters": ["nika", "bianca"],
+      "knowledgeDelta": ["exclusive-aurea-terms"],
+      "title": {"ru": "Условия, которые меняют комнату", "en": "Terms That Change the Room"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "В библиотеке условия стали конкретными: Aurea получала контроль над решениями, а сокращения назывались не риском, а механизмом защиты вложений.", "when": {"exclusiveTermsSeen": true}},
+          {"speaker": null, "text": "Ника не открыла папку одна. Она попросила свидетеля присутствовать, чтобы ни одна строка не стала тайной, удобной только одному человеку.", "when": {"exclusiveTermsSeen": false}},
+          {"speaker": "bianca", "text": "Это не злой план. Это план инвестора, который хочет управлять риском. Но управляемый риск всё равно переживают люди."},
+          {"speaker": "nika", "text": "Тогда я запишу не только сумму. Я запишу, кто платит за право назвать её безопасной."}
+        ],
+        "en": [
+          {"speaker": null, "text": "In the library, the terms became concrete: Aurea received control over decisions, and cuts were described not as a risk but as a mechanism for protecting the investment.", "when": {"exclusiveTermsSeen": true}},
+          {"speaker": null, "text": "Nika did not open the folder alone. She asked a witness to be present so no line could become a secret convenient to only one person.", "when": {"exclusiveTermsSeen": false}},
+          {"speaker": "bianca", "text": "This is not an evil plan. It is an investor's plan for managing risk. But managed risk is still lived by people."},
+          {"speaker": "nika", "text": "Then I will record more than the amount. I will record who pays for the right to call it safe."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_mark_clauses",
+          "label": {"ru": "Отметить контроль и сроки", "en": "Mark the control terms and deadlines"},
+          "to": "ep6_bianca_meeting",
+          "requires": {"exclusiveTermsSeen": true},
+          "effects": {"lastChoice": "ep6_mark_clauses", "investorTerms": "exclusive", "fundingEvidence": 4}
+        },
+        {
+          "id": "ep6_ask_bianca",
+          "label": {"ru": "Попросить Бьянку прочитать их вместе", "en": "Ask Bianca to read them with you"},
+          "to": "ep6_bianca_meeting",
+          "requires": {"exclusiveTermsSeen": false},
+          "effects": {"lastChoice": "ep6_ask_bianca", "exclusiveTermsSeen": true, "investorTerms": "exclusive", "fundingEvidence": 3}
+        },
+        {
+          "id": "ep6_ask_staff",
+          "label": {"ru": "Позвать представителя команды", "en": "Call a staff representative"},
+          "to": "ep6_bianca_meeting",
+          "requires": {"exclusiveTermsSeen": false},
+          "effects": {"lastChoice": "ep6_ask_staff", "exclusiveTermsSeen": true, "investorTerms": "exclusive", "fundingEvidence": 2, "staffTrust": 4}
+        }
+      ]
+    },
+    {
+      "id": "ep6_bianca_meeting",
+      "episode": 6,
+      "day": 32,
+      "location": "aurea-meeting-room",
+      "presentCharacters": ["nika", "bianca"],
+      "knowledgeDelta": ["bianca-investment-position"],
+      "title": {"ru": "Не злодейка, а сторона сделки", "en": "A Party to the Deal, Not a Villain"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "bianca", "text": "Я не прошу тебя доверять Aurea. Я прошу прочитать условия до того, как гнев превратит их в карикатуру."},
+          {"speaker": "nika", "text": "Я прочитала. Поэтому спрашиваю не о намерениях, а о полномочиях: кто сможет отменить решение команды?"},
+          {"speaker": "bianca", "text": "Если договор подпишут в этой редакции — управляющий инвестора. И это должно быть сказано вслух, до подписи."},
+          {"speaker": null, "text": "У Ники появился не союзник и не враг, а названная сторона сделки. Этого было мало для доверия, но достаточно для следующего разговора."}
+        ],
+        "en": [
+          {"speaker": "bianca", "text": "I am not asking you to trust Aurea. I am asking you to read the terms before anger turns them into a caricature."},
+          {"speaker": "nika", "text": "I read them. That is why I am asking about authority, not intentions: who can overrule the team?"},
+          {"speaker": "bianca", "text": "If this version is signed, the investor's manager can. And that must be said aloud before anyone signs."},
+          {"speaker": null, "text": "Nika had a named party to the deal, not an ally or an enemy. It was not enough for trust, but enough for the next conversation."}
+        ]
+      },
+      "next": "ep6_leo_role"
+    },
+    {
+      "id": "ep6_leo_role",
+      "episode": 6,
+      "day": 33,
+      "location": "aurea-meeting-room",
+      "presentCharacters": ["nika", "leo"],
+      "knowledgeDelta": ["leo-aurea-client-role"],
+      "title": {"ru": "Роль Лео названа", "en": "Leo's Role Is Named"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "leo", "text": "Я готовил для Aurea оценку объекта и карту рисков. Я не был случайным посредником, даже когда говорил так, будто просто передавал документы."},
+          {"speaker": "nika", "text": "Тогда прошлое между нами не может быть способом получить скидку на честность."},
+          {"speaker": "leo", "text": "Согласен. Ты можешь проверить мою работу, попросить отстранения или закрыть мне доступ. Ни один вариант не обязан быть близостью."},
+          {"speaker": null, "text": "Лео наконец назвал границу между профессиональной обязанностью и личной историей. Ника оставила за собой право проверить обе части отдельно."}
+        ],
+        "en": [
+          {"speaker": "leo", "text": "I prepared Aurea's property assessment and risk map. I was not a random courier, even when I spoke as if I were only passing on documents."},
+          {"speaker": "nika", "text": "Then what happened between us cannot be a discount on honesty."},
+          {"speaker": "leo", "text": "Agreed. You can verify my work, ask for my recusal, or close my access. None of those choices has to be intimacy."},
+          {"speaker": null, "text": "Leo finally named the boundary between professional duty and personal history. Nika kept the right to test both parts separately."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_ask_recusal",
+          "label": {"ru": "Попросить отстраниться от личной части", "en": "Ask him to recuse himself from the personal part"},
+          "to": "ep6_all_three_confront",
+          "effects": {"lastChoice": "ep6_ask_recusal", "aureaClientKnown": true, "leoAureaLinkKnown": true}
+        },
+        {
+          "id": "ep6_ask_deliverables",
+          "label": {"ru": "Попросить показать проверяемые материалы", "en": "Ask for verifiable materials"},
+          "to": "ep6_all_three_confront",
+          "effects": {"lastChoice": "ep6_ask_deliverables", "aureaClientKnown": true, "leoAureaLinkKnown": true}
+        },
+        {
+          "id": "ep6_end_access",
+          "label": {"ru": "Закрыть доступ до проверки", "en": "Close his access until verification"},
+          "to": "ep6_all_three_confront",
+          "effects": {"lastChoice": "ep6_end_access", "aureaClientKnown": true, "leoAureaLinkKnown": true}
+        }
+      ]
+    },
+    {
+      "id": "ep6_all_three_confront",
+      "episode": 6,
+      "day": 34,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "leo", "elio"],
+      "knowledgeDelta": ["triangulation-rejected"],
+      "title": {"ru": "Не быть чьим-то алиби", "en": "No One's Alibi"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "matteo", "text": "Мы все хотели, чтобы ты сначала выбрала сторону, а потом получила полную картину."},
+          {"speaker": "nika", "text": "Я не буду выбирать человека как алиби для договора. И не буду выбирать договор как алиби для человека."},
+          {"speaker": "elio", "text": "Тогда хотя бы не проси себя быть удобной для всех сразу."},
+          {"speaker": "nika", "text": "Я и не прошу. Я задаю условия разговора, в котором отказ не превращается в наказание."},
+          {"speaker": null, "text": "Три голоса остались в одной комнате, но решение больше не принадлежало комнате."}
+        ],
+        "en": [
+          {"speaker": "matteo", "text": "We all wanted you to choose a side before you had the full picture."},
+          {"speaker": "nika", "text": "I will not choose a person as an alibi for a contract. And I will not choose a contract as an alibi for a person."},
+          {"speaker": "elio", "text": "Then at least do not ask yourself to be convenient for everyone at once."},
+          {"speaker": "nika", "text": "I am not. I am setting the terms for a conversation where refusal is not turned into punishment."},
+          {"speaker": null, "text": "Three voices remained in one room, but the decision no longer belonged to the room."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_private_repairs",
+          "label": {"ru": "Продолжить разговоры по одному", "en": "Continue the conversations one at a time"},
+          "to": "ep6_nika_boundary",
+          "effects": {"lastChoice": "ep6_private_repairs"}
+        },
+        {
+          "id": "ep6_public_meeting",
+          "label": {"ru": "Оставить условия открытыми для команды", "en": "Keep the terms open to the team"},
+          "to": "ep6_nika_boundary",
+          "effects": {"lastChoice": "ep6_public_meeting"}
+        },
+        {
+          "id": "ep6_leave_meeting",
+          "label": {"ru": "Закончить встречу и уйти", "en": "End the meeting and leave"},
+          "to": "ep6_nika_boundary",
+          "effects": {"lastChoice": "ep6_leave_meeting"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_nika_boundary",
+      "episode": 6,
+      "day": 35,
+      "location": "pier",
+      "presentCharacters": ["nika"],
+      "knowledgeDelta": ["route-choice-context-set"],
+      "title": {"ru": "Медленно — тоже решение", "en": "Slow Is Still a Decision"},
+      "assetId": "harbor",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "На пирсе Ника записала условия, которые могла предложить: честность без ускорения, близость без долга и работа без тайного обмена властью."},
+          {"speaker": "nika", "text": "Я могу выбрать, с кем говорить дальше. Но не обязана обещать финал только потому, что наконец назвала направление."},
+          {"speaker": null, "text": "Впервые выбор не был реакцией на чужой страх. Он был её следующим шагом."}
+        ],
+        "en": [
+          {"speaker": null, "text": "At the pier, Nika wrote down what she could offer: honesty without acceleration, closeness without debt, and work without a hidden exchange of power."},
+          {"speaker": "nika", "text": "I can choose who I speak to next. But I do not have to promise an ending just because I have finally named a direction."},
+          {"speaker": null, "text": "For the first time, the choice was not a reaction to someone else's fear. It was her next step."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_slow_talk",
+          "label": {"ru": "Выбрать разговор без обещания близости", "en": "Choose a conversation without promising intimacy"},
+          "to": "ep6_route_choice",
+          "effects": {"lastChoice": "ep6_slow_talk"}
+        },
+        {
+          "id": "ep6_set_terms",
+          "label": {"ru": "Сначала назвать свои условия", "en": "Name your terms first"},
+          "to": "ep6_route_choice",
+          "effects": {"lastChoice": "ep6_set_terms"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_route_choice",
+      "episode": 6,
+      "day": 36,
+      "location": "pier",
+      "presentCharacters": ["nika"],
+      "knowledgeDelta": ["explicit-route-lock"],
+      "title": {"ru": "Куда идти дальше", "en": "Where to Go Next"},
+      "assetId": "harbor",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Я знаю, что в этих условиях поставлено на карту. Теперь я выбираю, с кем продолжить личный разговор — и что не буду обещать заранее."},
+          {"speaker": null, "text": "Все четыре направления были перед ней открыты. Ни одно не было наградой за высокий балл доверия."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "I know what is at stake in these terms. Now I choose who to continue a personal conversation with — and what I will not promise in advance."},
+          {"speaker": null, "text": "All four directions were open to her. None was a reward for a high trust score."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_route_matteo",
+          "label": {"ru": "Продолжить с Маттео — на условиях открытых решений", "en": "Continue with Matteo — with decisions kept open"},
+          "to": "ep6_route_matteo",
+          "requires": {"route": "none", "routeLocked": false, "routeLockSource": "none", "exclusiveTermsSeen": true, "aureaClientKnown": true},
+          "effects": {"route": "matteo", "routeLocked": true, "routeLockSource": "ep6_route_choice", "lastChoice": "ep6_route_matteo"}
+        },
+        {
+          "id": "ep6_route_leo",
+          "label": {"ru": "Продолжить с Лео — только через проверяемые действия", "en": "Continue with Leo — only through verifiable actions"},
+          "to": "ep6_route_leo",
+          "requires": {"route": "none", "routeLocked": false, "routeLockSource": "none", "exclusiveTermsSeen": true, "aureaClientKnown": true},
+          "effects": {"route": "leo", "routeLocked": true, "routeLockSource": "ep6_route_choice", "lastChoice": "ep6_route_leo"}
+        },
+        {
+          "id": "ep6_route_elio",
+          "label": {"ru": "Продолжить с Элио — без отказа от своих планов", "en": "Continue with Elio — without giving up your own plans"},
+          "to": "ep6_route_elio",
+          "requires": {"route": "none", "routeLocked": false, "routeLockSource": "none", "exclusiveTermsSeen": true, "aureaClientKnown": true},
+          "effects": {"route": "elio", "routeLocked": true, "routeLockSource": "ep6_route_choice", "lastChoice": "ep6_route_elio"}
+        },
+        {
+          "id": "ep6_route_independent",
+          "label": {"ru": "Выбрать собственный путь — без романтического алиби", "en": "Choose your own way — without a romantic alibi"},
+          "to": "ep6_route_independent",
+          "requires": {"route": "none", "routeLocked": false, "routeLockSource": "none", "exclusiveTermsSeen": true, "aureaClientKnown": true},
+          "effects": {"route": "independent", "routeLocked": true, "routeLockSource": "ep6_route_choice", "lastChoice": "ep6_route_independent"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_route_matteo",
+      "episode": 6,
+      "day": 36,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo"],
+      "title": {"ru": "Открытая книга решений", "en": "An Open Ledger of Decisions"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "matteo", "text": "Ты сказала, что разговор о будущем может быть открытым. Тогда я принесу не красивое обещание, а книгу решений."},
+          {"speaker": "nika", "text": "Я уже просила о времени и ясных границах.", "when": {"matteoFutureTalk": "open"}},
+          {"speaker": "nika", "text": "Я не закрыла разговор, когда не была готова. Теперь хочу увидеть, выдержит ли он честность.", "when": {"matteoFutureTalk": "deferred"}},
+          {"speaker": "matteo", "text": "Тогда начнём с решения, которое нельзя принять за тебя."}
+        ],
+        "en": [
+          {"speaker": "matteo", "text": "You said a future conversation could stay open. Then I will bring not a beautiful promise, but a ledger of decisions."},
+          {"speaker": "nika", "text": "I already asked for time and clear boundaries.", "when": {"matteoFutureTalk": "open"}},
+          {"speaker": "nika", "text": "I did not close the conversation when I was not ready. Now I want to see whether it can withstand honesty.", "when": {"matteoFutureTalk": "deferred"}},
+          {"speaker": "matteo", "text": "Then we begin with a decision no one can make for you."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_shared_ledger",
+          "label": {"ru": "Попросить общий список решений", "en": "Ask for a shared decision list"},
+          "to": "ep6_route_response",
+          "requires": {"route": "matteo", "routeLocked": true, "routeLockSource": "ep6_route_choice"},
+          "effects": {"lastChoice": "ep6_shared_ledger", "matteoCommitment": "public-contract"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_route_leo",
+      "episode": 6,
+      "day": 36,
+      "location": "library",
+      "presentCharacters": ["nika", "leo"],
+      "title": {"ru": "Проверяемая хронология", "en": "A Verifiable Timeline"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "leo", "text": "Я принёс хронологию, которую можно проверить по документам, а не по моей памяти."},
+          {"speaker": "nika", "text": "Раньше у меня был только рисунок и твой рассказ.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "nika", "text": "Я уже видела приложение к условиям. Теперь проверю, совпадут ли факты с твоими действиями.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "Я не прошу вернуть прошлое. Я предлагаю выдержать проверку настоящего."}
+        ],
+        "en": [
+          {"speaker": "leo", "text": "I brought a timeline that can be checked against documents, not against my memory."},
+          {"speaker": "nika", "text": "Before, I had only a drawing and your account.", "when": {"leoEvidence": "drawing"}},
+          {"speaker": "nika", "text": "I have already seen the attachment to the terms. Now I will check whether the facts match your actions.", "when": {"leoEvidence": "terms"}},
+          {"speaker": "leo", "text": "I am not asking to restore the past. I am offering to let the present be checked."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_open_timeline",
+          "label": {"ru": "Открыть хронологию вместе", "en": "Open the timeline together"},
+          "to": "ep6_route_response",
+          "requires": {"route": "leo", "routeLocked": true, "routeLockSource": "ep6_route_choice"},
+          "effects": {"lastChoice": "ep6_open_timeline", "leoCommitment": "reopened"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_route_elio",
+      "episode": 6,
+      "day": 36,
+      "location": "kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "title": {"ru": "Две кухни, один честный вопрос", "en": "Two Kitchens, One Honest Question"},
+      "assetId": "kitchen",
+      "dialogue": {
+        "ru": [
+          {"speaker": "elio", "text": "Я не буду просить тебя стать причиной, по которой я останусь. И не буду делать вид, что моя мечта не требует расстояния."},
+          {"speaker": "nika", "text": "Ты уже однажды спрятал серьёзность за шуткой.", "when": {"elioApproach": "playful"}},
+          {"speaker": "nika", "text": "Ты уже умеешь назвать границу до того, как она станет обидой.", "when": {"elioApproach": "boundary"}},
+          {"speaker": "elio", "text": "Тогда первый вопрос будет не «останешься ли ты», а «можем ли мы говорить ясно»."}
+        ],
+        "en": [
+          {"speaker": "elio", "text": "I will not ask you to become the reason I stay. And I will not pretend my dream does not require distance."},
+          {"speaker": "nika", "text": "You once hid seriousness behind a joke.", "when": {"elioApproach": "playful"}},
+          {"speaker": "nika", "text": "You already know how to name a boundary before it becomes resentment.", "when": {"elioApproach": "boundary"}},
+          {"speaker": "elio", "text": "Then our first question is not whether you will stay, but whether we can speak clearly."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_clear_future",
+          "label": {"ru": "Обсудить будущее без обещания переезда", "en": "Discuss the future without promising a move"},
+          "to": "ep6_route_response",
+          "requires": {"route": "elio", "routeLocked": true, "routeLockSource": "ep6_route_choice"},
+          "effects": {"lastChoice": "ep6_clear_future", "elioCommitment": "curious"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_route_independent",
+      "episode": 6,
+      "day": 36,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "giulia"],
+      "title": {"ru": "Собственный стол", "en": "Her Own Table"},
+      "assetId": "villa",
+      "dialogue": {
+        "ru": [
+          {"speaker": "giulia", "text": "Ты можешь продолжить историю без того, чтобы чьё-то имя стало заголовком твоей жизни."},
+          {"speaker": "nika", "text": "Я уже вынесла неудобный факт на свет. Теперь хочу строить работу, которая не зависит от чужого признания.", "when": {"ep3SurveyAction": "report"}},
+          {"speaker": "nika", "text": "Я слишком долго держала факты при себе. Теперь начну с малого и не назову осторожность капитуляцией.", "when": {"ep3SurveyAction": "hold"}},
+          {"speaker": "giulia", "text": "Тогда первым проектом станет не отказ от близости, а авторство собственной следующей страницы."}
+        ],
+        "en": [
+          {"speaker": "giulia", "text": "You can continue the story without someone else's name becoming the headline of your life."},
+          {"speaker": "nika", "text": "I have already brought an uncomfortable fact into the light. Now I want work that does not depend on someone else's approval.", "when": {"ep3SurveyAction": "report"}},
+          {"speaker": "nika", "text": "I kept facts to myself for too long. I will start small and refuse to call caution surrender.", "when": {"ep3SurveyAction": "hold"}},
+          {"speaker": "giulia", "text": "Then the first project is not rejecting closeness. It is authoring the next page yourself."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep6_start_portfolio",
+          "label": {"ru": "Собрать портфолио мероприятий", "en": "Start an event portfolio"},
+          "to": "ep6_route_response",
+          "requires": {"route": "independent", "routeLocked": true, "routeLockSource": "ep6_route_choice"},
+          "effects": {"lastChoice": "ep6_start_portfolio", "independentProgress": "portfolio"}
+        }
+      ]
+    },
+    {
+      "id": "ep6_route_response",
+      "episode": 6,
+      "day": 36,
+      "location": "pier",
+      "presentCharacters": ["nika"],
+      "title": {"ru": "Первый шаг выбран", "en": "The First Step Is Chosen"},
+      "assetId": "harbor",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Выбор не отменил остальные факты. Он только определил, какой разговор получит следующий шанс."},
+          {"speaker": null, "text": "Ника не обещала любовь, сделку или переезд. Она выбрала направление, в котором сможет отвечать собственным голосом."}
+        ],
+        "en": [
+          {"speaker": null, "text": "The choice did not erase the other facts. It only decided which conversation would get the next chance."},
+          {"speaker": null, "text": "Nika promised neither love, a deal, nor a move. She chose a direction in which she could answer in her own voice."}
+        ]
+      },
+      "next": "ep6_transition"
+    },
+    {
+      "id": "ep6_transition",
+      "episode": 6,
+      "day": 36,
+      "location": "pier",
+      "presentCharacters": ["nika"],
+      "title": {"ru": "Больше никаких игр", "en": "No More Games"},
+      "assetId": "harbor",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Дедлайн Aurea остался в календаре. Теперь рядом с ним стояло другое: выбранный разговор не заменяет деловую проверку, а деловая проверка не отменяет право Ники передумать в темпе."},
+          {"speaker": "nika", "text": "Я выбрала направление. Остальное придётся доказать действиями."}
+        ],
+        "en": [
+          {"speaker": null, "text": "The Aurea deadline remained on the calendar. Beside it stood something else: a chosen conversation does not replace business verification, and business verification does not erase Nika's right to set the pace."},
+          {"speaker": "nika", "text": "I chose a direction. Everything else will have to be proven through actions."}
+        ]
+      },
+      "ending": true
+    }
+  ]
+}

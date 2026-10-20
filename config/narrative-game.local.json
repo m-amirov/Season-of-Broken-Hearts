@@ -4,7 +4,7 @@
   "enabled": true,
   "modelPath": "narrative/graph.json",
   "savesPath": "narrative/save-fixtures.json",
-  "maxStates": 400000,
+  "maxStates": 600000,
   "promisesPath": "narrative/story-promises.json",
   "dualFormatManifestPath": "artifacts/production-art/stage8-ep1-dual-format-manifest.json"
 }

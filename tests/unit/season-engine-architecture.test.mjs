@@ -263,3 +263,119 @@ test('runtime continues EP4 to EP5, preserves provenance, and keeps route-lock o
   assert.equal(restored.load(engine.save()), true);
   assert.deepEqual(restored.snapshot(), engine.snapshot());
 });
+
+function reachEpisode6(engine) {
+  for (let episode = 1; episode <= 5; episode += 1) {
+    advanceToEpisodeEnd(engine);
+    assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: episode + 1 });
+  }
+  let guard = 0;
+  while (engine.snapshot().cursor.sceneId !== 'ep6_route_choice' || !engine.choices().length) {
+    const choices = engine.choices();
+    if (choices.length) assert.equal(engine.choose(choices[0].id).ok, true);
+    else assert.equal(engine.advance().ok, true);
+    assert.ok(guard++ < 100, 'EP6 common route-lock path did not terminate');
+  }
+}
+
+const routeCases = [
+  { id: 'matteo', choice: 'ep6_route_matteo', scene: 'ep6_route_matteo', startChoice: 'ep6_shared_ledger', contextText: 'времени и ясных границ', commitmentKey: 'matteoCommitment', commitmentValue: 'public-contract' },
+  { id: 'leo', choice: 'ep6_route_leo', scene: 'ep6_route_leo', startChoice: 'ep6_open_timeline', contextText: 'видела приложение к условиям', commitmentKey: 'leoCommitment', commitmentValue: 'reopened' },
+  { id: 'elio', choice: 'ep6_route_elio', scene: 'ep6_route_elio', startChoice: 'ep6_clear_future', contextText: 'спрятал серьёзность за шуткой', commitmentKey: 'elioCommitment', commitmentValue: 'curious' },
+  { id: 'independent', choice: 'ep6_route_independent', scene: 'ep6_route_independent', startChoice: 'ep6_start_portfolio', contextText: 'вынесла неудобный факт на свет', commitmentKey: 'independentProgress', commitmentValue: 'portfolio' }
+];
+
+test('EP6 presents all four explicit routes and preserves prior decisions in route starts', () => {
+  for (const routeCase of routeCases) {
+    const engine = new NarrativeEngine(graph);
+    reachEpisode6(engine);
+    const routeChoices = engine.choices();
+    assert.deepEqual(routeChoices.map(choice => choice.id), routeCases.map(candidate => candidate.choice));
+    assert.equal(engine.snapshot().state.route, 'none');
+    assert.equal(engine.snapshot().state.routeLocked, false);
+    assert.equal(engine.snapshot().state.routeLockSource, 'none');
+
+    assert.equal(engine.choose(routeCase.choice).ok, true);
+    assert.deepEqual(engine.snapshot().state.route, routeCase.id);
+    assert.equal(engine.snapshot().state.routeLocked, true);
+    assert.equal(engine.snapshot().state.routeLockSource, 'ep6_route_choice');
+    assert.equal(engine.snapshot().cursor.sceneId, routeCase.scene);
+    while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+    assert.ok(engine.choices().some(choice => choice.id === routeCase.startChoice));
+    assert.ok(getDialogueLines(engine.currentScene(), 'ru', engine.snapshot().state).some(line => line.text.includes(routeCase.contextText)));
+    assert.equal(engine.choose(routeCase.startChoice).ok, true);
+    assert.equal(engine.snapshot().state[routeCase.commitmentKey], routeCase.commitmentValue);
+
+    const saved = engine.save();
+    const restored = new NarrativeEngine(graph);
+    assert.equal(restored.load(saved), true);
+    assert.deepEqual(restored.snapshot(), engine.snapshot());
+    assert.equal(restored.snapshot().state.route, routeCase.id);
+    assert.equal(restored.snapshot().state.routeLocked, true);
+  }
+});
+
+test('EP6 Back restores the unlocked pre-route state and does not leave multiple routes active', () => {
+  const engine = new NarrativeEngine(graph);
+  reachEpisode6(engine);
+  const routeChoiceState = engine.snapshot();
+  assert.equal(engine.choose('ep6_route_matteo').ok, true);
+  assert.equal(engine.snapshot().state.route, 'matteo');
+  assert.equal(engine.snapshot().state.routeLocked, true);
+  assert.equal(engine.back(), true);
+  assert.deepEqual(engine.snapshot().cursor, routeChoiceState.cursor);
+  assert.deepEqual(engine.snapshot().state, routeChoiceState.state);
+  assert.deepEqual(engine.choices().map(choice => choice.id), routeCases.map(candidate => candidate.choice));
+  assert.equal(engine.choose('ep6_route_leo').ok, true);
+  assert.equal(engine.snapshot().state.route, 'leo');
+  assert.equal(engine.snapshot().state.routeLocked, true);
+  assert.equal(engine.snapshot().state.routeLockSource, 'ep6_route_choice');
+});
+
+test('route-lock rejects inconsistent v4 saves and New Game clears the lock', () => {
+  const engine = new NarrativeEngine(graph);
+  reachEpisode6(engine);
+  engine.choose('ep6_route_elio');
+  const valid = JSON.parse(engine.save());
+  const inconsistent = [
+    { ...valid, state: { ...valid.state, route: 'leo', routeLocked: false } },
+    { ...valid, state: { ...valid.state, route: 'none', routeLocked: true } },
+    { ...valid, state: { ...valid.state, route: 'elio', routeLocked: true, routeLockSource: 'none' } }
+  ];
+  for (const payload of inconsistent) {
+    const restored = new NarrativeEngine(graph);
+    assert.equal(restored.load(JSON.stringify(payload)), false);
+  }
+  assert.equal(engine.newGame(), true);
+  assert.equal(engine.snapshot().cursor.sceneId, 'ep1_arrival');
+  assert.equal(engine.snapshot().state.route, 'none');
+  assert.equal(engine.snapshot().state.routeLocked, false);
+  assert.equal(engine.snapshot().state.routeLockSource, 'none');
+});
+
+test('an older v4 save receives EP6 defaults without changing its route state', () => {
+  const engine = new NarrativeEngine(graph);
+  const payload = JSON.parse(engine.save());
+  delete payload.state.routeLockSource;
+  delete payload.state.exclusiveTermsSeen;
+  delete payload.state.aureaClientKnown;
+  delete payload.state.matteoCommitment;
+  delete payload.state.leoCommitment;
+  delete payload.state.elioCommitment;
+  delete payload.state.independentProgress;
+  for (const item of payload.history) {
+    delete item.state.routeLockSource;
+    delete item.state.exclusiveTermsSeen;
+    delete item.state.aureaClientKnown;
+    delete item.state.matteoCommitment;
+    delete item.state.leoCommitment;
+    delete item.state.elioCommitment;
+    delete item.state.independentProgress;
+  }
+  const restored = new NarrativeEngine(graph);
+  assert.equal(restored.load(JSON.stringify(payload)), true);
+  assert.equal(restored.snapshot().state.route, 'none');
+  assert.equal(restored.snapshot().state.routeLocked, false);
+  assert.equal(restored.snapshot().state.routeLockSource, 'none');
+  assert.equal(restored.snapshot().state.independentProgress, 'none');
+});

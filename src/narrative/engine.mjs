@@ -1,5 +1,5 @@
 import { getLocalizedText } from './localization.mjs';
-import { deserializeSave, serializeSave } from './save.mjs';
+import { deserializeSave, isConsistentRouteState, serializeSave } from './save.mjs';
 import { applyEffects, canEnter, createInitialState, getDialogueLines, validateGraph } from './state.mjs';
 
 const ENGINE_SCHEMA_VERSION = 4;
@@ -123,6 +123,19 @@ export class NarrativeEngine {
     });
   }
 
+  #routeTransitionAllowed(effects) {
+    if (!Object.prototype.hasOwnProperty.call(this.#state, 'routeLocked')) return true;
+    const nextRoute = Object.prototype.hasOwnProperty.call(effects ?? {}, 'route') ? effects.route : this.#state.route;
+    const nextLocked = Object.prototype.hasOwnProperty.call(effects ?? {}, 'routeLocked') ? effects.routeLocked : this.#state.routeLocked;
+    const nextSource = Object.prototype.hasOwnProperty.call(effects ?? {}, 'routeLockSource') ? effects.routeLockSource : this.#state.routeLockSource;
+    if (this.#state.routeLocked && nextLocked !== true) return false;
+    if (this.#state.routeLocked && nextRoute !== this.#state.route) return false;
+    if (this.#state.route !== 'none' && nextRoute !== this.#state.route) return false;
+    if (nextRoute === 'none' && nextLocked === true) return false;
+    if (nextRoute !== 'none' && (nextLocked !== true || nextSource !== 'ep6_route_choice')) return false;
+    return true;
+  }
+
   advance() {
     return this.#withLock(() => {
       const scene = this.currentScene();
@@ -161,8 +174,11 @@ export class NarrativeEngine {
     return this.#withLock(() => {
       const choice = this.choices().find(candidate => candidate.id === choiceId);
       if (!choice) return { ok: false, reason: 'choice-unavailable' };
+      if (!this.#routeTransitionAllowed(choice.effects)) return { ok: false, reason: 'route-locked' };
+      const nextState = applyEffects(this.#state, choice.effects, this.#graph.stateSchema);
+      if (!isConsistentRouteState(nextState)) return { ok: false, reason: 'inconsistent-route-lock' };
       this.#recordSnapshot();
-      this.#state = applyEffects(this.#state, choice.effects, this.#graph.stateSchema);
+      this.#state = nextState;
       this.#cursor = { sceneId: choice.to, dialogueIndex: 0 };
       this.#recordForwardProgress();
       return { ok: true, type: 'choice', choiceId };

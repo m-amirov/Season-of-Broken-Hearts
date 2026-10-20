@@ -39,6 +39,15 @@ function validStateValue(value, definition) {
     (definition.type === 'boolean' || definition.values.includes(value));
 }
 
+export function isConsistentRouteState(state) {
+  if (!state || typeof state !== 'object' || Array.isArray(state) || !('route' in state) || !('routeLocked' in state)) {
+    return true;
+  }
+  const source = 'routeLockSource' in state ? state.routeLockSource : 'none';
+  if (state.route === 'none') return state.routeLocked === false && source === 'none';
+  return state.routeLocked === true && source === 'ep6_route_choice';
+}
+
 function migrateState(state, graph) {
   if (!state || typeof state !== 'object' || Array.isArray(state)) throw new Error('Invalid save state');
   const migrated = structuredClone(graph.initialState);
@@ -78,9 +87,10 @@ export function migrateSave(payload, graph = null) {
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) throw new Error('Invalid save payload');
   const version = payload.schemaVersion ?? 0;
   if (version > CURRENT_SAVE_VERSION) throw new Error(`Future save version ${version} is not supported`);
-  if (version < CURRENT_SAVE_VERSION) {
-    // v4 adds bounded season fields. Every pre-v4 state is projected onto the
-    // current schema so EP1 saves acquire only declared defaults.
+  if (version < CURRENT_SAVE_VERSION || graph) {
+    // The graph may gain bounded fields without changing the v4 wire version.
+    // Project every v4 payload onto the current graph so older v4 browser saves
+    // acquire only declared defaults instead of being rejected for missing keys.
     const state = graph ? migrateState(payload.state, graph) : payload.state;
     const history = Array.isArray(payload.history)
       ? payload.history.map(item => ({
@@ -101,6 +111,7 @@ export function migrateSave(payload, graph = null) {
 }
 
 export function serializeSave(snapshot) {
+  if (!isConsistentRouteState(snapshot.state)) throw new Error('Inconsistent route-lock state');
   return JSON.stringify({
     schemaVersion: CURRENT_SAVE_VERSION,
     locale: snapshot.locale,
@@ -114,9 +125,9 @@ export function serializeSave(snapshot) {
 export function deserializeSave(raw, graph) {
   try {
     const payload = migrateSave(typeof raw === 'string' ? JSON.parse(raw) : raw, graph);
-    if (validateGraph(graph).valid !== true || !isValidState(payload.state, graph) || !validCursor(payload.cursor, graph, payload.locale, payload.state) ||
+    if (validateGraph(graph).valid !== true || !isValidState(payload.state, graph) || !isConsistentRouteState(payload.state) || !validCursor(payload.cursor, graph, payload.locale, payload.state) ||
       !validReaderProgress(payload.readerProgress, graph)) return null;
-    const history = (payload.history ?? []).filter(item => isValidState(item.state, graph) && validCursor(item, graph, payload.locale, item.state));
+    const history = (payload.history ?? []).filter(item => isValidState(item.state, graph) && isConsistentRouteState(item.state) && validCursor(item, graph, payload.locale, item.state));
     return {
       schemaVersion: CURRENT_SAVE_VERSION,
       locale: payload.locale,
