@@ -15,11 +15,19 @@
     },
     {
       "id": "matteo-negotiation-documents",
-      "status": "planned"
+      "status": "planned",
+      "setup": {
+        "sceneId": "ep4_cut_list",
+        "evidence": "Staff-cut risk is sourced from the list or direct disclosure before EP6 terms are read."
+      }
     },
     {
       "id": "elio-restaurant-departure",
-      "status": "planned"
+      "status": "planned",
+      "setup": {
+        "sceneId": "ep5_elio_offer",
+        "evidence": "Elio's restaurant offer is explicitly disclosed before any route choice."
+      }
     },
     {
       "id": "season-hotel-outcome",

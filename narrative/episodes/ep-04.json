@@ -1,0 +1,319 @@
+{
+  "episode": 4,
+  "start": "ep4_wedding_evening",
+  "requiredPreviousEpisode": 3,
+  "stateSchema": {
+    "staffCutsKnown": {
+      "type": "boolean"
+    }
+  },
+  "stateSchemaExtensions": {
+    "lastChoice": [
+      "ep4_wedding_kiss",
+      "ep4_wedding_gesture",
+      "ep4_wedding_stop",
+      "ep4_read_staff_list",
+      "ep4_ask_direct_disclosure",
+      "ep4_protect_team",
+      "ep4_verify_budget",
+      "ep4_keep_professional",
+      "ep4_name_personal_interest"
+    ]
+  },
+  "initialState": {
+    "staffCutsKnown": false
+  },
+  "scenes": [
+    {
+      "id": "ep4_wedding_evening",
+      "episode": 4,
+      "day": 17,
+      "location": "chapel",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["wedding-evening-scope", "fresh-public-consent"],
+      "title": {
+        "ru": "Вечер, который не обязан продолжаться",
+        "en": "An Evening That Does Not Have to Continue"
+      },
+      "assetId": "ep4-wedding-evening-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "На семнадцатый день свадьба Джулии наконец началась. Семидневное соглашение закончилось восемь дней назад, и Ника не собиралась позволять красивому свету переписать это."},
+          {"speaker": "giulia", "text": "Если кто-нибудь ещё раз назовёт это идеальным вечером, я лично отправлю его считать стулья."},
+          {"speaker": "nika", "text": "Я могу посчитать. Это безопаснее, чем угадывать, что люди считают само собой разумеющимся."},
+          {"speaker": "matteo", "text": "Поэтому я пришёл спросить, а не продолжить старый сценарий."},
+          {"speaker": "nika", "text": "Старый сценарий закончился на крыше. Сегодня можно обсуждать только сегодняшний вечер."},
+          {"speaker": "matteo", "text": "Тогда я спрошу один раз и приму любой ответ. Можно мне быть рядом с тобой перед гостями?"},
+          {"speaker": "nika", "text": "Рядом — не значит вместо меня. И прикосновение не следует из того, что мы уже пережили."},
+          {"speaker": "matteo", "text": "Я знаю. Что выбираешь?"}
+        ],
+        "en": [
+          {"speaker": null, "text": "On day seventeen, Giulia's wedding finally began. The seven-day agreement had ended eight days earlier, and Nika would not let beautiful light rewrite that fact."},
+          {"speaker": "giulia", "text": "If one more person calls this a perfect evening, I will personally send them to count chairs."},
+          {"speaker": "nika", "text": "I can count. It is safer than guessing what people think is automatic."},
+          {"speaker": "matteo", "text": "That is why I came to ask, not to continue an old script."},
+          {"speaker": "nika", "text": "The old script ended on the roof. Today we can discuss today only."},
+          {"speaker": "matteo", "text": "Then I will ask once and accept any answer. May I stand beside you in front of the guests?"},
+          {"speaker": "nika", "text": "Beside me does not mean instead of me. And touch does not follow from what we have already survived."},
+          {"speaker": "matteo", "text": "I know. What do you choose?"}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep4_wedding_kiss",
+          "label": {"ru": "Согласиться на поцелуй — только сейчас", "en": "Agree to a kiss — only for tonight"},
+          "to": "ep4_wedding_response",
+          "effects": {"lastChoice": "ep4_wedding_kiss"}
+        },
+        {
+          "id": "ep4_wedding_gesture",
+          "label": {"ru": "Ограничиться публичным жестом", "en": "Keep it to a public gesture"},
+          "to": "ep4_wedding_response",
+          "effects": {"lastChoice": "ep4_wedding_gesture"}
+        },
+        {
+          "id": "ep4_wedding_stop",
+          "label": {"ru": "Остановить эту сцену", "en": "Stop the scene here"},
+          "to": "ep4_wedding_response",
+          "effects": {"lastChoice": "ep4_wedding_stop"}
+        }
+      ]
+    },
+    {
+      "id": "ep4_wedding_response",
+      "episode": 4,
+      "day": 17,
+      "location": "villa-terrace",
+      "presentCharacters": ["nika", "matteo", "giulia"],
+      "knowledgeDelta": ["public-boundary-recorded"],
+      "title": {
+        "ru": "Согласие не становится привычкой",
+        "en": "Consent Does Not Become a Habit"
+      },
+      "assetId": "ep4-wedding-response-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Я выбрала этот момент сама. И это не разрешение на следующий."},
+          {"speaker": "matteo", "text": "Понял. Я не буду превращать один ответ в постоянный доступ.", "when": {"lastChoice": "ep4_wedding_kiss"}},
+          {"speaker": "matteo", "text": "Жест остаётся жестом. Я не стану выдавать его за обещание.", "when": {"lastChoice": "ep4_wedding_gesture"}},
+          {"speaker": "matteo", "text": "Спасибо, что остановила меня словами, а не исчезновением. Я услышал отказ.", "when": {"lastChoice": "ep4_wedding_stop"}},
+          {"speaker": "giulia", "text": "Мне нравится, когда в моей свадьбе хотя бы одна вещь проговаривается прямо."},
+          {"speaker": "nika", "text": "Прямо — не значит навсегда. Сегодня мы просто не врём себе."},
+          {"speaker": null, "text": "Музыка вернулась к гостям, а Ника сохранила границу как часть вечера, а не как скрытый долг."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "I chose this moment myself. That is not permission for the next one."},
+          {"speaker": "matteo", "text": "Understood. I will not turn one answer into permanent access.", "when": {"lastChoice": "ep4_wedding_kiss"}},
+          {"speaker": "matteo", "text": "A gesture stays a gesture. I will not sell it as a promise.", "when": {"lastChoice": "ep4_wedding_gesture"}},
+          {"speaker": "matteo", "text": "Thank you for stopping me with words instead of disappearing. I heard the no.", "when": {"lastChoice": "ep4_wedding_stop"}},
+          {"speaker": "giulia", "text": "I like it when at least one thing at my wedding is said plainly."},
+          {"speaker": "nika", "text": "Plainly does not mean forever. Tonight we simply do not lie to ourselves."},
+          {"speaker": null, "text": "The music returned to the guests, and Nika kept the boundary as part of the evening, not as a hidden debt."}
+        ]
+      },
+      "next": "ep4_cut_list"
+    },
+    {
+      "id": "ep4_cut_list",
+      "episode": 4,
+      "day": 20,
+      "location": "service-corridor",
+      "presentCharacters": ["nika", "matteo", "bianca"],
+      "knowledgeDelta": ["staff-cuts-source"],
+      "title": {
+        "ru": "Список, который нельзя не прочитать",
+        "en": "A List You Cannot Unread"
+      },
+      "assetId": "ep4-cut-list-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Через три дня после свадьбы в служебном коридоре лежал новый график смен. В нём были зачёркнуты не цифры, а фамилии."},
+          {"speaker": "bianca", "text": "Это не финальное решение. Это сценарий сокращения расходов, если Aurea потребует быстрый ответ."},
+          {"speaker": "nika", "text": "Для человека в списке разница между сценарием и увольнением звучит слишком теоретически."},
+          {"speaker": "matteo", "text": "Я хотел объяснить это сам, но Ника должна увидеть документ до моего объяснения."},
+          {"speaker": "bianca", "text": "Можно прочитать список по должностям. Можно спросить, кто подписал расчёт. Ни один путь не делает людей строками."},
+          {"speaker": "nika", "text": "Сначала я проверю источник. Потом мы решим, как защищать команду."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Three days after the wedding, a new shift schedule lay in the service corridor. It crossed out names, not numbers."},
+          {"speaker": "bianca", "text": "It is not a final decision. It is a cost-cut scenario if Aurea demands a quick answer."},
+          {"speaker": "nika", "text": "For the person on the list, the difference between a scenario and dismissal sounds too theoretical."},
+          {"speaker": "matteo", "text": "I wanted to explain it myself, but Nika should see the document before my explanation."},
+          {"speaker": "bianca", "text": "You can read the list by role. You can ask who signed the calculation. Neither path turns people into lines."},
+          {"speaker": "nika", "text": "I will verify the source first. Then we decide how to protect the team."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep4_read_staff_list",
+          "label": {"ru": "Проверить список и расчёт", "en": "Verify the list and the calculation"},
+          "to": "ep4_staff_room",
+          "effects": {"lastChoice": "ep4_read_staff_list", "staffCutsKnown": true}
+        },
+        {
+          "id": "ep4_ask_direct_disclosure",
+          "label": {"ru": "Попросить Маттео назвать риск прямо", "en": "Ask Matteo to name the risk plainly"},
+          "to": "ep4_staff_room",
+          "effects": {"lastChoice": "ep4_ask_direct_disclosure", "staffCutsKnown": true}
+        }
+      ]
+    },
+    {
+      "id": "ep4_staff_room",
+      "episode": 4,
+      "day": 21,
+      "location": "staff-room",
+      "presentCharacters": ["nika", "matteo", "bianca"],
+      "knowledgeDelta": ["staff-cuts-impacts"],
+      "title": {
+        "ru": "Не спасать молча",
+        "en": "Do Not Save in Silence"
+      },
+      "assetId": "ep4-staff-room-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "nika", "text": "Теперь риск назван. У нас есть люди, график и причина, которую пока выдают за неизбежность."},
+          {"speaker": "matteo", "text": "Моя первая реакция — закрыть дыру самому."},
+          {"speaker": "nika", "text": "Если ты закроешь её один, команда узнает только о новой дыре — в твоём контроле."},
+          {"speaker": "bianca", "text": "Aurea не требует молчания. Ей нужен расчёт, который можно проверить и оспорить."},
+          {"speaker": "nika", "text": "Тогда в комнате будут не только владельцы и инвесторы. Мы позовём тех, кого этот лист касается."},
+          {"speaker": "matteo", "text": "И оставим за каждым право не соглашаться с нашим планом."}
+        ],
+        "en": [
+          {"speaker": "nika", "text": "Now the risk has a name. We have people, a schedule, and a reason still being presented as inevitable."},
+          {"speaker": "matteo", "text": "My first reaction is to close the gap myself."},
+          {"speaker": "nika", "text": "If you close it alone, the team will only learn about a new gap in your control."},
+          {"speaker": "bianca", "text": "Aurea does not require silence. It needs a calculation that can be checked and challenged."},
+          {"speaker": "nika", "text": "Then the room will hold more than owners and investors. We will invite the people this list affects."},
+          {"speaker": "matteo", "text": "And leave each of them the right to disagree with our plan."}
+        ]
+      },
+      "next": "ep4_staff_meeting"
+    },
+    {
+      "id": "ep4_staff_meeting",
+      "episode": 4,
+      "day": 22,
+      "location": "staff-room",
+      "presentCharacters": ["nika", "matteo", "bianca", "giulia"],
+      "knowledgeDelta": ["staff-plan-authored"],
+      "title": {
+        "ru": "План должен выдержать вопрос",
+        "en": "A Plan Must Survive a Question"
+      },
+      "assetId": "ep4-staff-meeting-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "На следующий день Ника разложила список сокращений рядом с журналом смен. Свободное место на столе оставили для возражений."},
+          {"speaker": "giulia", "text": "Я не хочу, чтобы мою свадьбу вспоминали как причину, по которой исчезли две должности."},
+          {"speaker": "matteo", "text": "Она не будет такой причиной. Но это обещание стоит денег и прозрачного расчёта."},
+          {"speaker": "nika", "text": "Выбираем не между красивой речью и плохой новостью. Выбираем, что фиксируем и кому даём время ответить."},
+          {"speaker": "bianca", "text": "Если вы защищаете команду, я внесу это как условие переговоров. Если проверяете расчёт, я принесу его исходные цифры."},
+          {"speaker": "nika", "text": "Тогда решение остаётся нашим, но не будет сделано за спиной людей."}
+        ],
+        "en": [
+          {"speaker": null, "text": "The next day, Nika laid the cut list beside the shift log. They left the empty space on the table for objections."},
+          {"speaker": "giulia", "text": "I do not want my wedding remembered as the reason two jobs disappeared."},
+          {"speaker": "matteo", "text": "It will not be that reason. But that promise costs money and an open calculation."},
+          {"speaker": "nika", "text": "We are not choosing between a pretty speech and bad news. We are choosing what to record and who gets time to answer."},
+          {"speaker": "bianca", "text": "If you protect the team, I will enter it as a negotiation condition. If you verify the calculation, I will bring its source figures."},
+          {"speaker": "nika", "text": "Then the decision stays ours, but it will not be made behind people's backs."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep4_protect_team",
+          "label": {"ru": "Зафиксировать защиту команды", "en": "Record a team-protection plan"},
+          "to": "ep4_matteo_boundary",
+          "requires": {"staffCutsKnown": true},
+          "effects": {"lastChoice": "ep4_protect_team"}
+        },
+        {
+          "id": "ep4_verify_budget",
+          "label": {"ru": "Потребовать проверку бюджета", "en": "Require a budget review"},
+          "to": "ep4_matteo_boundary",
+          "requires": {"staffCutsKnown": true},
+          "effects": {"lastChoice": "ep4_verify_budget"}
+        }
+      ]
+    },
+    {
+      "id": "ep4_matteo_boundary",
+      "episode": 4,
+      "day": 23,
+      "location": "villa-terrace",
+      "presentCharacters": ["nika", "matteo"],
+      "knowledgeDelta": ["post-wedding-boundary"],
+      "title": {
+        "ru": "После красивого вечера",
+        "en": "After the Beautiful Evening"
+      },
+      "assetId": "ep4-matteo-boundary-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "matteo", "text": "Ты поставила людей в переговорную раньше, чем меня. Я сначала обиделся, потом понял, что это правильно."},
+          {"speaker": "nika", "text": "Работа не должна ждать, пока мы разберёмся в личном."},
+          {"speaker": "matteo", "text": "А личное должно ждать твоего согласия, а не расписания отеля."},
+          {"speaker": "nika", "text": "Вот это и есть разговор. Не продолжение договора, не благодарность за вчерашнее."},
+          {"speaker": "matteo", "text": "Можем оставить всё профессиональным. Или честно признать, что между нами что-то есть, не обещая будущего."},
+          {"speaker": "nika", "text": "Я выберу формулировку, которую смогу повторить завтра, когда будет не так красиво."}
+        ],
+        "en": [
+          {"speaker": "matteo", "text": "You put the staff in the room before you put me there. I was hurt first, then understood it was right."},
+          {"speaker": "nika", "text": "Work should not wait for us to solve the personal part."},
+          {"speaker": "matteo", "text": "And the personal part should wait for your consent, not the hotel's schedule."},
+          {"speaker": "nika", "text": "That is the conversation. Not a continuation of the contract, not payment for yesterday."},
+          {"speaker": "matteo", "text": "We can keep it professional. Or admit there is something between us without promising a future."},
+          {"speaker": "nika", "text": "I will choose a sentence I can repeat tomorrow, when it is less beautiful."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep4_keep_professional",
+          "label": {"ru": "Оставить отношения профессиональными", "en": "Keep the relationship professional"},
+          "to": "ep4_transition",
+          "effects": {"lastChoice": "ep4_keep_professional"}
+        },
+        {
+          "id": "ep4_name_personal_interest",
+          "label": {"ru": "Назвать личный интерес без обещаний", "en": "Name the personal interest without promises"},
+          "to": "ep4_transition",
+          "effects": {"lastChoice": "ep4_name_personal_interest"}
+        }
+      ]
+    },
+    {
+      "id": "ep4_transition",
+      "episode": 4,
+      "day": 23,
+      "location": "villa-office",
+      "presentCharacters": ["nika", "matteo", "bianca"],
+      "knowledgeDelta": ["ep4-carried-forward", "route-still-open"],
+      "title": {
+        "ru": "Список остаётся открытым",
+        "en": "The List Stays Open"
+      },
+      "assetId": "ep4-transition-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "В конце недели Ника убрала список сокращений в папку переговоров, а не в архив. Сотрудники знали, что риск существует, и знали, кто будет его проверять."},
+          {"speaker": "bianca", "text": "У вас теперь есть не только проблема, но и документированная позиция команды."},
+          {"speaker": "nika", "text": "Позиция — это не гарантия. Зато теперь никто не сможет сказать, что не знал цену решения."},
+          {"speaker": "matteo", "text": "А между нами?"},
+          {"speaker": "nika", "text": "Между нами есть сегодняшний выбор. Следующий не будет принят за меня."},
+          {"speaker": null, "text": "До переговорных условий ещё оставалось время. Ника закрыла папку, не закрывая ни один из четырёх возможных маршрутов."}
+        ],
+        "en": [
+          {"speaker": null, "text": "At the end of the week, Nika put the cut list in the negotiation folder, not the archive. The staff knew the risk existed and who would verify it."},
+          {"speaker": "bianca", "text": "You have more than a problem now. You have the team's position documented."},
+          {"speaker": "nika", "text": "A position is not a guarantee. But no one can say they did not know the cost of the decision."},
+          {"speaker": "matteo", "text": "And between us?"},
+          {"speaker": "nika", "text": "Between us there is today's choice. The next one will not be made for me."},
+          {"speaker": null, "text": "The negotiation terms were still ahead. Nika closed the folder without closing any of the four possible routes."}
+        ]
+      },
+      "ending": true,
+      "endingId": "ep4-staff-cuts"
+    }
+  ]
+}

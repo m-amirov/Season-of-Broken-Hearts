@@ -134,14 +134,21 @@ function advanceToEpisodeEnd(engine) {
 }
 
 test('Batch A graph reaches every authored EP2-EP3 scene and keeps route open', () => {
-  const report = exploreGraph(graph, { maxStates: 1_000_000 });
+  const preEp4Graph = structuredClone(graph);
+  preEp4Graph.scenes = preEp4Graph.scenes.filter(scene => scene.episode <= 3);
+  const ep3Transition = preEp4Graph.scenes.find(scene => scene.id === 'ep3_transition');
+  delete ep3Transition.episodeEnd;
+  delete ep3Transition.next;
+  ep3Transition.ending = true;
+  ep3Transition.endingId = 'ep3-aurea-link';
+  const report = exploreGraph(preEp4Graph, { maxStates: 1_000_000 });
   assert.equal(report.valid, true, report.errors.join('; '));
   const reached = report.visitedScenes;
-  for (const scene of graph.scenes.filter(scene => scene.episode >= 2)) {
+  for (const scene of preEp4Graph.scenes.filter(scene => scene.episode >= 2)) {
     assert.ok(reached.has(scene.id), `unreachable authored scene: ${scene.id}`);
   }
-  assert.ok(graph.scenes.filter(scene => scene.episode === 2).every(scene => scene.dialogue.ru.length > 0 && scene.dialogue.en.length > 0));
-  assert.ok(graph.scenes.filter(scene => scene.episode === 3).every(scene => scene.dialogue.ru.length > 0 && scene.dialogue.en.length > 0));
+  assert.ok(preEp4Graph.scenes.filter(scene => scene.episode === 2).every(scene => scene.dialogue.ru.length > 0 && scene.dialogue.en.length > 0));
+  assert.ok(preEp4Graph.scenes.filter(scene => scene.episode === 3).every(scene => scene.dialogue.ru.length > 0 && scene.dialogue.en.length > 0));
   assert.equal(report.terminals.some(terminal => terminal.path.includes('ep2_budget_open')), true);
   assert.equal(report.routes.size, 0);
   assert.equal(report.hotelOutcomes.size, 0);
@@ -211,10 +218,47 @@ test('runtime continues EP1 to EP2 to EP3 and round-trips the expanded save', ()
   advanceToEpisodeEnd(engine);
   assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 3 });
   advanceToEpisodeEnd(engine);
-  assert.equal(engine.isSeasonComplete(), true);
+  assert.equal(engine.isEpisodeComplete(), true);
   assert.equal(engine.snapshot().state.route, 'none');
   assert.equal(engine.snapshot().state.routeLocked, false);
   assert.equal(engine.snapshot().state.leoAureaLinkKnown, true);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 4 });
+  assert.equal(engine.snapshot().cursor.sceneId, 'ep4_wedding_evening');
+  const restored = new NarrativeEngine(graph);
+  assert.equal(restored.load(engine.save()), true);
+  assert.deepEqual(restored.snapshot(), engine.snapshot());
+});
+
+test('runtime continues EP4 to EP5, preserves provenance, and keeps route-lock open', () => {
+  const engine = new NarrativeEngine(graph);
+  advanceToEpisodeEnd(engine);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 2 });
+  advanceToEpisodeEnd(engine);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 3 });
+  advanceToEpisodeEnd(engine);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 4 });
+
+  chooseById(engine, 'ep4_wedding_stop');
+  assert.equal(engine.snapshot().state.lastChoice, 'ep4_wedding_stop');
+  chooseById(engine, 'ep4_ask_direct_disclosure');
+  chooseById(engine, 'ep4_protect_team');
+  chooseById(engine, 'ep4_keep_professional');
+  advanceToEpisodeEnd(engine);
+  assert.equal(engine.snapshot().state.lastChoice, 'ep4_keep_professional');
+  assert.equal(engine.snapshot().state.staffCutsKnown, true);
+  assert.equal(engine.snapshot().state.route, 'none');
+  assert.equal(engine.snapshot().state.routeLocked, false);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 5 });
+
+  chooseById(engine, 'ep5_help_team');
+  chooseById(engine, 'ep5_save_staff');
+  chooseById(engine, 'ep5_ask_offer_details');
+  chooseById(engine, 'ep5_choose_friendship');
+  advanceToEpisodeEnd(engine);
+  assert.equal(engine.snapshot().state.elioOfferKnown, true);
+  assert.equal(engine.snapshot().state.lastChoice, 'ep5_choose_friendship');
+  assert.equal(engine.snapshot().state.route, 'none');
+  assert.equal(engine.snapshot().state.routeLocked, false);
   const restored = new NarrativeEngine(graph);
   assert.equal(restored.load(engine.save()), true);
   assert.deepEqual(restored.snapshot(), engine.snapshot());

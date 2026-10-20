@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-20",
+  "mode": "Direct Development Mode",
+  "scope": ["EP4", "EP5", "EP3 ep3_old_photo acceptance queue"],
+  "preservation": {
+    "ep2SourceFragmentsChanged": false,
+    "historicalEvidenceChanged": false,
+    "dirtyFilesPreserved": true,
+    "parallelWorktreesPreserved": true,
+    "publishPushMergePerformed": false,
+    "newEp3GenerationPerformed": false
+  },
+  "gitBeforeScopedCommit": {
+    "head": "fd3e48f35aba7cba63389b3d6283fa0360953627",
+    "branch": "codex/stage9-full-season-architecture",
+    "originMain": "476d71b6bf247a01fcf59617a68e58f518f50700",
+    "worktreeDirty": true,
+    "unrelatedDirtyEntriesPreserved": 107
+  },
+  "narrative": {
+    "authoredEpisodes": [2, 3, 4, 5],
+    "graphScenes": 65,
+    "newEpisodeSources": [
+      "narrative/episodes/ep-04.json",
+      "narrative/episodes/ep-05.json"
+    ],
+    "newKnowledgeState": ["staffCutsKnown", "elioOfferKnown"],
+    "routeLock": {
+      "route": "none",
+      "routeLocked": false,
+      "ep6Only": true,
+      "allFourChoicesRemainOpen": true
+    },
+    "continuityAnchors": {
+      "ep4Days": [17, 23],
+      "ep5Days": [24, 30],
+      "staffCutsSource": "ep4_cut_list",
+      "elioOfferSource": "ep5_elio_offer",
+      "consentSeparateFromCareer": true
+    }
+  },
+  "checks": [
+    {
+      "command": "node tools/narrative/graph-build.mjs --check",
+      "status": "PASS_GRAPH_BUILD_DETERMINISTIC"
+    },
+    {
+      "command": "npm run narrative:validate",
+      "status": "PASS_DECLARED_NARRATIVE_GRAPH",
+      "coverage": {
+        "declaredScenes": 65,
+        "reachedScenes": 65,
+        "visitedStates": 308436,
+        "maxStates": 400000,
+        "reachedEndings": 1,
+        "saveFixtures": 23
+      },
+      "warnings": [
+        "PROMISE_NOT_YET_VERIFIED:matteo-negotiation-documents",
+        "PROMISE_NOT_YET_VERIFIED:elio-restaurant-departure",
+        "PROMISE_NOT_YET_VERIFIED:season-hotel-outcome"
+      ],
+      "additionalChecks": [
+        "PASS_CONDITIONAL_DIALOGUE_SCHEMA",
+        "PASS_WARDROBE_CONTINUITY_RULES"
+      ]
+    },
+    {
+      "command": "node --test tests/unit/season-engine-architecture.test.mjs",
+      "status": "PASS",
+      "tests": 8,
+      "passed": 8
+    },
+    {
+      "command": "npm test",
+      "status": "PASS",
+      "tests": 88,
+      "passed": 88
+    }
+  ],
+  "ep3OldPhotoAcceptanceQueue": {
+    "status": "NOT_VERIFIED_INDEPENDENT_ART_ACCEPTANCE",
+    "webHighTransport": "UNAVAILABLE: fetch failed",
+    "artisticPass": false,
+    "candidates": [
+      {
+        "path": "assets/production/cg/ep3-old-photo-cg.png",
+        "sha256": "93389bc83e342bbb3800b1bd51d7bdcb3ab90c8c5f53093d9a4e9eb7204ffe10",
+        "role": "portrait-existing"
+      },
+      {
+        "path": "assets/production/cg/ep3-old-photo-cg-landscape.png",
+        "sha256": "401b412447d9443493d72f78d202074adf3f45d756683cac7095f42f72337d21",
+        "role": "landscape-original-defective-rolled-props"
+      },
+      {
+        "path": "assets/production/cg/ep3-old-photo-cg-landscape-rework.png",
+        "sha256": "5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a",
+        "role": "landscape-rework-candidate-2-local-triage-only"
+      }
+    ],
+    "generationBudget": "preserved; no additional attempt"
+  },
+  "disclaimer": "Mechanical graph, runtime and save checks do not attest prose quality, independent Web acceptance, or release readiness."
+}

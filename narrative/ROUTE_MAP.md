@@ -68,6 +68,49 @@ ep3_old_photo → ep3_survey_start
 → ep3_quiet_return → ep3_transition (day 16)
 ```
 
+## EP4–EP5 executable topology
+
+```text
+EP4, days 17–23
+ep4_wedding_evening
+  ├─ ep4_wedding_kiss
+  ├─ ep4_wedding_gesture
+  └─ ep4_wedding_stop
+→ ep4_wedding_response → ep4_cut_list
+  ├─ ep4_read_staff_list
+  └─ ep4_ask_direct_disclosure
+→ ep4_staff_room → ep4_staff_meeting
+  ├─ ep4_protect_team
+  └─ ep4_verify_budget
+→ ep4_matteo_boundary
+  ├─ ep4_keep_professional
+  └─ ep4_name_personal_interest
+→ ep4_transition (day 23)
+
+EP5, days 24–30
+ep5_service_start
+  ├─ ep5_help_team
+  └─ ep5_build_menu
+→ ep5_service_response → ep5_service_crisis → ep5_supply_market
+  ├─ ep5_save_staff
+  └─ ep5_save_menu
+→ ep5_elio_offer
+  ├─ ep5_ask_offer_details
+  └─ ep5_give_offer_space
+→ ep5_offer_response → ep5_night_kitchen
+  ├─ ep5_accept_kiss
+  └─ ep5_choose_friendship
+→ ep5_transition (day 30)
+```
+
+EP4 records fresh public choices in `lastChoice`; it never treats the EP2
+agreement as active and never changes `route` or `routeLocked`. The cut-list
+choice sets `staffCutsKnown=true` only after the list or direct disclosure is
+played. EP5 sets `elioOfferKnown=true` only in `ep5_elio_offer`; the kiss or
+friendship response is explicit and remains separate from Elio's career offer.
+The remaining decision details stay in the current scene and do not create an
+early route lock. EP6 must still present all four routes explicitly.
+
 `publicAgreement` отвечает только за согласие на публичную договорённость;
 `matteoPublicGesture` — за отдельный жест. Поэтому отказ от прикосновения не
 переписывает согласие на договор. Договор закрывается в `ep2_rooftop_after`
@@ -99,6 +142,9 @@ ep3_old_photo → ep3_survey_start
 | Romance | `relationshipMatteo`, `relationshipLeo`, `relationshipElio` | только наблюдаемый отклик, без lock |
 | Hotel | `staffTrust`, `fundingEvidence`, `investorTerms`, `hotelEvidence` | предъявленный документ или разговор с командой; `hotelEvidence` имеет отложенный payoff в `ep1_hook` |
 | Knowledge | `met*`, `leoConversation`, `leoTruthHeard`, `askedAboutHotel` | scene provenance; полное объяснение Лео не в EP1 |
+| EP4 knowledge | `staffCutsKnown` | только `ep4_cut_list`, после явного списка или прямого раскрытия |
+| EP5 knowledge | `elioOfferKnown` | только `ep5_elio_offer`, после честного предложения ресторана |
+| EP4–EP5 choice cursor | `lastChoice` | records the latest explicit choice; it does not select a route |
 
 ## Planned route locks
 

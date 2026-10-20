@@ -1,0 +1,332 @@
+{
+  "episode": 5,
+  "start": "ep5_service_start",
+  "requiredPreviousEpisode": 4,
+  "stateSchema": {
+    "elioOfferKnown": {
+      "type": "boolean"
+    }
+  },
+  "stateSchemaExtensions": {
+    "lastChoice": [
+      "ep5_help_team",
+      "ep5_build_menu",
+      "ep5_save_staff",
+      "ep5_save_menu",
+      "ep5_ask_offer_details",
+      "ep5_give_offer_space",
+      "ep5_accept_kiss",
+      "ep5_choose_friendship"
+    ]
+  },
+  "initialState": {
+    "elioOfferKnown": false
+  },
+  "scenes": [
+    {
+      "id": "ep5_service_start",
+      "episode": 5,
+      "day": 24,
+      "location": "kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["restaurant-service-crisis"],
+      "title": {
+        "ru": "Смена начинается с команды",
+        "en": "A Shift Starts with the Team"
+      },
+      "assetId": "ep5-service-start-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "На двадцать четвёртый день кухня проснулась раньше отеля. После списка сокращений Ника заметила: у команды стало меньше рук, но не меньше заказов."},
+          {"speaker": "elio", "text": "Доброе утро. Если ты пришла спасать меня, начни с того, что не позволяй мне открыть три кастрюли одновременно."},
+          {"speaker": "nika", "text": "Я пришла понять, что сегодня держит сервис: люди или твоя способность шутить в дыму."},
+          {"speaker": "elio", "text": "Шутки — только гарнир. Основное блюдо — честно сказать, где мы не успеваем."},
+          {"speaker": "nika", "text": "Тогда решим, что важнее: закрыть меню любой ценой или не бросить тех, кто его вынесет."},
+          {"speaker": "elio", "text": "Вот это уже вопрос, от которого нельзя увернуться половником."}
+        ],
+        "en": [
+          {"speaker": null, "text": "On day twenty-four, the kitchen woke before the hotel. After the cut list, Nika noticed that the team had fewer hands but not fewer orders."},
+          {"speaker": "elio", "text": "Morning. If you came to save me, start by not letting me open three pots at once."},
+          {"speaker": "nika", "text": "I came to see what holds service today: people or your ability to joke in smoke."},
+          {"speaker": "elio", "text": "Jokes are garnish. The main course is saying honestly where we are falling behind."},
+          {"speaker": "nika", "text": "Then we decide what matters more: close the menu at any cost or not abandon the people who will carry it."},
+          {"speaker": "elio", "text": "Now that is a question you cannot dodge with a ladle."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep5_help_team",
+          "label": {"ru": "Сначала поддержать команду", "en": "Support the team first"},
+          "to": "ep5_service_response",
+          "effects": {"lastChoice": "ep5_help_team"}
+        },
+        {
+          "id": "ep5_build_menu",
+          "label": {"ru": "Сначала спасти меню", "en": "Save the menu first"},
+          "to": "ep5_service_response",
+          "effects": {"lastChoice": "ep5_build_menu"}
+        }
+      ]
+    },
+    {
+      "id": "ep5_service_response",
+      "episode": 5,
+      "day": 24,
+      "location": "kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["service-priority-recorded"],
+      "title": {
+        "ru": "Смех не заменяет смену",
+        "en": "Laughter Does Not Replace a Shift"
+      },
+      "assetId": "ep5-service-response-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "elio", "text": "Ты выбрала людей. Значит, меню будет короче, зато никто не исчезнет за дверью с фартуком в руках.", "when": {"lastChoice": "ep5_help_team"}},
+          {"speaker": "elio", "text": "Ты выбрала меню. Значит, мы должны назвать цену этой скорости, а не делать вид, что кухня бесконечная.", "when": {"lastChoice": "ep5_build_menu"}},
+          {"speaker": "nika", "text": "Выбор не делает решение правильным навсегда. Он показывает, что мы готовы защищать сегодня."},
+          {"speaker": "elio", "text": "Мне нравится, когда ты говоришь о работе так, будто она тоже заслуживает согласия."},
+          {"speaker": "nika", "text": "Работа не может согласиться. Люди — могут. Поэтому они должны знать план."},
+          {"speaker": null, "text": "На доске появилось новое меню — меньше, но с именами тех, кто отвечает за каждую подачу."}
+        ],
+        "en": [
+          {"speaker": "elio", "text": "You chose the people. Then the menu gets shorter, but no one disappears through the door with an apron in their hands.", "when": {"lastChoice": "ep5_help_team"}},
+          {"speaker": "elio", "text": "You chose the menu. Then we name the cost of speed instead of pretending the kitchen is endless.", "when": {"lastChoice": "ep5_build_menu"}},
+          {"speaker": "nika", "text": "A choice does not make a decision right forever. It shows what we are willing to protect today."},
+          {"speaker": "elio", "text": "I like when you talk about work as if it deserves consent too."},
+          {"speaker": "nika", "text": "Work cannot consent. People can. That is why they need to know the plan."},
+          {"speaker": null, "text": "A new menu appeared on the board — smaller, with the name of the person responsible for every plate."}
+        ]
+      },
+      "next": "ep5_service_crisis"
+    },
+    {
+      "id": "ep5_service_crisis",
+      "episode": 5,
+      "day": 26,
+      "location": "dining-room",
+      "presentCharacters": ["nika", "elio", "giulia"],
+      "knowledgeDelta": ["service-cost-visible"],
+      "title": {
+        "ru": "Цена красивого блюда",
+        "en": "The Cost of a Beautiful Plate"
+      },
+      "assetId": "ep5-service-crisis-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Через два дня один заказ вернулся на кухню холодным. В зале уже ждали объяснения, а в подсобке — человек, который собирался отработать вторую смену без перерыва."},
+          {"speaker": "giulia", "text": "Я могу объяснить гостям задержку. Я не могу объяснить, почему мы считаем усталость частью сервиса."},
+          {"speaker": "elio", "text": "Потому что я привык, что если шеф выдержал, значит, выдержат все."},
+          {"speaker": "nika", "text": "Это не лидерство. Это одиночество, переименованное в стандарт."},
+          {"speaker": "elio", "text": "Тогда сегодня я перестану делать вид, что всё держится на моих руках."},
+          {"speaker": "nika", "text": "Хорошо. Начни с решения, которое увидит команда, а не только кухня."}
+        ],
+        "en": [
+          {"speaker": null, "text": "Two days later, one order returned to the kitchen cold. The dining room wanted an explanation, and the pantry held someone preparing to work a second shift without a break."},
+          {"speaker": "giulia", "text": "I can explain a delay to guests. I cannot explain why we count exhaustion as part of service."},
+          {"speaker": "elio", "text": "Because I got used to thinking that if the chef can take it, everyone can."},
+          {"speaker": "nika", "text": "That is not leadership. It is loneliness renamed as a standard."},
+          {"speaker": "elio", "text": "Then tonight I stop pretending everything rests on my hands."},
+          {"speaker": "nika", "text": "Good. Start with a decision the team can see, not just the kitchen."}
+        ]
+      },
+      "next": "ep5_supply_market"
+    },
+    {
+      "id": "ep5_supply_market",
+      "episode": 5,
+      "day": 27,
+      "location": "supply-market",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["team-capacity-choice"],
+      "title": {
+        "ru": "Не обещать лишнего",
+        "en": "Do Not Promise More Than You Have"
+      },
+      "assetId": "ep5-supply-market-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "elio", "text": "У нас хватит продуктов на большое меню, но не хватит людей на красивую ложь, что всё можно подать одновременно."},
+          {"speaker": "nika", "text": "Тогда поставщики получат список, который кухня действительно выдержит."},
+          {"speaker": "elio", "text": "А если гостям не понравится, что мы убрали половину блюд?"},
+          {"speaker": "nika", "text": "Мы назовём это выбором, а не извинением. И вернёмся к нему с фактами, не с обаянием."},
+          {"speaker": null, "text": "Ника зачеркнула два пункта в заказе и оставила место для смены, которая должна была начаться без перегруза."}
+        ],
+        "en": [
+          {"speaker": "elio", "text": "We have enough ingredients for a large menu, but not enough people for the beautiful lie that everything can arrive at once."},
+          {"speaker": "nika", "text": "Then the suppliers get a list the kitchen can actually carry."},
+          {"speaker": "elio", "text": "And if guests dislike that we cut half the dishes?"},
+          {"speaker": "nika", "text": "We call it a choice, not an apology. Then return to it with facts, not charm."},
+          {"speaker": null, "text": "Nika crossed two items off the order and left room for a shift that could begin without overload."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep5_save_staff",
+          "label": {"ru": "Оставить запас для команды", "en": "Keep a reserve for the team"},
+          "to": "ep5_elio_offer",
+          "effects": {"lastChoice": "ep5_save_staff"}
+        },
+        {
+          "id": "ep5_save_menu",
+          "label": {"ru": "Сохранить ключевую подачу", "en": "Protect the signature service"},
+          "to": "ep5_elio_offer",
+          "effects": {"lastChoice": "ep5_save_menu"}
+        }
+      ]
+    },
+    {
+      "id": "ep5_elio_offer",
+      "episode": 5,
+      "day": 28,
+      "location": "night-kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["elio-restaurant-offer-source"],
+      "title": {
+        "ru": "Предложение, о котором нельзя шутить",
+        "en": "An Offer He Cannot Joke Away"
+      },
+      "assetId": "ep5-elio-offer-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "Ночью кухня впервые за неделю стихла до того, как Ника ушла. Элио достал письмо с адресом, которого не было в списке поставщиков."},
+          {"speaker": "elio", "text": "Меня позвали вести кухню в маленьком ресторане у порта. Не на смену. Собрать её с нуля."},
+          {"speaker": "nika", "text": "Это не просьба помочь тебе на завтра. Это предложение о твоём следующем году."},
+          {"speaker": "elio", "text": "Да. И я почти превратил его в шутку, потому что так проще, чем признать: я хочу согласиться."},
+          {"speaker": "nika", "text": "Ты можешь хотеть этого и не бросать людей сегодня. Но я не буду решать за тебя, как быть хорошим."},
+          {"speaker": "elio", "text": "Мне нужно знать, ты хочешь услышать детали или тебе нужно пространство, чтобы это не стало ещё одной моей задачей."}
+        ],
+        "en": [
+          {"speaker": null, "text": "That night, the kitchen went quiet before Nika left for the first time all week. Elio took out a letter with an address that was not on the supplier list."},
+          {"speaker": "elio", "text": "I was asked to run a small restaurant by the port. Not take a shift. Build it from zero."},
+          {"speaker": "nika", "text": "That is not a request for help tomorrow. It is an offer about your next year."},
+          {"speaker": "elio", "text": "Yes. And I almost made it a joke because that is easier than admitting I want to say yes."},
+          {"speaker": "nika", "text": "You can want it and not abandon people today. But I will not decide how you get to be good."},
+          {"speaker": "elio", "text": "I need to know whether you want the details or need space so this does not become another task of mine for you."}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep5_ask_offer_details",
+          "label": {"ru": "Попросить рассказать подробнее", "en": "Ask for the details"},
+          "to": "ep5_offer_response",
+          "effects": {"lastChoice": "ep5_ask_offer_details", "elioOfferKnown": true}
+        },
+        {
+          "id": "ep5_give_offer_space",
+          "label": {"ru": "Дать ему время подумать", "en": "Give him time to think"},
+          "to": "ep5_offer_response",
+          "effects": {"lastChoice": "ep5_give_offer_space", "elioOfferKnown": true}
+        }
+      ]
+    },
+    {
+      "id": "ep5_offer_response",
+      "episode": 5,
+      "day": 28,
+      "location": "night-kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["elio-career-choice-held"],
+      "title": {
+        "ru": "Будущее не просит разрешения",
+        "en": "The Future Does Not Ask Permission"
+      },
+      "assetId": "ep5-offer-response-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "elio", "text": "Там дают мне свободу меню, долю и время научиться руководить, а не только готовить.", "when": {"lastChoice": "ep5_ask_offer_details"}},
+          {"speaker": "elio", "text": "Я расскажу детали, когда сам перестану защищать их шуткой. Ты не обязана помогать мне принять решение.", "when": {"lastChoice": "ep5_give_offer_space"}},
+          {"speaker": "nika", "text": "Я не стану доказательством, что ты выбрал правильно. И не стану причиной отказа."},
+          {"speaker": "elio", "text": "Это честнее любого романтического обещания."},
+          {"speaker": "nika", "text": "Романтическое обещание не должно заменять план. Особенно когда план касается других людей."},
+          {"speaker": null, "text": "Письмо осталось на столе. Оно стало знанием, а не поручением, которое Ника должна была выполнить за Элио."}
+        ],
+        "en": [
+          {"speaker": "elio", "text": "They give me menu freedom, a share, and time to learn management instead of only cooking.", "when": {"lastChoice": "ep5_ask_offer_details"}},
+          {"speaker": "elio", "text": "I will share the details when I stop defending them with a joke. You do not have to help me decide.", "when": {"lastChoice": "ep5_give_offer_space"}},
+          {"speaker": "nika", "text": "I will not become proof that you chose correctly. And I will not become the reason you refuse."},
+          {"speaker": "elio", "text": "That is more honest than any romantic promise."},
+          {"speaker": "nika", "text": "A romantic promise cannot replace a plan. Especially when the plan affects other people."},
+          {"speaker": null, "text": "The letter stayed on the table. It became knowledge, not an assignment Nika had to complete for Elio."}
+        ]
+      },
+      "next": "ep5_night_kitchen"
+    },
+    {
+      "id": "ep5_night_kitchen",
+      "episode": 5,
+      "day": 29,
+      "location": "night-kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["romantic-consent-separated-from-career"],
+      "title": {
+        "ru": "Честное предложение",
+        "en": "An Honest Invitation"
+      },
+      "assetId": "ep5-night-kitchen-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": "elio", "text": "Я могу поцеловать тебя, если ты хочешь. Не потому, что ты поддержала мою работу, и не в обмен на то, что я останусь."},
+          {"speaker": "nika", "text": "Хорошо, что ты разделил эти вещи. Тогда я могу ответить на один вопрос, а не на весь будущий год."},
+          {"speaker": "elio", "text": "И любой ответ останется ответом, не экзаменом для нашей близости."},
+          {"speaker": "nika", "text": "Тогда я тоже скажу прямо. Я выбираю не из благодарности."},
+          {"speaker": "elio", "text": "Что ты выбираешь?"}
+        ],
+        "en": [
+          {"speaker": "elio", "text": "I can kiss you if you want. Not because you supported my work, and not in exchange for me staying."},
+          {"speaker": "nika", "text": "It helps that you separated those things. Now I can answer one question instead of the whole next year."},
+          {"speaker": "elio", "text": "And either answer stays an answer, not an exam for our closeness."},
+          {"speaker": "nika", "text": "Then I will be plain too. I am not choosing out of gratitude."},
+          {"speaker": "elio", "text": "What do you choose?"}
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep5_accept_kiss",
+          "label": {"ru": "Принять поцелуй", "en": "Accept the kiss"},
+          "to": "ep5_transition",
+          "effects": {"lastChoice": "ep5_accept_kiss"}
+        },
+        {
+          "id": "ep5_choose_friendship",
+          "label": {"ru": "Оставить это дружбой", "en": "Keep it as friendship"},
+          "to": "ep5_transition",
+          "effects": {"lastChoice": "ep5_choose_friendship"}
+        }
+      ]
+    },
+    {
+      "id": "ep5_transition",
+      "episode": 5,
+      "day": 30,
+      "location": "night-kitchen",
+      "presentCharacters": ["nika", "elio"],
+      "knowledgeDelta": ["ep5-carried-forward", "route-still-open"],
+      "title": {
+        "ru": "Перед условиями",
+        "en": "Before the Terms"
+      },
+      "assetId": "ep5-transition-cg",
+      "dialogue": {
+        "ru": [
+          {"speaker": null, "text": "К тридцатому дню у Ники было достаточно информации, чтобы задавать вопросы, но недостаточно — чтобы выбрать за всех."},
+          {"speaker": "elio", "text": "Теперь ты знаешь о предложении. Но я всё ещё должен сам решить, как его принять и кого не оставить без ответа."},
+          {"speaker": "nika", "text": "А я знаю, что близость не требует от тебя отказаться от будущего."},
+          {"speaker": "elio", "text": "И не требует от тебя ждать, пока я стану готовым."},
+          {"speaker": "nika", "text": "В следующем разговоре будут условия отеля, роль Лео и четыре явных варианта. Я хочу увидеть их все до того, как выберу хоть один."},
+          {"speaker": null, "text": "Route-lock был впереди, а не в этой кухне. Ника сохранила выбор открытым и записала факты, которые принесёт на переговоры."}
+        ],
+        "en": [
+          {"speaker": null, "text": "By day thirty, Nika had enough information to ask questions, but not enough to choose for everyone."},
+          {"speaker": "elio", "text": "Now you know about the offer. But I still have to decide how to accept it without leaving anyone unanswered."},
+          {"speaker": "nika", "text": "And I know closeness does not require you to abandon your future."},
+          {"speaker": "elio", "text": "And it does not require you to wait until I am ready."},
+          {"speaker": "nika", "text": "The next conversation will hold the hotel's terms, Leo's role, and four explicit options. I want to see all of them before choosing one."},
+          {"speaker": null, "text": "The route-lock was ahead, not in this kitchen. Nika kept the choice open and recorded the facts she would bring to the negotiation."}
+        ]
+      },
+      "ending": true,
+      "endingId": "ep5-elio-offer"
+    }
+  ]
+}
