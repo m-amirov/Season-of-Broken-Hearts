@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_LANDSCAPE_REWORK_CANDIDATE_PROVENANCE",
+  "recordedAt": "2026-10-20",
+  "runId": "2026-10-20T07-32-53-529Z-production-art-fb7e7c",
+  "sourceHead": "5baa23cffab96c6341e7554a6ba4558008dcdccb",
+  "sceneId": "ep3_old_photo",
+  "familyId": "ep3-archive-old-photo",
+  "briefId": "ep3-archive-old-photo-v1",
+  "reworkBrief": "artifacts/production-art/stage9.7/EP3_OLD_PHOTO_LANDSCAPE_REWORK_20261020.json",
+  "assetId": "ep3-old-photo-cg",
+  "format": "landscape",
+  "candidateNumber": 2,
+  "attemptBudget": {
+    "maxCandidatesForCueAndFormat": 2,
+    "candidatesConsumed": 2,
+    "remainingCandidates": 0,
+    "thirdCandidateAllowed": false,
+    "priorCandidatePreserved": true
+  },
+  "creation": {
+    "method": "native image_gen.imagegen",
+    "producerRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "producerAgentId": "01a1583b-274d-76b0-bd1b-c76f606e702e",
+    "producerTrace": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T10-33-54-01a1583b-274d-76b0-bd1b-c76f606e702e.jsonl",
+    "producerTraceSha256": "a7329bf23d36f9625614746b18c0026293fdfc2d35d052d1dd32c8211af7df6e",
+    "producerRoute": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "capabilityAttestation": ".ceos-runs/2026-10-20T07-32-53-529Z-production-art-fb7e7c/capability-attestation/attestations/cap-ce65047813aaadc7ba04.json",
+    "capability": "PRESENT + UNKNOWN",
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "references": [
+    {
+      "id": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "id": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "priorCandidate": {
+    "path": "assets/production/cg/ep3-old-photo-cg-landscape.png",
+    "sha256": "401b412447d9443493d72f78d202074adf3f45d756683cac7095f42f72337d21",
+    "receipt": "artifacts/production-art/stage9.7/ep3-old-photo-cg-landscape-output-verify-20261020.json",
+    "status": "PRESERVED_REWORK_SOURCE"
+  },
+  "candidate": {
+    "path": "assets/production/cg/ep3-old-photo-cg-landscape-rework.png",
+    "nativeSource": "C:\\Users\\user\\.codex\\generated_images\\01a1583b-274d-76b0-bd1b-c76f606e702e\\exec-ad150d2c-df93-407c-8daa-e1afd18fca8c.png",
+    "sha256": "5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2314855,
+    "outputReceipt": "artifacts/production-art/stage9.7/ep3-old-photo-cg-landscape-rework-output-verify-20261020.json",
+    "transport": "PASS_ART_OUTPUT_TRANSPORT",
+    "mechanical": "PASS_ART_OUTPUT_MECHANICAL",
+    "visualAcceptance": "NOT_VERIFIED"
+  },
+  "rights": {
+    "referenceOwnership": "project-owned approved character references",
+    "generatedCandidateLicense": "native provider output under project production workflow; provider-level byte receipt not provided",
+    "thirdPartyDownload": false,
+    "watermarkOrSignature": false,
+    "bakedReadableText": false,
+    "runtimeUsage": "not integrated; no mapping changed",
+    "approval": "candidate only; not shipped"
+  }
+}

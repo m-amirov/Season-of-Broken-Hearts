@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_SOURCE_BOUND_LANDSCAPE_REWORK_BRIEF",
+  "stage": "9.7",
+  "recordedAt": "2026-10-20",
+  "status": "READY_FOR_ONE_BOUNDED_REWORK_CANDIDATE",
+  "sourceHead": "5baa23cffab96c6341e7554a6ba4558008dcdccb",
+  "sourceBranch": "codex/stage9-full-season-architecture",
+  "approvedBriefPacket": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json",
+    "sha256": "f69d93c33d9b379191cbcb92f76c45af63c8ab48e24dc944e9ff588ac474c8fb",
+    "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "dependencyHashesVerifiedAtCurrentHead": true
+  },
+  "sceneId": "ep3_old_photo",
+  "familyId": "ep3-archive-old-photo",
+  "briefId": "ep3-archive-old-photo-v1",
+  "assetId": "ep3-old-photo-cg",
+  "format": "landscape",
+  "candidateNumber": 2,
+  "attemptBudget": {
+    "maxCandidatesForCueAndFormat": 2,
+    "candidatesAlreadyGenerated": 1,
+    "remainingCandidatesBeforeEscalation": 1,
+    "reworkReason": "FORBIDDEN_UNAUTHORED_BLUEPRINT_TUBE_PROP",
+    "priorCandidatePath": "assets/production/cg/ep3-old-photo-cg-landscape.png",
+    "priorCandidateSha256": "401b412447d9443493d72f78d202074adf3f45d756683cac7095f42f72337d21",
+    "priorCandidateReceipt": "artifacts/production-art/stage9.7/ep3-old-photo-cg-landscape-output-verify-20261020.json"
+  },
+  "sourceBoundNarrative": {
+    "requiredCast": ["nika", "leo"],
+    "narrativeCue": "Leo places a pier photograph on the archive table; Nika turns it face down and continues the inventory.",
+    "location": "Villa Serena working archive room with old stone, archive boxes, banquet programmes and a practical work table.",
+    "timeOfDay": "Day 10 neutral natural archive daylight",
+    "actions": [
+      "Leo places the pier photograph on the table without taking control of the archive.",
+      "Nika keeps the photograph under her control and returns to the inventory."
+    ],
+    "characterReferenceIds": [
+      {"id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+      {"id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+    ]
+  },
+  "composition": {
+    "width": 1672,
+    "height": 941,
+    "targetViewport": "1920x1080",
+    "layout": "Separate wide composition, Nika foreground/right controlling the photograph, Leo slightly back/left, both faces and hand action above the dialogue band.",
+    "requiredVisibleProps": ["photograph", "archive boxes", "banquet programmes", "working archive table"],
+    "safeArea": "Keep faces, Nika's hand and photograph readable above the lower dialogue area.",
+    "continuity": "Match the approved portrait candidate's identity, wardrobe, neutral archive daylight and restrained professional distance without copying its crop."
+  },
+  "forbiddenProps": [
+    "rolled blueprint or blueprint tube",
+    "rolled plans, poster rolls, paper tubes or cylindrical document bundles",
+    "un-authored architectural tubes on shelves or table",
+    "readable invented dates or document text",
+    "Aurea document or mark",
+    "extra cast",
+    "embrace, kiss or romanticized photo exchange",
+    "baked dialogue, UI, logos, watermark or signature"
+  ],
+  "generationPrompt": "Create a separate 1672x941 landscape cinematic semi-realistic 2D illustration for the approved EP3 scene ep3_old_photo. Show the working Villa Serena archive room in neutral day-10 daylight: old stone, practical archive boxes, banquet programme stacks and a work table. Nika is in the foreground/right, keeping the neutral pier photograph under her control on the table; Leo stays slightly back/left with restrained professional distance. Preserve the approved Nika and Leo identities, new EP3 work-layer wardrobe, natural eye-level perspective, grounded hands and bodies, and clear dialogue-safe lower space. The photograph and archive work are the only narrative focal props. Absolutely no rolled blueprints, blueprint tubes, rolled plans, paper tubes, poster rolls, cylindrical document bundles, architectural tubes, or similar round shelf props anywhere in the image; use flat archive boxes, flat programme stacks and ordinary framed archival photographs instead. No readable text, logos, watermarks, Aurea mark, extra people, romance gesture, fantasy renovation or portrait-crop reuse. Do not overwrite the existing landscape candidate; this is candidate 2 and must be saved as the separate rework output path.",
+  "output": {
+    "path": "assets/production/cg/ep3-old-photo-cg-landscape-rework.png",
+    "kind": "background",
+    "status": "PENDING_GENERATION"
+  },
+  "integrationBoundary": {
+    "runtimeMappingsChanged": false,
+    "narrativeAssetsChanged": false,
+    "ep2Touched": false,
+    "historicalEvidenceChanged": false,
+    "acceptedPortraitOverwritten": false,
+    "priorLandscapeOverwritten": false
+  },
+  "requiredEvidence": [
+    "fresh current-turn run-scoped capability challenge and attestation",
+    "real native producer route in the actual producing context",
+    "original local PNG byte transport",
+    "new art-output-verify receipt for the rework output",
+    "updated provenance ledger with source and output SHA-256",
+    "independent pixel acceptance before any artistic PASS or runtime integration"
+  ]
+}

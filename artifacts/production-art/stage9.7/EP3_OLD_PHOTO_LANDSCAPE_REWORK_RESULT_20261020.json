@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_STAGE9_7_LANDSCAPE_REWORK_RESULT",
+  "recordedAt": "2026-10-20",
+  "status": "CANDIDATE_MECHANICAL_PASS_INDEPENDENT_ACCEPTANCE_BLOCKED",
+  "sourceHead": "5baa23cffab96c6341e7554a6ba4558008dcdccb",
+  "runId": "2026-10-20T07-32-53-529Z-production-art-fb7e7c",
+  "scope": {
+    "sceneId": "ep3_old_photo",
+    "format": "landscape",
+    "candidateNumber": 2,
+    "pairCount": 1,
+    "pngCount": 1,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "historicalRunsChanged": false,
+    "priorLandscapeOverwritten": false,
+    "portraitOverwritten": false
+  },
+  "gates": {
+    "approvedBriefPacket": "PASS_SOURCE_BOUND_PACKET",
+    "reworkBrief": "PASS_DIRECT_MODE_SOURCE_BOUND_REWORK",
+    "legacyStage94ArtBriefVerifier": "NOT_APPLICABLE_EP3_DIRECT_MODE",
+    "attemptBudget": "PASS_CANDIDATE_2_OF_2",
+    "capabilityChallenge": "PASS_PRESENT_UNKNOWN_CURRENT_TURN",
+    "producerRoute": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "nativeGeneration": "PASS_IMAGE_GEN_IMAGEGEN",
+    "transport": "PASS_ART_OUTPUT_TRANSPORT",
+    "mechanical": "PASS_ART_OUTPUT_MECHANICAL",
+    "runtimeIntegration": "NOT_RUN_OUT_OF_SCOPE",
+    "independentPixelAcceptance": "BLOCKED_WEB_UNAVAILABLE"
+  },
+  "pixelTriage": {
+    "reviewer": "parent Codex current-session source-pixel triage; not independent acceptance",
+    "status": "CANDIDATE_REVIEW_ONLY",
+    "impactCode": "FORBIDDEN_UNAUTHORED_BLUEPRINT_TUBE_PROP_REMOVED_AT_SOURCE",
+    "observations": [
+      "Visible archive shelving uses flat boxes, flat programme stacks and framed archival photographs; no rolled blueprint/tube-like props are visible in the rework candidate.",
+      "Nika and Leo remain distinct and grounded in the working archive room, with Nika foreground/right and Leo slightly back/left.",
+      "The neutral photograph and Nika's hand contact remain readable above the lower dialogue-safe area; no baked UI or readable invented text is visible.",
+      "This is source-pixel triage only; Web High and current runtime acceptance were unavailable and are not inferred."
+    ]
+  },
+  "nextAction": "Preserve both candidates, wait for independent pixel acceptance when Web is available, then run current-runtime desktop/mobile QA before any separately authorized narrative/assets.json integration. Do not generate a third candidate.",
+  "prohibitionsHonored": [
+    "No EP2 files, PNGs, receipts or mappings changed.",
+    "No historical CEOS checkpoint was edited.",
+    "No ep3_* alias or legacy Stage 9.4 field was invented.",
+    "No runtime mapping or narrative/assets.json change was made.",
+    "No visual PASS or release readiness was claimed."
+  ]
+}

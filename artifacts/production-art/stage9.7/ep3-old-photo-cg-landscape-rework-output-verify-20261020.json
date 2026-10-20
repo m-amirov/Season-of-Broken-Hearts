@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-old-photo-cg-landscape-rework.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a",
+  "bytes": 2314855,
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "alpha": {
+    "opaque": 1573352,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1573352,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1672,
+    "height": 941
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-20T07:38:07.708Z"
+}
