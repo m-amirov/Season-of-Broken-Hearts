@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "FULL_SEASON_EDITORIAL_AUDIT",
+  "recordedAt": "2026-10-20",
+  "scope": {"episodes": 10, "scenes": 144, "choices": 208, "sourceHead": "77a07a0952c82292446a0a4dab0af8beb29958f1", "graphSha256": "64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a"},
+  "method": [
+    "Current graph and episode fragments were checked for duplicate IDs, locale parity, choice targets/labels, speaker metadata and monotonic day continuity where authored.",
+    "Narrative validation, conditional dialogue/wardrobe validation and season architecture contract were run on the current worktree.",
+    "Full Season Narrative Acceptance was treated as a narrative-structure acceptance artifact, not as a blind-reader, art or release acceptance.",
+    "This is an independent bounded editorial/semantic audit by the parent session; no human blind-reader observation or fresh Web editorial receipt was fabricated."
+  ],
+  "checks": {
+    "npmRunNarrativeValidate": "PASS_DECLARED_NARRATIVE_GRAPH; 144/144 scenes; 208/208 choices; 706/706 effects; 1433 states; 23 save fixtures",
+    "conditionalDialogue": "PASS",
+    "wardrobeValidation": "PASS; 10 families; sceneCoverage 18",
+    "seasonArchitecture": "PASS_STAGE9_NARRATIVE_ARCHITECTURE_CONTRACT; 10 episodes; 4 routes; 7 endings; 3 hotel outcomes; 21 legal pairs",
+    "semanticAudit": "PASS; no duplicate scene IDs, locale parity defects, invalid choice targets/labels or confirmed speaker metadata defects",
+    "humanBlindPlaytest": "NOT_ATTESTED; owner waiver covers timing only and does not become editorial PASS"
+  },
+  "coverage": {
+    "continuity": "PASS_SCOPED",
+    "characterization": "PASS_SCOPED",
+    "relationshipDevelopment": "PASS_SCOPED",
+    "choicesAndConsequences": "PASS_SCOPED",
+    "pacing": "PASS_SCOPED_WITH_RISK",
+    "endings": "PASS_SCOPED",
+    "routeAndEndingCounts": {"relationshipEndings": 7, "hotelOutcomes": 3, "legalPairs": 21, "storyPromises": 6}
+  },
+  "findings": [
+    {"id":"EDITORIAL-RISK-001","severity":"P2","classification":"EDITORIAL_RISK","location":"EP10 ep10_independent_portfolio / ep10_independent_portfolio_solo","observation":"Two independent-route choices set the same ep10FinalAction=independent-portfolio, independentProgress=self-authored and nikaCareerPlan=portfolio, then converge on nika-own-way; only lastChoice differs.","decision":"No code or dialogue change. The scene text frames both as deliberate versions of the same self-authored commitment, so this is a consequence-distinctness risk, not a confirmed continuity or character defect.","followUp":"Revisit only if a blind reader reports that the choice feels cosmetic or the product contract requires divergent independent-end visuals."},
+    {"id":"EDITORIAL-NOTE-002","severity":"P2","classification":"EVIDENCE_GAP","location":"EP6 ep6_all_three_confront","observation":"Metadata lists Nika, Matteo, Leo and Elio while the prose foregrounds three voices.","decision":"No fix. Elio can be present without taking a speaking turn; current graph/effect validation does not prove a contradiction.","followUp":"Confirm during runtime/pixel review that the staging does not imply an unintended fourth speaking participant."}
+  ],
+  "confirmedSubstantialDefects": [],
+  "repairsApplied": [],
+  "verdict": "EDITORIAL_AUDIT_PASS_SCOPED_NO_CONFIRMED_SUBSTANTIAL_DEFECTS",
+  "releaseBoundary": "This audit does not grant art PASS, blind-playtest PASS, Yandex acceptance, release readiness or publication authority."
+}
