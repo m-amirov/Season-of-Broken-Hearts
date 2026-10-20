@@ -466,7 +466,8 @@ test('EP7 reaches four distinct route families with localized consequences and a
     assert.equal(state[routeCase.careerKey], routeCase.careerValue);
     assert.ok(seen.has(routeCase.startScene));
     assert.ok(seen.size >= 5, `EP7 ${routeCase.route} needs its own scene family`);
-    assert.equal(engine.currentScene().ending, true);
+    assert.equal(engine.currentScene().episodeEnd, true);
+    assert.equal(engine.currentScene().ending, undefined);
     assert.equal(engine.currentScene().endingId, undefined);
 
     const saved = engine.save();
@@ -542,7 +543,11 @@ test('EP7 graph is fully reachable without route switching or premature relation
   for (const routeCase of ep7RouteCases) {
     const ep7Graph = structuredClone(graph);
     ep7Graph.start = 'ep7_entry';
-    ep7Graph.scenes = graph.scenes.filter(scene => scene.episode === 7);
+    ep7Graph.scenes = structuredClone(graph.scenes.filter(scene => scene.episode === 7));
+    const ep7Transition = ep7Graph.scenes.find(scene => scene.id === 'ep7_transition');
+    delete ep7Transition.episodeEnd;
+    delete ep7Transition.next;
+    ep7Transition.ending = true;
     ep7Graph.initialState.route = routeCase.route;
     ep7Graph.initialState.routeLocked = true;
     ep7Graph.initialState.routeLockSource = 'ep6_route_choice';
@@ -553,5 +558,92 @@ test('EP7 graph is fully reachable without route switching or premature relation
     assert.equal(report.visitedScenes.has(routeCase.startScene), true);
     assert.equal(report.terminals.every(terminal => terminal.sceneId === 'ep7_transition'), true);
     assert.equal(report.terminals.every(terminal => terminal.endingId === null), true);
+  }
+});
+
+function enterEpisode8(engine, routeCase) {
+  enterEpisode7(engine, routeCase);
+  advanceToEpisodeEnd(engine);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 8 });
+  assert.equal(engine.snapshot().cursor.sceneId, 'ep8_entry');
+  while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+  assert.equal(engine.choices().length, 1);
+  assert.equal(engine.choices()[0].id, routeCase.entryChoice8);
+  assert.equal(engine.choose(routeCase.entryChoice8).ok, true);
+  while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+}
+
+const ep8RouteCases = [
+  { ...ep7RouteCases[0], entryChoice8: 'ep8_enter_matteo', startScene8: 'ep8_matteo_delegation' },
+  { ...ep7RouteCases[1], entryChoice8: 'ep8_enter_leo', startScene8: 'ep8_leo_aurea_conflict' },
+  { ...ep7RouteCases[2], entryChoice8: 'ep8_enter_elio', startScene8: 'ep8_elio_offer' },
+  { ...ep7RouteCases[3], entryChoice8: 'ep8_enter_independent', startScene8: 'ep8_independent_budget' }
+];
+
+test('EP8 keeps all four locked route families distinct and reaches only a non-final transition', () => {
+  for (const routeCase of ep8RouteCases) {
+    const engine = new NarrativeEngine(graph);
+    enterEpisode8(engine, routeCase);
+    assert.equal(engine.snapshot().cursor.sceneId, routeCase.startScene8);
+    assert.equal(engine.snapshot().state.route, routeCase.route);
+    assert.equal(engine.snapshot().state.routeLocked, true);
+    const seen = new Set();
+    let guard = 0;
+    while (!engine.isEpisodeComplete()) {
+      seen.add(engine.snapshot().cursor.sceneId);
+      const choices = engine.choices();
+      if (choices.length) assert.equal(engine.choose(choices[0].id).ok, true);
+      else assert.equal(engine.advance().ok, true);
+      assert.ok(guard++ < 200, `EP8 ${routeCase.route} did not terminate`);
+    }
+    seen.add(engine.snapshot().cursor.sceneId);
+    assert.equal(engine.snapshot().cursor.sceneId, 'ep8_transition');
+    assert.equal(engine.currentScene().ending, true);
+    assert.equal(engine.currentScene().endingId, undefined);
+    assert.equal(engine.snapshot().state.route, routeCase.route);
+    assert.equal(engine.snapshot().state.routeLocked, true);
+    assert.equal(engine.snapshot().state.budgetGapKnown, true);
+    assert.ok(['viable', 'underfunded'].includes(engine.snapshot().state.alternativeBudget));
+    assert.ok(seen.has(routeCase.startScene8));
+    assert.ok(seen.size >= 5, `EP8 ${routeCase.route} needs its own scene family`);
+
+    const restored = new NarrativeEngine(graph);
+    assert.equal(restored.load(engine.save()), true);
+    assert.deepEqual(restored.snapshot(), engine.snapshot());
+    const beforeLocale = restored.snapshot();
+    assert.equal(restored.setLocale('en'), true);
+    assert.deepEqual(restored.snapshot().state, beforeLocale.state);
+    assert.deepEqual(restored.snapshot().cursor, beforeLocale.cursor);
+  }
+});
+
+test('EP8 Back and alternate route decisions preserve route-lock, budget consequences, and New Game reset', () => {
+  const cases = [
+    { routeCase: ep8RouteCases[0], choices: ['ep8_matteo_reclaim_control', 'ep8_matteo_keep_terms_private', 'ep8_matteo_leave_control_unchecked'], expected: { matteoCareerChoice: 'control', alternativeBudget: 'underfunded' } },
+    { routeCase: ep8RouteCases[1], choices: ['ep8_leo_take_aurea_promotion', 'ep8_leo_keep_heritage_plan', 'ep8_leo_choose_aurea'], expected: { leoCareerChoice: 'aurea', alternativeBudget: 'underfunded' } },
+    { routeCase: ep8RouteCases[2], choices: ['ep8_elio_leave_without_contract', 'ep8_elio_keep_menu_private', 'ep8_elio_leave_without_plan'], expected: { elioCareerChoice: 'unplanned-departure', alternativeBudget: 'underfunded' } },
+    { routeCase: ep8RouteCases[3], choices: ['ep8_independent_discount_rate', 'ep8_independent_work_alone', 'ep8_independent_choose_portfolio'], expected: { nikaCareerPlan: 'portfolio', alternativeBudget: 'underfunded' } }
+  ];
+
+  for (const testCase of cases) {
+    const engine = new NarrativeEngine(graph);
+    enterEpisode8(engine, testCase.routeCase);
+    const beforeChoice = engine.snapshot();
+    assert.equal(engine.choose(testCase.choices[0]).ok, true);
+    assert.equal(engine.back(), true);
+    assert.deepEqual(engine.snapshot().cursor, beforeChoice.cursor);
+    assert.deepEqual(engine.snapshot().state, beforeChoice.state);
+    for (const choiceId of testCase.choices) chooseById(engine, choiceId);
+    advanceToEpisodeEnd(engine);
+    const state = engine.snapshot().state;
+    assert.equal(state.route, testCase.routeCase.route);
+    assert.equal(state.routeLocked, true);
+    assert.equal(state.budgetGapKnown, true);
+    for (const [key, value] of Object.entries(testCase.expected)) assert.equal(state[key], value, `${testCase.routeCase.route}:${key}`);
+    assert.equal(engine.newGame(), true);
+    assert.equal(engine.snapshot().cursor.sceneId, 'ep1_arrival');
+    assert.equal(engine.snapshot().state.route, 'none');
+    assert.equal(engine.snapshot().state.routeLocked, false);
+    assert.equal(engine.snapshot().state.budgetGapKnown, false);
   }
 });

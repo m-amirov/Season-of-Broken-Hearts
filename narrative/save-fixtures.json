@@ -57,7 +57,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -118,7 +119,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -179,7 +181,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 6
@@ -240,7 +243,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -301,7 +305,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 11
@@ -362,7 +367,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -423,7 +429,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -484,7 +491,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -545,7 +553,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -606,7 +615,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -667,7 +677,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 6
@@ -728,7 +739,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -789,7 +801,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 11
@@ -850,7 +863,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -911,7 +925,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -972,7 +987,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1033,7 +1049,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1094,7 +1111,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1155,7 +1173,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 11
@@ -1216,7 +1235,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1277,7 +1297,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -1338,7 +1359,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1399,7 +1421,8 @@
         "matteoCareerChoice": "none",
         "leoCareerChoice": "none",
         "elioCareerChoice": "none",
-        "elioClarity": "none"
+        "elioClarity": "none",
+        "budgetGapKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0

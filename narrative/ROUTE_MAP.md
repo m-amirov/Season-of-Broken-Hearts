@@ -138,7 +138,30 @@ ep7_entry
 
 Each route has an initiative, a boundary/refusal accepted without punishment,
 and a distinct career consequence. The transition records no relationship
-ending and is intentionally ready for EP8 to attach the next episode start.
+ending and now feeds the EP8 career-and-budget branch.
+
+## EP8 executable route families
+
+EP8 continues the EP6 lock and makes the career cost visible before the common
+budget review:
+
+```text
+ep8_entry
+  ├─ matteo      → ep8_matteo_delegation → ep8_matteo_family_ledger → ep8_matteo_stay_choice → ep8_matteo_wrap
+  ├─ leo         → ep8_leo_aurea_conflict → ep8_leo_heritage_plan → ep8_leo_career_choice → ep8_leo_wrap
+  ├─ elio        → ep8_elio_offer → ep8_elio_menu → ep8_elio_future → ep8_elio_wrap
+  └─ independent → ep8_independent_budget → ep8_independent_partner → ep8_independent_career → ep8_independent_wrap
+                                      \____________________________→ ep8_budget_crisis → ep8_transition
+```
+
+The route-specific choices never mutate `route`, `routeLocked` or
+`routeLockSource`. Matteo's delegation, Leo's heritage plan, Elio's hybrid
+schedule and Nika's authored portfolio provide distinct professional
+consequences; their refusals remain playable and feed the same business
+review. `ep8_budget_crisis` records `budgetGapKnown=true` and resolves only
+the alternative budget as `viable` or `underfunded`; `ep8_transition` is an
+episode boundary without `endingId`, leaving relationship and hotel finals to
+EP9–EP10.
 
 ## Full-season topology (planned)
 

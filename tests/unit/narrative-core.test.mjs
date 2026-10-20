@@ -115,16 +115,16 @@ test('narrative validator reports a bounded state-space stop without expanding i
   assert.match(report.disclaimer, /no PASS is claimed/i);
 });
 
-test('narrative validator exhausts the EP1-EP7 graph below the configured state bound', () => {
+test('narrative validator exhausts the EP1-EP8 graph below the configured state bound', () => {
   const maxStates = 600_000;
   const report = checkNarrativeGame(graph, saveFixtures, storyPromises, { maxStates });
 
   assert.equal(report.status, 'PASS_DECLARED_NARRATIVE_GRAPH', JSON.stringify(report, null, 2));
   assert.deepEqual(report.errors, []);
-  assert.equal(report.coverage.declaredScenes, 97);
-  assert.equal(report.coverage.reachedScenes, 97);
-  assert.equal(report.coverage.declaredChoices, 111);
-  assert.equal(report.coverage.visitedChoices, 111);
+  assert.equal(report.coverage.declaredScenes, 116);
+  assert.equal(report.coverage.reachedScenes, 116);
+  assert.equal(report.coverage.declaredChoices, 142);
+  assert.equal(report.coverage.visitedChoices, 142);
   assert.equal(report.coverage.declaredEndings, 1);
   assert.equal(report.coverage.reachedEndings, 1);
   assert.equal(report.coverage.saveFixtures, 23);
