@@ -18,6 +18,8 @@ import {
 import { checkNarrativeGame } from '../../tools/narrative/narrative-game-validator.mjs';
 
 const graph = JSON.parse(fs.readFileSync(new URL('../../narrative/graph.json', import.meta.url), 'utf8'));
+const saveFixtures = JSON.parse(fs.readFileSync(new URL('../../narrative/save-fixtures.json', import.meta.url), 'utf8'));
+const storyPromises = JSON.parse(fs.readFileSync(new URL('../../narrative/story-promises.json', import.meta.url), 'utf8'));
 
 test('EP1 graph has stable scenes, localized dialogue, and finite exits', () => {
   const report = validateGraph(graph);
@@ -111,4 +113,20 @@ test('narrative validator reports a bounded state-space stop without expanding i
   assert.deepEqual(report.errors, [{ code: 'STATE_SPACE_LIMIT', scope: 'maxStates:1' }]);
   assert.equal(report.coverage.visitedStates, 1);
   assert.match(report.disclaimer, /no PASS is claimed/i);
+});
+
+test('narrative validator exhausts the EP1-EP7 graph below the configured state bound', () => {
+  const maxStates = 600_000;
+  const report = checkNarrativeGame(graph, saveFixtures, storyPromises, { maxStates });
+
+  assert.equal(report.status, 'PASS_DECLARED_NARRATIVE_GRAPH', JSON.stringify(report, null, 2));
+  assert.deepEqual(report.errors, []);
+  assert.equal(report.coverage.declaredScenes, 97);
+  assert.equal(report.coverage.reachedScenes, 97);
+  assert.equal(report.coverage.declaredChoices, 111);
+  assert.equal(report.coverage.visitedChoices, 111);
+  assert.equal(report.coverage.declaredEndings, 1);
+  assert.equal(report.coverage.reachedEndings, 1);
+  assert.equal(report.coverage.saveFixtures, 23);
+  assert.ok(report.coverage.visitedStates < maxStates);
 });

@@ -86,11 +86,66 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, o
     for(const c of (Array.isArray(scene.choices)?scene.choices:[]))if(c?.to&&!scenes.has(c.to))fail('DANGLING_EDGE',scene.id+'->'+c.to);
   }
   if(errors.length)return {status:'BLOCKED_NARRATIVE_GAME',errors,warnings};
-  const queue=[{id:model.start,state:initial}], nodes=new Map(), byScene=new Map(), visitedChoiceIds=new Set();
-  const nodeKey=(id,state)=>id+':'+stable(state);
+  // A node only needs state dimensions that can still affect a future guard,
+  // conditional line, promise check, or exact save fixture. Backward liveness
+  // removes a dimension only when the outgoing edge overwrites it, so route-lock
+  // and every other observable consequence remain part of the explored key.
+  const relevantByScene=new Map([...scenes.keys()].map(id=>[id,new Set()]));
+  const stateKeySet=new Set(stateKeys);
+  const markRelevant=(sceneId,keys)=>{
+    const target=relevantByScene.get(sceneId);
+    if(!target)return;
+    for(const key of keys)if(stateKeySet.has(key))target.add(key);
+  };
+  for(const scene of scenes.values()){
+    const keys=new Set();
+    for(const choice of scene.choices||[])for(const key of Object.keys(choice.requires||{}))keys.add(key);
+    for(const lines of Object.values(scene.dialogue||{}))for(const line of lines||[])
+      for(const key of Object.keys(line?.when||{}))keys.add(key);
+    markRelevant(scene.id,keys);
+  }
+  if(storyPromiseLedger?.schemaVersion===1&&Array.isArray(storyPromiseLedger.promises))
+    for(const promise of storyPromiseLedger.promises)
+      for(const endpoint of [promise?.setup,promise?.payoff])
+        if(endpoint?.sceneId)markRelevant(endpoint.sceneId,Object.keys(endpoint.requires||{}));
+  if(saves?.schemaVersion===1&&Array.isArray(saves.samples))
+    for(const sample of saves.samples)if(sample?.sceneId)markRelevant(sample.sceneId,stateKeys);
+
+  const outgoing=new Map();
+  for(const scene of scenes.values()){
+    const choices=scene.choices||[{to:scene.next,effects:{}}];
+    outgoing.set(scene.id,choices.map(choice=>({to:choice.to,effects:choice.effects||{}})));
+  }
+  let relevanceChanged=true;
+  while(relevanceChanged){
+    relevanceChanged=false;
+    for(const [sceneId,edges] of outgoing){
+      const current=relevantByScene.get(sceneId);
+      for(const edge of edges)for(const key of relevantByScene.get(edge.to)||[]){
+        if(!own(edge.effects,key)&&!current.has(key)){current.add(key);relevanceChanged=true;}
+      }
+    }
+  }
+  const projectState=(sceneId,state)=>Object.fromEntries(stateKeys.filter(key=>relevantByScene.get(sceneId)?.has(key)).map(key=>[key,state[key]]));
+  const stack=[{id:model.start,state:initial}], nodes=new Map(), byScene=new Map(), visitedChoiceIds=new Set(), visitedEffectIds=new Set();
+  const nodeKey=(id,state)=>id+':'+stable(projectState(id,state));
+  const declaredChoices=[...scenes.values()].flatMap(scene=>(scene.choices||[]).map(choice=>scene.id+':'+choice.id));
+  const declaredEffects=[...scenes.values()].flatMap(scene=>(scene.choices||[]).flatMap(choice=>Object.keys(choice.effects||{}).map(key=>scene.id+':'+choice.id+':'+key)));
+  const coverage=()=>({
+    declaredScenes:scenes.size,
+    reachedScenes:byScene.size,
+    visitedStates:nodes.size,
+    declaredChoices:declaredChoices.length,
+    visitedChoices:visitedChoiceIds.size,
+    declaredEffects:declaredEffects.length,
+    visitedEffects:visitedEffectIds.size,
+    declaredEndings:[...scenes.values()].filter(s=>s.ending===true).length,
+    reachedEndings:[...scenes.values()].filter(s=>s.ending===true&&byScene.has(s.id)).length,
+    saveFixtures:saves?.samples?.length??0
+  });
   let stateSpaceLimited = false;
-  while(queue.length){
-    const q=queue.shift(),k=nodeKey(q.id,q.state);
+  while(stack.length){
+    const q=stack.pop(),k=nodeKey(q.id,q.state);
     if(nodes.has(k))continue;
     if(nodes.size>=maxStates){fail('STATE_SPACE_LIMIT',`maxStates:${maxStates}`);stateSpaceLimited=true;break;}
     const scene=scenes.get(q.id), edges=[];
@@ -102,12 +157,15 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, o
     const fingerprints=new Map();
     for(const c of choices){
       if(Object.entries(c.requires||{}).some(([key,v])=>q.state[key]!==v))continue;
-      if(scene.choices)visitedChoiceIds.add(q.id+':'+c.id);
+      if(scene.choices){
+        visitedChoiceIds.add(q.id+':'+c.id);
+        for(const key of Object.keys(c.effects||{}))visitedEffectIds.add(q.id+':'+c.id+':'+key);
+      }
       const next=canonicalState({...q.state,...c.effects},q.id+':'+c.id);
       if(!next)continue;
       const target=nodeKey(c.to,next);
       edges.push(target);
-      queue.push({id:c.to,state:next});
+      stack.push({id:c.to,state:next});
       const fp=c.to+':'+stable(next);
       if(fingerprints.has(fp))warnings.push({code:'SAME_RESULT_CHOICES',scope:q.id,choiceIds:[fingerprints.get(fp),c.id]});
       fingerprints.set(fp,c.id);
@@ -119,7 +177,7 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, o
       status: 'BLOCKED_NARRATIVE_GAME',
       errors,
       warnings,
-      coverage: { declaredScenes: scenes.size, reachedScenes: byScene.size, visitedStates: nodes.size, declaredEndings: [...scenes.values()].filter(s => s.ending === true).length, reachedEndings: [...scenes.values()].filter(s => s.ending === true && byScene.has(s.id)).length, saveFixtures: saves?.samples?.length ?? 0 },
+      coverage: coverage(),
       disclaimer: 'State-space limit reached before complete graph and promise validation; no PASS is claimed.'
     };
   }
@@ -164,8 +222,6 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, o
   errors.push(...storyPromises.errors);
   warnings.push(...storyPromises.warnings);
   return {status:errors.length?'BLOCKED_NARRATIVE_GAME':'PASS_DECLARED_NARRATIVE_GRAPH',errors,warnings,storyPromises,
-    coverage:{declaredScenes:scenes.size,reachedScenes:byScene.size,visitedStates:nodes.size,
-      declaredEndings:declaredEndings.length,reachedEndings:declaredEndings.filter(x=>byScene.has(x)).length,
-      saveFixtures:saves?.samples?.length??0},
+    coverage:{...coverage(),declaredEndings:declaredEndings.length,reachedEndings:declaredEndings.filter(x=>byScene.has(x)).length},
     disclaimer:'Checks supplied model and JSON snapshots only; cannot attest live runtime saves, prose quality or Web review.'};
 }
