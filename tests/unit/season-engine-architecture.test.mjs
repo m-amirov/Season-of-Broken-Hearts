@@ -379,3 +379,179 @@ test('an older v4 save receives EP6 defaults without changing its route state', 
   assert.equal(restored.snapshot().state.routeLockSource, 'none');
   assert.equal(restored.snapshot().state.independentProgress, 'none');
 });
+
+function enterEpisode7(engine, routeCase) {
+  reachEpisode6(engine);
+  assert.equal(engine.choose(routeCase.routeChoice).ok, true);
+  while (!engine.isEpisodeComplete()) {
+    const choices = engine.choices();
+    if (choices.length) assert.equal(engine.choose(choices[0].id).ok, true);
+    else assert.equal(engine.advance().ok, true);
+  }
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 7 });
+  assert.equal(engine.snapshot().cursor.sceneId, 'ep7_entry');
+  while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+  assert.equal(engine.choices().length, 1);
+  assert.equal(engine.choices()[0].id, routeCase.entryChoice);
+  assert.equal(engine.choose(routeCase.entryChoice).ok, true);
+  while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+}
+
+const ep7RouteCases = [
+  {
+    route: 'matteo',
+    routeChoice: 'ep6_route_matteo',
+    entryChoice: 'ep7_enter_matteo',
+    startScene: 'ep7_matteo_market',
+    commitmentKey: 'matteoCommitment',
+    commitmentValue: 'mutual-plan',
+    careerKey: 'matteoCareerChoice',
+    careerValue: 'delegation'
+  },
+  {
+    route: 'leo',
+    routeChoice: 'ep6_route_leo',
+    entryChoice: 'ep7_enter_leo',
+    startScene: 'ep7_leo_archive',
+    commitmentKey: 'leoCommitment',
+    commitmentValue: 'heritage-plan',
+    careerKey: 'leoCareerChoice',
+    careerValue: 'heritage-plan'
+  },
+  {
+    route: 'elio',
+    routeChoice: 'ep6_route_elio',
+    entryChoice: 'ep7_enter_elio',
+    startScene: 'ep7_elio_night_kitchen',
+    commitmentKey: 'elioCommitment',
+    commitmentValue: 'hybrid-plan',
+    careerKey: 'elioCareerChoice',
+    careerValue: 'hybrid-plan'
+  },
+  {
+    route: 'independent',
+    routeChoice: 'ep6_route_independent',
+    entryChoice: 'ep7_enter_independent',
+    startScene: 'ep7_independent_portfolio',
+    commitmentKey: 'independentProgress',
+    commitmentValue: 'self-authored',
+    careerKey: 'nikaCareerPlan',
+    careerValue: 'portfolio'
+  }
+];
+
+test('EP7 reaches four distinct route families with localized consequences and a non-final transition', () => {
+  for (const routeCase of ep7RouteCases) {
+    const engine = new NarrativeEngine(graph);
+    enterEpisode7(engine, routeCase);
+    const seen = new Set();
+    let guard = 0;
+    while (!engine.isEpisodeComplete()) {
+      seen.add(engine.snapshot().cursor.sceneId);
+      const choices = engine.choices();
+      if (choices.length) assert.equal(engine.choose(choices[0].id).ok, true);
+      else assert.equal(engine.advance().ok, true);
+      assert.ok(guard++ < 200, `EP7 ${routeCase.route} did not terminate`);
+    }
+    seen.add(engine.snapshot().cursor.sceneId);
+    const state = engine.snapshot().state;
+    assert.equal(engine.snapshot().cursor.sceneId, 'ep7_transition');
+    assert.equal(state.route, routeCase.route);
+    assert.equal(state.routeLocked, true);
+    assert.equal(state.exclusiveTermsSeen, true);
+    assert.equal(state.aureaClientKnown, true);
+    assert.equal(state.investorTerms, 'control-risk');
+    assert.equal(state.alternativeBudget, 'draft');
+    assert.equal(state[routeCase.commitmentKey], routeCase.commitmentValue);
+    assert.equal(state[routeCase.careerKey], routeCase.careerValue);
+    assert.ok(seen.has(routeCase.startScene));
+    assert.ok(seen.size >= 5, `EP7 ${routeCase.route} needs its own scene family`);
+    assert.equal(engine.currentScene().ending, true);
+    assert.equal(engine.currentScene().endingId, undefined);
+
+    const saved = engine.save();
+    const restored = new NarrativeEngine(graph);
+    assert.equal(restored.load(saved), true);
+    assert.deepEqual(restored.snapshot(), engine.snapshot());
+    const beforeLocale = restored.snapshot();
+    assert.equal(restored.setLocale('en'), true);
+    assert.deepEqual(restored.snapshot().state, beforeLocale.state);
+    assert.deepEqual(restored.snapshot().cursor, beforeLocale.cursor);
+  }
+});
+
+test('EP7 alternate choices preserve route-lock while carrying distinct professional costs forward', () => {
+  const negativeCases = [
+    {
+      routeCase: ep7RouteCases[0],
+      choices: ['ep7_matteo_ask_plain_terms', 'ep7_matteo_keep_control', 'ep7_matteo_pause_after_boundary'],
+      expected: { matteoCommitment: 'deferred', matteoCareerChoice: 'control', relationshipMatteo: 1 }
+    },
+    {
+      routeCase: ep7RouteCases[1],
+      choices: ['ep7_leo_keep_map_private', 'ep7_leo_take_aurea_route', 'ep7_leo_keep_present_distance'],
+      expected: { leoCommitment: 'avoidance', leoCareerChoice: 'aurea', leoAccountability: 'acknowledged' }
+    },
+    {
+      routeCase: ep7RouteCases[2],
+      choices: ['ep7_elio_make_private_menu', 'ep7_elio_take_all_credit', 'ep7_elio_leave_without_plan'],
+      expected: { elioCommitment: 'unplanned-departure', elioCareerChoice: 'unplanned-departure', elioClarity: 'discussed' }
+    },
+    {
+      routeCase: ep7RouteCases[3],
+      choices: ['ep7_independent_take_any_fee', 'ep7_independent_discount_to_save_villa', 'ep7_independent_do_alone'],
+      expected: { independentProgress: 'self-authored', alternativeBudget: 'underfunded', staffProtection: 'requested', staffTrust: 2 }
+    }
+  ];
+
+  for (const negativeCase of negativeCases) {
+    const engine = new NarrativeEngine(graph);
+    enterEpisode7(engine, negativeCase.routeCase);
+    for (const choiceId of negativeCase.choices) chooseById(engine, choiceId);
+    advanceToEpisodeEnd(engine);
+    const state = engine.snapshot().state;
+    assert.equal(state.route, negativeCase.routeCase.route);
+    assert.equal(state.routeLocked, true);
+    for (const [key, value] of Object.entries(negativeCase.expected)) assert.equal(state[key], value, `${negativeCase.routeCase.route}:${key}`);
+    assert.equal(engine.snapshot().cursor.sceneId, 'ep7_transition');
+  }
+});
+
+test('EP7 Back rewinds route-local consequences and New Game clears the expanded season state', () => {
+  const engine = new NarrativeEngine(graph);
+  enterEpisode7(engine, ep7RouteCases[0]);
+  const beforeChoice = engine.snapshot();
+  assert.equal(engine.choose('ep7_matteo_open_ledger').ok, true);
+  assert.notDeepEqual(engine.snapshot().state, beforeChoice.state);
+  assert.equal(engine.back(), true);
+  assert.deepEqual(engine.snapshot().cursor, beforeChoice.cursor);
+  assert.deepEqual(engine.snapshot().state, beforeChoice.state);
+  assert.equal(engine.choices().map(choice => choice.id).join(','), 'ep7_matteo_open_ledger,ep7_matteo_ask_plain_terms');
+
+  assert.equal(engine.newGame(), true);
+  const reset = engine.snapshot();
+  assert.equal(reset.cursor.sceneId, 'ep1_arrival');
+  assert.equal(reset.state.route, 'none');
+  assert.equal(reset.state.routeLocked, false);
+  assert.equal(reset.state.alternativeBudget, 'none');
+  assert.equal(reset.state.matteoCareerChoice, 'none');
+  assert.equal(reset.state.nikaCareerPlan, 'none');
+});
+
+test('EP7 graph is fully reachable without route switching or premature relationship endings', () => {
+  for (const routeCase of ep7RouteCases) {
+    const ep7Graph = structuredClone(graph);
+    ep7Graph.start = 'ep7_entry';
+    ep7Graph.scenes = graph.scenes.filter(scene => scene.episode === 7);
+    ep7Graph.initialState.route = routeCase.route;
+    ep7Graph.initialState.routeLocked = true;
+    ep7Graph.initialState.routeLockSource = 'ep6_route_choice';
+    const report = exploreGraph(ep7Graph, { maxStates: 50_000 });
+    assert.equal(report.valid, true, `${routeCase.route}: ${report.errors.join('; ')}`);
+    assert.deepEqual([...report.routes], [routeCase.route]);
+    assert.equal(report.visitedScenes.has('ep7_entry'), true);
+    assert.equal(report.visitedScenes.has(routeCase.startScene), true);
+    assert.equal(report.terminals.every(terminal => terminal.sceneId === 'ep7_transition'), true);
+    assert.equal(report.terminals.every(terminal => terminal.endingId === null), true);
+  }
+});

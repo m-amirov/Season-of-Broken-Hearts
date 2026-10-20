@@ -76,7 +76,9 @@
       "values": [
         0,
         1,
-        2
+        2,
+        3,
+        4
       ]
     },
     "relationshipMatteo": {
@@ -103,7 +105,10 @@
       "type": "number",
       "values": [
         0,
-        1
+        1,
+        2,
+        3,
+        4
       ]
     },
     "staffTrust": {
@@ -133,7 +138,8 @@
       "values": [
         "unknown",
         "known-risk",
-        "exclusive"
+        "exclusive",
+        "control-risk"
       ]
     },
     "hotelEvidence": {
@@ -240,7 +246,35 @@
         "ep6_shared_ledger",
         "ep6_open_timeline",
         "ep6_clear_future",
-        "ep6_start_portfolio"
+        "ep6_start_portfolio",
+        "ep7_enter_matteo",
+        "ep7_enter_leo",
+        "ep7_enter_elio",
+        "ep7_enter_independent",
+        "ep7_matteo_open_ledger",
+        "ep7_matteo_ask_plain_terms",
+        "ep7_matteo_share_authority",
+        "ep7_matteo_keep_control",
+        "ep7_matteo_choose_shared_future",
+        "ep7_matteo_pause_after_boundary",
+        "ep7_leo_open_records",
+        "ep7_leo_keep_map_private",
+        "ep7_leo_verify_timeline",
+        "ep7_leo_take_aurea_route",
+        "ep7_leo_let_present_action_speak",
+        "ep7_leo_keep_present_distance",
+        "ep7_elio_test_with_team",
+        "ep7_elio_make_private_menu",
+        "ep7_elio_share_menu_credit",
+        "ep7_elio_take_all_credit",
+        "ep7_elio_build_hybrid_plan",
+        "ep7_elio_leave_without_plan",
+        "ep7_independent_quote_client",
+        "ep7_independent_take_any_fee",
+        "ep7_independent_hold_fair_rate",
+        "ep7_independent_discount_to_save_villa",
+        "ep7_independent_share_credit",
+        "ep7_independent_do_alone"
       ]
     },
     "routeLocked": {
@@ -366,28 +400,105 @@
       "type": "string",
       "values": [
         "none",
-        "public-contract"
+        "public-contract",
+        "ledger-open",
+        "mutual-plan",
+        "control",
+        "deferred"
       ]
     },
     "leoCommitment": {
       "type": "string",
       "values": [
         "none",
-        "reopened"
+        "reopened",
+        "proof-requested",
+        "heritage-plan",
+        "aurea-track",
+        "avoidance"
       ]
     },
     "elioCommitment": {
       "type": "string",
       "values": [
         "none",
-        "curious"
+        "curious",
+        "menu-tested",
+        "hybrid-plan",
+        "unplanned-departure"
       ]
     },
     "independentProgress": {
       "type": "string",
       "values": [
         "none",
+        "portfolio",
+        "client-tested",
+        "self-authored"
+      ]
+    },
+    "alternativeBudget": {
+      "type": "string",
+      "values": [
+        "none",
+        "draft",
+        "underfunded",
+        "viable"
+      ]
+    },
+    "budgetPlan": {
+      "type": "string",
+      "values": [
+        "none",
+        "events",
+        "partnerships",
+        "mixed"
+      ]
+    },
+    "staffProtection": {
+      "type": "string",
+      "values": [
+        "none",
+        "requested",
+        "secured"
+      ]
+    },
+    "nikaCareerPlan": {
+      "type": "string",
+      "values": [
+        "none",
         "portfolio"
+      ]
+    },
+    "matteoCareerChoice": {
+      "type": "string",
+      "values": [
+        "none",
+        "control",
+        "delegation"
+      ]
+    },
+    "leoCareerChoice": {
+      "type": "string",
+      "values": [
+        "none",
+        "aurea",
+        "heritage-plan"
+      ]
+    },
+    "elioCareerChoice": {
+      "type": "string",
+      "values": [
+        "none",
+        "unplanned-departure",
+        "hybrid-plan"
+      ]
+    },
+    "elioClarity": {
+      "type": "string",
+      "values": [
+        "none",
+        "discussed"
       ]
     }
   },
@@ -436,7 +547,15 @@
     "matteoCommitment": "none",
     "leoCommitment": "none",
     "elioCommitment": "none",
-    "independentProgress": "none"
+    "independentProgress": "none",
+    "alternativeBudget": "none",
+    "budgetPlan": "none",
+    "staffProtection": "none",
+    "nikaCareerPlan": "none",
+    "matteoCareerChoice": "none",
+    "leoCareerChoice": "none",
+    "elioCareerChoice": "none",
+    "elioClarity": "none"
   },
   "scenes": [
     {
@@ -8580,6 +8699,1656 @@
           }
         ]
       },
+      "episodeEnd": true,
+      "next": "ep7_entry"
+    },
+    {
+      "id": "ep7_entry",
+      "episode": 7,
+      "title": {
+        "ru": "Там, где нас не найдут",
+        "en": "Where No One Will Find Us"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "День тридцать седьмой начался не с обещания. На доске в офисе появилась дата ответа Aurea — через двадцать дней."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я выбрала направление. Теперь мне нужно увидеть, что оно выдерживает не только красивые слова, но и работу."
+          },
+          {
+            "speaker": "matteo",
+            "text": "У Маттео книга решений, а не готовый ответ. Он впервые принёс её туда, где её могут прочитать.",
+            "when": {
+              "route": "matteo"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "У Лео карта старого порта и новая хронология. Память больше не будет единственным свидетелем.",
+            "when": {
+              "route": "leo"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "Элио зовёт на ночную кухню: у меню есть название, но ещё нет права требовать от Ники переезда.",
+            "when": {
+              "route": "elio"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "Для Ники первым заказчиком станет не романтический жест, а портфолио, за которое можно отвечать своим именем.",
+            "when": {
+              "route": "independent"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Четыре разговора вели к одному дедлайну, но ни один не обещал, что близость оплатит счёт."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "Day thirty-seven began without a promise. The Aurea response date appeared on the office board: twenty days from now."
+          },
+          {
+            "speaker": "nika",
+            "text": "I chose a direction. Now I need to see whether it can withstand work, not only beautiful words."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Matteo has a ledger of decisions, not a finished answer. For the first time, he brought it somewhere it could be read.",
+            "when": {
+              "route": "matteo"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Leo has the old harbor map and a new timeline. Memory will no longer be the only witness.",
+            "when": {
+              "route": "leo"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "Elio is calling her to the night kitchen: the menu has a name, but it has no right to demand that Nika move.",
+            "when": {
+              "route": "elio"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "For Nika, the first client will be a portfolio she can answer for in her own name, not a romantic gesture.",
+            "when": {
+              "route": "independent"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Four conversations led to one deadline, but none promised that closeness would pay the bill."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_enter_matteo",
+          "label": {
+            "ru": "Пойти с Маттео к рынку",
+            "en": "Go to the market with Matteo"
+          },
+          "to": "ep7_matteo_market",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "investorTerms": "control-risk",
+            "alternativeBudget": "draft",
+            "budgetPlan": "partnerships",
+            "lastChoice": "ep7_enter_matteo"
+          }
+        },
+        {
+          "id": "ep7_enter_leo",
+          "label": {
+            "ru": "Открыть архив с Лео",
+            "en": "Open the archive with Leo"
+          },
+          "to": "ep7_leo_archive",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "investorTerms": "control-risk",
+            "alternativeBudget": "draft",
+            "budgetPlan": "partnerships",
+            "lastChoice": "ep7_enter_leo"
+          }
+        },
+        {
+          "id": "ep7_enter_elio",
+          "label": {
+            "ru": "Остаться на ночной кухне",
+            "en": "Stay in the night kitchen"
+          },
+          "to": "ep7_elio_night_kitchen",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "investorTerms": "control-risk",
+            "alternativeBudget": "draft",
+            "budgetPlan": "partnerships",
+            "lastChoice": "ep7_enter_elio"
+          }
+        },
+        {
+          "id": "ep7_enter_independent",
+          "label": {
+            "ru": "Собрать своё портфолио",
+            "en": "Build her own portfolio"
+          },
+          "to": "ep7_independent_portfolio",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "investorTerms": "control-risk",
+            "alternativeBudget": "draft",
+            "budgetPlan": "partnerships",
+            "lastChoice": "ep7_enter_independent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_matteo_market",
+      "episode": 7,
+      "title": {
+        "ru": "Рынок до рассвета",
+        "en": "The Market Before Dawn"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "На рынке ещё не включили все лампы. Маттео шёл рядом без привычной папки, словно хотел сначала выдержать сам вопрос."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Я знаю, что снова могу превратить разговор в задачу. Поэтому принёс два варианта: ты можешь открыть книгу решений или заставить меня объяснить каждую строку."
+          },
+          {
+            "speaker": "nika",
+            "text": "Это не одно и то же. Открытая книга не делает меня совладельцем твоего риска."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Нет. Но она делает мой риск видимым для человека, которого я прошу идти рядом."
+          },
+          {
+            "speaker": "nika",
+            "text": "И если я скажу «нет» разговору?"
+          },
+          {
+            "speaker": "matteo",
+            "text": "Тогда это будет ответ, а не новая работа для тебя."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "The market lights were not all on yet. Matteo walked beside her without his usual folder, as if he wanted to withstand the question first."
+          },
+          {
+            "speaker": "matteo",
+            "text": "I know I can turn a conversation into a task again. So I brought two options: you can open the ledger, or make me explain every line."
+          },
+          {
+            "speaker": "nika",
+            "text": "Those are not the same. An open ledger does not make me a co-owner of your risk."
+          },
+          {
+            "speaker": "matteo",
+            "text": "No. But it makes my risk visible to the person I am asking to walk beside me."
+          },
+          {
+            "speaker": "nika",
+            "text": "And if I say no to the conversation?"
+          },
+          {
+            "speaker": "matteo",
+            "text": "Then it will be an answer, not another job for you."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_matteo_open_ledger",
+          "label": {
+            "ru": "Открыть книгу решений",
+            "en": "Open the decision ledger"
+          },
+          "to": "ep7_matteo_ledger",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "ledger-open",
+            "lastChoice": "ep7_matteo_open_ledger"
+          }
+        },
+        {
+          "id": "ep7_matteo_ask_plain_terms",
+          "label": {
+            "ru": "Попросить объяснить всё прямо",
+            "en": "Ask for plain terms"
+          },
+          "to": "ep7_matteo_ledger",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "ledger-open",
+            "lastChoice": "ep7_matteo_ask_plain_terms"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_matteo_ledger",
+      "episode": 7,
+      "title": {
+        "ru": "Кому принадлежит решение",
+        "en": "Who Owns the Decision"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "matteo",
+            "text": "Вот расходы, которые я держал в голове. Вот люди, которым я обещал защиту, не имея права обещать за всех."
+          },
+          {
+            "speaker": "nika",
+            "text": "А вот строка, где ты снова ставишь себя последним. Это выглядит благородно, но оставляет остальных без голоса."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Я хотел сначала исправить всё сам."
+          },
+          {
+            "speaker": "nika",
+            "text": "Ты хочешь делить решения или только последствия?"
+          },
+          {
+            "speaker": "matteo",
+            "text": "Хочу научиться делить решение до того, как оно станет чьей-то жертвой."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "matteo",
+            "text": "Here are the costs I kept in my head. Here are the people I promised to protect without having the right to promise for everyone."
+          },
+          {
+            "speaker": "nika",
+            "text": "And here is the line where you put yourself last again. It looks noble, but it leaves everyone else without a voice."
+          },
+          {
+            "speaker": "matteo",
+            "text": "I wanted to fix everything myself first."
+          },
+          {
+            "speaker": "nika",
+            "text": "Do you want to share decisions, or only consequences?"
+          },
+          {
+            "speaker": "matteo",
+            "text": "I want to learn to share the decision before it becomes someone else's sacrifice."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_matteo_share_authority",
+          "label": {
+            "ru": "Передать команде часть полномочий",
+            "en": "Share authority with the team"
+          },
+          "to": "ep7_matteo_boundary",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true,
+            "matteoCommitment": "ledger-open"
+          },
+          "effects": {
+            "matteoCommitment": "mutual-plan",
+            "matteoCareerChoice": "delegation",
+            "budgetPlan": "mixed",
+            "staffProtection": "requested",
+            "lastChoice": "ep7_matteo_share_authority"
+          }
+        },
+        {
+          "id": "ep7_matteo_keep_control",
+          "label": {
+            "ru": "Оставить решение у себя",
+            "en": "Keep the decision in his hands"
+          },
+          "to": "ep7_matteo_boundary",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true,
+            "matteoCommitment": "ledger-open"
+          },
+          "effects": {
+            "matteoCommitment": "control",
+            "matteoCareerChoice": "control",
+            "budgetPlan": "events",
+            "lastChoice": "ep7_matteo_keep_control"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_matteo_boundary",
+      "episode": 7,
+      "title": {
+        "ru": "Нет — не новая обязанность",
+        "en": "No Is Not Another Obligation"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "matteo",
+            "text": "Я хочу спросить, как ты видишь нас после этого лета. Но не хочу сделать вопрос ещё одним контрактом."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я не обещаю переезд, работу в твоём отеле или скорость, которая удобна твоему страху."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Я слышу отказ. Он не отменяет того, что мы уже построили, и не даёт мне права торговаться."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда будущее можно обсуждать только как совместный план, а не как мою помощь твоей панике."
+          },
+          {
+            "speaker": null,
+            "text": "Он убрал карандаш от строки с её именем. Впервые отказ не превратился в дополнительную работу."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "matteo",
+            "text": "I want to ask how you see us after this summer. But I do not want to make the question another contract."
+          },
+          {
+            "speaker": "nika",
+            "text": "I am not promising a move, a job at your hotel, or a speed that makes your fear comfortable."
+          },
+          {
+            "speaker": "matteo",
+            "text": "I hear the no. It does not erase what we have built, and it gives me no right to bargain."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then the future can be discussed only as a shared plan, not as my help with your panic."
+          },
+          {
+            "speaker": null,
+            "text": "He moved the pencil away from the line with her name. For once, refusal did not become extra work."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_matteo_choose_shared_future",
+          "label": {
+            "ru": "Назвать общий план возможным",
+            "en": "Name a shared plan as possible"
+          },
+          "to": "ep7_matteo_wrap",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "mutual-plan",
+            "matteoCareerChoice": "delegation",
+            "trustMatteo": 4,
+            "relationshipMatteo": 3,
+            "lastChoice": "ep7_matteo_choose_shared_future"
+          }
+        },
+        {
+          "id": "ep7_matteo_pause_after_boundary",
+          "label": {
+            "ru": "Оставить будущее открытым",
+            "en": "Leave the future open"
+          },
+          "to": "ep7_matteo_wrap",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "deferred",
+            "matteoCareerChoice": "control",
+            "relationshipMatteo": 1,
+            "lastChoice": "ep7_matteo_pause_after_boundary"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_matteo_wrap",
+      "episode": 7,
+      "title": {
+        "ru": "Одна книга на двоих",
+        "en": "One Ledger for Two"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "matteo",
+            "text": "Завтра я покажу эту книгу Джулии и управляющим. Не чтобы попросить их согласия на нас, а чтобы вернуть им право решать о своей работе."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда это уже не жест. Это действие, которое можно проверить без меня рядом."
+          },
+          {
+            "speaker": "matteo",
+            "text": "И если я отступлю?"
+          },
+          {
+            "speaker": "nika",
+            "text": "Я назову это отступлением. Не спасу тебя от твоего собственного выбора."
+          },
+          {
+            "speaker": null,
+            "text": "Впереди оставался рынок, отель и дата ответа инвестору. Близость впервые выглядела не обещанием, а повторяемой практикой."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "matteo",
+            "text": "Tomorrow I will show this ledger to Giulia and the managers. Not to ask for their approval of us, but to return their right to decide about their work."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then it is no longer a gesture. It is an action that can be checked without me beside you."
+          },
+          {
+            "speaker": "matteo",
+            "text": "And if I back away?"
+          },
+          {
+            "speaker": "nika",
+            "text": "I will call it backing away. I will not save you from your own choice."
+          },
+          {
+            "speaker": null,
+            "text": "The market, the hotel and the investor's response date were still ahead. Closeness finally looked less like a promise and more like a repeatable practice."
+          }
+        ]
+      },
+      "next": "ep7_deadline"
+    },
+    {
+      "id": "ep7_leo_archive",
+      "episode": 7,
+      "title": {
+        "ru": "Архив старого порта",
+        "en": "The Old Harbor Archive"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "Архив старого порта пах пылью, солью и бумагой, которую слишком долго считали личной памятью."
+          },
+          {
+            "speaker": "leo",
+            "text": "Я принёс карту, на которой отмечал маршрут восемь лет назад. И расписание, подтверждающее, когда я получил предложение от Aurea."
+          },
+          {
+            "speaker": "nika",
+            "text": "Карта — не извинение. Но она может показать, где история перестала быть случайностью."
+          },
+          {
+            "speaker": "leo",
+            "text": "Я не прошу верить мне по старой фотографии. Я предлагаю поставить слова рядом с документами."
+          },
+          {
+            "speaker": "nika",
+            "text": "И принять, что я могу не захотеть возвращать прошлое, даже если оно теперь объяснено."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "The old harbor archive smelled of dust, salt and paper that had been treated as private memory for too long."
+          },
+          {
+            "speaker": "leo",
+            "text": "I brought the map where I marked our route eight years ago. And a schedule showing when I received Aurea's offer."
+          },
+          {
+            "speaker": "nika",
+            "text": "A map is not an apology. But it can show where the story stopped being accidental."
+          },
+          {
+            "speaker": "leo",
+            "text": "I am not asking you to believe me because of an old photograph. I am putting the words beside the documents."
+          },
+          {
+            "speaker": "nika",
+            "text": "And accepting that I may not want the past back even if it is finally explained."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_leo_open_records",
+          "label": {
+            "ru": "Сверить карту с записями",
+            "en": "Compare the map with the records"
+          },
+          "to": "ep7_leo_records",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "proof-requested",
+            "lastChoice": "ep7_leo_open_records"
+          }
+        },
+        {
+          "id": "ep7_leo_keep_map_private",
+          "label": {
+            "ru": "Оставить карту личной",
+            "en": "Keep the map private"
+          },
+          "to": "ep7_leo_records",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "reopened",
+            "lastChoice": "ep7_leo_keep_map_private"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_leo_records",
+      "episode": 7,
+      "title": {
+        "ru": "Проверка, а не воспоминание",
+        "en": "A Test, Not a Memory"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Я могу выбрать повышение Aurea и закрыть глаза на то, что означает контроль над живым местом."
+          },
+          {
+            "speaker": "nika",
+            "text": "Или можешь доказать, что heritage-практика — не красивое слово, которым ты прикрываешь страх потерять клиента."
+          },
+          {
+            "speaker": "leo",
+            "text": "Оба выбора стоят денег. Вопрос в том, кто платит кроме меня."
+          },
+          {
+            "speaker": "nika",
+            "text": "В моих прошлых данных был рисунок, а не факт.",
+            "when": {
+              "leoEvidence": "drawing"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "Я уже видела проверенное приложение. Теперь мне нужно увидеть, совпадут ли факты с твоими действиями.",
+            "when": {
+              "leoEvidence": "terms"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Архив не возвращал восемь лет. Он давал возможность не повторить их способ молчать."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "I can take Aurea's promotion and close my eyes to what control over a living place means."
+          },
+          {
+            "speaker": "nika",
+            "text": "Or you can prove that a heritage practice is not a beautiful word you use to hide your fear of losing a client."
+          },
+          {
+            "speaker": "leo",
+            "text": "Both choices cost money. The question is who pays besides me."
+          },
+          {
+            "speaker": "nika",
+            "text": "In my earlier evidence, I had a drawing, not a fact.",
+            "when": {
+              "leoEvidence": "drawing"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "I have already seen the verified attachment. Now I need to see whether the facts match your actions.",
+            "when": {
+              "leoEvidence": "terms"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "The archive could not return eight years. It could make sure they were not repeated through the same silence."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_leo_verify_timeline",
+          "label": {
+            "ru": "Проверить хронологию действием",
+            "en": "Verify the timeline through action"
+          },
+          "to": "ep7_leo_accountability",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "proof-requested",
+            "leoAccountability": "verified",
+            "leoCareerChoice": "heritage-plan",
+            "trustLeo": 4,
+            "lastChoice": "ep7_leo_verify_timeline"
+          }
+        },
+        {
+          "id": "ep7_leo_take_aurea_route",
+          "label": {
+            "ru": "Принять удобный путь Aurea",
+            "en": "Take Aurea's convenient path"
+          },
+          "to": "ep7_leo_accountability",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "aurea-track",
+            "leoCareerChoice": "aurea",
+            "trustLeo": 2,
+            "lastChoice": "ep7_leo_take_aurea_route"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_leo_accountability",
+      "episode": 7,
+      "title": {
+        "ru": "Настоящее не требует скидки",
+        "en": "The Present Needs No Discount"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Я не буду просить тебя назвать это вторым шансом. Пока это только проверка того, умею ли я быть здесь."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я не хочу, чтобы наше прошлое стало аргументом в переговорах с Aurea."
+          },
+          {
+            "speaker": "leo",
+            "text": "Тогда я приму границу. Если ты уйдёшь из архива без обещания, я всё равно отправлю исправленный отчёт."
+          },
+          {
+            "speaker": "nika",
+            "text": "Это и есть разница между сожалением и ответственностью."
+          },
+          {
+            "speaker": null,
+            "text": "Он не коснулся её руки. Документ остался документом, а личный разговор — её выбором."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "I will not ask you to call this a second chance. For now it is only a test of whether I can be here."
+          },
+          {
+            "speaker": "nika",
+            "text": "I do not want our past to become leverage in a negotiation with Aurea."
+          },
+          {
+            "speaker": "leo",
+            "text": "Then I will accept the boundary. If you leave the archive without a promise, I will still send the corrected report."
+          },
+          {
+            "speaker": "nika",
+            "text": "That is the difference between regret and accountability."
+          },
+          {
+            "speaker": null,
+            "text": "He did not touch her hand. The document remained a document, and the personal conversation remained her choice."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_leo_let_present_action_speak",
+          "label": {
+            "ru": "Дать настоящему говорить поступками",
+            "en": "Let the present speak through actions"
+          },
+          "to": "ep7_leo_wrap",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "heritage-plan",
+            "leoAccountability": "verified",
+            "leoCareerChoice": "heritage-plan",
+            "trustLeo": 4,
+            "relationshipLeo": 3,
+            "lastChoice": "ep7_leo_let_present_action_speak"
+          }
+        },
+        {
+          "id": "ep7_leo_keep_present_distance",
+          "label": {
+            "ru": "Оставить дистанцию до новых доказательств",
+            "en": "Keep distance until there is more proof"
+          },
+          "to": "ep7_leo_wrap",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "avoidance",
+            "leoAccountability": "acknowledged",
+            "leoCareerChoice": "aurea",
+            "trustLeo": 2,
+            "relationshipLeo": 1,
+            "lastChoice": "ep7_leo_keep_present_distance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_leo_wrap",
+      "episode": 7,
+      "title": {
+        "ru": "Карта с новой отметкой",
+        "en": "A Map with a New Mark"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Я отправлю два файла: исправленный отчёт и отдельную записку о том, что Villa Serena нельзя оценивать только как квадратные метры."
+          },
+          {
+            "speaker": "nika",
+            "text": "Отправишь сам. Я не буду становиться свидетелем, чтобы твой выбор выглядел убедительнее."
+          },
+          {
+            "speaker": "leo",
+            "text": "Это честно. Я хочу, чтобы если ты останешься рядом, это было рядом с настоящим решением, а не с его презентацией."
+          },
+          {
+            "speaker": null,
+            "text": "На новой отметке карты стоял не старый маршрут, а срок ответа инвестору. Прошлое осталось фактом, не разрешением."
+          },
+          {
+            "speaker": "nika",
+            "text": "Проверка продолжается. И это не наказание."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "I will send two files: the corrected report and a separate note that Villa Serena cannot be assessed as square meters alone."
+          },
+          {
+            "speaker": "nika",
+            "text": "You will send them yourself. I will not become a witness just to make your choice look more convincing."
+          },
+          {
+            "speaker": "leo",
+            "text": "That is fair. If you stay near me, I want it to be near a real decision, not its presentation."
+          },
+          {
+            "speaker": null,
+            "text": "The map's new mark was not the old route but the investor's response date. The past remained a fact, not permission."
+          },
+          {
+            "speaker": "nika",
+            "text": "The test continues. That is not a punishment."
+          }
+        ]
+      },
+      "next": "ep7_deadline"
+    },
+    {
+      "id": "ep7_elio_night_kitchen",
+      "episode": 7,
+      "title": {
+        "ru": "Ночная кухня",
+        "en": "The Night Kitchen"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "После полуночи кухня стала тише, но не пустой. На столе стояли три тарелки с пробным меню и лист с названием будущего ресторана."
+          },
+          {
+            "speaker": "elio",
+            "text": "Я придумал название. Потом испугался, что оно звучит слишком серьёзно, и придумал шутку. Потом понял, что шутка не накормит команду."
+          },
+          {
+            "speaker": "nika",
+            "text": "Ты можешь хотеть ресторан и не превращать меня в причину, по которой останешься или уедешь."
+          },
+          {
+            "speaker": "elio",
+            "text": "Поэтому я не прошу обещать переезд. Я прошу попробовать говорить о расстоянии до того, как оно станет обидой."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда начни с меню. Кто его готовит — ты один или люди, которым ты доверяешь?"
+          },
+          {
+            "speaker": "elio",
+            "text": "Вот это уже страшнее вопроса о названии."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "After midnight, the kitchen was quieter but not empty. Three trial plates and a sheet with the future restaurant's name stood on the table."
+          },
+          {
+            "speaker": "elio",
+            "text": "I came up with a name. Then I panicked that it sounded too serious and made a joke. Then I realized a joke would not feed a team."
+          },
+          {
+            "speaker": "nika",
+            "text": "You can want the restaurant without turning me into the reason you stay or leave."
+          },
+          {
+            "speaker": "elio",
+            "text": "That is why I am not asking you to promise a move. I am asking us to talk about distance before it becomes resentment."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then start with the menu. Who makes it — you alone or the people you trust?"
+          },
+          {
+            "speaker": "elio",
+            "text": "That is more frightening than the question about the name."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_elio_test_with_team",
+          "label": {
+            "ru": "Протестировать меню с командой",
+            "en": "Test the menu with the team"
+          },
+          "to": "ep7_elio_trial_menu",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioCommitment": "menu-tested",
+            "staffTrust": 4,
+            "lastChoice": "ep7_elio_test_with_team"
+          }
+        },
+        {
+          "id": "ep7_elio_make_private_menu",
+          "label": {
+            "ru": "Сначала приготовить вдвоём",
+            "en": "Cook it together first"
+          },
+          "to": "ep7_elio_trial_menu",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioCommitment": "menu-tested",
+            "lastChoice": "ep7_elio_make_private_menu"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_elio_trial_menu",
+      "episode": 7,
+      "title": {
+        "ru": "Не запасной вариант",
+        "en": "Not a Second Choice"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "Если я уеду, я хочу увезти не только свои рецепты. Я хочу оставить здесь способ работать, который не держится на моём героизме."
+          },
+          {
+            "speaker": "nika",
+            "text": "И не на моём бесплатном спасательстве."
+          },
+          {
+            "speaker": "elio",
+            "text": "Согласен. Ты не запасной план и не доказательство, что я могу совместить всё."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда разделим меню так, чтобы было видно, кто за что отвечает."
+          },
+          {
+            "speaker": "elio",
+            "text": "И если блюдо провалится?"
+          },
+          {
+            "speaker": "nika",
+            "text": "Мы назовём провал блюдом, которое не вошло в меню. Не человеком, который его предложил."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "If I leave, I do not want to take only my recipes. I want to leave a way of working that does not depend on my heroics."
+          },
+          {
+            "speaker": "nika",
+            "text": "And not on my unpaid rescue work."
+          },
+          {
+            "speaker": "elio",
+            "text": "Agreed. You are not a second choice or proof that I can combine everything."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then divide the menu so it is clear who is responsible for what."
+          },
+          {
+            "speaker": "elio",
+            "text": "And if a dish fails?"
+          },
+          {
+            "speaker": "nika",
+            "text": "We will call it a dish that did not make the menu. Not a person who suggested it."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_elio_share_menu_credit",
+          "label": {
+            "ru": "Оставить команде авторство",
+            "en": "Give the team authorship"
+          },
+          "to": "ep7_elio_future_talk",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "budgetPlan": "mixed",
+            "staffProtection": "requested",
+            "trustElio": 4,
+            "lastChoice": "ep7_elio_share_menu_credit"
+          }
+        },
+        {
+          "id": "ep7_elio_take_all_credit",
+          "label": {
+            "ru": "Оставить авторство за Элио",
+            "en": "Keep the authorship with Elio"
+          },
+          "to": "ep7_elio_future_talk",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "budgetPlan": "events",
+            "trustElio": 2,
+            "lastChoice": "ep7_elio_take_all_credit"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_elio_future_talk",
+      "episode": 7,
+      "title": {
+        "ru": "Две кухни, один календарь",
+        "en": "Two Kitchens, One Calendar"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "Я не могу обещать, что ресторан будет в соседнем здании. Могу обещать, что назову даты, расходы и то, что не умею совмещать."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я не обещаю ехать за тобой. И не обязана превращать отказ в доказательство, что мне всё равно."
+          },
+          {
+            "speaker": "elio",
+            "text": "Да. Отказ может быть просто границей, а не приговором."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда выбери план, который не требует от нас обоих стать удобнее, чем мы есть."
+          },
+          {
+            "speaker": null,
+            "text": "Впервые Элио не спрятал страх за шуткой. Он оставил его на столе рядом с календарём и сметой."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "I cannot promise the restaurant will be next door. I can promise to name the dates, the costs and what I cannot combine."
+          },
+          {
+            "speaker": "nika",
+            "text": "I am not promising to follow you. And I do not have to turn refusal into proof that I do not care."
+          },
+          {
+            "speaker": "elio",
+            "text": "Right. A no can be a boundary, not a sentence."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then choose a plan that does not require either of us to become more convenient than we are."
+          },
+          {
+            "speaker": null,
+            "text": "For once, Elio did not hide fear behind a joke. He left it on the table beside the calendar and the budget."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_elio_build_hybrid_plan",
+          "label": {
+            "ru": "Собрать гибридный график",
+            "en": "Build a hybrid schedule"
+          },
+          "to": "ep7_elio_wrap",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioClarity": "discussed",
+            "elioCommitment": "hybrid-plan",
+            "elioCareerChoice": "hybrid-plan",
+            "trustElio": 4,
+            "relationshipElio": 3,
+            "lastChoice": "ep7_elio_build_hybrid_plan"
+          }
+        },
+        {
+          "id": "ep7_elio_leave_without_plan",
+          "label": {
+            "ru": "Не обещать ничего до отъезда",
+            "en": "Leave without a plan"
+          },
+          "to": "ep7_elio_wrap",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioClarity": "discussed",
+            "elioCommitment": "unplanned-departure",
+            "elioCareerChoice": "unplanned-departure",
+            "trustElio": 2,
+            "relationshipElio": 1,
+            "lastChoice": "ep7_elio_leave_without_plan"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_elio_wrap",
+      "episode": 7,
+      "title": {
+        "ru": "Название без обещания",
+        "en": "A Name Without a Promise"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "Я запишу план на одну страницу. Если он развалится, мы будем знать, какая часть была моей, а какая — общей."
+          },
+          {
+            "speaker": "nika",
+            "text": "Это взрослее, чем обещание, что расстояния не будет."
+          },
+          {
+            "speaker": "elio",
+            "text": "Я всё ещё хочу, чтобы однажды у нас был стол на двоих. Но сначала у каждого должен быть свой рабочий стол."
+          },
+          {
+            "speaker": null,
+            "text": "На листе осталось название ресторана, дата первого теста и место для второго календаря. Ника не стала приложением к мечте."
+          },
+          {
+            "speaker": "nika",
+            "text": "Проверим план, когда появятся факты. Не раньше и не вместо них."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "I will put the plan on one page. If it falls apart, we will know which part was mine and which part was shared."
+          },
+          {
+            "speaker": "nika",
+            "text": "That is more grown-up than promising there will be no distance."
+          },
+          {
+            "speaker": "elio",
+            "text": "I still want us to have a table for two someday. But first, each of us needs a worktable of our own."
+          },
+          {
+            "speaker": null,
+            "text": "The sheet held the restaurant's name, the first test date and room for a second calendar. Nika did not become an accessory to the dream."
+          },
+          {
+            "speaker": "nika",
+            "text": "We will test the plan when there are facts. Not before them and not instead of them."
+          }
+        ]
+      },
+      "next": "ep7_deadline"
+    },
+    {
+      "id": "ep7_independent_portfolio",
+      "episode": 7,
+      "title": {
+        "ru": "Собственное портфолио",
+        "en": "Her Own Portfolio"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "В комнате для совещаний Ника разложила фотографии свадебной площадки, смету сервиса и план вечера для внешнего клиента."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Ты собираешь не резюме о том, как выжила. Ты собираешь доказательство того, что умеешь делать."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я не хочу, чтобы моя независимость стала красивым словом для одиночества."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Тогда включи в портфолио тех, кто держал работу вместе с тобой. Это не уменьшит твоё имя."
+          },
+          {
+            "speaker": "nika",
+            "text": "И первый клиент не должен покупать мою благодарность отелю."
+          },
+          {
+            "speaker": null,
+            "text": "На доске появился первый внешний запрос — маленький, срочный и достаточно настоящий, чтобы от него нельзя было спрятаться за романтикой."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "In the meeting room, Nika spread out photos of the wedding venue, the service budget and an evening plan for an outside client."
+          },
+          {
+            "speaker": "giulia",
+            "text": "You are not building a resume about surviving. You are building proof that you can make things."
+          },
+          {
+            "speaker": "nika",
+            "text": "I do not want independence to become a pretty word for loneliness."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Then put the people who held the work with you in the portfolio. That will not make your name smaller."
+          },
+          {
+            "speaker": "nika",
+            "text": "And the first client must not be buying my gratitude to the hotel."
+          },
+          {
+            "speaker": null,
+            "text": "A first outside request appeared on the board — small, urgent and real enough that romance could not hide her from it."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_independent_quote_client",
+          "label": {
+            "ru": "Назвать честную цену",
+            "en": "Name a fair price"
+          },
+          "to": "ep7_independent_client",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "nikaCareerPlan": "portfolio",
+            "lastChoice": "ep7_independent_quote_client"
+          }
+        },
+        {
+          "id": "ep7_independent_take_any_fee",
+          "label": {
+            "ru": "Взять заказ любой ценой",
+            "en": "Take the job at any price"
+          },
+          "to": "ep7_independent_client",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "nikaCareerPlan": "portfolio",
+            "lastChoice": "ep7_independent_take_any_fee"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_independent_client",
+      "episode": 7,
+      "title": {
+        "ru": "Первый внешний клиент",
+        "en": "The First Outside Client"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "nika",
+            "text": "Срок — три дня. Бюджет меньше, чем я рассчитывала, но задача ясная: собрать вечер так, чтобы люди не почувствовали экономию как унижение."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Ты можешь снизить цену. Только не называй это помощью, если это работа."
+          },
+          {
+            "speaker": "nika",
+            "text": "Villa Serena тоже может получить пользу, если я покажу, что умею работать вне её стен."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Польза не даёт отелю права на твоё время бесплатно."
+          },
+          {
+            "speaker": null,
+            "text": "Ника открыла таблицу расходов. В ней впервые было место для её гонорара — не в конце, если что-то останется, а в начале."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "nika",
+            "text": "The deadline is three days. The budget is smaller than I expected, but the task is clear: build an evening where people do not experience saving money as humiliation."
+          },
+          {
+            "speaker": "giulia",
+            "text": "You can lower your price. Just do not call it help if it is work."
+          },
+          {
+            "speaker": "nika",
+            "text": "Villa Serena can benefit too if I show that I can work outside its walls."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Benefit does not give the hotel the right to your time for free."
+          },
+          {
+            "speaker": null,
+            "text": "Nika opened the cost sheet. For the first time, it made room for her fee — not at the end if anything remained, but at the beginning."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_independent_hold_fair_rate",
+          "label": {
+            "ru": "Удержать честную ставку",
+            "en": "Hold the fair rate"
+          },
+          "to": "ep7_independent_team",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "client-tested",
+            "alternativeBudget": "draft",
+            "budgetPlan": "partnerships",
+            "fundingEvidence": 3,
+            "lastChoice": "ep7_independent_hold_fair_rate"
+          }
+        },
+        {
+          "id": "ep7_independent_discount_to_save_villa",
+          "label": {
+            "ru": "Сделать скидку ради Villa Serena",
+            "en": "Discount it to save Villa Serena"
+          },
+          "to": "ep7_independent_team",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "client-tested",
+            "alternativeBudget": "underfunded",
+            "budgetPlan": "events",
+            "fundingEvidence": 2,
+            "lastChoice": "ep7_independent_discount_to_save_villa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_independent_team",
+      "episode": 7,
+      "title": {
+        "ru": "Не в одиночку",
+        "en": "Not Alone"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "giulia",
+            "text": "Внешний заказ получился. Но твой следующий риск — решить, что теперь всё надо держать одной рукой."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я умею справляться одна. Не всегда умею понять, когда это уже не сила, а привычка."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Тогда откажись от идеи, что независимость должна исключать помощь."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я могу попросить команду о работе. Не могу попросить её стать декорацией для моей новой жизни."
+          },
+          {
+            "speaker": "giulia",
+            "text": "И не нужно. Мы можем сказать «нет» и остаться твоими коллегами."
+          },
+          {
+            "speaker": null,
+            "text": "Отказ не стал наказанием. Он просто обозначил границу между благодарностью и партнёрством."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "giulia",
+            "text": "The outside job worked. But your next risk is deciding that you must now hold everything with one hand."
+          },
+          {
+            "speaker": "nika",
+            "text": "I know how to manage alone. I do not always know when that is no longer strength but habit."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Then let go of the idea that independence must exclude help."
+          },
+          {
+            "speaker": "nika",
+            "text": "I can ask the team for work. I cannot ask them to become scenery for my new life."
+          },
+          {
+            "speaker": "giulia",
+            "text": "You do not have to. We can say no and remain your colleagues."
+          },
+          {
+            "speaker": null,
+            "text": "Refusal did not become punishment. It simply marked the boundary between gratitude and partnership."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep7_independent_share_credit",
+          "label": {
+            "ru": "Разделить авторство и защитить команду",
+            "en": "Share authorship and protect the team"
+          },
+          "to": "ep7_independent_wrap",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "self-authored",
+            "staffProtection": "secured",
+            "staffTrust": 5,
+            "lastChoice": "ep7_independent_share_credit"
+          }
+        },
+        {
+          "id": "ep7_independent_do_alone",
+          "label": {
+            "ru": "Оставить заказ только за собой",
+            "en": "Keep the job to herself"
+          },
+          "to": "ep7_independent_wrap",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "self-authored",
+            "staffProtection": "requested",
+            "staffTrust": 2,
+            "lastChoice": "ep7_independent_do_alone"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep7_independent_wrap",
+      "episode": 7,
+      "title": {
+        "ru": "Имя на первой странице",
+        "en": "Her Name on the First Page"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "nika",
+            "text": "Я не строю доказательство, что мне больше никто не нужен. Я строю работу, в которой могу выбирать, кто мне нужен и на каких условиях."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Это звучит менее эффектно, чем одиночный побег. Поэтому, скорее всего, это правда."
+          },
+          {
+            "speaker": "nika",
+            "text": "Клиент заплатит за работу. Команда получит имя и защиту. Villa Serena получит данные, а не мою жертвенность."
+          },
+          {
+            "speaker": null,
+            "text": "В портфолио появилась первая страница без чужой фамилии в заголовке. Это был не финал, а начало карьеры, которую можно продолжить после лета."
+          },
+          {
+            "speaker": "nika",
+            "text": "Дальше я буду выбирать не между одиночеством и спасением. Я буду выбирать условия."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "nika",
+            "text": "I am not building proof that I need no one. I am building work where I can choose who I need and on what terms."
+          },
+          {
+            "speaker": "giulia",
+            "text": "That sounds less dramatic than a solo escape. Which is probably why it is true."
+          },
+          {
+            "speaker": "nika",
+            "text": "The client will pay for the work. The team will get credit and protection. Villa Serena will get data, not my self-sacrifice."
+          },
+          {
+            "speaker": null,
+            "text": "The portfolio gained a first page without someone else's surname in its title. It was not an ending, but a career she could continue after summer."
+          },
+          {
+            "speaker": "nika",
+            "text": "From here, I will not choose between loneliness and rescue. I will choose the terms."
+          }
+        ]
+      },
+      "next": "ep7_deadline"
+    },
+    {
+      "id": "ep7_deadline",
+      "episode": 7,
+      "title": {
+        "ru": "Двадцать дней",
+        "en": "Twenty Days"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "К вечеру дата ответа Aurea стала частью каждого разговора. Через двадцать дней Бьянка ждала не настроения, а решения."
+          },
+          {
+            "speaker": "bianca",
+            "text": "Я могу продлить обсуждение только там, где вижу проверяемый план. Романтическая ясность не заменяет бизнес-доказательства."
+          },
+          {
+            "speaker": "nika",
+            "text": "И бизнес-доказательства не дают никому права ускорять мои личные решения."
+          },
+          {
+            "speaker": "bianca",
+            "text": "Согласна. Но календарь всё равно идёт."
+          },
+          {
+            "speaker": null,
+            "text": "У Ники теперь были первые версии четырёх вещей: плана, границы, профессионального риска и будущего, которое ещё не стало финалом."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "By evening, Aurea's response date had entered every conversation. In twenty days, Bianca wanted a decision, not a mood."
+          },
+          {
+            "speaker": "bianca",
+            "text": "I can extend a discussion only where I see a verifiable plan. Romantic clarity does not replace business evidence."
+          },
+          {
+            "speaker": "nika",
+            "text": "And business evidence does not give anyone the right to rush my personal decisions."
+          },
+          {
+            "speaker": "bianca",
+            "text": "Agreed. But the calendar still moves."
+          },
+          {
+            "speaker": null,
+            "text": "Nika now had first versions of four things: a plan, a boundary, a professional risk and a future that was not yet an ending."
+          }
+        ]
+      },
+      "next": "ep7_transition"
+    },
+    {
+      "id": "ep7_transition",
+      "episode": 7,
+      "title": {
+        "ru": "Следующий разговор",
+        "en": "The Next Conversation"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "Ночь не закрыла ни один вопрос. Она только сделала невозможным притворство, что выбранное направление уже является ответом."
+          },
+          {
+            "speaker": "nika",
+            "text": "Дальше — не финал. Дальше проверка: что мы сделаем, когда времени станет меньше, а цена ошибки — выше?"
+          },
+          {
+            "speaker": null,
+            "text": "До юбилея Villa Serena оставались недели. EP8 начинался с полномочий, карьеры и бюджета, а не с готового обещания."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "The night closed no question. It only made it impossible to pretend that a chosen direction was already an answer."
+          },
+          {
+            "speaker": "nika",
+            "text": "The next step is not an ending. It is a test: what will we do when time is shorter and the cost of being wrong is higher?"
+          },
+          {
+            "speaker": null,
+            "text": "Villa Serena's anniversary was weeks away. EP8 would begin with authority, careers and the budget, not a finished promise."
+          }
+        ]
+      },
       "ending": true
     }
   ],
@@ -8603,6 +10372,10 @@
     {
       "episode": 6,
       "start": "ep6_document_found"
+    },
+    {
+      "episode": 7,
+      "start": "ep7_entry"
     }
   ]
 }

@@ -15,6 +15,7 @@ import {
   migrateSave,
   serializeSave
 } from '../../src/narrative/save.mjs';
+import { checkNarrativeGame } from '../../tools/narrative/narrative-game-validator.mjs';
 
 const graph = JSON.parse(fs.readFileSync(new URL('../../narrative/graph.json', import.meta.url), 'utf8'));
 
@@ -102,4 +103,12 @@ test('known save version migrates and future or corrupt saves fail closed', () =
   assert.equal(upgraded.history.length, 1);
   assert.throws(() => migrateSave({ schemaVersion: CURRENT_SAVE_VERSION + 1 }), /future save version/i);
   assert.equal(deserializeSave('{not json', graph), null);
+});
+
+test('narrative validator reports a bounded state-space stop without expanding invalid path errors', () => {
+  const report = checkNarrativeGame(graph, { schemaVersion: 1, samples: [] }, undefined, { maxStates: 1 });
+  assert.equal(report.status, 'BLOCKED_NARRATIVE_GAME');
+  assert.deepEqual(report.errors, [{ code: 'STATE_SPACE_LIMIT', scope: 'maxStates:1' }]);
+  assert.equal(report.coverage.visitedStates, 1);
+  assert.match(report.disclaimer, /no PASS is claimed/i);
 });

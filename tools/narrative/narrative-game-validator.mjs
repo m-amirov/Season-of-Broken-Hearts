@@ -88,10 +88,11 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, o
   if(errors.length)return {status:'BLOCKED_NARRATIVE_GAME',errors,warnings};
   const queue=[{id:model.start,state:initial}], nodes=new Map(), byScene=new Map(), visitedChoiceIds=new Set();
   const nodeKey=(id,state)=>id+':'+stable(state);
+  let stateSpaceLimited = false;
   while(queue.length){
     const q=queue.shift(),k=nodeKey(q.id,q.state);
     if(nodes.has(k))continue;
-    if(nodes.size>=maxStates){fail('STATE_SPACE_LIMIT',`maxStates:${maxStates}`);break;}
+    if(nodes.size>=maxStates){fail('STATE_SPACE_LIMIT',`maxStates:${maxStates}`);stateSpaceLimited=true;break;}
     const scene=scenes.get(q.id), edges=[];
     nodes.set(k,{id:q.id,state:q.state,edges,ending:scene.ending===true});
     if(!byScene.has(q.id))byScene.set(q.id,[]);
@@ -112,6 +113,15 @@ export function checkNarrativeGame(model, saves, storyPromiseLedger=undefined, o
       fingerprints.set(fp,c.id);
     }
     if(!edges.length)fail('NO_AVAILABLE_TRANSITION',k);
+  }
+  if (stateSpaceLimited) {
+    return {
+      status: 'BLOCKED_NARRATIVE_GAME',
+      errors,
+      warnings,
+      coverage: { declaredScenes: scenes.size, reachedScenes: byScene.size, visitedStates: nodes.size, declaredEndings: [...scenes.values()].filter(s => s.ending === true).length, reachedEndings: [...scenes.values()].filter(s => s.ending === true && byScene.has(s.id)).length, saveFixtures: saves?.samples?.length ?? 0 },
+      disclaimer: 'State-space limit reached before complete graph and promise validation; no PASS is claimed.'
+    };
   }
   const finishing=new Set([...nodes].filter(([,n])=>n.ending).map(([k])=>k));
   const backwards=new Map();

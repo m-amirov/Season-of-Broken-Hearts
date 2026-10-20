@@ -123,6 +123,23 @@ early route lock. EP6 must still present all four routes explicitly.
 озвучено как установленный факт. Проверка, раскрытие и сохранение в тайне
 разведены отдельными выборами.
 
+## EP7 executable route families
+
+EP7 starts only after the EP6 lock and keeps the selected route fixed:
+
+```text
+ep7_entry
+  ├─ matteo      → ep7_matteo_market → ep7_matteo_ledger → ep7_matteo_boundary → ep7_matteo_wrap
+  ├─ leo         → ep7_leo_archive → ep7_leo_records → ep7_leo_accountability → ep7_leo_wrap
+  ├─ elio        → ep7_elio_night_kitchen → ep7_elio_trial_menu → ep7_elio_future_talk → ep7_elio_wrap
+  └─ independent → ep7_independent_portfolio → ep7_independent_client → ep7_independent_team → ep7_independent_wrap
+                                      \___________________________→ ep7_deadline → ep7_transition
+```
+
+Each route has an initiative, a boundary/refusal accepted without punishment,
+and a distinct career consequence. The transition records no relationship
+ending and is intentionally ready for EP8 to attach the next episode start.
+
 ## Full-season topology (planned)
 
 - EP1–5: общее ядро, знакомство и романтические предпочтения.
@@ -146,8 +163,9 @@ early route lock. EP6 must still present all four routes explicitly.
 | EP5 knowledge | `elioOfferKnown` | только `ep5_elio_offer`, после честного предложения ресторана |
 | EP4–EP5 choice cursor | `lastChoice` | records the latest explicit choice; it does not select a route |
 
-## Planned route locks
+## Route-lock implementation
 
-Подробные guards и reachability для route-lock будут добавлены вместе с
-эпизодом 6. В EP1 отсутствует декоративный ранний route-lock и отсутствуют
-ложные концовки.
+Подробные guards и reachability для route-lock реализованы в EP6: до
+`ep6_route_choice` legal route только `none`, после выбора route фиксируется
+вместе с `routeLocked=true` и `routeLockSource=ep6_route_choice`. В EP1–EP5
+отсутствуют декоративный ранний route-lock и ложные концовки.

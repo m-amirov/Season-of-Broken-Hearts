@@ -69,6 +69,10 @@ export function checkStoryPromises(model,ledger,{nodes,byScene}){
        if(visited.has(fingerprint))continue;
        visited.add(fingerprint);
        const n=nodes.get(key);
+       if (!n) {
+        missingOnEnding=true;
+        continue;
+       }
        const satisfied=seen||(n.id===payoff.sceneId&&match(n.state,payoff.requires));
        if(satisfied)foundPayoff=true;
        if(n.ending&&!satisfied)missingOnEnding=true;
