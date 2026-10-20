@@ -691,7 +691,8 @@ test('EP9 stages the anniversary forum across all locked routes without resolvin
     assert.equal(engine.snapshot().state.routeLocked, true);
     advanceToEpisodeEnd(engine);
     assert.equal(engine.snapshot().cursor.sceneId, 'ep9_transition');
-    assert.equal(engine.currentScene().ending, true);
+    assert.equal(engine.currentScene().episodeEnd, true);
+    assert.equal(engine.currentScene().ending, undefined);
     assert.equal(engine.currentScene().endingId, undefined);
     assert.equal(engine.snapshot().state.route, routeCase.route);
   }

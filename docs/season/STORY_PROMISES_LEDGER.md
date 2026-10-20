@@ -9,9 +9,9 @@ production data and has runtime evidence.
 |---|---|---|---|---|---|
 | `ep1-villa-crisis` | `ep1_hotel_crisis` / `ep1_hook` | EP4 cut list | EP6 terms, EP9 forum, EP10 hotel result | all | authored + planned extension |
 | `ep1-leo-return` | `ep1_leo_entrance` | EP3 old photo | EP3 account and EP10 Leo ending | Leo / non-Leo acknowledgement | authored + planned extension |
-| `matteo-negotiation-documents` | `ep2_fake_terms` and explicit day-9 agreement closure, `ep6_terms_read` | EP4 partial disclosure | EP9 public forum and EP10 business result | all | authored + planned extension |
-| `elio-restaurant-departure` | `ep5_elio_offer` | EP7 offer, EP8 future plan | EP10 Elio ending / route-neutral acknowledgement | Elio / all routes hear only if disclosed | planned |
-| `season-hotel-outcome` | `ep1_hotel_crisis` | EP4 cuts, EP8 budget gap | `ep10_hotel-resolution` | all | planned |
+| `matteo-negotiation-documents` | `ep2_fake_terms` and explicit day-9 agreement closure, `ep6_terms_read` | EP4 partial disclosure | EP9 public forum and `ep10_hotel_resolution` | all | authored |
+| `elio-restaurant-departure` | `ep5_elio_offer` | EP7 offer, EP8 future plan | `ep10_entry` acknowledgement plus route-specific EP10 decision | Elio / all routes hear only if disclosed | authored |
+| `season-hotel-outcome` | `ep1_hotel_crisis` | EP4 cuts, EP8 budget gap | `ep10_hotel_resolver` | all | authored |
 | `bianca-not-villain` | `ep2_bianca_arrives` and professional/pushback responses | EP6 terms, EP9 forum | Bianca states the business case and accepts/executes result | all | authored + planned extension |
 | `leo-aurea-link` | `ep3_aurea_drawing` plus `ep3_document_check` | EP6 role | EP8 career choice and EP10 Leo outcome | Leo / disclosed external facts | authored + planned extension |
 | `matteo-control-cost` | EP2 agreement, day-9 closure and EP4 hidden list | EP7 open ledger, EP8 delegation | `matteo-hope` or `matteo-goodbye` names the cost | Matteo | authored + planned extension |

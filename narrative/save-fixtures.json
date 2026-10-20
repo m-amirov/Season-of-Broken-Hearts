@@ -59,7 +59,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -122,7 +126,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -185,7 +193,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 6
@@ -248,7 +260,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -311,7 +327,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 11
@@ -374,7 +394,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -437,7 +461,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -500,7 +528,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -563,7 +595,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -626,7 +662,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -689,7 +729,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 6
@@ -752,7 +796,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -815,7 +863,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 11
@@ -878,7 +930,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -941,7 +997,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -1004,7 +1064,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1067,7 +1131,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1130,7 +1198,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1193,7 +1265,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 11
@@ -1256,7 +1332,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1319,7 +1399,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 7
@@ -1382,7 +1466,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0
@@ -1445,7 +1533,11 @@
         "elioCareerChoice": "none",
         "elioClarity": "none",
         "budgetGapKnown": false,
-        "publicDisclosure": "none"
+        "publicDisclosure": "none",
+        "endingId": "unresolved",
+        "hotelOutcome": "unresolved",
+        "ep10FinalAction": "none",
+        "publicTruthKnown": false
       },
       "locale": "ru",
       "dialogueIndex": 0

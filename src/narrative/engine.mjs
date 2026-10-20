@@ -1,4 +1,5 @@
 import { getLocalizedText } from './localization.mjs';
+import { resolveSceneState } from './final-resolvers.mjs';
 import { deserializeSave, isConsistentRouteState, serializeSave } from './save.mjs';
 import { applyEffects, canEnter, createInitialState, getDialogueLines, validateGraph } from './state.mjs';
 
@@ -123,6 +124,11 @@ export class NarrativeEngine {
     });
   }
 
+  #enterScene(sceneId) {
+    this.#cursor = { sceneId, dialogueIndex: 0 };
+    this.#state = resolveSceneState(this.#state, this.currentScene());
+  }
+
   #routeTransitionAllowed(effects) {
     if (!Object.prototype.hasOwnProperty.call(this.#state, 'routeLocked')) return true;
     const nextRoute = Object.prototype.hasOwnProperty.call(effects ?? {}, 'route') ? effects.route : this.#state.route;
@@ -149,7 +155,7 @@ export class NarrativeEngine {
       if (scene.choices) return { ok: false, reason: 'choice-required' };
       if (scene.ending || scene.episodeEnd) return { ok: false, reason: 'episode-complete' };
       this.#recordSnapshot();
-      this.#cursor = { sceneId: scene.next, dialogueIndex: 0 };
+      this.#enterScene(scene.next);
       this.#recordForwardProgress();
       return { ok: true, type: 'scene' };
     });
@@ -164,7 +170,7 @@ export class NarrativeEngine {
       const nextScene = this.#graph.scenes.find(scene => scene.id === nextEpisodeStart);
       if (!nextScene) return { ok: false, reason: 'missing-episode-start' };
       this.#recordSnapshot();
-      this.#cursor = { sceneId: nextEpisodeStart, dialogueIndex: 0 };
+      this.#enterScene(nextEpisodeStart);
       this.#recordForwardProgress();
       return { ok: true, type: 'episode', episode: nextScene.episode ?? 1 };
     });
@@ -179,7 +185,7 @@ export class NarrativeEngine {
       if (!isConsistentRouteState(nextState)) return { ok: false, reason: 'inconsistent-route-lock' };
       this.#recordSnapshot();
       this.#state = nextState;
-      this.#cursor = { sceneId: choice.to, dialogueIndex: 0 };
+      this.#enterScene(choice.to);
       this.#recordForwardProgress();
       return { ok: true, type: 'choice', choiceId };
     });
@@ -234,7 +240,7 @@ export class NarrativeEngine {
     if (!restored) return false;
     this.#locale = restored.locale;
     this.#cursor = restored.cursor;
-    this.#state = restored.state;
+    this.#state = resolveSceneState(restored.state, this.currentScene());
     this.#history = restored.history;
     this.#readerProgress = restored.readerProgress;
     return true;

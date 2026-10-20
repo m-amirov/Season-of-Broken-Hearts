@@ -15,23 +15,40 @@
     },
     {
       "id": "matteo-negotiation-documents",
-      "status": "planned",
+      "status": "authored",
       "setup": {
-        "sceneId": "ep4_cut_list",
-        "evidence": "Staff-cut risk is sourced from the list or direct disclosure before EP6 terms are read."
+        "sceneId": "ep2_fake_terms",
+        "evidence": "The voluntary agreement introduces the documents and the later business conflict."
+      },
+      "payoff": {
+        "sceneId": "ep10_hotel_resolution",
+        "evidence": "Bianca, Matteo and Nika place the disclosed terms beside the final ownership decision."
       }
     },
     {
       "id": "elio-restaurant-departure",
-      "status": "planned",
+      "status": "authored",
       "setup": {
         "sceneId": "ep5_elio_offer",
         "evidence": "Elio's restaurant offer is explicitly disclosed before any route choice."
+      },
+      "payoff": {
+        "sceneId": "ep10_entry",
+        "requires": { "elioOfferKnown": true },
+        "evidence": "The final-week entry acknowledges the still-active restaurant offer before the route-specific decision."
       }
     },
     {
       "id": "season-hotel-outcome",
-      "status": "planned"
+      "status": "authored",
+      "setup": {
+        "sceneId": "ep1_hotel_crisis",
+        "evidence": "Villa Serena's financial crisis is the first authored business promise."
+      },
+      "payoff": {
+        "sceneId": "ep10_hotel_resolver",
+        "evidence": "The deterministic resolver records independence, limited investment or sale from the accumulated business state."
+      }
     },
     {
       "id": "anniversary-public-truth",

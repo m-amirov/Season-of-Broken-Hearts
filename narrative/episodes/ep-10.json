@@ -1,0 +1,296 @@
+{
+  "episode": 10,
+  "start": "ep10_entry",
+  "stateSchema": {
+    "endingId": {
+      "type": "string",
+      "values": [
+        "unresolved",
+        "matteo-hope",
+        "matteo-goodbye",
+        "leo-second-chance",
+        "leo-echo",
+        "elio-table-for-two",
+        "elio-separate-kitchens",
+        "nika-own-way"
+      ]
+    },
+    "hotelOutcome": {
+      "type": "string",
+      "values": ["unresolved", "independence", "limited-investment", "sale"]
+    },
+    "ep10FinalAction": {
+      "type": "string",
+      "values": [
+        "none",
+        "matteo-shared-plan",
+        "matteo-boundary",
+        "leo-verified-step",
+        "leo-close-door",
+        "elio-two-kitchens",
+        "elio-release",
+        "independent-portfolio"
+      ]
+    },
+    "publicTruthKnown": { "type": "boolean" }
+  },
+  "stateSchemaExtensions": {
+    "investorTerms": ["limited-investment", "sale-imminent"],
+    "lastChoice": [
+      "ep10_enter_matteo",
+      "ep10_enter_leo",
+      "ep10_enter_elio",
+      "ep10_enter_independent",
+      "ep10_matteo_shared_plan",
+      "ep10_matteo_boundary",
+      "ep10_leo_verified_step",
+      "ep10_leo_close_door",
+      "ep10_elio_two_kitchens",
+      "ep10_elio_release",
+      "ep10_independent_portfolio",
+      "ep10_independent_portfolio_solo",
+      "ep10_independence_staff4_funding5",
+      "ep10_independence_staff5_funding5",
+      "ep10_limited_staff3",
+      "ep10_limited_staff4",
+      "ep10_limited_staff5",
+      "ep10_accept_sale"
+    ]
+  },
+  "initialState": {
+    "endingId": "unresolved",
+    "hotelOutcome": "unresolved",
+    "ep10FinalAction": "none",
+    "publicTruthKnown": false
+  },
+  "scenes": [
+    {
+      "id": "ep10_entry",
+      "episode": 10,
+      "title": { "ru": "После лета", "en": "After the Summer" },
+      "dialogue": {
+        "ru": [
+          { "speaker": null, "text": "На шестьдесят пятом дне Villa Serena снова пахла кофе и мокрым камнем. Праздник закончился, а последствия остались на столах, в расписаниях и в голосах команды." },
+          { "speaker": "bianca", "text": "Сегодня мы фиксируем не красивую версию вечера, а ту, которую можно проверить: что было сказано, кто отвечает и какие условия вы принимаете." },
+          { "speaker": "nika", "text": "Я не буду прятать непроверенное за громким словом «правда». Но и проверенное не отдам обратно в тишину.", "when": { "publicTruthKnown": true } },
+          { "speaker": "nika", "text": "Я перепроверю публичную версию за закрытым столом. Если она не выдержит документов, я назову это сразу.", "when": { "publicTruthKnown": false } },
+          { "speaker": "elio", "text": "Предложение о ресторане всё ещё лежит у меня в сумке. Я больше не называю это шуткой, чтобы не отвечать за расстояние.", "when": { "elioOfferKnown": true } },
+          { "speaker": null, "text": "До отъезда оставалось несколько дней. Сначала Нике предстояло ответить на личный вопрос — поступком, а не обещанием." }
+        ],
+        "en": [
+          { "speaker": null, "text": "On day sixty-five, Villa Serena smelled of coffee and wet stone again. The celebration was over, but its consequences remained in the schedules, the tables and the team's voices." },
+          { "speaker": "bianca", "text": "Today we record not the beautiful version of the night, but the one that can be checked: what was said, who is responsible and which terms you accept." },
+          { "speaker": "nika", "text": "I will not hide what is unverified behind the loud word truth. But I will not hand verified facts back to silence either.", "when": { "publicTruthKnown": true } },
+          { "speaker": "nika", "text": "I will recheck the public version at the closed table. If the documents do not support it, I will say so first.", "when": { "publicTruthKnown": false } },
+          { "speaker": "elio", "text": "The restaurant offer is still in my bag. I no longer call it a joke to avoid answering for the distance.", "when": { "elioOfferKnown": true } },
+          { "speaker": null, "text": "There were only a few days before departure. First Nika had to answer a personal question with an action, not a promise." }
+        ]
+      },
+      "choices": [
+        { "id": "ep10_enter_matteo", "label": { "ru": "Поговорить с Маттео", "en": "Talk to Matteo" }, "to": "ep10_matteo_final", "requires": { "route": "matteo", "routeLocked": true, "routeLockSource": "ep6_route_choice" }, "effects": { "lastChoice": "ep10_enter_matteo" } },
+        { "id": "ep10_enter_leo", "label": { "ru": "Поговорить с Лео", "en": "Talk to Leo" }, "to": "ep10_leo_final", "requires": { "route": "leo", "routeLocked": true, "routeLockSource": "ep6_route_choice" }, "effects": { "lastChoice": "ep10_enter_leo" } },
+        { "id": "ep10_enter_elio", "label": { "ru": "Поговорить с Элио", "en": "Talk to Elio" }, "to": "ep10_elio_final", "requires": { "route": "elio", "routeLocked": true, "routeLockSource": "ep6_route_choice" }, "effects": { "lastChoice": "ep10_enter_elio" } },
+        { "id": "ep10_enter_independent", "label": { "ru": "Собрать свой следующий шаг", "en": "Build her next step" }, "to": "ep10_independent_final", "requires": { "route": "independent", "routeLocked": true, "routeLockSource": "ep6_route_choice" }, "effects": { "lastChoice": "ep10_enter_independent" } }
+      ]
+    },
+    {
+      "id": "ep10_matteo_final",
+      "episode": 10,
+      "title": { "ru": "Не быть условием", "en": "Not a Condition" },
+      "dialogue": {
+        "ru": [
+          { "speaker": "matteo", "text": "Я подготовил две папки. В одной — новый операционный план, где решения распределены между командой. В другой — привычный список, где я снова отвечаю за всё." },
+          { "speaker": "nika", "text": "И где в этом плане я? Не как человек, который спасает твою фамилию, а как профессионал с собственной работой." },
+          { "speaker": "matteo", "text": "Рядом. Но не под моим контрактом и не в обмен на близость. Если мы останемся вместе, это должно быть отдельным решением." },
+          { "speaker": "nika", "text": "Тогда действие простое: открой книгу решений, подпиши передачу полномочий и выдержи то, что я могу сказать тебе «нет»." }
+        ],
+        "en": [
+          { "speaker": "matteo", "text": "I prepared two folders. One has an operating plan where decisions are shared with the team. The other is the old list where I answer for everything again." },
+          { "speaker": "nika", "text": "And where am I in that plan? Not as the person who saves your family name, but as a professional with work of her own." },
+          { "speaker": "matteo", "text": "Beside me. But not under my contract and not in exchange for closeness. If we stay together, that must be a separate decision." },
+          { "speaker": "nika", "text": "Then the action is simple: open the decision book, sign the transfer of authority and withstand my right to say no." }
+        ]
+      },
+      "choices": [
+        { "id": "ep10_matteo_shared_plan", "label": { "ru": "Подписать общий план без условия о работе", "en": "Sign a shared plan without an employment condition" }, "to": "ep10_relationship_resolution", "requires": { "route": "matteo", "routeLocked": true }, "effects": { "ep10FinalAction": "matteo-shared-plan", "lastChoice": "ep10_matteo_shared_plan" } },
+        { "id": "ep10_matteo_boundary", "label": { "ru": "Разделить чувства и уйти от его контроля", "en": "Separate affection from his control and leave" }, "to": "ep10_relationship_resolution", "requires": { "route": "matteo", "routeLocked": true }, "effects": { "ep10FinalAction": "matteo-boundary", "matteoCommitment": "deferred", "lastChoice": "ep10_matteo_boundary" } }
+      ]
+    },
+    {
+      "id": "ep10_leo_final",
+      "episode": 10,
+      "title": { "ru": "Проверяемое настоящее", "en": "A Present That Can Be Checked" },
+      "dialogue": {
+        "ru": [
+          { "speaker": "leo", "text": "Я отказался от повышения, которое требовало подписать план Aurea без живых голосов Villa Serena. Это не делает меня хорошим автоматически." },
+          { "speaker": "nika", "text": "Нет. Это только оставляет возможность проверить, что ты сделал, когда меня рядом не было." },
+          { "speaker": "leo", "text": "Я передал независимый heritage-план комиссии и оставил в нём имена команды, а не только мою подпись." },
+          { "speaker": "nika", "text": "Тогда я могу выбрать настоящее. Не вернуть восемь лет и не забыть их — выбрать следующий разговор с открытыми глазами." }
+        ],
+        "en": [
+          { "speaker": "leo", "text": "I turned down the promotion that required me to sign Aurea's plan without Villa Serena's living voices. That does not make me good automatically." },
+          { "speaker": "nika", "text": "No. It only leaves something we can check after I am no longer beside you." },
+          { "speaker": "leo", "text": "I submitted an independent heritage plan to the commission and left the team's names in it, not only my signature." },
+          { "speaker": "nika", "text": "Then I can choose the present. Not restore eight years and not erase them — choose the next conversation with my eyes open." }
+        ]
+      },
+      "choices": [
+        { "id": "ep10_leo_verified_step", "label": { "ru": "Дать настоящему шанс после проверки", "en": "Give the present a chance after the check" }, "to": "ep10_relationship_resolution", "requires": { "route": "leo", "routeLocked": true }, "effects": { "ep10FinalAction": "leo-verified-step", "lastChoice": "ep10_leo_verified_step" } },
+        { "id": "ep10_leo_close_door", "label": { "ru": "Не возвращаться в прежние отношения", "en": "Do not return to the old relationship" }, "to": "ep10_relationship_resolution", "requires": { "route": "leo", "routeLocked": true }, "effects": { "ep10FinalAction": "leo-close-door", "lastChoice": "ep10_leo_close_door" } }
+      ]
+    },
+    {
+      "id": "ep10_elio_final",
+      "episode": 10,
+      "title": { "ru": "Две кухни", "en": "Two Kitchens" },
+      "dialogue": {
+        "ru": [
+          { "speaker": "elio", "text": "Я арендовал кухню на три дня в неделю там и оставил два дня здесь. Не потому, что так романтичнее, а потому что это расписание выдерживает деньги и усталость." },
+          { "speaker": "nika", "text": "А моё расписание не становится приложением к твоему?" },
+          { "speaker": "elio", "text": "Нет. Ты берёшь свою работу, я — свою. Мы встречаемся не в пустом обещании, а в двух календарях, которые оба можем открыть." },
+          { "speaker": "nika", "text": "Тогда я выбираю не спасать твою мечту и не просить тебя отказаться от неё. Я выбираю проверить, умеем ли мы жить рядом с двумя амбициями." }
+        ],
+        "en": [
+          { "speaker": "elio", "text": "I rented a kitchen for three days a week there and kept two days here. Not because it is romantic, but because the schedule can survive money and exhaustion." },
+          { "speaker": "nika", "text": "And my schedule does not become an appendix to yours?" },
+          { "speaker": "elio", "text": "No. You keep your work and I keep mine. We meet not inside an empty promise, but in two calendars we can both open." },
+          { "speaker": "nika", "text": "Then I choose neither to save your dream nor ask you to abandon it. I choose to test whether two ambitions can live beside each other." }
+        ]
+      },
+      "choices": [
+        { "id": "ep10_elio_two_kitchens", "label": { "ru": "Составить рабочее расписание для двух кухонь", "en": "Write a workable schedule for two kitchens" }, "to": "ep10_relationship_resolution", "requires": { "route": "elio", "routeLocked": true }, "effects": { "ep10FinalAction": "elio-two-kitchens", "lastChoice": "ep10_elio_two_kitchens" } },
+        { "id": "ep10_elio_release", "label": { "ru": "Отпустить друг друга без обвинений", "en": "Release each other without blame" }, "to": "ep10_relationship_resolution", "requires": { "route": "elio", "routeLocked": true }, "effects": { "ep10FinalAction": "elio-release", "lastChoice": "ep10_elio_release" } }
+      ]
+    },
+    {
+      "id": "ep10_independent_final",
+      "episode": 10,
+      "title": { "ru": "Имя на своей работе", "en": "Her Name on Her Work" },
+      "dialogue": {
+        "ru": [
+          { "speaker": "giulia", "text": "У тебя есть портфолио, список людей, которые могут подтвердить твою работу, и предложение на следующий сезон. Это уже не попытка доказать, что тебе никто не нужен." },
+          { "speaker": "nika", "text": "Я могу взять внешний проект и уехать. Или остаться ещё на один контракт — на своих условиях, с подписью и оплатой, а не из благодарности." },
+          { "speaker": "giulia", "text": "Оба решения — твои. Только не называй одиночество ценой свободы, если на самом деле ты просто устала просить место за столом." },
+          { "speaker": "nika", "text": "Я беру следующий шаг как работу, а не как доказательство после расставания. В моей жизни может быть близость, но она не обязана выдавать мне разрешение." }
+        ],
+        "en": [
+          { "speaker": "giulia", "text": "You have a portfolio, people who can verify the work and an offer for next season. That is no longer an attempt to prove you need nobody." },
+          { "speaker": "nika", "text": "I can take the outside project and leave. Or stay for one more contract on my terms, with a signature and pay, not gratitude." },
+          { "speaker": "giulia", "text": "Both choices are yours. Just do not call loneliness the price of freedom if you are actually tired of asking for a seat at the table." },
+          { "speaker": "nika", "text": "I take the next step as work, not as proof after a breakup. My life may hold closeness, but it does not need permission from it." }
+        ]
+      },
+      "choices": [
+        { "id": "ep10_independent_portfolio", "label": { "ru": "Подписать следующий проект своим именем", "en": "Sign the next project under her own name" }, "to": "ep10_relationship_resolution", "requires": { "route": "independent", "routeLocked": true }, "effects": { "ep10FinalAction": "independent-portfolio", "independentProgress": "self-authored", "nikaCareerPlan": "portfolio", "lastChoice": "ep10_independent_portfolio" } },
+        { "id": "ep10_independent_portfolio_solo", "label": { "ru": "Уйти из Villa Serena в собственный портфель", "en": "Leave Villa Serena for her own portfolio" }, "to": "ep10_relationship_resolution", "requires": { "route": "independent", "routeLocked": true }, "effects": { "ep10FinalAction": "independent-portfolio", "independentProgress": "self-authored", "nikaCareerPlan": "portfolio", "lastChoice": "ep10_independent_portfolio_solo" } }
+      ]
+    },
+    {
+      "id": "ep10_relationship_resolution",
+      "episode": 10,
+      "title": { "ru": "Что остаётся между нами", "en": "What Remains Between Us" },
+      "resolver": "relationship-ending",
+      "dialogue": {
+        "ru": [
+          { "speaker": "nika", "text": "Маттео открывает книгу решений и впервые не ставит мою близость условием работы. Мы выбираем надежду там, где есть переданная ответственность.", "when": { "endingId": "matteo-hope" } },
+          { "speaker": "nika", "text": "Маттео не стал чужим, но его контроль остался сильнее нашего плана. Я ухожу, не превращая любовь в оправдание.", "when": { "endingId": "matteo-goodbye" } },
+          { "speaker": "nika", "text": "Лео принёс проверяемое действие, а не новую версию прошлого. Вторая попытка начинается не с воспоминания, а с сегодняшней ответственности.", "when": { "endingId": "leo-second-chance" } },
+          { "speaker": "nika", "text": "Лео остался важной частью моей истории, но я не повторю тишину. Память может быть правдой и всё равно не быть будущим.", "when": { "endingId": "leo-echo" } },
+          { "speaker": "nika", "text": "Элио и я записываем два расписания и не просим друг друга исчезнуть. За этим столом есть место двум кухням и двум карьерным голосам.", "when": { "endingId": "elio-table-for-two" } },
+          { "speaker": "nika", "text": "Мы признаём, что чувства не заменяют несовместимый план. Расстаться честно — не наказание и не поражение.", "when": { "endingId": "elio-separate-kitchens" } },
+          { "speaker": "nika", "text": "Я не получила независимость в качестве утешительного приза. Я собрала работу, дружбу и следующий шаг, который принадлежит мне.", "when": { "endingId": "nika-own-way" } }
+        ],
+        "en": [
+          { "speaker": "nika", "text": "Matteo opens the decision book and no longer makes closeness a condition of work. We choose hope where responsibility has actually been shared.", "when": { "endingId": "matteo-hope" } },
+          { "speaker": "nika", "text": "Matteo did not become a stranger, but his control stayed stronger than our plan. I leave without turning love into an excuse.", "when": { "endingId": "matteo-goodbye" } },
+          { "speaker": "nika", "text": "Leo brought an action that can be checked, not a new version of the past. A second chance begins with present responsibility, not memory.", "when": { "endingId": "leo-second-chance" } },
+          { "speaker": "nika", "text": "Leo remains important to my history, but I will not repeat the silence. Memory can be true and still not be a future.", "when": { "endingId": "leo-echo" } },
+          { "speaker": "nika", "text": "Elio and I write two schedules without asking either person to disappear. There is room at this table for two kitchens and two careers.", "when": { "endingId": "elio-table-for-two" } },
+          { "speaker": "nika", "text": "We admit that feelings cannot replace an incompatible plan. Releasing each other honestly is neither punishment nor failure.", "when": { "endingId": "elio-separate-kitchens" } },
+          { "speaker": "nika", "text": "I did not receive independence as a consolation prize. I built work, friendship and a next step that belongs to me.", "when": { "endingId": "nika-own-way" } }
+        ]
+      },
+      "next": "ep10_hotel_resolution"
+    },
+    {
+      "id": "ep10_hotel_resolution",
+      "episode": 10,
+      "title": { "ru": "Стол, за которым решают", "en": "The Table Where It Is Decided" },
+      "dialogue": {
+        "ru": [
+          { "speaker": "bianca", "text": "У Villa Serena есть три честных варианта. Продолжить самостоятельно, принять ограниченные инвестиции без передачи контроля или закрыть продажу на условиях, которые уже известны команде." },
+          { "speaker": "matteo", "text": "Я больше не назову любой исход спасением. Если мы оставляем отель семье, это будет потому, что план выдерживает цифры и зарплаты." },
+          { "speaker": "nika", "text": "И ни один из этих исходов не будет наградой за роман. Это решение бизнеса, которое должно быть видно людям, на которых оно влияет." }
+        ],
+        "en": [
+          { "speaker": "bianca", "text": "Villa Serena has three honest options. Continue independently, accept limited investment without surrendering control, or close the sale on terms the team already knows." },
+          { "speaker": "matteo", "text": "I will not call every outcome a rescue anymore. If the hotel stays with the family, it will be because the plan survives the numbers and the payroll." },
+          { "speaker": "nika", "text": "None of these outcomes is a reward for romance. This is a business decision that must remain visible to the people it affects." }
+        ]
+      },
+      "choices": [
+        { "id": "ep10_independence_staff4_funding5", "label": { "ru": "Удержать независимый план", "en": "Keep the independent plan" }, "to": "ep10_hotel_resolver", "requires": { "alternativeBudget": "viable", "staffTrust": 4, "fundingEvidence": 5, "staffProtection": "secured", "publicDisclosure": "full" }, "effects": { "lastChoice": "ep10_independence_staff4_funding5" } },
+        { "id": "ep10_independence_staff5_funding5", "label": { "ru": "Удержать независимый план", "en": "Keep the independent plan" }, "to": "ep10_hotel_resolver", "requires": { "alternativeBudget": "viable", "staffTrust": 5, "fundingEvidence": 5, "staffProtection": "secured", "publicDisclosure": "full" }, "effects": { "lastChoice": "ep10_independence_staff5_funding5" } },
+        { "id": "ep10_limited_staff3", "label": { "ru": "Принять ограниченные инвестиции без передачи контроля", "en": "Accept limited investment without surrendering control" }, "to": "ep10_hotel_resolver", "requires": { "staffTrust": 3, "staffProtection": "secured", "publicDisclosure": "full" }, "effects": { "investorTerms": "limited-investment", "alternativeBudget": "underfunded", "lastChoice": "ep10_limited_staff3" } },
+        { "id": "ep10_limited_staff4", "label": { "ru": "Принять ограниченные инвестиции без передачи контроля", "en": "Accept limited investment without surrendering control" }, "to": "ep10_hotel_resolver", "requires": { "staffTrust": 4, "staffProtection": "secured", "publicDisclosure": "full" }, "effects": { "investorTerms": "limited-investment", "alternativeBudget": "underfunded", "lastChoice": "ep10_limited_staff4" } },
+        { "id": "ep10_limited_staff5", "label": { "ru": "Принять ограниченные инвестиции без передачи контроля", "en": "Accept limited investment without surrendering control" }, "to": "ep10_hotel_resolver", "requires": { "staffTrust": 5, "staffProtection": "secured", "publicDisclosure": "full" }, "effects": { "investorTerms": "limited-investment", "alternativeBudget": "underfunded", "lastChoice": "ep10_limited_staff5" } },
+        { "id": "ep10_accept_sale", "label": { "ru": "Закрыть продажу на раскрытых условиях", "en": "Close the sale on the disclosed terms" }, "to": "ep10_hotel_resolver", "requires": {}, "effects": { "investorTerms": "sale-imminent", "alternativeBudget": "underfunded", "lastChoice": "ep10_accept_sale" } }
+      ]
+    },
+    {
+      "id": "ep10_hotel_resolver",
+      "episode": 10,
+      "title": { "ru": "Исход Villa Serena", "en": "Villa Serena's Outcome" },
+      "resolver": "hotel-outcome",
+      "dialogue": {
+        "ru": [
+          { "speaker": "bianca", "text": "План независимости выдержал цифры, голоса команды и публичные условия. Villa Serena остаётся самостоятельной.", "when": { "hotelOutcome": "independence" } },
+          { "speaker": "bianca", "text": "Ограниченные инвестиции закрывают разрыв, но не получают права переписать отель. Условия и защита команды остаются публичными.", "when": { "hotelOutcome": "limited-investment" } },
+          { "speaker": "bianca", "text": "Продажа закрыта на раскрытых условиях. Это меняет владельца и работу, но не стирает вклад тех, кто держал сезон.", "when": { "hotelOutcome": "sale" } }
+        ],
+        "en": [
+          { "speaker": "bianca", "text": "The independent plan survived the numbers, the team's voices and the public terms. Villa Serena remains independent.", "when": { "hotelOutcome": "independence" } },
+          { "speaker": "bianca", "text": "Limited investment closes the gap without gaining the right to rewrite the hotel. The terms and staff protections remain public.", "when": { "hotelOutcome": "limited-investment" } },
+          { "speaker": "bianca", "text": "The sale closes on the disclosed terms. It changes ownership and work, but it does not erase the people who carried the season.", "when": { "hotelOutcome": "sale" } }
+        ]
+      },
+      "next": "ep10_epilogue"
+    },
+    {
+      "id": "ep10_epilogue",
+      "episode": 10,
+      "title": { "ru": "Через шесть месяцев", "en": "Six Months Later" },
+      "ending": true,
+      "dialogue": {
+        "ru": [
+          { "speaker": null, "text": "Через шесть месяцев лето не стало другим задним числом. Изменилось только то, что Ника теперь знает цену собственному выбору." },
+          { "speaker": "nika", "text": "Мой финал — не одна подпись. Это способ жить после неё: помнить факты, держать границы и возвращаться к людям только там, где есть место для их свободы." },
+          { "speaker": "nika", "text": "Отношения: Маттео — надежда без условия.", "when": { "endingId": "matteo-hope" } },
+          { "speaker": "nika", "text": "Отношения: Маттео — прощание без самоотмены.", "when": { "endingId": "matteo-goodbye" } },
+          { "speaker": "nika", "text": "Отношения: Лео — вторая попытка после действия.", "when": { "endingId": "leo-second-chance" } },
+          { "speaker": "nika", "text": "Отношения: Лео — эхо, которое не становится будущим.", "when": { "endingId": "leo-echo" } },
+          { "speaker": "nika", "text": "Отношения: Элио — стол на двоих и две кухни.", "when": { "endingId": "elio-table-for-two" } },
+          { "speaker": "nika", "text": "Отношения: Элио — отдельные кухни без обвинения.", "when": { "endingId": "elio-separate-kitchens" } },
+          { "speaker": "nika", "text": "Отношения: Ника — собственный путь, не отказ от близости.", "when": { "endingId": "nika-own-way" } },
+          { "speaker": "nika", "text": "Villa Serena: независимость и открытый план.", "when": { "hotelOutcome": "independence" } },
+          { "speaker": "nika", "text": "Villa Serena: ограниченные инвестиции без передачи контроля.", "when": { "hotelOutcome": "limited-investment" } },
+          { "speaker": "nika", "text": "Villa Serena: продажа на условиях, которые команда могла проверить.", "when": { "hotelOutcome": "sale" } }
+        ],
+        "en": [
+          { "speaker": null, "text": "Six months later, the summer had not changed retroactively. What changed was that Nika knew the price of her own choice." },
+          { "speaker": "nika", "text": "My ending is not one signature. It is how I live after it: remember the facts, keep my boundaries and return to people only where their freedom has room too." },
+          { "speaker": "nika", "text": "Relationship: Matteo — hope without a condition.", "when": { "endingId": "matteo-hope" } },
+          { "speaker": "nika", "text": "Relationship: Matteo — goodbye without erasing herself.", "when": { "endingId": "matteo-goodbye" } },
+          { "speaker": "nika", "text": "Relationship: Leo — a second chance after action.", "when": { "endingId": "leo-second-chance" } },
+          { "speaker": "nika", "text": "Relationship: Leo — an echo that does not become a future.", "when": { "endingId": "leo-echo" } },
+          { "speaker": "nika", "text": "Relationship: Elio — a table for two and two kitchens.", "when": { "endingId": "elio-table-for-two" } },
+          { "speaker": "nika", "text": "Relationship: Elio — separate kitchens without blame.", "when": { "endingId": "elio-separate-kitchens" } },
+          { "speaker": "nika", "text": "Relationship: Nika — her own way, not a refusal of closeness.", "when": { "endingId": "nika-own-way" } },
+          { "speaker": "nika", "text": "Villa Serena: independence and an open plan.", "when": { "hotelOutcome": "independence" } },
+          { "speaker": "nika", "text": "Villa Serena: limited investment without surrendering control.", "when": { "hotelOutcome": "limited-investment" } },
+          { "speaker": "nika", "text": "Villa Serena: a sale on terms the team could verify.", "when": { "hotelOutcome": "sale" } }
+        ]
+      }
+    }
+  ]
+}
