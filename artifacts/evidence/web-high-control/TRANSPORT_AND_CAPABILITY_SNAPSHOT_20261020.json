@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "TRANSPORT_AND_CAPABILITY_SNAPSHOT",
+  "recordedAt": "2026-10-20T18:17:08.665Z",
+  "projectHead": "b6a60fc",
+  "legacyPreflight": {
+    "status": "UNAVAILABLE",
+    "reason": "fetch failed",
+    "healthUrl": "http://127.0.0.1:17841/healthz",
+    "listenerPresent": false,
+    "interpretation": "generic live-preflight probes the forbidden legacy bridge and is not evidence against DEV browser-only transport"
+  },
+  "devBrowserOnly": {
+    "status": "COMPLETED",
+    "provider": "codex-chatgpt-web-dev",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "oldPhotoTraceId": "devweb_1282984ccd8a487ab04a03e67b3209a1",
+    "oldPhotoSubmitted": true,
+    "oldPhotoAttachmentsAccepted": "4/4",
+    "minimalProbeTraceId": "9170d9175aa6",
+    "minimalProbe": "session verified; prompt send accepted; response visible; turn completed"
+  },
+  "profile": {
+    "devHome": "C:/Users/user/.codex-chatgpt-web-dev",
+    "devDescriptorExists": true,
+    "stableDescriptorExists": false,
+    "authorizationEvidence": "real DEV browser session verified and completed a prompt"
+  },
+  "nativeImageGeneration": {
+    "callable": false,
+    "trustedForGeneration": false,
+    "freshRunScopedCapabilityChallenge": "NOT_PROVEN",
+    "generationAllowed": false,
+    "reason": "current-turn trusted native capability attestation and producer route are absent"
+  }
+}
