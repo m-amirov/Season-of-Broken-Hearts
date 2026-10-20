@@ -18,9 +18,14 @@ Official Yandex Games requirements are always authoritative. Generic game-develo
 
 Core:
 
-- `$codex-engineering-system`
 - `$implementation-cycle`
 - `$release-audit`
+
+Optional strict orchestration:
+
+- `$codex-engineering-system` — use when the task explicitly opts into a
+  persisted CEOS run, checkpoint/recovery lifecycle, native producer route,
+  independent Web review trace, or release audit.
 
 Adapted external methods:
 
@@ -54,11 +59,31 @@ The vertical slice must pass product, visual, feel, mobile, accessibility and pe
 
 ## Engineering cycle
 
+## Direct Development Mode
+
+Season of Broken Hearts uses Direct Development Mode for ordinary coding,
+narrative authoring, brief preparation and project-native tests. Read the
+current project instructions and plan, inspect the real worktree, edit only
+the authorized scope, and run the relevant checks directly. `ceos direct
+--project . --json` is an optional read-only context report; an everyday task
+does not require a CEOS run, claim, checkpoint, capability challenge or
+`ceos continue` merely to make progress.
+
+Strict CEOS remains opt-in and fail-closed where the task explicitly needs a
+run-scoped lifecycle, native image generation, output receipts, historical
+recovery, independent Web/pixel evidence or release verification. Direct mode
+does not waive real PNG bytes and SHA-256 provenance, rights checks,
+current-runtime screenshots, independent artistic acceptance, Yandex gates,
+or the prohibition on fabricated assets/evidence. Preserve dirty files,
+parallel worktrees and immutable historical evidence in both modes.
+
 ## GitHub-first repository freshness
 
 For Git-backed projects, begin each non-trivial Codex task by verifying the actual worktree root, expected GitHub remote URL, active branch, dirty state and fresh remote HEAD. The **latest verified remote commit** is the reference for shared committed files, but it never authorizes discarding uncommitted work or unpublished local commits.
 
-Prefer CEOS `git-preflight` before reading task-critical documents or editing source:
+Use a non-destructive GitHub-first preflight before reading task-critical
+documents or editing source. CEOS `git-preflight` is a convenience when
+available; ordinary Git commands are the direct-mode fallback:
 
 ```powershell
 ceos git-preflight --project . --remote origin --branch main --fetch --json
@@ -71,7 +96,10 @@ Supply `--expect-repo owner/repo` whenever the exact GitHub repository is known.
 Before claiming a requested GitHub document is missing, fetch/check `origin/main` or read the file directly from the verified remote. After authorized work: review in-scope diff, test, commit, re-fetch, safely push and verify remote SHA; keep unrelated changes intact.
 
 
-For every non-trivial task use `$codex-engineering-system`, which routes the work through `$implementation-cycle`: reproduce/define, RED evidence, diagnose, implement, targeted verification, regression, diff/worktree review.
+For non-trivial implementation, follow `$implementation-cycle` directly:
+reproduce/define, RED evidence where practical, diagnose, implement, targeted
+verification, regression and diff/worktree review. Activate
+`$codex-engineering-system` only for the strict CEOS cases named above.
 
 Follow `.starter-kit/core/CODEX_ENGINEERING_SYSTEM.md`: load only relevant skills and files, keep compact `.loop/` checkpoints, use the lowest sufficient reasoning level, run targeted checks during iteration, reuse only fresh same-commit evidence, and reserve full suites for task/release barriers.
 

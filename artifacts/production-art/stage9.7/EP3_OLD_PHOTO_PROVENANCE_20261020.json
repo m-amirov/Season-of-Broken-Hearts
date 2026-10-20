@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_GENERATED_CANDIDATE_PROVENANCE",
+  "recordedAt": "2026-10-20",
+  "runId": "2026-10-20T07-07-19-592Z-production-art-c8b8a7",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sceneId": "ep3_old_photo",
+  "familyId": "ep3-archive-old-photo",
+  "briefId": "ep3-archive-old-photo-v1",
+  "assetId": "ep3-old-photo-cg",
+  "creation": {
+    "method": "native image_gen.imagegen",
+    "producerRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "producerTrace": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T10-08-08-01a15823-927a-7ad1-a65c-bb0f623c89fc.jsonl",
+    "producerTraceSha256": "df9c6aef4c9a1e0a549a194c7a3ad8aa22840648dd2e386b4137310a33554eaa",
+    "producerRoute": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "capabilityAttestation": ".ceos-runs/2026-10-20T07-07-19-592Z-production-art-c8b8a7/capability-attestation/attestations/cap-a59eb9263f20b33e6c71.json",
+    "capability": "PRESENT + UNKNOWN",
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "references": [
+    {"id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ],
+  "candidates": [
+    {
+      "format": "portrait",
+      "projectPath": "assets/production/cg/ep3-old-photo-cg.png",
+      "nativeSource": "C:\\Users\\user\\.codex\\generated_images\\01a15823-927a-7ad1-a65c-bb0f623c89fc\\exec-116101ef-b3d8-444b-8ef6-f6b85ca059bc.png",
+      "sha256": "93389bc83e342bbb3800b1bd51d7bdcb3ab90c8c5f53093d9a4e9eb7204ffe10",
+      "width": 1024,
+      "height": 1536,
+      "outputReceipt": "artifacts/production-art/stage9.7/ep3-old-photo-cg-portrait-output-verify-20261020.json",
+      "status": "MECHANICAL_PASS_VISUAL_UNVERIFIED"
+    },
+    {
+      "format": "landscape",
+      "projectPath": "assets/production/cg/ep3-old-photo-cg-landscape.png",
+      "nativeSource": "C:\\Users\\user\\.codex\\generated_images\\01a15823-927a-7ad1-a65c-bb0f623c89fc\\exec-ada3244c-8a81-42b1-be54-798e502c407a.png",
+      "sha256": "401b412447d9443493d72f78d202074adf3f45d756683cac7095f42f72337d21",
+      "width": 1672,
+      "height": 941,
+      "outputReceipt": "artifacts/production-art/stage9.7/ep3-old-photo-cg-landscape-output-verify-20261020.json",
+      "status": "MECHANICAL_PASS_REWORK_REQUIRED"
+    }
+  ],
+  "rights": {
+    "referenceOwnership": "project-owned approved character references",
+    "generatedCandidateLicense": "native provider output under project production workflow; provider-level byte receipt not provided",
+    "thirdPartyDownload": false,
+    "watermarkOrSignature": false,
+    "bakedReadableText": false,
+    "runtimeUsage": "not integrated; no mapping changed",
+    "approval": "candidate only; not shipped"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_STAGE9_7_FIRST_BATCH_RESULT",
+  "recordedAt": "2026-10-20",
+  "status": "REWORK_REQUIRED_AND_INDEPENDENT_ACCEPTANCE_BLOCKED",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "runId": "2026-10-20T07-07-19-592Z-production-art-c8b8a7",
+  "scope": {
+    "sceneId": "ep3_old_photo",
+    "pairCount": 1,
+    "pngCount": 2,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "historicalRunsChanged": false
+  },
+  "gates": {
+    "approvedBriefPacket": "PASS_SOURCE_BOUND_PACKET",
+    "legacyStage94ArtBriefVerifier": "NOT_APPLICABLE_EP3_DIRECT_MODE",
+    "capabilityChallenge": "PASS_PRESENT_UNKNOWN_CURRENT_TURN",
+    "producerRoute": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "nativeGeneration": "PASS_IMAGE_GEN_IMAGEGEN",
+    "portraitTransport": "PASS_ART_OUTPUT_TRANSPORT",
+    "portraitMechanical": "PASS_ART_OUTPUT_MECHANICAL",
+    "landscapeTransport": "PASS_ART_OUTPUT_TRANSPORT",
+    "landscapeMechanical": "PASS_ART_OUTPUT_MECHANICAL",
+    "runtimeIntegration": "NOT_RUN_OUT_OF_SCOPE",
+    "independentPixelAcceptance": "BLOCKED_WEB_UNAVAILABLE"
+  },
+  "pixelTriage": {
+    "reviewer": "parent Codex current-session source-pixel triage; not independent acceptance",
+    "portrait": {
+      "status": "CANDIDATE_REVIEW_ONLY",
+      "observations": [
+        "Nika and Leo remain distinct and grounded in a working archive room.",
+        "Nika controls the neutral paper/photo prop and the frame has no baked UI or readable invented text."
+      ]
+    },
+    "landscape": {
+      "status": "REWORK_REQUIRED",
+      "impactCode": "FORBIDDEN_UNAUTHORED_BLUEPRINT_TUBE_PROP",
+      "observations": [
+        "Rolled blueprint/tube-like objects are visibly present on the right archive shelving.",
+        "This conflicts with the approved brief's wardrobe/prop boundary (Leo has no unauthored blueprint tube).",
+        "The source PNG and mechanical receipt are preserved; no second candidate was generated."
+      ]
+    }
+  },
+  "nextAction": "Revise the landscape brief to explicitly remove rolled blueprint/tube-like props, then request one bounded second candidate only after a fresh pixel-backed rework decision; obtain independent pixel acceptance before integration.",
+  "prohibitionsHonored": [
+    "No EP2 files, PNGs, receipts or mappings changed.",
+    "No historical CEOS checkpoint was edited.",
+    "No ep3_* alias or legacy Stage 9.4 field was invented.",
+    "No runtime mapping or narrative/assets.json change was made.",
+    "No visual PASS or release readiness was claimed."
+  ]
+}

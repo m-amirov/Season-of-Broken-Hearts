@@ -2,6 +2,38 @@
 
 Project-owned extension point. Add game-specific architecture, protected systems, economy, art, save-schema, test and release constraints here. Do not edit `.starter-kit/core/AGENTS_CORE.md` for project-specific exceptions.
 
+## Direct Development Mode
+
+The owner has selected Direct Development Mode for everyday Season of Broken
+Hearts work. Ordinary code, narrative, brief and test changes proceed from
+the current project instructions and Git worktree with project-native checks;
+they do not require a CEOS run, claim, checkpoint, `ceos continue` or old-run
+recovery. The optional read-only `ceos direct --project . --json` report may
+be used for context and never grants an acceptance or release verdict.
+
+This selection removes orchestration overhead only. It does not weaken
+quality or release boundaries: current-runtime tests, provenance and rights,
+original asset bytes and SHA-256, source-to-cue mapping, independent
+artistic/pixel acceptance, Yandex validation and release audit remain
+separate required gates where applicable. New image generation additionally
+requires a fresh run-scoped native capability challenge in the current turn,
+the real producing context and output transport/verification; no manual,
+environment or stale attestation can unlock it.
+
+## EP3 source-bound brief contract
+
+The approved Stage 9.6 packet is the source of truth for EP3 visual briefs.
+New authored IDs such as `ep3_old_photo` and `ep3_survey_start` must be
+validated against that packet's actual scene IDs, source hashes, character
+reference hashes, cast/actions, dual-format dimensions and forbidden props.
+The legacy Stage 9.4 `ceos art-brief-verify` S-numbered schema is not a
+universal gate for EP3 and must not be satisfied by aliases, renamed IDs,
+invented fields or weakened evidence. Until a matching EP3 validator exists,
+record that legacy check as `NOT_VERIFIED`/non-applicable rather than
+fabricating a CEOS PASS; generation still requires the approved source-bound
+brief, real native PNG transport, per-file output verification and
+independent current-pixel acceptance.
+
 ## Screenshot Visual Gate extension
 
 `SCREENSHOT_VISUAL_GATE` is mandatory for production-visible passes under the managed engineering and visual-quality contracts. Record any project-specific art language, prohibited patterns, required state matrix, evidence location, and accepted visual baseline here. These rules can be stricter but cannot waive actual-runtime current-HEAD screenshots, affected-state coverage, visual review, or the acceptance-token barrier.

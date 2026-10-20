@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_DIRECT_MODE_BATCH_REQUEST",
+  "stage": "9.7",
+  "recordedAt": "2026-10-20",
+  "status": "READY_FOR_SCOPED_NATIVE_GENERATION",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourceBranch": "codex/stage9-full-season-architecture",
+  "sourceBriefPacket": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json",
+    "sha256": "f69d93c33d9b379191cbcb92f76c45af63c8ab48e24dc944e9ff588ac474c8fb"
+  },
+  "ownerAuthorization": "Current user task authorizes the first small EP3 batch within the approved Stage 9.6 scope; this does not authorize runtime mapping, EP2 changes, publication or release.",
+  "legacyVerifierBoundary": "The Stage 9.4 S-numbered ceos art-brief-verify schema is NOT_APPLICABLE to this real ep3_* packet. No alias, renamed ID or weakened evidence is used.",
+  "lockedScope": {
+    "episode": 3,
+    "pairCount": 1,
+    "pngCount": 2,
+    "sceneId": "ep3_old_photo",
+    "familyId": "ep3-archive-old-photo",
+    "briefId": "ep3-archive-old-photo-v1",
+    "assetId": "ep3-old-photo-cg",
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "ep4To10Touched": false,
+    "generationInvoked": false
+  },
+  "outputs": [
+    {
+      "format": "portrait",
+      "path": "assets/production/cg/ep3-old-photo-cg.png",
+      "kind": "background",
+      "width": 1024,
+      "height": 1536,
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "format": "landscape",
+      "path": "assets/production/cg/ep3-old-photo-cg-landscape.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "status": "PENDING_GENERATION"
+    }
+  ],
+  "protected": [
+    "EP2 PNGs, receipts, mappings and historical evidence",
+    "existing CEOS runs and checkpoints",
+    "narrative/assets.json runtime mappings",
+    "EP4-EP10 source and evidence",
+    "parallel worktrees and pre-existing dirty files"
+  ],
+  "requiredGates": [
+    "fresh current-turn run-scoped native Image Gen challenge and attestation",
+    "official producer route in the actual producing context",
+    "real original PNG byte transport",
+    "new per-file art-output verification receipt",
+    "rights/provenance ledger entry",
+    "current-runtime desktop/mobile screenshots",
+    "independent pixel-based artistic acceptance before any acceptance claim"
+  ]
+}
