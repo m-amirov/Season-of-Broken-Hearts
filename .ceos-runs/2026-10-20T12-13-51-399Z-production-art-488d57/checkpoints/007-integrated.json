@@ -1,0 +1,34 @@
+{
+  "index": 7,
+  "stage": "INTEGRATED",
+  "at": "2026-10-20T12:21:15.840Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "Generation and mechanical output gates passed, but runtime mapping is intentionally not performed because independent pixel acceptance and runtime QA are pending; do not claim art PASS.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "76302def461155173aa8c3595b47e0654df8ca39cec4bf9d7a4a2c0c7f233dc2"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.json",
+      "type": "file",
+      "sha256": "3dd5ae4bbb09b63c26a69d0f610db84ea52ec108e66de62b0e18946b8350d00c",
+      "size": 2860
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.md",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.md",
+      "type": "file",
+      "sha256": "aa9b1f977b6ff357b7388d5a1ae20ec3b0dff4e61b73e5f80e89df40cbccac93",
+      "size": 1565
+    }
+  ]
+}

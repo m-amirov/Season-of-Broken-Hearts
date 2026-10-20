@@ -1,0 +1,26 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-20T12:21:24.115Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "EP3 generation not started: project Stage9.6 source-bound packet is the applicable contract, but the installed generic S-numbered art-brief verifier is non-applicable and the child would not proceed without that legacy PASS. No PNG or placeholder was created; preserve ep3_old_photo candidates and revisit only with a project-compatible producer gate.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "76302def461155173aa8c3595b47e0654df8ca39cec4bf9d7a4a2c0c7f233dc2"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "17b3e981506758f3b7ccd7e22e86b313f4f04962a86ed9609de21e5d86fa1b6c",
+      "size": 3577
+    }
+  ]
+}

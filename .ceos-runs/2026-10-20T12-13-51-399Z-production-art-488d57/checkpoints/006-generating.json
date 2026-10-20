@@ -1,0 +1,154 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-20T12:21:07.567Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "One EP2 S32 dual-format pair generated and mechanically verified. Do not integrate or claim art PASS until independent pixel and runtime acceptance.",
+  "metadata": {
+    "artOutputs": [
+      {
+        "path": "assets/production/cg/ep2-rehearsal-failure-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "path": "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png",
+        "kind": "background",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/20/rollout-2026-10-20T15-14-16-01a1593b-d926-77e2-b66c-82d13a30a00d.jsonl",
+    "artOutputGate": {
+      "status": "PASS_ART_BATCH_MECHANICAL",
+      "checks": [
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-rehearsal-failure-cg.png",
+          "sha256": "89e039b5138510df392e5c7b59dfe915003d5e316740a983d5a24d03dfb3d798",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        },
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-rehearsal-failure-cg-landscape.png",
+          "sha256": "ba091839228a10a11b06ef31dd8c43764ee8fe2a256b978f15916eaeaa649bda",
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          },
+          "alpha": {
+            "opaque": 1573352,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1573352,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        }
+      ]
+    },
+    "producerRouteGate": {
+      "ok": true,
+      "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+      "agentId": "01a1593b-d926-77e2-b66c-82d13a30a00d",
+      "parentSessionId": "01a1592c-76f9-7040-9465-44cdf97f8786",
+      "agentRole": "ceos_asset_generator",
+      "actualModel": "gpt-5.6-terra",
+      "actualEffort": "medium",
+      "traceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T15-14-16-01a1593b-d926-77e2-b66c-82d13a30a00d.jsonl",
+      "traceSha256": "b0d245754a48de868c5ef7a0083b0767c73b3c237edb04b7e843808e5efea2ce",
+      "evidenceAssurance": "host-observed-local-jsonl-not-provider-signed",
+      "generationCapability": "NOT_VERIFIED"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "76302def461155173aa8c3595b47e0654df8ca39cec4bf9d7a4a2c0c7f233dc2"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "2f62a17b7f60fb6610ffec3dbbdbd7433fc6716a69a3019d02bbfeb2bafc8b1b",
+      "size": 4326
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_PORTRAIT_OUTPUT_RECEIPT_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_PORTRAIT_OUTPUT_RECEIPT_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_PORTRAIT_OUTPUT_RECEIPT_20261020.json",
+      "type": "file",
+      "sha256": "300a2a155334e6a6e9ec2b20edf6b21c62e26d7c4b3234de10a283a8f637313f",
+      "size": 821
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_LANDSCAPE_OUTPUT_RECEIPT_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_LANDSCAPE_OUTPUT_RECEIPT_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_LANDSCAPE_OUTPUT_RECEIPT_20261020.json",
+      "type": "file",
+      "sha256": "d4a464552e5ec351ab2b316eebf5f2d6c3464e6718f220008f4be3553ddcb74b",
+      "size": 829
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_FIRST_BATCH_RESULT_20261020.json",
+      "type": "file",
+      "sha256": "3dd5ae4bbb09b63c26a69d0f610db84ea52ec108e66de62b0e18946b8350d00c",
+      "size": 2860
+    },
+    {
+      "input": ".ceos-runs/2026-10-20T12-13-51-399Z-production-art-488d57/capability-attestation/attestations/cap-94d264a563cbe91eb369.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-20T12-13-51-399Z-production-art-488d57\\capability-attestation\\attestations\\cap-94d264a563cbe91eb369.json",
+      "projectRelativePath": ".ceos-runs/2026-10-20T12-13-51-399Z-production-art-488d57/capability-attestation/attestations/cap-94d264a563cbe91eb369.json",
+      "type": "file",
+      "sha256": "2a8d2b6d0d61f5ed3fb78a645a5822dc2395dbb9c3074e512351e5ff41fabb83",
+      "size": 612
+    },
+    {
+      "input": "assets\\production\\cg\\ep2-rehearsal-failure-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-rehearsal-failure-cg.png",
+      "projectRelativePath": "assets/production/cg/ep2-rehearsal-failure-cg.png",
+      "type": "file",
+      "sha256": "89e039b5138510df392e5c7b59dfe915003d5e316740a983d5a24d03dfb3d798",
+      "size": 2354893
+    },
+    {
+      "input": "assets\\production\\cg\\ep2-rehearsal-failure-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep2-rehearsal-failure-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png",
+      "type": "file",
+      "sha256": "ba091839228a10a11b06ef31dd8c43764ee8fe2a256b978f15916eaeaa649bda",
+      "size": 2340840
+    }
+  ]
+}

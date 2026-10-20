@@ -1,0 +1,20 @@
+{
+  "target": "EP2 rehearsal_failure first bounded dual-format pair",
+  "inScope": [
+    "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+    "assets/production/cg/ep2-rehearsal-failure-cg.png",
+    "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png",
+    "artifacts/production-art/first-batch"
+  ],
+  "outOfScope": [
+    "narrative/assets.json",
+    "existing accepted PNGs",
+    "release build",
+    "publication",
+    "deployment"
+  ],
+  "acceptanceContract": "exact-head passing source-bound brief and real portrait plus landscape PNG bytes at project dimensions with provenance; independent pixel and runtime acceptance remain pending",
+  "mutationBoundary": "create only the named EP2 rehearsal_failure brief, output files, receipts and first-batch evidence; preserve accepted EP1/EP2/EP3 files and all unrelated dirty files",
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict"
+}

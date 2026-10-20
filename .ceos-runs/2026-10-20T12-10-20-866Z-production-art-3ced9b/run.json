@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.40",
+  "runId": "2026-10-20T12-10-20-866Z-production-art-3ced9b",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerBindingMode": "CURRENT_TURN",
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-20T12-10-20-866Z-production-art-3ced9b",
+  "createdAt": "2026-10-20T12:10:20.872Z",
+  "updatedAt": "2026-10-20T12:21:24.116Z",
+  "completedAt": "2026-10-20T12:21:24.116Z",
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "GENERATING",
+    "reason": "EP3 generation not started: project Stage9.6 source-bound packet is the applicable contract, but the installed generic S-numbered art-brief verifier is non-applicable and the child would not proceed without that legacy PASS. No PNG or placeholder was created; preserve ep3_old_photo candidates and revisit only with a project-compatible producer gate."
+  },
+  "checkpointCount": 6,
+  "scopeSha256": "80e337e116f03d6b6f88a186ef570c3ebde63c8b465b97298ba17669e5988bdd",
+  "capabilitiesSha256": "d68651984e40cfb8882a30a85c8b19a5c0a903f38727f8bacf2416f114c35062",
+  "sourceAtStart": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "a4fdae8f84eb3b491900420e8b4871c2e88f795fde06244ea97ae203693424d8"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "UNAVAILABLE",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": true,
+    "fallbackReason": "Web preflight is UNAVAILABLE in this turn; parent continues one bounded native generation unit while independent pixel acceptance remains pending.",
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": true,
+        "fallbackReason": "Web preflight is UNAVAILABLE in this turn; parent continues one bounded native generation unit while independent pixel acceptance remains pending."
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "PRODUCTION_ART_FIRST_BATCH_RESULT",
+  "recordedAt": "2026-10-20",
+  "runId": "2026-10-20T12-13-51-399Z-production-art-488d57",
+  "sourceHead": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+  "narrativeSourceCommit": "77a07a0952c82292446a0a4dab0af8beb29958f1",
+  "sceneId": "S32",
+  "sceneIds": ["ep2_rehearsal_failure"],
+  "assetFamilyId": "ep2-service-rehearsal-failure-cg",
+  "generator": {
+    "agentId": "01a1593b-d926-77e2-b66c-82d13a30a00d",
+    "agentRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "tool": "image_gen.imagegen",
+    "producerRouteStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/20/rollout-2026-10-20T15-14-16-01a1593b-d926-77e2-b66c-82d13a30a00d.jsonl",
+    "producerTraceSha256": "73cafbb48aee6915eacb7e9b4887bd6f8e594676d869cd5f821013c64eaf78bd",
+    "capabilityAttestation": "E:/Work/YandexGames/Novells/Season of Broken Hearts/_worktrees/stage9-full-season-architecture/.ceos-runs/2026-10-20T12-13-51-399Z-production-art-488d57/capability-attestation/attestations/cap-94d264a563cbe91eb369.json",
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "outputs": [
+    {"orientation":"portrait","path":"assets/production/cg/ep2-rehearsal-failure-cg.png","sha256":"89e039b5138510df392e5c7b59dfe915003d5e316740a983d5a24d03dfb3d798","bytes":2354893,"width":1024,"height":1536,"outputReceipt":"artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_PORTRAIT_OUTPUT_RECEIPT_20261020.json","mechanicalStatus":"PASS_ART_OUTPUT_MECHANICAL"},
+    {"orientation":"landscape","path":"assets/production/cg/ep2-rehearsal-failure-cg-landscape.png","sha256":"ba091839228a10a11b06ef31dd8c43764ee8fe2a256b978f15916eaeaa649bda","bytes":2340840,"width":1672,"height":941,"outputReceipt":"artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_LANDSCAPE_OUTPUT_RECEIPT_20261020.json","mechanicalStatus":"PASS_ART_OUTPUT_MECHANICAL"}
+  ],
+  "parentPixelReview": {
+    "status": "SCOPED_REVIEW_NO_P0_P1_OBSERVED",
+    "reviewer": "parent Codex session",
+    "observed": ["three required figures are visible", "service-corridor/freezer action is readable", "portrait and landscape are independently composed", "no visible watermark, baked UI, readable invented schedule or extra family crowd"],
+    "notVerified": ["independent Web/pixel acceptance", "current runtime screenshot and mobile crop", "runtime manifest integration"],
+    "artPass": false
+  },
+  "runtime": {"mappingStatus":"NOT_INTEGRATED","narrativeAssetsManifestChanged":false,"runtimeScreenshots":[]},
+  "status": "MECHANICAL_PASS_SCOPED_PIXEL_REVIEW_INDEPENDENT_ACCEPTANCE_PENDING",
+  "nextAction": "Run current-runtime desktop/mobile QA and independent pixel review before any narrative/assets.json mapping or acceptance claim."
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "SOURCE_BOUND_ART_BRIEF",
+  "briefId": "ep3-archive-survey-v2-current-head",
+  "familyId": "ep3-archive-survey",
+  "recordedAt": "2026-10-20",
+  "sourceHead": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+  "narrativeSourceCommit": "77a07a0952c82292446a0a4dab0af8beb29958f1",
+  "sourceFiles": [
+    {"path":"narrative/graph.json","sha256":"64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a"},
+    {"path":"narrative/episodes/ep-03.json","sha256":"027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66"},
+    {"path":"artifacts/art-direction/ART_BIBLE.md","sha256":"7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96"},
+    {"path":"artifacts/art-direction/VISUAL_LANGUAGE.json","sha256":"a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785"}
+  ],
+  "sceneIds": ["ep3_survey_start"],
+  "assetIds": ["ep3-survey-start-cg"],
+  "requiredCast": ["nika", "leo"],
+  "characterReferenceIds": ["nika", "leo"],
+  "narrativeCue": "Leo proposes the west-wing survey; Nika defines the professional boundary and the reporting obligation.",
+  "location": "Villa Serena archive room, working archive table, old stone, archive boxes and banquet programmes.",
+  "timeOfDay": "Day 10; neutral natural archive daylight continuous with ep3_old_photo.",
+  "narrativeActions": [
+    {"character":"leo","action":"Offers a survey brief for the west wing."},
+    {"character":"nika","action":"Holds the professional boundary and checks what the client signed before agreeing to the survey."}
+  ],
+  "emotionalTone": "Practical negotiation and deliberate distance.",
+  "knowledgeBoundary": "The survey is proposed, but the staff niche conflict and Aurea connection are not yet shown.",
+  "wardrobe": {
+    "continuityType": "same-outfit",
+    "nika": {"outfit":"soft-sand blouse, washed-olive overshirt, taupe trousers, brown belt","accessoriesProps":["small gold hoops","thin chain","survey folder"]},
+    "leo": {"outfit":"light stone architectural field jacket, muted olive shirt, cream trousers, brown leather satchel","accessoriesProps":["brown satchel","survey folder","no un-authored blueprint tube"]}
+  },
+  "desktop": {"composition":"Two-shot across the archive table, folder and boxes leading toward the west-wing proposal; keep both faces and hands above the dialogue band.","requiredVisibleCast":["nika","leo"],"focalProps":["survey folder","archive work surface"]},
+  "portrait": {"width":1024,"height":1536,"composition":"Vertical two-shot with the folder between the characters and both hands readable without text on paper.","requiredVisibleCast":["nika","leo"],"focalProps":["survey folder"]},
+  "landscape": {"width":1672,"height":941,"composition":"Wide archive-table composition with lower dialogue-safe space and both faces unobstructed.","requiredVisibleCast":["nika","leo"],"focalProps":["survey folder","archive boxes","programmes"]},
+  "forbiddenProps": ["readable contract text","Aurea logo/mark","romantic gesture","camera/flashlight before the west-wing scene","extra cast","un-authored blueprint tube"],
+  "acceptanceCriteria": ["Correct Nika/Leo identity and age","Professional arrangement is immediately readable","No premature knowledge or branch-specific evidence","Both formats preserve folder, faces and dialogue-safe silhouettes","No baked UI, watermark or readable invented text"],
+  "generationAuthorized": false,
+  "authorizationNote": "Set true only after the current-turn run-scoped CEOS capability challenge, real Terra producer route and output transport are proven."
+}

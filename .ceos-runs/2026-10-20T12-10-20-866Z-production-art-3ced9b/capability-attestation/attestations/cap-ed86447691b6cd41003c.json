@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-20T12-10-20-866Z-production-art-3ced9b",
+  "capability": "image-generation",
+  "challengeId": "cap-ed86447691b6cd41003c",
+  "sessionId": "01a1592c-76f9-7040-9465-44cdf97f8786",
+  "turnId": "01a1592c-79f3-7de2-9b59-ec18625ea57e",
+  "observedAt": "2026-10-20T12:10:51.602Z",
+  "source": "in-session-agent-observation",
+  "trustScope": "run-session-window",
+  "presence": "PRESENT",
+  "serviceAvailability": "UNKNOWN",
+  "observedTool": "image_gen.imagegen",
+  "serviceEvidence": "image_gen.imagegen is callable in the current Codex turn; no probe invocation was used"
+}

@@ -1,0 +1,34 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-20T12:10:30.643Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "B5 inventory locked to one EP3 survey_start pair; EP2 and all existing PNGs remain outside mutation scope.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "a4fdae8f84eb3b491900420e8b4871c2e88f795fde06244ea97ae203693424d8"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "projectRelativePath": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "type": "file",
+      "sha256": "9513b754dc6fb1cc5a8c76a39754c3e68ebe04d2589058f24f780ba783d1a53f",
+      "size": 36828
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "17b3e981506758f3b7ccd7e22e86b313f4f04962a86ed9609de21e5d86fa1b6c",
+      "size": 3577
+    }
+  ]
+}

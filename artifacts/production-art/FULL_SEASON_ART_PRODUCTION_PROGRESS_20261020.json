@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "FULL_SEASON_ART_PRODUCTION_PROGRESS",
+  "recordedAt": "2026-10-20",
+  "plan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+  "sourceHead": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+  "initialPlan": {"plannedPairs":119,"newPairs":97,"missingPortraitPng":97,"missingLandscapePng":97},
+  "completedActions": [
+    {"batch":"B3-scoped-first-pair","episode":"EP2","sceneId":"ep2_rehearsal_failure","pair":1,"portraitPng":1,"landscapePng":1,"mechanical":"PASS_ART_OUTPUT_MECHANICAL","runtimeMapping":"NOT_INTEGRATED","independentAcceptance":"PENDING"}
+  ],
+  "currentCoverage": {
+    "plannedVisualPairs":119,
+    "runtimeMappedScopedAcceptedPairs":21,
+    "existingCandidatePairsPendingIndependentAcceptance":1,
+    "generatedPairsNotIntegrated":1,
+    "remainingNewPairsToCreate":96,
+    "remainingNewPortraitPng":96,
+    "remainingNewLandscapePng":96,
+    "remainingNewPngTotal":192,
+    "remainingEp2NewPairs":4,
+    "remainingEp3NewPairs":14,
+    "ep3OldPhotoCandidatePngPendingIndependentAcceptance":2
+  },
+  "acceptanceState": {"artPass":false,"runtimeQa":"NOT_RUN_FOR_FIRST_BATCH","independentPixelAcceptance":"WEB_UNAVAILABLE_PENDING","release":"OUT_OF_SCOPE"},
+  "preservation": {"ep2AcceptedBytesUnchanged":true,"ep3OldPhotoCandidateLimitPreserved":true,"narrativeAssetsManifestChanged":false,"unrelatedDirtyFilesPreserved":true},
+  "blockers": ["Independent pixel/Web acceptance unavailable in this turn.","First-batch pair is not runtime-integrated pending current runtime QA.","EP3 new generation remains blocked by the installed generic S-numbered brief gate being non-applicable to the project Stage9.6 packet."],
+  "verdict": "PROGRESS_RECORDED_NOT_ART_PASS"
+}

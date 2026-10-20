@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.40",
+  "runId": "2026-10-20T12-13-51-399Z-production-art-488d57",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerBindingMode": "CURRENT_TURN",
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-20T12-13-51-399Z-production-art-488d57",
+  "createdAt": "2026-10-20T12:13:51.404Z",
+  "updatedAt": "2026-10-20T12:21:15.842Z",
+  "completedAt": "2026-10-20T12:21:15.842Z",
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "INTEGRATED",
+    "reason": "Generation and mechanical output gates passed, but runtime mapping is intentionally not performed because independent pixel acceptance and runtime QA are pending; do not claim art PASS."
+  },
+  "checkpointCount": 7,
+  "scopeSha256": "0c676e371a1eac37c4ca1ae6c2f647f59bb4461b256b2024d16bc70e22504180",
+  "capabilitiesSha256": "523d640038a942099a36a5b4db3f27c3034d76e84d92715095a85d8ae4c7a4f5",
+  "sourceAtStart": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "50680bae5cdadb3f5b3043168e05376fca66cfc980e72dcd590d2952d009bae9"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "UNAVAILABLE",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": true,
+    "fallbackReason": "Web preflight is UNAVAILABLE in this turn; parent continues one bounded native generation unit while independent pixel acceptance remains pending.",
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": true,
+        "fallbackReason": "Web preflight is UNAVAILABLE in this turn; parent continues one bounded native generation unit while independent pixel acceptance remains pending."
+      }
+    }
+  }
+}

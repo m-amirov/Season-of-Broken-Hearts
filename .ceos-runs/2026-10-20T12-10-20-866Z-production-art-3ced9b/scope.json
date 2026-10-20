@@ -1,0 +1,20 @@
+{
+  "target": "EP3 survey_start first bounded dual-format pair",
+  "inScope": [
+    "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+    "assets/production/cg/ep3-survey-start-cg.png",
+    "assets/production/cg/ep3-survey-start-cg-landscape.png",
+    "artifacts/production-art/first-batch"
+  ],
+  "outOfScope": [
+    "narrative/assets.json",
+    "existing accepted PNGs",
+    "release build",
+    "publication",
+    "deployment"
+  ],
+  "acceptanceContract": "current exact-head source-bound brief and real portrait plus landscape PNG bytes at project dimensions with provenance; independent pixel and runtime acceptance remain pending",
+  "mutationBoundary": "create only the named EP3 survey_start brief, output files, receipts and first-batch evidence; preserve accepted EP1/EP2/EP3 files and all unrelated dirty files",
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict"
+}

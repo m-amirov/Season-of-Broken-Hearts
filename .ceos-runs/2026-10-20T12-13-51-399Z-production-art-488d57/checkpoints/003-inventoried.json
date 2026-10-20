@@ -1,0 +1,34 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-20T12:13:56.667Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "B3 inventory locked to one EP2 rehearsal_failure pair; accepted EP2 bytes and mappings remain unchanged.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe",
+    "clean": false,
+    "worktreeSha256": "50680bae5cdadb3f5b3043168e05376fca66cfc980e72dcd590d2952d009bae9"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "projectRelativePath": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "type": "file",
+      "sha256": "9513b754dc6fb1cc5a8c76a39754c3e68ebe04d2589058f24f780ba783d1a53f",
+      "size": 36828
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP2_REHEARSAL_FAILURE_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "2f62a17b7f60fb6610ffec3dbbdbd7433fc6716a69a3019d02bbfeb2bafc8b1b",
+      "size": 4326
+    }
+  ]
+}
