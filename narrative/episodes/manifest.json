@@ -12,7 +12,7 @@
     "publicAgreement", "consentBoundary", "ep2BudgetChoice", "matteoFutureTalk",
     "leoAureaLinkKnown", "leoAccountability", "leoEvidence", "ep3SurveyChoice"
   ],
-  "authoredEpisodes": [2, 3, 4, 5, 6, 7, 8],
+  "authoredEpisodes": [2, 3, 4, 5, 6, 7, 8, 9],
   "plannedEpisodes": [4, 5, 6, 7, 8, 9, 10],
   "fragments": [
     { "episode": 2, "path": "narrative/episodes/ep-02.json" },
@@ -21,6 +21,7 @@
     { "episode": 5, "path": "narrative/episodes/ep-05.json" },
     { "episode": 6, "path": "narrative/episodes/ep-06.json" },
     { "episode": 7, "path": "narrative/episodes/ep-07.json" },
-    { "episode": 8, "path": "narrative/episodes/ep-08.json" }
+    { "episode": 8, "path": "narrative/episodes/ep-08.json" },
+    { "episode": 9, "path": "narrative/episodes/ep-09.json" }
   ]
 }

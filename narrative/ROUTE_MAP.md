@@ -163,6 +163,29 @@ the alternative budget as `viable` or `underfunded`; `ep8_transition` is an
 episode boundary without `endingId`, leaving relationship and hotel finals to
 EP9–EP10.
 
+## EP9 executable anniversary and forum
+
+EP9 keeps the EP6 lock, makes the budget crisis public, and lets each route
+carry a different relationship and professional payoff into the final week:
+
+```text
+ep9_entry
+  ├─ matteo      → ep9_matteo_anniversary → ep9_matteo_team_terms → ep9_matteo_forum_stance
+  ├─ leo         → ep9_leo_anniversary → ep9_leo_team_terms → ep9_leo_forum_stance
+  ├─ elio        → ep9_elio_anniversary → ep9_elio_team_terms → ep9_elio_forum_stance
+  └─ independent → ep9_independent_anniversary → ep9_independent_team_terms → ep9_independent_forum_stance
+                                      \________________________→ ep9_public_forum
+  ep9_public_forum → route-specific payoff → ep9_transition
+```
+
+The forum exposes exactly three player-facing choices on every locked route:
+full disclosure, verified facts only, or keeping details for the closed
+meeting. These set `publicDisclosure` and the existing hotel evidence,
+funding and staff-protection keys; none changes `route` or assigns a final
+relationship/hotel outcome. The route payoffs offer a shared future or a
+deliberate pause, then `ep9_transition` carries the state to EP10 planning
+without an `endingId`.
+
 ## Full-season topology (planned)
 
 - EP1–5: общее ядро, знакомство и романтические предпочтения.

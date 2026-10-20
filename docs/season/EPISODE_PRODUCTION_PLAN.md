@@ -102,7 +102,7 @@ name substitution.
 |---|---|---|---|
 | EP7 | `ep7_matteo_market_date`, `ep7_matteo_open_ledger`, `ep7_matteo_truth` | Matteo lets Nika see a real operating choice and accepts a boundary | `matteoTrust`, `matteoCommitment=shared-ledger` |
 | EP8 | `ep8_matteo_delegation`, `ep8_matteo_family_ledger`, `ep8_matteo_stay_choice` | He delegates or reclaims control under pressure | `matteoCareerChoice=delegation` or `control` |
-| EP9 | `ep9_matteo_forum`, `ep9_matteo_future_offer` | Public truth and a future offer without employment leverage | `matteoCommitment=mutual-plan` or `ended` |
+| EP9 | `ep9_matteo_anniversary`, `ep9_matteo_team_terms`, `ep9_matteo_forum_stance`, `ep9_public_forum`, `ep9_matteo_payoff` | Public truth and a future offer without employment leverage | `matteoCommitment=mutual-plan|deferred`; no final |
 | EP10 | `ep10_matteo_final`, `ep10_matteo_epilogue` | Hope or goodbye is enacted in a concrete work/life plan | `endingId=matteo-hope|matteo-goodbye` |
 
 ### Leo family
@@ -111,7 +111,7 @@ name substitution.
 |---|---|---|---|
 | EP7 | `ep7_leo_archives`, `ep7_leo_site_walk`, `ep7_leo_choice` | Leo offers evidence and Nika tests it against action | `leoTrust`, `leoAccountability=verified` only after follow-through |
 | EP8 | `ep8_leo_aurea_conflict`, `ep8_leo_heritage_plan`, `ep8_leo_career_choice` | He chooses career ethics over a convenient title or explains refusal | `leoCareerChoice=heritage-plan|aurea` |
-| EP9 | `ep9_leo_public_forum`, `ep9_leo_future_offer` | He speaks about the past without using it as leverage | `leoCommitment=mutual-plan|ended` |
+| EP9 | `ep9_leo_anniversary`, `ep9_leo_team_terms`, `ep9_leo_forum_stance`, `ep9_public_forum`, `ep9_leo_payoff` | He speaks about the past without using it as leverage | `leoAccountability=verified` or a deliberate review delay; no final |
 | EP10 | `ep10_leo_final`, `ep10_leo_epilogue` | Second chance or deliberate non-return | `endingId=leo-second-chance|leo-echo` |
 
 ### Elio family
@@ -120,7 +120,7 @@ name substitution.
 |---|---|---|---|
 | EP7 | `ep7_elio_trial_menu`, `ep7_elio_night_kitchen`, `ep7_elio_offer` | Nika sees the restaurant dream as work, not fantasy | `elioTrust`, `elioCommitment=clear-choice` |
 | EP8 | `ep8_elio_offer`, `ep8_elio_menu`, `ep8_elio_future` | Elio offers a workable hybrid plan or leaves without one | `elioCareerChoice=hybrid-plan|unplanned-departure` |
-| EP9 | `ep9_elio_service`, `ep9_elio_future_offer` | He gives Nika a choice that does not demand rescue | `elioClarity=discussed|avoided` |
+| EP9 | `ep9_elio_anniversary`, `ep9_elio_team_terms`, `ep9_elio_forum_stance`, `ep9_public_forum`, `ep9_elio_payoff` | He gives Nika a choice that does not demand rescue | `elioClarity=discussed|none`; no final |
 | EP10 | `ep10_elio_final`, `ep10_elio_epilogue` | Shared table or separate kitchens | `endingId=elio-table-for-two|elio-separate-kitchens` |
 
 ### Independent family
@@ -129,7 +129,7 @@ name substitution.
 |---|---|---|---|
 | EP7 | `ep7_independent_portfolio`, `ep7_independent_client`, `ep7_independent_vow` | Nika earns a client and makes a promise to herself | `independentProgress=portfolio` |
 | EP8 | `ep8_independent_budget`, `ep8_independent_partner`, `ep8_independent_career` | She negotiates without turning work into martyrdom | `nikaCareerPlan=portfolio`, `alternativeBudget` branch |
-| EP9 | `ep9_independent_forum`, `ep9_independent_staff`, `ep9_independent_future` | She protects truth and team without romance as reward | `independentProgress=self-authored` |
+| EP9 | `ep9_independent_anniversary`, `ep9_independent_team_terms`, `ep9_independent_forum_stance`, `ep9_public_forum`, `ep9_independent_payoff` | She protects truth and team without romance as reward | `independentProgress=self-authored|client-tested`; no final |
 | EP10 | `ep10_independent_final`, `ep10_independent_epilogue` | A full ending, not a refusal screen | `endingId=nika-own-way` |
 
 ## Production batches and barriers

@@ -32,6 +32,18 @@
     {
       "id": "season-hotel-outcome",
       "status": "planned"
+    },
+    {
+      "id": "anniversary-public-truth",
+      "status": "authored",
+      "setup": {
+        "sceneId": "ep8_transition",
+        "evidence": "The budget gap is named before the anniversary forum begins."
+      },
+      "payoff": {
+        "sceneId": "ep9_transition",
+        "evidence": "Nika makes a route-conditioned public disclosure choice and carries its business and relationship cost into EP10."
+      }
     }
   ]
 }

@@ -363,6 +363,7 @@ test('an older v4 save receives EP6 defaults without changing its route state', 
   delete payload.state.leoCommitment;
   delete payload.state.elioCommitment;
   delete payload.state.independentProgress;
+  delete payload.state.publicDisclosure;
   for (const item of payload.history) {
     delete item.state.routeLockSource;
     delete item.state.exclusiveTermsSeen;
@@ -371,6 +372,7 @@ test('an older v4 save receives EP6 defaults without changing its route state', 
     delete item.state.leoCommitment;
     delete item.state.elioCommitment;
     delete item.state.independentProgress;
+    delete item.state.publicDisclosure;
   }
   const restored = new NarrativeEngine(graph);
   assert.equal(restored.load(JSON.stringify(payload)), true);
@@ -378,6 +380,7 @@ test('an older v4 save receives EP6 defaults without changing its route state', 
   assert.equal(restored.snapshot().state.routeLocked, false);
   assert.equal(restored.snapshot().state.routeLockSource, 'none');
   assert.equal(restored.snapshot().state.independentProgress, 'none');
+  assert.equal(restored.snapshot().state.publicDisclosure, 'none');
 });
 
 function enterEpisode7(engine, routeCase) {
@@ -598,7 +601,7 @@ test('EP8 keeps all four locked route families distinct and reaches only a non-f
     }
     seen.add(engine.snapshot().cursor.sceneId);
     assert.equal(engine.snapshot().cursor.sceneId, 'ep8_transition');
-    assert.equal(engine.currentScene().ending, true);
+    assert.equal(engine.currentScene().episodeEnd, true);
     assert.equal(engine.currentScene().endingId, undefined);
     assert.equal(engine.snapshot().state.route, routeCase.route);
     assert.equal(engine.snapshot().state.routeLocked, true);
@@ -646,4 +649,79 @@ test('EP8 Back and alternate route decisions preserve route-lock, budget consequ
     assert.equal(engine.snapshot().state.routeLocked, false);
     assert.equal(engine.snapshot().state.budgetGapKnown, false);
   }
+});
+
+const ep9RouteCases = [
+  { ...ep8RouteCases[0], entryChoice9: 'ep9_enter_matteo', startScene9: 'ep9_matteo_anniversary', payoffScene9: 'ep9_matteo_payoff' },
+  { ...ep8RouteCases[1], entryChoice9: 'ep9_enter_leo', startScene9: 'ep9_leo_anniversary', payoffScene9: 'ep9_leo_payoff' },
+  { ...ep8RouteCases[2], entryChoice9: 'ep9_enter_elio', startScene9: 'ep9_elio_anniversary', payoffScene9: 'ep9_elio_payoff' },
+  { ...ep8RouteCases[3], entryChoice9: 'ep9_enter_independent', startScene9: 'ep9_independent_anniversary', payoffScene9: 'ep9_independent_payoff' }
+];
+
+function enterEpisode9(engine, routeCase) {
+  enterEpisode8(engine, routeCase);
+  advanceToEpisodeEnd(engine);
+  assert.deepEqual(engine.continueEpisode(), { ok: true, type: 'episode', episode: 9 });
+  assert.equal(engine.snapshot().cursor.sceneId, 'ep9_entry');
+  chooseById(engine, routeCase.entryChoice9);
+  assert.equal(engine.snapshot().cursor.sceneId, routeCase.startScene9);
+}
+
+test('EP9 stages the anniversary forum across all locked routes without resolving the season', () => {
+  for (const routeCase of ep9RouteCases) {
+    const engine = new NarrativeEngine(graph);
+    enterEpisode9(engine, routeCase);
+    while (engine.snapshot().cursor.sceneId !== 'ep9_public_forum') {
+      const choices = engine.choices();
+      if (choices.length) assert.equal(engine.choose(choices[0].id).ok, true);
+      else assert.equal(engine.advance().ok, true);
+    }
+    while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+    assert.equal(engine.snapshot().state.route, routeCase.route);
+    assert.equal(engine.snapshot().state.routeLocked, true);
+    assert.deepEqual(engine.choices().map(choice => choice.id), [
+      `ep9_forum_full_${routeCase.route}`,
+      `ep9_forum_verified_${routeCase.route}`,
+      `ep9_forum_protect_${routeCase.route}`
+    ]);
+
+    assert.equal(engine.choose(`ep9_forum_full_${routeCase.route}`).ok, true);
+    assert.equal(engine.snapshot().cursor.sceneId, routeCase.payoffScene9);
+    assert.equal(engine.snapshot().state.hotelEvidence, 'public');
+    assert.equal(engine.snapshot().state.routeLocked, true);
+    advanceToEpisodeEnd(engine);
+    assert.equal(engine.snapshot().cursor.sceneId, 'ep9_transition');
+    assert.equal(engine.currentScene().ending, true);
+    assert.equal(engine.currentScene().endingId, undefined);
+    assert.equal(engine.snapshot().state.route, routeCase.route);
+  }
+});
+
+test('EP9 Back, New Game, save v4, and alternate public disclosures preserve route state', () => {
+  const engine = new NarrativeEngine(graph);
+  enterEpisode9(engine, ep9RouteCases[0]);
+  while (engine.snapshot().cursor.sceneId !== 'ep9_public_forum') {
+    if (engine.choices().length) assert.equal(engine.choose(engine.choices()[0].id).ok, true);
+    else assert.equal(engine.advance().ok, true);
+  }
+  while (!engine.choices().length) assert.equal(engine.advance().ok, true);
+  const beforeForum = engine.snapshot();
+  assert.equal(engine.choose('ep9_forum_verified_matteo').ok, true);
+  assert.equal(engine.back(), true);
+  assert.deepEqual(engine.snapshot().cursor, beforeForum.cursor);
+  assert.deepEqual(engine.snapshot().state, beforeForum.state);
+  assert.equal(engine.choose('ep9_forum_protect_matteo').ok, true);
+  assert.equal(engine.snapshot().state.hotelEvidence, 'staff');
+  assert.equal(engine.snapshot().state.publicDisclosure, 'withheld');
+  assert.equal(engine.snapshot().state.staffProtection, 'requested');
+  const saved = engine.save();
+  const restored = new NarrativeEngine(graph, { locale: 'en' });
+  assert.equal(restored.load(saved), true);
+  assert.deepEqual(restored.snapshot(), engine.snapshot());
+  assert.equal(restored.setLocale('en'), true);
+  assert.equal(restored.snapshot().state.route, 'matteo');
+  assert.equal(restored.newGame(), true);
+  assert.equal(restored.snapshot().cursor.sceneId, 'ep1_arrival');
+  assert.equal(restored.snapshot().state.route, 'none');
+  assert.equal(restored.snapshot().state.routeLocked, false);
 });

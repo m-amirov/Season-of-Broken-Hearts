@@ -153,7 +153,7 @@
     {"id": "leo-aurea-link", "setup": ["ep3_aurea_drawing"], "payoff": ["ep6_leo_role", "ep10_leo-final"], "status": "planned"},
     {"id": "nika-career-recovery", "setup": ["ep1_arrival", "ep5_ambition_conversation"], "payoff": ["ep10_career-resolution"], "status": "planned"},
     {"id": "independent-life-not-punishment", "setup": ["ep2_public_agreement", "ep5_choice_kiss_or_friendship"], "payoff": ["ep10_independent-final"], "status": "planned"},
-    {"id": "anniversary-public-truth", "setup": ["ep4_cut_list", "ep8_budget_crisis"], "payoff": ["ep9_public_forum"], "status": "planned"}
+    {"id": "anniversary-public-truth", "setup": ["ep4_cut_list", "ep8_budget_crisis"], "payoff": ["ep9_public_forum"], "status": "authored"}
   ],
   "validationContract": {
     "requiredRouteCount": 4,

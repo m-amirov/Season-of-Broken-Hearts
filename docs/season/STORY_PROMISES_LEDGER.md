@@ -18,7 +18,7 @@ production data and has runtime evidence.
 | `nika-career-recovery` | EP1 job reset and EP2 workday choices | EP5 work competence, EP7–8 portfolio | EP10 career resolution in every route | all | authored + planned extension |
 | `route-choice-informed` | EP6 terms and boundary conversation | EP7 route-specific test | EP10 route ending | all | planned |
 | `independent-life-not-punishment` | EP2 refusal remains safe, EP5 friendship option | EP7 portfolio and EP9 public work | `nika-own-way` | independent | planned |
-| `anniversary-public-truth` | EP4 cut list | EP8 budget crisis | EP9 public forum | all | planned |
+| `anniversary-public-truth` | EP4 cut list | EP8 budget crisis | EP9 public forum | all | authored; runtime-verified only after current-HEAD playthrough |
 
 ## Promise rules
 

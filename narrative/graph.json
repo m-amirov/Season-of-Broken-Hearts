@@ -305,7 +305,55 @@
         "ep8_independent_protect_hotel_first",
         "ep8_budget_secure_sources",
         "ep8_budget_name_events_gap",
-        "ep8_budget_name_partnership_gap"
+        "ep8_budget_name_partnership_gap",
+        "ep9_enter_matteo",
+        "ep9_enter_leo",
+        "ep9_enter_elio",
+        "ep9_enter_independent",
+        "ep9_matteo_open_ledger",
+        "ep9_matteo_hold_leverage",
+        "ep9_matteo_invite_staff_voice",
+        "ep9_matteo_speak_for_team",
+        "ep9_matteo_sign_public_terms",
+        "ep9_matteo_keep_terms_private",
+        "ep9_matteo_choose_shared_future",
+        "ep9_matteo_ask_for_time",
+        "ep9_leo_show_heritage_evidence",
+        "ep9_leo_keep_case_private",
+        "ep9_leo_name_living_heritage",
+        "ep9_leo_accept_investor_language",
+        "ep9_leo_testimony",
+        "ep9_leo_defer_testimony",
+        "ep9_leo_choose_present",
+        "ep9_leo_keep_distance",
+        "ep9_elio_share_credit",
+        "ep9_elio_make_self_showcase",
+        "ep9_elio_build_shared_menu",
+        "ep9_elio_run_solo_special",
+        "ep9_elio_name_distance_plan",
+        "ep9_elio_joke_past_gap",
+        "ep9_elio_choose_two_kitchens",
+        "ep9_elio_leave_timing_open",
+        "ep9_independent_set_fair_ticket",
+        "ep9_independent_discount_ticket",
+        "ep9_independent_publish_roles",
+        "ep9_independent_take_solo_credit",
+        "ep9_independent_require_partner_signature",
+        "ep9_independent_protect_event_at_any_cost",
+        "ep9_independent_choose_own_next_step",
+        "ep9_independent_delay_next_step",
+        "ep9_forum_full_matteo",
+        "ep9_forum_verified_matteo",
+        "ep9_forum_protect_matteo",
+        "ep9_forum_full_leo",
+        "ep9_forum_verified_leo",
+        "ep9_forum_protect_leo",
+        "ep9_forum_full_elio",
+        "ep9_forum_verified_elio",
+        "ep9_forum_protect_elio",
+        "ep9_forum_full_independent",
+        "ep9_forum_verified_independent",
+        "ep9_forum_protect_independent"
       ]
     },
     "routeLocked": {
@@ -534,6 +582,15 @@
     },
     "budgetGapKnown": {
       "type": "boolean"
+    },
+    "publicDisclosure": {
+      "type": "string",
+      "values": [
+        "none",
+        "full",
+        "verified",
+        "withheld"
+      ]
     }
   },
   "initialState": {
@@ -590,7 +647,8 @@
     "leoCareerChoice": "none",
     "elioCareerChoice": "none",
     "elioClarity": "none",
-    "budgetGapKnown": false
+    "budgetGapKnown": false,
+    "publicDisclosure": "none"
   },
   "scenes": [
     {
@@ -11858,6 +11916,1776 @@
           }
         ]
       },
+      "episodeEnd": true,
+      "next": "ep9_entry"
+    },
+    {
+      "id": "ep9_entry",
+      "episode": 9,
+      "title": {
+        "ru": "Юбилей без декораций",
+        "en": "An Anniversary Without Scenery"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "День пятьдесят второй начался с белых лент на террасе и красных цифр в таблице. Villa Serena исполнялось семьдесят лет, а альтернативной смете всё ещё не хватало воздуха."
+          },
+          {
+            "speaker": "nika",
+            "text": "Сегодня нельзя сделать вид, что праздник отменяет договор. Но и превращать людей в сноску к кризису я не буду."
+          },
+          {
+            "speaker": "bianca",
+            "text": "Если бюджет всё ещё не сходится, Aurea спросит не о красивом вечере, а о том, кто отвечает за утро после него.",
+            "when": {
+              "alternativeBudget": "underfunded"
+            }
+          },
+          {
+            "speaker": "bianca",
+            "text": "Даже если два источника подтверждены, Aurea захочет увидеть правила, которые переживут один удачный вечер.",
+            "when": {
+              "alternativeBudget": "viable"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "Я могу поставить фамилию на программу. Но не хочу снова ставить её поверх голосов команды.",
+            "when": {
+              "route": "matteo"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Наследие не станет аргументом, если мы покажем только фасад и спрячем людей внутри него.",
+            "when": {
+              "route": "leo"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "Праздничное меню не спасёт кухню, если после него останется только мой отъезд.",
+            "when": {
+              "route": "elio"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "Я собрала программу так, чтобы в ней было видно, кто сделал работу. Даже если это неудобно для спонсора.",
+            "when": {
+              "route": "independent"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "До вечера нужно было решить, что именно Villa Serena скажет вслух — и кто получит право ответить."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "Day fifty-two began with white ribbons on the terrace and red figures in the spreadsheet. Villa Serena was turning seventy, while the alternative budget still had no room to breathe."
+          },
+          {
+            "speaker": "nika",
+            "text": "We cannot pretend a celebration cancels the deal. But I will not turn people into a footnote to the crisis either."
+          },
+          {
+            "speaker": "bianca",
+            "text": "If the budget still does not meet, Aurea will ask not about a beautiful night, but who carries the morning after it.",
+            "when": {
+              "alternativeBudget": "underfunded"
+            }
+          },
+          {
+            "speaker": "bianca",
+            "text": "Even with two sources confirmed, Aurea will want rules that survive one successful night.",
+            "when": {
+              "alternativeBudget": "viable"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "I can put my name on the programme. I do not want to put it over the team's voices again.",
+            "when": {
+              "route": "matteo"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Heritage is not an argument if we show only the facade and hide the people inside it.",
+            "when": {
+              "route": "leo"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "A celebratory menu will not save the kitchen if all it leaves behind is my departure.",
+            "when": {
+              "route": "elio"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "I built the programme so it shows who did the work, even when that is inconvenient for a sponsor.",
+            "when": {
+              "route": "independent"
+            }
+          },
+          {
+            "speaker": null,
+            "text": "Before nightfall, Villa Serena had to decide what it would say aloud — and who would be allowed to answer."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_enter_matteo",
+          "label": {
+            "ru": "Готовить юбилей с Маттео",
+            "en": "Prepare the anniversary with Matteo"
+          },
+          "to": "ep9_matteo_anniversary",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "lastChoice": "ep9_enter_matteo"
+          }
+        },
+        {
+          "id": "ep9_enter_leo",
+          "label": {
+            "ru": "Проверить программу с Лео",
+            "en": "Review the programme with Leo"
+          },
+          "to": "ep9_leo_anniversary",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "lastChoice": "ep9_enter_leo"
+          }
+        },
+        {
+          "id": "ep9_enter_elio",
+          "label": {
+            "ru": "Открыть юбилейную кухню с Элио",
+            "en": "Open the anniversary kitchen with Elio"
+          },
+          "to": "ep9_elio_anniversary",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "lastChoice": "ep9_enter_elio"
+          }
+        },
+        {
+          "id": "ep9_enter_independent",
+          "label": {
+            "ru": "Вести юбилей самой",
+            "en": "Lead the anniversary herself"
+          },
+          "to": "ep9_independent_anniversary",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true,
+            "routeLockSource": "ep6_route_choice"
+          },
+          "effects": {
+            "lastChoice": "ep9_enter_independent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_matteo_anniversary",
+      "episode": 9,
+      "title": {
+        "ru": "Смета на свету",
+        "en": "A Budget in the Light"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "matteo",
+            "text": "Я вывесил новую смету в служебном коридоре. Теперь её увидят и те, кто не сидит за столом переговоров."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда рядом должны стоять не только суммы, но и имена тех, кого они затрагивают."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Я могу выдержать вопросы. Не уверен, что выдержу, если кто-то назовёт мою защиту ещё одним способом всё удержать."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "matteo",
+            "text": "I put the new budget in the service corridor. Now the people outside the negotiation table will see it too."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then the amounts need to stand beside the names of the people they affect."
+          },
+          {
+            "speaker": "matteo",
+            "text": "I can take the questions. I am less sure I can take someone calling my protection another way of holding everything myself."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_matteo_open_ledger",
+          "label": {
+            "ru": "Открыть книгу решений команде",
+            "en": "Open the decision ledger to the team"
+          },
+          "to": "ep9_matteo_team_terms",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "mutual-plan",
+            "staffProtection": "secured",
+            "lastChoice": "ep9_matteo_open_ledger"
+          }
+        },
+        {
+          "id": "ep9_matteo_hold_leverage",
+          "label": {
+            "ru": "Оставить часть условий для переговоров",
+            "en": "Keep some terms for the negotiation"
+          },
+          "to": "ep9_matteo_team_terms",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "deferred",
+            "staffProtection": "requested",
+            "lastChoice": "ep9_matteo_hold_leverage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_matteo_team_terms",
+      "episode": 9,
+      "title": {
+        "ru": "Голос до тоста",
+        "en": "A Voice Before the Toast"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "matteo",
+            "text": "Я поставлюсь к юбилею как к доказательству, что мы умеем работать. Но доказательство не должно требовать от людей молчать о цене."
+          },
+          {
+            "speaker": "nika",
+            "text": "Кто говорит на форуме — тот и несёт риск после форума. Не забирай у команды право быть услышанной."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "matteo",
+            "text": "I will treat the anniversary as proof that we know how to work. Proof must not require people to stay silent about the cost."
+          },
+          {
+            "speaker": "nika",
+            "text": "Whoever speaks at the forum carries the risk after it. Do not take the team's right to be heard away from them."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_matteo_invite_staff_voice",
+          "label": {
+            "ru": "Пригласить команду говорить вместе",
+            "en": "Invite the team to speak together"
+          },
+          "to": "ep9_matteo_forum_stance",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 5,
+            "fundingEvidence": 5,
+            "lastChoice": "ep9_matteo_invite_staff_voice"
+          }
+        },
+        {
+          "id": "ep9_matteo_speak_for_team",
+          "label": {
+            "ru": "Взять объяснение на себя",
+            "en": "Take the explanation on himself"
+          },
+          "to": "ep9_matteo_forum_stance",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 3,
+            "fundingEvidence": 3,
+            "lastChoice": "ep9_matteo_speak_for_team"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_matteo_forum_stance",
+      "episode": 9,
+      "title": {
+        "ru": "Не прятать подпись",
+        "en": "Do Not Hide the Signature"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "nika",
+            "text": "На сцене будет логотип Aurea, но это не означает, что Aurea получает нашу версию событий без вопросов."
+          },
+          {
+            "speaker": "matteo",
+            "text": "Если я подпишу правила открытого разговора, у меня останется меньше рычагов."
+          },
+          {
+            "speaker": "nika",
+            "text": "Зато у команды появится способ проверить, не превратился ли рычаг в замок."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "nika",
+            "text": "Aurea's logo will be on the stage, but that does not give Aurea our version of events without questions."
+          },
+          {
+            "speaker": "matteo",
+            "text": "If I sign rules for an open conversation, I will have fewer levers left."
+          },
+          {
+            "speaker": "nika",
+            "text": "The team will have a way to check that a lever has not become a lock."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_matteo_sign_public_terms",
+          "label": {
+            "ru": "Подписать правила публичного разговора",
+            "en": "Sign the rules for the public conversation"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "mutual-plan",
+            "lastChoice": "ep9_matteo_sign_public_terms"
+          }
+        },
+        {
+          "id": "ep9_matteo_keep_terms_private",
+          "label": {
+            "ru": "Оставить подпись для закрытой встречи",
+            "en": "Keep the signature for the closed meeting"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "matteoCommitment": "deferred",
+            "lastChoice": "ep9_matteo_keep_terms_private"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_leo_anniversary",
+      "episode": 9,
+      "title": {
+        "ru": "Живой памятник",
+        "en": "A Living Monument"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Я подготовил два изображения западного крыла: одно продаёт линию фасада, второе показывает, где живут люди и что им нельзя потерять."
+          },
+          {
+            "speaker": "nika",
+            "text": "Публика должна увидеть не декорацию под наследие, а конфликт между сохранением и доходом."
+          },
+          {
+            "speaker": "leo",
+            "text": "И услышать от меня, что я больше не буду называть чужое решение неизбежностью."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "I prepared two views of the west wing: one sells the facade line, the other shows where people live and what they cannot afford to lose."
+          },
+          {
+            "speaker": "nika",
+            "text": "The public should see not a heritage backdrop, but the conflict between preservation and revenue."
+          },
+          {
+            "speaker": "leo",
+            "text": "And hear me say that I will not call someone else's decision inevitable again."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_leo_show_heritage_evidence",
+          "label": {
+            "ru": "Показать проверенный план жителей",
+            "en": "Show the residents' verified plan"
+          },
+          "to": "ep9_leo_team_terms",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoAccountability": "verified",
+            "leoCareerChoice": "heritage-plan",
+            "staffProtection": "secured",
+            "lastChoice": "ep9_leo_show_heritage_evidence"
+          }
+        },
+        {
+          "id": "ep9_leo_keep_case_private",
+          "label": {
+            "ru": "Оставить спор с Aurea за кулисами",
+            "en": "Keep the dispute with Aurea backstage"
+          },
+          "to": "ep9_leo_team_terms",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCareerChoice": "aurea",
+            "leoCommitment": "avoidance",
+            "staffProtection": "requested",
+            "lastChoice": "ep9_leo_keep_case_private"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_leo_team_terms",
+      "episode": 9,
+      "title": {
+        "ru": "Те, кто живут внутри",
+        "en": "The People Inside"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Если я назову Villa Serena наследием, меня спросят, чьё именно наследие я защищаю."
+          },
+          {
+            "speaker": "nika",
+            "text": "Ответ должен быть конкретным: жители, команда, правила доступа и деньги на сохранение — всё вместе."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "If I call Villa Serena heritage, people will ask whose heritage I am protecting."
+          },
+          {
+            "speaker": "nika",
+            "text": "The answer has to be concrete: residents, the team, access rules and money for preservation — all together."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_leo_name_living_heritage",
+          "label": {
+            "ru": "Назвать людей частью проекта",
+            "en": "Name the people as part of the project"
+          },
+          "to": "ep9_leo_forum_stance",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 4,
+            "fundingEvidence": 4,
+            "lastChoice": "ep9_leo_name_living_heritage"
+          }
+        },
+        {
+          "id": "ep9_leo_accept_investor_language",
+          "label": {
+            "ru": "Оставить в центре язык инвестора",
+            "en": "Keep the investor's language at the centre"
+          },
+          "to": "ep9_leo_forum_stance",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 2,
+            "fundingEvidence": 3,
+            "lastChoice": "ep9_leo_accept_investor_language"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_leo_forum_stance",
+      "episode": 9,
+      "title": {
+        "ru": "Свидетель, не спаситель",
+        "en": "A Witness, Not a Saviour"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Я могу рассказать, что сделал восемь лет назад. Но это не даёт мне права заранее выбрать ответ Ники."
+          },
+          {
+            "speaker": "nika",
+            "text": "И не даёт тебе права превратить старое сожаление в новый контракт. Скажи только то, что можно проверить."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "I can tell them what I did eight years ago. That does not give me the right to choose Nika's answer in advance."
+          },
+          {
+            "speaker": "nika",
+            "text": "Nor does it let you turn old regret into a new contract. Say only what can be checked."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_leo_testimony",
+          "label": {
+            "ru": "Дать показания и открыть документы",
+            "en": "Give testimony and open the documents"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "heritage-plan",
+            "leoAccountability": "verified",
+            "lastChoice": "ep9_leo_testimony"
+          }
+        },
+        {
+          "id": "ep9_leo_defer_testimony",
+          "label": {
+            "ru": "Отложить личное объяснение",
+            "en": "Defer the personal explanation"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "leoCommitment": "avoidance",
+            "lastChoice": "ep9_leo_defer_testimony"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_elio_anniversary",
+      "episode": 9,
+      "title": {
+        "ru": "Меню без алиби",
+        "en": "A Menu Without an Alibi"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "Я придумал меню, в котором каждый курс связан с историей Villa Serena. Но история не должна стать поводом не платить людям."
+          },
+          {
+            "speaker": "nika",
+            "text": "И не должна стать поводом удержать тебя здесь. Твоя кухня — не доказательство любви ко мне."
+          },
+          {
+            "speaker": "elio",
+            "text": "Тогда сегодня я покажу не героя, который всё спасает, а человека, который умеет разделить стол."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "I designed a menu where every course is tied to Villa Serena's history. History cannot become an excuse not to pay people."
+          },
+          {
+            "speaker": "nika",
+            "text": "And it cannot become a reason to keep you here. Your kitchen is not proof of love for me."
+          },
+          {
+            "speaker": "elio",
+            "text": "Then tonight I will show not a hero who saves everything, but a person who knows how to share a table."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_elio_share_credit",
+          "label": {
+            "ru": "Разделить меню и авторство с командой",
+            "en": "Share the menu and credit with the team"
+          },
+          "to": "ep9_elio_team_terms",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioCommitment": "hybrid-plan",
+            "elioCareerChoice": "hybrid-plan",
+            "staffProtection": "secured",
+            "lastChoice": "ep9_elio_share_credit"
+          }
+        },
+        {
+          "id": "ep9_elio_make_self_showcase",
+          "label": {
+            "ru": "Сделать вечер личной презентацией",
+            "en": "Make the night a personal showcase"
+          },
+          "to": "ep9_elio_team_terms",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioCommitment": "unplanned-departure",
+            "elioCareerChoice": "unplanned-departure",
+            "staffProtection": "requested",
+            "lastChoice": "ep9_elio_make_self_showcase"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_elio_team_terms",
+      "episode": 9,
+      "title": {
+        "ru": "Кому достаётся последний курс",
+        "en": "Who Gets the Last Course"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "Поставщик предлагает скидку, если я подпишу её своим именем и заберу риск себе."
+          },
+          {
+            "speaker": "nika",
+            "text": "Риск, который ты прячешь в своём имени, всё равно падает на кухню, когда ты уедешь."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "The supplier offers a discount if I sign it with my name and take the risk myself."
+          },
+          {
+            "speaker": "nika",
+            "text": "Risk you hide in your name still falls on the kitchen when you leave."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_elio_build_shared_menu",
+          "label": {
+            "ru": "Открыть поставки и разделить кредит",
+            "en": "Open the supply terms and share the credit"
+          },
+          "to": "ep9_elio_forum_stance",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 5,
+            "fundingEvidence": 4,
+            "lastChoice": "ep9_elio_build_shared_menu"
+          }
+        },
+        {
+          "id": "ep9_elio_run_solo_special",
+          "label": {
+            "ru": "Провести отдельный авторский сервис",
+            "en": "Run a solo signature service"
+          },
+          "to": "ep9_elio_forum_stance",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 2,
+            "fundingEvidence": 3,
+            "lastChoice": "ep9_elio_run_solo_special"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_elio_forum_stance",
+      "episode": 9,
+      "title": {
+        "ru": "Расстояние на салфетке",
+        "en": "Distance on a Napkin"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "Я записал на салфетке расписание кухни и поездов. Романтический жест, если не читать мелкий шрифт."
+          },
+          {
+            "speaker": "nika",
+            "text": "Мелкий шрифт — это и есть наша жизнь. Я предпочитаю знать его до тоста."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "I wrote the kitchen and train schedule on a napkin. Romantic, if you do not read the small print."
+          },
+          {
+            "speaker": "nika",
+            "text": "The small print is our life. I would rather know it before the toast."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_elio_name_distance_plan",
+          "label": {
+            "ru": "Обсудить расстояние прямо",
+            "en": "Talk about distance directly"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioClarity": "discussed",
+            "elioCommitment": "hybrid-plan",
+            "lastChoice": "ep9_elio_name_distance_plan"
+          }
+        },
+        {
+          "id": "ep9_elio_joke_past_gap",
+          "label": {
+            "ru": "Отшутиться до следующей недели",
+            "en": "Joke it away until next week"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "elioClarity": "none",
+            "elioCommitment": "unplanned-departure",
+            "lastChoice": "ep9_elio_joke_past_gap"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_independent_anniversary",
+      "episode": 9,
+      "title": {
+        "ru": "Имя на афише",
+        "en": "Her Name on the Poster"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "giulia",
+            "text": "Партнёр предлагает поставить твоё имя рядом с Villa Serena, но просит уступить в гонораре ради полного зала."
+          },
+          {
+            "speaker": "nika",
+            "text": "Полный зал не делает работу бесплатной. И мой контракт не должен становиться залогом за чужую собственность."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Тогда выбирай цену так, чтобы после юбилея у тебя оставалось имя, а не только хороший отзыв."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "giulia",
+            "text": "The partner wants your name beside Villa Serena's, but asks you to cut your fee for a full house."
+          },
+          {
+            "speaker": "nika",
+            "text": "A full house does not make the work free. My contract cannot become collateral for someone else's property."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Then choose a price that leaves you with a name after the anniversary, not only a good review."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_independent_set_fair_ticket",
+          "label": {
+            "ru": "Удержать справедливую ставку",
+            "en": "Keep a fair rate"
+          },
+          "to": "ep9_independent_team_terms",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "nikaCareerPlan": "portfolio",
+            "independentProgress": "self-authored",
+            "staffProtection": "secured",
+            "lastChoice": "ep9_independent_set_fair_ticket"
+          }
+        },
+        {
+          "id": "ep9_independent_discount_ticket",
+          "label": {
+            "ru": "Сделать скидку ради команды",
+            "en": "Discount it for the team"
+          },
+          "to": "ep9_independent_team_terms",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "nikaCareerPlan": "portfolio",
+            "independentProgress": "client-tested",
+            "staffProtection": "requested",
+            "lastChoice": "ep9_independent_discount_ticket"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_independent_team_terms",
+      "episode": 9,
+      "title": {
+        "ru": "Кто получает признание",
+        "en": "Who Gets the Credit"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "nika",
+            "text": "В программе есть моя фамилия. Теперь я впишу рядом тех, кто таскал стулья, считал часы и не дал вечеру развалиться."
+          },
+          {
+            "speaker": "giulia",
+            "text": "Партнёр может назвать это лишней прозрачностью."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда он должен объяснить, почему видимость работы считается лишней."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "nika",
+            "text": "My name is on the programme. Now I will put beside it the people who moved chairs, counted hours and kept the night together."
+          },
+          {
+            "speaker": "giulia",
+            "text": "The partner may call that unnecessary transparency."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then the partner can explain why making work visible is considered unnecessary."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_independent_publish_roles",
+          "label": {
+            "ru": "Опубликовать роли и ставки",
+            "en": "Publish roles and rates"
+          },
+          "to": "ep9_independent_forum_stance",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 5,
+            "fundingEvidence": 5,
+            "lastChoice": "ep9_independent_publish_roles"
+          }
+        },
+        {
+          "id": "ep9_independent_take_solo_credit",
+          "label": {
+            "ru": "Оставить авторство только себе",
+            "en": "Keep the credit to herself"
+          },
+          "to": "ep9_independent_forum_stance",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "staffTrust": 2,
+            "fundingEvidence": 3,
+            "lastChoice": "ep9_independent_take_solo_credit"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_independent_forum_stance",
+      "episode": 9,
+      "title": {
+        "ru": "Подпись не спасает отель",
+        "en": "A Signature Does Not Save a Hotel"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "nika",
+            "text": "Я могу организовать разговор, но не могу подписать за Villa Serena её будущее."
+          },
+          {
+            "speaker": "giulia",
+            "text": "И всё же без твоей подписи партнёр снова назовёт команду расходом без автора."
+          },
+          {
+            "speaker": "nika",
+            "text": "Подпись должна открыть ответственность, а не закрыть вопросы."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "nika",
+            "text": "I can organise the conversation, but I cannot sign Villa Serena's future for it."
+          },
+          {
+            "speaker": "giulia",
+            "text": "And without your signature, the partner will call the team an expense without an author again."
+          },
+          {
+            "speaker": "nika",
+            "text": "A signature should open responsibility, not close the questions."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_independent_require_partner_signature",
+          "label": {
+            "ru": "Потребовать подпись партнёра рядом",
+            "en": "Require the partner's signature beside hers"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "self-authored",
+            "lastChoice": "ep9_independent_require_partner_signature"
+          }
+        },
+        {
+          "id": "ep9_independent_protect_event_at_any_cost",
+          "label": {
+            "ru": "Защитить вечер любой ценой",
+            "en": "Protect the event at any cost"
+          },
+          "to": "ep9_public_forum",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "client-tested",
+            "lastChoice": "ep9_independent_protect_event_at_any_cost"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_public_forum",
+      "episode": 9,
+      "title": {
+        "ru": "Публичный разговор",
+        "en": "The Public Conversation"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "На террасе погасли гирлянды, чтобы экран с условиями Aurea был виден всем. За столами сидели гости, команда и те, кто хотел купить будущее отеля."
+          },
+          {
+            "speaker": "bianca",
+            "text": "Aurea не обещает сохранить каждую привычку Villa Serena. Мы предлагаем деньги, управление и право менять то, что больше не выдерживает сезон."
+          },
+          {
+            "speaker": "nika",
+            "text": "Тогда вопрос не в том, будет ли вечер красивым. Вопрос в том, кто сможет проверить цену после него."
+          },
+          {
+            "speaker": null,
+            "text": "У Ники было три способа ответить. Ни один не отменял последствия для утра."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "The terrace lights went dark so Aurea's terms would be visible on the screen. Guests, staff and people ready to buy the hotel's future sat at the tables."
+          },
+          {
+            "speaker": "bianca",
+            "text": "Aurea does not promise to preserve every Villa Serena habit. We offer money, management and the right to change what no longer survives a season."
+          },
+          {
+            "speaker": "nika",
+            "text": "Then the question is not whether the night will be beautiful. It is who can check its price in the morning."
+          },
+          {
+            "speaker": null,
+            "text": "Nika had three ways to answer. None of them cancelled the consequences for morning."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_forum_full_matteo",
+          "label": {
+            "ru": "Назвать условия полностью",
+            "en": "Name the terms in full"
+          },
+          "to": "ep9_matteo_payoff",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "full",
+            "hotelEvidence": "public",
+            "fundingEvidence": 5,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_full_matteo"
+          }
+        },
+        {
+          "id": "ep9_forum_verified_matteo",
+          "label": {
+            "ru": "Раскрыть только проверенные факты",
+            "en": "Disclose only verified facts"
+          },
+          "to": "ep9_matteo_payoff",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "verified",
+            "hotelEvidence": "documents",
+            "fundingEvidence": 4,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_verified_matteo"
+          }
+        },
+        {
+          "id": "ep9_forum_protect_matteo",
+          "label": {
+            "ru": "Сохранить детали до закрытой встречи",
+            "en": "Keep details for the closed meeting"
+          },
+          "to": "ep9_matteo_payoff",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "withheld",
+            "hotelEvidence": "staff",
+            "fundingEvidence": 2,
+            "staffProtection": "requested",
+            "lastChoice": "ep9_forum_protect_matteo"
+          }
+        },
+        {
+          "id": "ep9_forum_full_leo",
+          "label": {
+            "ru": "Назвать условия полностью",
+            "en": "Name the terms in full"
+          },
+          "to": "ep9_leo_payoff",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "full",
+            "hotelEvidence": "public",
+            "fundingEvidence": 5,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_full_leo"
+          }
+        },
+        {
+          "id": "ep9_forum_verified_leo",
+          "label": {
+            "ru": "Раскрыть только проверенные факты",
+            "en": "Disclose only verified facts"
+          },
+          "to": "ep9_leo_payoff",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "verified",
+            "hotelEvidence": "documents",
+            "fundingEvidence": 4,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_verified_leo"
+          }
+        },
+        {
+          "id": "ep9_forum_protect_leo",
+          "label": {
+            "ru": "Сохранить детали до закрытой встречи",
+            "en": "Keep details for the closed meeting"
+          },
+          "to": "ep9_leo_payoff",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "withheld",
+            "hotelEvidence": "staff",
+            "fundingEvidence": 2,
+            "staffProtection": "requested",
+            "lastChoice": "ep9_forum_protect_leo"
+          }
+        },
+        {
+          "id": "ep9_forum_full_elio",
+          "label": {
+            "ru": "Назвать условия полностью",
+            "en": "Name the terms in full"
+          },
+          "to": "ep9_elio_payoff",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "full",
+            "hotelEvidence": "public",
+            "fundingEvidence": 5,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_full_elio"
+          }
+        },
+        {
+          "id": "ep9_forum_verified_elio",
+          "label": {
+            "ru": "Раскрыть только проверенные факты",
+            "en": "Disclose only verified facts"
+          },
+          "to": "ep9_elio_payoff",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "verified",
+            "hotelEvidence": "documents",
+            "fundingEvidence": 4,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_verified_elio"
+          }
+        },
+        {
+          "id": "ep9_forum_protect_elio",
+          "label": {
+            "ru": "Сохранить детали до закрытой встречи",
+            "en": "Keep details for the closed meeting"
+          },
+          "to": "ep9_elio_payoff",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "withheld",
+            "hotelEvidence": "staff",
+            "fundingEvidence": 2,
+            "staffProtection": "requested",
+            "lastChoice": "ep9_forum_protect_elio"
+          }
+        },
+        {
+          "id": "ep9_forum_full_independent",
+          "label": {
+            "ru": "Назвать условия полностью",
+            "en": "Name the terms in full"
+          },
+          "to": "ep9_independent_payoff",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "full",
+            "hotelEvidence": "public",
+            "fundingEvidence": 5,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_full_independent"
+          }
+        },
+        {
+          "id": "ep9_forum_verified_independent",
+          "label": {
+            "ru": "Раскрыть только проверенные факты",
+            "en": "Disclose only verified facts"
+          },
+          "to": "ep9_independent_payoff",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "verified",
+            "hotelEvidence": "documents",
+            "fundingEvidence": 4,
+            "staffProtection": "secured",
+            "lastChoice": "ep9_forum_verified_independent"
+          }
+        },
+        {
+          "id": "ep9_forum_protect_independent",
+          "label": {
+            "ru": "Сохранить детали до закрытой встречи",
+            "en": "Keep details for the closed meeting"
+          },
+          "to": "ep9_independent_payoff",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "publicDisclosure": "withheld",
+            "hotelEvidence": "staff",
+            "fundingEvidence": 2,
+            "staffProtection": "requested",
+            "lastChoice": "ep9_forum_protect_independent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_matteo_payoff",
+      "episode": 9,
+      "title": {
+        "ru": "Будущее без спасательства",
+        "en": "A Future Without Rescue"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "matteo",
+            "text": "Ты назвала условия при всех. Я почувствовал страх — и впервые не попытался отнять у тебя микрофон.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "Ты назвала только проверенное. Этого мало для победы, но достаточно, чтобы разговор не стал слухом.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "Мы оставили детали для закрытой встречи. Теперь я знаю: закрытая дверь не должна стать старым замком.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "Я могу быть рядом с твоим выбором. Я не могу быть его гарантией."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "matteo",
+            "text": "You named the terms in front of everyone. I felt afraid — and for the first time I did not try to take the microphone from you.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "You named only what was verified. It is not a victory, but it keeps the conversation from becoming a rumour.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "matteo",
+            "text": "We kept the details for a closed meeting. Now I know a closed door must not become the old lock.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "I can stand beside your choice. I cannot guarantee it for you."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_matteo_choose_shared_future",
+          "label": {
+            "ru": "Выбрать общее будущее с границами",
+            "en": "Choose a shared future with boundaries"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "trustMatteo": 4,
+            "relationshipMatteo": 4,
+            "matteoCommitment": "mutual-plan",
+            "lastChoice": "ep9_matteo_choose_shared_future"
+          }
+        },
+        {
+          "id": "ep9_matteo_ask_for_time",
+          "label": {
+            "ru": "Попросить времени до решения",
+            "en": "Ask for time before deciding"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "matteo",
+            "routeLocked": true
+          },
+          "effects": {
+            "trustMatteo": 3,
+            "relationshipMatteo": 2,
+            "matteoCommitment": "deferred",
+            "lastChoice": "ep9_matteo_ask_for_time"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_leo_payoff",
+      "episode": 9,
+      "title": {
+        "ru": "Настоящее время",
+        "en": "The Present Tense"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "leo",
+            "text": "Публичная версия не переписала восемь лет. Но она впервые не спрятала их за красивым фасадом.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Мы оставили за сценой то, чего ещё нельзя доказать. Я не стану выдавать осторожность за искупление.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "Я не выступил со всем, что знаю. Завтра придётся решить, была ли тишина ответственностью или новым бегством.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "Я слышу твоё настоящее только там, где оно выдерживает проверку и не просит меня забыть прошлое."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "leo",
+            "text": "The public version did not rewrite eight years. But it did not hide them behind a beautiful facade for the first time.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "We kept what cannot yet be proven off the stage. I will not call caution redemption.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "leo",
+            "text": "I did not say everything I know. Tomorrow we will have to decide whether the silence was responsibility or another escape.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "I hear your present only when it survives scrutiny and does not ask me to forget the past."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_leo_choose_present",
+          "label": {
+            "ru": "Дать настоящему шанс",
+            "en": "Give the present a chance"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "trustLeo": 4,
+            "relationshipLeo": 4,
+            "leoAccountability": "verified",
+            "leoCareerChoice": "heritage-plan",
+            "leoCommitment": "heritage-plan",
+            "lastChoice": "ep9_leo_choose_present"
+          }
+        },
+        {
+          "id": "ep9_leo_keep_distance",
+          "label": {
+            "ru": "Сохранить дистанцию до проверки",
+            "en": "Keep distance until the review"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "leo",
+            "routeLocked": true
+          },
+          "effects": {
+            "trustLeo": 3,
+            "relationshipLeo": 2,
+            "leoCommitment": "avoidance",
+            "lastChoice": "ep9_leo_keep_distance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_elio_payoff",
+      "episode": 9,
+      "title": {
+        "ru": "Два расписания, один выбор",
+        "en": "Two Schedules, One Choice"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "elio",
+            "text": "После твоей полной версии я всё ещё хочу открыть ресторан. Но теперь в этом желании нет просьбы, чтобы ты исчезла в моей мечте.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "Проверенные факты оставили нам место для разговора, не обещая, что разговор будет удобным.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "Мы сохранили детали до завтра. Я могу пошутить — но не могу больше прятать за шуткой расписание своей жизни.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "Мне не нужен человек, который остаётся из страха. Мне нужен человек, который умеет выбирать и возвращаться к выбору."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "elio",
+            "text": "After your full version, I still want to open the restaurant. But the want no longer asks you to disappear into my dream.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "The verified facts left us room for a conversation without promising that it would be comfortable.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "elio",
+            "text": "We kept the details for tomorrow. I can make a joke, but I cannot hide my life's schedule behind one anymore.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "I do not need someone who stays out of fear. I need someone who can choose and return to the choice."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_elio_choose_two_kitchens",
+          "label": {
+            "ru": "Выбрать отношения с двумя кухнями",
+            "en": "Choose a relationship across two kitchens"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "trustElio": 4,
+            "relationshipElio": 4,
+            "elioClarity": "discussed",
+            "elioCareerChoice": "hybrid-plan",
+            "elioCommitment": "hybrid-plan",
+            "lastChoice": "ep9_elio_choose_two_kitchens"
+          }
+        },
+        {
+          "id": "ep9_elio_leave_timing_open",
+          "label": {
+            "ru": "Оставить решение до разговора утром",
+            "en": "Leave the decision for the morning"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "elio",
+            "routeLocked": true
+          },
+          "effects": {
+            "trustElio": 3,
+            "relationshipElio": 2,
+            "elioCommitment": "unplanned-departure",
+            "lastChoice": "ep9_elio_leave_timing_open"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_independent_payoff",
+      "episode": 9,
+      "title": {
+        "ru": "Не быть наградой",
+        "en": "Not a Reward"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": "giulia",
+            "text": "Ты назвала полную цену. Теперь никто не сможет сказать, что твоя работа была подарком за красивый вечер.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "Ты открыла проверенные факты и оставила себе право не отвечать за непроверенное. Это тоже профессиональная граница.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "Ты отложила детали. Значит, утром тебе понадобится не смелость, а точная запись того, что осталось за сценой.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "Я не спасаю Villa Serena, чтобы доказать, что мне не нужен никто. Я выбираю работу, в которой моё имя означает ответственность."
+          }
+        ],
+        "en": [
+          {
+            "speaker": "giulia",
+            "text": "You named the full price. No one can call your work a gift for a beautiful night now.",
+            "when": {
+              "publicDisclosure": "full"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "You opened what was verified and kept the right not to answer for what was not. That is a professional boundary too.",
+            "when": {
+              "publicDisclosure": "verified"
+            }
+          },
+          {
+            "speaker": "giulia",
+            "text": "You deferred the details. In the morning you will need not courage, but an exact record of what stayed off the stage.",
+            "when": {
+              "publicDisclosure": "withheld"
+            }
+          },
+          {
+            "speaker": "nika",
+            "text": "I am not saving Villa Serena to prove I need no one. I am choosing work where my name means responsibility."
+          }
+        ]
+      },
+      "choices": [
+        {
+          "id": "ep9_independent_choose_own_next_step",
+          "label": {
+            "ru": "Выбрать следующий шаг самой",
+            "en": "Choose her next step herself"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "self-authored",
+            "nikaCareerPlan": "portfolio",
+            "lastChoice": "ep9_independent_choose_own_next_step"
+          }
+        },
+        {
+          "id": "ep9_independent_delay_next_step",
+          "label": {
+            "ru": "Отложить следующий шаг до решения по отелю",
+            "en": "Delay the next step until the hotel decision"
+          },
+          "to": "ep9_transition",
+          "requires": {
+            "route": "independent",
+            "routeLocked": true
+          },
+          "effects": {
+            "independentProgress": "client-tested",
+            "lastChoice": "ep9_independent_delay_next_step"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep9_transition",
+      "episode": 9,
+      "title": {
+        "ru": "Утро после юбилея",
+        "en": "The Morning After the Anniversary"
+      },
+      "dialogue": {
+        "ru": [
+          {
+            "speaker": null,
+            "text": "К утру терраса снова стала рабочим местом. Праздник доказал, что Villa Serena умеет принимать людей, но не доказал, что она может заплатить за это без чужого контроля."
+          },
+          {
+            "speaker": "bianca",
+            "text": "У вас теперь есть публичная версия условий. Следующий ответ будет не на сцене, а за столом, где решают собственность и полномочия."
+          },
+          {
+            "speaker": "nika",
+            "text": "Я не назвала это финалом. Я назвала вещи своими именами, чтобы финал не написали за нас."
+          },
+          {
+            "speaker": null,
+            "text": "До конца десятой недели оставалось время только на одно: принять решение, не перепутав любовь с бизнесом и надежду с гарантией."
+          }
+        ],
+        "en": [
+          {
+            "speaker": null,
+            "text": "By morning, the terrace was a workplace again. The celebration proved Villa Serena could welcome people, but not that it could pay for it without someone else's control."
+          },
+          {
+            "speaker": "bianca",
+            "text": "You have a public version of the terms now. The next answer will not be on a stage, but at the table where ownership and authority are decided."
+          },
+          {
+            "speaker": "nika",
+            "text": "I did not call it a finale. I named things so the finale would not be written for us."
+          },
+          {
+            "speaker": null,
+            "text": "There was only time for one thing before the tenth week ended: make a decision without confusing love with business or hope with a guarantee."
+          }
+        ]
+      },
       "ending": true
     }
   ],
@@ -11889,6 +13717,10 @@
     {
       "episode": 8,
       "start": "ep8_entry"
+    },
+    {
+      "episode": 9,
+      "start": "ep9_entry"
     }
   ]
 }

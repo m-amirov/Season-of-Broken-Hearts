@@ -11,6 +11,7 @@ runtime evidence; `planned` не является delivered payoff.
 | `matteo-negotiation-documents` | условия переговоров Маттео | раскрытие документов и публичная прозрачность | planned |
 | `elio-restaurant-departure` | карьерная мечта Элио | разговор о собственном ресторане и отъезде | planned |
 | `season-hotel-outcome` | угроза продажи Villa Serena | независимость / компромисс / продажа | planned |
+| `anniversary-public-truth` | бюджетный разрыв перед юбилеем | публичное раскрытие условий и его последствия | authored; runtime evidence pending |
 
 EP1 не обещает, что Ника уже простила Лео или выбрала партнёра. Состояние
 каждой ветки сохранено для следующих эпизодов.

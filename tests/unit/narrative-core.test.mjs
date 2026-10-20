@@ -115,18 +115,75 @@ test('narrative validator reports a bounded state-space stop without expanding i
   assert.match(report.disclaimer, /no PASS is claimed/i);
 });
 
-test('narrative validator exhausts the EP1-EP8 graph below the configured state bound', () => {
+test('narrative validator exhausts the EP1-EP9 graph below the configured state bound', () => {
   const maxStates = 600_000;
   const report = checkNarrativeGame(graph, saveFixtures, storyPromises, { maxStates });
 
   assert.equal(report.status, 'PASS_DECLARED_NARRATIVE_GRAPH', JSON.stringify(report, null, 2));
   assert.deepEqual(report.errors, []);
-  assert.equal(report.coverage.declaredScenes, 116);
-  assert.equal(report.coverage.reachedScenes, 116);
-  assert.equal(report.coverage.declaredChoices, 142);
-  assert.equal(report.coverage.visitedChoices, 142);
+  assert.equal(report.coverage.declaredScenes, 135);
+  assert.equal(report.coverage.reachedScenes, 135);
+  assert.equal(report.coverage.declaredChoices, 190);
+  assert.equal(report.coverage.visitedChoices, 190);
   assert.equal(report.coverage.declaredEndings, 1);
   assert.equal(report.coverage.reachedEndings, 1);
   assert.equal(report.coverage.saveFixtures, 23);
   assert.ok(report.coverage.visitedStates < maxStates);
+});
+
+test('liveness projection keeps a state difference that changes conditional dialogue', () => {
+  const model = {
+    schemaVersion: 1,
+    profile: 'narrative-game',
+    start: 'start',
+    locales: ['ru', 'en'],
+    characters: ['nika'],
+    stateSchema: {
+      signal: { type: 'string', values: ['none', 'left', 'right'] }
+    },
+    initialState: { signal: 'none' },
+    scenes: [
+      {
+        id: 'start',
+        episode: 1,
+        title: { ru: 'Старт', en: 'Start' },
+        dialogue: { ru: [{ speaker: 'nika', text: 'Выбор' }], en: [{ speaker: 'nika', text: 'Choice' }] },
+        choices: [
+          { id: 'choose_left', label: { ru: 'Слева', en: 'Left' }, to: 'shared', effects: { signal: 'left' } },
+          { id: 'choose_right', label: { ru: 'Справа', en: 'Right' }, to: 'shared', effects: { signal: 'right' } }
+        ]
+      },
+      {
+        id: 'shared',
+        episode: 1,
+        title: { ru: 'Общая сцена', en: 'Shared scene' },
+        dialogue: {
+          ru: [
+            { speaker: null, text: 'Левая реплика', when: { signal: 'left' } },
+            { speaker: null, text: 'Правая реплика', when: { signal: 'right' } }
+          ],
+          en: [
+            { speaker: null, text: 'Left line', when: { signal: 'left' } },
+            { speaker: null, text: 'Right line', when: { signal: 'right' } }
+          ]
+        },
+        next: 'end'
+      },
+      {
+        id: 'end',
+        episode: 1,
+        title: { ru: 'Конец', en: 'End' },
+        dialogue: { ru: [{ speaker: null, text: 'Конец' }], en: [{ speaker: null, text: 'End' }] },
+        ending: true
+      }
+    ]
+  };
+  const report = checkNarrativeGame(model, {
+    schemaVersion: 1,
+    samples: [{ schemaVersion: 1, sceneId: 'start', state: { signal: 'none' }, locale: 'ru', dialogueIndex: 0 }]
+  }, undefined, { maxStates: 20 });
+
+  assert.equal(report.status, 'PASS_DECLARED_NARRATIVE_GRAPH', JSON.stringify(report, null, 2));
+  assert.equal(report.coverage.visitedChoices, 2);
+  assert.equal(report.coverage.visitedStates, 4);
 });
