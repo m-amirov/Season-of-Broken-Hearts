@@ -1,0 +1,52 @@
+2026-10-20 Season of Broken Hearts Web High transport diagnostics
+projectHead=1a9685a4a943b6c2d3efcb57db58e4972a99cae5
+
+COMMAND: ceos web-preflight --project . --json
+RESULT:
+{
+  "status": "UNAVAILABLE",
+  "enabled": true,
+  "ready": false,
+  "fallbackAllowed": true,
+  "reason": "fetch failed",
+  "healthUrl": "http://127.0.0.1:17841/healthz"
+}
+
+COMMAND: Get-NetTCPConnection -LocalPort 17841 -State Listen
+RESULT: NO_LISTENER
+
+COMMAND: production status --json before repair
+RESULT: browser-host incorrectly reported the DEV descriptor; proxy Responses endpoint unreachable.
+
+REPAIR:
+C:\Users\user\.codex-chatgpt-web\config.json
+browserHostDescriptorPath -> C:\Users\user\.codex-chatgpt-web\runtime\launcher-browser.json
+
+COMMAND: DEV browser check with CODEX_CHATGPT_WEB_HOME=C:\Users\user\.codex-chatgpt-web-dev
+RESULT: Playwright can reach the authenticated ChatGPT surface embedded in the launcher.
+
+COMMAND: DEV minimal text request
+MODEL: chatgpt-web/gpt-6-sol
+REASONING: high
+MODE: browser-only
+LOCAL_TOOLS: false
+RESULT: WEB HIGH DEV READY
+TRACE: 9170d9175aa6
+DIAGNOSTICS: C:\Users\user\.codex-chatgpt-web-dev\runtime\dev-chat\diagnostics\browser-turns\9170d9175aa6-77020a3f
+
+COMMAND: ceos dev-web-review S32 retry
+MODEL: chatgpt-web/gpt-6-sol
+REASONING: high
+MODE: browser-only
+STABLE_BRIDGE_USED: false
+RESULT: REWORK
+SUBMITTED: true
+ATTACHMENT_ACCEPTED: true
+ACTUAL_PIXELS_RECEIVED: true
+TRACE: devweb_3117df6e65ff49288f9ae2adcb321424
+RECEIPT: artifacts/evidence/web-high-control/S32_GIULIA_PIXEL_REVIEW_RECEIPT_20261020_RETRY.json
+RAW: artifacts/evidence/web-high-control/S32_GIULIA_PIXEL_REVIEW_RAW_20261020_RETRY.txt
+TRACE_DIR: C:\Users\user\.codex-chatgpt-web-dev\runtime\dev-chat\diagnostics\devweb_3117df6e65ff49288f9ae2adcb321424-7e181a13
+
+COMMAND: ceos web-review-verify --kind production-art --phase acceptance --visual --assurance visual-content
+RESULT: WEB_REVIEW_NOT_VERIFIED (receipt status REWORK; unresolved observations remain)

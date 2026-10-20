@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_S32_CANONICAL_RUNTIME_PIXEL_QA",
+  "sourceHead": "1a9685a4a943b6c2d3efcb57db58e4972a99cae5",
+  "baseUrl": "http://127.0.0.1:4174/",
+  "targetScene": "ep2_rehearsal_failure",
+  "targetAsset": "ep2-rehearsal-failure-cg",
+  "expectedSources": {
+    "portrait": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+    "landscape": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png"
+  },
+  "expectedHashes": {
+    "portrait": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+    "landscape": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58"
+  },
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 1920,
+      "height": 900
+    },
+    {
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 430,
+      "height": 932
+    }
+  ],
+  "routes": [
+    {
+      "route": "public-agreement",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_professional_response",
+        "ep2_public_agreement",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-refusal",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_pushback_response",
+        "ep2_public_agreement",
+        "ep2_public_refusal",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-agreement",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_professional_response",
+        "ep2_public_agreement",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-refusal",
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_pushback_response",
+        "ep2_public_agreement",
+        "ep2_public_refusal",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-agreement",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_professional_response",
+        "ep2_public_agreement",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-refusal",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_pushback_response",
+        "ep2_public_agreement",
+        "ep2_public_refusal",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-agreement",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_professional_response",
+        "ep2_public_agreement",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-refusal",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_pushback_response",
+        "ep2_public_agreement",
+        "ep2_public_refusal",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-agreement",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_professional_response",
+        "ep2_public_agreement",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-refusal",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_pushback_response",
+        "ep2_public_agreement",
+        "ep2_public_refusal",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-agreement",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_formal_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_humor_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_numbers_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_hear_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_professional_response",
+        "ep2_public_agreement",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "route": "public-refusal",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sceneIds": [
+        "ep1_arrival",
+        "ep1_gate",
+        "ep1_matteo_direct_response",
+        "ep1_matteo_welcome",
+        "ep1_kitchen",
+        "ep1_elio_boundary_response",
+        "ep1_work_briefing",
+        "ep1_hotel_crisis",
+        "ep1_hotel_staff_response",
+        "ep1_harbor_walk",
+        "ep1_leo_entrance",
+        "ep1_leo_choice",
+        "ep1_leo_distance_response",
+        "ep1_hook",
+        "ep2_morning_brief",
+        "ep2_wedding_budget",
+        "ep2_workday_inventory",
+        "ep2_family_rehearsal",
+        "ep2_family_rehearsal_response",
+        "ep2_fake_terms",
+        "ep2_bianca_arrives",
+        "ep2_bianca_pushback_response",
+        "ep2_public_agreement",
+        "ep2_public_refusal",
+        "ep2_rehearsal_failure"
+      ],
+      "targetScene": "ep2_rehearsal_failure",
+      "consoleErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "captures": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "public-agreement",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "landscape",
+      "requestedFormat": "landscape",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedHash": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1920x1080/public-agreement/ep2_rehearsal_failure.png",
+      "screenshotSha256": "b43d754a644fe1c9a091d233c4cb4b5e7a686232e09484ebb25acc4ae436dbda",
+      "screenshotBytes": 2406958,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "expectedFormat": "landscape",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "route": "public-refusal",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "landscape",
+      "requestedFormat": "landscape",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedHash": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1920x1080/public-refusal/ep2_rehearsal_failure.png",
+      "screenshotSha256": "40bcf26f6846b4a84c174fb57c2d1826e612f77ec5a814f49ede3520a0586322",
+      "screenshotBytes": 2407009,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 1080
+        },
+        "expectedFormat": "landscape",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "public-agreement",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "landscape",
+      "requestedFormat": "landscape",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedHash": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1920x900/public-agreement/ep2_rehearsal_failure.png",
+      "screenshotSha256": "01941b501f8064e20e9a078c368b03ec7e88940bfb65eb566dda5b66a4194f71",
+      "screenshotBytes": 2033299,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "expectedFormat": "landscape",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 900
+      },
+      "route": "public-refusal",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "landscape",
+      "requestedFormat": "landscape",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedHash": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1920x900/public-refusal/ep2_rehearsal_failure.png",
+      "screenshotSha256": "f4a38046192c1dc5ee14f3b5342acc2428808b494b79c5da482021e39f2f7ba2",
+      "screenshotBytes": 2033404,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1920,
+          "height": 900
+        },
+        "expectedFormat": "landscape",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "public-agreement",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "landscape",
+      "requestedFormat": "landscape",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedHash": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1600x900/public-agreement/ep2_rehearsal_failure.png",
+      "screenshotSha256": "407831e2dd4d46bd62da12b9b651438d912e22f35d68c5c546225ab2f67263b1",
+      "screenshotBytes": 1782039,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "expectedFormat": "landscape",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "route": "public-refusal",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "landscape",
+      "requestedFormat": "landscape",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "expectedHash": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",
+      "naturalDimensions": "1672x941",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1600x900/public-refusal/ep2_rehearsal_failure.png",
+      "screenshotSha256": "0197e455835b24b201f2a91d12d133affa269c5d8e662a5309a3d7f47f44d1b9",
+      "screenshotBytes": 1781976,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 1600,
+          "height": 900
+        },
+        "expectedFormat": "landscape",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "public-agreement",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "portrait",
+      "requestedFormat": "portrait",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedHash": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/390x844/public-agreement/ep2_rehearsal_failure.png",
+      "screenshotSha256": "327f9ebde08eec14500ddd39d03dd88c5417a0f80e6624e5b3428a91e350e7a2",
+      "screenshotBytes": 459850,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "expectedFormat": "portrait",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "public-refusal",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "portrait",
+      "requestedFormat": "portrait",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedHash": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/390x844/public-refusal/ep2_rehearsal_failure.png",
+      "screenshotSha256": "327f9ebde08eec14500ddd39d03dd88c5417a0f80e6624e5b3428a91e350e7a2",
+      "screenshotBytes": 459850,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 390,
+          "height": 844
+        },
+        "expectedFormat": "portrait",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "public-agreement",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "portrait",
+      "requestedFormat": "portrait",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedHash": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/360x640/public-agreement/ep2_rehearsal_failure.png",
+      "screenshotSha256": "5ca319f65a12029ef58d2a17cf10a7d971c1ee1829445cffb961a7dbe4f4663b",
+      "screenshotBytes": 343240,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "expectedFormat": "portrait",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "route": "public-refusal",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "portrait",
+      "requestedFormat": "portrait",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedHash": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/360x640/public-refusal/ep2_rehearsal_failure.png",
+      "screenshotSha256": "2a79b3665e23b8a81f8d6f80ff0b94cb3c8114321537090f42c31904e1111922",
+      "screenshotBytes": 343230,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 360,
+          "height": 640
+        },
+        "expectedFormat": "portrait",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "public-agreement",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "portrait",
+      "requestedFormat": "portrait",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedHash": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/430x932/public-agreement/ep2_rehearsal_failure.png",
+      "screenshotSha256": "977466e344ff8713857e2df10bac3a9019ee85e7ec1fc4753b7587eeca4385df",
+      "screenshotBytes": 552981,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "expectedFormat": "portrait",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "public-refusal",
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "expectedAssetId": "ep2-rehearsal-failure-cg",
+      "format": "portrait",
+      "requestedFormat": "portrait",
+      "source": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedSource": "/assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "expectedHash": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",
+      "naturalDimensions": "1024x1536",
+      "screenshot": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/430x932/public-refusal/ep2_rehearsal_failure.png",
+      "screenshotSha256": "d8d9db2376ff63d87b3e61d9dc49ceeb0db299bad56addcb7397a9c39c621a5b",
+      "screenshotBytes": 552989,
+      "visualRuntime": {
+        "artBounds": {
+          "width": 430,
+          "height": 932
+        },
+        "expectedFormat": "portrait",
+        "dialogueSafeScreenshot": true,
+        "noHorizontalOverflow": true,
+        "noVerticalOverflow": true
+      },
+      "language": "ru"
+    }
+  ],
+  "transitionChecks": {
+    "back": {
+      "before": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 0
+      },
+      "afterAdvance": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 1
+      },
+      "afterBack": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 0
+      },
+      "restored": true
+    },
+    "newGame": {
+      "cursor": {
+        "sceneId": "ep1_arrival",
+        "dialogueIndex": 0
+      },
+      "resetToStart": true
+    },
+    "locale": {
+      "htmlLang": "ru",
+      "title": "Сезон разбитых сердец"
+    }
+  },
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

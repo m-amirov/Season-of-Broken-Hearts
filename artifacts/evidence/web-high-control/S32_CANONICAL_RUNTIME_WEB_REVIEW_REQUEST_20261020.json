@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "S32",
+  "sourceHead": "1a9685a4a943b6c2d3efcb57db58e4972a99cae5",
+  "context": "Review S32 ep2_rehearsal_failure from the actual attached pixels at the exact source HEAD. The approved character reference establishes Giulia as approximately 49 years old, with visible silver strands, mature facial structure and a low bun. Compare the historically accepted canonical portrait and landscape pair against the four current runtime screenshots from both public-agreement and public-refusal route states. The current runtime mapping must use assetId ep2-rehearsal-failure-cg with the canonical portrait or landscape source selected by viewport. The authored cue requires Nika, Matteo and Giulia in a service corridor, with Giulia in a cream shirt, faded-olive apron and dark trousers, and the operational service action must remain legible. Check character identity and age impression, silver strands and mature features, required cast, scene/action continuity, desktop composition, mobile crop at 390x844 and 360x640, dialogue safe area, and UI separation. The canonical pair is comparison evidence but should be accepted only if the attached current runtime pixels support it. Do not recommend regeneration when the canonical pair is materially correct. Return exactly the required JSON object with one concrete visualEvidence observation for every attached image. For any blocking identity mismatch use only WRONG_CHARACTER or ESSENTIAL_CHARACTER_UNRECOGNIZABLE; do not invent impact codes.",
+  "images": [
+    {
+      "ref": "giulia-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+    },
+    {
+      "ref": "s32-canonical-portrait",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "sha256": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd"
+    },
+    {
+      "ref": "s32-canonical-landscape",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "sha256": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58"
+    },
+    {
+      "ref": "s32-runtime-agreement-desktop-1920x900",
+      "kind": "runtime",
+      "path": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/1920x900/public-agreement/ep2_rehearsal_failure.png",
+      "sha256": "01941b501f8064e20e9a078c368b03ec7e88940bfb65eb566dda5b66a4194f71"
+    },
+    {
+      "ref": "s32-runtime-agreement-mobile-390x844",
+      "kind": "runtime",
+      "path": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/390x844/public-agreement/ep2_rehearsal_failure.png",
+      "sha256": "327f9ebde08eec14500ddd39d03dd88c5417a0f80e6624e5b3428a91e350e7a2"
+    },
+    {
+      "ref": "s32-runtime-refusal-mobile-360x640",
+      "kind": "runtime",
+      "path": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/360x640/public-refusal/ep2_rehearsal_failure.png",
+      "sha256": "2a79b3665e23b8a81f8d6f80ff0b94cb3c8114321537090f42c31904e1111922"
+    },
+    {
+      "ref": "s32-runtime-refusal-mobile-430x932",
+      "kind": "runtime",
+      "path": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020/430x932/public-refusal/ep2_rehearsal_failure.png",
+      "sha256": "d8d9db2376ff63d87b3e61d9dc49ceeb0db299bad56addcb7397a9c39c621a5b"
+    }
+  ]
+}

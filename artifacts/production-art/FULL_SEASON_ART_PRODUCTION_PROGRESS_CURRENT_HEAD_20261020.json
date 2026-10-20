@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "FULL_SEASON_ART_PRODUCTION_PROGRESS_CURRENT_HEAD",
+  "recordedAt": "2026-10-20",
+  "sourceHead": "1a9685a4a943b6c2d3efcb57db58e4972a99cae5",
+  "plan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+  "controlResult": {
+    "s32": "CURRENT_HEAD_RUNTIME_QA_PASS_AND_DEV_WEB_HIGH_PASS",
+    "runtimeQa": "artifacts/evidence/web-high-control/S32_CURRENT_HEAD_RUNTIME_QA_20261020.json",
+    "webReceipt": "artifacts/evidence/web-high-control/S32_CANONICAL_RUNTIME_WEB_REVIEW_RECEIPT_20261020.json",
+    "webVerify": "PASS",
+    "canonicalReuse": "RESTORED_WITHOUT_REGENERATION"
+  },
+  "productionState": {
+    "plannedVisualPairs": 119,
+    "runtimeMappedExistingPairs": 26,
+    "currentHeadIndependentAcceptedPairs": 1,
+    "candidatePairsPendingIndependentAcceptance": 1,
+    "newPairsRemainingToCreate": 92,
+    "newPngRemainingToCreate": 184,
+    "nextSmallBatch": "EP3 ep3_old_photo independent Web High acceptance; no regeneration",
+    "subsequentProduction": "EP3/EP4 only after current-head brief gate is authorized; one-pair increments"
+  },
+  "blockers": [
+    "EP3 ep3_old_photo candidate is waiting for independent Web High receipt; its generation limit is exhausted.",
+    "EP3 new-pair generation still needs current-head source-bound brief refresh and capability challenge.",
+    "EP4 authored ep4_* brief packet is prepared but the generic validator cannot authorize it without a project-specific adapter; no alias or bypass used.",
+    "EP1 and the other 25 existing pairs have historical/mechanical evidence but no fresh independent current-head Web acceptance in this turn.",
+    "Release build and publication remain out of scope."
+  ],
+  "preservation": {
+    "acceptedOriginalsChanged": false,
+    "historicalReceiptsChanged": false,
+    "parallelWorktreesPreserved": true,
+    "massAcceptanceStarted": false,
+    "newGenerationStarted": false
+  },
+  "queue": "artifacts/production-art/WEB_HIGH_SEQUENTIAL_QUEUE_CURRENT_HEAD_20261020.json"
+}

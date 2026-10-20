@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "S32",
+  "sourceHead": "1a9685a4a943b6c2d3efcb57db58e4972a99cae5",
+  "context": "Review S32 (ep2_rehearsal_failure) using the actual attached pixels. The approved character reference establishes Giulia as approximately 49 years old, with visible silver strands and mature facial features. Compare the submitted candidate pair ep2-rehearsal-failure-cg.png and ep2-rehearsal-failure-cg-landscape.png against the historically accepted pair ep2-service-rehearsal-failure-cg.png and ep2-service-rehearsal-failure-cg-landscape.png, using giulia.png as the identity reference. The S32 brief requires Nika, Matteo and Giulia in the service corridor, with Giulia in a cream shirt, faded-olive apron and dark trousers, and requires the operational service action to remain legible. Determine whether the submitted pair preserves Giulia identity, age impression, silver strands, mature facial structure, required cast and scene continuity. Do not recommend regeneration unless the attached pixels establish a material defect. The historically accepted pair is comparison evidence, not an automatic current PASS. Return exactly the required JSON object with one concrete visualEvidence observation for every attached image.",
+  "images": [
+    {
+      "ref": "giulia-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+    },
+    {
+      "ref": "s32-submitted-portrait",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep2-rehearsal-failure-cg.png",
+      "sha256": "89e039b5138510df392e5c7b59dfe915003d5e316740a983d5a24d03dfb3d798"
+    },
+    {
+      "ref": "s32-submitted-landscape",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png",
+      "sha256": "ba091839228a10a11b06ef31dd8c43764ee8fe2a256b978f15916eaeaa649bda"
+    },
+    {
+      "ref": "s32-historical-accepted-portrait",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep2-service-rehearsal-failure-cg.png",
+      "sha256": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd"
+    },
+    {
+      "ref": "s32-historical-accepted-landscape",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",
+      "sha256": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58"
+    }
+  ]
+}

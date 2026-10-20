@@ -1,0 +1,76 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "S32",  
+"sourceHead": "1a9685a4a943b6c2d3efcb57db58e4972a99cae5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"S32"  
+\],  
+"evidenceRefs": \[  
+"giulia-approved-reference",  
+"s32-canonical-portrait",  
+"s32-canonical-landscape",  
+"s32-runtime-agreement-desktop-1920x900",  
+"s32-runtime-agreement-mobile-390x844",  
+"s32-runtime-refusal-mobile-360x640",  
+"s32-runtime-refusal-mobile-430x932"  
+\],  
+"receivedEvidenceRefs": \[  
+"giulia-approved-reference",  
+"s32-canonical-portrait",  
+"s32-canonical-landscape",  
+"s32-runtime-agreement-desktop-1920x900",  
+"s32-runtime-agreement-mobile-390x844",  
+"s32-runtime-refusal-mobile-360x640",  
+"s32-runtime-refusal-mobile-430x932"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. The combined narrative text and current player-facing runtime frames communicate the complete S32 story: the dessert refrigerator has failed shortly before the family dinner, the spare key has been located in Matteo's room, and the waiters are already circulating the story about the happy couple. The illustration establishes the immediate operational problem through an open commercial refrigerator, desserts, service equipment, and the coordinated reactions of Nika, Matteo and Giulia. The spare key, the forty-minute investigation and the waiters' conversations are conveyed explicitly by the readable Russian narrative text. Their absence as literal visual actions creates no contradiction and does not obstruct player comprehension. Giulia's identity is consistent with the approved reference: she has a mature facial structure, conspicuous silver strands, dark hair gathered into a low bun, and an age impression compatible with approximately 49 years. Her cream shirt, faded-olive apron and dark trousers are consistent with the authored wardrobe. Both canonical compositions preserve the required cast, setting and service activity. The supplied desktop and mobile runtime captures visibly reproduce the corresponding canonical scene compositions. At 390x844 and especially 360x640, narrow framing crops portions of Nika's extended arm and Giulia's right-side silhouette and dessert tray, but the three characters remain distinguishable and the service activity remains understandable. At 430x932, the framing likewise retains the essential character and action information. All four runtime captures preserve readable narrative text against a dark gradient and maintain separation between the dialogue area and the top navigation controls. The refrigerator's open door and visible interior illumination do not establish that its cooling system is functioning and therefore do not contradict the narrated failure. No incorrect character, material action contradiction, incompatible location, timeline contradiction or unreadable critical UI is demonstrated. The attached pixels support acceptance of the current canonical artwork without regeneration. Exact internal assetId wiring cannot be independently verified from screenshots alone, but the visible runtime artwork matches the supplied canonical evidence. No blocking issue is established.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference presents three views of the same mature woman against a neutral gray background: a full-body view on the left, a frontal facial close-up in the center, and a right-facing profile on the right. Giulia has dark brown hair with conspicuous silver strands, loosely gathered into a low bun. Her mature features include visible forehead lines, fine lines around the eyes, defined cheekbones and natural facial texture. She wears small gold hoop earrings, a muted blue-green button-up shirt, a beige waist apron, dark trousers and black shoes. Her appearance supports the specified age impression of approximately 49 years and provides recognizable facial and hairstyle characteristics for comparison with the scene images."  
+},  
+{  
+"ref": "s32-canonical-portrait",  
+"path": "assets/production/cg/ep2-service-rehearsal-failure-cg.png",  
+"sha256": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",  
+"observation": "The portrait composition shows three characters in a warmly illuminated commercial service corridor. Nika stands on the left, pointing toward something outside the frame while holding a notebook. Matteo occupies the middle, looking toward Nika while handling a rectangular metal container beside an open industrial refrigerator. Giulia stands on the right, holding a metal tray of individual layered desserts topped with berries and carrying a paper checklist in her other hand. Giulia has a mature face, visible silver strands in her dark low bun, small hoop earrings, a cream shirt, a faded-olive apron and dark trousers. Her appearance corresponds closely to the approved reference despite the wardrobe change. The open refrigerator and dessert tray establish the service problem, while the characters' expressions and gestures communicate urgency and coordination."  
+},  
+{  
+"ref": "s32-canonical-landscape",  
+"path": "assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",  
+"sha256": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",  
+"observation": "The landscape composition depicts the same three-character service-corridor scene in a wider horizontal arrangement. Nika stands on the left with her arm extended toward the corridor shelving and a notebook in her other hand. Matteo is centered beside the open refrigerator, holding a large rectangular metal container. Giulia stands on the right carrying a dessert tray and a written checklist. Stainless-steel equipment, service racks, hanging lights and a sunlit passage establish the operational setting. Giulia's silver-streaked dark hair, low bun, mature facial structure, cream shirt, muted olive apron and dark trousers are visible. The wider frame preserves all three characters, their immediate actions and the relevant equipment without introducing a competing event."  
+},  
+{  
+"ref": "s32-runtime-agreement-desktop-1920x900",  
+"path": "artifacts/evidence/web-high-control/S32\_CURRENT\_HEAD\_RUNTIME\_QA\_20261020/1920x900/public-agreement/ep2\_rehearsal\_failure.png",  
+"sha256": "01941b501f8064e20e9a078c368b03ec7e88940bfb65eb566dda5b66a4194f71",  
+"observation": "The desktop runtime displays the canonical landscape composition in a central image area, with darkened, blurred extensions at the outer sides. Nika's pointing gesture, Matteo's metal container, the open refrigerator and Giulia's dessert tray remain visible. Giulia's face and silver-streaked hair are clearly recognizable on the right. A dark gradient covers the lower portion of the scene, supporting a complete three-line Russian narrative paragraph in large white serif text. The text describes the dessert refrigerator failure, the discovery of the spare key in Matteo's room and the waiters spreading the happy-couple story. The text remains legible without covering the principal faces. The 'Назад' control appears at the upper left and 'Меню' at the upper right. Both controls are visually separated from the narrative text and remain distinguishable against their backgrounds."  
+},  
+{  
+"ref": "s32-runtime-agreement-mobile-390x844",  
+"path": "artifacts/evidence/web-high-control/S32\_CURRENT\_HEAD\_RUNTIME\_QA\_20261020/390x844/public-agreement/ep2\_rehearsal\_failure.png",  
+"sha256": "327f9ebde08eec14500ddd39d03dd88c5417a0f80e6624e5b3428a91e350e7a2",  
+"observation": "The 390x844 agreement capture displays a vertically framed version of the canonical three-character composition. Nika appears on the left holding her notebook, with her extended pointing arm continuing beyond the viewport. Matteo remains central and recognizable beside the refrigerator. Giulia is positioned against the right boundary, where part of her face and body is cropped, but her silver-streaked hair, mature facial features, cream shirt, olive apron and dessert tray remain visible. The lower part of the image transitions into a dark gradient carrying the complete Russian narrative paragraph. Its lines remain readable and finish above the bottom edge. The top navigation controls are visible, do not overlap character faces, and remain separate from the dialogue region. The narrower framing reduces peripheral visual information without preventing recognition of the principal cast or the operational situation."  
+},  
+{  
+"ref": "s32-runtime-refusal-mobile-360x640",  
+"path": "artifacts/evidence/web-high-control/S32\_CURRENT\_HEAD\_RUNTIME\_QA\_20261020/360x640/public-refusal/ep2\_rehearsal\_failure.png",  
+"sha256": "2a79b3665e23b8a81f8d6f80ff0b94cb3c8114321537090f42c31904e1111922",  
+"observation": "The 360x640 refusal capture presents a tighter mobile crop. Nika and Matteo remain prominently visible on the left and center, while Giulia occupies a narrow region at the right edge. Her face and silver-streaked hairstyle are partially visible, along with her cream shirt, olive apron and a portion of the berry-topped dessert tray. The pointing arm extends outside the left boundary. Although this crop provides less space for Giulia than the canonical artwork, her clothing, distinctive hair and service activity remain sufficient to distinguish her from the other characters. The Russian narrative is displayed in multiple readable lines over a dark lower gradient. The concluding sentence remains visible above the bottom edge. The upper 'Назад' and 'Меню' controls are separate from the text and are not obscured by the artwork. No contradictory character or event is introduced by this crop."  
+},  
+{  
+"ref": "s32-runtime-refusal-mobile-430x932",  
+"path": "artifacts/evidence/web-high-control/S32\_CURRENT\_HEAD\_RUNTIME\_QA\_20261020/430x932/public-refusal/ep2\_rehearsal\_failure.png",  
+"sha256": "d8d9db2376ff63d87b3e61d9dc49ceeb0db299bad56addcb7397a9c39c621a5b",  
+"observation": "The 430x932 refusal capture retains the same service-corridor scene and three-character arrangement. Nika is shown on the left with her notebook and outward pointing gesture. Matteo stands centrally beside the open commercial refrigerator and handles the metal container. Giulia remains at the right edge with part of her silhouette and tray cropped, but her mature face, visible gray strands, low bun, cream shirt and olive apron remain identifiable. A portion of the dessert tray and individual desserts is visible near the right boundary. The dark gradient in the lower region provides strong contrast for the complete Russian narrative paragraph, which ends comfortably above the bottom of the viewport. Top navigation controls remain visible and separated from the dialogue. The image preserves the necessary character relationships and service action while the text supplies the specific narrative developments."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

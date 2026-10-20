@@ -1,0 +1,76 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "S32",  
+"sourceHead": "1a9685a4a943b6c2d3efcb57db58e4972a99cae5",  
+"status": "REWORK",  
+"reviewedItems": \[  
+"S32"  
+\],  
+"evidenceRefs": \[  
+"giulia-approved-reference",  
+"s32-submitted-portrait",  
+"s32-submitted-landscape",  
+"s32-historical-accepted-portrait",  
+"s32-historical-accepted-landscape"  
+\],  
+"receivedEvidenceRefs": \[  
+"giulia-approved-reference",  
+"s32-submitted-portrait",  
+"s32-submitted-landscape",  
+"s32-historical-accepted-portrait",  
+"s32-historical-accepted-landscape"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "REWORK is warranted for one material character-identity defect affecting both submitted variants. The service-corridor setting, three-person composition, directional gesture, refrigeration equipment, dessert handling and operational activity remain understandable. Nika and Matteo occupy recognizable narrative roles, and the operational service action is legible without requiring every narrated gesture to appear literally. However, the submitted portrait and landscape replace the visibly mature, silver-streaked Giulia established by the approved character reference with a substantially younger-looking, dark-haired woman. This is not merely a cosmetic age variation: Giulia's approximately 49-year-old appearance, silver strands and mature facial structure are explicit requirements of the supplied S32 brief. The historically accepted pair demonstrates that these identity characteristics can remain recognizable in the same service-corridor scenario. The submitted character retains broadly appropriate work clothing and participates in the required service action, but her face and hair do not adequately preserve Giulia's established identity. This materially compromises cast recognition and character continuity across the scene. The supplied evidence does not include a separate dialogue transcript or complete interactive UI, so the assessment of narrative comprehension is limited to the authored brief and visible runtime images. No additional blockers are established. Targeted correction of Giulia's identity in both submitted variants is recommended; wholesale regeneration of the composition or operational scene is not justified by the observed pixels.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference presents Giulia through a full-body view, frontal facial close-up and side profile. She has a visibly mature face with forehead lines, defined nasolabial folds, fine lines around the eyes and natural skin texture. Her dark hair contains conspicuous silver strands across the crown, temples and swept-back sections, gathered into a loose low bun. She wears small gold hoop earrings, a muted sage-gray collared shirt, a light beige waist apron, dark trousers and black shoes. Her overall appearance supports the specified approximately 49-year-old identity."  
+},  
+{  
+"ref": "s32-submitted-portrait",  
+"path": "assets/production/cg/ep2-rehearsal-failure-cg.png",  
+"sha256": "89e039b5138510df392e5c7b59dfe915003d5e316740a983d5a24d03dfb3d798",  
+"observation": "The portrait depicts three people in a warm, stone-walled service corridor. Nika stands left, pointing toward the left edge while holding a sheet of paper. Matteo stands behind the two women, looking toward Nika while holding an open stainless-steel refrigerator door. The apron-wearing woman at right carries a metal tray of small berry-topped desserts. She wears a white chef-style shirt, olive apron and dark trousers. Her face appears substantially younger than the approved Giulia reference, with relatively smooth facial features and dark brown hair arranged in a loose bun. The conspicuous silver strands and mature facial structure of the reference are absent or insufficiently represented. Operational activity is clearly visible, but Giulia's established identity is not preserved."  
+},  
+{  
+"ref": "s32-submitted-landscape",  
+"path": "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png",  
+"sha256": "ba091839228a10a11b06ef31dd8c43764ee8fe2a256b978f15916eaeaa649bda",  
+"observation": "The landscape variant depicts Matteo at left handling a metal dessert tray beside an open refrigerator, Nika in the center pointing left while holding a document, and an apron-wearing woman at right carrying a large tray of plated desserts. Stainless-steel storage equipment, service carts, pendant lights and a long stone corridor establish the operational location. The woman representing Giulia has a youthful-looking face, dark brunette hair without clearly visible silver streaks, a white shirt, olive apron and dark trousers. Her facial proportions and age impression differ materially from the approved reference. The wide composition successfully communicates coordinated service activity but repeats the identity inconsistency visible in the submitted portrait."  
+},  
+{  
+"ref": "s32-historical-accepted-portrait",  
+"path": "assets/production/cg/ep2-service-rehearsal-failure-cg.png",  
+"sha256": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd",  
+"observation": "The historical portrait shows Nika at left pointing toward equipment while holding a clipboard, Matteo positioned behind her, and Giulia at right carrying a metal tray of layered berry desserts while holding a document. Giulia has a visibly mature face with pronounced natural facial lines and substantial gray-silver strands distributed through her dark, loosely gathered hair. She wears a cream-colored collared shirt, faded-olive apron and dark trousers. Her appearance aligns much more closely with the approved reference, and the warm service-corridor setting supports the required scene continuity."  
+},  
+{  
+"ref": "s32-historical-accepted-landscape",  
+"path": "assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png",  
+"sha256": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58",  
+"observation": "The historical landscape shows Nika at left pointing across the service corridor while holding an open notebook, Matteo in the center handling a rectangular metal container beside an open refrigerator, and Giulia at right holding a tray of individual desserts and a clipboard. Giulia's hair visibly includes numerous silver-gray strands around the crown, temples and bun, and her face exhibits mature contours and natural lines. Her cream shirt, faded-olive apron and dark trousers match the specified costume. The three-character grouping, refrigeration equipment, dessert trays and working corridor remain legible. Unlike the submitted landscape, this variant visibly maintains Giulia's approximate age and distinctive appearance."  
+}  
+\],  
+"findings": \[  
+{  
+"id": "S32-GIULIA-IDENTITY-AGE",  
+"severity": "P1",  
+"status": "OPEN",  
+"impactCode": "CHARACTER\_IDENTITY\_CONTINUITY",  
+"authoredCue": "The approved character reference establishes Giulia as approximately 49 years old, with visible silver strands and mature facial features. The S32 brief requires Nika, Matteo and Giulia in the service corridor, with Giulia in a cream shirt, faded-olive apron and dark trousers, and requires the operational service action to remain legible.",  
+"observation": "In both submitted runtime images, the woman occupying Giulia's operational role has dark brown hair gathered into a loose bun, a comparatively smooth face and a substantially younger age impression than the approved reference. The characteristic silver strands, mature facial lines and established facial structure are not adequately reproduced. In the submitted portrait she stands at right holding a tray of small desserts; in the submitted landscape she performs the same service role at right. Both variants retain the required three-person service activity and broadly appropriate apron-and-trousers costume. The approved reference and both historical images, however, show a distinctly older Giulia with conspicuous silver-gray hair and mature facial features. The discrepancy is therefore directly observable in the submitted pixels and is not inferred from a missing prop, action or dialogue.",  
+"playerImpact": "Players familiar with Giulia's established appearance may interpret the apron-wearing woman as a younger, different staff member rather than Giulia. Because the scene explicitly requires Giulia alongside Nika and Matteo, the changed age impression and missing identity markers undermine recognition of the required cast and continuity with her established character design. The presence of another youthful brunette woman, Nika, further reduces visual differentiation between the two female characters. The operational action itself remains comprehensible, but the identity of an essential participant becomes materially ambiguous.",  
+"evidenceRef": "s32-submitted-portrait",  
+"actualPixelsReceived": true,  
+"visualRequired": true,  
+"materialPlayerImpact": true  
+}  
+\],  
+"unresolved": \[  
+"S32-GIULIA-IDENTITY-AGE"  
+\]  
+}
