@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "kind": "ROUTE_ARCHITECTURE_CHECK",
+  "checkId": "EP4_EP10_ROUTE_ARCHITECTURE_CHECK_20261020",
+  "recordedAt": "2026-10-20",
+  "sourceHead": "a6fec5488f26ae58a8775f07b0b49a95cb893cf4",
+  "overall": "BLOCKED_NOT_IMPLEMENTED",
+  "scope": {
+    "episodes": [4, 5, 6, 7, 8, 9, 10],
+    "protected": ["EP2 accepted bytes and receipts", "gameplay source", "historical CEOS checkpoints"],
+    "generationInvoked": false,
+    "sourceChanged": false
+  },
+  "sourceFiles": [
+    {"path": "narrative/season-architecture.json", "sha256": "6211F44C0B5C9DDBC164A3CB6D6B3F5C1755DF78C9672DC7F2C51DC9B04E39B7", "internalSourceHead": "476d71b6bf247a01fcf59617a68e58f518f50700"},
+    {"path": "narrative/graph.json", "sha256": "8D65F28A6E46DA216DADD7D0EE42162E9A5A976497E558E7CFF9AB759EFCF544"},
+    {"path": "narrative/episodes/manifest.json", "sha256": "3AF46300D6DAF8616027A289CBB4DAFA761B5FF3A1B9E6381CD22B9B1DC18DAA"},
+    {"path": "narrative/EPISODE_OUTLINE.md", "sha256": "FFF80FCF5321140DB7FE80DB0D78BD8869DAB98F2ED30C27F2B3CEBD4A920852"},
+    {"path": "narrative/ROUTE_MAP.md", "sha256": "4ECB965C96457A87270F531DF5D7F17E5F4E39FE7D1EC31E0AD7380ACEA4A854"},
+    {"path": "narrative/STORY_PROMISES.md", "sha256": "245B71AA37AC01EFE0E21F76D276FB810BBDC8EF6766E388EBBA72EC2F024DDE"},
+    {"path": "narrative/NARRATIVE_BIBLE.md", "sha256": "6CE57AC42B4251A45E00AFF9FF5064081E23B57E3AB1320D52C33DE559E075C1"}
+  ],
+  "contract": {
+    "routeLockEpisode": 6,
+    "routes": ["matteo", "leo", "elio", "independent"],
+    "relationshipEndings": 7,
+    "hotelOutcomes": 3,
+    "legalEndingPairs": 21,
+    "requiredLocales": ["ru", "en"]
+  },
+  "checks": [
+    {
+      "id": "architecture-contract-shape",
+      "status": "PASS_SCOPED",
+      "observed": "season-architecture.json declares 10 episodes, 4 routes, route lock in EP6, 7 relationship endings, 3 hotel outcomes and 21 legal pairs.",
+      "limitation": "This file declares the target architecture; it does not make future scenes executable."
+    },
+    {
+      "id": "graph-episodes-4-10",
+      "status": "BLOCKED",
+      "observed": {"EP4": 0, "EP5": 0, "EP6": 0, "EP7": 0, "EP8": 0, "EP9": 0, "EP10": 0},
+      "expected": "Authored executable scenes for each planned episode.",
+      "reason": "graph.json contains only EP1-EP3; episodes 4-10 are absent from the executable graph."
+    },
+    {
+      "id": "episode-manifest",
+      "status": "BLOCKED",
+      "observed": {"authoredEpisodes": [2, 3], "plannedEpisodes": [4, 5, 6, 7, 8, 9, 10]},
+      "reason": "EP4-EP10 are listed as planned only; no authored fragment paths exist."
+    },
+    {
+      "id": "route-lock",
+      "status": "NOT_STARTED",
+      "observed": {"requiredSceneId": "ep6_route_choice", "scenePresent": false, "routeEffectsInCurrentGraph": [], "routeLockedEffectsInCurrentGraph": []},
+      "reason": "The contract requires an explicit informed EP6 choice, but no executable route-lock scene or effects exist."
+    },
+    {
+      "id": "route-paths",
+      "status": "NOT_STARTED",
+      "observed": {"required": ["matteo", "leo", "elio", "independent"], "executable": []},
+      "reason": "No EP4-EP10 route-conditioned scenes or route guards are present."
+    },
+    {
+      "id": "relationship-endings",
+      "status": "NOT_STARTED",
+      "observed": {"required": 7, "executable": 0, "runtimeTested": 0},
+      "reason": "Ending definitions exist only in the architecture contract."
+    },
+    {
+      "id": "hotel-outcomes",
+      "status": "NOT_STARTED",
+      "observed": {"required": 3, "executable": 0, "runtimeTested": 0},
+      "reason": "Hotel outcome conditions and payoff scene IDs are planned only."
+    },
+    {
+      "id": "promise-scene-references",
+      "status": "BLOCKED",
+      "observed": {"totalArchitecturePromiseSceneRefs": 22, "missingFromCurrentGraph": 16},
+      "missingSceneIds": ["ep6_terms_read", "ep9_public_forum", "ep10_matteo-final", "ep5_elio_offer", "ep7_elio_offer", "ep8_elio_future", "ep10_elio-final", "ep10_hotel-resolution", "ep6_leo_role", "ep10_leo-final", "ep5_ambition_conversation", "ep10_career-resolution", "ep5_choice_kiss_or_friendship", "ep10_independent-final", "ep4_cut_list", "ep8_budget_crisis"],
+      "reason": "Planned promise setup/payoff references cannot be runtime-verified while the referenced authored scenes are absent."
+    },
+    {
+      "id": "state-domain-separation",
+      "status": "PASS_SCOPED",
+      "observed": "Architecture separates route, trust, relationship, hotel, career, knowledge, consent/boundary and ending domains.",
+      "limitation": "No executable EP4-EP10 state effects or save fixtures exist to prove the separation at runtime."
+    },
+    {
+      "id": "ep2-ep3-route-invariant",
+      "status": "PASS_SCOPED",
+      "observed": "Current EP1-EP3 graph has no route or routeLocked effects; route remains none before the planned EP6 lock.",
+      "limitation": "This validates the pre-lock invariant only; it does not implement or prove the future lock."
+    }
+  ],
+  "episodeCoverage": [
+    {"episode": 4, "status": "NOT_STARTED", "graphScenes": 0},
+    {"episode": 5, "status": "NOT_STARTED", "graphScenes": 0},
+    {"episode": 6, "status": "NOT_STARTED", "graphScenes": 0},
+    {"episode": 7, "status": "NOT_STARTED", "graphScenes": 0},
+    {"episode": 8, "status": "NOT_STARTED", "graphScenes": 0},
+    {"episode": 9, "status": "NOT_STARTED", "graphScenes": 0},
+    {"episode": 10, "status": "NOT_STARTED", "graphScenes": 0}
+  ],
+  "nextRequiredActions": [
+    "Author EP4-EP5 shared-core scenes and their RU/EN choices/effects before implementing route lock.",
+    "Author EP6 informed route choice with explicit route and routeLocked effects plus state/save fixtures.",
+    "Author and connect EP7-EP10 route-conditioned scenes, promise payoffs and final outcome resolver.",
+    "Run route exploration and final-state save round trips only after executable scene data exists; architecture-check PASS alone is insufficient."
+  ]
+}
