@@ -3,7 +3,7 @@
   "kind": "FULL_SEASON_ART_PRODUCTION_PLAN",
   "recordedAt": "2026-10-20",
   "mode": "DIRECT_DEVELOPMENT",
-  "status": "PLAN_READY_FIRST_BATCH_PENDING_CAPABILITY_CHALLENGE",
+  "status": "PLAN_UPDATED_EP2_RECONCILED_EP3_EP4_PRODUCTION_PENDING_GATES",
   "scope": {
     "episodes": ["EP1", "EP2", "EP3", "EP4", "EP5", "EP6", "EP7", "EP8", "EP9", "EP10"],
     "sceneCount": 144,
@@ -18,17 +18,22 @@
   "sourceBoundInputs": [
     {"path": "narrative/graph.json", "sha256": "64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a", "role": "authoritative current scene and choice graph"},
     {"path": "narrative/episodes/manifest.json", "sha256": "f942a3bb77c7e0a18c59f3642d810652ba0f6453590f04ba129a6b565c62e86f", "role": "episode ordering and fragment boundary"},
+    {"path": "narrative/assets.json", "sha256": "cdc3816606ebb7c9c6bbc10e232619215ad193a1782568b32927b1658fb8307f", "role": "current EP1/EP2 runtime mapping after scoped EP2 reconciliation"},
     {"path": "artifacts/evidence/FULL_SEASON_NARRATIVE_ACCEPTANCE_20261020.md", "sha256": "e0868f585e3e16ce9dd05d7df7844a626c5ca7bbece4e02c8264ee96ff3f5462", "role": "narrative acceptance evidence; art not accepted by this document"},
     {"path": "artifacts/art-direction/ART_BIBLE.md", "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96", "role": "visual canon"},
     {"path": "artifacts/art-direction/VISUAL_LANGUAGE.json", "sha256": "a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785", "role": "visual language and format contract"},
     {"path": "artifacts/production-art/stage9.4/ART_REUSE_MATRIX.json", "sha256": "4d28855a9edb29ae04d828d6557be52f099137c55c0cc769374b4ef98cb197c5", "role": "existing EP1/EP2 reuse decisions"},
+    {"path": "artifacts/production-art/EP2_ART_RECONCILIATION_20261020.json", "role": "current-worktree reconciliation of historical 16/16 EP2 pairs against the former 11-pair mapping"},
+    {"path": "artifacts/production-art/reconciliation-runtime/EP2_CURRENT_HEAD_RUNTIME_QA_20261020.json", "sha256": "3a1a4ffb5a9ef298c464cac93fab11970bc31217d865d5ecfc2774a119b5824d", "role": "current-head EP2 mapping and desktop/mobile runtime pixel capture"},
+    {"path": "artifacts/production-art/stage9.4/EP2_FULL_EPISODE_DUAL_FORMAT_MANIFEST_20261019_44B8260.json", "role": "historical immutable EP2 17-scene/16-pair byte manifest in preserved parallel worktree"},
     {"path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json", "sha256": "f69d93c33d9b379191cbcb92f76c45af63c8ab48e24dc944e9ff588ac474c8fb", "role": "EP3 source-bound brief basis; sourceHead requires refresh before generation"},
-    {"path": "artifacts/production-art/stage9.6/EP3_VISUAL_FAMILIES_FINAL_20261020.json", "sha256": "5ac025fb0704af39200da333fc9be2d4de23f1ace264041a24d9d7be9163ea47", "role": "EP3 family grouping and distinctness"}
+    {"path": "artifacts/production-art/stage9.6/EP3_VISUAL_FAMILIES_FINAL_20261020.json", "sha256": "5ac025fb0704af39200da333fc9be2d4de23f1ace264041a24d9d7be9163ea47", "role": "EP3 family grouping and distinctness"},
+    {"path": "artifacts/production-art/stage9.7/EP4_FIRST_BATCH_SOURCE_BOUND_BRIEFS_20261020.json", "role": "EP4 first two authored beats, current-head brief preparation; generation not authorized"}
   ],
   "dirtyWorktreeBoundary": {
     "preserveUnmodified": true,
-    "notTouched": ["narrative/assets.json", ".ceos-runs", ".ceos-evidence", "existing PNGs", "historical evidence", "tests/unit/stage9-4-runtime-art.test.mjs", "tests/unit/ui-contract.test.mjs"],
-    "note": "The worktree is dirty and local HEAD is ahead of origin. This plan does not authorize reset, clean, stash, branch switching, or broad asset rewrites."
+    "notTouched": [".ceos-runs", ".ceos-evidence", "unrelated existing PNGs", "historical evidence", "tests/unit/stage9-4-runtime-art.test.mjs", "tests/unit/ui-contract.test.mjs"],
+    "note": "The worktree is dirty and local HEAD is ahead of origin. The scoped EP2 reconciliation added only exact-hash historical PNG copies and five asset entries; it does not authorize reset, clean, stash, branch switching, or broad asset rewrites."
   },
   "formatContract": {
     "portrait": {"width": 1024, "height": 1536, "required": true},
@@ -41,20 +46,22 @@
     "plannedVisualPairs": 119,
     "plannedPortraitPng": 119,
     "plannedLandscapePng": 119,
-    "existingScopedPairs": 21,
-    "existingScopedPng": 42,
+    "existingScopedPairs": 26,
+    "existingScopedPng": 52,
     "existingCandidatePairsPendingIndependentAcceptance": 1,
     "existingCandidatePngPendingIndependentAcceptance": 2,
-    "newPairsToCreate": 97,
-    "missingPortraitPng": 97,
-    "missingLandscapePng": 97,
-    "missingPngTotal": 194,
+    "newPairsToCreate": 92,
+    "missingPortraitPng": 92,
+    "missingLandscapePng": 92,
+    "missingPngTotal": 184,
+    "preservedSupersededDuplicateCandidatePairs": 1,
+    "preservedSupersededDuplicateCandidatePng": 2,
     "sceneRowsReusedWithinFamily": 25,
     "generationLimitNote": "EP3 ep3_old_photo has reached its two-candidate limit; no third candidate is planned."
   },
   "episodeInventory": [
     {"episode": "EP1", "sceneRows": 18, "plannedPairs": 10, "existingScopedPairs": 10, "candidatePairs": 0, "newPairs": 0, "missingPortraitPng": 0, "missingLandscapePng": 0, "decision": "reuse after exact-currentness recheck", "acceptanceBoundary": "historical acceptance is not current-HEAD art PASS"},
-    {"episode": "EP2", "sceneRows": 17, "plannedPairs": 16, "existingScopedPairs": 11, "candidatePairs": 0, "newPairs": 5, "missingPortraitPng": 5, "missingLandscapePng": 5, "decision": "preserve accepted/scoped pairs; create five authored gaps", "acceptanceBoundary": "keep S19-S26 and Bianca scoped evidence; no episode-final PASS"},
+    {"episode": "EP2", "sceneRows": 17, "plannedPairs": 16, "existingScopedPairs": 16, "candidatePairs": 0, "newPairs": 0, "missingPortraitPng": 0, "missingLandscapePng": 0, "decision": "reuse the historical 16/16 pairs after exact SHA-256 reconciliation; do not regenerate", "acceptanceBoundary": "historical receipts remain immutable; current-head revalidation and episode-final acceptance are NOT_VERIFIED"},
     {"episode": "EP3", "sceneRows": 15, "plannedPairs": 15, "existingScopedPairs": 0, "candidatePairs": 1, "newPairs": 14, "missingPortraitPng": 14, "missingLandscapePng": 14, "decision": "old_photo candidate awaits independent acceptance; create remaining 14 after current brief refresh", "acceptanceBoundary": "Web acceptance pending; no old_photo regeneration"},
     {"episode": "EP4", "sceneRows": 7, "plannedPairs": 7, "existingScopedPairs": 0, "candidatePairs": 0, "newPairs": 7, "missingPortraitPng": 7, "missingLandscapePng": 7, "decision": "create seven distinct authored beats"},
     {"episode": "EP5", "sceneRows": 8, "plannedPairs": 8, "existingScopedPairs": 0, "candidatePairs": 0, "newPairs": 8, "missingPortraitPng": 8, "missingLandscapePng": 8, "decision": "create eight distinct authored beats"},
@@ -89,11 +96,11 @@
       {"familyId":"ep2-bianca-arrival","sceneIds":["ep2_refusal_bianca_arrival","ep2_bianca_arrives"],"assetIds":["ep2_refusal_bianca_arrival","ep2_bianca_arrives"],"status":"EXISTING_SCOPED_ACCEPTED","reuseReason":"same authored Bianca arrival beat; existing alias is intentionally one physical pair"},
       {"familyId":"ep2-bianca-professional","sceneIds":["ep2_bianca_professional_response"],"assetIds":["ep2_bianca_professional_response"],"status":"EXISTING_SCOPED_ACCEPTED","reuseReason":"existing scoped pair"},
       {"familyId":"ep2-bianca-pushback","sceneIds":["ep2_bianca_pushback_response"],"assetIds":["ep2_bianca_pushback_response"],"status":"EXISTING_SCOPED_ACCEPTED","reuseReason":"existing scoped pair"},
-      {"familyId":"ep2-public-agreement","sceneIds":["ep2_public_agreement"],"assetIds":["ep2_public_agreement"],"status":"NEW_PAIR","priority":"P1","reuseReason":"opposite consent state needs its own visible agreement"},
-      {"familyId":"ep2-public-refusal","sceneIds":["ep2_public_refusal"],"assetIds":["ep2_public_refusal"],"status":"NEW_PAIR","priority":"P1","reuseReason":"opposite consent state must not share agreement art"},
-      {"familyId":"ep2-rehearsal-failure","sceneIds":["ep2_rehearsal_failure"],"assetIds":["ep2_rehearsal_failure"],"status":"NEW_PAIR","priority":"P1","reuseReason":"distinct failure/action beat"},
-      {"familyId":"ep2-rooftop-after","sceneIds":["ep2_rooftop_after"],"assetIds":["ep2_rooftop_after"],"status":"NEW_PAIR","priority":"P1","reuseReason":"distinct emotional aftermath location"},
-      {"familyId":"ep2-transition","sceneIds":["ep2_transition"],"assetIds":["ep2_transition"],"status":"NEW_PAIR","priority":"P1","reuseReason":"episode transition requires authored closing frame"}
+      {"familyId":"ep2-public-agreement","sceneIds":["ep2_public_agreement"],"assetIds":["ep2_public_agreement"],"status":"HISTORICAL_ACCEPTED_RECONCILED","reuseReason":"historical accepted pair restored by exact SHA-256; visible agreement state remains distinct"},
+      {"familyId":"ep2-public-refusal","sceneIds":["ep2_public_refusal"],"assetIds":["ep2_public_refusal"],"status":"HISTORICAL_ACCEPTED_RECONCILED","reuseReason":"historical accepted pair restored by exact SHA-256; refusal state remains distinct"},
+      {"familyId":"ep2-rehearsal-failure","sceneIds":["ep2_rehearsal_failure"],"assetIds":["ep2_rehearsal_failure"],"status":"HISTORICAL_ACCEPTED_RECONCILED","reuseReason":"historical accepted service-rehearsal pair restored; newer duplicate candidate remains unmapped"},
+      {"familyId":"ep2-rooftop-after","sceneIds":["ep2_rooftop_after"],"assetIds":["ep2_rooftop_after"],"status":"HISTORICAL_ACCEPTED_RECONCILED","reuseReason":"historical accepted aftermath pair restored by exact SHA-256"},
+      {"familyId":"ep2-transition","sceneIds":["ep2_transition"],"assetIds":["ep2_transition"],"status":"HISTORICAL_ACCEPTED_RECONCILED","reuseReason":"historical accepted transition pair restored by exact SHA-256"}
     ],
     "EP3": [
       {"familyId":"ep3-archive-old-photo","sceneIds":["ep3_old_photo"],"assetIds":["ep3-old-photo-cg"],"status":"EXISTING_CANDIDATE_PENDING_INDEPENDENT","candidateFiles":["assets/production/cg/ep3-old-photo-cg.png","assets/production/cg/ep3-old-photo-cg-landscape-rework.png"],"candidateSha256":["93389bc83e342bbb3800b1bd51d7bdcb3ab90c8c5f53093d9a4e9eb7204ffe10","5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a"],"preservedSupersededFile":"assets/production/cg/ep3-old-photo-cg-landscape.png","reuseReason":"candidate pair exists with mechanical verification; independent Web acceptance and runtime mapping are pending; generation limit exhausted"},
@@ -208,9 +215,9 @@
   "batches": [
     {"batchId":"B0","priority":"P0","scope":"EP1 currentness recheck; EP2 accepted/scoped preservation","pairs":0,"portraitPng":0,"landscapePng":0,"generation":"NONE","exit":"exact-head/hash inventory and no accepted-byte mutation"},
     {"batchId":"B1","priority":"P0","scope":"EP3 ep3_old_photo independent acceptance queue","pairs":0,"portraitPng":0,"landscapePng":0,"generation":"NONE","exit":"independent Web/pixel result recorded; runtime mapping remains unchanged until pass"},
-    {"batchId":"B2","priority":"P1","scope":"EP2 public agreement + public refusal","pairs":2,"portraitPng":2,"landscapePng":2,"generation":"after current source-bound briefs and fresh capability challenge","exit":"both consent states independently readable; no shared art"},
-    {"batchId":"B3","priority":"P1","scope":"EP2 rehearsal failure + rooftop aftermath","pairs":2,"portraitPng":2,"landscapePng":2,"generation":"after B2 review","exit":"action, location and emotional aftermath pass"},
-    {"batchId":"B4","priority":"P1","scope":"EP2 transition","pairs":1,"portraitPng":1,"landscapePng":1,"generation":"after B3 review","exit":"transition frame passes runtime and pixel review"},
+    {"batchId":"B2","priority":"P1","scope":"EP2 public agreement + public refusal reconciliation","pairs":0,"portraitPng":0,"landscapePng":0,"generation":"NONE — reuse historical accepted bytes","exit":"manifest/runtime SHA-256 reconciliation recorded; no regeneration"},
+    {"batchId":"B3","priority":"P1","scope":"EP2 rehearsal failure + rooftop aftermath reconciliation","pairs":0,"portraitPng":0,"landscapePng":0,"generation":"NONE — reuse historical accepted bytes","exit":"historical pair restored; duplicate candidate remains unmapped"},
+    {"batchId":"B4","priority":"P1","scope":"EP2 transition reconciliation","pairs":0,"portraitPng":0,"landscapePng":0,"generation":"NONE — reuse historical accepted bytes","exit":"manifest/runtime SHA-256 reconciliation recorded; no regeneration"},
     {"batchId":"B5","priority":"P1","scope":"EP3 survey start, then one-pair increments","pairs":1,"portraitPng":1,"landscapePng":1,"generation":"current-head brief refresh + fresh capability challenge + producer route","exit":"source-bound professional boundary and both formats pass"},
     {"batchId":"B6","priority":"P2","scope":"EP4 first two authored beats","pairs":2,"portraitPng":2,"landscapePng":2,"generation":"one or two pairs per bounded run","exit":"no mass-generation continuation after any output failure"},
     {"batchId":"B7","priority":"P2-P4","scope":"EP4 remainder and EP5","pairs":13,"portraitPng":13,"landscapePng":13,"generation":"split into one/two-pair batches","exit":"per-batch mechanical, runtime and independent pixel evidence"},
@@ -230,14 +237,14 @@
   ],
   "currentBlockers": [
     "EP1 historical art acceptance needs exact-currentness/hash recheck before being called current.",
-    "EP2 has five missing visual pairs (10 PNGs) and only scoped acceptance, not episode-final art PASS.",
-    "EP3 source-bound packet is stale against current narrative HEAD; refresh is required before new generation.",
+    "EP2 bytes and 16-pair runtime mapping are reconciled; current-head pixel revalidation and episode-final art acceptance remain NOT_VERIFIED.",
+    "EP3 authored scene generation is blocked by the installed generic S-numbered brief gate; no alias or trust-check bypass is allowed.",
     "EP3 ep3_old_photo has an active candidate pair but independent Web acceptance and runtime mapping are pending; generation limit is exhausted.",
-    "EP4-EP10 have no accepted production PNG coverage in the current runtime inventory.",
+    "EP4 first two briefs are prepared at exact current HEAD, but the same generic validator cannot authorize authored scene IDs; EP4 generation is not started.",
     "No release build or publication is in scope."
   ],
   "firstGenerationDecision": {
-    "candidate": "EP3 ep3_survey_start",
+    "candidate": "EP3 ep3_survey_start, then EP4 first authored beat when its brief gate is current",
     "reason": "smallest justified new pair after preserving EP2 and queuing ep3_old_photo acceptance; current brief content exists but must be rewritten/bound to current HEAD before authorization",
     "allowedOnlyAfter": ["fresh source-bound brief", "current-turn run-scoped CEOS capability challenge", "real ceos_asset_generator Terra route", "real image output transport", "per-file art-output verification"],
     "notIntegratedUntil": ["independent pixel review", "current-runtime desktop/mobile verification", "provenance and rights ledger entry", "exact-head recheck"]

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "PRODUCTION_ART_BRIEF_GATE_BLOCKER",
+  "recordedAt": "2026-10-20",
+  "episode": "EP4",
+  "scenes": ["ep4_wedding_evening", "ep4_wedding_response"],
+  "briefPacket": "artifacts/production-art/stage9.7/EP4_FIRST_BATCH_SOURCE_BOUND_BRIEFS_20261020.json",
+  "sourceHead": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+  "sourceCurrentness": "EXACT_HEAD",
+  "webPreflight": "UNAVAILABLE_NOT_VERIFIED",
+  "gate": {
+    "status": "BLOCKED_ART_BRIEF",
+    "issues": [
+      "sceneId must be an S-numbered scene",
+      "cue must contain authored id and [chunk, paragraph] position",
+      "sceneContinuity is required",
+      "characterReferences must contain real reference pixels",
+      "qualityAcceptance must use the generic measurable-art schema",
+      "candidateNumber is absent from the packet and generic validator cannot authorize the packet"
+    ],
+    "decision": "Do not fabricate S-numbered aliases or bypass trust checks. Keep the current authored packet as preparation only until a project-specific adapter/approved brief contract exists."
+  },
+  "generation": {"imageGenInvoked": false, "pngCreated": 0, "runtimeMappingsChanged": false}
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP2_ART_RECONCILIATION",
+  "recordedAt": "2026-10-20",
+  "status": "RECONCILED_BYTES_RESTORED_CURRENT_HEAD_REVALIDATION_PENDING",
+  "currentWorktree": {
+    "gitHead": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+    "commonAncestorWithHistoricalWorktree": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+    "narrativeGraphSha256": "64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a",
+    "episodeSha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+    "assetsManifestSha256AfterReconciliation": "cdc3816606ebb7c9c6bbc10e232619215ad193a1782568b32927b1658fb8307f"
+  },
+  "historicalAcceptance": {
+    "sourceHead": "44b8260f58956180b1321405bd2113b397d8f4ae",
+    "historicalNarrativeGraphSha256": "8d65f28a6e46da216dadd7d0ee42162e9a5a976497e558e7cff9ab759efcf544",
+    "historicalEpisodeSha256": "c586e011ddca30c73c13477ce73c46a8fc2ed939aea6b19451139d8359fb501e",
+    "historicalAssetsManifestSha256": "b5994ea1e188832760bc1d44d457a58f5339692030c1f1c833732d5ccc20ee65",
+    "evidenceWorktree": "../stage9-full-season-architecture-work-e02f7c47",
+    "fullManifest": "../stage9-full-season-architecture-work-e02f7c47/artifacts/production-art/stage9.4/EP2_FULL_EPISODE_DUAL_FORMAT_MANIFEST_20261019_44B8260.json",
+    "outputManifest": "../stage9-full-season-architecture-work-e02f7c47/artifacts/production-art/stage9.4/EP2_ALL16_ART_OUTPUT_MANIFEST_20261019_44B8260.json",
+    "outputManifestSha256": "c313666e4a16a017bccadf6e7de923f1467d11db52c0aa51683edea392357c92",
+    "outputReceipt": "../stage9-full-season-architecture-work-e02f7c47/artifacts/production-art/stage9.4/receipts/EP2_ALL16_ART_OUTPUT_20261019_44B8260.json",
+    "outputReceiptSha256": "bd2ac1217c8b506db6dd5eea70eda490ef8ddcfda4c0dd00f9cc1305dba58ca8",
+    "episodeWideAcceptance": "../stage9-full-season-architecture-work-e02f7c47/artifacts/production-art/stage9.4/EP2_EPISODE_WIDE_ACCEPTANCE_20261019_44B8260.json",
+    "historicalFinalization": "../stage9-full-season-architecture-work-e02f7c47/artifacts/production-art/stage9.4/EP2_EPISODE_ART_FINALIZATION_V1_EVIDENCE_20261019_44B8260.json",
+    "recordedCoverage": {
+      "sceneRows": 17,
+      "uniqueAcceptedPairs": 16,
+      "acceptedPngs": 32,
+      "sharedPairReason": "ep2_refusal_bianca_arrival and ep2_bianca_arrives share one Bianca-arrival pair"
+    },
+    "historicalEpisodeFinalAcceptance": "NOT_VERIFIED",
+    "historicalPngsModified": false,
+    "historicalReceiptsModified": false
+  },
+  "comparison": {
+    "currentBeforeReconciliation": {
+      "runtimeSceneRowsMapped": 12,
+      "runtimeUniquePixelPairs": 11,
+      "missingHistoricalPairsInCurrentManifest": 5,
+      "missingPngFilesInCurrentWorktree": 10
+    },
+    "currentAfterReconciliation": {
+      "runtimeSceneRowsMapped": 17,
+      "runtimeUniquePixelPairs": 16,
+      "historicalPairsRestored": 5,
+      "restoredPngFiles": 10,
+      "sha256MappingsVerified": true,
+      "currentHeadEpisodeFinalAcceptance": "NOT_VERIFIED"
+    },
+    "cause": "The 16/16 record belongs to the historical work-e02f7c47 line at source HEAD 44b8260. The current stage9-full-season-architecture line shared the 5a990085 ancestor but did not carry forward the five accepted visual pairs and their runtime asset entries; its graph and assets manifest also have different current-head hashes. This was a branch/worktree accounting gap, not evidence of missing or failed historical PNG generation."
+  },
+  "restoredPairs": [
+    {
+      "sceneId": "ep2_public_agreement",
+      "assetId": "ep2-public-agreement-cg",
+      "portrait": {"path": "assets/production/cg/ep2-public-agreement-cg.png", "sha256": "57f04d75c69fba5a4c5833f8b1f0569d0de4b97c325272d5d47624eeecd5f608"},
+      "landscape": {"path": "assets/production/cg/ep2-public-agreement-cg-landscape.png", "sha256": "f1debc10ad01d7d922053641989facccae8d341fee67e5b8a9967f0df8aa1552"}
+    },
+    {
+      "sceneId": "ep2_public_refusal",
+      "assetId": "ep2-public-refusal-cg",
+      "portrait": {"path": "assets/production/cg/ep2-public-refusal-cg.png", "sha256": "ad5025938713d8b1b0199be639506f9be3df4e89ab6c985939b2c792b5c2726c"},
+      "landscape": {"path": "assets/production/cg/ep2-public-refusal-cg-landscape.png", "sha256": "d717ca355ab7c1dc389c34e3717f8ecdd0133a9cf978b5b6f561dd7416e59d7e"}
+    },
+    {
+      "sceneId": "ep2_rehearsal_failure",
+      "assetId": "ep2-rehearsal-failure-cg",
+      "portrait": {"path": "assets/production/cg/ep2-service-rehearsal-failure-cg.png", "sha256": "71e8fdbf4e26c50eb6e35346984be59c9c87afb8392d6f2dd33e452ae2cad0bd"},
+      "landscape": {"path": "assets/production/cg/ep2-service-rehearsal-failure-cg-landscape.png", "sha256": "bb5759e93a3674f841ebbae535c63cbe6e7aef4dfe6c219648fbf02ca0baad58"}
+    },
+    {
+      "sceneId": "ep2_rooftop_after",
+      "assetId": "ep2-rooftop-after-cg",
+      "portrait": {"path": "assets/production/cg/ep2-rooftop-after-cg.png", "sha256": "19c9d8160ee3c7c38764fc8b2726f944d80c6387bb7590faa92a3716e30e8a34"},
+      "landscape": {"path": "assets/production/cg/ep2-rooftop-after-cg-landscape.png", "sha256": "8a4d97f2ee151bc59a8e49cca4412237c1bc1da5c8b82730bbddf8cd051ead43"}
+    },
+    {
+      "sceneId": "ep2_transition",
+      "assetId": "ep2-transition-cg",
+      "portrait": {"path": "assets/production/cg/ep2-office-aurea-transition-cg.png", "sha256": "8b3a5b8ca79d4ecc1db0360714d74ffef2036d630843cc55ce41faca5499d250"},
+      "landscape": {"path": "assets/production/cg/ep2-office-aurea-transition-cg-landscape.png", "sha256": "d255cba1bc2b8c76910044eaa2db024730ad6a5fadcb5329770c3074fff20921"}
+    }
+  ],
+  "duplicateCandidatePreserved": {
+    "assetIds": ["ep2-rehearsal-failure-cg"],
+    "files": [
+      "assets/production/cg/ep2-rehearsal-failure-cg.png",
+      "assets/production/cg/ep2-rehearsal-failure-cg-landscape.png"
+    ],
+    "status": "PRESERVED_UNMAPPED_SUPERSEDED_BY_HISTORICALLY_ACCEPTED_PAIR",
+    "reason": "These two files were generated before reconciliation. They remain byte-preserved with provenance and are not counted as accepted coverage or a reason to regenerate the accepted pair."
+  },
+  "actions": {
+    "originalAcceptedPngsChanged": false,
+    "historicalReceiptsChanged": false,
+    "newGenerationForEp2HistoricalPairs": false,
+    "currentRuntimeManifestUpdated": true,
+    "runtimeMappingMechanicalHashCheck": "PASS",
+    "runtimePixelQa": {
+      "status": "PASS_STAGE9_4_AUDIT_RUNTIME_VISUAL_CAPTURE",
+      "path": "artifacts/production-art/reconciliation-runtime/EP2_CURRENT_HEAD_RUNTIME_QA_20261020.json",
+      "sha256": "3a1a4ffb5a9ef298c464cac93fab11970bc31217d865d5ecfc2774a119b5824d",
+      "sourceHead": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+      "captures": 12,
+      "consoleErrors": 0,
+      "requestFailures": 0,
+      "httpErrors": 0,
+      "desktopMobileFormatMapping": "PASS",
+      "backNewGameLocaleChecks": "PASS"
+    },
+    "webHighCurrentHeadReacceptance": "NOT_VERIFIED"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "kind": "FULL_SEASON_BLIND_PLAYTEST_PLAN",
+  "recordedAt": "2026-10-20",
+  "status": "PLAN_READY_NOT_RUN",
+  "results": "NOT_ATTESTED",
+  "substitutionPolicy": "Automated graph counts, route explorers, unit tests and scripted smoke runs may check reachability but cannot substitute for blind human observations or acceptance.",
+  "sourceBoundScope": {
+    "gitHead": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+    "narrativeGraphSha256": "64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a",
+    "episodes": ["EP1", "EP2", "EP3", "EP4", "EP5", "EP6", "EP7", "EP8", "EP9", "EP10"],
+    "sceneRows": 144,
+    "routes": ["matteo", "leo", "elio", "independent"],
+    "relationshipFinals": [
+      "matteo-hope", "matteo-goodbye", "leo-second-chance", "leo-echo", "elio-table-for-two", "elio-separate-kitchens", "nika-own-way"
+    ],
+    "hotelOutcomes": ["independence", "limited-investment", "sale"]
+  },
+  "humanProtocol": {
+    "minimumIndependentParticipants": 3,
+    "minimumScenarioLegs": 14,
+    "blindSetup": [
+      "Give the reader only the current build and neutral task instructions; do not explain intended route, canon or correct choice.",
+      "Use a fresh save for each route/final/outcome leg; record build SHA and locale before starting.",
+      "Do not coach a reader toward a route or repair a confusing state during the observation.",
+      "Collect immediate comprehension and emotional-response notes before debriefing the reader."
+    ],
+    "requiredEvidencePerLeg": ["participantId pseudonym", "route target or natural choice path", "save/start state", "build/source SHA", "locale", "screen recording or timestamped screenshots", "verbatim observation notes", "observed endingId/hotelOutcome if reached"]
+  },
+  "coverageMatrix": {
+    "routeLegs": [
+      {"route": "matteo", "required": ["reach EP6 route lock", "observe control/consent boundary", "follow through to both Matteo finals where assigned"]},
+      {"route": "leo", "required": ["reach EP6 route lock", "observe evidence/old-history continuity", "follow through to both Leo finals where assigned"]},
+      {"route": "elio", "required": ["reach EP6 route lock", "observe work/affection compatibility", "follow through to both Elio finals where assigned"]},
+      {"route": "independent", "required": ["reach EP6 route lock", "observe self-authored career path", "follow through to Nika own-way final"]}
+    ],
+    "relationshipFinalLegs": [
+      {"endingId": "matteo-hope", "checks": ["shared responsibility is earned", "romance is not used to erase business boundary"]},
+      {"endingId": "matteo-goodbye", "checks": ["boundary is legible", "goodbye is not punitive or coerced"]},
+      {"endingId": "leo-second-chance", "checks": ["present action outweighs nostalgia", "verification is understood"]},
+      {"endingId": "leo-echo", "checks": ["history can remain true without becoming future", "choice consequence is legible"]},
+      {"endingId": "elio-table-for-two", "checks": ["two kitchens/two careers are concrete", "compatibility is not only flirtation"]},
+      {"endingId": "elio-separate-kitchens", "checks": ["separation is honest and non-punitive", "work conflict is understood"]},
+      {"endingId": "nika-own-way", "checks": ["independence is authored, not consolation", "friendship/career payoff remains visible"]}
+    ],
+    "hotelOutcomeLegs": [
+      {"hotelOutcome": "independence", "checks": ["numbers, staff voices and public terms are understood as causal prerequisites", "not presented as romance reward"]},
+      {"hotelOutcome": "limited-investment", "checks": ["control and staff protections remain visible", "outcome differs from independence"]},
+      {"hotelOutcome": "sale", "checks": ["sale conditions are disclosed", "outcome is distinct without erasing staff contribution"]}
+    ],
+    "stateAndContinuityLegs": [
+      "EP2 agreement closes on day 9; EP4 fresh public consent is not inferred from prior agreement.",
+      "EP6 is the sole route lock; earlier flirtation or business choices must not silently lock a route.",
+      "Back/new-game/load and locale switching do not leak route, consent or hotel state.",
+      "Four routes retain distinct character voice, knowledge, promises and business causality through EP10.",
+      "Tempo is checked at EP2 boundary, EP3 reveal, EP6 route lock, EP9 public forum and EP10 resolution."
+    ]
+  },
+  "readerQuestionnaire": {
+    "comprehension": ["What changed because of your choices?", "When did you believe the route became distinct?", "What did you think the hotel outcome depended on?"],
+    "continuity": ["Did any character know or assume something too early?", "Did any consent or business boundary feel carried forward without a new choice?"],
+    "characterAndRelationship": ["Were the four route voices distinguishable?", "Did affection and work consequences remain separate where intended?", "Did each final feel earned rather than arbitrary?"],
+    "pace": ["Where did attention dip or rush?", "Which transition or reveal needed more/less time?"],
+    "qualityOfFinals": ["Did all seven relationship finals feel meaningfully different?", "Did the three hotel outcomes feel causally distinct and emotionally fair?"],
+    "severity": "Record P0/P1 player-blocking defects separately from P2/P3 preference or cosmetic comments; do not start an endless cosmetic rewrite cycle."
+  },
+  "acceptance": {
+    "passRequires": ["all four route legs observed", "all seven relationship finals observed", "all three hotel outcomes observed", "no unresolved P0/P1 continuity or save-state defect", "reader notes independently corroborate comprehension and distinctness"],
+    "currentVerdict": "NOT_ATTESTED",
+    "automatedChecksAreNotPass": true
+  }
+}

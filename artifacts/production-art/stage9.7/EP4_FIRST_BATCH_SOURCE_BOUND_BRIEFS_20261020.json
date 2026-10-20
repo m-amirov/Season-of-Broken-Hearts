@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "kind": "EPISODE_SOURCE_BOUND_ART_BRIEF_PACKET",
+  "stage": "9.7",
+  "recordedAt": "2026-10-20",
+  "status": "SOURCE_BOUND_PREPARED_GATE_BLOCKED",
+  "sourceHead": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+  "sourceBranch": "codex/stage9-full-season-architecture",
+  "scope": {"episode": 4, "sceneIds": ["ep4_wedding_evening", "ep4_wedding_response"], "pairCount": 2, "portraitOutputs": 2, "landscapeOutputs": 2, "generationAuthorized": false},
+  "sourceFiles": [
+    {"path": "narrative/graph.json", "sha256": "64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a"},
+    {"path": "narrative/episodes/ep-04.json", "sha256": "b87d604ac3c65a8501d259e835b69d85a53894ef80f3b7a0bff4d0de8efaf38d"},
+    {"path": "artifacts/art-direction/ART_BIBLE.md", "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96"},
+    {"path": "artifacts/art-direction/VISUAL_LANGUAGE.json", "sha256": "a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785"}
+  ],
+  "globalConstraints": {
+    "portrait": {"width": 1024, "height": 1536},
+    "landscape": {"width": 1672, "height": 941},
+    "fullSceneCg": true,
+    "noBakedUiOrReadableText": true,
+    "noUnscriptedRomanticTouch": true,
+    "independentPortraitAndLandscapeComposition": true
+  },
+  "briefs": [
+    {
+      "briefId": "ep4-wedding-evening-current-bbc2fd2",
+      "familyId": "ep4-wedding-evening",
+      "sceneId": "ep4_wedding_evening",
+      "assetId": "ep4-wedding-evening-cg",
+      "requiredCast": ["nika", "matteo", "giulia"],
+      "cue": "Day 17 wedding evening: Matteo asks once whether he may stand beside Nika in front of guests; Nika keeps the fresh-consent boundary and Giulia cuts through the idealized atmosphere.",
+      "location": "Villa Serena chapel or chapel terrace threshold during Giulia's wedding, with chairs, restrained flowers and old-stone architecture.",
+      "actions": ["Nika visibly owns the decision space and keeps physical agency.", "Matteo asks rather than assumes access.", "Giulia remains an active host presence, not background decoration."],
+      "emotionalTone": "Warm event light held against clear consent and professional self-possession.",
+      "knowledgeBoundary": "The EP2 seven-day agreement is over; this is a fresh public request, not inherited permission.",
+      "wardrobe": "Nika in practical refined evening work layers; Matteo in controlled formal host attire; Giulia in wedding-day attire that reads as host and friend.",
+      "desktop": {"composition": "Three-quarter full-scene three-shot with Nika central and both men/women spatially legible; preserve faces, hands and chairs above dialogue band.", "requiredVisibleCast": ["nika", "matteo", "giulia"], "focalProps": ["chapel threshold", "chairs", "restrained wedding details"]},
+      "portrait": {"composition": "Vertical three-shot with Nika's hands and Matteo's respectful distance readable; Giulia remains visible in the social space.", "requiredVisibleCast": ["nika", "matteo", "giulia"], "focalProps": ["hands", "chapel light"]},
+      "forbidden": ["assumed kiss", "romantic entitlement", "generic luxury wedding", "extra guests as cast", "baked dialogue or signage", "halo/glow/hearts"],
+      "acceptance": ["Fresh-consent request is visually legible", "three identities and positions are distinct", "no touch is implied beyond the authored choice", "portrait and landscape are separate compositions with a safe lower dialogue area"]
+    },
+    {
+      "briefId": "ep4-wedding-response-current-bbc2fd2",
+      "familyId": "ep4-wedding-response",
+      "sceneId": "ep4_wedding_response",
+      "assetId": "ep4-wedding-response-cg",
+      "requiredCast": ["nika", "matteo", "giulia"],
+      "cue": "Immediate day-17 response on the villa terrace: Nika states that one chosen moment is not permission for the next; Matteo's response varies with kiss, public gesture or stop, while Giulia returns the evening to plain speech.",
+      "location": "Villa Serena terrace adjoining the wedding gathering, with sea/stone context and music implied through staging rather than text.",
+      "actions": ["Nika remains the visual boundary-holder.", "Matteo receives the answer without grabbing or converting it into a promise.", "Giulia anchors the public social context."],
+      "emotionalTone": "Relief through explicit language, without romantic escalation or punishment.",
+      "knowledgeBoundary": "The frame must support all three lastChoice states without baking one response into the image.",
+      "wardrobe": "Carry the same evening continuity from ep4_wedding_evening; no unexplained costume change.",
+      "desktop": {"composition": "Wide terrace three-shot with Nika's boundary gesture or stance central, Matteo open and non-invasive, Giulia connected to the guests off-frame.", "requiredVisibleCast": ["nika", "matteo", "giulia"], "focalProps": ["terrace rail", "evening table/chairs", "open social space"]},
+      "portrait": {"composition": "Vertical response frame keeping all three faces and Nika's hands visible; avoid a kiss-ready crop so all branches remain valid.", "requiredVisibleCast": ["nika", "matteo", "giulia"], "focalProps": ["hands", "terrace edge"]},
+      "forbidden": ["kiss as default", "Matteo looming or grabbing", "branch-specific readable text", "extra cast", "baked UI/dialogue", "romantic glow"],
+      "acceptance": ["Nika's boundary remains the focal action", "Matteo reads as receiving a choice, not claiming access", "all three branch states remain visually compatible", "both formats preserve faces, hands and dialogue-safe space"]
+    }
+  ],
+  "gateResult": {
+    "webPreflight": "UNAVAILABLE_NOT_VERIFIED",
+    "genericCeosArtBriefVerify": "NOT_RUN_FOR_THIS_NON_S_NUMBERED_PACKET",
+    "generation": "NOT_STARTED",
+    "reason": "Project source-bound briefs are prepared, but the installed generic validator requires legacy S-numbered briefs and cannot authorize these authored scene IDs without an approved project-specific adapter. No alias or trust-check bypass is used."
+  }
+}

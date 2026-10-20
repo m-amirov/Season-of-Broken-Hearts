@@ -1,0 +1,42 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-20T13:10:29.963Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Canon and dual-format contract are present; Web preflight is unavailable and one bounded native route attempt is allowed.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+    "clean": false,
+    "worktreeSha256": "6ce6ae7a3c2697aac6a55230e242c4aa87e07150733e8ccd16c55c5c920e7ec5"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/art-direction/ART_BIBLE.md",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\art-direction\\ART_BIBLE.md",
+      "projectRelativePath": "artifacts/art-direction/ART_BIBLE.md",
+      "type": "file",
+      "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96",
+      "size": 16037
+    },
+    {
+      "input": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\art-direction\\VISUAL_LANGUAGE.json",
+      "projectRelativePath": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "type": "file",
+      "sha256": "a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785",
+      "size": 2356
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "17b3e981506758f3b7ccd7e22e86b313f4f04962a86ed9609de21e5d86fa1b6c",
+      "size": 3577
+    }
+  ]
+}

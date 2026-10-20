@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "PRODUCTION_ART_GENERATION_BLOCKER",
+  "recordedAt": "2026-10-20",
+  "episode": "EP3",
+  "sceneId": "ep3_survey_start",
+  "runId": "2026-10-20T13-09-58-849Z-production-art-55e524",
+  "challengeId": "cap-57f8157d508474c90b74",
+  "webPreflight": "UNAVAILABLE_NOT_VERIFIED",
+  "brief": {
+    "path": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+    "sha256": "17b3e981506758f3b7ccd7e22e86b313f4f04962a86ed9609de21e5d86fa1b6c",
+    "sourceHead": "fcf6b21cd9ae47c45f101d8937f1c35aa8f7eabe"
+  },
+  "gate": {
+    "status": "BLOCKED_ART_BRIEF",
+    "issues": [
+      "sceneId must be an S-numbered scene",
+      "legacy cue/continuity/reference-pixels fields are required",
+      "brief sourceHead is not the current exact git HEAD bbc2fd2c18bdb6691fe862353f5c0c1d61721444"
+    ],
+    "projectRule": "Do not fabricate an S-numbered alias or bypass the generic validator; authored Stage9.6/9.7 scene IDs need a supported project-specific adapter or fresh approved brief contract."
+  },
+  "generation": {"imageGenInvoked": false, "pngCreated": 0, "receiptsCreated": 0, "runtimeMappingsChanged": false},
+  "protected": {"ep2AcceptedPngsChanged": false, "historicalReceiptsChanged": false, "ep3OldPhotoTouched": false}
+}

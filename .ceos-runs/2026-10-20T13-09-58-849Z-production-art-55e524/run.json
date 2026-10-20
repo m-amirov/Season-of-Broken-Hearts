@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.40",
+  "runId": "2026-10-20T13-09-58-849Z-production-art-55e524",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerBindingMode": "CURRENT_TURN",
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-20T13-09-58-849Z-production-art-55e524",
+  "createdAt": "2026-10-20T13:09:58.855Z",
+  "updatedAt": "2026-10-20T13:12:22.309Z",
+  "completedAt": "2026-10-20T13:12:22.309Z",
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "BLOCKED",
+  "nextStage": null,
+  "verdict": "BLOCKED",
+  "stopReason": {
+    "code": "STAGE_BLOCKED",
+    "stage": "GENERATING",
+    "reason": "Native Terra route did not invoke Image Gen: generic S-numbered brief gate rejected authored ep3_survey_start; no alias or trust-check bypass."
+  },
+  "checkpointCount": 6,
+  "scopeSha256": "9b9cbdc016c310b8a2da55cbfe0888b3b71c090c7d9292139209d2187ea9ccc5",
+  "capabilitiesSha256": "ce95df9da96cdd819be212b97384da5609f65a0a181cb3dce7159a22be7a2657",
+  "sourceAtStart": {
+    "available": true,
+    "head": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+    "clean": false,
+    "worktreeSha256": "6ce6ae7a3c2697aac6a55230e242c4aa87e07150733e8ccd16c55c5c920e7ec5"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "UNAVAILABLE",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": true,
+    "fallbackReason": "Web preflight is UNAVAILABLE (fetch failed); continue with one bounded native route attempt and record Web acceptance as NOT_VERIFIED.",
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": true,
+        "fallbackReason": "Web preflight is UNAVAILABLE (fetch failed); continue with one bounded native route attempt and record Web acceptance as NOT_VERIFIED."
+      }
+    }
+  }
+}

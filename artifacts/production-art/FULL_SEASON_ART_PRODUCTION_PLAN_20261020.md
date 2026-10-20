@@ -8,18 +8,18 @@
 |---|---:|---:|
 | Плановое визуальное покрытие 144 сцен | 119 | 238 |
 | Существующие EP1, требуют exact-HEAD recheck | 10 | 20 |
-| Существующие EP2, сохраняются как scoped accepted | 11 | 22 |
+| Существующие EP2, исторически принятые и восстановленные по SHA-256 | 16 | 32 |
 | EP3 `ep3_old_photo`, кандидат, ждёт независимой приёмки | 1 | 2 |
-| Новые пары к созданию | 97 | 194 |
+| Новые пары к созданию | 92 | 184 |
 
-Таким образом, после инвентаризации остаются ровно **97 portrait PNG и 97 landscape PNG** к созданию. Ещё **2 уже существующих EP3 PNG** ждут независимой Web/pixel-приёмки; они не считаются принятыми и не маппятся в runtime. 25 scene rows переиспользуют композицию внутри обоснованных visual families. Это не означает один файл на каждую сцену: authored choice/state остаётся в narrative, а новый CG создаётся только при изменении визуально значимого действия, места, состава или consent state.
+Таким образом, после reconciliation остаются ровно **92 portrait PNG и 92 landscape PNG** к созданию. EP2 покрыт `17/17` scene rows и `16/16` уникальными парами; исторические receipts остаются неизменными, а current-head episode-final acceptance всё ещё `NOT_VERIFIED`. Ещё **2 уже существующих EP3 PNG** ждут независимой Web/pixel-приёмки; они не считаются принятыми и не маппятся в runtime. Ранее созданная новая EP2-пара сохранена как superseded/unmapped duplicate и не засчитывается. 25 scene rows переиспользуют композицию внутри обоснованных visual families. Это не означает один файл на каждую сцену: authored choice/state остаётся в narrative, а новый CG создаётся только при изменении визуально значимого действия, места, состава или consent state.
 
 ## По эпизодам
 
 | Эпизод | Сцен | Плановых пар | Уже есть/кандидаты | Новых пар | Недостаёт PNG (portrait + landscape) | Решение |
 |---|---:|---:|---:|---:|---:|---|
 | EP1 | 18 | 10 | 10 | 0 | 0 + 0 | переиспользовать после проверки current HEAD |
-| EP2 | 17 | 16 | 11 | 5 | 5 + 5 | сохранить принятые scoped пары; создать пять gaps |
+| EP2 | 17 | 16 | 16 | 0 | 0 + 0 | переиспользовать исторические 16/16 после exact SHA-256 reconciliation; не генерировать |
 | EP3 | 15 | 15 | 1 кандидат | 14 | 14 + 14 | `old_photo` только на независимую приёмку; без третьего кандидата |
 | EP4 | 7 | 7 | 0 | 7 | 7 + 7 | создать authored beats |
 | EP5 | 8 | 8 | 0 | 8 | 8 + 8 | создать authored beats |
@@ -32,12 +32,12 @@
 ## Ограничения и приоритеты
 
 - **P0:** exact-currentness EP1; сохранение EP2; независимая очередь приёмки EP3 `old_photo` без генерации.
-- **P1:** пять недостающих пар EP2, затем EP3 с обновлением brief-пакета на текущий HEAD.
+- **P1:** current-head revalidation EP2, затем EP3 с обновлением brief-пакета на текущий HEAD; EP2 gaps не генерируются.
 - **P2:** EP4–EP5, где визуальные действия и бизнес-конфликты уже существенно различаются.
 - **P3:** EP6 — route lock, consent и четыре route compositions; neutral pier frame можно переиспользовать для boundary/choice/response/transition.
 - **P4:** EP7–EP10 малыми партиями по 1–2 пары, сохраняя различимость route payoffs и трёх hotel outcomes в authored state.
 
-Первые ограниченные партии: B2 — EP2 public agreement/refusal (2 пары/4 PNG), B3 — rehearsal failure/rooftop (2/4), B4 — transition (1/2), B5 — EP3 survey start (1/2). До B5 требуется свежий source-bound brief, current-turn CEOS capability challenge и реальный Terra producer route.
+Переучтённые B2–B4 — только reconciliation существующих EP2 bytes, без генерации. Следующая производственная очередь: B5 — EP3 survey start (1/2), затем B6 — первые два EP4 authored beats (2/4), но только после source-bound brief gate, current-turn CEOS capability challenge и реального Terra producer route. Для EP4 подготовлен current-head brief packet; установленный generic validator пока не умеет авторизовать authored scene IDs без неподтверждённого S-numbered alias.
 
 ## Приёмка каждой пары
 

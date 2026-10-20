@@ -1,0 +1,34 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-20T13:12:22.307Z",
+  "cycle": 1,
+  "outcome": "BLOCKED",
+  "skipped": false,
+  "note": "Native Terra route did not invoke Image Gen: generic S-numbered brief gate rejected authored ep3_survey_start; no alias or trust-check bypass.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+    "clean": false,
+    "worktreeSha256": "01312f8d74f9cce0007d02de4cd52fdae15a57edb509ead659c80ef3f8426be1"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.7/EP3_SURVEY_START_GENERATION_BLOCKER_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.7\\EP3_SURVEY_START_GENERATION_BLOCKER_20261020.json",
+      "projectRelativePath": "artifacts/production-art/stage9.7/EP3_SURVEY_START_GENERATION_BLOCKER_20261020.json",
+      "type": "file",
+      "sha256": "d42235269f85c4fe04140f6a290ef913b26a9996e350df7162a869a78de30cb2",
+      "size": 1288
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "17b3e981506758f3b7ccd7e22e86b313f4f04962a86ed9609de21e5d86fa1b6c",
+      "size": 3577
+    }
+  ]
+}

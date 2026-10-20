@@ -1,0 +1,42 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-20T13:10:16.514Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-head inventory locked after EP2 16/16 reconciliation; EP3 survey_start remains bounded and ep3_old_photo is not regenerated.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "bbc2fd2c18bdb6691fe862353f5c0c1d61721444",
+    "clean": false,
+    "worktreeSha256": "6ce6ae7a3c2697aac6a55230e242c4aa87e07150733e8ccd16c55c5c920e7ec5"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "projectRelativePath": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+      "type": "file",
+      "sha256": "e5c6baa7a254ef905c137781265527e1f7707bb97f93d9d81377a0e0cc554650",
+      "size": 38103
+    },
+    {
+      "input": "artifacts/production-art/EP2_ART_RECONCILIATION_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\EP2_ART_RECONCILIATION_20261020.json",
+      "projectRelativePath": "artifacts/production-art/EP2_ART_RECONCILIATION_20261020.json",
+      "type": "file",
+      "sha256": "250994ca2c86d92c320463a19710efbf5a28a32436c1f5e7083bd5bba6507234",
+      "size": 6220
+    },
+    {
+      "input": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\first-batch\\EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "projectRelativePath": "artifacts/production-art/first-batch/EP3_SURVEY_START_SOURCE_BOUND_BRIEF_20261020.json",
+      "type": "file",
+      "sha256": "17b3e981506758f3b7ccd7e22e86b313f4f04962a86ed9609de21e5d86fa1b6c",
+      "size": 3577
+    }
+  ]
+}
