@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_COMPLETION_BATCH_POST_COMMIT_EXACT_HEAD_ACCEPTANCE",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
+  "status": "PASS_EXACT_HEAD_RUNTIME_AND_DEV_WEB_HIGH",
+  "runtimeQa": {
+    "path": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_POST_COMMIT_HEAD_20261021.json",
+    "sha256": "35839050434339d7cc40bb193980a2edf7a1089560090f42716c578f61906e6f",
+    "status": "PASS_EP3_COMPLETION_BATCH_RUNTIME_PIXEL_QA",
+    "captures": 6,
+    "viewports": ["1280x720", "390x844", "360x640"],
+    "consoleErrors": 0,
+    "requestFailures": 0,
+    "httpErrors": 0
+  },
+  "reviews": {
+    "ep3_quiet_return": {
+      "status": "PASS",
+      "actualPixelsReceived": true,
+      "receivedEvidenceCount": 7,
+      "receipt": "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RECEIPT_POST_COMMIT_HEAD_20261021.json",
+      "receiptSha256": "1af104e9fb75a209141be243df2a4cf3db1cb34985b1bb5de79589adee28d11d",
+      "rawResponse": "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RAW_POST_COMMIT_HEAD_20261021.txt",
+      "rawResponseSha256": "c5db4cde54b87c3389a9cc46e2b9282552266d9bf42454a25c6b80c704578493",
+      "transportTraceId": "devweb_a81a6b735cf541c3840a27591afadfc1",
+      "findings": 0
+    },
+    "ep3_transition": {
+      "status": "PASS",
+      "actualPixelsReceived": true,
+      "receivedEvidenceCount": 8,
+      "receipt": "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RECEIPT_POST_COMMIT_HEAD_20261021.json",
+      "receiptSha256": "acab1f0b07ab8427442de7a249c3c2ad5fcc5a6f5d087bb79f1782251a2e6049",
+      "rawResponse": "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RAW_POST_COMMIT_HEAD_20261021.txt",
+      "rawResponseSha256": "927acb7e408f8c0886cede57b7601f9208d745aae6c6d08409b663de21e8b0c7",
+      "transportTraceId": "devweb_93c6852001f045e0824526c6590c7e82",
+      "findings": 0
+    }
+  },
+  "web": {"provider": "codex-chatgpt-web-dev", "transport": "browser-only", "model": "chatgpt-web/gpt-6-sol", "reasoningEffort": "high", "stableBridgeUsed": false, "legacyBridgeUsed": false},
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

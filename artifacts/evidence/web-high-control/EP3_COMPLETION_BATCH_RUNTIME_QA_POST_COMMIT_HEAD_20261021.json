@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_EP3_COMPLETION_BATCH_RUNTIME_PIXEL_QA",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
+  "baseUrl": "http://127.0.0.1:4301/",
+  "sceneIds": [
+    "ep3_quiet_return",
+    "ep3_transition"
+  ],
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "mobile-360",
+      "width": 360,
+      "height": 640
+    }
+  ],
+  "captures": [
+    {
+      "sceneId": "ep3_quiet_return",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_quiet_return",
+      "assetId": "ep3-quiet-return-cg",
+      "expectedAsset": "ep3-quiet-return-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ты не обязана отвечать сегодня ни на вопрос о прошлом, ни на вопрос обо мне.",
+      "screenshot": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_quiet_return/desktop.png",
+      "screenshotSha256": "9928fcbe49a76cd1c24e6f120050a7939c3f59accbcf664250b9e9b0a306edf4",
+      "screenshotBytes": 1173482
+    },
+    {
+      "sceneId": "ep3_quiet_return",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_quiet_return",
+      "assetId": "ep3-quiet-return-cg",
+      "expectedAsset": "ep3-quiet-return-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ты не обязана отвечать сегодня ни на вопрос о прошлом, ни на вопрос обо мне.",
+      "screenshot": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_quiet_return/mobile-390.png",
+      "screenshotSha256": "23ab81f3b1ff2c0de2e227cdaa8b81aabc29b260b306dec077c9b0315f15c010",
+      "screenshotBytes": 415957
+    },
+    {
+      "sceneId": "ep3_quiet_return",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_quiet_return",
+      "assetId": "ep3-quiet-return-cg",
+      "expectedAsset": "ep3-quiet-return-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ты не обязана отвечать сегодня ни на вопрос о прошлом, ни на вопрос обо мне.",
+      "screenshot": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_quiet_return/mobile-360.png",
+      "screenshotSha256": "3cd64121ac765a114dc2037a17387056c57e49bd00a4820a084fbe7f428fe83d",
+      "screenshotBytes": 309816
+    },
+    {
+      "sceneId": "ep3_transition",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_transition",
+      "assetId": "ep3-transition-cg",
+      "expectedAsset": "ep3-transition-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Вечером Ника вписала в рабочий журнал имя Aurea рядом с датой обследования. Не как обвинение и не как обещание — как факт, степень проверки которого она тоже записала.",
+      "screenshot": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_transition/desktop.png",
+      "screenshotSha256": "bafdc13c861ab9765337e5ccbaad4f027aa8fec7b2f655c825339e6627f4ead6",
+      "screenshotBytes": 1111166
+    },
+    {
+      "sceneId": "ep3_transition",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_transition",
+      "assetId": "ep3-transition-cg",
+      "expectedAsset": "ep3-transition-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Вечером Ника вписала в рабочий журнал имя Aurea рядом с датой обследования. Не как обвинение и не как обещание — как факт, степень проверки которого она тоже записала.",
+      "screenshot": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_transition/mobile-390.png",
+      "screenshotSha256": "2b2b01cd43da07610d5f0e7bdac34a1c0f06739b73bc64b6a9e25d0a542e1baa",
+      "screenshotBytes": 424460
+    },
+    {
+      "sceneId": "ep3_transition",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_transition",
+      "assetId": "ep3-transition-cg",
+      "expectedAsset": "ep3-transition-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Вечером Ника вписала в рабочий журнал имя Aurea рядом с датой обследования. Не как обвинение и не как обещание — как факт, степень проверки которого она тоже записала.",
+      "screenshot": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_transition/mobile-360.png",
+      "screenshotSha256": "8e113c95fda36e2e7ebf5a5b2df25a9e088cb61bf760407698b523dace390295",
+      "screenshotBytes": 309585
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

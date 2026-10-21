@@ -4,7 +4,7 @@
   "stage": "9.6",
   "recordedAt": "2026-10-20",
   "status": "BRIEFS_READY_GENERATION_NOT_AUTHORIZED",
-  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
   "sourceBranch": "codex/stage9-full-season-architecture",
   "sourceBasis": "All source inputs below are hashed from the exact current committed HEAD; historical packet remains preserved.",
   "familyDecisionFile": {

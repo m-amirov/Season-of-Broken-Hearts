@@ -4,7 +4,7 @@
   "recordedAt": "2026-10-21",
   "mode": "DIRECT_DEVELOPMENT",
   "basePlan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
-  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
   "status": "EP3_REGULAR_ART_13_OF_14_ACCEPTED_TWO_EXHAUSTED_REWORK_BLOCKERS",
   "validator": {
     "commit": "e468028",
@@ -84,6 +84,7 @@
       "run": ".ceos-runs/2026-10-21T11-50-34-595Z-production-art-7f2b92",
       "runtimeQa": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
       "visualAcceptance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_VISUAL_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "postCommitExactHeadAcceptance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_POST_COMMIT_EXACT_HEAD_ACCEPTANCE_20261021.json",
       "actualPixelsReceived": true
     },
     "nextBatch": "Do not start EP4 or another EP3 generation batch. Resolve the two exhausted-budget EP3 REWORK scenes by an explicitly authorized non-generative repair/reuse contract, then rerun exact-head episode-wide runtime QA and sequential DEV Web High acceptance."

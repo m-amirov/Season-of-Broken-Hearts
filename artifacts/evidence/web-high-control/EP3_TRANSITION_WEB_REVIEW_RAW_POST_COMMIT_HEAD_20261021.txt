@@ -1,0 +1,84 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_transition",  
+"sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_transition"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"bianca-approved-reference",  
+"leo-approved-reference",  
+"transition-source-portrait",  
+"transition-source-landscape",  
+"transition-runtime-desktop-1280x720",  
+"transition-runtime-mobile-390x844",  
+"transition-runtime-mobile-360x640"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"bianca-approved-reference",  
+"leo-approved-reference",  
+"transition-source-portrait",  
+"transition-source-landscape",  
+"transition-runtime-desktop-1280x720",  
+"transition-runtime-mobile-390x844",  
+"transition-runtime-mobile-360x640"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Both source compositions preserve the intended character identities, narrative responsibilities, and visual hierarchy. Nika is the active investigator recording information in her journal, Bianca is presented as the composed professional counterpart, and Leo performs the secondary light-switch action in the background. Character continuity with all three approved references is strong, including recognizable facial features, hairstyles, clothing palettes, and accessories. The portrait and landscape compositions intentionally differ in Bianca's positioning while preserving her narrative role. The desktop runtime maintains the landscape composition with readable dialogue and navigation controls. Both mobile runtimes use the portrait composition and preserve readable Russian dialogue without visible text clipping. At 390x844, the tighter horizontal crop substantially reduces Leo's visibility, and the lower dialogue treatment obscures much of the journal. These limitations do not materially change character attribution or the scene's narrative meaning: Nika remains the foreground focus, Bianca remains recognizable, and Leo's background interaction with the illuminated wall area is still partially visible. The 360x640 capture retains more of Leo and his interaction with the switch. The runtime navigation and dialogue elements are correctly treated as application UI rather than source-art defects. No material visual acceptance blocker is established by the supplied pixels.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "Three-panel character reference showing a woman with a short, tousled dark-brown bob, softly defined facial features, brown eyes, and small gold hoop earrings. She wears a lightweight white linen shirt tucked into high-waisted beige trousers with a brown leather belt. The full-body view includes brown sandals and a large dark-brown leather shoulder bag. The central portrait emphasizes her slightly asymmetrical hairstyle, natural complexion, and delicate gold necklace. The right portrait confirms the volume and layered silhouette of her hair from a three-quarter angle."  
+},  
+{  
+"ref": "bianca-approved-reference",  
+"path": "assets/characters/references/originals/bianca.png",  
+"sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9",  
+"observation": "Three-view professional character reference featuring long, straight copper-red hair, fair skin with freckles, defined eyebrows, and rectangular gold earrings. The full-body image shows a charcoal-gray tailored trouser suit over an ivory V-neck blouse, black pointed heels, a narrow belt, and a structured black handbag. The central facial portrait establishes her direct, composed expression, while the profile confirms her distinctive nose, jawline, and long hair silhouette. Her presentation consistently communicates a polished business identity."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "Character reference showing a young man with medium-length, loosely swept brown hair, light eyes, subtle freckles, and a clean-shaven face. He wears a pale textured linen jacket and matching trousers over a muted olive-green button-down shirt. A brown leather messenger bag crosses his shoulder, and the full-body view includes rolled architectural drawings and brown loafers. The close-up views establish his recognizable hairstyle, angular facial structure, and thoughtful expression."  
+},  
+{  
+"ref": "transition-source-portrait",  
+"path": "assets/production/cg/ep3-transition-cg.png",  
+"sha256": "fcda0044299c1d5d1ee190b32a62ae4159a3cf71de1f33d9956dc8339a55e65f",  
+"observation": "Portrait composition inside a warmly illuminated study at dusk. Nika occupies the dominant foreground position, looking down while writing with a pen in an open journal on the desk. Her short dark hair, gold jewelry, white blouse, and olive outer layer remain consistent with the approved character design. Bianca stands to the right in a charcoal suit and white blouse, looking toward Nika while making a restrained explanatory gesture. Leo stands in the left background near the doorway, reaching toward a wall switch beside the illuminated interior. His pale jacket, olive shirt, and leather satchel match his reference. The arrangement clearly separates Nika's investigative action, Bianca's professional presence, and Leo's secondary environmental action."  
+},  
+{  
+"ref": "transition-source-landscape",  
+"path": "assets/production/cg/ep3-transition-cg-landscape.png",  
+"sha256": "3f01d7a849b3f15539fd3487cb33ddab7a31d4e6d5b2eff8a04dc47d043e9164",  
+"observation": "Wide landscape composition showing Nika seated prominently at the desk, writing in an open journal with a dark pen. Bianca sits to the right in a brown leather chair with crossed legs and one hand supporting her chin, watching Nika thoughtfully. Leo stands in the rear-left doorway with his hand extended to an illuminated wall switch. The study contains wooden bookshelves, a desk lamp, books, dark furniture, and large windows overlooking a sunset landscape. The three characters remain visually distinct, and the primary journal action is clearly foregrounded. Warm interior lighting contrasts effectively with the cool blue and purple dusk outside."  
+},  
+{  
+"ref": "transition-runtime-desktop-1280x720",  
+"path": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3\_transition/desktop.png",  
+"sha256": "bafdc13c861ab9765337e5ccbaad4f027aa8fec7b2f655c825339e6627f4ead6",  
+"observation": "Desktop runtime displays the landscape scene with Nika writing in the foreground, Bianca seated on the right, and Leo operating the switch in the left background. The image fills the widescreen presentation without obvious character distortion. A dark transparent gradient covers the lower portion of the composition to support white Russian narrative text. The visible dialogue states that Nika entered the name Aurea into the working journal beside the inspection date, documenting it as a fact requiring verification. Navigation labels appear near the top corners, and the continuation indicator appears at the lower right. The dialogue remains legible, with no visible clipping or overlap between text and controls."  
+},  
+{  
+"ref": "transition-runtime-mobile-390x844",  
+"path": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3\_transition/mobile-390.png",  
+"sha256": "2b2b01cd43da07610d5f0e7bdac34a1c0f06739b73bc64b6a9e25d0a542e1baa",  
+"observation": "Tall mobile runtime uses the portrait composition, keeping Nika prominent on the left and Bianca standing on the right. Bianca's face, copper hair, dark suit, and conversational hand gesture remain clearly visible. Nika's downward gaze and seated working posture remain recognizable. The narrower framing cuts away most of Leo's body and face at the left boundary, although part of his background interaction near the wall switch remains visible. The dark lower dialogue treatment obscures much of the desk and journal. The Russian narrative text wraps into multiple readable lines, while the continuation indicator remains within the viewport near the lower right. The top navigation controls remain visible."  
+},  
+{  
+"ref": "transition-runtime-mobile-360x640",  
+"path": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3\_transition/mobile-360.png",  
+"sha256": "8e113c95fda36e2e7ebf5a5b2df25a9e088cb61bf760407698b523dace390295",  
+"observation": "Compact mobile runtime retains the portrait scene with Nika seated in the foreground and Bianca standing beside her. Compared with the taller mobile capture, more of Leo is visible in the left background, including his head, upper body, and arm reaching toward the wall switch. Nika remains the primary visual subject, while Bianca's professional clothing and attentive gesture remain recognizable. A strong dark gradient supports the dialogue across the lower portion of the screen. The Russian text wraps across several lines without visible truncation, and the continuation indicator remains visible near the bottom-right edge. The navigation controls at the top remain readable."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

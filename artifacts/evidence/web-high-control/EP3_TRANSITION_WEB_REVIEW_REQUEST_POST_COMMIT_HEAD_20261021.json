@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "sceneId": "ep3_transition",
+  "sceneIds": ["ep3_transition"],
+  "assetId": "ep3-transition-cg",
+  "candidateLimit": {"maxCandidatesPerCueAndFormat": 2, "portraitCandidate": 1, "landscapeCandidate": 1, "thirdCandidateAllowed": false},
+  "context": "Exact committed HEAD review for EP3 ep3_transition. Nika owns the journal/verification action, Bianca is the professional business counterpart, and Leo operates the secondary west-wing light. Review both source PNGs and the attached real runtime desktop/mobile screenshots; runtime navigation/dialogue chrome is expected application UI and is not baked into the source art.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.12/EP3_SOURCE_BOUND_ART_BRIEFS_POST_COMPLETION_CURRENT_HEAD_20261021.json",
+  "provenance": ["artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_NATIVE_OUTPUTS_20261021.json", "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json", "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_POST_COMMIT_HEAD_20261021.json"],
+  "reviewContract": "Independently inspect every attached pixel. Check Nika/Bianca/Leo identity and adult age, journal and background-light actions, Bianca's non-villain professional role, restrained evening setting, anatomy, source composition, and actual desktop/mobile dialogue-safe runtime framing. Return one strict JSON object with PASS or REWORK, actualPixelsReceived=true only if all evidence was visible, one visualEvidence entry per attachment, and only material findings. Use plain underscores, never backslash-escape underscores, and do not wrap JSON in Markdown. No episode-final or release claim.",
+  "images": [
+    {"ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"ref": "bianca-approved-reference", "kind": "original", "path": "assets/characters/references/originals/bianca.png", "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9"},
+    {"ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"ref": "transition-source-portrait", "kind": "runtime", "sceneId": "ep3_transition", "path": "assets/production/cg/ep3-transition-cg.png", "sha256": "fcda0044299c1d5d1ee190b32a62ae4159a3cf71de1f33d9956dc8339a55e65f"},
+    {"ref": "transition-source-landscape", "kind": "runtime", "sceneId": "ep3_transition", "path": "assets/production/cg/ep3-transition-cg-landscape.png", "sha256": "3f01d7a849b3f15539fd3487cb33ddab7a31d4e6d5b2eff8a04dc47d043e9164"},
+    {"ref": "transition-runtime-desktop-1280x720", "kind": "runtime", "sceneId": "ep3_transition", "path": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_transition/desktop.png", "sha256": "bafdc13c861ab9765337e5ccbaad4f027aa8fec7b2f655c825339e6627f4ead6"},
+    {"ref": "transition-runtime-mobile-390x844", "kind": "runtime", "sceneId": "ep3_transition", "path": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_transition/mobile-390.png", "sha256": "2b2b01cd43da07610d5f0e7bdac34a1c0f06739b73bc64b6a9e25d0a542e1baa"},
+    {"ref": "transition-runtime-mobile-360x640", "kind": "runtime", "sceneId": "ep3_transition", "path": "output/playwright/ep3-completion-batch-runtime-post-commit/ep3_transition/mobile-360.png", "sha256": "8e113c95fda36e2e7ebf5a5b2df25a9e088cb61bf760407698b523dace390295"}
+  ]
+}

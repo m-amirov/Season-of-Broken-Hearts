@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "kind": "FULL_SEASON_ART_PRODUCTION_PROGRESS_CURRENT_HEAD",
   "recordedAt": "2026-10-21",
-  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
   "plan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_CURRENT_HEAD_20261021.json",
   "validator": {
     "status": "FIXED_AND_VERIFIED",
@@ -82,6 +82,7 @@
     "run": ".ceos-runs/2026-10-21T11-50-34-595Z-production-art-7f2b92",
     "runtimeQa": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
     "visualAcceptance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_VISUAL_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+    "postCommitExactHeadAcceptance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_POST_COMMIT_EXACT_HEAD_ACCEPTANCE_20261021.json",
     "actualPixelsReceived": true
   },
   "oldPhoto": {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kind": "EP3_BRANCH_AWARE_VISUAL_COVERAGE",
   "recordedAt": "2026-10-21",
-  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceHead": "3650193ba8ab7a6c59a7ae36cd2af642f5febab8",
   "episode": 3,
   "graphSource": "narrative/episodes/ep-03.json",
   "routeMapSource": "narrative/ROUTE_MAP.md",
