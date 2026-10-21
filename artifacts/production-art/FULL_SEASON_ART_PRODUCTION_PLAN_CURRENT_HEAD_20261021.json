@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.2",
+  "kind": "FULL_SEASON_ART_PRODUCTION_PLAN_CURRENT_HEAD",
+  "recordedAt": "2026-10-21",
+  "mode": "DIRECT_DEVELOPMENT",
+  "basePlan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_20261020.json",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "status": "EP3_DECLINE_RESPONSE_BATCH_ACCEPTED_EP3_IN_PROGRESS",
+  "validator": {
+    "commit": "e468028",
+    "ep3Briefs": "READY_TO_GENERATE",
+    "ep4Briefs": "READY_TO_GENERATE",
+    "strictChecksPreserved": true
+  },
+  "totals": {
+    "plannedVisualPairs": 119,
+    "runtimeMappedExistingPairs": 31,
+    "currentHeadIndependentAcceptedPairs": 6,
+    "existingCandidatePairsPendingIndependentAcceptance": 1,
+    "existingCandidatePngPendingIndependentAcceptance": 2,
+    "newPairsToCreate": 87,
+    "missingPortraitPng": 87,
+    "missingLandscapePng": 87,
+    "missingPngTotal": 174,
+    "waitingOrPlannedPngTotal": 176
+  },
+  "episodeEP3": {
+    "sceneCount": 15,
+    "branchAudit": "artifacts/evidence/web-high-control/EP3_BRANCH_AWARE_VISUAL_COVERAGE_CURRENT_HEAD_20261021.json",
+    "acceptedScenePairs": [
+      "ep3_survey_start",
+      "ep3_survey_join_response",
+      "ep3_survey_site_problem",
+      "ep3_staff_walkthrough",
+      "ep3_survey_decline_response"
+    ],
+    "missingSceneIds": [
+      "ep3_report_delivery",
+      "ep3_eight_years",
+      "ep3_accountability_choice",
+      "ep3_aurea_drawing",
+      "ep3_document_check",
+      "ep3_document_check_response",
+      "ep3_matteo_confrontation",
+      "ep3_quiet_return",
+      "ep3_transition"
+    ],
+    "oldPhoto": "NOT_VERIFIED_REWORK; candidate budget exhausted; no regeneration"
+  },
+  "batchState": {
+    "declineResponse": {
+      "status": "PASS_BATCH_ONLY",
+      "run": ".ceos-runs/2026-10-21T06-01-26-158Z-production-art-e45e90",
+      "webReceipt": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "runtimeQa": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "actualPixelsReceived": true
+    },
+    "nextBatch": "Continue EP3 in small bounded batches after each exact-head source-bound brief, fresh Terra capability attestation, runtime pixel QA and sequential DEV Web High review."
+  },
+  "acceptanceBoundary": {
+    "actualPixelsRequired": true,
+    "runtimeQaRequiredBeforeIntegration": true,
+    "legacyBridge": "FORBIDDEN",
+    "massAcceptance": "NOT_STARTED",
+    "episodeFinalAcceptance": "NOT_VERIFIED"
+  },
+  "blockers": [
+    "ep3_report_delivery and eight remaining EP3 scene pairs are not produced or mapped; episode-wide runtime QA cannot pass yet",
+    "old_photo has real pixel-backed REWORK, but its portrait story-critical photograph is not readable and candidate budget is exhausted at 2/2; no third candidate or hidden regeneration",
+    "generic legacy Web preflight remains unavailable with fetch failed at 127.0.0.1:17841; DEV browser-only Web High is the working independent transport",
+    "the original generation run is integrity-blocked because provenance/manifest evidence was corrected after its GENERATING/INTEGRATED checkpoints; its historical checkpoints are preserved and a separate verified-reuse batch run records the accepted result"
+  ],
+  "preservation": {
+    "canonicalS32AndEP2ReusedWithoutRegeneration": true,
+    "historicalEvidenceChanged": false,
+    "originalPngsChanged": false,
+    "parallelWorktreesPreserved": true,
+    "releaseOrPublicationStarted": false
+  }
+}

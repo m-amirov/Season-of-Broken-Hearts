@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "status": "DOCUMENTED",
+  "runId": "2026-10-21T05-34-00-674Z-production-art-10af12",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "sceneId": "ep3_survey_decline_response",
+  "assetId": "ep3-survey-decline-response-cg",
+  "briefPath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "briefSha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0",
+  "characterReferences": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "generation": {
+    "provider": "native-terra",
+    "model": "gpt-5.6-terra",
+    "tool": "image_gen.imagegen",
+    "producerAgentType": "ceos_asset_generator",
+    "producerAgentId": "01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd",
+    "routeCheck": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceSha256": "1eda7fa000a70246e49969022d22de448b4ddd966896904734e7fc1425d0dd50",
+    "capabilityChallengeId": "cap-d25654246e3c6bbce82a",
+    "candidate": 1,
+    "candidateLimit": 2,
+    "c2paPresent": true,
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "outputs": [
+    {
+      "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+      "width": 1024,
+      "height": 1536,
+      "outputGate": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-portrait-candidate-1-output-gate.json",
+      "importedOutputVerify": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-portrait-imported-output-verify.json"
+    },
+    {
+      "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+      "width": 1672,
+      "height": 941,
+      "outputGate": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-landscape-candidate-1-output-gate.json",
+      "importedOutputVerify": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-landscape-imported-output-verify.json"
+    }
+  ],
+  "trustBoundaries": {
+    "legacyBridge": "UNUSED_FETCH_FAILED",
+    "devBrowserOnlyWebHigh": "REQUIRED_FOR_INDEPENDENT_ACCEPTANCE",
+    "visualAcceptance": "NOT_YET_CLAIMED"
+  }
+}

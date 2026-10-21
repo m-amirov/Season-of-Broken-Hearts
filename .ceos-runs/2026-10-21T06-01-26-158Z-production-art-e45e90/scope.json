@@ -1,0 +1,23 @@
+{
+  "target": "EP3 decline response current-head existing art verification",
+  "inScope": [
+    "ep3_survey_decline_response",
+    "existing portrait and landscape PNG bytes",
+    "current runtime mapping",
+    "desktop and mobile pixel QA",
+    "independent DEV Web High acceptance"
+  ],
+  "outOfScope": [
+    "old_photo regeneration",
+    "EP1",
+    "EP2",
+    "EP4",
+    "release",
+    "publication",
+    "legacy bridge"
+  ],
+  "acceptanceContract": "Both exact-format PNGs are provenance-valid, runtime-mapped, current desktop/mobile pixels are observed, and DEV browser-only GPT-6 Sol High returns actual-pixel PASS.",
+  "mutationBoundary": "Only EP3 decline response runtime mapping and new evidence may change; preserve accepted originals, historical receipts, old_photo candidates, and unrelated dirty work.",
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "visual-content"
+}

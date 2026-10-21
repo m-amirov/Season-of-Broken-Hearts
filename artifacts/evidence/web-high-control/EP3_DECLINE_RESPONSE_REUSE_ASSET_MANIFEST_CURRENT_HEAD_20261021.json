@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "mode": "VERIFIED_EXISTING_ART_REUSE",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "assets": [
+    {
+      "id": "ep3-survey-decline-response-cg-portrait",
+      "format": "portrait",
+      "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+      "width": 1024,
+      "height": 1536,
+      "kind": "background"
+    },
+    {
+      "id": "ep3-survey-decline-response-cg-desktop",
+      "format": "desktop",
+      "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+      "width": 1672,
+      "height": 941,
+      "kind": "background"
+    }
+  ]
+}

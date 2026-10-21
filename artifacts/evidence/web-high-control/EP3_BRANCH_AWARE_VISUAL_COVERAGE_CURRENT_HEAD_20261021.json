@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_BRANCH_AWARE_VISUAL_COVERAGE",
+  "recordedAt": "2026-10-21",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "episode": 3,
+  "graphSource": "narrative/episodes/ep-03.json",
+  "routeMapSource": "narrative/ROUTE_MAP.md",
+  "sceneCount": 15,
+  "branches": [
+    {
+      "id": "join_branch",
+      "entry": "ep3_survey_start",
+      "choice": "ep3_survey_join",
+      "path": ["ep3_survey_start", "ep3_survey_join_response", "ep3_survey_site_problem", "ep3_staff_walkthrough", "ep3_eight_years"],
+      "alternatives": ["ep3_report_conflict", "ep3_hold_conflict", "ep3_staff_route_record", "ep3_staff_route_compromise"]
+    },
+    {
+      "id": "decline_branch",
+      "entry": "ep3_survey_start",
+      "choice": "ep3_survey_decline",
+      "path": ["ep3_survey_start", "ep3_survey_decline_response", "ep3_report_delivery", "ep3_eight_years"],
+      "alternatives": ["ep3_review_report", "ep3_hold_report"]
+    },
+    {
+      "id": "shared_accountability",
+      "path": ["ep3_accountability_choice", "ep3_aurea_drawing", "ep3_document_check", "ep3_document_check_response", "ep3_matteo_confrontation", "ep3_quiet_return", "ep3_transition"],
+      "alternatives": ["ep3_accountability_listen", "ep3_accountability_action", "ep3_accountability_distance", "ep3_mark_aurea_link", "ep3_protect_process", "ep3_verify_aurea_attachment", "ep3_keep_as_lead", "ep3_share_verified", "ep3_keep_verified_private", "ep3_share_lead", "ep3_keep_lead_private"]
+    }
+  ],
+  "coverageCurrent": {
+    "acceptedScenes": ["ep3_survey_start", "ep3_survey_join_response", "ep3_survey_site_problem", "ep3_staff_walkthrough", "ep3_survey_decline_response"],
+    "acceptedPairs": 5,
+    "remainingUnmappedScenes": ["ep3_report_delivery", "ep3_eight_years", "ep3_accountability_choice", "ep3_aurea_drawing", "ep3_document_check", "ep3_document_check_response", "ep3_matteo_confrontation", "ep3_quiet_return", "ep3_transition"],
+    "status": "PARTIAL_BRANCH_COVERAGE_DECLINE_RESPONSE_ACCEPTED_NEXT_REPORT_DELIVERY"
+  },
+  "visualFamilyRules": {
+    "declineResponseAndReportDelivery": "shared office/report-chain family may reuse a coherent pair only if the action and state remain visually accurate; generate separately when action/location/state changes materially.",
+    "allOtherSharedBeats": "separate authored visual families remain distinct unless the approved source-bound family contract explicitly allows reuse."
+  },
+  "acceptanceRule": "A scene is visually accepted only with two real PNG formats, current runtime mapping, exact-head desktop/mobile screenshots, and independent Web High actual-pixel evidence. Choice alternatives are covered by authored state/route audit even when they intentionally reuse the same static composition."
+}

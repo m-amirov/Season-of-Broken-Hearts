@@ -1,0 +1,136 @@
+{
+  "index": 6,
+  "stage": "GENERATING",
+  "at": "2026-10-21T05:47:27.290Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Native Terra candidate 1 for ep3_survey_decline_response generated under fresh run-scoped attestation and imported with both output receipts; runtime and independent DEV Web High remain pending.",
+  "metadata": {
+    "artOutputs": [
+      {
+        "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536,
+        "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4"
+      },
+      {
+        "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+        "kind": "background",
+        "width": 1672,
+        "height": 941,
+        "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25"
+      }
+    ],
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/21/rollout-2026-10-21T08-36-51-01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd.jsonl",
+    "producerTraceSha256": "1eda7fa000a70246e49969022d22de448b4ddd966896904734e7fc1425d0dd50",
+    "capabilityAttestation": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/capability-attestation/attestations/cap-d25654246e3c6bbce82a.json",
+    "candidate": 1,
+    "candidateLimit": 2,
+    "artOutputGate": {
+      "status": "PASS_ART_BATCH_MECHANICAL",
+      "checks": [
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-decline-response-cg.png",
+          "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+          "dimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "alpha": {
+            "opaque": 1572864,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1572864,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        },
+        {
+          "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-decline-response-cg-landscape.png",
+          "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+          "dimensions": {
+            "width": 1672,
+            "height": 941
+          },
+          "alpha": {
+            "opaque": 1573352,
+            "transparent": 0,
+            "partial": 0,
+            "nonzero": 1573352,
+            "cornerAlpha": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          "checkerboard": {
+            "detected": false
+          }
+        }
+      ]
+    },
+    "producerRouteGate": {
+      "ok": true,
+      "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+      "agentId": "01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd",
+      "parentSessionId": "01a15994-217b-7762-8efe-ffb10b852e64",
+      "agentRole": "ceos_asset_generator",
+      "actualModel": "gpt-5.6-terra",
+      "actualEffort": "medium",
+      "traceFile": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T08-36-51-01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd.jsonl",
+      "traceSha256": "3eb2361e878613963734ba7e56eb46f5256fa29535b5f0b2a9dd0cf99e23c590",
+      "evidenceAssurance": "host-observed-local-jsonl-not-provider-signed",
+      "generationCapability": "NOT_VERIFIED"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "a11f56d6bf247c96726b1f67ce347eae60f1fed30409958b29cd4f910b9595da"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "9d9d9a79330eea73d6bbf71003aa3eb2991d7de9893ce53f629693c3bd8517d6",
+      "size": 2688
+    },
+    {
+      "input": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/capability-attestation/attestations/cap-d25654246e3c6bbce82a.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-21T05-34-00-674Z-production-art-10af12\\capability-attestation\\attestations\\cap-d25654246e3c6bbce82a.json",
+      "projectRelativePath": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/capability-attestation/attestations/cap-d25654246e3c6bbce82a.json",
+      "type": "file",
+      "sha256": "b46f4a95e5433a8f4553436826e7fd048fae5d4dcf645efbfd76442f6ea724a3",
+      "size": 528
+    },
+    {
+      "input": "assets\\production\\cg\\ep3-survey-decline-response-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-decline-response-cg.png",
+      "projectRelativePath": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "type": "file",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+      "size": 2352795
+    },
+    {
+      "input": "assets\\production\\cg\\ep3-survey-decline-response-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-decline-response-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "type": "file",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+      "size": 2131699
+    }
+  ]
+}

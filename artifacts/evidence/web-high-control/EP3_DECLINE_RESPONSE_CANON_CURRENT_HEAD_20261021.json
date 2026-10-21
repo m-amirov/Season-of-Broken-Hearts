@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "CURRENT",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "sceneId": "ep3_survey_decline_response",
+  "briefId": "ep3-office-report-chain-decline-v1",
+  "briefPath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "briefSha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0",
+  "requiredCast": ["nika", "leo"],
+  "narrativeCue": "Nika stays in office and asks for full report through Matteo; Leo sends materials without holding her in conversation.",
+  "forbidden": ["Matteo visible", "readable report text", "Aurea logo", "romantic waiting gesture", "kiss", "embrace"],
+  "references": [
+    {"id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ]
+}

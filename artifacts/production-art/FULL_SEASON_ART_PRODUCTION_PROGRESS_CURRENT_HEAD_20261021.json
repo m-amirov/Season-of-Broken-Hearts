@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 3,
+  "kind": "FULL_SEASON_ART_PRODUCTION_PROGRESS_CURRENT_HEAD",
+  "recordedAt": "2026-10-21",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "plan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_CURRENT_HEAD_20261021.json",
+  "validator": {
+    "status": "FIXED_AND_VERIFIED",
+    "commit": "e468028",
+    "sceneIds": "epN_slug supported",
+    "ep3Packet": "READY_TO_GENERATE",
+    "ep4Packet": "READY_TO_GENERATE",
+    "tests": "424/424 PASS; targeted 13/13 PASS; lint PASS"
+  },
+  "declineResponseBatch": {
+    "sceneId": "ep3_survey_decline_response",
+    "status": "PASS_BATCH_ONLY",
+    "createdPairs": 1,
+    "acceptedPairs": 1,
+    "createdPng": 2,
+    "acceptedPng": 2,
+    "run": ".ceos-runs/2026-10-21T06-01-26-158Z-production-art-e45e90",
+    "webReceipt": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+    "runtimeQa": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+    "actualPixelsReceived": true
+  },
+  "oldPhoto": {
+    "status": "NOT_VERIFIED",
+    "reviewerDecision": "REWORK",
+    "actualPixelsReceived": true,
+    "candidateBudget": "2/2 exhausted",
+    "officialPass": false,
+    "runtimeMapped": false,
+    "permissibleNextAction": "No regeneration. If the story-critical portrait must be repaired, use only an explicitly authorized non-generative retouch/composite from an approved existing photo source with fresh provenance and review; CSS-only repair cannot fix the portrait semantic defect.",
+    "evidence": "artifacts/evidence/web-high-control/EP3_OLD_PHOTO_WEB_REVIEW_TRACE_CURRENT_HEAD_20261020.md"
+  },
+  "counts": {
+    "plannedVisualPairs": 119,
+    "runtimeMappedExistingPairs": 31,
+    "currentHeadIndependentAcceptedPairs": 6,
+    "newPairsRemaining": 87,
+    "newPngRemaining": 174,
+    "candidatePairsPending": 1,
+    "candidatePngPending": 2,
+    "waitingOrPlannedPngTotal": 176
+  },
+  "production": {
+    "newGenerationStarted": true,
+    "massAcceptanceStarted": false,
+    "releaseOrPublicationStarted": false,
+    "historicalReceiptsChanged": false,
+    "acceptedOriginalsChanged": false
+  },
+  "nextAction": "Produce ep3_report_delivery next in a fresh bounded Terra run, then continue the remaining EP3 branch/shared scene pairs with current-head runtime and sequential DEV Web High acceptance. Do not move to EP4 until EP3 coverage and episode-wide runtime QA are complete."
+}

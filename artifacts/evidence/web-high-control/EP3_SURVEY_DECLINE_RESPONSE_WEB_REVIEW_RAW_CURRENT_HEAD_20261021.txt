@@ -1,0 +1,60 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_survey\_decline\_response",  
+"sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_survey\_decline\_response"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-survey-decline-response-portrait-candidate-1",  
+"ep3-survey-decline-response-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-survey-decline-response-portrait-candidate-1",  
+"ep3-survey-decline-response-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Both runtime compositions satisfy the source-bound visual requirements. Nika remains seated at the office work table with an open notebook and working materials, while Leo stands separately holding a neutral, unmarked report folder. The environment establishes a villa office through wooden shutters, substantial wooden furniture, an open doorway, and natural daytime illumination. The two required characters remain visually consistent with their approved references. The portrait composition shows Nika briefly acknowledging Leo without introducing physical intimacy or an overt romantic waiting gesture. The landscape composition communicates the professional boundary particularly clearly: Nika continues writing while Leo stands at a respectful distance near the doorway. Giulia and Matteo are absent. No additional characters, readable report text, Aurea branding, romantic physical contact, baked interface elements, or watermarks are visible. The warm sunlight is somewhat more cinematic than strictly neutral illumination but remains credible daytime lighting and does not materially alter the scene's meaning. The offscreen communication through Matteo cannot be independently established from static artwork, but the supplied narrative context establishes that action, and neither image visibly contradicts it. Both candidates are accepted for NARRATIVE\_ART\_ACCEPTANCE\_V2.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved character reference presents a young adult woman with a tousled, chin-length dark brown bob, brown eyes, subtly freckled skin, defined eyebrows, and delicate facial features. She wears a loose cream linen button-down shirt, high-waisted beige trousers, a brown leather belt, small gold hoop earrings, and a fine gold necklace with a circular pendant. The reference includes full-body, frontal close-up, and three-quarter portrait views. Her styling is understated, contemporary, and naturalistic. These distinguishing facial, hairstyle, and accessory characteristics remain recognizable in both runtime compositions, notwithstanding the additional olive jacket."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved character reference depicts a young adult man with medium-length, loosely swept chestnut-brown hair, light brown to hazel eyes, a defined jawline, a straight nose, and subtle facial freckles. He wears a light beige textured linen jacket over a muted olive-green button-down shirt, coordinating pale trousers, a brown leather belt, brown loafers, and a brown leather shoulder satchel. The full-body reference includes rolled architectural drawings, while two accompanying portraits establish frontal and downward-looking facial angles. Both runtime candidates preserve his recognizable hair, facial structure, clothing palette, and leather shoulder bag."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference depicts a mature woman with dark brown hair streaked with gray, loosely gathered into a low bun, brown eyes, expressive facial lines, and small gold hoop earrings. She wears a muted sage-green collared shirt with rolled sleeves, a beige work apron, dark trousers, and black shoes. The reference includes a full-body view, a frontal facial portrait, and a side-profile portrait. Her facial appearance, gray-streaked gathered hairstyle, and apron distinguish her from Nika. No matching third character appears in either runtime composition, consistent with the required two-person cast."  
+},  
+{  
+"ref": "ep3-survey-decline-response-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-survey-decline-response-cg.png",  
+"sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",  
+"observation": "The portrait composition places Nika seated on the left side of a substantial wooden office table. She wears an olive linen jacket over her cream blouse, with her familiar dark tousled bob, gold earrings, and pendant necklace. An open notebook and pen lie beneath her left hand, while a closed brown portfolio rests near her right hand. She turns her face toward Leo without standing or approaching him. Leo stands to the right, near a large open wooden doorway, wearing his beige jacket, muted olive shirt, pale trousers, and brown leather shoulder bag. He holds a closed dark brown rectangular report folder in front of his torso with both hands. Wooden shutters, framed artwork, olive branches, and an exterior view establish the villa-office setting. Warm natural sunlight illuminates the interior. The characters remain physically separated, and neither adopts an intimate pose. No additional person, readable report, conspicuous branding, baked dialogue interface, or watermark is visible."  
+},  
+{  
+"ref": "ep3-survey-decline-response-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",  
+"sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",  
+"observation": "The landscape composition places Nika at the left side of a broad wooden work table, actively writing with a pen in an open notebook. Her dark tousled bob, cream blouse, gold jewelry, and loose olive jacket remain consistent with the approved reference and portrait candidate. Leo stands on the right, separated from Nika by a substantial portion of the room, holding a slim dark rectangular folder at waist height. His beige linen jacket, muted olive shirt, and brown shoulder satchel reproduce the approved character styling. The background includes tall wooden shutters, framed wall artwork, cabinets, plants, and an open doorway leading toward a sunlit exterior with tall trees. The desk contains ordinary work materials, including notebooks, folders, and writing implements. Nika concentrates on her work rather than engaging Leo in conversation, reinforcing the intended professional boundary. No third character, visible Matteo, legible report text, Aurea mark, romantic contact, embedded interface, or watermark appears."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

@@ -1,0 +1,26 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-21T05:36:13.049Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Four created pairs have complete receipts; branch audit freezes decline branch contract and preserves accepted join-branch assets.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "caad747c261a9475e2ab61df8a531c546b71dfc15cfa7a246012732419e9a7c2"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "type": "file",
+      "sha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0",
+      "size": 66993
+    }
+  ]
+}

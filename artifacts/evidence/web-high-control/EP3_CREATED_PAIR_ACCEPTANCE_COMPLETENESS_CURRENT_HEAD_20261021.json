@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_CREATED_PAIR_ACCEPTANCE_COMPLETENESS",
+  "recordedAt": "2026-10-21",
+  "currentHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "scope": "four newly created EP3 art-pairs before decline-response generation",
+  "validation": {
+    "method": "Read receipts, verify referenced PNG existence and SHA-256, inspect Web status/actualPixelsReceived, and verify runtime evidence references.",
+    "result": "PASS_COMPLETE_FOR_CREATED_PAIRS",
+    "mechanicalPngs": 8,
+    "mechanicalPngsPresentAndHashMatched": 8,
+    "webHighPairs": 4,
+    "webHighPassPairs": 4,
+    "actualPixelReviews": 4,
+    "runtimeEvidenceSets": 4,
+    "candidateBudget": "All created pairs are candidate 1; no candidate budget reset or third candidate."
+  },
+  "pairs": [
+    {
+      "sceneId": "ep3_survey_start",
+      "status": "PASS_BATCH_ONLY",
+      "sourceHeadAtReceipt": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+      "integrationCommit": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+      "productionReceipt": "artifacts/evidence/web-high-control/EP3_SURVEY_START_PRODUCTION_ART_CONTROL_CYCLE_RECEIPT_CURRENT_HEAD_20261021.json",
+      "mechanical": "PASS_ART_OUTPUT_MECHANICAL for portrait and landscape",
+      "runtime": "desktop and mobile captures with trace/network evidence",
+      "webHigh": "PASS; actualPixelsReceived=true; DEV_BROWSER_ONLY; gpt-6-sol/high; stableBridgeUsed=false",
+      "traceId": "devweb_d2efa83d682e48e58df5a484a146d4f9"
+    },
+    {
+      "sceneId": "ep3_survey_join_response",
+      "status": "PASS_BATCH_ONLY",
+      "sourceHeadAtReceipt": "b0495d2683b65120c42071272b6a320406d21c2d",
+      "integrationCommit": "b0495d2683b65120c42071272b6a320406d21c2d",
+      "productionReceipt": "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_PRODUCTION_ART_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "mechanical": "output provenance and six-file gate set verified; PNG hash matched",
+      "runtime": "desktop and mobile capture in EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "webHigh": "PASS; actualPixelsReceived=true; DEV_BROWSER_ONLY; gpt-6-sol/high; stableBridgeUsed=false",
+      "traceId": "devweb_d107a571cec0436b86c12c3265de1f85"
+    },
+    {
+      "sceneId": "ep3_survey_site_problem",
+      "status": "PASS_BATCH_ONLY",
+      "sourceHeadAtReceipt": "b0495d2683b65120c42071272b6a320406d21c2d",
+      "integrationCommit": "b0495d2683b65120c42071272b6a320406d21c2d",
+      "productionReceipt": "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_PRODUCTION_ART_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "mechanical": "output provenance and six-file gate set verified; PNG hash matched",
+      "runtime": "desktop and mobile capture in EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "webHigh": "PASS; actualPixelsReceived=true; DEV_BROWSER_ONLY; gpt-6-sol/high; stableBridgeUsed=false",
+      "traceId": "devweb_3c0392256e894cf3bbbba19612ccbcdf"
+    },
+    {
+      "sceneId": "ep3_staff_walkthrough",
+      "status": "PASS_BATCH_ONLY",
+      "sourceHeadAtReceipt": "b0495d2683b65120c42071272b6a320406d21c2d",
+      "integrationCommit": "b0495d2683b65120c42071272b6a320406d21c2d",
+      "productionReceipt": "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_PRODUCTION_ART_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "mechanical": "output provenance and six-file gate set verified; PNG hash matched",
+      "runtime": "desktop and mobile capture in EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "webHigh": "PASS; actualPixelsReceived=true; DEV_BROWSER_ONLY; gpt-6-sol/high; stableBridgeUsed=false",
+      "traceId": "devweb_0c1e7829c7554a35bcc0c9035d359afe"
+    }
+  ],
+  "preservation": {
+    "historicalReceiptsMutated": false,
+    "acceptedPngsMutated": false,
+    "oldPhotoRegenerated": false,
+    "note": "The older batch manifest retains its historical pending status; this completeness ledger is the current-head adjudication and does not rewrite that immutable artifact."
+  }
+}

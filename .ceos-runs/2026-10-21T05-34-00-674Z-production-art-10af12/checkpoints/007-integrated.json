@@ -1,0 +1,63 @@
+{
+  "index": 7,
+  "stage": "INTEGRATED",
+  "at": "2026-10-21T05:47:41.632Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Decline-response dual-format PNGs are persisted with exact hashes and mapped in narrative/assets.json; runtime pixel QA and independent DEV browser-only Web High remain pending.",
+  "metadata": {
+    "dualFormatManifest": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "sceneIds": [
+      "ep3_survey_decline_response"
+    ],
+    "integratedAssets": [
+      "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "assets/production/cg/ep3-survey-decline-response-cg-landscape.png"
+    ],
+    "runtimeMapping": "narrative/assets.json",
+    "currentHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+      "coverageMode": "BATCH_ONLY",
+      "episode": 3,
+      "requiredScenes": 15,
+      "mappedScenes": 1,
+      "coveredSceneIds": [
+        "ep3_survey_decline_response"
+      ],
+      "fullEpisodeCovered": false,
+      "episodeFinalAcceptance": "NOT_VERIFIED",
+      "releaseReady": false,
+      "uniqueAssets": 1,
+      "variantFilesChecked": 2,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "Mechanical verification of authored scenes only. BATCH_ONLY and REUSE_SCOPE are never episode-final acceptance; real runtime/Web High review remains mandatory."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "a11f56d6bf247c96726b1f67ce347eae60f1fed30409958b29cd4f910b9595da"
+  },
+  "artifacts": [
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "22bf49b74c7b6ccaf4002ede78e88a088a813744fc884c2c7c3dc7ea2c5a2df4",
+      "size": 21917
+    },
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "ea6a909991b96d2a0dca94ca494a4c4c7576fc3544a57e4057de33d0a49fc712",
+      "size": 3150
+    }
+  ]
+}

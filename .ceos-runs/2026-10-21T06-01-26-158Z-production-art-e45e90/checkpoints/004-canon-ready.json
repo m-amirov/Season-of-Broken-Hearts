@@ -1,0 +1,35 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-21T06:01:45.468Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Decline-response uses the existing source-bound canon and does not require regeneration.",
+  "metadata": {
+    "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "briefSha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0",
+    "references": [
+      "assets/characters/references/originals/nika.png",
+      "assets/characters/references/originals/leo.png"
+    ],
+    "branchCoverage": "artifacts/evidence/web-high-control/EP3_BRANCH_AWARE_VISUAL_COVERAGE_CURRENT_HEAD_20261021.json",
+    "currentHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0"
+  },
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "810648199a4e040c02dd76cf17f5abf21da8e7db33e5a16b81ddc9a585f9a770"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "f46f1b12ff74ce35489c793148e86048137566ede1a3dd74efe92d069747db72",
+      "size": 3148
+    }
+  ]
+}

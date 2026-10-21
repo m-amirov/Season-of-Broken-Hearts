@@ -1,0 +1,37 @@
+{
+  "index": 7,
+  "stage": "VISUAL_VERIFIED",
+  "at": "2026-10-21T06:03:54.911Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current scene pixel QA observed on desktop and compact/mobile viewports. The next authored branch scene reports a missing-asset preload error and remains an episode-wide blocker.",
+  "metadata": {
+    "currentHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "runtimeQa": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+    "screenshots": [
+      "output/playwright/ep3-decline-response-desktop-1280x720.png",
+      "output/playwright/ep3-decline-response-mobile-390x844.png",
+      "output/playwright/ep3-decline-response-mobile-360x640.png"
+    ],
+    "actualPixelsReceived": true,
+    "sceneScope": "ep3_survey_decline_response",
+    "nextSceneBlocker": "ep3_report_delivery missing from current runtime mapping"
+  },
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "56c4dd65f2bc41eba41d967f2994720fd95c5a6b29104ff5158ca2f97e04ef64"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "748b76bb9704a3bc0f130a45facdbfc4bc9c66d3dd9f06fd4a87068e7ccebc19",
+      "size": 9741
+    }
+  ]
+}

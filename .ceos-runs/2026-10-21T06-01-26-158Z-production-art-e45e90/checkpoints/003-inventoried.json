@@ -1,0 +1,32 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-21T06:01:38.282Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Existing decline-response dual-format bytes and current-head evidence inventory.",
+  "metadata": {
+    "sceneId": "ep3_survey_decline_response",
+    "assetId": "ep3-survey-decline-response-cg",
+    "dualFormatManifest": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "existingArtReuse": true,
+    "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0"
+  },
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "810648199a4e040c02dd76cf17f5abf21da8e7db33e5a16b81ddc9a585f9a770"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "748b76bb9704a3bc0f130a45facdbfc4bc9c66d3dd9f06fd4a87068e7ccebc19",
+      "size": 9741
+    }
+  ]
+}

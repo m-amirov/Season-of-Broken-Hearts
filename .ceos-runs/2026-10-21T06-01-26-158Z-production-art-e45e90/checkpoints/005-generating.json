@@ -1,0 +1,265 @@
+{
+  "index": 5,
+  "stage": "GENERATING",
+  "at": "2026-10-21T06:03:34.539Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Verified reuse contract passes current files, dual-format hashes, runtime pixels and independent DEV Web High PASS; no new generation invoked.",
+  "metadata": {
+    "existingArtReuse": {
+      "schemaVersion": 1,
+      "mode": "VERIFIED_EXISTING_ART_REUSE",
+      "generationInvoked": false,
+      "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+      "dualFormatManifest": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "assetManifest": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_REUSE_ASSET_MANIFEST_CURRENT_HEAD_20261021.json",
+      "assetManifestSha256": "b9b37d5813bb9b0d7d3dbd38813c5e5fcb014b07cbf8542e6dc0c69aa4d163be",
+      "dependencies": [
+        {
+          "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+          "sha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0"
+        },
+        {
+          "path": "narrative/episodes/ep-03.json",
+          "sha256": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66"
+        },
+        {
+          "path": "narrative/assets.json",
+          "sha256": "22bf49b74c7b6ccaf4002ede78e88a088a813744fc884c2c7c3dc7ea2c5a2df4"
+        },
+        {
+          "path": "assets/characters/references/originals/nika.png",
+          "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+        },
+        {
+          "path": "assets/characters/references/originals/leo.png",
+          "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+        }
+      ],
+      "provenance": {
+        "status": "DOCUMENTED",
+        "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+        "evidence": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+        "evidenceSha256": "614296bcc431de9d0226b87473653a3a7409b20be582c3a64b2020c9087b6865"
+      },
+      "artAcceptance": {
+        "status": "PASS",
+        "profile": "NARRATIVE_ART_ACCEPTANCE_V2",
+        "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+        "actualPixelsReceived": true,
+        "evidence": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+        "evidenceSha256": "748b76bb9704a3bc0f130a45facdbfc4bc9c66d3dd9f06fd4a87068e7ccebc19",
+        "reviewedItems": [
+          "ep3-survey-decline-response-portrait-candidate-1",
+          "ep3-survey-decline-response-landscape-candidate-1"
+        ],
+        "unresolved": []
+      },
+      "runtimeEvidence": {
+        "status": "PASS",
+        "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+        "actualPixelsReceived": true,
+        "evidence": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+        "evidenceSha256": "9c50bc6e3beb8d407e5a28ea87783b80e41625671355004a16f2a965cb5b8b41",
+        "screenshots": [
+          {
+            "path": "output/playwright/ep3-decline-response-desktop-1280x720.png",
+            "sha256": "c52098858163ab13fa7496038700c27eecd5d3d88a62d724a2af7c9705ea1cb5"
+          },
+          {
+            "path": "output/playwright/ep3-decline-response-mobile-390x844.png",
+            "sha256": "a39d94e6a4ceba5c5502b39e7e0158f60addba1f81829c3dd970a5188e57ac84"
+          },
+          {
+            "path": "output/playwright/ep3-decline-response-mobile-360x640.png",
+            "sha256": "dc9265a239cde8062166d95744f01d85cdab4353b39ada14a6a35c343f1e40d9"
+          }
+        ]
+      },
+      "canon": {
+        "status": "CURRENT",
+        "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+        "evidence": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_CANON_CURRENT_HEAD_20261021.json",
+        "evidenceSha256": "316a6dfee1bec057f9ea4b566ca0ca4466fc269319703aa0b569701c75c47cfd"
+      },
+      "receipts": [
+        {
+          "path": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-portrait-imported-output-verify.json",
+          "sha256": "3e9f68696054a47bc0b2a844ea41b950b2ccde786e8721d9759cdd63d172dcff"
+        },
+        {
+          "path": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-landscape-imported-output-verify.json",
+          "sha256": "17db2e49a59cdd364ff74efdedbf14a1674c9243a8351835a48c33412ba64a57"
+        },
+        {
+          "path": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+          "sha256": "748b76bb9704a3bc0f130a45facdbfc4bc9c66d3dd9f06fd4a87068e7ccebc19"
+        }
+      ],
+      "issueSummary": {
+        "openP0": 0,
+        "openP1": 0,
+        "openMaterialP2": 0,
+        "knownNonBlockingRuntimeFollowup": "ep3_report_delivery is not yet produced or mapped and blocks episode-wide QA."
+      }
+    },
+    "existingArtReuseGate": {
+      "status": "PASS_VERIFIED_EXISTING_ART_REUSE",
+      "assetCount": 2,
+      "visualAcceptance": "PASS"
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "56c4dd65f2bc41eba41d967f2994720fd95c5a6b29104ff5158ca2f97e04ef64"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "748b76bb9704a3bc0f130a45facdbfc4bc9c66d3dd9f06fd4a87068e7ccebc19",
+      "size": 9741
+    },
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "type": "file",
+      "sha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0",
+      "size": 66993
+    },
+    {
+      "input": "narrative/episodes/ep-03.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\episodes\\ep-03.json",
+      "projectRelativePath": "narrative/episodes/ep-03.json",
+      "type": "file",
+      "sha256": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66",
+      "size": 63218
+    },
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "22bf49b74c7b6ccaf4002ede78e88a088a813744fc884c2c7c3dc7ea2c5a2df4",
+      "size": 21917
+    },
+    {
+      "input": "assets/characters/references/originals/nika.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\characters\\references\\originals\\nika.png",
+      "projectRelativePath": "assets/characters/references/originals/nika.png",
+      "type": "file",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "size": 2493846
+    },
+    {
+      "input": "assets/characters/references/originals/leo.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\characters\\references\\originals\\leo.png",
+      "projectRelativePath": "assets/characters/references/originals/leo.png",
+      "type": "file",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",
+      "size": 2281332
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_REUSE_ASSET_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_DECLINE_RESPONSE_REUSE_ASSET_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_REUSE_ASSET_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "b9b37d5813bb9b0d7d3dbd38813c5e5fcb014b07cbf8542e6dc0c69aa4d163be",
+      "size": 797
+    },
+    {
+      "input": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-decline-response-cg.png",
+      "projectRelativePath": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "type": "file",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+      "size": 2352795
+    },
+    {
+      "input": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-decline-response-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "type": "file",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+      "size": 2131699
+    },
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "f46f1b12ff74ce35489c793148e86048137566ede1a3dd74efe92d069747db72",
+      "size": 3148
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "614296bcc431de9d0226b87473653a3a7409b20be582c3a64b2020c9087b6865",
+      "size": 2665
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "9c50bc6e3beb8d407e5a28ea87783b80e41625671355004a16f2a965cb5b8b41",
+      "size": 3247
+    },
+    {
+      "input": "output/playwright/ep3-decline-response-desktop-1280x720.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-decline-response-desktop-1280x720.png",
+      "projectRelativePath": "output/playwright/ep3-decline-response-desktop-1280x720.png",
+      "type": "file",
+      "sha256": "c52098858163ab13fa7496038700c27eecd5d3d88a62d724a2af7c9705ea1cb5",
+      "size": 1121258
+    },
+    {
+      "input": "output/playwright/ep3-decline-response-mobile-390x844.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-decline-response-mobile-390x844.png",
+      "projectRelativePath": "output/playwright/ep3-decline-response-mobile-390x844.png",
+      "type": "file",
+      "sha256": "a39d94e6a4ceba5c5502b39e7e0158f60addba1f81829c3dd970a5188e57ac84",
+      "size": 443000
+    },
+    {
+      "input": "output/playwright/ep3-decline-response-mobile-360x640.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-decline-response-mobile-360x640.png",
+      "projectRelativePath": "output/playwright/ep3-decline-response-mobile-360x640.png",
+      "type": "file",
+      "sha256": "dc9265a239cde8062166d95744f01d85cdab4353b39ada14a6a35c343f1e40d9",
+      "size": 332799
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_CANON_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_DECLINE_RESPONSE_CANON_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_CANON_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "316a6dfee1bec057f9ea4b566ca0ca4466fc269319703aa0b569701c75c47cfd",
+      "size": 1024
+    },
+    {
+      "input": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-portrait-imported-output-verify.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-21T05-34-00-674Z-production-art-10af12\\receipts\\ep3-survey-decline-response-cg-portrait-imported-output-verify.json",
+      "projectRelativePath": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-portrait-imported-output-verify.json",
+      "type": "file",
+      "sha256": "3e9f68696054a47bc0b2a844ea41b950b2ccde786e8721d9759cdd63d172dcff",
+      "size": 827
+    },
+    {
+      "input": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-landscape-imported-output-verify.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-21T05-34-00-674Z-production-art-10af12\\receipts\\ep3-survey-decline-response-cg-landscape-imported-output-verify.json",
+      "projectRelativePath": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-landscape-imported-output-verify.json",
+      "type": "file",
+      "sha256": "17db2e49a59cdd364ff74efdedbf14a1674c9243a8351835a48c33412ba64a57",
+      "size": 835
+    }
+  ]
+}

@@ -295,6 +295,16 @@
         "portrait": {"src": "/assets/production/cg/ep3-staff-walkthrough-cg.png", "sha256": "b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f", "dimensions": {"width": 1024, "height": 1536}},
         "landscape": {"src": "/assets/production/cg/ep3-staff-walkthrough-cg-landscape.png", "sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b", "dimensions": {"width": 1672, "height": 941}}
       }
+    },
+    "ep3-survey-decline-response-cg": {
+      "src": "/assets/production/cg/ep3-survey-decline-response-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-office-report-chain-decline",
+      "sceneIds": ["ep3_survey_decline_response"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-survey-decline-response-cg.png", "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-survey-decline-response-cg-landscape.png", "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25", "dimensions": {"width": 1672, "height": 941}}
+      }
     }
   }
 }

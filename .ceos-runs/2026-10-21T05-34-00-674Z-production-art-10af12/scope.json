@@ -1,0 +1,23 @@
+{
+  "target": "EP3 decline branch bounded dual-format production",
+  "inScope": [
+    "ep3_survey_decline_response",
+    "one dual-format art-pair",
+    "native Terra generation",
+    "runtime pixel QA",
+    "DEV browser-only Web High acceptance"
+  ],
+  "outOfScope": [
+    "ep3_old_photo",
+    "EP1",
+    "EP2",
+    "S32",
+    "EP4",
+    "release",
+    "publication"
+  ],
+  "acceptanceContract": "Create and independently accept ep3_survey_decline_response as one source-bound dual-format pair with real Terra pixels, exact-head runtime evidence, branch-aware narrative coverage and DEV browser-only Web High actual-pixel PASS",
+  "mutationBoundary": "Only add the new EP3 decline pair, its runtime mapping and bounded evidence; preserve accepted originals, historical receipts, dirty files and parallel worktrees",
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "visual-content"
+}

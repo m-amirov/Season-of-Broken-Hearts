@@ -1,0 +1,26 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-21T05:35:04.358Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "EP3 decline branch inventory and exact-head source-bound brief verified; accepted join branch preserved.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+    "clean": false,
+    "worktreeSha256": "483a5c6ddc2be92107d260b4ab9b129ddee31d2fd2b91826dd0162f65acf01c8"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_INVENTORY_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_DECLINE_RESPONSE_INVENTORY_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_DECLINE_RESPONSE_INVENTORY_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "2cdc09508bc08b5cb19f3424ce874543379b6ae250c02bf72f3a63150429e4a5",
+      "size": 2495
+    }
+  ]
+}

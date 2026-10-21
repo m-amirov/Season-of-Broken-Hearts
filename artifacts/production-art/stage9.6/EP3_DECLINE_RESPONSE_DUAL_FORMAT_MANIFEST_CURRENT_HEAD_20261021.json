@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "runId": "2026-10-21T05-34-00-674Z-production-art-10af12",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "episode": 3,
+  "sceneId": "ep3_survey_decline_response",
+  "assetId": "ep3-survey-decline-response-cg",
+  "familyId": "ep3-office-report-chain-decline",
+  "candidate": 1,
+  "status": "GENERATED_IMPORTED_MECHANICAL_PASS_RUNTIME_AND_WEB_PENDING",
+  "brief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "briefId": "ep3-office-report-chain-decline-v1",
+    "sha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0"
+  },
+  "sceneAssets": {
+    "ep3_survey_decline_response": "ep3-survey-decline-response-cg"
+  },
+  "assets": {
+    "ep3-survey-decline-response-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+        "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+        "width": 1024,
+        "height": 1536,
+        "outputVerifyReceipt": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-portrait-imported-output-verify.json"
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+        "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+        "width": 1672,
+        "height": 941,
+        "outputVerifyReceipt": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/receipts/ep3-survey-decline-response-cg-landscape-imported-output-verify.json"
+      }
+    }
+  },
+  "references": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "generation": {
+    "provider": "native-terra",
+    "tool": "image_gen.imagegen",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium",
+    "producerAgentType": "ceos_asset_generator",
+    "producerAgentId": "01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd",
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/21/rollout-2026-10-21T08-36-51-01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd.jsonl",
+    "producerTraceSha256": "1eda7fa000a70246e49969022d22de448b4ddd966896904734e7fc1425d0dd50",
+    "challengeId": "cap-d25654246e3c6bbce82a",
+    "capabilityAttestation": ".ceos-runs/2026-10-21T05-34-00-674Z-production-art-10af12/capability-attestation/attestations/cap-d25654246e3c6bbce82a.json",
+    "candidateLimit": 2,
+    "candidateUsed": 1,
+    "providerByteReceipt": "NOT_ATTESTED",
+    "c2paPresent": true
+  },
+  "mechanical": {
+    "portrait": "PASS_ART_OUTPUT_MECHANICAL",
+    "landscape": "PASS_ART_OUTPUT_MECHANICAL",
+    "originalsPreserved": true,
+    "duplicateGeneration": false,
+    "legacyBridgeUsed": false
+  },
+  "acceptance": {
+    "runtimeQa": "PENDING",
+    "webHigh": "PENDING",
+    "actualPixelsRequired": true
+  }
+}

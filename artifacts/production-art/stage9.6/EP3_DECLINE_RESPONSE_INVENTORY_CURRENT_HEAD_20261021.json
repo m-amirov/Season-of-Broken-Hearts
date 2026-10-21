@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_DECLINE_RESPONSE_PRODUCTION_INVENTORY",
+  "sourceHead": "36022c7c03e47d6d830444d62b45b2baab9a2ab0",
+  "runTarget": "EP3 decline branch bounded dual-format production",
+  "sceneId": "ep3_survey_decline_response",
+  "assetId": "ep3-survey-decline-response-cg",
+  "familyId": "ep3-office-report-chain-decline",
+  "authoredBranch": {
+    "entry": "ep3_survey_start",
+    "choice": "ep3_survey_decline",
+    "choiceTarget": "ep3_survey_decline_response",
+    "next": "ep3_report_delivery",
+    "alternativeEntry": "ep3_survey_join_response -> ep3_survey_site_problem -> ep3_staff_walkthrough",
+    "branchState": "ep3SurveyChoice=declined"
+  },
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "945960f0ee9b6069911d6e5a276ba7c999d5742a3782f6b73a046fb1f18ffbe0",
+    "briefId": "ep3-office-report-chain-decline-v1",
+    "candidateNumber": 1,
+    "maxCandidatesPerCueAndFormat": 2
+  },
+  "requiredCast": ["nika", "leo"],
+  "referenceHashes": {
+    "nika": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+    "leo": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+  },
+  "narrativeContract": {
+    "cue": "Nika stays in the office and asks for the full report through Matteo; Leo sends materials without holding her in the conversation.",
+    "location": "Villa Serena office with working table, shutter light and neutral report materials.",
+    "desktop": "Nika at the work table, Leo at respectful distance near doorway/opposite side; work log and neutral report folder readable as non-text shapes.",
+    "portrait": "Nika's work surface and Leo's respectful distance preserved above the dialogue panel.",
+    "forbidden": ["readable report text", "Matteo visible", "romantic waiting gesture", "Aurea logo", "kiss/embrace"]
+  },
+  "outputContract": {
+    "portrait": { "path": "assets/production/cg/ep3-survey-decline-response-cg.png", "width": 1024, "height": 1536 },
+    "landscape": { "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png", "width": 1672, "height": 941 }
+  },
+  "existingAcceptedPairsPreserved": [
+    "ep3_survey_start",
+    "ep3_survey_join_response",
+    "ep3_survey_site_problem",
+    "ep3_staff_walkthrough",
+    "ep3_old_photo"
+  ],
+  "generationPolicy": "one candidate per format; no regeneration or aliasing; real native Terra output and output gate required before integration"
+}
