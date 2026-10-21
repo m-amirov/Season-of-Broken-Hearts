@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-21T04-03-48-212Z-production-art-f15f21",
+  "producer": {"role": "ceos_asset_generator", "model": "gpt-5.6-terra", "effort": "medium", "nativeTool": "image_gen.imagegen", "providerByteReceipt": "NOT_ATTESTED"},
+  "sourceHead": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+  "brief": {"path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json", "verification": "READY_TO_GENERATE before each candidate"},
+  "inputReferences": [
+    {"id":"nika","path":"assets/characters/references/originals/nika.png","sha256":"91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"id":"leo","path":"assets/characters/references/originals/leo.png","sha256":"0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"id":"giulia","path":"assets/characters/references/originals/giulia.png","sha256":"4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"}
+  ],
+  "outputs": [
+    {"sceneId":"ep3_survey_join_response","assetId":"ep3-survey-join-response-cg","format":"portrait","candidateIndex":1,"nativeSourcePath":"C:/Users/user/.codex/generated_images/01a15ca1-f3d0-7023-b191-d8fa296bd1cf/exec-28491af4-f48f-4aa6-9baa-859f5d348b34.png","outputPath":"assets/production/cg/ep3-survey-join-response-cg.png","sha256":"9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee","width":1024,"height":1536},
+    {"sceneId":"ep3_survey_join_response","assetId":"ep3-survey-join-response-cg","format":"landscape","candidateIndex":1,"nativeSourcePath":"C:/Users/user/.codex/generated_images/01a15ca1-f3d0-7023-b191-d8fa296bd1cf/exec-cba6aef2-32e8-42cb-aab0-bbe6631b3680.png","outputPath":"assets/production/cg/ep3-survey-join-response-cg-landscape.png","sha256":"b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df","width":1672,"height":941},
+    {"sceneId":"ep3_survey_site_problem","assetId":"ep3-survey-site-problem-cg","format":"portrait","candidateIndex":1,"nativeSourcePath":"C:/Users/user/.codex/generated_images/01a15ca1-f3d0-7023-b191-d8fa296bd1cf/exec-40d466bd-4bc3-4404-b65c-38e3648ba090.png","outputPath":"assets/production/cg/ep3-survey-site-problem-cg.png","sha256":"e147bf52e7a4062034f5689f1511e0b24fdd3e3db062a6ac3e9406cab09d37e7","width":1024,"height":1536},
+    {"sceneId":"ep3_survey_site_problem","assetId":"ep3-survey-site-problem-cg","format":"landscape","candidateIndex":1,"nativeSourcePath":"C:/Users/user/.codex/generated_images/01a15ca1-f3d0-7023-b191-d8fa296bd1cf/exec-0f8088db-0022-4d35-96de-b7bf356900fb.png","outputPath":"assets/production/cg/ep3-survey-site-problem-cg-landscape.png","sha256":"f698f8f85c909c8bd0f2cfbbb0c03d74b010a2b6f98183bcc66930fe9ad5ed05","width":1672,"height":941},
+    {"sceneId":"ep3_staff_walkthrough","assetId":"ep3-staff-walkthrough-cg","format":"portrait","candidateIndex":1,"nativeSourcePath":"C:/Users/user/.codex/generated_images/01a15ca1-f3d0-7023-b191-d8fa296bd1cf/exec-3bb7d9c3-e948-4467-9ab0-cb95fdcbea1c.png","outputPath":"assets/production/cg/ep3-staff-walkthrough-cg.png","sha256":"b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f","width":1024,"height":1536},
+    {"sceneId":"ep3_staff_walkthrough","assetId":"ep3-staff-walkthrough-cg","format":"landscape","candidateIndex":1,"nativeSourcePath":"C:/Users/user/.codex/generated_images/01a15ca1-f3d0-7023-b191-d8fa296bd1cf/exec-349b3376-e50e-4111-8686-d56d2cd98816.png","outputPath":"assets/production/cg/ep3-staff-walkthrough-cg-landscape.png","sha256":"a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b","width":1672,"height":941}
+  ],
+  "outputGate": "PASS_ART_OUTPUT_TRANSPORT and PASS_ART_OUTPUT_MECHANICAL for every output",
+  "visualAcceptance": "NOT_VERIFIED"
+}

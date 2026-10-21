@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "sourceHead": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+  "episode": 3,
+  "status": "BATCH_ONLY_RUNTIME_AND_WEB_REVIEW_PENDING",
+  "sceneAssets": {
+    "ep3_survey_join_response": "ep3-survey-join-response-cg",
+    "ep3_survey_site_problem": "ep3-survey-site-problem-cg",
+    "ep3_staff_walkthrough": "ep3-staff-walkthrough-cg"
+  },
+  "assets": {
+    "ep3-survey-join-response-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep3-survey-join-response-cg.png",
+        "sha256": "9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep3-survey-join-response-cg-landscape.png",
+        "sha256": "b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep3-survey-site-problem-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep3-survey-site-problem-cg.png",
+        "sha256": "e147bf52e7a4062034f5689f1511e0b24fdd3e3db062a6ac3e9406cab09d37e7",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep3-survey-site-problem-cg-landscape.png",
+        "sha256": "f698f8f85c909c8bd0f2cfbbb0c03d74b010a2b6f98183bcc66930fe9ad5ed05",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    "ep3-staff-walkthrough-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep3-staff-walkthrough-cg.png",
+        "sha256": "b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f",
+        "width": 1024,
+        "height": 1536
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png",
+        "sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b",
+        "width": 1672,
+        "height": 941
+      }
+    }
+  }
+}

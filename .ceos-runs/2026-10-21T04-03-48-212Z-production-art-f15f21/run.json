@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.40",
+  "runId": "2026-10-21T04-03-48-212Z-production-art-f15f21",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerBindingMode": "CURRENT_TURN",
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-21T04-03-48-212Z-production-art-f15f21",
+  "createdAt": "2026-10-21T04:03:48.218Z",
+  "updatedAt": "2026-10-21T04:28:27.789Z",
+  "completedAt": null,
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "visual-content",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "visual-content",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "INTEGRATED",
+  "nextStage": "VISUAL_VERIFIED",
+  "verdict": null,
+  "stopReason": null,
+  "checkpointCount": 7,
+  "scopeSha256": "581d53eecc354321f567ad232095b7d63a6347da8f8a5620ef5f68388aee1513",
+  "capabilitiesSha256": "b54002ff759b85e6cc5f303378cd54dff07dc497bb5a11502cfa65580e12ea3a",
+  "sourceAtStart": {
+    "available": true,
+    "head": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+    "clean": false,
+    "worktreeSha256": "9eea748186c217ddc79f4b4c2bb5f7161652c22169e745404634ae1682a6208a"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "UNAVAILABLE",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": true,
+    "fallbackReason": "Generic legacy Web preflight is unavailable (fetch failed); independent acceptance will use DEV browser-only Web High and will not be claimed until actual pixels are received.",
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": true,
+        "fallbackReason": "Generic legacy Web preflight is unavailable (fetch failed); independent acceptance will use DEV browser-only Web High and will not be claimed until actual pixels are received."
+      }
+    }
+  }
+}

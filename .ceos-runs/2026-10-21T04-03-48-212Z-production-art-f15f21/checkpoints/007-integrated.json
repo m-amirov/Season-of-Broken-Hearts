@@ -1,0 +1,64 @@
+{
+  "index": 7,
+  "stage": "INTEGRATED",
+  "at": "2026-10-21T04:28:27.787Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "dualFormatManifest": "artifacts/production-art/stage9.6/EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "sourceHead": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+    "runtimeMappings": [
+      "ep3_survey_join_response",
+      "ep3_survey_site_problem",
+      "ep3_staff_walkthrough"
+    ],
+    "acceptedOriginalsChanged": false,
+    "historicalEvidenceChanged": false,
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+      "coverageMode": "BATCH_ONLY",
+      "episode": 3,
+      "requiredScenes": 15,
+      "mappedScenes": 3,
+      "coveredSceneIds": [
+        "ep3_staff_walkthrough",
+        "ep3_survey_join_response",
+        "ep3_survey_site_problem"
+      ],
+      "fullEpisodeCovered": false,
+      "episodeFinalAcceptance": "NOT_VERIFIED",
+      "releaseReady": false,
+      "uniqueAssets": 3,
+      "variantFilesChecked": 6,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "Mechanical verification of authored scenes only. BATCH_ONLY and REUSE_SCOPE are never episode-final acceptance; real runtime/Web High review remains mandatory."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+    "clean": false,
+    "worktreeSha256": "070f70da53927e0a1bbde8216edd3129b39ed2ae4547462931ffd07064839434"
+  },
+  "artifacts": [
+    {
+      "input": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-staff-walkthrough-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png",
+      "type": "file",
+      "sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b",
+      "size": 2560386
+    },
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "d0f7f572cf26145ae513fb1afc2a8a50c3d96dfae9458e5d756ffb581aec1391",
+      "size": 1950
+    }
+  ]
+}

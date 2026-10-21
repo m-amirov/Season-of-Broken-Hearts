@@ -1,0 +1,38 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-21T04:04:19.400Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "cast": [
+      "nika",
+      "leo",
+      "giulia"
+    ],
+    "formats": {
+      "portrait": "1024x1536",
+      "landscape": "1672x941"
+    },
+    "sourceHead": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+    "noOldPhoto": true
+  },
+  "source": {
+    "available": true,
+    "head": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+    "clean": false,
+    "worktreeSha256": "9eea748186c217ddc79f4b4c2bb5f7161652c22169e745404634ae1682a6208a"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/character-reference-manifest.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\character-reference-manifest.json",
+      "projectRelativePath": "artifacts/production-art/character-reference-manifest.json",
+      "type": "file",
+      "sha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4",
+      "size": 8962
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-21T04:03:59.527Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "batchScenes": [
+      "ep3_survey_join_response",
+      "ep3_survey_site_problem",
+      "ep3_staff_walkthrough"
+    ],
+    "candidateLimit": 2,
+    "candidatePairIndex": 1,
+    "sourceHead": "e851a78aa97ac2564d76df76504c632eb9baaf50"
+  },
+  "source": {
+    "available": true,
+    "head": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+    "clean": false,
+    "worktreeSha256": "9eea748186c217ddc79f4b4c2bb5f7161652c22169e745404634ae1682a6208a"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "type": "file",
+      "sha256": "9c850b53769ef3938c1faeb300a6d43855e6581b45c1bae12e048cc23a9f3fd3",
+      "size": 66993
+    }
+  ]
+}
