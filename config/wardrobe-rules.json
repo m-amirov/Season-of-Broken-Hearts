@@ -75,5 +75,19 @@
     "portrait": {"width": 1024, "height": 1536, "aspect": "2:3"},
     "landscape": {"width": 1672, "height": 941, "aspect": "16:9-native-fallback", "target": "1920x1080"},
     "invariant": "Do not change wardrobe, identity, props or emotional beat between formats; change only intentional composition and framing."
+  },
+  "visualAcceptance": {
+    "ruleId": "WARDROBE_VISUAL_ACCEPTANCE_V1",
+    "requiredForNewProduction": true,
+    "independentReviewer": "DEV Web High",
+    "requirements": [
+      "Physical source PNG and runtime screenshot for both portrait and landscape, checked at exact Git HEAD and image SHA-256",
+      "Actual independent reviewer observations for each required character against attached canonical reference: face, age, hair and wardrobe",
+      "Match clothing and props between portrait/landscape; independent composition is allowed",
+      "Compare adjacent scenes when the narrative has no wardrobe-changing break; a time or social-context change requires an authored explanation",
+      "Evaluate unjustified repeated outfits across an episode; a consistent work uniform or continuous same-day action may be intentionally reused",
+      "No independent Web High pixel receipt or missing observations means NOT_VERIFIED; mechanical PASS is never artistic PASS",
+      "Do not regenerate images for minor P2/P3 wardrobe preferences or invent a PASS from an authored brief"
+    ]
   }
 }

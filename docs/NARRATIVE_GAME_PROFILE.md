@@ -14,7 +14,7 @@ Model schema v1:
 
 Saves schema v1: `{schemaVersion:1,samples:[{schemaVersion:1,sceneId,state,locale,dialogueIndex}]}`. Fixture states must be reachable from the initial state and cursor valid for the selected locale. Include every relevant save/route variant. The validator checks structural JSON round-trip; actual storage persistence, SDK cloud sync, migrations, rollback and browser restore require separate live runtime tests.
 
-Coverage: all declared scenes reachable, all endings reachable, finite state-space no dead ends, guards and effects valid, valid speakers and localized dialogue/choice labels, save samples valid. The default exploration limit is 4096 unique states; a project-owned enabled profile may set a larger positive safe integer `maxStates` for a deliberately larger finite model. If the configured bound is exceeded, report BLOCKED rather than inventing PASS. Identical choice destinations and resulting states are warnings for human editorial review, not automatic defects.
+Coverage: all declared scenes reachable, all endings reachable, finite state-space no dead ends, guards and effects valid, valid speakers and localized dialogue/choice labels, save samples valid. If bounded exploration exceeds 4096 unique states, report BLOCKED rather than inventing PASS. Identical choice destinations and resulting states are warnings for human editorial review, not automatic defects.
 
 A passing model is `PASS_DECLARED_NARRATIVE_GRAPH`, **not** proof of a real runtime route or true narrative comprehension. Export input from real source/engine; never simply copy a hand-written model from a sample to manufacture coverage. Combine with CEOS `romance-narrative`, `narrative-dialogue-editor`, `narrative-continuity-engine`, `reader-experience-review` for semantic checks.
 
@@ -56,24 +56,22 @@ Statuses: `planned` can refer to unwritten future material and cannot earn PASS;
 
 The response includes an independent `storyPromises.status`: `SKIPPED_OPTIONAL_STORY_PROMISES`, `PASS_DECLARED_PROMISE_REFERENCES`, `NOT_VERIFIED_PROMISE_EVIDENCE` or `BLOCKED_PROMISE_REFERENCES`. Even when the main result is `PASS_DECLARED_NARRATIVE_GRAPH`, it **never proves artistic quality, emotional credibility, actually authored cues, real runtime saves, or that all planned promises are fulfilled**. For those, use CEOS `romance-narrative`, `narrative-continuity-engine` and `reader-experience-review`.
 
-## Dual-format production-art handoff
-
-Illustrated narrative projects may declare `dualFormatManifestPath` in their
-project-owned enabled profile. The Starter Kit handoff check verifies that the
-manifest maps every scene in the selected episode and declares separate
-`portrait` and `desktop` descriptors for every referenced asset. It checks only
-the project contract: paths, SHA-256 fields and dimensions must be declared;
-it does not read image bytes or grant artistic acceptance.
-
-Run:
-`node tools/narrative/narrative-art-handoff.mjs --project . --profile config/narrative-game.local.json --manifest artifacts/production-art/ep1-dual-format.json --source-head <current-head>`
-
-Pass the same project-relative manifest path to the new CEOS
-`production-art` run as `metadata.dualFormatManifest`. CEOS then verifies
-confined real PNG files, decoded dimensions, hashes, independent variants and
-the separate visual acceptance gate. Missing desktop or portrait art must stay
-an explicit blocked/pending state; do not add placeholder paths to earn a
-handoff pass. The profile remains opt-in and generic games do not receive this
-contract.
-
 This feature adds no mandatory release gate, new user questionnaire, art generation, runtime scripts, or changes to existing game content.
+
+## Optional independent wardrobe pixel validation
+
+After explicitly enabling `narrative-game` in a **project-owned**
+`config/narrative-game.local.json`, you may enable
+`wardrobeVisualAcceptance.enabled:true` for art-heavy visual novels.
+It is opt-in and does **not** create a release gate or run Web/CEOS automatically.
+
+The reusable, source-HEAD-bound `WARDROBE_VISUAL_ACCEPTANCE_V1` contract
+requires attached original/runtime portrait and landscape image pixels,
+canonical character references and actual independent reviewer observations
+of appearance, costume, cross-format consistency, neighboring-scene continuity
+and unjustified garment reuse. Its separate CLI verifies SHA-256,
+provenance and the Web receipt/raw response chain. Static briefs alone
+cannot earn an artistic PASS. See `docs/WARDROBE_VISUAL_ACCEPTANCE.md`.
+
+For existing accepted EP1/EP2 artwork, keep historical receipts and
+original PNGs unchanged; this additional contract is prospective.

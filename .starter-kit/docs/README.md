@@ -1,7 +1,26 @@
-# Autonomous Yandex Games Starter Kit 0.5.13
+# Autonomous Yandex Games Starter Kit 0.5.15
 
 Версионируемая engineering/compliance инфраструктура для создания новых игр и
 безопасного обновления существующих зрелых проектов Яндекс Игр.
+
+## Optional wardrobe visual acceptance for narrative games
+
+The disabled-by-default `narrative-game` profile now includes optional
+`WARDROBE_VISUAL_ACCEPTANCE_V1` for independent verification of wardrobe,
+age/identity, portrait/landscape consistency, and adjacent-scene continuity
+from actual PNG and runtime pixels. No browser service or release gate is
+enabled automatically. See [the evidence contract](docs/WARDROBE_VISUAL_ACCEPTANCE.md).
+
+## Optional VK Games distribution profile (0.5.14)
+
+An additive, disabled-by-default platform profile supports VK Games in VKontakte
+and Odnoklassniki (not VK Play). It supplies an injectable VK Bridge reference
+adapter, static contract validation, and a head-and-artifact-bound live
+evidence release gate. The Yandex SDK and mature game runtimes are unchanged.
+
+Usage: npm run vk:validate. For an opted-in game, build the separated VK target
+first and run npm run vk:validate -- --root . ; then use --release only after
+collecting actual VK/OK client observations. See docs/VK_GAMES_PROFILE.md.
 
 ## Optional future visual-novel story promises
 

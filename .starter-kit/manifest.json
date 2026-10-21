@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updaterSchemaVersion": 2,
-  "version": "0.5.13",
+  "version": "0.5.15",
   "entries": [
     {
       "source": ".codex/skills/asset-provenance-and-rights/SKILL.md",
@@ -353,7 +353,7 @@
         "mature"
       ],
       "conflictPolicy": "structural-merge",
-      "sha256": "5e836dc5b3f1a657140840e7b09ab0360835fddfb8b25d1d1deab52174c9373c"
+      "sha256": "bce73fdb98dba28757c30ab9fc322b92e0e9f0de38720edcc6fb8776dcf3c94e"
     },
     {
       "source": "index.html",
@@ -437,7 +437,7 @@
         "new"
       ],
       "conflictPolicy": "create-only",
-      "sha256": "b52f5eeaba46342ec7231179350c2f352f15f7e6358c1d675f1cba84b80fdf4c"
+      "sha256": "6d9b5b84284f77953db54f7c11e1abaa3c334704cbe78f0392169cbeb90596f1"
     },
     {
       "source": "tests/e2e/yandex-moderation.spec.ts",
@@ -531,7 +531,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "ac78687abc64e7bdeacee43884a0ecac5acbc85bb77b280b99ec52593f3f9215"
+      "sha256": "af81c23fb81225f05f01087f1a1d2a3ecc642e0b2b1a5827d542938131d7595c"
     },
     {
       "source": "CHANGELOG.md",
@@ -547,7 +547,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "91288a78c77ea6f00396004864d32004501ab8556b2fd6ddcbaae0db9282686d"
+      "sha256": "8e9c4d9a78de67641482e7d4ccaf91c84c8534d2ce01bf16a5b44d57c3181618"
     },
     {
       "source": "README.md",
@@ -563,7 +563,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "36e85dcc7f001a93997e9dc5b08c80b59d28b7507471e763d902103ac5a869ca"
+      "sha256": "3ff68b348b8fd9c3c76eb9f13bff860a9ff19370aa9f4405e5d451bb9415c6b0"
     },
     {
       "source": "MASTER_PROMPT.md",
@@ -739,7 +739,7 @@
         "mature"
       ],
       "conflictPolicy": "semantic-merge",
-      "sha256": "15328a009b3d7e6a1745697674522d10908bc139d98a1cf8e6262c6341364f6e"
+      "sha256": "2a485819536435836ae611716db595c3cb7a264662efa080976fa1918c4948bd"
     },
     {
       "source": "docs/EXTERNAL_SKILL_SOURCES.md",
@@ -1076,7 +1076,7 @@
         "mature"
       ],
       "conflictPolicy": "semantic-merge",
-      "sha256": "458567cbb71af9fa475bfc9f407b43c44ec4bd3b99bcf4600b89a859844f68a1"
+      "sha256": "550dfd8f336c13f5737db217631e89d573b40b8b75b1ba5e81817ba535e655db"
     },
     {
       "source": "config/starter-kit-manifest.schema.json",
@@ -1348,7 +1348,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "0847a3f8f303cebb895ed903d5a10e762bffa8f6f49bc3c05c745d1c0a10ebfe"
+      "sha256": "898fb1ec6442b2e023f95256f88a2d62dad9047ee117f14f9e11b0bf99194363"
     },
     {
       "source": "tools/starter-kit/update-self-test.mjs",
@@ -1799,54 +1799,6 @@
       "sha256": "855a2f321fc9ad00eaeaf0b6268fc6720bd551f09c9a3617727155d3866cdbb7"
     },
     {
-      "source": "tools/narrative/narrative-art-handoff.mjs",
-      "logicalId": "managed:narrative-art-handoff",
-      "ownership": "managed",
-      "target": "tools/narrative/narrative-art-handoff.mjs",
-      "modes": [
-        "init",
-        "update"
-      ],
-      "projectTypes": [
-        "new",
-        "mature"
-      ],
-      "conflictPolicy": "replace-if-baseline",
-      "sha256": "4c19334e772adcb56760be658d86f3fb6316916c1d58b9cefa9590198c900b66"
-    },
-    {
-      "source": "tests/starter-kit/narrative-art-handoff.test.mjs",
-      "logicalId": "test:narrative-art-handoff",
-      "ownership": "managed",
-      "target": "tests/starter-kit/narrative-art-handoff.test.mjs",
-      "modes": [
-        "init",
-        "update"
-      ],
-      "projectTypes": [
-        "new",
-        "mature"
-      ],
-      "conflictPolicy": "replace-if-baseline",
-      "sha256": "2c0d0c615b992da378fa86532a7fa330ce3a77925e2e6c502ff9a447bf027cbd"
-    },
-    {
-      "source": "docs/NARRATIVE_DUAL_FORMAT_ART.md",
-      "logicalId": "managed:narrative-dual-format-art-doc",
-      "ownership": "managed",
-      "target": "docs/NARRATIVE_DUAL_FORMAT_ART.md",
-      "modes": [
-        "init",
-        "update"
-      ],
-      "projectTypes": [
-        "new",
-        "mature"
-      ],
-      "conflictPolicy": "replace-if-baseline",
-      "sha256": "e72670097add0c4b33f1dfe25b1588b343423d4526d0c3a867b22b75b309e1ec"
-    },
-    {
       "source": "tools/narrative/narrative-game-validator.mjs",
       "logicalId": "managed:narrative-game-validator",
       "ownership": "managed",
@@ -1860,7 +1812,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "bf54f86f252ad1798aa43120c49aaf94a961502dacc502204c7849c809c6f200"
+      "sha256": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733"
     },
     {
       "source": "tools/narrative/story-promise-validator.mjs",
@@ -1892,7 +1844,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "510ce3ac01ea68404d30a8b1230139ff0d226603c601230afbc0e9c3762c58eb"
+      "sha256": "1794008e28646e28e781deefe72c90fa18c0f9411196675c2845544f69d25c1b"
     },
     {
       "source": "config/optional-profiles/narrative-game.json",
@@ -1908,7 +1860,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "029616dd27377bbf7a2a82ac22a7e374fd66b88bd910896c82718a92d80792b9"
+      "sha256": "d40beac262e41cc386b9c987cdb67ddd74f8239a17416bfc96b4ff24497bcc53"
     },
     {
       "source": "docs/NARRATIVE_GAME_PROFILE.md",
@@ -1924,7 +1876,7 @@
         "mature"
       ],
       "conflictPolicy": "replace-if-baseline",
-      "sha256": "159d9e20ee1bb924e7851768fe48aadc46e15e199a8ef5d2df890a7f6a747244"
+      "sha256": "b2397f848598466df8f2c9394a6a4b905411cc3e3ab33230ecc962b78e68c774"
     },
     {
       "source": "migrations/0.5.11-to-0.5.12.md",
@@ -1941,6 +1893,150 @@
       ],
       "conflictPolicy": "replace-if-baseline",
       "sha256": "0d72e86d41331356d8485d7cf28a7bca4ca8b44a461a21f5ff030fab5eda29b8"
+    },
+    {
+      "source": "config/optional-profiles/vk-games.json",
+      "logicalId": "managed:vk-games-profile-template",
+      "ownership": "managed",
+      "target": "config/optional-profiles/vk-games.json",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "b1798e5f74e4e8b6a825bd6f7ad7f2debd0aa0b9cc4f8bf0af51addca7d7ede8"
+    },
+    {
+      "source": "tools/vk/vk-games-check.mjs",
+      "logicalId": "managed:vk-games-check",
+      "ownership": "managed",
+      "target": "tools/vk/vk-games-check.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "c459f2ae1ae407b408bf5f9175debb15974aeead1162ff1985e8b2d4e99a1798"
+    },
+    {
+      "source": "templates/platform/vk-bridge-adapter.mjs",
+      "logicalId": "managed:vk-games-adapter-reference",
+      "ownership": "managed",
+      "target": "templates/platform/vk-bridge-adapter.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "adb99a5bbb619bfde735489f628840cdb026636761398ebdaebb0bca574e366c"
+    },
+    {
+      "source": "templates/platform/vk-games.contract.example.json",
+      "logicalId": "managed:vk-games-contract-example",
+      "ownership": "managed",
+      "target": "templates/platform/vk-games.contract.example.json",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "84afe853240a4d6294e2a9ff584fa5d53c506a9fe2c59976789b260c9a87ab54"
+    },
+    {
+      "source": "docs/VK_GAMES_PROFILE.md",
+      "logicalId": "managed:vk-games-profile-doc",
+      "ownership": "managed",
+      "target": "docs/VK_GAMES_PROFILE.md",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "39c7b5bb063e7df547c195190b00789a623984d877d16a92009dff84e8b48df9"
+    },
+    {
+      "source": "migrations/0.5.13-to-0.5.14.md",
+      "logicalId": "migration:0.5.13-to-0.5.14",
+      "ownership": "managed",
+      "target": "migrations/0.5.13-to-0.5.14.md",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "d0f25f441683f5692ccfbdf177ea3188484b32d5608c649c91c2ec30e70438e2"
+    },
+    {
+      "source": "tools/production-art/wardrobe-visual-gate.mjs",
+      "logicalId": "managed:wardrobe-visual-gate",
+      "ownership": "managed",
+      "target": "tools/production-art/wardrobe-visual-gate.mjs",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "9f11aac49f4efcf61d57eb3ad916e8cd34be164502372a9e641355d7d8800fe8"
+    },
+    {
+      "source": "docs/WARDROBE_VISUAL_ACCEPTANCE.md",
+      "logicalId": "managed:wardrobe-visual-acceptance-doc",
+      "ownership": "managed",
+      "target": "docs/WARDROBE_VISUAL_ACCEPTANCE.md",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "184ff4c278756bf5d79e28ad1040f0849b9bd89ee80f2cbe933bb8398ef4206c"
+    },
+    {
+      "source": "migrations/0.5.14-to-0.5.15.md",
+      "logicalId": "migration:0.5.14-to-0.5.15",
+      "ownership": "managed",
+      "target": "migrations/0.5.14-to-0.5.15.md",
+      "modes": [
+        "init",
+        "update"
+      ],
+      "projectTypes": [
+        "new",
+        "mature"
+      ],
+      "conflictPolicy": "replace-if-baseline",
+      "sha256": "a476c599ff6987b91cb9a2f187ce617d2b6564b6b9449d58d2e314be93d0fdba"
     }
   ]
 }

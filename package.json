@@ -22,7 +22,9 @@
     "skills:validate": "node tools/starter-kit/self-test.mjs",
     "yandex:release:evidence": "node tools/yandex/release-evidence-gate.mjs",
     "yandex:sdk:validate": "node tools/yandex/sdk-validation.mjs",
-    "yandex:contract:validate": "node tools/yandex/project-contract-validation.mjs"
+    "yandex:contract:validate": "node tools/yandex/project-contract-validation.mjs",
+    "vk:validate": "node tools/vk/vk-games-check.mjs",
+    "wardrobe:visual:verify": "node tools/production-art/wardrobe-visual-gate.mjs"
   },
   "devDependencies": {
     "playwright": "^1.64.1"
