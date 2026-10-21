@@ -1,0 +1,70 @@
+{
+  "index": 7,
+  "stage": "INTEGRATED",
+  "at": "2026-10-21T03:59:21.314Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "EP3 control pair is mapped in narrative/assets.json with explicit portrait/desktop variants; batch-only scope, episode final acceptance not asserted.",
+  "metadata": {
+    "dualFormatManifest": "artifacts/production-art/stage9.6/EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+      "coverageMode": "BATCH_ONLY",
+      "episode": 3,
+      "requiredScenes": 15,
+      "mappedScenes": 1,
+      "coveredSceneIds": [
+        "ep3_survey_start"
+      ],
+      "fullEpisodeCovered": false,
+      "episodeFinalAcceptance": "NOT_VERIFIED",
+      "releaseReady": false,
+      "uniqueAssets": 1,
+      "variantFilesChecked": 2,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "Mechanical verification of authored scenes only. BATCH_ONLY and REUSE_SCOPE are never episode-final acceptance; real runtime/Web High review remains mandatory."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+    "clean": false,
+    "worktreeSha256": "4f2ea4784fa44010ffd37198e9a89a557e19bf6d46e6b0993a04f9c226902818"
+  },
+  "artifacts": [
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "ab03794ef3fb48490f6cdfdc0cd1ddaf50aadd714b49510048b4b7d9426a80ee",
+      "size": 19131
+    },
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "4c6b2d423b39f8ce91aad66c6de169b02dd6fe0a5ca8a9ee011db9e856ff4737",
+      "size": 770
+    },
+    {
+      "input": "assets/production/cg/ep3-survey-start-cg.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-start-cg.png",
+      "projectRelativePath": "assets/production/cg/ep3-survey-start-cg.png",
+      "type": "file",
+      "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48",
+      "size": 2181274
+    },
+    {
+      "input": "assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-survey-start-cg-landscape.png",
+      "projectRelativePath": "assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "type": "file",
+      "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f",
+      "size": 2207038
+    }
+  ]
+}

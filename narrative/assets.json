@@ -255,6 +255,16 @@
         "portrait": {"src": "/assets/production/cg/ep2-office-aurea-transition-cg.png", "sha256": "8b3a5b8ca79d4ecc1db0360714d74ffef2036d630843cc55ce41faca5499d250", "dimensions": {"width": 1024, "height": 1536}},
         "landscape": {"src": "/assets/production/cg/ep2-office-aurea-transition-cg-landscape.png", "sha256": "d255cba1bc2b8c76910044eaa2db024730ad6a5fadcb5329770c3074fff20921", "dimensions": {"width": 1672, "height": 941}}
       }
+    },
+    "ep3-survey-start-cg": {
+      "src": "/assets/production/cg/ep3-survey-start-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-archive-survey",
+      "sceneIds": ["ep3_survey_start"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-survey-start-cg.png", "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-survey-start-cg-landscape.png", "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f", "dimensions": {"width": 1672, "height": 941}}
+      }
     }
   }
 }

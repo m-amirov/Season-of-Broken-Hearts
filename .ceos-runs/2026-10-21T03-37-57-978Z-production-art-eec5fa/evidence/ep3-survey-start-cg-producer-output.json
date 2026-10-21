@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-21T03-37-57-978Z-production-art-eec5fa",
+  "assetId": "ep3-survey-start-cg",
+  "sceneId": "ep3_survey_start",
+  "candidatePairIndex": 1,
+  "candidateLimit": 2,
+  "sourceHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+  "sourceBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "52d05841f6df3dd2eb25b4de2d3085da455faf4fa3a2ecdc798effa884c714da",
+    "briefId": "ep3-archive-survey-v1"
+  },
+  "producer": {
+    "agentRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "parentSessionId": "01a15994-217b-7762-8efe-ffb10b852e64",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceSha256": "dc78fb4df09c0d10a221e60228f0f03ce2ef7e14def0c045dd46b1a2ed92b5a0"
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "provider": "native Image Gen",
+    "providerByteReceipt": "NOT_ATTESTED",
+    "inputReferenceSha256": {
+      "nika": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "leo": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "outputs": [
+    {
+      "variant": "portrait",
+      "candidateIndex": 1,
+      "nativeSourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a15c8a-347e-7ac0-9eb1-a8591cb01759\\exec-72404edf-cff8-464e-b5fd-6cbe944d0cfd.png",
+      "projectPath": "assets/production/cg/ep3-survey-start-cg.png",
+      "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48",
+      "width": 1024,
+      "height": 1536,
+      "transport": "PASS_ART_OUTPUT_TRANSPORT",
+      "mechanical": "PASS_ART_OUTPUT_MECHANICAL",
+      "visualAcceptance": "NOT_VERIFIED"
+    },
+    {
+      "variant": "landscape",
+      "candidateIndex": 1,
+      "nativeSourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a15c8a-347e-7ac0-9eb1-a8591cb01759\\exec-7bd0b723-8c41-43db-aef3-9539ff0894f8.png",
+      "projectPath": "assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f",
+      "width": 1672,
+      "height": 941,
+      "transport": "PASS_ART_OUTPUT_TRANSPORT",
+      "mechanical": "PASS_ART_OUTPUT_MECHANICAL",
+      "visualAcceptance": "NOT_VERIFIED"
+    }
+  ]
+}

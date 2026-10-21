@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-21T03-37-57-978Z-production-art-eec5fa",
+  "capability": "image-generation",
+  "challengeId": "cap-893edfc703cd046f3b2d",
+  "sessionId": "01a15994-217b-7762-8efe-ffb10b852e64",
+  "turnId": "01a15c86-7ed6-7111-84a6-fb0eb37d4350",
+  "observedAt": "2026-10-21T03:38:16.581Z",
+  "source": "in-session-agent-observation",
+  "trustScope": "run-session-window",
+  "presence": "PRESENT",
+  "serviceAvailability": "UNKNOWN",
+  "observedTool": "image_gen.imagegen",
+  "serviceEvidence": "Current turn exposes callable image_gen.imagegen; no generation probe was invoked. Provider/service availability remains UNKNOWN until actual Terra child invocation."
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "ep3_survey_start",
+  "assetId": "ep3-survey-start-cg",
+  "sourceHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "candidateLimit": {
+    "maxCandidatesPerCueAndFormat": 2,
+    "portraitCandidate": 1,
+    "landscapeCandidate": 1,
+    "thirdCandidateAllowed": false
+  },
+  "context": "Independently review one newly generated EP3 pair from the attached actual pixels. Compare Nika and Leo to the attached approved references and the current-head source-bound brief. Check identity, adult age impression, wardrobe continuity, working Villa Serena archive-room location, survey-folder visibility, professional negotiation, no-touch distance, anatomy, no baked text/UI/watermark, and independent portrait/landscape composition. Check that both characters and the story-critical folder remain readable and that the lower dialogue-safe region remains usable in the runtime framing. Return a JSON object with one concrete visualEvidence observation per attachment, explicit status PASS or REWORK, and only material blocking findings with policy impactCode values WRONG_CHARACTER, WRONG_ACTOR_OR_ACTION, WRONG_LOCATION_OR_TIME, STORY_CRITICAL_PROP_MISSING, STORY_CRITICAL_PROP_OBSCURED, ESSENTIAL_CHARACTER_UNRECOGNIZABLE, NARRATIVE_CONTINUITY_CONTRADICTION, DIALOGUE_OR_CONTROLS_UNREADABLE, CRITICAL_SCENE_MAPPING, ESSENTIAL_GESTURE_UNREADABLE, ESSENTIAL_SUBJECT_CROPPED, STORY_ACTION_UNREADABLE, MATERIAL_RUNTIME_READABILITY. Do not claim runtime or release acceptance beyond the supplied pixels. Do not request a second candidate or regeneration.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    ".ceos-runs/2026-10-21T03-37-57-978Z-production-art-eec5fa/evidence/ep3-survey-start-cg-producer-output.json",
+    "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json"
+  ],
+  "runtimeEvidence": [
+    "output/playwright/ep3-survey-start-desktop-1280x720.png",
+    "output/playwright/ep3-survey-start-mobile.png",
+    ".playwright-cli/traces/trace-1792554953668.trace",
+    ".playwright-cli/traces/trace-1792554953668.network"
+  ],
+  "images": [
+    {
+      "ref": "nika-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "ref": "leo-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    },
+    {
+      "ref": "ep3-survey-start-portrait-candidate-1",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep3-survey-start-cg.png",
+      "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48"
+    },
+    {
+      "ref": "ep3-survey-start-landscape-candidate-1",
+      "kind": "runtime",
+      "path": "assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f"
+    }
+  ]
+}

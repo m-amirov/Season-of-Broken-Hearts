@@ -1,0 +1,140 @@
+{
+  "index": 9,
+  "stage": "REAUDITED",
+  "at": "2026-10-21T04:00:26.067Z",
+  "cycle": 1,
+  "outcome": "PASS",
+  "skipped": false,
+  "note": "EP3 survey-start control pair passed mechanical, exact current-worktree desktop/mobile runtime pixel QA, and independent DEV Web High actual-pixel acceptance. This is batch acceptance only; episode-final and release acceptance remain unclaimed.",
+  "metadata": {
+    "dualFormatManifest": "artifacts/production-art/stage9.6/EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "evidenceContract": {
+      "schemaVersion": 1,
+      "assertionsExecuted": 4,
+      "claims": [
+        {
+          "id": "terra-route",
+          "assertionId": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "outputs",
+          "assertionId": "PASS_ART_OUTPUT_MECHANICAL",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "runtime-pixels",
+          "assertionId": "PASS_EXACT_HEAD_RUNTIME_DESKTOP_MOBILE",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "web-high",
+          "assertionId": "PASS_DEV_WEB_HIGH_ACTUAL_PIXELS",
+          "status": "PASS",
+          "executions": 1
+        }
+      ],
+      "coverage": {
+        "complete": true,
+        "scope": "EP3 ep3_survey_start control pair",
+        "checked": 4,
+        "total": 4
+      },
+      "unresolved": [],
+      "sourceHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03"
+    },
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+      "coverageMode": "BATCH_ONLY",
+      "episode": 3,
+      "requiredScenes": 15,
+      "mappedScenes": 1,
+      "coveredSceneIds": [
+        "ep3_survey_start"
+      ],
+      "fullEpisodeCovered": false,
+      "episodeFinalAcceptance": "NOT_VERIFIED",
+      "releaseReady": false,
+      "uniqueAssets": 1,
+      "variantFilesChecked": 2,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "Mechanical verification of authored scenes only. BATCH_ONLY and REUSE_SCOPE are never episode-final acceptance; real runtime/Web High review remains mandatory."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+    "clean": false,
+    "worktreeSha256": "4f2ea4784fa44010ffd37198e9a89a557e19bf6d46e6b0993a04f9c226902818"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SURVEY_START_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "4c6b2d423b39f8ce91aad66c6de169b02dd6fe0a5ca8a9ee011db9e856ff4737",
+      "size": 770
+    },
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "ab03794ef3fb48490f6cdfdc0cd1ddaf50aadd714b49510048b4b7d9426a80ee",
+      "size": 19131
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "0d40b5bf2225d07f10975cb53054fc21b0a41a9e2850eedd6fe294d00544f9b5",
+      "size": 8704
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_SURVEY_START_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+      "type": "file",
+      "sha256": "eb430705fee7a34f1677f54eee0d1399499a1c6bce4080c570d074b9544ad5b9",
+      "size": 6552
+    },
+    {
+      "input": "output/playwright/ep3-survey-start-desktop-1280x720.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-survey-start-desktop-1280x720.png",
+      "projectRelativePath": "output/playwright/ep3-survey-start-desktop-1280x720.png",
+      "type": "file",
+      "sha256": "c43394bb368bfcc3163ac0af49377df6e59bd5e2b61417af43fbfe5ba2c2349e",
+      "size": 1107812
+    },
+    {
+      "input": "output/playwright/ep3-survey-start-mobile.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-survey-start-mobile.png",
+      "projectRelativePath": "output/playwright/ep3-survey-start-mobile.png",
+      "type": "file",
+      "sha256": "7fa348ac4ea9bca1378d41d306b2785870f3de0a1dec24cf27749f935b975866",
+      "size": 418379
+    },
+    {
+      "input": ".playwright-cli/traces/trace-1792554953668.trace",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.playwright-cli\\traces\\trace-1792554953668.trace",
+      "projectRelativePath": ".playwright-cli/traces/trace-1792554953668.trace",
+      "type": "file",
+      "sha256": "de8aa13d78f1be8f6b434f66400a466a3c7776e5d3efbee5659f4aa5b9c4e868",
+      "size": 25344
+    },
+    {
+      "input": ".playwright-cli/traces/trace-1792554953668.network",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.playwright-cli\\traces\\trace-1792554953668.network",
+      "projectRelativePath": ".playwright-cli/traces/trace-1792554953668.network",
+      "type": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ]
+}

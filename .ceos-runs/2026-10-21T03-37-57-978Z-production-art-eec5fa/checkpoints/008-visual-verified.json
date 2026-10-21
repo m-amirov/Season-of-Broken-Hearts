@@ -1,0 +1,58 @@
+{
+  "index": 8,
+  "stage": "VISUAL_VERIFIED",
+  "at": "2026-10-21T03:59:59.249Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Exact current-worktree desktop/mobile runtime pixels captured with explicit portrait/desktop asset mapping; DEV Web High acceptance receipt is attached separately and actual pixels were reviewed.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+    "clean": false,
+    "worktreeSha256": "4f2ea4784fa44010ffd37198e9a89a557e19bf6d46e6b0993a04f9c226902818"
+  },
+  "artifacts": [
+    {
+      "input": "output/playwright/ep3-survey-start-desktop-1280x720.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-survey-start-desktop-1280x720.png",
+      "projectRelativePath": "output/playwright/ep3-survey-start-desktop-1280x720.png",
+      "type": "file",
+      "sha256": "c43394bb368bfcc3163ac0af49377df6e59bd5e2b61417af43fbfe5ba2c2349e",
+      "size": 1107812
+    },
+    {
+      "input": "output/playwright/ep3-survey-start-mobile.png",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\output\\playwright\\ep3-survey-start-mobile.png",
+      "projectRelativePath": "output/playwright/ep3-survey-start-mobile.png",
+      "type": "file",
+      "sha256": "7fa348ac4ea9bca1378d41d306b2785870f3de0a1dec24cf27749f935b975866",
+      "size": 418379
+    },
+    {
+      "input": ".playwright-cli/traces/trace-1792554953668.trace",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.playwright-cli\\traces\\trace-1792554953668.trace",
+      "projectRelativePath": ".playwright-cli/traces/trace-1792554953668.trace",
+      "type": "file",
+      "sha256": "de8aa13d78f1be8f6b434f66400a466a3c7776e5d3efbee5659f4aa5b9c4e868",
+      "size": 25344
+    },
+    {
+      "input": ".playwright-cli/traces/trace-1792554953668.network",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.playwright-cli\\traces\\trace-1792554953668.network",
+      "projectRelativePath": ".playwright-cli/traces/trace-1792554953668.network",
+      "type": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "0d40b5bf2225d07f10975cb53054fc21b0a41a9e2850eedd6fe294d00544f9b5",
+      "size": 8704
+    }
+  ]
+}

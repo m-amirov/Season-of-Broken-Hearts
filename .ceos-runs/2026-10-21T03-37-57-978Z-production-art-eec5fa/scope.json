@@ -1,0 +1,25 @@
+{
+  "target": "EP3 control art-pair from source-bound brief",
+  "inScope": [
+    "EP3 one new art-pair",
+    "ep3_survey_start",
+    "portrait 1024x1536",
+    "landscape 1672x941",
+    "runtime integration",
+    "desktop/mobile pixel QA",
+    "independent DEV Web High acceptance"
+  ],
+  "outOfScope": [
+    "old_photo regeneration",
+    "EP1",
+    "EP2",
+    "S32",
+    "release",
+    "publication",
+    "batch production"
+  ],
+  "acceptanceContract": "Both real Terra outputs pass SHA/provenance/character-reference/limit checks, exact-HEAD runtime desktop/mobile pixel QA, and independent DEV Web High visual acceptance",
+  "mutationBoundary": "Only the new EP3 control pair and its receipts/evidence may change; preserve accepted assets, historical evidence, dirty files, and worktrees",
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "visual-content"
+}

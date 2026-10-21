@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "agent": "ceos_art_director_web",
+  "taskId": "dev-web-ep3_survey_start-f54a6fe9bbb2",
+  "reviewTraceId": null,
+  "sourceHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+  "status": "PASS",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoning": "high",
+  "provider": "codex-chatgpt-web-dev",
+  "stableBridgeUsed": false,
+  "reviewedItems": [
+    "ep3_survey_start"
+  ],
+  "evidenceRefs": [
+    "nika-approved-reference",
+    "leo-approved-reference",
+    "ep3-survey-start-portrait-candidate-1",
+    "ep3-survey-start-landscape-candidate-1"
+  ],
+  "receivedEvidenceRefs": [
+    "nika-approved-reference",
+    "leo-approved-reference",
+    "ep3-survey-start-portrait-candidate-1",
+    "ep3-survey-start-landscape-candidate-1"
+  ],
+  "actualPixelsReceived": true,
+  "decision": "PASS for the supplied portrait and landscape pixels under NARRATIVE_ART_ACCEPTANCE_V2. Both compositions depict recognizable adult versions of Nika and Leo in a working archive environment consistent with the Villa Serena scene context. Their facial structures, coloring, styling, and clothing palettes remain sufficiently consistent with the approved character references. Nika's hair is gathered into a loose bun rather than worn as the reference bob, and her archive outfit adds an olive overshirt; neither difference materially prevents recognition or contradicts the visible scene action. Leo retains his recognizable facial proportions, tousled brown hair, olive shirt, pale jacket, light trousers, and brown shoulder bag. The characters maintain professional physical separation while Leo presents a clearly visible survey folder for Nika's consideration. The folder is readable as a substantial physical document portfolio in both orientations, with no significant occlusion by characters or foreground objects. The portrait and landscape images use independently arranged staging rather than simply cropping one composition. Both preserve the characters' faces, their interaction, and the story-critical folder above the lowest foreground region. Books and architectural materials create some visual texture in the lower area, but no baked dialogue, controls, text, or watermark appears, and no material obstruction of essential narrative information is evident. Hands and visible anatomy are coherent, and the presentation gesture remains understandable. No material visual blocking finding is supported by the supplied pixels. This decision concerns only the attached visual evidence and does not establish runtime implementation, dialogue-overlay behavior, or release acceptance.",
+  "findings": [],
+  "unresolved": [],
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+  "visualEvidence": [
+    {
+      "ref": "nika-approved-reference",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "observation": "The approved three-panel character reference depicts an adult woman with a tousled, chin-length dark-brown bob, brown-hazel eyes, defined eyebrows, softly angular facial proportions, natural skin texture, and small gold hoop earrings. She wears a loosely buttoned off-white linen shirt tucked into high-waisted light beige trousers secured with a brown leather belt. A large dark-brown leather shoulder bag and brown sandals complete the outfit. The frontal and three-quarter portraits establish her recognizable facial features, hairstyle, jewelry, and understated neutral wardrobe."
+    },
+    {
+      "ref": "leo-approved-reference",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",
+      "observation": "The approved character reference depicts an adult man with medium-length tousled brown hair, light brown-green eyes, a straight nose, defined jawline, and natural facial texture. He wears an olive-green collared shirt beneath a pale cream linen jacket, light trousers, a brown leather belt, and brown loafers. A brown leather shoulder satchel and rolled architectural drawings establish his working-professional styling. The two facial close-ups provide clear frontal and downward-looking views of his identifying features."
+    },
+    {
+      "ref": "ep3-survey-start-portrait-candidate-1",
+      "path": "assets/production/cg/ep3-survey-start-cg.png",
+      "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48",
+      "observation": "The portrait candidate shows Nika standing on the left and Leo standing on the right inside a warmly sunlit stone archive room. Tall metal shelving holds labeled storage boxes, books, and rolled drawings. A large arched window reveals blue sky and a distant Mediterranean-looking landscape. Nika has dark-brown hair gathered into a loose bun with face-framing strands, small gold earrings, an olive overshirt, a cream blouse, and belted taupe trousers. She looks thoughtfully downward with one hand near her chin. Leo wears a pale jacket over an olive shirt, cream trousers, and a brown leather shoulder bag. He presents a large closed tan survey folder with a dark binding across the wooden table. The folder is clearly visible between the characters, and their hands remain physically separated. Both faces and the document remain readable. The lower foreground contains books, rolled drawings, and archival materials without baked dialogue, interface elements, or watermark. The essential interaction is positioned above the lowest portion of the image."
+    },
+    {
+      "ref": "ep3-survey-start-landscape-candidate-1",
+      "path": "assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f",
+      "observation": "The landscape candidate independently stages Nika seated at the left side of a large wooden archive table while Leo stands and leans forward from the right. Nika rests her chin against one hand and studies the folder with a focused, reserved expression. Leo holds a broad tan portfolio with dark binding near the center of the table, directing her attention toward its contents without physical contact. His pale jacket, olive shirt, cream trousers, and brown shoulder satchel remain visible. Nika retains her olive overshirt, light blouse, gold earrings, and loosely gathered brown hair. Stone walls, tall windows, shelving, archival boxes, framed drawings, books, and rolled plans establish the working archive setting. Both characters' faces are fully readable, and the survey folder remains prominent above the foreground books and documents. The lower region is visually detailed but does not contain essential faces or gestures. No baked text, interface controls, watermark, or obvious anatomical defect is visible."
+    }
+  ],
+  "normalization": {
+    "schemaRepairAttempted": false,
+    "responseFormat": "markdown-escaped-json",
+    "rawResponseArtifacts": [
+      "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt"
+    ],
+    "rawResponseSha256": "eb430705fee7a34f1677f54eee0d1399499a1c6bce4080c570d074b9544ad5b9",
+    "sourceHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+    "imageSha256": [
+      {
+        "ref": "nika-approved-reference",
+        "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+      },
+      {
+        "ref": "leo-approved-reference",
+        "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+      },
+      {
+        "ref": "ep3-survey-start-portrait-candidate-1",
+        "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48"
+      },
+      {
+        "ref": "ep3-survey-start-landscape-candidate-1",
+        "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f"
+      }
+    ]
+  },
+  "transport": {
+    "provider": "codex-chatgpt-web-dev",
+    "releaseVersion": "6.1.11",
+    "mode": "browser-only",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "actualProjectHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+    "responseSha256": "eb430705fee7a34f1677f54eee0d1399499a1c6bce4080c570d074b9544ad5b9",
+    "attachmentRefs": [
+      "nika-approved-reference",
+      "leo-approved-reference",
+      "ep3-survey-start-portrait-candidate-1",
+      "ep3-survey-start-landscape-candidate-1"
+    ],
+    "submitted": true,
+    "attachmentAccepted": true,
+    "transportTraceId": "devweb_d2efa83d682e48e58df5a484a146d4f9"
+  }
+}

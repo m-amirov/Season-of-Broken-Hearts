@@ -1,0 +1,26 @@
+{
+  "index": 3,
+  "stage": "INVENTORIED",
+  "at": "2026-10-21T03:38:03.071Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": "Current-head EP3 source-bound brief packet inventory verified before native capability challenge.",
+  "metadata": {},
+  "source": {
+    "available": true,
+    "head": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+    "clean": false,
+    "worktreeSha256": "25668cb0c78882e34cf3f89ad32237c49ee922616bca3fce4ba949a97f3afb28"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "type": "file",
+      "sha256": "52d05841f6df3dd2eb25b4de2d3085da455faf4fa3a2ecdc798effa884c714da",
+      "size": 66993
+    }
+  ]
+}

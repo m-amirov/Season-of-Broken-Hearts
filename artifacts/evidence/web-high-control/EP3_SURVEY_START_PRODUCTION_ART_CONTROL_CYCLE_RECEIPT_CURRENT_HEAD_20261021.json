@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "kind": "PRODUCTION_ART_CONTROL_CYCLE_RECEIPT",
+  "status": "PASS_BATCH_ONLY",
+  "recordedAt": "2026-10-21T04:00:26.068Z",
+  "project": "Season of Broken Hearts",
+  "sceneId": "ep3_survey_start",
+  "assetId": "ep3-survey-start-cg",
+  "sourceHead": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+  "gitHeadAtReceipt": "f54a6fe9bbb219446a80392b8ab27a48fcd62a03",
+  "brief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "52d05841f6df3dd2eb25b4de2d3085da455faf4fa3a2ecdc798effa884c714da",
+    "candidateLimit": 2,
+    "candidatePairIndex": 1,
+    "generatedPairCount": 1
+  },
+  "nativeCapability": {
+    "runId": "2026-10-21T03-37-57-978Z-production-art-eec5fa",
+    "challengeId": "cap-893edfc703cd046f3b2d",
+    "challengeFile": ".ceos-runs/2026-10-21T03-37-57-978Z-production-art-eec5fa/capability-challenge.json",
+    "attestationFile": ".ceos-runs/2026-10-21T03-37-57-978Z-production-art-eec5fa/capability-attestation/attestations/cap-893edfc703cd046f3b2d.json",
+    "presence": "PRESENT",
+    "service": "UNKNOWN",
+    "trustedForGeneration": true,
+    "generationAllowed": true,
+    "trustScope": "run-session-window",
+    "childAgentId": "01a15c8a-347e-7ac0-9eb1-a8591cb01759",
+    "role": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium",
+    "bindingMode": "CURRENT_TURN",
+    "finalRouteStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "finalProducerTraceSha256": "e5d8c4c0a4fadea6d2754d753e7b8085074abd59d32d96152871e70df6dd5d23",
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "outputs": {
+    "portrait": {
+      "path": "assets/production/cg/ep3-survey-start-cg.png",
+      "nativeSource": "C:/Users/user/.codex/generated_images/01a15c8a-347e-7ac0-9eb1-a8591cb01759/exec-72404edf-cff8-464e-b5fd-6cbe944d0cfd.png",
+      "sha256": "0861945f7baa92c401324fafe697a39dcdd8f5cd735f3466890bfa0881520f48",
+      "dimensions": {"width": 1024, "height": 1536},
+      "outputVerification": "PASS_ART_OUTPUT_MECHANICAL"
+    },
+    "landscape": {
+      "path": "assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "nativeSource": "C:/Users/user/.codex/generated_images/01a15c8a-347e-7ac0-9eb1-a8591cb01759/exec-7bd0b723-8c41-43db-aef3-9539ff0894f8.png",
+      "sha256": "a81f6934fdb9048b5ac2e4e0894f95164d3ff6aa8703d6d9b1ddf6b8555cfd8f",
+      "dimensions": {"width": 1672, "height": 941},
+      "outputVerification": "PASS_ART_OUTPUT_MECHANICAL"
+    }
+  },
+  "characterReferences": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "runtime": {
+    "mapping": "narrative/assets.json",
+    "desktop": {
+      "viewport": "1280x720",
+      "assetSource": "/assets/production/cg/ep3-survey-start-cg-landscape.png",
+      "screenshot": "output/playwright/ep3-survey-start-desktop-1280x720.png",
+      "screenshotSha256": "c43394bb368bfcc3163ac0af49377df6e59bd5e2b61417af43fbfe5ba2c2349e",
+      "observation": "Landscape composition loaded at exact current worktree; Nika and Leo faces plus the survey folder remain readable above the dialogue-safe band without clipping."
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "assetSource": "/assets/production/cg/ep3-survey-start-cg.png",
+      "screenshot": "output/playwright/ep3-survey-start-mobile.png",
+      "screenshotSha256": "7fa348ac4ea9bca1378d41d306b2785870f3de0a1dec24cf27749f935b975866",
+      "observation": "Portrait composition loaded at exact current worktree; both faces and the folder remain recognizable in the mobile crop with no material dialogue obstruction."
+    },
+    "trace": {
+      "path": ".playwright-cli/traces/trace-1792554953668.trace",
+      "sha256": "de8aa13d78f1be8f6b434f66400a466a3c7776e5d3efbee5659f4aa5b9c4e868",
+      "networkPath": ".playwright-cli/traces/trace-1792554953668.network",
+      "networkSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "webHigh": {
+    "receipt": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+    "receiptSha256": "0d40b5bf2225d07f10975cb53054fc21b0a41a9e2850eedd6fe294d00544f9b5",
+    "rawResponse": "artifacts/evidence/web-high-control/EP3_SURVEY_START_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+    "rawResponseSha256": "eb430705fee7a34f1677f54eee0d1399499a1c6bce4080c570d074b9544ad5b9",
+    "traceId": "devweb_d2efa83d682e48e58df5a484a146d4f9",
+    "provider": "codex-chatgpt-web-dev",
+    "mode": "browser-only",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "submitted": true,
+    "attachmentAccepted": true,
+    "actualPixelsReceived": true,
+    "decision": "PASS",
+    "findings": []
+  },
+  "ceosRun": {
+    "runDir": ".ceos-runs/2026-10-21T03-37-57-978Z-production-art-eec5fa",
+    "verdict": "PASS",
+    "integrity": "ok",
+    "stopReason": "ACCEPTANCE_SATISFIED",
+    "scope": "batch-only; episode-final and release acceptance not claimed"
+  },
+  "oldPhoto": {
+    "status": "REWORK_NOT_VERIFIED",
+    "candidateBudget": "2/2 exhausted",
+    "proposal": "Do not regenerate. If scope is reopened, make only a formally authorized new candidate or non-generative correction that restores a visually recognizable old photograph in portrait and moves the landscape story-critical region clear of the lower dialogue-safe band; runtime CSS cannot repair the blank-card prop."
+  },
+  "releaseReady": false
+}
