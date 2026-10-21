@@ -1,0 +1,73 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_document\_check\_response",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "REWORK",  
+"reviewedItems": \[  
+"ep3\_document\_check\_response"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-document-check-response-portrait-candidate-2",  
+"ep3-document-check-response-landscape-candidate-2"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-document-check-response-portrait-candidate-2",  
+"ep3-document-check-response-landscape-candidate-2"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "Candidate 2 substantially corrects the principal staging failure identified in candidate 1. Both runtime compositions visibly depict Nika holding a pen against an open working log, with comparison documents spread across the same desk. Leo observes rather than taking control of the evidence. The restrained expressions and investigative setting do not present the correspondence as conclusive proof. Character continuity is strong. However, neither runtime image makes the specific matching date or mark identifiable in Nika's log entry or establishes a readable correspondence between that entry and the comparison pages. The physical action of writing is established, but the required semantic content of the provisional notation remains visually unverified. Because the authored cue specifically requires Nika to record the matching date/mark provisionally, this remaining ambiguity warrants a focused P1 rework rather than unconditional acceptance. Preserve the successful composition, character appearances, writing action, and provisional investigative tone while making the correspondence and tentative notation visually distinguishable.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "Three-panel character reference depicting a young woman with a voluminous, chin-length, wavy dark-brown bob, expressive brown eyes, defined brows, subtle freckles, small gold hoop earrings, and a delicate gold pendant necklace. She wears a loose off-white linen shirt, beige high-waisted trousers, a brown leather belt, and brown sandals. The full-body panel includes a large dark-brown shoulder bag. The central portrait establishes her facial proportions, hairstyle, jewelry, and natural complexion, while the right panel establishes her side and three-quarter appearance."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "Three-view reference showing a young man with medium-length, tousled light-brown hair, light hazel-green eyes, prominent cheekbones, a narrow straight nose, and a defined jawline. He wears a light beige linen jacket and matching trousers over an open-collar muted olive-green shirt, with a brown belt, dark leather loafers, and a brown leather shoulder satchel. The full-body view includes rolled documents carried in one hand. The close-ups establish his thoughtful expression, natural facial texture, and distinctive swept hairstyle."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "Three-view character reference showing a mature woman with dark hair threaded with gray, loosely gathered into a low bun, brown eyes, pronounced natural facial lines, and small gold hoop earrings. She wears a muted sage-green button-front shirt with rolled sleeves, a light beige waist apron, dark trousers, and black shoes. The central portrait shows a composed, approachable expression, while the profile establishes the low bun and gray streaks. Giulia does not appear in either supplied runtime scene."  
+},  
+{  
+"ref": "ep3-document-check-response-portrait-candidate-2",  
+"path": "assets/production/cg/ep3-document-check-response-cg.png",  
+"sha256": "d0b7bf2fd421e93e98c512c2695a0010cf95ba6eecbea3421c58b4fac2b5aac9",  
+"observation": "Portrait composition depicting Nika seated at a large wooden desk in a sunlit archival workspace. Her right hand holds a dark pen with a gold-colored tip against the left-hand page of an open working notebook, while her other hand rests near the notebook and comparison materials. Multiple illustrated or marked documentary pages remain open across the desk to her right. Leo stands immediately behind and slightly to her right, leaning forward and looking down toward the documents. Both characters have concentrated, restrained expressions. Nika's hairstyle, white linen shirt, gold jewelry, and facial features closely follow her approved reference. Leo retains his tousled brown hair, beige jacket, olive shirt, and leather shoulder strap. The visible pen-to-page contact establishes active recording, but the exact characters or symbols being written are not sufficiently legible to identify a matching date or mark. The comparison pages contain fine lines and dark markings, but a specific correspondence with the notebook entry cannot be independently verified from the pixels."  
+},  
+{  
+"ref": "ep3-document-check-response-landscape-candidate-2",  
+"path": "assets/production/cg/ep3-document-check-response-cg-landscape.png",  
+"sha256": "23a0a1570bcb685663020e6025a6cf453e808183f08968ddae2f564f5a769791",  
+"observation": "Wide horizontal composition showing Nika seated on the left side of a large archival desk, writing with a dark pen in an open notebook. Two large documentary sheets occupy the right foreground, displaying pale grids, irregular brown marks, and scattered fine-line details. Leo stands farther back on the right, watching Nika and the working area with a serious expression. Shelves, books, rolled documents, framed illustrations, and daylight entering through tall windows establish the archival environment. Nika's pen visibly meets the notebook page, and the comparison sheets remain unobstructed. Her white linen shirt, short wavy hair, pendant necklace, and gold hoop earrings maintain character continuity. Leo's beige linen clothing, olive shirt, tousled hair, and leather satchel also remain consistent. The notebook contains faint writing or markings, but no specific date or distinctive copied mark is reliably readable. Although the exposed comparison sheets support the interpretation of a document-checking process, their precise relationship to the entry being written cannot be established from visible detail alone."  
+}  
+\],  
+"findings": \[  
+{  
+"id": "EP3-C2-001",  
+"severity": "P1",  
+"status": "OPEN",  
+"impactCode": "NARRATIVE\_EVIDENCE\_CORRESPONDENCE\_UNCLEAR",  
+"authoredCue": "Nika visibly writes the matching date/mark provisionally into the open working log while the corresponding documentary pages remain visible, without treating the correspondence as conclusive proof.",  
+"observation": "Both runtime captures show Nika actively writing in the open log, correcting candidate 1's central physical-action failure. The comparison documents are also visible. However, the notebook inscription is too indistinct to identify the matching date or mark, and the comparison pages do not display an independently recognizable corresponding detail. No readable qualifier or notation establishes that the recorded correspondence is provisional. The restrained staging supports investigative uncertainty and does not falsely dramatize the correspondence as definitive, but the intended content of the entry remains visually ambiguous.",  
+"playerImpact": "The player can recognize that Nika is documenting findings while reviewing archival materials, but cannot confidently identify what specific date or mark she has matched or whether she is recording that match as provisional. This weakens the scene's intended evidentiary progression: it communicates that investigation is occurring without fully communicating the particular discovery being recorded. A clearer repeated date or distinctive mark, paired with an identifiable tentative annotation in the log, would resolve the ambiguity without making the correspondence appear conclusive.",  
+"evidenceRef": "ep3-document-check-response-portrait-candidate-2",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+}  
+\],  
+"unresolved": \[\]  
+}

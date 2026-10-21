@@ -1,0 +1,19 @@
+{
+  "target": "EP3 completion batch: ep3_quiet_return and ep3_transition only",
+  "inScope": [
+    "ep3_quiet_return dual-format art pair",
+    "ep3_transition dual-format art pair",
+    "exact-head runtime QA",
+    "DEV browser-only Web High acceptance"
+  ],
+  "outOfScope": [
+    "ep3_old_photo regeneration",
+    "ep3_document_check_response candidate 3",
+    "EP4",
+    "release/publication"
+  ],
+  "acceptanceContract": "Real Terra/ImageGen outputs with strict provenance, source-head and character-reference hashes, mechanical output receipts, exact-head desktop/mobile runtime QA, independent DEV Web High actual-pixel PASS for both pairs, no episode-final or release claim",
+  "mutationBoundary": "Only scoped EP3 output PNGs, receipts, manifests, runtime mappings and evidence under the production-art stage directory; preserve accepted originals, dirty files, worktrees and historical evidence",
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict"
+}

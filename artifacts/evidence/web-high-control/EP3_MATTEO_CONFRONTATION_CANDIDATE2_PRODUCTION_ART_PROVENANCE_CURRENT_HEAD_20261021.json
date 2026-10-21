@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-provenance",
+  "status": "PASS_INTEGRATED_RUNTIME_AND_WEB_ACCEPTED",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_matteo_confrontation",
+  "assetId": "ep3-matteo-confrontation-cg",
+  "candidate": 2,
+  "candidateLimit": 2,
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256AtGeneration": "8c3e78acc10ab06f7740b38a5408c0eb480350d2cfD714d6b21c2531416db90e",
+    "sha256CurrentAfterOfficialRefresh": "da0f6b98dbee1892fd7c8afa2ea8f344cbe6530a413f1e77e2b0a627c524cf0e",
+    "verdict": "READY_TO_GENERATE_EXACT_HEAD"
+  },
+  "references": [
+    {"id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"id": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ],
+  "nativeGeneration": {
+    "runId": "2026-10-21T11-25-33-317Z-production-art-e5f338",
+    "challengeId": "cap-2fdef5c404aaee08f2c7",
+    "producerChildId": "01a15df1-57f8-70f3-b418-9dc09d6657ba",
+    "producerTrace": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T13-11-00-01a15df1-57f8-70f3-b418-9dc09d6657ba.jsonl",
+    "producerTraceSha256": "abb5d2b8ada8388703cc80b5af462b058e039010339df4f6b818b6bbb16dc69a",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium",
+    "observedTool": "image_gen.imagegen"
+  },
+  "outputs": [
+    {"variant": "portrait", "path": "assets/production/cg/ep3-matteo-confrontation-cg.png", "sha256": "6c6fc3c3736bac36c887c01850fb27731fb2bf775e3ce6af3b6d3c904c72ffe5", "width": 1024, "height": 1536, "outputReceipt": "artifacts/production-art/stage9.11/receipts/EP3_MATTEO_CONFRONTATION_PORTRAIT_CANDIDATE_2_OUTPUT_GATE.json"},
+    {"variant": "landscape", "path": "assets/production/cg/ep3-matteo-confrontation-cg-landscape.png", "sha256": "3acbdf6d3979c16c66c86b7e6e975704e43650a8f07b541f858da6e4ccbec1b4", "width": 1672, "height": 941, "outputReceipt": "artifacts/production-art/stage9.11/receipts/EP3_MATTEO_CONFRONTATION_LANDSCAPE_CANDIDATE_2_OUTPUT_GATE.json"}
+  ],
+  "runtimeMapping": {"path": "narrative/assets.json", "assetId": "ep3-matteo-confrontation-cg", "portraitSha256": "6c6fc3c3736bac36c887c01850fb27731fb2bf775e3ce6af3b6d3c904c72ffe5", "landscapeSha256": "3acbdf6d3979c16c66c86b7e6e975704e43650a8f07b541f858da6e4ccbec1b4"},
+  "preservedRejectedCandidate1": {
+    "portrait": {"path": "artifacts/production-art/stage9.11/preserved-candidate1/ep3-matteo-confrontation-cg.png", "sha256": "58ff34080dd25848f167a5ac9309d539fa259928b1aff02cd1aa3b9f6e045bf1"},
+    "landscape": {"path": "artifacts/production-art/stage9.11/preserved-candidate1/ep3-matteo-confrontation-cg-landscape.png", "sha256": "79da9893be933d8d825531ff954fc5bbebdd6ae9dcf1c15117800141a65dca80"}
+  },
+  "runtimeQa": "artifacts/evidence/web-high-control/EP3_DOCUMENT_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+  "independentAcceptance": "artifacts/evidence/web-high-control/EP3_MATTEO_CONFRONTATION_CANDIDATE2_WEB_REVIEW_RECEIPT_FRESH_CURRENT_HEAD_20261021.json",
+  "actualPixelsObserved": true,
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

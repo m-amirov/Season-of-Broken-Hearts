@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": 1,
+  "ceosVersion": "0.5.40",
+  "runId": "2026-10-21T11-50-34-595Z-production-art-7f2b92",
+  "pipeline": "production-art",
+  "artMode": "NEW_GENERATION",
+  "artOutputGateRequired": true,
+  "narrativeDualFormatRequired": true,
+  "nativeProducerRouteRequired": true,
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "producerBindingMode": "CURRENT_TURN",
+  "producerParentSessionId": null,
+  "projectDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture",
+  "runDir": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\.ceos-runs\\2026-10-21T11-50-34-595Z-production-art-7f2b92",
+  "createdAt": "2026-10-21T11:50:34.597Z",
+  "updatedAt": "2026-10-21T14:22:30.119Z",
+  "completedAt": "2026-10-21T14:22:30.119Z",
+  "cycle": 1,
+  "maxCycles": 1,
+  "webRequired": false,
+  "webReviewMode": "enhanced",
+  "webReviewAssurance": "strict",
+  "webDelegationPlan": {
+    "schemaVersion": 1,
+    "pipeline": "production-art",
+    "complexity": "high",
+    "visual": true,
+    "assurance": "strict",
+    "phases": [
+      "analysis",
+      "midpoint",
+      "acceptance"
+    ],
+    "shards": 1,
+    "sourceOfTruth": "native-collected-current-HEAD-evidence",
+    "execution": "parent-hosted-subagent-delegation-not-automatic-CLI-invocation"
+  },
+  "state": "PASS",
+  "nextStage": null,
+  "verdict": "PASS",
+  "stopReason": {
+    "code": "ACCEPTANCE_SATISFIED",
+    "stage": "REAUDITED",
+    "reason": "fresh re-audit passed"
+  },
+  "checkpointCount": 12,
+  "scopeSha256": "0a89fab4974a812228c3a67906d4b7a21bcf8895853322cea395064f75898887",
+  "capabilitiesSha256": "a193291a2bd126c4839016bd36fb75facee4744c32c248087594a571c112dd79",
+  "sourceAtStart": {
+    "available": true,
+    "head": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "clean": false,
+    "worktreeSha256": "7e50c9a8747d5d8cc8870b865f6e99d1c7b61dbf847a753a587e340dbd1b358c"
+  },
+  "routingTrace": {
+    "webPreflightStatus": "UNAVAILABLE",
+    "webAgentsUsed": [],
+    "webReviews": [],
+    "nativeFallbackUsed": true,
+    "fallbackReason": "Generic legacy Web preflight unavailable (fetch failed at 127.0.0.1:17841); DEV browser-only Web High remains required for independent acceptance and no local fallback PASS is claimed.",
+    "byCycle": {
+      "1": {
+        "webAgentsUsed": [],
+        "webReviews": [],
+        "nativeFallbackUsed": true,
+        "fallbackReason": "Generic legacy Web preflight unavailable (fetch failed at 127.0.0.1:17841); DEV browser-only Web High remains required for independent acceptance and no local fallback PASS is claimed."
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_COMPLETION_BATCH_CANON",
+  "runId": "2026-10-21T11-50-34-595Z-production-art-7f2b92",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "da0f6b98dbee1892fd7c8afa2ea8f344cbe6530a413f1e77e2b0a627c524cf0e",
+    "status": "READY_TO_GENERATE",
+    "scenes": ["ep3_quiet_return", "ep3_transition"]
+  },
+  "batch": {
+    "sceneIds": ["ep3_quiet_return", "ep3_transition"],
+    "candidateLimit": 2,
+    "candidateNumber": 1,
+    "plannedOutputs": 4,
+    "noRegenerationOfAcceptedAssets": true
+  },
+  "sceneContracts": {
+    "ep3_quiet_return": {
+      "briefId": "ep3-office-quiet-return-v1",
+      "assetId": "ep3-quiet-return-cg",
+      "requiredCast": ["nika", "leo"],
+      "action": "Nika records the status in the journal while Leo states the next reporting action and exits toward the west wing.",
+      "forbidden": ["kiss/embrace", "forgiveness glow", "readable branch-specific notes", "extra cast", "Aurea logo/text"]
+    },
+    "ep3_transition": {
+      "briefId": "ep3-transition-three-way-v1",
+      "assetId": "ep3-transition-cg",
+      "requiredCast": ["nika", "bianca", "leo"],
+      "action": "Nika owns the journal and verification status; Bianca speaks from the business side; Leo turns on the west-wing light behind the wall.",
+      "forbidden": ["readable Aurea text", "halo/rescue symbolism", "villain styling for Bianca", "romantic triangle pose", "extra cast", "baked UI/dialogue"]
+    }
+  },
+  "references": {
+    "nika": {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    "leo": {"path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    "bianca": {"path": "assets/characters/references/originals/bianca.png", "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9"}
+  },
+  "dimensions": {"portrait": {"width": 1024, "height": 1536}, "landscape": {"width": 1672, "height": 941}},
+  "runtimeMapping": "narrative/assets.json",
+  "status": "CANON_READY_GENERATION_AUTHORIZED_FOR_SCOPED_BATCH_ONLY",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

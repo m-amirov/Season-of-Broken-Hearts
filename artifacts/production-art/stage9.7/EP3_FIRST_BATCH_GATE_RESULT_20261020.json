@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_FIRST_BATCH_GATE_RESULT",
+  "stage": "9.7",
+  "recordedAt": "2026-10-20",
+  "runId": "2026-10-20T06-39-18-765Z-production-art-6a9b5e",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "scope": {
+    "episode": 3,
+    "sceneId": "ep3_old_photo",
+    "pairCount": 1,
+    "plannedPngCount": 2,
+    "generationInvoked": false,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false
+  },
+  "capability": {
+    "status": "PASS",
+    "challengeId": "cap-bff3533dc1ae5573b622",
+    "sessionId": "01a15806-d4aa-7322-b8e6-0bd4557b704e",
+    "turnId": "01a15806-f0ef-7312-be40-39b912f7f8fd",
+    "presence": "PRESENT",
+    "serviceAvailability": "UNKNOWN",
+    "observedTool": "image_gen.imagegen",
+    "attestationFile": ".ceos-runs/2026-10-20T06-39-18-765Z-production-art-6a9b5e/capability-attestation/attestations/cap-bff3533dc1ae5573b622.json"
+  },
+  "producerRoute": {
+    "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "agentId": "01a1580a-fa22-7c11-aa01-f97336688878",
+    "parentSessionId": "01a15806-d4aa-7322-b8e6-0bd4557b704e",
+    "agentRole": "ceos_asset_generator",
+    "actualModel": "gpt-5.6-terra",
+    "actualEffort": "medium",
+    "bindingMode": "CURRENT_TURN",
+    "traceFile": "C:/Users/user/.codex/sessions/2026/10/20/rollout-2026-10-20T09-41-16-01a1580a-fa22-7c11-aa01-f97336688878.jsonl",
+    "traceSha256": "649bd5e5da0f63a57081ab93faeb92884b9f9bc424bcb928c368d30dd51e41e8"
+  },
+  "artBriefVerify": {
+    "status": "BLOCKED_ART_BRIEF",
+    "sourceCurrentness": "EXACT_HEAD",
+    "issues": [
+      "sceneId must be an S-numbered scene",
+      "cue must contain authored id and [chunk, paragraph] position",
+      "requiredCast must be a nonempty list of unique character IDs",
+      "narrativeActions must describe substantive authored actions for cast members",
+      "sceneContinuity must describe preceding/following scene events",
+      "characterReferences[0] has unknown character",
+      "characterReferences[1] has unknown character",
+      "characterReferences[1] duplicates a character",
+      "characterReferences[2] has unknown character",
+      "characterReferences[2] duplicates a character",
+      "characterReferences[3] has unknown character",
+      "characterReferences[3] duplicates a character",
+      "characterReferences[4] has unknown character",
+      "characterReferences[4] duplicates a character",
+      "forbiddenProps must be an array of strings (possibly empty)",
+      "desktop must specify substantive composition/framing and all required visible cast",
+      "portrait must specify substantive composition/framing and all required visible cast",
+      "qualityAcceptance must specify at least 3 measurable art checks",
+      "candidateNumber exceeds bounded maximum of 2; stop and escalate"
+    ],
+    "blocker": "The verifier is legacy Stage 9.4-shaped and cannot validate the real EP3 ep3_* packet without a supported schema update."
+  },
+  "finalStatus": "BLOCKED_BEFORE_GENERATION",
+  "notes": [
+    "No Image Gen call was made.",
+    "No PNG, placeholder, runtime mapping, EP2 file or existing receipt was changed.",
+    "Capability and route evidence are valid but do not override the brief gate."
+  ]
+}

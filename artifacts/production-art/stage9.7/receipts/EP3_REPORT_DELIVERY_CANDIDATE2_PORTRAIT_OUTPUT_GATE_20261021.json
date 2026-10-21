@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "C:\\Users\\user\\.codex\\generated_images\\01a15d2b-4269-7222-9c8c-7c066351def2\\exec-d314808b-653c-4d4b-8515-23b001865568.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "da3ae20b7a7de4cc5c3a17d1f314c8b50f04262b53255d61e683b56cd416962a",
+  "bytes": 2380838,
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "alpha": {
+    "opaque": 1572864,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1572864,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 1536
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-21T06:41:59.645Z"
+}

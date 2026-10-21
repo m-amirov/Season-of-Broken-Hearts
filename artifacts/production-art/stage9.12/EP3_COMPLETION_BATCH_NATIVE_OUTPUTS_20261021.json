@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_COMPLETION_BATCH_NATIVE_OUTPUTS",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "runId": "2026-10-21T11-50-34-595Z-production-art-7f2b92",
+  "capabilityChallenge": "cap-9552c5c67bcb68dbae18",
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "da0f6b98dbee1892fd7c8afa2ea8f344cbe6530a413f1e77e2b0a627c524cf0e",
+    "briefVerifyStatus": "READY_TO_GENERATE"
+  },
+  "candidateLimit": 2,
+  "candidateIndex": 1,
+  "producer": {
+    "agentId": "01a15eb6-6367-71a1-acd2-ba53a08393c5",
+    "role": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "imageGenerationTool": "image_gen.imagegen",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/21/rollout-2026-10-21T16-46-13-01a15eb6-6367-71a1-acd2-ba53a08393c5.jsonl",
+    "producerTraceSha256": "27189ed2217447ca3dd32f0ed71b8aac07955d9ba2a1428a743e058562e3e372",
+    "providerByteReceipt": "NOT_EXPOSED"
+  },
+  "references": [
+    {
+      "id": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "id": "bianca",
+      "path": "assets/characters/references/originals/bianca.png",
+      "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9"
+    },
+    {
+      "id": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "outputs": [
+    {
+      "sceneId": "ep3_quiet_return",
+      "assetId": "ep3-quiet-return-cg",
+      "candidateIndex": 1,
+      "format": "portrait",
+      "generationDisposition": "REUSED_EXISTING_NO_IMAGEGEN_CALL",
+      "sourceOutputPath": "assets/production/cg/ep3-quiet-return-cg.candidate1.png",
+      "path": "assets/production/cg/ep3-quiet-return-cg.candidate1.png",
+      "sha256": "6dc5ef94af2696ad08feb1bc7d629ad3e40ad66c27b258e8a6dbe3ea96fb89fb",
+      "dimensions": { "width": 1024, "height": 1536 },
+      "outputGate": "PASS_ART_OUTPUT_MECHANICAL",
+      "receipt": "artifacts/production-art/stage9.12/receipts/EP3_QUIET_RETURN_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json"
+    },
+    {
+      "sceneId": "ep3_quiet_return",
+      "assetId": "ep3-quiet-return-cg",
+      "candidateIndex": 1,
+      "format": "landscape",
+      "generationDisposition": "REUSED_EXISTING_NO_IMAGEGEN_CALL",
+      "sourceOutputPath": "assets/production/cg/ep3-quiet-return-cg-landscape.candidate1.png",
+      "path": "assets/production/cg/ep3-quiet-return-cg-landscape.candidate1.png",
+      "sha256": "4b0bcc2803e6530e2741520801f1eefee7b781268d3b983b6b5a9280527b38a3",
+      "dimensions": { "width": 1672, "height": 941 },
+      "outputGate": "PASS_ART_OUTPUT_MECHANICAL",
+      "receipt": "artifacts/production-art/stage9.12/receipts/EP3_QUIET_RETURN_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json"
+    },
+    {
+      "sceneId": "ep3_transition",
+      "assetId": "ep3-transition-cg",
+      "candidateIndex": 1,
+      "format": "portrait",
+      "generationDisposition": "GENERATED_CURRENT_TERRA_PRODUCER",
+      "sourceOutputPath": "C:/Users/user/.codex/generated_images/01a15eb6-6367-71a1-acd2-ba53a08393c5/exec-9aa3a327-40dd-44ad-9320-f992d90fe59e.png",
+      "path": "assets/production/cg/ep3-transition-cg.candidate1.png",
+      "sha256": "fcda0044299c1d5d1ee190b32a62ae4159a3cf71de1f33d9956dc8339a55e65f",
+      "dimensions": { "width": 1024, "height": 1536 },
+      "outputGate": "PASS_ART_OUTPUT_MECHANICAL",
+      "receipt": "artifacts/production-art/stage9.12/receipts/EP3_TRANSITION_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json"
+    },
+    {
+      "sceneId": "ep3_transition",
+      "assetId": "ep3-transition-cg",
+      "candidateIndex": 1,
+      "format": "landscape",
+      "generationDisposition": "GENERATED_CURRENT_TERRA_PRODUCER",
+      "sourceOutputPath": "C:/Users/user/.codex/generated_images/01a15eb6-6367-71a1-acd2-ba53a08393c5/exec-4671f0db-e5ec-4acf-8bf3-a115ecf41064.png",
+      "path": "assets/production/cg/ep3-transition-cg-landscape.candidate1.png",
+      "sha256": "3f01d7a849b3f15539fd3487cb33ddab7a31d4e6d5b2eff8a04dc47d043e9164",
+      "dimensions": { "width": 1672, "height": 941 },
+      "outputGate": "PASS_ART_OUTPUT_MECHANICAL",
+      "receipt": "artifacts/production-art/stage9.12/receipts/EP3_TRANSITION_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json"
+    }
+  ],
+  "integration": {
+    "narrativeAssetsJsonChanged": false,
+    "runtimeMappingsChanged": false,
+    "runtimeReview": "NOT_RUN_BY_SCOPE",
+    "webReview": "NOT_RUN_BY_SCOPE",
+    "visualAcceptance": "NOT_VERIFIED"
+  },
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

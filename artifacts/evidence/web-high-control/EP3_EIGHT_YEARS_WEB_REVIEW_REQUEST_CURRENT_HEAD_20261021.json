@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "candidateLimit": {"maxCandidatesPerCueAndFormat": 2, "portraitCandidate": 1, "landscapeCandidate": 1, "thirdCandidateAllowed": false},
+  "sceneId": "ep3_eight_years",
+  "sceneIds": ["ep3_eight_years"],
+  "assetId": "ep3-eight-years-cg",
+  "context": "EP3 ep3_eight_years: Nika and Leo discuss the eight-year silence in the Villa Serena office. A work folder and pier photograph remain between them; accountability must read before romance. Required cast Nika and Leo, adult identities, office daylight, no touch, no readable text, no Aurea mark, no extra cast, no UI or watermark.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": ["artifacts/evidence/web-high-control/EP3_THREE_SCENE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json", "artifacts/evidence/web-high-control/EP3_THREE_SCENE_RUNTIME_QA_CURRENT_HEAD_20261021.json"],
+  "reviewContract": "Review supplied actual pixels independently against the current-head brief and approved references. Check Nika/Leo identity and adult recognizability, office location/daylight, folder and pier photograph as a boundary, accountability before romance, anatomy, dialogue-safe desktop/mobile framing, and absence of extra cast, readable invented text, Aurea marks, romance/touch, baked UI or watermark. Return explicit PASS or REWORK with concrete pixel observations; no episode-final or release claim and no third candidate.",
+  "runtimeEvidence": ["artifacts/evidence/web-high-control/EP3_THREE_SCENE_RUNTIME_QA_CURRENT_HEAD_20261021.json", "output/playwright/ep3-three-scene-runtime/ep3_eight_years/desktop.png", "output/playwright/ep3-three-scene-runtime/ep3_eight_years/mobile-390.png", "output/playwright/ep3-three-scene-runtime/ep3_eight_years/mobile-360.png"],
+  "images": [
+    {"ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"ref": "giulia-approved-reference", "kind": "original", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"ref": "ep3-eight-years-portrait-candidate-1", "kind": "runtime", "sceneId": "ep3_eight_years", "path": "assets/production/cg/ep3-eight-years-cg.png", "sha256": "502b2be53d0b8d9553db36870893c56f93a021470546998e45d5a6888fcd6074"},
+    {"ref": "ep3-eight-years-landscape-candidate-1", "kind": "runtime", "sceneId": "ep3_eight_years", "path": "assets/production/cg/ep3-eight-years-cg-landscape.png", "sha256": "9f796ed2702e8104be51b6219b1efaf7022871eab8cbae85f46ce0ae95dc1229"}
+  ]
+}

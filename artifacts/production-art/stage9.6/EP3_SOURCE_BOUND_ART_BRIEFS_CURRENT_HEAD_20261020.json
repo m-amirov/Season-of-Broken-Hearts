@@ -4,7 +4,7 @@
   "stage": "9.6",
   "recordedAt": "2026-10-20",
   "status": "BRIEFS_READY_GENERATION_NOT_AUTHORIZED",
-  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
   "sourceBranch": "codex/stage9-full-season-architecture",
   "sourceBasis": "All source inputs below are hashed from the exact current committed HEAD; historical packet remains preserved.",
   "familyDecisionFile": {
@@ -53,7 +53,7 @@
     },
     {
       "path": "narrative/assets.json",
-      "sha256": "cdc3816606ebb7c9c6bbc10e232619215ad193a1782568b32927b1658fb8307f"
+      "sha256": "ee74c95b7a7b1d1f571086cb360d8edb8e541a6a7c1702d7b8d1d1a639a3d610"
     },
     {
       "path": "narrative/episodes/manifest.json",

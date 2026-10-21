@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_FIRST_BATCH_GATE_RESULT_RECOVERY",
+  "stage": "9.7",
+  "recordedAt": "2026-10-20",
+  "runId": "2026-10-20T06-43-22-344Z-production-art-b0d9ea",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "scope": {
+    "episode": 3,
+    "sceneId": "ep3_old_photo",
+    "pairCount": 1,
+    "plannedPngCount": 2,
+    "generationInvoked": false,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "ep4To10Touched": false
+  },
+  "capability": {
+    "status": "PASS",
+    "challengeId": "cap-7a622ba132cea0d16fe7",
+    "sessionId": "01a15806-d4aa-7322-b8e6-0bd4557b704e",
+    "turnId": "01a1580a-fae1-7222-a3a8-6d895d310aba",
+    "presence": "PRESENT",
+    "serviceAvailability": "UNKNOWN",
+    "observedTool": "image_gen.imagegen",
+    "attestationFile": ".ceos-runs/2026-10-20T06-43-22-344Z-production-art-b0d9ea/capability-attestation/attestations/cap-7a622ba132cea0d16fe7.json"
+  },
+  "producerRoute": {
+    "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "agentId": "01a1580d-4625-7bb0-bfb8-f2f9bbede8d7",
+    "parentSessionId": "01a15806-d4aa-7322-b8e6-0bd4557b704e",
+    "agentRole": "ceos_asset_generator",
+    "actualModel": "gpt-5.6-terra",
+    "actualEffort": "medium",
+    "bindingMode": "CURRENT_TURN",
+    "traceFile": "C:/Users/user/.codex/sessions/2026/10/20/rollout-2026-10-20T09-43-47-01a1580d-4625-7bb0-bfb8-f2f9bbede8d7.jsonl",
+    "traceSha256": "b87bbdcd599aaa5c6b9c52576d0f871b5e6c55299fd6dcb1a6e3e7fff0a6fc43"
+  },
+  "artBriefVerify": {
+    "status": "BLOCKED_ART_BRIEF",
+    "command": "ceos art-brief-verify --file artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json --project . --json",
+    "sourceCurrentness": "EXACT_HEAD",
+    "issues": [
+      "sceneId must be an S-numbered scene",
+      "cue must contain authored id and [chunk, paragraph] position",
+      "requiredCast must be a nonempty list of unique character IDs",
+      "narrativeActions must describe substantive authored actions for cast members",
+      "sceneContinuity must describe preceding/following scene events",
+      "characterReferences[0] has unknown character",
+      "characterReferences[1] has unknown character",
+      "characterReferences[1] duplicates a character",
+      "characterReferences[2] has unknown character",
+      "characterReferences[2] duplicates a character",
+      "characterReferences[3] has unknown character",
+      "characterReferences[3] duplicates a character",
+      "characterReferences[4] has unknown character",
+      "characterReferences[4] duplicates a character",
+      "forbiddenProps must be an array of strings (possibly empty)",
+      "desktop must specify substantive composition/framing and all required visible cast",
+      "portrait must specify substantive composition/framing and all required visible cast",
+      "qualityAcceptance must specify at least 3 measurable art checks",
+      "candidateNumber exceeds bounded maximum of 2; stop and escalate"
+    ],
+    "blocker": "Current CEOS verifier is legacy Stage 9.4-shaped and cannot validate the real EP3 ep3_* packet without a supported EP3 brief contract."
+  },
+  "finalStatus": "BLOCKED_BEFORE_GENERATION",
+  "notes": [
+    "No Image Gen call was made in either route probe.",
+    "No PNG, placeholder, runtime mapping, EP2 file or prior CEOS run was changed.",
+    "Capability and route PASS do not override the source-bound brief gate."
+  ]
+}

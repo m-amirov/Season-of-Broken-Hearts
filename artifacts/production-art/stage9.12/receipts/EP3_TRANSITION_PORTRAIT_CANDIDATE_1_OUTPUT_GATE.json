@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-transition-cg.candidate1.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "fcda0044299c1d5d1ee190b32a62ae4159a3cf71de1f33d9956dc8339a55e65f",
+  "bytes": 2286069,
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "alpha": {
+    "opaque": 1572864,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1572864,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 1536
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-21T13:52:14.530Z"
+}

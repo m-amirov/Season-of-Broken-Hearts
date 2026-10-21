@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_EP3_REPORT_DELIVERY_RUNTIME_PIXEL_QA",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "baseUrl": "http://127.0.0.1:4301/",
+  "targetScene": "ep3_report_delivery",
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "mobile-360",
+      "width": 360,
+      "height": 640
+    }
+  ],
+  "captures": [
+    {
+      "sceneId": "ep3_report_delivery",
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_report_delivery",
+      "assetId": "ep3-report-delivery-cg",
+      "assetFormat": "landscape",
+      "assetRequestedFormat": "landscape",
+      "assetSrc": "/assets/production/cg/ep3-report-delivery-cg-landscape.png",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "expectedSceneId": "ep3_report_delivery",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "language": "ru",
+      "dialogueText": "Ника распечатала отчёт и приложила его к рабочему журналу. В нём не было объяснения их прошлого — только измерения, фото и одна неудобная строка о проходе персонала.",
+      "screenshot": "output/playwright/ep3-report-delivery-runtime/desktop/ep3-report-delivery.png",
+      "screenshotSha256": "c9aa328c3cc9ba621dc54bbba1c4b88badc8a0c0f6a1878e6f4b494e9f677961",
+      "screenshotBytes": 1152630
+    },
+    {
+      "sceneId": "ep3_report_delivery",
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_report_delivery",
+      "assetId": "ep3-report-delivery-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep3-report-delivery-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "expectedSceneId": "ep3_report_delivery",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "ru",
+      "dialogueText": "Ника распечатала отчёт и приложила его к рабочему журналу. В нём не было объяснения их прошлого — только измерения, фото и одна неудобная строка о проходе персонала.",
+      "screenshot": "output/playwright/ep3-report-delivery-runtime/mobile-390/ep3-report-delivery.png",
+      "screenshotSha256": "0403de6ac26e4bde8c94f22c6d06bd2b8db803e2ae07e5c5b199408253a448ff",
+      "screenshotBytes": 440908
+    },
+    {
+      "sceneId": "ep3_report_delivery",
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_report_delivery",
+      "assetId": "ep3-report-delivery-cg",
+      "assetFormat": "portrait",
+      "assetRequestedFormat": "portrait",
+      "assetSrc": "/assets/production/cg/ep3-report-delivery-cg.png",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "expectedSceneId": "ep3_report_delivery",
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "language": "ru",
+      "dialogueText": "Ника распечатала отчёт и приложила его к рабочему журналу. В нём не было объяснения их прошлого — только измерения, фото и одна неудобная строка о проходе персонала.",
+      "screenshot": "output/playwright/ep3-report-delivery-runtime/mobile-360/ep3-report-delivery.png",
+      "screenshotSha256": "51f6ae2dbc6e79dbb3551b0a74b2a540d4bb07d3095911e6a4d1c1c6ac51be7f",
+      "screenshotBytes": 323460
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

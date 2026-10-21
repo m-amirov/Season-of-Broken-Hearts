@@ -1,0 +1,62 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_accountability\_choice",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_accountability\_choice"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-accountability-choice-portrait-candidate-2",  
+"ep3-accountability-choice-landscape-candidate-2"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-accountability-choice-portrait-candidate-2",  
+"ep3-accountability-choice-landscape-candidate-2"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Candidate 2 provides visually acceptable coverage of the accountability-choice scene in both portrait and landscape compositions. Nika and Leo remain recognizable against their approved adult character references, with no material identity drift. The daylight office environment, coastal view, wooden desk, folders, and restrained character performances support the Villa Serena setting. Leo is visibly writing in his own open notebook rather than reaching for Nika's evidence. Nika retains her separate folder, maintains a guarded and evaluative expression, and does not surrender physical control of her materials. Their positions across the desk preserve interpersonal boundaries without romantic framing or physical contact. The writing action is substantially clearer than a passive conversation pose and supports the intended reporting commitment. Neither composition contains an additional character, readable document text, visible interface, watermark, or route-lock imagery. The exact reporting destination and deadline cannot be established from static, textless artwork; those narrative particulars require dialogue-level verification and are not claimed as visually confirmed. No material visual defect warrants another art revision.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference presents an adult woman with a voluminous, loosely waved dark-brown bob, expressive eyes, defined brows, subtle freckles, and softly angular facial features. Small gold hoop earrings and a delicate gold necklace are visible. She wears a translucent ivory linen shirt, light beige trousers, and a brown leather belt. The three-panel reference establishes her full-body proportions, frontal facial structure, and three-quarter profile. Her appearance is naturalistic, with restrained makeup and realistic skin texture."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference presents an adult man with tousled, medium-length light-brown hair, light hazel-green eyes, an angular jaw, prominent cheekbones, a straight nose, subtle facial stubble, and lightly freckled skin. He wears an olive-green collared shirt beneath a pale linen jacket, light trousers, and a brown leather shoulder bag. The reference includes a full-body view, a frontal facial close-up, and a downward-looking three-quarter portrait. His appearance combines youthful facial proportions with realistic skin detail and a restrained, contemplative expression."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference depicts a mature adult woman with dark hair containing prominent silver streaks, gathered into a loose low bun. She has warm brown eyes, visible facial lines, small gold hoop earrings, and a composed expression. Her clothing consists of a muted sage-green collared shirt, a beige work apron, dark trousers, and practical black footwear. The full-body, frontal, and profile views establish a distinct older character identity. No corresponding figure appears in either candidate scene, consistent with the requirement that only Nika and Leo be present."  
+},  
+{  
+"ref": "ep3-accountability-choice-portrait-candidate-2",  
+"path": "assets/production/cg/ep3-accountability-choice-cg.png",  
+"sha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523",  
+"observation": "The portrait composition shows Nika seated on the left and Leo seated opposite her on the right at a substantial wooden desk. Nika retains her dark wavy bob, recognizable facial structure, gold jewelry, and natural skin appearance. She wears a pale blue shirt beneath an olive cardigan. Her left hand supports her chin while holding a pen, and her right hand rests beside a closed beige folder positioned on her side of the desk. Her expression appears serious and questioning. Leo has tousled brown hair, a recognizable angular profile, and olive-toned clothing beneath a brown outer layer. His hand holds a pen against an open notebook directly in front of him. He looks downward toward his writing rather than reaching toward Nika. Daylight enters through blue-framed openings behind them, with plants, office binders, and a coastal landscape visible. The figures do not touch. No readable writing, interface elements, watermarks, or additional characters are visible."  
+},  
+{  
+"ref": "ep3-accountability-choice-landscape-candidate-2",  
+"path": "assets/production/cg/ep3-accountability-choice-cg-landscape.png",  
+"sha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558",  
+"observation": "The landscape composition provides a wider view of the same two-person office interaction. Nika occupies the left side of the desk, with her beige folder visibly separate from Leo's open notebook. She leans back slightly, resting her chin on one hand while watching Leo with a guarded, attentive expression. Her dark wavy hair, facial proportions, and gold jewelry remain consistent with the approved reference. Leo sits on the right, wearing a brown textured outer layer over an olive shirt, light trousers, a wristwatch, and a leather shoulder strap. His tousled brown hair, narrow facial proportions, and angular jaw remain recognizable relative to his reference. His pen visibly contacts the notebook page, making the writing action clear. The wooden desk forms a physical boundary between them. Shelving, binders, olive branches, blue-framed openings, bright daylight, and distant water establish a coherent coastal office environment. The notebook contains no legible text. No touching, romantic gesture, third character, interface, watermark, or route-lock symbol is visible."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[  
+"The specific reporting action, intended recipient, and deadline cannot be independently verified from these textless still images. The visible writing action supports the scene's accountability premise, but confirmation of Leo's explicit verbal commitment requires separate narrative or dialogue evidence."  
+\]  
+}

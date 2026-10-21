@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "candidateLimit": {
+    "maxCandidatesPerCueAndFormat": 2,
+    "portraitCandidate": 1,
+    "landscapeCandidate": 1,
+    "thirdCandidateAllowed": false
+  },
+  "sceneId": "ep3_survey_decline_response",
+  "sceneIds": ["ep3_survey_decline_response"],
+  "assetId": "ep3-survey-decline-response-cg",
+  "context": "EP3 scene ep3_survey_decline_response, source-bound brief ep3-office-report-chain-decline-v1. Nika stays in the office and asks for the full report through Matteo; Leo sends materials without holding her in conversation. Required cast: Nika and Leo. Location: Villa Serena office with shutters, work table and open doorway in neutral daytime. Required action: Nika remains at work while Leo stands at professional distance with a neutral report folder. Forbidden: Matteo visible, readable report text, Aurea logo or mark, romantic waiting gesture, kiss, embrace, baked UI, watermark, extra cast. Dialogue rendered in the supplied runtime captures: Ника осталась в кабинете и попросила прислать отчёт через Маттео. Она не обязана была превращать рабочий день в проверку личной готовности.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021_V2.json",
+    "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021_V2.json"
+  ],
+  "reviewContract": "Review the supplied actual pixels independently against the current-head source-bound brief and approved character references. Check Nika and Leo adult identity and recognizability, office location and daytime light, Nika remaining at work while Leo brings a neutral report folder, professional non-romantic boundary, anatomy, absence of Matteo, absence of readable report text, logos, baked UI and watermarks, independent portrait and landscape composition, and desktop/mobile dialogue-safe readability. Return explicit PASS or REWORK with concrete pixel observations. Use only material blocking findings with impactCode values WRONG_CHARACTER, WRONG_ACTOR_OR_ACTION, WRONG_LOCATION_OR_TIME, STORY_CRITICAL_PROP_MISSING, STORY_CRITICAL_PROP_OBSCURED, ESSENTIAL_CHARACTER_UNRECOGNIZABLE, NARRATIVE_CONTINUITY_CONTRADICTION, DIALOGUE_OR_CONTROLS_UNREADABLE, CRITICAL_SCENE_MAPPING, ESSENTIAL_GESTURE_UNREADABLE, ESSENTIAL_SUBJECT_CROPPED, STORY_ACTION_UNREADABLE, MATERIAL_RUNTIME_READABILITY. Do not claim episode-final or release acceptance, do not request a third candidate, and do not infer anything not visible in supplied pixels.",
+  "runtimeEvidence": [
+    "artifacts/evidence/web-high-control/EP3_DECLINE_RESPONSE_RUNTIME_QA_CURRENT_HEAD_20261021_V2.json",
+    "output/playwright/ep3-decline-response-desktop-1280x720-v2.png",
+    "output/playwright/ep3-decline-response-mobile-390x844-v2.png",
+    "output/playwright/ep3-decline-response-mobile-360x640-v2.png"
+  ],
+  "images": [
+    {
+      "ref": "nika-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "ref": "leo-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    },
+    {
+      "ref": "giulia-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+    },
+    {
+      "ref": "ep3-survey-decline-response-portrait-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_survey_decline_response",
+      "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4"
+    },
+    {
+      "ref": "ep3-survey-decline-response-landscape-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_survey_decline_response",
+      "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25"
+    }
+  ]
+}

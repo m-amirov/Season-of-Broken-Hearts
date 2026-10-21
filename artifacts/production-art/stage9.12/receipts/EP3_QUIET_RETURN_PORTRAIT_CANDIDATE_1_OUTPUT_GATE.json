@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-quiet-return-cg.candidate1.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "6dc5ef94af2696ad08feb1bc7d629ad3e40ad66c27b258e8a6dbe3ea96fb89fb",
+  "bytes": 2254667,
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "alpha": {
+    "opaque": 1572864,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1572864,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 1536
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-21T11:54:05.054Z"
+}

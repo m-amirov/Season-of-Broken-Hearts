@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-repair-canon",
+  "status": "CANON_READY_CANDIDATE_2_OF_2",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBriefPacket": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "sourceBoundBriefSha256": "8c3e78acc10ab06f7740b38a5408c0eb480350d2cfd714d6b21c2531416db90e",
+  "sceneId": "ep3_document_check_response",
+  "assetId": "ep3-document-check-response-cg",
+  "familyId": "ep3-archive-document-check",
+  "candidateNumber": 2,
+  "candidateLimit": 2,
+  "requiredCast": ["nika", "leo"],
+  "characterReferenceIds": ["nika", "leo"],
+  "narrativeCue": "Nika records the matching date and mark in the working log as a provisional observation, while Leo accepts the distinction between verified terms and a drawing lead.",
+  "requiredCorrection": {
+    "beatLegibility": "Make Nika visibly write a provisional date-and-mark observation in the open working log with one hand while the matching copies remain visible on the desk; do not present the correspondence as conclusive proof.",
+    "identity": "Preserve the approved adult Nika and Leo facial identity, age cues, hair, and wardrobe continuity from the canonical references.",
+    "continuity": "Keep the archive-room daylight, professional distance, papers and open working log; no romantic contact, accusation, readable invented text, extra cast, UI, logo or watermark."
+  },
+  "forbidden": ["readable contract clauses", "branch-specific labels", "Aurea logo", "premature accusation", "romantic contact", "third candidate", "baked dialogue, UI, logo or watermark"],
+  "dualFormat": {
+    "portrait": {"width": 1024, "height": 1536, "safeArea": "Keep Nika's writing hand, open log, matching pages and both faces above the dialogue-safe area at 360x640 and 390x844."},
+    "landscape": {"width": 1672, "height": 941, "safeArea": "Keep Nika's writing action, open log, matching pages and both faces readable above the dialogue band at desktop."
+    }
+  },
+  "qualityAcceptance": ["Real native Terra/ImageGen outputs only", "Portrait and landscape independently composed", "Approved Nika and Leo identity/age/wardrobe continuity", "Provisional recording action is visually stronger than passive document comparison", "No material mobile crop or narrative ambiguity"],
+  "priorWebFinding": "Candidate 1 actual-pixel DEV Web High REWORK: Nika holds both documents while the open working log and pen remain unused; the provisional evidence-recording action is not visually legible in either format.",
+  "priorWebFindingIds": ["EP3-DCR-001", "EP3-DCR-002"],
+  "priorWebEvidence": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+  "generationRule": "Candidate 2 is the final allowed generation for this scene. Preserve candidate 1 byte-exact evidence and stop after this pair regardless of verdict; no hidden regeneration or candidate 3."
+}

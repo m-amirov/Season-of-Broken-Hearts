@@ -1,0 +1,93 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_document\_check\_response",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "REWORK",  
+"reviewedItems": \[  
+"ep3\_document\_check\_response"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"matteo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-document-check-response-portrait-candidate-1",  
+"ep3-document-check-response-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"matteo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-document-check-response-portrait-candidate-1",  
+"ep3-document-check-response-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "REWORK required for narrative-action clarity in both runtime formats. The portrait and landscape compositions preserve recognizable adult Nika and Leo identities, a credible professional archive-office environment, and restrained, task-focused interaction. Both show Nika comparing documents while Leo studies the material. An open working log and pen are present, supporting cautious investigation rather than a definitive discovery. However, neither composition visibly depicts Nika recording the matching date and mark in that log. Her hands remain occupied holding documents, and the pen is not being used to enter an observation. The images therefore communicate document examination more clearly than the specifically authored evidence-recording action. This is a material narrative-beat omission, not an identity, casting, environment, or inappropriate-content failure. Both formats should be revised to make Nika's provisional recording action visually unambiguous without introducing readable invented text or presenting the match as conclusive proof. No additional characters, romantic interaction, baked interface elements, or watermarks are visible.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "Three-panel character reference showing an adult woman with a short, voluminous, tousled dark-brown bob, expressive dark eyebrows, brown-hazel eyes, and naturally textured skin. She wears a loose ivory linen button-down shirt, beige trousers, a brown leather belt, small gold hoop earrings, and a delicate pendant necklace. A dark leather shoulder bag appears in the full-body view. The reference establishes Nika's facial proportions, hairstyle, understated professional-casual styling, and distinctive accessories."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "Three-view reference showing an adult man with medium-length, swept, slightly disheveled light-brown hair, light hazel-green eyes, a narrow face, defined cheekbones, and a largely clean-shaven appearance. He wears a light beige textured linen jacket over a muted olive-green collared shirt, pale trousers, a brown leather belt, and dark brown loafers. A leather shoulder satchel and rolled architectural-looking papers appear in the full-body panel. His facial structure and lighter hair distinguish him from the separate Matteo reference."  
+},  
+{  
+"ref": "matteo-approved-reference",  
+"path": "assets/characters/references/originals/matteo.png",  
+"sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",  
+"observation": "Three-view reference showing an adult man with thick, dark, swept-back wavy hair, strong dark eyebrows, a broader and more angular facial structure, and conspicuous dark facial stubble. He wears a white linen shirt with rolled sleeves, pale trousers, a brown leather belt, and dark loafers. A brown document case appears in the full-body view. The darker hair, facial hair, and white-shirt styling provide clear visual distinctions from Leo."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "Three-view reference depicting a mature adult woman with dark hair threaded with gray, loosely gathered into a low bun. She has expressive dark eyes, visible natural facial lines, and a composed, approachable expression. Her outfit consists of a muted sage-green button-down work shirt, a beige waist apron with large pockets, dark trousers, and black shoes. Small gold hoop earrings are visible. This character does not appear in either runtime composition."  
+},  
+{  
+"ref": "ep3-document-check-response-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-document-check-response-cg.png",  
+"sha256": "26c821c41bf3406eb342307446c528341b64c9c8012810140b4b7de3653b8bc3",  
+"observation": "Portrait composition showing Nika seated at a wooden archive-office desk, holding two separate pale document sheets and looking down at them with a serious, analytical expression. Her short dark wavy bob, gold earrings, pendant necklace, and ivory shirt closely match her approved reference; an olive outer layer has been added. Leo stands beside and slightly behind her, looking toward the documents. His light-brown hair, narrow facial structure, beige jacket, leather satchel strap, and pale trousers remain consistent with his approved identity, although his shirt is darker than in the reference. An open working notebook or ledger and a pen lie on the desk in the foreground. Bookshelves, archival materials, framed documents, and warm daylight establish a plausible professional research environment. Nika's hands are occupied holding papers rather than writing in the log. The composition contains only the two intended characters. No romantic gesture, readable invented document text, interface overlay, or watermark is apparent."  
+},  
+{  
+"ref": "ep3-document-check-response-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-document-check-response-cg-landscape.png",  
+"sha256": "098b2882cd4b716c9d4fd2ddeb694f1140f9743a0eec5eb00b6556e1d8953cbe",  
+"observation": "Landscape composition showing Nika seated on the left side of a broad wooden desk, comparing two pale document sheets with faint, largely illegible printed structures and circular markings. Leo leans forward from the right, supporting himself against the desk while studying the material. Nika's characteristic short, voluminous dark-brown hair, facial features, necklace, and ivory shirt remain recognizable. Leo retains his light-brown swept hairstyle, lean facial structure, beige jacket, darker collared shirt, and leather shoulder strap. An open notebook or working log occupies the central foreground, with faint handwritten-looking marks and diagrams that are not clearly readable. Archival boxes, shelving, framed material, a desk lamp, and an open sunlit window reinforce the archive-office setting. Both characters remain focused on the documents, with no visible romantic interaction. Nika holds the sheets rather than making an entry in the open log. No additional cast members, baked UI elements, or watermarks are visible."  
+}  
+\],  
+"findings": \[  
+{  
+"id": "EP3-DCR-001",  
+"severity": "major",  
+"status": "open",  
+"impactCode": "NARRATIVE\_ACTION\_MISSING",  
+"authoredCue": "Nika records a matching date and mark in the working log without treating the correspondence as proof.",  
+"observation": "In the portrait candidate, Nika holds two loose documents while looking down at them. The working log is open on the desk, but the pen rests separately and neither of Nika's hands is engaged in writing. The composition establishes inspection of evidence but does not clearly establish the act of recording the date-and-mark correspondence.",  
+"playerImpact": "The player can recognize that Nika and Leo are examining archival documents, but may miss the specific narrative progression in which Nika preserves a potentially meaningful correspondence in her working log. The distinction between noticing evidence and formally recording a provisional observation is not visually communicated.",  
+"evidenceRef": "ep3-document-check-response-portrait-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+},  
+{  
+"id": "EP3-DCR-002",  
+"severity": "major",  
+"status": "open",  
+"impactCode": "NARRATIVE\_ACTION\_MISSING",  
+"authoredCue": "The landscape presentation must preserve Nika's action of recording the matching date and mark while maintaining the cautious, non-conclusive evidence status.",  
+"observation": "The landscape candidate provides a clearer view of both sheets and the open working log, but Nika continues to hold the documents with both hands. No visible writing action connects her to the log. The faint markings on the documents and notebook contribute to the investigative atmosphere but do not independently establish that she has entered the matching observation.",  
+"playerImpact": "The wider composition reinforces document comparison and professional collaboration, yet it does not resolve whether Nika has recorded the match. Players may interpret the scene as an earlier inspection stage rather than the intended provisional evidence-recording moment.",  
+"evidenceRef": "ep3-document-check-response-landscape-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+}  
+\],  
+"unresolved": \[\]  
+}

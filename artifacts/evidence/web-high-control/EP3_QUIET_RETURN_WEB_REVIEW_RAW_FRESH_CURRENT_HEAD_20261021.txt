@@ -1,0 +1,55 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_quiet\_return",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_quiet\_return"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-quiet-return-portrait-candidate-1",  
+"ep3-quiet-return-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-quiet-return-portrait-candidate-1",  
+"ep3-quiet-return-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS — Both runtime compositions satisfy the visually assessable requirements of ep3-office-quiet-return-v1. Nika is seated at a work desk beside large office windows, visibly writing in an open journal. Leo is physically separated from her, positioned at the doorway, and depicted departing while carrying work materials. Both characters remain recognizably consistent with their approved references. The office environment, documentary materials, and restrained character expressions communicate a professional aftermath rather than romantic reconciliation. Late-day sunlight is distinctly warm, but the staging does not establish a forgiveness or romantic-closure moment. Both compositions contain only the required cast. No kiss, embrace, visible Aurea branding, baked UI, watermark, or clearly readable branch-specific journal notes are observed. The portrait and landscape compositions preserve the same narrative action while adapting their framing. Leo's exact reporting statement and the doorway's west-wing destination cannot be independently verified from still pixels; these are nonvisual continuity checks rather than demonstrated visual defects.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference presents Nika with a short, voluminous, tousled dark-brown bob, expressive brown eyes, natural facial texture, small gold hoop earrings, and a delicate gold pendant necklace. She wears a loosely buttoned ivory linen shirt with rolled sleeves, high-waisted beige trousers, a brown leather belt, and brown sandals. A large dark-brown leather shoulder bag completes her appearance. The reference includes a full-body view and two facial close-ups, establishing her hairstyle, facial proportions, clothing, and accessories."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference presents Leo as a slim young adult man with medium-length, loosely swept brown hair, light hazel-green eyes, subtle facial texture, and an angular jawline. His clothing consists of a light beige linen jacket and matching trousers over a muted olive-green shirt, complemented by a brown leather belt and brown loafers. A weathered brown leather satchel crosses his shoulder. The full-body reference includes rolled documents, while two close-ups establish his facial appearance and hairstyle."  
+},  
+{  
+"ref": "ep3-quiet-return-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-quiet-return-cg.png",  
+"sha256": "6dc5ef94af2696ad08feb1bc7d629ad3e40ad66c27b258e8a6dbe3ea96fb89fb",  
+"observation": "The portrait composition places Nika prominently in the foreground at a wooden desk, looking down while actively writing with a dark pen in an open journal. Her tousled brown bob, ivory linen shirt, gold jewelry, and facial appearance remain consistent with her approved reference. The desk contains architectural or geographic drawings, papers, books, and writing instruments. Behind her, Leo stands at an open wooden doorway with one hand on the door handle, his body oriented toward the exit while his head turns back into the room. He wears his established beige linen outfit and brown leather satchel and carries a rectangular brown work item. Warm sunlight enters through the doorway. The subjects remain physically separated and neither displays an overtly affectionate expression. No additional people, visible logos, watermarks, or baked interface elements appear. Journal markings are visible but do not resolve into clearly readable branch-specific statements."  
+},  
+{  
+"ref": "ep3-quiet-return-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-quiet-return-cg-landscape.png",  
+"sha256": "4b0bcc2803e6530e2741520801f1eefee7b781268d3b983b6b5a9280527b38a3",  
+"observation": "The landscape composition preserves Nika writing in an open journal at a substantial wooden worktable, with her head lowered and pen contacting the page. Shelves, rolled plans, framed maps, books, and a large window establish the professional office setting. Leo appears in the right background, moving outward through the open doorway, with his legs arranged in a walking pose and his head turned back toward the interior. He carries a rectangular framed document or photograph showing a monochrome architectural or landscape image and wears the familiar brown leather satchel. The two characters retain the hairstyles, facial characteristics, and clothing established by their references. Bright exterior architecture and vegetation are visible beyond the doorway. Sunlight creates pronounced late-afternoon highlights without physical intimacy between the characters. No third character, embrace, kiss, recognizable Aurea branding, baked UI, or watermark is visible. The open journal and surrounding documents contain fine markings, but no clearly readable branch-specific notes are established."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[  
+"Leo's specific spoken next-reporting action cannot be verified through either still composition. Dialogue continuity requires confirmation against the corresponding scene script or runtime dialogue.",  
+"Both runtime compositions visually establish Leo's departure through an office doorway, but neither establishes that the destination is specifically the west wing. Directional continuity requires confirmation against the scene's spatial layout or narrative context."  
+\]  
+}

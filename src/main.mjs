@@ -125,10 +125,10 @@ async function boot() {
         height: window.innerHeight
       };
       const nextScene = engine.graph().scenes.find(candidate => candidate.id === (scene.next ?? scene.nextEpisodeStart));
-      if (nextScene) assetManager.preloadSceneAsset(nextScene, assetViewport).catch(() => {});
+      if (nextScene) assetManager.preloadSceneAssetOptional(nextScene, assetViewport);
       for (const choice of engine.choices()) {
         const choiceScene = engine.graph().scenes.find(candidate => candidate.id === choice.to);
-        if (choiceScene) assetManager.preloadSceneAsset(choiceScene, assetViewport).catch(() => {});
+        if (choiceScene) assetManager.preloadSceneAssetOptional(choiceScene, assetViewport);
       }
     };
 

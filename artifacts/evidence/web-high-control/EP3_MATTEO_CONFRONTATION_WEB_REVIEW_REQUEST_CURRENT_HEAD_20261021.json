@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "sceneId": "ep3_matteo_confrontation",
+  "sceneIds": ["ep3_matteo_confrontation"],
+  "assetId": "ep3-matteo-confrontation-cg",
+  "context": "EP3 Matteo confrontation: Nika must not protect Matteo from the truth; she hands him the appendix while Leo witnesses. Review both formats and exact-head runtime captures for adult Nika, Matteo and Leo identity, professional confrontation, clear document handoff without coercion or romance, no readable invented text, no extra cast, no baked UI or watermark.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": ["artifacts/production-art/stage9.9/EP3_DOCUMENT_BATCH_NATIVE_OUTPUTS_20261021.json", "artifacts/evidence/web-high-control/EP3_DOCUMENT_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json"],
+  "reviewContract": "Review supplied actual pixels independently against the source-bound brief, approved Nika/Leo/Matteo/Giulia references, and current-head runtime screenshots. Check identity and age, readable confrontation and document handoff, professional distance, anatomy, dialogue-safe desktop/mobile framing, absence of readable invented text, romantic touch, extra cast, UI or watermark. Return explicit PASS or REWORK with concrete pixel observations. No episode-final or release claim.",
+  "runtimeEvidence": ["artifacts/evidence/web-high-control/EP3_DOCUMENT_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json", "output/playwright/ep3-document-batch-runtime/ep3_matteo_confrontation/desktop.png", "output/playwright/ep3-document-batch-runtime/ep3_matteo_confrontation/mobile-390.png"],
+  "images": [
+    {"ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"ref": "matteo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"},
+    {"ref": "giulia-approved-reference", "kind": "original", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"ref": "ep3-matteo-confrontation-portrait-candidate-1", "kind": "runtime", "sceneId": "ep3_matteo_confrontation", "path": "assets/production/cg/ep3-matteo-confrontation-cg.png", "sha256": "58ff34080dd25848f167a5ac9309d539fa259928b1aff02cd1aa3b9f6e045bf1"},
+    {"ref": "ep3-matteo-confrontation-landscape-candidate-1", "kind": "runtime", "sceneId": "ep3_matteo_confrontation", "path": "assets/production/cg/ep3-matteo-confrontation-cg-landscape.png", "sha256": "79da9893be933d8d825531ff954fc5bbebdd6ae9dcf1c15117800141a65dca80"}
+  ]
+}

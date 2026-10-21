@@ -1,0 +1,1855 @@
+{
+  "schemaVersion": 1,
+  "kind": "EPISODE_SOURCE_BOUND_ART_BRIEF_PACKET",
+  "stage": "9.6",
+  "recordedAt": "2026-10-20",
+  "status": "BRIEFS_READY_GENERATION_NOT_AUTHORIZED",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBranch": "codex/stage9-full-season-architecture",
+  "sourceBasis": "All source inputs below are hashed from the exact current committed HEAD; historical packet remains preserved.",
+  "familyDecisionFile": {
+    "path": "artifacts/production-art/stage9.6/EP3_VISUAL_FAMILIES_FINAL_20261020.json",
+    "sha256": "5ac025fb0704af39200da333fc9be2d4de23f1ace264041a24d9d7be9163ea47"
+  },
+  "scope": {
+    "episode": 3,
+    "sceneCount": 15,
+    "familyCount": 12,
+    "briefCount": 15,
+    "plannedPortraitOutputs": 15,
+    "plannedLandscapeOutputs": 15,
+    "generationInvoked": false,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "ep4To10Touched": false
+  },
+  "preGenerationInventory": {
+    "headAuthoredScenes": 15,
+    "headEp3AssetMappings": 0,
+    "headRegisteredEp3ProductionPng": 0,
+    "mappingDecision": "Do not add runtime mappings in Stage 9.6; integration is a later separately authorized stage."
+  },
+  "dirtyWorktreeBoundary": {
+    "excludedPaths": [
+      "narrative/assets.json",
+      ".ceos-runs/",
+      ".ceos-evidence/",
+      "artifacts/production-art/stage9.4/",
+      "assets/production/cg/",
+      "output/playwright/"
+    ],
+    "reason": "Existing EP2 work and evidence are preserved byte-for-byte and are outside Stage 9.6.",
+    "ep3SourceReadFrom": "HEAD:narrative/episodes/ep-03.json",
+    "ep3MappingReadFrom": "HEAD:narrative/assets.json"
+  },
+  "sourceFiles": [
+    {
+      "path": "narrative/episodes/ep-03.json",
+      "sha256": "027b852c293d966c5e571da03c78fcd9e5daf9ad78c30e6d22f0737d5bffeb66"
+    },
+    {
+      "path": "narrative/graph.json",
+      "sha256": "64e58adddd23ffe4cc3fbbb7061e7b9aba7a20807d3c45a9dc9eb42d1b81cd8a"
+    },
+    {
+      "path": "narrative/assets.json",
+      "sha256": "2eb781cd72a45baf75c0e63bf289cfb2d6f67625b91ed5d22dfc3a0f4f41e6ec"
+    },
+    {
+      "path": "narrative/episodes/manifest.json",
+      "sha256": "f942a3bb77c7e0a18c59f3642d810652ba0f6453590f04ba129a6b565c62e86f"
+    },
+    {
+      "path": "narrative/EPISODE_OUTLINE.md",
+      "sha256": "0b97faafa028032af7f8170f95f3991dacdaca23245043846728e041794d2ea8"
+    },
+    {
+      "path": "narrative/NARRATIVE_BIBLE.md",
+      "sha256": "6ce57ac42b4251a45e00aff9ff5064081e23b57e3ab1320d52c33de559e075c1"
+    },
+    {
+      "path": "narrative/ROUTE_MAP.md",
+      "sha256": "3f10a073399ccdb5f7e9e3bb5c12766b401b4fc8fe5a48af969edf95ea5a855d"
+    },
+    {
+      "path": "narrative/STORY_PROMISES.md",
+      "sha256": "00141fecf16a80b5a22760371d4c25b2e1252c56b1332ac24704803f37f84013"
+    },
+    {
+      "path": "narrative/STYLE_GUIDE.md",
+      "sha256": "d8b66fc2689b461434bf74a01c63a43e127cda4c9a224ae27c3ae2455fefc466"
+    },
+    {
+      "path": "docs/season/TIMELINE_AND_KNOWLEDGE_MATRIX.md",
+      "sha256": "6916386948b73145031b6452e4fd8ed9bcdeac14df3b78c0174c17c539f11032"
+    },
+    {
+      "path": "artifacts/art-direction/ART_BIBLE.md",
+      "sha256": "7d46b6acd79b07be3e874f9147c80001efaa7bb8eddf7f3003e5a48c02092a96"
+    },
+    {
+      "path": "artifacts/art-direction/VISUAL_LANGUAGE.json",
+      "sha256": "a8aa986d0850005cea73cbb65793b70eadc83ce28e6adbced8112772a6776785"
+    },
+    {
+      "path": "artifacts/art-direction/PROHIBITED_PATTERNS.md",
+      "sha256": "ae309acb607139b2cc1ca0dcba18d0c20281231d5b702e7ab86766669d141071"
+    },
+    {
+      "path": "config/wardrobe-rules.json",
+      "sha256": "5bc93bcc296692a725eee79ab20204dd6ec91a679b21293301602bab7da5e246"
+    },
+    {
+      "path": "config/production-art-dimensions.json",
+      "sha256": "a95d321be585b7c66621052b5c4be32c48c989658820a807618d7e04a7b7e7ce"
+    },
+    {
+      "path": "artifacts/production-art/character-reference-manifest.json",
+      "sha256": "139e19c88c2887ae3f15998e2dc11f9fe49699d58e8a01877ac5efe8416da8a4"
+    }
+  ],
+  "characterReferences": [
+    {
+      "id": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "id": "giulia",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "id": "matteo",
+      "path": "assets/characters/references/originals/matteo.png",
+      "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "id": "bianca",
+      "path": "assets/characters/references/originals/bianca.png",
+      "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9",
+      "width": 1448,
+      "height": 1086
+    }
+  ],
+  "dualFormatContract": {
+    "portrait": {
+      "width": 1024,
+      "height": 1536,
+      "aspect": "2:3",
+      "safeArea": "Faces, hands, required props and natural lower dialogue space remain visible at 360x640, 390x844 and 430x932."
+    },
+    "landscape": {
+      "width": 1672,
+      "height": 941,
+      "aspect": "near-16:9",
+      "targetViewport": "1920x1080",
+      "safeArea": "Cast, action and location remain readable above the dialogue band; do not crop or stretch the portrait source."
+    },
+    "invariant": "Portrait and landscape share identity, wardrobe, props, action and knowledge state but use separate compositions."
+  },
+  "globalCanon": {
+    "medium": "cinematic semi-realistic 2D illustration",
+    "palette": [
+      "limestone",
+      "sea blue",
+      "night blue",
+      "olive",
+      "terracotta",
+      "warm cream",
+      "shadow"
+    ],
+    "camera": "human eye level, natural perspective, close/mid framing, no wide-angle distortion",
+    "cgRule": "Static narrative beats are unified full-scene CGs; no sprite staging unless separately justified.",
+    "textRule": "No baked dialogue, UI, logos, watermarks or readable invented document text.",
+    "prohibited": [
+      "identity drift",
+      "extra cast",
+      "generic luxury-fantasy hotel",
+      "hearts/petals/glow",
+      "floating figures",
+      "bad anatomy",
+      "premature Aurea terms",
+      "romantic touch without authored consent",
+      "portrait crop reused as landscape"
+    ]
+  },
+  "briefs": [
+    {
+      "briefId": "ep3-archive-old-photo-v1",
+      "familyId": "ep3-archive-old-photo",
+      "sceneIds": [
+        "ep3_old_photo"
+      ],
+      "assetIds": [
+        "ep3-old-photo-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Leo places a pier photograph on the archive table; Nika turns it face down and continues the inventory.",
+      "location": "Villa Serena archive room: old stone, archive boxes, banquet programmes and a practical work table.",
+      "timeOfDay": "Day 10; source does not specify an hour. Use neutral natural archive daylight.",
+      "narrativeActions": [
+        {
+          "character": "leo",
+          "action": "Places the pier photograph on the table without taking control of the archive."
+        },
+        {
+          "character": "nika",
+          "action": "Keeps the photograph under her control, turns it face down and returns to the inventory."
+        }
+      ],
+      "emotionalTone": "Guarded history under professional restraint; no invitation to intimacy.",
+      "knowledgeBoundary": "The old photograph and its date are visible as non-readable prop shapes; no Aurea mark or contract terms.",
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "First EP3 archive beat after the day-9 boundary; establish work layers while preserving EP1 identities.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive overshirt, taupe trousers, brown belt",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "relaxed practical archivist",
+          "accessoriesProps": [
+            "small gold hoops",
+            "thin chain",
+            "brown shoulder bag"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone architectural field jacket, muted olive shirt, cream trousers, brown leather satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "slender quiet field worker distinct from Matteo",
+          "accessoriesProps": [
+            "brown satchel",
+            "no un-authored blueprint tube"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika anchors the table and prop control; Leo stays slightly back with a narrower vertical silhouette. No romantic mirroring.",
+      "desktop": {
+        "composition": "Wide archive-table composition with boxes and the photograph in the foreground; keep both faces and Nika's hand action above the dialogue band.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "photograph",
+          "archive boxes",
+          "programmes"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical medium two-shot; Nika's hand and the photograph remain visible while the lower third stays naturally quiet for dialogue.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "photograph",
+          "archive work surface"
+        ]
+      },
+      "forbiddenProps": [
+        "readable invented date/text",
+        "Aurea document",
+        "embrace or kiss",
+        "extra staff",
+        "romanticized photo exchange"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Correct Nika/Leo identity and age",
+        "Photograph is visibly controlled by Nika",
+        "Archive reads as a working hotel archive, not a museum or luxury fantasy",
+        "Both formats preserve prop, faces and dialogue-safe silhouettes"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-old-photo-cg"
+    },
+    {
+      "briefId": "ep3-archive-survey-v1",
+      "familyId": "ep3-archive-survey",
+      "sceneIds": [
+        "ep3_survey_start"
+      ],
+      "assetIds": [
+        "ep3-survey-start-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Leo proposes the west-wing survey; Nika defines the professional boundary and the reporting obligation.",
+      "location": "Same Villa Serena archive room, with the work surface reset for a survey brief.",
+      "timeOfDay": "Day 10; neutral archive daylight, continuous with the preceding beat.",
+      "narrativeActions": [
+        {
+          "character": "leo",
+          "action": "Offers a survey brief for the west wing."
+        },
+        {
+          "character": "nika",
+          "action": "Holds the professional boundary and checks what the client actually signed before agreeing to the survey."
+        }
+      ],
+      "emotionalTone": "Practical negotiation and deliberate distance.",
+      "knowledgeBoundary": "The survey is proposed, but the staff niche conflict and Aurea connection are not yet shown.",
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate continuation from the archive photograph; retain the same work layers and identities.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive overshirt, taupe trousers, brown belt",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "relaxed practical organizer",
+          "accessoriesProps": [
+            "small gold hoops",
+            "thin chain",
+            "survey folder"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone architectural field jacket, muted olive shirt, cream trousers, brown leather satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "slender architectural field worker",
+          "accessoriesProps": [
+            "brown satchel",
+            "survey folder"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "The survey folder forms a neutral work boundary; keep Nika observational and Leo precise, with no touch.",
+      "desktop": {
+        "composition": "Two-shot across the archive table, folder and boxes leading toward the west-wing proposal; preserve lower dialogue-safe space.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "survey folder",
+          "archive work surface"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical two-shot with the folder between the characters and both hands readable without text on the paper.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "survey folder"
+        ]
+      },
+      "forbiddenProps": [
+        "readable contract text",
+        "Aurea logo/mark",
+        "romantic gesture",
+        "camera/flashlight before the west-wing scene",
+        "extra cast"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Professional arrangement is immediately readable",
+        "No premature knowledge or branch-specific evidence",
+        "Independent portrait and landscape compositions keep the folder visible"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-survey-start-cg"
+    },
+    {
+      "briefId": "ep3-west-wing-survey-v1",
+      "familyId": "ep3-west-wing-survey",
+      "sceneIds": [
+        "ep3_survey_join_response"
+      ],
+      "assetIds": [
+        "ep3-survey-join-response-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika carries a flashlight, tablet and question list while Leo measures a doorway and records the staff-passage constraint.",
+      "location": "Unfinished Villa Serena west wing: old stone, doorway, ventilation route and a legible kitchen-to-laundry passage.",
+      "timeOfDay": "Day 10; source does not specify an hour. Use practical daylight entering an unfinished wing.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Carries flashlight, tablet and question list as hotel staff."
+        },
+        {
+          "character": "leo",
+          "action": "Measures the doorway and records the passage constraint without turning the work into a date."
+        }
+      ],
+      "emotionalTone": "Focused fieldwork with a deliberately held boundary.",
+      "knowledgeBoundary": "Nika has joined the survey; no Aurea mark, contract appendix or accusation.",
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Move from archive into fieldwork: roll sleeves and add practical field layer without changing identity.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive field overshirt with rolled sleeves, taupe trousers, brown belt",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "mobile field organizer",
+          "accessoriesProps": [
+            "small gold hoops",
+            "thin chain",
+            "flashlight",
+            "tablet",
+            "question list"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone field jacket, muted olive shirt, cream trousers, brown satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "slender measured architectural worker",
+          "accessoriesProps": [
+            "tape measure",
+            "brown satchel",
+            "tablet or neutral notes"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika carries the light and tablet; Leo owns the measurement gesture. Keep the doorway and route physically grounded.",
+      "desktop": {
+        "composition": "Wide three-quarter corridor view: doorway measurement and a visible route toward kitchen/laundry, with both faces medium readable above dialogue.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "flashlight",
+          "tablet",
+          "doorway measurement"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical fieldwork composition that keeps flashlight, tablet and measurement hand in the safe center while preserving both faces.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "flashlight",
+          "tablet",
+          "doorway"
+        ]
+      },
+      "forbiddenProps": [
+        "blueprint tube unless authored",
+        "Aurea mark",
+        "romantic touch",
+        "fantasy renovation",
+        "unreadable floating tools"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "West-wing geography reads without text",
+        "The operational route is visible rather than decorative",
+        "No wide-angle anatomy or floating tools",
+        "Both formats keep the field props above the dialogue overlay"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-survey-join-response-cg"
+    },
+    {
+      "briefId": "ep3-west-wing-plan-conflict-v1",
+      "familyId": "ep3-west-wing-plan-conflict",
+      "sceneIds": [
+        "ep3_survey_site_problem"
+      ],
+      "assetIds": [
+        "ep3-survey-site-problem-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "A proposed partition crosses the staff niche; Leo weighs sending the report against requesting the complete brief.",
+      "location": "West-wing staff niche beside the service passage, with a plan held or placed as a neutral marked shape.",
+      "timeOfDay": "Day 11; morning is authored, but exact hour is not specified. Use cool practical morning light.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Points out that the niche starts every staff shift and is not unused."
+        },
+        {
+          "character": "leo",
+          "action": "Holds the site plan and weighs a report decision without making a romantic appeal."
+        }
+      ],
+      "emotionalTone": "Operational conflict and ethical pressure.",
+      "knowledgeBoundary": "The partition/staff-niche conflict is visible; Aurea remains an unverified lead at most and no appendix is shown.",
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Adjacent west-wing work after the survey; retain the field layers from day 10 with only action variation.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive field overshirt with rolled sleeves, taupe trousers, brown belt",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "grounded operational observer",
+          "accessoriesProps": [
+            "tablet",
+            "question list",
+            "neutral phone/report gesture"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone field jacket, muted olive shirt, cream trousers, brown satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "architect under ethical pressure",
+          "accessoriesProps": [
+            "site plan",
+            "tape measure",
+            "satchel"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika anchors the niche and staff-use argument; Leo is framed with the plan. The physical niche must not disappear behind bodies.",
+      "desktop": {
+        "composition": "Wide site composition with the staff niche, plan and two-person disagreement readable as one grounded space; reserve lower dialogue band.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "staff niche",
+          "plan",
+          "tray/key storage"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical medium-wide view where Nika's indication of the niche and Leo's plan remain visible above the dialogue-safe area.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "niche",
+          "plan"
+        ]
+      },
+      "forbiddenProps": [
+        "readable invented plan labels",
+        "verified Aurea contract",
+        "romantic embrace",
+        "luxury renovation",
+        "extra staff faces"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Staff niche is a real functional space",
+        "Plan mark reads as a neutral line, not baked text",
+        "Branch choice does not alter the source image into a false accusation"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-survey-site-problem-cg"
+    },
+    {
+      "briefId": "ep3-service-route-v1",
+      "familyId": "ep3-service-route",
+      "sceneIds": [
+        "ep3_staff_walkthrough"
+      ],
+      "assetIds": [
+        "ep3-staff-walkthrough-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo",
+        "giulia"
+      ],
+      "narrativeCue": "Giulia walks them through the kitchen, laundry and service stairs; the real cart route replaces the word unused.",
+      "location": "Villa Serena service corridor connected to kitchen, laundry and service stairs; practical staff architecture.",
+      "timeOfDay": "Day 11; source does not specify an hour. Use active service daylight with grounded interior shadows.",
+      "narrativeActions": [
+        {
+          "character": "giulia",
+          "action": "Leads the walkthrough and shows the ordinary staff route."
+        },
+        {
+          "character": "nika",
+          "action": "Asks Giulia to show the actual shift rather than explain an abstract plan."
+        },
+        {
+          "character": "leo",
+          "action": "Records the route and replaces 'unused' with the factual route."
+        }
+      ],
+      "emotionalTone": "Competence, dignity of labor and a practical correction.",
+      "knowledgeBoundary": "The staff route proves operational use; it does not reveal Aurea terms or branch-specific evidence.",
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Giulia enters in her established work uniform; Nika and Leo retain field layers and become mobile in the service space.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive overshirt with rolled sleeves, taupe trousers",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "mobile organizer",
+          "accessoriesProps": [
+            "tablet",
+            "question list"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone field jacket, muted olive shirt, cream trousers, brown satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "quiet field recorder",
+          "accessoriesProps": [
+            "neutral notes",
+            "satchel",
+            "keys only if held by Giulia"
+          ]
+        },
+        "giulia": {
+          "outfit": "faded sage-grey rolled-sleeve shirt, beige utility apron, dark navy work trousers, black work shoes",
+          "palette": [
+            "sage grey",
+            "beige",
+            "navy"
+          ],
+          "silhouette": "grounded mature service lead",
+          "accessoriesProps": [
+            "service keys",
+            "linen/towels",
+            "service cart or trays"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Giulia is the grounded route leader; Nika and Leo follow as observers. Do not make the mature staff character decorative or subordinate.",
+      "desktop": {
+        "composition": "Wide corridor perspective connecting kitchen, laundry and stairs; Giulia leads foreground or middle distance, with Nika and Leo legible behind.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo",
+          "giulia"
+        ],
+        "focalProps": [
+          "cart/trays",
+          "keys",
+          "service route"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical corridor stack with Giulia and the route anchor visible above the dialogue panel; avoid cropping the cart/keys or turning the cast into floating busts.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo",
+          "giulia"
+        ],
+        "focalProps": [
+          "Giulia's keys",
+          "cart/trays",
+          "service stairs"
+        ]
+      },
+      "forbiddenProps": [
+        "warehouse architecture",
+        "extra staff faces",
+        "age caricature",
+        "romantic framing",
+        "floating trays",
+        "readable signage"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo",
+        "giulia"
+      ],
+      "acceptanceCriteria": [
+        "Giulia's identity and competence read immediately",
+        "All three bodies are grounded",
+        "Service geography is understandable in both formats",
+        "No decorative or stereotyped staff depiction"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-staff-walkthrough-cg"
+    },
+    {
+      "briefId": "ep3-office-report-chain-decline-v1",
+      "familyId": "ep3-office-report-chain",
+      "sceneIds": [
+        "ep3_survey_decline_response"
+      ],
+      "assetIds": [
+        "ep3-survey-decline-response-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika stays in the office and asks for the full report through Matteo; Leo sends materials without holding her in the conversation.",
+      "location": "Villa Serena office with working table, shutter light and neutral report materials.",
+      "timeOfDay": "Day 11; source gives the next-day sequence but not an hour. Use restrained office daylight.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Remains at work and requests the report through Matteo rather than entering the survey."
+        },
+        {
+          "character": "leo",
+          "action": "Offers to send materials without delaying Nika or converting the work into a personal gesture."
+        }
+      ],
+      "emotionalTone": "Respectful refusal and professional restraint.",
+      "knowledgeBoundary": "The report request is visible; no verified Aurea appendix, past confession or romantic consent.",
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Return from fieldwork to the office; keep the same day-11 work layers and make the location change carry the beat.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive overshirt, taupe trousers",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "seated office organizer",
+          "accessoriesProps": [
+            "work log",
+            "neutral phone or report request"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone field jacket, muted olive shirt, cream trousers, brown satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "standing field professional",
+          "accessoriesProps": [
+            "satchel",
+            "neutral report folder"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika owns the office decision; Leo remains at respectful distance and does not loom or touch.",
+      "desktop": {
+        "composition": "Office two-shot with Nika at the work table and Leo near the doorway or opposite side; report transfer is a neutral shape.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "work log",
+          "report folder"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical office composition with Nika's work surface and Leo's respectful distance preserved above the dialogue panel.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "work log",
+          "folder"
+        ]
+      },
+      "forbiddenProps": [
+        "readable report text",
+        "Matteo visible in frame",
+        "romantic waiting gesture",
+        "Aurea logo",
+        "kiss/embrace"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Refusal reads as an active professional boundary",
+        "No branch state is falsely visualized",
+        "Office and report request are clear without baked text"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-survey-decline-response-cg"
+    },
+    {
+      "briefId": "ep3-office-report-chain-delivery-v1",
+      "familyId": "ep3-office-report-chain",
+      "sceneIds": [
+        "ep3_report_delivery"
+      ],
+      "assetIds": [
+        "ep3-report-delivery-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika attaches the printed report to the work log; the document contains measurements and one uncomfortable staff-passage line, not an explanation of the past.",
+      "location": "Same Villa Serena office, same day-11 work layers, with the printed report physically attached to the log.",
+      "timeOfDay": "Day 11; continuous office work after the report arrives.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Attaches the printed report to the work log and checks the operational line."
+        },
+        {
+          "character": "leo",
+          "action": "Offers conclusions that can be checked rather than using the report to purchase personal access."
+        }
+      ],
+      "emotionalTone": "Evidence becomes accountable work rather than a romantic token.",
+      "knowledgeBoundary": "The report is checked as a work artifact; the eight-year account and Aurea evidence remain later beats.",
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate continuation of the office report chain; preserve the preceding family silhouette and props.",
+        "nika": {
+          "outfit": "soft-sand blouse, washed-olive overshirt, taupe trousers",
+          "palette": [
+            "soft sand",
+            "washed olive",
+            "taupe"
+          ],
+          "silhouette": "focused office organizer",
+          "accessoriesProps": [
+            "work log",
+            "printed report",
+            "pen"
+          ]
+        },
+        "leo": {
+          "outfit": "light stone field jacket, muted olive shirt, cream trousers, brown satchel",
+          "palette": [
+            "stone",
+            "muted olive",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "quiet reporting professional",
+          "accessoriesProps": [
+            "neutral folder",
+            "satchel"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "The printed report and Nika's attachment gesture are the focal action; keep Leo present but not physically dominant.",
+      "desktop": {
+        "composition": "Three-quarter office table view with report, log and pen in foreground; faces remain readable and the papers contain no actual text.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "printed report",
+          "work log",
+          "pen"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical close-mid frame centered on Nika's hands attaching the report while both faces remain above the safe dialogue area.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "report",
+          "log"
+        ]
+      },
+      "forbiddenProps": [
+        "readable invented report text/numbers",
+        "Aurea appendix",
+        "romantic touch",
+        "Matteo or Giulia in frame",
+        "UI baked into paper"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "The delivery state is distinct from the refusal state",
+        "Report remains non-readable but physically checkable",
+        "No visual shortcut turns work evidence into romance"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-report-delivery-cg"
+    },
+    {
+      "briefId": "ep3-office-accountability-eight-years-v1",
+      "familyId": "ep3-office-accountability",
+      "sceneIds": [
+        "ep3_eight_years"
+      ],
+      "assetIds": [
+        "ep3-eight-years-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika and Leo discuss the eight-year silence with a work folder and the pier photograph between them; the folder prevents nostalgia without consequence.",
+      "location": "Villa Serena office with two chairs, work folder and pier photograph on the table.",
+      "timeOfDay": "Day 12; source does not specify an hour. Use calm, slightly warmer office daylight without romantic glow.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Keeps the work folder and photograph between the conversation and any unearned intimacy."
+        },
+        {
+          "character": "leo",
+          "action": "Answers for his own departure and does not use the photograph as an entrance ticket."
+        }
+      ],
+      "emotionalTone": "Accountability and painful specificity, not reconciliation.",
+      "knowledgeBoundary": "The eight-year account is discussed; Aurea drawing/terms are not the visual subject.",
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Day-12 emotional work context deserves a quiet variation while keeping field/office identity distinct.",
+        "nika": {
+          "outfit": "dusty-blue blouse, warm-beige trousers, washed-olive cardigan/overshirt, brown belt",
+          "palette": [
+            "dusty blue",
+            "warm beige",
+            "washed olive"
+          ],
+          "silhouette": "upright guarded office worker",
+          "accessoriesProps": [
+            "small earrings",
+            "thin chain",
+            "work folder",
+            "pier photograph"
+          ]
+        },
+        "leo": {
+          "outfit": "weathered-brown overshirt over muted olive shirt, stone trousers, brown satchel",
+          "palette": [
+            "weathered brown",
+            "muted olive",
+            "stone"
+          ],
+          "silhouette": "slender inward field worker",
+          "accessoriesProps": [
+            "satchel",
+            "work folder side",
+            "no un-authored tube"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "The folder and photograph create a physical boundary; Nika is not posed as a reward and Leo is not softened into a generic romantic lead.",
+      "desktop": {
+        "composition": "Eye-level two-chair office composition with folder and photograph between the characters; keep open lower band for dialogue.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "folder",
+          "photograph"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical seated two-shot with the boundary props centered and both hands grounded; preserve the negative space below the table edge.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "photograph",
+          "folder"
+        ]
+      },
+      "forbiddenProps": [
+        "embrace/kiss",
+        "sunset romance glow",
+        "readable photograph or text",
+        "Aurea proof document",
+        "extra cast"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Accountability reads before romance",
+        "Nika and Leo retain distinct identity and silhouettes",
+        "The photograph is a prop under narrative control, not decorative nostalgia"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-eight-years-cg"
+    },
+    {
+      "briefId": "ep3-office-accountability-choice-v1",
+      "familyId": "ep3-office-accountability",
+      "sceneIds": [
+        "ep3_accountability_choice"
+      ],
+      "assetIds": [
+        "ep3-accountability-choice-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika asks what Leo will do now if she does not return his past; he names an action and a report deadline rather than asking for access.",
+      "location": "Same Villa Serena office accountability setting, with a deadline/work note beside the folder.",
+      "timeOfDay": "Day 12; continuous with the preceding office conversation.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Asks for a present action and keeps control of whether the conversation becomes personal."
+        },
+        {
+          "character": "leo",
+          "action": "Names a concrete reporting action and accepts that the past cannot purchase access."
+        }
+      ],
+      "emotionalTone": "Boundary under test; action over confession.",
+      "knowledgeBoundary": "Choice affects the conversation state only; no route lock, consent or Aurea verification is visually implied.",
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate continuation from ep3_eight_years; change only the work-note action.",
+        "nika": {
+          "outfit": "dusty-blue blouse, warm-beige trousers, washed-olive cardigan/overshirt, brown belt",
+          "palette": [
+            "dusty blue",
+            "warm beige",
+            "washed olive"
+          ],
+          "silhouette": "guarded decision-maker",
+          "accessoriesProps": [
+            "work folder",
+            "deadline/work note",
+            "pen"
+          ]
+        },
+        "leo": {
+          "outfit": "weathered-brown overshirt, muted olive shirt, stone trousers, brown satchel",
+          "palette": [
+            "weathered brown",
+            "muted olive",
+            "stone"
+          ],
+          "silhouette": "accountable field professional",
+          "accessoriesProps": [
+            "neutral report note",
+            "satchel"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika's question and the work note are the action; do not pose the pair as mutual confession or touch.",
+      "desktop": {
+        "composition": "Two-chair office frame with the work note near Nika's hand and Leo listening across the folder boundary.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "deadline/work note",
+          "folder"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical medium two-shot; keep Nika's questioning posture and Leo's listening posture visible above the dialogue-safe area.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "work note",
+          "folder"
+        ]
+      },
+      "forbiddenProps": [
+        "romantic physical contact",
+        "engagement/wedding symbols",
+        "readable invented deadline",
+        "route-lock imagery",
+        "extra cast"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Present action is visually stronger than confession",
+        "All three authored choice tones remain possible from the same neutral composition",
+        "No implied consent or route selection"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-accountability-choice-cg"
+    },
+    {
+      "briefId": "ep3-west-wing-aurea-plan-v1",
+      "familyId": "ep3-west-wing-aurea-plan",
+      "sceneIds": [
+        "ep3_aurea_drawing"
+      ],
+      "assetIds": [
+        "ep3-aurea-drawing-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Leo lays plans on the west-wing floor; Nika photographs the mark and records Aurea as a working hypothesis, not a fact.",
+      "location": "Dusty west-wing floor and old stone passage, with plans laid flat so the route remains physically readable.",
+      "timeOfDay": "Day 13; source does not specify an hour. Use subdued natural light and a practical work lamp if needed, not mystery glow.",
+      "narrativeActions": [
+        {
+          "character": "leo",
+          "action": "Lays plans on the floor and points to the marked line."
+        },
+        {
+          "character": "nika",
+          "action": "Photographs the mark and records it as an unverified connection without taking the original."
+        }
+      ],
+      "emotionalTone": "Evidence discipline and a controlled rise in stakes.",
+      "knowledgeBoundary": "The drawing is an unverified lead (`leoEvidence=drawing`); no checked appendix or confirmed scope of control.",
+      "wardrobe": {
+        "continuityType": "variant-of-previous",
+        "continuityNote": "Return to the west wing after the office day; field layers continue, with dust-safe practical variation.",
+        "nika": {
+          "outfit": "dusty-blue blouse, washed-olive field overshirt, warm-beige trousers, brown belt",
+          "palette": [
+            "dusty blue",
+            "washed olive",
+            "warm beige"
+          ],
+          "silhouette": "active evidence recorder",
+          "accessoriesProps": [
+            "phone/camera",
+            "journal",
+            "small earrings"
+          ]
+        },
+        "leo": {
+          "outfit": "weathered-brown field overshirt, muted olive shirt, stone trousers, brown satchel",
+          "palette": [
+            "weathered brown",
+            "muted olive",
+            "stone"
+          ],
+          "silhouette": "architectural survey worker",
+          "accessoriesProps": [
+            "rolled plans",
+            "pencil",
+            "satchel"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Leo owns the plans; Nika owns the record. Keep the mark as a restrained visual clue, not a villain emblem.",
+      "desktop": {
+        "composition": "Wide floor-level perspective with plans and two grounded figures; preserve enough architecture to connect the mark to the west wing.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "plans",
+          "marked line",
+          "camera/phone"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical overhead-leaning but natural view; plans, Nika's recording hand and Leo's pointing hand stay inside the safe center.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "plans",
+          "camera",
+          "marked line"
+        ]
+      },
+      "forbiddenProps": [
+        "readable Aurea logo/text",
+        "red conspiracy markings",
+        "verified appendix",
+        "floating papers",
+        "romantic closeness"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Drawing reads as lead, not proof",
+        "Plans are grounded and non-readable",
+        "The west-wing setting is consistent with the survey family while the composition is materially distinct"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-aurea-drawing-cg"
+    },
+    {
+      "briefId": "ep3-archive-document-check-v1",
+      "familyId": "ep3-archive-document-check",
+      "sceneIds": [
+        "ep3_document_check"
+      ],
+      "assetIds": [
+        "ep3-document-check-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika opens the incoming-mail log and asks Leo to show the order appendix on her screen instead of retelling it from memory.",
+      "location": "Villa Serena archive room with incoming-mail log, shared screen/document surface and old boxes.",
+      "timeOfDay": "Day 14; source does not specify an hour. Use clear verification light, not dramatic noir.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Opens the incoming-mail log and controls the verification sequence."
+        },
+        {
+          "character": "leo",
+          "action": "Shows the order appendix on the shared screen instead of relying on memory."
+        }
+      ],
+      "emotionalTone": "Careful checking before accusation.",
+      "knowledgeBoundary": "The scene checks date/signature/order side; readable text is not required and no conclusion is baked into the asset.",
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Day-14 archive verification is a new work context; retain identity anchors while moving into cleaner documentation layers.",
+        "nika": {
+          "outfit": "warm-cream blouse, muted olive tailored overshirt, dark taupe trousers, brown belt",
+          "palette": [
+            "warm cream",
+            "muted olive",
+            "dark taupe"
+          ],
+          "silhouette": "methodical verifier",
+          "accessoriesProps": [
+            "incoming-mail log",
+            "pen",
+            "small earrings"
+          ]
+        },
+        "leo": {
+          "outfit": "soft-stone overshirt, ink-navy shirt, cream trousers, brown satchel",
+          "palette": [
+            "soft stone",
+            "ink navy",
+            "cream"
+          ],
+          "silhouette": "quiet document professional",
+          "accessoriesProps": [
+            "neutral appendix folder",
+            "satchel"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika controls the screen and log; Leo supplies the document. The archive architecture must remain a working evidence space.",
+      "desktop": {
+        "composition": "Office-like archive table with screen/log axis between the characters; both hands and faces above the lower dialogue band.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "incoming-mail log",
+          "shared screen",
+          "appendix shape"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical verification frame with the screen/log and both hands centered; no readable text and no face hidden by the dialogue panel.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "log",
+          "screen"
+        ]
+      },
+      "forbiddenProps": [
+        "readable invented contract text",
+        "Aurea villain logo",
+        "accusatory pointing",
+        "romantic touch",
+        "extra cast"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Verification order is readable through action",
+        "No invented document text",
+        "The frame remains neutral enough for both later evidence branches"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-document-check-cg"
+    },
+    {
+      "briefId": "ep3-archive-document-check-response-v1",
+      "familyId": "ep3-archive-document-check",
+      "sceneIds": [
+        "ep3_document_check_response"
+      ],
+      "assetIds": [
+        "ep3-document-check-response-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika compares matching appendix copies and records the evidence status; the drawing lead and verified terms remain distinct.",
+      "location": "Same archive verification table, with matching copies and journal notation as the changed physical state.",
+      "timeOfDay": "Day 14; continuous with the document-check action.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Compares copies, checks signature/number/party and records the evidence status."
+        },
+        {
+          "character": "leo",
+          "action": "Accepts the distinction between a verified appendix and a drawing lead."
+        }
+      ],
+      "emotionalTone": "Clarity earned through procedure.",
+      "knowledgeBoundary": "The source state distinguishes `leoEvidence=terms` from `leoEvidence=drawing`; the art must not choose a branch by showing readable content.",
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Immediate response to the document-check family; preserve clothes and setting, change only the comparison/notation state.",
+        "nika": {
+          "outfit": "warm-cream blouse, muted olive tailored overshirt, dark taupe trousers, brown belt",
+          "palette": [
+            "warm cream",
+            "muted olive",
+            "dark taupe"
+          ],
+          "silhouette": "methodical verifier",
+          "accessoriesProps": [
+            "matching copies",
+            "journal",
+            "pen"
+          ]
+        },
+        "leo": {
+          "outfit": "soft-stone overshirt, ink-navy shirt, cream trousers, brown satchel",
+          "palette": [
+            "soft stone",
+            "ink navy",
+            "cream"
+          ],
+          "silhouette": "quiet accountable professional",
+          "accessoriesProps": [
+            "neutral appendix folder",
+            "satchel"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika's comparison and journal notation are the focal action; Leo remains a participant in verification, not an owner of the evidence.",
+      "desktop": {
+        "composition": "Close-mid archive table with two copies and journal arranged as abstract, unreadable shapes; faces and hands stay clear.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "matching copies",
+          "journal"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical close-mid comparison with Nika's hands and the journal above the dialogue-safe zone; retain both faces.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "copies",
+          "journal"
+        ]
+      },
+      "forbiddenProps": [
+        "readable contract clauses",
+        "branch-specific labels",
+        "Aurea logo",
+        "premature accusation",
+        "romantic contact"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Response is visually distinct from opening check",
+        "Document status remains branch-safe",
+        "No text or UI is baked into the source image"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-document-check-response-cg"
+    },
+    {
+      "briefId": "ep3-office-three-way-disclosure-v1",
+      "familyId": "ep3-office-three-way-disclosure",
+      "sceneIds": [
+        "ep3_matteo_confrontation"
+      ],
+      "assetIds": [
+        "ep3-matteo-confrontation-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "matteo",
+        "leo"
+      ],
+      "narrativeCue": "Matteo takes the copy only after Nika permits it; Leo stays by the door and does not decide whom she gives the folder to.",
+      "location": "Villa Serena office with a doorway, work table and controlled three-person triangle.",
+      "timeOfDay": "Day 15; source does not specify an hour. Use sober office daylight.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Controls whether the folder/copy is handed over."
+        },
+        {
+          "character": "matteo",
+          "action": "Receives the copy only after Nika gives permission."
+        },
+        {
+          "character": "leo",
+          "action": "Remains by the door and does not decide the disclosure."
+        }
+      ],
+      "emotionalTone": "Disclosure boundary and evidence before accusation.",
+      "knowledgeBoundary": "The frame must support both verified-terms and unverified-lead branches; no branch-specific readable appendix or public disclosure is shown.",
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Day-15 office disclosure introduces Matteo's structured host silhouette while preserving Nika and Leo's distinct field identities.",
+        "nika": {
+          "outfit": "warm-cream blouse, muted olive overshirt, dark taupe trousers, brown belt",
+          "palette": [
+            "warm cream",
+            "muted olive",
+            "dark taupe"
+          ],
+          "silhouette": "controlled disclosure lead",
+          "accessoriesProps": [
+            "folder/copy",
+            "journal",
+            "small earrings"
+          ]
+        },
+        "matteo": {
+          "outfit": "deep-olive structured overshirt, stone trousers, dark leather belt and watch",
+          "palette": [
+            "deep olive",
+            "stone",
+            "dark brown"
+          ],
+          "silhouette": "controlled hotel owner, distinct from Leo",
+          "accessoriesProps": [
+            "keys",
+            "open hand receiving only after permission"
+          ]
+        },
+        "leo": {
+          "outfit": "soft-stone field jacket, ink-navy shirt, cream trousers, brown satchel",
+          "palette": [
+            "soft stone",
+            "ink navy",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "slender restrained observer",
+          "accessoriesProps": [
+            "satchel",
+            "doorway position"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika is the visual authority of the handover; Matteo is structured and receiving; Leo is separated at the door. No romantic triangle coding.",
+      "desktop": {
+        "composition": "Wide office triangle with Nika between the work table and the two men; folder handover central, Leo physically grounded near the door.",
+        "requiredVisibleCast": [
+          "nika",
+          "matteo",
+          "leo"
+        ],
+        "focalProps": [
+          "folder/copy",
+          "doorway",
+          "work table"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical three-person composition that keeps all faces, Nika's hands and Matteo's receiving hand visible above the dialogue panel; Leo must not be cropped out.",
+        "requiredVisibleCast": [
+          "nika",
+          "matteo",
+          "leo"
+        ],
+        "focalProps": [
+          "folder",
+          "hands",
+          "doorway"
+        ]
+      },
+      "forbiddenProps": [
+        "extra staff",
+        "readable appendix",
+        "Matteo grabbing the folder",
+        "Leo deciding for Nika",
+        "romantic contact",
+        "villain styling"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "matteo",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Permission-sensitive handover is immediately readable",
+        "Three identities and positions remain distinct in both formats",
+        "Image supports all authored disclosure choices without false branch text"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-matteo-confrontation-cg"
+    },
+    {
+      "briefId": "ep3-office-quiet-return-v1",
+      "familyId": "ep3-office-quiet-return",
+      "sceneIds": [
+        "ep3_quiet_return"
+      ],
+      "assetIds": [
+        "ep3-quiet-return-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "leo"
+      ],
+      "narrativeCue": "Nika records the handover and next inspection in the journal; Leo says the next report will follow the checked or explicitly qualified evidence state, then returns to the west wing.",
+      "location": "Villa Serena office by a window connected visually to the west-wing light, with journal, photograph and work folder.",
+      "timeOfDay": "Day 16; source places this before the evening transition. Use late-day neutral light, not romantic sunset.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Records the handover/status in the journal and remains by the window."
+        },
+        {
+          "character": "leo",
+          "action": "States the next concrete reporting action and leaves toward the west wing."
+        }
+      ],
+      "emotionalTone": "Quiet professional aftermath without promises.",
+      "knowledgeBoundary": "The frame accommodates verified/public, verified/private, hypothesis/shared and hypothesis/private outcomes; no single branch is baked into the art.",
+      "wardrobe": {
+        "continuityType": "same-outfit",
+        "continuityNote": "Day-16 aftermath remains in the office/disclosure continuity; keep the cast stable and let journal state carry the change.",
+        "nika": {
+          "outfit": "warm-cream blouse, muted olive overshirt, dark taupe trousers, brown belt",
+          "palette": [
+            "warm cream",
+            "muted olive",
+            "dark taupe"
+          ],
+          "silhouette": "quiet record keeper",
+          "accessoriesProps": [
+            "work journal",
+            "pier photograph",
+            "work folder"
+          ]
+        },
+        "leo": {
+          "outfit": "soft-stone field jacket, ink-navy shirt, cream trousers, brown satchel",
+          "palette": [
+            "soft stone",
+            "ink navy",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "departing field professional",
+          "accessoriesProps": [
+            "satchel",
+            "neutral report folder"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika remains with the record and photograph; Leo is oriented toward the west-wing exit. The space must communicate separation without punishment.",
+      "desktop": {
+        "composition": "Wide office/window composition with Nika foreground and Leo moving toward the west-wing side; journal and photograph remain visible.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "journal",
+          "photograph",
+          "folder",
+          "west-wing light"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical aftermath frame with Nika's record and Leo's exit direction visible; preserve faces and a natural quiet lower dialogue zone.",
+        "requiredVisibleCast": [
+          "nika",
+          "leo"
+        ],
+        "focalProps": [
+          "journal",
+          "window/light"
+        ]
+      },
+      "forbiddenProps": [
+        "kiss/embrace",
+        "forgiveness glow",
+        "readable branch-specific notes",
+        "extra cast",
+        "Aurea logo/text"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Professional aftermath reads without romantic conclusion",
+        "Journal action and west-wing direction are visible",
+        "Composition remains valid for each authored evidence outcome"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-quiet-return-cg"
+    },
+    {
+      "briefId": "ep3-transition-three-way-v1",
+      "familyId": "ep3-transition-three-way",
+      "sceneIds": [
+        "ep3_transition"
+      ],
+      "assetIds": [
+        "ep3-transition-cg"
+      ],
+      "requiredCast": [
+        "nika",
+        "bianca",
+        "leo"
+      ],
+      "narrativeCue": "Nika writes Aurea beside the survey date with its verification level; Bianca speaks about the terms, while Leo turns on the west-wing light behind the wall.",
+      "location": "Villa Serena office in evening transition, with a visible or implied connection to the west-wing light behind the wall.",
+      "timeOfDay": "Day 16 evening; use restrained evening interior light with warm practical sources, not rescue imagery.",
+      "narrativeActions": [
+        {
+          "character": "nika",
+          "action": "Writes Aurea beside the survey date and records the verification status as fact, not accusation."
+        },
+        {
+          "character": "bianca",
+          "action": "Speaks from the business side about the appendix or mark without villain framing."
+        },
+        {
+          "character": "leo",
+          "action": "Turns on the west-wing light behind the wall; his work is seen, not used to force a personal meaning."
+        }
+      ],
+      "emotionalTone": "Business consequences enter the next episode while Nika retains agency over meaning.",
+      "knowledgeBoundary": "The image must support either verified terms or an unverified mark; no readable Aurea text, rescue claim or romance conclusion.",
+      "wardrobe": {
+        "continuityType": "new-outfit",
+        "continuityNote": "Evening transition changes social context: Nika and Leo keep identity anchors in refined work layers; Bianca enters in her approved executive silhouette.",
+        "nika": {
+          "outfit": "warm-cream blouse, muted olive overshirt, dark taupe trousers, brown belt",
+          "palette": [
+            "warm cream",
+            "muted olive",
+            "dark taupe"
+          ],
+          "silhouette": "active owner of the record",
+          "accessoriesProps": [
+            "work journal",
+            "neutral pen",
+            "small earrings"
+          ]
+        },
+        "bianca": {
+          "outfit": "slate-charcoal tailored suit, ivory blouse, structured black handbag, gold rectangular earrings and simple watch",
+          "palette": [
+            "slate charcoal",
+            "ivory",
+            "deep teal accent"
+          ],
+          "silhouette": "upright business principal, not villain styling",
+          "accessoriesProps": [
+            "structured handbag",
+            "simple watch"
+          ]
+        },
+        "leo": {
+          "outfit": "soft-stone field jacket, ink-navy shirt, cream trousers, brown satchel",
+          "palette": [
+            "soft stone",
+            "ink navy",
+            "cream",
+            "weathered brown"
+          ],
+          "silhouette": "quiet field worker behind the wall",
+          "accessoriesProps": [
+            "west-wing light cue",
+            "satchel not foregrounded"
+          ]
+        }
+      },
+      "sharedSceneDistinctness": "Nika owns the journal and the epistemic boundary; Bianca is composed and businesslike; Leo is spatially separated by the wall/light, not a romantic third point.",
+      "desktop": {
+        "composition": "Wide evening office composition with Nika's journal in the foreground, Bianca in a clear business position and Leo/light implied through the west-wing opening or wall axis.",
+        "requiredVisibleCast": [
+          "nika",
+          "bianca",
+          "leo"
+        ],
+        "focalProps": [
+          "journal",
+          "pen",
+          "west-wing light"
+        ]
+      },
+      "portrait": {
+        "composition": "Vertical three-character transition that keeps Nika's writing hand and Bianca's face visible while Leo remains legible through the spatial light cue; protect the dialogue-safe lower zone.",
+        "requiredVisibleCast": [
+          "nika",
+          "bianca",
+          "leo"
+        ],
+        "focalProps": [
+          "journal",
+          "pen",
+          "light cue"
+        ]
+      },
+      "forbiddenProps": [
+        "readable Aurea text",
+        "halo/rescue symbolism",
+        "villain styling for Bianca",
+        "romantic triangle pose",
+        "extra cast",
+        "baked UI/dialogue"
+      ],
+      "characterReferenceIds": [
+        "nika",
+        "bianca",
+        "leo"
+      ],
+      "acceptanceCriteria": [
+        "Knowledge status is represented by neutral action, not readable text",
+        "Bianca reads as a business principal",
+        "Leo's light establishes continuity without forcing romance",
+        "All three required identities survive portrait and landscape crops"
+      ],
+      "candidateNumber": 1,
+      "priorRejection": null,
+      "generationAuthorized": false,
+      "assetId": "ep3-transition-cg"
+    }
+  ],
+  "verificationPlan": {
+    "briefStructuralCheck": "Run ceos art-brief-verify separately on each brief before any generation; not run in this brief-only stage.",
+    "generationPrecondition": "Fresh current-turn run-scoped CEOS capability challenge plus official native producer route in the actual producing context.",
+    "postGeneration": [
+      "Persist real portrait and landscape PNG bytes",
+      "Run a new art-output-verify receipt per file",
+      "Update narrative/assets.json only in a separately authorized integration stage",
+      "Run current-runtime desktop/mobile visual QA and independent pixel review"
+    ],
+    "visualAcceptance": "BLOCKED_NOT_RUN: no generated PNGs, runtime screenshots or independent pixel review in Stage 9.6.",
+    "webPreflight": {
+      "status": "DISABLED",
+      "reason": "CEOS hybrid-routing policy",
+      "webAgentsUsed": []
+    }
+  }
+}

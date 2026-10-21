@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "candidate": 2,
+  "sceneId": "ep3_document_check_response",
+  "sceneIds": ["ep3_document_check_response"],
+  "assetId": "ep3-document-check-response-cg",
+  "context": "EP3 evidence status candidate 2: candidate 1 was reviewed with actual pixels and received a semantic P1 REWORK because Nika held both documents while the open working log and pen were unused. Candidate 2 must visibly show Nika writing the matching date/mark provisionally in the open log while the matching pages remain visible, without presenting the correspondence as conclusive proof.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": ["artifacts/production-art/stage9.10/EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE2_NATIVE_OUTPUTS_20261021.json", "artifacts/evidence/web-high-control/EP3_DOCUMENT_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json"],
+  "priorPixelReview": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+  "reviewContract": "Review supplied actual pixels independently against the current source-bound brief, approved Nika/Leo references, prior P1 findings, and current-head runtime screenshots. Confirm whether the candidate 2 pair materially fixes the missing provisional log-entry action in both formats while preserving identity, adult age, professional archive setting, cautious evidence status, anatomy, dialogue-safe desktop/mobile framing, and absence of readable invented text, romance, extra cast, UI or watermark. Return explicit PASS or REWORK with concrete pixel observations. No episode-final or release claim; no candidate 3.",
+  "runtimeEvidence": ["artifacts/evidence/web-high-control/EP3_DOCUMENT_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json", "output/playwright/ep3-document-batch-runtime/ep3_document_check_response/desktop.png", "output/playwright/ep3-document-batch-runtime/ep3_document_check_response/mobile-390.png", "output/playwright/ep3-document-batch-runtime/ep3_document_check_response/mobile-360.png"],
+  "images": [
+    {"ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"ref": "giulia-approved-reference", "kind": "original", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"ref": "ep3-document-check-response-portrait-candidate-2", "kind": "runtime", "sceneId": "ep3_document_check_response", "path": "assets/production/cg/ep3-document-check-response-cg.png", "sha256": "d0b7bf2fd421e93e98c512c2695a0010cf95ba6eecbea3421c58b4fac2b5aac9"},
+    {"ref": "ep3-document-check-response-landscape-candidate-2", "kind": "runtime", "sceneId": "ep3_document_check_response", "path": "assets/production/cg/ep3-document-check-response-cg-landscape.png", "sha256": "23a0a1570bcb685663020e6025a6cf453e808183f08968ddae2f564f5a769791"}
+  ]
+}

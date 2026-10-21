@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "agent": "ceos_art_director_web",
+  "taskId": "dev-web-ep3_survey_decline_response-8319a893bc16",
+  "reviewTraceId": null,
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "status": "PASS",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoning": "high",
+  "provider": "codex-chatgpt-web-dev",
+  "stableBridgeUsed": false,
+  "reviewedItems": [
+    "ep3_survey_decline_response"
+  ],
+  "evidenceRefs": [
+    "nika-approved-reference",
+    "leo-approved-reference",
+    "giulia-approved-reference",
+    "ep3-survey-decline-response-portrait-candidate-1",
+    "ep3-survey-decline-response-landscape-candidate-1"
+  ],
+  "receivedEvidenceRefs": [
+    "nika-approved-reference",
+    "leo-approved-reference",
+    "giulia-approved-reference",
+    "ep3-survey-decline-response-portrait-candidate-1",
+    "ep3-survey-decline-response-landscape-candidate-1"
+  ],
+  "actualPixelsReceived": true,
+  "decision": "PASS. Both runtime compositions satisfy the source-bound visual requirements for ep3_survey_decline_response. Nika remains seated at the Villa Serena office work table with an open notebook and writing instrument, maintaining a recognizable professional working posture. Leo stands separately with a closed, visually neutral dark report folder and his brown shoulder bag. The compositions establish professional distance without a romantic waiting gesture, physical intimacy, or an apparent demand for Nika's attention. The office environment includes wooden shutters, a substantial work table, an open doorway, and natural daytime illumination. Nika and Leo retain recognizable facial, hairstyle, and wardrobe characteristics from their approved references. Giulia is correctly absent from the runtime compositions, as is Matteo. Neither runtime image contains visible additional characters, readable report text, an identifiable Aurea logo or mark, baked interface elements, or a watermark. The portrait image depicts Nika briefly looking toward Leo while keeping her notebook open; the landscape image more explicitly communicates her continued work by showing her looking down and writing. Both are compatible with the supplied narrative dialogue and the intended professional boundary. The procedural details of requesting the full report through Matteo and sending the materials without prolonged conversation are communicated by the supplied dialogue rather than explicitly depicted in a single still image. This is not a visual acceptance defect because the required visual action is present. No material visual discrepancies requiring rework were identified.",
+  "findings": [],
+  "unresolved": [],
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021_V2.json",
+  "visualEvidence": [
+    {
+      "ref": "nika-approved-reference",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "observation": "The approved reference presents Nika in three views: a full-length standing composition, a frontal facial close-up, and a three-quarter rear portrait. She has a short, voluminous, loosely waved dark brown bob, brown eyes, softly defined eyebrows, subtle facial freckles, and natural makeup. Small gold hoop earrings and a delicate pendant necklace are visible. Her outfit consists of a lightweight ivory collared shirt, high-waisted beige trousers, a brown leather belt, and brown sandals. A large dark brown leather shoulder bag completes the full-length reference. The runtime images preserve her distinctive hairstyle, facial structure, jewelry, and cream-colored shirt, adding an olive-toned jacket appropriate to the office setting."
+    },
+    {
+      "ref": "leo-approved-reference",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",
+      "observation": "The approved Leo reference combines a full-length standing view with frontal and three-quarter facial close-ups. Leo has medium-length, loosely swept light brown hair, brown-green eyes, defined cheekbones, and a relatively angular jaw. His outfit consists of a light beige textured linen jacket, muted olive-green collared shirt, pale trousers, brown leather belt, and brown loafers. He carries a brown leather shoulder satchel and rolled architectural documents in the standing reference. Both runtime compositions retain his recognizable face, tousled hairstyle, linen jacket, olive shirt, pale trousers, and brown shoulder bag. The rolled documents are replaced by a closed dark folder appropriate to the required scene action."
+    },
+    {
+      "ref": "giulia-approved-reference",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",
+      "observation": "The approved Giulia reference shows a mature woman in full-length, frontal close-up, and side-profile views. She has dark hair with prominent silver-gray strands gathered into a loose low bun, expressive brown eyes, visible natural facial lines, and small gold hoop earrings. She wears a muted sage-green collared work shirt with rolled sleeves, a beige waist apron with large pockets, dark work trousers, and black shoes. Her appearance is distinct from both required characters. Neither runtime composition depicts Giulia or another person resembling her, consistent with the scene's restriction against additional visible cast."
+    },
+    {
+      "ref": "ep3-survey-decline-response-portrait-candidate-1",
+      "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+      "observation": "The portrait runtime composition shows a warmly sunlit Villa Serena office with wooden shutters, an open doorway, framed artwork, an olive arrangement, and a large wooden work table. Nika occupies the left foreground, seated in a dark chair, wearing an olive linen jacket over her ivory blouse. Her open notebook lies on the table, and she holds a writing instrument while looking upward toward Leo. Her other hand rests near a closed brown leather document folder. Leo stands on the right, behind and separately from Nika, wearing his established beige linen outfit and carrying his brown shoulder bag. He holds a plain dark brown closed report folder in front of his torso. His attention is directed away from Nika rather than fixed on her in an intimate or expectant manner. The composition maintains physical separation, preserves Nika's connection to her work, and avoids romantic contact. Bright natural daylight enters through the shutters and doorway. Only Nika and Leo are visible. No readable report text, Aurea branding, baked interface, or watermark is apparent."
+    },
+    {
+      "ref": "ep3-survey-decline-response-landscape-candidate-1",
+      "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+      "observation": "The landscape runtime composition presents a wider view of the same Mediterranean-style office. Wooden shutters line the left side, while an open doorway behind Leo reveals bright foliage and tall trees in daylight. A substantial wooden work table occupies the foreground, with an open notebook, writing implements, and a closed dark document folder on its surface. Nika sits on the left, visibly concentrating on writing in her notebook. She wears the same olive jacket, ivory blouse, pendant necklace, and short dark wavy hairstyle as in the portrait composition. Leo stands separately on the right near the open doorway, dressed in his beige linen jacket and trousers with an olive shirt and brown shoulder bag. He holds a closed dark folder with both hands at waist level. His posture is upright and professional, without reaching toward Nika or appearing to initiate physical intimacy. Nika's lowered gaze and active writing provide especially clear visual evidence that she continues her work rather than waiting for Leo. No third character, readable report text, identifiable Aurea mark, embedded interface, or watermark is visible."
+    }
+  ],
+  "normalization": {
+    "schemaRepairAttempted": false,
+    "responseFormat": "markdown-escaped-json",
+    "rawResponseArtifacts": [
+      "artifacts/evidence/web-high-control/EP3_SURVEY_DECLINE_RESPONSE_WEB_REVIEW_RAW_CURRENT_HEAD_20261021_V2.txt"
+    ],
+    "rawResponseSha256": "a33f1119d338ce7d65f991df74b036096c90fbaaf15d0784609e1f51f50a9133",
+    "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "imageSha256": [
+      {
+        "ref": "nika-approved-reference",
+        "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+      },
+      {
+        "ref": "leo-approved-reference",
+        "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+      },
+      {
+        "ref": "giulia-approved-reference",
+        "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+      },
+      {
+        "ref": "ep3-survey-decline-response-portrait-candidate-1",
+        "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4"
+      },
+      {
+        "ref": "ep3-survey-decline-response-landscape-candidate-1",
+        "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25"
+      }
+    ]
+  },
+  "transport": {
+    "provider": "codex-chatgpt-web-dev",
+    "releaseVersion": "6.1.11",
+    "mode": "browser-only",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "actualProjectHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "responseSha256": "a33f1119d338ce7d65f991df74b036096c90fbaaf15d0784609e1f51f50a9133",
+    "attachmentRefs": [
+      "nika-approved-reference",
+      "leo-approved-reference",
+      "giulia-approved-reference",
+      "ep3-survey-decline-response-portrait-candidate-1",
+      "ep3-survey-decline-response-landscape-candidate-1"
+    ],
+    "submitted": true,
+    "attachmentAccepted": true,
+    "transportTraceId": "devweb_260ddff3631f4fc2a4eebf7b5ae329a4"
+  }
+}

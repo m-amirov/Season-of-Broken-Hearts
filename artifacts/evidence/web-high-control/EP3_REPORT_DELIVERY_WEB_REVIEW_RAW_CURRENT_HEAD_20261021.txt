@@ -1,0 +1,60 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_report\_delivery",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_report\_delivery"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-report-delivery-portrait-candidate-2",  
+"ep3-report-delivery-landscape-candidate-2"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-report-delivery-portrait-candidate-2",  
+"ep3-report-delivery-landscape-candidate-2"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS — Both runtime compositions satisfy the visual requirements of ep3-office-report-chain-delivery-v1. Nika is actively handling printed paperwork and an open ring-bound work log at a wooden office table. Leo remains nearby holding a neutral, unbranded report folder. Their expressions, attention and body language establish a professional interaction without romantic or waiting gestures. The environment includes substantial windows, visible shutters, daylight, office storage and work materials consistent with the specified Villa Serena office. Nika and Leo remain visually consistent with their approved character references. Giulia and other additional characters are absent. Neither composition displays an Aurea logo or mark, readable generated document text, baked interface elements or watermarks. The portrait emphasizes Nika's handling of the work log, while the landscape provides stronger environmental context and a clear view of the professional interaction. The report's exact measurements and uncomfortable staff-passage wording cannot be independently verified from the deliberately unreadable document graphics; this is a limitation of visual evidence rather than an observed visual defect. Both compositions are accepted.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference presents a young adult woman with a short, voluminous, wavy dark-brown bob, brown-hazel eyes, naturally defined eyebrows, subtle freckles and small gold hoop earrings. She wears a loosely buttoned ivory linen shirt, high-waisted beige trousers, a brown leather belt and brown sandals. A large dark-brown leather shoulder bag appears in the full-body view. The accompanying close-up and three-quarter portrait establish her facial proportions, hairstyle, jewelry and understated natural appearance."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference presents a young adult man with medium-length, tousled brown hair, hazel-green eyes, angular facial features and subtle skin texture. His outfit consists of a light beige linen jacket and matching trousers over an open-collar muted olive-green shirt, with a brown leather belt and dark-brown loafers. He carries a brown leather shoulder satchel and rolled architectural papers in the full-body view. The frontal and downward-facing close-ups establish his characteristic hairstyle, facial structure and reserved expression."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference depicts a mature woman with dark hair threaded with gray, gathered into a loose low bun. She has visible facial lines, brown eyes and small gold hoop earrings. She wears a muted sage-green button-up shirt, a beige work apron with large front pockets, dark trousers and black shoes. The frontal and profile portraits establish her mature facial appearance and distinctive hairstyle. This character does not appear in either runtime composition."  
+},  
+{  
+"ref": "ep3-report-delivery-portrait-candidate-2",  
+"path": "assets/production/cg/ep3-report-delivery-cg.png",  
+"sha256": "da3ae20b7a7de4cc5c3a17d1f314c8b50f04262b53255d61e683b56cd416962a",  
+"observation": "The portrait composition shows Nika on the left, leaning over a wooden office table while handling printed paperwork inside an open brown ring-bound work log. Her hands are positioned near the pages and metal binding mechanism. She wears an olive-green overshirt over an ivory blouse, beige trousers, a brown belt and her characteristic gold jewelry. Her short, wavy dark hair and facial features closely match the approved reference. Leo stands beside and slightly behind her on the right, wearing his beige linen jacket, muted green shirt and brown leather shoulder-bag strap. He holds a plain beige-gray folder against his body and directs his attention toward the paperwork. Their bodies do not touch, and neither character makes a romantic gesture. The office contains a wooden work surface, books, document trays, shelving, framed architectural imagery, a desk lamp and a large daylight-filled window with greenery outside. Document pages contain graphical lines and gray blocks without discernible readable prose. No additional person, visible branding, interface overlay or watermark appears."  
+},  
+{  
+"ref": "ep3-report-delivery-landscape-candidate-2",  
+"path": "assets/production/cg/ep3-report-delivery-cg-landscape.png",  
+"sha256": "41522f851103745b44c9c92c587da296c0fcfcc9fd6c936ff671130b612c9871",  
+"observation": "The landscape composition shows Nika at the left side of a broad wooden work table. She holds a printed report sheet in one hand while writing with a pen in an open ring-bound work log with the other. The pages and binder are clearly visible as the central working materials. Leo stands to her right, leaning forward to inspect the documents, with one hand resting on the table and the other holding a neutral beige-gray folder. His leather shoulder satchel remains visible. Both characters retain the clothing, hairstyles and facial characteristics established by their approved references. Their shared attention is directed toward the documents rather than toward each other romantically. The office contains shelving, books, framed art, plants, a brass desk lamp and tall windows with white shutters and sunlit greenery outside. The bright natural light establishes daytime. Printed pages contain lines and indistinct graphic elements but no readable generated document text. No Giulia, Matteo, Aurea branding, additional cast member, embrace, waiting gesture, baked UI or watermark is visible."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

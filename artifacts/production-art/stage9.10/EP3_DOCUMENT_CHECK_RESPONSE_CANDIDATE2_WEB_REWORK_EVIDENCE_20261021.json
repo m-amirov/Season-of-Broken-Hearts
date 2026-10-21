@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_REWORK_EVIDENCE",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_document_check_response",
+  "candidate": 2,
+  "status": "REWORK_UNACCEPTED_CANDIDATE_LIMIT_EXHAUSTED",
+  "transport": {
+    "provider": "codex-chatgpt-web-dev",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "mode": "browser-only",
+    "stableBridgeUsed": false,
+    "transportTraceId": "devweb_e46f7d60f73f4a02b789dc14086cf446",
+    "submitted": true,
+    "attachmentAccepted": true,
+    "actualPixelsReceived": true,
+    "cliReceiptStatus": "NOT_VERIFIED",
+    "cliReasonCode": "NARRATIVE_FINDINGS_INVALID",
+    "rawResponse": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE2_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+    "failedReceipt": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE2_WEB_REVIEW_RECEIPT_FRESH_CURRENT_HEAD_20261021.json"
+  },
+  "semanticDecision": "REWORK",
+  "finding": {
+    "id": "EP3-C2-001",
+    "reportedSeverity": "P1",
+    "reportedImpactCode": "NARRATIVE_EVIDENCE_CORRESPONDENCE_UNCLEAR",
+    "authoredCue": "Nika visibly writes the matching date/mark provisionally into the open working log while corresponding documentary pages remain visible.",
+    "observation": "Both formats visibly establish active writing and keep comparison pages in frame, but the exact date/mark correspondence and provisional qualifier are not identifiable from the pixels.",
+    "playerImpact": "The player sees documentation in progress but cannot confidently identify the particular matched date or mark being recorded.",
+    "actualPixelsReceived": true,
+    "materialPlayerImpact": true
+  },
+  "candidateBudget": {"candidate1Status": "REWORK", "candidate2Status": "REWORK", "candidate3Allowed": false, "generationCallsIssued": 2},
+  "runtimeEvidence": "artifacts/evidence/web-high-control/EP3_DOCUMENT_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+  "nextAction": "Do not regenerate. Keep candidate 1 and candidate 2 byte-exact with evidence; resolve only by an explicitly authorized non-generative authored/runtime treatment or a new approved budget, neither performed in this task."
+}

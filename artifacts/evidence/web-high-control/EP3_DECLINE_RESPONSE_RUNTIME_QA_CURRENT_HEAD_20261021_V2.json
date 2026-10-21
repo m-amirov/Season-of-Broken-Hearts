@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "scene-only",
+  "episodeWideStatus": "BLOCKED_BY_MISSING_EP3_REPORT_DELIVERY",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "runtime": {
+    "url": "http://127.0.0.1:4301/",
+    "browser": "Chromium via playwright-cli",
+    "authoredNavigation": true,
+    "navigation": [
+      "Start new story through visible UI",
+      "follow authored choices to ep3_survey_start",
+      "choose visible decline option: Остаться в отеле и ждать отчёта",
+      "render ep3_survey_decline_response"
+    ],
+    "temporaryDiagnosticMapping": {
+      "sceneId": "ep3_old_photo",
+      "usedOnlyToCrossSavedEP3Entry": true,
+      "productionMappingRestoredAfterCapture": true,
+      "pngsOrHistoricalReceiptsChanged": false,
+      "acceptanceClaimed": false
+    }
+  },
+  "asset": {
+    "sceneId": "ep3_survey_decline_response",
+    "assetId": "ep3-survey-decline-response-cg",
+    "portraitSha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+    "landscapeSha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+    "runtimeDataAssetIdObserved": "ep3-survey-decline-response-cg",
+    "runtimeDataSceneIdObserved": "ep3_survey_decline_response"
+  },
+  "screenshots": [
+    {
+      "path": "output/playwright/ep3-decline-response-desktop-1280x720-v2.png",
+      "sha256": "7789ff6026bbf0b89638eff745bfe1d9ca51d0d7eac173008e3b8952775b83d3",
+      "viewport": "1280x720",
+      "observations": [
+        "Both Nika and Leo are visible and recognizable; office, shutters, doorway, work table and neutral report folder read clearly.",
+        "Professional distance is preserved; no romance, Matteo, readable report text, logo or watermark.",
+        "Dialogue remains inside the lower safe band without clipping or overlap; faces and working action stay above it."
+      ]
+    },
+    {
+      "path": "output/playwright/ep3-decline-response-mobile-390x844-v2.png",
+      "sha256": "a39d94e6a4ceba5c5502b39e7e0158f60addba1f81829c3dd970a5188e57ac84",
+      "viewport": "390x844",
+      "observations": [
+        "Portrait crop keeps both faces, Nika's work surface and Leo's neutral folder readable; Leo is near the right edge but not clipped.",
+        "Dialogue wraps into the safe lower band with no clipping or control overlap."
+      ]
+    },
+    {
+      "path": "output/playwright/ep3-decline-response-mobile-360x640-v2.png",
+      "sha256": "dc9265a239cdeba5c5502b39e7e0158f60addba1f81829c3dd970a5188e57ac84",
+      "viewport": "360x640",
+      "observations": [
+        "Compact portrait keeps both adult faces and the office action legible; Leo remains inside the crop.",
+        "Five-line dialogue block remains visible above the bottom edge with no clipping."
+      ]
+    }
+  ],
+  "console": {
+    "errorCount": 6,
+    "errors": [
+      "Missing asset for scene ep3_report_delivery during authored choice preload/render"
+    ],
+    "logSource": ".playwright-cli/console-2026-10-21T05-54-18-441Z.log",
+    "interpretation": "The decline scene itself rendered with the mapped asset; the next scene in the same branch is not yet produced or mapped. This blocks episode-wide runtime QA and is not silently converted to PASS."
+  }
+}

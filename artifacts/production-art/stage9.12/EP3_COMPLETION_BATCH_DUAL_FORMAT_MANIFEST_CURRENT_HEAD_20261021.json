@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "runId": "2026-10-21T11-50-34-595Z-production-art-7f2b92",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "episode": 3,
+  "candidate": 1,
+  "brief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256AtGeneration": "da0f6b98dbee1892fd7c8afa2ea8f344cbe6530a413f1e77e2b0a627c524cf0e",
+    "briefVerifyStatus": "READY_TO_GENERATE"
+  },
+  "sceneAssets": {
+    "ep3_quiet_return": "ep3-quiet-return-cg",
+    "ep3_transition": "ep3-transition-cg"
+  },
+  "assets": {
+    "ep3-quiet-return-cg": {
+      "portrait": {"path": "assets/production/cg/ep3-quiet-return-cg.png", "sha256": "6dc5ef94af2696ad08feb1bc7d629ad3e40ad66c27b258e8a6dbe3ea96fb89fb", "width": 1024, "height": 1536, "outputVerifyReceipt": "artifacts/production-art/stage9.12/receipts/EP3_QUIET_RETURN_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json"},
+      "desktop": {"path": "assets/production/cg/ep3-quiet-return-cg-landscape.png", "sha256": "4b0bcc2803e6530e2741520801f1eefee7b781268d3b983b6b5a9280527b38a3", "width": 1672, "height": 941, "outputVerifyReceipt": "artifacts/production-art/stage9.12/receipts/EP3_QUIET_RETURN_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json"}
+    },
+    "ep3-transition-cg": {
+      "portrait": {"path": "assets/production/cg/ep3-transition-cg.png", "sha256": "fcda0044299c1d5d1ee190b32a62ae4159a3cf71de1f33d9956dc8339a55e65f", "width": 1024, "height": 1536, "outputVerifyReceipt": "artifacts/production-art/stage9.12/receipts/EP3_TRANSITION_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json"},
+      "desktop": {"path": "assets/production/cg/ep3-transition-cg-landscape.png", "sha256": "3f01d7a849b3f15539fd3487cb33ddab7a31d4e6d5b2eff8a04dc47d043e9164", "width": 1672, "height": 941, "outputVerifyReceipt": "artifacts/production-art/stage9.12/receipts/EP3_TRANSITION_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json"}
+    }
+  },
+  "references": {
+    "nika": {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    "bianca": {"path": "assets/characters/references/originals/bianca.png", "sha256": "c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9"},
+    "leo": {"path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  },
+  "runtimeMapping": {
+    "path": "narrative/assets.json",
+    "assetIds": ["ep3-quiet-return-cg", "ep3-transition-cg"]
+  },
+  "status": "INTEGRATED_MECHANICAL_PASS",
+  "visualAcceptance": "PENDING_CURRENT_HEAD_RUNTIME_AND_DEV_WEB_HIGH",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

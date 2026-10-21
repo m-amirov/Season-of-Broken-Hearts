@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-provenance",
+  "status": "INTEGRATED_MECHANICAL_PASS_RUNTIME_PENDING_WEB_ACCEPTANCE",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_accountability_choice",
+  "assetId": "ep3-accountability-choice-cg",
+  "candidate": 2,
+  "candidateLimit": 2,
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "87e765f75ce306aa68ad447a72466b77ab4ea9d1063e1464cf41a0a911c4eedd",
+    "verdict": "READY_TO_GENERATE"
+  },
+  "references": [
+    {"id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ],
+  "nativeGeneration": {
+    "runId": "2026-10-21T09-29-33-577Z-production-art-94db4d",
+    "challengeId": "cap-2829a5efe324c1d7073c",
+    "producerChildId": "01a15dcb-fced-7f51-ba3e-39ae59a30b2d",
+    "producerTrace": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T12-30-12-01a15dcb-fced-7f51-ba3e-39ae59a30b2d.jsonl",
+    "producerTraceSha256": "f84c5979521fe62bf31309b4123a06a0d9a8caa2c95163a49cc243b9f8c0a9ce",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium",
+    "observedTool": "image_gen.imagegen"
+  },
+  "outputs": [
+    {"variant": "portrait", "path": "assets/production/cg/ep3-accountability-choice-cg.png", "sha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523", "width": 1024, "height": 1536, "outputReceipt": "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_PORTRAIT_OUTPUT_20261021.json"},
+    {"variant": "landscape", "path": "assets/production/cg/ep3-accountability-choice-cg-landscape.png", "sha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558", "width": 1672, "height": 941, "outputReceipt": "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_LANDSCAPE_OUTPUT_20261021.json"}
+  ],
+  "runtimeMapping": {"path": "narrative/assets.json", "assetId": "ep3-accountability-choice-cg", "portraitSha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523", "landscapeSha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558"},
+  "preservedRejectedCandidate1": {
+    "portrait": {"path": "artifacts/production-art/stage9.8/preserved-candidate1/ep3-accountability-choice-candidate1-portrait.png", "sha256": "448cc621600df711d7c9c885abfb26f612f788ca01a4c33aaeaad14044e42d1f"},
+    "landscape": {"path": "artifacts/production-art/stage9.8/preserved-candidate1/ep3-accountability-choice-candidate1-landscape.png", "sha256": "4ce8fea8e739ddaa7f3a08dd847ff164d03bd614c70e0fade13a183c4c20b7c7"}
+  },
+  "independentAcceptance": "PENDING_DEV_BROWSER_ONLY_WEB_HIGH"
+}

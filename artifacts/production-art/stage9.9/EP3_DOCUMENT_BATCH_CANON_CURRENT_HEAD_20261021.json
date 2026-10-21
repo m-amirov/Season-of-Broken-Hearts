@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-batch-canon",
+  "status": "CANON_READY_CANDIDATE_1_OF_2",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBriefPacket": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "sourceBoundBriefSha256": "751df9e922c33ac15fc3df9476dd07e8bfda8fde1ec8f4c97ecacd6e04d1401d",
+  "scenes": [
+    {
+      "sceneId": "ep3_document_check",
+      "briefId": "ep3-archive-document-check-v1",
+      "assetId": "ep3-document-check-cg",
+      "requiredCast": ["nika", "leo"],
+      "requiredAction": "Nika controls the incoming-mail log and shared screen while Leo supplies a neutral appendix shape; verification order reads through action, not invented text.",
+      "forbidden": ["readable invented contract text", "Aurea villain logo", "accusatory pointing", "romantic touch", "extra cast"]
+    },
+    {
+      "sceneId": "ep3_document_check_response",
+      "briefId": "ep3-archive-document-check-response-v1",
+      "assetId": "ep3-document-check-response-cg",
+      "requiredCast": ["nika", "leo"],
+      "requiredAction": "Nika compares matching copies and records evidence status; Leo accepts the distinction between verified terms and a drawing lead.",
+      "forbidden": ["readable contract clauses", "branch-specific labels", "Aurea logo", "premature accusation", "romantic contact"]
+    },
+    {
+      "sceneId": "ep3_matteo_confrontation",
+      "briefId": "ep3-office-three-way-disclosure-v1",
+      "assetId": "ep3-matteo-confrontation-cg",
+      "requiredCast": ["nika", "matteo", "leo"],
+      "requiredAction": "Nika controls whether the folder is handed over; Matteo receives only after permission; Leo stays by the door and does not decide the disclosure.",
+      "forbidden": ["extra staff", "readable appendix", "Matteo grabbing the folder", "Leo deciding for Nika", "romantic contact", "villain styling"]
+    }
+  ],
+  "references": {
+    "nika": {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    "leo": {"path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    "matteo": {"path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23"}
+  },
+  "dualFormat": {"portrait": {"width": 1024, "height": 1536}, "desktop": {"width": 1672, "height": 941}},
+  "generationRule": "One candidate per scene is requested in this batch; a second candidate is allowed only for a confirmed P1/P0 and must remain bounded by the per-scene limit of 2. No accepted asset or old_photo may be regenerated."
+}

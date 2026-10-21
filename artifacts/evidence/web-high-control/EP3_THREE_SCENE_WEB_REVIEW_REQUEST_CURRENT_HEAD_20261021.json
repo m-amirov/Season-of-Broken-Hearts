@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "candidateLimit": {
+    "maxCandidatesPerCueAndFormat": 2,
+    "ep3_eight_years": {"portraitCandidate": 1, "landscapeCandidate": 1},
+    "ep3_accountability_choice": {"portraitCandidate": 1, "landscapeCandidate": 1},
+    "ep3_aurea_drawing": {"portraitCandidate": 1, "landscapeCandidate": 1},
+    "thirdCandidateAllowed": false
+  },
+  "sceneIds": ["ep3_eight_years", "ep3_accountability_choice", "ep3_aurea_drawing"],
+  "assetIds": ["ep3-eight-years-cg", "ep3-accountability-choice-cg", "ep3-aurea-drawing-cg"],
+  "context": "Review three current-head EP3 source-bound art-pairs independently. ep3_eight_years: Nika and Leo discuss the eight-year silence in the Villa Serena office; a work folder and pier photograph remain between them and accountability must read before romance. ep3_accountability_choice: Nika asks for a present reporting action; Leo listens and names concrete work rather than requesting access; no route lock or romance. ep3_aurea_drawing: in the dusty west-wing passage Leo lays non-readable plans on the floor and points to a restrained unverified line while Nika photographs and records it. Required cast is Nika and Leo in all three scenes. Check the supplied runtime pixels, not only source intent.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    "artifacts/evidence/web-high-control/EP3_THREE_SCENE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+    "artifacts/evidence/web-high-control/EP3_THREE_SCENE_RUNTIME_QA_CURRENT_HEAD_20261021.json"
+  ],
+  "reviewContract": "Review actual pixels for every supplied portrait and landscape asset and its desktop/mobile runtime captures. Check Nika and Leo adult identity and recognizability, wardrobe continuity per each scene brief, location and daylight, authored action, accountability before romance, the work folder and pier photograph boundary, the reporting note action, the grounded west-wing plans and Nika's recording action, restrained unverified evidence state, anatomy, hands, composition, dialogue-safe mobile framing and absence of Matteo/Giulia/extra cast, readable invented text, Aurea logos/marks, romance/touch, route-lock symbolism, baked UI and watermarks. Return explicit PASS or REWORK with concrete pixel observations for each scene. Use only material blocking findings with impactCode values WRONG_CHARACTER, WRONG_ACTOR_OR_ACTION, WRONG_LOCATION_OR_TIME, STORY_CRITICAL_PROP_MISSING, STORY_CRITICAL_PROP_OBSCURED, ESSENTIAL_CHARACTER_UNRECOGNIZABLE, NARRATIVE_CONTINUITY_CONTRADICTION, DIALOGUE_OR_CONTROLS_UNREADABLE, CRITICAL_SCENE_MAPPING, ESSENTIAL_GESTURE_UNREADABLE, ESSENTIAL_SUBJECT_CROPPED, STORY_ACTION_UNREADABLE, MATERIAL_RUNTIME_READABILITY. Do not claim episode-final or release acceptance, do not request a third candidate, and do not infer anything not visible in supplied pixels.",
+  "runtimeEvidence": [
+    "artifacts/evidence/web-high-control/EP3_THREE_SCENE_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+    "output/playwright/ep3-three-scene-runtime/ep3_eight_years/desktop.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_eight_years/mobile-390.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_eight_years/mobile-360.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_accountability_choice/desktop.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_accountability_choice/mobile-390.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_accountability_choice/mobile-360.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/desktop.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/mobile-390.png",
+    "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/mobile-360.png"
+  ],
+  "images": [
+    {"ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"ref": "giulia-approved-reference", "kind": "original", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"ref": "ep3-eight-years-portrait-candidate-1", "kind": "runtime", "sceneId": "ep3_eight_years", "path": "assets/production/cg/ep3-eight-years-cg.png", "sha256": "502b2be53d0b8d9553db36870893c56f93a021470546998e45d5a6888fcd6074"},
+    {"ref": "ep3-eight-years-landscape-candidate-1", "kind": "runtime", "sceneId": "ep3_eight_years", "path": "assets/production/cg/ep3-eight-years-cg-landscape.png", "sha256": "9f796ed2702e8104be51b6219b1efaf7022871eab8cbae85f46ce0ae95dc1229"},
+    {"ref": "ep3-accountability-choice-portrait-candidate-1", "kind": "runtime", "sceneId": "ep3_accountability_choice", "path": "assets/production/cg/ep3-accountability-choice-cg.png", "sha256": "448cc621600df711d7c9c885abfb26f612f788ca01a4c33aaeaad14044e42d1f"},
+    {"ref": "ep3-accountability-choice-landscape-candidate-1", "kind": "runtime", "sceneId": "ep3_accountability_choice", "path": "assets/production/cg/ep3-accountability-choice-cg-landscape.png", "sha256": "4ce8fea8e739ddaa7f3a08dd847ff164d03bd614c70e0fade13a183c4c20b7c7"},
+    {"ref": "ep3-aurea-drawing-portrait-candidate-1", "kind": "runtime", "sceneId": "ep3_aurea_drawing", "path": "assets/production/cg/ep3-aurea-drawing-cg.png", "sha256": "1c8f3077bd4a3096afe3a60d751adc8a62abace46b5a2372df3267ae60b02e4f"},
+    {"ref": "ep3-aurea-drawing-landscape-candidate-1", "kind": "runtime", "sceneId": "ep3_aurea_drawing", "path": "assets/production/cg/ep3-aurea-drawing-cg-landscape.png", "sha256": "d1909546fc1ef9b5a2f68ce203a5454ea171648949a6a72a9412049bd72240d0"}
+  ]
+}

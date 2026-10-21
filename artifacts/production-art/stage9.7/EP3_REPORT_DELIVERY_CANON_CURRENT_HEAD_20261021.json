@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_REPORT_DELIVERY_CANON_FREEZE",
+  "runId": "2026-10-21T06-16-33-672Z-production-art-97a5c6",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "briefId": "ep3-office-report-chain-delivery-v1",
+  "sceneId": "ep3_report_delivery",
+  "familyId": "ep3-office-report-chain",
+  "references": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "visualCanon": {
+    "location": "Villa Serena office, same day-11 work layers",
+    "light": "continuous daytime office light",
+    "nika": "focused office organizer in soft-sand blouse, washed-olive overshirt and taupe trousers; attaches a non-readable printed report to the work log with a pen",
+    "leo": "quiet reporting professional in light stone field jacket, muted olive shirt and cream trousers; present but not physically dominant, with neutral folder and satchel",
+    "focalAction": "Nika attaches the printed report to the work log and checks the operational line",
+    "professionalBoundary": "work evidence is accountable process, not a romantic token"
+  },
+  "forbidden": [
+    "readable invented report text or numbers",
+    "Aurea appendix",
+    "romantic touch",
+    "Matteo or Giulia in frame",
+    "UI baked into paper",
+    "watermark",
+    "extra cast"
+  ],
+  "dualFormat": {
+    "portrait": "Vertical close-mid frame centered on Nika's hands attaching the report while both faces remain above the safe dialogue area",
+    "landscape": "Three-quarter office table view with report, log and pen in foreground; faces remain readable and papers contain no actual text"
+  },
+  "candidateNumber": 1,
+  "maxCandidatesPerCueAndFormat": 2
+}

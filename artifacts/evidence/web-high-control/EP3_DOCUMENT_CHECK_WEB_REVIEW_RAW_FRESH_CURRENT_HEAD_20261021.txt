@@ -1,0 +1,68 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_document\_check",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_document\_check"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"matteo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-document-check-portrait-candidate-1",  
+"ep3-document-check-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"matteo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-document-check-portrait-candidate-1",  
+"ep3-document-check-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Both runtime compositions preserve the recognizable adult identities of Nika and Leo, establish a credible archive-office environment, and communicate the intended professional document-verification interaction. Nika occupies the active workstation position and handles the documents, while Leo stands beside her presenting a separate sheet for review. The portrait composition emphasizes examination of paperwork at Nika's laptop; the landscape composition more explicitly establishes her control of the incoming-mail log and computer while Leo supplies the appendix. The simultaneous actions establish their respective responsibilities, although a single still cannot independently prove chronological sequencing. Both compositions maintain professional physical distance and restrained expressions without romantic framing. Matteo and Giulia do not appear, and no additional human characters are visible. Documents and archive materials contain no clearly readable invented text. Neither runtime image displays a baked interface overlay or watermark. No material visual defect requiring rework is established by the supplied pixels.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "Three-panel character reference showing an adult woman with a tousled, chin-to-neck-length dark brown wavy bob, brown eyes, defined brows, subtle freckles, and small gold hoop earrings. She wears a loose ivory linen shirt, high-waisted beige trousers, a brown leather belt, and brown sandals. A large dark brown leather shoulder bag accompanies the full-body view. The frontal and three-quarter portraits establish her distinctive facial proportions, natural complexion, hairstyle, and understated styling."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "Three-view character reference showing an adult man with medium-length, loosely swept light brown hair, light brown-green eyes, a narrow straight nose, defined cheekbones, and a clean-shaven face. He wears a light beige linen jacket and matching trousers over a muted olive-green collared shirt, with brown leather loafers and a matching shoulder satchel. The standing pose includes rolled documents. Close-up frontal and downward-looking portraits establish his facial structure, hair texture, and thoughtful expression."  
+},  
+{  
+"ref": "matteo-approved-reference",  
+"path": "assets/characters/references/originals/matteo.png",  
+"sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",  
+"observation": "Three-panel reference depicting an adult man with short, thick, dark wavy hair, pronounced dark eyebrows, brown eyes, and visible dark facial stubble across his jaw, cheeks, and upper lip. His clothing consists of a white linen button-down shirt with rolled sleeves, pale beige tailored trousers, a brown belt, and dark brown loafers. He carries a slim brown leather document folder and wears a wristwatch. His darker hair, heavier eyebrows, and facial hair distinguish him from Leo."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "Three-view reference depicting a mature adult woman with dark brown hair streaked with gray, gathered into a loose low bun. Her face shows natural forehead lines, fine wrinkles around the eyes, and a composed, slightly warm expression. She wears a muted sage-gray button-down shirt with rolled sleeves, a light beige waist apron with large pockets, dark trousers, and black shoes. The frontal portrait and side profile clearly establish her age cues, facial structure, hairstyle, and practical work clothing."  
+},  
+{  
+"ref": "ep3-document-check-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-document-check-cg.png",  
+"sha256": "28ef9508b3a18970d007ea3ec985cbf513a53571e4f3c40b98abf9f104a9570f",  
+"observation": "Portrait-oriented runtime composition showing Leo standing to the left of seated Nika in a warmly illuminated archive office. Leo retains his swept light brown hair, youthful clean-shaven facial structure, beige linen jacket, dark muted collared shirt, and brown leather shoulder bag. He holds a separate light-colored document forward while looking down toward the paperwork. Nika retains her distinctive dark wavy bob, recognizable facial proportions, small gold earrings, and ivory collared blouse, now combined with an olive outer layer appropriate to the office setting. She examines a document while operating an open laptop at a substantial wooden desk. An open ring binder, additional papers, shelving, archive boxes, and a brass desk lamp establish the administrative workspace. Their bodies remain separated by the desk and working positions, with no touching or romantic gestures. The paper surfaces contain indistinct marks rather than readable prose. The laptop screen faces Nika and its contents are not visible. No additional people, watermark, or baked interface graphics are visible."  
+},  
+{  
+"ref": "ep3-document-check-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-document-check-cg-landscape.png",  
+"sha256": "2196f9aa4e8953f06a4a5cf4c3c8eb75e62ce5c135ebe420b8a28d5af21fec51",  
+"observation": "Landscape-oriented runtime composition showing the same two adult characters in a wider archive-office workspace. Leo stands on the left wearing a pale linen jacket over a dark collared shirt, with his brown leather satchel at his side. He extends a separate pale document toward Nika while directing his attention toward her workstation. Nika sits behind a broad wooden desk wearing an olive jacket over an ivory blouse. Her dark textured bob, facial features, and gold jewelry remain consistent with the approved reference. She writes in an open ledger with a pen while reaching toward the computer workstation and looking at a large desktop monitor positioned to her right. The monitor's back faces the viewer, preventing verification of specific displayed content while avoiding invented readable interface text. Open books, stacked files, document boxes, shelving, a classical bust, greenery, and a sunlit arched window establish a coherent archival working environment. The figures maintain professional distance, with the visual emphasis on documentation, verification, and computer work. The visible papers and folders contain no clearly legible invented text. No additional human characters, baked UI, or watermark appear."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

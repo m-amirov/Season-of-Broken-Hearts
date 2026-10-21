@@ -1,0 +1,89 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_accountability\_choice",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "REWORK",  
+"reviewedItems": \[  
+"ep3\_accountability\_choice"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-accountability-choice-portrait-candidate-1",  
+"ep3-accountability-choice-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-accountability-choice-portrait-candidate-1",  
+"ep3-accountability-choice-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "REWORK. Both runtime compositions establish a coherent daylight office conversation between two adults, with Nika visibly questioning or explaining and Leo listening across a professional desk. The open work notebook, pen, and closed folder are present. The setting, wardrobe, props, and character blocking remain consistent between portrait and landscape compositions. Neither image introduces Giulia or additional characters, romantic contact, readable text, UI, or watermarks. However, Leo's appearance in the landscape candidate departs noticeably from his approved reference, particularly in facial hair, hairstyle, and overall facial presentation. The accountability-choice beat also remains visually underdeveloped: Nika carries the visible conversational action while Leo remains passive, and the images do not independently establish his ownership of a concrete reporting task. The dialogue-dependent commitment cannot be verified from still images alone. Rework should prioritize Leo's reference likeness and strengthen the visual suggestion of his present reporting responsibility while preserving the existing restrained, nonromantic staging.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference presents an adult woman with a short, tousled dark-brown bob, softly angular facial structure, pronounced dark eyebrows, hazel-green eyes, natural lips, and small gold hoop earrings. She wears a loose ivory linen shirt, beige trousers, a brown leather belt, and understated gold jewelry. The three views establish her facial proportions, hair texture, and recognizable profile."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference presents an adult man with medium-length, loosely swept brown hair, light hazel-green eyes, noticeable facial freckles, an angular jaw, and very light facial stubble. His face appears relatively narrow and youthful. He wears a light linen jacket over a muted olive shirt, pale trousers, brown loafers, and a leather shoulder bag. The frontal and three-quarter portraits provide clear references for his facial identity."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference shows a mature woman with dark hair streaked with gray, gathered into a low bun, expressive brown eyes, visible facial lines, and small gold earrings. She wears a muted sage-green collared shirt, a beige work apron, dark trousers, and black shoes. Neither runtime candidate depicts this character, consistent with the scene's required two-person cast."  
+},  
+{  
+"ref": "ep3-accountability-choice-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-accountability-choice-cg.png",  
+"sha256": "448cc621600df711d7c9c885abfb26f612f788ca01a4c33aaeaad14044e42d1f",  
+"observation": "The portrait composition shows Nika seated behind a substantial wooden desk, leaning toward Leo with an attentive, serious expression. Her dark hair is pinned into a loose updo, and she wears an olive-green outer layer over a blue collared shirt. One hand holds a pen above an open notebook while her other hand extends in a questioning gesture. Leo occupies the right foreground, facing her in a brown jacket. A closed leather folder rests between them. Warm daylight enters through a large window overlooking a Mediterranean landscape, with plants, shelving, framed artwork, and a table lamp establishing the office. No physical contact, readable document text, additional characters, UI, or watermark is visible."  
+},  
+{  
+"ref": "ep3-accountability-choice-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-accountability-choice-cg-landscape.png",  
+"sha256": "4ce8fea8e739ddaa7f3a08dd847ff164d03bd614c70e0fade13a183c4c20b7c7",  
+"observation": "The landscape composition presents a wider two-person office conversation. Nika sits on the left with a pen, open notebook, blue collared shirt, olive-green outer layer, and restrained questioning gesture. Leo sits opposite with his hands together, maintaining attentive eye contact. He wears a brown jacket over an olive shirt and light trousers, with a brown leather bag visible beside his chair. His hair appears shorter and curlier, and his beard more developed, than in the approved reference. A closed dark folder occupies the center of the desk. Sunlight, olive foliage, a large window, and distant hillside buildings preserve continuity with the portrait setting. The characters remain physically separated, and no readable text, additional cast, UI, or watermark appears."  
+}  
+\],  
+"findings": \[  
+{  
+"id": "EP3-AC-001",  
+"severity": "MAJOR",  
+"status": "OPEN",  
+"impactCode": "CHARACTER\_IDENTITY\_DRIFT",  
+"authoredCue": "Leo must retain his approved adult character identity and remain visually recognizable across production artwork.",  
+"observation": "The landscape candidate depicts Leo with thicker facial hair, a fuller beard, and shorter, curlier, more densely styled brown hair than the approved reference. His facial presentation also appears somewhat heavier and more mature. The approved reference establishes a relatively narrow, angular face, longer loosely swept hair, and minimal stubble. The portrait candidate provides only a restricted view of Leo's face and therefore does not resolve the discrepancy.",  
+"playerImpact": "Players familiar with Leo's established appearance may perceive the landscape figure as a different or substantially redesigned character. This risks interrupting character recognition during a consequential accountability scene.",  
+"evidenceRef": "ep3-accountability-choice-landscape-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+},  
+{  
+"id": "EP3-AC-002",  
+"severity": "MODERATE",  
+"status": "OPEN",  
+"impactCode": "NARRATIVE\_BEAT\_LEGIBILITY",  
+"authoredCue": "Nika asks what present reporting action Leo will take if she does not restore the past. Leo listens and names concrete work rather than requesting access.",  
+"observation": "Both candidates clearly depict Nika actively addressing Leo while he listens. However, Leo's hands remain together rather than engaging with the notebook or folder. The visible notebook and pen are associated with Nika, while the folder between them remains closed. The compositions communicate a serious professional discussion but provide little visual indication that Leo is assuming responsibility for a specific reporting task.",  
+"playerImpact": "Without accompanying dialogue, the artwork may read as a general consultation or interview rather than a turning point in which Leo commits to independently actionable reporting work. The intended shift from seeking access to accepting responsibility is not strongly communicated through the visible staging.",  
+"evidenceRef": "ep3-accountability-choice-landscape-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+}  
+\],  
+"unresolved": \[  
+"The precise spoken content of Leo's reporting commitment cannot be verified from the supplied still images. The absence of visible writing or document interaction does not establish that the scripted dialogue is missing.",  
+"The images cannot independently establish whether Leo requests access or explicitly declines to make his work dependent on Nika restoring the past. This narrative distinction requires dialogue or additional sequential evidence.",  
+"The supplied pixels establish visual continuity between the two runtime compositions, but do not independently establish continuity with earlier Villa Serena office scenes."  
+\]  
+}

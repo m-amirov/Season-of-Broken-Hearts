@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-transition-cg-landscape.candidate1.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "3f01d7a849b3f15539fd3487cb33ddab7a31d4e6d5b2eff8a04dc47d043e9164",
+  "bytes": 2119644,
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "alpha": {
+    "opaque": 1573352,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1573352,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1672,
+    "height": 941
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-21T14:01:26.276Z"
+}

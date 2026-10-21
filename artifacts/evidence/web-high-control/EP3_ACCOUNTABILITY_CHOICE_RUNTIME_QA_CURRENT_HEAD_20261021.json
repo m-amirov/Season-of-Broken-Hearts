@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_EP3_ACCOUNTABILITY_CHOICE_RUNTIME_PIXEL_QA",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "baseUrl": "http://127.0.0.1:4301/",
+  "sceneId": "ep3_accountability_choice",
+  "assetId": "ep3-accountability-choice-cg",
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "mobile-360",
+      "width": 360,
+      "height": 640
+    }
+  ],
+  "captures": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "sceneId": "ep3_accountability_choice",
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_accountability_choice",
+      "assetId": "ep3-accountability-choice-cg",
+      "expectedAsset": "ep3-accountability-choice-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе.",
+      "screenshot": "output/playwright/ep3-accountability-choice-runtime/desktop.png",
+      "screenshotSha256": "67cbc9fdc9bd792d78678559fe6683d07fb174255ce01f83da95084967d786b9",
+      "screenshotBytes": 1144442
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sceneId": "ep3_accountability_choice",
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_accountability_choice",
+      "assetId": "ep3-accountability-choice-cg",
+      "expectedAsset": "ep3-accountability-choice-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе.",
+      "screenshot": "output/playwright/ep3-accountability-choice-runtime/mobile-390.png",
+      "screenshotSha256": "4fbf3e4da7885ee8d13528b4e8807e58c42eb0944f1f2503f01d039179484463",
+      "screenshotBytes": 403676
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "sceneId": "ep3_accountability_choice",
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_accountability_choice",
+      "assetId": "ep3-accountability-choice-cg",
+      "expectedAsset": "ep3-accountability-choice-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе.",
+      "screenshot": "output/playwright/ep3-accountability-choice-runtime/mobile-360.png",
+      "screenshotSha256": "d0a2d2508f284b359dc554c4d256caa471047b2d3bb570d848b6f5fe8419626b",
+      "screenshotBytes": 300226
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

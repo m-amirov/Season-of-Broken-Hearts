@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "DOCUMENTED",
+  "runId": "2026-10-21T07-15-25-867Z-production-art-1ec5a8",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "briefPath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "briefSha256": "1664314211dabcc58d9d4fdc601a4b99ce09cfcb5ae568501c4cdeef23c5cbf6",
+  "sceneIds": ["ep3_eight_years", "ep3_accountability_choice", "ep3_aurea_drawing"],
+  "characterReferences": {
+    "nika": {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    "leo": {"path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  },
+  "generation": {
+    "provider": "native-terra",
+    "model": "gpt-5.6-terra",
+    "tool": "image_gen.imagegen",
+    "producerAgentType": "ceos_asset_generator",
+    "producerAgentId": "01a15d56-41e8-7993-99f6-3d3572490119",
+    "routeCheck": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceFile": "C:/Users/user/.codex/sessions/2026/10/21/rollout-2026-10-21T10-21-36-01a15d56-41e8-7993-99f6-3d3572490119.jsonl",
+    "producerTraceSha256": "82436887636f6ed5609f480dc3588914dcce61fd17f092c018a6a52de64abf67",
+    "capabilityChallengeId": "cap-839dd0bb95c62e71fd8e",
+    "candidate": 1,
+    "candidateLimit": 2,
+    "c2paPresent": true,
+    "providerByteReceipt": "NOT_EXPOSED"
+  },
+  "outputs": [
+    {"sceneId": "ep3_eight_years", "format": "portrait", "path": "assets/production/cg/ep3-eight-years-cg.png", "sha256": "502b2be53d0b8d9553db36870893c56f93a021470546998e45d5a6888fcd6074", "dimensions": {"width": 1024, "height": 1536}, "outputReceipt": "artifacts/production-art/stage9.6/receipts/ep3-eight-years-cg-portrait-candidate-1-output-verify-20261021.json"},
+    {"sceneId": "ep3_eight_years", "format": "landscape", "path": "assets/production/cg/ep3-eight-years-cg-landscape.png", "sha256": "9f796ed2702e8104be51b6219b1efaf7022871eab8cbae85f46ce0ae95dc1229", "dimensions": {"width": 1672, "height": 941}, "outputReceipt": "artifacts/production-art/stage9.6/receipts/ep3-eight-years-cg-landscape-candidate-1-output-verify-20261021.json"},
+    {"sceneId": "ep3_accountability_choice", "format": "portrait", "path": "assets/production/cg/ep3-accountability-choice-cg.png", "sha256": "448cc621600df711d7c9c885abfb26f612f788ca01a4c33aaeaad14044e42d1f", "dimensions": {"width": 1024, "height": 1536}, "outputReceipt": "artifacts/production-art/stage9.6/receipts/ep3-accountability-choice-cg-portrait-candidate-1-output-verify-20261021.json"},
+    {"sceneId": "ep3_accountability_choice", "format": "landscape", "path": "assets/production/cg/ep3-accountability-choice-cg-landscape.png", "sha256": "4ce8fea8e739ddaa7f3a08dd847ff164d03bd614c70e0fade13a183c4c20b7c7", "dimensions": {"width": 1672, "height": 941}, "outputReceipt": "artifacts/production-art/stage9.6/receipts/ep3-accountability-choice-cg-landscape-candidate-1-output-verify-20261021.json"},
+    {"sceneId": "ep3_aurea_drawing", "format": "portrait", "path": "assets/production/cg/ep3-aurea-drawing-cg.png", "sha256": "1c8f3077bd4a3096afe3a60d751adc8a62abace46b5a2372df3267ae60b02e4f", "dimensions": {"width": 1024, "height": 1536}, "outputReceipt": "artifacts/production-art/stage9.6/receipts/ep3-aurea-drawing-cg-portrait-candidate-1-output-verify-20261021.json"},
+    {"sceneId": "ep3_aurea_drawing", "format": "landscape", "path": "assets/production/cg/ep3-aurea-drawing-cg-landscape.png", "sha256": "d1909546fc1ef9b5a2f68ce203a5454ea171648949a6a72a9412049bd72240d0", "dimensions": {"width": 1672, "height": 941}, "outputReceipt": "artifacts/production-art/stage9.6/receipts/ep3-aurea-drawing-cg-landscape-candidate-1-output-verify-20261021.json"}
+  ],
+  "trustBoundaries": {
+    "legacyBridge": "UNUSED_FETCH_FAILED",
+    "devBrowserOnlyWebHigh": "CURRENT_HEAD_REVIEW_REQUIRED",
+    "visualAcceptance": "PENDING_CURRENT_HEAD_RUNTIME_AND_DEV_WEB_HIGH"
+  }
+}

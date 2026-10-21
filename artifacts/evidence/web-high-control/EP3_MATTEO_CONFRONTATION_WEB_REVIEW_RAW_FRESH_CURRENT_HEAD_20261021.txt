@@ -1,0 +1,81 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_matteo\_confrontation",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "REWORK",  
+"reviewedItems": \[  
+"ep3\_matteo\_confrontation"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"matteo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-matteo-confrontation-portrait-candidate-1",  
+"ep3-matteo-confrontation-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"matteo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-matteo-confrontation-portrait-candidate-1",  
+"ep3-matteo-confrontation-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "REWORK required because the landscape runtime image appears to reverse Matteo and Leo's narrative roles. The portrait candidate correctly depicts Nika extending a document folder toward the dark-haired, stubbled Matteo while the younger, clean-shaven Leo witnesses from the doorway. In the landscape candidate, the recipient instead resembles the approved Leo reference, while the dark-haired, stubbled figure resembling Matteo stands at the doorway. This changes the intended recipient of the appendix and undermines the central confrontation. Both images otherwise communicate a restrained professional exchange, contain exactly three visible characters, and show no readable invented document text, baked interface elements, or watermarks. The landscape character-role mismatch is materially significant and prevents acceptance of the two-format scene as submitted.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "Three-panel character reference depicting an adult woman with a short, voluminous, wavy dark-brown bob, defined eyebrows, brown eyes, subtle freckles, small gold hoop earrings, and a delicate gold pendant necklace. She wears a loosely buttoned ivory linen shirt, high-waisted beige trousers, a brown leather belt, and brown sandals. The full-body panel includes a large dark-brown shoulder bag. The central close-up establishes her facial proportions and natural complexion, while the right panel establishes her hairstyle and side profile. Her appearance is consistent with the central woman in both runtime candidates."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "Three-view reference showing a young adult man with medium-length, tousled light-to-medium brown hair, a relatively narrow face, light eyes, and little visible facial hair. He wears a textured light-beige linen jacket and matching trousers over a muted olive-green collared shirt, with a brown leather belt, brown loafers, and a leather shoulder satchel. The portrait views emphasize his comparatively youthful facial structure and softer jawline. These characteristics correspond most closely to the man at the doorway in the portrait runtime candidate and the man receiving the folder in the landscape runtime candidate."  
+},  
+{  
+"ref": "matteo-approved-reference",  
+"path": "assets/characters/references/originals/matteo.png",  
+"sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23",  
+"observation": "Three-view reference depicting an adult man with dark, loosely swept-back hair, pronounced dark eyebrows, angular facial features, and visible dark stubble across his jaw and upper lip. He wears an open-collar white linen shirt with rolled sleeves, light beige tailored trousers, a dark-brown leather belt, and polished brown loafers. The full-body panel includes a brown leather document holder and wristwatch. His mature facial structure and stubble distinguish him from Leo. These features closely match the right-hand recipient in the portrait runtime candidate and the dark-haired observer at the left doorway in the landscape runtime candidate."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "Three-panel reference showing a mature adult woman with dark hair streaked with gray, gathered into a low, loosely arranged bun. She has expressive dark eyes, visible natural facial lines, and small gold hoop earrings. Her clothing consists of a muted sage-green collared shirt, beige work apron, dark trousers, and black shoes. The central portrait shows a composed expression with a slight smile, while the right panel establishes her profile and hairstyle. This character is not visible in either runtime image, consistent with the requirement for a confrontation involving only Nika, Matteo, and Leo."  
+},  
+{  
+"ref": "ep3-matteo-confrontation-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-matteo-confrontation-cg.png",  
+"sha256": "58ff34080dd25848f167a5ac9309d539fa259928b1aff02cd1aa3b9f6e045bf1",  
+"observation": "Vertical composition inside a warmly illuminated, traditional office or study. Nika occupies the center foreground, wearing an ivory blouse beneath an olive overshirt and extending a plain beige document folder toward the man at the right edge. Her short wavy brown hair, facial structure, gold earrings, and pendant remain recognizable against her approved reference. The recipient has dark hair, substantial facial stubble, a white linen shirt, and a wristwatch, matching Matteo's reference. His hands are open in front of him, positioned to receive the folder without physical contact or coercion. Leo stands behind Nika at the left doorway, wearing a light linen jacket, dark shirt, and shoulder satchel. He watches the exchange with a serious expression. Exactly three people are visible. Warm sunlight, dark wooden furnishings, framed artwork, and an office desk support the professional confrontation. No romantic interaction, readable document text, interface overlay, or watermark is visible."  
+},  
+{  
+"ref": "ep3-matteo-confrontation-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-matteo-confrontation-cg-landscape.png",  
+"sha256": "79da9893be933d8d825531ff954fc5bbebdd6ae9dcf1c15117800141a65dca80",  
+"observation": "Horizontal composition in a sunlit office with dark wooden bookshelves, a large desk, leather seating, curtains, and a window overlooking a Mediterranean-style landscape. Nika sits centrally behind the desk, wearing an olive overshirt over an ivory blouse, and extends a dark-brown document folder toward a man standing at the right. The recipient has lighter brown, medium-length hair, a youthful clean-shaven face, a sage-green collared shirt, and a light linen jacket, aligning strongly with Leo's approved identity rather than Matteo's. The observer at the left doorway has dark tousled hair, prominent eyebrows, and noticeable facial stubble resembling Matteo, although he wears a light jacket, dark shirt, and shoulder satchel associated with Leo's styling. This creates a significant character-identity and narrative-role discrepancy relative to the portrait candidate. The physical handoff remains legible, with the recipient extending his hands toward the folder. No aggression, coercion, romantic contact, additional characters, readable invented text, baked interface elements, or watermark is visible."  
+}  
+\],  
+"findings": \[  
+{  
+"id": "EP3-MATTEO-001",  
+"severity": "MAJOR",  
+"status": "OPEN",  
+"impactCode": "CHARACTER\_IDENTITY\_ROLE\_MISMATCH",  
+"authoredCue": "Nika must not protect Matteo from the truth. She directly hands the appendix to Matteo while Leo witnesses the confrontation without becoming the document recipient. Both aspect ratios must preserve the approved identities and narrative roles.",  
+"observation": "The portrait candidate establishes the expected blocking: Nika extends the folder toward the dark-haired, stubbled Matteo at the right, while the younger-looking Leo watches from the left doorway. The landscape candidate appears to reverse these identities. The man receiving the folder at the right has Leo's youthful, largely clean-shaven face, medium-brown hair, sage shirt, and pale linen jacket. The man watching from the left doorway has the darker hair, pronounced eyebrows, and stubble associated with Matteo, despite wearing clothing and carrying a satchel more closely associated with Leo. Consequently, the landscape candidate visually suggests that Nika is handing the appendix to Leo while Matteo witnesses, rather than the reverse.",  
+"playerImpact": "The player may understand the landscape scene as Nika revealing the appendix to Leo instead of confronting Matteo directly. This changes who receives the evidence, who witnesses the disclosure, and the intended dramatic significance of Nika's decision. It also introduces noticeable character-continuity problems when switching between the portrait and landscape presentations.",  
+"evidenceRef": "ep3-matteo-confrontation-landscape-candidate-1",  
+"actualPixelsReceived": true,  
+"materialPlayerImpact": true  
+}  
+\],  
+"unresolved": \[\]  
+}

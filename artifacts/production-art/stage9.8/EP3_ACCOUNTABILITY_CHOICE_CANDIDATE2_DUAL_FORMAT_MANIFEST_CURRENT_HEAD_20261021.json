@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "runId": "2026-10-21T09-29-33-577Z-production-art-94db4d",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "episode": 3,
+  "candidate": 2,
+  "brief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "briefId": "ep3-office-accountability-choice-v1",
+    "sha256": "87e765f75ce306aa68ad447a72466b77ab4ea9d1063e1464cf41a0a911c4eedd"
+  },
+  "sceneAssets": {"ep3_accountability_choice": "ep3-accountability-choice-cg"},
+  "assets": {
+    "ep3-accountability-choice-cg": {
+      "portrait": {"path": "assets/production/cg/ep3-accountability-choice-cg.png", "sha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523", "width": 1024, "height": 1536, "outputVerifyReceipt": "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_PORTRAIT_OUTPUT_20261021.json"},
+      "desktop": {"path": "assets/production/cg/ep3-accountability-choice-cg-landscape.png", "sha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558", "width": 1672, "height": 941, "outputVerifyReceipt": "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_LANDSCAPE_OUTPUT_20261021.json"}
+    }
+  },
+  "references": {
+    "nika": {"path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    "leo": {"path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  },
+  "runtimeMapping": {"path": "narrative/assets.json", "assetId": "ep3-accountability-choice-cg", "portraitSha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523", "landscapeSha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558"},
+  "preservedRejectedCandidate1": "artifacts/production-art/stage9.8/preserved-candidate1/",
+  "status": "INTEGRATED_MECHANICAL_PASS_RUNTIME_AND_WEB_PENDING",
+  "visualAcceptance": "PENDING_CURRENT_HEAD_RUNTIME_AND_DEV_WEB_HIGH",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "status": "DOCUMENTED",
+  "runId": "2026-10-21T05-34-00-674Z-production-art-10af12",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_survey_decline_response",
+  "assetId": "ep3-survey-decline-response-cg",
+  "briefPath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "briefSha256": "cf453de612b2733e8e97767dbfeb26d382714351d7d4323c9d0a628387b64b90",
+  "characterReferences": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "generation": {
+    "provider": "native-terra",
+    "model": "gpt-5.6-terra",
+    "tool": "image_gen.imagegen",
+    "producerAgentType": "ceos_asset_generator",
+    "producerAgentId": "01a15cf6-5ba7-7fe2-82cb-75fd7346c8cd",
+    "routeCheck": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceSha256": "1eda7fa000a70246e49969022d22de448b4ddd966896904734e7fc1425d0dd50",
+    "capabilityChallengeId": "cap-d25654246e3c6bbce82a",
+    "candidate": 1,
+    "candidateLimit": 2,
+    "c2paPresent": true,
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "outputs": [
+    {
+      "path": "assets/production/cg/ep3-survey-decline-response-cg.png",
+      "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "assets/production/cg/ep3-survey-decline-response-cg-landscape.png",
+      "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "trustBoundaries": {
+    "legacyBridge": "UNUSED_FETCH_FAILED",
+    "devBrowserOnlyWebHigh": "CURRENT_HEAD_V2_REVIEW_REQUIRED",
+    "visualAcceptance": "PENDING_CURRENT_HEAD_V2"
+  }
+}

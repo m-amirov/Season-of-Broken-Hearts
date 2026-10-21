@@ -1,0 +1,44 @@
+{
+  "index": 4,
+  "stage": "CANON_READY",
+  "at": "2026-10-21T11:51:25.296Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "canon": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_CANON_CURRENT_HEAD_20261021.json",
+    "sceneIds": [
+      "ep3_quiet_return",
+      "ep3_transition"
+    ],
+    "candidateLimit": 2,
+    "characterReferenceHashesVerified": true,
+    "branchAwareContractVerified": true
+  },
+  "source": {
+    "available": true,
+    "head": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "clean": false,
+    "worktreeSha256": "653f14d676527ce4ab895920ec4cd73cf74ba57c77b6baf6edbec65d4194b026"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_CANON_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.12\\EP3_COMPLETION_BATCH_CANON_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_CANON_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "5eabeb217cdad6b3b11e077b94df398b1c3b373512dbac51715c0d5f8a4bbcd3",
+      "size": 2363
+    },
+    {
+      "input": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.6\\EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "projectRelativePath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+      "type": "file",
+      "sha256": "da0f6b98dbee1892fd7c8afa2ea8f344cbe6530a413f1e77e2b0a627c524cf0e",
+      "size": 66993
+    }
+  ]
+}

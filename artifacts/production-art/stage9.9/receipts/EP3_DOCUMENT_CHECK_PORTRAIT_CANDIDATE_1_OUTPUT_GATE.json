@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-document-check-cg.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "28ef9508b3a18970d007ea3ec985cbf513a53571e4f3c40b98abf9f104a9570f",
+  "bytes": 2289503,
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "alpha": {
+    "opaque": 1572864,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1572864,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 1536
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-21T10:21:22.759Z"
+}

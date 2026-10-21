@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-repair-canon",
+  "status": "CANON_READY_CANDIDATE_2_OF_2",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBriefPacket": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "sourceBoundBriefSha256": "8c3e78acc10ab06f7740b38a5408c0eb480350d2cfd714d6b21c2531416db90e",
+  "sceneId": "ep3_matteo_confrontation",
+  "assetId": "ep3-matteo-confrontation-cg",
+  "familyId": "ep3-villa-office-confrontation",
+  "candidateNumber": 2,
+  "candidateLimit": 2,
+  "requiredCast": ["nika", "matteo", "leo"],
+  "characterReferenceIds": ["nika", "matteo", "leo"],
+  "narrativeCue": "Nika controls whether the folder is handed over; Matteo receives only after permission; Leo remains by the door and witnesses without deciding the disclosure.",
+  "requiredCorrection": {
+    "roleContinuity": "Both portrait and landscape must show the dark-haired, stubbled Matteo as the recipient of Nika's folder, while the younger clean-shaven Leo remains the doorway witness.",
+    "identity": "Preserve approved adult Nika, Matteo and Leo facial identity, age cues, hair, facial hair, wardrobe distinctions and satchel continuity.",
+    "handoff": "Keep a clear non-coercive document handoff with no readable invented appendix text, romantic contact, extra cast, UI or watermark."
+  },
+  "forbidden": ["extra staff", "readable appendix", "Matteo grabbing the folder", "Leo deciding for Nika", "romantic contact", "third candidate", "baked dialogue, UI, logo or watermark"],
+  "dualFormat": {
+    "portrait": {"width": 1024, "height": 1536, "safeArea": "Keep Nika's handoff, Matteo's stubbled recipient identity, Leo's doorway witness identity and all three faces above the dialogue-safe area at 360x640 and 390x844."},
+    "landscape": {"width": 1672, "height": 941, "safeArea": "Keep the role-correct handoff and all three distinct identities readable above the dialogue band at desktop."
+    }
+  },
+  "qualityAcceptance": ["Real native Terra/ImageGen outputs only", "Portrait and landscape independently composed", "Approved Nika, Matteo and Leo identity/age/wardrobe continuity", "Matteo is the recipient in both formats and Leo is the witness", "No material mobile crop or role ambiguity"],
+  "priorWebFinding": "Candidate 1 actual-pixel DEV Web High REWORK: portrait correctly gives the folder to dark-haired stubbled Matteo, but landscape appears to give it to youthful clean-shaven Leo while Matteo witnesses.",
+  "priorWebFindingIds": ["EP3-MATTEO-001"],
+  "priorWebEvidence": "artifacts/evidence/web-high-control/EP3_MATTEO_CONFRONTATION_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+  "generationRule": "Candidate 2 is the final allowed generation for this scene. Preserve candidate 1 byte-exact evidence and stop after this pair regardless of verdict; no hidden regeneration or candidate 3."
+}

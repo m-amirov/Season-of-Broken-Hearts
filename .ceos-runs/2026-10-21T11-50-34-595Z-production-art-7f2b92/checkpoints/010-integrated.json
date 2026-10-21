@@ -1,0 +1,72 @@
+{
+  "index": 10,
+  "stage": "INTEGRATED",
+  "at": "2026-10-21T14:07:48.967Z",
+  "cycle": 1,
+  "outcome": "CONTINUE",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "sceneIds": [
+      "ep3_quiet_return",
+      "ep3_transition"
+    ],
+    "candidate": 1,
+    "candidateLimit": 2,
+    "dualFormatManifest": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "runtimeMapping": "narrative/assets.json",
+    "provenance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+      "coverageMode": "BATCH_ONLY",
+      "episode": 3,
+      "requiredScenes": 15,
+      "mappedScenes": 2,
+      "coveredSceneIds": [
+        "ep3_quiet_return",
+        "ep3_transition"
+      ],
+      "fullEpisodeCovered": false,
+      "episodeFinalAcceptance": "NOT_VERIFIED",
+      "releaseReady": false,
+      "uniqueAssets": 2,
+      "variantFilesChecked": 4,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "Mechanical verification of authored scenes only. BATCH_ONLY and REUSE_SCOPE are never episode-final acceptance; real runtime/Web High review remains mandatory."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "clean": false,
+    "worktreeSha256": "4b8f9579d5314567da5ffa53738a2ab983c644124e843953223a728678b37465"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.12\\EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "73f177e4054323547f17e388fa67dadbf5e66cc1cde07001b30e0b44145fc1e6",
+      "size": 2696
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "9e88341a662d268773e02aa6f196fec5c9c48602e31754d11bc575fd75e5fa3d",
+      "size": 2051
+    },
+    {
+      "input": "narrative/assets.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\narrative\\assets.json",
+      "projectRelativePath": "narrative/assets.json",
+      "type": "file",
+      "sha256": "2eb781cd72a45baf75c0e63bf289cfb2d6f67625b91ed5d22dfc3a0f4f41e6ec",
+      "size": 27991
+    }
+  ]
+}

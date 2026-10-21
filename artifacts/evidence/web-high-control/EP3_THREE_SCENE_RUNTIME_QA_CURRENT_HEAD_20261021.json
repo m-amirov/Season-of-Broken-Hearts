@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_EP3_THREE_SCENE_RUNTIME_PIXEL_QA",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "baseUrl": "http://127.0.0.1:4301/",
+  "sceneIds": [
+    "ep3_eight_years",
+    "ep3_accountability_choice",
+    "ep3_aurea_drawing"
+  ],
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "mobile-360",
+      "width": 360,
+      "height": 640
+    }
+  ],
+  "captures": [
+    {
+      "sceneId": "ep3_eight_years",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_eight_years",
+      "assetId": "ep3-eight-years-cg",
+      "expectedAsset": "ep3-eight-years-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Они говорили в кабинете, где между двумя стульями лежала рабочая папка и старый снимок пирса. Папка не давала разговору превратиться в воспоминание без последствий.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_eight_years/desktop.png",
+      "screenshotSha256": "e2f2b4cb577aeb807ccd5e685943a21a41d2a185c8fad0d2f519cfa25ecbcc62",
+      "screenshotBytes": 1130579
+    },
+    {
+      "sceneId": "ep3_eight_years",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_eight_years",
+      "assetId": "ep3-eight-years-cg",
+      "expectedAsset": "ep3-eight-years-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Они говорили в кабинете, где между двумя стульями лежала рабочая папка и старый снимок пирса. Папка не давала разговору превратиться в воспоминание без последствий.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_eight_years/mobile-390.png",
+      "screenshotSha256": "143588bad080ca8b63721cbdf9dfc5abb9a008b049f5d2d85befb48966669e8a",
+      "screenshotBytes": 408591
+    },
+    {
+      "sceneId": "ep3_eight_years",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_eight_years",
+      "assetId": "ep3-eight-years-cg",
+      "expectedAsset": "ep3-eight-years-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Они говорили в кабинете, где между двумя стульями лежала рабочая папка и старый снимок пирса. Папка не давала разговору превратиться в воспоминание без последствий.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_eight_years/mobile-360.png",
+      "screenshotSha256": "18537de6f93be4d77332bc8c00dc9f36c5d4806adbd4d6ad5e55bf57517f9a6e",
+      "screenshotBytes": 305352
+    },
+    {
+      "sceneId": "ep3_accountability_choice",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_accountability_choice",
+      "assetId": "ep3-accountability-choice-cg",
+      "expectedAsset": "ep3-accountability-choice-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_accountability_choice/desktop.png",
+      "screenshotSha256": "20c97933db532cf6b13c66cadfa03ec716947b8f5047dfbdc61139c347225b05",
+      "screenshotBytes": 1094867
+    },
+    {
+      "sceneId": "ep3_accountability_choice",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_accountability_choice",
+      "assetId": "ep3-accountability-choice-cg",
+      "expectedAsset": "ep3-accountability-choice-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_accountability_choice/mobile-390.png",
+      "screenshotSha256": "9c154a2c78061e021a06fae4a699cc8bd7ac8b852dc451bc8294a198466e5fe6",
+      "screenshotBytes": 407909
+    },
+    {
+      "sceneId": "ep3_accountability_choice",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_accountability_choice",
+      "assetId": "ep3-accountability-choice-cg",
+      "expectedAsset": "ep3-accountability-choice-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Я могу назвать ещё детали, но не хочу превращать исповедь в способ получить доступ к тебе.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_accountability_choice/mobile-360.png",
+      "screenshotSha256": "6cbc5eda760fa560b1796eff57984eaee2b6efb229ba49f3083d1f0286675efb",
+      "screenshotBytes": 302483
+    },
+    {
+      "sceneId": "ep3_aurea_drawing",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_aurea_drawing",
+      "assetId": "ep3-aurea-drawing-cg",
+      "expectedAsset": "ep3-aurea-drawing-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "В западном крыле снова пахло пылью и старым камнем. Лео разложил планы на полу, чтобы не закрывать ими проход.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/desktop.png",
+      "screenshotSha256": "3acf2a3310dd5d95f118584835066757ad72c6b83faef51fe90614d33c6ebfac",
+      "screenshotBytes": 1144739
+    },
+    {
+      "sceneId": "ep3_aurea_drawing",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_aurea_drawing",
+      "assetId": "ep3-aurea-drawing-cg",
+      "expectedAsset": "ep3-aurea-drawing-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "В западном крыле снова пахло пылью и старым камнем. Лео разложил планы на полу, чтобы не закрывать ими проход.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/mobile-390.png",
+      "screenshotSha256": "d691ae57557f2c8818ea921b34b05350665c925ea4011081c5f15a0fcc6a18fc",
+      "screenshotBytes": 456735
+    },
+    {
+      "sceneId": "ep3_aurea_drawing",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_aurea_drawing",
+      "assetId": "ep3-aurea-drawing-cg",
+      "expectedAsset": "ep3-aurea-drawing-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "В западном крыле снова пахло пылью и старым камнем. Лео разложил планы на полу, чтобы не закрывать ими проход.",
+      "screenshot": "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/mobile-360.png",
+      "screenshotSha256": "66d1414b39a1fe49cb22ef7d7757babb5bba4ede1d6386d0fa550478485221ca",
+      "screenshotBytes": 340510
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "status": "DOCUMENTED",
+  "runId": "2026-10-21T06-30-41-086Z-production-art-34dae2",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_report_delivery",
+  "assetId": "ep3-report-delivery-cg",
+  "briefPath": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "briefSha256": "cf453de612b2733e8e97767dbfeb26d382714351d7d4323c9d0a628387b64b90",
+  "characterReferences": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "generation": {
+    "provider": "native-terra",
+    "model": "gpt-5.6-terra",
+    "tool": "image_gen.imagegen",
+    "producerAgentType": "ceos_asset_generator",
+    "producerAgentId": "01a15d2b-4269-7222-9c8c-7c066351def2",
+    "routeCheck": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "producerTraceSha256": "79fa2dad0875e64bfc45f70988449988da038928c25651406bd3ddaa585493b3",
+    "capabilityChallengeId": "cap-a6a181c4add975410a48",
+    "candidate": 2,
+    "candidateLimit": 2,
+    "c2paPresent": true,
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "outputs": [
+    {
+      "path": "assets/production/cg/ep3-report-delivery-cg.png",
+      "sha256": "da3ae20b7a7de4cc5c3a17d1f314c8b50f04262b53255d61e683b56cd416962a",
+      "width": 1024,
+      "height": 1536,
+      "outputGate": "artifacts/production-art/stage9.7/receipts/EP3_REPORT_DELIVERY_CANDIDATE2_PORTRAIT_OUTPUT_GATE_20261021.json",
+      "importedVerify": "artifacts/production-art/stage9.7/receipts/EP3_REPORT_DELIVERY_CANDIDATE2_PORTRAIT_IMPORTED_OUTPUT_VERIFY_20261021.json"
+    },
+    {
+      "path": "assets/production/cg/ep3-report-delivery-cg-landscape.png",
+      "sha256": "41522f851103745b44c9c92c587da296c0fcfcc9fd6c936ff671130b612c9871",
+      "width": 1672,
+      "height": 941,
+      "outputGate": "artifacts/production-art/stage9.7/receipts/EP3_REPORT_DELIVERY_CANDIDATE2_LANDSCAPE_OUTPUT_GATE_20261021.json",
+      "importedVerify": "artifacts/production-art/stage9.7/receipts/EP3_REPORT_DELIVERY_CANDIDATE2_LANDSCAPE_IMPORTED_OUTPUT_VERIFY_20261021.json"
+    }
+  ],
+  "trustBoundaries": {
+    "legacyBridge": "UNUSED_FETCH_FAILED",
+    "devBrowserOnlyWebHigh": "CURRENT_HEAD_REVIEW_REQUIRED",
+    "visualAcceptance": "PASS_CURRENT_HEAD_DEV_BROWSER_ONLY_WEB_HIGH"
+  }
+}

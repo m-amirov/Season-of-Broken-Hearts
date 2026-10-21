@@ -305,6 +305,96 @@
         "portrait": {"src": "/assets/production/cg/ep3-survey-decline-response-cg.png", "sha256": "db5274ca2f8aba35171b875401edbfa8243f58a513c9d276401eb7d5630e17d4", "dimensions": {"width": 1024, "height": 1536}},
         "landscape": {"src": "/assets/production/cg/ep3-survey-decline-response-cg-landscape.png", "sha256": "4a8fe82ab5ed30952f39a6034b68b61ffa883b4cc9fb5430b35dd1f8cb952a25", "dimensions": {"width": 1672, "height": 941}}
       }
+    },
+    "ep3-report-delivery-cg": {
+      "src": "/assets/production/cg/ep3-report-delivery-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-office-report-chain",
+      "sceneIds": ["ep3_report_delivery"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-report-delivery-cg.png", "sha256": "da3ae20b7a7de4cc5c3a17d1f314c8b50f04262b53255d61e683b56cd416962a", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-report-delivery-cg-landscape.png", "sha256": "41522f851103745b44c9c92c587da296c0fcfcc9fd6c936ff671130b612c9871", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-eight-years-cg": {
+      "src": "/assets/production/cg/ep3-eight-years-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-office-accountability",
+      "sceneIds": ["ep3_eight_years"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-eight-years-cg.png", "sha256": "502b2be53d0b8d9553db36870893c56f93a021470546998e45d5a6888fcd6074", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-eight-years-cg-landscape.png", "sha256": "9f796ed2702e8104be51b6219b1efaf7022871eab8cbae85f46ce0ae95dc1229", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-accountability-choice-cg": {
+      "src": "/assets/production/cg/ep3-accountability-choice-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-office-accountability",
+      "sceneIds": ["ep3_accountability_choice"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-accountability-choice-cg.png", "sha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-accountability-choice-cg-landscape.png", "sha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-aurea-drawing-cg": {
+      "src": "/assets/production/cg/ep3-aurea-drawing-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-west-wing-aurea-plan",
+      "sceneIds": ["ep3_aurea_drawing"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-aurea-drawing-cg.png", "sha256": "1c8f3077bd4a3096afe3a60d751adc8a62abace46b5a2372df3267ae60b02e4f", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-aurea-drawing-cg-landscape.png", "sha256": "d1909546fc1ef9b5a2f68ce203a5454ea171648949a6a72a9412049bd72240d0", "dimensions": {"width": 1672, "height": 941}}
+        }
+      },
+    "ep3-document-check-cg": {
+      "src": "/assets/production/cg/ep3-document-check-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-archive-document-check",
+      "sceneIds": ["ep3_document_check"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-document-check-cg.png", "sha256": "28ef9508b3a18970d007ea3ec985cbf513a53571e4f3c40b98abf9f104a9570f", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-document-check-cg-landscape.png", "sha256": "2196f9aa4e8953f06a4a5cf4c3c8eb75e62ce5c135ebe420b8a28d5af21fec51", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-document-check-response-cg": {
+      "src": "/assets/production/cg/ep3-document-check-response-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-archive-document-check",
+      "sceneIds": ["ep3_document_check_response"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-document-check-response-cg.png", "sha256": "26c821c41bf3406eb342307446c528341b64c9c8012810140b4b7de3653b8bc3", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-document-check-response-cg-landscape.png", "sha256": "098b2882cd4b716c9d4fd2ddeb694f1140f9743a0eec5eb00b6556e1d8953cbe", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-matteo-confrontation-cg": {
+      "src": "/assets/production/cg/ep3-matteo-confrontation-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-villa-office-confrontation",
+      "sceneIds": ["ep3_matteo_confrontation"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-matteo-confrontation-cg.png", "sha256": "6c6fc3c3736bac36c887c01850fb27731fb2bf775e3ce6af3b6d3c904c72ffe5", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-matteo-confrontation-cg-landscape.png", "sha256": "3acbdf6d3979c16c66c86b7e6e975704e43650a8f07b541f858da6e4ccbec1b4", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-quiet-return-cg": {
+      "src": "/assets/production/cg/ep3-quiet-return-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-quiet-return",
+      "sceneIds": ["ep3_quiet_return"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-quiet-return-cg.png", "sha256": "6dc5ef94af2696ad08feb1bc7d629ad3e40ad66c27b258e8a6dbe3ea96fb89fb", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-quiet-return-cg-landscape.png", "sha256": "4b0bcc2803e6530e2741520801f1eefee7b781268d3b983b6b5a9280527b38a3", "dimensions": {"width": 1672, "height": 941}}
+      }
+    },
+    "ep3-transition-cg": {
+      "src": "/assets/production/cg/ep3-transition-cg.png",
+      "kind": "production-cg",
+      "familyId": "ep3-transition",
+      "sceneIds": ["ep3_transition"],
+      "variants": {
+        "portrait": {"src": "/assets/production/cg/ep3-transition-cg.png", "sha256": "fcda0044299c1d5d1ee190b32a62ae4159a3cf71de1f33d9956dc8339a55e65f", "dimensions": {"width": 1024, "height": 1536}},
+        "landscape": {"src": "/assets/production/cg/ep3-transition-cg-landscape.png", "sha256": "3f01d7a849b3f15539fd3487cb33ddab7a31d4e6d5b2eff8a04dc47d043e9164", "dimensions": {"width": 1672, "height": 941}}
+      }
     }
   }
 }

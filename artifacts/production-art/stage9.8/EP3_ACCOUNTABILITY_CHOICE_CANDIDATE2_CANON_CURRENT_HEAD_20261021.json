@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "kind": "production-art-repair-canon",
+  "status": "CANON_READY_CANDIDATE_2_OF_2",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBriefPacket": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "sourceBoundBriefSha256": "87e765f75ce306aa68ad447a72466b77ab4ea9d1063e1464cf41a0a911c4eedd",
+  "sceneId": "ep3_accountability_choice",
+  "assetId": "ep3-accountability-choice-cg",
+  "familyId": "ep3-office-accountability",
+  "candidateNumber": 2,
+  "candidateLimit": 2,
+  "requiredCast": ["nika", "leo"],
+  "characterReferenceIds": ["nika", "leo"],
+  "narrativeCue": "Nika asks what Leo will do now if she does not return his past; he names an action and a report deadline rather than asking for access.",
+  "requiredCorrection": {
+    "identity": "Restore Leo to the approved adult reference: medium swept/slightly tousled brown hair, angular face, hazel-brown eyes, pronounced brows and subtle facial stubble; avoid fuller beard, shorter/curlier hair or heavier/more mature presentation.",
+    "beatLegibility": "Make Leo's concrete reporting responsibility visually legible through a neutral report note, folder and pen/action without readable invented text; Nika remains the boundary-setting decision-maker.",
+    "continuity": "Keep the approved weathered-brown overshirt, muted olive shirt, stone trousers and brown satchel; preserve Nika's dusty-blue blouse, warm-beige trousers and washed-olive layer."
+  },
+  "forbidden": [
+    "romantic physical contact",
+    "engagement/wedding symbols",
+    "readable invented deadline",
+    "route-lock imagery",
+    "extra cast",
+    "third candidate",
+    "baked dialogue, UI, logo or watermark"
+  ],
+  "dualFormat": {
+    "portrait": {"width": 1024, "height": 1536, "safeArea": "Keep both faces, Nika's questioning posture, Leo's report action and the folder above the dialogue-safe area at 360x640, 390x844 and 430x932."},
+    "landscape": {"width": 1672, "height": 941, "safeArea": "Keep both faces, the office boundary, folder and report action readable above the dialogue band at 1920x1080."}
+  },
+  "qualityAcceptance": [
+    "Real native Terra/ImageGen outputs only",
+    "Portrait and landscape are independently composed, not resized copies",
+    "Approved Nika and Leo identity/age/wardrobe continuity",
+    "Present action is visually stronger than confession",
+    "No material mobile crop or narrative ambiguity"
+  ],
+  "priorWebFinding": "Candidate 1 REWORK: Leo identity drift toward thicker beard, fuller facial hair, shorter/curlier hair and heavier/more mature presentation; report responsibility not visually suggested strongly.",
+  "generationRule": "Candidate 2 is the final allowed generation for this scene. Stop after this pair regardless of verdict; no hidden regeneration or candidate 3."
+}

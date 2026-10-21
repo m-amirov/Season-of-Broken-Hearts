@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "candidateLimit": {"maxCandidatesPerCueAndFormat": 2, "portraitCandidate": 1, "landscapeCandidate": 1, "thirdCandidateAllowed": false},
+  "sceneId": "ep3_aurea_drawing",
+  "sceneIds": ["ep3_aurea_drawing"],
+  "assetId": "ep3-aurea-drawing-cg",
+  "context": "EP3 ep3_aurea_drawing: in the dusty Villa Serena west-wing passage Leo lays non-readable plans on the floor and points to a restrained unverified line while Nika photographs and records it. Required cast Nika and Leo, adult identities, grounded plans, practical light, evidence discipline, no verified appendix, no Aurea name/logo, no red conspiracy mark, no romance or touch, no extra cast, no UI or watermark.",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": ["artifacts/evidence/web-high-control/EP3_THREE_SCENE_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json", "artifacts/evidence/web-high-control/EP3_THREE_SCENE_RUNTIME_QA_CURRENT_HEAD_20261021.json"],
+  "reviewContract": "Review supplied actual pixels independently against the current-head brief and approved references. Check Nika/Leo identity and adult recognizability, west-wing location, grounded plans and marked line as an unverified lead, Nika recording and Leo pointing actions, anatomy, dialogue-safe desktop/mobile framing, and absence of readable text, Aurea logo/name, red conspiracy markings, verified appendix, floating papers, romance/touch, extra cast, baked UI or watermark. Return explicit PASS or REWORK with concrete pixel observations; no episode-final or release claim and no third candidate.",
+  "runtimeEvidence": ["artifacts/evidence/web-high-control/EP3_THREE_SCENE_RUNTIME_QA_CURRENT_HEAD_20261021.json", "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/desktop.png", "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/mobile-390.png", "output/playwright/ep3-three-scene-runtime/ep3_aurea_drawing/mobile-360.png"],
+  "images": [
+    {"ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"},
+    {"ref": "giulia-approved-reference", "kind": "original", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"},
+    {"ref": "ep3-aurea-drawing-portrait-candidate-1", "kind": "runtime", "sceneId": "ep3_aurea_drawing", "path": "assets/production/cg/ep3-aurea-drawing-cg.png", "sha256": "1c8f3077bd4a3096afe3a60d751adc8a62abace46b5a2372df3267ae60b02e4f"},
+    {"ref": "ep3-aurea-drawing-landscape-candidate-1", "kind": "runtime", "sceneId": "ep3_aurea_drawing", "path": "assets/production/cg/ep3-aurea-drawing-cg-landscape.png", "sha256": "d1909546fc1ef9b5a2f68ce203a5454ea171648949a6a72a9412049bd72240d0"}
+  ]
+}

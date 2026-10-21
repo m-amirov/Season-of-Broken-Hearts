@@ -1,0 +1,60 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_aurea\_drawing",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_aurea\_drawing"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-aurea-drawing-portrait-candidate-1",  
+"ep3-aurea-drawing-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"giulia-approved-reference",  
+"ep3-aurea-drawing-portrait-candidate-1",  
+"ep3-aurea-drawing-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Both runtime candidates satisfy the substantive narrative requirements of EP3 ep3\_aurea\_drawing. The portrait and landscape compositions show two adult characters consistent with the approved Nika and Leo references, working together in a weathered stone passage with vaulted architecture. Architectural plans are spread across the floor. Leo indicates a specific area of the drawings with a pencil while Nika examines the evidence using a smartphone and notebook. The plans contain architectural linework without clearly readable explanatory text. The indicated area remains visually restrained and does not present an unverified discovery as established fact. Warm daylight and a practical lantern provide plausible illumination. Neither candidate visibly introduces an Aurea name or logo, red conspiracy marking, verified appendix, romantic interaction, physical contact between characters, additional cast, UI overlay, or watermark. Giulia is absent, as required by the two-character scene. Both compositions preserve the investigative purpose and grounded evidence discipline. The portrait contains substantial foreground floor space, but the characters, plans, and investigative action remain identifiable. No material visual acceptance defect is established by the supplied pixels.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved Nika reference is a three-panel character study showing an adult woman with short, voluminous, dark brown wavy hair, expressive brows, brown-hazel eyes, a straight nose, and naturally full lips. She wears a loosely buttoned cream linen shirt, light neutral trousers, a brown belt, understated gold jewelry, and a dark brown shoulder bag. The reference establishes a naturalistic adult appearance, understated styling, and a warm neutral visual palette. The runtime candidates retain a compatible facial appearance while changing her hairstyle to a practical loose updo and her clothing to fieldwork layers."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved Leo reference shows an adult man with medium-length, swept and slightly tousled brown hair, hazel-brown eyes, pronounced brows, angular facial structure, and subtle facial stubble. His clothing consists of a light textured jacket and trousers over an olive-gray shirt, with brown leather accessories, loafers, a shoulder satchel, and rolled architectural documents. The runtime candidates show a compatible adult male appearance with somewhat curlier hair, more visible stubble, and practical brown fieldwork clothing. His role as the person handling architectural documents remains visually consistent."  
+},  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved Giulia reference depicts a mature adult woman with dark hair streaked with gray and gathered into a low bun, visible facial lines, warm brown eyes, and small gold hoop earrings. She wears a muted sage-green shirt, dark trousers, practical black shoes, and a beige work apron. The three-panel presentation includes full-body, frontal portrait, and profile views. Neither runtime candidate depicts this older woman. The visible scene cast remains limited to the two younger adult investigators."  
+},  
+{  
+"ref": "ep3-aurea-drawing-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-aurea-drawing-cg.png",  
+"sha256": "1c8f3077bd4a3096afe3a60d751adc8a62abace46b5a2372df3267ae60b02e4f",  
+"observation": "The portrait runtime image depicts Nika crouching on the left and Leo kneeling on the right inside an aged stone passage with columns, arched ceilings, architectural ornamentation, and a hanging lantern. Nika wears an olive outer layer over a blue-gray shirt and tan trousers, holding a black smartphone while writing in an open notebook. Leo wears a brown outer layer, olive shirt, and neutral trousers, carrying rolled documents and a leather satchel. His extended hand points a pencil toward a particular line within a large architectural plan spread across the floor. Additional rolled papers are positioned nearby. Warm natural light enters the passage, supplemented visually by an illuminated lantern in the lower-left foreground. The architectural drawings contain fine, largely non-readable lines without a conspicuous red mark, named discovery, or verification label. The lower portion of the portrait contains extensive stone flooring, but the investigative action remains visible. No additional person, romantic contact, UI, or watermark is visible."  
+},  
+{  
+"ref": "ep3-aurea-drawing-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-aurea-drawing-cg-landscape.png",  
+"sha256": "d1909546fc1ef9b5a2f68ce203a5454ea171648949a6a72a9412049bd72240d0",  
+"observation": "The landscape runtime image presents a separate, wider composition of the investigative scene. Nika crouches at left, looking toward a black smartphone while holding an open brown notebook. Leo kneels at right with one knee raised, extending a pencil to indicate a small section of architectural linework on the plans spread across the stone floor. Their clothing, hair, equipment, and approximate adult facial appearances are consistent with the portrait candidate. The setting includes aged plaster and stone surfaces, columns, vaulted arches, statuary, a dark wooden door, a hanging light fixture, and an illuminated lantern at the left edge. Daylight enters through an arched opening in the background. Multiple plans overlap across the foreground, showing architectural geometry without clearly readable explanatory text. The indicated line is subtle rather than conspicuously highlighted. No visible Aurea branding, red conspiracy symbol, verified appendix, additional cast member, physical intimacy, UI overlay, or watermark appears. The horizontal composition keeps both investigators and their evidence-handling actions prominent."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

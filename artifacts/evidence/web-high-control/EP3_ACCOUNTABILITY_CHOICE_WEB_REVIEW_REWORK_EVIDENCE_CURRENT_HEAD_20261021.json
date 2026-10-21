@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "dev-web-high-rework-evidence",
+  "status": "REWORK",
+  "sceneId": "ep3_accountability_choice",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoning": "high",
+  "mode": "browser-only",
+  "stableBridgeUsed": false,
+  "actualPixelsReceived": true,
+  "transportTraceId": "devweb_d7863ffd5a2e41ee90c6f4b6b0935be0",
+  "rawResponse": "artifacts/evidence/web-high-control/EP3_ACCOUNTABILITY_CHOICE_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+  "rawResponseNote": "The DEV Web High transport completed, but the CLI receipt validator rejected the model's MAJOR/MODERATE severity labels as NARRATIVE_FINDINGS_INVALID. This record preserves the raw response and does not substitute for a CEOS receipt.",
+  "normalization": "external-rework-evidence-only; raw findings retained verbatim in the referenced response",
+  "findings": [
+    {
+      "id": "EP3-AC-001",
+      "severity": "P1",
+      "rawSeverity": "MAJOR",
+      "status": "OPEN",
+      "impactCode": "CHARACTER_IDENTITY_DRIFT",
+      "summary": "Landscape candidate presents Leo with thicker facial hair, fuller beard, shorter/curlier hair and a heavier, more mature appearance than the approved reference."
+    },
+    {
+      "id": "EP3-AC-002",
+      "severity": "P1",
+      "rawSeverity": "MODERATE",
+      "status": "OPEN",
+      "impactCode": "NARRATIVE_BEAT_LEGIBILITY",
+      "summary": "Nika's notebook/pen and Leo's closed-folder pose do not strongly suggest the concrete reporting responsibility required by the brief."
+    }
+  ],
+  "unresolved": [
+    "The precise spoken commitment cannot be verified from still images; no hidden meaning is inferred."
+  ],
+  "candidateBudget": {"used": 1, "limit": 2, "remaining": 1},
+  "decision": "Do not accept candidate 1. Candidate 2 is authorized as the final bounded repair; no candidate 3 or hidden regeneration."
+}

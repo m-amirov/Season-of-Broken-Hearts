@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE2_NATIVE_OUTPUTS",
+  "status": "PASS_ART_OUTPUT_BATCH_MECHANICAL",
+  "runId": "2026-10-21T11-01-27-197Z-production-art-d6ea83",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_document_check_response",
+  "assetId": "ep3-document-check-response-cg",
+  "candidate": 2,
+  "candidateLimit": 2,
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "8c3e78acc10ab06f7740b38a5408c0eb480350d2cfd714d6b21c2531416db90e",
+    "artBriefVerify": "READY_TO_GENERATE",
+    "sourceCurrentness": "EXACT_HEAD"
+  },
+  "repairCanon": {
+    "path": "artifacts/production-art/stage9.10/EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE2_CANON_CURRENT_HEAD_20261021.json",
+    "sha256": "ce95a51c72c9d4a271d3589d3e96de52dca0ed4ba73199ee8cca9d835f2f94ed",
+    "priorPixelEvidence": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+    "priorFindingIds": ["EP3-DCR-001", "EP3-DCR-002"],
+    "priorFinding": "P1 narrative action missing: the prior image showed documents held while the open working log and pen were unused."
+  },
+  "candidate1Preserved": {
+    "portrait": {"path": "assets/production/cg/ep3-document-check-response-cg.png", "sha256": "26c821c41bf3406eb342307446c528341b64c9c8012810140b4b7de3653b8bc3"},
+    "landscape": {"path": "assets/production/cg/ep3-document-check-response-cg-landscape.png", "sha256": "098b2882cd4b716c9d4fd2ddeb694f1140f9743a0eec5eb00b6556e1d8953cbe"}
+  },
+  "capability": {
+    "challengeId": "cap-07bc58247a7646eca10c",
+    "attestationPath": ".ceos-runs/2026-10-21T11-01-27-197Z-production-art-d6ea83/capability-attestation/attestations/cap-07bc58247a7646eca10c.json",
+    "observedTool": "image_gen.imagegen",
+    "providerByteReceipt": "NOT_EXPOSED"
+  },
+  "producer": {
+    "agentId": "01a15df1-57f8-70f3-b418-9dc09d6657ba",
+    "role": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "bindingMode": "CURRENT_TURN",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "tracePath": "C:/Users/user/.codex/sessions/2026/10/21/rollout-2026-10-21T13-11-00-01a15df1-57f8-70f3-b418-9dc09d6657ba.jsonl",
+    "traceSha256AtPostGenerationRouteCheck": "358544f06fe3c22814df2ecd9773d07a6135cd09dcace2f97220686692624b39"
+  },
+  "inputReferences": [
+    {"id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"},
+    {"id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"}
+  ],
+  "outputs": [
+    {
+      "orientation": "portrait",
+      "candidate": 2,
+      "path": "assets/production/cg/ep3-document-check-response-cg.candidate2.png",
+      "sourceOutputPath": "C:/Users/user/.codex/generated_images/01a15df1-57f8-70f3-b418-9dc09d6657ba/exec-2e483daf-cb78-4b58-8115-68df21bec590.png",
+      "sha256": "d0b7bf2fd421e93e98c512c2695a0010cf95ba6eecbea3421c58b4fac2b5aac9",
+      "width": 1024,
+      "height": 1536,
+      "transport": "PASS_ART_OUTPUT_TRANSPORT",
+      "outputGate": "PASS_ART_OUTPUT_MECHANICAL",
+      "receipt": "artifacts/production-art/stage9.10/receipts/EP3_DOCUMENT_CHECK_RESPONSE_PORTRAIT_CANDIDATE_2_OUTPUT_GATE.json",
+      "composition": "Nika visibly writes in the open working log while matching pages remain on the desk; Leo is secondary."
+    },
+    {
+      "orientation": "landscape",
+      "candidate": 2,
+      "path": "assets/production/cg/ep3-document-check-response-cg-landscape.candidate2.png",
+      "sourceOutputPath": "C:/Users/user/.codex/generated_images/01a15df1-57f8-70f3-b418-9dc09d6657ba/exec-d5cacfa8-4e3f-41c6-85a4-43a26b2b5958.png",
+      "sha256": "23a0a1570bcb685663020e6025a6cf453e808183f08968ddae2f564f5a769791",
+      "width": 1672,
+      "height": 941,
+      "transport": "PASS_ART_OUTPUT_TRANSPORT",
+      "outputGate": "PASS_ART_OUTPUT_MECHANICAL",
+      "receipt": "artifacts/production-art/stage9.10/receipts/EP3_DOCUMENT_CHECK_RESPONSE_LANDSCAPE_CANDIDATE_2_OUTPUT_GATE.json",
+      "composition": "Independently composed wide scene: Nika writes in the open log, matching pages lie flat beside it, Leo remains several steps back."
+    }
+  ],
+  "generationLimit": "Candidate 2 is final for this scene; no candidate 3 generated.",
+  "visualAcceptance": "NOT_RUN_BY_PRODUCER_SCOPE",
+  "runtimeQa": "NOT_RUN_BY_PRODUCER_SCOPE",
+  "runtimeMappings": "NOT_CHANGED_BY_PRODUCER_SCOPE"
+}

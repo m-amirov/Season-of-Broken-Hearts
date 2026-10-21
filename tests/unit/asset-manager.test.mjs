@@ -40,6 +40,20 @@ test('preload rejects decode failures and keeps the failure cached', async () =>
   assert.equal(manager.cachedAssetCount(), 1);
 });
 
+test('optional speculative preload ignores a missing future-scene asset without weakening required preload', async () => {
+  let imageFactoryCalls = 0;
+  const manager = createAssetManager({ assets: {} }, () => {
+    imageFactoryCalls += 1;
+    return {};
+  });
+  const scene = { id: 'future-scene', assetId: 'not-produced-yet' };
+
+  assert.throws(() => manager.preloadSceneAsset(scene), /Missing asset for scene future-scene/);
+  assert.equal(await manager.preloadSceneAssetOptional(scene), null);
+  assert.equal(imageFactoryCalls, 0);
+  assert.equal(manager.cachedAssetCount(), 0);
+});
+
 test('selects an explicit landscape variant for wide viewports and keeps caches per source', async () => {
   const images = [];
   const manager = createAssetManager({

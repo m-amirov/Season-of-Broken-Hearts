@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_EP3_DOCUMENT_BATCH_RUNTIME_PIXEL_QA",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "baseUrl": "http://127.0.0.1:4301/",
+  "sceneIds": [
+    "ep3_document_check",
+    "ep3_document_check_response",
+    "ep3_matteo_confrontation"
+  ],
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "mobile-360",
+      "width": 360,
+      "height": 640
+    }
+  ],
+  "captures": [
+    {
+      "sceneId": "ep3_document_check",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_document_check",
+      "assetId": "ep3-document-check-cg",
+      "expectedAsset": "ep3-document-check-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "В архиве Ника нашла журнал входящих писем и попросила Лео открыть приложение к заказу на её экране, не пересказывая его по памяти.",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_document_check/desktop.png",
+      "screenshotSha256": "c711aba30d4a9f7b21832d8f050bb1ed7c51a2600b4dd63639d1acbf16c411ee",
+      "screenshotBytes": 1154569
+    },
+    {
+      "sceneId": "ep3_document_check",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_document_check",
+      "assetId": "ep3-document-check-cg",
+      "expectedAsset": "ep3-document-check-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "В архиве Ника нашла журнал входящих писем и попросила Лео открыть приложение к заказу на её экране, не пересказывая его по памяти.",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_document_check/mobile-390.png",
+      "screenshotSha256": "05da1c7775367acf825f5c04d73759aacdc8fc79b73fd5aa9ff3491ce23de978",
+      "screenshotBytes": 426328
+    },
+    {
+      "sceneId": "ep3_document_check",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_document_check",
+      "assetId": "ep3-document-check-cg",
+      "expectedAsset": "ep3-document-check-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "В архиве Ника нашла журнал входящих писем и попросила Лео открыть приложение к заказу на её экране, не пересказывая его по памяти.",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_document_check/mobile-360.png",
+      "screenshotSha256": "43393a23df646d953af72eb5251708c002c8637ad31036a5a2a30df8bfad1fa1",
+      "screenshotBytes": 315412
+    },
+    {
+      "sceneId": "ep3_document_check_response",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_document_check_response",
+      "assetId": "ep3-document-check-response-cg",
+      "expectedAsset": "ep3-document-check-response-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ника сохранила совпадающую дату и отметку в рабочем журнале, но не назвала их доказательством условий. Полный текст ещё должен пройти проверку.",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_document_check_response/desktop.png",
+      "screenshotSha256": "deb17eac115007a09e6d245e502ab5b53477abed62bf6aff783250841c0e6d27",
+      "screenshotBytes": 1146579
+    },
+    {
+      "sceneId": "ep3_document_check_response",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_document_check_response",
+      "assetId": "ep3-document-check-response-cg",
+      "expectedAsset": "ep3-document-check-response-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ника сохранила совпадающую дату и отметку в рабочем журнале, но не назвала их доказательством условий. Полный текст ещё должен пройти проверку.",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_document_check_response/mobile-390.png",
+      "screenshotSha256": "2dab572c051468dc0d9d4ebae0dd3bac79c415a7f11dd3fdbfe53936aa633d94",
+      "screenshotBytes": 441375
+    },
+    {
+      "sceneId": "ep3_document_check_response",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_document_check_response",
+      "assetId": "ep3-document-check-response-cg",
+      "expectedAsset": "ep3-document-check-response-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ника сохранила совпадающую дату и отметку в рабочем журнале, но не назвала их доказательством условий. Полный текст ещё должен пройти проверку.",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_document_check_response/mobile-360.png",
+      "screenshotSha256": "137072c8d79b75ca55a8ac548e36a830ed021242c12b6e02f0ac4030095c7984",
+      "screenshotBytes": 323693
+    },
+    {
+      "sceneId": "ep3_matteo_confrontation",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_matteo_confrontation",
+      "assetId": "ep3-matteo-confrontation-cg",
+      "expectedAsset": "ep3-matteo-confrontation-cg",
+      "assetFormat": "landscape",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ты видела приложение к договору?",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_matteo_confrontation/desktop.png",
+      "screenshotSha256": "3bd1808564caa02291ddb37c048a4a5fb1aa300aeaa4242446be25c5805969c2",
+      "screenshotBytes": 1115733
+    },
+    {
+      "sceneId": "ep3_matteo_confrontation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_matteo_confrontation",
+      "assetId": "ep3-matteo-confrontation-cg",
+      "expectedAsset": "ep3-matteo-confrontation-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ты видела приложение к договору?",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_matteo_confrontation/mobile-390.png",
+      "screenshotSha256": "25b24ba7d9ee81a244f4e210dc1f02a9be81dd987df479613fe6f5cf388a82d3",
+      "screenshotBytes": 408344
+    },
+    {
+      "sceneId": "ep3_matteo_confrontation",
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "dialogueIndex": 0,
+      "imageSceneId": "ep3_matteo_confrontation",
+      "assetId": "ep3-matteo-confrontation-cg",
+      "expectedAsset": "ep3-matteo-confrontation-cg",
+      "assetFormat": "portrait",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "noHorizontalOverflow": true,
+      "noVerticalOverflow": true,
+      "language": "ru",
+      "dialogueText": "Ты видела приложение к договору?",
+      "screenshot": "output/playwright/ep3-document-check-response-candidate2-runtime/ep3_matteo_confrontation/mobile-360.png",
+      "screenshotSha256": "f25d298c10fd16917e5f8b41715b2256217ba6fa788347465c4e0dc6e1ab2e80",
+      "screenshotBytes": 302704
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "httpErrors": []
+}

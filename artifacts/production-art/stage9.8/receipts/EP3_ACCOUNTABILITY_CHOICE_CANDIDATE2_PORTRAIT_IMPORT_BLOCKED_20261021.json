@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_ART_OUTPUT_TRANSPORT",
+  "command": "ceos art-output-import --project . --source C:\\Users\\user\\.codex\\generated_images\\01a15dcb-fced-7f51-ba3e-39ae59a30b2d\\exec-57aed734-ece9-409c-a091-285a6c365719.png --target assets/production/cg/ep3-accountability-choice-cg.png --sha256 b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523 --kind background --width 1024 --height 1536 --json",
+  "sourceFile": "C:\\Users\\user\\.codex\\generated_images\\01a15dcb-fced-7f51-ba3e-39ae59a30b2d\\exec-57aed734-ece9-409c-a091-285a6c365719.png",
+  "targetFile": "assets/production/cg/ep3-accountability-choice-cg.png",
+  "issues": [
+    "ART_TRANSPORT_TARGET_EXISTS_DIFFERENT"
+  ],
+  "note": "This is an exact persisted failure record, not an art-output-verify receipt."
+}

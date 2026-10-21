@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "profile": "narrative-game",
+  "runId": "2026-10-21T06-30-41-086Z-production-art-34dae2",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "episode": 3,
+  "sceneId": "ep3_report_delivery",
+  "assetId": "ep3-report-delivery-cg",
+  "familyId": "ep3-office-report-chain",
+  "candidate": 2,
+  "brief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "briefId": "ep3-office-report-chain-delivery-v1",
+    "sha256": "cf453de612b2733e8e97767dbfeb26d382714351d7d4323c9d0a628387b64b90"
+  },
+  "sceneAssets": {
+    "ep3_report_delivery": "ep3-report-delivery-cg"
+  },
+  "assets": {
+    "ep3-report-delivery-cg": {
+      "portrait": {
+        "path": "assets/production/cg/ep3-report-delivery-cg.png",
+        "sha256": "da3ae20b7a7de4cc5c3a17d1f314c8b50f04262b53255d61e683b56cd416962a",
+        "width": 1024,
+        "height": 1536,
+        "outputVerifyReceipt": "artifacts/production-art/stage9.7/receipts/EP3_REPORT_DELIVERY_CANDIDATE2_PORTRAIT_IMPORTED_OUTPUT_VERIFY_20261021.json"
+      },
+      "desktop": {
+        "path": "assets/production/cg/ep3-report-delivery-cg-landscape.png",
+        "sha256": "41522f851103745b44c9c92c587da296c0fcfcc9fd6c936ff671130b612c9871",
+        "width": 1672,
+        "height": 941,
+        "outputVerifyReceipt": "artifacts/production-art/stage9.7/receipts/EP3_REPORT_DELIVERY_CANDIDATE2_LANDSCAPE_IMPORTED_OUTPUT_VERIFY_20261021.json"
+      }
+    }
+  },
+  "references": {
+    "nika": {
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    "leo": {
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  },
+  "status": "PASS_BATCH_ONLY_CURRENT_HEAD_RUNTIME_AND_DEV_WEB_HIGH_ACCEPTED",
+  "candidateHistory": {
+    "candidate1": "rejected_not_integrated_wrong_wardrobe_continuity",
+    "candidate2": "current_imported_candidate"
+  }
+}

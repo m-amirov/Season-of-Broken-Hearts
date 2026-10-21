@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_REPORT_DELIVERY_CANDIDATE_2_REPAIR_CONTRACT",
+  "recordedAt": "2026-10-21",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "briefId": "ep3-office-report-chain-delivery-v1",
+  "sceneId": "ep3_report_delivery",
+  "candidate": 2,
+  "candidateLimit": 2,
+  "priorCandidate": {
+    "status": "REJECTED_NOT_INTEGRATED",
+    "portraitSha256": "21ba3189e47029dd8bd899a07c9849d515c1a6ee19c5145cddfefb2a1d4e7a8f",
+    "landscapeSha256": "b45423dde6823811260416b750dd912e39289dd5e6a4259c41f8e57634622973",
+    "finding": "P1_WRONG_WARDROBE_CONTINUITY: portrait Nika lacked the required washed-olive overshirt while landscape included it"
+  },
+  "repairScope": {
+    "allowed": "One candidate-2 dual-format regeneration for this scene only",
+    "required": "Nika must visibly wear the same washed-olive overshirt over the soft-sand blouse in both portrait and landscape; preserve Leo's light-stone field jacket, muted-olive shirt, cream trousers and satchel",
+    "mustPreserve": "non-readable report pages, work-log attachment action, office daytime continuity, professional boundary, exact dimensions",
+    "forbidden": ["third candidate", "old_photo regeneration", "accepted asset changes", "Matteo", "Giulia", "romantic touch", "readable text", "logos", "baked UI", "watermark", "extra cast"]
+  },
+  "acceptance": "Both formats must pass output gates and real pixel review before import; failure leaves ep3_report_delivery unmapped and blocks episode-wide QA."
+}

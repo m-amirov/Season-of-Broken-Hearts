@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-21T10-09-35-057Z-production-art-d6865c",
+  "sceneId": "ep3_document_check_response",
+  "requestedCandidate": 2,
+  "recordedAtUtc": "2026-10-21T10:58:32.6693944Z",
+  "status": "BLOCKED_PRE_GENERATION",
+  "generationCallsIssued": 0,
+  "candidate1Preserved": {
+    "portrait": "assets/production/cg/ep3-document-check-response-cg.png",
+    "landscape": "assets/production/cg/ep3-document-check-response-cg-landscape.png"
+  },
+  "pixelReviewEvidence": {
+    "path": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+    "actualPixelsReceived": true,
+    "rawDecisionPreserved": true,
+    "findingIds": ["EP3-DCR-001", "EP3-DCR-002"],
+    "reportedImpact": "NARRATIVE_ACTION_MISSING"
+  },
+  "capability": {
+    "challengeId": "cap-05f751e2fd1d43435b6f",
+    "status": "CONSUMED",
+    "expiresAtUtc": "2026-10-21T11:23:49.891Z",
+    "nativeToolInProducerContext": "image_gen.imagegen"
+  },
+  "routeCheck": {
+    "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "traceSha256": "1c7e3b2e8b2c8ea55dad160c5c0e1705a97d6c22dbbfb7e2e86dd2b465434d3d"
+  },
+  "blockers": [
+    {
+      "gate": "ceos art-brief-verify",
+      "status": "BLOCKED_ART_BRIEF",
+      "detail": "sourceFiles[2] SHA-256 missing or does not match actual file bytes",
+      "sourceFile": "narrative/assets.json",
+      "packetSha256": "809613bd39c82ac19a5a5bf89b1551768619996ae9fa05a789b14bc5db9871b0",
+      "actualSha256": "e61e4d601f9557d87aa54adb8b5e13e9c4ad8ae4c8792b7923c1e9739e2aedad"
+    },
+    {
+      "gate": "art-rework-budget",
+      "status": "BLOCKED_INVALID_REWORK_REQUEST",
+      "detail": "Malformed repair history.",
+      "request": "artifacts/production-art/stage9.9/EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE_2_REWORK_REQUEST_20261021.json"
+    }
+  ],
+  "nextRequiredAction": "Refresh the source-bound brief against the intended current source bytes and provide a repair request whose history conforms to the installed budget gate; then rerun both gates before any candidate-2 image generation."
+}

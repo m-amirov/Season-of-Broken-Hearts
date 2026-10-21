@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "NON_GENERATIVE_REPAIR_CONTRACT",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_old_photo",
+  "status": "PROPOSED_NOT_AUTHORIZED_NOT_EXECUTED",
+  "candidateBudget": {"used": 2, "limit": 2, "additionalImageGenerationAllowed": false},
+  "confirmedPixelDefects": [
+    {"format": "portrait", "severity": "P1", "impactCode": "STORY_CRITICAL_PROP_OBSCURED", "observation": "The card under Nika's hand reads as the blank back of a photograph; the story-critical historical image is not recognizable."},
+    {"format": "landscape", "severity": "P1", "impactCode": "MATERIAL_RUNTIME_READABILITY", "observation": "The recognizable photograph and Nika's gesture occupy the lower dialogue-sensitive region and require fresh runtime validation after any presentation adjustment."}
+  ],
+  "permittedRepair": {
+    "method": "DETERMINISTIC_NON_GENERATIVE_COMPOSITE_AND_PRESENTATION_ADJUSTMENT",
+    "portrait": "Use only the already-generated, hash-pinned monochrome photograph pixels visible in assets/production/cg/ep3-old-photo-cg-landscape-rework.png as the source insert. Perspective-match and mask that existing photograph into the blank card already under Nika's hand in assets/production/cg/ep3-old-photo-cg.png. Do not synthesize, inpaint, expand, or alter faces, bodies, hands, wardrobe, room, or historical image content.",
+    "landscape": "Keep the candidate-2 source PNG unchanged unless a minimal runtime object-position/presentation adjustment can move the story-critical photo above the dialogue-safe zone without cropping either face or the controlling hand gesture.",
+    "sourcePngs": [
+      {"path": "assets/production/cg/ep3-old-photo-cg.png", "sha256": "93389bc83e342bbb3800b1bd51d7bdcb3ab90c8c5f53093d9a4e9eb7204ffe10"},
+      {"path": "assets/production/cg/ep3-old-photo-cg-landscape-rework.png", "sha256": "5a50ba83b63d29ef984e48f011649e6e88772f03c3860d7b6d502bee0de71d1a"}
+    ]
+  },
+  "prohibited": ["Terra/ImageGen call", "third candidate", "hidden regeneration", "editing or overwriting original candidate PNGs", "invented photograph content", "CSS-only claim for the portrait semantic defect"],
+  "requiredEvidenceIfAuthorized": ["new derived-file SHA-256 and explicit parent-source hashes", "tool and operation log for deterministic composite", "updated provenance marked DERIVED_NON_GENERATIVE", "mechanical output validation", "exact-head desktop/mobile runtime screenshots", "fresh sequential DEV Web High actual-pixel acceptance"],
+  "execution": "NOT_PERFORMED",
+  "episodeFinalAcceptance": false,
+  "releaseReady": false
+}

@@ -79,10 +79,19 @@ export function createAssetManager(
     return promise;
   }
 
+  function preloadSceneAssetOptional(scene, viewport) {
+    try {
+      return preloadSceneAsset(scene, viewport).catch(() => null);
+    } catch {
+      return Promise.resolve(null);
+    }
+  }
+
   return {
     selectionFor,
     sourceFor,
     preloadSceneAsset,
+    preloadSceneAssetOptional,
     cachedAssetCount() {
       return cache.size;
     }

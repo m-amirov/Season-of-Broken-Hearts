@@ -1,0 +1,52 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_quiet\_return",  
+"sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_quiet\_return"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-quiet-return-portrait-candidate-1",  
+"ep3-quiet-return-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-quiet-return-portrait-candidate-1",  
+"ep3-quiet-return-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Both runtime compositions preserve the recognizable character designs established by the supplied references and communicate the required professional aftermath through visible actions, spatial separation, and work-related props. Nika remains seated at a desk, actively writing in an open journal. Leo is positioned at the office exit, carrying work materials and visibly transitioning out of the room. The portrait composition emphasizes his hand on the door handle, while the landscape composition provides a particularly clear departing stride. Both contain only the required characters. The late-day lighting is warm and pronounced, but the characters' restrained expressions, lack of physical contact, and separation of activities prevent the images from communicating romantic reconciliation or forgiveness. Neither composition contains an observable kiss, embrace, readable branch-specific notes, Aurea branding, baked interface, or watermark. The precise destination of the west wing and Leo's spoken reporting commitment cannot be independently established from silent still images; neither is visually contradicted. The scene is accepted for narrative art use.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved character reference presents a woman with a short, voluminous, irregularly waved dark-brown bob, brown-hazel eyes, defined brows, natural skin texture, and a composed expression. She wears a lightweight ivory button-down shirt with an open collar and rolled sleeves, high-waisted loose beige trousers, a brown leather belt, small gold hoop earrings, and a delicate gold pendant necklace. A dark-brown leather shoulder bag and brown sandals complete the full-body appearance. The reference includes frontal and three-quarter facial views, establishing recognizable facial proportions, hairstyle, clothing, and accessories."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved character reference presents a slim man with medium-length, loosely swept light-brown hair, light hazel-green eyes, angular facial features, subtle facial texture, and a reserved expression. He wears a pale textured linen jacket and matching trousers over an open-collared muted olive-green shirt, with a brown leather belt and dark-brown loafers. A brown leather crossbody satchel and rolled architectural plans establish his professional accessories. The accompanying close-up views clarify his facial structure, hairstyle, and restrained demeanor."  
+},  
+{  
+"ref": "ep3-quiet-return-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-quiet-return-cg.png",  
+"sha256": "6dc5ef94af2696ad08feb1bc7d629ad3e40ad66c27b258e8a6dbe3ea96fb89fb",  
+"observation": "The portrait composition places Nika prominently in the foreground at a substantial wooden desk inside a traditional professional office. Her dark wavy bob, ivory shirt, small gold hoop earrings, and pendant necklace remain consistent with the approved reference. She looks downward and writes with a dark pen in an open journal containing drawn diagrams and small indistinct markings. Additional papers, mapped documents, writing instruments, and office equipment reinforce the working environment. In the background, Leo stands at an open wooden doorway with one hand on the door handle, his body oriented toward the sunlit exterior while his head turns back into the room. He wears his pale linen suit, muted green shirt, and brown leather satchel, with a brown work folder held against his side. Golden late-afternoon light enters through the doorway. Nika and Leo are physically separated, and neither displays an overtly affectionate expression. No additional people, readable branch-specific writing, visible Aurea branding, interface elements, or watermark appear."  
+},  
+{  
+"ref": "ep3-quiet-return-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-quiet-return-cg-landscape.png",  
+"sha256": "4b0bcc2803e6530e2741520801f1eefee7b781268d3b983b6b5a9280527b38a3",  
+"observation": "The landscape composition independently depicts Nika on the left, seated at a desk and writing with a pen in an open journal. Her short dark wavy hairstyle, light linen shirt, gold jewelry, and facial appearance correspond closely to the approved reference. The foreground contains architectural drawings, books, rolled plans, and professional work materials. Behind her are shelves, stored documents, framed maps, and a leafy indoor plant. On the right, Leo is captured mid-stride at an open glazed doorway, moving away from the desk toward a bright exterior while looking back over his shoulder. His light linen suit, olive shirt, brown satchel, loafers, and medium-length light-brown hair remain recognizable. He carries a rectangular framed photographic or documentary work item. The broad composition makes his departure especially legible while retaining Nika's ongoing writing action. Strong natural afternoon sunlight illuminates the doorway and office floor. The characters maintain substantial physical distance and do not interact romantically. No extra cast, kiss, embrace, readable branch-specific notes, Aurea logo or text, baked interface, or watermark is visible."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

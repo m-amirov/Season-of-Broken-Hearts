@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "kind": "EPISODE_VISUAL_FAMILY_DECISIONS",
+  "stage": "9.6",
+  "recordedAt": "2026-10-20",
+  "status": "APPROVED_FAMILY_GROUPING_BRIEF_ONLY",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "scope": {
+    "episode": 3,
+    "authoredScenes": 15,
+    "approvedFamilies": 12,
+    "plannedOutputPairs": 15,
+    "plannedPngs": 30,
+    "generationInvoked": false,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "ep4To10Touched": false
+  },
+  "decisionPolicy": {
+    "familyMeans": "A reusable location/cast/lighting language boundary, not automatic byte reuse.",
+    "variantRule": "A materially different authored action or knowledge state receives its own portrait/landscape pair inside the family.",
+    "reuseRule": "Only adjacent cues with the same physical action may share a pair; a shared room alone is not sufficient.",
+    "dualFormatRule": "Every planned pair has an independently composed 1024x1536 portrait and 1672x941 landscape source.",
+    "unmappedSceneRule": "Every authored scene has exactly one final family and one or more explicit variant briefs."
+  },
+  "families": [
+    {
+      "familyId": "ep3-archive-old-photo",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_old_photo"],
+      "assetIds": ["ep3-old-photo-cg"],
+      "briefIds": ["ep3-archive-old-photo-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo"],
+      "signature": "Archive table, banquet-program boxes and the pier photograph under Nika's control; guarded working distance.",
+      "requiredProps": ["archive boxes", "old banquet programmes", "pier photograph"],
+      "knowledgeBoundary": "The photograph and date are present; no Aurea document or verified contract knowledge."
+    },
+    {
+      "familyId": "ep3-archive-survey",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_survey_start"],
+      "assetIds": ["ep3-survey-start-cg"],
+      "briefIds": ["ep3-archive-survey-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo"],
+      "signature": "Same archive architecture, but a survey brief and professional boundary replace the memory beat.",
+      "requiredProps": ["survey brief", "archive work surface", "neutral document bundle"],
+      "knowledgeBoundary": "The west-wing survey is proposed; the operational conflict and Aurea link are not yet shown."
+    },
+    {
+      "familyId": "ep3-west-wing-survey",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_survey_join_response"],
+      "assetIds": ["ep3-survey-join-response-cg"],
+      "briefIds": ["ep3-west-wing-survey-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo"],
+      "signature": "Unfinished west-wing passage with doorway measurement and an operational kitchen-to-laundry route.",
+      "requiredProps": ["flashlight", "tablet", "question list", "measuring action", "doorway"],
+      "knowledgeBoundary": "Nika joins as hotel staff; no Aurea mark or contract terms."
+    },
+    {
+      "familyId": "ep3-west-wing-plan-conflict",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_survey_site_problem"],
+      "assetIds": ["ep3-survey-site-problem-cg"],
+      "briefIds": ["ep3-west-wing-plan-conflict-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo"],
+      "signature": "The proposed partition visibly crosses the staff niche; the report decision is work tension, not romance.",
+      "requiredProps": ["site plan", "partition line as non-readable mark", "staff tray/key niche", "neutral phone or report gesture"],
+      "knowledgeBoundary": "The site conflict is observed; Aurea remains unconfirmed and no contract appendix is visible."
+    },
+    {
+      "familyId": "ep3-service-route",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_staff_walkthrough"],
+      "assetIds": ["ep3-staff-walkthrough-cg"],
+      "briefIds": ["ep3-service-route-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo", "giulia"],
+      "signature": "Giulia leads a grounded service-corridor walkthrough connecting kitchen, laundry and stairs.",
+      "requiredProps": ["service cart or trays", "keys", "kitchen/laundry route cues", "service stairs"],
+      "knowledgeBoundary": "The staff route proves the niche is used; it does not reveal Aurea terms."
+    },
+    {
+      "familyId": "ep3-office-report-chain",
+      "decision": "APPROVED_FAMILY_WITH_TWO_STATE_VARIANTS",
+      "sceneIds": ["ep3_survey_decline_response", "ep3_report_delivery"],
+      "assetIds": ["ep3-survey-decline-response-cg", "ep3-report-delivery-cg"],
+      "briefIds": ["ep3-office-report-chain-decline-v1", "ep3-office-report-chain-delivery-v1"],
+      "pairCount": 2,
+      "cast": ["nika", "leo"],
+      "signature": "Villa office report chain with professional distance; request and delivered report are separate physical states.",
+      "requiredProps": ["work table", "report folder", "work log", "printed report in delivery variant"],
+      "knowledgeBoundary": "Only the report process is visible; no past explanation or Aurea proof is baked into either state."
+    },
+    {
+      "familyId": "ep3-office-accountability",
+      "decision": "APPROVED_FAMILY_WITH_TWO_STATE_VARIANTS",
+      "sceneIds": ["ep3_eight_years", "ep3_accountability_choice"],
+      "assetIds": ["ep3-eight-years-cg", "ep3-accountability-choice-cg"],
+      "briefIds": ["ep3-office-accountability-eight-years-v1", "ep3-office-accountability-choice-v1"],
+      "pairCount": 2,
+      "cast": ["nika", "leo"],
+      "signature": "Two-chair office accountability composition with the work folder and pier photograph between them.",
+      "requiredProps": ["work folder", "pier photograph", "deadline/work note"],
+      "knowledgeBoundary": "Leo's responsibility and Nika's boundary are authored; this is not forgiveness, consent or route lock."
+    },
+    {
+      "familyId": "ep3-west-wing-aurea-plan",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_aurea_drawing"],
+      "assetIds": ["ep3-aurea-drawing-cg"],
+      "briefIds": ["ep3-west-wing-aurea-plan-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo"],
+      "signature": "Plans laid on dusty west-wing floor; Nika records an Aurea mark as a working lead, not proof.",
+      "requiredProps": ["floor plans", "non-readable marked line", "camera/phone used by Nika", "old stone and dust"],
+      "knowledgeBoundary": "Only an unverified drawing lead exists; no verified appendix or villain framing."
+    },
+    {
+      "familyId": "ep3-archive-document-check",
+      "decision": "APPROVED_FAMILY_WITH_TWO_STATE_VARIANTS",
+      "sceneIds": ["ep3_document_check", "ep3_document_check_response"],
+      "assetIds": ["ep3-document-check-cg", "ep3-document-check-response-cg"],
+      "briefIds": ["ep3-archive-document-check-v1", "ep3-archive-document-check-response-v1"],
+      "pairCount": 2,
+      "cast": ["nika", "leo"],
+      "signature": "Archive verification action: incoming-mail log, shared screen/copies and disciplined comparison.",
+      "requiredProps": ["incoming-mail log", "shared screen or document appendix", "matching copies", "journal notation"],
+      "knowledgeBoundary": "The response may distinguish verified terms from a drawing lead; it must not invent readable document text."
+    },
+    {
+      "familyId": "ep3-office-three-way-disclosure",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_matteo_confrontation"],
+      "assetIds": ["ep3-matteo-confrontation-cg"],
+      "briefIds": ["ep3-office-three-way-disclosure-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "matteo", "leo"],
+      "signature": "Nika controls the folder handover; Matteo receives only after permission; Leo remains by the door.",
+      "requiredProps": ["folder/copy", "office doorway", "work table"],
+      "knowledgeBoundary": "The frame must support both verified-terms and unverified-lead branches without choosing a branch-specific document status."
+    },
+    {
+      "familyId": "ep3-office-quiet-return",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_quiet_return"],
+      "assetIds": ["ep3-quiet-return-cg"],
+      "briefIds": ["ep3-office-quiet-return-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "leo"],
+      "signature": "Quiet office aftermath with Nika's journal, photograph and work folder; Leo leaves for the west wing.",
+      "requiredProps": ["work journal", "pier photograph", "work folder", "window/west-wing light cue"],
+      "knowledgeBoundary": "The frame allows verified or hypothesis-marked handoff states; it cannot imply forgiveness or romantic promise."
+    },
+    {
+      "familyId": "ep3-transition-three-way",
+      "decision": "APPROVED_NEW_FAMILY",
+      "sceneIds": ["ep3_transition"],
+      "assetIds": ["ep3-transition-cg"],
+      "briefIds": ["ep3-transition-three-way-v1"],
+      "pairCount": 1,
+      "cast": ["nika", "bianca", "leo"],
+      "signature": "Evening transition: Nika records Aurea with verification status, Bianca speaks from the business side, Leo's west-wing light remains behind the wall.",
+      "requiredProps": ["work journal", "neutral pen", "office/window connection to west wing"],
+      "knowledgeBoundary": "The scene carries forward either verified terms or an unverified mark; no branch-specific readable text, rescue framing or romance conclusion."
+    }
+  ],
+  "coverage": {
+    "sceneIds": [
+      "ep3_old_photo", "ep3_survey_start", "ep3_survey_join_response", "ep3_survey_site_problem", "ep3_staff_walkthrough",
+      "ep3_survey_decline_response", "ep3_report_delivery", "ep3_eight_years", "ep3_accountability_choice", "ep3_aurea_drawing",
+      "ep3_document_check", "ep3_document_check_response", "ep3_matteo_confrontation", "ep3_quiet_return", "ep3_transition"
+    ],
+    "mappedSceneCount": 15,
+    "expectedSceneCount": 15,
+    "complete": true,
+    "unresolved": []
+  },
+  "nextArtifact": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json",
+  "generationGate": "BLOCKED_UNTIL_FRESH_CURRENT_TURN_CAPABILITY_CHALLENGE_AND_OFFICIAL_PRODUCER_ROUTE",
+  "visualAcceptance": "NOT_RUN_BRIEF_ONLY"
+}

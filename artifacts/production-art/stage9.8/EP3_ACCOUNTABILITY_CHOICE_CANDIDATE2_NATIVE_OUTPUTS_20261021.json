@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_NATIVE_GENERATION_AND_OUTPUT_GATES",
+  "runId": "2026-10-21T09-29-33-577Z-production-art-94db4d",
+  "challengeId": "cap-2829a5efe324c1d7073c",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sceneId": "ep3_accountability_choice",
+  "assetId": "ep3-accountability-choice-cg",
+  "candidateIndex": 2,
+  "candidateLimit": 2,
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "87e765f75ce306aa68ad447a72466b77ab4ea9d1063e1464cf41a0a911c4eedd",
+    "verdict": "READY_TO_GENERATE"
+  },
+  "producerRoute": {
+    "status": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "tracePath": "C:\\Users\\user\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T12-30-12-01a15dcb-fced-7f51-ba3e-39ae59a30b2d.jsonl",
+    "routeCheckObservedTraceSha256": "f84c5979521fe62bf31309b4123a06a0d9a8caa2c95163a49cc243b9f8c0a9ce",
+    "providedTraceSha256": "7c7b746e20d8f332f8eeebbc34554c67fa3075abc38092ed3de80afd36e8f40c",
+    "agentId": "01a15dcb-fced-7f51-ba3e-39ae59a30b2d",
+    "parentSessionId": "01a15994-217b-7762-8efe-ffb10b852e64",
+    "agentRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "effort": "medium"
+  },
+  "inputReferences": [
+    {
+      "id": "nika",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "id": "leo",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    }
+  ],
+  "outputs": [
+    {
+      "variant": "portrait",
+      "provider": "image_gen.imagegen",
+      "nativeSourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a15dcb-fced-7f51-ba3e-39ae59a30b2d\\exec-57aed734-ece9-409c-a091-285a6c365719.png",
+      "nativeSourceSha256": "b5575e5f1634dd39a9c2a47190ae3e89c603d2a7c883550b12c6ec822d050523",
+      "width": 1024,
+      "height": 1536,
+      "targetPath": "assets/production/cg/ep3-accountability-choice-cg.png",
+      "importStatus": "PASS_ART_OUTPUT_TRANSPORT",
+      "importIssue": null,
+      "outputVerifyReceipt": "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_PORTRAIT_OUTPUT_20261021.json",
+      "providerByteReceipt": "NOT_ATTESTED"
+    },
+    {
+      "variant": "landscape",
+      "provider": "image_gen.imagegen",
+      "nativeSourcePath": "C:\\Users\\user\\.codex\\generated_images\\01a15dcb-fced-7f51-ba3e-39ae59a30b2d\\exec-fa53decb-cc37-4a84-9844-af984287a5f1.png",
+      "nativeSourceSha256": "0587b134bcd982fed789473fef147bab840f56143682f4664504f02051d9d558",
+      "width": 1672,
+      "height": 941,
+      "targetPath": "assets/production/cg/ep3-accountability-choice-cg-landscape.png",
+      "importStatus": "PASS_ART_OUTPUT_TRANSPORT",
+      "importIssue": null,
+      "outputVerifyReceipt": "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_LANDSCAPE_OUTPUT_20261021.json",
+      "providerByteReceipt": "NOT_ATTESTED"
+    }
+  ],
+  "receipts": [
+    "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_PORTRAIT_OUTPUT_20261021.json",
+    "artifacts/production-art/stage9.8/receipts/EP3_ACCOUNTABILITY_CHOICE_CANDIDATE2_LANDSCAPE_OUTPUT_20261021.json"
+  ],
+  "nextAction": "Generation is exhausted at candidate 2 of 2. Parent-owned integration, runtime QA and independent visual acceptance remain outside this producer scope."
+}

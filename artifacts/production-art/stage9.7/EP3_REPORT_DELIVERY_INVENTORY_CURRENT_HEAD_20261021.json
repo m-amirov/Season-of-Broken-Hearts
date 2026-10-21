@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_REPORT_DELIVERY_PRODUCTION_ART_INVENTORY",
+  "runId": "2026-10-21T06-16-33-672Z-production-art-97a5c6",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "cf453de612b2733e8e97767dbfeb26d382714351d7d4323c9d0a628387b64b90",
+    "briefId": "ep3-office-report-chain-delivery-v1",
+    "sceneId": "ep3_report_delivery",
+    "assetId": "ep3-report-delivery-cg"
+  },
+  "candidateLimit": {
+    "maxCandidatesPerCueAndFormat": 2,
+    "candidateNumber": 1,
+    "thirdCandidateAllowed": false
+  },
+  "outputs": [
+    {
+      "format": "portrait",
+      "path": "assets/production/cg/ep3-report-delivery-cg.png",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "format": "landscape",
+      "path": "assets/production/cg/ep3-report-delivery-cg-landscape.png",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "requiredCast": ["nika", "leo"],
+  "characterReferences": [
+    "assets/characters/references/originals/nika.png",
+    "assets/characters/references/originals/leo.png"
+  ],
+  "acceptance": {
+    "runtimeMappingRequired": true,
+    "desktopMobilePixelQaRequired": true,
+    "independentDevWebHighRequired": true,
+    "legacyBridge": "FORBIDDEN_AND_NOT_USED"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_DOCUMENT_BATCH_NATIVE_OUTPUTS",
+  "status": "PASS_ART_OUTPUT_BATCH_MECHANICAL",
+  "runId": "2026-10-21T10-09-35-057Z-production-art-d6865c",
+  "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+  "sourceBoundBrief": {
+    "path": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+    "sha256": "751df9e922c33ac15fc3df9476dd07e8bfda8fde1ec8f4c97ecacd6e04d1401d",
+    "artBriefVerify": "READY_TO_GENERATE",
+    "sourceCurrentness": "EXACT_HEAD"
+  },
+  "capability": {
+    "challengeId": "cap-9567edfa2b7eb42b3f99",
+    "attestationPath": ".ceos-runs/2026-10-21T10-09-35-057Z-production-art-d6865c/capability-attestation/attestations/cap-9567edfa2b7eb42b3f99.json",
+    "observedTool": "image_gen.imagegen",
+    "providerByteReceipt": "NOT_EXPOSED"
+  },
+  "producer": {
+    "agentId": "01a15df1-57f8-70f3-b418-9dc09d6657ba",
+    "role": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoningEffort": "medium",
+    "parentSessionId": "01a15994-217b-7762-8efe-ffb10b852e64",
+    "bindingMode": "CURRENT_TURN",
+    "routeStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "tracePath": "C:/Users/user/.codex/sessions/2026/10/21/rollout-2026-10-21T13-11-00-01a15df1-57f8-70f3-b418-9dc09d6657ba.jsonl",
+    "traceSha256AtFinalRouteCheck": "83a368c006cfcf65895ecf793d944a68cd78e4684b68d8daa4b6f9f9741d34fc",
+    "routeCheckedAt": "2026-10-21T13:36:05.7232307+03:00"
+  },
+  "inputReferences": [
+    { "id": "nika", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d" },
+    { "id": "leo", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875" },
+    { "id": "matteo", "path": "assets/characters/references/originals/matteo.png", "sha256": "fa8519eaa999df6dff72551cfad0d16025b4aa9f294bcf710c0ee6d69758fb23" }
+  ],
+  "outputs": [
+    { "sceneId": "ep3_document_check", "assetId": "ep3-document-check-cg", "orientation": "portrait", "candidate": 1, "path": "assets/production/cg/ep3-document-check-cg.png", "sha256": "28ef9508b3a18970d007ea3ec985cbf513a53571e4f3c40b98abf9f104a9570f", "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.9/receipts/EP3_DOCUMENT_CHECK_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json", "transport": "PASS_ART_OUTPUT_TRANSPORT", "outputGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "ep3_document_check", "assetId": "ep3-document-check-cg", "orientation": "landscape", "candidate": 1, "path": "assets/production/cg/ep3-document-check-cg-landscape.png", "sha256": "2196f9aa4e8953f06a4a5cf4c3c8eb75e62ce5c135ebe420b8a28d5af21fec51", "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.9/receipts/EP3_DOCUMENT_CHECK_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json", "transport": "PASS_ART_OUTPUT_TRANSPORT", "outputGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "ep3_document_check_response", "assetId": "ep3-document-check-response-cg", "orientation": "portrait", "candidate": 1, "path": "assets/production/cg/ep3-document-check-response-cg.png", "sha256": "26c821c41bf3406eb342307446c528341b64c9c8012810140b4b7de3653b8bc3", "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.9/receipts/EP3_DOCUMENT_CHECK_RESPONSE_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json", "transport": "PASS_ART_OUTPUT_TRANSPORT", "outputGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "ep3_document_check_response", "assetId": "ep3-document-check-response-cg", "orientation": "landscape", "candidate": 1, "path": "assets/production/cg/ep3-document-check-response-cg-landscape.png", "sha256": "098b2882cd4b716c9d4fd2ddeb694f1140f9743a0eec5eb00b6556e1d8953cbe", "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.9/receipts/EP3_DOCUMENT_CHECK_RESPONSE_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json", "transport": "PASS_ART_OUTPUT_TRANSPORT", "outputGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "ep3_matteo_confrontation", "assetId": "ep3-matteo-confrontation-cg", "orientation": "portrait", "candidate": 1, "path": "assets/production/cg/ep3-matteo-confrontation-cg.png", "sha256": "58ff34080dd25848f167a5ac9309d539fa259928b1aff02cd1aa3b9f6e045bf1", "width": 1024, "height": 1536, "receipt": "artifacts/production-art/stage9.9/receipts/EP3_MATTEO_CONFRONTATION_PORTRAIT_CANDIDATE_1_OUTPUT_GATE.json", "transport": "PASS_ART_OUTPUT_TRANSPORT", "outputGate": "PASS_ART_OUTPUT_MECHANICAL" },
+    { "sceneId": "ep3_matteo_confrontation", "assetId": "ep3-matteo-confrontation-cg", "orientation": "landscape", "candidate": 1, "path": "assets/production/cg/ep3-matteo-confrontation-cg-landscape.png", "sha256": "79da9893be933d8d825531ff954fc5bbebdd6ae9dcf1c15117800141a65dca80", "width": 1672, "height": 941, "receipt": "artifacts/production-art/stage9.9/receipts/EP3_MATTEO_CONFRONTATION_LANDSCAPE_CANDIDATE_1_OUTPUT_GATE.json", "transport": "PASS_ART_OUTPUT_TRANSPORT", "outputGate": "PASS_ART_OUTPUT_MECHANICAL" }
+  ],
+  "candidateBudget": {
+    "requestedCandidate": 1,
+    "candidateLimit": 2,
+    "candidate2Invoked": false,
+    "candidate2RequestedFor": "ep3_document_check_response",
+    "candidate2GenerationCallsIssued": 0,
+    "candidate2Status": "BLOCKED_PRE_GENERATION",
+    "candidate2BlockerRecord": "artifacts/production-art/stage9.9/EP3_DOCUMENT_CHECK_RESPONSE_CANDIDATE_2_BLOCKED_20261021.json"
+  },
+  "webHigh": "NOT_RUN_BY_SCOPE",
+  "runtimeQa": "NOT_RUN_BY_SCOPE",
+  "runtimeMappings": "NOT_CHANGED_BY_SCOPE"
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_LIMITED_PRODUCTION_ART_BATCH",
+  "stage": "9.7",
+  "recordedAt": "2026-10-20",
+  "status": "BLOCKED_ART_BRIEF_CEOS_SCHEMA",
+  "sourceHead": "5a990085b1a544afb717f9b8c61b8cb0df8b5d38",
+  "sourceBranch": "codex/stage9-full-season-architecture",
+  "sourcePacket": {
+    "families": "artifacts/production-art/stage9.6/EP3_VISUAL_FAMILIES_FINAL_20261020.json",
+    "briefs": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json"
+  },
+  "lockedScope": {
+    "episode": 3,
+    "totalVisualFamilies": 12,
+    "totalAuthoredScenes": 15,
+    "totalPlannedPairs": 15,
+    "batchPairCount": 1,
+    "batchPngCount": 2,
+    "runtimeMappingsChanged": false,
+    "ep2Touched": false,
+    "ep4To10Touched": false,
+    "generationInvoked": false,
+    "capabilityChallengeId": "cap-bff3533dc1ae5573b622",
+    "producerRouteStatus": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED"
+  },
+  "reuseDecision": {
+    "policy": "A visual family is a canon boundary, not automatic byte reuse.",
+    "batchPairReuse": "NONE",
+    "justification": "ep3_old_photo has a distinct authored action and knowledge state; the first batch uses one unique portrait/landscape pair. Future same-family scenes remain separate pairs unless adjacent authored action is materially identical.",
+    "familyId": "ep3-archive-old-photo",
+    "familySceneIds": [
+      "ep3_old_photo"
+    ]
+  },
+  "batch": {
+    "batchId": "ep3-batch-01-archive-old-photo",
+    "sceneId": "ep3_old_photo",
+    "assetId": "ep3-old-photo-cg",
+    "briefId": "ep3-archive-old-photo-v1",
+    "requiredCast": [
+      "nika",
+      "leo"
+    ],
+    "outputs": [
+      {
+        "format": "portrait",
+        "path": "assets/production/cg/ep3-old-photo-cg.png",
+        "kind": "background",
+        "width": 1024,
+        "height": 1536,
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "format": "landscape",
+        "path": "assets/production/cg/ep3-old-photo-cg-landscape.png",
+        "kind": "background",
+        "width": 1672,
+        "height": 941,
+        "status": "PENDING_GENERATION"
+      }
+    ],
+    "referenceIds": [
+      "nika",
+      "leo"
+    ],
+    "forbidden": [
+      "readable invented date/text",
+      "Aurea document",
+      "embrace or kiss",
+      "extra staff",
+      "romanticized photo exchange",
+      "baked UI, dialogue, logo or watermark"
+    ]
+  },
+  "gateStatus": {
+    "sourceHeadAndReferenceHashes": "PASS",
+    "familyAndPairCoverage": "PASS",
+    "briefCoverage": "PASS",
+    "narrativeRegression": "PASS",
+    "ceosCapabilityChallenge": "PASS_PRESENT_UNKNOWN_CURRENT_TURN",
+    "nativeProducerRoute": "PASS_NATIVE_AGENT_ROUTE_HOST_OBSERVED",
+    "artBriefVerify": "BLOCKED_ART_BRIEF_CEOS_SCHEMA",
+    "outputReceipts": "PENDING_GENERATION",
+    "runtimeIntegration": "NOT_RUN",
+    "visualAcceptance": "NOT_RUN"
+  },
+  "blocker": {
+    "code": "BLOCKED_ART_BRIEF_CEOS_SCHEMA",
+    "command": "ceos art-brief-verify --file artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_20261020.json --project . --json",
+    "reason": "The current CEOS verifier requires an S-numbered sceneId and legacy Stage 9.4 brief fields/path; the source-bound EP3 packet intentionally uses real ep3_* scene IDs and packet-level references. No synthetic alias or manual trust override is allowed.",
+    "generationAllowed": false
+  },
+  "prohibitions": [
+    "Do not modify EP2 files, PNGs, receipts, mappings or historical CEOS runs.",
+    "Do not add narrative/assets.json mappings in this batch.",
+    "Do not generate a unique pair for every scene automatically.",
+    "Do not create placeholders or infer a PASS from mechanical checks."
+  ]
+}

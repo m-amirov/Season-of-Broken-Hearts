@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\assets\\production\\cg\\ep3-document-check-response-cg-landscape.png",
+  "kind": "background",
+  "status": "PASS_ART_OUTPUT_MECHANICAL",
+  "issues": [],
+  "sha256": "098b2882cd4b716c9d4fd2ddeb694f1140f9743a0eec5eb00b6556e1d8953cbe",
+  "bytes": 2162809,
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "alpha": {
+    "opaque": 1573352,
+    "transparent": 0,
+    "partial": 0,
+    "nonzero": 1573352,
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 1672,
+    "height": 941
+  },
+  "checkerboard": {
+    "detected": false
+  },
+  "visualAcceptance": "NOT_VERIFIED",
+  "recordedAt": "2026-10-21T10:30:05.851Z"
+}

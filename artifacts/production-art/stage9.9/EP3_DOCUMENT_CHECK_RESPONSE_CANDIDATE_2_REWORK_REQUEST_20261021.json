@@ -1,0 +1,41 @@
+{
+  "acceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "scopeKey": "ep3_document_check_response/candidate-2/portrait-and-landscape",
+  "proposedMethod": "generation",
+  "proposedStrategyKey": "nika-visible-provisional-log-entry-with-one-hand-and-matching-pages-on-desk",
+  "transportState": "READY",
+  "findings": [
+    {
+      "id": "EP3-DCR-001",
+      "status": "OPEN",
+      "severity": "P1",
+      "impactCode": "WRONG_ACTOR_OR_ACTION",
+      "authoredCue": "Nika records a matching date and mark in the working log without treating the correspondence as proof.",
+      "observation": "Portrait candidate 1 shows Nika holding documents while the open working log and pen are unused.",
+      "playerImpact": "The required provisional evidence-recording action is not visually legible.",
+      "evidenceRef": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt#EP3-DCR-001",
+      "actualPixelsReceived": true,
+      "materialPlayerImpact": true
+    },
+    {
+      "id": "EP3-DCR-002",
+      "status": "OPEN",
+      "severity": "P1",
+      "impactCode": "WRONG_ACTOR_OR_ACTION",
+      "authoredCue": "The landscape presentation preserves Nika recording the matching date and mark while maintaining cautious, non-conclusive evidence status.",
+      "observation": "Landscape candidate 1 keeps Nika holding both sheets instead of writing in the log.",
+      "playerImpact": "The intended evidence-recording progression is not visually legible.",
+      "evidenceRef": "artifacts/evidence/web-high-control/EP3_DOCUMENT_CHECK_RESPONSE_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt#EP3-DCR-002",
+      "actualPixelsReceived": true,
+      "materialPlayerImpact": true
+    }
+  ],
+  "attempts": [
+    {
+      "scopeKey": "ep3_document_check_response/candidate-2/portrait-and-landscape",
+      "method": "generation",
+      "strategyKey": "document-comparison-with-log-present-but-unused",
+      "outcome": "P1_REWORK"
+    }
+  ]
+}

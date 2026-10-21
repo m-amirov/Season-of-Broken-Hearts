@@ -1,0 +1,181 @@
+{
+  "index": 12,
+  "stage": "REAUDITED",
+  "at": "2026-10-21T14:22:30.118Z",
+  "cycle": 1,
+  "outcome": "PASS",
+  "skipped": false,
+  "note": null,
+  "metadata": {
+    "webTransport": "DEV_BROWSER_ONLY",
+    "webProvider": "codex-chatgpt-web-dev",
+    "webModel": "chatgpt-web/gpt-6-sol",
+    "webReasoning": "high",
+    "webReviews": [
+      "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RECEIPT_RETRY1_FRESH_CURRENT_HEAD_20261021.json",
+      "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RECEIPT_FRESH_CURRENT_HEAD_20261021.json"
+    ],
+    "runtimeQa": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+    "visualAcceptance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_VISUAL_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+    "dualFormatManifest": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "provenance": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+    "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "legacyBridge": "NOT_USED",
+    "batchOnly": true,
+    "episodeFinalAcceptance": false,
+    "releaseReady": false,
+    "evidenceContract": {
+      "schemaVersion": 1,
+      "assertionsExecuted": 8,
+      "sourceHead": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+      "coverage": {
+        "complete": true,
+        "scope": "ep3_quiet_return and ep3_transition candidate 1 dual-format pairs",
+        "checked": 2,
+        "total": 2
+      },
+      "unresolved": [],
+      "claims": [
+        {
+          "id": "source-head-exact",
+          "assertionId": "source-head-exact",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "native-terra-route-attested",
+          "assertionId": "native-terra-route-attested",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "quiet-return-dual-output-gates",
+          "assertionId": "quiet-return-dual-output-gates",
+          "status": "PASS",
+          "executions": 2
+        },
+        {
+          "id": "transition-dual-output-gates",
+          "assertionId": "transition-dual-output-gates",
+          "status": "PASS",
+          "executions": 2
+        },
+        {
+          "id": "runtime-pixel-qa-six-captures",
+          "assertionId": "runtime-pixel-qa-six-captures",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "desktop-mobile-observed",
+          "assertionId": "desktop-mobile-observed",
+          "status": "PASS",
+          "executions": 4
+        },
+        {
+          "id": "quiet-return-dev-web-high-pixel-acceptance",
+          "assertionId": "quiet-return-dev-web-high-pixel-acceptance",
+          "status": "PASS",
+          "executions": 1
+        },
+        {
+          "id": "transition-dev-web-high-pixel-acceptance",
+          "assertionId": "transition-dev-web-high-pixel-acceptance",
+          "status": "PASS",
+          "executions": 1
+        }
+      ]
+    },
+    "dualFormatGate": {
+      "status": "PASS_DUAL_FORMAT_ART_MECHANICAL",
+      "coverageMode": "BATCH_ONLY",
+      "episode": 3,
+      "requiredScenes": 15,
+      "mappedScenes": 2,
+      "coveredSceneIds": [
+        "ep3_quiet_return",
+        "ep3_transition"
+      ],
+      "fullEpisodeCovered": false,
+      "episodeFinalAcceptance": "NOT_VERIFIED",
+      "releaseReady": false,
+      "uniqueAssets": 2,
+      "variantFilesChecked": 4,
+      "visualAcceptance": "NOT_VERIFIED",
+      "errors": [],
+      "disclaimer": "Mechanical verification of authored scenes only. BATCH_ONLY and REUSE_SCOPE are never episode-final acceptance; real runtime/Web High review remains mandatory."
+    }
+  },
+  "source": {
+    "available": true,
+    "head": "8319a893bc16600b5aac128fc72bdcd3c347a1d5",
+    "clean": false,
+    "worktreeSha256": "515521f3739b647102b1768ab11ad177ebeed5ab5a4befcef16d97cfd5d2b398"
+  },
+  "artifacts": [
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_COMPLETION_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "5f1ef52a2cf49cbfe45929c9c1b7de8b6b527263e4d041ed5e4b80a8ae519258",
+      "size": 6158
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_VISUAL_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_COMPLETION_BATCH_VISUAL_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_VISUAL_ACCEPTANCE_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "acd8ee0e32aa71672c9fd0e71d30a453ec23cb3467559b8785b292bc6ba1c213",
+      "size": 2684
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RECEIPT_RETRY1_FRESH_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_QUIET_RETURN_WEB_REVIEW_RECEIPT_RETRY1_FRESH_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RECEIPT_RETRY1_FRESH_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "7252b057bf69f0ab5ca9b6c191f0ff7dff81f56a1c5d37504acd0c8d98fa44aa",
+      "size": 8380
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RAW_RETRY1_FRESH_CURRENT_HEAD_20261021.txt",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_QUIET_RETURN_WEB_REVIEW_RAW_RETRY1_FRESH_CURRENT_HEAD_20261021.txt",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_QUIET_RETURN_WEB_REVIEW_RAW_RETRY1_FRESH_CURRENT_HEAD_20261021.txt",
+      "type": "file",
+      "sha256": "770799e7e30a93ce765ff71107c491a25ff4beecd5eb171c32a5e544e7e4f90f",
+      "size": 6199
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RECEIPT_FRESH_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_TRANSITION_WEB_REVIEW_RECEIPT_FRESH_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RECEIPT_FRESH_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "ace996acae0128544cb0ac14415914e761c44d5ecb877424678271ba42ebfa12",
+      "size": 9110
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_TRANSITION_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_TRANSITION_WEB_REVIEW_RAW_FRESH_CURRENT_HEAD_20261021.txt",
+      "type": "file",
+      "sha256": "f73d0fc331cb6bd6cd503f30b995270c50ada78673eb219410721eaed4cfcb21",
+      "size": 6748
+    },
+    {
+      "input": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\evidence\\web-high-control\\EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/evidence/web-high-control/EP3_COMPLETION_BATCH_PRODUCTION_ART_PROVENANCE_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "9e88341a662d268773e02aa6f196fec5c9c48602e31754d11bc575fd75e5fa3d",
+      "size": 2051
+    },
+    {
+      "input": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "path": "E:\\Work\\YandexGames\\Novells\\Season of Broken Hearts\\_worktrees\\stage9-full-season-architecture\\artifacts\\production-art\\stage9.12\\EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "projectRelativePath": "artifacts/production-art/stage9.12/EP3_COMPLETION_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+      "type": "file",
+      "sha256": "73f177e4054323547f17e388fa67dadbf5e66cc1cde07001b30e0b44145fc1e6",
+      "size": 2696
+    }
+  ]
+}
