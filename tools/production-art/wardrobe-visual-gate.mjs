@@ -82,6 +82,7 @@ export function validateWardrobeVisualAcceptance({ packet, receipt, rawResponse,
     const ref = roles.characterReferences?.[character];
     if (!ref || byRef.get(ref)?.kind !== 'original') errors.push(`CHARACTER_REFERENCE_NOT_ATTACHED:${character}`);
   }
+  if (!Array.isArray(packet?.adjacentScenes)) errors.push('ADJACENCY_DECLARATION_MISSING');
   const adjacencies = Array.isArray(packet?.adjacentScenes) ? packet.adjacentScenes : [];
   for (const neighbor of adjacencies) {
     if (!neighbor || !['continuous', 'context-change', 'time-break'].includes(neighbor.transition) || !neighbor.sceneId) {
@@ -103,7 +104,11 @@ export function validateWardrobeVisualAcceptance({ packet, receipt, rawResponse,
     const e = pixels.get(ref);
     if (!receivedRefs.has(ref) || !e || e.sha256 !== image.sha256 || e.path !== image.path || !narrativeText(e.observation)) errors.push(`PIXEL_OBSERVATION_MISSING:${ref}`);
   }
-  if (!raw || (raw.visualEvidence ?? []).length !== (receipt?.visualEvidence ?? []).length) errors.push('RAW_PIXEL_OBSERVATIONS_DIVERGE');
+  const rawPixels = Array.isArray(raw?.visualEvidence) ? new Map(raw.visualEvidence.map(v => [v.ref, v])) : null;
+  if (!rawPixels || rawPixels.size !== pixels.size) errors.push('RAW_PIXEL_OBSERVATIONS_DIVERGE');
+  for (const [ref, observation] of pixels) {
+    if (JSON.stringify(rawPixels?.get(ref) ?? null) !== JSON.stringify(observation)) errors.push(`RAW_PIXEL_OBSERVATIONS_DIVERGE:${ref}`);
+  }
   if (Array.isArray(receipt?.unresolved) && receipt.unresolved.length) errors.push('REVIEW_HAS_UNRESOLVED_FINDINGS');
   if ((receipt?.findings ?? []).some(f => ['P0', 'P1'].includes(f.severity) && f.status !== 'RESOLVED')) errors.push('REVIEW_HAS_BLOCKING_FINDINGS');
 
