@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_SURVEY_BATCH_RUNTIME_QA",
+  "recordedAt": "2026-10-21",
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "integrationCommit": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "server": "http://127.0.0.1:4301/",
+  "runtime": {
+    "desktop": {
+      "viewport": "1280x720",
+      "assetMode": "landscape",
+      "imageNaturalSize": "1672x941"
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "assetMode": "portrait",
+      "imageNaturalSize": "1024x1536"
+    },
+    "navigation": "authored menu Continue and authored scene choices; no direct localStorage cursor injection",
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "sceneObservations": [
+    {
+      "sceneId": "ep3_survey_join_response",
+      "desktopImageSource": "assets/production/cg/ep3-survey-join-response-cg-landscape.png",
+      "mobileImageSource": "assets/production/cg/ep3-survey-join-response-cg.png",
+      "observation": "Nika and Leo are recognizable adults in the unfinished west-wing/service corridor; flashlight, tablet, measuring action and doorway geography read clearly. Both desktop and portrait dialogue-safe regions remain readable; no baked text, UI or watermark; bodies and hands are coherent."
+    },
+    {
+      "sceneId": "ep3_survey_site_problem",
+      "desktopImageSource": "assets/production/cg/ep3-survey-site-problem-cg-landscape.png",
+      "mobileImageSource": "assets/production/cg/ep3-survey-site-problem-cg.png",
+      "observation": "Nika points to the staff key niche while Leo holds the plan; keys, storage and service-corridor location make the operational conflict legible. Both formats keep the two characters and lower dialogue region readable, with no invented readable text, UI or watermark."
+    },
+    {
+      "sceneId": "ep3_staff_walkthrough",
+      "desktopImageSource": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png",
+      "mobileImageSource": "assets/production/cg/ep3-staff-walkthrough-cg.png",
+      "observation": "Giulia leads Nika and Leo through the kitchen/laundry service route with cart and keys. Giulia reads as a mature adult with silver strands and mature facial features; all three are grounded and identifiable, and the speaker label/dialogue remain readable in both formats without baked UI/text."
+    }
+  ],
+  "captures": [
+    {
+      "sceneId": "ep3_survey_join_response",
+      "viewport": "1280x720",
+      "path": "output/playwright/ep3-batch-join-response-desktop-1280x720.png",
+      "sha256": "f43dbf71d3f5c4e87fed64e2a22b226f7b39e032c365a5ed626f539b2e87b6d1"
+    },
+    {
+      "sceneId": "ep3_survey_join_response",
+      "viewport": "390x844",
+      "path": "output/playwright/ep3-batch-join-response-mobile.png",
+      "sha256": "8f2d124ca36eb422dc4d4abfb12858f788d2b272cef848dbe2dfbac990b7483"
+    },
+    {
+      "sceneId": "ep3_survey_site_problem",
+      "viewport": "1280x720",
+      "path": "output/playwright/ep3-batch-site-problem-desktop-1280x720.png",
+      "sha256": "9d796b4bfc127191e72338dcd25c6edfc3d51f0e319134e480f7803814907028"
+    },
+    {
+      "sceneId": "ep3_survey_site_problem",
+      "viewport": "390x844",
+      "path": "output/playwright/ep3-batch-site-problem-mobile.png",
+      "sha256": "d9cd1134035d232ac6a49706078c660dfd99f83f61e171aaee18f9a8a1e36497b"
+    },
+    {
+      "sceneId": "ep3_staff_walkthrough",
+      "viewport": "1280x720",
+      "path": "output/playwright/ep3-batch-staff-walkthrough-desktop-1280x720.png",
+      "sha256": "4370ab5e6f10556e7d81a9c5e6af2fe164e22e893edca501dc4290f3dc68ca3c"
+    },
+    {
+      "sceneId": "ep3_staff_walkthrough",
+      "viewport": "390x844",
+      "path": "output/playwright/ep3-batch-staff-walkthrough-mobile.png",
+      "sha256": "9fef99498b38a1bf16368a649065ad34ccc612b731067ba62f15307f5825c234"
+    }
+  ],
+  "trace": {
+    "playwrightTrace": ".playwright-cli/traces/trace-1792557024975.trace",
+    "playwrightTraceSha256": "8ce3b2fa3cb7c25f85ef253f09bc804871443527de7d9a78ee12e97be9aaaf3f",
+    "networkTrace": ".playwright-cli/traces/trace-1792557024975.network",
+    "networkTraceSha256": "42a6d9085b8691c010567ad48250dd26bf33cba05c200a58a37d5efcda3850c6"
+  },
+  "scopeNote": "The exploratory attempt to advance beyond this bounded batch exposed the real missing production asset ep3_survey_decline_response; it is not treated as a pass and is not hidden by this QA receipt."
+}

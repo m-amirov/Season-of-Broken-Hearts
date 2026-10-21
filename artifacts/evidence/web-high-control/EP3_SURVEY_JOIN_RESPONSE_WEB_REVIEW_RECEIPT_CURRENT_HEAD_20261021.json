@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "phase": "acceptance",
+  "agent": "ceos_art_director_web",
+  "taskId": "dev-web-ep3_survey_join_response-b0495d2683b6",
+  "reviewTraceId": null,
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "status": "PASS",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoning": "high",
+  "provider": "codex-chatgpt-web-dev",
+  "stableBridgeUsed": false,
+  "reviewedItems": [
+    "ep3_survey_join_response"
+  ],
+  "evidenceRefs": [
+    "nika-approved-reference",
+    "leo-approved-reference",
+    "ep3-survey-join-response-portrait-candidate-1",
+    "ep3-survey-join-response-landscape-candidate-1"
+  ],
+  "receivedEvidenceRefs": [
+    "nika-approved-reference",
+    "leo-approved-reference",
+    "ep3-survey-join-response-portrait-candidate-1",
+    "ep3-survey-join-response-landscape-candidate-1"
+  ],
+  "actualPixelsReceived": true,
+  "decision": "PASS for the two supplied runtime compositions against the approved character references and the source-bound scene brief. Nika and Leo retain recognizable adult identities, hairstyles, facial characteristics, and core wardrobe elements. Both compositions depict a professional architectural survey in a weathered, unfinished service corridor. Nika carries a flashlight and tablet while Leo performs a visible vertical doorway measurement. Their body language remains task-focused and non-romantic. No material anatomical defects, distracting visual artifacts, baked dialogue, UI, or watermarks are apparent. Portrait and landscape use independently composed camera positions rather than presenting a simple crop of the same frame. Both preserve the principal survey action above most of the lower dialogue region. The lower regions contain clothing, footwear, and textured flooring rather than entirely empty backgrounds, but no material obstruction to the central narrative cues is apparent. This decision applies only to the supplied visual evidence and does not establish release or episode-final acceptance.",
+  "findings": [],
+  "unresolved": [],
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V2",
+  "evidenceArtifact": "artifacts/evidence/web-high-control/EP3_SURVEY_JOIN_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+  "visualEvidence": [
+    {
+      "ref": "nika-approved-reference",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",
+      "observation": "The approved reference presents an adult woman with a short, voluminous, dark-brown wavy bob, brown eyes, defined eyebrows, subtle freckles, and small gold hoop earrings. Her outfit consists of a lightweight ivory button-down blouse, high-waisted beige linen trousers, a brown leather belt, and brown sandals. She carries a large dark-brown leather shoulder bag and wears a delicate gold necklace. The three reference views establish recognizable facial proportions, hairstyle volume, and an understated neutral wardrobe."
+    },
+    {
+      "ref": "leo-approved-reference",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",
+      "observation": "The approved reference presents an adult man with medium-length, loosely swept brown hair, light-colored eyes, pronounced cheekbones, a straight nose, and subtle facial freckles. He wears a textured light-beige linen jacket and matching trousers over a muted olive-green shirt, with a brown leather belt and dark-brown loafers. A weathered brown leather shoulder satchel and rolled architectural drawings reinforce his professional surveyor appearance. The reference includes full-body and close-up views of his face and hairstyle."
+    },
+    {
+      "ref": "ep3-survey-join-response-portrait-candidate-1",
+      "path": "assets/production/cg/ep3-survey-join-response-cg.png",
+      "sha256": "9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee",
+      "observation": "The portrait composition shows Nika standing on the left, holding a black flashlight and a dark tablet while examining Leo's measurement. Her short dark wavy hair, gold jewelry, ivory blouse, brown belt, neutral linen trousers, and leather shoulder bag remain recognizable from the approved reference. An olive overshirt adds a practical working layer without obscuring her identity. Leo stands on the right, extending a yellow measuring tape vertically along an exposed stone doorway. His beige linen jacket and trousers, olive shirt, brown footwear, shoulder satchel, and tousled hairstyle remain consistent with the approved design. The setting contains distressed stonework, unfinished doorway edges, visible utility equipment, and warm daylight. Their attention is directed toward the measurement rather than each other romantically. Hands, limbs, and body proportions appear coherent. No baked text, UI, or watermark is visible. The measurement and principal handheld props remain readable above the lowest part of the composition; the bottom contains legs, shoes, and textured stone flooring."
+    },
+    {
+      "ref": "ep3-survey-join-response-landscape-candidate-1",
+      "path": "assets/production/cg/ep3-survey-join-response-cg-landscape.png",
+      "sha256": "b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df",
+      "observation": "The landscape composition independently stages Leo crouching inside a doorway on the left while measuring its vertical dimension with a yellow tape. One hand reaches toward the upper frame while the other works near the threshold, producing a recognizable architectural measuring action. Nika stands to the right with a tablet and documents held against her torso and a black flashlight pointed downward. Both characters retain their approved facial appearances and recognizable neutral linen wardrobes, with Nika's added olive working layer. The corridor includes rough stone surfaces, exposed construction edges, a recessed service area, shelving, a floor drainage channel, and sunlight from the far end. The characters occupy separate working positions with professional, non-romantic body language. Their hands, crouching posture, and visible limbs appear anatomically plausible. No baked text, UI, or watermark is visible. The landscape framing differs materially from the portrait framing. The lower region contains flooring and the characters' lower bodies, while the tablet, flashlight, faces, and substantial visible length of the measuring tape remain above it."
+    }
+  ],
+  "normalization": {
+    "schemaRepairAttempted": false,
+    "responseFormat": "markdown-escaped-json",
+    "rawResponseArtifacts": [
+      "artifacts/evidence/web-high-control/EP3_SURVEY_JOIN_RESPONSE_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt"
+    ],
+    "rawResponseSha256": "546a715ce0d3d325754ba47dc20bd12031b2f8f8c3207d9ac70cc5690575279b",
+    "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+    "imageSha256": [
+      {
+        "ref": "nika-approved-reference",
+        "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+      },
+      {
+        "ref": "leo-approved-reference",
+        "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+      },
+      {
+        "ref": "ep3-survey-join-response-portrait-candidate-1",
+        "sha256": "9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee"
+      },
+      {
+        "ref": "ep3-survey-join-response-landscape-candidate-1",
+        "sha256": "b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df"
+      }
+    ]
+  },
+  "transport": {
+    "provider": "codex-chatgpt-web-dev",
+    "releaseVersion": "6.1.11",
+    "mode": "browser-only",
+    "model": "chatgpt-web/gpt-6-sol",
+    "reasoning": "high",
+    "stableBridgeUsed": false,
+    "actualProjectHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+    "responseSha256": "546a715ce0d3d325754ba47dc20bd12031b2f8f8c3207d9ac70cc5690575279b",
+    "attachmentRefs": [
+      "nika-approved-reference",
+      "leo-approved-reference",
+      "ep3-survey-join-response-portrait-candidate-1",
+      "ep3-survey-join-response-landscape-candidate-1"
+    ],
+    "submitted": true,
+    "attachmentAccepted": true,
+    "transportTraceId": "devweb_d107a571cec0436b86c12c3265de1f85"
+  }
+}

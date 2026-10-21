@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "kind": "DEV_BROWSER_ONLY_WEB_HIGH_ART_REVIEW_REQUEST",
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "legacyBridge": "FORBIDDEN_AND_NOT_USED",
+  "candidateLimit": {
+    "maxCandidatesPerCueAndFormat": 2,
+    "portraitCandidate": 1,
+    "landscapeCandidate": 1,
+    "thirdCandidateAllowed": false
+  },
+  "sceneIds": [
+    "ep3_survey_join_response",
+    "ep3_survey_site_problem",
+    "ep3_staff_walkthrough"
+  ],
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    ".ceos-runs/2026-10-21T04-03-48-212Z-production-art-f15f21/producer-output-provenance.json",
+    "artifacts/production-art/stage9.6/EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json"
+  ],
+  "reviewContract": "Review the supplied actual pixels independently against the current-head source-bound briefs and approved character references. For every attachment return a concrete visualEvidence observation. Check Nika, Leo and Giulia identity and adult age impression; Giulia must read as a mature adult with silver strands and mature facial features; check west-wing/service-route geography, operational survey action, flashlight/tablet/plan/keys/cart props, professional non-romantic staging, anatomy, no baked text/UI/watermark, independent portrait and landscape composition, desktop and mobile dialogue-safe readability. Return explicit PASS or REWORK and only material blocking findings with impactCode values WRONG_CHARACTER, WRONG_ACTOR_OR_ACTION, WRONG_LOCATION_OR_TIME, STORY_CRITICAL_PROP_MISSING, STORY_CRITICAL_PROP_OBSCURED, ESSENTIAL_CHARACTER_UNRECOGNIZABLE, NARRATIVE_CONTINUITY_CONTRADICTION, DIALOGUE_OR_CONTROLS_UNREADABLE, CRITICAL_SCENE_MAPPING, ESSENTIAL_GESTURE_UNREADABLE, ESSENTIAL_SUBJECT_CROPPED, STORY_ACTION_UNREADABLE, MATERIAL_RUNTIME_READABILITY. Do not claim release or episode-final acceptance, do not request a third candidate or regeneration, and do not infer anything not visible in the supplied pixels.",
+  "runtimeEvidence": [
+    "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+    "output/playwright/ep3-batch-join-response-desktop-1280x720.png",
+    "output/playwright/ep3-batch-join-response-mobile.png",
+    "output/playwright/ep3-batch-site-problem-desktop-1280x720.png",
+    "output/playwright/ep3-batch-site-problem-mobile.png",
+    "output/playwright/ep3-batch-staff-walkthrough-desktop-1280x720.png",
+    "output/playwright/ep3-batch-staff-walkthrough-mobile.png"
+  ],
+  "images": [
+    {
+      "ref": "nika-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/nika.png",
+      "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d"
+    },
+    {
+      "ref": "leo-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/leo.png",
+      "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875"
+    },
+    {
+      "ref": "giulia-approved-reference",
+      "kind": "original",
+      "path": "assets/characters/references/originals/giulia.png",
+      "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a"
+    },
+    {
+      "ref": "ep3-survey-join-response-portrait-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_survey_join_response",
+      "path": "assets/production/cg/ep3-survey-join-response-cg.png",
+      "sha256": "9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee"
+    },
+    {
+      "ref": "ep3-survey-join-response-landscape-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_survey_join_response",
+      "path": "assets/production/cg/ep3-survey-join-response-cg-landscape.png",
+      "sha256": "b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df"
+    },
+    {
+      "ref": "ep3-survey-site-problem-portrait-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_survey_site_problem",
+      "path": "assets/production/cg/ep3-survey-site-problem-cg.png",
+      "sha256": "e147bf52e7a4062034f5689f1511e0b24fdd3e3db062a6ac3e9406cab09d37e7"
+    },
+    {
+      "ref": "ep3-survey-site-problem-landscape-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_survey_site_problem",
+      "path": "assets/production/cg/ep3-survey-site-problem-cg-landscape.png",
+      "sha256": "f698f8f85c909c8bd0f2cfbbb0c03d74b010a2b6f98183bcc66930fe9ad5ed05"
+    },
+    {
+      "ref": "ep3-staff-walkthrough-portrait-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_staff_walkthrough",
+      "path": "assets/production/cg/ep3-staff-walkthrough-cg.png",
+      "sha256": "b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f"
+    },
+    {
+      "ref": "ep3-staff-walkthrough-landscape-candidate-1",
+      "kind": "runtime",
+      "sceneId": "ep3_staff_walkthrough",
+      "path": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png",
+      "sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b"
+    }
+  ]
+}

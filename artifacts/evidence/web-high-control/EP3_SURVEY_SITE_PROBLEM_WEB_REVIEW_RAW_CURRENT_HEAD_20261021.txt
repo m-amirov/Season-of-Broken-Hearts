@@ -1,0 +1,52 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_survey\_site\_problem",  
+"sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_survey\_site\_problem"  
+\],  
+"evidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-survey-site-problem-portrait-candidate-1",  
+"ep3-survey-site-problem-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-survey-site-problem-portrait-candidate-1",  
+"ep3-survey-site-problem-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS. Both runtime compositions visually preserve the approved adult character identities and recognizable wardrobe foundations. The service-corridor setting contains visible keys and practical storage, while Nika's pointing gesture and Leo's architectural plan establish a legible operational problem. Both variants maintain professional, non-romantic staging, with no material anatomical defects or visible baked text, UI, or watermarks. Portrait and landscape use independently arranged compositions rather than a simple crop. Faces, the key niche, and the architectural plan remain above the principal lower dialogue-safe regions. The lower regions contain clothing and environmental textures but no critical narrative information whose obstruction would prevent understanding the scene. No material visual acceptance blockers are identified in the supplied pixels. This decision applies only to the two supplied runtime candidates against the supplied references and source-bound brief; it does not constitute release or episode-final acceptance.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference presents an adult woman in three views: a full-length standing pose, a frontal close-up, and a three-quarter rear portrait. She has a short, voluminous, dark-brown wavy bob, brown eyes, natural facial texture, and small gold hoop earrings. Her wardrobe features a loosely buttoned ivory linen shirt with an open collar, high-waisted beige linen trousers, a brown leather belt, delicate gold jewelry, and brown sandals. The full-length view includes a large dark-brown leather shoulder bag. The overall appearance is naturalistic, understated, and professionally styled."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference depicts an adult man through one full-length view and two facial close-ups. He has medium-length, tousled brown hair swept away from his forehead, light brown-green eyes, a defined jawline, subtle facial stubble, and natural skin texture. His wardrobe consists of a lightly textured cream linen jacket and matching trousers over an open-collar muted olive shirt, with a brown leather belt, brown loafers, and a brown leather shoulder satchel. In the standing view he carries rolled architectural drawings, establishing a practical professional visual identity."  
+},  
+{  
+"ref": "ep3-survey-site-problem-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-survey-site-problem-cg.png",  
+"sha256": "e147bf52e7a4062034f5689f1511e0b24fdd3e3db062a6ac3e9406cab09d37e7",  
+"observation": "The portrait runtime image places Leo on the left and Nika near the center-right of a sunlit stone service corridor. Leo retains his tousled brown hair, cream linen jacket, olive shirt, beige trousers, brown belt, and leather shoulder bag. He holds a large unfolded architectural plan across his waist. Nika retains her short dark wavy bob, ivory linen shirt, beige trousers, brown belt, and gold jewelry, with an additional open olive utility-style overshirt. She extends one arm toward a wall-mounted key storage niche on the right. Multiple hanging keys and leather tags are visible, alongside practical shelving containing folded cloths, containers, and equipment. Nika looks toward Leo while indicating the keys, establishing a professional interaction between the physical access system and the plan he is holding. Both characters have coherent visible anatomy and recognizable adult facial identities. Their upper bodies, the key niche, and most of the architectural drawing occupy the upper and middle portions of the composition. The bottom region contains predominantly trousers, corridor flooring, and storage equipment, without critical facial or key information. No baked dialogue, interface elements, or watermark are visible."  
+},  
+{  
+"ref": "ep3-survey-site-problem-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-survey-site-problem-cg-landscape.png",  
+"sha256": "f698f8f85c909c8bd0f2cfbbb0c03d74b010a2b6f98183bcc66930fe9ad5ed05",  
+"observation": "The landscape runtime image independently rearranges the scene, placing Nika on the left beside a recessed wooden storage niche and Leo on the right holding an unfolded architectural plan. Nika points directly toward a group of hanging brass-colored keys while looking toward Leo. The niche includes shelves containing books or documents, metal containers, folded fabric, tools, and other practical supplies. Leo wears the same recognizable cream linen jacket, olive shirt, beige trousers, brown belt, and leather satchel as in his approved reference. Nika retains her approved hairstyle, ivory blouse, beige trousers, brown belt, and gold jewelry, with the same additional olive overshirt seen in the portrait runtime image. Leo looks toward Nika while holding the plan and a yellow-and-black measuring tool. The visible gestures establish an operational exchange concerning the keys and architectural drawings rather than a romantic interaction. Stone arches, scaffolding, masonry, and exterior daylight communicate an active building survey environment. The principal narrative details remain above the bottom portion, which is dominated by light-colored trousers and stone textures. There are no visible material anatomical distortions, baked captions, interface elements, or watermarks."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "kind": "FULL_SEASON_ART_PRODUCTION_PROGRESS_CURRENT_HEAD",
-  "recordedAt": "2026-10-20",
-  "sourceHead": "f3b018e03cd3cae34483d082d8a22484bdba321c",
+  "recordedAt": "2026-10-21",
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
   "plan": "artifacts/production-art/FULL_SEASON_ART_PRODUCTION_PLAN_CURRENT_HEAD_20261020.json",
   "validator": {
     "status": "FIXED_AND_VERIFIED",
@@ -26,21 +26,21 @@
   },
   "counts": {
     "plannedVisualPairs": 119,
-    "runtimeMappedExistingPairs": 26,
-    "currentHeadIndependentAcceptedPairs": 1,
-    "newPairsCreatedThisTurn": 0,
-    "newPairsAcceptedThisTurn": 0,
-    "newPairsRemaining": 92,
-    "newPngRemaining": 184,
+    "runtimeMappedExistingPairs": 30,
+    "currentHeadIndependentAcceptedPairs": 5,
+    "newPairsCreatedThisTurn": 4,
+    "newPairsAcceptedThisTurn": 4,
+    "newPairsRemaining": 88,
+    "newPngRemaining": 176,
     "candidatePairsPending": 1,
     "candidatePngPending": 2,
-    "waitingOrPlannedPngTotal": 186
+    "waitingOrPlannedPngTotal": 178
   },
   "production": {
-    "newGenerationStarted": false,
-    "reason": "no fresh trusted current-turn native capability challenge and Terra producer route",
+    "newGenerationStarted": true,
+    "reason": "EP3 survey-start control pair plus three EP3 batch-2 pairs completed under fresh run-scoped capability attestation, trusted native Terra route, exact-head runtime QA and independent DEV Web High acceptance",
     "massAcceptanceStarted": false,
     "releaseOrPublicationStarted": false
   },
-  "nextAction": "Obtain a real current-turn run-scoped native capability challenge and trusted Terra producer route; then generate one bounded EP3 pair, perform mechanical/provenance/runtime QA, and send one sequential DEV Web High pixel review."
+  "nextAction": "Continue with the next bounded EP3 batch only through the same fresh capability, provenance, runtime-pixel and sequential DEV Web High gates; keep ep3_old_photo at exhausted-budget REWORK and resolve missing ep3_survey_decline_response through the approved production plan before full EP3 traversal."
 }

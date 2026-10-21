@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "ep3_staff_walkthrough",
+  "assetId": "ep3-staff-walkthrough-cg",
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "candidateLimit": { "maxCandidatesPerCueAndFormat": 2, "portraitCandidate": 1, "landscapeCandidate": 1, "thirdCandidateAllowed": false },
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    ".ceos-runs/2026-10-21T04-03-48-212Z-production-art-f15f21/producer-output-provenance.json",
+    "artifacts/production-art/stage9.6/EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json"
+  ],
+  "context": "Review actual pixels against the source-bound brief and approved Giulia, Nika and Leo references. Check identity, mature adult age impression, Giulia's silver strands and mature facial features, kitchen/laundry/service-stairs geography, cart/keys/route-leading action, professional non-romantic staging, anatomy, no baked text/UI/watermark, independent portrait and landscape composition, and readable lower dialogue-safe runtime regions. Return one concrete visualEvidence observation per attachment and explicit PASS or REWORK with only material blocking findings using the allowed impact codes. Do not claim release or episode-final acceptance, request a third candidate, or infer unseen state.",
+  "runtimeEvidence": [
+    "output/playwright/ep3-batch-staff-walkthrough-desktop-1280x720.png",
+    "output/playwright/ep3-batch-staff-walkthrough-mobile.png"
+  ],
+  "images": [
+    { "ref": "giulia-approved-reference", "kind": "original", "path": "assets/characters/references/originals/giulia.png", "sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a" },
+    { "ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d" },
+    { "ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875" },
+    { "ref": "ep3-staff-walkthrough-portrait-candidate-1", "kind": "runtime", "path": "assets/production/cg/ep3-staff-walkthrough-cg.png", "sha256": "b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f" },
+    { "ref": "ep3-staff-walkthrough-landscape-candidate-1", "kind": "runtime", "path": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png", "sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b" }
+  ]
+}

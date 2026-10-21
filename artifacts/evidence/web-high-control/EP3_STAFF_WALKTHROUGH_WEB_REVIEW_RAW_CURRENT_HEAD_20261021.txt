@@ -1,0 +1,60 @@
+{  
+"schemaVersion": 1,  
+"sceneId": "ep3\_staff\_walkthrough",  
+"sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",  
+"status": "PASS",  
+"reviewedItems": \[  
+"ep3\_staff\_walkthrough"  
+\],  
+"evidenceRefs": \[  
+"giulia-approved-reference",  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-staff-walkthrough-portrait-candidate-1",  
+"ep3-staff-walkthrough-landscape-candidate-1"  
+\],  
+"receivedEvidenceRefs": \[  
+"giulia-approved-reference",  
+"nika-approved-reference",  
+"leo-approved-reference",  
+"ep3-staff-walkthrough-portrait-candidate-1",  
+"ep3-staff-walkthrough-landscape-candidate-1"  
+\],  
+"actualPixelsReceived": true,  
+"decision": "PASS — Both supplied runtime compositions satisfy the source-bound visual requirements for ep3\_staff\_walkthrough. Giulia retains her approved mature adult appearance, distinctive silver-streaked dark hair, facial texture, practical clothing, and authoritative presence. Nika and Leo remain visually consistent with their approved adult references. The commercial kitchen, linen-service equipment, corridor, and service staircase establish coherent staff-only geography. Giulia visibly leads the walkthrough, with keys and service carts reinforcing her operational role, while Nika and Leo document and observe. Staging remains professional and non-romantic. No material anatomy defects, baked text, interface elements, or watermarks are visible. Portrait and landscape compositions are independently legible, with sufficiently neutral lower regions for a suitably contrasted dialogue overlay. No material visual acceptance blockers are identified in the supplied pixels. This decision is limited to the supplied source-bound visual evidence and does not constitute release or episode-final acceptance.",  
+"artAcceptanceProfile": "NARRATIVE\_ART\_ACCEPTANCE\_V2",  
+"visualEvidence": \[  
+{  
+"ref": "giulia-approved-reference",  
+"path": "assets/characters/references/originals/giulia.png",  
+"sha256": "4014f5c27fe8ee8e418970cdfefda455ca4931c33916e7281299231572da371a",  
+"observation": "The approved reference presents a mature adult woman with dark brown hair gathered into a loose, low updo, clearly visible silver strands around the crown and temples, brown eyes, pronounced facial texture, forehead lines, and natural creases around the eyes and mouth. She wears small gold hoop earrings, a muted sage-green collared shirt, a weathered beige work apron, dark trousers, and black practical shoes. The full-body, frontal close-up, and side-profile views establish consistent facial structure, hairstyle, age impression, and working-class presentation."  
+},  
+{  
+"ref": "nika-approved-reference",  
+"path": "assets/characters/references/originals/nika.png",  
+"sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d",  
+"observation": "The approved reference depicts a young adult woman with a short, voluminous, wavy dark-brown bob, brown-hazel eyes, defined brows, natural facial texture, and small gold hoop earrings. Her clothing consists of a loose ivory linen button-down shirt, high-waisted light neutral trousers, a brown leather belt, and minimal jewelry. A large dark-brown leather shoulder bag completes the full-body outfit. Frontal and three-quarter portraits establish her facial proportions, hairstyle, and composed expression."  
+},  
+{  
+"ref": "leo-approved-reference",  
+"path": "assets/characters/references/originals/leo.png",  
+"sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875",  
+"observation": "The approved reference presents a young adult man with tousled medium-length light-brown hair, light brown-green eyes, a defined jaw, subtle facial texture, and a lean adult build. He wears a lightly textured cream linen jacket and matching trousers over an open-collar muted olive shirt, with brown leather loafers, belt, and shoulder satchel. Rolled papers are carried in one hand. The two accompanying facial studies establish his distinctive hair arrangement, facial proportions, and thoughtful expression."  
+},  
+{  
+"ref": "ep3-staff-walkthrough-portrait-candidate-1",  
+"path": "assets/production/cg/ep3-staff-walkthrough-cg.png",  
+"sha256": "b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f",  
+"observation": "The portrait runtime composition places Leo on the left with a notebook and pen, Nika centrally holding a dark tablet, and Giulia prominently on the right, leading the group with an extended arm indicating something outside the right edge. Giulia retains her mature facial features, silver-streaked tied-back hair, green work shirt, beige apron, and dark trousers. A ring of keys hangs at her apron. Nika retains her short wavy bob, ivory shirt, neutral trousers, and adult appearance. Leo retains his tousled hair, olive shirt, pale linen jacket, and shoulder satchel. The industrial corridor contains metal shelving, stacked white linens, service carts, a visible working area beyond the doorway, and stairs ascending at the right. The three figures appear attentive and professionally engaged, without romantic staging. Hands, faces, and visible limbs remain anatomically plausible. No baked typography, interface elements, or watermark are visible. The vertical framing preserves the route-leading gesture and provides a relatively neutral tiled-floor region in the lower foreground, although some legs and service equipment occupy the edges."  
+},  
+{  
+"ref": "ep3-staff-walkthrough-landscape-candidate-1",  
+"path": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png",  
+"sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b",  
+"observation": "The landscape runtime composition independently stages Giulia at the left front, Nika in the middle, and Leo on the right, walking through a stone-floored service corridor. Giulia rests one hand on a metal service cart and carries a visible ring of brass-colored keys in the other. Her silver-streaked updo, mature facial texture, muted green shirt, and beige apron remain consistent with the approved reference. Nika carries a tablet and shoulder bag, while Leo writes in a small notebook with his leather satchel visible. Both retain their approved hairstyles, facial characteristics, and adult age impressions. An open professional kitchen containing stainless-steel equipment and hanging copper cookware appears on the left; stacked linens and service equipment occupy the foreground and adjoining rooms; a substantial staircase rises at the right. Their gazes and relative positions communicate an operational walkthrough rather than an intimate interaction. Visible hands, limbs, and body proportions are plausible. No baked text, UI, or watermark appears. The landscape arrangement preserves all three figures and the service geography, while the lower stone-floor area offers a comparatively subdued background for a suitably contrasted dialogue overlay."  
+}  
+\],  
+"findings": \[\],  
+"unresolved": \[\]  
+}

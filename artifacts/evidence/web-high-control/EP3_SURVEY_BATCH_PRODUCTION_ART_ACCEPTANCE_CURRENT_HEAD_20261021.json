@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "kind": "EP3_SURVEY_BATCH_PRODUCTION_ART_ACCEPTANCE",
+  "recordedAt": "2026-10-21",
+  "status": "PASS_BATCH_ONLY",
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "generationRun": ".ceos-runs/2026-10-21T04-03-48-212Z-production-art-f15f21",
+  "generationRunSourceHead": "e851a78aa97ac2564d76df76504c632eb9baaf50",
+  "integrationCommit": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "capability": {
+    "challengeId": "cap-3a4abbeb928f42afa616",
+    "attestation": ".ceos-runs/2026-10-21T04-03-48-212Z-production-art-f15f21/capability-attestation/attestations/cap-3a4abbeb928f42afa616.json",
+    "nativeRole": "ceos_asset_generator",
+    "model": "gpt-5.6-terra",
+    "reasoning": "medium",
+    "routeTraceSha256": "ef9fa52de7b1172b32f9a9e907aab8224056b0390f951023384bb85bdb6d0425",
+    "providerByteReceipt": "NOT_ATTESTED"
+  },
+  "assets": {
+    "ep3_survey_join_response": {
+      "portrait": { "path": "assets/production/cg/ep3-survey-join-response-cg.png", "sha256": "9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee" },
+      "landscape": { "path": "assets/production/cg/ep3-survey-join-response-cg-landscape.png", "sha256": "b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df" }
+    },
+    "ep3_survey_site_problem": {
+      "portrait": { "path": "assets/production/cg/ep3-survey-site-problem-cg.png", "sha256": "e147bf52e7a4062034f5689f1511e0b24fdd3e3db062a6ac3e9406cab09d37e7" },
+      "landscape": { "path": "assets/production/cg/ep3-survey-site-problem-cg-landscape.png", "sha256": "f698f8f85c909c8bd0f2cfbbb0c03d74b010a2b6f98183bcc66930fe9ad5ed05" }
+    },
+    "ep3_staff_walkthrough": {
+      "portrait": { "path": "assets/production/cg/ep3-staff-walkthrough-cg.png", "sha256": "b6807e6f5b496852ea5f5900b15383f421b34d5348dfde9d37cfbb828f7d995f" },
+      "landscape": { "path": "assets/production/cg/ep3-staff-walkthrough-cg-landscape.png", "sha256": "a7fd83e8f2e8b5f4137d1badc288c41dbe4bfb0cbf9547c5215042688abe906b" }
+    }
+  },
+  "runtime": {
+    "evidence": "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json",
+    "evidenceSha256": "5c08ee5c8342a09c47025a778bcefa7a5ca72ceab39689b48576df111380997f",
+    "desktopViewport": "1280x720",
+    "mobileViewport": "390x844",
+    "desktopUses": "1672x941 landscape",
+    "mobileUses": "1024x1536 portrait",
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "pixelObservation": "All six exact-head runtime captures were visually inspected; characters, operational props, location/action, dialogue-safe regions and mobile framing were readable."
+  },
+  "webHigh": [
+    {
+      "sceneId": "ep3_survey_join_response",
+      "status": "PASS",
+      "receipt": "artifacts/evidence/web-high-control/EP3_SURVEY_JOIN_RESPONSE_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "receiptSha256": "a26a70687c22ab3c2aa4284cf7ba1a64127062d576cac86eda7085ad3162f997",
+      "raw": "artifacts/evidence/web-high-control/EP3_SURVEY_JOIN_RESPONSE_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+      "rawSha256": "546a715ce0d3d325754ba47dc20bd12031b2f8f8c3207d9ac70cc5690575279b",
+      "transport": "DEV_BROWSER_ONLY",
+      "provider": "codex-chatgpt-web-dev",
+      "model": "chatgpt-web/gpt-6-sol",
+      "reasoning": "high",
+      "stableBridgeUsed": false,
+      "actualPixelsReceived": true,
+      "traceId": "devweb_d107a571cec0436b86c12c3265de1f85",
+      "findings": []
+    },
+    {
+      "sceneId": "ep3_survey_site_problem",
+      "status": "PASS",
+      "receipt": "artifacts/evidence/web-high-control/EP3_SURVEY_SITE_PROBLEM_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "receiptSha256": "dd22829470532818338e0307f11c209a124bc4c479efc18ee5ae21d9d44a39de",
+      "raw": "artifacts/evidence/web-high-control/EP3_SURVEY_SITE_PROBLEM_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+      "rawSha256": "88181ea9012d45fd4a545179836a8263ac09328f61431829c510515f0256daa7",
+      "transport": "DEV_BROWSER_ONLY",
+      "provider": "codex-chatgpt-web-dev",
+      "model": "chatgpt-web/gpt-6-sol",
+      "reasoning": "high",
+      "stableBridgeUsed": false,
+      "actualPixelsReceived": true,
+      "traceId": "devweb_3c0392256e894cf3bbbba19612ccbcdf",
+      "findings": []
+    },
+    {
+      "sceneId": "ep3_staff_walkthrough",
+      "status": "PASS",
+      "receipt": "artifacts/evidence/web-high-control/EP3_STAFF_WALKTHROUGH_WEB_REVIEW_RECEIPT_CURRENT_HEAD_20261021.json",
+      "receiptSha256": "04f9d16cc635a9ce6beef183d3c01db7c21237863bc0f78178b802ef1c9dd95c",
+      "raw": "artifacts/evidence/web-high-control/EP3_STAFF_WALKTHROUGH_WEB_REVIEW_RAW_CURRENT_HEAD_20261021.txt",
+      "rawSha256": "a7b175b809dfc16fa2c15e75462c9d82ad04ab310c66787080a9b6b2e16edbb2",
+      "transport": "DEV_BROWSER_ONLY",
+      "provider": "codex-chatgpt-web-dev",
+      "model": "chatgpt-web/gpt-6-sol",
+      "reasoning": "high",
+      "stableBridgeUsed": false,
+      "actualPixelsReceived": true,
+      "traceId": "devweb_0c1e7829c7554a35bcc0c9035d359afe",
+      "findings": []
+    }
+  ],
+  "routingTrace": {
+    "webTransportTraces": "Persisted in the three DEV receipts and raw response files above.",
+    "ceosRoutingTrace": "NOT_WRITTEN",
+    "reason": "The immutable generation run rejected post-integration routing-trace/checkpoint writes because its source-bound packet changed after the generation checkpoint; the failure is preserved and no stale run evidence was mutated."
+  },
+  "boundary": "PASS applies to this three-pair batch only. It is not episode-final, release, publication, or mass-acceptance evidence."
+}

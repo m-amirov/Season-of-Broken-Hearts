@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "ep3_survey_join_response",
+  "assetId": "ep3-survey-join-response-cg",
+  "sourceHead": "b0495d2683b65120c42071272b6a320406d21c2d",
+  "provider": "codex-chatgpt-web-dev",
+  "model": "chatgpt-web/gpt-6-sol",
+  "reasoningEffort": "high",
+  "transport": "DEV_BROWSER_ONLY",
+  "stableBridgeUsed": false,
+  "candidateLimit": { "maxCandidatesPerCueAndFormat": 2, "portraitCandidate": 1, "landscapeCandidate": 1, "thirdCandidateAllowed": false },
+  "sourceBoundBrief": "artifacts/production-art/stage9.6/EP3_SOURCE_BOUND_ART_BRIEFS_CURRENT_HEAD_20261020.json",
+  "provenance": [
+    ".ceos-runs/2026-10-21T04-03-48-212Z-production-art-f15f21/producer-output-provenance.json",
+    "artifacts/production-art/stage9.6/EP3_SURVEY_BATCH_DUAL_FORMAT_MANIFEST_CURRENT_HEAD_20261021.json",
+    "artifacts/evidence/web-high-control/EP3_SURVEY_BATCH_RUNTIME_QA_CURRENT_HEAD_20261021.json"
+  ],
+  "context": "Review actual pixels against the source-bound brief and approved Nika and Leo references. Check adult identity, wardrobe continuity, unfinished west-wing/service corridor, flashlight/tablet/measurement action, professional non-romantic staging, anatomy, no baked text/UI/watermark, independent portrait and landscape composition, and readable lower dialogue-safe runtime regions. Return one concrete visualEvidence observation per attachment and explicit PASS or REWORK with only material blocking findings using the allowed impact codes. Do not claim release or episode-final acceptance, request a third candidate, or infer unseen state.",
+  "runtimeEvidence": [
+    "output/playwright/ep3-batch-join-response-desktop-1280x720.png",
+    "output/playwright/ep3-batch-join-response-mobile.png"
+  ],
+  "images": [
+    { "ref": "nika-approved-reference", "kind": "original", "path": "assets/characters/references/originals/nika.png", "sha256": "91bb85a1bdc88b412aea5fde7e17181f82fb0026c1e7be95c917c2a9502a097d" },
+    { "ref": "leo-approved-reference", "kind": "original", "path": "assets/characters/references/originals/leo.png", "sha256": "0ea437ee1dce0481e78690a1011cbd90be329a64d1068afe46987970f966f875" },
+    { "ref": "ep3-survey-join-response-portrait-candidate-1", "kind": "runtime", "path": "assets/production/cg/ep3-survey-join-response-cg.png", "sha256": "9e3f61be0deb8622ff54a235b14b9ba1aab88ab21ea3565b40bd136bd3d3f5ee" },
+    { "ref": "ep3-survey-join-response-landscape-candidate-1", "kind": "runtime", "path": "assets/production/cg/ep3-survey-join-response-cg-landscape.png", "sha256": "b4bf114b98874b8f28be95763afa837bf6e6fd15ccd77b6b8b642c72b25319df" }
+  ]
+}
