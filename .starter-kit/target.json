@@ -16,6 +16,9 @@
     "project.profile.yaml": "project-owned",
     "game-spec.yaml": "project-owned",
     "src/**": "project-owned",
-    "public/**": "project-owned"
+    "public/**": "project-owned",
+    "config/targets/mature-yandex-phaser.json": "semantic-merge",
+    "tools/narrative/narrative-game-validator.mjs": "semantic-merge",
+    "tools/narrative/story-promise-validator.mjs": "semantic-merge"
   }
 }

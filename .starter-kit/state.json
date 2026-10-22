@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updaterSchemaVersion": 2,
-  "installedVersion": "0.5.13",
+  "installedVersion": "0.5.15",
   "attemptedVersion": "0.5.15",
   "sourceManifestHash": "8de0a5d65e12ee1aa213b40275621ed6e3a21fb9199a564789fef2a86b1f40b3",
   "targetProfile": {
@@ -22,7 +22,10 @@
       "project.profile.yaml": "project-owned",
       "game-spec.yaml": "project-owned",
       "src/**": "project-owned",
-      "public/**": "project-owned"
+      "public/**": "project-owned",
+      "config/targets/mature-yandex-phaser.json": "semantic-merge",
+      "tools/narrative/narrative-game-validator.mjs": "semantic-merge",
+      "tools/narrative/story-promise-validator.mjs": "semantic-merge"
     }
   },
   "baseline": {
@@ -200,11 +203,6 @@
       "target": "config/targets/new-project.json",
       "sourceHash": "bc81538bd85f7a6b1df27036e7ab9f0c2a77498549c95b847a4977cac7f76a62",
       "targetHash": "bc81538bd85f7a6b1df27036e7ab9f0c2a77498549c95b847a4977cac7f76a62"
-    },
-    "managed:profile-mature-yandex-phaser": {
-      "target": "config/targets/mature-yandex-phaser.json",
-      "sourceHash": "4319aa3491729b4c3ba229496e9406737f50b4cb6065cae6681f1ba5988bd4fe",
-      "targetHash": "4319aa3491729b4c3ba229496e9406737f50b4cb6065cae6681f1ba5988bd4fe"
     },
     "managed:tool-apply-update": {
       "target": "tools/starter-kit/apply-update.mjs",
@@ -405,16 +403,6 @@
       "target": "docs/NARRATIVE_SCENE_VISUAL_CONTRACT.md",
       "sourceHash": "855a2f321fc9ad00eaeaf0b6268fc6720bd551f09c9a3617727155d3866cdbb7",
       "targetHash": "855a2f321fc9ad00eaeaf0b6268fc6720bd551f09c9a3617727155d3866cdbb7"
-    },
-    "managed:narrative-game-validator": {
-      "target": "tools/narrative/narrative-game-validator.mjs",
-      "sourceHash": "bf54f86f252ad1798aa43120c49aaf94a961502dacc502204c7849c809c6f200",
-      "targetHash": "bf54f86f252ad1798aa43120c49aaf94a961502dacc502204c7849c809c6f200"
-    },
-    "managed:story-promise-validator": {
-      "target": "tools/narrative/story-promise-validator.mjs",
-      "sourceHash": "26ba10c3378b0224f5203c4271929d98329112b0aa5e3c90985f937824d760e6",
-      "targetHash": "26ba10c3378b0224f5203c4271929d98329112b0aa5e3c90985f937824d760e6"
     },
     "managed:narrative-game-profile-cli": {
       "target": "tools/narrative/narrative-game-check.mjs",
@@ -677,40 +665,25 @@
       "target": "config/manifest-entries.json",
       "sourceHash": "550dfd8f336c13f5737db217631e89d573b40b8b75b1ba5e81817ba535e655db",
       "targetHash": "59b598acc52b371ebe4e20a6c41988e74a7e66e889976bb3f4e4b1f829fa070f"
+    },
+    "managed:profile-mature-yandex-phaser": {
+      "target": "config/targets/mature-yandex-phaser.json",
+      "sourceHash": "4319aa3491729b4c3ba229496e9406737f50b4cb6065cae6681f1ba5988bd4fe",
+      "targetHash": "2d33cb417f1cda0886813072a958f52cea5fb465196fec0482a7a5744ee0773a"
+    },
+    "managed:narrative-game-validator": {
+      "target": "tools/narrative/narrative-game-validator.mjs",
+      "sourceHash": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733",
+      "targetHash": "c9ee4e79a77e640053fd9f809cdfdfcf7f4e18a03f1c811699eeef584bc5beba"
+    },
+    "managed:story-promise-validator": {
+      "target": "tools/narrative/story-promise-validator.mjs",
+      "sourceHash": "26ba10c3378b0224f5203c4271929d98329112b0aa5e3c90985f937824d760e6",
+      "targetHash": "f28909e024180ba83e1e7a4ef204c30573e7f6c273423741f45abb6db720626b"
     }
   },
-  "conflicts": [
-    {
-      "logicalId": "managed:narrative-game-validator",
-      "target": "tools/narrative/narrative-game-validator.mjs",
-      "ownership": "managed",
-      "reason": "Managed file has local modifications",
-      "candidate": ".starter-kit/conflicts/0.5.15/tools/narrative/narrative-game-validator.mjs.new",
-      "mergeNotes": ".starter-kit/conflicts/0.5.15/tools/narrative/narrative-game-validator.mjs.merge.md"
-    },
-    {
-      "logicalId": "managed:story-promise-validator",
-      "target": "tools/narrative/story-promise-validator.mjs",
-      "ownership": "managed",
-      "reason": "Managed file has local modifications",
-      "candidate": ".starter-kit/conflicts/0.5.15/tools/narrative/story-promise-validator.mjs.new",
-      "mergeNotes": ".starter-kit/conflicts/0.5.15/tools/narrative/story-promise-validator.mjs.merge.md"
-    }
-  ],
+  "conflicts": [],
   "appliedMigrations": [
-    "migrations/0.3.0-yandex-requirements.md",
-    "migrations/0.4.0-production-skills.md",
-    "migrations/0.4.1-target-aware-updater.md",
-    "migrations/0.4.2-codex-engineering-system.md",
-    "migrations/0.5.0-concept-proof-lifecycle.md",
-    "migrations/0.5.1-screenshot-visual-gate.md",
-    "migrations/0.5.3-profile-aware-quality-constitution.md",
-    "migrations/0.5.4-to-0.5.5.md",
-    "migrations/0.5.5-to-0.5.6.md",
-    "migrations/0.5.6-to-0.5.7.md",
-    "migrations/0.5.11-to-0.5.12.md"
-  ],
-  "pendingMigrations": [
     "migrations/0.3.0-yandex-requirements.md",
     "migrations/0.4.0-production-skills.md",
     "migrations/0.4.1-target-aware-updater.md",
@@ -724,5 +697,6 @@
     "migrations/0.5.11-to-0.5.12.md",
     "migrations/0.5.13-to-0.5.14.md",
     "migrations/0.5.14-to-0.5.15.md"
-  ]
+  ],
+  "pendingMigrations": []
 }
