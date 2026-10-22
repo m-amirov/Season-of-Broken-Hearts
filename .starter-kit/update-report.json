@@ -4,7 +4,7 @@
   "updaterVersion": "0.5.15",
   "mode": "update",
   "dryRun": false,
-  "fromVersion": "0.5.13",
+  "fromVersion": "0.5.15",
   "toVersion": "0.5.15",
   "sourceManifestHash": "8de0a5d65e12ee1aa213b40275621ed6e3a21fb9199a564789fef2a86b1f40b3",
   "targetProfile": "mature-yandex-phaser",
@@ -477,10 +477,6 @@
       "target": "migrations/0.5.13-to-0.5.14.md"
     },
     {
-      "logicalId": "managed:wardrobe-visual-gate",
-      "target": "tools/production-art/wardrobe-visual-gate.mjs"
-    },
-    {
       "logicalId": "managed:wardrobe-visual-acceptance-doc",
       "target": "docs/WARDROBE_VISUAL_ACCEPTANCE.md"
     },
@@ -504,6 +500,11 @@
     {
       "logicalId": "managed:story-promise-validator",
       "target": "tools/narrative/story-promise-validator.mjs",
+      "resolution": "accept-current"
+    },
+    {
+      "logicalId": "managed:wardrobe-visual-gate",
+      "target": "tools/production-art/wardrobe-visual-gate.mjs",
       "resolution": "accept-current"
     }
   ],

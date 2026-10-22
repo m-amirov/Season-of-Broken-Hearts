@@ -59,6 +59,15 @@ test('independent original/runtime wardrobe evidence passes only with exact SHA 
   assert.deepEqual(result.errors, []);
 });
 
+test('accepts CEOS markdown-escaped JSON without changing the raw-response hash contract', t => {
+  const f = fixture(); t.after(() => fs.rmSync(f.dir, { recursive: true, force: true }));
+  const rawResponse = JSON.stringify(f.raw).replaceAll('_', '\\_').replaceAll('[', '\\[').replaceAll(']', '\\]');
+  f.receipt.transport.responseSha256 = sha(rawResponse);
+  const result = validateWardrobeVisualAcceptance({ ...f.args(), rawResponse });
+  assert.equal(result.status, 'PASS_WARDROBE_VISUAL_ACCEPTANCE');
+  assert.deepEqual(result.errors, []);
+});
+
 test('rejects fabricated PASS when no reviewer wardrobe assessments exist', t => {
   const f = fixture(); t.after(() => fs.rmSync(f.dir, { recursive: true, force: true }));
   delete f.raw.wardrobeAssessments;

@@ -25,7 +25,8 @@
       "public/**": "project-owned",
       "config/targets/mature-yandex-phaser.json": "semantic-merge",
       "tools/narrative/narrative-game-validator.mjs": "semantic-merge",
-      "tools/narrative/story-promise-validator.mjs": "semantic-merge"
+      "tools/narrative/story-promise-validator.mjs": "semantic-merge",
+      "tools/production-art/wardrobe-visual-gate.mjs": "semantic-merge"
     }
   },
   "baseline": {
@@ -474,11 +475,6 @@
       "sourceHash": "d0f25f441683f5692ccfbdf177ea3188484b32d5608c649c91c2ec30e70438e2",
       "targetHash": "d0f25f441683f5692ccfbdf177ea3188484b32d5608c649c91c2ec30e70438e2"
     },
-    "managed:wardrobe-visual-gate": {
-      "target": "tools/production-art/wardrobe-visual-gate.mjs",
-      "sourceHash": "9f11aac49f4efcf61d57eb3ad916e8cd34be164502372a9e641355d7d8800fe8",
-      "targetHash": "9f11aac49f4efcf61d57eb3ad916e8cd34be164502372a9e641355d7d8800fe8"
-    },
     "managed:wardrobe-visual-acceptance-doc": {
       "target": "docs/WARDROBE_VISUAL_ACCEPTANCE.md",
       "sourceHash": "184ff4c278756bf5d79e28ad1040f0849b9bd89ee80f2cbe933bb8398ef4206c",
@@ -669,7 +665,7 @@
     "managed:profile-mature-yandex-phaser": {
       "target": "config/targets/mature-yandex-phaser.json",
       "sourceHash": "4319aa3491729b4c3ba229496e9406737f50b4cb6065cae6681f1ba5988bd4fe",
-      "targetHash": "2d33cb417f1cda0886813072a958f52cea5fb465196fec0482a7a5744ee0773a"
+      "targetHash": "e14a51f874f1614387a97616aab6cb9d248fa76596bc701ee485f4b249d302ab"
     },
     "managed:narrative-game-validator": {
       "target": "tools/narrative/narrative-game-validator.mjs",
@@ -680,6 +676,11 @@
       "target": "tools/narrative/story-promise-validator.mjs",
       "sourceHash": "26ba10c3378b0224f5203c4271929d98329112b0aa5e3c90985f937824d760e6",
       "targetHash": "f28909e024180ba83e1e7a4ef204c30573e7f6c273423741f45abb6db720626b"
+    },
+    "managed:wardrobe-visual-gate": {
+      "target": "tools/production-art/wardrobe-visual-gate.mjs",
+      "sourceHash": "9f11aac49f4efcf61d57eb3ad916e8cd34be164502372a9e641355d7d8800fe8",
+      "targetHash": "c95724dd842fec8f0fbc901478e5871552c4bc4d566c735acce322978617a024"
     }
   },
   "conflicts": [],

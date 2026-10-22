@@ -19,6 +19,7 @@
     "public/**": "project-owned",
     "config/targets/mature-yandex-phaser.json": "semantic-merge",
     "tools/narrative/narrative-game-validator.mjs": "semantic-merge",
-    "tools/narrative/story-promise-validator.mjs": "semantic-merge"
+    "tools/narrative/story-promise-validator.mjs": "semantic-merge",
+    "tools/production-art/wardrobe-visual-gate.mjs": "semantic-merge"
   }
 }

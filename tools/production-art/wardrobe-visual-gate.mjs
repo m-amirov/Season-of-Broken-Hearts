@@ -37,9 +37,16 @@ function safeRead(projectDir, relative, errors, label) {
 
 function extractRawReviewerJson(raw) {
   const text = String(raw).trim();
-  try { return JSON.parse(text); } catch {}
+  const parseCandidate = candidate => {
+    try { return JSON.parse(candidate); } catch {}
+    const normalized = candidate.replace(/(?<!\\)\\([\[\]_])/g, '$1');
+    if (normalized === candidate) return null;
+    try { return JSON.parse(normalized); } catch { return null; }
+  };
+  const direct = parseCandidate(text);
+  if (direct) return direct;
   const match = /^```(?:json)?\s*([\s\S]*?)\s*```$/i.exec(text);
-  if (match) { try { return JSON.parse(match[1]); } catch {} }
+  if (match) return parseCandidate(match[1]);
   return null;
 }
 
