@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "WARDROBE_VISUAL_ACCEPTANCE_V1",
+  "requiredCast": ["bianca"],
+  "evidenceRoles": {
+    "portraitOriginal": "bianca-portrait-original",
+    "portraitRuntime": "bianca-portrait-runtime",
+    "landscapeOriginal": "bianca-landscape-original",
+    "landscapeRuntime": "bianca-landscape-runtime",
+    "characterReferences": {
+      "bianca": "bianca-character-reference"
+    }
+  },
+  "adjacentScenes": [
+    {
+      "sceneId": "ep2_refusal_bianca_arrival",
+      "transition": "context-change",
+      "reason": "Alternate branch after the same authored choice; compare the supplied runtime pixels without treating the route split as a wardrobe time break.",
+      "evidenceRef": "bianca-refusal-landscape-runtime",
+      "characters": ["bianca"]
+    }
+  ],
+  "request": {
+    "schemaVersion": 1,
+    "sceneId": "ep2_bianca_arrives",
+    "sourceHead": "925fcf79cd35444dc00efdd901d1e2864ee9a604",
+    "context": "WARDROBE_VISUAL_ACCEPTANCE_V1. Independent pixel-backed acceptance for Bianca in ep2_bianca_arrives. Required cast: bianca. Bianca is an approved adult character, age 32, with canonical character reference attached. Verify angular oval face, blue-grey eyes, long straight copper-auburn side-parted hair below the shoulders, beauty mark, adult professional age, tailored slate-charcoal executive suit, ivory blouse, black pointed heels, structured black handbag, gold rectangular earrings and simple watch. Compare portrait and landscape originals against portrait and landscape runtime pixels, and compare the agreement and refusal branch runtime pixels for wardrobe continuity and justified route context. The agreement and refusal images are alternate branch outcomes after the same authored choice; do not treat branch divergence as an unmotivated time change. Return wardrobeAssessments for every required cast member. Runtime pixels are the existing accepted current-head capture bytes; the integration commit changes only receipt parsing, Starter ownership metadata, and updater state, not runtime rendering or accepted PNG bytes.",
+    "images": [
+      {"ref":"bianca-character-reference","kind":"original","path":"assets/characters/references/originals/bianca.png","sha256":"c69309a469d9bc5920f2f86f4720d0f6b69045acbe834e8536a19ea17c9ab8b9","detail":"original"},
+      {"ref":"bianca-portrait-original","kind":"original","path":"assets/production/cg/ep2-bianca-arrival-cg.png","sha256":"6ddd16297e1b8c4e8d7808aa48e1509ad35cd42766b7016292802f3d04d91be3","detail":"original"},
+      {"ref":"bianca-landscape-original","kind":"original","path":"assets/production/cg/ep2-bianca-arrival-cg-landscape.png","sha256":"af3baf2fd9ba61a571e6bf60bbcaff17366d1a813fb4b7ccc4585db01d149514","detail":"original"},
+      {"ref":"bianca-portrait-runtime","kind":"runtime","path":"output/playwright/current-head-522b4f1-bianca/390x844/bianca-agreement/ep2_bianca_arrives.png","sha256":"50d21d2a056de90a7a9262a07101abde2ecf49aa043dfffa39b358e297edc7c9","detail":"high"},
+      {"ref":"bianca-landscape-runtime","kind":"runtime","path":"output/playwright/current-head-522b4f1-bianca/1920x1080/bianca-agreement/ep2_bianca_arrives.png","sha256":"3d3b205f3b077ce81412bf208d5aa8dd70dde87a1f4be3737389a1bc08cb0066","detail":"high"},
+      {"ref":"bianca-refusal-portrait-runtime","kind":"runtime","path":"output/playwright/current-head-522b4f1-bianca/390x844/bianca-refusal/ep2_refusal_bianca_arrival.png","sha256":"5e87abdb0b5009711c5460be33c1d28a5cbc80c3ae1bad46fb56d550e5f1080a","detail":"high"},
+      {"ref":"bianca-refusal-landscape-runtime","kind":"runtime","path":"output/playwright/current-head-522b4f1-bianca/1920x1080/bianca-refusal/ep2_refusal_bianca_arrival.png","sha256":"7409c645645b414f65817e7308ba8a87669769684876cdd027bbbd36526ed54c","detail":"high"}
+    ]
+  }
+}
