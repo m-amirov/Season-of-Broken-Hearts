@@ -7,9 +7,16 @@
   "maxStates": 600000,
   "promisesPath": "narrative/story-promises.json",
   "dualFormatManifestPath": "artifacts/production-art/stage8-ep1-dual-format-manifest.json",
+  "artAcceptanceProfile": "NARRATIVE_ART_ACCEPTANCE_V3",
+  "artAcceptance": {
+    "enabled": true,
+    "profile": "NARRATIVE_ART_ACCEPTANCE_V3",
+    "gate": "tools/production-art/wardrobe-visual-gate.mjs"
+  },
   "wardrobeVisualAcceptance": {
     "enabled": true,
     "ruleId": "WARDROBE_VISUAL_ACCEPTANCE_V1",
-    "gate": "tools/production-art/wardrobe-visual-gate.mjs"
+    "gate": "tools/production-art/wardrobe-visual-gate.mjs",
+    "legacyCompatibility": true
   }
 }

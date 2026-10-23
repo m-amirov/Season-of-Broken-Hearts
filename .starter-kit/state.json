@@ -3,7 +3,7 @@
   "updaterSchemaVersion": 2,
   "installedVersion": "0.5.15",
   "attemptedVersion": "0.5.15",
-  "sourceManifestHash": "8de0a5d65e12ee1aa213b40275621ed6e3a21fb9199a564789fef2a86b1f40b3",
+  "sourceManifestHash": "44b4a9db66609920cc248631e505a77961fd2519b3a50e6377e77276e87a792b",
   "targetProfile": {
     "schemaVersion": 1,
     "profileName": "mature-yandex-phaser",
@@ -22,11 +22,7 @@
       "project.profile.yaml": "project-owned",
       "game-spec.yaml": "project-owned",
       "src/**": "project-owned",
-      "public/**": "project-owned",
-      "config/targets/mature-yandex-phaser.json": "semantic-merge",
-      "tools/narrative/narrative-game-validator.mjs": "semantic-merge",
-      "tools/narrative/story-promise-validator.mjs": "semantic-merge",
-      "tools/production-art/wardrobe-visual-gate.mjs": "semantic-merge"
+      "public/**": "project-owned"
     }
   },
   "baseline": {
@@ -412,13 +408,13 @@
     },
     "managed:narrative-game-profile-template": {
       "target": "config/optional-profiles/narrative-game.json",
-      "sourceHash": "d40beac262e41cc386b9c987cdb67ddd74f8239a17416bfc96b4ff24497bcc53",
-      "targetHash": "d40beac262e41cc386b9c987cdb67ddd74f8239a17416bfc96b4ff24497bcc53"
+      "sourceHash": "c92cfcd953cc422db849a53f626fbb134e0efd118caf0f85a58dc9d3d290d34b",
+      "targetHash": "c92cfcd953cc422db849a53f626fbb134e0efd118caf0f85a58dc9d3d290d34b"
     },
     "managed:narrative-game-profile-doc": {
       "target": "docs/NARRATIVE_GAME_PROFILE.md",
-      "sourceHash": "b2397f848598466df8f2c9394a6a4b905411cc3e3ab33230ecc962b78e68c774",
-      "targetHash": "b2397f848598466df8f2c9394a6a4b905411cc3e3ab33230ecc962b78e68c774"
+      "sourceHash": "46ac2664c8b601f01310f69afeb2be6ccc911489816c2ef410b23fd167e7440b",
+      "targetHash": "46ac2664c8b601f01310f69afeb2be6ccc911489816c2ef410b23fd167e7440b"
     },
     "migration:0.5.11-to-0.5.12": {
       "target": "migrations/0.5.11-to-0.5.12.md",
@@ -477,13 +473,43 @@
     },
     "managed:wardrobe-visual-acceptance-doc": {
       "target": "docs/WARDROBE_VISUAL_ACCEPTANCE.md",
-      "sourceHash": "184ff4c278756bf5d79e28ad1040f0849b9bd89ee80f2cbe933bb8398ef4206c",
-      "targetHash": "184ff4c278756bf5d79e28ad1040f0849b9bd89ee80f2cbe933bb8398ef4206c"
+      "sourceHash": "066e74b4aa2b5336b5cd309c7d01e2a6fedcbab6c1b9594df2c5abceb99d4375",
+      "targetHash": "066e74b4aa2b5336b5cd309c7d01e2a6fedcbab6c1b9594df2c5abceb99d4375"
     },
     "migration:0.5.14-to-0.5.15": {
       "target": "migrations/0.5.14-to-0.5.15.md",
       "sourceHash": "a476c599ff6987b91cb9a2f187ce617d2b6564b6b9449d58d2e314be93d0fdba",
       "targetHash": "a476c599ff6987b91cb9a2f187ce617d2b6564b6b9449d58d2e314be93d0fdba"
+    },
+    "managed:profile-mature-yandex-phaser": {
+      "target": "config/targets/mature-yandex-phaser.json",
+      "sourceHash": "4319aa3491729b4c3ba229496e9406737f50b4cb6065cae6681f1ba5988bd4fe",
+      "targetHash": "e14a51f874f1614387a97616aab6cb9d248fa76596bc701ee485f4b249d302ab"
+    },
+    "managed:narrative-game-validator": {
+      "target": "tools/narrative/narrative-game-validator.mjs",
+      "sourceHash": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733",
+      "targetHash": "c9ee4e79a77e640053fd9f809cdfdfcf7f4e18a03f1c811699eeef584bc5beba"
+    },
+    "managed:story-promise-validator": {
+      "target": "tools/narrative/story-promise-validator.mjs",
+      "sourceHash": "26ba10c3378b0224f5203c4271929d98329112b0aa5e3c90985f937824d760e6",
+      "targetHash": "f28909e024180ba83e1e7a4ef204c30573e7f6c273423741f45abb6db720626b"
+    },
+    "managed:narrative-art-acceptance-v3-doc": {
+      "target": "docs/NARRATIVE_ART_ACCEPTANCE_V3.md",
+      "sourceHash": "afbf4e882b44e468840ac8d6964eb0a697164fe65d93411a4035190a04e4d637",
+      "targetHash": "afbf4e882b44e468840ac8d6964eb0a697164fe65d93411a4035190a04e4d637"
+    },
+    "managed:wardrobe-visual-gate": {
+      "target": "tools/production-art/wardrobe-visual-gate.mjs",
+      "sourceHash": "daeed92078177ba06bdbb01934a40d22cf40ab647f9c5d66c6f0871b42b3e58f",
+      "targetHash": "daeed92078177ba06bdbb01934a40d22cf40ab647f9c5d66c6f0871b42b3e58f"
+    },
+    "managed:narrative-art-acceptance-v3": {
+      "target": "tools/production-art/narrative-art-acceptance-v3.mjs",
+      "sourceHash": "8f7498e4ae2261a90518432db1be5217e2ec41b136968f02c86f75b13f9eee25",
+      "targetHash": "8f7498e4ae2261a90518432db1be5217e2ec41b136968f02c86f75b13f9eee25"
     }
   },
   "projectOwned": {
@@ -659,28 +685,8 @@
     },
     "managed:manifest-entry-config": {
       "target": "config/manifest-entries.json",
-      "sourceHash": "550dfd8f336c13f5737db217631e89d573b40b8b75b1ba5e81817ba535e655db",
+      "sourceHash": "c0501b3c3410e9cde4f4bdf7404a0064cfd4d0d4047257f6ab28de6bf7274317",
       "targetHash": "59b598acc52b371ebe4e20a6c41988e74a7e66e889976bb3f4e4b1f829fa070f"
-    },
-    "managed:profile-mature-yandex-phaser": {
-      "target": "config/targets/mature-yandex-phaser.json",
-      "sourceHash": "4319aa3491729b4c3ba229496e9406737f50b4cb6065cae6681f1ba5988bd4fe",
-      "targetHash": "e14a51f874f1614387a97616aab6cb9d248fa76596bc701ee485f4b249d302ab"
-    },
-    "managed:narrative-game-validator": {
-      "target": "tools/narrative/narrative-game-validator.mjs",
-      "sourceHash": "5f8ac79544b6c4f92e170d37a6dc08d1a4a68e40662496a5b59724ea6d2cf733",
-      "targetHash": "c9ee4e79a77e640053fd9f809cdfdfcf7f4e18a03f1c811699eeef584bc5beba"
-    },
-    "managed:story-promise-validator": {
-      "target": "tools/narrative/story-promise-validator.mjs",
-      "sourceHash": "26ba10c3378b0224f5203c4271929d98329112b0aa5e3c90985f937824d760e6",
-      "targetHash": "f28909e024180ba83e1e7a4ef204c30573e7f6c273423741f45abb6db720626b"
-    },
-    "managed:wardrobe-visual-gate": {
-      "target": "tools/production-art/wardrobe-visual-gate.mjs",
-      "sourceHash": "9f11aac49f4efcf61d57eb3ad916e8cd34be164502372a9e641355d7d8800fe8",
-      "targetHash": "c95724dd842fec8f0fbc901478e5871552c4bc4d566c735acce322978617a024"
     }
   },
   "conflicts": [],

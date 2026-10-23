@@ -6,12 +6,21 @@
   "dryRun": false,
   "fromVersion": "0.5.15",
   "toVersion": "0.5.15",
-  "sourceManifestHash": "8de0a5d65e12ee1aa213b40275621ed6e3a21fb9199a564789fef2a86b1f40b3",
+  "sourceManifestHash": "44b4a9db66609920cc248631e505a77961fd2519b3a50e6377e77276e87a792b",
   "targetProfile": "mature-yandex-phaser",
   "projectType": "mature",
   "skillRoot": ".agents/skills",
   "created": [],
-  "updated": [],
+  "updated": [
+    {
+      "logicalId": "managed:narrative-game-profile-doc",
+      "target": "docs/NARRATIVE_GAME_PROFILE.md"
+    },
+    {
+      "logicalId": "managed:wardrobe-visual-acceptance-doc",
+      "target": "docs/WARDROBE_VISUAL_ACCEPTANCE.md"
+    }
+  ],
   "preserved": [
     {
       "logicalId": "skill:asset-provenance-and-rights:SKILL.md",
@@ -256,11 +265,6 @@
       "target": "docs/MANIFEST_SCHEMA.md"
     },
     {
-      "logicalId": "managed:manifest-entry-config",
-      "target": "config/manifest-entries.json",
-      "ownership": "semantic-merge"
-    },
-    {
       "logicalId": "managed:manifest-json-schema",
       "target": "config/starter-kit-manifest.schema.json"
     },
@@ -445,10 +449,6 @@
       "target": "config/optional-profiles/narrative-game.json"
     },
     {
-      "logicalId": "managed:narrative-game-profile-doc",
-      "target": "docs/NARRATIVE_GAME_PROFILE.md"
-    },
-    {
       "logicalId": "migration:0.5.11-to-0.5.12",
       "target": "migrations/0.5.11-to-0.5.12.md"
     },
@@ -477,10 +477,6 @@
       "target": "migrations/0.5.13-to-0.5.14.md"
     },
     {
-      "logicalId": "managed:wardrobe-visual-acceptance-doc",
-      "target": "docs/WARDROBE_VISUAL_ACCEPTANCE.md"
-    },
-    {
       "logicalId": "migration:0.5.14-to-0.5.15",
       "target": "migrations/0.5.14-to-0.5.15.md"
     }
@@ -488,24 +484,39 @@
   "merged": [],
   "resolved": [
     {
+      "logicalId": "managed:manifest-entry-config",
+      "target": "config/manifest-entries.json",
+      "resolution": "accept-current"
+    },
+    {
       "logicalId": "managed:profile-mature-yandex-phaser",
       "target": "config/targets/mature-yandex-phaser.json",
-      "resolution": "accept-current"
+      "resolution": "accept-explicit-managed"
     },
     {
       "logicalId": "managed:narrative-game-validator",
       "target": "tools/narrative/narrative-game-validator.mjs",
-      "resolution": "accept-current"
+      "resolution": "accept-explicit-managed"
     },
     {
       "logicalId": "managed:story-promise-validator",
       "target": "tools/narrative/story-promise-validator.mjs",
-      "resolution": "accept-current"
+      "resolution": "accept-explicit-managed"
+    },
+    {
+      "logicalId": "managed:narrative-art-acceptance-v3-doc",
+      "target": "docs/NARRATIVE_ART_ACCEPTANCE_V3.md",
+      "resolution": "accept-explicit-managed"
     },
     {
       "logicalId": "managed:wardrobe-visual-gate",
       "target": "tools/production-art/wardrobe-visual-gate.mjs",
-      "resolution": "accept-current"
+      "resolution": "accept-explicit-managed"
+    },
+    {
+      "logicalId": "managed:narrative-art-acceptance-v3",
+      "target": "tools/production-art/narrative-art-acceptance-v3.mjs",
+      "resolution": "accept-explicit-managed"
     }
   ],
   "projectOwned": [

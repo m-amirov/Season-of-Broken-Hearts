@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { validateWardrobeVisualAcceptance, buildWardrobeWebReviewAddendum, WARDROBE_VISUAL_RULE } from '../../tools/production-art/wardrobe-visual-gate.mjs';
+import { validateWardrobeVisualAcceptance, buildWardrobeWebReviewAddendum, WARDROBE_VISUAL_RULE, NARRATIVE_ART_ACCEPTANCE_V3 } from '../../tools/production-art/wardrobe-visual-gate.mjs';
 
 const HEAD = 'a'.repeat(40);
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
@@ -122,4 +122,54 @@ test('review instructions demand real observations and justify contextual contin
   assert.match(msg, /repeated outfit/);
   assert.match(msg, /wardrobeAssessments/);
   assert.match(msg, /silver streaks/);
+});
+
+function v3Fixture() {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'narrative-art-v3-'));
+  const images = ['original', 'runtime'].map((kind, index) => {
+    const bytes = Buffer.concat([Buffer.from('89504e470d0a1a0a', 'hex'), Buffer.from(`${kind} actual pixels`)]);
+    const file = `${kind}-${index}.png`;
+    fs.writeFileSync(path.join(dir, file), bytes);
+    return { ref: `${kind}-ref`, path: file, kind, sha256: sha(bytes) };
+  });
+  const finding = { id: 'small-fold', severity: 'P2', status: 'OPEN', observation: 'A small clothing fold differs without changing identity, action, or story comprehension.' };
+  const assessment = {
+    characterId: 'giulia', identityObservation: text, wardrobeObservation: text, actionObservation: text,
+    identityStatus: 'PASS', wardrobeStatus: 'PASS', storyActionStatus: 'PASS', dualFormatStatus: 'PASS', evidenceRefs: images.map(image => image.ref)
+  };
+  const raw = {
+    artAcceptanceProfile: NARRATIVE_ART_ACCEPTANCE_V3, sourceHead: HEAD, status: 'PASS_WITH_NOTES', actualPixelsReceived: true,
+    findings: [finding], unresolved: [], requiredCast: ['giulia'], wardrobeAssessments: [assessment],
+    visualEvidence: images.map(image => ({ ref: image.ref, path: image.path, sha256: image.sha256, observation: text }))
+  };
+  const packet = { schemaVersion: 1, ruleId: NARRATIVE_ART_ACCEPTANCE_V3, request: { sceneId: 'ep3_old_photo', sourceHead: HEAD, context: text, images } };
+  const receipt = {
+    phase: 'acceptance', artAcceptanceProfile: NARRATIVE_ART_ACCEPTANCE_V3, status: raw.status, sourceHead: HEAD,
+    actualPixelsReceived: true, requiredCast: raw.requiredCast, wardrobeAssessments: raw.wardrobeAssessments,
+    findings: raw.findings, unresolved: [], receivedEvidenceRefs: images.map(image => image.ref), visualEvidence: raw.visualEvidence,
+    transport: { provider: 'codex-chatgpt-web-dev', mode: 'browser-only', stableBridgeUsed: false, actualProjectHead: HEAD, submitted: true, attachmentAccepted: true, transportTraceId: 'v3_test', responseSha256: sha(JSON.stringify(raw)) }
+  };
+  return { dir, packet, receipt, raw, args: () => ({ packet, receipt, rawResponse: JSON.stringify(raw), projectDir: dir, actualHead: HEAD }) };
+}
+
+test('V3 accepts cosmetic findings as one PASS_WITH_NOTES verdict', t => {
+  const f = v3Fixture(); t.after(() => fs.rmSync(f.dir, { recursive: true, force: true }));
+  const result = validateWardrobeVisualAcceptance(f.args());
+  assert.equal(result.status, 'PASS_WITH_NOTES');
+  assert.equal(result.unifiedVerdict, 'PASS_WITH_NOTES');
+  assert.equal(result.wardrobeVerdict, 'NESTED_IN_UNIFIED_ART_REVIEW');
+  assert.equal(result.accepted, true, JSON.stringify(result.errors));
+});
+
+test('V3 keeps a material wrong-character finding as REWORK', t => {
+  const f = v3Fixture(); t.after(() => fs.rmSync(f.dir, { recursive: true, force: true }));
+  const finding = { id: 'wrong-character', severity: 'P1', status: 'OPEN', impactCode: 'WRONG_CHARACTER', authoredCue: 'Giulia is visible in this scene.', observation: 'The supplied pixels show a different person.', playerImpact: 'The player cannot identify the intended character.', evidenceRef: 'original-ref', actualPixelsReceived: true, characterId: 'giulia' };
+  f.raw.status = 'REWORK'; f.raw.findings = [finding]; f.raw.unresolved = [finding.id];
+  f.raw.wardrobeAssessments[0].identityStatus = 'REWORK';
+  f.receipt.status = 'REWORK'; f.receipt.findings = [finding]; f.receipt.unresolved = [finding.id]; f.receipt.wardrobeAssessments = f.raw.wardrobeAssessments;
+  f.receipt.transport.responseSha256 = sha(JSON.stringify(f.raw));
+  const result = validateWardrobeVisualAcceptance(f.args());
+  assert.equal(result.status, 'REWORK');
+  assert.equal(result.accepted, false);
+  assert.ok(result.errors.includes('REVIEW_REQUIRES_REWORK'));
 });
